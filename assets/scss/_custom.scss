@@ -1,0 +1,97 @@
+nav {
+  font-family:  $font-family-serif;
+  letter-spacing: .05em;
+
+  h1 {
+    display: block;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    color: $color-blossom;
+    font-size: .8em;
+    margin: 0 2.75% 0 0;
+    text-transform: uppercase;
+  }
+}
+
+#pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* Set characteristics to match Google fonts */
+em { 
+  font-weight: 300;
+}
+strong { 
+  font-weight: 600;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-family-mono;
+}
+
+pre { 
+  font-size: small;  
+  line-height: 1.45;
+}
+
+blockquote { 
+  font-family: $font-family-quote;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.1;
+  font-size: 1.50em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+nav { 
+  font-family: $font-family-sans-serif;
+}
+nav ul {
+  background-color: $color-bg-alt;
+} 
+nav li { 
+  text-transform: capitalize;
+}
+
+footer { 
+  border-top: thin;
+  border-top-style: solid;
+  font-size: small;
+}
+footer nav a:first-of-type::before {
+  content: "↑";
+}
+footer nav a {
+  padding-right: 0.6em;
+}
+footer .license {
+  font-size: x-small;
+}
+footer .license img {
+  max-height: 2.5em;
+}
+header nav h1 { 
+  font-family: $font-family-quote;
+}
+main {
+  text-justify: auto;
+}
+main p {   
+  text-align: justify;
+  text-justify: newspaper;
+}
