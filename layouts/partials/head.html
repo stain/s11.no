@@ -25,14 +25,13 @@
 
     <!-- Styles -->
     {{- $normalize_css := resources.Get "css/normalize.css" }}
-    {{- $fonts_css := resources.Get "css/fonts.css" }}
    
     {{- $inServerMode   := .Site.IsServer }}
     {{- $cssTarget      := "css/style.css" }}
     {{- $cssOptions     := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "nested") }}
     {{- $style          := resources.Get "scss/style-in-use.scss" | toCSS $cssOptions }}
 
-    {{- $css := slice $normalize_css $fonts_css $style | resources.Concat "css/bundle.css" }}
+    {{- $css := slice $normalize_css $style | resources.Concat "css/bundle.css" }}
     <link rel="stylesheet" href="{{ $css.Permalink }}">
     
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,200;0,500;1,200&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,300&family=Oswald:wght@600&display=swap" rel="stylesheet">     

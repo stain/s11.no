@@ -1,5 +1,5 @@
 nav {
-  font-family:  $font-family-serif;
+  font-family: $font-family-sans-serif;
   letter-spacing: .05em;
 
   h1 {
@@ -36,13 +36,9 @@ em {
 strong { 
   font-weight: 600;
 }
-pre,
-code,
-kbd,
-samp {
+pre, code, kbd, samp {
   font-family: $font-family-mono;
 }
-
 pre { 
   font-size: small;  
   line-height: 1.45;
@@ -58,40 +54,56 @@ blockquote {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
-nav { 
-  font-family: $font-family-sans-serif;
+
+header nav h1 {
+  font-family: $font-family-quote;
 }
-nav ul {
-  background-color: $color-bg-alt;
-} 
-nav li { 
-  text-transform: capitalize;
+
+header {
+  nav {
+    ul { 
+      background-color: $color-bg-alt;
+      margin-left: -0.4em;
+      padding-left: 0.4em;
+      margin-right: -0.4em;
+      padding-right: 0.4em;
+    }
+    li { 
+      text-transform: capitalize;
+    }
+  } 
 }
 
 footer { 
   border-top: thin;
   border-top-style: solid;
-  font-size: small;
+  font-size: smaller;
+  nav {
+    li { 
+      text-transform: initial;
+    }
+    li:first-of-type a::before {
+      content: "↑";
+    }
+  }
+  .license {
+    font-size: smaller;
+    img {
+      max-height: 2.5em;      
+      float: left;
+      padding-top: 0.4em;
+      padding-right: 0.25em;
+    }
+    a:last-of-type {
+      white-space: nowrap;
+    }
+  }
 }
-footer nav a:first-of-type::before {
-  content: "↑";
-}
-footer nav a {
-  padding-right: 0.6em;
-}
-footer .license {
-  font-size: x-small;
-}
-footer .license img {
-  max-height: 2.5em;
-}
-header nav h1 { 
-  font-family: $font-family-quote;
-}
+
 main {
   text-justify: auto;
-}
-main p {   
-  text-align: justify;
-  text-justify: newspaper;
+  p {   
+    text-align: justify;
+    text-justify: newspaper;
+  }
 }

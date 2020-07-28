@@ -3,6 +3,7 @@ languageCode = "en-GB"
 title = "s11.no ≔ з11.ею"
 theme = "ronu"
 siteDescription = "Scalable, Sustainable, Supported, Standard, open-Source Software and Service Solutions from Stavanger to Stockport"
+mainSections = ["post"]
 
 [[menu.main]]
         name = "Blog"
