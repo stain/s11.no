@@ -1,0 +1,26 @@
+{{ define "main" }}
+    {{ $data := .Data }}
+  <article>    
+      <h1>{{ $.Data.Plural | humanize }}</h1>
+      {{ .Content }}    
+  </article>
+  <dl>
+    {{ range $key, $value := .Data.Terms }}
+        <dt>
+          <a href="{{ "/" | relLangURL }}2020/{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+           {{ $key }}
+          </a>
+        </dt>
+        {{ range $value.Pages }}
+          <dd>            
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <small>
+            {{ .Summary  }}
+            …
+            </small>
+          </dd>
+        {{ end }}
+        {{ end }}
+    </section>
+    </dl>
+{{ end }}

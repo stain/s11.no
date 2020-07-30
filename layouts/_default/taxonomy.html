@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1>{{ .Data.Singular | humanize }}: {{.Data.Term }} </h1>
+  <article>
+      <p>{{i18n "taxonomyPageList" .}}</p>
+  </article>
+  <section>
+    <ul>
+      {{ range  .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+        <small>
+          {{ .Summary  }}
+          …
+          </small>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
