@@ -1,5 +1,8 @@
 all: local
 
+clean:
+	rm -r public
+
 dev  : host=dev.s11.no
 prod : host=s11.no
 
