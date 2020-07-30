@@ -1,11 +1,7 @@
-<section>
-    <h2>
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </h2>
-    <p>
-      {{ .Summary  }}
-    </p>
-    <div><a href="{{ .Permalink }}"> [more]</a></div>
-</section>
+<a href="{{ .Permalink }}">
+  {{ .Title }}
+</a>
+<small>
+  {{ .Summary  }}
+  …
+</small>

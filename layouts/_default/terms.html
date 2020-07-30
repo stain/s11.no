@@ -13,11 +13,7 @@
         </dt>
         {{ range $value.Pages }}
           <dd>            
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <small>
-            {{ .Summary  }}
-            …
-            </small>
+            {{ partial "summary.html" . }}
           </dd>
         {{ end }}
         {{ end }}

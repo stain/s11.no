@@ -107,3 +107,21 @@ main {
     text-justify: newspaper;
   }
 }
+
+ul.tags { 
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  
+  li {
+    display: inline;
+    color: $color-blossom;
+    font-size: smaller;
+    font-family: $font-family-quote;
+    margin-left: 1em;
+  }
+}
+dt time { 
+  font-size: smaller;
+  font-style: italic;
+}

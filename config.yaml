@@ -14,9 +14,10 @@ menu:
   main:
     - name: "About"
       url: "https://www.research.manchester.ac.uk/portal/soiland-reyes.html"
+    - name: "Thoughts"
+      url: "2020/"
     - name: "Publications"
       url: "https://orcid.org/0000-0001-9842-9718"
-
 
 params:
   authorName: "Stian Soiland-Reyes"
@@ -28,7 +29,7 @@ params:
 
 permalinks:
   /: /:year/:filename/
-  posts: /:year/:month/:filename/
+  posts: /:year/:filename/
   tags: /2020/tags/:slug/
   categories: /2020/categories/:slug/
 

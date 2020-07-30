@@ -7,13 +7,7 @@
     <ul>
       {{ range  .Pages }}
       <li>
-        <a href="{{ .Permalink }}">
-          {{ .Title }}
-        </a>
-        <small>
-          {{ .Summary  }}
-          …
-          </small>
+        {{ partial "summary.html" . }}
       </li>
       {{ end }}
     </ul>
