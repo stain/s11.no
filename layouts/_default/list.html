@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <dl>
+        {{ range .Site.RegularPages }}		
+        <dt><a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+          {{ if .Date }}
+          <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+          {{ end }}          
+        </dt>
+          <small>
+            {{ .Summary  }}
+            …
+          </small>
+        {{ partial "tags.html" . }}
+        {{ end }}
+    </dl>
+
+{{ end }}
