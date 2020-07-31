@@ -1,21 +1,28 @@
 <footer>
     <nav>
-      <ul>        
+      <ul>
         <li><a href="#">Back to top</a></li>
         <li><a href="{{ .Site.BaseURL }}index.xml">RSS</a></li>
-        <li><a href="{{ $.Site.Params.TwitterURL }}">Twitter</a></li>
-        <li><a href="{{ $.Site.Params.GitHubURL }}">GitHub</a></li>
-        <li><a href="{{ $.Site.Params.LinkedInURL }}">LinkedIn</a></li>
-        <li><a href="{{ $.Site.Params.ORCIDURL }}">ORCID</a></li>
+        <li typeof="s:Person" about="{{ $.Site.Params.ORCIDURL }}"><a rel="external s:sameAs" href="{{ $.Site.Params.TwitterURL }}">Twitter</a></li>
+        <li typeof="s:Person" about="{{ $.Site.Params.ORCIDURL }}"><a rel="external s:sameAs" href="{{ $.Site.Params.GitHubURL }}">GitHub</a></li>
+        <li typeof="s:Person" about="{{ $.Site.Params.ORCIDURL }}"><a rel="external s:sameAs" href="{{ $.Site.Params.LinkedInURL }}">LinkedIn</a></li>
+        <li><a rel="external author s:creator" typeof="s:Person" href="{{ $.Site.Params.ORCIDURL }}">ORCID</a></li>
       </ul>
     </nav>
  
   <div class="license">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="/images/cc-by-4.0.svg" /></a>
-     This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> by 
-     <a xmlns:cc="http://creativecommons.org/ns#" href="{{ $.Site.Params.ORCIDURL }}" property="cc:attributionName" 
-     rel="cc:attributionURL">{{- $.Site.Params.authorName -}}</a> is licensed under a 
-     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <a href="http://creativecommons.org/licenses/by/4.0/"><img 
+        alt="Creative Commons Licence" src="/images/cc-by-4.0.svg" /></a>
+     This work by 
+     <a rel="author s:author"
+        href="{{ $.Site.Params.ORCIDURL }}"
+        typeof="s:Person">
+        <span property="s:name">{{ $.Site.Params.authorName }}</span></a>
+        is licensed under a 
+     <a property="s:license" 
+        typeof="s:CreativeWork"
+        href="http://creativecommons.org/licenses/by/4.0/">
+        <span property="s:name">Creative Commons Attribution 4.0 International License</span></a>.
   </div>
 </footer>
 

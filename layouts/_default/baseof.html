@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
-<html>
+<html 
+  lang='{{ $.Site.LanguageCode | default "en" }}'   
+  prefix="dct: http://purl.org/dc/terms/		  
+		  s: http://schema.org/"
+  about="{{ .Permalink }}"
+  typeof="s:CreativeWork">
 {{ partial "head" . }}
 <body>
 	{{ partial "nav.html" . }}
 	<main>
 	{{ block "main" . }}
-	</main>	
 	{{ end }}
+	</main>		
 	{{ partial "footer.html" . }}
 </body>
 </html>	

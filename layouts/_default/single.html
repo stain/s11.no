@@ -1,7 +1,8 @@
 {{ define "main" }}
-	<h1>{{ .Title }}</h1>
-	{{ if .Date }}
-	  <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
-	{{ end }}
-	{{ .Content }} 	               			  
+	<article property="articleBody">
+	  <h1 property="title">{{ .Title }}</h1>
+	  {{ partial "time.html" . }}
+	  {{ partial "tags.html" . }}
+	  {{ .Content }} 	               			  
+	</article>
 {{ end }}

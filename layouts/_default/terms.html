@@ -1,22 +1,25 @@
 {{ define "main" }}
-    {{ $data := .Data }}
-  <article>    
-      <h1>{{ $.Data.Plural | humanize }}</h1>
-      {{ .Content }}    
-  </article>
-  <dl>
-    {{ range $key, $value := .Data.Terms }}
-        <dt>
-          <a href="{{ "/" | relLangURL }}2020/{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
-           {{ $key }}
+{{ $data := .Data }}
+<section typeof="s:Collection s:CreativeWork" resource="{{ .Permalink }}">
+      <h1 property="s:name">{{ $.Data.Plural | humanize }}</h1>
+      <div property="s:description">
+        {{ .Content }}
+      </div>
+      <dl>
+      {{ range $key, $value := .Data.Terms }}
+        {{ $tagurl := path.Join ("/" | relLangURL) "2020" ($.Data.Plural | urlize) ($key | urlize) }}
+        <dt>          
+          <a rel="item s:hasPart" typeof="s:Collection s:CreativeWork" 
+             href="{{ $tagurl }}">
+            <span property="s:title" >{{ $key }}</span>
           </a>
         </dt>
         {{ range $value.Pages }}
-          <dd>            
-            {{ partial "summary.html" . }}
-          </dd>
+        <dd about="{{ $tagurl }}" rel="s:hasPart" resource="{{ .Permalink }}">
+          {{- partial "summary.html" . }}
+        </dd>
         {{ end }}
-        {{ end }}
-    </section>
-    </dl>
+      {{ end }}
+      </dl>
+</section>
 {{ end }}

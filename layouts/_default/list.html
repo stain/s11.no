@@ -1,19 +1,20 @@
 {{ define "main" }}
-    <dl>
-        {{ range .Site.RegularPages }}		
-        <dt><a href="{{ .Permalink }}">
-            {{ .Title }}
-          </a>
-          {{ if .Date }}
-          <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
-          {{ end }}          
-        </dt>
-          <small>
-            {{ .Summary  }}
-            …
-          </small>
+<section typeof="s:Collection s:CreativeWork" about="{{ .Permalink }}">
+  <dl>
+    {{ range .Site.RegularPages }}		
+      <dt><a about="{{ .Permalink }}" href="{{ .Permalink }}" typeof="s:CreativeWork" rel="item">
+        <span property="title">{{ .Title }}</span>
+        </a>
+        {{ partial "time.html" . }}
         {{ partial "tags.html" . }}
-        {{ end }}
-    </dl>
-
+      </dt>        
+      <dd>
+        <small property="s:abstract s:description" resource="{{ .Permalink }}">
+          {{ .Summary  }}
+          …        
+        </small>
+      </dd>
+    {{ end }}
+  </dl>  
+</section>  
 {{ end }}

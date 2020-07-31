@@ -1,7 +1,10 @@
-<a href="{{ .Permalink }}">
-  {{ .Title }}
-</a>
-<small>
-  {{ .Summary  }}
-  …
-</small>
+
+        <div resource="{{ .Permalink }}" typeof="s:CreativeWork">
+          <a href="{{ .Permalink }}">
+            <span property="s:name" >{{ .Title }}</span>
+          </a>
+          <small property="s:description">
+            {{ .Summary  }}
+            …
+          </small>
+        </div>

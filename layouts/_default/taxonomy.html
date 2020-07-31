@@ -1,15 +1,15 @@
 {{ define "main" }}
-  <h1>{{ .Data.Singular | humanize }}: {{.Data.Term }} </h1>
-  <article>
-      <p>{{i18n "taxonomyPageList" .}}</p>
-  </article>
-  <section>
-    <ul>
-      {{ range  .Pages }}
-      <li>
-        {{ partial "summary.html" . }}
-      </li>
-      {{ end }}
-    </ul>
-  </section>
+<section typeof="s:Collection s:CreativeWork" about="{{ .Permalink }}">
+  <h1 property="s:name">{{ .Data.Singular | humanize }}: {{.Data.Term }} </h1>
+  <div property="s:description">
+    {{ .Content }}
+  </div>
+  <ul>
+    {{ range  .Pages }}
+    <li>
+      {{- partial "summary.html" . }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}
