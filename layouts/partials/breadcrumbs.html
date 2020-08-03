@@ -1,0 +1,5 @@
+<div id="breadcrumbs">    
+    {{ if .Parent }}
+        <a href="{{ .Parent.Permalink }}">{{ (or (and .Parent.Parent .Parent.Title) "Home") }}</a>
+    {{ end }}
+</div>

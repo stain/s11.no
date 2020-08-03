@@ -1,7 +1,12 @@
 {{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
 <section typeof="s:Collection s:CreativeWork" about="{{ .Permalink }}">
+  {{ if .Title }}
+    <h1 property="s:title">{{ .Title }}</h1>
+  {{ end }}
+  {{- .Content -}}
   <dl>
-    {{ range .Site.RegularPages }}		
+    {{ range .Pages }}		
       <dt><a about="{{ .Permalink }}" href="{{ .Permalink }}" typeof="s:CreativeWork" rel="item">
         <span property="title">{{ .Title }}</span>
         </a>

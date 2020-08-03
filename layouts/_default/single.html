@@ -1,6 +1,7 @@
 {{ define "main" }}
-	<article property="articleBody">
-	  <h1 property="title">{{ .Title }}</h1>
+	{{ partial "breadcrumbs.html" . }}
+	<article property="s:articleBody">
+	  <h1 property="s:title">{{ .Title }}</h1>
 	  {{ partial "time.html" . }}
 	  {{ partial "tags.html" . }}
 	  {{ .Content }} 	               			  
