@@ -38,6 +38,8 @@ In the project, researchers from Spain, UK, Poland and The Netherlands collabora
   - <http://sandbox.rohub.org/>
   - <http://amiga.iaa.es/p/290-astrotaverna.htm>
   - <http://taverna.org.uk/>
+  - <https://www.myexperiment.org/packs/282>
+  - <https://www.myexperiment.org/packs/319>
 * Specifications:
   - <https://www.researchobject.org/specs/>
   - <https://w3id.org/ro/2016-01-28/>
