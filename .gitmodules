@@ -1,3 +1,6 @@
 [submodule "themes/ronu"]
 	path = themes/ronu
 	url = https://github.com/softwareyoga/ronu-hugo-theme.git
+[submodule "content/2016/provweek-tavernaprov"]
+	path = content/2016/provweek-tavernaprov
+	url = git@github.com:stain/2016-provweek-tavernaprov.git
