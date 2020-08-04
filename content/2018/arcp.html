@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html  
+  xmlns="http://www.w3.org/1999/xhtml"   
+  lang="en"
+  xml:lang="en"  
+  prefix="
+  acl: http://www.w3.org/ns/auth/acl# 
+  as: https://www.w3.org/ns/activitystreams# 
+  as: http://www.w3.org/ns/activitystreams#
+  biblio: http://purl.org/net/biblio#
+  bibo: http://purl.org/ontology/bibo/ 
+  cc: https://creativecommons.org/ns# 
+  cert: http://www.w3.org/ns/auth/cert# 
+  cito: http://purl.org/spar/cito/ 
+  dbp: http://dbpedia.org/property/ 
+  dbr: http://dbpedia.org/resource/ 
+  dcterms: http://purl.org/dc/terms/ 
+  dctypes: http://purl.org/dc/dcmitype/ 
+  deo: http://purl.org/spar/deo/ 
+  dio: https://w3id.org/dio# 
+  doap: http://usefulinc.com/ns/doap# 
+  doco: http://purl.org/spar/doco/ 
+  fabio: http://purl.org/spar/fabio/ 
+  foaf: http://xmlns.com/foaf/0.1/ 
+  frapo: http://purl.org/cerif/frapo/
+  ldp: http://www.w3.org/ns/ldp# 
+  mem: http://mementoweb.org/ns# 
+  oa: http://www.w3.org/ns/oa# 
+  opmw: http://www.opmw.org/ontology/ 
+  ore: http://www.openarchives.org/ore/terms/
+  owl: http://www.w3.org/2002/07/owl# 
+  pav: http://purl.org/pav/
+  pimspace: http://www.w3.org/ns/pim/space# 
+  prov: http://www.w3.org/ns/prov# 
+  qb: http://purl.org/linked-data/cube# 
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+  rdfs: http://www.w3.org/2000/01/rdf-schema# 
+  rel: https://www.w3.org/ns/iana/link-relations/relation#
+  ro: http://purl.org/wf4ever/ro#
+  roterms: http://purl.org/wf4ever/roterms#
+  rsa: http://www.w3.org/ns/auth/rsa# 
+  schema: http://schema.org/
+  schema: http://schema.org/ 
+  sioc: http://rdfs.org/sioc/ns# 
+  sio: http://semanticscience.org/resource/ 
+  skos: http://www.w3.org/2004/02/skos/core# 
+  solid: http://www.w3.org/ns/solid/terms# 
+  void: http://rdfs.org/ns/void# 
+  wf4ever: http://purl.org/wf4ever/wf4ever#
+  wfdesc: http://purl.org/wf4ever/wfdesc#
+  wfprov: http://purl.org/wf4ever/wfprov#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos# 
+  xsd: http://www.w3.org/2001/XMLSchema# 
+      ">
+<head>
+  <title>The Archive and Package (arcp) URI scheme</title>
+  <meta charset="utf-8" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+    <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+    <script src="https://dokie.li/scripts/dokieli.js"></script>
+
+<!--
+    <link href="css/basic.css" media="all" rel="stylesheet" />
+    <link href="css/acm.css" media="all" rel="stylesheet alternate" />
+    <link href="css/do.css" rel="stylesheet" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="all" />
+-->
+    
+    <link href="https://doi.org/10.1109/eScience.2018.00018" rel="cite-as" />    
+    <link href="https://s11.no/2018/arcp.html" rel="canonical" type="text/html" />
+    <link href="https://zenodo.org/record/1312582" rel="alternate" type="text/html" />
+    <link href="https://zenodo.org/record/1312582/files/arcp.pdf" rel="alternate" type="application/pdf" />
+    <link
+    href="https://www.research.manchester.ac.uk/portal/files/76956641/arcp.html" rel="alternate" type="application/pdf" />
+    <link
+    href="https://www.research.manchester.ac.uk/portal/files/83366888/arcp_camera_ready.pdf" rel="alternate" type="application/pdf" />
+    <link href="http://rdf.greggkellogg.net/distiller?command=serialize&amp;format=rdfa&amp;output_format=turtle&amp;url=http:%2F%2Fs11.no%2F2018%2Farcp.html&amp;raw" rel="alternate" type="text/turtle" />
+    
+    <link href="https://creativecommons.org/licenses/by/4.0/" rel="license" />
+
+<!--
+    <script src="scripts/simplerdf.js"></script>
+    <script src="scripts/medium-editor.min.js"></script>
+    <script src="scripts/medium-editor-tables.min.js"></script>
+    <script src="scripts/do.js"></script>
+-->
+
+    <style>
+
+    .structure-prefix {
+      color: rgb(112, 64, 90);
+    }
+    .structure-ns {
+      color: rgb(90, 112, 64);
+    }
+    .structure-path {
+      color: rgb(64, 90, 112);
+    }
+    code, kbd, tt, samp { 
+      font-family: "Inconsolata", "Consolas", "Courier New", monospace;
+      font-size: 80%;
+    }
+    figure kbd, figure tt, figure samp { 
+      font-size: 100%;
+    }
+    figcaption code { 
+      font-size: 80%;
+    }
+    #listing_1 pre { 
+      text-align: center;
+      font-size: 120%;
+    }
+    @media print {
+      a {
+        color:#22a;
+      }
+      body > footer { display: none; }
+    }
+    dl#aggregates > dd { 
+      border-left: 0.2em solid greenyellow;
+      border-top: 0.08em solid greenyellow;
+      padding-left: 0.5em;
+      margin-bottom: 1em;
+    }
+    dl#aggregates > dd > a { 
+      border-bottom:  0.08em solid greenyellow;
+      border-right:   0.08em solid greenyellow;
+      padding-right: 0.5em;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      display: inline-block;
+      text-decoration: none;
+    }
+    </style>
+
+
+
+</head>
+<body about="http://s11.no/2018/arcp.html" typeof="schema:ScholarlyArticle sioc:Post prov:Entity foaf:Document sioc:Post biblio:Paper bibo:Document as:Article">
+<main>
+  <dl id="document-identifier"><dt>Identifier</dt><dd> 
+    <a href="https://doi.org/10.5281/zenodo.1320264" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="owl:sameAs prov:alternateOf dcterms:identifier schema:identifier">https://doi.org/10.5281/zenodo.1320264</a></dd>
+  </dl>
+  <dl id="document-latest-version">
+    <dt>Latest Version</dt>
+    <dd><a href="https://doi.org/10.5281/zenodo.1312581"
+    vocab="https://www.w3.org/ns/iana/link-relations/relation#"
+    rel="latest-version
+    prov:specializationOf">https://doi.org/10.5281/zenodo.1312581</a></dd>
+    <dd><a rel="alterante prov:alternateOf"
+    href="https://arxiv.org/abs/1809.06935">arXiv:1809.06935</a></dd>
+  </dl>
+  <dl id="document-prev-version">
+    <dt>Previous Version</dt>
+    <dd><a href="https://doi.org/10.5281/zenodo.1312582" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="predecessor-version prov:wasRevisionOf pav:previousVersion">https://doi.org/10.5281/zenodo.1312582</a></dd>
+  </dl>
+  <dl id="document-created">
+    <dt>Created</dt>
+    <dd><time content="2018-07-15T22:32:00.000Z" datatype="xsd:dateTime" datetime="2018-07-15T22:32:00.000Z" property="schema:dateCreated pav:authoredOn pav:createdOn dcterms:created dcterms:dateSubmitted">2018-07-15</time></dd>
+  </dl>
+  
+  <dl id="document-modified">
+    <dt>Modified</dt>
+    <dd><time content="2020-07-23T14:05:01+00:00Z" datatype="xsd:dateTime" datetime="2020-07-23T14:05:01+00:00Z" property="schema:dateModified pav:lastUpdateOn dcterms:modified">2020-07-23</time></dd>
+  </dl>
+  
+  
+  <dl id="document-license">
+    <dt>License</dt>
+    <dd><a href="https://creativecommons.org/licenses/by/4.0/" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="license schema:license dcterms:license cc:license" title="Creative Commons Attribution">CC BY 4.0</a></dd>
+  </dl>
+  <dl id="document-status">
+    <dt>Document Status</dt>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/peer-reviewed"
+      typeof="pso:PublicationStatus">Peer-reviewed</span></dd>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/published"
+      typeof="pso:PublicationStatus">Published</span></dd>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/green-open-access"
+      typeof="pso:PublicationStatus">Green Open Access</span></dd>
+    </dl>
+    
+    
+    <dl id="document-in-reply-to">
+      <dt>Submitted to</dt>
+      <dd><a rel="as:inReplyTo" href="http://www.researchobject.org/ro2018/#call">Workshop on Research Objects (RO2018)</a></dd>
+      <dd><a href="https://linkedresearch.org/calls" rel="as:inReplyTo">Call for Linked Research</a></dd>
+      <dt>Published in</dt>
+      <dd><a
+      href="http://www.researchobject.org/ro2018/ro2018-proceedings/">Proceedings of Workshop on Research Objects (RO2018)</a></dd>
+      <dd><a
+      href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8588285">2018 IEEE 14th International Conference on e-Science (e-Science)</a>
+      </dd>
+    </dl>
+  <dl id="document-cite-as">
+    <dt>Cite as</dt>
+    <dd><a href="https://doi.org/10.1109/eScience.2018.00018"
+    vocab="https://www.w3.org/ns/iana/link-relations/relation#"
+    rel="cite-as">https://doi.org/10.1109/eScience.2018.00018</a></dd>
+    <dd><a rel="alterante prov:alternateOf"
+    href="arcp_camera_ready.pdf">(author-version PDF)</a></dd>
+    <dd><a rel="alterante prov:alternateOf"
+    href="https://www.research.manchester.ac.uk/portal/en/publications/the-archive-and-package-arcp-uri-scheme(eb6dee14-e754-46c0-b82c-3ab54715d24c).html">(Institutional
+    archive)</a></dd>
+  </dl>
+
+    
+    <article id="article">
+    
+    <h1 property="schema:name dcterms:title schema:headline">The Archive and Package (arcp) URI scheme</h1>
+    <dl>
+      <dt>Authors</dt>
+      <dd vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="author schema:author pav:authoredBy pav:createdBy prov:wasAttributedTo dcterms:creator">
+        <div about="https://orcid.org/0000-0001-9842-9718" typeof="schema:Person foaf:Person prov:Person">
+          <strong property="schema:name foaf:name">Stian Soiland-Reyes</strong> 
+          &lt;<a href="https://orcid.org/0000-0001-9842-9718">https://orcid.org/0000-0001-9842-9718</a>&gt;, 
+          <a rel="schema:affiliation" href="https://www.esciencelab.org.uk/">
+            <span class="author-org" property="schema:name">eScience Lab, School of Computer Science, The University of Manchester, UK</span></a>
+          </div>            
+    </dd>
+    <dd vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="author schema:author pav:authoredBy prov:wasAttributedTo dcterms:creator">
+      <div about="https://marcosc.com/author/admin/" typeof="schema:Person foaf:Person prov:Person">
+        <strong property="schema:name foaf:name">Marcos Cáceres</strong> 
+        &lt;<a rel="schema:url" href="https://marcosc.com/">https://marcosc.com/</a>&gt;, 
+        <a rel="schema:affiliation" href="https://www.mozilla.org/en-US/foundation/moco/">
+          <span property="schema:name">Mozilla Corporation</span>
+        </a>
+      </div>
+    </dd>
+    <dt>Abstract</dt>    
+    <dd property="schema:description dcterms:description bibo:abstract">The arcp URI scheme is introduced for location-independent identifiers to consume or reference hypermedia and linked data resources bundled inside a file archive, as well as to resolve archived resources within programmatic frameworks for Research Objects. <br />
+    <strong>Research Object</strong>: <a rel="schema:mainEntityOfPage foaf:primaryTopic" href="http://s11.no/2018/arcp.html#ro">http://s11.no/2018/arcp.html#ro</a>
+
+    </dd>
+  </dl>
+
+  <section id="background">
+  <h2>Background</h2>
+
+  <p>Archive formats like <a href="https://tools.ietf.org/html/draft-kunze-bagit-16">BagIt</a> [1] have been recognized as important for preservation and transferring of datasets and other digital resources [2]. More specific examples include <a href="http://co.mbine.org/documents/archive">COMBINE</a> archives [3] for systems biology, <a href="https://cdf.gsfc.nasa.gov">CDF</a> [4] for astronomy data, as well as the more general <a href="https://support.hdfgroup.org/HDF5/doc/H5.format.html">HDF5</a> [5] which is also used for meteorological data. For the purpose of this article an <em>archive</em> is a collection of data files with related metadata, typically packaged as a compressed file like <em>.zip</em> or <em>.tar.gz</em>.</p>
+
+  <p>One challenge with regards to embedding <a href="https://www.w3.org/standards/semanticweb/data">Linked Data</a> in such archives is how to reliably generate and resolve internal URLs, for instance <code>&lt;dataset13.zip&gt;</code> may contain an <a href="https://www.w3.org/TR/turtle/">RDF Turtle</a> file <code>&lt;metadata/description.ttl&gt;</code> to describe the CSV file <code>&lt;data/survey.csv&gt;</code> — but in order to correctly reference that file it will either have to use a relative path <code>&lt;../data/survey.csv&gt;</code> or some pre-existing Web URL like <code>&lt;http://example.com/dataset13/survey.csv&gt;</code>.</p>
+
+  <p>The <em>Research Object Bundle</em> [6] format <a href="https://w3id.org/bundle/2014-11-05/#absolute-uris">suggested</a> re-using the app URI scheme for minting absolute URIs from relative paths of resources within a ZIP file. The <a href="http://www.w3.org/TR/2015/NOTE-app-uri-20150723/">app URL scheme</a> [7] was originally intended for packaged web applications, where each application would get their own namespace like <code>&lt;app://c6179148-3cde-4435-8e66-304453f89d59/&gt;</code> with paths resolved from the corresponding application package ZIP file. However the app URL scheme did not progress further on the W3C Recommendation track, and this approach was abandoned in favour of the combination of <a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a> [8] and <a href="https://www.w3.org/TR/service-workers-1/">Service Workers</a> [9]. Together these technologies reuse the http/https origin URL of a downloaded application manifest together with relative links, while also allowing a web application to work offline.</p>
+</section>
+<section id="arcp">
+
+  <h2>The Archive and Package (arcp) URI scheme</h2>
+
+  <p>Inspired by the app URL scheme we defined the <a rel="schema:about" href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html">Archive and Package (arcp) URI scheme</a> [10], an IETF Internet-Draft which specifies how to mint URIs to reference resources within any archive or package, independent of archive format or location.</p>
+
+  <p>The primary use case for <em>arcp</em> is for consuming applications, which may receive an archive through various ways, like file upload from a web browser or by reference to a dataset in a repository like <a href="https://zenodo.org/">Zenodo</a> or <a href="https://figshare.com/">FigShare</a>. In order to parse Linked Data resources (say to expose them for <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL</a> queries), they will need to generate a <em>base URL</em> for the root of the archive.</p>
+
+  <p>It should be clear that using local file URIs [11] for extracted archives like <code>&lt;file:///tmp/tmp.cUK6ERfdBe/&gt;</code> do not serve well for this purpose, as they are not universally unique, are difficult to create consistently, and may introduce security risks of attacks like <code>&lt;../../etc/passwd&gt;</code>. Similarly it may be inappropriate to mint new web based URIs like <code>&lt;http://repo.example.com/cUK6ERfdBe/&gt;</code> as web presence should not be a requirement to process a linked data archive, in particular as processing may occur on a laptop or a cloud node with no public IP address.</p>
+
+  <section id="id-structure">
+  <h3>Identifier structure</h3>
+
+  <p>By definition an arcp identifier is an URI [12] with <a href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html#rfc.section.3">three parts</a>:</p>
+
+  <figure id="listing_1">
+    <pre><code>&lt;arcp://<kbd class="structure-prefix">prefix</kbd>,<kbd class="structure-ns">namespace</kbd><kbd class="structure-path">/path</kbd>&gt;</code></pre>
+<figcaption>Structure of arcp identifier</figcaption>
+</figure>
+
+  <p>The arcp Internet-Draft specifies three initial <em class="structure-prefix">prefix</em> values: <code>uuid</code>, <code>ni</code> and <code>name</code>, each which defines how to identify a particular archive by a corresponding <em class="structure-ns">namespace</em>. These namespaces are not intended to be directly resolvable without prior knowledge of the corresponding archive.</p>
+
+  <p>The <em class="structure-path">path</em> is the folder and file path within the archive, represented as an <a href="https://tools.ietf.org/html/rfc3986#section-3.3">URI path</a> [12] e.g. <code>/file.txt</code> or <code>/my%20project/about/intro.doc</code> — using <a href="https://tools.ietf.org/html/rfc3986#section-2.1">percent-escaping</a> where needed. The root folder <code>/</code> represent the archive itself.</p>
+</section>
+<section id="uuid-based">
+
+  <h3>UUID-based identifiers</h3>
+
+  <p>The simplest case for temporary <a href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html#rfc.appendix.A.1">sandbox</a> processing of an archive with arcp is to generate a new random <a href="https://tools.ietf.org/html/rfc4122#section-4.4">UUIDv4</a> [13], e.g. <code>c6179148-3cde-4435-8e66-304453f89d59</code>, then the corresponding base URI is <code>&lt;arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/&gt;</code>, finding resources like <code>&lt;arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/metadata/description.ttl&gt;</code> referencing <code>&lt;arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/data/survey.csv&gt;</code>. The application is then able to do translation from arcp to local paths using URI parsing libraries to select the <em>URI path</em>, and augment that to the locally extracted path. Such arcp identifiers are temporary in nature, but the application can maintain a mapping from the UUID to the archive and perform extraction on demand, or the archive can <a href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html#rfc.appendix.A.4">self-declare</a> its UUID, such as the <a href="https://github.com/common-workflow-language/cwlprov/blob/master/bagit.md#external-identifier"><code>External-Identifier</code></a> header in BagIt [1].</p>
+
+  <p>arcp also suggests how a UUID can be reliably created from the URL <a href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html#rfc.appendix.A.2">location</a> of an archive, thus if the application is processing <code>&lt;http://example.com/download/archive13.zip&gt;</code> it can use the <a href="https://tools.ietf.org/html/rfc4122#section-4.3">name-based UUIDv5</a> [13] by SHA1 hashing the URL string to mint <code>&lt;arcp://uuid,d9f0b57d-0504-5e9a-abae-f5f2b8c49b94/&gt;</code> — with this method anyone processing that archive URL will always get the same arcp base URI, however the application will still need to maintain a mapping to find the original archive URL. Location-based arcp identifiers may also not be ideal for preservation purposes, as the archive might change upstream or move to a different location.</p>
+</section>
+<section id="hash-based">
+  <h3>Hash-based identifiers</h3>
+
+  <p>For this arcp defines a <a href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html#rfc.appendix.A.3">hash-based method</a>, where the bytes of the archive file is used to find a checksum-based identifier based on the <a href="https://tools.ietf.org/html/rfc6920">Naming Things With Hashes</a> (ni) URI scheme [14]. For instance if the sha-256 checksum of a <em>zip</em> file is in hexadecimal <code>7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069</code> then the ni uri would be <code>&lt;ni:///sha-256;f4OxZX_x_FO5LcGBSKHWXfwtSx-j1ncoSt3SABJtkGk&gt;</code> by using the <em>base64</em> encoding of the checksum. The corresponding arcp base URIs for resources within the archive is then <code>&lt;arcp://ni,sha-256;f4OxZX_x_FO5LcGBSKHWXfwtSx-j1ncoSt3SABJtkGk/&gt;</code>. With this method, anyone processing the byte-wise equal archive (using the same hash method) will get the same identifier.</p>
+
+  <p>Another advantage is that hash-identified archives can be retrieved from a <a href="https://tools.ietf.org/html/rfc6920#section-4">NI resolver</a> [14] using well known paths [15], e.g. <code>&lt;http://repo.example.com/.well-known/ni/sha-256/f4OxZX_x_FO5LcGBSKHWXfwtSx-j1ncoSt3SABJtkGk&gt;</code>. Clients can verify the checksum of the downloaded archive, so any resolver endpoint can be used.</p>
+</section>
+<section id="named-based">
+
+  <h3>Name-based identifiers</h3>
+
+  <p>Finally, paying homage to its origin in app URLs, arcp can use a system-based app <em>name</em>. This is a suggested mechanism for resolving resources of an application package installed in a runtime system like <a href="https://developer.android.com/studio/build/application-id">Android applicationId</a> or Java package name, where an application identifier can be directly reused in arcp for URIs within that runtime system, e.g. the URI <code>&lt;arcp://name,com.example.myapp/styles/resource1.css&gt;</code> references the resource <code>styles/resource1.css</code> within the installed package <code>com.example.myapp</code>.</p>
+  <p>As application package content do not necessarily correspond to archive file listings, it is open-ended how name-based arcp identifiers can be resolved, and indeed package content may vary per operating system, device type or application version, and so name-based arcp identifiers should be treated as system-local identifiers similar to <code>file:///</code> URIs [11], but within a particular programming framework.</p>
+</section>
+
+</section> <!-- end of arcp section -->
+
+<section id="related-work">
+
+  <h2>Related work</h2>
+  <section id="archive-fragments">
+    <h3>Archive fragments</h3>
+
+    <p>Without using arcp one could in theory still reference files within archives at an URL with fragments, e.g. <code>&lt;http://example.com/download/archive13.zip#data/survey.csv&gt;</code>, but most archive media formats like <a href="https://www.iana.org/assignments/media-types/application/zip">application/zip</a> unfortunately do not define a fragment syntax, or are not even listed in the <a href="https://www.iana.org/assignments/media-types/">IANA media types registry</a> (e.g. <em>tar.gz</em>), therefore this would be an ad-hoc approach which still needs to clarify details such as character escaping, if the root is <code>#</code> or <code>#/</code>, etc.</p>
+
+  </section>
+  <section id="file-urls">
+    <h3>File URIs</h3>
+    <p>
+      As mentioned above, file URLs [11] representing local directories are fragile and not globally unique. It is perhaps less known that file URLs <a href="https://tools.ietf.org/html/rfc8089#section-2">can have a host name</a>, e.g. 
+      <code>&lt;file://host.example.com/home/alice/extracted/archive13/&gt;</code> (an empty hostname is equal to <code>localhost</code>). This approach, with a fully qualified domain name (FQDN), may be used if both the hostname and extracted path are stable, but this faces the same challenges as minting http/https URLs, which in many cases would be preferable as they are globally resolvable. An ad-hoc possibility here would be to use a UUID [13] as "host" to represent an archive's file system, technically permittable as the <code>file:</code> URL scheme [11] do not define any particular connection protocols, and an UUID is unlikely to be a valid hostname in DNS.
+    </p>
+    </section>
+    <section id="jar-urls">
+      <h3>JAR URLs</h3>
+      <p>If we restrict usage to ZIP files at a known URL, then they are in theory also valid <em>JAR files</em>, and we can address files with the <a href="https://docs.oracle.com/javase/9/docs/api/java/net/JarURLConnection.html">jar URL</a> scheme, e.g. <code>&lt;jar:http://example.com/download/archive13.zip!/data/survey.csv&gt;</code> — but here relative URIs may not parse well, as it is easy to accidentally climb out of <code>!/</code>, and technically the JAR URI scheme is missing the familiar <code>://</code> to indicate for URI parser libraries that it is indeed an <a href="https://tools.ietf.org/html/rfc3986#section-1.2.3">hierarchical URI scheme</a> [12].</p>
+    </section>
+    <section id="ore">
+      <h3>Object Reuse and Exchange proxies</h3>
+      <p><a href="http://www.openarchives.org/ore/">OAI-ORE</a> [16] defines <a href="http://www.openarchives.org/ore/1.0/datamodel#Proxy">proxies</a> to represent a resource as aggregated in a collection; these can be used to model archives [17], but ORE proxies face two problems: How to represent the file path, and how to identify the proxy so it can be used as a reference in Linked Data. The resource must be identified using two triples of <code>ore:proxyFor</code> (the archived file) and <code>ore:proxyIn</code> (the archive); but this reduces to the same problem of identifying the file. The ni URI [14] for the file bytes can in theory be used to identify the file, but the other missing information is the file path and name, which usually convey meaning for users.</p>
+      <p>The Research Object ontology’s <a href="https://w3id.org/ro/2016-01-28/ro#FolderEntry"><code>FolderEntry</code></a> specializes the <code>ore:Proxy</code> to add a property <code>ro:entryName</code> to indicate the filename, but to find the full archive file path one would have to traverse the parent folder’s <code>ro:entryName</code>. In either case there is no defined method to predictably generate unique identifiers for the ORE proxies themselves, although the <a href="https://w3id.org/bundle/2014-11-05/">RO Bundle</a> specification recommend they should be randomly generated <code>urn:uuid</code> URIs, which would not be compatible with relative URIs within an archive.</p>
+      <figure id="listing_2" class="listing">
+        <pre>
+<code>@prefix ore: &lt;<a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>&gt; .</code>
+<code>@prefix ro: &lt;<a href="http://purl.org/wf4ever/ro#">http://purl.org/wf4ever/ro#</a>&gt; .</code>
+<code></code>
+<code>&lt;urn:uuid:c5971b62-72e6-4a8f-8b0b-944065e0d5c8&gt; a ore:Proxy, ro:FolderEntry ;</code>
+<code>    ore:proxyFor &lt;ni:///sha-256;f4OxZX_x_FO5LcGBSKHWXfwtSx-j1ncoSt3SABJtkGk&gt; ;</code>
+<code>    ore:proxyIn &lt;urn:uuid:efb14c0a-3cd5-4d78-a168-f246d18bde39&gt; ;</code>
+<code>    ro:entryName "survey.csv" .</code>
+<code>&lt;urn:uuid:efb14c0a-3cd5-4d78-a168-f246d18bde39&gt; a ore:Aggregation, ro:Folder .</code>
+<code>&lt;urn:uuid:24b34ecb-e46b-46ec-be36-a18dbba90247&gt; a ore:Proxy, ro:FolderEntry ;</code>
+<code>    ore:proxyFor &lt;urn:uuid:efb14c0a-3cd5-4d78-a168-f246d18bde39&gt; ;</code>
+<code>    ore:proxyIn &lt;http://example.com/download/archive13.zip&gt; ;</code>
+<code>    ro:entryName "data/" .</code></pre>
+        <figcaption>RDF Turtle example of how a file with the <em>sha256</em> checksum <code>7f83b1…6d9069</code> could be described using RO folders and ORE proxies to belong to <code>&lt;data/survey.csv&gt;</code> within the archive downloaded from <code>&lt;http://example.com/download/archive13.zip&gt;</code></figcaption>
+      </figure>
+
+    </section>
+<section id="f2r">
+  <h3>Publishing file systems as Linked Data</h3>
+
+  <p>F2R [18], using the <a href="http://oscaf.sourceforge.net/nfo.html">Nepomuk File Ontology</a> [19], defines a way to publish file systems as Linked Data, where a server endpoint exposes the files and their file system metadata. F2R URIs are localized to an endpoint and an free-text named file system, e.g. <code>mysource</code>. Files are identified with UUIDs, e.g. <code>http://f2r.example.com/mysource/09b205be-bj80–4ab9–8ddc-802be95220bb</code>. Using the same example as for OAI-ORE we can combine F2R with <a href="http://purl.org/pav/">PAV</a> [20]:</p>
+
+  <figure id="listing_3" class="listing">
+<pre><code>@base &lt;http://f2r.example.com/mysource/&gt; .</code>
+<code>@prefix nfo: &lt;http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#&gt; .  </code>
+<code></code>
+<code>&lt;c5971b62-72e6-4a8f-8b0b-944065e0d5c8&gt; a nfo:ArchiveItem;</code>
+<code>    nfo:fileName "survey.csv" ;</code>
+<code>    nfo:belongsToContainer &lt;24b34ecb-e46b-46ec-be36-a18dbba90247&gt; .</code>
+<code>&lt;24b34ecb-e46b-46ec-be36-a18dbba90247&gt; a nfo:ArchiveItem;</code>
+<code>    nfo:fileName "data" ;</code>
+<code>    nfo:belongsToContainer &lt;5d0a538a-ef00-48b6-bcb2-f561effe9fe5&gt; .</code>
+<code>&lt;5d0a538a-ef00-48b6-bcb2-f561effe9fe5&gt; a nfo:ArchiveItem:</code>
+<code>    nfo:fileName "archive13.zip" ;</code>
+<code>    nfo:belongsToContainer &lt;http://f2r.example.com/mysource/&gt; ;</code>
+<code>    pav:retrievedFrom &lt;http://example.com/download/archive13.zip&gt; .</code>
+<code>&lt;http://f2r.example.com/mysource/&gt; a nfo:Filesystem .</code>
+</pre>
+
+<figcaption>RDF Turtle description of a file <code>&lt;data/survey.csv&gt;</code> within an archive <code>&lt;http://example.com/download/archive13.zip&gt;</code>, using Nepomuk File Ontology [19], PAV [20] and F2R [18] identifiers.</figcaption>
+</figure>
+
+  <p>The F2R approach have similar disadvantages as JAR and OAI-ORE; in that the URIs do not support relative path resolution, that a web endpoint must be set up, and that the file paths are hidden through multiple steps. In addition one would need to assigned a corresponding file system name like <code>mysource</code>, although one may use a single file system as exemplified above and use <code>belongsToContainer</code> to treat archive files as if they are folders.</p>
+</section>
+<section id="epub">
+  <h3>EPUB canonical fragment identifiers</h3>
+
+  <p><a href="https://www.w3.org/Submission/epub31/">EPUB</a> is a standard for hypermedia eBooks. <a href="https://w3id.org/bundle/2014-11-05/#ucf">RO Bundle</a> [6] is based on the <a href="https://www.w3.org/Submission/2017/SUBM-epub-ocf-20170125/">EPUB Open Container Format</a> [21]. <a href="http://www.idpf.org/epub/linking/cfi/">EPUB Canonical Fragment Identifiers</a> [22] can link to nested XML elements of an publication, for instance <code>&lt;http://example.com/book.epub#epubcfi(/6/4[chap01ref]!/4[body01]/10[para05])&gt;</code> use a variation of <a href="https://www.w3.org/TR/xpath20/">XPath</a> with <a href="https://www.idpf.org/epub/linking/cfi/epub-cfi.html#sec-path-child-ref">doubled indexes</a>; here <code>/6</code> refer to the 3rd element of the root manifest’s <a href="http://www.idpf.org/epub/31/spec/epub-packages.html#sec-package-elem">package</a> element (which in ePub is always <a href="http://www.idpf.org/epub/31/spec/epub-packages.html#elemdef-opf-spine">spine</a>), then <code>/4[chap01ref]</code> is the second element <a href="http://www.idpf.org/epub/31/spec/epub-packages.html#elemdef-spine-itemref">itemref</a> with XML id <code>chap01ref</code>, which reference is followed <code>!</code>, and then within the <a href="https://www.idpf.org/epub/linking/cfi/epub-cfi.html#sec-path-examples">nested XML file</a> <code>/4[body01]</code> is the 2nd element with id <code>body01</code>, traversed to find the 5th element called <code>para05</code>.</p>
+
+  <p>While this is quite a powerful construct that can refer to any XML element of nested documents, even sentences or words, it seems rather contrived and inflexible. The major limitation is that ePub archive resources are not identified by file paths, but must be addressable through rather rigid XML structures (order can’t change), thus this approach is not appropriate for archives without an XML manifest. Even if using a RDF/XML manifest it would be inadvisable to assume a fixed order of it’s XML elements. It seems however an appropriate reference scheme for ePub documents, as they have a fixed reading order.</p>
+</section>
+
+</section>
+
+<section id="implementations">
+  <h2>arcp implementations</h2>
+
+  <p>The <a href="http://arcp.readthedocs.io/"><strong>arcp Python library</strong></a> [23] was developed to help creating, parsing and validating arcp URIs. In particular it can <a href="http://arcp.readthedocs.io/en/0.2.0/generate.html">generate arcp</a> based on random UUIDs, URL locations, names and hashing archive bytes. The <a href="http://arcp.readthedocs.io/en/0.2.0/parse.html">arcp parser</a> recognize the arcp prefix and can extract UUIDs or hashes, and can generate the corresponding <code>.well_known/ni</code> URI for retrieving the archive. This library is meant to complement Python’s urlparse library, and so it is deemed out of scope for it to do any kind of resolution of arcp based on archive or network access.</p>
+
+  <p>The <a href="https://github.com/apache/incubator-taverna-language/tree/master/taverna-robundle"><strong>Research Object Bundle library</strong></a>, part of <a href="https://taverna.incubator.apache.org/download/language/">Apache Taverna (incubating)</a>, is adding <a href="https://issues.apache.org/jira/browse/TAVERNA-1037">support for arcp URIs</a> in its opening and creation of RO bundles, initially using the arcp UUID format as a replacement for app URIs, with planned support also for hash-based identifiers and opening RO Bundles from a .well-known/ni endpoint.</p>
+
+  <p>The <a href="http://w3id.org/cwl/prov"><strong>CWLProv</strong></a> [24] approach for capturing provenance of executing Common Workflow Language is using arcp in its BagIt <a href="https://github.com/common-workflow-language/cwlprov/blob/master/bagit.md#external-identifier">External-Identifier</a> to identify its research object.</p>
+
+  <figure id="listing_4">
+      <pre><code>External-Identifier: arcp://uuid,5d0a538a-ef00-48b6-bcb2-f561effe9fe5/</code></pre>
+      <figcaption>arcp as <code>External-Identifier</code> in <code>bag-info.txt</code> as declared in <a href="https://github.com/common-workflow-language/cwlprov/blob/master/bagit.md#external-identifier">CWLProv</a>.</figcaption>
+  </figure>
+
+  <p>For CWLProv the use of arcp is crucial, as it assigns global identifiers for use across resources in the RO bag, including the <a href="https://github.com/common-workflow-language/cwlprov/blob/master/examples/revsort-run-1/metadata/manifest.json#L4">RO manifest itself</a> and in W3C PROV file formats like <a href="https://github.com/common-workflow-language/cwlprov/blob/master/examples/revsort-run-1/metadata/provenance/primary.cwlprov.provn">PROV-N</a> and <a href="https://github.com/common-workflow-language/cwlprov/blob/master/examples/revsort-run-1/metadata/provenance/primary.cwlprov.nt">N-Triples</a>, neither which support relative URIs.</p>
+
+  <p>In this approach the UUID of the RO identifier <code>&lt;arcp://uuid,82dee268-2411-45a2-83a9-3be14f84b754/&gt;</code> also appears in the identifier <code>&lt;urn:uuid:82dee268-2411-45a2-83a9-3be14f84b754&gt;</code> of the top-level workflow run (the <a href="https://github.com/common-workflow-language/cwlprov/blob/master/examples/revsort-run-1/metadata/provenance/primary.cwlprov.provn#L21">PROV Activity</a>), and so this is showcasing how an RO that is the primary representation of a non-information resource (e.g. a process) can be identified using a directly derived arcp URI. While this could in theory also been achieved with an arcp UUIDv5 derived from the URL “location” of the activity <code>&lt;urn:uuid:82dee268-2411-45a2-83a9-3be14f84b754&gt;</code> that could be a confusing hack, as such URNs are not resolvable URLs. UUIDv5 hashing can however be appropriate for non-information resource that have a resolvable http/https <a href="https://w3id.org/cwl/view">permalink</a>.</p>
+</section>
+<section id="conclusion">
+  <h2>Conclusion</h2>
+
+  <p>This article propose the arcp identifier scheme for resources within archives using formats like ZIP, tar and BagIt, and suggest arcp is useful for identifying standalone Research Objects and for processing Linked Data embedded in archives. The Internet-Draft <a href="https://tools.ietf.org/html/draft-soilandreyes-arcp-03">draft-soilandreyes-arcp</a> [10] is <a href="https://datatracker.ietf.org/doc/draft-soilandreyes-arcp/">under consideration</a> by IETF’s Applications and Real-Time Area to progress towards Informational RFC status.</p>
+</section>
+
+<section id="references">
+
+  <h2>References</h2>
+  
+  <p>[1] J.A. Kunze, J. Littman, L. Madden, J. Scancella, C. Adams (2018): 
+    <strong>The BagIt File Packaging Format (V1.0)</strong>, 
+    <em>Internet Engineering Task Force</em>. <a property="schema:citation" href="https://datatracker.ietf.org/doc/html/draft-kunze-bagit-16">https://datatracker.ietf.org/doc/html/draft-kunze-bagit-16</a></p>
+  
+  <p>[2] Research Data Repository Interoperability WG (2018):
+    <strong>Research Data Repository Interoperability WG Final Recommendations</strong>, 
+    <em>Research Data Alliance</em>. <a property="schema:citation" href="https://doi.org/10.15497/RDA00025">https://doi.org/10.15497/RDA00025</a></p>
+  
+  <p>[3] F.T. Bergmann, R. Adams, S. Moodie, J. Cooper, M. Glont, M. Golebiewski, et al.,(2014):
+     <strong>COMBINE archive and OMEX format: one file to share all information to reproduce a modeling project</strong>,
+       <em>BMC Bioinformatics</em>. <strong>15</strong> 369. <a property="schema:citation" href="https://doi.org/10.1186/s12859-014-0369-z">https://doi.org/10.1186/s12859-014-0369-z</a></p>
+  
+  <p>[4] Space Physics Data Facility (2016):
+    <strong>CDF Internal Format Description, 3.6</strong>, 
+    <em>NASA / Goddard Space Flight Center</em>. <a property="schema:citation" href="https://spdf.gsfc.nasa.gov/pub/software/cdf/doc/cdf364/cdf36ifd.pdf">https://spdf.gsfc.nasa.gov/pub/software/cdf/doc/cdf364/cdf36ifd.pdf</a></p>
+  
+  <p>[5] The HDF Group (2016):
+    <strong>HDF5 File Format Specification Version 3.0</strong>,
+    <em>The HDF Group</em>. <a property="schema:citation" href="https://support.hdfgroup.org/HDF5/doc/H5.format.html">https://support.hdfgroup.org/HDF5/doc/H5.format.html</a></p>
+  
+  <p>[6] S. Soiland-Reyes, M. Gamble, R. Haines (2014):
+    <strong>Research Object Bundle 1.0</strong>, 
+    researchobject.org Recommendation, <em>Zenodo</em>. 
+    <a href="https://w3id.org/bundle/2014-11-05/" 
+    about="https://doi.org/10.5281/zenodo.12586" rel="prov:alternateOf dcterms:hasFormat">https://w3id.org/bundle/2014-11-05/</a>
+    <a property="schema:citation" href="https://doi.org/10.5281/zenodo.12586">https://doi.org/10.5281/zenodo.12586</a></p>
+  
+  <p>[7] System Applications Working Group (2015):
+    <strong>The app: URL Scheme</strong>, 
+    W3C Working Group Note 23 July 2015,
+    <em>World Wide Web Consortium</em>. 
+    <a property="schema:citation" href="https://www.w3.org/TR/2015/NOTE-app-uri-20150723/">https://www.w3.org/TR/2015/NOTE-app-uri-20150723/</a></p>
+  
+  <p>[8] M. Cáceres, K.R. Christiansen, M. Lamouri, A. Kostiainen, R. Dolin, M. Giuca (eds.) (2018):
+    <strong>Web App Manifest</strong>,
+      W3C Working Draft 04 July 2018,
+      <em>World Wide Web Consortium</em>. 
+      <a property="schema:citation" href="https://www.w3.org/TR/2018/WD-appmanifest-20180704/">https://www.w3.org/TR/2018/WD-appmanifest-20180704/</a></p>
+  
+  <p>[9] A. Russel, J. Song, J. Archibald, M. Kruisselbrink (2017):
+    <strong>Service Workers 1</strong>, 
+    W3C Working Draft 2 November 2017,
+    <em>World Wide Web Consortium</em>. 
+    <a property="schema:citation" href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">https://www.w3.org/TR/2017/WD-service-workers-1-20171102/</a></p>
+  
+  <p>[10] S. Soiland-Reyes, M. Cáceres (2018):
+    <strong>The Archive and Package (arcp) URI scheme</strong>
+      Internet-Draft <a href="https://datatracker.ietf.org/doc/draft-soilandreyes-arcp/">draft-soilandreyes-arcp</a>,
+      <em>Internet Engineering Task Force</em>.
+    <a property="schema:citation" href="https://tools.ietf.org/html/draft-soilandreyes-arcp-03">https://tools.ietf.org/html/draft-soilandreyes-arcp-03</a></p>
+  
+  <p>[11] M. Kerwin (2017):
+    <strong>The "file" URI scheme</strong>, 
+    RFC Editor.
+    <a href="https://tools.ietf.org/html/rfc8089">RFC 8089</a>
+    <a property="schema:citation" href="https://doi.org/10.17487/RFC8089">https://doi.org/10.17487/RFC8089</a></p>
+  
+  <p>[12] T. Berners-Lee, R. Fielding, L. Masinter (2005):
+    <strong>Uniform Resource Identifier (URI): Generic Syntax</strong>, 
+    RFC Editor.
+    <a href="https://tools.ietf.org/html/rfc3986">RFC 3986</a>
+    <a property="schema:citation" href="https://doi.org/10.17487/rfc3986">https://doi.org/10.17487/rfc3986</a></p>
+  
+  <p>[13] P. Leach, M. Mealling, R. Salz (2005): 
+    <strong>A universally unique identifier (UUID) URN namespace</strong>,
+    RFC Editor.
+    <a href="https://tools.ietf.org/html/rfc4122">RFC 4122</a>
+    <a property="schema:citation" href="https://doi.org/10.17487/rfc4122">https://doi.org/10.17487/rfc4122</a></p>
+  
+  <p>[14] S. Farrell, D. Kutscher, C. Dannewitz, B. Ohlman, A. Keranen, P. Hallam-Baker (2013):
+    <strong>Naming Things with Hashes</strong>, 
+    RFC Editor.
+    <a href="https://tools.ietf.org/html/rfc6920">RFC 6920</a>    
+    <a property="schema:citation" href="https://doi.org/10.17487/rfc6920">https://doi.org/10.17487/rfc6920</a></p>
+  
+  <p>[15] M. Nottingham, E. Hammer-Lahav (2010):
+    <strong>Defining Well-Known Uniform Resource Identifiers (URIs)</strong>, 
+    RFC Editor. 
+    <a href="https://tools.ietf.org/html/RFC5785">RFC 5785</a>    
+    <a property="schema:citation" href="https://doi.org/10.17487/rfc5785">https://doi.org/10.17487/rfc5785</a></p>
+  
+  <p>[16] C. Lynch, S. Parastatidis, N. Jacobs, H. Van de Sompel, C. Lagoze (2007):
+    <strong>The OAI-ORE effort: Progress, challenges, synergies</strong>, 
+    <em>Proceedings of the 2007 Conference on Digital Libraries - JCDL ’07</em>.
+  <a property="schema:citation"  href="https://doi.org/10.1145/1255175.1255190">https://doi.org/10.1145/1255175.1255190</a></p>
+  
+  <p>[17] N. Ferro, G. Silvello (2013):
+    <strong>Modeling Archives by Means of OAI-ORE</strong>,
+    <em>IRCDL 2012: Digital Libraries and Archives</em>, pp 216–227.
+    <a property="schema:citation"  href="https://doi.org/10.1007/978-3-642-35834-0_22">https://doi.org/doi.org/10.1007/978-3-642-35834-0_22</a></p>
+  
+  <p>[18] Shaopeng He, Jianhui Li, Zhihong Shen (2013): 
+    <strong>F2R: Publishing file systems as Linked Data</strong>,
+    <em>10th International Conference on Fuzzy Systems and Knowledge Discovery (FSKD)</em>, pp. 767–772. 
+    <a property="schema:citation"  href="https://doi.org/10.1109/FSKD.2013.6816297">https://doi.org/10.1109/FSKD.2013.6816297</a></p>
+  
+  <p>[19] 
+    Ansgar Bernardi, Gunnar Aastrand Grimnes, Tudor Groza, Simon Scerri (2011), 
+    <strong>The NEPOMUK Semantic Desktop</strong>
+    <em>Context and Semantics for Knowledge Management</em> pp 255-273.
+    <a property="schema:citation" href="https://doi.org/10.1007/978-3-642-19510-5_13">https://doi.org/10.1007/978-3-642-19510-5_13</a>
+  </p>
+  
+  <p>[20] P. Ciccarese, S. Soiland-Reyes, K. Belhajjame, A.J. Gray, C. Goble, T. Clark (2013):
+    <strong>PAV ontology: provenance, authoring and versioning</strong>
+    <em>Journal of Biomedical Semantics</em> <strong>4</strong>:37. 
+    <a property="schema:citation"   href="https://doi.org/10.1186/2041-1480-4-37">https://doi.org/10.1186/2041-1480-4-37</a></p>
+  
+  <p>[21] James Pritchett, Markus Gylling (eds): 
+    <strong>EPUB Open Container Format (OCF) 3.1</strong>. 
+    W3C Member Submission 25 jan 2017. 
+    <em>World Wide Web Consortium</em>. 
+    <a property="schema:citation"  href="https://www.w3.org/Submission/2017/SUBM-epub-ocf-20170125/">https://www.w3.org/Submission/2017/SUBM-epub-ocf-20170125/</a></p>
+  
+  <p>[22] 
+    <strong>EPUB Canonical Fragment Identifiers 1.1</strong>,
+    Recommended Specification 5 January 2017. 
+    <em>International Digital Publishing Forum</em>. 
+    <a property="schema:citation"  href="http://www.idpf.org/epub/linking/cfi/epub-cfi-20170105.html">http://www.idpf.org/epub/linking/cfi/epub-cfi-20170105.html</a></p>
+  
+  <p>[23] S. Soiland-Reyes (2018):
+    <strong>stain/arcp-py: arcp 0.2.0</strong>, 
+    <em>Zenodo</em> software 
+    <a href="http://arcp.readthedocs.io/en/0.2.0/">http://arcp.readthedocs.io/en/0.2.0/</a>
+    <a property="schema:citation"  href="https://doi.org/10.5281/zenodo.1165986">https://doi.org/10.5281/zenodo.1165986</a></p>
+  
+  <p>[24] F.Z. Khan, S. Soiland-Reyes, M.R. Crusoe, A. Lonie, R. Sinnott (2018):
+    <strong>CWLProv - Interoperable Retrospective Provenance capture and its challenges</strong>,
+      <em>Zenodo</em> preprint. 
+      <a property="schema:citation" href="https://doi.org/10.5281/zenodo.1215611">https://doi.org/10.5281/zenodo.1215611</a></p>
+</section>
+<section id="acknowledgements">
+    <h2>Acknowledgements</h2>
+    <p>
+        This work has been done as part of the 
+        <a rel="schema:funder frapo:isOutputOf" href="https://www.bioexcel.eu/">BioExcel CoE</a>, 
+          <span about="https://www.bioexcel.eu/" typeof="frapo:Project schema:Organization">
+          a project funded by the European Union contract 
+          <!-- TODO: More Frapo here might get complex in RDFa -->
+          <a typeof="frapo:Grant" rel="frapo:isFundedBy"
+          href="http://cordis.europa.eu/projects/675728">H2020-EINFRA-2015-1-<span property="frapo:hasGrantNumber" lang="" xml:lang="">675728</span></a>
+        </span>
+    </p>
+</section>
+</article>
+
+<section id="ro">
+  <h2>Research Object</h2>
+  <dl>
+  <dt><a href="http://s11.no/2018/arcp.html#ro">http://s11.no/2018/arcp.html#ro</a></dt>
+  <dd about="http://s11.no/2018/arcp.html#ro" typeof="ore:Aggregation ro:ResearchObject schema:Collection schema:Dataset">
+    <dl>
+        <dt>is described by</dt>
+        <dd><a href="http://s11.no/2018/arcp.html" rel="ore:isDescribedBy schema:subjectOf">http://s11.no/2018/arcp.html</a></dd>
+        <dd><a href="http://rdf.greggkellogg.net/distiller?command=serialize&amp;format=rdfa&amp;output_format=turtle&amp;url=http:%2F%2Fs11.no%2F2018%2Farcp.html&amp;raw" rel="ore:isDescribedBy schema:subjectOf">http://rdf.greggkellogg.net/distiller…turtle</a></dd>        
+        <dd>            
+          <a href="https://doi.org/10.5281/zenodo.1320264" rel="ore:isDescribedBy schema:subjectOf">https://doi.org/10.5281/zenodo.1320264</a>
+        </dd>
+    </dl>      
+    <dl>
+        <dt>authored by</dt>
+        <dd>
+          <a href="https://orcid.org/0000-0001-9842-9718" rel="pav:authoredBy prov:wasAttributedTo schema:author">https://orcid.org/0000-0001-9842-9718</a>
+        </dd>
+        <dd>
+          <a href="https://marcosc.com/author/admin/" rel="pav:authoredBy prov:wasAttributedTo schema:author">https://marcosc.com/author/admin/</a>
+        </dd>
+    </dl>
+    <dl>
+        <dt>constructed by</dt>
+        <dd>
+          <a href="https://orcid.org/0000-0001-9842-9718" rel="pav:createdBy schema:creator">https://orcid.org/0000-0001-9842-9718</a>
+        </dd>
+    </dl>
+    <dl>
+      <dt>constructed on</dt>
+      <dd><time content="2018-07-24T14:12:00.000Z" datatype="xsd:dateTime" datetime="2018-07-24T14:12:00.000Z" property="schema:dateCreated pav:authoredOn pav:createdOn dcterms:created">2018-07-24</time></dd>
+    </dl>
+    <dl id="aggregates">
+        <dt>aggregates</dt>
+        <dd>
+          <a rel="ore:aggregates schema:hasPart dcterms:hasPart"
+           href="http://s11.no/2018/arcp.html#article" 
+           typeof="ro:Resource ore:AggregatedResource">http://s11.no/2018/arcp.html#article</a>
+           <dl>
+             <dt>aggregated as</dt>
+             <dd rev="ore:proxyFor" typeof="ore:Proxy" resource="urn:uuid:80d78355-caac-4097-bc90-d162739100d9">
+                 <code property="schema:identifier" lang="" xml:lang="">urn:uuid:80d78355-caac-4097-bc90-d162739100d9</code>
+                 <span property="schema:name">(this article)</span>
+                 <span rel="ore:proxyIn" resource="http://s11.no/2018/arcp.html#ro"></span>
+             </dd>
+            </dl>
+        </dd>
+        <dd>
+          <a rel="ore:aggregates schema:hasPart dcterms:hasPart foaf:primaryTopic"
+          href="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html" 
+          typeof="ro:Resource ore:AggregatedResource">https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html</a>
+          <dl about="https://tools.ietf.org/id/draft-soilandreyes-arcp-03.html">
+              <dt>aggregated as</dt>
+              <dd rev="ore:proxyFor" typeof="ore:Proxy" resource="urn:uuid:b5be4b1c-6401-4519-90e0-cd93cb99de51">
+                  <code property="schema:identifier">urn:uuid:b5be4b1c-6401-4519-90e0-cd93cb99de51</code>
+                  <span property="schema:name">Internet-Draft specifying the arcp URI scheme</span>
+                  <span rel="ore:proxyIn" resource="http://s11.no/2018/arcp.html#ro"></span>
+              </dd>
+              <dt>alternative of</dt>
+              <dd>
+                <a rel="prov:alternateOf" href="https://tools.ietf.org/html/draft-soilandreyes-arcp-03">https://tools.ietf.org/html/draft-soilandreyes-arcp-03</a>
+              </dd>
+              
+              <dt>latest version</dt>
+              <dd>
+                <a rel="rel:latest-version prov:specializationOf dct:isVersionOf" rev="pav:hasVersion" href="https://tools.ietf.org/html/draft-soilandreyes-arcp">https://tools.ietf.org/html/draft-soilandreyes-arcp</a>
+                <dl>                  
+                  <dt>derived from</dt>
+                  <dd>
+                    <a rel="prov:wasDerivedFrom pav:derivedFrom dcterms:replaces prov:wasRevisionOf" href="https://tools.ietf.org/html/draft-soilandreyes-app">https://tools.ietf.org/html/draft-soilandreyes-app</a>
+                    <dl>                  
+                        <dt>derived from</dt>
+                        <dd>
+                          <a rel="prov:wasDerivedFrom pav:derivedFrom dcterms:source" href="http://www.w3.org/TR/app-uri/">http://www.w3.org/TR/app-uri/</a>
+                        </dd>
+                      </dl>      
+                  </dd>
+                </dl>
+              </dd>              
+          </dl>
+        </dd>
+        <dd>
+            <a rel="ore:aggregates schema:hasPart dcterms:hasPart"
+               href="https://pypi.org/project/arcp/0.2.0/" 
+               typeof="ro:Resource ore:AggregatedResource schema:SoftwareApplication">https://pypi.org/project/arcp/0.2.0/</a>
+            <dl about="https://pypi.org/project/arcp/0.2.0/">
+              <dt>aggregated as</dt>
+              <dd rev="ore:proxyFor" typeof="ore:Proxy" resource="urn:uuid:d0e36eb9-c22f-4c51-a21f-f7e2e999ca2d">
+                  <code property="schema:identifier" lang="" xml:lang="">urn:uuid:d0e36eb9-c22f-4c51-a21f-f7e2e999ca2d</code>
+                  <span property="schema:name">Python library for parsing/making arcp URIs</span>
+                  <span rel="ore:proxyIn" resource="http://s11.no/2018/arcp.html#ro"></span>
+              </dd>
+
+              <dt>cite as</dt>
+              <dd>
+                  <a href="https://doi.org/10.5281/zenodo.1165986" 
+                     rel="rel:cite-as prov:alternateOf schema:identifier dcterms:identifier">https://doi.org/10.5281/zenodo.1165986</a>    
+              </dd>
+              <dt>source code</dt>
+              <dd>
+                  <a typeof="schema:SoftwareSourceCode" rel="prov:alternateOf schema:codeRepository" href="https://github.com/stain/arcp-py/releases/tag/0.2.0">https://github.com/stain/arcp-py/releases/tag/0.2.0</a>
+              </dd>
+              <dt>documentation</dt>
+              <dd>
+                  <a
+                   href="http://arcp.readthedocs.io/en/0.2.0/" typeof="schema:CreativeWork" 
+                   rel="schema:subjectOf schema:mainEntityOfPage schema:softwareHelp">http://arcp.readthedocs.io/en/0.2.0/</a>
+              </dd>
+            </dl>
+          </dd>
+
+          <dd>
+              <a rel="ore:aggregates schema:hasPart dcterms:hasPart"
+                 href="https://w3id.org/cwl/prov/0.3.0" 
+                 typeof="ro:Resource ore:AggregatedResource">https://w3id.org/cwl/prov/0.3.0</a>
+              <dl about="https://w3id.org/cwl/prov/0.3.0">
+                <dt>aggregated as</dt>
+                <dd rev="ore:proxyFor" typeof="ore:Proxy" resource="urn:uuid:6cb8218a-7582-4750-977f-34298197b058">
+                    <code property="schema:identifier" lang="" xml:lang="">urn:uuid:6cb8218a-7582-4750-977f-34298197b058</code>
+                    <span property="schema:name">CWLProv profile and examples</span>
+                </dd>
+                <dt>cite as</dt>
+                <dd>
+                    <a href="https://doi.org/10.5281/zenodo.1215611" 
+                       rel="rel:cite-as">https://doi.org/10.5281/zenodo.1215611</a>
+                </dd>
+              </dl>
+            </dd>
+    </dl>  
+    <dl id="annotations">
+        <dt>annotations</dt>
+        <dd rel="ore:aggregates schema:hasPart dcterms:hasPart" about="urn:uuid:023c53ce-5f0a-47a9-8658-4e75b3177e13" typeof="oa:Annotation">
+          <code property="schema:identifier" lang="" xml:lang="">urn:uuid:023c53ce-5f0a-47a9-8658-4e75b3177e13</code>
+          <dl>
+            <dt>annotates</dt>
+            <dd>              
+              <a href="http://arcp.readthedocs.io/en/0.2.0/" typeof="ro:Resource ore:AggregatedResource" property="oa:hasBody">http://arcp.readthedocs.io/en/0.2.0/</a> 
+              <span rel="oa:motivatedBy" resource="oa:describing">describes</span>
+            </dd>
+            <dd>
+                <a href="https://pypi.org/project/arcp/0.2.0/" typeof="ro:Resource ore:AggregatedResource" property="oa:hasTarget">https://pypi.org/project/arcp/0.2.0/</a> 
+            </dd>
+          </dl>
+        </dd>
+    </dl>       
+
+  </dd>
+</dl>
+
+</section>
+
+</main>
+
+<footer>
+<p id="license">
+  <a rel="license cc:license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" /></a><br />
+  <span property="dcterms:rights">© 2018 <span property="cc:attributionName">Stian Soiland-Reyes, Marcos Cáceres</span></span>.
+    Licensed under a <a rel="schema:license dcterms:license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+</body>
+</html>

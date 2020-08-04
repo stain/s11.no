@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html  
+  xmlns="http://www.w3.org/1999/xhtml"   
+  lang="en"
+  xml:lang="en"  
+  prefix="
+  acl: http://www.w3.org/ns/auth/acl# 
+  as: https://www.w3.org/ns/activitystreams# 
+  as: http://www.w3.org/ns/activitystreams#
+  biblio: http://purl.org/net/biblio#
+  bibo: http://purl.org/ontology/bibo/ 
+  cc: https://creativecommons.org/ns# 
+  cert: http://www.w3.org/ns/auth/cert# 
+  cito: http://purl.org/spar/cito/ 
+  dbp: http://dbpedia.org/property/ 
+  dbr: http://dbpedia.org/resource/ 
+  dcterms: http://purl.org/dc/terms/ 
+  dctypes: http://purl.org/dc/dcmitype/ 
+  deo: http://purl.org/spar/deo/ 
+  dio: https://w3id.org/dio# 
+  doap: http://usefulinc.com/ns/doap# 
+  doco: http://purl.org/spar/doco/ 
+  fabio: http://purl.org/spar/fabio/ 
+  foaf: http://xmlns.com/foaf/0.1/ 
+  frapo: http://purl.org/cerif/frapo/
+  ldp: http://www.w3.org/ns/ldp# 
+  mem: http://mementoweb.org/ns# 
+  oa: http://www.w3.org/ns/oa# 
+  opmw: http://www.opmw.org/ontology/ 
+  ore: http://www.openarchives.org/ore/terms/
+  owl: http://www.w3.org/2002/07/owl# 
+  pav: http://purl.org/pav/
+  pimspace: http://www.w3.org/ns/pim/space# 
+  prov: http://www.w3.org/ns/prov# 
+  qb: http://purl.org/linked-data/cube# 
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+  rdfs: http://www.w3.org/2000/01/rdf-schema# 
+  rel: https://www.w3.org/ns/iana/link-relations/relation#
+  ro: http://purl.org/wf4ever/ro#
+  roterms: http://purl.org/wf4ever/roterms#
+  rsa: http://www.w3.org/ns/auth/rsa# 
+  schema: http://schema.org/
+  schema: http://schema.org/ 
+  sioc: http://rdfs.org/sioc/ns# 
+  sio: http://semanticscience.org/resource/ 
+  skos: http://www.w3.org/2004/02/skos/core# 
+  solid: http://www.w3.org/ns/solid/terms# 
+  void: http://rdfs.org/ns/void# 
+  wf4ever: http://purl.org/wf4ever/wf4ever#
+  wfdesc: http://purl.org/wf4ever/wfdesc#
+  wfprov: http://purl.org/wf4ever/wfprov#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos# 
+  xsd: http://www.w3.org/2001/XMLSchema# 
+      ">
+<head>
+    <meta charset="utf-8" />
+  <title>Web Annotation as a First Class Object</title>  
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+    <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+    <script src="https://dokie.li/scripts/dokieli.js"></script>
+    
+    <link href="https://doi.org/10.1109/mic.2013.123" rel="cite-as" />    
+    <link href="http://timetravel.mementoweb.org/timegate/http://s11.no/2013/web-annotation/" rel="timegate" />
+    <link href="http://s11.no/2013/web-annotation/" rel="canonical" type="text/html" />
+    <link href="http://rdf.greggkellogg.net/distiller?command=serialize&amp;format=rdfa&amp;output_format=turtle&amp;url=http:%2F%2Fs11.no%2F2013%2Fweb-annotation&amp;raw" rel="alternate" type="text/turtle" />
+    <link href="https://arxiv.org/abs/1310.6555" rel="related"  />
+    <link href="https://arxiv.org/pdf/1310.6555v2" rel="alternate" type="application/pdf" />
+    <link href="https://arxiv.org/html/1310.6555v3" rel="alternate" type="text/html" />
+    <link
+    href="https://www.research.manchester.ac.uk/portal/en/publications/web-annotation-as-a-firstclass-object(16ac93c0-c2af-4e73-b5f8-7d0582556dd7).html" rel="related"/>
+
+    <link
+    href="https://www.research.manchester.ac.uk/portal/files/25864715/PRE-PEER-REVIEW.PDF" rel="alternate" type="application/pdf" />
+    
+    
+    <!--
+      <link href="https://creativecommons.org/licenses/by/4.0/" rel="license" />
+    <script src="scripts/simplerdf.js"></script>
+    <script src="scripts/medium-editor.min.js"></script>
+    <script src="scripts/medium-editor-tables.min.js"></script>
+    <script src="scripts/do.js"></script>
+-->
+
+    <style>
+    figcaption { 
+      font-size: smaller;
+    }
+    code, kbd, tt, samp { 
+      font-family: "Inconsolata", "Consolas", "Courier New", monospace;
+      font-size: 80%;
+    }
+    </style>
+
+</head>
+<body>
+<main about="http://s11.no/2013/web-annotation/" typeof="schema:ScholarlyArticle sioc:Post prov:Entity foaf:Document sioc:Post biblio:Paper bibo:Document as:Article">
+  <dl id="document-identifier"><dt>Identifier</dt><dd> 
+    <a href="http://s11.no/2013/web-annotation/" vocab="https://www.w3.org/ns/iana/link-relations/relation#" property="dcterms:identifier schema:identifier" lang="">http://s11.no/2013/web-annotation/</a></dd>
+  </dl>
+  <dl id="document-memento">
+    <dt>Memento</dt>
+    <dd><a rel="pav:hasVersion prov:specializationOf memento" href="http://web.archive.org/web/20190320013723/http://s11.no/2013/web-annotation/">http://web.archive.org/web/20190320013723/http://s11.no/2013/web-annotation/</a></dd>
+  </dl>
+  <dl id="document-alternate">
+    <dt>Alternates</dt>
+    
+    <dd><a href="https://arxiv.org/abs/1310.6555" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate" property="dcterms:identifier schema:identifier" lang="">arXiv:1310.6555</a></dd>
+    <dd><a href="https://arxiv.org/html/1310.6555v3" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate" lang="">arXiv:1310.6555v3</a></dd>
+    <dd><a href="https://arxiv.org/pdf/1310.6555v2" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:wasDerivedFrom pav:previousVersion predecessor-version" lang="">arXiv:1310.6555v2</a></dd>
+    <dd><a href="https://www.research.manchester.ac.uk/portal/files/25864715/PRE-PEER-REVIEW.PDF" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate">PRE-PEER-REVIEW.PDF</a></dd>
+    <dd><a href="https://www.research.manchester.ac.uk/portal/en/publications/web-annotation-as-a-firstclass-object(16ac93c0-c2af-4e73-b5f8-7d0582556dd7).html" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate"><span property="dcterms:identifier schema:identifier"  lang="">16ac93c0-c2af-4e73-b5f8-7d0582556dd7</span></a></dd>
+    <dd><a href="https://www.escholar.manchester.ac.uk/uk-ac-man-scw:211608" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate"><span property="dcterms:identifier schema:identifier">uk-ac-man-scw:211608</span></a></dd>
+    <dd><a href="https://www.researchgate.net/publication/258083677_Web_Annotation_as_a_First_Class_Object" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate">ResearchGate</a></dd>
+    <dd><a href="http://rdf.greggkellogg.net/distiller?command=serialize&amp;format=rdfa&amp;output_format=turtle&amp;url=http:%2F%2Fs11.no%2F2013%2Fweb-annotation" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="prov:alternateOf alternate">RDF Turtle</a></dd>
+  </dl>
+  <dl id="document-created">
+    <dt>Created</dt>
+    <dd><time content="2013-08-09T12:00:00.000Z" datatype="xsd:dateTime" datetime="2013-08-09T12:00:00.000Z" property="schema:dateCreated pav:authoredOn pav:createdOn dcterms:created dcterms:dateSubmitted">2013-08-09</time></dd>
+  </dl>
+  
+  <dl id="document-modified">
+    <dt>Modified</dt>
+    <dd><time content="2019-03-22T09:37:00.000Z" datatype="xsd:dateTime" datetime="2019-03-22T09:37:00.000Z" property="schema:dateModified pav:lastUpdateOn dcterms:modified">2019-03-22</time></dd>
+  </dl>
+  
+  
+  <dl id="document-license">
+    <dt>License</dt>
+    <dd><a href="https://creativecommons.org/licenses/by/4.0/" vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="license schema:license dcterms:license cc:license" title="Creative Commons Attribution">CC BY 4.0</a></dd>
+  </dl>
+  <dl id="document-status">
+    <dt>This Document</dt>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+     rel="pso:holdsStatusInTime"><span rel="pso:withStatus"
+     resource="http://purl.org/spar/pso/accepted-for-publication"
+    typeof="pso:PublicationStatus">Author-Accepted</span>
+     <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/green-open-access"
+      typeof="pso:PublicationStatus">Green Open Access</span></dd>
+    </dl>
+    
+    <dl id="document-in-reply-to">
+      <dt prefix="pso: http://purl.org/spar/pso/"
+      about="https://doi.org/10.1109/mic.2013.123"
+      rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+      resource="http://purl.org/spar/pso/published"
+        typeof="pso:PublicationStatus">Published</span></dt>
+  
+      <dd><a rel="schema:publisher" href="http://www.computer.org/internet">IEEE Internet Computing</a> 
+         <strong>17</strong> (<a href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=6682916">6</a>)  
+         <a rel="alternate" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6682930">pp 71–75</a></dd>  
+      	  
+      <dd prefix="pso: http://purl.org/spar/pso/"
+      rel="pso:holdsStatusInTime">12 December 2013 <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/subscription-access"
+      typeof="pso:PublicationStatus">(subscription access)</span></dd>         
+    </dl>
+    <dl id="document-cite-as">
+        <dt>Cite as</dt>
+        <dd><a href="https://doi.org/10.1109/mic.2013.123"
+        vocab="https://www.w3.org/ns/iana/link-relations/relation#"
+        rel="cite-as">https://doi.org/10.1109/mic.2013.123</a></dd>
+ 
+      </dl>
+    
+    
+    <article id="article">
+    
+    <h1 property="schema:name dcterms:title schema:headline">Web Annotation as a First-Class Object </h1>
+    <dl>
+      <dt>Authors</dt>
+      <dd vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="author schema:author pav:authoredBy prov:wasAttributedTo dcterms:creator">
+        <div about="https://orcid.org/0000-0002-5156-2703" typeof="schema:Person foaf:Person prov:Person">
+          <strong property="schema:name foaf:name" lang="it">Paolo Ciccarese</strong> 
+          &lt;<a href="https://orcid.org/0000-0002-5156-2703"><span lang="" property="dcterms:identifier schema:identifier">https://orcid.org/0000-0002-5156-2703</span></a>&gt;, 
+          <a rel="schema:affiliation" href="https://hms.harvard.edu/" typeof="schema:Organization">
+            <span property="schema:name">Harvard Medical School</span>
+          </a>
+        </div>
+      </dd>
+  
+      <dd vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="author schema:author pav:authoredBy pav:createdBy schema:creator prov:wasAttributedTo dcterms:creator">
+        <div about="https://orcid.org/0000-0001-9842-9718" typeof="schema:Person foaf:Person prov:Person">
+          <strong property="schema:name foaf:name">Stian Soiland-Reyes</strong> 
+          &lt;<a href="https://orcid.org/0000-0001-9842-9718"><span lang="" property="dcterms:identifier schema:identifier">https://orcid.org/0000-0001-9842-9718</span></a>&gt;, 
+          <a rel="schema:affiliation" href="https://www.manchester.ac.uk/" typeof="schema:Organization">
+            <span class="author-org" property="schema:name">University of Manchester</span></a>
+          </div>            
+    </dd>
+    <dd vocab="https://www.w3.org/ns/iana/link-relations/relation#" rel="author schema:author pav:authoredBy prov:wasAttributedTo dcterms:creator">
+      <div about="https://orcid.org/0000-0003-4060-7360" typeof="schema:Person foaf:Person prov:Person">
+        <strong property="schema:name foaf:name">Tim Clark</strong> 
+        &lt;<a href="https://orcid.org/0000-0003-4060-7360"><span lang="" property="dcterms:identifier schema:identifier">https://orcid.org/0000-0003-4060-7360</span></a>&gt;, 
+        <a rel="schema:affiliation" href="https://hms.harvard.edu/" typeof="schema:Organization">
+          <span property="schema:name">Harvard Medical School</span>
+        </a>
+    </div>
+    </dd>
+
+    <dt>Abstract</dt>    
+    <dd property="schema:description dcterms:description bibo:abstract">
+      <p>
+          Scholars have made handwritten notes and comments in books and manuscripts for
+          centuries. Today’s blogs and news sites typically invite users to
+          express their opinions on the published content; URLs allow web
+          resources to be shared with accompanying annotations and comments
+          using third-party services like Twitter or Facebook. These
+          contributions have until recently been constrained within specific
+          services, making them second-class citizens of the Web.
+        </p>
+        <p>
+            Web Annotations are now emerging as fully independent Linked Data in
+            their own right, no longer restricted to plain textual comments in
+            application silos. Annotations can now range from bookmarks and
+            comments, to fine-grained annotations of a selection of, for example,
+            a section of a frame within a video stream. Technologies and
+            standards now exist to create, publish, syndicate, mash-up and
+            consume, finely targeted, semantically rich digital annotations on
+            practically any content, as first-class Web citizens. This
+            development is being driven by the need for collaboration and
+            annotation reuse amongst domain researchers, computer scientists,
+            scientific publishers, and scholarly content databases.
+        </p>
+    </dd>
+  </dl>
+  <figure>
+    <img src="ancient.jpeg"  width="684" height="426" />
+    <figcaption>Ancient annotation detail from the 500-year-old <a href="http://www.homermultitext.org/manuscripts/venetusA/">Venetus A manuscript</a> [<a href="http://web.archive.org/web/20190312222002/http://www.homermultitext.org/manuscripts/venetusA/">archived 2019</a>], showing Iliad 3.1-9. Imaged and translated, with additional digital annotations, by the <a href="http://www.homermultitext.org/">Homer Multitext Project</a> [<a href="https://web.archive.org/web/20131103053218/http://www.homermultitext.org/">archived 2013</a>]. You can interact with Homer Multitext annotations on your iPad using the app <a href="https://itunes.apple.com/us/app/imaging-the-iliad/id422984341?mt=8">Imaging the Iliad</a>.</figcaption>
+  </figure>
+  
+  <section id="freeing-annotation-from-content-silos">
+<h3>Freeing Annotation from Content Silos</h3>
+<p>Content annotation in one form or another forms a basic part of Web 2.0. <a href="https://www.flickr.com/"><strong>Flickr</strong></a> [<a href="http://web.archive.org/web/20140201013713/http://www.flickr.com/">archived 2014</a>] lets users tag and categorize others’ photos, and to highlight portions of a picture; <a href="https://twitter.com/"><strong>Twitter</strong></a> [<a href="http://web.archive.org/web/20140101000208/https://twitter.com/">archived 2014</a>] supports tagging in the form of hashtags, recently also introduced by <a href="https://www.facebook.com/"><strong>Facebook</strong></a> [<a href="http://web.archive.org/web/20140115002425/https://www.facebook.com/">archived 2014</a>]; <a href="https://soundcloud.com/"><strong>SoundCloud</strong></a> [<a href="http://web.archive.org/web/20140106000554/http://soundcloud.com/">archived 2014</a>] lets music fans indicate their appreciation at particular points in a song; <a href="https://www.youtube.com/"><strong>Youtube</strong></a> [<a href="http://web.archive.org/web/20140101000122/https://www.youtube.com/">archived 2014</a>] allows a video to be posted as a response to another video.</p>
+<p>Social networking sites like <strong>Facebook</strong> and <a href="https://plus.google.com/108141746798163896498/posts/6j3eJB77m4E"><strong>Google+</strong></a>  [<a href="http://web.archive.org/web/20190313005214/https://plus.google.com/108141746798163896498/posts/6j3eJB77m4E">archived 2019</a>] let users share a URL to, say, a news story, enabling a stream of comments within their group of friends, which indicate their “likes”. Social media sites like <a href="https://www.reddit.com/"><strong>Reddit</strong></a> [<a href="http://web.archive.org/web/20140101003131/http://www.reddit.com/">archived 2014</a>] rank lists of news items solely with up/down voting from their users, and the stream of associated discussions provide anything from amusing side-jokes to detailed reviews by experts in the field.</p>
+<p>What do these applications have in common? First, that the annotations they support have a shared subject, typically identified by an <em>URI</em> (e.g. to a webpage, image or video); and second, these annotations live within a single system, either at the provider of the resource or at a third-party bookmarking site. Although many of these systems provide <em>REST APIs</em> for third-party access, the APIs differ among sites. Up until very recently there has been no common annotation model independent of what is being annotated. It is therefore difficult for, say, a <em>SoundCloud</em> page to embed comments made within <em>Facebook</em> or <em>Reddit</em>.  </p>
+<p>While this may not pose a significant problem for ordinary users of social media, it is a big problem in digital scholarship. This problem is driving a significant change in the way annotations can now be implemented and reused across systems and domains.</p>
+</section>
+<section id="semantics-not-just-comments">
+  <h3>Semantics, Not Just Comments</h3>
+  <p>In July 2013, Google <a href="https://ai.googleblog.com/2013/07/11-billion-clues-in-800-million.html">announced</a> the availability of 800 million documents annotated by 11 billion <a href="https://developers.google.com/freebase/">Freebase</a> [<a href="http://web.archive.org/web/20140701015544/https://developers.google.com/freebase/">archived 2014</a>] concepts [<a href="#ref1">1</a>]. This is <em>semantic tagging</em>.  Text in a document is mapped to a stable URI that identifies a concept, entity, person, place, process, etc, with which it is associated. Information derived from elsewhere – say <a href="https://en.wikipedia.org/">Wikipedia</a> – is refocused around a common URI in an organized way.  In Google’s case, this was done using resources in Freebase. But we can also use entries in <a href="https://wiki.dbpedia.org/">DBPedia</a> [<a href="http://web.archive.org/web/20131113050942/http://dbpedia.org/About">archived 2013</a>], or other resources, to identify terms. Additionally we can use <em>ontologies</em>: formal vocabularies with classes, properties, and relationships.  </p>
+<p>Using formal vocabularies specified in the <a href="http://www.w3.org/TR/owl2-primer/">Web Ontology Language (OWL)</a>, we can create richer, more computationally tractable structures than we can do using dictionaries or encyclopedias. Formal ontologies relate elements in a domain one to another, using formal predicates, and allow us to perform automated reasoning over these knowledge structures.  They may also supplement, identify, or tag dictionary and encyclopedia entries themselves.</p>
+<p>If I know that the URI of an ontology term for the gene <code>BACE1</code> [<a href="http://purl.uniprot.org/uniprot/P56817">http://purl.uniprot.org/uniprot/P56817</a>, <a href="http://web.archive.org/web/20140108083936/https://www.uniprot.org/uniprot/P56817">archived 2014</a>] corresponds to some text, the ontology can also tell me what protein is the product of that gene (<em>beta site APP cleaving enzyme</em>), its amino acid sequence, species variants, - and that it is implicated in the pathology of Alzheimer Disease. I can find experimental data annotated with this term, or one of its related terms, as well. And I can assemble <em>mash-ups</em> of related useful information from multiple databases, and overlay them on the text referring to my original gene name. With scientific publication volumes growing exponentially, this kind of machine assistance to reading, comprehension and knowledge accumulation is increasingly necessary.</p>
+<p>Semantic tagging or semantic linking is now a reality, and extends beyond Google and Freebase. Perhaps its most important application is in scholarship. For example, the <a href="http://europepmc.org/">Europe PubMed Central</a> [<a href="https://web.archive.org/web/20140105212611/http://europepmc.org/"> archive 2014</a>] database of scientific articles now semantically tags all its entries with protein, gene and chemical compound names found in the text. But dealing with these tags raises further important questions.</p>
+<p>How do we represent tags, and other annotations?  Are they injected in the text, or stored separately?  How do we share them across systems?  Supposing I annotate a locally-served PDF copy of some text, using comments, semantics tags, and associated video – and I wish to share that annotation with, say, the publisher of the original HTML version of the text. How do I do that? And how can we make this representation live as <a href="https://www.w3.org/standards/semanticweb/data">Linked Data</a> on the Web – as a first-class citizen? Can I filter and authorize access by author or group? These are a few of the capabilities just becoming available to Web developers using Linked Data Annotation tools and models.</p>
+</section>
+<section id="the-evolution-of-web-annotation">
+
+<h3 >The Evolution of Web Annotation</h3>
+<h4 id="origins-digital-hypermedia-to-annotea">Origins – Digital Hypermedia to Annotea</h4>
+<p>More than a decade ago, seminal lines of research in <strong>Distributed Link Services</strong> (DLS) [<a href="#ref2">2</a>] and <a href="https://web.archive.org/web/20130416000718/http://cohse.cs.manchester.ac.uk/">conceptual open hypermedia</a> (<strong>COHSE</strong>) [<a href="#ref3">3</a>] explored this area. Their main goal was to enhance collaboration via shared metadata-based Web annotations, bookmarks, and their combinations. Developers of DLS and COHSE drew upon extensive prior research experience in distributed hypermedia systems, predating the Web.</p>
+<p><a href="https://www.w3.org/2001/Annotea/"><strong>Annotea</strong></a> [<a href="#ref4">4</a>] was a relatively early W3C project to enable collaboration by sharing annotations and metadata, which were attached to a full or partial web page. This was done without modifying the document source, by injecting targeted elements from annotation stores. When a web page was accessed, annotations of that page could be loaded from and published to separate Annotea servers, one of which was hosted by W3C (now decommissioned). Annotea consisted of an <a href="http://www.w3.org/TR/rdf-schema/">RDF schema</a> with an accompanying <em>REST API</em>, for discovery and publication of annotations.</p>
+<p>The <a href="https://www.w3.org/2000/10/annotation-ns">Annotea data model</a> was lightweight. Annotations were stored separately from the documents they annotated, and consisted of three parts. An <code>Annotation</code> associated a Web resource with a <code>body</code> - another Web resource - for example, a comment or reply (typically XHTML embedded as an <em>XML Literal</em>). The <code>Annotation</code> had provenance properties like <code>author</code>, <code>created</code> and <code>modified</code>, specializing <a href="http://dublincore.org/documents/2012/06/14/dces/">Dublin Core Elements</a>. Finally a <code>context</code> indicated the specific selection within an annotated document, typically using an <a href="https://www.w3.org/TR/WD-xptr">XPointer</a>. The <code>Annotation</code> class could be <a href="https://www.w3.org/2000/10/annotationType#">subclassed</a>, e.g. <code>Question</code>, <code>Comment</code>, <code>Example</code>. Annotea faced however several drawbacks, perhaps most importantly, lack of a driving non-technical user community which required its features to accomplish their goals. But it laid out a basic path that subsequent systems followed and exploited.</p>
+<h4 id="the-open-annotation-model">The Open Annotation Model</h4>
+<p>Building on RDF and partially inspired by Annotea, in 2009 two parallel projects were begun independently: the <a href="http://www.openannotation.org/"><strong>Open Annotation Collaboration</strong></a> [<a href="http://web.archive.org/web/20131107001958/http://www.openannotation.org/">archived 2013</a>, see also <a href="https://arxiv.org/pdf/1304.6709.pdf">preprint</a> of <a href="https://doi.org/10.1145/2464464.2464474">10.1145/2464464.2464474</a>] (OAC) and the <a href="https://code.google.com/archive/p/annotation-ontology/"><strong>Annotation Ontology</strong></a> [<a href="http://web.archive.org/web/20131208163026/http://code.google.com/p/annotation-ontology/">archived 2013</a>, see also <a href="https://doi.org/10.1186/2041-1480-2-S2-S4">10.1186/2041-1480-2-S2-S4</a>] (AO). Both models adopted the fundamental structure of Annotea: an <em>Annotation</em> with a <em>target</em> (annotated resource) and a <em>body</em> (content), which is about the target. They emphasized different functionalities, according to requirements of their user communities – which were strongly coupled to these development projects and drove them.</p>
+<p>OAC was designed to support digital humanities, while AO was geared to biomedical use cases, with a core goal of annotating and semantically relating database entries, documents and biomedical concepts from ontologies. Both models were designed to be orthogonal to the domain of interest. OAC and AO took similar-enough approaches to allow merger into a single project, after discussions at a summer workshop convinced both teams that this was possible and desirable.</p>
+<p>The <strong>Open Annotation Model</strong> (OA) developed from these prior projects, under the umbrella of the <a href="http://www.w3.org/community/openannotation/">W3C Open Annotation Community Group</a> [<a href="http://web.archive.org/web/20140106122522/http://www.w3.org/community/openannotation/">archived 2014</a>]. The <a href="http://www.openannotation.org/spec/core/20130208/index.html">OA model</a> [<a href="http://web.archive.org/web/20141125022119/http://www.openannotation.org/spec/core/20130208/index.html">archived 2014</a>] incorporates features from its predecessors, but with further flexibility and richness, catering for a wider range of annotation needs. It includes use-case and technical contributions from over fifty organizations, and nearly one hundred individual and organization representatives. Open Annotations is currently the fifth largest W3C Community Group by number of participants.</p>
+<p>In OA, annotations can be related to the Linked Data cloud either by marking the body as a <em>semantic tag</em>; or by using a body that is a dereferencable RDF resource, or, in serializations that support it, an embedded <em>named graph</em> (typed as <em>trig:Graph</em>). The two last approaches have been adapted by projects like Wf4Ever <a href="http://www.researchobject.org/"><strong>Research Objects</strong></a> [<a href="http://web.archive.org/web/20141221065017/http://www.researchobject.org/">archived 2014</a>] to organize annotation graphs containing detailed relations between resources within the research object, and at the same time to distinguish between annotations coming from different sources. Used in this manner, the annotation model allows a high-level, vocabulary-neutral expression of relationships between resources, with the domain-specific details unrolled within the graph of the body.</p>
+
+<aside style="margin-left: 3em; margin-right: 3em; font-size: smaller">
+    <h5>Open Annotation model</h5>
+    <p>The <a href="http://www.openannotation.org/spec/core/20130208/index.html">Open Annotation Model</a> <strong>[<a href="#ref5">5</a>]</strong> is a very rich model, with a simple foundation.</p>
+    <p>OA specifies instances of an <code>Annotation,</code> with predicates <code>hasTarget,</code> the annotated resource; and <code>hasBody</code>, a resource concerning the target. Further properties indicate the <code>Annotation</code>’s provenance and motivation. The body and target may be of any type, however OA recommends lightweight typing using <a href="http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary/">DCMI Types</a> to indicate the abstract media type (e.g. <code>Image</code>, <code>Sound</code>, <code>Text</code>). These can be useful for rendering the annotation intuitively.</p>
+    <p>The body may be typed as a <code>Tag</code>. For Linked Data integration, OA provide the subclass <code>SemanticTag</code>, where the body would be specified as a URI to the tagging concept or entity. For ordinary text comments, OA use the <a href="https://www.w3.org/TR/Content-in-RDF10/">Content in RDF</a> specification.</p>
+    <p>It is possible to specify the Body or Target through indirection with a <code>SpecificResource</code>, which indicates the resource URI using <code>hasSource</code>. Further constraints may resolve a specific area, segment, etc., applied using a <code>Selector</code> (Text selection, SVG area, URI fragments) and <code>State</code> (HTTP headers, time) instances. Thus it is possible, for example, to annotate a circular selection of a JPEG image retrieved using content negotiation. The annotation can be <code>styledBy</code> a <code>Style</code>, e.g. CSS. This, combined with the selector, can be used to specify highlighting of selected text in a particular color, or to play a video in half speed at a certain time segment. Selectors, state and style can be extended for application-specific requirements.</p>
+  </aside>
+
+  <figure>
+
+    <img src="oa-video-annotation.jpeg"  width="696" height="494" />
+    <figcaption>
+      Not just text: An image from the Hubble Deep Field telescope annotated using OA. The <em>Target</em> is an image of a group of galaxies. The <em>Body</em> is a video about the image.
+    </figcaption>    
+  </figure>
+</section>
+
+<section id="linked-data-annotation-tools">
+
+  <h3>Linked Data Annotation Tools</h3>
+  <p>Several systems already use annotations to produce Linked Data.</p>
+  <p><a href="https://www.dbpedia-spotlight.org/"><strong>DBpedia Spotlight</strong></a> [<a href="http://web.archive.org/web/20150217052720/https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki">archived 2015</a>, see also <a href="https://www.dbpedia-spotlight.org/docs/spotlight.pdf">preprint</a> of <a href="https://doi.org/10.1145/2063518.2063519">10.1145/2063518.2063519</a>] is a tool for automatically annotating mentions of DBpedia resources in text, providing a solution for linking unstructured information sources to the Linked Open Data cloud through DBpedia.</p>
+
+  <p><strong>Domeo Annotation Toolkit</strong> [<a href="http://web.archive.org/web/20140210162743/http://www.annotationframework.org/">archived 2014</a>, see also <a href="https://doi.org/10.1186/2041-1480-3-S1-S1">10.1186/2041-1480-3-S1-S1</a>] allows users to trigger external text mining services/algorithms and to transform their results into annotations that may be further curated by human agents. Domeo also supports manual, semantically structured annotations using established vocabularies, and can create relational database entries as well as Linked Data.</p>
+  
+  <figure>
+
+    <img src="domeo.jpeg"  width="695" height="492" />
+    <figcaption>
+      Creating a <em>micropublication</em> digital summary annotation on a research article (<a href=" https://doi.org/10.1371/journal.pone.0009979">10.1371/journal.pone.0009979</a>) using Domeo.
+    </figcaption>
+    </figure>
+    
+  <p><strong>Utopia Documents</strong> [<a href="http://web.archive.org/web/20140102011746/http://getutopia.com/">archived 2014</a>, see also <a href="https://doi.org/10.1093/bioinformatics/btq383">10.1093/bioinformatics/btq383</a>] is a PDF reader that when opening a research article can overlay manipulatable visualizations of the data behind the paper, providing data analysis tools and links to external resources. This is made possible through a combination of automatic analysis and manual annotations on elements of the paper, like figures and tables. Numerous Linked Data sources are consulted in the process, including <a href="https://wiki.dbpedia.org/">DBPedia</a> [<a href="http://web.archive.org/web/20131113050942/http://dbpedia.org/About">archived 2013</a>] and <a href="http://www.openphacts.org/">Open PHACTS</a> [<a href="http://web.archive.org/web/20131204065051/http://www.openphacts.org/">archived 2013</a>] (<a href="http://explorer.openphacts.org/">http://explorer.openphacts.org/</a>). The tool has been adopted by the <a href="http://www.biochemj.org/">Biochemical Journal</a> [<a href="http://web.archive.org/web/20131219010735/http://www.biochemj.org/bj/">archived 2013</a>], where annotations are created by the Journal’s editors.</p>
+  
+  <figure>
+  <img src="utopia.jpeg" width="686" height="345" />
+  <figcaption>
+    Annotation of a scientific article (<a href="https://doi.org/10.1186/1471-2148-8-129">10.1186/1471-2148-8-129</a>) using Wikipedia entries in the Utopia Documents system.
+  </figcaption>
+  </figure>
+
+  <p>Another valuable example of annotation and Linked Data is <a href="https://maphub.herokuapp.com/">Maphub</a> [<a href="http://web.archive.org/web/20190312231011/https://maphub.herokuapp.com/">archived 2019</a>, see also <a href="http://hdl.handle.net/2142/42105">2142/42105</a>], an online application for exploring and annotating digitized, high-resolution historical maps. Maphub allows annotations to be marked with Wikipedia entries for locations and institutions, forming semantic tags to corresponding DBPedia entries.</p>
+  
+  <figure>
+    <img src="maphub.jpeg"  width="695" height="791" />
+    <figcaption>            
+      <em>Maphub</em> <a href="http://maphub.herokuapp.com/maps/355">annotating</a> [<a href="http://web.archive.org/web/20130416044911/http://maphub.herokuapp.com/maps/355">archived 2013</a>] a c. <a href="https://www.loc.gov/resource/g3200.ct000725C/?r=0.277,0.23,0.058,0.036,0">1507 map</a> [<a href="http://hdl.handle.net/loc.gmd/g3200.ct000725C">loc.gmd/g3200.ct000725C</a>] image with semantic tags for the <a href="http://dbpedia.org/resource/Gibraltar">Gibraltar</a> [<a href="http://web.archive.org/web/20190313001758/http://dbpedia.org/page/Gibraltar">archived 2019</a>] and <a href="http://dbpedia.org/resource/Hercules">Hercules</a> [<a href="http://web.archive.org/web/20190313001846/http://dbpedia.org/page/Hercules">archived 2019</a>] entries in <em>DBPedia.</em>
+    </figcaption>
+    </figure>
+    
+  <h3 id="convergence">Convergence</h3>
+  <p>The Open Annotations model is new. We have never before had a comprehensive, fully-featured model for linked data annotations, with significant community buy-in. As applications and annotation communities fully adopt this model for their work, linked data annotations will become first-class, fully interoperable Web citizens: primary Web content in their own right.</p>
+
+</section>
+
+
+  <section id="references">
+
+  <h2>References</h2>
+  <ol rel="schema:citation">
+  <li id="ref1" typeof="schema:BlogPosting">
+      <span rel="schema:author">
+        <span typeof="schema:Person"><span property="schema:name">Dave Orr</span></span>, 
+        <span typeof="schema:Person"><span lang="" property="schema:name">Amar Subramanya</span></span>, 
+        <span typeof="schema:Person" about="https://orcid.org/0000-0001-7933-1926"><span lang="ru" property="schema:name">Evgeniy Gabrilovich</span></span>, 
+        <span typeof="schema:Person" about="https://orcid.org/0000-0003-3422-999X"><span lang="dk" property="schema:name">Michael Ringgaard</span></span>
+      </span>
+    (<span property="schema:datePublished">2013</span>):<br />
+    <strong><a rel="schema:url" property="schema:name schema:headline" href="https://ai.googleblog.com/2013/07/11-billion-clues-in-800-million.html">11 Billion Clues in 800 Million Documents: A Web Research Corpus Annotated with Freebase Concepts.</a></strong> <br />
+    <em rel="schema:isPartOf" resource="https://ai.googleblog.com/" typeof="schema:Blog" property="schema:headline schema:name">Research Blog: The latest news from Research at Google.</em> 
+    <a property="schema:sameAs owl:sameAs" href="http://googleresearch.blogspot.com/2013/07/11-billion-clues-in-800-million.html">http://googleresearch.blogspot.com/2013/07/11-billion-clues-in-800-million.html</a>
+    [<a rel="schema:url pav:hasVersion prov:alternativeOf rel:alternate rel:memento" href="http://web.archive.org/web/20190312224026/https://ai.googleblog.com/2013/07/11-billion-clues-in-800-million.html">archived 2019</a>]</li>
+
+    <li id="ref2" typeof="schema:ScholarlyArticle">
+      <span rel="schema:author">     
+          <span typeof="schema:Person" about="https://orcid.org/0000-0002-2113-9680"><span property="schema:name">Leslie Carr</span></span>, 
+        <span typeof="schema:Person" about="https://orcid.org/0000-0001-9074-3016"><span property="schema:name">David De Roure</span></span>, 
+        <span typeof="schema:Person" about="https://orcid.org/0000-0003-4327-7811"><span property="schema:name">Wendy Hall</span></span>, 
+        <span typeof="schema:Person" about="https://orcid.org/0000-0003-0304-2604"><span property="schema:name">Gary Hill</span></span>
+     </span>
+     (<span property="schema:datePublished">1995</span>):<br />
+    <strong property="schema:name schema:headline"><a rel="schema:url" href="https://www.w3.org/Conferences/WWW4/Papers/178/">The Distributed Link Service: A Tool for Publishers, Authors and Readers</a></strong><br />
+    <em rel="schema:isPartOf" resource="https://www.w3.org/Conferences/WWW4/Program_Full.html" typeof="schema:CreativeWork">
+      <a rel="schema:releasedEvent" typeof="schema:PublicationEvent" href="https://www.w3.org/Conferences/WWW4/">
+        <span property="schema:name">Fourth International World Wide Web Conference</span></a>.
+    </em> 
+    <span about="https://www.w3.org/Conferences/WWW4/" property="schema:location">Boston, Massachusetts, USA</span>: 
+    <span rel="schema:publisher" typeof="schema:Organization">
+      <span property="schema:name"><a rel="schema:url" href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></span></span>.
+    <a property="schema:sameAs owl:sameAs" href="https://www.w3.org/Conferences/WWW4/Papers/178/">https://www.w3.org/Conferences/WWW4/Papers/178/</a>
+    [<a rel="schema:url pav:hasVersion prov:alternativeOf rel:alternate rel:memento" href="http://web.archive.org/web/20190312224428/https://www.w3.org/Conferences/WWW4/Papers/178/">archived 2019</a>]
+  </li>
+  
+  <li id="ref3" typeof="schema:ScholarlyArticle">
+  <span rel="schema:author">     
+    <span typeof="schema:Person" about="https://orcid.org/0000-0002-2113-9680"><span property="schema:name">Leslie Carr</span></span>, 
+    <span typeof="schema:Person" about="https://orcid.org/0000-0003-4327-7811"><span property="schema:name">Wendy Hall</span></span>, 
+    <span typeof="schema:Person" about="https://orcid.org/0000-0002-5872-3573"><span property="schema:name">Sean Bechhofer</span></span>, 
+    <span typeof="schema:Person" about="https://orcid.org/0000-0003-1219-2137"><span property="schema:name">Carole Goble</span></span>
+  </span>
+  (<span property="schema:datePublished">2001</span>):<br />
+  <strong property="schema:name schema:headline"><a rel="schema:url" href="http://www10.org/cdrom/papers/pdf/p246.pdf">Conceptual linking: ontology-based open hypermedia</a></strong>.
+    <br />
+    <em rel="schema:isPartOf">
+      <a href="https://dl.acm.org/citation.cfm?id=371920" property="schema:name">
+      Proceedings of the 10th international conference on World Wide Web
+      </a>.
+    </em>
+     <a rel="schema:sameAs owl:sameAs" href="https://doi.org/10.1145/371920.372084">https://doi.org/10.1145/371920.372084</a>
+     [<a rel="schema:url pav:hasVersion prov:alternativeOf rel:alternate rel:memento" href="http://web.archive.org/web/20190131041641/http://www10.org/cdrom/papers/pdf/p246.pdf">preprint</a>]
+    </li>
+  <li id="ref4"
+    typeof="schema:ScholarlyArticle"> 
+    <span rel="schema:author">     
+      <span typeof="schema:Person"><span property="schema:name" lang="es">José Kahan</span></span>, 
+      <span typeof="schema:Person"><span property="schema:name" lang="fi">Marja-Riitta Koivunen</span></span>, 
+      <span typeof="schema:Person" about="https://orcid.org/0000-0003-1775-9921"><span lang="fr" property="schema:name">Eric Prud'Hommeaux</span></span>, 
+      <span typeof="schema:Person"><span property="schema:name">Ralph R. Swick</span></span>
+    </span>
+        ((<span property="schema:datePublished">2001</span>)<br />
+    <strong property="schema:name schema:headline"><a rel="schema:url" href="https://www.w3.org/2001/Annotea/Papers/www10/annotea-www10.html">Annotea: An Open RDF Infrastructure for Shared Web Annotations</a></strong>. [<a href="http://web.archive.org/web/20190312224221/https://www.w3.org/2001/Annotea/Papers/www10/annotea-www10.html">archived 2019</a>] <br />  
+    <em rel="schema:isPartOf">
+        <a href="https://dl.acm.org/citation.cfm?id=371920" property="schema:name">
+        Proceedings of the 10th international conference on World Wide Web
+      </a>.
+    </em>
+    <a rel="schema:sameAs owl:sameAs" href="https://doi.org/10.1145/371920.372166">https://doi.org/10.1145/371920.372166</a>  
+  </li>
+  <li id="ref5" typeof="schema:ScholarlyArticle">
+  <span rel="schema:author" lang="">
+    <span typeof="schema:Person" about="https://orcid.org/0000-0003-4441-6852"><span property="schema:name">Robert Sanderson</span></span>, 
+    <span typeof="schema:Person" about="https://orcid.org/0000-0002-5156-2703"><span property="schema:name">Paolo Ciccarese</span></span>, 
+    <span typeof="schema:Person"><span property="schema:name">Herbert Van de Sompel</span></span> (eds), 
+    <span typeof="schema:Person"><span property="schema:name">Shannon Bradshaw</span></span>, 
+    <span typeof="schema:Person"><span property="schema:name">Dan Brickley</span></span>, 
+    <span typeof="schema:Person"><span property="schema:name">Leyla Jael García Castro</span></span>, 
+    <span typeof="schema:Person"><span property="schema:name">Timothy Clark</span></span>, 
+    <span typeof="schema:Person"><span property="schema:name">Timothy Cole</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Phil Desenne</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Anna Gerber</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Antoine Isaac</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Jacob Jett</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Thomas Habing</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Bernhard Haslhofer</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Sebastian Hellmann</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Jane Hunter</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Randall Leeds</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Andrew Magliozzi</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Bob Morris</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Paul Morris</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Jacco van Ossenbruggen</span></span>,
+    <span typeof="schema:Person" about="https://orcid.org/0000-0001-9842-9718"><span property="schema:name">Stian Soiland-Reyes</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">James Smith</span></span>,
+    <span typeof="schema:Person"><span property="schema:name">Dan Whaley</span></span>
+    </span>
+  (2013):
+    <strong property="schema:name schema:headline"><a rel="schema:url" href="http://www.openannotation.org/spec/core/20130208/index.html">W3C Open Annotation Data Model</a></strong>, 
+    Community Draft, <span property="schema:datePublished" content="2013-02-08">08 February 2013</span>. 
+    <em rel="schema:publisher" typeof="schema:Organization">
+        <span property="schema:name"><a rel="schema:url" href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></span></em>.  
+    <a rel="schema:sameAs owl:sameAs" href="http://www.openannotation.org/spec/core/20130208/index.html">http://www.openannotation.org/spec/core/20130208/</a> 
+    [<a rel="schema:url pav:hasVersion prov:alternativeOf rel:alternate rel:memento" href="http://web.archive.org/web/20190312224252/http://www.openannotation.org/spec/core/20130208/">archived 2019</a>]
+  </li>
+  </ol>
+  
+</section>
+</article>
+
+<section>
+    <h2 id="about-the-authors">About the authors</h2>
+    <p typeof="schema:Person" about="https://orcid.org/0000-0002-5156-2703"><a href="https://orcid.org/0000-0002-5156-2703">Paolo Ciccarese</a>  
+      is an <span property="schema:jobTitle">Instructor of Neurology</span> at <a rel="schema:worksFor" href="https://hms.harvard.edu/">Harvard Medical School</a>, 
+      <span property="schema:jobTitle">Assistant in Neuroscience</span> at <a rel="schema:worksFor" href="https://www.massgeneral.org/">Massachusetts General Hospital</a>. 
+      He co-chairs the  <a href="https://www.w3.org/community/openannotation/">W3C Open Annotation Community Group</a>, 
+      and is principal architect of the <a href="http://web.archive.org/web/20160304220036/http://swan.mindinformatics.org/">Domeo web annotation toolkit</a>.
+    <ins>He is one of the founders of the <a rel="schema:founder" href="https://www.w3.org/community/openannotation/">W3C Open Annotation Community Group</a>.</ins>
+    </p>
+    <p typeof="schema:Person"  about="https://orcid.org/0000-0001-9842-9718"><a href="https://orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a>  
+      is a <span property="schema:jobTitle">technical software architect</span> and 
+      <span property="schema:jobTitle">researcher</span> at the 
+      <a rel="schema:worksFor" href="http://www.cs.manchester.ac.uk/">School of Computer Science, University of Manchester</a>, UK. 
+      He is a contributor to the <a rev="schema:contributor" href="http://www.openannotation.org/spec/core/20130208/index.html">Open Annotation specification</a> 
+      and the <a rev="schema:contributor"  href="https://www.w3.org/TR/prov-overview/">W3C Provenance Model</a>, 
+      and one of the creators of the 
+      <a rev="schema:creator" href="http://www.researchobject.org/">Wf4Ever Research Object</a> model.</p>
+    <p typeof="schema:Person"  about="https://orcid.org/0000-0003-4060-7360"><a href="https://orcid.org/0000-0003-4060-7360">Tim Clark</a>
+      is <span property="schema:jobTitle">Director of Informatics</span> at the 
+      <a rel="schema:worksFor" href="https://www.mghmind.org/">MassGeneral Institute for Neurodegenerative Disease</a>, 
+      <span property="schema:jobTitle">Instructor in Neurology</span> at <a  rel="schema:worksFor" href="https://hms.harvard.edu/">Harvard Medical School</a>, and 
+      <span property="schema:jobTitle">Principal Investigator</span> of the <a  rel="schema:worksFor" href="http://web.archive.org/web/20160304220036/http://swan.mindinformatics.org/">Domeo project</a>. 
+      <del>He is one of the founders of the <a href="https://www.w3.org/community/openannotation/">W3C Open Annotation Community Group</a>.</del></p>
+  </section>
+
+</main>
+
+<footer>
+<p id="license">
+  <a rel="license cc:license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" /></a><br />
+  <span property="dcterms:rights">© 2013 <span property="cc:attributionName">Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark</span></span>.
+    Licensed under a <a rel="schema:license dcterms:license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+</body>
+</html>

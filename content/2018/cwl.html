@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html
+  prefix="
+      schema: http://schema.org/
+      dct: http://purl.org/dc/terms/
+      pav: http://purl.org/pav/
+      as: http://www.w3.org/ns/activitystreams#
+      foaf: http://xmlns.com/foaf/0.1/
+      sioc: http://rdfs.org/sioc/ns#
+      prov: http://www.w3.org/ns/prov#
+      biblio: http://purl.org/net/biblio#
+      bibo: http://purl.org/ontology/bibo/
+      "
+  lang="en-GB">
+<head>
+    <meta charset="utf-8"  />
+    <title>Capturing interoperable reproducible workflows with Common Workflow Language</title>
+    <!--
+    <link href="css/basic.css" media="all" rel="stylesheet" />
+    <link href="css/acm.css" media="all" rel="stylesheet alternate" />
+    <link href="css/do.css" rel="stylesheet" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="all" />
+    <script src="scripts/simplerdf.js"></script>
+    -->
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+    <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <script src="https://dokie.li/scripts/dokieli.js"></script>
+
+    <style>
+    code, kbd, tt, samp { 
+      font-family: "Inconsolata", "Consolas", "Courier New", monospace;
+      font-size: 80%;
+    }
+    figure kbd, figure tt, figure samp { 
+      font-size: 100%;
+    }
+    figcaption code { 
+      font-size: 80%;
+    }
+    #listing_1 pre { 
+      text-align: center;
+      font-size: 120%;
+    }
+    .orcid::before { 
+        white-space: pre;
+        font-family: 'Academicons';
+        content: "\A\e9d9";
+        color: #A6CE39;
+    }
+
+    @media print {
+      a {
+        color:#22a;
+      }
+      dl a {
+        color: black;
+        text-decoration: none;
+      }
+      body > footer { display: none; }
+      #references { 
+        font-size: 80%;
+      }
+    }
+    </style>
+</head>
+<body about="https://doi.org/10.5281/zenodo.1312623"
+ typeof="schema:ScholarlyArticle sioc:Post prov:Entity foaf:Document sioc:Post biblio:Paper bibo:Document as:Article">
+  <main>
+    <article>
+      
+      
+      <h1>Capturing interoperable reproducible workflows with Common Workflow Language</h1>
+      
+      <dl id="document-identifier">
+        <dt>Identifier</dt>
+        <dd><a href="https://doi.org/10.5281/zenodo.1312623" rel="dct:identifier schema:identifier">https://doi.org/10.5281/zenodo.1312623</a></dd>
+        </dl>
+
+          <dl id="document-created">
+        <dt>Date created</dt>
+        <dd property="pav:authoredOn schema:dateCreated">2018-07-16</dd>
+        </dl>
+        <dl id="document-in-reply-to">
+        <dt>Submitted to</dt>
+        <dd>
+          <a rel="as:inReplyTo" href="http://www.researchobject.org/ro2018/#call">Workshop on Research Objects (RO2018)</a></dd>        
+      <dt>Published in</dt>
+      <dd><a
+      href="http://www.researchobject.org/ro2018/ro2018-proceedings/">Proceedings of Workshop on Research Objects (RO2018)</a></dd>
+      </dd>
+        </dl>
+
+  <dl id="document-status">
+    <dt>Document Status</dt>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/peer-reviewed"
+      typeof="pso:PublicationStatus">Peer-reviewed</span></dd>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/published"
+      typeof="pso:PublicationStatus">Published</span></dd>
+    <dd prefix="pso: http://purl.org/spar/pso/"
+    rel="pso:holdsStatusInTime"> <span rel="pso:withStatus"
+    resource="http://purl.org/spar/pso/libre-open-access"
+      typeof="pso:PublicationStatus">Libre Open Access</span></dd>
+    </dl>
+
+        <dl>
+        <dt>Authors:</dt>
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+          <div about="https://orcid.org/0000-0001-9842-9718" typeof="schema:Person foaf:Person prov:Person">
+            <strong property="schema:name">Stian Soiland-Reyes</strong> 
+            <a rel="schema:affiliation" href="http://www.manchester.ac.uk/">
+              <span class="author-org" property="schema:name">The University of Manchester, UK</span></a>;
+              <a rel="schema:affiliation" href="https://www.commonwl.org/">
+                <span class="author-org" property="schema:name">Common Workflow Language project</span></a>;
+                <a rel="schema:affiliation" href="https://taverna.incubator.apache.org//">
+                  <span class="author-org" property="schema:name">Apache Taverna (incubating)</span></a>
+            <a class="orcid" href="https://orcid.org/0000-0001-9842-9718">https://orcid.org/0000-0001-9842-9718</a>
+  
+          </div>            
+        </dd>
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+          <div about="https://orcid.org/0000-0002-6337-3037" typeof="schema:Person foaf:Person prov:Person">
+            <strong property="schema:name">Farah Zaib Khan</strong> 
+            <a rel="schema:affiliation" href="https://www.unimelb.edu.au/">
+              <span class="author-org" property="schema:name">The University of Melbourne, Australia</span></a>;
+              <a rel="schema:affiliation" href="https://www.commonwl.org/">
+                <span class="author-org" property="schema:name">Common Workflow Language project</span></a>              
+              <a class="orcid" href="https://orcid.org/0000-0002-6337-3037">https://orcid.org/0000-0002-6337-3037</a> 
+          </div>            
+        </dd>
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+          <div about="http://orcid.org/0000-0001-5998-222X" typeof="schema:Person foaf:Person prov:Person">
+            <strong property="schema:name">Richard O. Sinnott</strong> 
+            <a rel="schema:affiliation" href="https://www.unimelb.edu.au/">
+              <span class="author-org" property="schema:name">The University of Melbourne, Australia</span></a>
+            <a class="orcid" href="http://orcid.org/0000-0001-5998-222X">http://orcid.org/0000-0001-5998-222X</a> 
+          </div>            
+        </dd>
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+          <div about="https://orcid.org/0000-0002-2006-3856" typeof="schema:Person foaf:Person prov:Person">
+            <strong property="schema:name">Andrew Lonie</strong> 
+            <a rel="schema:affiliation" href="https://www.unimelb.edu.au/">
+              <span class="author-org" property="schema:name">The University of Melbourne, Australia</span></a>
+            <a class="orcid" href="https://orcid.org/0000-0002-2006-3856">https://orcid.org/0000-0002-2006-3856</a> 
+          </div>            
+        </dd>
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+            <div about="https://orcid.org/0000-0002-2961-9670" typeof="schema:Person foaf:Pe`rson prov:Person">
+              <strong property="schema:name">Michael R Crusoe</strong> 
+              <a rel="schema:affiliation" href="https://www.commonwl.org/">
+                <span class="author-org" property="schema:name">Common Workflow Language project</span></a>
+              <a class="orcid" href="https://orcid.org/0000-0002-2961-9670">https://orcid.org/0000-0002-2961-9670</a>
+            </div>            
+          </dd>
+        
+
+
+        <dd rel="schema:author pav:authoredBy prov:wasAttributedTo dct:creator">
+          <div about="https://orcid.org/0000-0003-1219-2137" typeof="schema:Person foaf:Person prov:Person">
+            <strong property="schema:name">Carole Goble</strong> 
+            <a rel="schema:affiliation" href="http://www.manchester.ac.uk/">
+              <span class="author-org" property="schema:name">The University of Manchester, UK</span></a>
+            <a class="orcid" href="https://orcid.org/0000-0003-1219-2137">https://orcid.org/0000-0003-1219-2137</a>
+          </div>            
+        </dd>
+        </dl>
+        <dl id="document-abstract">
+  
+        <dt>Abstract</dt>    
+        <dd property="schema:description dct:description bibo:abstract">We present our ongoing work on integrating Research Object practices with Common Workflow Language, capturing and describing prospective and retrospective provenance.</dd>
+      </dl>
+      <section id="background">
+        <h2>Background</h2>
+        
+        <p>Performing computational data analysis using scientific workflows is common in many domains, including bioinformatics, physics, earth sciences and cheminformatics [1]; and it is now considered best practice to use workflows or automated scripts to improve reproducibility of analyses [2]. Recent advances in software containers and packaging help remove previous challenges in capturing software tools needed by an analysis [3,4], but other interoperability factors remain important, such as ensuring a pipeline definition can execute in multiple workflow systems [5], and that provenance of workflow runs can be reliably captured and used across heterogeneous execution environments [6]. While robust reproducibility of results is important, the outcomes and methods also need to be <em>replicable</em> and <em>generalizable</em> [7].</p>
+        
+        <p><a href="https://www.commonwl.org/">Common Workflow Language</a> (CWL) [8] is a multivendor community-led standardization effort to define a dataflow language that is <a href="https://www.commonwl.org/#Implementations">implemented</a> by multiple workflow systems capable of executing on a wide range of compute platforms. CWL focus primarily on what has been determined as a common denominator across bioinformatics pipeline systems; coordinating and parallelizing command line tools that exchange files. While CWL started in the bioinformatics community, usage and adoption has spread beyond the life sciences to radio astronomy, hydrology, digital humanities, and more.</p>
+        
+        <p>CWL has seen considerable interest over recent years [9], in particular primed for the role of computational interoperability, as FAIR sharing of data [10] should also include the workflows that produced it [11].</p>
+      </section>
+      <section id="prospective">
+        <h2>Prospective provenance — capturing the workflow template</h2>
+        
+        <p>We created <a href="https://view.commonwl.org/">CWL Viewer</a> [12] for visualizing CWL workflow definitions, and it has now more than 2500 <a href="https://view.commonwl.org/workflows?page=259&amp;size=10">CWL workflows registered</a>. Most of these are developed as open source in GitHub repositories. While continual active development of workflows is good for reuse and stability, it adds a challenge for reproducibility and reliable workflow citation. CWL workflows are typically split in multiple files (e.g. one per command line tool), and may contain internal references used during execution, such as secondary data files. Although CWL encourages interoperability, it has not yet defined a standard mechanism to reliably capture or transfer the complete definition required for starting a workflow run. A given CWL workflow and its components can be <a href="https://www.commonwl.org/user_guide/17-metadata/">richly annotated</a> using vocabularies like <a href="http://edamontology.org/">EDAM</a> [13] and <a href="https://schema.org/">schema.org</a> to indicate formats, contributors, licenses and references, but, while this reuse follows Linked Data principles, the metadata is embedded within the CWL definitions, requiring <a href="https://pypi.org/project/schema-salad/">Schema Salad</a> preprocessing before further use.</p>
+        
+        <p>To this end we have extended the CWL Viewer to produce <a href="http://w3id.org/cwl/view/">permalinks</a> based on the corresponding git commit, adding <a href="http://w3id.org/cwl/view/#content-negotiation">content-negotiation</a> to other formats (SVG, RDF Turtle, JSON-LD) with archiving as Research Objects [14] that include snapshots of the CWL files, their dependent resources and extracted metadata augmented with authorship information extracted from the <em>git</em> log. This work aims to capture the <em>prospective provenance</em> of a workflow definition; the metadata that should be true for every execution.</p>
+        
+        <p>To complete this picture we are working with <a href="https://www.openaire.eu/">Open AIRE</a> to make CWL workflows Findable, and plan to calculate prospective execution details such as linking Docker images [15] and BioConda packages [16] with <a href="https://scicrunch.org/">SciCrunch RRIDs</a> [17] and <a href="https://bio.tools/">ELIXIR’s Tools and Data Services</a> registry [18] using CWL <a href="https://www.commonwl.org/v1.0/CommandLineTool.html#SoftwarePackage">SoftwarePackage annotations</a>.</p>
+      </section>
+      <section id="retrospective">
+        <h2>Retrospective provenance — how was the workflow executed?</h2>
+
+        
+        <p>In terms of <em>retrospective provenance</em>, capturing what happened in a particular execution of a CWL workflow, we have been extending our earlier work on capturing workflow runs as research objects [14]. Previous work with <a href="https://github.com/stain/2016-provweek-tavernaprov/">TavernaProv</a> [19] and <a href="http://www.wings-workflows.org/">Wings</a> [20] both used the distinction of <em>prospective</em> vocabularies with <a href="http://wf4ever.github.io/ro/2016-01-28/wfdesc/">wfdesc</a> [14] or <a href="http://ceur-ws.org/Vol-951/paper6.pdf">P-Plan</a> [21] of the workflow template, and <em>retrospective</em> PROV statements with <a href="http://wf4ever.github.io/ro/2016-01-28/wfprov/">wfprov</a> [14] or <a href="http://www.opmw.org/">OPMW</a> [22] of the instantiated workflow execution; thus allowing queries and views of the abstracted workflow independent of its execution, however computational re-execution or reuse of the workflows were effectively still restricted to their original workflow engines.</p>
+        
+        <p>CWL is implemented by multiple workflow engines, with different execution characteristics (e.g. distributed on cloud), but with an explicit and interoperable definition of what is to be run. Therefore the aim was to define a more specific Research Object profile for workflow execution that should enable more precise replication of the workflow run, but at the same time being general enough to be used by multiple engines.</p>
+        
+        <p>For this we created <a href="http://w3id.org/cwl/prov">CWLProv</a> [23] , developed by modifying the CWL reference implementation <a href="https://github.com/common-workflow-language/cwltool">cwltool</a> to add a new <a href="https://github.com/common-workflow-language/cwltool/blob/master/CWLProv.rst">--provenance flag</a>. The resulting profile describes how the existing Linked Data standards for Research Object, <a href="http://wf4ever.github.io/ro/2016-01-28/wfdesc/">wfdesc</a>, <a href="http://wf4ever.github.io/ro/2016-01-28/wfprov/">wfprov</a> [14] , <a href="https://www.w3.org/TR/prov-overview/">PROV</a> [24] and <a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a> [25] are combined to track detailed workflow execution logs.</p>
+        
+        <p>Unlike TavernaProv, which used <a href="https://doi.org/10.5281/zenodo.12586">Research Object Bundle</a> ZIP files [26], CWLProv uses <em>BagIt</em> for archiving the files of the RO. BagIt [27] is a Library of Congress supported digital preservation format, that can exist either as a flat file hierarchy or packaged as tar/ZIP archives. BagIt support external references and checksums of all files, but its metadata provisions are fairly minimal.</p>
+        
+        <p>Complementing the two approaches we use the <a href="http://bd2k.ini.usc.edu/tools/bdbag/">BDBag</a> profile for <a href="https://w3id.org/ro/bagit">Research Object in BagIt</a>, as it has previously been shown to support data from large-scale workflows [28,29] and is also of consideration by <a href="https://github.com/NCATS-Tangerine/smartBag">NIH Data Commons</a> and <a href="https://rd-alliance.org/approaches-research-data-packaging-rda-11th-plenary-bof-meeting">Research Data Alliance</a> [30].</p>
+        
+        <p>The <a href="https://github.com/common-workflow-language/cwlprov/blob/master/prov.md">PROV files captured by CWLProv</a> [23] reuse the wfdesc and wfprov vocabularies, but compared to TavernaProv stay closer to plain PROV statements. In cwltool we used the <a href="http://prov.readthedocs.io/">Prov Python</a> library and could thus save in multiple serializations, including PROV-N, PROV-XML, PROV-JSON as well as PROV-O based RDF as RDF Turtle, N-Triples and JSON-LD. It is still under investigation which of these formats will be most beneficial for consumers and producers, thus CWLProv only mandate PROV-N for now. CWLProv uses different <em>provenance levels</em> to avoid complicating coarse-grained provenance with the details of fine-grained execution traces.</p>
+        
+        <p>The CWLProv approach is also the basis for Research Object support <a href="https://github.com/edgano/researchObject-Nextflow">being developed</a> for the workflow system Nextflow [31], but there without requiring an executable CWL workflow. One interesting collaboration aspect we are exploring is to identify common approaches not previously described for Workflow Research Objects, such as capturing execution of Docker images or referencing large data files.</p>
+      </section>        
+      <section id="references">
+        <h2>References</h2>
+    
+  <p>[1] M. Atkinson, S. Gesing, J. Montagnat, I. Taylor, Scientific workflows: Past, present and future, Future Generation Computer Systems. 75 (2017) 216–227. <a property="schema:citation" href="https://doi.org/10.1016/j.future.2017.05.041">https://doi.org/10.1016/j.future.2017.05.041</a></p>
+  
+  <p>[2] G.K. Sandve, A. Nekrutenko, J. Taylor, E. Hovig, Ten simple rules for reproducible computational research., PLoS Comput. Biol. 9 (2013) e1003285. <a property="schema:citation"  href="https://doi.org/10.1371/journal.pcbi.1003285">https://doi.org/10.1371/journal.pcbi.1003285</a></p>
+  
+  <p>[3] S. Möller, S.W. Prescott, L. Wirzenius, P. Reinholdtsen, B. Chapman, P. Prins, et al., Robust Cross-Platform Workflows: How Technical and Scientific Communities Collaborate to Develop, Test and Share Best Practices for Data Analysis, Data Sci. Eng. 2 (2017) 232–244. <a property="schema:citation" href="https://doi.org/10.1007/s41019-017-0050-4">https://doi.org/10.1007/s41019-017-0050-4</a></p>
+  
+  <p>[4] B. Grüning, J. Chilton, J. Köster, R. Dale, N. Soranzo, M. van den Beek, et al., Practical computational reproducibility in the life sciences., Cell Syst. 6 (2018) 631–635. <a property="schema:citation" href="https://doi.org/10.1016/j.cels.2018.03.014">https://doi.org/10.1016/j.cels.2018.03.014</a></p>
+  
+  <p>[5] S.D.I. Fernando, D.A. Creager, A.C. Simpson, Towards Build-Time Interoperability of Workflow Definition Languages, in: Ninth International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC 2007), IEEE, 2007: pp. 525–532. <a href="https://doi.org/10.1109/SYNASC.2007.18">https://doi.org/10.1109/SYNASC.2007.18</a></p>
+    
+  <p>[6] D. Garijo, Y. Gil, O. Corcho, Abstract, link, publish, exploit: An end to end framework for workflow sharing, Future Generation Computer Systems. 75 (2017) 271–283. <a property="schema:citation" href="https://doi.org/10.1016/j.future.2017.01.008">https://doi.org/10.1016/j.future.2017.01.008</a></p>
+
+  <p>[7] P.D. Schloss, Identifying and overcoming threats to reproducibility, replicability, robustness, and generalizability in microbiome research., MBio. 9 (2018). <a property="schema:citation" href="https://doi.org/10.1128/mBio.00525-18">https://doi.org/10.1128/mBio.00525-18</a></p>
+
+  <p>[8] P. Amstutz, M.R. Crusoe, Nebojša Tijanić, B. Chapman, J. Chilton, M. Heuer, et al., Common Workflow Language, v1.0, (2016). <a href="https://w3id.org/cwl/v1.0">https://w3id.org/cwl/v1.0</a> <a property="schema:citation" href="https://doi.org/10.6084/m9.figshare.3115156.v2">https://doi.org/10.6084/m9.figshare.3115156.v2</a></p>
+
+  <p>[9] J. Leipzig, A review of bioinformatic pipeline frameworks., Brief. Bioinformatics. 18 (2017) 530–536. <a property="schema:citation" href="https://doi.org/10.1093/bib/bbw020">https://doi.org/10.1093/bib/bbw020</a></p>
+
+  <p>[10] M.D. Wilkinson, M. Dumontier, I.J.J. Aalbersberg, G. Appleton, M. Axton, A. Baak, et al., The FAIR Guiding Principles for scientific data management and stewardship., Sci. Data. 3 (2016) 160018. <a property="schema:citation" href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></p>
+
+  <p>[11] S. Cohen-Boulakia, K. Belhajjame, O. Collin, J. Chopard, C. Froidevaux, A. Gaignard, et al., Scientific workflows for computational reproducibility in the life sciences: Status, challenges and opportunities, Future Generation Computer Systems. 75 (2017) 284–298. <a property="schema:citation" href="https://doi.org/10.1016/j.future.2017.01.012">https://doi.org/10.1016/j.future.2017.01.012</a></p>
+
+  <p>[12] M. Robinson, S. Soiland-Reyes, M.R. Crsoe, C. Goble, CWL Viewer: the Common Workflow Language viewer, F1000Research. 6 (2017) 1075 (poster). <a property="schema:citation" href="https://doi.org/10.7490/f1000research.1114375.1">https://doi.org/10.7490/f1000research.1114375.1</a></p>
+
+  <p>[13] J. Ison, M. Kalas, I. Jonassen, D. Bolser, M. Uludag, H. McWilliam, et al., EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats., Bioinformatics. 29 (2013) 1325–1332. <a property="schema:citation" href="https://doi.org/10.1093/bioinformatics/btt113">https://doi.org/10.1093/bioinformatics/btt113</a></p>
+
+  <p>[14] K. Belhajjame, J. Zhao, D. Garijo, M. Gamble, K. Hettne, R. Palma, et al., Using a suite of ontologies for preserving workflow-centric research objects, Web Semantics: Science, Services and Agents on the World Wide Web. 32 (2015) 16–42. <a property="schema:citation" href="https://doi.org/10.1016/j.websem.2015.01.003">https://doi.org/10.1016/j.websem.2015.01.003</a></p>
+
+  <p>[15] B.D. O’Connor, D. Yuen, V. Chung, A.G. Duncan, X.K. Liu, J. Patricia, et al., The Dockstore: enabling modular, community-focused sharing of Docker-based genomics tools and workflows. [version 1; referees: 2 approved], F1000Res. 6 (2017) 52. <a property="schema:citation" href="https://doi.org/10.12688/f1000research.10137.1">https://doi.org/10.12688/f1000research.10137.1</a></p>
+
+  <p>[16] The Bioconda Team, B. Grüning, R. Dale, A. Sjödin, B.A. Chapman, J. Rowe, et al., Bioconda: sustainable and comprehensive software distribution for the life sciences, Nat. Methods. (2018). <a property="schema:citation" href="https://doi.org/10.1038/s41592-018-0046-7">https://doi.org/10.1038/s41592-018-0046-7</a></p>
+
+  <p>[17] G. Jeffrey, B. Anita, B. Davis, C. Christopher, G. Amarnath, L. Stephen, et al., SciCrunch: A cooperative and collaborative data and resource discovery platform for scientific communities, Front. Neuroinformatics. 8 (2014). <a property="schema:citation" href="https://doi.org/10.3389/conf.fninf.2014.18.00069">https://doi.org/10.3389/conf.fninf.2014.18.00069</a></p>
+
+  <p>[18] K.-H. Hillion, I. Kuzmin, A. Khodak, E. Rasche, M. Crusoe, H. Peterson, et al., Using bio.tools to generate and annotate workbench tool descriptions. [version 1; referees: 4 approved], F1000Res. 6 (2017). <a property="schema:citation" href="https://doi.org/10.12688/f1000research.12974.1">https://doi.org/10.12688/f1000research.12974.1</a></p>
+
+  <p>[19] S. Soiland-Reyes, P. Alper, C. Goble, Tracking workflow execution with TavernaProv, at PROV: Three Years Later, Provenance Week 2016. <a property="schema:citation" href="https://doi.org/10.5281/zenodo.51314">https://doi.org/10.5281/zenodo.51314</a></p>
+
+  <p>[20] D. Garijo, Y. Gil, O. Corcho, Towards Workflow Ecosystems through Semantic and Standard Representations, in: 2014 9th Workshop on Workflows in Support of Large-Scale Science, IEEE, 2014: pp. 94–104. <a property="schema:citation" href="about:blank">https://10.1109/WORKS.2014.13</a></p>
+
+  <p>[21] D. Garijo, Y. Gil, Augmenting PROV with Plans in P-PLAN: Scientific Processes as Linked Data, in: Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data, 2012. CEUR Workshop Proceedings 951. <a property="schema:citation" href="http://ceur-ws.org/Vol-951/paper6.pdf">http://ceur-ws.org/Vol-951/paper6.pdf</a></p>
+
+  <p>[22] D. Garijo, Y. Gil, A new approach for publishing workflows: Abstractions, standards, and linked data, in: Proceedings of the 6th Workshop on Workflows in Support of Large-Scale Science - WORKS ’11, ACM Press, New York, New York, USA, 2011: p. 47. <a property="schema:citation" href="https://doi.org/10.1145/2110497.2110504">https://doi.org/10.1145/2110497.2110504</a></p>
+
+  <p>[23] F.Z. Khan, S. Soiland-Reyes, M.R. Crusoe, A. Lonie, R. Sinnott, CWLProv - Interoperable Retrospective Provenance capture and its challenges, Zenodo preprint, 2018. <a property="schema:citation" href="https://doi.org/10.5281/zenodo.1215611">https://doi.org/10.5281/zenodo.1215611</a></p>
+
+  <p>[24] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, et al., PROV-O: The PROV Ontology,. W3C Recommendation 30 April 2013, World Wide Web Consortium. <a property="schema:citation" href="http://www.w3.org/TR/2013/REC-prov-o-20130430/">http://www.w3.org/TR/2013/REC-prov-o-20130430/</a></p>
+
+  <p>[25] R. Sanderson, P. Ciccarese, B. Young, Web Annotation Data Model, W3C Recommendation 23 February 2017, World Wide Web Consortium. <a property="schema:citation" href="https://www.w3.org/TR/2017/REC-annotation-model-20170223/">https://www.w3.org/TR/2017/REC-annotation-model-20170223/</a></p>
+
+  <p>[26] S. Soiland-Reyes, M. Gamble, R. Haines, Research Object Bundle 1.0, researchobject.org specification, 2014. <a href="https://w3id.org/bundle/2014-11-05/">https://w3id.org/bundle/2014-11-05/</a> <a property="schema:citation" href="https://doi.org/10.5281/zenodo.12586">https://doi.org/10.5281/zenodo.12586</a></p>
+
+  <p>[27] J.A. Kunze, J. Littman, L. Madden, J. Scancella, C. Adams, The BagIt File Packaging Format (V1.0), Internet Engineering Task Force, 2018. <a property="schema:citation" href="https://tools.ietf.org/html/draft-kunze-bagit-16">https://tools.ietf.org/html/draft-kunze-bagit-16</a></p>
+
+  <p>[28] K. Chard, M. D’Arcy, B. Heavner, I. Foster, C. Kesselman, R. Madduri, et al., I’ll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets, in: 2016 IEEE International Conference on Big Data (Big Data), IEEE, 2016: pp. 319–328. <a property="schema:citation" href="https://doi.org/10.1109/BigData.2016.7840618">https://doi.org/10.1109/BigData.2016.7840618</a></p>
+
+  <p>[29] R.K. Madduri, K. Chard, M. D’Arcy, S.C. Jung, A. Rodriguez, D. Sulakhe, et al., Reproducible big data science: A case study in continuous FAIRness, BioRxiv preprint. (2018). <a property="schema:citation"  href="https://doi.org/10.1101/268755">https://doi.org/10.1101/268755</a></p>
+
+  <p>[30] Research Data Repository Interoperability WG, Research Data Repository Interoperability WG Final Recommendations, Research Data Alliance, 2018. <a property="schema:citation" href="https://doi.org/10.15497/RDA00025">https://doi.org/10.15497/RDA00025</a></p>
+
+  <p>[31] P. Di Tommaso, M. Chatzou, E.W. Floden, P.P. Barja, E. Palumbo, C. Notredame, Nextflow enables reproducible computational workflows., Nat. Biotechnol. 35 (2017) 316–319. <a property="schema:citation" href="https://doi.org/10.1038/nbt.3820">https://doi.org/10.1038/nbt.3820</a></p>
+
+</section>
+
+<section id="acknowledgements">
+    <h2>Acknowledgements</h2>
+    <p>
+        FZK funded by Melbourne International Research Scholarship (MIRS) and Melbourne International Fee Remission Scholarship (MIFRS).
+        SSR funded by <a rel="schema:funder" href="https://www.bioexcel.eu">BioExcel CoE</a>, 
+        a project funded by the European Union contract 
+        <a rel="schema:funder" href="http://cordis.europa.eu/projects/675728">H2020-EINFRA-2015-1-675728</a>.
+    </p>
+</section>
+
+</article>
+</main>
+
+<footer>
+<p id="license">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" /></a><br />
+    <span property="dct:rights">© 2018 Stian Soiland-Reyes, Farah Zaib Khan, Richard O. Sinnott, Andrew Lonie, Michael R Crusoe, Carole Goble.</span>
+      Licensed under a <a rel="schema:license dct:license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</p>
+  </footer>
+  
+
+</body>
+</html>

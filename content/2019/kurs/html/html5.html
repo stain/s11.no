@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+
+<html lang="no">
+  <head>
+    <title>HTML på en ryddig måte - forståelse og bruk</title>
+    <style>
+       body {
+         background-color: white;
+         color: black;
+         text-align: justify;
+         margin: 1em;
+       }
+       h1,h2,h3,h4 {
+         font-family: arial, helvetica, sans-serif;
+       }
+       h1 {
+         color: #a75;
+         border-width: 0 0 thin 0; /* netscape hack */
+         border-color: black;
+         border-style: none none solid none;
+       }
+       h1, h2 {
+         font-weight: bold;
+       }
+       h2 {
+         color: #a86;
+       }
+       h3,h4 {
+         font-weight: normal;
+         color: #b86;
+       }
+       h2.sub {
+         font-size: 105%;
+         margin-bottom: 2em;
+         font-weight: normal;
+       }
+       pre {
+         text-align: left;
+       }
+       div.eksempel {
+         background-color: #dea; /* lysegrønn */
+         color: black;
+         margin-left: 10%; /* sentrert */
+         margin-right: 10%;
+         padding: 0.5em;      /* bittelitt indre marg */
+         border-width: thin;
+         border-color: black;
+         border-style: solid;
+       }
+       div.eksempel p.info {
+         font-family: helvetica, arial, sans-serif;
+         font-style: italic;
+       }
+       div.eksempel pre {
+/*         font-family: arial, helvetica, sans-serif; */
+         font-size: 95%;
+         line-height: 150%;
+         margin-left: 1em; /* lett innrykket */
+         text-align: left;
+       }
+       div.eksempel div.fremstilling {
+         font-family: times, "Times New Roman", sans-serif;
+         font-style: normal;
+         margin-left: 1.5em; /* sentrert */
+         margin-right: 1.5em;
+         padding: 0.5em;      /* bittelitt indre marg */
+         background-color: #f8fff8;
+         color: black;
+         border-width: thin;
+         border-style: none; /* netscape-hack */
+         text-align: left;
+       }
+       code {
+         /* background-color: #ffffe8; ** Stygt !! ** */
+         color: black;
+       }
+       address {
+         font-family: arial, helvetica, sans-serif;
+         margin-top: 1em;
+         border-width: thin 0 0 0; /* netscape-hack */
+         border-color: black;
+         border-style: solid none none none;
+       }
+       .feil {
+         color: red;
+       }
+       #tux {
+         width: 150px;
+         height: 149px;
+         float: right;
+       }
+       .farge {
+         color: maroon;
+         background: white;
+       }
+       em.farge {
+         font-size: large;
+       }
+       #inntaksstopp {
+         font-family: helvetica, arial, sans-serif;
+       }
+       blockquote {
+           font-family: times, "times new roman", serif;
+           font-size: large;
+           font-style: italic;
+           font-weight: bold;
+       }
+       p.larger {
+           font-size: 110%;
+           margin: 2em;
+       }
+       p.midtstiltprosent {
+         margin-left: 15%;
+         margin-right: 15%;
+       }
+       p.midtstiltem {
+         margin-left: 4em;
+         margin-right: 4em;
+       }
+       div.boks {
+            border-width: thin;
+            border-color: black;
+            border-style: solid;
+       }
+       div.farger {
+           width: 40%;
+           float: right;
+           border-width: thin;
+           border-color: black;
+           border-style: solid;
+       }
+       #aqua {
+           color: black;
+           background: aqua;
+       }
+       #black {
+           color: white;
+           background: black;
+       }
+       #blue {
+           color: white;
+           background: blue;
+       }
+       #fuchsia {
+           color: black;
+           background: fuchsia;
+       }
+       #gray {
+           color: white;
+           background: gray;
+       }
+       #green {
+           color: white;
+           background: green;
+       }
+       #lime {
+           color: black;
+           background: lime;
+       }
+       #maroon {
+           color: white;
+           background: maroon;
+       }
+       #navy {
+           color: white;
+           background: navy;
+       }
+       #olive {
+           color: white;
+           background: olive;
+       }
+       #purple {
+           color: white;
+           background: purple;
+       }
+       #red {
+           color: black;
+           background: red;
+       }
+       #silver {
+           color: black;
+           background: silver;
+       }
+       #teal {
+           color: white;
+           background: teal;
+       }
+       #white {
+           color: black;
+           background: white;
+       }
+       #yellow {
+           color: black;
+           background: yellow;
+       }
+      #bodyfarger {
+         background-color: rgb(99%, 90%, 85%);
+         color: rgb(67%, 47%, 33.3%);
+      }
+      #bodyfarger h1 {
+         background-color: rgb(99%, 90%, 85%);         /*  overstyrer   */
+         color: rgb(67%, 47%, 33.3%);                  /*  egenskapene  */
+         font-family: "times new roman", times, serif; /*  fra          */
+         border: none;                                 /*  global h1    */
+      }
+
+      #bodybilde {
+         background-color: rgb(99%, 90%, 85%);
+         background-image: url(papir.png);
+         color: rgb(67%, 47%, 33.3%);
+      }
+      #bodybilde h1 {                                  /*  overstyrer   */
+         color: rgb(67%, 47%, 33.3%);                  /*  egenskapene  */
+         font-family: "times new roman", times, serif; /*  fra          */
+         border: none;                                 /*  global h1    */
+      }
+      ul.haker {
+          list-style-type: disc;
+          list-style-image: url(hake.png);
+      }
+      div.meny {
+          background: #aaf;
+          color: black;
+          border-width: thin;
+          border-style: none;  /* Hack to make full background in netscape */
+          padding: 1em;
+          float: right;
+      }
+      span.fornavn {
+          background: white;
+          color: #400;
+        font-family: times, "Times New Roman", serif;
+      }
+      span.etternavn {
+         color: #040;
+         font-family: helvetica, arial, sans-serif;
+      }
+      table {
+          background: #ffd;
+          color: black;
+          border-width: thin;
+          border-color: black;
+          border-style: solid;
+          padding: 0.3em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>HTML på en ryddig måte - forståelse og bruk</h1>
+    <h2 class="sub">HTML-kurs ved Nettverksgruppa for Aktivitetsuken 2000</h2>
+
+    <h2>Introduksjon</h2>
+      <p>
+        Internett er fullt av informasjon. Det som kjennetegner
+        mesteparten av denne informasjonen er at den er formulert i
+        et språk som heter <em>HTML</em>. Tanken bak HTML er at man har et
+        dokument hvor man har markert overskrifter, referanser,
+        tabeller og punktlister, dvs. man forteller hvordan
+        dokumentet er oppbygget. Oppgaven for nettleseren blir
+        så å presentere denne informasjonen på en lettoppfattelig
+        måte for brukeren.
+      </p>
+      <p>
+        Brukeren behøver ikke nødvendigvis å
+        se informasjonen på en skjerm, det kan være hun har fått
+        informasjonen skrevet ut på papir. Hvis brukeren er blind
+        foretrekker hun kanskje at datamaskinen leser opp informasjonen
+        for henne, eller viser den på en Braille-list. Informasjonen
+        kan også bli behandlet maskinelt, for eksempel av en
+        søkemotor, som legger særlig merke til overskrifter og
+        avsnitt og kan optimalisere søkene sine på den måten.
+      </p>
+      <p>
+        Det er derfor viktig å skjønne teknologien som ligger bak,
+        slik at du kan lage dokumenter som er leselige av flest
+        mulig. På dette kurset vil du ikke bare lære teknologien,
+        men også hvordan du kan bruke denne på en enkel og
+        oversiktlig måte, slik at du skjønner hva du driver med
+        og ikke gjetter på måfå.
+      </p>
+
+    <h2>Syntaks</h2>
+      <dl>
+        <dt>syn~tak´s</dt>
+        <dd>
+          <p>
+            m1 (fra gr, <em>-taks</em> av <em>taxis</em> 'ordning, oppstilling')
+          </p>
+          <ol>
+            <li>(beskrivelse av) regler for hvordan en kan lage setninger el. deler av setninger på et gitt språk, ordføyningslære</li>
+            <li>i edb: forhold mellom tegn og tegngrupper innenfor et dataspråk</li>
+          </ol>
+        </dd>
+      </dl>
+      <p>
+        Syntaks er nødvendig for å forklare hvordan man kan uttrykke
+        seg i HTML. Syntaksen sier ganske enkelt hvilke tegn og
+        nøkkelord du kan bruke for å strukturere dokumentet.
+      </p>
+      <h3>Elementer</h3>
+        <p>
+          For å strukturere informasjonen i et dokument plasserer man
+          dem i elementer. Et element kjennetegnes ved at det starter
+          og avslutter med en såkalt <em>tag</em>. Tagger gjenkjennes lett ved
+          at de er omkranset av tegnene <code>&lt;</code> og
+          <code>&gt;</code>.
+        </p>
+        <div class="eksempel">
+          <p class="info">Eksempel:</p>
+          <pre>
+&lt;p&gt;
+    Dette er et eksempelavsnitt. Inni et eksempelavsnitt
+    skriver man eksempelsetninger. Eksempelsetninger skrives
+    som alle andre setninger, bare at de er idiotiske
+    og ikke har noen mening.
+&lt;/p&gt;
+          </pre>
+        </div>
+        <p>
+          I eksempelet ser vi at vi starter avsnittet med
+          <code>&lt;p&gt;</code>, og avslutter det med
+          <code>&lt;/p&gt;</code>. <code>&lt;p&gt;</code> angir
+          at dette er et avsnitt, p for <em>paragraph</em> på engelsk.
+         </p>
+         <div class="eksempel">
+           <p class="info">Eksempel:</p>
+           <pre>
+&lt;p&gt;
+    Dette er et eksempelavsnitt.
+    Inni et eksempelavsnitt skriver man eksempelsetninger.
+
+          Kort sagt.
+
+
+&lt;/p&gt;
+           </pre>
+           <p class="info">Avsnittet kan bli fremstilt slik i en visuell nettleser:</p>
+           <div class="fremstilling">
+             <p>
+               Dette er et eksempelavsnitt. Inni et eksempelavsnitt
+               skriver man eksempelsetninger. Kort sagt.
+             </p>
+           </div>
+         </div>
+         <p>
+           Alle linjeskiftene og ekstra mellomrom blir glatt ignorert i den
+           endelige fremstillingen til brukeren. Dette må man alltid
+           ha i tankene, slik at man ikke bare trykker
+           [enter] i teksteditoren og håper at da blir det
+           nytt avsnitt på magisk vis. Samtidig er dette en
+           styrke, ved at man kan skrive selve HTML-koden på
+           en måte som gjør det enklere å se strukturen, ved å
+           bruke mellomrom og linjeskift fornuftig. Vi skal se mer
+           på hvordan du kan skrive ryddig kode senere.
+         </p>
+        <p>
+          HTML kommer med en rekke forskjellige elementer som
+          kan brukes. Elementene kan grovt sett deles inn i to
+          kategorier, <em>blokkelementer</em> og <em>linjeelementer</em>.
+          Linjeelementer er elementer som kan følge hverandre på samme
+          linje, som for eksempel de forskjellige ordene i et avsnitt
+          (elementene flyter langs linjen). Blokkelementer er elementer
+          som blir adskilt fra hverandre vertikalt, som avsnitt og overskrifter.
+          Linjeelementer kan kun inneholde andre linjeelementer, mens
+          blokkelementer som regel kan inneholde linjeelementer. Noen
+          blokkelementer kan også inneholde andre blokkelementer.
+        </p>
+        <p>
+          La oss konkretisere litt nøyere ved å introdusere noen nye
+          elementer. Linjeelementet <code>em</code>
+          (<em>emphasis</em> på engelsk) kan brukes til å
+          angi at deler av teksten er viktigere og bør utheves ifra
+          den vanlige teksten, f.eks. ved hjelp av kursiv eller fet skrift,
+          eller kanskje ved hjelp av en annen farge eller
+          hvis det er en talesyntese som leser dokumentet kan datamaskinen
+          lese ordet mer klart ved å lese det sakte.
+          Hvis noe skal utheves særskilt kan man bruke elementet
+          <code>strong</code>.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;p&gt;
+    Dette er et kort &lt;em&gt;avsnitt&lt;/em&gt;. Avsnitt brukes
+    til å gjøre teksten mer &lt;strong&gt;leselig&lt;/strong&gt;.
+&lt;/p&gt;
+          </pre>
+          <p class="info">
+            Avsnittet kan bli fremstilt slik i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <p>
+              Dette er et kort <em>avsnitt</em>. Avsnitt brukes
+              til å gjøre teksten mer <strong>leselig</strong>.
+            </p>
+          </div>
+        </div>
+        <p>
+          Som nevnt er <code>em</code> et linjeelement og det vil derfor
+          være feil å ha et avsnitt innenfor elementet.
+          <code class="feil">&lt;em&gt;&lt;p&gt;Blapper smaker
+          godt&lt;/p&gt;&lt;/em&gt;</code>
+          vil ikke være riktig, og resultatet i forskjellige
+          nettlesere blir udefinerbart. Noe som er enda viktigere er å
+          huske å avslutte elementene, og det i samme rekkefølge som de
+          er startet. Det vil si at du ikke må glemme sluttagene, og
+          ihvertfall ikke skrive <code class="feil">&lt;em&gt; Flapp med &lt;strong&gt;
+          brød &lt;/em&gt; er godt &lt;/strong&gt;</code>. Hvilket element er
+          inni hvilket her? Er <code>strong</code> inni <code>em</code>, eller er
+          den litt utenforbi? Nettleseren kan bli forvirret, og for alt vi vet
+          kan den finne på å tolke resten av dokumentet som en del av
+          <code>em</code>-elementet. (Netscape finner ofte på slikt)
+        </p>
+      <h3>Attributter</h3>
+         <p>
+           Et element kan også ha <em>attributter</em>, det vil si egenskaper.
+           Attributtene angis bare i starttagen, ikke i sluttagen.
+           Attributter er som regel alltid på formen <code>egenskap="verdi"</code>.
+           I noen tilfeller er det egentlig ikke nødvendig å ha <code>"</code>-fnutter
+           rundt verdien, men det er enklere å være konsekvent og alltid bruke dem
+           istedet for å huske og vurdere hver gang om de er nødvendige eller ikke.
+           Du kan også bruke enkle apostrofer <code>'</code> istedet, for eksempel
+           hvis det er ønskelig å bruke tegnet <code>"</code> inni verdien. Hvis du
+           skal angi flere attributter skiller du dem med mellomrom
+           eller linjeskift, for eksempel <code>&lt;p style="text-align: right"id="blapp"&gt;</code>
+           Følgende eksempel vil indikere at avsnittet skal høyrestilles.
+        </p>
+        <div class="eksempel">
+          <p class="info">Eksempel:</p>
+          <pre>
+&lt;p align="right"&gt;
+    Dette er et eksempelavsnitt. 
+&lt;/p&gt;
+          </pre>
+          <p class="info">Avsnittet kan bli fremstilt slik i en visuell nettleser:</p>
+          <div class="fremstilling">
+            <p style="text-align: right">
+              Dette er et eksempelavsnitt. 
+            </p>
+          </div>
+        </div>
+        <p>
+          I forrige eksempel la vi merke til at vi ikke bare angav
+          strukturen i dokumentet, men også utseendet. Vi vil
+          om litt kunne se hvordan dette kan gjøres på en penere måte,
+          ved å skille struktur og utseende ved hjelp av såkalte
+          stilsett. På den måten kan du holde selve dokumentdelen
+          ryddig og oversiktlig.
+        </p>
+      <h3>Selvavsluttende elementer, <code>img</code></h3>
+        <p>
+          Nå skal vi introdusere et viktig element, nemlig elementet for
+          å sette inn bilder. <code>img</code> står for engelsk <em>image</em>,
+          og er et linjeelement, det vil si at det kommer på samme linje som teksten
+          der det settes inn.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;p&gt;
+    Dette er min beste venn: &lt;img src="tux.png"
+        alt="Tux leser avisen" /&gt; Er han ikke søt?
+&lt;/p&gt;
+          </pre>
+          <p class="info">
+            Avsnittet kan bli fremstilt slik i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <p>
+              Dette er min beste venn: <img src="tux.png"
+                alt="Tux leser avisen" /> Er han ikke søt?
+            </p>
+          </div>
+        </div>
+        <p>
+          <img src="tux.png" alt="Tux leser avisen" id="tux" />
+          Eksempelet demonstrerer hvordan <code>img</code>-elementet enkelt flyter
+          på linjen sammen med teksten. Dog blir det ikke særlig lekkert, den ene
+          tekstlinjen blir tvunget til å være like høy som bildet. Vi skal vise at
+          med litt enkel posisjonering vil bildet enkelt flyte på plass ved siden av
+          teksten, nemlig ved å slenge på attributtet <code>align="right"</code>.
+          Bildet vil da istedet oppføre seg som et blokkelement og plassere seg på
+          høyresiden av teksten, slik som her.
+        </p>
+        <p>
+          Det er flere ting å legge merke til når det gjelder
+          <code>img</code>-elementet. Vi sa tidligere at man må huske å avslutte
+          alle elementene. Men hvordan avsluttes et bilde? Hva er inneholdt i
+          bilde-elementet? Vel, det er bare bildet selv, så elementet blir avsluttet
+          allerede i starttagen med skråstreken du ser sist,
+          <code>&lt;img .. /&gt;</code>. Legg også merke til at forfatteren har
+          brukt linjeskift for å slippe å få hele tagen på en eneste lang
+          linje. Dette er fullstendig lovlig, faktisk kan du legge inn
+          linjeskift inne i attributtverdier også,
+          men støtten i nettleserne for det kan jeg ikke garantere for.
+        </p>
+        <p>
+          Det er to attributter til <code>img</code>-elementet som er
+          <strong>obligatoriske</strong>, det er <code>src</code> og <code>alt</code>.
+          Førstnevnte gir URIen til bildet
+          (engelsk <em>source</em>), enten
+          relativ eller absolutt. Hvis bildet lå i katalogen ovenfor
+          katalogen HTML-dokumentet lå i kunne adressen blitt beskrevet
+          som <code>src="../bilde.jpeg"</code>.
+        </p>
+        <p>
+          <code>alt</code> (engelsk <em>alternate text</em>) gir en
+          tekst som representeres istedet for bildet i de tilfeller
+          hvor nettleseren ikke har mulighet til å vise bilder, for
+          eksempel en nettleser for blinde eller hvis bildet ikke finnes.
+          Noen nettlesere har også mulighet for å slå av bildelasting slik at man
+          slipper å vente på nedlasting av grafikk. Hvis man har brukt
+          bildet til å være et menyvalg, for eksempel, så vil det være
+          lurt å skrive i <code>alt</code>-attributtet hvilket menypunkt det er.
+        </p>
+
+      <h3>Entiteter</h3>
+        <p>
+          Det er ikke alle tegn som du kan finne på å bruke som er
+          like lette å få frem i et HTML-dokument. To tegn som
+          du kanskje skjønner kan være problematiske er
+          <code>&lt;</code> og <code>&gt;</code>. Disse brukes jo til å
+          angi en start- eller sluttag, hvordan kan man bruke disse uten
+          at det blir tolket feil? Vel, nettopp for slike situasjoner har
+          man noe fint noe som heter <em>entiteter</em>. Entitet betyr egentlig
+          bare «noe som finnes». Entiteter begynner med tegnet <code>&amp;</code>
+          og slutter med tegnet <code>;</code>. For å skrive <code>&lt;</code> og
+          <code>&gt;</code> kan man skrive <code>&amp;lt;</code> og
+          <code>&amp;gt</code>, som står for henholdsvis <em>less than</em> og
+          <em>greater than</em>. Nå introduserte vi også et nytt problem,
+          hvordan skriver vi da <code>&amp;</code>? Løsningen er <code>&amp;amp;</code>,
+          <em>ampersand</em>. Du kan uttrykke massevis av tegn på denne måten,
+          for eksempel hvis du sitter i USA og skal skrive æøå uten å ha riktig
+          tastatur, da kan du bruke henholdsvis <code>&amp;aelig;</code>,
+          <code>&amp;oslash;</code> og <code>&amp;aring;</code>. Store bokstaver
+          er <code>&amp;AElig;</code>, <code>&amp;Oslash;</code> og
+          <code>&amp;Aring;</code>.
+        </p>
+        <p>
+          Entiteter kan benytter hvor som helst i HTML hvor du ellers kan
+          skrive tekst, det vil si også i attributtverdier. Derfor må du bruke
+          <code>&amp;amp;</code> hvis du for eksempel har en lenke til en URL som
+          <cite>http://www.firma.com/cgi-bin/adresser.cgi?navn=Jens&amp;avdeling=2</cite>.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;p&gt;
+    For &amp;aring; angi uthevet skrift brukes starttaggen 
+    &amp;lt;em&amp;gt; og sluttagen &amp;lt;/em&amp;gt;
+&lt;/p&gt;
+          </pre>
+         <p class="info">
+           Avsnittet kan bli fremstilt slik i en visuell nettleser:
+         </p>
+         <div class="fremstilling">
+           <p>
+             For å angi uthevet skrift brukes starttaggen &lt;em&gt; og
+             sluttagen &lt;/em&gt;
+           </p>
+         </div>
+        </div>
+
+      <h3>Kommentarer</h3>
+        <p>
+          Mange ganger kan det være fornuftig å bruke kommentering i HTML-koden
+          din. Det kan være du vil notere for deg selv hva du egentlig har gjort
+          på et finurlig sted, eller du vil kanskje midlertidig koble ut
+          deler av et dokument, gjerne i forbindelse med feilsøking.
+        </p>
+        <p>
+          Måten man kommenterer på i HTML er ved hjelp av
+          starttagen <code>&lt;!--</code> og sluttagen <code>--&gt;</code>.
+          Alt imellom disse to blir ignorert av nettleseren. Pass på at du
+          ikke bruker to (eller flere) bindestreker <code>--</code> etter
+          hverandre innenfor det som er kommentert ut, det slår nemlig
+          av igjen kommenteringen.
+       </p>
+       <div class="eksempel">
+         <p class="info">
+           Eksempel:
+         </p>
+         <pre>
+&lt;p&gt;
+    Her er jammen meg enda et av disse avsnittene,
+    altså. Alltid avsnitt.
+        &lt;!-- &lt;img src="spennendebilde.jpg" width="640" height="480"
+                alt="Oi, så spennende!"&gt; --&gt;
+    Aldri noe spennende.
+&lt;/p&gt;
+         </pre>
+         <p class="info">
+           Avsnittet kan bli fremstilt slik i en visuell nettleser:
+         </p>
+         <div class="fremstilling">
+           <p>
+             Her er jammen meg enda et av disse avsnittene, altså.
+             Alltid avsnitt. Aldri noe spennende.
+           </p>
+         </div>
+       </div>
+
+      <h3>Dokumentet</h3>
+        <p>
+          Et HTML-dokument består i sin helhet av et <code>html</code>-element.
+          Innenfor dette elementet har man to elementer, <code>head</code> og
+          <code>body</code>. I <code>head</code>-elementet forteller man
+          ting om selve dokumentet, som kommer i <code>body</code>.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;HTML på en ryddig måte - forståelse og bruk&lt;/title&gt;
+        &lt;meta name="author" content="Stian Søiland" /&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;p&gt;
+            HTML er en fin måte å uttrykke seg på, man markerer
+            teksten med koder, og nettleseren fremstiller teksten.
+        &lt;/p&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+          </pre>
+        </div>
+        <p>
+          Vi legger merke til to elementer innenfor <code>head</code>, hvorav
+          et av dem er selvavsluttende. Det første elementet, <code>title</code>,
+          angir, ja, du gjettet riktig, tittelen på dokumentet. Denne tittelen
+          brukes av nettlesere på tittellinjen, i bokmerker og oversikter.
+          Søkemotorer viser gjerne titlene på de forskjellige dokumentene i
+          sine oversikter. Tittelen bør være kort og beskrive dokumentet.
+          Du kan ikke ha noen andre elementer innenfor
+          <code>title</code>-elementet, så du må uttrykke deg med rene ord.
+          I tillegg kommer et generelt <code>meta</code>-element. Dette brukes
+          til å angi diverse data, i dette tilfellet angir vi forfatteren av
+          dokumentet.
+        </p>
+        <p>
+          Det neste elementet, <code>body</code> skal inneholde hele dokumentet.
+          Det er tillatt med både blokkelementer og linjeelementer innenfor,
+          men jeg vil anbefale at du bare bruker blokkelementer, og har
+          linjeelementene inne i blokkelementer.
+        </p>
+
+    <h2>Flere elementer</h2>
+      <h3>Overskrifter</h3>
+        <p>
+          I et typisk dokument vil det være minst én overskrift. I dette
+          dokumentet er det ca. 40 overskrifter. Overskrifter angis med
+          elementer som <code>&lt;h1&gt;</code>. Tallet 1 angir her at
+          overskriften er på høyeste nivå. Man kan ha underskrifter helt ned
+          til sjette nivå i HTML. I nettleseren indikeres vanligvis
+          overskrifter med stor skrift, og gjerne litt avstand før
+          og etter.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;h1&gt;Tittelen på dokumentet&lt;/h1&gt;
+
+&lt;h2&gt;Første deloverskrift &lt;h2&gt;
+    &lt;p&gt;Bla bla bla&lt;/p&gt;
+
+&lt;h2&gt;Andre deloverskrift&lt;/h2&gt;
+    &lt;p&gt;Bla bla bla&lt;/p&gt;
+    &lt;p&gt;Bla bla bla&lt;/p&gt;
+          </pre>
+          <p class="info">
+            Dokumentet kan bli fremstilt slik i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <h1>Tittelen på dokumentet</h1>
+
+            <h2>Første deloverskrift</h2>
+              <p>Bla bla bla</p>
+
+            <h2>Andre deloverskrift</h2>
+              <p>Bla bla bla</p>
+              <p>Bla bla bla</p>
+          </div>
+        </div>
+        <p>
+          Det er viktig at overskriftselementene ikke blir brukt til
+          andre ting enn overskrifter, og at man ikke bruker andre
+          elementer istedet for overskriftselementene når det er
+          snakk om en overskrift. Overskriftselementene er blokkelementer,
+          men kan kun inneholde linjeelementer, slik at hvis det på en side
+          er slik at et bilde egentlig er en
+          overskrift kan dette gjøres slik:
+          <code>&lt;h1&gt;&lt;img src="overskrift.png"
+            alt="Ingrids hjemmeside" /&gt;&lt;/h1&gt;</code>.
+          Gjør man det slik vil overskriften bli markert som
+          overskrift for alle som ikke kan se bildet, slik at
+          overskriften ikke forsvinner i den vanlige tekstflyten.
+        </p>
+       <h3>Lenker</h3>
+         <p>
+           En grunnleggende egenskap ved et dokument uttrykt i HTML er at
+           det kan inneholde lenker. En lenke er en referanse til en
+           annen ressurs, hovedsaklig på Internett. Samlingnen av alle
+           HTML-dokumenter og tilhørende ressurser som er lenket sammen
+           kalles <em>World wide web</em>.
+         </p>
+         <div class="eksempel">
+           <p class="info">
+             Eksempel:
+           </p>
+           <pre>
+&lt;p&gt;
+  Det var slik man fant ut at &lt;a href="elefanter.html"&gt;elefantene&lt;/a&gt;
+  tok over verden. &lt;a href="http://www.vg.no/"&gt;VG&lt;/a&gt; hadde en
+  artikkelserie om elefantene i 1983.
+&lt;/p&gt;
+           </pre>
+           <p class="info">
+             Avsnittet kan bli fremstilt slik i en visuell nettleser:
+           </p>
+           <div class="fremstilling">
+             <p>
+               Det var slik man fant ut at <a href="elefanter.html">elefantene</a>
+               tok over verden. <a href="http://www.vg.no/">VG</a> hadde en
+               artikkelserie om elefantene i 1983.
+             </p>
+           </div>
+         </div>
+         <p>
+           Lenker presenteres gjerne som understreket tekst
+           med en annen farge, men ved hjelp av stilsett kan du
+           angi selv hvordan lenkene skal fremstilles i visuelle
+           nettlesere.
+          </p>
+          <p>
+           <code>a</code>-elementet kan inneholde
+           linjeelementer, og man kan derfor bruke bilder som
+           lenker, for eksempel som: <code>&lt;a
+           href="meg.html"&gt;&lt;img src="meg.png" alt="Meg" /&gt;</code>.
+         </p>
+
+       <h3>Generelle gruppering</h3>
+         <p>
+           Noen ganger ønsker man å gruppere en rekke elementer,
+           enten fordi de logisk hører sammen eller fordi man
+           ønsker å gi dem en utseendemessig egenskap ved hjelp
+           av et stilark.
+           Til slike anledninger har HTML to
+           elementer som i seg selv ikke forteller noenting, men
+           som kan inneholde andre elementer.
+         </p>
+         <p>
+           Elementet <code>div</code> er et blokkelement, og kan brukes
+           til å gruppere både blokk- og linjeelementer. Du kan tilogmed
+           gruppere andre <code>div</code>-elementer hvis det skulle
+           passe deg. For å koble elementet mot egenskaper gitt i
+           stilark benyttes attributtene <code>class</code> og/eller
+           <code>id</code>.
+         </p>
+         <p>
+           Tilsvarende har en elementet <code>span</code> som er et
+           linjeelement. Du kan bare gruppere linjeelementer innenfor
+           <code>span</code>.
+           Et typisk bruksområde for dette elementet
+           er hvis du vil gi deler av et avsnitt typografiske egenskaper
+           uten at du vil markere disse delene som viktige med for
+           eksempel <code>&lt;em&gt;</code>.
+         </p>
+         <div class="eksempel">
+           <p class="info">
+             Eksempel:
+           </p>
+           <pre>
+&lt;div class="meny"&gt;
+    &lt;p&gt;[menypunkt1]&lt;/p&gt;
+    &lt;p&gt;[menypunkt2]&lt;/p&gt;
+    &lt;p&gt;[menypunkt3]&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+    &lt;span class="fornavn"&gt;Stian&lt;/span&gt; &lt;span class="etternavn"&gt;Søiland&lt;/span&gt;
+&lt;/p&gt;
+           </pre>
+          <p class="info">
+            Teksten kan bli fremstilt slik i en visuell nettleser hvis man
+            knytter et stilark til dokumentet hvor man har angitt egenskapene
+            til disse elementene:
+          </p>
+          <div class="fremstilling">
+             <div class="meny">
+               <p>[menypunkt1]</p>
+               <p>[menypunkt2]</p>
+               <p>[menypunkt3]</p>
+             </div>
+             <p>
+               <span class="fornavn">Stian</span> <span class="etternavn">Søiland</span>
+             </p>
+          </div>
+         </div>
+       <h3>Lister</h3>
+         <div class="eksempel">
+           <p class="info">
+             Eksempel:
+           </p>
+           <pre>
+&lt;ul&gt;
+    &lt;li&gt;Vaske bilen&lt;/li&gt;
+    &lt;li&gt;Hente hunden i barnehagen&lt;/li&gt;
+    &lt;li&gt;Lage middag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+    &lt;li&gt;Finn en stikkontakt&lt;/li&gt;
+    &lt;li&gt;Sett i pluggen&lt;/li&gt;
+    &lt;li&gt;Slå på fjernsynsapparatet&lt;/li&gt;
+&lt;/ol&gt;
+&lt;dl&gt;
+    &lt;dt&gt;Studentutvalget&lt;/dt&gt;
+        &lt;dd&gt;Hjelper deg med hva det måtte være.&lt;/dd&gt;
+    &lt;dt&gt;Velferdstinget&lt;/dt&gt;
+        &lt;dd&gt;Samler inn semesteravgift og deler pengene ut igjen.&lt;/dd&gt;
+    &lt;dt&gt;Studenttinget&lt;/dt&gt;
+        &lt;dd&gt;Synser og mener ting om så mangt&lt;/dd&gt;
+&lt;/dl&gt;
+           </pre>
+           <p class="info">
+            Listene kan bli fremstilt slik i en visuell nettleser:
+           </p>
+           <div class="fremstilling">
+             <ul>
+               <li>Vaske bilen</li>
+               <li>Hente hunden i barnehagen</li>
+               <li>Lage middag</li>
+             </ul>
+             <ol>
+               <li>Finn en stikkontakt</li>
+               <li>Sett i pluggen</li>
+               <li>Slå på fjernsynsapparatet</li>
+             </ol>
+             <dl>
+               <dt>Studentutvalget</dt>
+                 <dd>Hjelper deg med hva det måtte være.</dd>
+               <dt>Velferdstinget</dt>
+                 <dd>Samler inn semesteravgift og deler pengene ut igjen.</dd>
+               <dt>Studenttinget</dt>
+                 <dd>Synser og mener ting om så mangt</dd>
+                 <dd>Høyeste studentorgan på NTNU</dd>
+
+             </dl>
+           </div>
+         </div>
+         <p>
+           <code>ul</code>-elementet inneholder en uordnet liste, det
+           vil si en punktliste. Hvert av punktene angis med
+           <code>li</code>-elementer. Kun <code>li</code>-elementer
+           er tillatt innenfor listen, men innenfor <code>li</code>
+           er både blokk- og linjeelementer tillatt. En ordnet liste,
+           <code>ol</code> angir punktene på samme måte, men her blir
+           hvert punkt markert med et stigende tall.
+         </p>
+         <p>
+           <code>dl</code>, definisjonslisten, er litt annerledes oppbygd.
+           Den består av en liste med termer og beskrivelser.
+           Termen som skal beskrives angis innenfor
+           <code>dt</code>-elementet, og beskrivelsene innenfor
+           <code>dd</code>-elementene. Legg merke til at innenfor
+           <code>dt</code> kan du bruke linjeelementer, mens innenfor
+           <code>dd</code> kan du bruke både blokk- og linjeelementer.
+         </p>
+       <h3>Tabeller</h3>
+         <p>
+           Tabeller er svært nyttige når man skal presentere datamangder.
+           En tabell består av rader og kolonner, som utgjør cellene. I
+           HTML angis en tabell radvis, slik eksempelet vil vise.
+         </p>
+         <div class="eksempel">
+           <p class="info">
+             Eksempel:
+           </p>
+           <pre>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt; &lt;th&gt;Navn&lt;/th&gt;          &lt;th&gt;Fagområde&lt;/th&gt;   &lt;th&gt;Telefonnummer&lt;/th&gt; &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt; &lt;td&gt;Jens Jakobsen&lt;/td&gt; &lt;td&gt;Fysikk&lt;/td&gt;      &lt;td&gt;91484&lt;/td&gt; &lt;/tr&gt;
+        &lt;tr&gt; &lt;td&gt;Kari Olsen&lt;/td&gt;    &lt;td&gt;Informatikk&lt;/td&gt; &lt;td&gt;94815&lt;/td&gt; &lt;/tr&gt;
+        &lt;tr&gt; &lt;td&gt;Ingrid Hauge&lt;/td&gt;  &lt;td&gt;Historie&lt;/td&gt;    &lt;td&gt;98482&lt;/td&gt; &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+           </pre>
+           <p class="info">
+            Tabellen kan bli fremstilt slik i en visuell nettleser:
+           </p>
+           <div class="fremstilling">
+             <table>
+               <thead>
+                 <tr> <th>Navn</th>          <th>Fagområde</th>   <th>Telefonnummer</th> </tr>
+               </thead>
+               <tbody>
+                 <tr> <td>Jens Jakobsen</td> <td>Fysikk</td>      <td>91484</td> </tr>
+                 <tr> <td>Kari Olsen</td>    <td>Informatikk</td> <td>94815</td> </tr>
+                 <tr> <td>Ingrid Hauge</td>  <td>Historie</td>    <td>98482</td> </tr>
+               </tbody>
+             </table>
+           </div>
+         </div>
+         <p>
+           Innenfor elementet <code>tr</code>, table row,
+           er der to muligheter, <code>th</code> som brukes på
+           <em>header</em>-celler, det vil si celler med en overskrift
+           som brukes til å beskrive noe annet i tabellen. <code>td</code>,
+           table data, angir vanlige tabellceller. Vi har gruppert
+           <code>tr</code> i to elementer, <code>thead</code> og <code>tbody</code>.
+           Sammen med <code>tfoot</code> er dette elemter som angir hvilke deler
+           av tabellen som er statiske og hvilke som er dynamiske. I en veldig
+           stor tabell kan nettleseren la radene inneholdt i <code>thead</code> og
+           <code>tfoot</code> stå stille på skjermen mens man scroller innenfor
+           <code>tbody</code>.
+         </p>
+         <p>
+           Tabeller kan også (mis)brukes til utforming av et dokuments
+           utseende. Siden <code>td</code>-elementet kan inneholde blokkelementer
+           kan man plassere hele dokumentdeler innenfor hver sin tabellcelle
+           for å plassere disse på skjermen slik man ønsker det. Det anbefales
+           at man forsøker å bruke stylesheets i kombinasjon med
+           <code>div</code>-elementet for å oppnå slik formattering.
+         </p>
+
+
+    <h2>Stilsett</h2>
+      <p>
+        Vi nevnte i begynnelsen at vi ønsket å skille struktur og utseende.
+        For å gjøre dette tar vi i bruk noe som kalles stilsett.
+        Tenke deg at du har et dokument, fiks ferdig strukturert, med
+        ferdigmarkerte overskrifter, uthevinger og inndelinger. Hva om du
+        nå bare kan si at alle <code>h2</code>-elementer skal ha rosa
+        skrift, blinke og ha et gusjegrønt bakgrunnsbilde og god avstand
+        over men ikke under?
+      </p>
+      <p>
+        Vel, det kan du. Verktøyet heter <em>CSS</em>, som står for
+        Cascading Style Sheets. Vi behandler bare CSS overfladisk nå,
+        spesifikasjonen til CSS1 er såpass grei at når man har
+        fått basisforståelsen holder det med den og litt prøving og
+        feiling.
+      </p>
+      <div class="eksempel">
+        <p class="info">
+          Et enkelt stilsett:
+        </p>
+        <pre>
+body {
+    background-color: white;
+    color: black;
+    text-align: justify;
+    margin: 1em;
+}
+h1,h2,h3,h4 {
+    font-family: arial, helvetica, sans-serif;
+    background-color: white;
+    color: #b86;
+}
+        </pre>
+      </div>
+      <p>
+        Stilsettet over setter først egenskaper for <code>body</code>,
+        deretter for <code>h1</code>, <code>h2</code>, <code>h3</code>
+        og <code>h4</code> samlet. Alt mellom <code>{</code> og <code>}</code>
+        er egenskaper som settes. Til venstre for kolon står det hvilken
+        egenskap som skal settes, for eksempel <code>color</code>, og til høyre
+        for kolon står det hva denne egenskapen skal settes til, for eksempel
+        <code>black</code>. Man avslutter hver egenskaptilordning med semikolon.
+      </p>
+      <p>
+        Dette stilsettet setter bakgrunnsfargen for dokumentet til hvit. I tillegg
+        blir det satt en marg rundt hele innholdet av dokumentet ut ifra en
+        typografisk standardstørrelse <code>em</code> som er relativ til
+        den skriftstørrelsen som måtte gjelde for elementet.
+        Teksten i <code>body</code>-elementet skal være
+        svart, og den skal være blokkjustert.
+      </p>
+      <p>
+        Det prinsippet til CSS nå sier er at egenskaper arves. Det vil si at
+        hvis elementet <code>body</code> inneholder for eksempel et
+        <code>table</code>-element, så vil innholdet i dette elementet også
+        bli formattert med sort skrift og blokkjustert tekst. Noen egenskaper
+        arves ikke, som for eksempel marg, iogmed at det ikke virker
+        logisk at det skal settes samme marg på alle underliggende elementer.
+      </p>
+      <p>
+        Hver av elementene <code>h1</code>, <code>h2</code>, <code>h3</code>
+        og <code>h4</code> blir gitt egenskaper for skrifttype, farge og
+        bakgrunnsfarge.  Nettleseren bruker tre forskjellige stilsett på
+        dokumentet før den viser det endelige resultatet til brukeren. Først
+        legger den på sitt standardstilsett, som for eksempel sier at
+        <code>h1</code> skal være såså stor og at standardmargene er så som så.
+        Deretter legger den på <em>brukerens stilsett</em>, og til slutt legger
+        den på dokumentets stilsett. (I noen nettlesere kan brukeren dog
+        bytte om på disse, slik at hennes stilsett blir brukt oppå dokumentets.)
+        Det som da kan bli et problem er at brukeren kan ha oppgitt i sine
+        preferanser at han liker sort skrift på brun bakgrunn for
+        overskrifter. Hvis stilsettet vårt kun setter fargen på overskrifter
+        til brun uten å si noe om bakgrunnsfargen, kan vi risikere at
+        det kommer brun skrift på  brun bakgrunn. Derfor oppgir vi alltid
+        <code>background-color</code> når vi oppgir <code>color</code> og motsatt.
+      </p>
+
+      <h3>Koble stilsett med dokument</h3>
+        <p>
+          Et stilsett kan knyttes til et dokument på to måter. Den ene
+          måten er ved å inkludere et
+          <code>&lt;style type="text/css"&gt;</code>-element innenfor
+          <code>&lt;head&gt;</code>-elementet, det andre er å ha stilarket i
+          en egen fil som man lenker inn ved hjelp av <code>link</code>-elementet.
+          Følgende eksempel viser et dokument hvor man har kombinert disse to
+          teknikkene.
+        </p>
+
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML på en ryddig måte - forståelse og bruk&lt;/title&gt;
+        &lt;link href="/stylesheet.css" rel="stylesheet" type="text/css" /&gt;
+        &lt;style type="text/css"&gt;
+            body {
+              background-color: white;  /* overstyrer fargene i stylesheet.css */
+              text: black;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      ..
+    &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+        </div>
+        <p>
+          Her introduserer vi også hvordan man foretar
+          kommentering i CSS. Man starter en kommentar med
+          <code>/*</code> og avslutter med <code>*/</code>.
+        </p>
+
+      <h3>Klasser og identifisering</h3>
+        <p>
+          Hvert eneste element i HTML som er en del av elementet <code>body</code>
+          kan ha attributtene <code>class</code> og <code>id</code>. Flere
+          elementer kan ha samme verdi for class, men bare ett element i hvert
+          dokument kan ha samme id.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+&lt;p class="farge"&gt;
+  &lt;em class="farge"&gt;Viktig informasjon:&lt;/em&gt;
+  &lt;strong id="inntaksstopp"&gt; Det er inntaksstopp&lt;/strong&gt;
+&lt;/p&gt;
+          </pre>
+          <p class="info">
+            Kan formatteres med følgende stilsett:
+          </p>
+          <pre>
+.farge {
+  color: maroon;
+  background: white;
+}
+em.farge {
+  font-size: large;
+}
+#inntaksstopp {
+  font-family: helvetica, arial, sans-serif;
+}
+
+          </pre>
+          <p class="info">
+           Avsnittet kan bli fremstilt slik i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <p class="farge">
+              <em class="farge">Viktig informasjon:</em>
+              <strong id="inntaksstopp"> Det er inntaksstopp</strong>
+            </p>
+          </div>
+        </div>
+        <p>
+          Legg merke til at vi kan angi egenskaper generelt for
+          alle elementer som er med i klassen <code>farge</code> med <code>.farge</code>,
+          og samtidig gi spesielle egenskaper til <code>em</code>-elementene som
+          er medlem av klassen. Siste del av stilsettet gir egenskaper for det
+          (eneste) elementet som har <code>id="inntaksstopp"</code>.
+        </p>
+        <p>
+          Det er verdt å legge merke til at bare egenskapene arves, ikke
+          klassetilhørigheten. Her skiller CSS seg ifra det gamle klassesystemet
+          som rådet i Europa på 1800-tallet. Dersom vi i eksempelet ovenfor
+          <em>ikke</em> hadde hatt med <code>class="farge"</code> i <code>em</code>-elementet
+          ville «Viktig informasjon» fortsatt blitt skrevet med mørkerød farge,
+          for den egenskapen arver den ifra <code>p</code>-elementet, men den
+          ville ikke fått større skrift, som er definert for
+          <code>em</code>-elementer som er medlem av klassen <code>farge</code>.
+        </p>
+
+      <h3>Størrelser</h3>
+        <p>
+          Mange av egenskapene i CSS angir størrelser. Man vil angi
+          hvor stor skrift man vil ha, hvor stor marg, hvor bred en ting
+          skal være, osv. Det finnes flere måter å oppgi slike størrelser på.
+          Den ene måten er ved å bruke absolutte størrelser, og den andre er å bruke
+          relative størrelser.
+        </p>
+        <p>
+          En absolutt størrelse vil si at et element med
+          den angitte stilen vil bruke den samme størrelsen uansett hvor
+          det befinner seg. Du kan oppgi absolutte størrelser i mange
+          forskjellige enheter, som tommer eller milimeter, men den
+          vanligste er punkter, og brukes slik: <code>p { font-size: 12pt; }</code>
+          Du bør kun bruke absolutte enheter for medier med kjente egenskaper,
+          som ved utskrift på papir.
+        </p>
+        <p>
+          Relative størrelser, på den andre siden, kan brukes i alle
+          sammenhenger. Det vanligste er å oppgi relative størrelser
+          i prosent eller ved hjelp av enheten <code>em</code>. <code>em</code>
+          er en vanlig typografisk enhet, og <code>1em</code> er i et gitt
+          typesett et kvadrat, brukt til å angi mellomrom. I mange skrifttyper er
+          1em like langt som bredden av en stor M. Det viktige å få med seg er at
+          1em er relativt til den aktuelle skriftstørrelsen i elementet.
+        </p>
+        <p>
+          Størrelser i prosent <code>%</code> referer til foreldreobjektet. Hvis man
+          oppgir at et element skal være 100% bredt vil det forsøke å
+          fylle foreldreobjektet med hele sin bredde. I noen få tilfeller
+          kan det være hensiktsmessig å angi størrelser i piksler med <code>px</code>,
+          for eksempel når man setter inn et bilde og man oppgir størrelsen i CSS
+          slik at nettleseren kan tegne opp dokumentet før den har hentet bildet
+          for å få vite hvor stort det er.
+        </p>
+        <p>
+          Det anbefales å bruke relative størrelser der det er mulig, slik
+          at det blir enkelt for brukeren å angi sine egne preferanser.
+          En svaksynt bruker kan for eksempel ha satt standardskriften sin til
+          18 punkter så han klarer å lese teksten, selv om han jo må scrolle
+          litt mer på websidene. Hvis du da kommer og setter overskrifter til
+          12 punkters størrelse og teksten til 10, så har du allerede mistet
+          en leser. Bruker du derimot relative størrelser fornuftig kan
+          du ønske alle velkommen.
+        </p>
+
+
+      <h3>Egenskaper</h3>
+        <p>
+          Her er de egenskapene som du kanskje mest får bruk for. Flere
+          er definert i spesifikasjonen.
+        </p>
+        <p>
+          Noe av det vanligste designere liker å spesifisere er
+          <em>skriftegenskaper</em>. Vi velger å vise de vanligste
+          egenskapene med et eksempel.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+blockquote {
+    font-family: times, "times new roman", serif;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+          </pre>
+          <p class="info">
+            Et typisk sitat med dette stilsettet kan bli fremstilt slik
+            i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <cite>Jagland:</cite>
+            <blockquote>
+              <p>
+                Jeg leste for en stund siden at vitenskapsfolk har
+                oppdaget at det bak støvskyen i Melkeveien skjuler
+                seg en planet som er mange ganger sterkere enn den
+                solen vi er vant med å se.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+        <p>
+          La oss ta for oss egenskapene i rekkefølge. <code>font-family</code>
+          er en liste over foretrukne skrifttyper. Det er viktig at du
+          tenker på at alle ikke har de samme skriftene installert. For å helgardere
+          deg er det derfor i tillegg til å gi flere mulige preferanser også
+          en generell skriftfamilie til sist, denne er enten <code>serif</code>,
+          <code>sans-serif</code>, <code>cursive</code>, <code>fantasy</code>
+          eller <code>monospace</code>. Hvis et skriftnavn inneholder mellomrom
+          bruker du anførselstegn slik som i eksempelet.
+        </p>
+        <p>
+          <code>font-size</code> bruker vanlige lengdeenheter. Det man dog må
+          være oppmerksom på er at for skriftstørrelser referer relative
+          størrelser alltid til <em>foreldreelementets</em> skriftstørrelse.
+          For skriftstørrelser har man i tillegg
+          noen praktiske absolutte størrelser,
+          <code>xx-small</code>, <code>x-small</code>, <code>small</code>,
+          <code>medium</code>, <code>large</code>, <code>x-large</code> og
+          <code>xx-large</code>. Disse kan brukes uavhengig av mediet, og
+          den faktiske størrelsen av disse avgjøres av nettleseren.
+          Tilsvarende finnes det relative nøkkelord,
+          <code>larger</code> og <code>smaller</code>.
+        </p>
+        <p>
+          Som en hovedregel bør du benytte relative størrelser for
+          skriftstørrelser. <code>html</code>-elementet vil ha en standard
+          skriftstørrelse fra nettleseren, og hvis du da har
+          <code>body { font-size: 110%; }</code> så vil skriftstørrelsen i
+          dokumentet bli 110% av normal størrelse gitt av nettleseren/brukeren.
+          Husk på at standardstørrelsen kan variere, så å leke med sin egen
+          nettleser med <code>font-size: 80%</code> til man har akkurat den
+          skriften man vil ha ikke vil være noen god løsning.
+        </p>
+        <p>
+          Siden størrelsen <code>em</code> ellers alltid referer til
+          gjeldende skriftstørrelse i elementet anbefales det å alltid
+          benytte <code>%</code> eller <code>larger</code>/<code>smaller</code>
+          til relative skriftstørrelser. Typografene rister på hodet over
+          angivelser av skriftstørrelser i <code>em</code>.
+        </p>
+        <p>
+          De to resterende egenskapene er enkle å forklare.
+          <code>font-style: italic;</code>
+          sier at teksten skal skrives i kursiv, og
+          <code>font-weight: bold;</code> angir at det skal brukes
+          fet skrifttype. Hvis et element har arvet en slik egenskap
+          kan du reversere den ved å gi den egenskapen <code>normal</code>
+          istedet for <code>bold</code> eller <code>italic</code>.
+        </p>
+
+      <h3>Marger og bokser</h3>
+        <p>
+          Ethvert element kan bli gitt egenskaper for marger og rammelinje.
+          Dette er vanligvist brukt på blokkelementer, men virker også
+          på linjeelementer. Du kan få et element til å bli fremstilt
+          som en «boks», med bakgrunnsfarge og ramme, en gitt bredde
+          og høyde. Du kan også spesifisere hvordan den skal plasseres
+          i dokumentet.
+        </p>
+        <p>
+          <code>margin</code> angir hvor meget plass man skal sette av
+          utenfor elementet. Det er flere måter å spesifisere denne
+          egenskapen på, de to vanligste er å enten
+          spesifisere marg for alle 4 sider samtidig med <code>margin: 1em;</code>,
+          den andre er å spesifisere marg spesifikt for hver enkelt side
+          med <code>margin-left: 2em;</code> osv.  Merk deg forskjellen mellom
+          å bruke <code>em</code> som størrelsesenhet, som er relativ til
+          skriftstørrelsen, og <code>%</code>, som her er relativ til lengden
+          og bredden av foreldreelementet. (Forsøk å forandre størrelsen på
+          nettleservinduet)
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+p.midtstiltprosent {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+p.midtstiltem {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+          </pre>
+          <p class="info">
+            Et typisk avsnitt med dette stilsettet kan bli fremstilt slik
+            i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <p class="midtstiltprosent">
+              Dette er et eksempel på et avsnitt som blir midtstilt. Bare
+              selve avsnittet blir midtstilt, ikke teksten inni. Derfor skriver
+              vi masse tekst her, slik at alle forstår hva jeg mener. Masse tekst.
+              Masse tekst. Bla bla bla bla. Ingen har mer blapper enn jeg! Hah!
+              Blapp meg her, og blapp meg der!
+            </p>
+            <p class="midtstiltem">
+              Dette er et eksempel på et avsnitt som blir midtstilt. Bare
+              selve avsnittet blir midtstilt, ikke teksten inni. Derfor skriver
+              vi masse tekst her, slik at alle forstår hva jeg mener. Masse tekst.
+              Masse tekst. Bla bla bla bla. Ingen har mer blapper enn jeg! Hah!
+              Blapp meg her, og blapp meg der!
+            </p>
+          </div>
+        </div>
+        <p>
+          Elementer kan tenkes på som små bokser, ihvertfall hvis vi
+          tenker på blokkelementene. Vi skal om litt se hvordan vi kan sette
+          bakgrunn for slike bokser, først skal vi sette en <em>ramme</em> rundt.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+div.boks {
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+}
+          </pre>
+          <p class="info">
+          </p>
+          <div class="fremstilling">
+            <div class="boks">
+              <p>Dette er et avsnitt innenfor en &lt;div class="boks"&gt;.
+                 Ble det ikke pen boks, vel?
+              </p>
+            </div>
+          </div>
+        </div>
+        <p>
+          Dette er de tre egenskapene man angir til en ramme. Først
+          bredden, som kan være <code>thin</code>, <code>medium</code> eller
+          <code>thick</code> eller angitt som en standardstørrelse. Deretter
+          har vi angitt fargen. Vi skal gå nærmere inn på hvordan man
+          spesifiserer farger om litt. border-style kan være blant annet
+          <code>none</code>, <code>solid</code> <code>double</code>, <code>dotted</code>.
+          Utdypende informasjon står i spesifikasjonen.
+        </p>
+        <p>
+          Hvis du ønsker å ha forskjellig utseende på noen av rammesidene
+          kan du for hvert av disse egenskapene liste opp
+          egenskapsverdier fire ganger, som da vil gjelde i rekkefølgen
+          topp, høyre, bunn, venstre, eksempelvis <code>border-width: thin thick thin thick;</code>.
+        </p>
+        <p>
+          <code>margin</code>-egenskapene sa hvordan margene var på utsiden av
+          rammen. Hvis man ønsker å beskrive margene på <em>innsiden</em> av
+          rammen, kan man bruke <code>padding</code> på akkurat samme måte,
+          dvs. si hvor stor avstand det skal være mellom rammen/ytterkanten av
+          elementet og innholdet i elementet.
+        </p>
+      <h3>Bakgrunner og farger</h3>
+        <p>
+          Med CSS kan du for alle elementer spesifisere ikke bare farge
+          og bakgrunnsfarge, men også bakgrunnsbilder. Når man benytter seg
+          av farger og bakgrunner er det dog viktig at man sørger for at
+          resultatet blir leselig. Husk også at overdrevent bruk kan
+          være helseskadelig.
+        </p>
+        <div class="farger">
+          <p>Dette er fargenavnene forhåndsgitt  CSS:</p>
+          <p>
+            <span id="aqua">aqua</span>,
+            <span id="black">black</span>,
+            <span id="blue">blue</span>,
+            <span id="fuchsia">fuchsia</span>,
+            <span id="gray">gray</span>,
+            <span id="green">green</span>,
+            <span id="lime">lime</span>,
+            <span id="maroon">maroon</span>,
+            <span id="navy">navy</span>,
+            <span id="olive">olive</span>,
+            <span id="purple">purple</span>,
+            <span id="red">red</span>,
+            <span id="silver">silver</span>,
+            <span id="teal">teal</span>,
+            <span id="white">white</span>,
+            <span id="yellow">yellow</span>
+          </p>
+        </div>
+        <p>
+          Farger kan beskrives på forskjellige måter i CSS. En måte er å
+          bruke fulle navn, men siden det bare er 16 (fæle) standardfargene
+          som er definert, kommer denne metoden fort til kort. En må istedet
+          beskrive en farge ut ifra hvordan den er satt sammen av fargetoner
+          i rød, grønn og blå. Hvis man kan regne heksadesimalt (telle til 16
+          istedetfor til 10) kan man benytte heksadesimal skriveform
+          <code>#ffcc88</code> eller ganske enkelt <code>#fc8</code> om man ikke
+          vil være så detaljert. Bildebehandlingsprogrammer presenterer ofte
+          en slik heksadesimal kode når man velger en farge i paletten.
+        </p>
+        <p>
+          Om man blir skremt av å telle helt opp til F istedet for til 9,
+          bør man kanskje prøve <code>rgb()</code>-metoden istedet.
+          I CSS kan du skrive <code>rgb(255,128,191)</code> istedet for
+          <code>#ff80bf</code> for å beskrive samme farge. Hvert enkelt tall
+          er fortsatt for henholdsvis rød, grønn og blå fargetoner, og styrken
+          beskrives med et tall som er i området [0;255]. Det finnes
+          enda en mulighet, og det er å angi tallene som prosenter istedet.
+          <code>rgb(100%, 50%, 75%)</code> gir samme farge.
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+body {
+    background-color: rgb(99%, 90%, 85%);
+    color: rgb(67%, 47%, 33.3%);
+}
+          </pre>
+          <p class="info">
+            Et typisk dokument med dette stilsettet kan bli fremstilt slik
+            i en visuell nettleser:
+          </p>
+          <div class="fremstilling" id="bodyfarger">
+            <h1>Testdokument</h1>
+            <p>
+              Her er et lite dokument. Lite. Dokument. As if.
+            </p>
+          </div>
+        </div>
+        <p>
+          Som nevnt tidligere bør man alltid definere bakgrunnsfarge sammen
+          med forgrunnsfarge. I tillegg kan man definere et bakgrunnsbilde
+          hvis det skulle sømme seg:
+        </p>
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+body {
+    background-color: rgb(99%, 90%, 85%);
+    background-image: url(papir.png);
+    color: rgb(67%, 47%, 33.3%);
+}
+          </pre>
+          <p class="info">
+            Et typisk dokument med dette stilsettet kan bli fremstilt slik
+            i en visuell nettleser:
+          </p>
+          <div class="fremstilling" id="bodybilde">
+            <h1>Testdokument</h1>
+            <p>
+              Her er et lite dokument. Lite. Dokument. As if.
+            </p>
+          </div>
+        </div>
+        <p>
+          Legg merke til <code>url()</code>-funksjonen. Denne kan ta både
+          relative og absolutte adresser. Vær oppmerksom på at relative
+          adresser vil gjelde i forhold til <em>stilsettets</em> adresse, ikke
+          dokumentets. Dette får betydning når man skiller ut stilsettet
+          i en egen fil som lenkes inn ifra HTML-dokumentet. <code>background</code>
+          har også noen gøyale egenskaper, eksempelvis
+          <code>background-repeat: no-repeat</code>, <code>background-attachment: fixed</code>
+          og <code>background-position: center center;</code> Se spesifikasjonen for
+          flere detaljer.
+        </p>
+      <h3>Generelt</h3>
+        <p>
+          <code>a:link, a:visited: a:active { text-decoration: underline; } </code>
+          gjør at alle lenker i <code>a</code>-elementer blir vist med
+          understreking. Vi introduserer her samtidig såkalte psevdoklasser som
+          gjelder spesielt for <code>a</code>-elementet. <code>a:link</code>
+          gir egenskapene for ubesøkte lenker, <code>a:visited</code> gir
+          egenskapene for besøkte lenker og <code>a:active</code> gir
+          egenskapene for lenken brukeren er i ferd med å klikke på.
+          Vi kan bruke disse psevdoklassene til å forandre hva som er
+          fargen på lenker i et dokument. Hvis vi ønsker å foreslå at
+          lenkene ser best ut uten understreking kan man bruke
+          <code>text-decoration: none;</code>.
+        </p>
+        <p>
+          <code>p.hoyre { text-align: right; } </code> gjør at teksten
+          i <code>p</code>-elementer som er medlem av <code>hoyre</code>-klassen
+          får teksten høyrejustert. Mulige verdier er <code>left</code>,
+          <code>right</code>, <code>center</code> og <code>justify</code>.
+          Sistnevnte vil si blokkjustering.
+        </p>
+        <p>
+          <code>body { line-height: 130%; }</code> beskriver linjehøyden, eller
+          avstanden mellom baselinjen til to etterfølgende linjer. Lengden
+          er relativ til skrifttypens høyde. En har også
+          <code>body { letter-spacing: 1em; }</code> som angir hvor stort
+          mellomrom det skal være mellom to bokstaver i tillegg til det vanlige
+          mellomrommet. Tilsvarende har en <code>word-spacing</code> for tillegg
+          i avstanden mellom ord. Begge disse to siste egenskapene kan være
+          både positive og negative, slik at en kan få bokstavene til å stå
+          tettere eller mer spredt.
+        </p>
+        <p>
+          CSS lar deg selvsagt også spesifisere hvordan en listestruktur
+          skal se ut.
+        </p>
+
+        <div class="eksempel">
+          <p class="info">
+            Eksempel:
+          </p>
+          <pre>
+ul {
+    list-style-type: disc;
+    list-style-image: url(hake.png);
+}
+          </pre>
+          <p class="info">
+            Et typisk uordnet liste med dette stilsettet kan bli fremstilt slik
+            i en visuell nettleser:
+          </p>
+          <div class="fremstilling">
+            <ul class="haker">
+              <li>Skrive HTML-kurs</li>
+              <li>Sende søknad til Kulturstyret</li>
+              <li>Gjøre øvinger</li>
+            </ul>
+          </div>
+        </div>
+
+
+    <h2>Oversiktlig kode</h2>
+      <p>
+        Vi vil her komme med forslag til teknikker for å skrive HTML
+        på en måte som gjør det enklere å ha oversikt over koden
+        og dermed unngå feil, eller i det minste lettere fikse
+        feil.
+      </p>
+      <h3>Tenk elementer</h3>
+        <p>
+          Alt i HTML er elementer. Elementene i et dokument kan fremstilles i en
+          trestruktur, hvor hvert element er underordnet et annet. Under følger
+          en sterkt forenklet versjon av hvordan elementene i
+          dette dokumentet hører sammen.
+        </p>
+        <pre>
+html
+|-- head
+|   |-- title
+|   |   `-- HTML på en ryddig måte
+|   `-- style
+|       `-- ...
+`-- body
+    |-- h1
+    |-- `-- HTML på en ryddig måte
+    |-- p
+    |   |-- bla bla...
+    |   `-- em
+    |       `-- HTML
+    |-- h2
+    |   `-- Syntaks
+    |-- dl
+    |   |-- dt
+    |   |   `-- syntaks
+    |   `-- dd
+    |       |-- p
+    |       |   |-- m1 (fra gr,
+    |       |   |-- em
+    |       |   |   `-- -taks
+    |       |   `-- ...
+    |       `-- ol
+    |           |-- li
+    |           |   `-- (beskrivelse av) ..
+    |           `-- li
+    |               `-- i edb: forhold ..
+    `-- address
+        `-- a
+            `-- stain@nvg.org
+        </pre>
+        <p>
+          Pass på at det ikke forekommer blokkelementer
+          inni typiske linjeelementer,
+          slik som i <code class="feil">&lt;em&gt; Flapp og hei ..
+          &lt;p&gt; blapper uten grenser&lt;/p&gt; flapper &lt;em&gt;</code>.
+        </p>
+
+      <h3>Avslutt alle elementer</h3>
+        <p>
+          Gjør det til en hovedregel at med en gang du har skrevet en
+          starttag skriver du sluttagen samtidig. Deretter fyller du
+          inn elementets innhold mellom disse. På denne måten skal det
+          litt til å glemme å avslutte et element, siden du alltid vil ha
+          sluttagen liggende. Ikke fall for fristelsen å åpne et avsnittselement
+          med <code>&lt;p&gt;</code> uten å ta med <code>&lt;/p&gt;</code>. Det er lovlig etter
+          spesifikasjonene, men det ødelegger tankegangen for deg selv om at du
+          arbeider med elementer som inneholder hverandre.
+          Vær konsekvent, husk å avslutte elementer som ikke har noen sluttag.
+        </p>
+      <h3>Følg spesifikasjonene</h3>
+        <p>
+          Ved å HTML-spesifikasjonen sørger du for at dokumentene dine ikke
+          bare virker i dagens nettlesere, men også i morgendagens
+          nettlesere. Ved oppdatering minskes faren for at nettlesere plutselig
+          skal oppføre seg merkelig, fordi du har oversikt over
+          dokumentstrukturen og
+        </p>
+      <h3>Bruk innrykk</h3>
+        <p>
+          Ved å benytte seg av innrykk får du lett oversikt over hvilke
+          elementer som er inneholdt hvor. Det gjør det enklere å
+          finne feil, og også enklere å flytte på deler av dokumentet.
+          Du bør selv finne ut hvilken innrykkingsstil som passer deg best.
+          Her kommer noen varianter:
+        </p>
+        <h4>Alle blokkelementer innrykkes uansett</h4>
+          <div class="eksempel">
+            <p class="info">
+              Eksempel:
+            </p>
+            <pre>
+  &lt;body&gt;
+      &lt;h1&gt;
+          Overskrift
+      &lt;/h1&gt;
+      &lt;ul&gt;
+          &lt;li&gt;
+              &lt;div class="egg"&gt;
+                  &lt;p&gt;
+                      Kort avsnitt.
+                  &lt;/p&gt;
+              &lt;/div&gt;
+          &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;body&gt;
+            </pre>
+          </div>
+          <p>
+            Legg merke til hvordan du veldig enkelt kan sjekke at alle
+            elementer er avsluttet, og at det er ingen tvil om at det korte avsnittet
+            er en del av punktlisten. Samtidig ser vi at dette blir fort veldig stort.
+          </p>
+        <h4>Forenklet innrykk</h4>
+          <div class="eksempel">
+            <p class="info">
+              Eksempel:
+            </p>
+            <pre>
+  &lt;body&gt;
+      &lt;h1&gt;Overskrift&lt;/h1&gt;
+      &lt;ul&gt;&lt;li&gt;
+          &lt;div class="egg"&gt;
+              &lt;p&gt;Kort avsnitt.&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;body&gt;
+            </pre>
+          </div>
+
+          <p>
+            Her har vi forkortet litt der vi mener det ikke er nødvendig med
+            innrykk, for eksempel i det kortet avsnittet, som man lett
+            identifiserer som et enkelt avsnitt. Siden det bare er et
+            punkt i punktlisten har vi også slått sammen <code>ul</code> og
+            <code>li</code> på samme linje. Fordelen med denne metoden er at
+            koden ikke ser ut som et stort trekkspill. Ulempene er at
+            man ikke like lett klarer å identifisere de enkelte elementene,
+            for eksempel om &lt;li&gt; er riktig avsluttet. Hvis koden forandres
+            må det merarbeid til, for eksempel hvis vi skal legge til et til
+            punkt på punktlisten kan vi lett risikere å miste den ene &lt;/li&gt;en,
+            og om avsnittet blir lengre kan &lt;/p&gt; bli vanskeligere å få øye på.
+          </p>
+
+        <h4>Bruk av linjeskift</h4>
+          <div class="eksempel">
+            <p class="info">
+              Eksempel:
+            </p>
+            <pre>
+  &lt;body&gt;
+
+  &lt;h1&gt;Overskrift&lt;/h1&gt;
+
+  &lt;ul&gt;
+
+  &lt;li&gt;
+
+  &lt;div class="egg"&gt;
+      &lt;p&gt;Kort avsnitt.&lt;/p&gt;
+  &lt;/div&gt;
+
+   &lt;/li&gt;
+
+   &lt;/ul&gt;
+  &lt;body&gt;
+            </pre>
+          </div>
+          <p class="info">
+            Denne metoden går ut på at man bruker linjeskift rikelig slik at man
+            kan se hvilke deler av koden som logisk henger sammen. Metoden
+            er grei for små dokumenter, men det blir fort vanskelig å kontrollere
+            sin egen kode for feil. Det blir også lettere å sette inn nye elementer
+            på feil sted i en slik modell. Metoden kan brukes om man bare har
+            tilgang til en veldig enkel editor hvor det å bruke innrykk
+            fører til så mye merarbeid at det ikke lønner seg.
+          </p>
+        <h4>Logisk innrykk</h4>
+          <div class="eksempel">
+            <p class="info">
+              Eksempel:
+            </p>
+            <pre>
+&lt;body&gt;
+    &lt;h1&gt;Overskriften&lt;/h1&gt;
+        &lt;p&gt;Dette er et avsnitt først&lt;/p&gt;
+        &lt;h2&gt;Deloverskrift&lt;/h2&gt;
+            &lt;p&gt;Dette er et avsnitt som en del av første seksjon.&lt;/p&gt;
+            &lt;p&gt;Dette er et annet avsnitt. Dette er også med.&lt;/p&gt;
+        &lt;h2&gt;Andre deloverskrift&lt;/h2&gt;
+            &lt;p&gt;Dette er et avsnitt som en del av andre seksjon.&lt;/p&gt;
+            &lt;p&gt;Dette er et annet avsnitt. Dette er også med.&lt;/p&gt;
+&lt;/body&gt;
+            </pre>
+          </div>
+        <p>
+          Denne innrykksmetoden tar hensyn til hvilke logiske deler som
+          hører sammen. Avsnittene hører til under hver sine deloverskrifter,
+          selv om de ikke er inneholdt i elementene til deloverskriftene.
+          Å bruke innrykk slik gjør det veldig enkelt å finne frem til rette
+          sted i dokumentkoden siden du enkelt kjenner igjen de ulike
+          delene av teksten. Den viser på den andre siden ikke så godt
+          hvilke elementer som er inneholdt i hvem.
+        </p>
+        <p>
+          Det beste er kanskje å prøve kombinasjoner av disse metodene til
+          du føler at du har funnet den beste måten å arbeide på. Mennesker
+          er forskjellige. Hvis flere skal arbeide på de samme dokumentene,
+          noe som ofte er tilfelle, snakk med de andre om hvilke metoder de
+          foretrekker, og forsøk å finn en gylden middelvei. Det er
+          viktig at en er konsekvent i metodevalget, hvis ikke kan
+          det lett bli rotete.
+        </p>
+        <h4>Stians forslag</h4>
+          <div class="eksempel">
+            <p class="info">
+              Eksempel:
+            </p>
+            <pre>
+&lt;body&gt;
+
+    &lt;h1&gt;Overskriften&lt;/h1&gt;
+        &lt;p&gt;Dette er et avsnitt først&lt;/p&gt;
+
+    &lt;h2&gt;Deloverskrift&lt;/h2&gt;
+        &lt;p&gt;
+            Dette er et avsnitt som en del av første seksjon.
+        &lt;/p&gt;
+        &lt;p&gt;
+            Dette er et annet avsnitt. Dette er også med.
+        &lt;/p&gt;
+
+    &lt;h2&gt;Andre deloverskrift&lt;/h2&gt;
+        &lt;p&gt;
+            Dette er et avsnitt som en del av andre seksjon.
+        &lt;/p&gt;
+        &lt;p&gt;
+            Dette er et annet avsnitt. Dette er også med.
+        &lt;/p&gt;
+&lt;/body&gt;
+            </pre>
+          </div>
+
+      <h3>Separer struktur og utseende</h3>
+        <ul>
+          <li>Si mest mulig om strukturen i HTML-koden, og minst mulig om utseendet.</li>
+          <li>Forsøk å unngå elementer og attributter som har med utseendet å
+              gjøre, såsom <code>&lt;font&gt;</code> og <code>width="100"</code>.</li>
+          <li>Angi logisk struktur ved hjelp av klasser og id, og spesifiser
+              mest mulig av utseendet i stilarket.</li>
+          <li>Bruk <code>div</code>- og
+              <code>span</code>-elementene til å angi generelle strukturer som
+              ikke er støttet av HTML.</li>
+        </ul>
+      <h3>Bruk evaluatoren</h3>
+        <p>
+          <cite><a href="http://validator.w3.org/">http://validator.w3.org/</a></cite>
+          sjekker dokumentet ditt opp mot spesifikasjonen du har valgt å bruke
+          og forteller deg om eventuelle feil.
+        </p>
+
+    <h2>Referanser</h2>
+      <dl>
+        <dt>
+          <cite><a href="http://www.w3.org/TR/html4/">http://www.w3.org/TR/html4/</a></cite>
+        </dt>
+        <dd>Spesifikasjonen for HTML 4.01 er veldig utfyllende og er stappet
+            med eksempler.</dd>
+        <dt>
+          <cite><a href="http://www.w3.org/TR/xhtml1/">http://www.w3.org/TR/xhtml1/</a></cite>
+        </dt>
+        <dd>Gjeldende HTML-spesifikasjon er en XML-implementering av HTML 4.01.
+        Spesifikasjonen beskriver foreløpig hvilke forskjeller det er fra
+        vanlig HTML 4.01, så man er avhengig av å lese begge spesifikasjonene.
+        </dd>
+        <dt>
+          <cite><a href="http://www.w3.org/TR/REC-CSS1">http://www.w3.org/TR/REC-CSS1</a></cite>
+        </dt>
+        <dd>
+          CSS1-spesifikasjonen kom i desember 1996, og er veldig kort og lett
+          forståelig, men fyller kanskje ikke alle behov for stilsetting av
+          dokumenter.
+        </dd>
+        <dt>
+          <cite><a href="http://www.w3.org/TR/REC-CSS2">http://www.w3.org/TR/REC-CSS2</a></cite>
+        </dt>
+        <dd>
+          CSS2 går mye dypere enn CSS1, og har mange spennende saker, som
+          lagposisjonering. Det er bare å vente i spenning på at støtten
+          kommer i nettleserne.
+        </dd>
+        <dt>
+          <cite><a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS">http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/</a></cite>
+        </dt>
+        <dd>
+          Dette w3c-notatet beskriver hvordan man bør gå frem for å lage dokumenter
+          som flest mulig kan støtte.
+        </dd>
+      </dl>
+
+    <address>
+    Originally published 2000-09-13 at <a
+    href="http://www.nvg.org/nvg/kurs/html/">http://www.nvg.org/nvg/kurs/html/</a>
+    by Stian Søiland</address>
+  </body>
+</html>
