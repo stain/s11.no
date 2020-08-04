@@ -4,10 +4,10 @@
   <div property="s:description">
     {{ .Content }}
   </div>
-  <ul>
+  <ul class="pagelist">
     {{ range  .Pages }}
-    <li>
-      {{- partial "summary.html" . }}
+    <li>      
+      {{- partial "summary.html" . }}      
     </li>
     {{ end }}
   </ul>

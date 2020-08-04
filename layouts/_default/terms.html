@@ -12,11 +12,14 @@
           <a rel="item s:hasPart" typeof="s:Collection s:CreativeWork" 
              href="{{ $tagurl }}">
             <span property="s:title" >{{ $key }}</span>
-          </a>
+          </a>          
         </dt>
         {{ range $value.Pages }}
         <dd about="{{ $tagurl }}" rel="s:hasPart" resource="{{ .Permalink }}">
-          {{- partial "summary.html" . }}
+          <!-- {{- partial "summary.html" . }} -->
+          <a href="{{ .Permalink }}">
+            <span property="s:name" >{{ .Title }}</span>
+          </a>
         </dd>
         {{ end }}
       {{ end }}

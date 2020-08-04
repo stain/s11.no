@@ -1,0 +1,9 @@
+<ul class="categories">
+    {{ range .Params.categories }}
+     <li>
+       <a typeof="s:Collection" property="is:isPartOf" href="{{ "/2020/categories/" | relLangURL }}{{ . | urlize }}">
+         {{- . -}}
+       </a>
+     </li>
+    {{ end }}
+  </ul>

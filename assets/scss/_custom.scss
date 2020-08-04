@@ -108,8 +108,7 @@ main {
   }
 }
 
-ul.tags { 
-  display: inline;
+ul.tags, ul.categories { 
   list-style-type: none;
   padding: 0;
   
@@ -120,8 +119,23 @@ ul.tags {
     font-family: $font-family-quote;
     margin-left: 1em;
   }
+  li:first-of-type { 
+    margin-left: 0;
+  }
 }
+ul.categories li { 
+    font-family: $font-family-mono;
+    background: $color-bg-alt;
+}
+
 time { 
   font-size: smaller;
   font-style: italic;
+}
+ul.pagelist { 
+  list-style-type: none;
+  padding: 0;
+}
+.pagelist h3 { 
+  font-size: 100%;
 }

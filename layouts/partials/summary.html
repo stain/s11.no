@@ -1,10 +1,15 @@
 
-        <div resource="{{ .Permalink }}" typeof="s:CreativeWork">
-          <a href="{{ .Permalink }}">
-            <span property="s:name" >{{ .Title }}</span>
-          </a>
-          <small property="s:description">
+        <section resource="{{ .Permalink }}" typeof="s:CreativeWork">
+          <h3>
+            <a href="{{ .Permalink }}">
+              <span property="s:name" >{{ .Title }}</span>
+            </a>
+            {{ partial "categories.html" . }}
+          </h3>
+          <div property="s:description">
             {{ .Summary  }}
             …
-          </small>
-        </div>
+            <a href="{{ .Permalink }}">Read more</a>
+          </div>          
+          {{ partial "tags.html" . }}          
+        </section>
