@@ -9,7 +9,7 @@ tags:
   - workflows
 categories:
   - Archive
-  - Projects
+  - Project
 ---
 
 Wf4Ever was a research object funded by EU Framework 7 to investigate how _scientific workflows_ and their data could be better preserved for reproducibility, reuse and resiliance against _workflow decay_.
@@ -80,10 +80,10 @@ See also:
 Khalid Belhajjame, Jun Zhao, Daniel Garijo, Matthew Gamble, Kristina Hettne, Raul Palma, Eleni Mina, Oscar Corcho, José Manuel Gómez-Pérez, Sean Bechhofer, Graham Klyne, Carole Goble (2015) **Using a suite of ontologies for preserving workflow-centric research objects**, _Web Semantics_: Science, Services and Agents on the World Wide Web, [https://doi.org/10.1016/j.websem.2015.01.003](https://doi.org/10.1016/j.websem.2015.01.003)
 
 
-Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016): **Tracking workflow execution with TavernaProv**. At: [PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html), [Provenance Week 2016](http://www2.mitre.org/public/provenance2016/). [https://doi.org/10.5281/zenodo.51314](https://doi.org/10.5281/zenodo.51314]) [[html]](https://cdn.rawgit.com/stain/2016-provweek-tavernaprov/submitted/2016-provweek-tavernaprov.xhtml) [[pdf]](https://www.research.manchester.ac.uk/portal/files/57034080/Tracking_workflow_execution_with_TavernaProv.pdf) [[source]](https://github.com/stain/2016-provweek-tavernaprov/)
+Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016): **Tracking workflow execution with TavernaProv**. At: [PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html), [Provenance Week 2016](http://www2.mitre.org/public/provenance2016/). [https://doi.org/10.5281/zenodo.51314](https://doi.org/10.5281/zenodo.51314) [[html]](https://cdn.rawgit.com/stain/2016-provweek-tavernaprov/submitted/2016-provweek-tavernaprov.xhtml) [[pdf]](https://www.research.manchester.ac.uk/portal/files/57034080/Tracking_workflow_execution_with_TavernaProv.pdf) [[source]](https://github.com/stain/2016-provweek-tavernaprov/)
 
 
-Eleni Mina, Mark Thompson, Rajaram Kaliyaperumal, Jun Zhao, Eelke van der Horst,Zuotian Tatum, Kristina M Hettne, Erik A Schultes, Barend Mons, Marco Roos (2015): **Nanopublications for exposing experimental data in the life-sciences: a Huntington’s Disease case study.** _Journal of Biomedical Semantics_ **6**(5). [https://doi.org/10.1186/2041-1480-6-5](https://doi.org/10.1186/2041-1480-6-5)
+Eleni Mina, Mark Thompson, Rajaram Kaliyaperumal, Jun Zhao, Eelke van der Horst, Zuotian Tatum, Kristina M Hettne, Erik A Schultes, Barend Mons, Marco Roos (2015): **Nanopublications for exposing experimental data in the life-sciences: a Huntington’s Disease case study.** _Journal of Biomedical Semantics_ **6**(5). [https://doi.org/10.1186/2041-1480-6-5](https://doi.org/10.1186/2041-1480-6-5)
 
 Daniel Garijo, Nandana Mihindukulasooriya, Oscar Corcho (2015): **LDP4ROs: Managing Research Objects with the W3C Linked Data Platform**. _WWW ’15 Companion_. Proceedings of the 24th International Conference on World Wide Web. [https://doi.org/10.1145/2740908.2742016](https://doi.org/10.1145/2740908.2742016 "https://doi.org/10.1145/2740908.2742016")
 
