@@ -13,11 +13,9 @@ relativeURLs: true
 menu:
   main:
     - name: "About"
-      url: "https://www.research.manchester.ac.uk/portal/soiland-reyes.html"
-    - name: "Posts"
-      url: "2020/"
+      url: "/2020/about/"
     - name: "Publications"
-      url: "https://orcid.org/0000-0001-9842-9718"
+      url: "2020/publications/"
     - name: "Archive"
       url: "/2020/categories/archive/"
 
