@@ -3,6 +3,12 @@ all: local
 clean:
 	rm -r public
 
+theme: themes/ronu/.git
+
+themes/ronu/.git:
+	git submodule init
+	git submodule update
+
 dev  : host=dev.s11.no
 prod : host=s11.no
 
@@ -18,7 +24,7 @@ dev local : hugoopts = --ignoreCache --cleanDestinationDir --buildDrafts --build
 
 local dev prod : hugo results
 
-hugo:
+hugo: theme
 	hugo ${hugoopts} --enableGitInfo --destination ${dest} ${BASE}
 
 results:
@@ -26,7 +32,7 @@ results:
 	xdg-open ${base}/index.html
 	wait
 
-server:
+server: theme
 	(sleep 1 ; xdg-open http://localhost:1313)&
 	hugo server --buildDrafts --baseURL http://localhost/ 
 
