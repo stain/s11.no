@@ -211,10 +211,10 @@ This list of project deliverables is adapted from <http://wf4ever.org/web/guest/
     `oai:repo.wf4ever-project.org:53` (30/11/2013)  
    - [D6.3v1: Genome Wide Association Study Workflows v1](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:31)  
     `oai:repo.wf4ever-project.org:31` (2/12/2011)  
-    <https://doi.org/10.5281/3967616>
+    <https://doi.org/10.5281/zenodo.3967616>
    - [D6.3v2 Genomic Wide Association Study Workflows v2](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:42)  
     `oai:repo.wf4ever-project.org:42` (30/09/2012)  
-    <https://doi.org/10.5281/3967633>
+    <https://doi.org/10.5281/zenodo.3967633>
    - [D6.3v3 Genomic Wide Association Study Workflows v3](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:52)  
     `oai:repo.wf4ever-project.org:52` (30/09/2013)  
     <https://doi.org/10.5281/zenodo.3970778>
