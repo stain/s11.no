@@ -1,6 +1,10 @@
 {{ define "main" }}
 <section typeof="s:Collection s:CreativeWork" about="{{ .Permalink }}">
-  <h1 property="s:name">{{ .Data.Singular | humanize }}: {{.Data.Term }} </h1>
+  {{ if eq .Data.Singular "category" }}
+    <h1 property="s:name">{{ .Title }}</h1>
+  {{ else }}
+    <h1 property="s:name">{{ .Data.Singular | humanize }}: {{.Data.Term | humanize}} </h1>
+  {{ end }}
   <div property="s:description">
     {{ .Content }}
   </div>
