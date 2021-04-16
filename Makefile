@@ -29,7 +29,7 @@ hugo: theme
 
 results:
 	#echo Deployed to ${base} at ${dest}
-	xdg-open ${base}/index.html
+	xdg-open ${base}/index.html || open ${base}/index.html
 	wait
 
 server: theme
