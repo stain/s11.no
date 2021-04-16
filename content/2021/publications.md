@@ -1,5 +1,9 @@
 ---
-title: Publications
+title: Publications by Stian Soiland-Reyes
+categories:
+  - Publication
+aliases:
+ - /2020/publications/
 ---
 
 <style>
