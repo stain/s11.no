@@ -29,10 +29,10 @@ hugo: theme
 
 results:
 	#echo Deployed to ${base} at ${dest}
-	xdg-open ${base}/index.html || open ${base}/index.html
+	open ${base}/index.html 
 	wait
 
 server: theme
-	(sleep 1 ; xdg-open http://localhost:1313)&
+	(sleep 1 ; open http://localhost:1313)&
 	hugo server --buildDrafts --baseURL http://localhost/ 
 
