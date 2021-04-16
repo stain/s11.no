@@ -4,7 +4,7 @@ date: 2021-04-16
 categories:
   - House Rules
 aliases:
- - /2021/house_rules// 
+ - /2021/house-rules/
 ---
 
 Through my daily work as a pretend academic and open source developer I seem to
