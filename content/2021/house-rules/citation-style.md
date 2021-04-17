@@ -3,8 +3,6 @@ title: s11 Citation & Bibliography Style Guide
 tags:
   - academic
   - citation
-categories:
-  - House Rules
 ---
 
 In academic writing, the s11 House Rules recommend the following bibliography style:

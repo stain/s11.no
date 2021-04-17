@@ -1,10 +1,6 @@
 ---
 title: "s11 House Rules"
 date: 2021-04-16
-categories:
-  - House Rules
-aliases:
- - /2021/house-rules/
 ---
 
 Through my daily work as a pretend academic and open source developer I seem to

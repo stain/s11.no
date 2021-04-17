@@ -3,8 +3,6 @@ title: Choosing an open source license
 tags:
   - licenses
   - open source
-categories:
-  - House Rules
 ---
 
 
