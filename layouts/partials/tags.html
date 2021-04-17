@@ -1,7 +1,8 @@
 <ul class="tags">
     {{ range .Params.tags }}
      <li>
-       <a typeof="s:Collection" property="is:isPartOf" href="{{ "/2020/tags/" | relLangURL }}{{ . | urlize }}">
+       {{ $path := printf "/%d/tags/%s" $.Site.Params.YEAR (. | urlize) | relLangURL }}
+       <a typeof="s:Collection" property="is:isPartOf" href="{{ $path }}">
          {{- . -}}
        </a>
      </li>

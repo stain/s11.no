@@ -13,11 +13,13 @@ relativeURLs: true
 menu:
   main:
     - name: "About"
-      url: "/2020/about/"
+      url: "/2021/about/"
     - name: "Publications"
-      url: "2020/publications/"
+      url: "2021/publications/"
     - name: "Archive"
-      url: "/2020/categories/archive/"
+      url: "/2021/archive/"
+    - name: "House rules"
+      url: "/2021/house-rules/"
 
 params:
   authorName: "Stian Soiland-Reyes"
@@ -25,13 +27,13 @@ params:
   linkedinURL: "https://uk.linkedin.com/in/stain"
   githubURL: "https://github.com/stain/"
   orcidURL: "https://orcid.org/0000-0001-9842-9718"
-  YEAR: 2020   # Year used in permalinks 
+  YEAR: 2021   # Year used in permalinks 
 
 permalinks:
   /: /:year/:filename/
   posts: /:year/:filename/
-  tags: /2020/tags/:slug/
-  categories: /2020/categories/:slug/
+  tags: /2021/tags/:slug/
+  categories: /2021/categories/:slug/
 
 
 taxonomies:

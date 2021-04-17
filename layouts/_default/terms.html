@@ -7,7 +7,7 @@
       </div>
       <dl>
       {{ range $key, $value := .Data.Terms }}
-        {{ $tagurl := path.Join ("/" | relLangURL) "2020" ($.Data.Plural | urlize) ($key | urlize) }}
+        {{ $tagurl := path.Join ("/" | relLangURL) $.Site.Params.YEAR ($.Data.Plural | urlize) ($key | urlize) }}
         <dt>          
           <a rel="item s:hasPart" typeof="s:Collection s:CreativeWork" 
              href="{{ $tagurl }}">

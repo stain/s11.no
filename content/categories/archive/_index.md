@@ -5,8 +5,11 @@ tags:
   - preservation
 categories:
   - Archive
+url: /2021/archive/ 
 aliases:
  - /2020/archive/ 
+ - /2020/categories/archive/ 
+ - /2021/categories/archive/ 
 ---
 
 In an alternate reality I am sure I would be a librarian.
