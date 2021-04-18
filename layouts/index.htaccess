@@ -1,0 +1,16 @@
+{{/* Fixed config from config.yaml */}}
+{{- with .Site.Params.htaccess -}}
+{{ . }}
+{{- end -}}
+{{/* Generate .htaccess from aliases
+Modified from 
+https://discourse.gohugo.io/t/htaccess-humans-txt-with-template-logic/27624/2
+*/}}
+{{- range $.Site.Pages -}}
+{{- if .Aliases -}}
+{{- $new := .RelPermalink -}}
+{{ range .Page.Aliases -}}
+Redirect 301 {{ . }} {{ $new }}
+{{ end -}}
+{{- end -}}
+{{- end -}}

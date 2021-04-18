@@ -27,7 +27,13 @@ params:
   linkedinURL: "https://uk.linkedin.com/in/stain"
   githubURL: "https://github.com/stain/"
   orcidURL: "https://orcid.org/0000-0001-9842-9718"
-  YEAR: 2021   # Year used in permalinks 
+  YEAR: 2021   # Year used in permalinks
+  htaccess: |
+    RedirectMatch 301 ^/2020/archive/$ /2021/archive/
+    Redirect 301 /2020/categories/ /2021/categories/
+    Redirect 301 /2020/tags/ /2021/tags/
+    
+
 
 permalinks:
   /: /:year/:filename/
@@ -43,3 +49,17 @@ taxonomies:
 #disableKinds:
 #  - taxonomy
 #  - term  
+
+
+mediaTypes:
+  "text/x-htaccess":
+    suffixes: ["htaccess"]
+
+outputs:
+  home: ["HTML", "htaccess"]
+
+outputFormats:
+  htaccess:
+    baseName: ""
+    isPlainText: true
+    mediaType: text/x-htaccess
