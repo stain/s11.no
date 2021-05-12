@@ -1,10 +1,12 @@
 # s11.no
 
-This is the [Hugo](https://gohugo.io/) source code for the website hosted on <https://s11.no/>
+This is the [Hugo](https://gohugo.io/) source code for the website hosted on <https://s11.no/> which is by and about Stian Soiland-Reyes <https://orcid.org/0000-0001-9842-9718>.
 
 ## License
 
-Unless otherwise noted:
+[layouts/](layouts/) is based on [ronu-hugo-theme](https://github.com/softwareyoga/ronu-hugo-theme) by Deepak Karanth and is likewise licensed as the [MIT license](https://spdx.org/licenses/MIT).
+
+License of [content/](content/) and [static/](static/), unless otherwise noted, is [CC-BY-SA 4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html):
 
 ©️ 2005–2021 The University of Manchester, UK  
 ©️ 1995–2021 Stian Soiland-Reyes <https://orcid.org/0000-0001-9842-9718>
