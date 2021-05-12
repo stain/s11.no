@@ -4,9 +4,9 @@ This is the [Hugo](https://gohugo.io/) source code for the website hosted on <ht
 
 ## License
 
-[themes](themes/) include [ronu-hugo-theme](https://github.com/softwareyoga/ronu-hugo-theme) by Deepak Karanth which is licensed [MIT](https://github.com/softwareyoga/ronu-hugo-theme/blob/master/LICENSE)
+[themes](themes/) include [ronu-hugo-theme](https://github.com/softwareyoga/ronu-hugo-theme) by Deepak Karanth which is distributed under the [MIT license](https://github.com/softwareyoga/ronu-hugo-theme/blob/master/LICENSE).
 
-[layouts/](layouts/) and [assets](assets/) are extending ronu-hugo-theme, and is likewise licensed as the [MIT license](https://spdx.org/licenses/MIT).
+[layouts/](layouts/) and [assets](assets/) are extending ronu-hugo-theme, and is likewise distributed under the [MIT license](https://spdx.org/licenses/MIT).
 
 License of [content/](content/) and [static/](static/), unless otherwise noted, is [CC-BY-SA 4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html):
 
