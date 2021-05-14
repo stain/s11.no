@@ -6,7 +6,7 @@ tags:
 ---
 
 
-Apache License 2.0 for medium-large software projects and libraries that should
+Apache License 2.0 for workflows and medium-large software projects and libraries that should
 be integratable, or where you may get contributions (as it automatically
 applies itself to contribution received and adds patent suit protection). For
 larger datasets that may have mixed licenses or attributions.
