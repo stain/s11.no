@@ -237,4 +237,15 @@ This list of project deliverables is adapted from <http://wf4ever.org/web/guest/
    - D8.5v1 Exploitation Plan v1 (31/05/2012) _confidential_
    - D8.5v2 Exploitation Plan v2 (30/11/2013) _confidential_
 
+## Knowledge Hub
+
+Adapted from <http://wf4ever.org/web/guest/knowledge-hub.html>:
+
+* [What is a workflow-centric research object?](http://web.archive.org/web/20140506125234/https://www.researchobject.org/5000-2/) (2014-05-06)
+* [Best practices for archival processing of Research Objects (a librarian view)](https://doi.org/10.5281/zenodo.4816189) (2013-08-19)
+  <https://doi.org/10.5281/zenodo.4816189>  
+  [[slides](https://www.slideshare.net/ocorcho/best-practices-for-archival-processing-of-research-objects-a-librarian-view) ]
+
+
+
 
