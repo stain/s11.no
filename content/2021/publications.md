@@ -20,6 +20,32 @@ aliases:
 </p>
 
 
+Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
+Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez,
+Paulos Charonyktakis, Michael R. Crusoe,
+Yolanda Gil, Carole Goble, Timothy J. Griffin,
+Paul Groth, Hans Ienasescu, Pratik Jagtap,
+Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori,
+Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson,
+Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, 
+Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):  
+**Perspectives on automated composition of workflows in the life sciences [version 1; peer review: awaiting peer review]**.  
+_F1000Research_ **10**:897  
+<https://doi.org/10.12688/f1000research.54159.1>
+
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2021):  
+**Packaging research artefacts with RO-Crate**.  
+[arXiv:2108.06503v1](https://arxiv.org/abs/arXiv:2108.06503v1) [cs.DL]
+[[html](https://stain.github.io/ro-crate-paper/)]
+[[RO-Crate]](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/)  
+<https://doi.org/10.5281/zenodo.5146228> 
+
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2021): 
+[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).
+_arXiv_ 2105.07028 [cs.DC]  
+<https://arxiv.org/abs/2105.07028>
+
+
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital (2021):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.4602855).  
 Extended abstract (submitted), _Zenodo_
