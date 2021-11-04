@@ -39,7 +39,7 @@ _Data Science_ (accepted).
 [arXiv:2108.06503v1](https://arxiv.org/abs/arXiv:2108.06503v1) [cs.DL]
 [[html](https://stain.github.io/ro-crate-paper/)]
 [[RO-Crate]](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/)  
-<https://doi.org/10.5281/zenodo.5146228> 
+preprint: <https://doi.org/10.5281/zenodo.5146228> 
 
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2021): 
 [**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).
@@ -47,21 +47,20 @@ _Communications of the ACM_ (accepted).
 To appear as <https://doi.org/10.1145/3486897>  
 preprint: [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
-Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital (2021):  
-[**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.4602855).  
-Extended abstract (submitted), _Zenodo_
-<https://doi.org/10.5281/zenodo.4602855>
+Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Grith (2021):  
+[**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5542553).  
+_Data Intelligence_ (accepted).  
+preprint: <https://doi.org/10.5281/zenodo.5542553>
 
 Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodriguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
 [**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**](https://doi.org/10.5281/zenodo.4605654).  
-Extended abstract (submitted), _Zenodo_
+Extended abstract, _Zenodo_
 <https://doi.org/10.5281/zenodo.4605654>
 
 Tobias Kuhn, Vincent Emonet, Haris Antonatos, Stian Soiland-Reyes, Michel Dumontier (2021):  
 [**Semantic micro-contributions with decentralized nanopublication services**](https://doi.org/10.7717/peerj-cs.387).  
 _PeerJ Computer Science_ **7**:e387
 <https://doi.org/10.7717/peerj-cs.387>
-
 
 Jeremy Leipzig, Daniel Nüst, Charles Tapley Hoyt, Stian Soiland-Reyes, Karthik Ram, Jane Greenberg (2020):  
 [**The role of metadata in reproducible computational research**](https://arxiv.org/pdf/2006.08589.pdf).   
@@ -244,7 +243,6 @@ _BMC Bioinformatics_ **15**(Suppl 14):S7 Supplement NETTAB 2013. [https://doi.or
 
 <p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver">Page KR, Palma R, Holubowicz P, Klyne G<span>, Soiland-Reyes S</span>, Garijo D et al. <span class="title"><span>Research Objects for audio processing: Capturing semantics for reproducibility</span></span>. In Proceedings of the AES International Conference|Proc. AES Int. Conf..  Audio Engineering Society. 2014. p. 149-156 <a href="http://www.aes.org/e-lib/browse.cfm?elib=17116">http://www.aes.org/e-lib/browse.cfm?elib=17116</a></div></p>
 
-
 Kristina M. Hettne, Harish Dharuri, Jun Zhao, Katherine Wolstencroft, Khalid Belhajjame, Stian Soiland-Reyes, Eleni Mina, Mark Thompson, Don Cruickshank, Lourdes Verdes-Montenegro, Julián Garrido, David De Roure, Óscar Corcho, Graham Klyne, Reinout van Schouwen, Peter A. C. 't Hoen, Sean Bechhofer, Carole A. Goble, Marco Roos (2014):  
 **Structuring research methods and data with the research object model: genomics workflows as a case study**.  
 _Journal of Biomedical Semantics_ **5**:41 [https://doi.org/10.1186/2041-1480-5-41](https://doi.org/10.1186/2041-1480-5-41)
@@ -260,15 +258,11 @@ Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark (2013):
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/web-annotation-as-a-firstclass-object(16ac93c0-c2af-4e73-b5f8-7d0582556dd7).html)
 [arXiv:1310.6555](http://arxiv.org/abs/1310.6555)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver">Zhang H<span>, Soiland-Reyes S</span><span>, Goble C</span>. <span class="title"><span>Taverna Mobile: Taverna workflows on Android</span></span>. In Cannata N, Romano P, editors, NETTAB 2013 Workshop on “Semantic, Social, and Mobile Applications for Bioinformatics and Biomedical Laboratories” 16-18 October 2013, Lido of Venice, Italy http://www.nettab.org/2013/:  EMBnet.journal. Vol. 19(suppl B). Netherlands: EMBnet Stichting. 2013 <a href="https://doi.org/10.14806/ej.19.B.727" class="link"><span>https://doi.org/10.14806/ej.19.B.727</span></a></div></p>
-
-
 Hyde Zhang, Stian Soiland-Reyes, Carole Goble (2013):  
-**Taverna Mobile: Taverna workflows on Android**.  
-_EMBnet.journal_ **19**(B). 
-At [NETTAB 2013](http://www.nettab.org/2013/) Workshop on “Semantic, Social, and Mobile Applications for Bioinformatics and Biomedical Laboratories” 16-18 October 2013, Lido of Venice, Italy 
-<https://doi.org/10.14806/ej.19.B.727> [[pdf]](http://journal.embnet.org/index.php/embnetjournal/article/view/727/1047)
-
+[**Taverna Mobile: Taverna workflows on Android**](http://journal.embnet.org/index.php/embnetjournal/article/view/727/999).  
+_EMBnet.journal_ **19**(B).
+At [NETTAB 2013](http://web.archive.org/web/20201111205412/www.nettab.org/2013/) Workshop_ on “Semantic, Social, and Mobile Applications for Bioinformatics and Biomedical Laboratories”, 16-18 October 2013, Lido of Venice, Italy.  
+<https://doi.org/10.14806/ej.19.B.727>
 
 Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib Sufi, Carole Goble (2013):  
 **The Taverna workflow suite: designing and executing workflows of Web Services on the desktop, web or in the cloud**.  
