@@ -51,7 +51,7 @@ _Data Science_ (accepted).
 [[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
 Preprint: <https://doi.org/10.5281/zenodo.5146227> 
 
-Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Grith (2021):  
+Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2021):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5727730).  
 _Data Intelligence_ (accepted).  
 preprint: <https://doi.org/10.5281/zenodo.5727730>
