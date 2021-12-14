@@ -19,6 +19,14 @@ aliases:
 <strong>Note:</strong> This page is generated from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which usually is more up to date and includes preprints.
 </p>
 
+## 2022
+
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022): 
+[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).
+_Communications of the ACM_ (accepted). 
+To appear as <https://doi.org/10.1145/3486897>  
+preprint: [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
+
 ## 2021
 
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
@@ -42,12 +50,6 @@ _Data Science_ (accepted).
 [[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
 [[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
 Preprint: <https://doi.org/10.5281/zenodo.5146227> 
-
-Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2021): 
-[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).
-_Communications of the ACM_ (accepted). 
-To appear as <https://doi.org/10.1145/3486897>  
-preprint: [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Grith (2021):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5727730).  
