@@ -53,7 +53,7 @@ _F1000Research_ **10**:897
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2021): 
 **The Specimen Data Refiney: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**.
-_Data Intelligence_ (accepted?)
+_Data Intelligence_ (accepted?)  **No preprint available**
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2021):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5727730).  
