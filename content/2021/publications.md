@@ -29,6 +29,15 @@ preprint: [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
 ## 2021
 
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2021):  
+[**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
+_Data Science_ (accepted).  
+[arXiv:2108.06503v2](https://arxiv.org/abs/arXiv:2108.06503v2) [cs.DL]
+[[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
+[[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
+[[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
+Preprint: <https://doi.org/10.5281/zenodo.5146227> 
+
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
 Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez,
 Paulos Charonyktakis, Michael R. Crusoe,
@@ -42,14 +51,9 @@ Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):
 _F1000Research_ **10**:897  
 <https://doi.org/10.12688/f1000research.54159.1>
 
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2021):  
-[**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
-_Data Science_ (accepted).  
-[arXiv:2108.06503v2](https://arxiv.org/abs/arXiv:2108.06503v2) [cs.DL]
-[[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
-[[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
-[[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
-Preprint: <https://doi.org/10.5281/zenodo.5146227> 
+Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2021): 
+**The Specimen Data Refiney: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**.
+_Data Intelligence_ (accepted?)
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2021):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5727730).  
