@@ -32,8 +32,17 @@ params:
     RedirectMatch 301 ^/2020/archive/$ /2021/archive/
     Redirect 301 /2020/categories/ /2021/categories/
     Redirect 301 /2020/tags/ /2021/tags/
-    
-
+    AddDefaultCharset UTF-8
+    AddType text/plain .md5
+    AddType text/plain .sha1
+    Header set Access-Control-Allow-Origin "*"
+    ErrorDocument 404 /404.html
+    IndexOptions Charset=UTF-8
+    IndexOptions -FancyIndexing -HTMLTable +FoldersFirst +NameWidth=40 +TrackModified
+    <FilesMatch "\.html$">
+      Header add Link "</css/bundle.css>;rel=preload"
+      Header add Link "</images/cc-by-4.0.svg>;rel=preload"
+    </FilesMatch>
 
 permalinks:
   /: /:year/:filename/
