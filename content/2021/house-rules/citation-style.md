@@ -7,34 +7,146 @@ tags:
 
 In academic writing, the s11 House Rules recommend the following bibliography style:
 
-## Journal article
+First Author, Second Author, All Authors (year):  
+[**Title**](https://doi.org10.1000/123456).
+Event, _Venue_ **issue**
+<https://doi.org/10.1000/123456>
+
+Rationale:
+1. All authors SHOULD be credited. We have enough bytes left.
+2. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
+3. A persistent identifier (PID) MUST be present.
+4. Publisher organization and location is not relevant, given a resolvable PID.
+5. You can cite any publicly available source. It does not have to be peer reviewed—you presumably reviewed the content before citing it?
+6. Anything cited should be accessible [Open Access](#oa)⁠—indicate to the reader if the publication is paywalled.
+
+
+## Journal article {#journal}
 
 Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
 [**Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**](https://doi.org/10.1093/gigascience/giz095).  
-_GigaScience_ **8**(11):giz095
+_GigaScience_ **8**(11):giz095  
 <https://doi.org/10.1093/gigascience/giz095>
 
 Notes:
-1. First line lists **all** authors with full names as listed within article. No assumptions made about surnames.
-2. After last author, add (year) in 4 digits, reflecting official publishing date, which may be before issue's publication date. Terminated with : and newline.
-3. Second line is title in **bold**. Hyperlinked to DOI - if open access. Final period `.` is not bold nor in hyperlink, followed by newline.
-4. Third line is full journal name in _italics_ with official captitalization. No acronyms, e.g. ~~J Chem Bio~~ -> _Journal of Chemical Biology_
-5. Journal name immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence).
-6. Page numbers are NOT included - welcome to the Internet.
-  ..except for classic publications without DOI, then add: pp. 123–129. 
-7. Clickable DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
+1. First line lists **all** authors with full names as listed within article. No [assumptions](https://www.w3.org/International/questions/qa-personal-names) made about surnames.
+2. After last author, add (year) in 4 digits, reflecting official publishing date (which may be before the issue's publication date). Terminated with : and newline.
+3. Second line is title in **bold**. Hyperlink to DOI—only if open access. Final period `.` is _not bold_ nor in hyperlink, followed by newline.
+4. Third line is full journal name in _italics_ with official captitalization. No acronyms, e.g. _~~J Chem Bio~~_ ⟶ _Journal of Chemical Biology_
+5. Journal name is immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence). Do not repeat (year) unless this is the volume number.
+6. Page numbers are NOT included⁠—welcome to the Internet.  
+  ..except for publications without per-article DOI, then add: pp. 123–129 (that is [en dash](https://en.wikipedia.org/wiki/Dash#Ranges_of_values) –, not _hyphen_ - nor _em dash_ ⁠—)
+7. Last line is literal URI, ideally DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
+8. Any optional links, e.g. [[preprint](http://example.com/)] or [[poster]](http://example.org/) (see [below](#non-oa))
 
+**Tip**: If you are using Markdown, use two spaces at the end of line to force a `<br />` newline.
 
-## Article/abstract in Conference proceedings
+## Article/abstract in conference {#in-proceedings}
 
 Kyle Chard, Mike D’ Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):   
-**I’ll Take That to Go: Big Data Bags and Minimal Identifiers for Exchange of Large, Complex Datasets.**  
-_[IEEE International Conference on Big Data 2016](http://cci.drexel.edu/bigdata/bigdata2016/)_ 5 December 2016.
-[https://doi.org/10.1109/BigData.2016.7840618](https://doi.org/10.1109/BigData.2016.7840618)
+**I’ll Take That to Go: Big Data Bags and Minimal Identifiers for Exchange of Large, Complex Datasets**.  
+_IEEE International Conference on Big Data 2016_ ([IEEE BigData 2016](http://cci.drexel.edu/bigdata/bigdata2016/), 2016-12-05  
+<https://doi.org/10.1109/BigData.2016.7840618>
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/ill-take-that-to-go-big-data-bags-and-minimal-identifiers-for-exchange-of-large-complex-datasets(8335e672-1d85-4649-a245-56fbdb1bd423).html)
 
+Notes:
+1. Conferences are often not consistent in what are their _Full name_, but usually have a consistent (SHRTNAME21).
+2. Hyperlink to the conference agenda from the shortname (or full name). As some conferences reuse the same website multiple years, or forget to renew their domain names, archive using Internet Archive's [Wayback Machine](http://web.archive.org/save/) (tip: "Save outlinks" will on a good day archive the proceeding PDFs)
+3. Conferences sometimes don't publish proceedings, or publish them a long time after, which could cause (year) to flip over
+4. For some reason many conferences still do not publish Open Access. The biggest hint of paywalled conference content is _Springer Lecture Notes_... Make sure you add/ask for a [preprint].
+5. If the article is available as a PDF, but without a DOI, the URL may not survive the test of time. Archive specifically with [Wayback Machine](http://web.archive.org/save/).
 
-## Open Access by default
+
+## W3C Standards {#w3c}
+
+Luc Moreau, Paolo Missier (eds.), Khalid Belhajjame, Reza B'Far, James Cheney, Sam Coppens, Stephen Cresswell, Yolanda Gil, Paul Groth, Graham Klyne, Timothy Lebo, Jim McCusker, Simon Miles, James Myers, Satya Sahoo, Curt Tilmes (2013):  
+**PROV-DM: The PROV Data Model**.  
+W3C Recommendation 30 April 2013, _World Wide Web Consortium_
+<http://www.w3.org/TR/2013/REC-prov-dm-20130430/>
+
+Richard Cyganiak, David Wood, Markus Lanthaler (eds.), RDF Working Group (2014):  
+**RDF 1.1 Concepts and Abstract Syntax**.
+W3C Recommendation 25 February 2014,  _World Wide Web Consortium_
+<http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>
+
+Notes:
+1. Use the _This Version_ versioned permalink. (Note: these are traditionally `http://` even if they redirect to `https://`) 
+2. Editors are listed _first_ unless they are also in the author list. Some specifications don't list authors, in which case you can add the working group, e.g.: RDF Working Group
+3. Include the document type and state as shown literally below title, e.g.: W3C Candidate Recommendation 05 March 2020
+4. For recommendations published only informally (e.g. `github.io` editor drafts), cite as a [website](#websites).
+
+
+## RFCs and Internet Drafts {#rfc}
+
+John A. Kunze, Justin Littman, Liz Madden, John Scancella, Chris Adams
+J. Kunze, J. Littman, E. Madden, J. Scancella, C. Adams (2018):  
+**The BagIt File Packaging Format (V1.0)**.  
+Request for Comments RFC 8493, _RFC Editor_
+<https://doi.org/10.17487/RFC8493>
+
+Stian Soiland-Reyes, Marcos Cáceres (2018):  
+**The Archive and Package (arcp) URI scheme**.  
+Internet-Draft draft-soilandreyes-arcp-03, _Internet Engineering Task Force_
+<https://datatracker.ietf.org/doc/html/draft-soilandreyes-arcp-03>
+
+Tips: 
+
+1. Use <https://datatracker.ietf.org/> to find the latest version and full author names under _Bibtex_ link
+2. For Internet-Drafts, cite the versioned identifier, e.g. draft-soilandreyes-arcp-03
+
+
+## Websites and blogs {#websites}
+
+Cameron Neylon (2017):  
+**As a researcher…I’m a bit bloody fed up with Data Management**.  
+_Science In The Open_ (2017-07-16) 
+<https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/> [accessed 2021-12-23](http://web.archive.org/web/20211216094140/https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/)
+
+
+Tips:
+1. You may have to do some research to find the full name of the author(s)
+2. Inlude full date in [ISO-8601 format](http://www.w3.org/TR/1998/NOTE-datetime-19980827). You may have to use `curl -I` or _View Source_ to find the publication date. 
+3. Visit the front page to find the title of the blog/website. Fallback: Company name or domain name _cameronneylon.net_
+4. Make sure the URL does not include unnecessary ?tracker=1234 info.
+5. Archive using [WayBack Machine](http://web.archive.org/) and link to snapshotas  [accessed 2021-12-23](http://web.archive.org/web/20211216094140/https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/)
+
+
+## Personal Communication {#personal}
+
+Personal communication is now easier to cite, thanks to social media and forums. 
+
+Stian Soiland-Reyes (2020):  
+**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**.  
+_Twitter_ (2020-04-16)  
+<https://twitter.com/soilandreyes/status/1250721245622079488>
+
+Gurvesh Sanghera (2021):  
+**Guide to run CUDA + WSL + Docker with latest versions (21382 Windows build + 470.14 Nvidia)**.  
+_NVidia Forums_ (2021-05-19)  
+<https://forums.developer.nvidia.com/t/guide-to-run-cuda-wsl-docker-with-latest-versions-21382-windows-build-470-14-nvidia/178365>
+
+
+Tips:
+1. Social media commonly let you hover over ambigious times like "Yesterday" to reveal the exact timestamp
+2. Find "Share" permalinks to make sure you don't use URLs that only work for your account
+3. Archive using [WayBack Machine](http://web.archive.org/) if the communication is publicly accessible. 
+
+## Software
+
+
+
+Resolution order for how to cite software: 
+1. If they have a [CITATION.cff](https://citation-file-format.github.io/) files in a GitHub repository, click _Cite this repository_ to find full list of authors
+2. Cite [Journal of Open Source Software](https://joss.theoj.org/) article if present. Search also relevant [software journals](https://www.software.ac.uk/which-journals-should-i-publish-my-software).
+3. Use [Zenodo DOIs for Software Release](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) if available.  
+  Use the version-specific DOI if you used the software, or version-independent "Cite All Versions" DOI if you just reference the software.
+4. Cite their "Preferred citation" traditional [journal](#journal) article if website/repo indicates so. You may need to cite the (typically newer) release separately.
+5. Cite their main [website](#website). Make sure you find the page most specific to the software.
+6. Cite their open source repository 
+7. Sorry, if it's not publicly available or documented, I am not sure why you want to cite it!
+
+
+## Open Access by default {#oa}
 
 s11 strive to publish as [Open
 Access](https://www.library.manchester.ac.uk/using-the-library/staff/research/open-research/access/)
@@ -52,8 +164,7 @@ Check:
 * Check on <https://scholar.google.com/> you are citing the latest version - e.g. a bioRxiv preprint may have a later Open Access journal article with DOI.
 
 
-
-### Article that is not Open Access
+### Article that is not Open Access {#non-oa}
 
 If the DOI for a citation do not resolve to an Open Access article, then add
 links to a `[preprint]` immediately after DOI:
@@ -73,6 +184,7 @@ The preprint link should go to, in order of preference:
 5. PDF on author/project home page, e.g. [[preprint](http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)]
 6. ResearchGate – only if full text is already uploaded by author!
 7. [Wayback Machine](http://web.archive.org/) archive of PDF previously found on above URLs
+8. Only link to the preprint from the **title** if it is word-for-word equal to the paywalled version and includes the published DOI. Otherwise leave title as plain text so readers can choose version.
 
 Tips: 
 * Use <https://unpaywall.org/> and <https://scholar.google.com/> to find preprint versions.
@@ -151,9 +263,9 @@ The first preference if the authors are unable to provide an Open Access preprin
 
 However in some cases the article is fundamental and still needs to be cited. As a last resort, list it with a strong disclaimer about lack of Open Access:
 
-Chris F Taylor, Dawn Field, Susanna-Assunta Sansone, Jan Aerts, Rolf Apweiler, Michael Ashburner, Catherine A Ball, Pierre-Alain Binz, Molly Bogue, Tim Booth, Alvis Brazma, Ryan R Brinkman, Adam Michael Clark, Eric W Deutsch, Oliver Fiehn, Jennifer Fostel, Peter Ghazal, Frank Gibson, Tanya Gray, Graeme Grimes, John M Hancock, Nigel W Hardy, Henning Hermjakob, Randall K Julian, Matthew Kane, Carsten Kettner, Christopher Kinsinger, Eugene Kolker, Martin Kuiper, Nicolas Le Novère, Jim Leebens-Mack, Suzanna E Lewis, Phillip Lord, Ann-Marie Mallon, Nishanth Marthandan, Hiroshi Masuya, Ruth McNally, Alexander Mehrle, Norman Morrison, Sandra Orchard, John Quackenbush, James M Reecy, Donald G Robertson, Philippe Rocca-Serra, Henry Rodriguez, Heiko Rosenfelder, Javier Santoyo-Lopez, Richard H Scheuermann, Daniel Schober, Barry Smith, Jason Snape, Christian J Stoeckert, Keith Tipton, Peter Sterk, Andreas Untergasser, Jo Vandesompele, Stefan Wiemann (2008):
-**Promoting coherent minimum reporting guidelines for biological and biomedical investigations: the MIBBI project**.
-_Nature biotechnology_ **26**
+Chris F Taylor, Dawn Field, Susanna-Assunta Sansone, Jan Aerts, Rolf Apweiler, Michael Ashburner, Catherine A Ball, Pierre-Alain Binz, Molly Bogue, Tim Booth, Alvis Brazma, Ryan R Brinkman, Adam Michael Clark, Eric W Deutsch, Oliver Fiehn, Jennifer Fostel, Peter Ghazal, Frank Gibson, Tanya Gray, Graeme Grimes, John M Hancock, Nigel W Hardy, Henning Hermjakob, Randall K Julian, Matthew Kane, Carsten Kettner, Christopher Kinsinger, Eugene Kolker, Martin Kuiper, Nicolas Le Novère, Jim Leebens-Mack, Suzanna E Lewis, Phillip Lord, Ann-Marie Mallon, Nishanth Marthandan, Hiroshi Masuya, Ruth McNally, Alexander Mehrle, Norman Morrison, Sandra Orchard, John Quackenbush, James M Reecy, Donald G Robertson, Philippe Rocca-Serra, Henry Rodriguez, Heiko Rosenfelder, Javier Santoyo-Lopez, Richard H Scheuermann, Daniel Schober, Barry Smith, Jason Snape, Christian J Stoeckert, Keith Tipton, Peter Sterk, Andreas Untergasser, Jo Vandesompele, Stefan Wiemann (2008):  
+**Promoting coherent minimum reporting guidelines for biological and biomedical investigations: the MIBBI project**.  
+_Nature biotechnology_ **26**  
 <https://doi.org/10.1038/nbt.1411> (**No Open Access version available**)
 
 
