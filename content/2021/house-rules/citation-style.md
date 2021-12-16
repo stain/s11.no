@@ -9,7 +9,7 @@ In academic writing, the s11 House Rules recommend the following bibliography st
 
 First Author, Second Author, All Authors (year):  
 [**Title**](https://doi.org10.1000/123456).  
-Event, _Venue_ **issue**  
+Event/Report, _Venue_ **volume**(issue)  
 <https://doi.org/10.1000/123456>
 
 Rationale:
@@ -26,14 +26,15 @@ Rationale:
 12. The year of publication should be distinct from date of event.
 
 Traditional bibliography styles (of which there are [plenty](https://www.citethisforme.com/)) have several issues:
-1. Unnecessary information that relate to printed press
+1. Unnecessary information that only relate to printed press.
 2. Unnecessary shortening of author names and list, which gives preference to surnames and lead authors.
-3. Double-comma lists of Surname, F, Surname, S, et al. are very hard to read.
-4. Lack of hyperlinks and persistent identifiers
-5. Lack of formatting (e.g. difficult to differentiate title and venue).
-6. Lack of details for online resources and standards
-7. They assume there is shortage of pages, using acronyms that make them difficult to read.
-8. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
+3. Double-comma lists of _Surname, F, Surname, S, et al._ are very hard to read. 
+4. Finishing author list with the word _and_ unncessarily emphasizes last author.
+5. Lack of hyperlinks and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics.
+6. Lack of formatting (e.g. difficult to differentiate authors, title or venue).
+7. Lack of details for online resources and standards
+8. The style assume there is shortage of letters, using acrnms mke it dffclt to read.
+9. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
 
 
 ## Journal article {#journal}
