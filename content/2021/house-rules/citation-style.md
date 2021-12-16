@@ -172,7 +172,7 @@ links to a `[preprint]` immediately after DOI:
 Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):  
 **Why Linked Data is Not Enough for Scientists**  
 _Future Generation Computer Systems_ **29**(2)
-<https://doi.org/10.1016/j.future.2011.08.004> [[preprint]/(http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)] 
+<https://doi.org/10.1016/j.future.2011.08.004> [[preprint](http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)] 
 
 The preprint link should go to, in order of preference:
 
