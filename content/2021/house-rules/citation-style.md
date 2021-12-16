@@ -13,12 +13,27 @@ Event, _Venue_ **issue**
 <https://doi.org/10.1000/123456>
 
 Rationale:
-1. All authors SHOULD be credited. We should have enough bytes left.
-2. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
-3. A persistent identifier (PID) MUST be present.
-4. Publisher organization and location is not relevant, given a resolvable PID.
-5. You can cite any publicly available source. It does not have to be peer reviewed—you presumably reviewed the content before citing it?
-6. Anything cited should be accessible [Open Access](#oa)⁠—indicate to the reader if the publication is paywalled.
+1. It should be possible to write the reference without a bibliography manager
+2. All authors SHOULD be credited. We have enough bytes left on the Internet, and _et al._ have high enough h-index already.
+3. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
+5. Formatting and newlines help readability and to separate distinct pieces of information.
+6. The **title** is the most important information and should be highlighted.
+7. Publisher organization and location is not relevant, given a resolvable PID.
+8. You can cite any publicly available source. It does not have to be peer reviewed—you presumably reviewed the content before citing it?
+9. A persistent identifier (PID) or URL MUST be present.
+10. Anything cited should be accessible [Open Access](#oa)⁠—[request](#request-preprint) or [post](#post-preprint) a preprint if not.
+11. The bibliography is written primarily for human readers on the Web, not for print in 1960s style.
+12. The year of publication should be distinct from date of event.
+
+Traditional bibliography styles (of which there are [plenty](https://www.citethisforme.com/)) have several issues:
+1. Unnecessary information that relate to printed press
+2. Unnecessary shortening of author names and list, which gives preference to surnames and lead authors.
+3. Double-comma lists of Surname, F, Surname, S, et al. are very hard to read.
+4. Lack of hyperlinks and persistent identifiers
+5. Lack of formatting (e.g. difficult to differentiate title and venue).
+6. Lack of details for online resources and standards
+7. They assume there is shortage of pages, using acronyms that make them difficult to read.
+8. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
 
 
 ## Journal article {#journal}
@@ -201,7 +216,7 @@ Notes:
 3. If the link goes to a author-hosted PDF that is clearly the publisher's version (technically not open access, but often allowed on author's own site), then the link is called `[pdf]`.
 
 
-### Posting your own preprint
+### Posting your own preprint {#post-preprint}
 
 If you are citing one of your own articles, you are responsible to make sure it
 is accessible Open Access!
@@ -229,7 +244,7 @@ Recommendations:
 * Add publisher's DOI and journal details to Zenodo and institutional repository metadata.
 
 
-### Requesting preprint
+### Requesting preprint {#request-preprint}
 
 If no preprint is available, then contact authors to request one. Make sure you
 don't request a PDF for yourself, but a web-hosted preprint you can link to.
