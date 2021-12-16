@@ -1,3 +1,26 @@
+aside #TableOfContents {
+  width: 35%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+  font-size: smaller;
+}
+aside #TableOfContents > ul:before {
+  content: "Content:"
+}
+aside #TableOfContents ul li ul:before {
+  content: "［"
+}
+aside #TableOfContents ul li ul {
+  display: inline;
+}
+aside #TableOfContents ul li ul:after {
+  content: "］"
+}
+
 nav {
   font-family: $font-family-sans-serif;
   letter-spacing: .05em;

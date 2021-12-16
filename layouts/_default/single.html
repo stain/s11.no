@@ -1,9 +1,14 @@
 {{ define "main" }}
 	{{ partial "breadcrumbs.html" . }}
+    <aside>
+        {{ .TableOfContents }}
+    </aside>	
 	<article property="s:articleBody">
-	  <h1 property="s:title">{{ .Title }}</h1>
-	  {{ partial "time.html" . }}
-	  {{ partial "tags.html" . }}
+		<header>
+			<h1 property="s:title">{{ .Title }}</h1>
+			{{ partial "time.html" . }}
+			{{ partial "tags.html" . }}
+		</header>
 	  {{ .Content }} 	               			  
 	</article>
 {{ end }}
