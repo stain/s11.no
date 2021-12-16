@@ -30,12 +30,13 @@ Traditional bibliography styles (of which there are [plenty](https://www.citethi
 2. Unnecessary shortening of author names and list, which gives preference to surnames and lead authors.
 3. Double-comma lists of _Surname, F, Surname, S, et al._ are very hard to read. 
 4. Finishing author list with the word _and_ unncessarily emphasizes last author.
-5. Lack of hyperlinks and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics.
+5. Lack of hyperlinks[^1] and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics. 
 6. Lack of formatting (e.g. difficult to differentiate authors, title or venue).
 7. Lack of details for online resources and standards
 8. The style assume there is shortage of letters, using acrnms mke it dffclt to read.
 9. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
 
+[^1]: Although use of footnotes for URLs is easy to navigate (if hyperlinked!), used alone they also degrade Web resources as not being "proper" publications worthy of attribution and citation.
 
 ## Journal article {#journal}
 
