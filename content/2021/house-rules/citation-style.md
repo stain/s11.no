@@ -8,12 +8,12 @@ tags:
 In academic writing, the s11 House Rules recommend the following bibliography style:
 
 First Author, Second Author, All Authors (year):  
-[**Title**](https://doi.org10.1000/123456).
-Event, _Venue_ **issue**
+[**Title**](https://doi.org10.1000/123456).  
+Event, _Venue_ **issue**  
 <https://doi.org/10.1000/123456>
 
 Rationale:
-1. All authors SHOULD be credited. We have enough bytes left.
+1. All authors SHOULD be credited. We should have enough bytes left.
 2. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
 3. A persistent identifier (PID) MUST be present.
 4. Publisher organization and location is not relevant, given a resolvable PID.
@@ -29,11 +29,13 @@ _GigaScience_ **8**(11):giz095
 <https://doi.org/10.1093/gigascience/giz095>
 
 Notes:
-1. First line lists **all** authors with full names as listed within article. No [assumptions](https://www.w3.org/International/questions/qa-personal-names) made about surnames.
+1. First line lists **all** authors with full names as listed within article. No [assumptions](https://www.w3.org/International/questions/qa-personal-names) made about surnames.  
+  For initials (e.g. middle name or unknown given name), use full punctuation: "C.J. Tunis". 
 2. After last author, add (year) in 4 digits, reflecting official publishing date (which may be before the issue's publication date). Terminated with : and newline.
-3. Second line is title in **bold**. Hyperlink to DOI—only if open access. Final period `.` is _not bold_ nor in hyperlink, followed by newline.
+3. Second line is title in **bold**. Hyperlink to DOI—only if open access. Final period `.` is _not bold_ nor in hyperlink, followed by newline.  
+  If the landing page for a DOI does not show the full text, the hyperlink MAY go directly to HTML and PDF if the URI seem stable.
 4. Third line is full journal name in _italics_ with official captitalization. No acronyms, e.g. _~~J Chem Bio~~_ ⟶ _Journal of Chemical Biology_
-5. Journal name is immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence). Do not repeat (year) unless this is the volume number.
+5. Journal name is immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence). Do not repeat (year) or month of issue, unless this is the official identifier.
 6. Page numbers are NOT included⁠—welcome to the Internet.  
   ..except for publications without per-article DOI, then add: pp. 123–129 (that is [en dash](https://en.wikipedia.org/wiki/Dash#Ranges_of_values) –, not _hyphen_ - nor _em dash_ ⁠—)
 7. Last line is literal URI, ideally DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
@@ -45,7 +47,7 @@ Notes:
 
 Kyle Chard, Mike D’ Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):   
 **I’ll Take That to Go: Big Data Bags and Minimal Identifiers for Exchange of Large, Complex Datasets**.  
-_IEEE International Conference on Big Data 2016_ ([IEEE BigData 2016](http://cci.drexel.edu/bigdata/bigdata2016/), 2016-12-05  
+_IEEE International Conference on Big Data 2016_ ([IEEE BigData 2016](http://cci.drexel.edu/bigdata/bigdata2016/)), 2016-12-05  
 <https://doi.org/10.1109/BigData.2016.7840618>
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/ill-take-that-to-go-big-data-bags-and-minimal-identifiers-for-exchange-of-large-complex-datasets(8335e672-1d85-4649-a245-56fbdb1bd423).html)
 
@@ -60,13 +62,13 @@ Notes:
 ## W3C Standards {#w3c}
 
 Luc Moreau, Paolo Missier (eds.), Khalid Belhajjame, Reza B'Far, James Cheney, Sam Coppens, Stephen Cresswell, Yolanda Gil, Paul Groth, Graham Klyne, Timothy Lebo, Jim McCusker, Simon Miles, James Myers, Satya Sahoo, Curt Tilmes (2013):  
-**PROV-DM: The PROV Data Model**.  
-W3C Recommendation 30 April 2013, _World Wide Web Consortium_
+[**PROV-DM: The PROV Data Model**](http://www.w3.org/TR/2013/REC-prov-dm-20130430/).  
+W3C Recommendation 30 April 2013, _World Wide Web Consortium_  
 <http://www.w3.org/TR/2013/REC-prov-dm-20130430/>
 
 Richard Cyganiak, David Wood, Markus Lanthaler (eds.), RDF Working Group (2014):  
-**RDF 1.1 Concepts and Abstract Syntax**.
-W3C Recommendation 25 February 2014,  _World Wide Web Consortium_
+[**RDF 1.1 Concepts and Abstract Syntax**](http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/).  
+W3C Recommendation 25 February 2014,  _World Wide Web Consortium_  
 <http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>
 
 Notes:
@@ -80,13 +82,13 @@ Notes:
 
 John A. Kunze, Justin Littman, Liz Madden, John Scancella, Chris Adams
 J. Kunze, J. Littman, E. Madden, J. Scancella, C. Adams (2018):  
-**The BagIt File Packaging Format (V1.0)**.  
+[**The BagIt File Packaging Format (V1.0)**](https://www.rfc-editor.org/rfc/rfc8493.html).  
 Request for Comments RFC 8493, _RFC Editor_
 <https://doi.org/10.17487/RFC8493>
 
 Stian Soiland-Reyes, Marcos Cáceres (2018):  
-**The Archive and Package (arcp) URI scheme**.  
-Internet-Draft draft-soilandreyes-arcp-03, _Internet Engineering Task Force_
+[**The Archive and Package (arcp) URI scheme**](https://datatracker.ietf.org/doc/html/draft-soilandreyes-arcp-03).  
+Internet-Draft draft-soilandreyes-arcp-03, _Internet Engineering Task Force_  
 <https://datatracker.ietf.org/doc/html/draft-soilandreyes-arcp-03>
 
 Tips: 
@@ -98,8 +100,8 @@ Tips:
 ## Websites and blogs {#websites}
 
 Cameron Neylon (2017):  
-**As a researcher…I’m a bit bloody fed up with Data Management**.  
-_Science In The Open_ (2017-07-16) 
+[**As a researcher…I’m a bit bloody fed up with Data Management**](https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/).  
+_Science In The Open_ (2017-07-16)  
 <https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/> [accessed 2021-12-23](http://web.archive.org/web/20211216094140/https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/)
 
 
@@ -116,12 +118,12 @@ Tips:
 Personal communication is now easier to cite, thanks to social media and forums. 
 
 Stian Soiland-Reyes (2020):  
-**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**.  
+[**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**](https://twitter.com/soilandreyes/status/1250721245622079488).  
 _Twitter_ (2020-04-16)  
 <https://twitter.com/soilandreyes/status/1250721245622079488>
 
 Gurvesh Sanghera (2021):  
-**Guide to run CUDA + WSL + Docker with latest versions (21382 Windows build + 470.14 Nvidia)**.  
+[**Guide to run CUDA + WSL + Docker with latest versions (21382 Windows build + 470.14 Nvidia)**](https://forums.developer.nvidia.com/t/guide-to-run-cuda-wsl-docker-with-latest-versions-21382-windows-build-470-14-nvidia/178365).  
 _NVidia Forums_ (2021-05-19)  
 <https://forums.developer.nvidia.com/t/guide-to-run-cuda-wsl-docker-with-latest-versions-21382-windows-build-470-14-nvidia/178365>
 
@@ -130,10 +132,9 @@ Tips:
 1. Social media commonly let you hover over ambigious times like "Yesterday" to reveal the exact timestamp
 2. Find "Share" permalinks to make sure you don't use URLs that only work for your account
 3. Archive using [WayBack Machine](http://web.archive.org/) if the communication is publicly accessible. 
+4. For replies within a thread, use "Inspect Element" to find `id="anchors"` to append as `#anchors` in URI
 
 ## Software
-
-
 
 Resolution order for how to cite software: 
 1. If they have a [CITATION.cff](https://citation-file-format.github.io/) files in a GitHub repository, click _Cite this repository_ to find full list of authors
@@ -170,7 +171,7 @@ If the DOI for a citation do not resolve to an Open Access article, then add
 links to a `[preprint]` immediately after DOI:
 
 Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):  
-**Why Linked Data is Not Enough for Scientists**  
+**Why Linked Data is Not Enough for Scientists**.  
 _Future Generation Computer Systems_ **29**(2)
 <https://doi.org/10.1016/j.future.2011.08.004> [[preprint](http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)] 
 
@@ -237,13 +238,13 @@ Example request:
 
 > I found your paper "A systematic review of foo bars"
 > <https://doi.org/10.13003/abcd>
-> which I quite enjoyed and want to cite 
+> which I quite enjoyed and want to cite.
 > 
 > I have/haven't got access myself, but hope for a Green Open Access 
-> URL so that readers of our > website/paper can also access your article.
+> URL so that readers of our website/paper can also access your article.
 > 
-> Are you able to deposit an article preprint or postprint I can link to
-> from our website/paper?
+> Are you able to deposit an article preprint or postprint that 
+> I can link to from our website/paper?
 > 
 > For reference, IEEE's preprint policies:
 > https://www.ieee.org/publications_standards/publications/rights/authorrightsresponsibilities.html
@@ -263,9 +264,7 @@ The first preference if the authors are unable to provide an Open Access preprin
 
 However in some cases the article is fundamental and still needs to be cited. As a last resort, list it with a strong disclaimer about lack of Open Access:
 
-Chris F Taylor, Dawn Field, Susanna-Assunta Sansone, Jan Aerts, Rolf Apweiler, Michael Ashburner, Catherine A Ball, Pierre-Alain Binz, Molly Bogue, Tim Booth, Alvis Brazma, Ryan R Brinkman, Adam Michael Clark, Eric W Deutsch, Oliver Fiehn, Jennifer Fostel, Peter Ghazal, Frank Gibson, Tanya Gray, Graeme Grimes, John M Hancock, Nigel W Hardy, Henning Hermjakob, Randall K Julian, Matthew Kane, Carsten Kettner, Christopher Kinsinger, Eugene Kolker, Martin Kuiper, Nicolas Le Novère, Jim Leebens-Mack, Suzanna E Lewis, Phillip Lord, Ann-Marie Mallon, Nishanth Marthandan, Hiroshi Masuya, Ruth McNally, Alexander Mehrle, Norman Morrison, Sandra Orchard, John Quackenbush, James M Reecy, Donald G Robertson, Philippe Rocca-Serra, Henry Rodriguez, Heiko Rosenfelder, Javier Santoyo-Lopez, Richard H Scheuermann, Daniel Schober, Barry Smith, Jason Snape, Christian J Stoeckert, Keith Tipton, Peter Sterk, Andreas Untergasser, Jo Vandesompele, Stefan Wiemann (2008):  
-**Promoting coherent minimum reporting guidelines for biological and biomedical investigations: the MIBBI project**.  
-_Nature biotechnology_ **26**  
-<https://doi.org/10.1038/nbt.1411> (**No Open Access version available**)
-
-
+Richard L. Grimsdale, Frank H. Sumner, C.J. Tunis, Tom Kilburn (1959):  
+**A system for the automatic recognition of patterns**.  
+_Proceedings of the IEE - Part B: Radio and Electronic Engineering_ **106**(26)  
+<https://doi.org/10.1049/pi-b-1.1959.0392> (**No Open Access version available**)
