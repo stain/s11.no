@@ -185,12 +185,12 @@ The preprint link should go to, in order of preference:
 5. PDF on author/project home page, e.g. [[preprint](http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)]
 6. ResearchGate – only if full text is already uploaded by author!
 7. [Wayback Machine](http://web.archive.org/) archive of PDF previously found on above URLs
-8. Only link to the preprint from the **title** if it is word-for-word equal to the paywalled version and includes the published DOI. Otherwise leave title as plain text so readers can choose version.
 
 Tips: 
 * Use <https://unpaywall.org/> and <https://scholar.google.com/> to find preprint versions.
 * Do not link to Sci-Hub!
 * Do not link to publisher PDFs at unaffiliated websites
+* Only link to the preprint from the **title** if it is word-for-word equal to the paywalled version and references the published DOI. Otherwise leave title as plain text so readers can choose version.
 * Some article templates like IEEE will insert publisher copyright even in author's version. If the DOI and journal issue is clearly missing, it is most likely the author's version and not publisher's version. Likewise, if they are both present it is likely the publisher's version.
 * Archive non-DOI PDFs and their landing page using "Save Page Now" on [WayBack Machine](http://web.archive.org/) as websites are likely to change/break/disappear.
 * PubMed has both PMID and PMCID identifiers, prefer [PMCID identifiers](https://registry.identifiers.org/registry/pmc) when available, e.g. <https://identifiers.org/pmc/PMC2771753>
