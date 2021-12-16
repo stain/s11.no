@@ -25,7 +25,7 @@ Notes:
 7. Clickable DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
 
 
-## Article/abstract in Conference proceedings
+## Article/abstract in Conference proceedings
 
 Kyle Chard, Mike D’ Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):   
 **I’ll Take That to Go: Big Data Bags and Minimal Identifiers for Exchange of Large, Complex Datasets.**  
@@ -53,8 +53,7 @@ Check:
 
 
 
-### Article that is not Open Access
-
+### Article that is not Open Access
 
 If the DOI for a citation do not resolve to an Open Access article, then add
 links to a `[preprint]` immediately after DOI:
@@ -89,7 +88,7 @@ Notes:
 3. If the link goes to a author-hosted PDF that is clearly the publisher's version (technically not open access, but often allowed on author's own site), then the link is called `[pdf]`.
 
 
-### Posting your own preprint
+### Posting your own preprint
 
 If you are citing one of your own articles, you are responsible to make sure it
 is accessible Open Access!
@@ -117,7 +116,7 @@ Recommendations:
 * Add publisher's DOI and journal details to Zenodo and institutional repository metadata.
 
 
-### Requesting preprint
+### Requesting preprint
 
 If no preprint is available, then contact authors to request one. Make sure you
 don't request a PDF for yourself, but a web-hosted preprint you can link to.
