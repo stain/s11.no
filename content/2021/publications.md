@@ -21,22 +21,25 @@ aliases:
 
 ## 2022
 
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+[**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
+_Data Science_ (accepted).  
+To appear as https://doi.org/10.3233/DS-210053  
+[arXiv:2108.06503v2](https://arxiv.org/abs/arXiv:2108.06503v2) [cs.DL]
+[[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
+[[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
+[[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
+Preprint: <https://doi.org/10.5281/zenodo.5146227> 
+
+
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
 [**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).  
 _Communications of the ACM_ (accepted). 
 To appear as <https://doi.org/10.1145/3486897>  
 preprint: [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
-## 2021
 
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2021):  
-[**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
-_Data Science_ (accepted).  
-[arXiv:2108.06503v2](https://arxiv.org/abs/arXiv:2108.06503v2) [cs.DL]
-[[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
-[[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
-[[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
-Preprint: <https://doi.org/10.5281/zenodo.5146227> 
+## 2021
 
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
 Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez,
