@@ -4,6 +4,7 @@ categories:
   - Publication
 aliases:
  - /2020/publications/
+ - /2021/publications/
 ---
 
 <style>
@@ -19,6 +20,7 @@ aliases:
 <strong>Note:</strong> This page is generated from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which usually is more up to date and includes preprints.
 </p>
 
+
 ## 2022
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
@@ -30,7 +32,6 @@ To appear as https://doi.org/10.3233/DS-210053
 [[pdf](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.pdf)]
 [[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
 Preprint: <https://doi.org/10.5281/zenodo.5146227> 
-
 
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
 [**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).  
@@ -50,12 +51,12 @@ Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori,
 Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson,
 Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, 
 Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):  
-**Perspectives on automated composition of workflows in the life sciences** [version 1; peer review: 2 approved].  
+[**Perspectives on automated composition of workflows in the life sciences**](https://doi.org/10.12688/f1000research.54159.1) [version 1; peer review: 2 approved].  
 _F1000Research_ **10**:897  
 <https://doi.org/10.12688/f1000research.54159.1>
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2021):  
-**The Specimen Data Refiney: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**.  
+**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**.  
 _Data Intelligence_ (accepted?)  **No preprint available**
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2021):  
@@ -67,7 +68,7 @@ Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Bad
 [**A Community Roadmap for Scientific Workflows Research and Development**](https://arxiv.org/pdf/2110.02168).  
 [arXiv:2110.02168 [cs.DC]](https://arxiv.org/abs/2110.02168)
 _2021 IEEE Workshop on Workflows in Support of Large-Scale Science ([WORKS](https://works-workshop.org/))_, pp 81–90. 
-To appear as <https://doi.org/10.1109/WORKS54523.2021.00016>
+<https://doi.org/10.1109/WORKS54523.2021.00016>
 
 Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodriguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
 [**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**](https://doi.org/10.5281/zenodo.4605654).  
@@ -80,7 +81,7 @@ _PeerJ Computer Science_ **7**:e387
 <https://doi.org/10.7717/peerj-cs.387>
 
 Neil P. Chue Hong, Daniel S. Katz, Michelle Barker; Anna-Lena Lamprecht, Carlos Martinez, Fotis E. Psomopoulos, Jen Harrow, Leyla Jael Castro, Morane Gruenpeter, Paula Andrea Martinez, Tom Honeyman; Alexander Struck, Allen Lee, Axel Loewe, Ben van Werkhoven, Catherine Jones, Daniel Garijo, Esther Plomp, Francoise Genova, Hugh Shanahan, Joanna Leng, Maggie Hellström, Malin Sandström, Manodeep Sinha, Mateusz Kuzak, Patricia Herterich, Qian Zhang, Sharif Islam, Susanna-Assunta Sansone, Tom Pollard, Udayanto Dwi Atmojo; Alan Williams, Andreas Czerniak, Anna Niehues, Anne Claire Fouilloux, Bala Desinghu, Carole Goble, Céline Richard, Charles Gray, Chris Erdmann, Daniel Nüst, Daniele Tartarini, Elena Ranguelova, Hartwig Anzt, Ilian Todorov, James McNally, Javier Moldon, Jessica Burnett, Julián Garrido-Sánchez, Khalid Belhajjame, Laurents Sesink, Lorraine Hwang, Marcos Roberto Tovani-Palone, Mark D. Wilkinson, Mathieu Servillat, Matthias Liffers, Merc Fox, Nadica Miljković, Nick Lynch, Paula Martinez Lavanchy, Sandra Gesing, Sarah Stevens, Sergio Martinez Cuesta, Silvio Peroni, Stian Soiland-Reyes, Tom Bakker, Tovo Rabemanantsoa, Vanessa Sochat, Yo Yehudi (2021):  
-[**FAIR Principles for Research Software (FAIR4RS Principles)**](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf)
+[**FAIR Principles for Research Software (FAIR4RS Principles)**](https://www.rd-alliance.org/system/files/FAIR4RS_Principles_v0.3_RDA-RFC.pdf).  
 _Research Data Alliance_
 <https://doi.org/10.15497/RDA00065>
 
@@ -92,19 +93,20 @@ Jeremy Leipzig, Daniel Nüst, Charles Tapley Hoyt, Stian Soiland-Reyes, Karthik 
 [arXiv:2006.08589](https://arxiv.org/abs/2006.08589) [[pdf](https://arxiv.org/pdf/2006.08589.pdf)]
 
 Rudolf Wittner, Petr Holub, Heimo Müller, Joerg Geiger, Carole Goble, Stian Soiland-Reyes, Luca Pireddu, Francesca Frexia, Cecilia Mascia, Elliot Fairweather, Jason R. Swedlow, Josh Moore, Caterina Strambio, David Grunwald, Hiroki Nakae (2020):
-**ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**.  
-In: Glavic B., Braganholo V., Koop D. (eds) Provenance and Annotation of Data and Processes. IPAW 2020, IPAW 2021.  
+[**ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**](https://www.research.manchester.ac.uk/portal/files/195948339/ProvenanceWeek_2020_Poster_ISO_23494_Provenance_LNCS_format_1_.pdf).  
+In: Glavic B., Braganholo V., Koop D. (eds) 
+_Provenance and Annotation of Data and Processes_ (IPAW 2020/2021).  
 _Lecture Notes in Computer Science_ **12839**.  
 <https://doi.org/10.1007/978-3-030-80960-7_16>
 [[preprint & poster](https://doi.org/10.5281/zenodo.3901011)]
 
 Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  
-[**FAIR Computational Workflows**](http://www.data-intelligence-journal.org/p/45/).  
+[**FAIR Computational Workflows**](https://doi.org/10.1162/dint_a_00033).  
 _Data Intelligence_  **2**(1):108–121
 <https://doi.org/10.1162/dint_a_00033>
 
 Nick Juty, Sarala M. Wimalaratne, Stian Soiland-Reyes, John Kunze, Carole A. Goble, Tim Clark (2020):  
-[**Unique, Persistent, Resolvable: Identifiers as the foundation of FAIR**](http://www.data-intelligence-journal.org/p/31/).  
+[**Unique, Persistent, Resolvable: Identifiers as the foundation of FAIR**](https://doi.org/10.1162/dint_a_00025).  
 _Data Intelligence_ **2**(1):30–39
 <https://doi.org/10.1162/dint_a_00025>
 
@@ -120,9 +122,11 @@ Pau Andrio, Adam Hospital, Javier Conejero, Luis Jordá, Marc Del Pino, Laia Cod
 [**BioExcel Building Blocks, a software library for interoperable biomolecular simulation workflows**](https://doi.org/10.1038/s41597-019-0177-4).  
 _Scientific Data_ **6**:169 <https://doi.org/10.1038/s41597-019-0177-4>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"> Ó Carragáin E, Goble C, Sefton P<span>, Soiland-Reyes S</span>. <span class="title"><span>A lightweight approach to research object data packaging</span></span>. 2019. Abstract from Bioinformatics Open Source Conference (BOSC) 2019, Basel, Switzerland. <a href="https://doi.org/10.5281/zenodo.3250687" class="link"><span>https://doi.org/10.5281/zenodo.3250687</span></a></div></p>
+Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+[**A lightweight approach to research object data packaging**](https://www.research.manchester.ac.uk/portal/files/106897058/RO_Crate_BOSC2019.pdf). 
+_Bioinformatics Open Source Conference (BOSC)_ 2019, Basel, Switzerland. 
+<https://doi.org/10.5281/zenodo.3250687>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Andrio P (Author), Hospital A (Author), Conejero J (Author), Jordá L (Author), Del Pino M (Author), Codo L (Author) et al. <span class="title"><span>Bioexcel building blocks test cases</span></span> Zenodo. 2019. <a href="https://doi.org/10.5281/zenodo.2581362" class="link"><span>https://doi.org/10.5281/zenodo.2581362</span></a></div></p>
 
 ## 2018
 
@@ -141,21 +145,33 @@ _2018 IEEE 14th International Conference on e-Science (e-Science)_.
 [[preprint server]](https://www.research.manchester.ac.uk/portal/en/publications/the-archive-and-package-arcp-uri-scheme(eb6dee14-e754-46c0-b82c-3ab54715d24c).html)
 [[arXiv:1809.06935]](https://arxiv.org/abs/1809.06935)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Khan FZ (Author)<span>, Soiland-Reyes S (Curator)</span>. <span class="title"><span>CWL run of Alignment Workflow: <span class="subtitle">CWLProv 0.6.0 Research Object</span></span></span> Mendeley Data. 2018. <a href="https://doi.org/10.17632/6wtpgr3kbj.1" class="link"><span>https://doi.org/10.17632/6wtpgr3kbj.1</span></a></div></p>
+Stian Soiland-Reyes, Farah Zaib Khan, Richard O. Sinnott, Andrew Lonie, Michael R Crusoe, Carole Goble: 
+[**Capturing interoperable reproducible workflows with Common Workflow Language**](https://doi.org/10.5281/zenodo.1312623)_ (submitted as article)
+_At _Workshop on Research Objects (RO 2018)_, 29 Oct 2018, Amsterdam, Netherlands.
+[https://doi.org/10.5281/zenodo.1312623](https://doi.org/10.5281/zenodo.1312623)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Khan FZ (Author)<span>, Soiland-Reyes S (Curator)</span>. <span class="title"><span>CWL run of RNA-seq Analysis Workflow: <span class="subtitle">CWLProv 0.5.0 Research Object</span></span></span> Mendeley Data. 2018. <a href="https://doi.org/10.17632/xnwncxpw42.1" class="link"><span>https://doi.org/10.17632/xnwncxpw42.1</span></a></div></p>
+Carole Goble, Stian Soiland-Reyes, Sean Bechhofer:  
+[**Research Object Community Update**](https://doi.org/10.5281/zenodo.1313066).  
+At _Workshop on Research Objects (RO 2018)_, 29 Oct 2018, Amsterdam, Netherlands.  
+<https://doi.org/10.5281/zenodo.1313066>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Khan FZ (Author)<span>, Soiland-Reyes S (Curator)</span>. <span class="title"><span>CWL run of Somatic Variant Calling Workflow: <span class="subtitle">CWLProv 0.5.0 Research Object</span></span></span> Mendeley Data. 2018. <a href="https://doi.org/10.17632/97hj93mkfd.3" class="link"><span>https://doi.org/10.17632/97hj93mkfd.3</span></a></div></p>
+Stian Soiland-Reyes, Marcos Cáceres (2018):  
+[**The Archive and Package (arcp) URI scheme**](https://s11.no/2018/arcp.html).  
+_2018 IEEE 14th International Conference on e-Science (e-Science)_   
+<https://doi.org/10.1109/eScience.2018.00018>  
+Preprint: <https://doi.org/10.5281/zenodo.1320264> [[html](https://s11.no/2018/arcp.html)] [[pdf](https://zenodo.org/record/1320264/files/arcp.pdf?download=1)] [[research object](https://s11.no/2018/arcp.html#ro)]
+Camera-ready: [arXiv:1809.06935](https://arxiv.org/abs/1809.06935) [[pdf](https://www.research.manchester.ac.uk/portal/files/83366888/arcp_camera_ready.pdf)]
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Soiland-Reyes S</span>, Khan FZ, Sinnott R, Lonie A, Crusoe MR<span>, Goble C</span>. <span class="title"><span>Capturing interoperable reproducible workflows</span></span>. 2018. Abstract from Workshop on Research Objects, Amsterdam, Netherlands. <a href="https://doi.org/10.5281/zenodo.1312623" class="link"><span>https://doi.org/10.5281/zenodo.1312623</span></a></div></p>
+Natalie J Stanford, Finn Bacall, Fatemeh Zamanzad Ghavidel, Martin Golebiewski, Inge Jonassen, Rune Kleppe, Olga Krebs, Hadas Leonov, Stuart Owen, Kjell Petersen, Maja Rey, Stian Soiland-Reyes, Kidane Tekle, Andreas Weidemann, Alan Williams, Ulrike Wittig, Katy Wolstencroft, Anders Goksøyr, Jacky L. Snoep, Jon Olav Vik, Wolfgang Müller, Carole Goble (2018):  
+[**FAIR Bioinformatics computation and data management: FAIRDOM and the Norwegian Digital Life initiative**](https://www.research.manchester.ac.uk/portal/en/publications/fair-bioinformatics-computation-and-data-management-fairdom-and-the-norwegian-digital-life-initiative(c4b199b1-95c9-4ab2-85ff-87681e1cc971).html).  
+_NETTAB 2018 Network Tools and Applications in Biology_. 
+[[preprint](https://www.research.manchester.ac.uk/portal/files/70129474/NETTAB2018_paper_8.pdf)]
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Stanford N</span><span>, Bacall F</span>, Zamanzad Ghavidel F, Golebiewski M, Jonassen I, Kleppe R et al. <span class="title"><span>FAIR Bioinformatics computation and data management: FAIRDOM and the Norwegian Digital Life initiative</span></span>. 2018. Abstract from NETTAB 2018 Network Tools and Applications in Biology , Genova, Italy.</div></p>
+Stian Soiland-Reyes, Mercos Cáceres (2018):  
+[**The Archive and Package (arcp) URI scheme**](https://datatracker.ietf.org/doc/html/draft-soilandreyes-arcp-03).  
+_Internet Engineering Task Force_, Internet-Draft draft-soilandreyes-arcp-03, 2018-01-17.
+<https://datatracker.ietf.org/doc/draft-soilandreyes-arcp/>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Khan FZ<span>, Soiland-Reyes S</span>, Crusoe MR, Lonie A, Sinnott R. <span class="title"><span>CWLProv - Interoperable Retrospective Provenance capture and its challenges</span></span>. 2018. Paper presented at International Provenance and Annotation Workshop (IPAW) 2018, London, United Kingdom. <a href="https://doi.org/10.5281/zenodo.1208478" class="link"><span>https://doi.org/10.5281/zenodo.1208478</span></a></div></p>
-
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver"><span>Soiland-Reyes S (Author)</span>. <span class="title"><span>stain/arcp-py: arcp 0.2.0: <span class="subtitle">Create/parse arcp (Archive and Package) URIs in Python</span></span></span> Zenodo. 2018. <a href="https://doi.org/10.5281/zenodo.1165986" class="link"><span>https://doi.org/10.5281/zenodo.1165986</span></a></div></p>
-
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_workingpaper rendering_vancouver rendering_workingpaper_vancouver"><span>Soiland-Reyes S</span>, Cáceres M. <span class="title"><span>The Archive and Package (arcp) URI scheme: <span class="subtitle">Internet-Draft</span></span></span>. Internet Engineering Task Force. 2018 Jan 17.</div></p>
 
 ## 2017
 
@@ -164,14 +180,16 @@ Steffen Möller, Stuart W. Prescott, Lars Wirzenius; Petter Reinholdtsen, Brad C
 _Data Science and Engineering_ **2**:232 pp 232–244.  
 [https://doi.org/10.1007/s41019-017-0050-4](https://doi.org/10.1007/s41019-017-0050-4)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Robinson M (Developer)<span>, Soiland-Reyes S (Developer)</span>, Crusoe MR (Other)<span>, Goble C (Other)</span>. <span class="title"><span>CWL Viewer v.1.1.0: <span class="subtitle">common-workflow-language/cwlviewer</span></span></span> Zenodo. 2017. <a href="https://doi.org/10.5281/zenodo.841692" class="link"><span>https://doi.org/10.5281/zenodo.841692</span></a></div></p>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Robinson M<span>, Soiland-Reyes S</span>, Crusoe MR<span>, Goble C</span>. <span class="title"><span>Common Workflow Language Viewer: <span class="subtitle">(Talk)</span></span></span>. 2017. Abstract from Bioinformatics Open Source Conference (BOSC) 2017, Prague, Czech Republic. <a href="https://doi.org/10.7490/f1000research.1114453.1" class="link"><span>https://doi.org/10.7490/f1000research.1114453.1</span></a></div></p>
+Mark Robinson, Stian Soiland-Reyes, Michael R Crusoe, Carole Goble (2017):  
+**Common Workflow Language Viewer**
+Talk, abstract from _Bioinformatics Open Source Conference (BOSC)_ 2017, Prague, Czech Republic.
+<https://doi.org/10.7490/f1000research.1114453.1>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Robinson M<span>, Soiland-Reyes S</span>, Crusoe MR<span>, Goble C</span>. <span class="title"><span>CWL Viewer: <span class="subtitle">The Common Workflow Language Viewer</span></span></span>. 2017. Poster session presented at Bioinformatics Open Source Conference (BOSC) 2017, Prague, Czech Republic. <a href="https://doi.org/10.7490/f1000research.1114375.1" class="link"><span>https://doi.org/10.7490/f1000research.1114375.1</span></a></div></p>
-
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Robinson M (Developer)<span>, Soiland-Reyes S (Developer)</span>, Crusoe MR (Other)<span>, Goble C (Other)</span>. <span class="title"><span>CWL Viewer v1.0: <span class="subtitle">common-workflow-language/cwlviewer</span></span></span> Zenodo. 2017. <a href="https://doi.org/10.5281/zenodo.823535" class="link"><span>https://doi.org/10.5281/zenodo.823535</span></a></div></p>
-
+Mark Robinson, Stian Soiland-Reyes, Michael R Crusoe, Carole Goble (2017):  
+**The Common Workflow Language Viewer**.
+Poster, presented at _Bioinformatics Open Source Conference_ (BOSC) 2017, Prague, Czech Republic. 
+<https://doi.org/10.7490/f1000research.1114375.1>
 
 Julie A McMurry, Nick Juty, Niklas Blomberg, Tony Burdett, Tom Conlin, Nathalie Conte, Mélanie Courtot, John Deck, Michel Dumontier, Donal K Fellows, Alejandra Gonzalez-Beltran, Philipp Gormanns, Jeffrey Grethe, Janna Hastings, Jean-Karim Hériché, Henning Hermjakob, Jon C Ison, Rafael C Jimenez, Simon Jupp, John Kunze, Camille Laibe, Nicolas Le Novère, James Malone, Maria Jesus Martin, Johanna R McEntyre, Chris Morris, Juha Muilu, Wolfgang Müller, Philippe Rocca-Serra, Susanna-Assunta Sansone, Murat Sariyar, Jacky L Snoep, Stian Soiland-Reyes, Natalie J Stanford, Neil Swainston, Nicole Washington, Alan R Williams, Sarala M Wimalaratne, Lilly M Winfree, Katherine Wolstencroft, Carole Goble, Cristopher J Mungall, Melissa A Haendel, Helen Parkinson (2017):  
 [**Identifiers for the 21st century: How to design, provision, and reuse identifiers to maximize utility and impact of life science data**](https://doi.org/10.1371/journal.pbio.2001414).  
@@ -180,15 +198,22 @@ _PLOS Biology_ **15**(6):e2001414
 [[pdf]](http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2001414&type=printable)
 
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Khan FZ<span>, Soiland-Reyes S</span>, Lonie A, Sinnott R. <span class="title"><span>CWL+Research Object == Complete Provenance</span></span>. 2017. Poster session presented at Bioinformatics Open Source Conference (BOSC) 2017, Prague, Czech Republic. <a href="https://doi.org/10.7490/f1000research.1114781.1" class="link"><span>https://doi.org/10.7490/f1000research.1114781.1</span></a></div></p>
+Khan FZ, Soiland-Reyes S, Lonie A, Sinnott R. (2017):  
+**CWL+Research Object == Complete Provenance**.
+Poster, _Bioinformatics Open Source Conference_ (BOSC 2017) at ISMB/ECCB, Prague, Czech Republic. [https://doi.org/10.7490/f1000research.1114781.1](https://doi.org/10.7490/f1000research.1114781.1)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Matser V, Apostolov R, Carter A, De Groot BL, Harrow I, Hospital A et al. <span class="title"><span>Building biomolecular modelling communities through BioExcel Interest Groups</span></span>. 2017. Poster session presented at ISMB/ECCB 2017, Prague, Czech Republic.</div></p>
+Matser V, Apostolov R, Carter A, De Groot BL, Harrow I, Hospital A et al. (2017):  
+**Building biomolecular modelling communities through BioExcel Interest Groups.**  
+Poster, _ISMB/ECCB_ 2017, Prague, Czech Republic.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Troumpoukis A, Charalambidis A, Mouchakis G, Konstantopoulos S, Digles D, Siebes R et al. <span class="title"><span>A Benchmark Suite for Federated SPARQL Query Processing from Existing Workflows</span></span>. 2017.</div></p>
+Troumpoukis A, Charalambidis A, Mouchakis G, Konstantopoulos S, Digles D, Siebes R et al. (2017):  
+**A Benchmark Suite for Federated SPARQL Query Processing from Existing Workflows**.
+2017.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Amstutz P (Author), Crusoe MR (Author), Singh M (Author), Kumar K (Author), Chilton J (Author), [Unknown] B (Author) et al. <span class="title"><span>common-workflow-language/cwltool</span></span> GitHub: GitHub. 2017.</div></p>
+Amstutz P (Author), Crusoe MR (Author), Singh M (Author), Kumar K (Author), Chilton J (Author), \[Unknown\] B (Author) et al. common-workflow-language/cwltool GitHub: GitHub. 2017.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver">Robinson M (Author)<span>, Soiland-Reyes S (Author)</span>, Crusoe MR (Author). <span class="title"><span>common-workflow-language/cwlviewer: CWL Viewer</span></span> 2017. <a href="https://doi.org/10.5281/zenodo.848163" class="link"><span>https://doi.org/10.5281/zenodo.848163</span></a></div></p>
+Robinson M (Author), Soiland-Reyes S (Author), Crusoe MR (Author). common-workflow-language/cwlviewer: CWL Viewer 2017. [https://doi.org/10.5281/zenodo.848163](https://doi.org/10.5281/zenodo.848163)
+
 
 ## 2016
 
@@ -209,7 +234,7 @@ _CEUR Workshop Proceedings_ **1700**(04)
 [https://doi.org/10.5281/zenodo.159568](https://doi.org/10.5281/zenodo.159568)
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/developing-a-benchmark-suite-for-semantic-web-data-from-existing-workflows(03047934-c3d3-4cd4-b001-e0b913766a92).html)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Evelo C, Willighagen EL, Lynch N, Williams-Jones B, Loizou A<span>, Soiland-Reyes S</span> et al. <span class="title"><span>The Open PHACTS Discovery Platform from a network biology perspective</span></span>. 2016. Poster session presented at Network Biology SIG 2016, Orlando, United States. <a href="https://doi.org/10.7490/f1000research.1112676.1" class="link"><span>https://doi.org/10.7490/f1000research.1112676.1</span></a></div></p>
+Evelo C, Willighagen EL, Lynch N, Williams-Jones B, Loizou A, Soiland-Reyes S et al. The Open PHACTS Discovery Platform from a network biology perspective. 2016. Poster session presented at Network Biology SIG 2016, Orlando, United States. [https://doi.org/10.7490/f1000research.1112676.1](https://doi.org/10.7490/f1000research.1112676.1)
 
 Peter Amstutz, Michael R. Crusoe, Nebojša Tijanić (editors), Brad Chapman, John Chilton, Michael Heuer, Andrey Kartashov, Dan Leehr, Hervé Ménager, Maya Nedeljkovich, Matt Scales, Stian Soiland-Reyes, Luka Stojanovic (2016):  
 **Common Workflow Language, v1.0**  
@@ -227,7 +252,7 @@ At _[PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/tracking-workflow-execution-with-tavernaprov(26c40ab9-d80e-48d5-898c-d80e462762f0).html)
 [[source]](https://github.com/stain/2016-provweek-tavernaprov/)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Siebes R, de Boer V, Williams-Jones B<span>, Soiland-Reyes S</span>. <span class="title"><span>Drug Discovery and Big Linked Data</span></span>. 2016. Poster session presented at Semantic Web Applications and Tools for Life Sciences (SWAT4LS) 2016, Amsterdam, Netherlands.</div></p>
+Siebes R, de Boer V, Williams-Jones B, Soiland-Reyes S. Drug Discovery and Big Linked Data. 2016. Poster session presented at Semantic Web Applications and Tools for Life Sciences (SWAT4LS) 2016, Amsterdam, Netherlands.
 
 Natalie Stanford, Finn Bacall, Martin Golebiewski, Olga Krebs, Rostyk Kuzyakiv, Quyen Nguyen, Stuart Owen, Stian Soiland-Reyes, Jakub Straszewski, {van Niekerk}, Dawie, Alan Williams, Katherine Wolstencroft, Lars Malmström, Bernd Rinn, Jacky Snoep, Wolfgang Müller, Carole Goble (2016):  
 **FAIRDOM: Reproducible Systems Biology through FAIR Asset Management**  
@@ -244,28 +269,28 @@ _Nucleic Acids Research_ **45**(D1) pp D404–D407.
 
 ## 2015
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Amstutz P, Tijanić N<span>, Soiland-Reyes S</span>, Kern J, Stojanovic L, Pierce T et al. <span class="title"><span>Portable workflow and tool descriptions with the CWL</span></span>. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.</div></p>
+Amstutz P, Tijanić N, Soiland-Reyes S, Kern J, Stojanovic L, Pierce T et al. Portable workflow and tool descriptions with the CWL. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Gamble M</span><span>, Morrison N</span><span>, Soiland-Reyes S</span><span>, Goble C</span>. <span class="title"><span>Research shared: www.researchobject.org</span></span>. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.</div></p>
+Gamble M, Morrison N, Soiland-Reyes S, Goble C. Research shared: www.researchobject.org. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Soiland-Reyes S</span>, Dunlop I, Williams AR, Apache Taverna Team. <span class="title"><span>Apache Taverna: Sustaining research software at the Apache Software Foundation</span></span>. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.</div></p>
+Soiland-Reyes S, Dunlop I, Williams AR, Apache Taverna Team. Apache Taverna: Sustaining research software at the Apache Software Foundation. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Gaulton A</span>, Harland L<span>, Davies M</span>, Papadatos G, Loizou A, Dedman N et al. <span class="title"><span>Semantic-web access to patent annotations</span></span>. 2015. Poster session presented at SWAT4LS International Conference: Semantic web applications and tools for life sciences, Riley Auditorium, Gillespie Center, Clare College, Cambridge, England, .</div></p>
+Gaulton A, Harland L, Davies M, Papadatos G, Loizou A, Dedman N et al. Semantic-web access to patent annotations. 2015. Poster session presented at SWAT4LS International Conference: Semantic web applications and tools for life sciences, Riley Auditorium, Gillespie Center, Clare College, Cambridge, England, .
+
 
 ## 2014
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver"><span>Soiland-Reyes S</span><span>, Gamble M</span><span>, Haines R</span>. <span class="title"><span>Research Object Bundle 1.0: <span class="subtitle">researchobject.org Specification 05 November 2014</span></span></span>. researchobject.org, 2014. 9 p. <a href="https://doi.org/10.5281/zenodo.12586" class="link"><span>https://doi.org/10.5281/zenodo.12586</span></a></div></p>
+Soiland-Reyes S, Gamble M, Haines R. Research Object Bundle 1.0: researchobject.org Specification 05 November 2014. researchobject.org, 2014. 9 p. [https://doi.org/10.5281/zenodo.12586](https://doi.org/10.5281/zenodo.12586)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_nontextual rendering_vancouver rendering_nontextual_vancouver"><span>Belhajjame K (Author)</span><span>, Zhao J (Author)</span>, Garijo D (Author), Garrido A (Author)<span>, Soiland-Reyes S (Author)</span><span>, Alper P (Author)</span> et al. <span class="title"><span>A workflow PROV-corpus based on Taverna and Wings (Datasets)</span></span> 2014. <a href="https://doi.org/10.5281/zenodo.11607" class="link"><span>https://doi.org/10.5281/zenodo.11607</span></a></div></p>
+Belhajjame K (Author), Zhao J (Author), Garijo D (Author), Garrido A (Author), Soiland-Reyes S (Author), Alper P (Author) et al. A workflow PROV-corpus based on Taverna and Wings (Datasets) 2014. [https://doi.org/10.5281/zenodo.11607](https://doi.org/10.5281/zenodo.11607)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_othercontribution rendering_vancouver rendering_othercontribution_vancouver">Wolstencroft K<span>, Pawlik A</span><span>, Williams AR</span><span>, Li P</span><span>, Morrison N</span><span>, Soiland-Reyes S</span> et al. <span class="title"><span>Taverna Tutorials 2014-09-01 (Bonn): <span class="subtitle">Training material</span></span></span>. 2014. <a href="https://doi.org/10.5281/ZENODO.11590" class="link"><span>https://doi.org/10.5281/ZENODO.11590</span></a></div></p>
+Wolstencroft K, Pawlik A, Williams AR, Li P, Morrison N, Soiland-Reyes S et al. Taverna Tutorials 2014-09-01 (Bonn): Training material. 2014. [https://doi.org/10.5281/ZENODO.11590](https://doi.org/10.5281/ZENODO.11590)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver"><span>Soiland-Reyes S</span>, Gamble M, Corcho O, Warner S. <span class="title"><span>ORE User Guide - Resource Map Implementation in JSON-LD 0.9</span></span>. Open Archives Initiative, 2014. (Open Archives Initiative Object Reuse and Exchange). <a href="https://doi.org/10.5281/zenodo.11293" class="link"><span>https://doi.org/10.5281/zenodo.11293</span></a></div></p>
+Soiland-Reyes S, Gamble M, Corcho O, Warner S. ORE User Guide - Resource Map Implementation in JSON-LD 0.9. Open Archives Initiative, 2014. (Open Archives Initiative Object Reuse and Exchange). [https://doi.org/10.5281/zenodo.11293](https://doi.org/10.5281/zenodo.11293)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver">Nies TD, Coppens S, Missier P, Moreau L, Cheney J, Lebo T et al. <span class="title"><span>PROV-Dictionary: Modeling Provenance for Dictionary Data Structures</span></span>. http://www.w3.org/TR/prov-dictionary/: World Wide Web Consortium, 2014.</div></p>
+Nies TD, Coppens S, Missier P, Moreau L, Cheney J, Lebo T et al. PROV-Dictionary: Modeling Provenance for Dictionary Data Structures. http://www.w3.org/TR/prov-dictionary/: World Wide Web Consortium, 2014.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver">Palma R, Hołubowicz P, Page K<span>, Soiland-Reyes S</span>, Klyne G, Mazurek C. <span class="title"><span>A suite of APIs for the management of research objects</span></span>. 2014. Paper presented at ISWC Developers Workshop 2014, Riva del Garda, Italy.</div></p>
-
+Palma R, Hołubowicz P, Page K, Soiland-Reyes S, Klyne G, Mazurek C. A suite of APIs for the management of research objects. 2014. Paper presented at ISWC Developers Workshop 2014, Riva del Garda, Italy.
 
 Raul Palma, Piotr Hołubowicz, Kevin Page, Stian Soiland-Reyes, Graham Klyne, Cezary Mazurek (2014):  
 **A Suite of APIs for the Management of Research Objects**.  
@@ -316,13 +341,13 @@ Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withe
 **The Taverna workflow suite: designing and executing workflows of Web Services on the desktop, web or in the cloud**.  
 _Nucleic Acids Research_ **41**(W1), W557-W561. [https://doi.org/10.1093/nar/gkt328](https://doi.org/10.1093/nar/gkt328)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_workingpaper rendering_vancouver rendering_workingpaper_vancouver">Gil Y, Miles S, Belhajjame K, Deus H, Garijo D, Klyne G et al. <span class="title"><span>PROV Model Primer: <span class="subtitle">W3C Working Group Note</span></span></span>. Provenance Working Group. 2013 Apr 30. (W3C Working Group Note).</div></p>
+Gil Y, Miles S, Belhajjame K, Deus H, Garijo D, Klyne G et al. PROV Model Primer: W3C Working Group Note. Provenance Working Group. 2013 Apr 30. (W3C Working Group Note).
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver">Klyne G, Groth P, Moreau L, Hartig O, Simmhan Y, Myers J et al. <span class="title"><span>PROV-AQ: Provenance Access and Query</span></span>. http://www.w3.org/TR/prov-aq/: World Wide Web Consortium, 2013. (W3C Working Group Note).</div></p>
+Klyne G, Groth P, Moreau L, Hartig O, Simmhan Y, Myers J et al. PROV-AQ: Provenance Access and Query. http://www.w3.org/TR/prov-aq/: World Wide Web Consortium, 2013. (W3C Working Group Note).
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver">Moreau L, Missier P, Cheney J<span>, Soiland-Reyes S</span>. <span class="title"><span>PROV-N: The Provenance Notation</span></span>. http://www.w3.org/TR/prov-n/: World Wide Web Consortium, 2013. (W3C Recommendation).</div></p>
+Moreau L, Missier P, Cheney J, Soiland-Reyes S. PROV-N: The Provenance Notation. http://www.w3.org/TR/prov-n/: World Wide Web Consortium, 2013. (W3C Recommendation).
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver">Lebo T, Sahoo S, McGuinness D, Belhajjame K, Cheney J, Corsar D et al. <span class="title"><span>PROV-O: The PROV Ontology</span></span>. http://www.w3.org/TR/prov-o/: World Wide Web Consortium, 2013. (W3C Recommendation).</div></p>
+Lebo T, Sahoo S, McGuinness D, Belhajjame K, Cheney J, Corsar D et al. PROV-O: The PROV Ontology. http://www.w3.org/TR/prov-o/: World Wide Web Consortium, 2013. (W3C Recommendation).
 
 Khalid Belhajjame, Jun Zhao, Daniel Garijo, Aleix Garrido, Stian Soiland-Reyes, Pinar Alper, Oscar Corcho (2013):  
 **A workflow PROV-corpus based on Taverna and Wings**.  
@@ -331,48 +356,86 @@ _Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp.
 [[pdf]](http://delicias.dia.fi.upm.es/members/dgarijo/papers/prov-bench-paper.pdf)
 [[related website]](https://github.com/provbench/Wf4Ever-PROV)
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_bookanthology rendering_vancouver rendering_bookanthology_vancouver"><span>Soiland-Reyes S</span>, Sanderson R, Ciccarese P, Van De Sompel H. <span class="title"><span>Designing the W3C open annotation data model</span></span>. http://www.openannotation.org/spec/core/: Association for Computing Machinery, 2013. 9 p. (W3C Community Draft). <a href="https://doi.org/10.1145/2464464.2464474" class="link"><span>https://doi.org/10.1145/2464464.2464474</span></a></div></p>
+Soiland-Reyes S, Sanderson R, Ciccarese P, Van De Sompel H. (2013):  
+**Designing the W3C open annotation data model**. 
+ Association for Computing Machinery, 2013. 9 p. (W3C Community Draft). [https://doi.org/10.1145/2464464.2464474](https://doi.org/10.1145/2464464.2464474)
 
 ## 2012 
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver"><span>Goble C</span>, Zhao J, Klyne G, Hołubowicz P, Palma R<span>, Soiland-Reyes S</span> et al. <span class="title"><span>RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences</span></span>. <span>Proc. 2nd Intl. Workshop on Linked Science</span>. 2012 Oct 22.</div></p>
+Goble C, Zhao J, Klyne G, Hołubowicz P, Palma R, Soiland-Reyes S et al. (2012):  
+**RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences. **
+_Proc. 2nd Intl. Workshop on Linked Science_. 2012 Oct 22.
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver">Hettne K<span>, Soiland-Reyes S</span>, Klyne G, Belhajjame K, Gamble M<span>, Bechhofer S</span> et al. <span class="title"><span>Workflow forever: Semantic Web Semantic models and tools for preserving and digitally publishing computational experiments</span></span>. In ACM International Conference Proceeding Series|ACM Int. Conf. Proc. Ser.. Association for Computing Machinery. 2012. p. 36-37. (SWAT4LS '11). <a href="https://doi.org/10.1145/2166896.2166909" class="link"><span>https://doi.org/10.1145/2166896.2166909</span></a></div></p>
+Hettne K, Soiland-Reyes S, Klyne G, Belhajjame K, Gamble M, Bechhofer S et al. :
+**Workflow forever: Semantic Web Semantic models and tools for preserving and digitally publishing computational experiments**. _ACM International Conference Proceeding Series_ (SWAT4LS '11). 
+<https://doi.org/10.1145/2166896.2166909>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Belhajjame K, Corcho O, Garijo D, Zhao J, Missier P, Newman D et al. <span class="title"><span>Workflow-centric research objects: First class citizens in scholarly discourse</span></span>. <span>CEUR Workshop Proceedings</span>. 2012;903:1-12.</div></p>
-
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Belhajjame K, Corcho O, Garijo D, Zhao J, Missier P, Newman D et al. <span class="title"><span>Workflow-centric research objects: First class citizens in scholarly discourse</span></span>. <span>CEUR Workshop Proceedings</span>. 2012;903:1-12.</div></p>
+Belhajjame K, Corcho O, Garijo D, Zhao J, Missier P, Newman D et al. (2012):   **Workflow-centric research objects: First class citizens in scholarly discourse**. 
+CEUR Workshop Proceedings. 2012;903:1-12.
 
 ## 2011
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver">Belhajjame K<span>, Goble C</span><span>, Soiland-Reyes S</span>, De Roure D. <span class="title"><span>Fostering scientific workflow preservation through discovery of substitute services</span></span>. In Proceedings - 2011 7th IEEE International Conference on eScience, eScience 2011|Proc. - IEEE Int. Conf. eScience, eScience (5-8 Dec. 2011). IEEE. 2011. p. 97-104 <a href="https://doi.org/10.1109/eScience.2011.22" class="link"><span>https://doi.org/10.1109/eScience.2011.22</span></a></div></p>
+Belhajjame K, Goble C, Soiland-Reyes S, De Roure D. (2011):
+**Fostering scientific workflow preservation through discovery of substitute services.** _2011 7th IEEE International Conference on eScience_ (IEEE eScience 2011) (5-8 Dec. 2011). IEEE. 2011. p. 97-104 .
+<https://doi.org/10.1109/eScience.2011.22>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver"><span>Soiland-Reyes S</span>, Williams AR, Owen S, Withers D<span>, Goble C</span>. <span class="title"><span>Scufl2 - because a workflow is more than its definition</span></span>. In host publication. 2011. p. 37-37</div></p>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontoconference rendering_vancouver rendering_contributiontoconference_vancouver"><span>Soiland-Reyes S</span><span>, Williams A</span><span>, Owen S</span><span>, Withers D</span><span>, Goble C</span>. <span class="title"><span>Scufl2 – because a workflow is more than its definition</span></span>. 2011. Abstract from BOSC 2011, Vienna, Austria, .</div></p>
+Stian Soiland-Reyes, Alan R Williams, Stuart Owen, David Withers, Carole Goble (2011):
+[**Scufl2 - because a workflow is more than its definition**](https://www.research.manchester.ac.uk/portal/en/publications/scufl2--because-a-workflow-is-more-than-its-definition(065016ed-9e6e-45d9-a364-3777c258bde3).html).
+_Bioinformatics Open Source Conference (BOSC)_ 2011, Vienna, Austria.
+[[abstract](https://www.research.manchester.ac.uk/portal/files/56917154/scufl2_abstract.pdf)]
+[[poster](https://www.research.manchester.ac.uk/portal/files/56917156/scufl2_poster.pdf)]
+[[slides](https://www.research.manchester.ac.uk/portal/files/56917158/scufl2_slides.pdf)]
 
-## 2010 
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Tan W, Madduri R, Nenadic A<span>, Soiland-Reyes S</span>, Sulakhe D, Foster I et al. <span class="title"><span>CaGrid workflow toolkit: A taverna based workflow tool for cancer grid</span></span>. <span>BMC Bioinformatics</span>. 2010 Nov 2;11. 542. <a href="https://doi.org/10.1186/1471-2105-11-542" class="link"><span>https://doi.org/10.1186/1471-2105-11-542</span></a></div></p>
+# 2010
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver"><span>Goble C</span><span>, Soiland-Reyes S</span>, Missier P, Owen S, Nenadic A, Dunlop I et al. <span class="title"><span>Taverna, reloaded</span></span>. In Gertz M, Hey T, Ludaescher B, editors, SSDBM 2010. 2010. p. 471-481</div></p>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Missier P<span>, Soiland-Reyes S</span>, Owen S, Tan W, Nenadic A, Dunlop I et al. <span class="title"><span>Taverna, reloaded</span></span>. <span>Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</span>. 2010;6187:471-481. <a href="https://doi.org/10.1007/978-3-642-13818-8_33" class="link"><span>https://doi.org/10.1007/978-3-642-13818-8_33</span></a></div></p>
+Wei Tan, Ravi Madduri, Alexandra Nenadic, Stian Soiland-Reyes, Dinanath Sulakhe, Ian Foster, Carole A Goble (2010):  
+**CaGrid Workflow Toolkit: A Taverna based workflow tool for cancer grid**.  
+_BMC Bioinformatics_ **11**:542.  
+<https://doi.org/10.1186/1471-2105-11-542>
 
-## 2009
+Paolo Missier, Stian Soiland-Reyes, Stuart Owen, Wei Tan, Alexandra Nenadic, Ian Dunlop, Alan Williams, Tom Oinn, Carole Goble (2010):  
+**Taverna, Reloaded**.  
+_Scientific and Statistical Database Management: 22nd International Conference_ (SSDBM 2010), Heidelberg, Germany, June 30--July 2, 2010. 
+In _Lecture Notes in Computer Science_ **6187**.
+<https://doi.org/10.1007/978-3-642-13818-8_33>
+[[preprint](https://www.research.manchester.ac.uk/portal/files/61957309/paper_125.pdf)]
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Nenadic A<span>, Soiland-Reyes S</span><span>, Goble C</span>. <span class="title"><span>Bringing caBIG services together using Taverna</span></span>. <span>Unknown Journal</span>. 2009 Dec 7;3.</div></p>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontobookanthology rendering_vancouver rendering_contributiontobookanthology_vancouver">Tan W, Chard K, Sulakhe D, Madduri R, Foster I<span>, Soiland-Reyes S</span> et al. <span class="title"><span>Scientific workflows as services in caGrid: <span class="subtitle">A Taverna and gRAVI approach</span></span></span>. In 2009 IEEE International Conference on Web Services, ICWS 2009|IEEE Int. Conf. Web Serv., ICWS. IEEE Press. 2009. p. 413-420 <a href="https://doi.org/10.1109/ICWS.2009.19" class="link"><span>https://doi.org/10.1109/ICWS.2009.19</span></a></div></p>
+# 2009
+
+Alexandra Nenadic, Stian Soiland‐Reyes, Carole Goble (2009):  
+[**Bringing caBIG services together using Taverna**](https://www.research.manchester.ac.uk/portal/en/publications/bringing-cabig-services-together-using-taverna(db95e519-11ab-4d92-bf35-eeb447afe166).html).  
+_UK e‐Science All Hands (AHM) 2009 Conference_, Oxford, UK, 2009.
+[[pdf](https://www.research.manchester.ac.uk/portal/files/28600665/POST-PEER-REVIEW-PUBLISHERS.PDF)]
+[[slides](https://www.slideshare.net/soilandreyes/bringing-cabig-services-together-using-taverna)]
+
+
+Wei Tan, Kyle Chard, Dinanath Sulakhe, Ravi Madduri, Ian Foster, Stian Soiland‐Reyes, Carole Goble (2009):  
+**Scientific workflows as services in caGrid: A Taverna and gRAVI approach.**   
+In _2009 IEEE International Conference on Web Services_ (ICWS 2009)
+<https://doi.org/10.1109/ICWS.2009.19>
+[[preprint](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf)]
 
 ## 2008
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Li P, Castrillo JI, Velarde G, Wassink I<span>, Soiland-Reyes S</span>, Owen S et al. <span class="title"><span>Performing statistical analyses on quantitative data in Taverna workflows: An example using R and maxdBrowse to identify differentially-expressed genes from microarray data</span></span>. <span>BMC Bioinformatics</span>. 2008 Aug 7;9. 334. <a href="https://doi.org/10.1186/1471-2105-9-334" class="link"><span>https://doi.org/10.1186/1471-2105-9-334</span></a></div></p>
+Peter Li, Juan I Castrillo, Giles Velarde, Ingo Wassink, Stian Soiland-Reyes, Stuart Owen, David Withers, Tom Oinn, Matthew R Pocock, Carole A Goble, Stephen G Oliver, Douglas B Kell (2008):  
+**Performing statistical analyses on quantitative data in Taverna workflows: An example using R and maxdBrowse to identify differentially-expressed genes from microarray data**.  
+_BMC Bioinformatics_ **7**:334 
+<https://doi.org/10.1186/1471-2105-9-334>
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Li P, Oinn T, Soiland S<span>, Kell DB</span><span>, Soiland-Reyes S</span>. <span class="title"><span>Automated manipulation of systems biology models using libSBML within Taverna workflows</span></span>. <span>Bioinformatics</span>. 2008 Jan 15;24(2):287-289. <a href="https://doi.org/10.1093/bioinformatics/btm578" class="link"><span>https://doi.org/10.1093/bioinformatics/btm578</span></a></div></p>
+
+Peter Li, Tom Oinn, Stian Soiland, Douglas B. Kell (2008):
+**Automated manipulation of systems biology models using libSBML within Taverna workflows.**  
+_Bioinformatics_ **24**(2):287-289.  
+<https://doi.org/10.1093/bioinformatics/btm578>
 
 ## 2006 
 
-<p><div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_thesis rendering_vancouver rendering_thesis_vancouver"><span>Søiland S</span>. <span class="title"><span>Sequence learning in a model of the basal ganglia</span></span>. 2006. 118 p. <a href="https://doi.org/11250/251073" class="link"><span>https://doi.org/11250/251073</span></a></div></p>
-
+Stian Søiland (2006):  
+**Sequence learning in a model of the basal ganglia**. 
+MSc thesis, _NTNU_.
+<https://doi.org/11250/251073>
 
