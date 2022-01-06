@@ -6,7 +6,7 @@ categories:
   - Publication
 ---
 
-**Note**: This list is **Work in progress**.
+**Note**: This list is **Work in progress**. For a more complete list, see <https://github.com/stain/>
 
 
 Mark Robinson; Stian Soiland-Reyes; Michael R. Crusoe; Bruno P. Kinoshita; Osakpolor Obaseki; Peter Amstutz; etzanis; Snyk bot; Anushka Shukla; Charles Overbeck; Ward Vandewege; Finn Bacall; Imgbot; Jonathan Leitschuh; yichiehc (2021):  
