@@ -231,14 +231,14 @@ At _[PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html
 [[source]](https://github.com/stain/2016-provweek-tavernaprov/)
 
 Natalie Stanford, Finn Bacall, Martin Golebiewski, Olga Krebs, Rostyk Kuzyakiv, Quyen Nguyen, Stuart Owen, Stian Soiland-Reyes, Jakub Straszewski, {van Niekerk}, Dawie, Alan Williams, Katherine Wolstencroft, Lars Malmström, Bernd Rinn, Jacky Snoep, Wolfgang Müller, Carole Goble (2016):  
-**FAIRDOM: Reproducible Systems Biology through FAIR Asset Management**.  
+[**FAIRDOM: Reproducible Systems Biology through FAIR Asset Management**](https://www.research.manchester.ac.uk/portal/files/57033545/NETTAB_2016_paper_22.pdf).  
 Reproducibility, standards and SOP in bioinformatics (NETTAB), Rome, Italy 2016-10-25.
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/fairdom-reproducible-systems-biology-through-fair-asset-management(5ec03f9e-6f34-4eed-9d8a-804167220871).html)
 [[pdf]](https://www.research.manchester.ac.uk/portal/files/57033545/NETTAB_2016_paper_22.pdf)
 
 Katherine Wolstencroft, Olga Krebs, Jacky L. Snoep, Natalie J. Stanford, Finn Bacall, Martin Golebiewski, Rostyk Kuzyakiv, Quyen Nguyen, Stuart Owen, Stian Soiland-Reyes, Jakub Straszewski, David D. van Niekerk, Alan R. Williams, Lars Malmström, Bernd Rinn, Wolfgang Müller, Carole Goble (2016):  
-[**FAIRDOMHub: a repository and collaboration environment for sharing systems biology research**](https://doi.org/10.1093/nar/gkw1032)  
-_Nucleic Acids Research_ **45**(D1) pp D404–D407.
+[**FAIRDOMHub: a repository and collaboration environment for sharing systems biology research**](https://doi.org/10.1093/nar/gkw1032).  
+_Nucleic Acids Research_ **45**(D1) pp D404–D407.  
 <https://doi.org/10.1093/nar/gkw1032>
 
 
@@ -251,11 +251,20 @@ Hervé Ménager, Scott Frazer, Venkat Sai Malladi, Michael R. Crusoe (2015):
 _Bioinformatics Open Source Conference_ (BOSC 2015), Dublin, Ireland, 2015-06-10/2015-06-11.
 [[pdf](https://www.research.manchester.ac.uk/portal/files/45797989/cwl_abstract_bosc.pdf)]
 
-Gamble M, Morrison N, Soiland-Reyes S, Goble C. Research shared: www.researchobject.org. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
+Matthew Gamble, Norman Morrison, Stian Soiland-Reyes, Carole Goble (2015):  
+[**Research shared: www.researchobject.org**](https://www.research.manchester.ac.uk/portal/files/45798476/ResearchObject_BOSC_abstract.pdf).  
+_Bioinformatics Open Source Conference_ (BOSC 2015), Dublin, Ireland, 2015-06-10/2015-06-11.
+ 
+Stian Soiland-Reyes, Ian Dunlop, Alan R Williams, Apache Taverna team (2015):  
+[**Apache Taverna: Sustaining research software at the Apache Software Foundation**](https://www.research.manchester.ac.uk/portal/files/45797718/datastream.pdf).  
+_Bioinformatics Open Source Conference_ (BOSC 2015), Dublin, Ireland, 2015-06-10/2015-06-11.
 
-Soiland-Reyes S, Dunlop I, Williams AR, Apache Taverna Team. Apache Taverna: Sustaining research software at the Apache Software Foundation. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
 
-Gaulton A, Harland L, Davies M, Papadatos G, Loizou A, Dedman N et al. Semantic-web access to patent annotations. 2015. Poster session presented at SWAT4LS International Conference: Semantic web applications and tools for life sciences, Riley Auditorium, Gillespie Center, Clare College, Cambridge, England, .
+Anna Gaulton, Lee Harland, Mark Davies, George Papadatos, Antonis Loizou, Nathan Dedman, Daniela Digles, Stian Soiland-Reyes, Valery Tkachenk, Stefan Senger, John P Overington, Nick Lynch (2015):  
+[**Semantic-web access to patent annotations**](http://ceur-ws.org/Vol-1546/poster_59.pdf).
+_SWAT4LS International Conference: Semantic web applications and tools for life sciences_, Riley Auditorium, Gillespie Center, Clare College, Cambridge, England, 2015-12-07/2015-12-10.  
+[[abstract](http://ceur-ws.org/Vol-1546/poster_59.pdf)]
+[[poster](https://www.research.manchester.ac.uk/portal/files/45510842/151207_Cambridge_SWAT4LS_Anna_Gaulton_Semantic_Web_Access_to_Patent_Annotations.pdf)]
 
 
 ## 2014
