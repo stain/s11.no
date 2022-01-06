@@ -2,6 +2,7 @@
 title: About Stian Soiland-Reyes
 aliases:
   - /2020/about/
+  - /2021/about/
 ---
 
 ## Overview
