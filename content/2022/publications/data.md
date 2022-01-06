@@ -1,5 +1,7 @@
 ---
-title: Data published by Stian Soiland-Reyes
+title: Datasets
+summary:
+  A brief list of datasets and research objects (co)-created by Stian Soiland-Reyes (work in progress)
 categories:
   - Publication
 ---

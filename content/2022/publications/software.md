@@ -1,5 +1,7 @@
 ---
-title: Software published by Stian Soiland-Reyes
+title: Software
+summary:
+  Software (co)developed or maintained by Stian Soiland-Reyes (work in progress)
 categories:
   - Publication
 ---

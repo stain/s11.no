@@ -221,10 +221,10 @@ _CEUR Workshop Proceedings_ **1700**(04)
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/developing-a-benchmark-suite-for-semantic-web-data-from-existing-workflows(03047934-c3d3-4cd4-b001-e0b913766a92).html)
 
 Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
-**Tracking workflow execution with TavernaProv**.  
-At _[PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html)_, [Provenance Week 2016](http://www2.mitre.org/public/provenance2016/). 
-[https://doi.org/10.5281/zenodo.51314](https://doi.org/10.5281/zenodo.51314)
-[html](https://cdn.rawgit.com/stain/2016-provweek-tavernaprov/submitted/2016-provweek-tavernaprov.xhtml)
+[**Tracking workflow execution with TavernaProv**](https://s11.no/2016/provweek-tavernaprov/).  
+At _[PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html)_, [Provenance Week 2016](http://www2.mitre.org/public/provenance2016/).  
+<https://doi.org/10.5281/zenodo.51314>
+[html](https://s11.no/2016/provweek-tavernaprov/)
 [[pdf]](https://www.research.manchester.ac.uk/portal/files/57034080/Tracking_workflow_execution_with_TavernaProv.pdf) 
 [[rdf]](http://rdf.greggkellogg.net/distiller?format=turtle&in_fmt=rdfa&uri=https://cdn.rawgit.com/stain/2016-provweek-tavernaprov/submitted/2016-provweek-tavernaprov.xhtml) 
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/tracking-workflow-execution-with-tavernaprov(26c40ab9-d80e-48d5-898c-d80e462762f0).html)
@@ -410,3 +410,7 @@ MSc thesis, _NTNU_.
 [[thesis](https://soiland.no/archive-2007/master/thesis.pdf)]
 [[slides](https://soiland.no/archive-2007/master/presentation.pdf)]
 [[code](https://soiland.no/archive-2007/master/master-2006-06-26.tar.gz)]
+
+# Other publications
+
+<!-- Listing added below -->

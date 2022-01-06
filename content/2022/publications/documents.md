@@ -1,5 +1,7 @@
 ---
-title: Reports, specifications and deliverables
+title: Other documents
+summary:
+  Reports, specifications and deliverables (co)authored by Stian Soiland-Reyes (work in progress)
 categories:
   - Publication
 ---
