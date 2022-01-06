@@ -13,11 +13,11 @@ relativeURLs: true
 menu:
   main:
     - name: "About"
-      url: "/2021/about/"
+      url: "/2022/about/"
     - name: "Publications"
-      url: "2021/publications/"
+      url: "2022/publications/"
     - name: "Archive"
-      url: "/2021/archive/"
+      url: "/2022/archive/"
     - name: "House rules"
       url: "/2021/house-rules/"
 
@@ -27,11 +27,11 @@ params:
   linkedinURL: "https://uk.linkedin.com/in/stain"
   githubURL: "https://github.com/stain/"
   orcidURL: "https://orcid.org/0000-0001-9842-9718"
-  YEAR: 2021   # Year used in permalinks
+  YEAR: 2022   # Year used in permalinks
   htaccess: |
-    RedirectMatch 301 ^/2020/archive/$ /2021/archive/
-    Redirect 301 /2020/categories/ /2021/categories/
-    Redirect 301 /2020/tags/ /2021/tags/
+    RedirectMatch 301 ^/202[01]/archive/$ /2022/archive/
+    Redirect 301 /202[01]/categories/ /2022/categories/
+    Redirect 301 /202[01]/tags/ /2022/tags/
     AddDefaultCharset UTF-8
     AddType text/plain .md5
     AddType text/plain .sha1
@@ -47,8 +47,8 @@ params:
 permalinks:
   /: /:year/:filename/
   posts: /:year/:filename/
-  tags: /2021/tags/:slug/
-  categories: /2021/categories/:slug/
+  tags: /2022/tags/:slug/
+  categories: /2022/categories/:slug/
 
 
 taxonomies:
