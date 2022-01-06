@@ -2,6 +2,8 @@
 title: Publications by Stian Soiland-Reyes
 categories:
   - Publication
+summary: >
+  Academic publications by Stian Soiland-Reyes, including journal articles, conference papers/abstracts and theses.
 aliases:
  - /2020/publications/
  - /2021/publications/
@@ -212,13 +214,11 @@ _[IEEE International Conference on Big Data 2016](http://cci.drexel.edu/bigdata/
 [[zenodo]](https://zenodo.org/record/820878)
 
 Antonis Troumpoukis, Angelos Charalambidis, Giannis Mouchakis, Stasinos Konstantopoulos, Ronald Siebes, Victor de Boer, Stian Soiland-Reyes, Daniela Digles (2016):  
-**Developing a Benchmark Suite for Semantic Web Data from Existing Workflows**  
+[**Developing a Benchmark Suite for Semantic Web Data from Existing Workflows**](http://ceur-ws.org/Vol-1700/paper-04.pdf).  
 _[Proceedings](http://ceur-ws.org/Vol-1700/) of the Workshop on Benchmarking Linked Data (BLINK 2016), co-located with the 15th International Semantic Web Conference (ISWC)_
 _CEUR Workshop Proceedings_ **1700**(04)
-[[pdf]](http://ceur-ws.org/Vol-1700/paper-04.pdf)
-[[zenodo]](https://zenodo.org/record/159568)
-[https://doi.org/10.5281/zenodo.159568](https://doi.org/10.5281/zenodo.159568)
-[[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/developing-a-benchmark-suite-for-semantic-web-data-from-existing-workflows(03047934-c3d3-4cd4-b001-e0b913766a92).html)
+<https://doi.org/10.5281/zenodo.159568>
+<http://ceur-ws.org/Vol-1700/paper-04.pdf>
 
 Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
 [**Tracking workflow execution with TavernaProv**](https://s11.no/2016/provweek-tavernaprov/).  
@@ -237,16 +237,19 @@ Reproducibility, standards and SOP in bioinformatics (NETTAB), Rome, Italy 2016-
 [[pdf]](https://www.research.manchester.ac.uk/portal/files/57033545/NETTAB_2016_paper_22.pdf)
 
 Katherine Wolstencroft, Olga Krebs, Jacky L. Snoep, Natalie J. Stanford, Finn Bacall, Martin Golebiewski, Rostyk Kuzyakiv, Quyen Nguyen, Stuart Owen, Stian Soiland-Reyes, Jakub Straszewski, David D. van Niekerk, Alan R. Williams, Lars Malmström, Bernd Rinn, Wolfgang Müller, Carole Goble (2016):  
-**FAIRDOMHub: a repository and collaboration environment for sharing systems biology research**  
+[**FAIRDOMHub: a repository and collaboration environment for sharing systems biology research**](https://doi.org/10.1093/nar/gkw1032)  
 _Nucleic Acids Research_ **45**(D1) pp D404–D407.
-[https://doi.org/10.1093/nar/gkw1032](https://doi.org/10.1093/nar/gkw1032)
-[[pdf]](http://nar.oxfordjournals.org/content/early/2016/11/28/nar.gkw1032.full.pdf)
-[[html]](https://nar.oxfordjournals.org/content/early/2016/11/28/nar.gkw1032.full)
+<https://doi.org/10.1093/nar/gkw1032>
 
 
 ## 2015
 
-Amstutz P, Tijanić N, Soiland-Reyes S, Kern J, Stojanovic L, Pierce T et al. Portable workflow and tool descriptions with the CWL. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
+Peter Amstutz, Nebojša Tijanić, Stian Soiland-Reyes, John Kern, Luka Stojanovic,
+Tim Pierce, John Chilton, Maxim Mikheev, Samuel Lampa,
+Hervé Ménager, Scott Frazer, Venkat Sai Malladi, Michael R. Crusoe (2015):  
+[**Portable workflow and tool descriptions with the CWL**](https://www.research.manchester.ac.uk/portal/files/45797989/cwl_abstract_bosc.pdf).  
+_Bioinformatics Open Source Conference_ (BOSC 2015), Dublin, Ireland, 2015-06-10/2015-06-11.
+[[pdf](https://www.research.manchester.ac.uk/portal/files/45797989/cwl_abstract_bosc.pdf)]
 
 Gamble M, Morrison N, Soiland-Reyes S, Goble C. Research shared: www.researchobject.org. 2015. Abstract from Bioinformatics Open Source Conference, Dublin, Ireland.
 
@@ -264,19 +267,23 @@ _ISWC Developers Workshop 2014_, Riva del Garda, Italy.
 [[pdf](http://ceur-ws.org/Vol-1268/paper8.pdf)]
 
 Raul Palma, Piotr Hołubowicz, Kevin Page, Stian Soiland-Reyes, Graham Klyne, Cezary Mazurek (2014):  
-**A Suite of APIs for the Management of Research Objects**.  
-_ISWC-DEV 2014: Proceedings of the ISWC Developers Workshop 2014_, CEUR-WS.org online [http://ceur-ws.org/Vol-1268/paper8.pdf](http://ceur-ws.org/Vol-1268/paper8.pdf)
+[**A Suite of APIs for the Management of Research Objects**](http://ceur-ws.org/Vol-1268/paper8.pdf).  
+_ISWC-DEV 2014: Proceedings of the ISWC Developers Workshop 2014_, 
+_CEUR Workshop Proceedings_ **1268**
+<http://ceur-ws.org/Vol-1268/paper8.pdf>
 
 Frank T Bergmann, Richard Adams, Stuart Moodie, Jonathan Cooper, Mihai Glont, Martin Golebiewski, Michael Hucka, Camille Laibe, Andrew K Miller, David P Nickerson, Brett G Olivier, Nicolas Rodriguez, Herbert M Sauro, Martin Scharm, Stian Soiland-Reyes, Dagmar Waltemath, Florent Yvon, Nicolas Le Novère (2014):  
-**COMBINE archive and OMEX format: one file to share all information to reproduce a modeling project**.  
-_BMC Bioinformatics_ **15**(1), p. 3, [https://doi.org/10.1186/s12859-014-0369-z](https://doi.org/10.1186/s12859-014-0369-z)
+[**COMBINE archive and OMEX format: one file to share all information to reproduce a modeling project**](https://doi.org/10.1186/s12859-014-0369-z).    
+_BMC Bioinformatics_ **15**(1), p. 3
+<https://doi.org/10.1186/s12859-014-0369-z>
 
 Steffen Möller, Enis Afgan, Michael Banck, Raoul J P Bonnal, Timothy Booth, John Chilton, Peter J A Cock, Markus Gumbel, Nomi Harris, Richard Holland, Matúš Kalaš, László Kaján, David R. Powell, Pjotr Prins, Jacqueline Quinn, Olivier Sallou, Francesco Strozzi, Torsten Seemann, Clare Sloggett, Stian Soiland-Reyes, Sascha Steinbiss, Andreas Tille, Anthony J. Travis, Roman Valls Guimera, Toshiaki Katayama, Brad A. Chapman (2014):  
-**Community-driven development for computational biology at Sprints, Hackathons and Codefests**.  
-_BMC Bioinformatics_ **15**(Suppl 14):S7 Supplement NETTAB 2013. [https://doi.org/10.1186/1471-2105-15-S14-S7](https://doi.org/10.1186/1471-2105-15-S14-S7)
+[**Community-driven development for computational biology at Sprints, Hackathons and Codefests**](https://doi.org/10.1186/1471-2105-15-S14-S7).  
+_BMC Bioinformatics_ **15**(Suppl 14):S7 Supplement NETTAB 2013. 
+<https://doi.org/10.1186/1471-2105-15-S14-S7>
 
 Kristina M. Hettne, Harish Dharuri, Jun Zhao, Katherine Wolstencroft, Khalid Belhajjame, Stian Soiland-Reyes, Eleni Mina, Mark Thompson, Don Cruickshank, Lourdes Verdes-Montenegro, Julián Garrido, David De Roure, Óscar Corcho, Graham Klyne, Reinout van Schouwen, Peter A. C. 't Hoen, Sean Bechhofer, Carole A. Goble, Marco Roos (2014):  
-**Structuring research methods and data with the research object model: genomics workflows as a case study**.  
+[**Structuring research methods and data with the research object model: genomics workflows as a case study**](https://doi.org/10.1186/2041-1480-5-41).  
 _Journal of Biomedical Semantics_ **5**:41  
 <https://doi.org/10.1186/2041-1480-5-41>
 
@@ -325,31 +332,30 @@ _Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp.
 
 Goble C, Zhao J, Klyne G, Hołubowicz P, Palma R, Soiland-Reyes S et al. (2012):  
 [**RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences**](http://ceur-ws.org/Vol-951/paper9.pdf).  
-_
-Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22, _CEUR Workshop Proceedings_ **951**
-[[pdf](http://ceur-ws.org/Vol-951/paper9.pdf)]
+_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22, _CEUR Workshop Proceedings_ **951**
+<http://ceur-ws.org/Vol-951/paper9.pdf>
     
 Kristina Hettne, Stian Soiland-Reyes, Graham Klyne, Khalid Belhajjame, Matthew Gamble, Sean Bechhofer, Marco Roos, Oscar Corcho (2011):  
 [**Workflow forever: Semantic Web Semantic models and tools for preserving and digitally publishing computational experiments**](https://www.research.manchester.ac.uk/portal/files/38535608/FULL_TEXT.pdf).  
-_ACM International Conference Proceeding Series_ (SWAT4LS '11). 
+_ACM International Conference Proceeding Series_ (SWAT4LS '11).  
 <https://doi.org/10.1145/2166896.2166909>
 [[preprint](https://www.research.manchester.ac.uk/portal/en/publications/workflow-forever-semantic-web-semantic-models-and-tools-for-preserving-and-digitally-publishing-computational-experiments(4a0cccc2-2263-448a-ae32-ca82c5621d25).html)]
 
 Khalid Belhajjame, Oscar Corcho, Daniel Garijo, Jun Zhao, Paolo Missier, David R. Newman, Raul Palma, Sean Bechhofer, Esteban Garcia Cuesta, Jose Manuel Gomez-Perez, Graham Klyne, Kevin Page, Marco Roos, José Enrique Ruiz, Stian Soiland-Reyes, Lourdes Verdes-Montenegro, David De Roure, Carole Goble (2012):  
 [**Workflow-centric research objects: First class citizens in scholarly discourse**](http://ceur-ws.org/Vol-903/paper-01.pdf).  
 _CEUR Workshop Proceedings_ **903** pp. 1--12.
-[[pdf](http://ceur-ws.org/Vol-903/paper-01.pdf)]
+<http://ceur-ws.org/Vol-903/paper-01.pdf>
 
 ## 2011
 
 Khalid Belhajjame, Carole Goble, Stian Soiland-Reyes, David De Roure (2011):
 [**Fostering scientific workflow preservation through discovery of substitute services.**](https://www.research.manchester.ac.uk/portal/files/58596061/eScience2011_camera_ready_.pdf).  
-_2011 7th IEEE International Conference on eScience_ (IEEE eScience 2011) (5-8 Dec. 2011). IEEE. 2011. p. 97-104 .
+_2011 7th IEEE International Conference on eScience_ (IEEE eScience 2011) (5-8 Dec. 2011). IEEE. 2011. p. 97-104.  
 <https://doi.org/10.1109/eScience.2011.22>
 
 
-Stian Soiland-Reyes, Alan R Williams, Stuart Owen, David Withers, Carole Goble (2011):
-[**Scufl2 - because a workflow is more than its definition**](https://www.research.manchester.ac.uk/portal/en/publications/scufl2--because-a-workflow-is-more-than-its-definition(065016ed-9e6e-45d9-a364-3777c258bde3).html).
+Stian Soiland-Reyes, Alan R Williams, Stuart Owen, David Withers, Carole Goble (2011):  
+[**Scufl2 - because a workflow is more than its definition**](https://www.research.manchester.ac.uk/portal/en/publications/scufl2--because-a-workflow-is-more-than-its-definition(065016ed-9e6e-45d9-a364-3777c258bde3).html).  
 _Bioinformatics Open Source Conference (BOSC)_ 2011, Vienna, Austria.
 [[abstract](https://www.research.manchester.ac.uk/portal/files/56917154/scufl2_abstract.pdf)]
 [[poster](https://www.research.manchester.ac.uk/portal/files/56917156/scufl2_poster.pdf)]
@@ -381,7 +387,7 @@ _UK e‐Science All Hands (AHM) 2009 Conference_, Oxford, UK, 2009.
 
 
 Wei Tan, Kyle Chard, Dinanath Sulakhe, Ravi Madduri, Ian Foster, Stian Soiland‐Reyes, Carole Goble (2009):  
-[**Scientific workflows as services in caGrid: A Taverna and gRAVI approach](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf).**   
+[**Scientific workflows as services in caGrid: A Taverna and gRAVI approach**](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf).   
 In _2009 IEEE International Conference on Web Services_ (ICWS 2009)
 <https://doi.org/10.1109/ICWS.2009.19>
 [[preprint](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf)]
@@ -395,8 +401,8 @@ _BMC Bioinformatics_ **7**:334
 <https://doi.org/10.1186/1471-2105-9-334>
 
 
-Peter Li, Tom Oinn, Stian Soiland, Douglas B. Kell (2008):
-**Automated manipulation of systems biology models using libSBML within Taverna workflows.**  
+Peter Li, Tom Oinn, Stian Soiland, Douglas B. Kell (2008):  
+[**Automated manipulation of systems biology models using libSBML within Taverna workflows**](https://doi.org/10.1093/bioinformatics/btm578).   
 _Bioinformatics_ **24**(2):287-289.  
 <https://doi.org/10.1093/bioinformatics/btm578>
 
