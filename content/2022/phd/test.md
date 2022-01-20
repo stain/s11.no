@@ -30,294 +30,27 @@ author-meta:
 - RO-Crate Community
 - Paul Groth
 - Carole Goble
-header-includes: |-
-  <!--
-  Manubot generated metadata rendered from header-includes-template.html.
-  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
-  -->
-  <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Packaging research artefacts with RO-Crate" />
-  <meta name="citation_title" content="Packaging research artefacts with RO-Crate" />
-  <meta property="og:title" content="Packaging research artefacts with RO-Crate" />
-  <meta property="twitter:title" content="Packaging research artefacts with RO-Crate" />
-  <meta name="dc.date" content="2022-01-10" />
-  <meta name="citation_publication_date" content="2022-01-10" />
-  <meta name="dc.language" content="en-GB" />
-  <meta name="citation_language" content="en-GB" />
-  <meta name="dc.relation.ispartof" content="Manubot" />
-  <meta name="dc.publisher" content="Manubot" />
-  <meta name="citation_journal_title" content="Manubot" />
-  <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Stian Soiland-Reyes" />
-  <meta name="citation_author_institution" content="Department of Computer Science, The University of Manchester, UK" />
-  <meta name="citation_author_institution" content="Informatics Institute, Faculty of Science, University of Amsterdam, NL" />
-  <meta name="citation_author_orcid" content="0000-0001-9842-9718" />
-  <meta name="twitter:creator" content="@soilandreyes" />
-  <meta name="citation_author" content="Peter Sefton" />
-  <meta name="citation_author_institution" content="Faculty of Science, University Technology Sydney, AU" />
-  <meta name="citation_author_orcid" content="0000-0002-3545-944X" />
-  <meta name="citation_author" content="Mercè Crosas" />
-  <meta name="citation_author_institution" content="Institute for Quantitative Social Science, Harvard University, Cambridge, MA, US" />
-  <meta name="citation_author_orcid" content="0000-0003-1304-1939" />
-  <meta name="twitter:creator" content="@mercecrosas" />
-  <meta name="citation_author" content="Leyla Jael Castro" />
-  <meta name="citation_author_institution" content="ZB MED Information Centre for Life Sciences, Cologne, DE" />
-  <meta name="citation_author_orcid" content="0000-0003-3986-0510" />
-  <meta name="twitter:creator" content="@lj_garcia" />
-  <meta name="citation_author" content="Frederik Coppens" />
-  <meta name="citation_author_institution" content="VIB-UGent Center for Plant Systems Biology, Gent, BE" />
-  <meta name="citation_author_orcid" content="0000-0001-6565-5145" />
-  <meta name="twitter:creator" content="@FrederikCoppens" />
-  <meta name="citation_author" content="José M. Fernández" />
-  <meta name="citation_author_institution" content="Barcelona Supercomputing Center, Barcelona, ES" />
-  <meta name="citation_author_orcid" content="0000-0002-4806-5140" />
-  <meta name="twitter:creator" content="@JMFernand3z" />
-  <meta name="citation_author" content="Daniel Garijo" />
-  <meta name="citation_author_institution" content="Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, ES" />
-  <meta name="citation_author_orcid" content="0000-0003-0454-7145" />
-  <meta name="twitter:creator" content="@dgarijov" />
-  <meta name="citation_author" content="Björn Grüning" />
-  <meta name="citation_author_institution" content="Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, DE" />
-  <meta name="citation_author_orcid" content="0000-0002-3079-6586" />
-  <meta name="twitter:creator" content="@bjoerngruening" />
-  <meta name="citation_author" content="Marco La Rosa" />
-  <meta name="citation_author_orcid" content="0000-0001-5383-6993" />
-  <meta name="citation_author" content="Simone Leo" />
-  <meta name="citation_author_institution" content="Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy" />
-  <meta name="citation_author_orcid" content="0000-0001-8271-5429" />
-  <meta name="twitter:creator" content="@_simleo_" />
-  <meta name="citation_author" content="Eoghan Ó Carragáin" />
-  <meta name="citation_author_institution" content="University College Cork, IE" />
-  <meta name="citation_author_orcid" content="0000-0001-8131-2150" />
-  <meta name="twitter:creator" content="@eocarragain" />
-  <meta name="citation_author" content="Marc Portier" />
-  <meta name="citation_author_institution" content="Vlaams Instituut voor de Zee}, Oostende, BE" />
-  <meta name="citation_author_orcid" content="0000-0002-9648-6484" />
-  <meta name="twitter:creator" content="@mportier" />
-  <meta name="citation_author" content="Ana Trisovic" />
-  <meta name="citation_author_institution" content="Institute for Quantitative Social Science, Harvard University, Cambridge, MA, US" />
-  <meta name="citation_author_orcid" content="0000-0003-1991-0533" />
-  <meta name="twitter:creator" content="@atrisovic" />
-  <meta name="citation_author" content="RO-Crate Community" />
-  <meta name="citation_author" content="Paul Groth" />
-  <meta name="citation_author_institution" content="Informatics Institute, Faculty of Science, University of Amsterdam, NL" />
-  <meta name="citation_author_orcid" content="0000-0003-0183-6910" />
-  <meta name="twitter:creator" content="@pgroth" />
-  <meta name="citation_author" content="Carole Goble" />
-  <meta name="citation_author_institution" content="Department of Computer Science, The University of Manchester, UK" />
-  <meta name="citation_author_orcid" content="0000-0003-1219-2137" />
-  <meta name="twitter:creator" content="@CaroleAnneGoble" />
-  <link rel="canonical" href="https://stain.github.io/ro-crate-paper/" />
-  <meta property="og:url" content="https://stain.github.io/ro-crate-paper/" />
-  <meta property="twitter:url" content="https://stain.github.io/ro-crate-paper/" />
-  <meta name="citation_fulltext_html_url" content="https://stain.github.io/ro-crate-paper/" />
-  <meta name="citation_pdf_url" content="https://stain.github.io/ro-crate-paper/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://stain.github.io/ro-crate-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/ro-crate-paper/v/c31b82c805924d6eac76b0e08453a5ba1312b9ce/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/ro-crate-paper/v/c31b82c805924d6eac76b0e08453a5ba1312b9ce/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/ro-crate-paper/v/c31b82c805924d6eac76b0e08453a5ba1312b9ce/manuscript.pdf" />
-  <meta property="og:type" content="article" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
-  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
-  <meta name="theme-color" content="#ad1457" />
-  <!-- end Manubot generated metadata -->
-bibliography:
-- content/manual-references-ro-crate.bib
-- content/manual-references.json
-manubot-output-bibliography: output/references.json
-manubot-output-citekeys: output/citations.tsv
-manubot-requests-cache-path: ci/cache/requests-cache
-manubot-clear-requests-cache: false
+Description: > 
+    An increasing number of researchers support reproducibility by including pointers to and descriptions of datasets, software and methods in their publications. However, scientific articles may be ambiguous, incomplete and difficult to process by automated systems. In this paper we introduce RO-Crate, an open, community-driven, and lightweight approach to packaging research artefacts along with their metadata in a machine readable manner. RO-Crate is based on Schema.org annotations in JSON-LD, aiming to establish best practices to formally describe metadata in an accessible and practical way for their use in a wide variety of situations. 
+
+    An RO-Crate is a structured archive of all the items that contributed to a research outcome, including their identifiers, provenance, relations and annotations. As a general purpose packaging approach for data and their metadata, RO-Crate is used across multiple areas, including bioinformatics, digital humanities and regulatory sciences. By applying "just enough" Linked Data standards, RO-Crate simplifies the process of making research outputs FAIR while also enhancing research reproducibility.
 ---
 
+## Cite as
 
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-Crate**.  
+_Data Science_  (pre-press)  
+<https://doi.org/10.3233/DS-210053>  
 
-_This manuscript has now been [published](https://doi.org/10.3233/DS-210053) by the journal [Data Science](https://datasciencehub.net/)._  
-**Cite as**: <https://doi.org/10.3233/DS-210053>
-
-
-<small><em>
-This manuscript
-([permalink](https://stain.github.io/ro-crate-paper/v/c31b82c805924d6eac76b0e08453a5ba1312b9ce/))
-was automatically generated
-from [stain/ro-crate-paper@c31b82c](https://github.com/stain/ro-crate-paper/tree/c31b82c805924d6eac76b0e08453a5ba1312b9ce)
-on January 10, 2022.
-</em></small>
-
-# Authors {-}
-
-
-
-+ **Stian Soiland-Reyes**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0001-9842-9718](https://orcid.org/0000-0001-9842-9718)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [stain](https://github.com/stain)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [soilandreyes](https://twitter.com/soilandreyes)<br>
-  <small>
-     Department of Computer Science, The University of Manchester, UK; Informatics Institute, Faculty of Science, University of Amsterdam, NL
-     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [IBISBA](https://cordis.europa.eu/project/id/730976) (H2020-INFRAIA-2017-1-two-stage 730976)
-  </small>
-
-+ **Peter Sefton**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0002-3545-944X](https://orcid.org/0000-0002-3545-944X)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [ptsefton](https://github.com/ptsefton)<br>
-  <small>
-     Faculty of Science, University Technology Sydney, AU
-  </small>
-
-+ **Mercè Crosas**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-1304-1939](https://orcid.org/0000-0003-1304-1939)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [mercecrosas](https://twitter.com/mercecrosas)<br>
-  <small>
-     Institute for Quantitative Social Science, Harvard University, Cambridge, MA, US
-     · Funded by Harvard Data Commons is supported by an award from [Harvard University Information Technology](https://huit.harvard.edu/) (HUIT).
-  </small>
-
-+ **Leyla Jael Castro**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-3986-0510](https://orcid.org/0000-0003-3986-0510)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [ljgarcia](https://github.com/ljgarcia)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [lj_garcia](https://twitter.com/lj_garcia)<br>
-  <small>
-     ZB MED Information Centre for Life Sciences, Cologne, DE
-  </small>
-
-+ **Frederik Coppens**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0001-6565-5145](https://orcid.org/0000-0001-6565-5145)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [frederikcoppens](https://github.com/frederikcoppens)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [FrederikCoppens](https://twitter.com/FrederikCoppens)<br>
-  <small>
-     VIB-UGent Center for Plant Systems Biology, Gent, BE
-  </small>
-
-+ **José M. Fernández**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0002-4806-5140](https://orcid.org/0000-0002-4806-5140)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [JMFernand3z](https://twitter.com/JMFernand3z)<br>
-  <small>
-     Barcelona Supercomputing Center, Barcelona, ES
-  </small>
-
-+ **Daniel Garijo**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-0454-7145](https://orcid.org/0000-0003-0454-7145)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [dgarijov](https://twitter.com/dgarijov)<br>
-  <small>
-     Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, ES
-  </small>
-
-+ **Björn Grüning**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0002-3079-6586](https://orcid.org/0000-0002-3079-6586)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [bjoerngruening](https://twitter.com/bjoerngruening)<br>
-  <small>
-     Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, DE
-     · Funded by [EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087)); [DataPLANT](https://nfdi4plants.de/) ([NFDI 7/1 – 42077441](https://gepris.dfg.de/gepris/projekt/442077441)), part of the German [National Research Data Infrastructure](https://www.dfg.de/en/research_funding/programmes/nfdi/) (NFDI), funded by the [Deutsche Forschungsgemeinschaft](https://www.dfg.de/) (DFG).
-  </small>
-
-+ **Marco La Rosa**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0001-5383-6993](https://orcid.org/0000-0001-5383-6993)<br>
-  <small>
-  </small>
-
-+ **Simone Leo**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0001-8271-5429](https://orcid.org/0000-0001-8271-5429)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [simleo](https://github.com/simleo)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [_simleo_](https://twitter.com/_simleo_)<br>
-  <small>
-     Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy
-     · Funded by [EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087))
-  </small>
-
-+ **Eoghan Ó Carragáin**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0001-8131-2150](https://orcid.org/0000-0001-8131-2150)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [eocarragain](https://github.com/eocarragain)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [eocarragain](https://twitter.com/eocarragain)<br>
-  <small>
-     University College Cork, IE
-  </small>
-
-+ **Marc Portier**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0002-9648-6484](https://orcid.org/0000-0002-9648-6484)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [mportier](https://twitter.com/mportier)<br>
-  <small>
-     Vlaams Instituut voor de Zee}, Oostende, BE
-  </small>
-
-+ **Ana Trisovic**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-1991-0533](https://orcid.org/0000-0003-1991-0533)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [atrisovic](https://twitter.com/atrisovic)<br>
-  <small>
-     Institute for Quantitative Social Science, Harvard University, Cambridge, MA, US
-     · Funded by [Alfred P. Sloan Foundation](https://sloan.org/) (grant number [P-2020-13988](https://sloan.org/grant-detail/9555)).
-  </small>
-
-+ **RO-Crate Community**<br>
-    [https://www.researchobject.org/ro-crate/community](https://www.researchobject.org/ro-crate/community)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [researchobject](https://github.com/researchobject)<br>
-  <small>
-  </small>
-
-+ **Paul Groth**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-0183-6910](https://orcid.org/0000-0003-0183-6910)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [pgroth](https://github.com/pgroth)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [pgroth](https://twitter.com/pgroth)<br>
-  <small>
-     Informatics Institute, Faculty of Science, University of Amsterdam, NL
-  </small>
-
-+ **Carole Goble**<br>
-    ![ORCID icon](../ro-crate/images/orcid.svg){.inline_icon}
-    [0000-0003-1219-2137](https://orcid.org/0000-0003-1219-2137)
-    · ![GitHub icon](../ro-crate/images/github.svg){.inline_icon}
-    [carolegoble](https://github.com/carolegoble)
-    · ![Twitter icon](../ro-crate/images/twitter.svg){.inline_icon}
-    [CaroleAnneGoble](https://twitter.com/CaroleAnneGoble)<br>
-  <small>
-     Department of Computer Science, The University of Manchester, UK
-     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087)); [IBISBA](https://ibisba.eu/) (European Commission [H2020-INFRAIA-2017-1-two-stage 730976](https://cordis.europa.eu/project/id/730976), [H2020-INFRADEV-2019-2 871118](https://cordis.europa.eu/project/id/871118)); [SyntheSys+](https://www.synthesys.info/) (European Commission [H2020-INFRAIA-2018-1 823827](https://cordis.europa.eu/project/id/823827))
-  </small>
-
-
-# Abstract {-}
-
+# Abstract 
 
 
 An increasing number of researchers support reproducibility by including pointers to and descriptions of datasets, software and methods in their publications. However, scientific articles may be ambiguous, incomplete and difficult to process by automated systems. In this paper we introduce RO-Crate, an open, community-driven, and lightweight approach to packaging research artefacts along with their metadata in a machine readable manner. RO-Crate is based on Schema.org annotations in JSON-LD, aiming to establish best practices to formally describe metadata in an accessible and practical way for their use in a wide variety of situations. 
 
 An RO-Crate is a structured archive of all the items that contributed to a research outcome, including their identifiers, provenance, relations and annotations. As a general purpose packaging approach for data and their metadata, RO-Crate is used across multiple areas, including bioinformatics, digital humanities and regulatory sciences. By applying "just enough" Linked Data standards, RO-Crate simplifies the process of making research outputs FAIR while also enhancing research reproducibility.
 
-An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.5146227) is archived at `https://doi.org/10.5281/zenodo.5146227`
+An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.5146227) is archived at <https://doi.org/10.5281/zenodo.5146227>
 
 
 # Introduction 
@@ -1212,8 +945,6 @@ This exposes the first order logic domain of discourse of IRIs, with rational nu
 
 # RO-Crate Community {#communitylist}
 
-
-
 As of 2021-10-04, the _RO-Crate_ Community members are:
 
 * Peter Sefton <https://orcid.org/0000-0002-3545-944X> (co-chair)
@@ -1276,7 +1007,258 @@ As of 2021-10-04, the _RO-Crate_ Community members are:
 
 <hr />
 
-# References {.unnumbered .page_break_before}
+# References
 
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
+\[1\] E. Afgan, D. Baker, B. Batut, M. van den Beek, D. Bouvier, M. Cech, J. Chilton, D. Clements, N. Coraor, B.A. Grüning, A. Guerler, J. Hillman-Jackson, S. Hiltemann, V. Jalili, H. Rasche, N. Soranzo, J. Goecks, J. Taylor, A. Nekrutenko and D. Blankenberg, The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update, Nucleic Acids Research 46(W1) (2018), W537–W544. doi:[10.1093/nar/gky379](https://dx.doi.org/10.1093/nar/gky379).
+
+\[2\] D. Agarwal, C. Goble, S. Soiland-Reyes, U. Sarkans, D. Noesgaard, U. Schindler, M. Fenner, P. Manghi, S. Stall, C. Coward and C. Erdmann, Data Citation Community of Practice – 8, Workshop, Zenodo/AGU, 2021. [https://data.agu.org/DataCitationCoP/2nd-workshop-data-citation](https://data.agu.org/DataCitationCoP/2nd-workshop-data-citation). doi:[10.5281/zenodo.4916734](https://dx.doi.org/10.5281/zenodo.4916734).
+
+\[3\] R. Albertoni, D. Browning, S. Cox, A. Gonzalez Beltran, A. Perego, P. Winstanley and Dataset Exchange Working Group, Data Catalog Vocabulary (DCAT) – Version 2, _W3C Recommendation_ (2020), [https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/](https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/).
+
+\[4\] A. Almeida, A.L. Mitchell, M. Boland, S.C. Forster, G.B. Gloor, A. Tarkowska, T.D. Lawley and R.D. Finn, A new genomic blueprint of the human gut microbiota, Nature 568(7753) (2019), 499–504. doi:[10.1038/s41586-019-0965-1](https://dx.doi.org/10.1038/s41586-019-0965-1).
+
+\[5\] G. Alterovitz, D. Dean, C. Goble, M.R. Crusoe, S. Soiland-Reyes, A. Bell, A. Hayes, A. Suresh, A. Purkayastha, C.H. King, D. Taylor, E. Johanson, E.E. Thompson, E. Donaldson, H. Morizono, H. Tsang, J.K. Vora, J. Goecks, J. Yao, J.S. Almeida, J. Keeney, K. Addepalli, K. Krampis, K.M. Smith, L. Guo, M. Walderhaug, M. Schito, M. Ezewudo, N. Guimera, P. Walsh, R. Kahsay, S. Gottipati, T.C. Rodwell, T. Bloom, Y. Lai, V. Simonyan and R. Mazumder, Enabling precision medicine via standard communication of HTS provenance, analysis, and results, PLOS Biology 16(12) (2018), e3000099. doi:[10.1371/journal.pbio.3000099](https://dx.doi.org/10.1371/journal.pbio.3000099).
+
+\[6\] R.C. Amorim, J.A. Castro, J. Rocha da Silva and C. Ribeiro, A comparison of research data management platforms: Architecture, flexible metadata and interoperability, Universal Access in the Information Society (2016), 1–12. doi:[10.1007/s10209-016-0475-y](https://dx.doi.org/10.1007/s10209-016-0475-y).
+
+\[7\] G. Arfaoui and M. Jaoua, RO-Crate RDA maDMP Mapper, Zenodo, 2020. [https://github.com/GhaithArf/ro-crate-rda-madmp-mapper](https://github.com/GhaithArf/ro-crate-rda-madmp-mapper). doi:[10.5281/zenodo.3922136](https://dx.doi.org/10.5281/zenodo.3922136).
+
+\[8\] F. Bacall, S. Soiland-Reyes and M. Soares e Silva, eScienceLab: RO-Composer. [https://esciencelab.org.uk/projects/ro-composer/](https://esciencelab.org.uk/projects/ro-composer/).
+
+\[9\] F. Bacall and M. Whitwell, GitHub – ResearchObject/ro-crate-ruby: A Ruby gem for creating, manipulating and reading RO-Crates. [https://github.com/ResearchObject/ro-crate-ruby](https://github.com/ResearchObject/ro-crate-ruby).
+
+\[10\] D. Baker, M. van den Beek, D. Blankenberg, D. Bouvier, J. Chilton, N. Coraor, F. Coppens, I. Eguinoa, S. Gladman, B. Grüning, N. Keener, D. Larivière, A. Lonie, S. Kosakovsky Pond, W. Maier, A. Nekrutenko, J. Taylor and S. Weaver, No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics, PLOS Pathogens 16(8) (2020), e1008643. doi:[10.1371/journal.ppat.1008643](https://dx.doi.org/10.1371/journal.ppat.1008643).
+
+\[11\] M. Barker, R. Wilkinson and A. Treloar, The Australian Research Data Commons, Data Science Journal 18 (2019). doi:[10.5334/dsj-2019-044](https://dx.doi.org/10.5334/dsj-2019-044).
+
+\[12\] S. Bechhofer, I. Buchan, D. De Roure, P. Missier, J. Ainsworth, J. Bhagat, P. Couch, D. Cruickshank, M. Delderfield, I. Dunlop, M. Gamble, D. Michaelides, S. Owen, D. Newman, S. Sufi and C. Goble, Why linked data is not enough for scientists, Future Generation Computer Systems 29(2) (2013), 599–611. doi:[10.1016/j.future.2011.08.004](https://dx.doi.org/10.1016/j.future.2011.08.004).
+
+\[13\] K. Belchev, KockataEPich/CheckMyCrate: A command line application for validating a RO-Crate object against a JSON profile, _GitHub_ (2021). [https://github.com/KockataEPich/CheckMyCrate](https://github.com/KockataEPich/CheckMyCrate).
+
+\[14\] K. Belhajjame, J. Zhao, D. Garijo, M. Gamble, K. Hettne, R. Palma, E. Mina, O. Corcho, J.M. Gómez-Pérez, S. Bechhofer, G. Klyne and C. Goble, Using a suite of ontologies for preserving workflow-centric research objects, Web Semantics: Science, Services and Agents on the World Wide Web 32 (2015), 16–42. doi:[10.1016/j.websem.2015.01.003](https://dx.doi.org/10.1016/j.websem.2015.01.003).
+
+\[15\] F.C.Y. Benureau and N.P. Rougier, Re-run, repeat, reproduce, reuse, replicate: Transforming code into scientific contributions, Frontiers in Neuroinformatics 11 (2017), 69. doi:[10.3389/fninf.2017.00069](https://dx.doi.org/10.3389/fninf.2017.00069).
+
+\[16\] H. Berman, K. Henrick, H. Nakamura and J.L. Markley, The worldwide Protein Data Bank (wwPDB): Ensuring a single, uniform archive of PDB data, Nucleic Acids Research 35(Database issue) (2007), D301–D303. doi:[10.1093/nar/gkl971](https://dx.doi.org/10.1093/nar/gkl971).
+
+\[17\] F. Bietrix, J.M. Carazo, S. Capella-Gutierrez, F. Coppens, M.L. Chiusano, R. David, J.M. Fernandez, M. Fratelli, J.-K. Heriche, C. Goble, P. Gribbon, P. Holub, R.P. Joosten, S. Leo, S. Owen, H. Parkinson, R. Pieruschka, L. Pireddu, L. Porcu, M. Raess, L. Rodriguez- Navas, A. Scherer, S. Soiland-Reyes and J. Tang, EOSC-life methodology framework to enhance reproducibility within EOSC-life, Zenodo (2021). doi:[10.5281/zenodo.4705078](https://dx.doi.org/10.5281/zenodo.4705078).
+
+\[18\] C. Bizer, T. Heath and T. Berners-Lee, Linked data: The story so far, in: Semantic Services, Interoperability and Web Applications: Emerging Concepts, A. Sheth, ed., IGI Global, 2011, pp. 205–227. ISBN 9781609605933. doi:[10.4018/978-1-60960-593-3.ch008](https://dx.doi.org/10.4018/978-1-60960-593-3.ch008).
+
+\[19\] A. Brand, L. Allen, M. Altman, M. Hlava and J. Scott, Beyond authorship: Attribution, contribution, collaboration, and credit, Learned Publishing 28(2) (2015), 151–155. doi:[10.1087/20150211](https://dx.doi.org/10.1087/20150211).
+
+\[20\] G. Brenner, BrennerG/Ro-Crate\_2\_ma-DMP: v1.0.0, 2020. [https://github.com/BrennerG/Ro-Crate\_2\_ma-DMP](https://github.com/BrennerG/Ro-Crate_2_ma-DMP). doi:[10.5281/zenodo.3903463](https://dx.doi.org/10.5281/zenodo.3903463).
+
+\[21\] J. Cardoso, L.J. Garcia Castro, F. Ekaputra, M.-C. Jacquemot-Perbal, T. Miksa and J. Borbinha, Towards Semantic Representation of Machine-Actionable Data Management Plans, PUBLISSO, 2020. [https://repository.publisso.de/resource/frl:6423289](https://repository.publisso.de/resource/frl:6423289). doi:[10.4126/frl01-006423289](https://dx.doi.org/10.4126/frl01-006423289).
+
+\[22\] J. Cardoso, D. Proença and J. Borbinha, Machine-actionable data management plans: A knowledge retrieval approach to automate the assessment of funders’ requirements, in: Advances in Information Retrieval, J.M. Jose, E. Yilmaz, J. Magalhães, P. Castells, N. Ferro, M.J. Silva and F. Martins, eds, Springer International Publishing, Cham, 2020, pp. 118–125. ISBN 978-3-030-45442-5. doi:[10.1007/978-3-030-45442-5\_15](https://dx.doi.org/10.1007/978-3-030-45442-5_15).
+
+\[23\] E. Ó Carragáin, C. Goble, P. Sefton and S. Soiland-Reyes, A lightweight approach to research object data packaging. in: Bioinformatics Open Source Conference (BOSC2019), 2019-07-24/2019-07-25, Basel, Switzerland. Zenodo (2019). doi:[10.5281/zenodo.3250687](https://dx.doi.org/10.5281/zenodo.3250687).
+
+\[24\] L.M. Chan, Library of Congress Subject Headings: Principles and Application, 3rd edn, Libraries Unlimited, Englewood, Colo, 1995, p. 556. [https://eric.ed.gov/?id=ED387146](https://eric.ed.gov/?id=ED387146). ISBN 9781563081910.
+
+\[25\] K. Chard, M. D’Arcy, B. Heavner, I. Foster, C. Kesselman, R. Madduri, A. Rodriguez, S. Soiland-Reyes, C. Goble, K. Clark, E.W. Deutsch, I. Dinov, N. Price and A. Toga, I’ll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets, in: 2016 IEEE International Conference on Big Data (Big Data), IEEE, 2016, pp. 319–328. [https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf](https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf). ISBN 978-1-4673-9005-7. doi:[10.1109/BigData.2016.7840618](https://dx.doi.org/10.1109/BigData.2016.7840618).
+
+\[26\] K. Chard, N. Gaffney, M.B. Jones, K. Kowalik, B. Ludascher, T. McPhillips, J. Nabrzyski, V. Stodden, I. Taylor, T. Thelen, M.J. Turk and C. Willis, Application of BagIt-serialized research object bundles for packaging and re-execution of computational analyses, in: 15th International Conference on eScience (eScience 2019), IEEE, 2019, pp. 514–521. [https://zenodo.org/record/3381754](https://zenodo.org/record/3381754). ISBN 978-1-7281-2451-3. doi:[10.1109/eScience.2019.00068](https://dx.doi.org/10.1109/eScience.2019.00068).
+
+\[27\] K. Chard, S. Tuecke and I. Foster, Efficient and secure transfer, synchronization, and sharing of big data, IEEE Cloud Computing 1(3) (2014), 46–55. doi:[10.1109/MCC.2014.52](https://dx.doi.org/10.1109/MCC.2014.52).
+
+\[28\] P. Ciccarese, R. Sanderson and B. Young, Web Annotation Data Model, W3C Recommendation, W3C, 2017. [https://www.w3.org/TR/2017/REC-annotation-model-20170223/](https://www.w3.org/TR/2017/REC-annotation-model-20170223/).
+
+\[29\] J.F. Claerbout and M. Karrenbach, Electronic documents give reproducible research a new meaning, in: SEG Technical Program Expanded Abstracts 1992, Society of Exploration Geophysicists, 1992, pp. 601–604. doi:[10.1190/1.1822162](https://dx.doi.org/10.1190/1.1822162).
+
+\[30\] S. Cohen-Boulakia, K. Belhajjame, O. Collin, J. Chopard, C. Froidevaux, A. Gaignard, K. Hinsen, P. Larmande, Y.L. Bras, F. Lemoine, F. Mareuil, H. Ménager, C. Pradal and C. Blanchet, Scientific workflows for computational reproducibility in the life sciences: Status, challenges and opportunities, Future Generation Computer Systems 75 (2017), 284–298. doi:[10.1016/j.future.2017.01.012](https://dx.doi.org/10.1016/j.future.2017.01.012).
+
+\[31\] S. Cossu, E. Cowles, K. Estlund, C. Harlow, T. Johnson, M. Matienzo, D. Lamb, L. Rayle, R. Sanderson, J. Stroop and A. Woods, Portland Common Data Model, 2018. [https://github.com/duraspace/pcdm/wiki](https://github.com/duraspace/pcdm/wiki).
+
+\[32\] M. Crosas, The DataVerse Network: An open-source application for sharing, discovering and preserving data, D-Lib Magazine 17(1/2) (2011). doi:[10.1045/january2011-crosas](https://dx.doi.org/10.1045/january2011-crosas).
+
+\[33\] M. Crosas, Harvard Data Commons, European Dataverse Workshop 2020, Tromsø, Norway, 2020. ISSN 2387-3086. doi:[10.7557/5.5422](https://dx.doi.org/10.7557/5.5422).
+
+\[34\] L.C. Crosswell and J.M. Thornton, ELIXIR: A distributed infrastructure for European biological data, Trends in Biotechnology 30(5) (2012), 241–242. doi:[10.1016/j.tibtech.2012.02.002](https://dx.doi.org/10.1016/j.tibtech.2012.02.002).
+
+\[35\] CRS4, LifeMonitor, a testing and monitoring service for scientific workflows. [https://about.lifemonitor.eu/](https://about.lifemonitor.eu/).
+
+\[36\] M.R. Crusoe, S. Abeln, A. Iosup, P. Amstutz, J. Chilton, N. Tijanić, H. Ménager, S. Soiland-Reyes and C. Goble, Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language, Communications of the ACM, 2022. Accepted. doi:[10.1145/3486897](https://dx.doi.org/10.1145/3486897).
+
+\[37\] F. da Veiga Leprevost, B.A. Grüning, S. Alves Aflitos, H.L. Röst, J. Uszkoreit, H. Barsnes, M. Vaudel, P. Moreno, L. Gatto, J. Weber, M. Bai, R.C. Jimenez, T. Sachsenberg, J. Pfeuffer, R. Vera Alvarez, J. Griss, A.I. Nesvizhskii and Y. Perez-Riverol, BioContainers: An open-source and community-driven framework for software standardization, Bioinformatics 33(16) (2017), 2580–2582. doi:[10.1093/bioinformatics/btx192](https://dx.doi.org/10.1093/bioinformatics/btx192).
+
+\[38\] K. De Smedt, D. Koureas and P. Wittenburg, FAIR digital objects for science: From data pieces to actionable knowledge units, Publications 8(2) (2020), 21. doi:[10.3390/publications8020021](https://dx.doi.org/10.3390/publications8020021).
+
+\[39\] P. Di Tommaso, M. Chatzou, E.W. Floden, P.P. Barja, E. Palumbo and C. Notredame, Nextflow enables reproducible computational workflows, Nature Biotechnology 35(4) (2017), 316–319. doi:[10.1038/nbt.3820](https://dx.doi.org/10.1038/nbt.3820).
+
+\[40\] M. Dillen, Q. Groom, D. Agosti and L. Nielsen, Zenodo, an archive and publishing repository: A tale of two herbarium specimen pilot projects, Biodiversity Information Science and Standards 3 (2019). doi:[10.3897/biss.3.37080](https://dx.doi.org/10.3897/biss.3.37080).
+
+\[41\] B. Droesbeke, I. Eguinoa, A. Gaignard, L. Simone, L. Pireddu, L. Rodríguez-Navas and S. Soiland-Reyes, GitHub – ResearchObject/ro-crate-py: Python library for RO-Crate. [https://github.com/researchobject/ro-crate-py](https://github.com/researchobject/ro-crate-py). doi:[10.5281/zenodo.3956493](https://dx.doi.org/10.5281/zenodo.3956493).
+
+\[42\] M. Duerst and M. Suignard, Internationalized resource identifiers (IRIs), RFC 3987, Internet Requests for Comments, RFC Editor, (2005). doi:[10.17487/rfc3987](https://dx.doi.org/10.17487/rfc3987).
+
+\[43\] EMBL-EBI Microbiome Informatics Team, FTP index of /pub/databases/metagenomics/umgs\_analyses/, 2019. [http://ftp.ebi.ac.uk/pub/databases/metagenomics/umgs\_analyses/](http://ftp.ebi.ac.uk/pub/databases/metagenomics/umgs_analyses/).
+
+\[44\] EMBL-EBI Microbiome Informatics Team, GitHub – Finn-Lab/MGS-gut: Analysing Metagenomic Species (MGS), [https://github.com/Finn-Lab/MGS-gut](https://github.com/Finn-Lab/MGS-gut).
+
+\[45\] P.A. Ewels, A. Peltzer, S. Fillinger, H. Patel, J. Alneberg, A. Wilm, M.U. Garcia, P. Di Tommaso and S. Nahnsen, The nf-core framework for community-curated bioinformatics pipelines, Nature Biotechnology 38(3) (2020), 276–278. doi:[10.1038/s41587-020-0439-x](https://dx.doi.org/10.1038/s41587-020-0439-x).
+
+\[46\] S. Farnel and A. Shiri, Metadata for research data: Current practices and trends, in: 2014 Proceedings of the International Conference on Dublin Core and Metadata Applications, W. Moen and A. Rushing, eds, Dublin Core Metadata Initiative, 2014, ISSN 1939-1366. [https://dcpapers.dublincore.org/pubs/article/view/3714](https://dcpapers.dublincore.org/pubs/article/view/3714).
+
+\[47\] D. Foundation, Digital Object Interface Protocol Specification, version 2.0, Technical Report, (2018). [https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec\_1.pdf](https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf).
+
+\[48\] A. Garcia-Silva, J.M. Gomez-Perez, R. Palma, M. Krystek, S. Mantovani, F. Foglini, V. Grande, F. De Leo, S. Salvi, E. Trasatti, V. Romaniello, M. Albani, C. Silvagni, R. Leone, F. Marelli, S. Albani, M. Lazzarini, H.J. Napier, H.M. Glaves, T. Aldridge, C. Meertens, F. Boler, H.W. Loescher, C. Laney, M.A. Genazzio, D. Crawl and I. Altintas, Enabling FAIR research in Earth science through research objects, Future Generation Computer Systems 98 (2019), 550–564. doi:[10.1016/j.future.2019.03.046](https://dx.doi.org/10.1016/j.future.2019.03.046).
+
+\[49\] GitHub – UTS-eResearch/ro-crate-js: Research Object Crate (RO-Crate) utilities, [https://github.com/UTS-eResearch/ro-crate-js](https://github.com/UTS-eResearch/ro-crate-js).
+
+\[50\] GitHub – workflowhub-eu/galaxy2cwl: Standalone version tool to get cwl descriptions (initially an abstract cwl interface) of galaxy workflows and Galaxy workflows executions. [https://github.com/workflowhub-eu/galaxy2cwl](https://github.com/workflowhub-eu/galaxy2cwl).
+
+\[51\] GitHub – CoEDL/modpdsc, [https://github.com/CoEDL/modpdsc/](https://github.com/CoEDL/modpdsc/).
+
+\[52\] GitHub – CoEDL/ocfl-tools: Tools to process and manipulate an OCFL tree. [https://github.com/CoEDL/ocfl-tools](https://github.com/CoEDL/ocfl-tools).
+
+\[53\] Giving software its due, _Nature Methods_ **16**(3) (2019), 207–207. doi:[10.1038/s41592-019-0350-x](https://dx.doi.org/10.1038/s41592-019-0350-x).
+
+\[54\] C. Goble, in: What Is Reproducibility? The R\* Brouhaha, Hannover, Germany, 2016. [http://repscience2016.research-infrastructures.eu/img/CaroleGoble-ReproScience2016v2.pdf](http://repscience2016.research-infrastructures.eu/img/CaroleGoble-ReproScience2016v2.pdf).
+
+\[55\] C. Goble, S. Cohen-Boulakia, S. Soiland-Reyes, D. Garijo, Y. Gil, M.R. Crusoe, K. Peters and D. Schober, FAIR Computational Workflows, Data Intelligence 2(1–2) (2019), 108–121. doi:[10.1162/dint\_a\_00033](https://dx.doi.org/10.1162/dint_a_00033).
+
+\[56\] C. Goble, S. Soiland-Reyes, F. Bacall, S. Owen, A. Williams, I. Eguinoa, B. Droesbeke, S. Leo, L. Pireddu, L. Rodríguez-Navas, J.M. Fernández, S. Capella-Gutierrez, H. Ménager, B. Grüning, B. Serrano-Solano, P. Ewels and F. Coppens, Implementing FAIR digital objects in the EOSC-life workflow collaboratory, Zenodo (2021). doi:[10.5281/zenodo.4605654](https://dx.doi.org/10.5281/zenodo.4605654).
+
+\[57\] C.A. Goble, J. Bhagat, S. Aleksejevs, D. Cruickshank, D. Michaelides, D. Newman, M. Borkum, S. Bechhofer, M. Roos, P. Li and D. De Roure, myExperiment: A repository and social network for the sharing of bioinformatics workflows, Nucleic Acids Research 38(Web Server issue) (2010), W677–W682. doi:[10.1093/nar/gkq429](https://dx.doi.org/10.1093/nar/gkq429).
+
+\[58\] A. Gray, C. Goble and R. Jimenez, in: Bioschemas Community, Bioschemas: From Potato Salad to Protein Annotation, Vienna, Austria, 2017. [https://iswc2017.semanticweb.org/paper-579/](https://iswc2017.semanticweb.org/paper-579/).
+
+\[59\] R.L. Grossman, A. Heath, M. Murphy, M. Patterson and W. Wells, A case for data commons: Toward data science as a service, Computing in Science & Engineering 18(5) (2016), 10–20. doi:[10.1109/MCSE.2016.92](https://dx.doi.org/10.1109/MCSE.2016.92).
+
+\[60\] B. Grüning, J. Chilton, J. Köster, R. Dale, N. Soranzo, M. van den Beek, J. Goecks, R. Backofen, A. Nekrutenko and J. Taylor, Practical computational reproducibility in the life sciences, Cell Systems 6(6) (2018), 631–635. doi:[10.1016/j.cels.2018.03.014](https://dx.doi.org/10.1016/j.cels.2018.03.014).
+
+\[61\] B. Grüning, R. Dale, A. Sjödin, B.A. Chapman, J. Rowe, C.H. Tomkins-Tinch, R. Valieris, J. Köster and B. Team, Bioconda: Sustainable and comprehensive software distribution for the life sciences, Nature Methods 15(7) (2018), 475–476. doi:[10.1038/s41592-018-0046-7](https://dx.doi.org/10.1038/s41592-018-0046-7).
+
+\[62\] R.V. Guha, D. Brickley and S. Macbeth, Schema.org: Evolution of Structured Data on the Web: Big data makes common schemas even more necessary, Queue 13(9) (2015), 10–37. doi:[10.1145/2857274.2857276](https://dx.doi.org/10.1145/2857274.2857276).
+
+\[63\] T. Heath and C. Bizer, in: Linked Data: Evolving the Web into a Global Data Space, Vol. 1, 2011, pp. 1–136, ISSN 2160-4711. ISBN 9781608454310.
+
+\[64\] IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication, IEEE Std 2791-2020. ISBN 978-1-5044-6466-6. doi:[10.1109/IEEESTD.2020.9094416](https://dx.doi.org/10.1109/IEEESTD.2020.9094416).
+
+\[65\] M.A. Jensen, V. Ferretti, R.L. Grossman and L.M. Staudt, The NCI Genomic Data Commons as an engine for precision medicine, Blood 130(4) (2017), 453–459. doi:[10.1182/blood-2017-03-735654](https://dx.doi.org/10.1182/blood-2017-03-735654).
+
+\[66\] M.B. Jones, S. Richard, D. Vieglais, A. Shepherd, R. Duerr, D. Fils and L. McGibbney, Science-on-Schema.org v1.2.0, 2021. doi:[10.5281/zenodo.4477164](https://dx.doi.org/10.5281/zenodo.4477164).
+
+\[67\] M. Katsumi and M. Grüninger, What is ontology reuse? in: Formal Ontology in Information Systems, R. Ferrario and W. Kuhn, eds, Frontiers in Artificial Intelligence and Applications, Vol. 283, IOS Press, 2016, pp. 9–22. ISBN 978-1-61499-660-6. doi:[10.3233/978-1-61499-660-6-9](https://dx.doi.org/10.3233/978-1-61499-660-6-9).
+
+\[68\] F.Z. Khan, S. Soiland-Reyes, R.O. Sinnott, A. Lonie, C. Goble and M.R. Crusoe, Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv, GigaScience 8(11) (2019). doi:[10.1093/gigascience/giz095](https://dx.doi.org/10.1093/gigascience/giz095).
+
+\[69\] J. Kim, E. Deelman, Y. Gil, G. Mehta and V. Ratnakar, Provenance trails in the Wings/Pegasus system, Concurrency and Computation: Practice and Experience 20(5) (2008), 587–597. doi:[10.1002/cpe.1228](https://dx.doi.org/10.1002/cpe.1228).
+
+\[70\] T. Kluyver, B. Ragan-Kelley, F. Pérez, B. Granger, M. Bussonnier, J. Frederic, K. Kelley, J. Hamrick, J. Grout, S. Corlay, P. Ivanov, D. Avila, S. Abdalla, C. Willing and Jupyter Development Team, Jupyter Notebooks – a publishing format for reproducible computational workflows, in: Positioning and Power in Academic Publishing: Players, Agents and Agendas, Proceedings of the 20th International Conference on Electronic Publishing, IOS Press, 2016, pp. 87–90, ISBN 978-1-61499-649-1. doi:[10.3233/978-1-61499-649-1-87](https://dx.doi.org/10.3233/978-1-61499-649-1-87).
+
+\[71\] L. Koesten, K. Gregory, P. Groth and E. Simperl, Talking datasets – understanding data sensemaking behaviours, International journal of human-computer studies 146 (2021), 102562. doi:[10.1016/j.ijhcs.2020.102562](https://dx.doi.org/10.1016/j.ijhcs.2020.102562).
+
+\[72\] L. Koesten, P. Vougiouklis, E. Simperl and P. Groth, Dataset reuse: Toward translating principles to practice, Patterns (New York, NY) 1(8) (2020), 100136. doi:[10.1016/j.patter.2020.100136](https://dx.doi.org/10.1016/j.patter.2020.100136).
+
+\[73\] J. Köster and S. Rahmann, Snakemake – a scalable bioinformatics workflow engine, Bioinformatics 28(19) (2012), 2520–2522. doi:[10.1093/bioinformatics/bts480](https://dx.doi.org/10.1093/bioinformatics/bts480).
+
+\[74\] J. Kunze, J. Littman, E. Madden, J. Scancella and C. Adams, The BagIt File Packaging Format, (V1.0), RFC 8493, Internet Requests for Comments, RFC Editor, (2018). doi:[10.17487/RFC8493](https://dx.doi.org/10.17487/RFC8493).
+
+\[75\] K. Kurowski, O. Corcho, C. Choirat, M. Eriksson, F. Coppens, M. van de Sanden and M. Ojsteršek, EOSC Interoperability Framework, Technical Report, 2021. doi:[10.2777/620649](https://dx.doi.org/10.2777/620649).
+
+\[76\] C. Kyle, G. Niall, H. Mihael, K. Kacper, L. Bertram, M. Timothy, N. Jarek, S. Victoria, T. Ian, T. Thomas et al., Toward enabling reproducibility for data-intensive research using the Whole Tale platform, Advances in Parallel Computing 36 (Parallel Computing: Technology Trends) (2020), 766–778. doi:[10.3233/APC200107](https://dx.doi.org/10.3233/APC200107).
+
+\[77\] M. La Rosa, Arkisto Platform: Describo Online. [https://arkisto-platform.github.io/describo-online/](https://arkisto-platform.github.io/describo-online/).
+
+\[78\] M. La Rosa and P. Sefton, Arkisto Platform: Describo, [https://arkisto-platform.github.io/describo/](https://arkisto-platform.github.io/describo/).
+
+\[79\] R. Lammey, Solutions for identification problems: A look at the research organization registry, Science Editing 7(1) (2020), 65–69. doi:[10.6087/kcse.192](https://dx.doi.org/10.6087/kcse.192).
+
+\[80\] A.-L. Lamprecht, L. Garcia, M. Kuzak, C. Martinez, R. Arcila, E. Martin Del Pico, V. Dominguez Del Angel, S. van de Sandt, J. Ison, P.A. Martinez, P. McQuilton, A. Valencia, J. Harrow, F. Psomopoulos, J.L. Gelpi, N. Chue Hong, C. Goble and S. Capella-Gutierrez, Towards FAIR principles for research software, Data Science, 3(1) (2019), 1–23. doi:[10.3233/DS-190026](https://dx.doi.org/10.3233/DS-190026).
+
+\[81\] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, D. Garijo, S. Soiland-Reyes, S. Zednik and J. Zhao, PROV-O: The PROV Ontology, W3C Recommendation 30 April 2013. [http://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/).
+
+\[82\] J. Leipzig, D. Nüst, C.T. Hoyt, K. Ram and J. Greenberg, The role of metadata in reproducible computational research, Patterns 2(9) (2021), 100322. doi:[10.1016/j.patter.2021.100322](https://dx.doi.org/10.1016/j.patter.2021.100322).
+
+\[83\] D. Lowe and G. Bayarri, Protein Ligand Complex MD Setup tutorial using BioExcel Building Blocks (biobb) (jupyter notebook), 2021. doi:[10.48546/workflowhub.workflow.56.1](https://dx.doi.org/10.48546/workflowhub.workflow.56.1).
+
+\[84\] M. Lynch and P. Sefton, npm: ro-crate-excel. [https://www.npmjs.com/package/ro-crate-excel](https://www.npmjs.com/package/ro-crate-excel).
+
+\[85\] Managing large files – GitHub Docs. [https://docs.github.com/en/repositories/working-with-files/managing-large-files](https://docs.github.com/en/repositories/working-with-files/managing-large-files).
+
+\[86\] J.A. McMurry, N. Juty, N. Blomberg, T. Burdett, T. Conlin, N. Conte, M. Courtot, J. Deck, M. Dumontier, D.K. Fellows, A. Gonzalez-Beltran, P. Gormanns, J. Grethe, J. Hastings, J.-K. Hériché, H. Hermjakob, J.C. Ison, R.C. Jimenez, S. Jupp, J. Kunze, C. Laibe, N. Le Novère, J. Malone, M.J. Martin, J.R. McEntyre, C. Morris, J. Muilu, W. Müller, P. Rocca-Serra, S.-A. Sansone, M. Sariyar, J.L. Snoep, S. Soiland-Reyes, N.J. Stanford, N. Swainston, N. Washington, A.R. Williams, S.M. Wimalaratne, L.M. Winfree, K. Wolstencroft, C. Goble, C.J. Mungall, M.A. Haendel and H. Parkinson, Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data, PLOS Biology 15(6) (2017), e2001414. doi:[10.1371/journal.pbio.2001414](https://dx.doi.org/10.1371/journal.pbio.2001414).
+
+\[87\] T. Miksa, M. Jaoua and G. Arfaoui, Research object crates and machine-actionable data management plans, in: 1st Workshop on Research Data Management for Linked Open Science, 2020. doi:[10.4126/frl01-006423291](https://dx.doi.org/10.4126/frl01-006423291).
+
+\[88\] T. Miksa, S. Simms, D. Mietchen and S. Jones, Ten principles for machine-actionable data management plans, PLOS Computational Biology 15(3) (2019), e1006750. doi:[10.1371/journal.pcbi.1006750](https://dx.doi.org/10.1371/journal.pcbi.1006750).
+
+\[89\] S. Möller, H.N. Krabbenhöft, A. Tille, D. Paleino, A. Williams, K. Wolstencroft, C. Goble, R. Holland, D. Belhachemi and C. Plessy, Community-driven computational biology with Debian Linux, BMC Bioinformatics 11(Suppl 12) (2010), S5. doi:[10.1186/1471-2105-11-S12-S5](https://dx.doi.org/10.1186/1471-2105-11-S12-S5).
+
+\[90\] S. Möller, S.W. Prescott, L. Wirzenius, P. Reinholdtsen, B. Chapman, P. Prins, S. Soiland-Reyes, F. Klötzl, A. Bagnacani, M. Kalaš, A. Tille and M.R. Crusoe, Robust cross-platform workflows: How technical and scientific communities collaborate to develop, test and share best practices for data analysis, Data Science and Engineering 2(3) (2017), 232–244. doi:[10.1007/s41019-017-0050-4](https://dx.doi.org/10.1007/s41019-017-0050-4).
+
+\[91\] B. Mons, Data Stewardship for Open Science, 1st edn, Taylor & Francis, p. 240. ISBN 9781315351148.
+
+\[92\] myExperiment Ontology Modules, 2009. [http://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies](https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies).
+
+\[93\] D. Newman, S. Bechhofer and D. De Roure, myExperiment: An ontology for e-Research, in: Proceedings of the Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009), T. Clark, J.S. Luciano, M.S. Marshall, E. Prud’Hommeaux and S. Stephens, eds, CEUR Workshop Proceedings, Vols 523, CEUR-WS, 2009. ISSN 1613-0073. [http://ceur-ws.org/Vol-523/Newman.pdf](http://ceur-ws.org/Vol-523/Newman.pdf).
+
+\[94\] C. Neylon, As a researcher … I’m a bit bloody fed up with Data Management, 2017. [https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/](https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/).
+
+\[95\] npm: ro-crate-html-js, [https://www.npmjs.com/package/ro-crate-html-js](https://www.npmjs.com/package/ro-crate-html-js).
+
+\[96\] OCFL, Oxford Common File Layout Specification, Recommendation, 2020. [https://ocfl.io/1.0/spec/](https://ocfl.io/1.0/spec/).
+
+\[97\] A. Piper, Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters, History Australia 17(3) (2020), 525–541. doi:[10.1080/14490854.2020.1796500](https://dx.doi.org/10.1080/14490854.2020.1796500).
+
+\[98\] RDF Working Group, RDF 1.1 Concepts and Abstract Syntax, W3C Recommendation, 2014. [https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/).
+
+\[99\] H.L. Rehm, A.J.H. Page, L. Smith, J.B. Adams, G. Alterovitz, L.J. Babb, M.P. Barkley, M. Baudis, M.J.S. Beauvais, T. Beck, J.S. Beckmann, S. Beltran, D. Bernick, A. Bernier, J.K. Bonfield, T.F. Boughtwood, G. Bourque, S.R. Bowers, A.J. Brookes, M. Brudno, M.H. Brush, D. Bujold, T. Burdett, O.J. Buske, M.N. Cabili, D.L. Cameron, R.J. Carroll, E. Casas-Silva, D. Chakravarty, B.P. Chaudhari, S.H. Chen, J.M. Cherry, J. Chung, M. Cline, H.L. Clissold, R.M. Cook-Deegan, M. Courtot, F. Cunningham, M. Cupak, R.M. Davies, D. Denisko, M.J. Doerr, L.I. Dolman, E.S. Dove, L.J. Dursi, S.O.M. Dyke, J.A. Eddy, K. Eilbeck, K.P. Ellrott, S. Fairley, K.A. Fakhro, H.V. Firth, M.S. Fitzsimons, M. Fiume, P. Flicek, I.M. Fore, M.A. Freeberg, R.R. Freimuth, L.A. Fromont, J. Fuerth, C.L. Gaff, W. Gan, E.M. Ghanaim, D. Glazer, R.C. Green, M. Griffith, O.L. Griffith, R.L. Grossman, T. Groza, J.M. Guidry Auvil, R. Guigó, D. Gupta, M.A. Haendel, A. Hamosh, D.P. Hansen, R.K. Hart, D.M. Hartley, D. Haussler, R.M. Hendricks-Sturrup, C.W.L. Ho, A.E. Hobb, M.M. Hoffman, O.M. Hofmann, P. Holub, J.S. Hsu, J.-P. Hubaux, S.E. Hunt, A. Husami, J.O. Jacobsen, S.S. Jamuar, E.L. Janes, F. Jeanson, A. Jené, A.L. Johns, Y. Joly, S.J.M. Jones, A. Kanitz, K. Kato, T.M. Keane, K. Kekesi-Lafrance, J. Kelleher, G. Kerry, S.-S. Khor, B.M. Knoppers, M.A. Konopko, K. Kosaki, M. Kuba, J. Lawson, R. Leinonen, S. Li, M.F. Lin, M. Linden, X. Liu, I.U. Liyanage, J. Lopez, A.M. Lucassen, M. Lukowski, A.L. Mann, J. Marshall, M. Mattioni, A. Metke-Jimenez, A. Middleton, R.J. Milne, F. Molnár-Gábor, N. Mulder, M.C. Munoz-Torres, R. Nag, H. Nakagawa, J. Nasir, A. Navarro, T.H. Nelson, A. Niewielska, A. Nisselle, J. Niu, T.H. Nyrönen, B.D. O’Connor, S. Oesterle, S. Ogishima, V. Ota Wang, L.A.D. Paglione, E. Palumbo, H.E. Parkinson, A.A. Philippakis, A.D. Pizarro, A. Prlic, J. Rambla, A. Rendon, R.A. Rider, P.N. Robinson, K.W. Rodarmer, L.L. Rodriguez, A.F. Rubin, M. Rueda, G.A. Rushton, R.S. Ryan, G.I. Saunders, H. Schuilenburg, T. Schwede, S. Scollen, A. Senf, N.C. Sheffield, N. Skantharajah, A.V. Smith, H.J. Sofia, D. Spalding, A.B. Spurdle, Z. Stark, L.D. Stein, M. Suematsu, P. Tan, J.A. Tedds, A.A. Thomson, A. Thorogood, T.L. Tickle, K. Tokunaga, J. Törnroos, D. Torrents, S. Upchurch, A. Valencia, R.V. Guimera, J. Vamathevan, S. Varma, D.F. Vears, C. Viner, C. Voisin, A.H. Wagner, S.E. Wallace, B.P. Walsh, M.S. Williams, E.C. Winkler, B.J. Wold, G.M. Wood, J.P. Woolley, C. Yamasaki, A.D. Yates, C.K. Yung, L.J. Zass, K. Zaytseva, J. Zhang, P. Goodhand, K. North and E. Birney, GA4GH: International policies and standards for data sharing across genomic research and healthcare, Cell Genomics 1(2) (2021), 100029. doi:[10.1016/j.xgen.2021.100029](https://dx.doi.org/10.1016/j.xgen.2021.100029).
+
+\[100\] N. Rettberg and B. Schmidt, OpenAIRE, College & Research Libraries News 76(6) (2015), 306–310. [http://resolver.sub.uni-goettingen.de/purl?gs-1/11942](http://resolver.sub.uni-goettingen.de/purl?gs-1/11942). doi:[10.5860/crln.76.6.9326](https://dx.doi.org/10.5860/crln.76.6.9326).
+
+\[101\] G.K. Sandve, A. Nekrutenko, J. Taylor and E. Hovig, Ten simple rules for reproducible computational research, PLOS Computational Biology 9(10) (2013), e1003285. doi:[10.1371/journal.pcbi.1003285](https://dx.doi.org/10.1371/journal.pcbi.1003285).
+
+\[102\] L.M. Schriml, M. Chuvochina, N. Davies, E.A. Eloe-Fadrosh, R.D. Finn, P. Hugenholtz, C.I. Hunter, B.L. Hurwitz, N.C. Kyrpides, F. Meyer, I.K. Mizrachi, S.-A. Sansone, G. Sutton, S. Tighe and R. Walls, COVID-19 pandemic reveals the peril of ignoring metadata standards, Scientific Data 7(1) (2020), 188. doi:[10.1038/s41597-020-0524-5](https://dx.doi.org/10.1038/s41597-020-0524-5).
+
+\[103\] P. Sefton, G. Devine, C. Evenhuis, M. Lynch, S. Wise, M. Lake and D. Loxton: DataCrate: a method of packaging, distributing, displaying and archiving Research Objects. in: Workshop on Research Objects (RO 2018), 29 Oct 2018 at IEEE eScience 2018, Amsterdam, Netherland. Zenodo doi:[10.5281/zenodo.1445817](https://dx.doi.org/10.5281/zenodo.1445817).
+
+\[104\] P. Sefton, FAIR Data Management; It’s a lifestyle not a lifecycle – [ptsefton.com](http://ptsefton.com), 2021. [http://ptsefton.com/2021/04/07/rdmpic/](http://ptsefton.com/2021/04/07/rdmpic/).
+
+\[105\] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall and T. Thelen, RO-Crate Metadata Specification 1.0, 2019. doi:[10.5281/zenodo.3541888](https://dx.doi.org/10.5281/zenodo.3541888).
+
+\[106\] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L.R.-N. Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst, S. Leo and M. Portier, RO-Crate Metadata Specification 1.1.1, 2021. doi:[10.5281/zenodo.4541002](https://dx.doi.org/10.5281/zenodo.4541002).
+
+\[107\] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L. Rodríguez-Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst and S. Leo, RO-Crate Metadata Specification 1.1, 2020. doi:[10.5281/zenodo.4031327](https://dx.doi.org/10.5281/zenodo.4031327).
+
+\[108\] S. Soiland-Reyes, I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis, 2020. [https://twitter.com/soilandreyes/status/1250721245622079488](https://twitter.com/soilandreyes/status/1250721245622079488).
+
+\[109\] S. Soiland-Reyes, Describing and packaging workflows using RO-Crate and BioCompute Objects, Zenodo, 2021, Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12. doi:[10.5281/zenodo.4633732](https://dx.doi.org/10.5281/zenodo.4633732).
+
+\[110\] S. Soiland-Reyes, P. Alper and C. Goble, Tracking Workflow Execution With TavernaPROV, ProvenanceWeek 2016, 2016, PROV: Three Years Later. doi:[10.5281/zenodo.51314](https://dx.doi.org/10.5281/zenodo.51314).
+
+\[111\] S. Soiland-Reyes, M. Gamble and R. Haines, Research Object Bundle 1.0 (2014). See [https://w3id.org/bundle/2014-11-05/](https://w3id.org/bundle/2014-11-05/). doi: [10.5281/zenodo.12586](https://dx.doi.org/10.5281/zenodo.12586).
+
+\[112\] M. Sporny, D. Longley, G. Kellogg, M. Lanthaler and N. Lindström, JSON-LD 1.0, W3C Recommendation, 2014. [https://www.w3.org/TR/2014/REC-json-ld-20140116/](https://www.w3.org/TR/2014/REC-json-ld-20140116/).
+
+\[113\] V. Stodden, M. McNutt, D.H. Bailey, E. Deelman, Y. Gil, B. Hanson, M.A. Heroux, J.P.A. Ioannidis and M. Taufer, Enhancing reproducibility for computational methods, Science 354(6317) (2016), 1240–1241. doi:[10.1126/science.aah6168](https://dx.doi.org/10.1126/science.aah6168).
+
+\[114\] N. Thieberger and L. Barwick, Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC), in: Melanesian Languages on the Edge of Asia: Challenges for the 21st Century, N. Evans and M. Klamer, eds, Language Documentation & Conservation Special Publication, Vol. SP05, University of Hawai’i Press, 2012, pp. 239–253. ISBN 978-0-9856211-2-4.
+
+\[115\] Tools: Data Portal & Discovery. [https://arkisto-platform.github.io/tools/portal/](https://arkisto-platform.github.io/tools/portal/).
+
+\[116\] R. Troncy, W. Bailer, M. Höffernig and M. Hausenblas, VAMP: A service for validating MPEG-7 descriptions w.r.t. to formal profile definitions, Multimedia tools and applications 46(2–3) (2010), 307–329. [https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511](https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511). doi:[10.1007/s11042-009-0397-2](https://dx.doi.org/10.1007/s11042-009-0397-2).
+
+\[117\] H. Van de Sompel and C. Lagoze, Interoperability for the discovery, use, and re-use of units of scholarly communication, CTWatch Quarterly 3(3) (2007). [http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/](http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/).
+
+\[118\] T. Vergoulis, K. Zagganas, L. Kavouras, M. Reczko, S. Sartzetakis and T. Dalamagas, SCHeMa: Scheduling Scientific Containers on a Cluster of Heterogeneous Machines, 2021. [https://arxiv.org/abs/2103.13138v1](https://arxiv.org/abs/2103.13138v1).
+
+\[119\] C.J. Volk, Y. Lucero and K. Barnas, Why is data sharing in collaborative natural resource efforts so hard and what can we do to improve it?, Environmental Management 53(5) (2014), 883–893. doi:[10.1007/s00267-014-0258-2](https://dx.doi.org/10.1007/s00267-014-0258-2).
+
+\[120\] W3C Technical Architecture Group, Dereferencing HTTP URIs, Draft Tag Finding, 2007. [https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-31/HttpRange-14.html](https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-31/HttpRange-14.html).
+
+\[121\] P. Walk, T. Miksa and P. Neish, RDA DMP Common Standard for Machine-Actionable Data Management Plans, Research Data Alliance, 2019. doi:[10.15497/rda00039](https://dx.doi.org/10.15497/rda00039).
+
+\[122\] S. Walton, L. Livermore, O. Bánki, R. Cubey, R. Drinkwater, M. Englund, C. Goble, Q. Groom, C. Kermorvant, I. Rey, C. Santos, B. Scott, A. Williams and Z. Wu, Landscape analysis for the specimen data refinery, Research Ideas and Outcomes 6 (2020). doi:[10.3897/rio.6.e57602](https://dx.doi.org/10.3897/rio.6.e57602).
+
+\[123\] M.D. Wilkinson, M. Dumontier, I.J.J. Aalbersberg, G. Appleton, M. Axton, A. Baak, N. Blomberg, J.-W. Boiten, L.B. da Silva Santos, P.E. Bourne, J. Bouwman, A.J. Brookes, T. Clark, M. Crosas, I. Dillo, O. Dumon, S. Edmunds, C.T. Evelo, R. Finkers, A. Gonzalez-Beltran, A.J.G. Gray, P. Groth, C. Goble, J.S. Grethe, J. Heringa, P.A.C. ’t Hoen, R. Hooft, T. Kuhn, R. Kok, J. Kok, S.J. Lusher, M.E. Martone, A. Mons, A.L. Packer, B. Persson, P. Rocca-Serra, M. Roos, R. van Schaik, S.-A. Sansone, E. Schultes, T. Sengstag, T. Slater, G. Strawn, M.A. Swertz, M. Thompson, J. van der Lei, E. van Mulligen, J. Velterop, A. Waagmeester, P. Wittenburg, K. Wolstencroft, J. Zhao and B. Mons, The FAIR guiding principles for scientific data management and stewardship, Scientific Data 3 (2016), 160018. doi:[10.1038/sdata.2016.18](https://dx.doi.org/10.1038/sdata.2016.18).
+
+\[124\] WorkflowHub project | Project pages for developing and running the WorkflowHub, a registry of scientific workflows. [https://w3id.org/workflowhub/](https://w3id.org/workflowhub/).
+
+\[125\] J. Zhao, J.M. Gomez-Perez, K. Belhajjame, G. Klyne, E. Garcia-Cuesta, A. Garrido, K. Hettne, M. Roos, D. De Roure and C. Goble, Why workflows break – understanding and combating decay in taverna workflows, in: 2012 IEEE 8th International Conference on e-Science, IEEE, 2012, pp. 1–9. [https://www.research.manchester.ac.uk/portal/files/174861334/why\_decay.pdf](https://www.research.manchester.ac.uk/portal/files/174861334/why_decay.pdf). ISBN 978-1-4673-4466-1. doi:[10.1109/eScience.2012.6404482](https://dx.doi.org/10.1109/eScience.2012.6404482).
+
+\[126\] F. Zoubek and M. Winkler, RO Crates and Excel (2021). [https://github.com/e11938258/RO-Crates-and-Excel](https://github.com/e11938258/RO-Crates-and-Excel). doi:[10.5281/zenodo.5068950](https://dx.doi.org/10.5281/zenodo.5068950).
+
+\[127\] M. Žumer, National Bibliographies in the Digital Age: Guidance and New Directions, IFLA Series on Bibliographic Control, IFLA Working Group on Guidelines for National Bibliographies, Walter de Gruyter – K. G. Saur, 2009, ISSN 1868-8438. ISBN 9783598441844.
