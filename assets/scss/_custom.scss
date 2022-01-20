@@ -97,6 +97,25 @@ header {
   } 
 }
 
+article { 
+  counter-reset: figure;
+}
+
+figure { 
+  font-size: smaller;
+  h4 { 
+    font-weight: bold;
+    display: inline;
+  }
+  h4::before { 
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": "
+  }
+  h4::after { 
+    content: ". "
+  }
+}
+
 footer { 
   border-top: thin;
   border-top-style: solid;
