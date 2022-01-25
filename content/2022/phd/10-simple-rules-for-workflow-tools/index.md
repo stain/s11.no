@@ -169,8 +169,7 @@ If your workflow system does not easily support graphical interaction, a simple 
 Human interaction, however useful in some cases it might be, should not be used as an excuse to make software poorly automated -- you should not create software that forces automation of its own GUI, as this is likely to be unreliable and irreproducible. This means an application initially developed with a graphical interface may need to be refactored to split out a separate command line tool (Rule 1) as exemplified in Figure 1.
 
 
-{{< figure src="fig1-modular-tools.svg" 
-link="fig1-modular-tools.svg" id="fig:modular-tools"" 
+{{< figure src="fig1-modular-tools.svg" link="fig1-modular-tools.svg" id="fig:modular-tools" 
 width="100%" title="Figure 1: Modular tools"
 caption="An analytical tool can be adapted for both automated execution and user interaction by refactoring the graphical and command line interfaces as separate modules that use the analytical algorithms as a common library. Such separation can also support a REST API, which can be used for both automation and interactive Web interfaces" >}}
 
