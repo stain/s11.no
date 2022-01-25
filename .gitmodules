@@ -4,6 +4,3 @@
 [submodule "content/2016/provweek-tavernaprov"]
 	path = content/2016/provweek-tavernaprov
 	url = git@github.com:stain/2016-provweek-tavernaprov.git
-[submodule "content/2022/phd/ro-crate"]
-	path = content/2022/phd/ro-crate
-	url = git@github.com:ResearchObject/2021-packaging-research-artefacts-with-ro-crate.git
