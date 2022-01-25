@@ -102,9 +102,10 @@ article {
 }
 
 figure { 
-  font-size: smaller;
+  font-size: $font-size-base * 0.85;
   h4 { 
     font-weight: bold;
+    font-size: $font-size-base * 0.85;
     display: inline;
   }
   h4::before { 
@@ -113,6 +114,9 @@ figure {
   }
   h4::after { 
     content: ". "
+  }
+  p:first-of-type {
+    display: inline;
   }
 }
 
