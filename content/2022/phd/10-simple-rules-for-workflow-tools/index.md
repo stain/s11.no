@@ -170,8 +170,8 @@ Human interaction, however useful in some cases it might be, should not be used 
 
 
 {{< figure src="fig1-modular-tools.svg" link="fig1-modular-tools.svg" id="fig:modular-tools" 
-width="100%" title="Figure 1: Modular tools"
-caption="An analytical tool can be adapted for both automated execution and user interaction by refactoring the graphical and command line interfaces as separate modules that use the analytical algorithms as a common library. Such separation can also support a REST API, which can be used for both automation and interactive Web interfaces" >}}
+width="100%" title="Modular tools"
+caption="An analytical tool can be adapted for both automated execution and user interaction by refactoring the graphical and command line interfaces as separate modules that use the analytical algorithms as a common library. Such separation can also support a REST API, which can be used for both automation and interactive Web interfaces." >}}
 
 Any user inputs during a tool's execution must be reported as outputs or logs, so the human interaction is made accessible as provenance (54) and potentially automatable as tool configuration or inputs.
 
