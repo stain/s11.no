@@ -72,3 +72,9 @@ outputFormats:
     baseName: ""
     isPlainText: true
     mediaType: text/x-htaccess
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
