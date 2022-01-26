@@ -560,8 +560,7 @@ network of services. The [code](https://github.com/peta-pico/nanobench) can be f
 
 {{< figure src="figure3.png" link="figure3.png" id="fig:nanobench" 
 width="100%" title="Nanobench"
-caption="A screenshot of the Nanobench application with a publication
-form" >}}
+caption="A screenshot of the Nanobench application with a publication form" >}}
 
 In the _"search"_ part of the interface, users are provided with a simple
 search interface that connects to the grlc API operations `find_nanopubs_with_uri` (if a URI is
@@ -763,8 +762,7 @@ timeout and error outcomes can come with partial results.
 
 {{< figure src="figure4.svg" link="figure4.svg" id="fig:querysuccess" 
 width="100%" title="Query outcomes"
-caption="Overall outcomes per query and kind of service, executed from five
-locations" >}}
+caption="Overall outcomes per query and kind of service, executed from five locations" >}}
 
 With grlc, 96% of the calls succeeded and only 4% resulted in an error
 (mostly due to downtime of one particular service). With LDF, 73% fully
@@ -802,7 +800,7 @@ result. For query (1) in LDF mode, this was true for 4 cases out of 5.
 
 _**Table 1**: Average execution times of the successful query executions in seconds._
 
-Next, we can look at the time performance. Table 2 shows the average execution times per query
+Next, we can look at the time performance. Table 1 shows the average execution times per query
 and service type, including only the calls that returned a full result.
 The successful queries to the grlc services took on average from 0.21 to
 6.46 seconds. For the LDF services, these numbers range from 1.53 to
@@ -875,29 +873,23 @@ three (14%) stated that they had previously digitally signed Linked
 Data. All three of them found Nanobench easier, giving two times a 5 and
 once a 4 as responses (average 4.7).
 
-::: {#tab:sus-result}
-  ----------------------------------------------------------------------------------------------- ----------------- ---- ---- ---- ----- ----- ---------
-                                                                                                  better ⟶                    
-                                                                                                  _odd questions:_   1   2    3    4     5     
-  **SUS questions:**                                                                              _even questions:_  5   4    3    2     1     **score**
-  1: I think that I would like to use this system frequently.                                                        0   3    9    13    4     65.52
-  2: I found the system unnecessarily complex.                                                                       0   0    3    11    15    85.34
-  3: I thought the system was easy to use.                                                                           0   1    1    13    14    84.48
-  4: I think that I would need the support of a technical person to be able to use this system.                      1   2    5    7     14    76.72
-  5: I found the various functions in this system were well integrated.                                              0   1    7    14    7     73.28
-  6: I thought there was too much inconsistency in this system.                                                      0   1    2    15    11    81.03
-  7: I would imagine that most people would learn to use this system very quickly.                                   0   3    6    14    6     69.83
-  8: I found the system very cumbersome to use.                                                                      0   0    1    17    11    83.62
-  9: I felt very confident using the system.                                                                         0   1    6    15    7     74.14
-  10: I needed to learn a lot of things before I could get going with this system.                                   0   1    4    8     16    83.62
-                                                                                                  total:             1   13   44   127   105   77.76
-  ----------------------------------------------------------------------------------------------- ----------------- ---- ---- ---- ----- ----- ---------
+| <br> SUS questions:                           |  _odd&nbsp;q:_ <br> _even&nbsp;q:_ | 1<br>5  |**2**<br>**4**  |**3**<br>**3**  |**4**<br>**2**  |**5**<br>**1** | 
+| --------------------------------------------------------------------------------------------- | --------------: | ---: | ---: | ---: | ---: | ---: | ------: |
+| 1: I think that I would like to use this system frequently.                                   |                 |   0 |   3 |  9  |  13 |  4  |  65.52 |
+| 2: I found the system unnecessarily complex.                                                  |                 |   0 |   0 |  3  |  11 |  15 |  85.34 |
+| 3: I thought the system was easy to use.                                                      |                 |   0 |   1 |  1  |  13 |  14 |  84.48 |
+| 4: I think that I would need the support of a technical person to be able to use this system. |                 |   1 |   2 |  5  |   7 |  14 |  76.72 |
+| 5: I found the various functions in this system were well integrated.                         |                 |   0 |   1 |  7  |  14 |   7 |  73.28 |
+| 6: I thought there was too much inconsistency in this system.                                 |                 |   0 |   1 |  2  |  15 |  11 |  81.03 |
+| 7: I would imagine that most people would learn to use this system very quickly.              |                 |   0 |   3 |  6  |  14 |   6 |  69.83 |
+| 8: I found the system very cumbersome to use.                                                 |                 |   0 |   0 |  1  |  17 |  11 |  83.62 |
+| 9: I felt very confident using the system.                                                    |                 |   0 |   1 |  6  |  15 |   7 |  74.14 |
+| 10: I needed to learn a lot of things before I could get going with this system.              |                 |   0 |   1 |  4  |   8 |  16 |  83.62 |
+|                                                                                               |  **total:**     |   1 |  13 | 44  | 127 | 105 |  77.76 |
 
-  : SUS usability evaluation results
-:::
+**Table 2**: SUS usability evaluation results. 
 
-Table [1](#tab:sus-result){reference-type="ref"
-reference="tab:sus-result"} shows the results of the SUS questions.
+Table 2 shows the results of the SUS questions.
 Overall, our system achieved a SUS score of 77.76, which is clearly
 above the average score reported in the literature (70.14) and is
 roughly in the middle between "good" and "excellent" on an adjective
@@ -1001,242 +993,39 @@ Data Translator project funded by National Institutes of Health (No.
 OT2TR003434-01). SSR was funded by BioExcel-2 (European Commission
 H2020-INFRAEDI-02-2018-823830).
 
-::: {#refs .references .csl-bib-body}
-::: {#ref-bizer2011linked .csl-entry}
-[1. ]{.csl-left-margin}[Christian Bizer, Tom Heath, & Tim Berners-Lee
-(2011): **Linked Data: The story so far**. *Semantic services,
-interoperability and web applications: Emerging concepts* (IGI Global,
-2011), pp. 205--227]{.csl-right-inline}
-:::
+## References
 
-::: {#ref-schmachtenberg2014adoption .csl-entry}
-[2. ]{.csl-left-margin}[Max Schmachtenberg, Christian Bizer, & Heiko
-Paulheim (2014): **Adoption of the linked data best practices in
-different topical domains**. *International semantic web conference*
-(Springer, 2014), pp. 245--260]{.csl-right-inline}
-:::
-
-::: {#ref-linkeddata .csl-entry}
-[3. ]{.csl-left-margin}[Tim Berners-Lee (2009): Linked Data.
-(2009)]{.csl-right-inline}
-:::
-
-::: {#ref-spec:sparqlprot .csl-entry}
-[4. ]{.csl-left-margin}[Lee Feigenbaum, Gregory Todd Williams, Kendall
-Grant Clark, & Elias Torres (2013): *SPARQL 1.1 protocol* (W3C, 2013).
-<https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/>]{.csl-right-inline}
-:::
-
-::: {#ref-auer2007dbpedia .csl-entry}
-[5. ]{.csl-left-margin}[Sören Auer, Christian Bizer, Georgi Kobilarov,
-Jens Lehmann, Richard Cyganiak, & Zachary Ives (2007): **DBpedia: A
-nucleus for a web of open data**. *The semantic web* (Springer, 2007),
-pp. 722--735.
-\<https://doi.org/<https://doi.org/10.1007/978-3-540-76298-0_52>\>]{.csl-right-inline}
-:::
-
-::: {#ref-vrandevcic2014wikidata .csl-entry}
-[6. ]{.csl-left-margin}[Denny Vrandečić & Markus Krötzsch (2014):
-Wikidata: A free collaborative knowledgebase. *Communications of the
-ACM*, **57** (2014) 78--85]{.csl-right-inline}
-:::
-
-::: {#ref-shotton2009semantic .csl-entry}
-[7. ]{.csl-left-margin}[David Shotton (2009): Semantic publishing: The
-coming revolution in scientific journal publishing. *Learned
-Publishing*, **22** (2009) 85--94]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2017genuine .csl-entry}
-[8. ]{.csl-left-margin}[Tobias Kuhn & Michel Dumontier (2017): Genuine
-semantic publishing. *Data Science*, **1** (2017)
-139--154]{.csl-right-inline}
-:::
-
-::: {#ref-mons2011value .csl-entry}
-[9. ]{.csl-left-margin}[Barend Mons, Herman van Haagen, Christine
-Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen,
-Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda
-Giardine, Jan Velterop, Paul Groth, & Erik Schultes (2011): The value of
-data. *Nature genetics*, **43** (2011) 281--283]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2013broadening .csl-entry}
-[10. ]{.csl-left-margin}[Tobias Kuhn, Paolo Emilio Barbano, Mate Levente
-Nagy, & Michael Krauthammer (2013): **Broadening the scope of
-nanopublications**. *Extended semantic web conference* (Springer, 2013),
-pp. 487--501]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2015making .csl-entry}
-[11. ]{.csl-left-margin}[Tobias Kuhn & Michel Dumontier (2015): Making
-digital artifacts on the web verifiable and reliable. *IEEE Transactions
-on Knowledge and Data Engineering*, **27** (2015)
-2390--2400]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2016decentralized .csl-entry}
-[12. ]{.csl-left-margin}[Tobias Kuhn, Christine Chichester, Michael
-Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George
-Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, & Michel
-Dumontier (2016): Decentralized provenance-aware publishing with
-nanopublications. *PeerJ Computer Science*, **2** (2016)
-e78]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2017reliable .csl-entry}
-[13. ]{.csl-left-margin}[Tobias Kuhn, Egon Willighagen, Chris Evelo,
-Núria Queralt-Rosinach, Emilio Centeno, & Laura I. Furlong (2017):
-**Reliable granular references to changing linked data**. *International
-semantic web conference* (Springer, 2017), pp.
-436--451]{.csl-right-inline}
-:::
-
-::: {#ref-ghidini2009moki .csl-entry}
-[14. ]{.csl-left-margin}[Chiara Ghidini, Barbara Kump, Stefanie
-Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, & Luciano
-Serafini (2009): **Moki: The enterprise modelling wiki**. *European
-semantic web conference* (Springer, 2009), pp.
-831--835]{.csl-right-inline}
-:::
-
-::: {#ref-baumeister2011knowwe .csl-entry}
-[15. ]{.csl-left-margin}[Joachim Baumeister, Jochen Reutelshoefer, &
-Frank Puppe (2011): KnowWE: A semantic wiki for knowledge engineering.
-*Applied Intelligence*, **35** (2011) 323--344]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn08acewiki .csl-entry}
-[16. ]{.csl-left-margin}[Tobias Kuhn (2008): **[AceWiki: A Natural and
-Expressive Semantic Wiki]{.nocase}**. *[Proceedings of Semantic Web User
-Interaction at CHI 2008: Exploring HCI Challenges]{.nocase}* (CEUR
-Workshop Proceedings, 2008)]{.csl-right-inline}
-:::
-
-::: {#ref-sparqlreadyforaction .csl-entry}
-[17. ]{.csl-left-margin}[Carlos Buil-Aranda, Aidan Hogan, Jürgen
-Umbrich, & Pierre-Yves Vandenbussche (2013): **SPARQL web-querying
-infrastructure: Ready for action?** *The semantic web--ISWC 2013*
-(Springer, 2013), pp. 277--293.
-<http://link.springer.com/chapter/10.1007/978-3-642-41338-4_18>]{.csl-right-inline}
-:::
-
-::: {#ref-ldf .csl-entry}
-[18. ]{.csl-left-margin}[Ruben Verborgh, Miel Vander Sande, Olaf Hartig,
-Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald
-Haesendonck, & Pieter Colpaert (2016): Triple Pattern Fragments: A
-low-cost knowledge graph interface for the Web. *Journal of Web
-Semantics*, **37--38** (2016) 184--206.
-\<https://doi.org/[10.1016/j.websem.2016.03.003](https://doi.org/10.1016/j.websem.2016.03.003)\>]{.csl-right-inline}
-:::
-
-::: {#ref-comunica .csl-entry}
-[19. ]{.csl-left-margin}[Ruben Taelman, Joachim Van Herwegen, Miel
-Vander Sande, & Ruben Verborgh (2018): **Comunica: A modular SPARQL
-query engine for the web**. *17th international semantic web conference*
-(2018).
-<https://comunica.github.io/Article-ISWC2018-Resource/>]{.csl-right-inline}
-:::
-
-::: {#ref-merono2016grlc .csl-entry}
-[20. ]{.csl-left-margin}[Albert Meroño-Peñuela & Rinke Hoekstra (2016):
-**Grlc makes GitHub taste like Linked Data APIs**. *European semantic
-web conference* (Springer, 2016), pp. 342--353]{.csl-right-inline}
-:::
-
-::: {#ref-speicher2015linked .csl-entry}
-[21. ]{.csl-left-margin}[Steve Speicher, John Arwe, & Ashok Malhotra
-(2015): Linked Data Platform 1.0. (2015)]{.csl-right-inline}
-:::
-
-::: {#ref-delva2019decentralized .csl-entry}
-[22. ]{.csl-left-margin}[Harm Delva, Julian Andres Rojas Melendez,
-Pieter Colpaert, & Ruben Verborgh (2019): **Decentralized publication
-and consumption of transfer footpaths**. *First international workshop
-on semantics for transport* (2019), pp. 1--7]{.csl-right-inline}
-:::
-
-::: {#ref-guha2016schema .csl-entry}
-[23. ]{.csl-left-margin}[Ramanathan V. Guha, Dan Brickley, & Steve
-Macbeth (2016): Schema. Org: Evolution of structured data on the web.
-*Communications of the ACM*, **59** (2016) 44--51]{.csl-right-inline}
-:::
-
-::: {#ref-werbrouck2020pattern .csl-entry}
-[24. ]{.csl-left-margin}[Jeroen Werbrouck, Ruben Taelman, Ruben
-Verborgh, Pieter Pauwels, Jakob Beetz, & Erik Mannens (2020):
-**Pattern-based access control in a decentralised collaboration
-environment**. *Proceedings of the 8th linked data in architecture and
-construction workshop* (CEUR-WS.org, 2020)]{.csl-right-inline}
-:::
-
-::: {#ref-buyle2019streamlining .csl-entry}
-[25. ]{.csl-left-margin}[Raf Buyle, Ruben Taelman, Katrien Mostaert,
-Geroen Joris, Erik Mannens, Ruben Verborgh, & Tim Berners-Lee (2019):
-**Streamlining governmental processes by putting citizens in control of
-their personal data**. *International conference on electronic
-governance and open society: Challenges in eurasia* (Springer, 2019),
-pp. 346--359]{.csl-right-inline}
-:::
-
-::: {#ref-taelman_towards_privacy_aggregation_2020 .csl-entry}
-[26. ]{.csl-left-margin}[Ruben Taelman, Simon Steyskal, & Sabrina
-Kirrane (2020): **Towards querying in decentralized environments with
-privacy-preserving aggregation**. *Proceedings of the 4th workshop on
-storing, querying, and benchmarking the web of data* (2020).
-<https://rubensworks.github.io/article-privacy-decentralized/>]{.csl-right-inline}
-:::
-
-::: {#ref-third2017linkchains .csl-entry}
-[27. ]{.csl-left-margin}[Allan Third & John Domingue (2017):
-**LinkChains: Exploring the space of decentralised trustworthy linked
-data**. *Workshop on decentralizing the semantic web 2017* (CEUR-WS,
-2017)]{.csl-right-inline}
-:::
-
-::: {#ref-hydra .csl-entry}
-[28. ]{.csl-left-margin}[Markus Lanthaler & Christian Gütl (2013):
-Hydra: A vocabulary for hypermedia-driven web APIs. *LDOW*, **996**
-(2013)]{.csl-right-inline}
-:::
-
-::: {#ref-lisena2019easy .csl-entry}
-[29. ]{.csl-left-margin}[Pasquale Lisena, Albert Meroño-Peñuela, Tobias
-Kuhn, & Raphaël Troncy (2019): **Easy web API development with SPARQL
-transformer**. *International semantic web conference* (Springer, 2019),
-pp. 454--470]{.csl-right-inline}
-:::
-
-::: {#ref-brooke1996sus .csl-entry}
-[30. ]{.csl-left-margin}[John Brooke (1996): SUS-a quick and dirty
-usability scale. *Usability evaluation in industry*, **189** (1996)
-4--7]{.csl-right-inline}
-:::
-
-::: {#ref-bangor2008empirical .csl-entry}
-[31. ]{.csl-left-margin}[Aaron Bangor, Philip T. Kortum, & James T.
-Miller (2008): An empirical evaluation of the system usability scale.
-*Intl. Journal of Human--Computer Interaction*, **24** (2008)
-574--594]{.csl-right-inline}
-:::
-
-::: {#ref-kuhn2016nanopub .csl-entry}
-[32. ]{.csl-left-margin}[Tobias Kuhn (2016): **Nanopub-java: A java
-library for nanopublications**. *Linked science: Proceedings of the 5th
-workshop on linked science 2015-best practices and the road ahead (LISC
-2015)* (CEUR Workshop Proceedings, 2016), pp. 19--25]{.csl-right-inline}
-:::
-
-::: {#ref-minier2018intelligent .csl-entry}
-[33. ]{.csl-left-margin}[Thomas Minier, Hala Skaf-Molli, Pascal Molli, &
-Maria-Esther Vidal (2018): **Intelligent clients for replicated Triple
-Pattern Fragments**. *European semantic web conference* (Springer,
-2018), pp. 400--414]{.csl-right-inline}
-:::
-
-::: {#ref-caronni2000walking .csl-entry}
-[34. ]{.csl-left-margin}[Germano Caronni (2000): **Walking the web of
-trust**. *WET ICE 2000* (IEEE, 2000), pp. 153--158]{.csl-right-inline}
-:::
-:::
+1. Christian Bizer, Tom Heath, & Tim Berners-Lee (2011): **Linked Data: The story so far**. *Semantic services, interoperability and web applications: Emerging concepts* (IGI Global, 2011), pp. 205--227
+2. Max Schmachtenberg, Christian Bizer, & Heiko Paulheim (2014): **Adoption of the linked data best practices in different topical domains**. *International semantic web conference* (Springer, 2014), pp. 245--260
+3. Tim Berners-Lee (2009): Linked Data. (2009)
+4. Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark, & Elias Torres (2013): *SPARQL 1.1 protocol* (W3C, 2013). <https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/>
+5. Sören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, & Zachary Ives (2007): **DBpedia: A nucleus for a web of open data**. *The semantic web* (Springer, 2007), pp. 722--735. <https://doi.org/<https://doi.org/10.1007/978-3-540-76298-0_52>
+6. Denny Vrandečić & Markus Krötzsch (2014): **Wikidata: A free collaborative knowledgebase**. *Communications of the ACM*, **57** (2014) 78--85
+7. David Shotton (2009): **Semantic publishing: The coming revolution in scientific journal publishing**. *Learned Publishing*, **22** (2009) 85--94 8. Tobias Kuhn & Michel Dumontier (2017): Genuine semantic publishing. *Data Science*, **1** (2017) 139--154
+9. Barend Mons, Herman van Haagen, Christine Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen, Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda Giardine, Jan Velterop, Paul Groth, & Erik Schultes (2011): The value of data. *Nature genetics*, **43** (2011) 281--283 10. Tobias Kuhn, Paolo Emilio Barbano, Mate Levente Nagy, & Michael Krauthammer (2013): **Broadening the scope of nanopublications**. *Extended semantic web conference* (Springer, 2013), pp. 487--501
+11. Tobias Kuhn & Michel Dumontier (2015): Making digital artifacts on the web verifiable and reliable. *IEEE Transactions on Knowledge and Data Engineering*, **27** (2015) 2390--2400
+12. Tobias Kuhn, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, & Michel Dumontier (2016): Decentralized provenance-aware publishing with nanopublications. *PeerJ Computer Science*, **2** (2016) e78
+13. Tobias Kuhn, Egon Willighagen, Chris Evelo, Núria Queralt-Rosinach, Emilio Centeno, & Laura I. Furlong (2017): **Reliable granular references to changing linked data**. *International semantic web conference* (Springer, 2017), pp.  436--451
+14. Chiara Ghidini, Barbara Kump, Stefanie Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, & Luciano Serafini (2009): **Moki: The enterprise modelling wiki**. *European semantic web conference* (Springer, 2009), pp.  831--835
+15. Joachim Baumeister, Jochen Reutelshoefer, & Frank Puppe (2011): KnowWE: A semantic wiki for knowledge engineering.  *Applied Intelligence*, **35** (2011) 323--344
+16. Tobias Kuhn (2008): **AceWiki: A Natural and Expressive Semantic Wiki**. *Proceedings of Semantic Web User Interaction at CHI 2008: Exploring HCI Challenges* (_CEUR Workshop Proceedings_, 2008)
+17. Carlos Buil-Aranda, Aidan Hogan, Jürgen Umbrich, & Pierre-Yves Vandenbussche (2013): **SPARQL web-querying infrastructure: Ready for action?** *The semantic web--ISWC 2013* (Springer, 2013), pp. 277--293.  <http://link.springer.com/chapter/10.1007/978-3-642-41338-4_18>
+18. Ruben Verborgh, Miel Vander Sande, Olaf Hartig, Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald Haesendonck, & Pieter Colpaert (2016): Triple Pattern Fragments: A low-cost knowledge graph interface for the Web. *Journal of Web Semantics*, **37--38** (2016) 184--206.  <https://doi.org/10.1016/j.websem.2016.03.003>
+19. Ruben Taelman, Joachim Van Herwegen, Miel Vander Sande, & Ruben Verborgh (2018): **Comunica: A modular SPARQL query engine for the web**. *17th international semantic web conference* (2018).  <https://comunica.github.io/Article-ISWC2018-Resource/>
+20. Albert Meroño-Peñuela & Rinke Hoekstra (2016): **Grlc makes GitHub taste like Linked Data APIs**. *European semantic web conference* (Springer, 2016), pp. 342--353 21. Steve Speicher, John Arwe, & Ashok Malhotra
+(2015): Linked Data Platform 1.0. (2015)
+22. Harm Delva, Julian Andres Rojas Melendez, Pieter Colpaert, & Ruben Verborgh (2019): **Decentralized publication and consumption of transfer footpaths**. *First international workshop on semantics for transport* (2019), pp. 1--7
+23. Ramanathan V. Guha, Dan Brickley, & Steve Macbeth (2016): Schema. Org: Evolution of structured data on the web.  *Communications of the ACM*, **59** (2016) 44--51
+24. Jeroen Werbrouck, Ruben Taelman, Ruben Verborgh, Pieter Pauwels, Jakob Beetz, & Erik Mannens (2020): **Pattern-based access control in a decentralised collaboration environment**. *Proceedings of the 8th linked data in architecture and
+construction workshop* (CEUR-WS.org, 2020)
+25. Raf Buyle, Ruben Taelman, Katrien Mostaert, Geroen Joris, Erik Mannens, Ruben Verborgh, & Tim Berners-Lee (2019): **Streamlining governmental processes by putting citizens in control of their personal data**. *International conference on electronic governance and open society: Challenges in eurasia* (Springer, 2019), pp. 346--359
+26. Ruben Taelman, Simon Steyskal, & Sabrina Kirrane (2020): **Towards querying in decentralized environments with privacy-preserving aggregation**. *Proceedings of the 4th workshop on storing, querying, and benchmarking the web of data* (2020).  <https://rubensworks.github.io/article-privacy-decentralized/>
+27. Allan Third & John Domingue (2017): **LinkChains: Exploring the space of decentralised trustworthy linked data**. *Workshop on decentralizing the semantic web 2017* (CEUR-WS, 2017)
+28. Markus Lanthaler & Christian Gütl (2013): Hydra: A vocabulary for hypermedia-driven web APIs. *LDOW*, **996** (2013) 29. Pasquale Lisena, Albert Meroño-Peñuela, Tobias Kuhn, & Raphaël Troncy (2019): **Easy web API development with SPARQL transformer**. *International semantic web conference* (Springer, 2019),
+pp. 454--470
+30. John Brooke (1996): SUS-a quick and dirty usability scale. *Usability evaluation in industry*, **189** (1996) 4--7
+31. Aaron Bangor, Philip T. Kortum, & James T.  Miller (2008): An empirical evaluation of the system usability scale.  *Intl. Journal of Human--Computer Interaction*, **24** (2008) 574--594
+32. Tobias Kuhn (2016): **Nanopub-java: A java library for nanopublications**. *Linked science: Proceedings of the 5th workshop on linked science 2015-best practices and the road ahead (LISC 2015)* (CEUR Workshop Proceedings, 2016), pp. 19--25
+33. Thomas Minier, Hala Skaf-Molli, Pascal Molli, & Maria-Esther Vidal (2018): **Intelligent clients for replicated Triple Pattern Fragments**. *European semantic web conference* (Springer, 2018), pp. 400--414
+34. Germano Caronni (2000): **Walking the web of trust**. *WET ICE 2000* (IEEE, 2000), pp. 153--158]
 
