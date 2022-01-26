@@ -17,24 +17,33 @@ Rationale:
 2. All authors SHOULD be credited. We have enough bytes left on the Internet, and _et al._ have high enough h-index already.
 3. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
 5. Formatting and newlines help readability and to separate distinct pieces of information.
-6. The **title** is the most important information and should be highlighted.
+6. The **title** is the most important information and should be highlighted, clearly different from author list or way of publishing.
 7. Publisher organization and location is not relevant, given a resolvable PID.
 8. You can cite any publicly available source. It does not have to be peer reviewed—you presumably reviewed the content before citing it?
-9. A persistent identifier (PID) or URL MUST be present.
+9. A persistent identifier (PID) or URL MUST be present. DOIs are included for _any_ type of resource, where known.
 10. Anything cited should be accessible [Open Access](#oa)⁠—[request](#request-preprint) or [post](#post-preprint) a preprint if not.
 11. The bibliography is written primarily for human readers on the Web, not for print in 1960s style.
 12. The year of publication should be distinct from date of event.
 
 Traditional bibliography styles (of which there are [plenty](https://www.citethisforme.com/)) have several issues:
 1. Unnecessary information that only relate to printed press.
-2. Unnecessary shortening of author names and list, which gives preference to surnames and lead authors.
+2. Unnecessary shortening of author names and author list, which gives preference to surnames and lead authors.
 3. Double-comma lists of _Surname, F, Surname, S, et al._ are very hard to read. 
-4. Finishing author list with the word _and_ unncessarily emphasizes last author.
-5. Lack of hyperlinks[^1] and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics. 
-6. Lack of formatting (e.g. difficult to differentiate authors, title or venue).
-7. Lack of details for online resources and standards
-8. The style assume there is shortage of letters, using acrnms mke it dffclt to read.
-9. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
+4. Finishing author list with the word _and_ unncessarily emphasizes last author (articles should instead annotate [contributor roles](https://casrai.org/credit/)).
+5. Uncessary abbreviation of journal names (_Future Gener Comp Sy_, _New Engl J Med_) is cryptic and assumes journal is well known to all readers.
+6. Lack of hyperlinks[^1] and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics. 
+7. Lack of formatting (e.g. difficult to differentiate authors, title or venue).
+8. Lack of details for online resources and standards
+9. The style assume there is shortage of letters, using acrnms mke it dffclt to read.
+10. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
+
+The s11 bibliography style can be considered as a combination these citation styles:
+* [ACM SIGCHI Proceedings](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Facm-sigchi-proceedings) (Full names, year, journal in italics) -- title is distinct but could be emphasized more. 
+* [American Sociological Association (ASA)](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Famerican-sociological-association) (full names, year, journal in italics, distinct title) -- but first author is in wrong order and adds a confusing comma, no DOIs
+* [Association for Computing Machinery](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fassociation-for-computing-machinery) (Full names, year, journal in itailcs) -- but journals are abbreviated, unnecessary "DOI" prefix, year with full stop is odd sentence, "and" in author list requires Oxford Comma considerations.
+* [IOS Press (books)](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fios-press-books) (journal issue in bold) -- but DOIs don't have `https://doi.org/` prefix, abbreviated journals, indistinct title
+* [Cambridge University Press](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fcambridge-university-press-numeric) (journal in italics, journal volume is bold) -- but comma after authors might make title seem like author ("I. Mares, Firms and the welfare state"), Oxford Comma before `&` is odd
+
 
 [^1]: Although use of footnotes for URLs is easy to navigate (if hyperlinked!), used alone they also degrade Web resources as not being "proper" publications worthy of attribution and citation.
 
@@ -48,15 +57,16 @@ _GigaScience_ **8**(11):giz095
 Notes:
 1. First line lists **all** authors with full names as listed within article. No [assumptions](https://www.w3.org/International/questions/qa-personal-names) made about surnames.  
   For initials (e.g. middle name or unknown given name), use full punctuation: "C.J. Tunis". 
-2. After last author, add (year) in 4 digits, reflecting official publishing date (which may be before the issue's publication date). Terminated with : and newline.
-3. Second line is title in **bold**. Hyperlink to DOI—only if open access. Final period `.` is _not bold_ nor in hyperlink, followed by newline.  
+2. Names are listed with regular comma `,` as separator, including for last name. No need for `et al.`, `and` or `&`.
+3. After last author, add (year) in 4 digits, reflecting official publishing date (which may be before the issue's publication date). Terminated with : and newline.
+4. Second line is title in **bold**. Hyperlink to DOI—only if open access. Final period `.` is _not bold_ nor in hyperlink, followed by newline.  
   If the landing page for a DOI does not show the full text, the hyperlink MAY go directly to HTML and PDF if the URI seem stable.
-4. Third line is full journal name in _italics_ with official captitalization. No acronyms, e.g. _~~J Chem Bio~~_ ⟶ _Journal of Chemical Biology_
-5. Journal name is immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence). Do not repeat (year) or month of issue, unless this is the official identifier.
-6. Page numbers are NOT included⁠—welcome to the Internet.  
+5. Third line is full journal name in _italics_ with official captitalization. No acronyms, e.g. _~~J Chem Bio~~_ ⟶ _Journal of Chemical Biology_
+6. Journal name is immediately followed by volume number in **bold**. Optional (issue) and/or :article ID. Terminated with newline (no period as there is no sentence). Do not repeat (year) or month of issue, unless this is the official identifier.
+7. Page numbers are NOT included⁠—welcome to the Internet.  
   ..except for publications without per-article DOI, then add: pp. 123–129 (that is [en dash](https://en.wikipedia.org/wiki/Dash#Ranges_of_values) –, not _hyphen_ - nor _em dash_ ⁠—)
-7. Last line is literal URI, ideally DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
-8. Any optional links, e.g. [[preprint](http://example.com/)] or [[poster]](http://example.org/) (see [below](#non-oa))
+8. Last line is literal URI, ideally DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
+9. Any optional links, e.g. [[preprint](http://example.com/)] or [[poster]](http://example.org/) (see [below](#non-oa))
 
 **Tip**: If you are using Markdown, use two spaces at the end of line to force a `<br />` newline.
 
