@@ -1,6 +1,13 @@
 ---
 title: Packaging research artefacts with RO-Crate
 bib: ro-crate
+author:
+- Tobias Kuhn
+- Ruben Taelman
+- Vincent Emonet
+- Haris Antonatos
+- Stian Soiland-Reyes
+- Michel Dumontier
 keywords:
 - research object
 - linked data
@@ -233,11 +240,11 @@ but does not entail the costs of Blockchain-based approaches.
 
 ## Approach
 
-![The architecture of our overall approach.](Figure1.pdf){#fig:approach
-width="90%"}
+{{< figure src="figure1.svg" link="figure1.svg" id="fig:querysuccess" 
+width="100%" title="Nanopublication services"
+caption="The architecture of our overall approach" >}}
 
-The approach to be presented here, as shown in Figure
-[1](#fig:approach){reference-type="ref" reference="fig:approach"}, is
+The approach to be presented here, as shown in [Figure 1](#fig:approach), is
 based on our work on nanopublications and the ecosystem for publishing
 them, as introduced above. The core of this new approach is to allow
 end-users to directly publish Linked Data snippets in the form of
@@ -276,8 +283,7 @@ its assertion graph, as shown by this example:
 Below, we will come back to the question of how we can ensure that this
 user is indeed in control of the stated ORCID identifier. Once an
 identity is established in this way, the respective user can publish
-nanopublications such as the one shown in Figure
-[2](#fig:nanopub){reference-type="ref" reference="fig:nanopub"}, where
+nanopublications such as the one shown in [Figure 2](#fig:nanopub), where
 the personal identifier and the public key are mentioned in the
 publication info graph (yellow) together with the digital signature that
 is calculated with the respective private key on the entire
@@ -287,13 +293,14 @@ prefix `this:`) is calculated as a last step, which therefore also
 covers the signature. This makes the nanopublication including its
 signature verifiable and immutable.
 
-![Example nanopublication in TriG notation that was published with
-Nanobench](Figure2.pdf){#fig:nanopub width="\\textwidth"}
+{{< figure src="figure2.svg" link="figure2.svg" id="fig:nanopub" 
+width="100%" title="Example nanopublication"
+caption="in TriG notation, as published with Nanobench" >}}
 
 Immutability is a desirable property to ensure stable and reliable
 linking, but for practical purposes it has to come with a mechanism to
 declare updates and mark obsolete entries. With our approach, new
-versions of a nanopublication can be declared with the property in the
+versions of a nanopublication can be declared with the `npx:supersedes` property in the
 publication info graph of the nanopublication containing the update, for
 example:
 
@@ -303,7 +310,7 @@ example:
       ...
     }
 
-In order to declare a nanopublication obsolete without an update, the
+In order to declare a nanopublication obsolete without an update, the `npx:retracts`
 property can be used in the assertion graph of a separate retraction
 nanopublication, for example:
 
@@ -323,7 +330,7 @@ given nanopublications were published by the same user who introduced
 herself in her introduction nanopublication, but they still allow
 anybody to claim any ORCID identifier (or other kind of identifier). To
 add this missing link, users can add the link of their introduction
-nanopublication to their ORCID profile under "Websites & Social Links",
+nanopublication to their ORCID profile under _"Websites & Social Links"_,
 which proves that they have control of that account. This link is
 represented with `foaf:page` when the user identifier is resolved with a
 HTTP GET request asking for an RDF representation via content
@@ -334,8 +341,7 @@ ORCID identifiers.
 
 ### Quad Pattern Fragments
 
-Nanopublications, as can be seen in Figure
-[2](#fig:nanopub){reference-type="ref" reference="fig:nanopub"}, are
+Nanopublications, as can be seen in [Figure 2](#fig:nanopub), are
 represented as four named RDF graphs. Triple Pattern Fragments, however,
 as their names indicates, only support triples and not quads (which
 include the graph information), and TPF is therefore insufficient for
@@ -373,7 +379,7 @@ The control above indicates that the QPF API accepts four URL
 parameters, corresponding to the four elements of a quad. For example, a
 query to this API for the pattern `?s npx:retracts ?o sub:assertion`
 would result in an HTTP request for the URL
-<https://example.org/?p=npx:retracts&g=sub:assertion>[^1].
+`<https://example.org/?p=npx:retracts&g=sub:assertion>`[^1].
 
 Just like with TPF, intelligent clients can be built that can handle
 more complex queries (such as SPARQL queries) over QPF APIs. This
@@ -435,41 +441,41 @@ slower.
 The grlc-based services provide general API operations that are based on
 14 SPARQL templates:
 
--   returns all nanopublication identifiers in undefined order
+-   `find_nanopubs` returns all nanopublication identifiers in undefined order
     (paginated in groups of 1000) possibly restricted by the year,
     month, or day of creation;
 
--   additionally allows for specifying the subject, predicate, and/or
+-   `find_nanopubs_with_pattern` additionally allows for specifying the subject, predicate, and/or
     object of a triple in the nanopublication as a filter, and to
     restrict the occurrence of that triple to the assertion, provenance,
     or publication info graph;
 
--   similarly allows for filtering by a URI irrespective of its triple
+-   `find_nanopubs_with_uri` similarly allows for filtering by a URI irrespective of its triple
     position;
 
--   supports full-text search on the literals in the nanopublication
+-   `find_nanopubs_with_text` supports full-text search on the literals in the nanopublication
     (using non-standard SPARQL features available in Virtuoso and
     GraphDB);
 
--   for each of the four templates mentioned above, there is also a
-    version that only returns nanopublications that have a valid
+-   `get_all_indexes` for each of the four templates mentioned above, there is also a
+    `find_signed_nanopubs_*` version that only returns nanopublications that have a valid
     signature and that allows for filtering by public key;
 
--   returns all nanopublication indexes (i.e. sets of nanopublications);
+-   `get_all_users` returns all nanopublication indexes (i.e. sets of nanopublications);
 
--   returns all users who announced a public key via an introduction
+-   `get_backlinks` returns all users who announced a public key via an introduction
     nanopublication;
 
--   returns all identifiers of nanopublications that directly point to a
+-   `get_deep_backlinks` returns all identifiers of nanopublications that directly point to a
     given nanopublication;
 
--   does the same thing but includes deep links through chains of
+-   `get_latest_version` does the same thing but includes deep links through chains of
     nanopublications linking to the given one;
 
--   returns the latest version of a given nanopublication signed by the
-    same public key by following backlinks;
+-   `get_nanopub_count` returns the latest version of a given nanopublication signed by the
+    same public key by following `npx:supersedes` backlinks;
 
--   returns the number of nanopublications, possibly restricted by year,
+-   `get_nanopub_count` returns the number of nanopublications, possibly restricted by year,
     month, or day of creation.
 
 The full SPARQL templates can be found in the supplemental material (see
@@ -505,20 +511,20 @@ in capitals):
       <NPURI> npa:refersToNanopub REFERENCED-NPURIS... .
     }
 
-The first triple of the links the nanopublication identifier to its head
+The first triple of the `npa:graph` links the nanopublication identifier to its head
 graph, where the links to its assertion, provenance, and publication
 info graphs can be found. The second one contains the creation date in a
 normalized form. Number three to five allow for efficient filtering by
 day, month, and year, respectively (we use URIs instead of literals
 because this happens to be much faster for filtering under Virtuoso).
-The final triple in the links the nanopublication to its public key if
+The final triple in the `npa:graph` links the nanopublication to its public key if
 the signature was found to be valid.
 
-In the , all instances of linking to another nanopublication with the
-linking nanopublication URI in subject position are added (e.g. with ).
+In the `npa:networkGraph`, all instances of linking to another nanopublication with the
+linking nanopublication URI in subject position are added (e.g. with `npx:supersedes`).
 In the cases where another nanopublication is linked but not with the
-pattern of the linking nanopublication in subject position (e.g. as with
-), is used as predicate to link the two nanopublications.
+pattern of the linking nanopublication in subject position (e.g. as with `npx:retracts`), 
+`npa:refersToNanopub` is used as predicate to link the two nanopublications.
 
 We set up a network of six servers in five different countries each
 providing both of the introduced services (LDF-based and grlc-based).
@@ -539,7 +545,7 @@ grlc services can be distributed to different servers, for example, such
 that a single server would only be responsible for one of the 14 kinds
 of queries. This server could then use an optimized data structure for
 exactly that kind of query and would only need to hold a fraction of the
-data. The queries could moreover be further compartmentalized based on
+data. The `find_` queries could moreover be further compartmentalized based on
 publication date, for example each server instance just covering a
 single year. The LDF-based services could be distributed in a similar
 fashion, for example based on the predicate namespace.
@@ -549,16 +555,17 @@ fashion, for example based on the predicate namespace.
 To demonstrate and evaluate our approach, we next implemented a client
 application that runs on the user's local computer, can be accessed
 through their web browser, and connects to the above decentralized
-network of services. The [code](https://github.com/peta-pico/nanobench) can be found online and Figure
-[3](#fig:nanobench){reference-type="ref" reference="fig:nanobench"}
-shows a screenshot.
+network of services. The [code](https://github.com/peta-pico/nanobench) can be found online and 
+[Figure 3](#fig:nanobench) shows a screenshot.
 
-![A screenshot of the Nanobench application with a publication
-form](Figure3.png){#fig:nanobench width="\\textwidth"}
+{{< figure src="figure3.png" link="figure3.png" id="fig:nanobench" 
+width="100%" title="Nanobench"
+caption="A screenshot of the Nanobench application with a publication
+form" >}}
 
-In the "search" part of the interface, users are provided with a simple
-search interface that connects to the grlc API operations (if a URI is
-entered in the search field) or (otherwise). In the "others" part, other
+In the _"search"_ part of the interface, users are provided with a simple
+search interface that connects to the grlc API operations `find_nanopubs_with_uri` (if a URI is
+entered in the search field) or `find_nanopubs_with_text` (otherwise). In the _"others"_ part, other
 users' latest nanopublications can be seen in a feed-like manner,
 similar to Twitter feeds.
 
@@ -573,9 +580,9 @@ not strictly necessary for the user to start publishing nanopublications
 and is therefore marked as optional.
 
 Once the user profile is completed, a list of templates is shown in the
-"publish" part of the interface. Templates are published as
+_"publish"_ part of the interface. Templates are published as
 nanopublications as well, and so this list can be populated via a call
-to the operation of the grlc-based services. Currently, the list
+to the `find_signed_nanopubs_with_pattern` operation of the grlc-based services. Currently, the list
 includes templates for free-text commenting on a URL, expressing a
 relation to another person, declaring that the user has read a given
 paper, expressing a gene--disease association, retracting a
@@ -608,15 +615,15 @@ nanopublication:
     }
 
 In a template nanopublication, the assertion graph is classified as an
-`AssertionTemplate` (in the namespace ) and given a human readable label
-with . Moreover, it is linked to the statement templates (i.e. triples
+`AssertionTemplate` (in the namespace `https://w3id.org/np/o/ntemplate/`) and given a human readable label
+with `rdfs:label`. Moreover, it is linked to the statement templates (i.e. triples
 in the nanopublications to be published) via `hasStatement`. The above
 example has just one such statement template, but more complex templates
 involve several of them. These templates then use regular RDF
 reification to point to their subjects, predicates, and objects. In the
 case of multiple statements, their order in the form can be defined with
 `statementOrder` and some of them can be marked as optional by
-classifying them as `OptionalStatement`. can be used on all the elements
+classifying them as `OptionalStatement`. `rdfs:label` can be used on all the elements
 to define how they should be labeled in the form interface, and the
 special URI `CREATOR` is mapped to the identifier of the user applying
 the template.
@@ -638,7 +645,7 @@ Once the user filled in a form that was generated from a template and
 clicks on "Publish", Nanobench creates the assertion graph of a new
 nanopublication by following the template and replacing all the
 placeholders with the user's input. For the provenance graph, only a
-simple link to the user's identifier is currently added (we are working
+simple `prov:wasAttributedTo` link to the user's identifier is currently added (we are working
 on extending the coverage of templates to the provenance and publication
 info graphs). In the publication info graph, Nanobench adds a timestamp,
 specifies the user as the creator of the nanopublication, and adds a
@@ -676,22 +683,22 @@ query templates of the grlc-based service, and instantiated each of them
 with a simple set of parameters to make 14 concrete executable queries.
 As parameter values, we chose generic yet realistically useful examples
 that return non-trivial answer sets for the kind of nanopublications
-that the current templates describe: (1) restricted to the month
-2020-02; (2) with the predicate value set to ; (3) on the free-text
-keyword "john"; (4) to search for nanopublications mentioning a given
-ORCID identifier; (5--8) of the form are given the same parameters as
-(1--4); (9) and (10) do not need parameters; (11) and (12) are given the
+that the current templates describe: (1) `find_nanopubs` restricted to the month
+2020-02; (2) `find_nanopubs_with_pattern` with the predicate value set to `foaf:knows`; (3) `find_nanopubs_with_text` on the free-text
+keyword _"john"_; (4) `find_nanopubs_with_uri` to search for nanopublications mentioning a given
+ORCID identifier; (5--8) of the form `find_signed_nanopubs_*` are given the same parameters as
+(1--4); (9) `get_all_indexes` and (10) `get_all_users` do not need parameters; (11) `get_backlinks` and (12) `get_deep_backlinks` are given the
 URI of a specific nanopublication, which has a substantial number of
-backlinks; (13) is given the URI of the first version of a template
-nanopublication that has afterwards been updated four times; and (14)
+backlinks; (13) `get_latest_version` is given the URI of the first version of a template
+nanopublication that has afterwards been updated four times; and (14) `get_nanopub_count`
 is, like (1), restricted to the month 2020-02.
 
 We can run these queries via the grlc-powered API but we can also use an
 LDF engine like Comunica to run them against our LDF-based services. The
-latter comes with some caveats, as the free text queries of and depend
+latter comes with some caveats, as the free text queries of `find_nanopubs_with_text` and `find_signed_nanopubs_with_text` depend
 on implementation-dependent non-standard extensions of SPARQL that do
 not work with LDF-style query execution. Moreover, Comunica currently
-lacks support for complex property paths, which are needed for and .
+lacks support for complex property paths, which are needed for `get_deep_backlinks` and `get_latest_version`.
 Queries (3), (7), (12), and (13) can therefore only be run on the
 grlc-based services but not on the LDF-based ones.
 
@@ -700,10 +707,10 @@ However, the power of the LDF-based services is of course that they can
 mentioned above). To demonstrate and test this ability, we created
 another query (15) that in a simple way combines the outputs of two of
 the currently available templates. Specifically, it checks for a given
-user (below abbreviated as ) who he has declared to know via the
-template, and then searches for papers these people declared to have
+user (below abbreviated as `me:`) who he has declared to know via the
+`foaf:knows` template, and then searches for papers these people declared to have
 read via a different template. Thereby, query (15) returns a list of all
-papers that friends of the user have read:
+papers that friends of the user `me:` have read:
 
     select ?person ?paper where {
       me: foaf:knows ?person .
@@ -718,7 +725,7 @@ position, and that neither of the nanopublications is superseded or
 retracted. We therefore define query (16) that includes all these
 checks. This query is more complicated, and we show here for
 illustration just the SPARQL fragment of the part necessary to check
-that the second nanopublication with public key was not retracted:
+that the second nanopublication `?np2` with public key `?pubkey2` was not retracted:
 
     filter not exists {
       graph npa:graph {  ?retraction npa:hasHeadGraph ?rh .
@@ -738,7 +745,7 @@ them in a clearly defined setting from a number of different locations
 from personal computers via home networks, by running the 16 queries
 specified above on all service instances of both kinds. For that, we
 created a Docker image that accesses the grlc-based services with simple
-HTTP requests via and the LDF-based ones with the [Comunica](https://github.com/comunica/comunica) engine
+HTTP requests via `curl` and the LDF-based ones with the [Comunica](https://github.com/comunica/comunica) engine
 1.12.1. The results as well as the execution time of all the calls are
 recorded, which is then used to evaluate the performance. For both kinds
 of services, the timeout is set to 60 seconds.
@@ -751,12 +758,13 @@ queries on each of the six existing service instance for both of the two
 kinds. For each query we therefore have 30 outcomes for grlc and another
 30 outcomes for LDF. These outcomes fall into the general categories of
 timeout, error, and full result. In the case of the LDF-based services,
-timeout and error outcomes can come with partial results. Figure
-[4](#fig:querysuccess){reference-type="ref"
-reference="fig:querysuccess"} shows a summary of these overall outcomes.
+timeout and error outcomes can come with partial results.
+[Figure 4](#fig:querysuccess) shows a summary of these overall outcomes.
 
-![Overall outcomes per query and kind of service, executed from five
-locations](Figure4.pdf){#fig:querysuccess width="\\textwidth"}
+{{< figure src="figure4.svg" link="figure4.svg" id="fig:querysuccess" 
+width="100%" title="Query outcomes"
+caption="Overall outcomes per query and kind of service, executed from five
+locations" >}}
 
 With grlc, 96% of the calls succeeded and only 4% resulted in an error
 (mostly due to downtime of one particular service). With LDF, 73% fully
@@ -764,7 +772,7 @@ succeeded, 21% reached the timeout, and 6% gave an error. The latter two
 sometimes gave partial results: overall 6% reached a timeout while still
 giving partial results, and overall 3% gave an error with a partial
 result. For LDF, these types of outcomes are not evenly distributed. Two
-queries --- (4) and (9) --- never fully succeeded, but the former
+queries --- `find_nanopubs_with_uri` (4) and `get_all_indexes` (9) --- never fully succeeded, but the former
 sometimes gave partial results. For the remaining queries, however,
 these LDF calls returned at least a partial result in 97% of the cases.
 Except for query (1) in addition to the above mentioned (4) and (9), the
@@ -773,11 +781,28 @@ mode. For grlc, this was the case for all queries. A client checking
 multiple servers would therefore have eventually received the full
 result. For query (1) in LDF mode, this was true for 4 cases out of 5.
 
-[\[tab:querytime\]]{#tab:querytime label="tab:querytime"}
+| Query | grlc | LDF | L/g |
+| ----- | ---- | --- | --- |
+| 1 | `find_nanopubs` | 1.02 | 35.26 | 34.48 |
+| 2 | `find_nanopubs_with_pattern` | 0.55 | 6.69 | 12.20 |
+| 3 | `find_nanopubs_with_text` | 6.46 |  |  |
+| 4 | `find_nanopubs_with_uri` | 0.78 |  | |
+| 5 | `find_signed_nanopubs` | 0.49 | 20.77 | 42.05 |
+| 6 | `find_signed_nanopubs_with_pattern` | 0.73 | 9.57 | 13.04 |
+| 7 | `find_signed_nanopubs_with_text` | 1.54 |  |  |
+| 8 | `find_signed_nanopubs_with_uri` | 0.34 | 29.53 | 86.50 |
+| 9 | `get_all_indexes` | 3.52 | |  |
+| 10 | `get_all_users` | 0.65 | 31.09 | 47.71 |
+| 11 | `get_backlinks` | 0.21 | 1.53 | 7.18 |
+| 12 | `get_deep_backlinks` | 0.68 |  |  |
+| 13 | `get_latest_version` | 0.71 |  |  |
+| 14 | `get_nanopub_count` | 0.23 | 6.54 | 28.29 |
+| 15 | `papers` |  | 2.30 |  |
+| 16 | `papers_x` |  | 10.07 |  |
 
-Next, we can look at the time performance. Table
-[\[tab:querytime\]](#tab:querytime){reference-type="ref"
-reference="tab:querytime"} shows the average execution times per query
+_**Table 1**: Average execution times of the successful query executions in seconds._
+
+Next, we can look at the time performance. Table 2 shows the average execution times per query
 and service type, including only the calls that returned a full result.
 The successful queries to the grlc services took on average from 0.21 to
 6.46 seconds. For the LDF services, these numbers range from 1.53 to
@@ -851,22 +876,22 @@ Data. All three of them found Nanobench easier, giving two times a 5 and
 once a 4 as responses (average 4.7).
 
 ::: {#tab:sus-result}
-  ----------------------------------------------------------------------------------------------- ----------------- ---------------------- ---- ---- ----- ----- -------
-                                                                                                                      better ⟶                       
-                                                                                                  odd questions:                         1 2    3    4     5     
-  SUS questions:                                                                                  even questions:                        5 4    3    2     1     score
-  1: I think that I would like to use this system frequently.                                                                            0 3    9    13    4     65.52
-  2: I found the system unnecessarily complex.                                                                                           0 0    3    11    15    85.34
-  3: I thought the system was easy to use.                                                                                               0 1    1    13    14    84.48
-  4: I think that I would need the support of a technical person to be able to use this system.                                          1 2    5    7     14    76.72
-  5: I found the various functions in this system were well integrated.                                                                  0 1    7    14    7     73.28
-  6: I thought there was too much inconsistency in this system.                                                                          0 1    2    15    11    81.03
-  7: I would imagine that most people would learn to use this system very quickly.                                                       0 3    6    14    6     69.83
-  8: I found the system very cumbersome to use.                                                                                          0 0    1    17    11    83.62
-  9: I felt very confident using the system.                                                                                             0 1    6    15    7     74.14
-  10: I needed to learn a lot of things before I could get going with this system.                                                       0 1    4    8     16    83.62
-                                                                                                  total:                                 1 13   44   127   105   77.76
-  ----------------------------------------------------------------------------------------------- ----------------- ---------------------- ---- ---- ----- ----- -------
+  ----------------------------------------------------------------------------------------------- ----------------- ---- ---- ---- ----- ----- ---------
+                                                                                                  better ⟶                    
+                                                                                                  _odd questions:_   1   2    3    4     5     
+  **SUS questions:**                                                                              _even questions:_  5   4    3    2     1     **score**
+  1: I think that I would like to use this system frequently.                                                        0   3    9    13    4     65.52
+  2: I found the system unnecessarily complex.                                                                       0   0    3    11    15    85.34
+  3: I thought the system was easy to use.                                                                           0   1    1    13    14    84.48
+  4: I think that I would need the support of a technical person to be able to use this system.                      1   2    5    7     14    76.72
+  5: I found the various functions in this system were well integrated.                                              0   1    7    14    7     73.28
+  6: I thought there was too much inconsistency in this system.                                                      0   1    2    15    11    81.03
+  7: I would imagine that most people would learn to use this system very quickly.                                   0   3    6    14    6     69.83
+  8: I found the system very cumbersome to use.                                                                      0   0    1    17    11    83.62
+  9: I felt very confident using the system.                                                                         0   1    6    15    7     74.14
+  10: I needed to learn a lot of things before I could get going with this system.                                   0   1    4    8     16    83.62
+                                                                                                  total:             1   13   44   127   105   77.76
+  ----------------------------------------------------------------------------------------------- ----------------- ---- ---- ---- ----- ----- ---------
 
   : SUS usability evaluation results
 :::
