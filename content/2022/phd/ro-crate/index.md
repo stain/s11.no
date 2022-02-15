@@ -1,6 +1,8 @@
 ---
 title: Packaging research artefacts with RO-Crate
 bib: ro-crate
+categories:
+  - PhD
 keywords:
 - research object
 - linked data
@@ -33,7 +35,7 @@ author-meta:
 - Carole Goble
 summary: > 
   Journal article published in _Data Science_
-Description: > 
+description: > 
     An increasing number of researchers support reproducibility by including pointers to and descriptions of datasets, software and methods in their publications. However, scientific articles may be ambiguous, incomplete and difficult to process by automated systems. In this paper we introduce RO-Crate, an open, community-driven, and lightweight approach to packaging research artefacts along with their metadata in a machine readable manner. RO-Crate is based on Schema.org annotations in JSON-LD, aiming to establish best practices to formally describe metadata in an accessible and practical way for their use in a wide variety of situations. 
 
     An RO-Crate is a structured archive of all the items that contributed to a research outcome, including their identifiers, provenance, relations and annotations. As a general purpose packaging approach for data and their metadata, RO-Crate is used across multiple areas, including bioinformatics, digital humanities and regulatory sciences. By applying "just enough" Linked Data standards, RO-Crate simplifies the process of making research outputs FAIR while also enhancing research reproducibility.
@@ -45,14 +47,33 @@ Description: >
   @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 </style>
 
-## Cite as
+<h2>Cite as</h2>
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 **Packaging research artefacts with RO-Crate**.  
 _Data Science_  (pre-press)  
 <https://doi.org/10.3233/DS-210053>  
 
+
 # Packaging research artefacts with RO-Crate
+
+_Stian Soiland-Reyes<sup>a,b</sup>, Peter Sefton<sup>c</sup>, Mercè Crosas<sup>d</sup>, Leyla Jael Castro<sup>e</sup>, Frederik Coppens<sup>f</sup>, José M. Fernández<sup>g</sup>, Daniel Garijo<sup>h</sup>, Björn Grüning<sup>i</sup>, Marco La Rosa<sup>j</sup>, Simone Leo<sup>k</sup>, Eoghan Ó Carragáin<sup>l</sup>, Marc Portier<sup>m</sup>, Ana Trisovic<sup>d</sup>, RO-Crate Community<sup>n</sup>, Paul Groth<sup>b</sup>, Carole Goble<sup>a</sup>_
+
+<sup>a</sup> Department of Computer Science, The University of Manchester, Manchester, UK  
+<sup>b</sup> Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
+<sup>c</sup> Faculty of Science, University Technology Sydney, Australia  
+<sup>d</sup> Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA.  
+<sup>e</sup> ZB MED Information Centre for Life Sciences, Cologne, Germany.  
+<sup>f</sup> VIB-UGent Center for Plant Systems Biology, Gent, Belgium.  
+<sup>g</sup> Barcelona Supercomputing Center, Barcelona, Spain.  
+<sup>h</sup> Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain.  
+<sup>i</sup> Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany.  
+<sup>j</sup> PARADISEC, Melbourne, Australia.  
+<sup>k</sup> Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy.  
+<sup>l</sup> University College Cork, Ireland.  
+<sup>m</sup> Vlaams Instituut voor de Zee, Oostende, Belgium.  
+<sup>n</sup> <https://www.researchobject.org/ro-crate/community> (see [Appendix B](#communitylist))  
+
 
 ## Abstract 
 
@@ -700,7 +721,7 @@ Alan R. Williams
 : Writing – review \& editing 
 
 
-## Formalizing RO-Crate in First Order Logic {#formaldefinition}
+## Appendix A: Formalizing RO-Crate in First Order Logic {#formaldefinition}
 
 Below is a formalization of the concept of RO-Crate as a set of relations using First Order Logic:
 
@@ -908,7 +929,7 @@ This exposes the first order logic domain of discourse of IRIs, with rational nu
     [recommends the use of IRI identifiers](https://www.researchobject.org/ro-crate/1.1/appendix/jsonld.html#describing-entities-in-json-ld)
 
 
-## RO-Crate Community {#communitylist}
+## Appendix B: RO-Crate Community {#communitylist}
 
 As of 2021-10-04, the _RO-Crate_ Community members are:
 

@@ -3,6 +3,9 @@ title: s11 Citation & Bibliography Style Guide
 tags:
   - academic
   - citation
+summary: >
+  The s11 House Rules recommend this opinionated bibliography style for academic writing.
+
 ---
 
 In academic writing, the s11 House Rules recommend the following bibliography style:

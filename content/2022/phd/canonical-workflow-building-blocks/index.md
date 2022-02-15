@@ -1,6 +1,8 @@
 ---
 title: Making Canonical Workflow Building Blocks interoperable across workflow languages
 bib: cwbb
+categories:
+  - PhD
 keywords:
 - cwfr
 - canonical workflow building blocks
@@ -24,12 +26,30 @@ author-meta:
 - Paul Groth
 summary: > 
   Journal article accepted for _Data Intelligence_
-Description: > 
+description: > 
     We introduce the concept of Canonical Workflow Building Blocks, a methodology of describing and wrapping computational tools, in order for them to be utilised in a reproducible manner from multiple workflow languages and execution platforms. The concept is implemented and demonstrated with the BioExcel Building Blocks library (BioBB), a collection of tool wrappers in the field of computational biomolecular simulation. Interoperability across different workflow languages is showcased through a protein Molecular Dynamics setup transversal workflow, built using this library and run with 5 different Workflow Manager Systems (WfMS). We argue such practice is a necessary requirement for FAIR Computational Workflows and an element of Canonical Workflow Frameworks for Research (CWFR) in order to improve widespread adoption and reuse of computational methods across workflow language barriers.
 
 ---
 
-_Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth_
+<h2>Cite as</h2>
+
+Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):  
+**Making Canonical Workflow Building Blocks interoperable across workflow languages**.  
+_Data Intelligence_ (accepted)   
+(preprint: <https://doi.org/10.5281/zenodo.5727730>)
+
+# Making Canonical Workflow Building Blocks interoperable across workflow languages
+
+_Stian Soiland-Reyes¹², Genís Bayarri³, Pau Andrio⁴, Robin Long⁵⁶, Douglas Lowe⁶, Ania Niewielska⁷, Adam Hospital³, Paul Groth²_
+
+¹ Department of Computer Science, The University of Manchester, Manchester, UK  
+² Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
+³ Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain  
+⁴ The Spanish National Bioinformatics Institute (INB), Barcelona Supercomputing Center (BSC), Barcelona, Spain  
+⁵ Lancaster University, Lancaster, UK  
+⁶ Research IT, The University of Manchester, Manchester, UK  
+⁷ European Bioinformatics Institute (EMBL-EBI), Cambridge, UK  
+
 
 ## Abstract
 
@@ -188,9 +208,9 @@ Adam Hospital
 : Methodology, Project administration, Resuorces, Software, Validation, Visualization, Writing -- original draft, Writing -- review & editing
 
 Paul Groth
-: Supervision, Writing -- review & editing
+: Methodology, Supervision, Writing -- review & editing
 
-The authors would also like to acknowledge contributions from: Cibin Sadasivan Baby, Finn Bacall, Rosa M. Badia, Sarah Butcher, Gerard Capes, Michael R. Crusoe, Alberto Eusebi, Carole Goble, Josep Lluís Gelpí, Modesto Orozco, Geoff Williams, Felix Amaladoss
+The authors would also like to acknowledge contributions from: Felix Amaladoss, Cibin Sadasivan Baby, Finn Bacall, Rosa M. Badia, Sarah Butcher, Gerard Capes, Michael R. Crusoe, Alberto Eusebi, Carole Goble, Josep Lluís Gelpí, Modesto Orozco, Geoff Williams, Felix Amaladoss
 
 
 ## References

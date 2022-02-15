@@ -1,6 +1,7 @@
 ---
-title: Packaging research artefacts with RO-Crate
-bib: ro-crate
+title: Semantic micro-contributions with decentralized nanopublication services
+categories:
+  - PhD
 author:
 - Tobias Kuhn
 - Ruben Taelman
@@ -8,42 +9,34 @@ author:
 - Haris Antonatos
 - Stian Soiland-Reyes
 - Michel Dumontier
-keywords:
-- research object
-- linked data
-- scholarly communication
-- Data publishing
-- Data packaging
-- FAIR
-- Linked Data
-- Metadata
-- Reproducibility
-- Research Object
 lang: en-GB
 summary: > 
   Journal article published in _PeerJ Computer Science_
-Description: > 
-    An increasing number of researchers support reproducibility by including pointers to and descriptions of datasets, software and methods in their publications. However, scientific articles may be ambiguous, incomplete and difficult to process by automated systems. In this paper we introduce RO-Crate, an open, community-driven, and lightweight approach to packaging research artefacts along with their metadata in a machine readable manner. RO-Crate is based on Schema.org annotations in JSON-LD, aiming to establish best practices to formally describe metadata in an accessible and practical way for their use in a wide variety of situations. 
-
-    An RO-Crate is a structured archive of all the items that contributed to a research outcome, including their identifiers, provenance, relations and annotations. As a general purpose packaging approach for data and their metadata, RO-Crate is used across multiple areas, including bioinformatics, digital humanities and regulatory sciences. By applying "just enough" Linked Data standards, RO-Crate simplifies the process of making research outputs FAIR while also enhancing research reproducibility.
+Description: >     
+    While the publication of Linked Data has become increasingly common, the process tends to be a relatively complicated and heavy-weight one.
+    Linked Data is typically published by centralized entities in the form of larger dataset releases, which has the downsides that there is a central bottleneck in the form of the organization or individual responsible for the releases. Moreover, certain kinds of data entries, in particular those with subjective or original content, currently do not fit into any existing dataset and are therefore more difficult to publish.
+    To address these problems, we present here an approach to use nanopublications and a decentralized network of services to allow users to directly publish small Linked Data statements through a simple and user-friendly interface, called _Nanobench_, powered by semantic templates that are themselves published as nanopublications. The published nanopublications are cryptographically verifiable and can be queried through a redundant and decentralized network of services, based on the grlc API generator and a new quad extension of Triple Pattern Fragments.
+    We show here that these two kinds of services are complementary and together allow us to query nanopublications in a reliable and efficient manner. We also show that Nanobench makes it indeed very easy for users to publish Linked Data statements, even for those who have no prior experience in Linked Data publishing.
 ---
 
-## Cite as
+<h2>Cite as</h2>
 
 Tobias Kuhn, Vincent Emonet, Haris Antonatos, Stian Soiland-Reyes, Michel Dumontier (2021):  
-**Semantic micro-contributions with decentralized nanopublication services.**
-_PeerJ Computer Science_ **7**:e387 <https://doi.org/10.7717/peerj-cs.387>
+**Semantic micro-contributions with decentralized nanopublication services**.  
+_PeerJ Computer Science_ **7**:e387  
+<https://doi.org/10.7717/peerj-cs.387>
+
 
 # Semantic Micro-Contributions with Decentralized Nanopublication Services
 
 _Tobias Kuhn¹, Vincent Emonet², Haris Antonatos³, Haris Antonatos⁴, Stian Soiland-Reyes⁵⁶, Michel Dumontier³_
 
-¹ Department of Computer Science, VU Amsterdam, Amsterdam, Netherlands
-² IDLab, Ghent University, Belgium
-³ Institute of Data Science, Maastricht University, Maastricht. Netherlands
-⁴ SciFY, Athens, Greece
-⁵ Department of Computer Science, The University of Manchester, UK
-⁶ Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands
+¹ Department of Computer Science, VU Amsterdam, Amsterdam, Netherlands  
+² IDLab, Ghent University, Belgium  
+³ Institute of Data Science, Maastricht University, Maastricht. Netherlands  
+⁴ SciFY, Athens, Greece  
+⁵ Department of Computer Science, The University of Manchester, UK  
+⁶ Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
 
 
 ## Abstract
@@ -53,23 +46,7 @@ Linked Data is typically published by centralized entities in the form of larger
 To address these problems, we present here an approach to use nanopublications and a decentralized network of services to allow users to directly publish small Linked Data statements through a simple and user-friendly interface, called _Nanobench_, powered by semantic templates that are themselves published as nanopublications. The published nanopublications are cryptographically verifiable and can be queried through a redundant and decentralized network of services, based on the grlc API generator and a new quad extension of Triple Pattern Fragments.
 We show here that these two kinds of services are complementary and together allow us to query nanopublications in a reliable and efficient manner. We also show that Nanobench makes it indeed very easy for users to publish Linked Data statements, even for those who have no prior experience in Linked Data publishing.
 
--   [Introduction](#introduction)
--   [Background](#background)
--   [Approach](#approach)
-    -   [Identities and Updates](#identities-and-updates)
-    -   [Quad Pattern Fragments](#quad-pattern-fragments)
-    -   [Nanopublication Services](#nanopublication-services)
-    -   [Nanobench Client and
-        Templates](#nanobench-client-and-templates)
--   [Performance Evaluation](#performance-evaluation)
-    -   [Performance Evaluation Design](#performance-evaluation-design)
-    -   [Performance Evaluation
-        Results](#performance-evaluation-results)
--   [Usability Evaluation](#usability-evaluation)
-    -   [Usability Evaluation Design](#usability-evaluation-design)
-    -   [Usability Evaluation Results](#usability-evaluation-results)
--   [Discussion and Conclusion](#discussion-and-conclusion)
--   [Acknowledgments](#acknowledgments)
+
 
 ## Introduction
 

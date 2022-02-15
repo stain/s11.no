@@ -3,6 +3,8 @@ title: Choosing an open source license
 tags:
   - licenses
   - open source
+summary:
+  The s11 House Rules recommends these open source licenss for software and creative work.
 ---
 
 

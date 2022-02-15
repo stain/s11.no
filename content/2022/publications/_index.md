@@ -19,14 +19,14 @@ aliases:
 </style>
 
 <p>
-<strong>Note:</strong> This page is generated from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which usually is more up to date and includes preprints.
+<strong>Note:</strong> This page is adapted from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which may be more up to date and includes preprints.
 </p>
 
 
 ## 2022
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
-[**Packaging research artefacts with RO-Crate**](https://doi.org/10.3233/DS-210053).  
+[**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
 _Data Science_  (pre-press)  
 <https://doi.org/10.3233/DS-210053>  
 [arXiv:2108.06503](https://arxiv.org/abs/arXiv:2108.06503) [cs.DL]
@@ -40,10 +40,19 @@ To appear as <https://doi.org/10.1145/3486897>
 [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
 Paul Brack, Peter Crowther, Stian Soiland-Reyes, Stuart Owen, Douglas Lowe, Alan R Williams, Quentin Groom, Mathias Dillen, Frederik Coppens, Björn Grüning, Ignacio Eguinoa, Philip Ewels, Carole Goble (2022):  
-[**10 Simple Rules for making a software tool workflow-ready**](https://zenodo.org/record/5901220/preview/brack-et-al-2022-10-Simple-Rules-for-making-a-software-tool-workflow-ready.pdf)  
+[**10 Simple Rules for making a software tool workflow-ready**](/2022/phd/10-simple-rules-for-workflow-tools/).  
 _PLOS Computational Biology_ (accepted)   
 [[preprint](https://doi.org/10.5281/zenodo.5901220)]
 
+Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):  
+[**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**](/2022/phd/specmen-data-refinery/).  
+_Data Intelligence_ (accepted) 
+
+
+Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):  
+[**Making Canonical Workflow Building Blocks interoperable across workflow languages**](/2022/phd/canonical-workflow-building-blocks/).  
+_Data Intelligence_ (accepted).  
+[[preprint](https://doi.org/10.5281/zenodo.5727730)]
 
 ## 2021
 
@@ -60,14 +69,6 @@ Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):
 _F1000Research_ **10**:897  
 <https://doi.org/10.12688/f1000research.54159.1>
 
-Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2021):  
-**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**.  
-_Data Intelligence_ (accepted?)  **No preprint available**
-
-Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2021):  
-[**Making Canonical Workflow Building Blocks interoperable across workflow languages**](https://doi.org/10.5281/zenodo.5727730).  
-_Data Intelligence_ (accepted).  
-[[preprint](https://doi.org/10.5281/zenodo.5727730)]
 
 Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Badia, Bartosz Balis, Tainã Coleman, Frederik Coppens, Frank Di Natale, Bjoern Enders, Thomas Fahringer, Rosa Filgueira, Grigori Fursin, Daniel Garijo, Carole Goble, Dorran Howell, Shantenu Jha, Daniel S. Katz, Daniel Laney, Ulf Leser, Maciej Malawski, Kshitij Mehta, Loïc Pottier, Jonathan Ozik, J. Luc Peterson, Lavanya Ramakrishnan, Stian Soiland-Reyes, Douglas Thain, Matthew Wolf (2021):  
 [**A Community Roadmap for Scientific Workflows Research and Development**](https://arxiv.org/pdf/2110.02168).  
@@ -81,7 +82,7 @@ _Zenodo_
 <https://doi.org/10.5281/zenodo.4605654>
 
 Tobias Kuhn, Vincent Emonet, Haris Antonatos, Stian Soiland-Reyes, Michel Dumontier (2021):  
-[**Semantic micro-contributions with decentralized nanopublication services**](https://doi.org/10.7717/peerj-cs.387).  
+[**Semantic micro-contributions with decentralized nanopublication services**](/2021/phd/nanopub/).  
 _PeerJ Computer Science_ **7**:e387  
 <https://doi.org/10.7717/peerj-cs.387>
 
@@ -153,7 +154,7 @@ _2018 IEEE 14th International Conference on e-Science (e-Science)_.
 [[arXiv:1809.06935]](https://arxiv.org/abs/1809.06935)
 
 Stian Soiland-Reyes, Farah Zaib Khan, Richard O. Sinnott, Andrew Lonie, Michael R Crusoe, Carole Goble: 
-[**Capturing interoperable reproducible workflows with Common Workflow Language**](https://doi.org/10.5281/zenodo.1312623).  
+[**Capturing interoperable reproducible workflows with Common Workflow Language**](/2018/cwl.html).  
 _Workshop on Research Objects (RO 2018)_, 29 Oct 2018, Amsterdam, Netherlands.
 <https://doi.org/10.5281/zenodo.1312623>
 
@@ -163,7 +164,7 @@ At _Workshop on Research Objects (RO 2018)_, 29 Oct 2018, Amsterdam, Netherlands
 <https://doi.org/10.5281/zenodo.1313066>
 
 Stian Soiland-Reyes, Marcos Cáceres (2018):  
-[**The Archive and Package (arcp) URI scheme**](https://s11.no/2018/arcp.html).  
+[**The Archive and Package (arcp) URI scheme**](/2018/arcp.html).  
 _2018 IEEE 14th International Conference on e-Science (e-Science)_   
 <https://doi.org/10.1109/eScience.2018.00018>  
 [[preprint](https://doi.org/10.5281/zenodo.1320264)] [[html](https://s11.no/2018/arcp.html)] [[pdf](https://zenodo.org/record/1320264/files/arcp.pdf?download=1)] [[research object](https://s11.no/2018/arcp.html#ro)]

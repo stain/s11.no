@@ -1,10 +1,12 @@
 ---
 title: 10 Simple Rules for making a software tool workflow-ready
 lang: en-GB
+categories:
+  - PhD
 date-meta: '2022-01-10'
 summary: > 
   Journal article accepted for _PLOS Computational Biology_
-Description: > 
+description: > 
     Workflows have become a core part of computational scientific analysis in recent years. Automated computational workflows multiply the power of researchers, potentially turning “hand-cranked” data processing by informaticians into robust factories for complex research output.
 
     However, in order for a piece of software to be usable as a workflow-ready tool, it may require alteration from its likely origin as a standalone tool. Research software is often created in response to the need to answer a research question with the minimum expenditure of time and money in resource-constrained projects. The level of quality might range from “it works on my computer” to mature and robust projects with support across multiple operating systems.
@@ -15,7 +17,7 @@ Description: >
 ---
 
 
-## Cite as
+<h2>Cite as</h2>
 
 Paul Brack, Peter Crowther, Stian Soiland-Reyes, Stuart Owen, Douglas Lowe, Alan R Williams, Quentin Groom, Mathias Dillen, Frederik Coppens, Björn Grüning, Ignacio Eguinoa, Philip Ewels, Carole Goble (2022):  
 **10 Simple Rules for making a software tool workflow-ready**.  
@@ -28,14 +30,14 @@ _PLOS Computational Biology_ (accepted)
 
 _Paul Brack¹, Peter Crowther², Stian Soiland-Reyes¹⁸, Stuart Owen¹, Douglas Lowe¹, Alan R Williams¹, Quentin Groom³, Mathias Dillen³, Frederik Coppens⁴⁵, Björn Grüning⁶, Ignacio Eguinoa⁴⁵, Philip Ewels⁷, Carole Goble¹_
 
-¹ Department of Computer Science, The University of Manchester, Manchester, UK
-² Melandra Limited, UK
-³ Meise Botanic Garden, Meise, Belgium
-⁴ Department of Plant Biotechnology and Bioinformatics, Ghent University, Technologiepark 71, 9052 Ghent, Belgium
-⁵ VIB Center for Plant Systems Biology, Technologiepark 71, 9052 Ghent, Belgium
-⁶ Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany
-⁷ Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden
-⁸ University of Amsterdam, Amsterdam, The Netherlands
+¹ Department of Computer Science, The University of Manchester, Manchester, UK  
+² Melandra Limited, UK  
+³ Meise Botanic Garden, Meise, Belgium  
+⁴ Department of Plant Biotechnology and Bioinformatics, Ghent University, Technologiepark 71, 9052 Ghent, Belgium  
+⁵ VIB Center for Plant Systems Biology, Technologiepark 71, 9052 Ghent, Belgium  
+⁶ Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany  
+⁷ Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden  
+⁸ University of Amsterdam, Amsterdam, The Netherlands  
 
 ## Introduction
 

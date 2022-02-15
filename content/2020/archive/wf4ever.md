@@ -10,6 +10,8 @@ tags:
 categories:
   - Archive
   - Project
+summary: >
+  Wf4Ever was a research object funded by EU Framework 7 to investigate how _scientific workflows_ and their data could be better preserved for reproducibility, reuse and resiliance against _workflow decay_.  
 ---
 
 Wf4Ever was a research object funded by EU Framework 7 to investigate how _scientific workflows_ and their data could be better preserved for reproducibility, reuse and resiliance against _workflow decay_.
