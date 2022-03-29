@@ -45,7 +45,7 @@ _PLOS Computational Biology_ (accepted)
 [[preprint](https://doi.org/10.5281/zenodo.5901220)]
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):  
-[**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**](/2022/phd/specmen-data-refinery/).  
+[**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**](/2022/phd/specimen-data-refinery/).  
 _Data Intelligence_ (accepted) 
 
 
