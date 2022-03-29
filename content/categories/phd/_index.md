@@ -10,7 +10,7 @@ summary: Draft of PhD thesis outline for The University of Manchester
 aliases:
 ---
 
-I am a [PhD Candidate](https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/).
+Beside [working at The University of Manchester](/about/) I am a [PhD Candidate](https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/).
 
 My supervisor is [Paul Groth](http://pgroth.com/) and my topic is _Using Research Objects to improve reproducibility_. I started in July 2019.
 
