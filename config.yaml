@@ -20,6 +20,8 @@ menu:
       url: "/2022/archive/"
     - name: "House rules"
       url: "/2021/house-rules/"
+    - name: "PhD"
+      url: "/2022/phd/"
 
 params:
   authorName: "Stian Soiland-Reyes"
