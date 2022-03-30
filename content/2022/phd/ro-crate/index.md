@@ -54,6 +54,8 @@ Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Co
 _Data Science_  (pre-press)  
 <https://doi.org/10.3233/DS-210053>  
 
+* **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
+* **Modifications**: Formatting as Markdown; figure caption formatting; reference in s11 house style; added identifiers, authors and years clarified where missing in citations.
 
 # Packaging research artefacts with RO-Crate
 
@@ -108,8 +110,6 @@ The rest of this paper is organised as follows. We first describe RO-Crate throu
 
 ## RO-Crate {#rocrate}
 
-
-
 RO-Crate aims to provide an approach to packaging research artefacts with their metadata that can be easily adopted. To illustrate this, let us imagine a research paper reporting on the sequence analysis of proteins obtained from an experiment on mice. The sequence output files, sequence analysis code, resulting data and reports summarising statistical measures are all important and inter-related research artefacts, and consequently would ideally all be co-located in a directory and accompanied with their corresponding metadata. In reality, some of the artefacts (e.g. data or software) will be recorded as external reference to repositories that are not necessarily following the FAIR principles. This conceptual directory, along with the relationships between its constituent digital artefacts, is what the RO-Crate model aims to represent, linking together all the elements of an experiment that are required for the experiment's reproducibility and reusability. 
 
 The question then arises as to how the directory with all this material should be packaged in a manner that is accessible and usable by others. This means programmatically and automatically accessible by machines and human readable. A de facto approach to sharing collections of resources is through compressed archives (e.g. a zip file). This solves the problem of “packaging”, but it does not guarantee downstream access to all artefacts in a programmatic fashion, nor describe the role of each file in that particular research. Both features, the ability to automatically access and reason about an object, are crucial and lead to the need for explicit metadata about the contents of the folder, describing each and linking them together.
@@ -129,8 +129,6 @@ In the following sections we demonstrate how the RO-Crate specification and ecos
 
 ### Development Methodology {#methodology}
 
-
-
 It is a good question as to what base level we assume for ‘conceptually simple’. We take simplicity to apply at two levels: for the _developers_ who produce the platforms and for the _data practitioners_ and users of those platforms. 
 
 For our development methodology we followed the mantra of working closely with a small group to really get a deep understanding of requirements and ensure rapid feedback loops. We created a pool of early adopter projects from a range of disciplines and groups, primarily addressing developers of platforms. Thus the base level for simplicity was **developer friendliness**. 
@@ -142,8 +140,6 @@ Addressing the simplicity of understanding and engaging with RO-Crate by data pr
 
 
 ### Conceptual Definition {#conceptual}
-
-
 
 A key premise of RO-Crate is the existence of a wide variety of resources on the Web that can help describe research. As such, RO-Crate relies on the Linked Data principles [[10.2200/S00334ED1V01Y201102WBE001](https://doi.org/10.2200/S00334ED1V01Y201102WBE001)]. [Figure 1](#fig:conceptual) shows the main conceptual elements involved in an RO-Crate: The RO-Crate Metadata File (top) describes the Research Object using structured metadata including external references, coupled with the contained artefacts (bottom) bundled and described by the RO-Crate.
 
@@ -172,7 +168,6 @@ The possibilities of consuming[^15] RO-Crate metadata with such powerful tools g
 [^15]: Some consideration is needed in processing of RO-Crates as knowledge graphs, e.g. establishing absolute IRIs for files inside a ZIP archive, detailed in the RO-Crate specification: <https://www.researchobject.org/ro-crate/1.1/appendix/relative-uris.html>
 
 
-
 #### RO-Crate is a self-described container {#selfdescribed}
 
 An [RO-Crate is defined](https://www.researchobject.org/ro-crate/1.1/structure.html#ro-crate-metadata-file-ro-crate-metadatajson) as a self-described **Root Data Entity** that describes and contains _data entities_, which are further described by referencing _contextual entities_.  A **data entity** is either a _file_ (i.e. a byte sequence stored on disk somewhere) or a _directory_ (i.e. set of named files and other directories). A file does not need to be stored inside the RO-Crate root, it can be referenced via a PID/IRI. A **contextual entity** exists outside the information system (e.g. a Person, a workflow language) and is stored solely by its metadata. The representation of a _data entity_ as a byte sequence makes it possible to store a variety of research artefacts including not only data but also, for instance, software and text.
@@ -186,7 +181,6 @@ RO-Crates can be stored, transferred or published in multiple ways, e.g. BagIt [
 
 
 #### Data Entities are described using Contextual Entities {#contextualentities}
-
 
 RO-Crate distinguishes between [data and contextual entities](https://www.researchobject.org/ro-crate/1.1/contextual-entities.html#contextual-vs-data-entities) in a similar way to HTTP terminology's early attempt to separate _information_ (data) and _non-information_ (contextual) resources [@httprange14]. Data entities are usually files and directories located by relative IRI references within the RO-Crate Root, but they can also be Web resources or restricted data identified with absolute IRIs, including _Persistent Identifiers_ (PIDs) [[10.1371/journal.pbio.2001414](https://doi.org/10.1371/journal.pbio.2001414)].
 
@@ -207,8 +201,6 @@ caption="The *RO-Crate Metadata File* conforms to a version of the specification
 
 #### Guide through Recommended Practices {#recommendedpractices}
 
-
-
 RO-Crate as a specification aims to build a set of recommended practices on how to practically apply existing standards in a common way to describe research outputs and their provenance, without having to learn each of the underlying technologies in detail.
 
 As such, the [RO-Crate 1.1](https://w3id.org/ro/crate/1.1) specification [[10.5281/zenodo.4541002](https://doi.org/10.5281/zenodo.4541002)] can be seen as an opinionated and example-driven guide to writing [Schema.org](https://schema.org/) [[10.1145/2857274.2857276](https://doi.org/10.1145/2857274.2857276)] metadata as JSON-LD [@sporny_2014] (see section on [implementation](#implementation), which leaves it open for implementers to include additional metadata using other Schema.org types and properties, or even additional Linked Data vocabularies/ontologies or their own ad-hoc terms.
@@ -222,8 +214,6 @@ One aim of RO-Crate is to be conceptually simple. This simplicity has been repea
 To further verify this idea of simplicity, we have formalised the RO-Crate definition (see Appendix on [Formal Definition](#formaldefinition)). An important result of this exercise is that the underlying data structure of RO-Crate, although conceptually a graph, is represented as a depth-limited tree. This formalisation also emphasises the _boundedness_ of the structure; namely, the fact that elements are specifically identified as being either semantically _contained_ by the RO-Crate as _Data Entities_ (`hasPart`) or mainly referenced (`mentions`) and typed as _external_ to the Research Object as _Contextual Entities_.  It is worth pointing out that this semantic containment can extend beyond the physical containment of files residing within the RO-Crate Root directory on a given storage system, as the RO-Crate data entities may include any data resource globally identifiable using IRIs.
 
 #### Extensibility and RO-Crate profiles {#profiles}
-
-
 
 The RO-Crate specification provides a core set of conventions to describe research outputs using types and properties applicable across scientific domains. However we have found that domain-specific use of RO-Crate will, implicitly or explicitly, form a specialised **profile** of RO-Crate; i.e., _a set of conventions, types and properties that are minimally required and one can expect to be present in that subset of RO-Crates_. For instance, RO-Crates used for exchange of workflows will have to contain a data entity of type `ComputationalWorkflow`, or cultural heritage records should have a `contentLocation`. 
 
@@ -382,14 +372,11 @@ In addition to the typical Open Source-style development with GitHub issues and 
 
 ## RO-Crate Tooling {#tooling}
 
-
-
 The work of the community has led to the development of a number of tools for creating and using RO-Crates. Table 1 shows the current set of implementations. Reviewing this list, one can see support for commonly used programming languages, including Python, JavaScript, and Ruby. Additionally, the tools can be integrated into commonly used research environments, in particular, the command line tool *ro-crate-html-js* [@ro-crate-html-js] for creating a human-readable preview of an RO-Crate as a sidecar HTML file. Furthermore, there are tools that cater to end-users (*Describo* [@describo], *WorkflowHub* [@about-workflowhub]), in order to simplify creating and managing RO-Crate. For example, Describo was developed to help researchers of the Australian [Criminal Characters project](https://criminalcharacters.com/) to annotate historical prisoner records for greater insight into the history of Australia [[10.1080/14490854.2020.1796500](https://doi.org/10.1080/14490854.2020.1796500)]. 
 
 While the development of these tools is promising, our analysis of their maturity status shows that the majority of them are in the Beta stage. This is partly due to the fact that the RO-Crate specification itself only recently reached 1.0 status, in November 2019 [[10.5281/zenodo.3541888](https://doi.org/10.5281/zenodo.3541888)]. Now that there is a fixed point of reference: With version 1.1 (October 2020) [[10.5281/zenodo.4031327](https://doi.org/10.5281/zenodo.4031327)] RO-Crate has stabilised based on feedback from application development, and now we are seeing a further increase in the maturity of these tools, along with the creation of new ones.
 
 Given the stage of the specification, these tools have been primarily targeting developers, essentially providing them with the core libraries for working with RO-Crate. Another target has been that of research data managers who need to manage and curate large amounts of data. 
-
 
 
 | Tool Name | Targets | Language / Platform | Status | Brief Description |
@@ -406,10 +393,10 @@ Given the stage of the specification, these tools have been primarily targeting 
 | SCHeMa [@arxiv:2103.13138v1] | Workflow users | PHP | Alpha | Workflow execution using RO-Crate as exchange mechanism [[10.5281/zenodo.4671709](https://doi.org/10.5281/zenodo.4671709)] |
 | galaxy2cwl [[50]](https://github.com/workflowhub-eu/galaxy2cwl) | Workflow developers | Python | Alpha | Wraps Galaxy workflow as Workflow RO-Crate |
 | Modern PARADISEC [@modpdsc] | Repository managers | Platform | Beta | Cultural Heritage portal based on OCFL and RO-Crate |
-| ONI express [@arkisto-data-portal] | Repository managers | Platform | Beta | Platform for publishing data and documents stored in an OCFL repository via a Web interface |
-| ocfl-tools [@ocfl-tools] | Developers | JavaScript (CLI) | Beta | Tools for managing RO-Crates in an OCFL repository |
+| ONI express [[115]](https://arkisto-platform.github.io/tools/portal/) | Repository managers | Platform | Beta | Platform for publishing data and documents stored in an OCFL repository via a Web interface |
+| ocfl-tools [[52]](https://github.com/CoEDL/ocfl-tools) | Developers | JavaScript (CLI) | Beta | Tools for managing RO-Crates in an OCFL repository |
 | RO Composer [[8]](https://esciencelab.org.uk/projects/ro-composer/) | Repository developers | Java | Alpha | REST API for gradually building ROs for given profile. |
-| RDA maDMP Mapper [[7](https://doi.org/10.5281/zenodo.3922136)] | Data Management Plan users | Python | Beta | Mapping between machine-actionable data management plans (maDMP) and RO-Crate [[10.4126/frl01-006423291](https://doi.org/10.4126/frl01-006423291)] |
+| RDA maDMP Mapper [[7](https://doi.org/10.5281/zenodo.3922136)] | Data Management Plan users | Python | Beta | Mapping between machine-actionable data management plans (maDMP) and RO-Crate [[87](https://doi.org/10.4126/frl01-006423291)] |
 | Ro-Crate_2_ma-DMP [[20](https://doi.org/10.5281/zenodo.3903463)] | Data Management Plan users | Python | Beta | Convert between machine-actionable data management plans (maDMP) and RO-Crate |
 | CheckMyCrate [[13]](https://github.com/KockataEPich/CheckMyCrate) | Developers | Python (CLI) | Alpha | Validation according to Workflow RO-Crate profile |
 | RO-Crates-and-Excel [[126](https://doi.org/10.5281/zenodo.5068950)] | Data Managers | Java (CLI) | Alpha | Describe column/data details of spreadsheets as RO-Crate using DataCube vocabulary | 
@@ -418,8 +405,6 @@ Table 1: Applications and libraries implementing RO-Crate, targeting different t
 
 ## Profiles of RO-Crate in use {#inuse}
 
-
-
 RO-Crate fundamentally forms part of an infrastructure to help build FAIR research artefacts. In other words, the key question is whether RO-Crate can be used to share and (re)use research artefacts. Here we look at three research domains where RO-Crate is being applied: Bioinformatics, Regulatory Science and Cultural Heritage. In addition, we note how RO-Crate may have an important role as part of machine-actionable data management plans and institutional repositories.
 
 From these varied uses of RO-Crate we observe natural differences in their detail level and the type of entities described by the RO-Crate. For instance, on submission of an RO-Crate to a workflow repository, it is reasonable to expect the RO-Crate to contain at least one workflow, ideally with a declared licence and workflow language. Specific additional recommendations such as on identifiers is also needed to meet the emerging requirements of [FAIR Digital Objects](https://fairdo.org/). [Work has now begun](https://github.com/ResearchObject/ro-crate/issues/153) to formalise these different _profiles_ of RO-Crates, which may impose additional constraints based on the needs of a specific domain or use case. 
@@ -427,8 +412,6 @@ From these varied uses of RO-Crate we observe natural differences in their detai
 
 
 ### Bioinformatics workflows {#workflows}
-
-
 
 [WorkflowHub.eu](https://workflowhub.eu/) is a European cross-domain registry of computational workflows, supported by European Open Science Cloud projects, e.g. [EOSC-Life](https://www.eosc-life.eu/), and research infrastructures including the pan-European bioinformatics network [ELIXIR](https://elixir-europe.org/) [[10.1016/j.tibtech.2012.02.002](https://doi.org/10.1016/j.tibtech.2012.02.002)]. As part of promoting workflows as reusable tools, WorkflowHub includes documentation and high-level rendering of the workflow structure independent of its native workflow definition format. The rationale is that a domain scientist can browse all relevant workflows for their domain, before narrowing down their workflow engine requirements. As such, the WorkflowHub is intended largely as a registry of workflows already deposited in repositories specific to particular workflow languages and domains, such as UseGalaxy.eu [[10](https://doi.org/10.1371/journal.ppat.1008643)] and Nextflow nf-core [[10.1038/s41587-020-0439-x](https://doi.org/10.1038/s41587-020-0439-x)]. 
 
@@ -464,8 +447,6 @@ In addition to showcasing RO-Crate's extensibility, the testing profile is an ex
 
 
 ### Regulatory Sciences {#regulatorysciences}
-
-
 
 [BioCompute Objects](https://biocomputeobject.org/) (BCO) [[5](https://doi.org/10.1371/journal.pbio.3000099)] is a community-led effort to standardise submissions of computational workflows to biomedical regulators. For instance, a genomics sequencing pipeline, as part of a personalised cancer treatment study, can be submitted to the US Food and Drugs Administration (FDA) for approval. BCOs are formalised in the standard IEEE 2791-2020 [[10.1109/IEEESTD.2020.9094416](https://doi.org/10.1109/IEEESTD.2020.9094416)] as a combination of [JSON Schemas](https://w3id.org/ieee/ieee-2791-schema/) that define the structure of JSON metadata files describing exemplar workflow runs in detail, covering aspects such as the usability and error domain of the workflow, its runtime requirements, the reference datasets used and representative output data produced.
 
@@ -506,10 +487,9 @@ In this approach, RO-Crate is the holder of itemised metadata, stored in regular
 
 ### Machine-actionable Data Management Plans {#dmp}
 
-
 Machine-actionable Data Management Plans (maDMPs) have been proposed as an improvement to automate FAIR data management tasks in research [[10.1371/journal.pcbi.1006750](https://doi.org/10.1371/journal.pcbi.1006750)]; maDMPs use PIDs and controlled vocabularies to describe what happens to data over the research life cycle [[22](https://doi.org/10.1007/978-3-030-45442-5_15)]. The Research Data Alliance's _DMP Common Standard_ for maDMPs [[10.15497/rda00039](https://doi.org/10.15497/rda00039)] is one such formalisation for expressing maDMPs, which can be expressed as Linked Data using the DMP Common Standard Ontology [[21](https://doi.org/10.4126/frl01-006423289)], a specialisation of the W3C Data Catalog Vocabulary (DCAT) [[3]](https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/). RDA maDMPs are usually expressed using regular JSON, conforming to the DMP JSON Schema.
 
-A mapping has been produced between Research Object Crates and Machine-actionable Data Management Plans [[10.4126/frl01-006423291](https://doi.org/10.4126/frl01-006423291)], implemented by the RO-Crate RDA maDMP Mapper [[7](https://doi.org/10.5281/zenodo.3922136)]. A similar mapping has been implemented by _RO-Crate_2_ma-DMP_ [[20](https://doi.org/10.5281/zenodo.3903463)]. In both cases, a maDMP can be converted to a RO-Crate, or vice versa. In [[10.4126/frl01-006423291](https://doi.org/10.4126/frl01-006423291)] this functionality caters for two use cases:
+A mapping has been produced between Research Object Crates and Machine-actionable Data Management Plans [[87](https://doi.org/10.4126/frl01-006423291)], implemented by the RO-Crate RDA maDMP Mapper [[7](https://doi.org/10.5281/zenodo.3922136)]. A similar mapping has been implemented by _RO-Crate_2_ma-DMP_ [[20](https://doi.org/10.5281/zenodo.3903463)]. In both cases, a maDMP can be converted to a RO-Crate, or vice versa. In [[87](https://doi.org/10.4126/frl01-006423291)] this functionality caters for two use cases:
 
 1. Start a skeleton data management plan based on an existing RO-Crate dataset, e.g. an RO-Crate from WorkflowHub.
 2. Instantiate an RO-Crate based on a data management plan.
@@ -1154,61 +1134,61 @@ As of 2021-10-04, the _RO-Crate_ Community members are:
 
 [79] R. Lammey, Solutions for identification problems: A look at the research organization registry, Science Editing 7(1) (2020), 65–69. <https://doi.org/10.6087/kcse.192>
 
-[80] A.-L. Lamprecht, L. Garcia, M. Kuzak, C. Martinez, R. Arcila, E. Martin Del Pico, V. Dominguez Del Angel, S. van de Sandt, J. Ison, P.A. Martinez, P. McQuilton, A. Valencia, J. Harrow, F. Psomopoulos, J.L. Gelpi, N. Chue Hong, C. Goble and S. Capella-Gutierrez, Towards FAIR principles for research software, Data Science, 3(1) (2019), 1–23. <https://doi.org/10.3233/DS-190026>
+[80] A.-L. Lamprecht, L. Garcia, M. Kuzak, C. Martinez, R. Arcila, E. Martin Del Pico, V. Dominguez Del Angel, S. van de Sandt, J. Ison, P.A. Martinez, P. McQuilton, A. Valencia, J. Harrow, F. Psomopoulos, J.L. Gelpi, N. Chue Hong, C. Goble and S. Capella-Gutierrez (2019): **Towards FAIR principles for research software**. _Data Science_ **3**(1) pp. 1–23. <https://doi.org/10.3233/DS-190026>
 
-[81] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, D. Garijo, S. Soiland-Reyes, S. Zednik and J. Zhao, PROV-O: The PROV Ontology, W3C Recommendation 30 April 2013. <https://www.w3.org/TR/2013/REC-prov-o-20130430/>
+[81] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, D. Garijo, S. Soiland-Reyes, S. Zednik and J. Zhao (2013): **PROV-O: The PROV Ontology**. _W3C Recommendation_ 30 April 2013. <https://www.w3.org/TR/2013/REC-prov-o-20130430/>
 
-[82] J. Leipzig, D. Nüst, C.T. Hoyt, K. Ram and J. Greenberg, The role of metadata in reproducible computational research, Patterns 2(9) (2021), 100322. <https://doi.org/10.1016/j.patter.2021.100322>
+[82] J. Leipzig, D. Nüst, C.T. Hoyt, K. Ram and J. Greenberg (2021): **The role of metadata in reproducible computational research**. _Patterns_ **2**(9):100322. <https://doi.org/10.1016/j.patter.2021.100322>
 
-[83] D. Lowe and G. Bayarri, Protein Ligand Complex MD Setup tutorial using BioExcel Building Blocks (biobb) (jupyter notebook), 2021. <https://doi.org/10.48546/workflowhub.workflow.56.1>
+[83] D. Lowe and G. Bayarri (2021): **Protein Ligand Complex MD Setup tutorial using BioExcel Building Blocks (biobb) (jupyter notebook)**. <https://doi.org/10.48546/workflowhub.workflow.56.1>
 
-[84] M. Lynch and P. Sefton, npm: ro-crate-excel. <https://www.npmjs.com/package/ro-crate-excel>
+[84] M. Lynch and P. Sefton (2022): **npm: ro-crate-excel**. _npm_ <https://www.npmjs.com/package/ro-crate-excel>
 
-[85] Managing large files – GitHub Docs. <https://docs.github.com/en/repositories/working-with-files/managing-large-files>
+[85] GitHub (2021): **Managing large files – GitHub Docs**. <https://docs.github.com/en/repositories/working-with-files/managing-large-files>
 
-[86] J.A. McMurry, N. Juty, N. Blomberg, T. Burdett, T. Conlin, N. Conte, M. Courtot, J. Deck, M. Dumontier, D.K. Fellows, A. Gonzalez-Beltran, P. Gormanns, J. Grethe, J. Hastings, J.-K. Hériché, H. Hermjakob, J.C. Ison, R.C. Jimenez, S. Jupp, J. Kunze, C. Laibe, N. Le Novère, J. Malone, M.J. Martin, J.R. McEntyre, C. Morris, J. Muilu, W. Müller, P. Rocca-Serra, S.-A. Sansone, M. Sariyar, J.L. Snoep, S. Soiland-Reyes, N.J. Stanford, N. Swainston, N. Washington, A.R. Williams, S.M. Wimalaratne, L.M. Winfree, K. Wolstencroft, C. Goble, C.J. Mungall, M.A. Haendel and H. Parkinson, Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data, PLOS Biology 15(6) (2017), e2001414. <https://doi.org/10.1371/journal.pbio.2001414>
+[86] J.A. McMurry, N. Juty, N. Blomberg, T. Burdett, T. Conlin, N. Conte, M. Courtot, J. Deck, M. Dumontier, D.K. Fellows, A. Gonzalez-Beltran, P. Gormanns, J. Grethe, J. Hastings, J.-K. Hériché, H. Hermjakob, J.C. Ison, R.C. Jimenez, S. Jupp, J. Kunze, C. Laibe, N. Le Novère, J. Malone, M.J. Martin, J.R. McEntyre, C. Morris, J. Muilu, W. Müller, P. Rocca-Serra, S.-A. Sansone, M. Sariyar, J.L. Snoep, S. Soiland-Reyes, N.J. Stanford, N. Swainston, N. Washington, A.R. Williams, S.M. Wimalaratne, L.M. Winfree, K. Wolstencroft, C. Goble, C.J. Mungall, M.A. Haendel and H. Parkinson (2017): **Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data**. _PLOS Biology_ **15**(6):e2001414. <https://doi.org/10.1371/journal.pbio.2001414>
 
-[87] T. Miksa, M. Jaoua and G. Arfaoui, Research object crates and machine-actionable data management plans, in: 1st Workshop on Research Data Management for Linked Open Science, 2020. <https://doi.org/10.4126/frl01-006423291>
+[87] T. Miksa, M. Jaoua and G. Arfaoui (2020): **Research object crates and machine-actionable data management plans**. in: _1st Workshop on Research Data Management for Linked Open Science_. <https://doi.org/10.4126/frl01-006423291>
 
-[88] T. Miksa, S. Simms, D. Mietchen and S. Jones, Ten principles for machine-actionable data management plans, PLOS Computational Biology 15(3) (2019), e1006750. <https://doi.org/10.1371/journal.pcbi.1006750>
+[88] T. Miksa, S. Simms, D. Mietchen and S. Jones (2019): **Ten principles for machine-actionable data management plans**. _PLOS Computational Biology_ **15**(3): e1006750. <https://doi.org/10.1371/journal.pcbi.1006750>
 
-[89] S. Möller, H.N. Krabbenhöft, A. Tille, D. Paleino, A. Williams, K. Wolstencroft, C. Goble, R. Holland, D. Belhachemi and C. Plessy, Community-driven computational biology with Debian Linux, BMC Bioinformatics 11(Suppl 12) (2010), S5. <https://doi.org/10.1186/1471-2105-11-S12-S5>
+[89] S. Möller, H.N. Krabbenhöft, A. Tille, D. Paleino, A. Williams, K. Wolstencroft, C. Goble, R. Holland, D. Belhachemi and C. Plessy (2010): **Community-driven computational biology with Debian Linux**. _BMC Bioinformatics_ **11**(Suppl 12):S5. <https://doi.org/10.1186/1471-2105-11-S12-S5>
 
-[90] S. Möller, S.W. Prescott, L. Wirzenius, P. Reinholdtsen, B. Chapman, P. Prins, S. Soiland-Reyes, F. Klötzl, A. Bagnacani, M. Kalaš, A. Tille and M.R. Crusoe, Robust cross-platform workflows: How technical and scientific communities collaborate to develop, test and share best practices for data analysis, Data Science and Engineering 2(3) (2017), 232–244. <https://doi.org/10.1007/s41019-017-0050-4>
+[90] S. Möller, S.W. Prescott, L. Wirzenius, P. Reinholdtsen, B. Chapman, P. Prins, S. Soiland-Reyes, F. Klötzl, A. Bagnacani, M. Kalaš, A. Tille and M.R. Crusoe (2017): **Robust cross-platform workflows: How technical and scientific communities collaborate to develop, test and share best practices for data analysis**. _Data Science and Engineering_ **2**(3) pp. 232–244. <https://doi.org/10.1007/s41019-017-0050-4>
 
-[91] B. Mons, Data Stewardship for Open Science, 1st edn, Taylor & Francis, p. 240. [ISBN 9781315351148](https://identifiers.org/isbn/9781315351148).
+[91] B. Mons (2018): **Data Stewardship for Open Science**, 1st edn. Taylor & Francis, p. 240. [ISBN 9781315351148](https://identifiers.org/isbn/9781315351148).
 
-[92] myExperiment Ontology Modules, 2009. <https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies>
+[92] myExperiment (2009): **myExperiment Ontology Modules**. _Internet Archive_ <https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies>
 
-[93] D. Newman, S. Bechhofer and D. De Roure, myExperiment: An ontology for e-Research, in: Proceedings of the Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009), T. Clark, J.S. Luciano, M.S. Marshall, E. Prud’Hommeaux and S. Stephens, eds, CEUR Workshop Proceedings, Vols 523, CEUR-WS, 2009. ISSN 1613-0073. <http://ceur-ws.org/Vol-523/Newman.pdf>
+[93] D. Newman, S. Bechhofer and D. De Roure (2009): **myExperiment: An ontology for e-Research**. in: _Proceedings of the Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009)_, T. Clark, J.S. Luciano, M.S. Marshall, E. Prud’Hommeaux and S. Stephens, eds, _CEUR Workshop Proceedings_ **523**, CEUR-WS, 2009. ISSN 1613-0073. <http://ceur-ws.org/Vol-523/Newman.pdf>
 
-[94] C. Neylon (2017): **As a researcher … I’m a bit bloody fed up with Data Management**, 2017. <https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/>.
+[94] C. Neylon (2017): **As a researcher … I’m a bit bloody fed up with Data Management**. <https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/>.
 
-[95] npm: ro-crate-html-js, <https://www.npmjs.com/package/ro-crate-html-js>
+[95] npm: **ro-crate-html-js**, <https://www.npmjs.com/package/ro-crate-html-js>
 
-[96] OCFL, Oxford Common File Layout Specification, Recommendation, 2020. <https://ocfl.io/1.0/spec/>
+[96] **OCFL, Oxford Common File Layout Specification**, Recommendation, 2020. <https://ocfl.io/1.0/spec/>
 
-[97] A. Piper, Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters, History Australia 17(3) (2020), 525–541. <https://doi.org/10.1080/14490854.2020.1796500>
+[97] A. Piper (2020): **Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters**. _History Australia_ **17**(3) pp. 525–541. <https://doi.org/10.1080/14490854.2020.1796500>
 
-[98] RDF Working Group, RDF 1.1 Concepts and Abstract Syntax, W3C Recommendation, 2014. <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>.
+[98] RDF Working Group (2014): **RDF 1.1 Concepts and Abstract Syntax**. _W3C Recommendation_ 25 Feb 2014. <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>.
 
-[99] H.L. Rehm, A.J.H. Page, L. Smith, J.B. Adams, G. Alterovitz, L.J. Babb, M.P. Barkley, M. Baudis, M.J.S. Beauvais, T. Beck, J.S. Beckmann, S. Beltran, D. Bernick, A. Bernier, J.K. Bonfield, T.F. Boughtwood, G. Bourque, S.R. Bowers, A.J. Brookes, M. Brudno, M.H. Brush, D. Bujold, T. Burdett, O.J. Buske, M.N. Cabili, D.L. Cameron, R.J. Carroll, E. Casas-Silva, D. Chakravarty, B.P. Chaudhari, S.H. Chen, J.M. Cherry, J. Chung, M. Cline, H.L. Clissold, R.M. Cook-Deegan, M. Courtot, F. Cunningham, M. Cupak, R.M. Davies, D. Denisko, M.J. Doerr, L.I. Dolman, E.S. Dove, L.J. Dursi, S.O.M. Dyke, J.A. Eddy, K. Eilbeck, K.P. Ellrott, S. Fairley, K.A. Fakhro, H.V. Firth, M.S. Fitzsimons, M. Fiume, P. Flicek, I.M. Fore, M.A. Freeberg, R.R. Freimuth, L.A. Fromont, J. Fuerth, C.L. Gaff, W. Gan, E.M. Ghanaim, D. Glazer, R.C. Green, M. Griffith, O.L. Griffith, R.L. Grossman, T. Groza, J.M. Guidry Auvil, R. Guigó, D. Gupta, M.A. Haendel, A. Hamosh, D.P. Hansen, R.K. Hart, D.M. Hartley, D. Haussler, R.M. Hendricks-Sturrup, C.W.L. Ho, A.E. Hobb, M.M. Hoffman, O.M. Hofmann, P. Holub, J.S. Hsu, J.-P. Hubaux, S.E. Hunt, A. Husami, J.O. Jacobsen, S.S. Jamuar, E.L. Janes, F. Jeanson, A. Jené, A.L. Johns, Y. Joly, S.J.M. Jones, A. Kanitz, K. Kato, T.M. Keane, K. Kekesi-Lafrance, J. Kelleher, G. Kerry, S.-S. Khor, B.M. Knoppers, M.A. Konopko, K. Kosaki, M. Kuba, J. Lawson, R. Leinonen, S. Li, M.F. Lin, M. Linden, X. Liu, I.U. Liyanage, J. Lopez, A.M. Lucassen, M. Lukowski, A.L. Mann, J. Marshall, M. Mattioni, A. Metke-Jimenez, A. Middleton, R.J. Milne, F. Molnár-Gábor, N. Mulder, M.C. Munoz-Torres, R. Nag, H. Nakagawa, J. Nasir, A. Navarro, T.H. Nelson, A. Niewielska, A. Nisselle, J. Niu, T.H. Nyrönen, B.D. O’Connor, S. Oesterle, S. Ogishima, V. Ota Wang, L.A.D. Paglione, E. Palumbo, H.E. Parkinson, A.A. Philippakis, A.D. Pizarro, A. Prlic, J. Rambla, A. Rendon, R.A. Rider, P.N. Robinson, K.W. Rodarmer, L.L. Rodriguez, A.F. Rubin, M. Rueda, G.A. Rushton, R.S. Ryan, G.I. Saunders, H. Schuilenburg, T. Schwede, S. Scollen, A. Senf, N.C. Sheffield, N. Skantharajah, A.V. Smith, H.J. Sofia, D. Spalding, A.B. Spurdle, Z. Stark, L.D. Stein, M. Suematsu, P. Tan, J.A. Tedds, A.A. Thomson, A. Thorogood, T.L. Tickle, K. Tokunaga, J. Törnroos, D. Torrents, S. Upchurch, A. Valencia, R.V. Guimera, J. Vamathevan, S. Varma, D.F. Vears, C. Viner, C. Voisin, A.H. Wagner, S.E. Wallace, B.P. Walsh, M.S. Williams, E.C. Winkler, B.J. Wold, G.M. Wood, J.P. Woolley, C. Yamasaki, A.D. Yates, C.K. Yung, L.J. Zass, K. Zaytseva, J. Zhang, P. Goodhand, K. North and E. Birney, GA4GH: International policies and standards for data sharing across genomic research and healthcare, Cell Genomics 1(2) (2021), 100029. <https://doi.org/10.1016/j.xgen.2021.100029>
+[99] H.L. Rehm, A.J.H. Page, L. Smith, J.B. Adams, G. Alterovitz, L.J. Babb, M.P. Barkley, M. Baudis, M.J.S. Beauvais, T. Beck, J.S. Beckmann, S. Beltran, D. Bernick, A. Bernier, J.K. Bonfield, T.F. Boughtwood, G. Bourque, S.R. Bowers, A.J. Brookes, M. Brudno, M.H. Brush, D. Bujold, T. Burdett, O.J. Buske, M.N. Cabili, D.L. Cameron, R.J. Carroll, E. Casas-Silva, D. Chakravarty, B.P. Chaudhari, S.H. Chen, J.M. Cherry, J. Chung, M. Cline, H.L. Clissold, R.M. Cook-Deegan, M. Courtot, F. Cunningham, M. Cupak, R.M. Davies, D. Denisko, M.J. Doerr, L.I. Dolman, E.S. Dove, L.J. Dursi, S.O.M. Dyke, J.A. Eddy, K. Eilbeck, K.P. Ellrott, S. Fairley, K.A. Fakhro, H.V. Firth, M.S. Fitzsimons, M. Fiume, P. Flicek, I.M. Fore, M.A. Freeberg, R.R. Freimuth, L.A. Fromont, J. Fuerth, C.L. Gaff, W. Gan, E.M. Ghanaim, D. Glazer, R.C. Green, M. Griffith, O.L. Griffith, R.L. Grossman, T. Groza, J.M. Guidry Auvil, R. Guigó, D. Gupta, M.A. Haendel, A. Hamosh, D.P. Hansen, R.K. Hart, D.M. Hartley, D. Haussler, R.M. Hendricks-Sturrup, C.W.L. Ho, A.E. Hobb, M.M. Hoffman, O.M. Hofmann, P. Holub, J.S. Hsu, J.-P. Hubaux, S.E. Hunt, A. Husami, J.O. Jacobsen, S.S. Jamuar, E.L. Janes, F. Jeanson, A. Jené, A.L. Johns, Y. Joly, S.J.M. Jones, A. Kanitz, K. Kato, T.M. Keane, K. Kekesi-Lafrance, J. Kelleher, G. Kerry, S.-S. Khor, B.M. Knoppers, M.A. Konopko, K. Kosaki, M. Kuba, J. Lawson, R. Leinonen, S. Li, M.F. Lin, M. Linden, X. Liu, I.U. Liyanage, J. Lopez, A.M. Lucassen, M. Lukowski, A.L. Mann, J. Marshall, M. Mattioni, A. Metke-Jimenez, A. Middleton, R.J. Milne, F. Molnár-Gábor, N. Mulder, M.C. Munoz-Torres, R. Nag, H. Nakagawa, J. Nasir, A. Navarro, T.H. Nelson, A. Niewielska, A. Nisselle, J. Niu, T.H. Nyrönen, B.D. O’Connor, S. Oesterle, S. Ogishima, V. Ota Wang, L.A.D. Paglione, E. Palumbo, H.E. Parkinson, A.A. Philippakis, A.D. Pizarro, A. Prlic, J. Rambla, A. Rendon, R.A. Rider, P.N. Robinson, K.W. Rodarmer, L.L. Rodriguez, A.F. Rubin, M. Rueda, G.A. Rushton, R.S. Ryan, G.I. Saunders, H. Schuilenburg, T. Schwede, S. Scollen, A. Senf, N.C. Sheffield, N. Skantharajah, A.V. Smith, H.J. Sofia, D. Spalding, A.B. Spurdle, Z. Stark, L.D. Stein, M. Suematsu, P. Tan, J.A. Tedds, A.A. Thomson, A. Thorogood, T.L. Tickle, K. Tokunaga, J. Törnroos, D. Torrents, S. Upchurch, A. Valencia, R.V. Guimera, J. Vamathevan, S. Varma, D.F. Vears, C. Viner, C. Voisin, A.H. Wagner, S.E. Wallace, B.P. Walsh, M.S. Williams, E.C. Winkler, B.J. Wold, G.M. Wood, J.P. Woolley, C. Yamasaki, A.D. Yates, C.K. Yung, L.J. Zass, K. Zaytseva, J. Zhang, P. Goodhand, K. North and E. Birney (2021): **GA4GH: International policies and standards for data sharing across genomic research and healthcare**. _Cell Genomics_ **1**(2):100029. <https://doi.org/10.1016/j.xgen.2021.100029>
 
-[100] N. Rettberg and B. Schmidt, OpenAIRE, College & Research Libraries News 76(6) (2015), 306–310. <http://resolver.sub.uni-goettingen.de/purl?gs-1/11942> <https://doi.org/10.5860/crln.76.6.9326>
+[100] N. Rettberg and B. Schmidt (2015): **OpenAIRE: Supporting a European open access mandate**. _College & Research Libraries News_ **76**(6) pp. 306–310. <http://resolver.sub.uni-goettingen.de/purl?gs-1/11942> <https://doi.org/10.5860/crln.76.6.9326>
 
-[101] G.K. Sandve, A. Nekrutenko, J. Taylor and E. Hovig, Ten simple rules for reproducible computational research, PLOS Computational Biology 9(10) (2013), e1003285. <https://doi.org/10.1371/journal.pcbi.1003285>
+[101] G.K. Sandve, A. Nekrutenko, J. Taylor and E. Hovig (2013): **Ten simple rules for reproducible computational research**. _PLOS Computational Biology_ **9**(10):e1003285. <https://doi.org/10.1371/journal.pcbi.1003285>
 
-[102] L.M. Schriml, M. Chuvochina, N. Davies, E.A. Eloe-Fadrosh, R.D. Finn, P. Hugenholtz, C.I. Hunter, B.L. Hurwitz, N.C. Kyrpides, F. Meyer, I.K. Mizrachi, S.-A. Sansone, G. Sutton, S. Tighe and R. Walls, COVID-19 pandemic reveals the peril of ignoring metadata standards, Scientific Data 7(1) (2020), 188. <https://doi.org/10.1038/s41597-020-0524-5>
+[102] L.M. Schriml, M. Chuvochina, N. Davies, E.A. Eloe-Fadrosh, R.D. Finn, P. Hugenholtz, C.I. Hunter, B.L. Hurwitz, N.C. Kyrpides, F. Meyer, I.K. Mizrachi, S.-A. Sansone, G. Sutton, S. Tighe and R. Walls (2020): **COVID-19 pandemic reveals the peril of ignoring metadata standards**. _Scientific Data_ **7**(1):188. <https://doi.org/10.1038/s41597-020-0524-5>
 
-[103] P. Sefton, G. Devine, C. Evenhuis, M. Lynch, S. Wise, M. Lake and D. Loxton: DataCrate: a method of packaging, distributing, displaying and archiving Research Objects. in: Workshop on Research Objects (RO 2018), 29 Oct 2018 at IEEE eScience 2018, Amsterdam, Netherland. Zenodo <https://doi.org/10.5281/zenodo.1445817>
+[103] P. Sefton, G. Devine, C. Evenhuis, M. Lynch, S. Wise, M. Lake and D. Loxton (2018): **DataCrate: a method of packaging, distributing, displaying and archiving Research Objects**. in: _Workshop on Research Objects (RO 2018)_, 29 Oct 2018 at IEEE eScience 2018, Amsterdam, Netherland. _Zenodo_ <https://doi.org/10.5281/zenodo.1445817>
 
-[104] P. Sefton, **FAIR Data Management; It’s a lifestyle not a lifecycle** – [ptsefton.com](http://ptsefton.com), 2021. <http://ptsefton.com/2021/04/07/rdmpic/>
+[104] P. Sefton (2021): **FAIR Data Management; It’s a lifestyle not a lifecycle**. _ptsefton.com_. <http://ptsefton.com/2021/04/07/rdmpic/>
 
-[105] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall and T. Thelen, RO-Crate Metadata Specification 1.0, 2019. <https://doi.org/10.5281/zenodo.3541888>
+[105] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall and T. Thelen (2019): **RO-Crate Metadata Specification 1.0**.  <https://doi.org/10.5281/zenodo.3541888>
 
-[106] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L.R.-N. Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst, S. Leo and M. Portier, RO-Crate Metadata Specification 1.1.1, 2021. <https://doi.org/10.5281/zenodo.4541002>
+[106] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L.R.-N. Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst, S. Leo and M. Portier (2021): **RO-Crate Metadata Specification 1.1.1**. <https://doi.org/10.5281/zenodo.4541002>
 
-[107] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L. Rodríguez-Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst and S. Leo, RO-Crate Metadata Specification 1.1, 2020. <https://doi.org/10.5281/zenodo.4031327>
+[107] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L. Rodríguez-Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst and S. Leo (2020): **RO-Crate Metadata Specification 1.1**. <https://doi.org/10.5281/zenodo.4031327>
 
 [108] S. Soiland-Reyes (2020): **I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**, _Twitter_ <https://twitter.com/soilandreyes/status/1250721245622079488>
 
@@ -1220,32 +1200,32 @@ As of 2021-10-04, the _RO-Crate_ Community members are:
 
 [112] M. Sporny, D. Longley, G. Kellogg, M. Lanthaler and N. Lindström (2014): **JSON-LD 1.0**, W3C Recommendation. <https://www.w3.org/TR/2014/REC-json-ld-20140116/>
 
-[113] V. Stodden, M. McNutt, D.H. Bailey, E. Deelman, Y. Gil, B. Hanson, M.A. Heroux, J.P.A. Ioannidis and M. Taufer, Enhancing reproducibility for computational methods, Science 354(6317) (2016), 1240–1241. <https://doi.org/10.1126/science.aah6168>
+[113] V. Stodden, M. McNutt, D.H. Bailey, E. Deelman, Y. Gil, B. Hanson, M.A. Heroux, J.P.A. Ioannidis and M. Taufer (2016): **Enhancing reproducibility for computational methods**. _Science_ **354**(6317) pp. 1240–1241. <https://doi.org/10.1126/science.aah6168>
 
-[114] N. Thieberger and L. Barwick, **Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC)**, in: _Melanesian Languages on the Edge of Asia: Challenges for the 21st Century_, N. Evans and M. Klamer, eds, _Language Documentation & Conservation Special Publication_ **SP05** University of Hawai’i Press, 2012, pp. 239–253. ISBN 978-0-9856211-2-4] <http://hdl.handle.net/10125/4567>
+[114] N. Thieberger and L. Barwick (2012): **Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC)**, in: _Melanesian Languages on the Edge of Asia: Challenges for the 21st Century_, N. Evans and M. Klamer, eds, _Language Documentation & Conservation Special Publication_ **SP05** University of Hawai’i Press, pp. 239–253. ISBN 978-0-9856211-2-4] <http://hdl.handle.net/10125/4567>
 
-[115] Tools: Data Portal & Discovery. <https://arkisto-platform.github.io/tools/portal/>
+[115] **Tools: Data Portal & Discovery**. <https://arkisto-platform.github.io/tools/portal/>
 
-[116] R. Troncy, W. Bailer, M. Höffernig and M. Hausenblas, VAMP: A service for validating MPEG-7 descriptions w.r.t. to formal profile definitions, Multimedia tools and applications 46(2–3) (2010), 307–329. <https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511> <https://doi.org/10.1007/s11042-009-0397-2>
+[116] R. Troncy, W. Bailer, M. Höffernig and M. Hausenblas (2010): **VAMP: A service for validating MPEG-7 descriptions w.r.t. to formal profile definitions**. _Multimedia tools and applications_ **46**(2–3) pp. 307–329. <https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511> <https://doi.org/10.1007/s11042-009-0397-2>
 
-[117] H. Van de Sompel and C. Lagoze, Interoperability for the discovery, use, and re-use of units of scholarly communication, CTWatch Quarterly 3(3) (2007). <http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/>
+[117] H. Van de Sompel and C. Lagoze (2007): **Interoperability for the discovery, use, and re-use of units of scholarly communication**. _CTWatch Quarterly_ **3**(3). <http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/>
 
-[118] T. Vergoulis, K. Zagganas, L. Kavouras, M. Reczko, S. Sartzetakis and T. Dalamagas, SCHeMa: Scheduling Scientific Containers on a Cluster of Heterogeneous Machines, 2021. <https://arxiv.org/abs/2103.13138v1>
+[118] T. Vergoulis, K. Zagganas, L. Kavouras, M. Reczko, S. Sartzetakis and T. Dalamagas (2021): **SCHeMa: Scheduling Scientific Containers on a Cluster of Heterogeneous Machines**. <https://arxiv.org/abs/2103.13138v1>
 
-[119] C.J. Volk, Y. Lucero and K. Barnas, Why is data sharing in collaborative natural resource efforts so hard and what can we do to improve it?, Environmental Management 53(5) (2014), 883–893. <https://doi.org/10.1007/s00267-014-0258-2>
+[119] C.J. Volk, Y. Lucero and K. Barnas (2014): **Why is data sharing in collaborative natural resource efforts so hard and what can we do to improve it?**. _Environmental Management_ **53**(5) pp. 883–893. <https://doi.org/10.1007/s00267-014-0258-2>
 
-[120] W3C Technical Architecture Group, Dereferencing HTTP URIs, Draft Tag Finding, 2007. <https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-31/HttpRange-14.html>
+[120] W3C Technical Architecture Group (2007): **Dereferencing HTTP URIs**. Draft Tag Finding, 2007. <https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-31/HttpRange-14.html>
 
-[121] P. Walk, T. Miksa and P. Neish, RDA DMP Common Standard for Machine-Actionable Data Management Plans, Research Data Alliance, 2019. <https://doi.org/10.15497/rda00039>
+[121] P. Walk, T. Miksa and P. Neish (2019): **RDA DMP Common Standard for Machine-Actionable Data Management Plans**. _Research Data Alliance_ <https://doi.org/10.15497/rda00039>
 
-[122] S. Walton, L. Livermore, O. Bánki, R. Cubey, R. Drinkwater, M. Englund, C. Goble, Q. Groom, C. Kermorvant, I. Rey, C. Santos, B. Scott, A. Williams and Z. Wu, Landscape analysis for the specimen data refinery, Research Ideas and Outcomes 6 (2020). <https://doi.org/10.3897/rio.6.e57602>
+[122] S. Walton, L. Livermore, O. Bánki, R. Cubey, R. Drinkwater, M. Englund, C. Goble, Q. Groom, C. Kermorvant, I. Rey, C. Santos, B. Scott, A. Williams and Z. Wu (2020): **Landscape analysis for the specimen data refinery**. _Research Ideas and Outcomes_ **6**. <https://doi.org/10.3897/rio.6.e57602>
 
-[123] M.D. Wilkinson, M. Dumontier, I.J.J. Aalbersberg, G. Appleton, M. Axton, A. Baak, N. Blomberg, J.-W. Boiten, L.B. da Silva Santos, P.E. Bourne, J. Bouwman, A.J. Brookes, T. Clark, M. Crosas, I. Dillo, O. Dumon, S. Edmunds, C.T. Evelo, R. Finkers, A. Gonzalez-Beltran, A.J.G. Gray, P. Groth, C. Goble, J.S. Grethe, J. Heringa, P.A.C. ’t Hoen, R. Hooft, T. Kuhn, R. Kok, J. Kok, S.J. Lusher, M.E. Martone, A. Mons, A.L. Packer, B. Persson, P. Rocca-Serra, M. Roos, R. van Schaik, S.-A. Sansone, E. Schultes, T. Sengstag, T. Slater, G. Strawn, M.A. Swertz, M. Thompson, J. van der Lei, E. van Mulligen, J. Velterop, A. Waagmeester, P. Wittenburg, K. Wolstencroft, J. Zhao and B. Mons, The FAIR guiding principles for scientific data management and stewardship, Scientific Data 3 (2016), 160018. <https://doi.org/10.1038/sdata.2016.18>
+[123] M.D. Wilkinson, M. Dumontier, I.J.J. Aalbersberg, G. Appleton, M. Axton, A. Baak, N. Blomberg, J.-W. Boiten, L.B. da Silva Santos, P.E. Bourne, J. Bouwman, A.J. Brookes, T. Clark, M. Crosas, I. Dillo, O. Dumon, S. Edmunds, C.T. Evelo, R. Finkers, A. Gonzalez-Beltran, A.J.G. Gray, P. Groth, C. Goble, J.S. Grethe, J. Heringa, P.A.C. ’t Hoen, R. Hooft, T. Kuhn, R. Kok, J. Kok, S.J. Lusher, M.E. Martone, A. Mons, A.L. Packer, B. Persson, P. Rocca-Serra, M. Roos, R. van Schaik, S.-A. Sansone, E. Schultes, T. Sengstag, T. Slater, G. Strawn, M.A. Swertz, M. Thompson, J. van der Lei, E. van Mulligen, J. Velterop, A. Waagmeester, P. Wittenburg, K. Wolstencroft, J. Zhao and B. Mons (2016): **The FAIR guiding principles for scientific data management and stewardship**. _Scientific Data_ **3**:160018. <https://doi.org/10.1038/sdata.2016.18>
 
-[124] WorkflowHub project | Project pages for developing and running the WorkflowHub, a registry of scientific workflows. <https://w3id.org/workflowhub/>
+[124] **WorkflowHub project: Project pages for developing and running the WorkflowHub, a registry of scientific workflows**. <https://w3id.org/workflowhub/>
 
-[125] J. Zhao, J.M. Gomez-Perez, K. Belhajjame, G. Klyne, E. Garcia-Cuesta, A. Garrido, K. Hettne, M. Roos, D. De Roure and C. Goble, Why workflows break – understanding and combating decay in taverna workflows, in: 2012 IEEE 8th International Conference on e-Science, IEEE, 2012, pp. 1–9. <https://www.research.manchester.ac.uk/portal/files/174861334/why_decay.pdf> ISBN 978-1-4673-4466-1. <https://doi.org/10.1109/eScience.2012.6404482>
+[125] J. Zhao, J.M. Gomez-Perez, K. Belhajjame, G. Klyne, E. Garcia-Cuesta, A. Garrido, K. Hettne, M. Roos, D. De Roure and C. Goble (2012): **Why workflows break – understanding and combating decay in taverna workflows**. _2012 IEEE 8th International Conference on e-Science_, IEEE. <https://www.research.manchester.ac.uk/portal/files/174861334/why_decay.pdf> ISBN 978-1-4673-4466-1. <https://doi.org/10.1109/eScience.2012.6404482>
 
-[126] F. Zoubek and M. Winkler, RO Crates and Excel (2021). <https://github.com/e11938258/RO-Crates-and-Excel> <https://doi.org/10.5281/zenodo.5068950>
+[126] F. Zoubek and M. Winkler (2021): **RO Crates and Excel**. <https://github.com/e11938258/RO-Crates-and-Excel> <https://doi.org/10.5281/zenodo.5068950>
 
 [127] M. Žumer (2009): **National Bibliographies in the Digital Age: Guidance and New Directions**. _IFLA Series on Bibliographic Control_, IFLA Working Group on Guidelines for National Bibliographies, Walter de Gruyter – K. G. Saur, 2009, ISSN 1868-8438. ISBN 9783598441844. <https://doi.org/10.1515/9783598441844>
