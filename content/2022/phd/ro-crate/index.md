@@ -149,8 +149,8 @@ A key premise of RO-Crate is the existence of a wide variety of resources on the
 
 The conceptual notion of a _Research Object_ [[10.1016/j.future.2011.08.004](https://doi.org/10.1016/j.future.2011.08.004)] is thus realised with the RO-Crate model and serialised using Linked Data constructs within the RO-Crate metadata file.
 
-{{< figure src="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-overview.svg" 
-link="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-overview.svg" id="fig:conceptual" 
+{{< figure src="ro-crate-overview.svg" 
+link="ro-crate-overview.svg" id="fig:conceptual" 
 width="100%" title="Conceptual RO-Crate Overview"
 caption="A *Persistent Identifier* (PID) [[10.1371/journal.pbio.2001414](https://doi.org/10.1371/journal.pbio.2001414)] points to a *Research Object* (RO), which may be archived using different packaging approaches like BagIt [[10.17487/rfc8493](https://doi.org/10.17487/rfc8493)], OCFL [@ocfl_2020], git or ZIP. The RO is described within a *RO-Crate Metadata File*, providing identifiers for *authors* using ORCID, *organisations* using Research Organization Registry (ROR) [[10.6087/kcse.192](https://doi.org/10.6087/kcse.192)] and licences such as Creative Commons using SPDX identifiers. The *RO-Crate content* is further described with additional metadata following a Linked Data approach. Data can be embedded files and directories, as well as links to external Web resources, PIDs and nested RO-Crates." >}}
 
@@ -198,8 +198,8 @@ In RO-Crate, a referenced contextual entity (e.g. a person identified by ORCID) 
 
 [Figure 2](#fig:uml) shows a simplified UML class diagram of RO-Crate, highlighting the different types of data entities and contextual entities that can be aggregated and related. While an RO-Crate would usually contain one or more data entities (`hasPart`), it may also be a pure aggregation of contextual entities (`mentions`).
 
-{{< figure src="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-uml.svg" 
-link="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-uml.svg" 
+{{< figure src="ro-crate-uml.svg" 
+link="ro-crate-uml.svg" 
 id="fig:uml" width="100%" title="Simplified UML class diagram of RO-Crate"
 caption="The *RO-Crate Metadata File* conforms to a version of the specification; and contains a JSON-LD graph [@sporny_2014] that describes the entities that make up the RO-Crate. The *RO-Crate Root Data Entity* represent the Research Object as a dataset. The RO-Crate aggregates *data entities* (`hasPart`) which are further described using *contextual entities* (which may include aggregated and non-aggregated data entities). Multiple types and relations from Schema.org allow annotations to be more specific, including figures, nested datasets, computational workflows, people, organisations, instruments and places. Contextual entities not otherwise cross-referenced from other entities' properties (*describes*) can be grouped under the root entity (`mentions`)." >}}
 
@@ -484,8 +484,8 @@ Specifically, a BCO description alone is insufficient for reliable re-execution 
 [^6]: IEEE 2791-2020 do permit user extensions in the _extension domain_ by referencing additional JSON Schemas.
 
 
-{{< figure src="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-bco-sep-of-concerns.svg" 
-link="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/ro-crate-bco-sep-of-concerns.svg" 
+{{< figure src="ro-crate-bco-sep-of-concerns.svg" 
+link="ro-crate-bco-sep-of-concerns.svg" 
 id="fig:sep_concerns"
 width="100%" title="Separation of Concerns in BCO RO-Crate"
 caption="BioCompute Object (IEEE2791) is a JSON file that structurally explains the purpose and implementation of a computational workflow, for instance implemented in Common Workflow Language (CWL), that installs the workflow’s software dependencies as Docker containers or BioConda packages. An example execution of the workflow shows the different kinds of result outputs, which may be external, using GitHub LFS [@github-lfs] to support larger data. RO-Crate gathers all these local and external resources, relating them and giving individual descriptions, for instance permanent DOI identifiers for reused datasets accessed from Zenodo, but also adding external identifiers to attribute authors using ORCID or to identify which licences apply to individual resources. The RO-Crate and its local files are captured in a BagIt whose checksum ensures completeness, combined with Big Data Bag [[10.1109/BigData.2016.7840618](https://doi.org/10.1109/BigData.2016.7840618)] features to “complete” the bag with large external files such as the workflow outputs." >}}
@@ -530,8 +530,8 @@ Particularly relevant to this article is the second objective of the Harvard Dat
 
 Even though the Harvard Data Commons is specific to Harvard University, the overall vision and the three objectives can be abstracted and applied to other universities or research organisations. The Commons will be designed and implemented using standards and commonly-used approaches to make it interoperable and reusable by others.
 
-{{< figure src="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/data-commons-ro-crate-figure-5.svg"
- link="https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/images/data-commons-ro-crate-figure-5.svg" width="100%" 
+{{< figure src="data-commons-ro-crate-figure-5.svg"
+ link="data-commons-ro-crate-figure-5.svg" width="100%" 
  id="fig:hdc" title="One aspect of Harvard Data Commons"
 caption="Automatic encapsulation and deposit of artefacts from data management tools used during active research at the Harvard Dataverse repository." >}}
 
