@@ -35,8 +35,8 @@ description: >
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):  
 **Making Canonical Workflow Building Blocks interoperable across workflow languages**.  
-_Data Intelligence_ (accepted)   
-(preprint: <https://doi.org/10.5281/zenodo.5727730>)
+_Data Intelligence_ **4**(2)  
+<https://doi.org/10.1162/dint_a_00134>
 
 # Making Canonical Workflow Building Blocks interoperable across workflow languages
 
