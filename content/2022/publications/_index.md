@@ -19,11 +19,17 @@ aliases:
 </style>
 
 <p>
-<strong>Note:</strong> This page is adapted from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which may be more up to date and includes preprints.
+<strong>Note:</strong> This page is adapted from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which may be more up to date or include preprints.
 </p>
 
 
 ## 2022
+
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
+[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).  
+_Communications of the ACM_ (accepted).  
+To appear as <https://doi.org/10.1145/3486897>  
+[arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 [**Packaging research artefacts with RO-Crate**](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html).  
@@ -33,26 +39,21 @@ _Data Science_  (pre-press)
 [[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
 [[RO-Crate]](https://w3id.org/ro/doi/10.5281/zenodo.5146227)  
 
-Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
-[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).  
-_Communications of the ACM_ (accepted).  
-To appear as <https://doi.org/10.1145/3486897>  
-[arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
-
 Paul Brack, Peter Crowther, Stian Soiland-Reyes, Stuart Owen, Douglas Lowe, Alan R Williams, Quentin Groom, Mathias Dillen, Frederik Coppens, Björn Grüning, Ignacio Eguinoa, Philip Ewels, Carole Goble (2022):  
 [**10 Simple Rules for making a software tool workflow-ready**](/2022/phd/10-simple-rules-for-workflow-tools/).  
-_PLOS Computational Biology_ (accepted)   
-[[preprint](https://doi.org/10.5281/zenodo.5901220)]
+_PLOS Computational Biology_ **18**(3):e1009823  
+<https://doi.org/10.1371/journal.pcbi.1009823>
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):  
 [**The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections**](/2022/phd/specimen-data-refinery/).  
-_Data Intelligence_ (accepted) 
-
+_Data Intelligence_ **4**(2)  
+<https://doi.org/10.1162/dint_a_00135>
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):  
 [**Making Canonical Workflow Building Blocks interoperable across workflow languages**](/2022/phd/canonical-workflow-building-blocks/).  
-_Data Intelligence_ (accepted).  
-[[preprint](https://doi.org/10.5281/zenodo.5727730)]
+_Data Intelligence_ **4**(2)  
+<https://doi.org/10.1162/dint_a_00134>
+
 
 ## 2021
 
@@ -412,7 +413,7 @@ In _2009 IEEE International Conference on Web Services_ (ICWS 2009)
 
 Peter Li, Juan I Castrillo, Giles Velarde, Ingo Wassink, Stian Soiland-Reyes, Stuart Owen, David Withers, Tom Oinn, Matthew R Pocock, Carole A Goble, Stephen G Oliver, Douglas B Kell (2008):  
 [**Performing statistical analyses on quantitative data in Taverna workflows: An example using R and maxdBrowse to identify differentially-expressed genes from microarray data**](https://doi.org/10.1186/1471-2105-9-334).  
-_BMC Bioinformatics_ **7**:334 
+_BMC Bioinformatics_ **7**:334  
 <https://doi.org/10.1186/1471-2105-9-334>
 
 
