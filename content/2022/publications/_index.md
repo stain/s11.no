@@ -26,9 +26,9 @@ aliases:
 ## 2022
 
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
-[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://arxiv.org/pdf/2105.07028).  
-_Communications of the ACM_ **65**(6) (in press).  
-To appear as <https://doi.org/10.1145/3486897>  
+[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext).  
+_Communications of the ACM_ **65**(6) 
+<https://doi.org/10.1145/3486897>  
 [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
@@ -55,6 +55,12 @@ _Data Intelligence_ **4**(2)
 <https://doi.org/10.1162/dint_a_00134>
 
 
+
+Neil P. Chue Hong, Daniel S. Katz, Michelle Barker; Anna-Lena Lamprecht, Carlos Martinez, Fotis E. Psomopoulos, Jen Harrow, Leyla Jael Castro, Morane Gruenpeter, Paula Andrea Martinez, Tom Honeyman; Alexander Struck, Allen Lee, Axel Loewe, Ben van Werkhoven, Catherine Jones, Daniel Garijo, Esther Plomp, Francoise Genova, Hugh Shanahan, Joanna Leng, Maggie Hellström, Malin Sandström, Manodeep Sinha, Mateusz Kuzak, Patricia Herterich, Qian Zhang, Sharif Islam, Susanna-Assunta Sansone, Tom Pollard, Udayanto Dwi Atmojo; Alan Williams, Andreas Czerniak, Anna Niehues, Anne Claire Fouilloux, Bala Desinghu, Carole Goble, Céline Richard, Charles Gray, Chris Erdmann, Daniel Nüst, Daniele Tartarini, Elena Ranguelova, Hartwig Anzt, Ilian Todorov, James McNally, Javier Moldon, Jessica Burnett, Julián Garrido-Sánchez, Khalid Belhajjame, Laurents Sesink, Lorraine Hwang, Marcos Roberto Tovani-Palone, Mark D. Wilkinson, Mathieu Servillat, Matthias Liffers, Merc Fox, Nadica Miljković, Nick Lynch, Paula Martinez Lavanchy, Sandra Gesing, Sarah Stevens, Sergio Martinez Cuesta, Silvio Peroni, Stian Soiland-Reyes, Tom Bakker, Tovo Rabemanantsoa, Vanessa Sochat, Yo Yehudi, FAIR4RS WG (2022):  
+**FAIR Principles for Research Software version 1.0** (FAIR4RS Principles v1.0).  
+_Research Data Alliance_  
+<https://doi.org/10.15497/RDA00068>
+
 ## 2021
 
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
@@ -66,7 +72,8 @@ Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori,
 Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson,
 Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, 
 Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):  
-[**Perspectives on automated composition of workflows in the life sciences**](https://doi.org/10.12688/f1000research.54159.1) [version 1; peer review: 2 approved].  
+[**Perspectives on automated composition of workflows in the life sciences**](https://doi.org/10.12688/f1000research.54159.1)  
+[version 1; peer review: 2 approved].  
 _F1000Research_ **10**:897  
 <https://doi.org/10.12688/f1000research.54159.1>
 
