@@ -25,7 +25,7 @@ author-meta:
 - Adam Hospital
 - Paul Groth
 summary: > 
-  Journal article accepted for _Data Intelligence_
+  Journal article published in _Data Intelligence_
 description: > 
     We introduce the concept of Canonical Workflow Building Blocks, a methodology of describing and wrapping computational tools, in order for them to be utilised in a reproducible manner from multiple workflow languages and execution platforms. The concept is implemented and demonstrated with the BioExcel Building Blocks library (BioBB), a collection of tool wrappers in the field of computational biomolecular simulation. Interoperability across different workflow languages is showcased through a protein Molecular Dynamics setup transversal workflow, built using this library and run with 5 different Workflow Manager Systems (WfMS). We argue such practice is a necessary requirement for FAIR Computational Workflows and an element of Canonical Workflow Frameworks for Research (CWFR) in order to improve widespread adoption and reuse of computational methods across workflow language barriers.
 

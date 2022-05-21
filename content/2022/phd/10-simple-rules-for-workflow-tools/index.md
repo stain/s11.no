@@ -5,7 +5,7 @@ categories:
   - PhD
 date-meta: '2022-01-10'
 summary: > 
-  Journal article accepted for _PLOS Computational Biology_
+  Journal article published in _PLOS Computational Biology_
 description: > 
     Workflows have become a core part of computational scientific analysis in recent years. Automated computational workflows multiply the power of researchers, potentially turning “hand-cranked” data processing by informaticians into robust factories for complex research output.
 

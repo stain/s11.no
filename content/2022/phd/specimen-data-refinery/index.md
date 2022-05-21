@@ -11,7 +11,7 @@ keywords:
   - RO-Crate
 lang: en-GB
 summary: > 
-  Journal article accepted for _Data Intelligence_
+  Journal article published in _Data Intelligence_
 description: > 
     A key limiting factor in organising and using information from
     physical specimens curated in natural science collections is making
