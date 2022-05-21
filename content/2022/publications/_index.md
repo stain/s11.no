@@ -25,7 +25,7 @@ aliases:
 
 ## 2022
 
-Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, CWL Community (2022):  
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, CWL Community (2022):  
 [**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext).  
 _Communications of the ACM_ **65**(6)  
 <https://doi.org/10.1145/3486897>  
