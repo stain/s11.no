@@ -1,2 +1,0 @@
-sudo apt install texlive-fonts-extra texlive-xetex
-pdflatex cwl-cacm.tex
