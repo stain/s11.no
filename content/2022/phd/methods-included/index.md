@@ -4,7 +4,11 @@ bib: references.bib
 categories:
     - PhD
 keywords:
-    - foo
+    - workflows
+    - computational data analysis
+    - CWL
+    - scientific workflows
+    - standards
 lang: en-GB
 date-meta: '2022-05-20'
 author-meta:
@@ -47,17 +51,17 @@ _Communications of the ACM_ **65**(6)
 [Carole Goble](https://orcid.org/)⁸, 
 [The CWL Community](http://commonwl.org/)²
 
-¹ Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
-² Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA
-³ Curii Corporation, Sommerville, MA, USA
-⁴ Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA
-⁵ Galaxy Project
-⁶ Seven Bridges, Charlestown, MA, USA
-⁷ Hub de Bioinformatique et Biostatistique – D\'{e}partement Biologie Computationnelle, Institut Pasteur, Paris, France
-⁸ Department of Computer Science, The University of Manchester, Manchester, UK
+¹ Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands  
+² Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA  
+³ Curii Corporation, Sommerville, MA, USA  
+⁴ Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA  
+⁵ Galaxy Project  
+⁶ Seven Bridges, Charlestown, MA, USA  
+⁷ Hub de Bioinformatique et Biostatistique – Département Biologie Computationnelle, Institut Pasteur, Paris, France  
+⁸ Department of Computer Science, The University of Manchester, Manchester, UK  
 ⁹ Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands
 
-# Introduction {#sec:introduction}
+# Introduction {#introduction}
 
 *Computational Workflows* are widely used in data analysis, enabling innovation and
 decision-making for the modern society. But their growing popularity is
@@ -66,7 +70,11 @@ portability, the use of workflows may end up hampering collaboration.
 How can we enjoy the common benefits of computational workflows and also
 eliminate such risks?
 
-*Workflow thinking*  [1]. It introduces an abstraction, the workflow,
+To answer this general question, we advocate in this work for workflow thinking as a shared way of reasoning across all domains and practitioners, introduce **Common Workflow Language** (CWL) as a pragmatic set of standards for describing and sharing computational workflows, and discuss the principles around which these standards have become central to a diverse community of users across multiple fields of science and engineering.
+
+This article focuses on an overview of the CWL standards and the CWL project and is complemented by the technical detail available in the [CWL standards themselves](https://w3id.org/cwl/v1.2/).
+
+*Workflow thinking* is a form of "conceptualizing processes as recipes and protocols, structured as [work- or] dataflow graphs with computational steps, and subsequently developing tools and approaches for formalizing, analyzing and communicating these process descriptions" [[1](https://doi.org/10.1353/lib.2017.0018)]. It introduces an abstraction, the workflow,
 which helps decouple expertise in a specific domain, for example of
 specific science or engineering fields, from expertise in computing.
 Derived from workflow thinking, a *computational workflow* describes a
@@ -75,7 +83,9 @@ are inter-dependent, e.g., a task can start processing after its
 predecessors have (partially) completed and where data flows between
 tasks.
 
-Currently, many competing systems , each with their own syntax or method
+Currently, many competing systems exist that enable simple workflow execution 
+(_workflow runners_) or offer a comprehensive management of workflows and data 
+(_workflow management systems_), each with their own syntax or method
 for describing workflows and infrastructure requirements. This limits
 computational reuse and portability. In particular, although the
 data-flows are becoming increasingly more complex, most workflow
@@ -92,24 +102,25 @@ tame this complexity through a common abstraction that covers the
 majority of features used in practice, and is (or can be) implemented in
 many workflow systems.
 
-<div class="figure*">
 
-<embed src="figure1.svg" />
+{{< figure src="figure1.svg" link="figure1.svg" id="fig:sample_workflow" 
+  width="100%" title="Excerpt from a large microbiome bioinformatics CWL workflow [6]"
+  caption="This part of the workflow (which is interpretable/executable on its own) has the aim to match the workflow inputs of genomic sequences to provided sequence-models, which are dispatched to four sub-workflows (e.g., `find_16S_matches`); the sub-workflows not detailed in the figure. <br>The sub-workflow outputs are then collated to identify unique sequence hits, then provided as overall workflow outputs. <br>Arrows define the connection between tasks and imply their partial ordering, depicted here as layers of tasks that may execute concurrently.  <br>Workflow steps (e.g., `mask_rRNA_and_tRNA`) execute command line tools, shown here with indicators for their different programming languages (e.g., `Py` for Python, `C` for the C language). <br>_(Diagram adapted from <https://w3id.org/cwl/view/git/7bb76f33bf40b5cd2604001cac46f967a209c47f/workflows/rna-selector.cwl>, which was originally retrieved from a corresponding CWL workflow of the EBI Metagenomics project, itself a conversion of the_ rRNASelector _[6a] program into a well structured workflow allowing for better parallelization of execution and provenance tracking.)_" >}}
 
-</div>
 
-In the computational workflow depicted in
-Figure <a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">[fig:sample_workflow]</a>,
+In the computational workflow depicted in <a href="#fig:sample_workflow">Figure 1</a>,
 practitioners solved the problem by adopting the CWL standards. We posit
 in this work that the CWL standards can help solve the main problems of
 sharing workflows between institutions and users. We also set out to
-introduce the CWL standards, with a tri-fold focus: (1) the CWL
-standards focuses on maintaining a separation of concerns between the
+introduce the CWL standards, with a tri-fold focus: 
+
+1. The CWL standards focuses on maintaining a separation of concerns between the
 description and execution of tools and workflows, proposing a language
 that includes only operations commonly used across multiple communities
-of practice; (2) the CWL standards support workflow automation,
-scalability, abstraction, provenance, portability, and reusability; and
-(3) the CWL project takes a principled, community-first open-source and
+of practice.
+2. The CWL standards support workflow automation,
+scalability, abstraction, provenance, portability, and reusability.
+3. The CWL project takes a principled, community-first open-source and
 open-standard approach which enables this result.
 
 The CWL standards are the product of an open and free standards-making
@@ -118,7 +129,7 @@ many contributors to the CWL project shaped the standards so that it
 could be useful anywhere that experiences the problem of “many tools
 written in many programming languages by many parties”. Since the
 ratification of the first version in 2016, the CWL standards have been
-used in other fields including hydrology, radio astronomy[1],
+used in other fields including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS),
 geo-spatial analysis [2–4], high energy physics [5], in addition to
 fast-growing bioinformatics fields like genomics [6] and cancer
 research [7]. . The flexibility of the CWL standards enabled, for
@@ -134,7 +145,9 @@ workflow-independent description of how to run their tool(s) in the
 container, what data is required to be provided to the container, and
 what results to expect and where to find them in the container.
 
-**Key Insights [in CACM box]**
+<div class="insight">
+
+**Key Insights**
 
 Toward computational reuse and portability of polylingual, multi-party
 workflows, the CWL project makes the following contributions:
@@ -170,6 +183,8 @@ workflows, the CWL project makes the following contributions:
     is a Free/Open Source Software ecosystem (see Sidebar B,
     Section <a href="#sec:sidebar:b" data-reference-type="ref" data-reference="sec:sidebar:b">4.2</a>).
 
+</div>
+
 # Background on Workflows and Standards for Workflows
 
 <span id="sec:why" label="sec:why">[sec:why]</span>
@@ -199,12 +214,11 @@ descriptions of how to run these command-line tools, and scientists and
 engineers connect their inputs and outputs so that the data flows
 through. An example of a complex workflow problem is metagenomic
 analysis, for which
-Figure <a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">[fig:sample_workflow]</a>
+<a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">Figure 1</a>
 illustrates a subset (a *sub-workflow*).
 
 In practice, many research and engineering groups use workflows of the
-kind described in
-Figure <a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">[fig:sample_workflow]</a>.
+kind described in Figure 1.
 However, as highlighted in a recently published “Technology Toolbox”
 article [15] published in the journal Nature, these groups typically
 lack the ability to share and collaborate across institutions and
@@ -212,8 +226,8 @@ infrastructures without costly manual translation of their workflows.
 
 Using workflow techniques, especially with digital analysis processes,
 has become quite popular and does not look to be slowing down: one
-recently celebrated its 10,000th citation[2]; and over 309 computational
-data analysis workflow systems are known[3].
+recently celebrated its [10,000th citation](https://galaxyproject.org/blog/2020-08-10k-pubs/); and 
+[over 309 computational data analysis workflow systems](https://s.apache.org/existing-workflow-systems) are known.
 
 A process, digital or otherwise, may grow to such complexity that the
 authors and users of that process have difficulties in understanding its
@@ -299,7 +313,7 @@ particular programming language its built-in capabilities. For example,
 Python provides a *threading* library, and the Java-based Apache
 Hadoop [19] provides MapReduce capabilities. To gain more flexibility
 when working with a particular programming language, *general
-third-party libraries*, such as *ipyparallel*[4], can enable remote or
+third-party libraries*, such as [ipyparallel](https://pypi.org/project/ipyparallel/), can enable remote or
 distributed execution without having to re-write one’s code.
 
 A more explicit workflow structure can be achieved by using a *workflow
@@ -317,8 +331,9 @@ the components come from third-parties and the user does not want to or
 cannot modify them: use of per-language *add-in libraries* or the use of
 the *Portable Operating System Interface command-line interface (POSIX
 CLI)* [20]. The use of per-language add-in libraries entails either
-explicit function calls (e.g., using *ctypes* in Python to call a C
-library[5]) or the addition of annotations to the user’s functions, and
+explicit function calls 
+(e.g., using [ctypes](https://docs.python.org/3/library/ctypes.html) 
+in Python to call a C library) or the addition of annotations to the user’s functions, and
 requires mapping/restricting to a common cross-language data model.
 
 Essentially all programming languages support the creation of **POSIX
@@ -335,13 +350,10 @@ the disadvantages of process start-up time and a very simple data model.
 (As a *polylingual* workflow standard, CWL uses the POSIX CLI data
 model.)
 
-<div class="figure*">
+{{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
+  width="100%" title=".."
+  caption=".." >}}
 
-<embed src="figure2.svg" />
-
-<span id="fig:syntax" label="fig:syntax">[fig:syntax]</span>
-
-</div>
 
 # Features of the Common Workflow Language standards
 
@@ -350,13 +362,17 @@ model.)
 The CWL standard support polylingual and multi-party workflows, for
 which they enable computational reuse and portability (see also the CACM
 Box for main features). To do so, each release of the CWL standards has
-two[6] main components: (1) a standard for describing *command line*
+two[^6] main components: (1) a standard for describing *command line*
 tools; and (2) a standard for describing *workflows* that compose such
-tool descriptions. The goal of the **CWL Command Line Tool Description
-Standard**[7] is to describe how a particular command line tool works:
+tool descriptions. The goal of the **[CWL Command Line Tool Description
+Standard](https://w3id.org/cwl/v1.2/CommandLineTool.html)** is to describe how a particular command line tool works:
 what are the *inputs* and *parameters* and their types; how to add the
 correct flags and switches to the *command line* invocation; and where
 to find the *output files*.
+
+[^6]: The third component, *Schema Salad*, is only of interest to those
+who want to parse the syntax of the schema language that is used to
+define the syntax of CWL itself.
 
 The CWL standards define an *explicit language*, both in syntax, and in
 its data and execution model. Its textual syntax is derived from
@@ -387,11 +403,10 @@ tool-description author.[9] Each tool invocation uses a separate working
 directory, populated according to the CWL tool description, e.g., with
 the input files explicitly specified by the workflow author.
 
-<div class="figure*">
+{{< figure src="figure3.svg" link="figure3.svg" id="fig:portability" 
+  width="100%" title=".."
+  caption=".." >}}
 
-<embed src="figure3.svg" style="width:80.0%" />
-
-</div>
 
 **The explicit runtime model enables portability**, by being explicit
 about data locations. As
@@ -740,113 +755,62 @@ workflow descriptions. !
 
 # Acknowledgements
 
-The CWL project is immensely grateful to the following self-identified
-CWL Community members and their contributions to the project: [Miguel
-d’Arcangues Boland](https://orcid.org/0000-0002-2703-8936) (Software,
-Bug Reports, Maintenance), [Alain Domissy]() (Conceptualization,
-Answering Questions, Tools), [Andrey Kislyuk]() (Software, Bug Reports),
-[Brandi Davis-Dusenbery](https://orcid.org/0000-0001-7811-8613)
-(Conceptualization, Funding acquisition, Investigation, Project
-Administration, Resources, Supervision, Business Development, Event
-Organizing, Talks), [Niels Drost](https://orcid.org/0000-0001-9795-7981)
-(Funding Acquisition, Blogposts, Event Organizing, Tutorials, Talks),
-[Robert Finn](https://orcid.org/0000-0001-8626-2148) (Data acquisition,
-Funding acquisition, Investigation, Resources, Supervision), [Michael
-Franklin](https://orcid.org/0000-0001-9292-1533) (Software, Bug Reports,
-Documentation, Event Organizing, Maintenance, Tools, Answering
-Questions, Talks), [](https://orcid.org/0000-0003-1550-1716) (), [Manabu
-Ishii](https://orcid.org/0000-0002-5843-4712) (Blogposts, Documentation,
-Examples, Event Organizing, Maintenance, Tools, Answering Questions,
-Translation, Tutorials, Talks), [Sinisa
-Ivkovic](https://orcid.org/0000-0003-4115-3313) (Software, Validation,
-Bug Reports, Tools), [Alexander
-Kanitz](https://orcid.org/0000-0002-3468-0652) (Software, Business
-Development, Tools, Talks), [Sehrish
-Kanwal](https://orcid.org/0000-0002-5044-4692) (Conceptualization,
-Formal Analysis, Investigation, Software, Validation, Bug Reports,
-Blogposts, Content, Event Organizing, Maintenance, Answering Questions,
-Tools, Tutorials, Talks, User Testing), [Andrey
-Kartashov](https://orcid.org/0000-0001-9102-5681) (Conceptualization,
-Software, Validation, Examples, Tools, Answering Questions), [Farah
-Khan](https://orcid.org/0000-0002-6337-3037) (Conceptualization, Formal
-Analysis, Funding Acquisition, Software), [Michael
-Kotliar](https://orcid.org/0000-0002-6486-3898) (Software, Validation,
-Bug Reports, Blogposts, Examples, Maintenance, Answering Questions,
-Reviewed Contributions, Tools, Talks, User Testing), [Folker
-Meyer](https://orcid.org/0000-0003-1112-2284) (Tools), [Rupert
-Nash](https://orcid.org/0000-0002-6388-7353) (Software, Bug Reports,
-Talks, Videos), [Maya
-Nedeljkovich](https://orcid.org/0000-0003-3705-948X) (Software,
-Validation, Visualization, Writing -- review & editing, Bug Reports,
-Tools, Talks), [Tazro Ohta](https://orcid.org/0000-0003-3777-5945)
-(Formal Analysis, Funding Acquisition, Resources, Validation, Bug
-Reports, Blogposts, Content, Documentation, Examples, Event Organizing,
-Answering Questions, Tools, Translation, Tutorials, Talks, User
-Testing), [Pjotr Prins](https://orcid.org/0000-0002-8021-9162)
-(Blogposts, Packaging, Bug Reports), [Manvendra
-Singh](https://orcid.org/0000-0001-9279-9910) (Software, Blogposts,
-Packaging, Tools, Reviewed Contributions), [Andrey
-Tovchigrechko](https://orcid.org/0000-0002-0959-4429)
-(Conceptualization, Software, Bug Reports), [Alan
-Williams](https://orcid.org/0000-0003-3156-2105) (Investigation), [Denis
-Yuen](https://orcid.org/0000-0002-6130-1021) (Software, Bug Reports,
-Documentation, Tools), [Alexander (Sasha) Wait
-Zaranek](https://orcid.org/0000-0002-0415-9655) (Conceptualization,
-Funding Acquisition), [Sarah Wait
-Zaranek](https://orcid.org/0000-0003-4716-9121) (Conceptualization,
-Funding Acquisition, Project Administration, Resources, Software,
-Accessibility, Bug Reports, Business Development, Content, Examples,
-Event Organizing, Answering Questions, Tutorials, Talks).
+The CWL project is immensely grateful to the following self-identified CWL Community members and their contributions to the project: 
+* [Miguel d’Arcangues Boland](https://orcid.org/0000-0002-2703-8936) (Software, Bug Reports, Maintenance), 
+* Alain Domissy (Conceptualization, Answering Questions, Tools), 
+* Andrey Kislyuk (Software, Bug Reports), 
+* [Brandi Davis-Dusenbery](https://orcid.org/0000-0001-7811-8613) (Conceptualization, Funding acquisition, Investigation, Project Administration, Resources, Supervision, Business Development, Event Organizing, Talks), 
+* [Niels Drost](https://orcid.org/0000-0001-9795-7981) (Funding Acquisition, Blogposts, Event Organizing, Tutorials, Talks), 
+* [Robert Finn](https://orcid.org/0000-0001-8626-2148) (Data acquisition, Funding acquisition, Investigation, Resources, Supervision), 
+* [Michael Franklin](https://orcid.org/0000-0001-9292-1533) (Software, Bug Reports, Documentation, Event Organizing, Maintenance, Tools, Answering Questions, Talks), 
+* [Manabu Ishii](https://orcid.org/0000-0002-5843-4712) (Blogposts, Documentation, Examples, Event Organizing, Maintenance, Tools, Answering Questions, Translation, Tutorials, Talks), 
+* [Sinisa Ivkovic](https://orcid.org/0000-0003-4115-3313) (Software, Validation, Bug Reports, Tools), 
+* [Alexander Kanitz](https://orcid.org/0000-0002-3468-0652) (Software, Business Development, Tools, Talks), 
+* [Sehrish Kanwal](https://orcid.org/0000-0002-5044-4692) (Conceptualization, Formal Analysis, Investigation, Software, Validation, Bug Reports, Blogposts, Content, Event Organizing, Maintenance, Answering Questions, Tools, Tutorials, Talks, User Testing), 
+* [Andrey Kartashov](https://orcid.org/0000-0001-9102-5681) (Conceptualization, Software, Validation, Examples, Tools, Answering Questions), 
+* [Farah Khan](https://orcid.org/0000-0002-6337-3037) (Conceptualization, Formal Analysis, Funding Acquisition, Software), 
+* [Michael Kotliar](https://orcid.org/0000-0002-6486-3898) (Software, Validation, Bug Reports, Blogposts, Examples, Maintenance, Answering Questions, Reviewed Contributions, Tools, Talks, User Testing), 
+* [Folker Meyer](https://orcid.org/0000-0003-1112-2284) (Tools), 
+* [Rupert Nash](https://orcid.org/0000-0002-6388-7353) (Software, Bug Reports, Talks, Videos), 
+* [Maya Nedeljkovich](https://orcid.org/0000-0003-3705-948X) (Software, Validation, Visualization, Writing -- review & editing, Bug Reports, Tools, Talks), 
+* [Tazro Ohta](https://orcid.org/0000-0003-3777-5945) (Formal Analysis, Funding Acquisition, Resources, Validation, Bug Reports, Blogposts, Content, Documentation, Examples, Event Organizing, Answering Questions, Tools, Translation, Tutorials, Talks, User Testing), 
+* [Pjotr Prins](https://orcid.org/0000-0002-8021-9162) (Blogposts, Packaging, Bug Reports), 
+* [Manvendra Singh](https://orcid.org/0000-0001-9279-9910) (Software, Blogposts, Packaging, Tools, Reviewed Contributions), 
+* [Andrey Tovchigrechko](https://orcid.org/0000-0002-0959-4429) (Conceptualization, Software, Bug Reports), 
+* [Alan Williams](https://orcid.org/0000-0003-3156-2105) (Investigation), 
+* [Denis Yuen](https://orcid.org/0000-0002-6130-1021) (Software, Bug Reports, Documentation, Tools), 
+* [Alexander (Sasha) Wait Zaranek](https://orcid.org/0000-0002-0415-9655) (Conceptualization, Funding Acquisition), 
+* [Sarah Wait Zaranek](https://orcid.org/0000-0003-4716-9121) (Conceptualization, Funding Acquisition, Project Administration, Resources, Software, Accessibility, Bug Reports, Business Development, Content, Examples, Event Organizing, Answering Questions, Tutorials, Talks).  
 
-The contributions to the CWL project by the authors of this paper are:
-[Michael R. Crusoe](https://orcid.org/0000-0002-2961-9670)
-(Conceptualization, Funding Acquisition, Investigation, Project
-Administration, Resources, Software, Supervision, Validation, Writing —
-original draft, Bug Reports, Business Development, Content,
-Documentation, Examples, Event Organizing, Maintenance, Packaging,
-Answering Questions, Reviewing Contributions, Tutorials, Talks), [Sanne
-Abeln](https://orcid.org/0000-0002-2779-7174) (Writing — original draft,
-and review & editing, Conceptualization, Supervision, Funding
-acquisition), [Alexandru Iosup](https://orcid.org/0000-0001-8030-9398)
-(Writing — original draft, and review, editing, Conceptualization,
-Supervision, Funding acquisition), [Peter
-Amstutz](https://orcid.org/0000-0003-3566-7705) (Conceptualization,
-Formal Analysis, Funding Acquisition, Methodology, Project
-Administration, Resources, Software, Supervision, Validation,
-Visualization, Bug Reports, Business Development, Content,
-Documentation, Examples, Event Organizing, Maintenance, Packaging,
-Answering Questions, Reviewed Contributions, Security, Tools, Tutorials,
-Talks), [Nebojša Tijanić](https://orcid.org/0000-0001-8316-4067)
-(Conceptualization, Software), [Hervé
-Ménager](https://orcid.org/0000-0002-7552-1009) (Conceptualization,
-Funding Acquisition, Investigation, Methodology, Project Administration,
-Resources, Software, Supervision, Bug Reports, Business Development,
-Examples, Event Organizing, Maintenance, Tools, Tutorials, Talks),
-[Stian Soiland-Reyes](https://orcid.org/0000-0001-9842-9718)
-(Conceptualization, Funding Acquisition, Investigation, Project
-Administration, Resources, Software, Supervision, Validation, User
-Testing, Writing – review and editing, Bug Reports, Blogposts, Business
-Development, Content, Documentation, Examples, Event Organizing,
-Packaging, Tools, Answering Questions, Reviewed Contributions, Security,
-Tutorials, Talks, Videos), [Bogdan
-Gavrilovic](https://orcid.org/0000-0003-1550-1716) (Conceptualization,
-Software, Validation, Bug Reports, Blogposts, Maintenance, Tools,
-Answering Questions, Reviewed Contributions, User Testing), [Carole A.
-Goble](https://orcid.org/0000-0003-1219-2137) (Conceptualization,
-Funding Acquisition, Resources, Supervision, Audio, Business
-Development, Content, Examples, Event Organizing, Tools, Talks, Videos).
+The contributions to the CWL project by the authors of this paper are: 
+* [Michael R. Crusoe](https://orcid.org/0000-0002-2961-9670) (Conceptualization, Funding Acquisition, Investigation, Project Administration, Resources, Software, Supervision, Validation, Writing — original draft, Bug Reports, Business Development, Content, Documentation, Examples, Event Organizing, Maintenance, Packaging, Answering Questions, Reviewing Contributions, Tutorials, Talks), 
+* [Sanne Abeln](https://orcid.org/0000-0002-2779-7174) (Writing — original draft, and review & editing, Conceptualization, Supervision, Funding acquisition), 
+* [Alexandru Iosup](https://orcid.org/0000-0001-8030-9398) (Writing — original draft, and review, editing, Conceptualization, Supervision, Funding acquisition), 
+* [Peter Amstutz](https://orcid.org/0000-0003-3566-7705) (Conceptualization, Formal Analysis, Funding Acquisition, Methodology, Project Administration, Resources, Software, Supervision, Validation, Visualization, Bug Reports, Business Development, Content, Documentation, Examples, Event Organizing, Maintenance, Packaging, Answering Questions, Reviewed Contributions, Security, Tools, Tutorials, Talks), 
+* [Nebojša Tijanić](https://orcid.org/0000-0001-8316-4067) (Conceptualization, Software), 
+* [Hervé Ménager](https://orcid.org/0000-0002-7552-1009) (Conceptualization, Funding Acquisition, Investigation, Methodology, Project Administration, Resources, Software, Supervision, Bug Reports, Business Development, Examples, Event Organizing, Maintenance, Tools, Tutorials, Talks), 
+* [Stian Soiland-Reyes](https://orcid.org/0000-0001-9842-9718) (Conceptualization, Funding Acquisition, Investigation, Project Administration, Resources, Software, Supervision, Validation, User Testing, Writing – review and editing, Bug Reports, Blogposts, Business Development, Content, Documentation, Examples, Event Organizing, Packaging, Tools, Answering Questions, Reviewed Contributions, Security, Tutorials, Talks, Videos), 
+* [Bogdan Gavrilovic](https://orcid.org/0000-0003-1550-1716) (Conceptualization, Software, Validation, Bug Reports, Blogposts, Maintenance, Tools, Answering Questions, Reviewed Contributions, User Testing), 
+* [Carole A.  Goble](https://orcid.org/0000-0003-1219-2137) (Conceptualization, Funding Acquisition, Resources, Supervision, Audio, Business Development, Content, Examples, Event Organizing, Tools, Talks, Videos).
+* 
 
-Funding acknowledgements: grants BioExcel-2 (SSR) , BioExcel (SSR) ,
-EOSC-Life (SSR) , EOSCPilot (MRC) , IBISBA 1.0 (SSR) , ELIXIR-EXCELERATE
-(SSR, HM) , ASTERICS (MRC) . , the research infrastructure for
-life-science data, Interoperability Platform Implementation Study (MRC).
-. Various universities have also co-sponsored this project; we thank
-Vrije Universiteit of Amsterdam, the Netherlands, where the first three
-authors have their primary affiliation.
+Funding acknowledgements: 
+
+[European Commission](https://ec.europa.eu/programmes/horizon2020/) grants  
+BioExcel-2 (SSR) [H2020-INFRAEDI-02-2018 823830](https://cordis.europa.eu/project/id/823830),
+BioExcel (SSR) [H2020-EINFRA-2015-1 675728](https://cordis.europa.eu/project/id/675728),
+EOSC-Life (SSR) [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087),
+EOSCPilot (MRC) [H2020-INFRADEV-2016-2 739563](https://cordis.europa.eu/project/id/739563),
+IBISBA 1.0 (SSR) [H2020-INFRAIA-2017-1-two-stage 730976](https://cordis.europa.eu/project/id/730976),
+ELIXIR-EXCELERATE (SSR, HM) [H2020-INFRADEV-1-2015-1 676559](https://cordis.europa.eu/project/id/676559)
+ASTERICS (MRC) [INFRADEV-4-2014-2015 653477](https://cordis.europa.eu/project/id/653477). 
+[ELIXIR](https://elixir-europe.org/), the research infrastructure for life-science data, 
+Interoperability Platform Implementation Study (MRC). [2018-CWL](https://elixir-europe.org/about-us/commissioned-services/cwl-2018).
+Various universities have also co-sponsored this project; we thank Vrije Universiteit of Amsterdam, the Netherlands, where the first three authors have their primary affiliation.
 
 </div>
 
-<div id="refs" class="references csl-bib-body">
+# References
 
 <div id="ref-gryk_workflows_2017" >
 
@@ -907,6 +871,15 @@ Kunyavskaya, Alla Lapidus, Robert D. Finn (2020):
 **MGnify: The microbiome analysis resource in 2020**.  
 *Nucleic Acids Research*, **48** D570–D578.  
 <https://doi.org/10.1093/nar/gkz1035> 
+
+</div>
+
+<div id="ref-lee_rrnaselector_2011">
+
+[6a] Jae-Hak Lee, Hana Yi, Jongsik Chun (2011):  
+**rRNASelector: A computer program for selecting ribosomal RNA encoding sequences from metagenomic and metatranscriptomic shotgun libraries**.  
+_The Journal of Microbiology_ **49**(4)  
+<https://doi.org/10.1007/s12275-011-1213-z>
 
 </div>
 
@@ -1180,73 +1153,56 @@ and their practical application in CWLProv. *GigaScience*, **8** (2019).
 
 </div>
 
-</div>
 
-[1] <https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS>
-
-[2] <https://galaxyproject.org/blog/2020-08-10k-pubs/>
-
-[3] <https://s.apache.org/existing-workflow-systems>
-
-[4] <https://pypi.org/project/ipyparallel/>
-
-[5] <https://docs.python.org/3/library/ctypes.html>
-
-[6] The third component, *Schema Salad*, is only of interest to those
-who want to parse the syntax of the schema language that is used to
-define the syntax of CWL itself.
-
-[7] <https://w3id.org/cwl/v1.2/CommandLineTool.html>
-
-[8] JSON is an acceptable subset of YAML, and common when converting
+[8]: JSON is an acceptable subset of YAML, and common when converting
 from another format to CWL syntax.
 
-[9] Details on how the CWL Command Line Tool standard specifies that
+[9]: Details on how the CWL Command Line Tool standard specifies that
 tool executors should setup and control the runtime environment,
 available at
 <https://w3id.org/cwl/v1.2/CommandLineTool.html#Runtime_environment>,
 which also specifies which directories tools are allowed to write to.
 
-[10] <https://w3id.org/cwl/v1.2/Workflow.html>
+[10]: <https://w3id.org/cwl/v1.2/Workflow.html>
 
-[11] <https://pypi.org/project/cwl-upgrader/>
+[11]: <https://pypi.org/project/cwl-upgrader/>
 
-[12] <https://w3id.org/cwl/v1.2/Workflow.html#Workflow>
+[12]: <https://w3id.org/cwl/v1.2/Workflow.html#Workflow>
 
-[13] <https://w3id.org/cwl/v1.2/Workflow.html#Workflow_success_and_failure>
+[13]: <https://w3id.org/cwl/v1.2/Workflow.html#Workflow_success_and_failure>
 
-[14] <https://w3id.org/cwl/v1.2/Workflow.html#WorkReuse>
+[14]: <https://w3id.org/cwl/v1.2/Workflow.html#WorkReuse>
 
-[15] Supporting cycles/loops as an optional feature has been suggested
+[15]: Supporting cycles/loops as an optional feature has been suggested
 for a future version of the CWL standards, but it has yet to be put
 forth as a formal proposal with a prototype implementation. As a work
 around, one can launch a CWL workflow from within a workflow system that
 does support cycles, as documented in the eWaterCycle case study with
 Cylc [23].
 
-[16] https://open-stand.org/about-us/principles/
+[16]: https://open-stand.org/about-us/principles/
 
-[17] Snapshot of <https://www.commonwl.org/implementations/>
+[17]: Snapshot of <https://www.commonwl.org/implementations/>
 
-[18] <https://github.com/common-workflow-language/galaxy/pull/47>
+[18]: <https://github.com/common-workflow-language/galaxy/pull/47>
 
-[19] <https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html>
+[19]: <https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html>
 
-[20] Summarized from <https://www.commonwl.org/tools/>
+[20]: Summarized from <https://www.commonwl.org/tools/>
 
-[21] <https://microsoft.github.io/language-server-protocol/>
+[21]: <https://microsoft.github.io/language-server-protocol/>
 
-[22] “Ajax Command Definitions” as produced by the EMBOSS tools:
+[22]: “Ajax Command Definitions” as produced by the EMBOSS tools:
 <http://emboss.sourceforge.net/developers/acd/>
 
-[23] XML-based “Common Tool Descriptors” [28] originating in the
+[23]: XML-based “Common Tool Descriptors” [28] originating in the
 OpenMS project: <https://github.com/WorkflowConversion/CTDSchema>
 
-[24] <https://pypi.org/project/cwl-utils/>
+[24]: <https://pypi.org/project/cwl-utils/>
 
-[25] <https://github.com/common-workflow-lab/cwljava>
+[25]: <https://github.com/common-workflow-lab/cwljava>
 
-[26] See the `*codegen*.py` files in
+[26]: See the `*codegen*.py` files in
 <https://pypi.org/project/schema-salad/7.1.20210316164414/>
 
-[27] <https://w3id.org/cwl/prov/>
+[27]: <https://w3id.org/cwl/prov/>
