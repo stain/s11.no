@@ -26,7 +26,11 @@ author-meta:
 summary: >
     Journal article published in _Communications of the ACM_
 description: > 
-    Computational Workflows are widely used in data analysis, enabling innovation and decision-making. In many domains (bioinformatics, image analysis, radio astronomy) the analysis components are numerous and written in multiple different computer languages by third parties. However, many competing workflow systems exist, severely limiting portability of such workflows, thereby hindering the transfer of workflows between different systems, between different projects and different settings, leading to vendor lock-ins and limiting their generic re-usability. Here we present the Common Workflow Language (CWL) project which produces free and open standards for describing command-line tool based workflows. The CWL standards provide a common but reduced set of abstractions that are both used in practice and implemented in many popular workflow systems. The CWL language is declarative, which allows expressing computational workflows constructed from diverse software tools, executed each through their command-line interface. Being explicit about the runtime environment and any use of software containers enables portability and reuse. Workflows written according to the CWL standards are a reusable description of that analysis that are runnable on a diverse set of computing environments. These descriptions contain enough information for advanced optimization without additional input from workflow authors. The CWL standards support polylingual workflows, enabling portability and reuse of such workflows, easing for example scholarly publication, fulfilling regulatory requirements, collaboration in/between academic research and industry, while reducing implementation costs. CWL has been taken up by a wide variety of domains, and industries and support has been implemented in many major workflow systems.
+    Computational Workflows are widely used in data analysis, enabling innovation and decision-making. In many domains (bioinformatics, image analysis, radio astronomy) the analysis components are numerous and written in multiple different computer languages by third parties. However, many competing workflow systems exist, severely limiting portability of such workflows, thereby hindering the transfer of workflows between different systems, between different projects and different settings, leading to vendor lock-ins and limiting their generic re-usability. 
+    
+    Here we present the Common Workflow Language (CWL) project which produces free and open standards for describing command-line tool based workflows. The CWL standards provide a common but reduced set of abstractions that are both used in practice and implemented in many popular workflow systems. The CWL language is declarative, which allows expressing computational workflows constructed from diverse software tools, executed each through their command-line interface. Being explicit about the runtime environment and any use of software containers enables portability and reuse. 
+    
+    Workflows written according to the CWL standards are a reusable description of that analysis that are runnable on a diverse set of computing environments. These descriptions contain enough information for advanced optimization without additional input from workflow authors. The CWL standards support polylingual workflows, enabling portability and reuse of such workflows, easing for example scholarly publication, fulfilling regulatory requirements, collaboration in/between academic research and industry, while reducing implementation costs. CWL has been taken up by a wide variety of domains, and industries and support has been implemented in many major workflow systems.
 ---
 
 
@@ -36,6 +40,18 @@ Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Ne
 **Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.  
 _Communications of the ACM_ **65**(6)  
 <https://doi.org/10.1145/3486897>
+
+Ⓒ Copyright 2022 ACM, Inc. and the authors.  
+This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+
+The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext) and [LaTeX source](https://github.com/mr-c/cwl_methods_included) with these modifications by Stian Soiland-Reyes: 
+- Conversion to Markdown/HTML
+- Re-insert original high resolution figures/tables
+- Re-inserted author affiliations and ORCID
+- Re-inserted hyperlinks
+- References modified to [house style](/2021/house-rules/citation-style/)
+- Typographical improvements for Web rendering
+- Spelling fixes
 
 # Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language
 
@@ -63,50 +79,22 @@ _Communications of the ACM_ **65**(6)
 
 # Introduction {#introduction}
 
-*Computational Workflows* are widely used in data analysis, enabling innovation and
-decision-making for the modern society. But their growing popularity is
-also a cause for concern: unless we standardize computational reuse and
-portability, the use of workflows may end up hampering collaboration.
-How can we enjoy the common benefits of computational workflows and also
-eliminate such risks?
+*Computational workflows* are widely used in da0ta analysis, enabling innovation and decision-making for the modern society. But their growing popularity is also a cause for concern. Unless we standardize computational reuse and portability, the use of workflows may end up hampering collaboration. How can we enjoy the common benefits of computational workflows and eliminate such risks?
 
-To answer this general question, we advocate in this work for workflow thinking as a shared way of reasoning across all domains and practitioners, introduce **Common Workflow Language** (CWL) as a pragmatic set of standards for describing and sharing computational workflows, and discuss the principles around which these standards have become central to a diverse community of users across multiple fields of science and engineering.
+To answer this general question, in this work we advocate for workflow thinking as a shared method of reasoning across all domains and practitioners, introduce Common Workflow Language (CWL) as a pragmatic set of standards for describing and sharing computational workflows, and discuss the principles around which these standards have become central to a diverse community of users across multiple fields in science and engineering. This article focuses on an overview of CWL standards and the CWL project and is complemented by the technical detail available in the [CWL standards](https://w3id.org/cwl/v1.2/).
 
-This article focuses on an overview of the CWL standards and the CWL project and is complemented by the technical detail available in the [CWL standards themselves](https://w3id.org/cwl/v1.2/).
+*Workflow thinking* is a form of _"conceptualizing processes as recipes and protocols, structured as dataflow [or workflow] graphs with computational steps, and subsequently developing tools and approaches for formalizing, analyzing, and communicating these process descriptions."_ [[14](https://doi.org/10.1353/lib.2017.0018)] It introduces the workflow, an abstraction which helps decouple expertise in a specific domainfor example, specific science or engineering fieldsfrom computing expertise. Derived from workflow thinking, a *computational workflow* describes a process for computing where different parts of the process (the tasks) are interdependentfor instance, a task can start processing after its predecessors have (partially) completed and where data flows between tasks.
 
-*Workflow thinking* is a form of "conceptualizing processes as recipes and protocols, structured as [work- or] dataflow graphs with computational steps, and subsequently developing tools and approaches for formalizing, analyzing and communicating these process descriptions" [[1](https://doi.org/10.1353/lib.2017.0018)]. It introduces an abstraction, the workflow,
-which helps decouple expertise in a specific domain, for example of
-specific science or engineering fields, from expertise in computing.
-Derived from workflow thinking, a *computational workflow* describes a
-process for computing where different parts of the process (the tasks)
-are inter-dependent, e.g., a task can start processing after its
-predecessors have (partially) completed and where data flows between
-tasks.
+Currently, many competing systems exist to enable simple workflow execution (_workflow runners_) or offer comprehensive management of workflows and data (_workflow management systems_). Each has its own syntax or method for describing workflows and infrastructure requirements, which can limit computational reuse and portability. Although dataflows are becoming more complex, most workflow abstractions do not enable explicit specifications of dataflows, significantly increasing the cost to have third parties reuse and port the workflow.
 
-Currently, many competing systems exist that enable simple workflow execution 
-(_workflow runners_) or offer a comprehensive management of workflows and data 
-(_workflow management systems_), each with their own syntax or method
-for describing workflows and infrastructure requirements. This limits
-computational reuse and portability. In particular, although the
-data-flows are becoming increasingly more complex, most workflow
-abstractions do not enable explicit specifications of data-flows,
-increasing significantly the costs to reuse and port the workflow by
-third-parties.
-
-We thus identify an important problem for the broad adoption of workflow
-thinking in practice: although communities require polylingual workflows
-(workflows that execute tools written in multiple different computer
-languages) and multi-party workflows, **adopting and managing different
-workflow systems is costly and difficult**. In this work, we propose to
-tame this complexity through a common abstraction that covers the
-majority of features used in practice, and is (or can be) implemented in
-many workflow systems.
+We thus identify an important problem in the broad, practical adoption of workflow thinking: Although communities require _polylingual workflows_ (workflows that execute tools written in multiple, different computer languages) and _multiparty workflows_, adopting and managing different workflow systems is costly and difficult. In this work, we propose to tame this complexity through a common abstraction that covers most features used in practice and that is (or can be) implemented in many workflow systems.
 
 
 {{< figure src="figure1.svg" link="figure1.svg" id="fig:sample_workflow" 
-  width="100%" title="Excerpt from a large microbiome bioinformatics CWL workflow [6]"
-  caption="This part of the workflow (which is interpretable/executable on its own) has the aim to match the workflow inputs of genomic sequences to provided sequence-models, which are dispatched to four sub-workflows (e.g., `find_16S_matches`); the sub-workflows not detailed in the figure. <br>The sub-workflow outputs are then collated to identify unique sequence hits, then provided as overall workflow outputs. <br>Arrows define the connection between tasks and imply their partial ordering, depicted here as layers of tasks that may execute concurrently.  <br>Workflow steps (e.g., `mask_rRNA_and_tRNA`) execute command line tools, shown here with indicators for their different programming languages (e.g., `Py` for Python, `C` for the C language). <br>_(Diagram adapted from <https://w3id.org/cwl/view/git/7bb76f33bf40b5cd2604001cac46f967a209c47f/workflows/rna-selector.cwl>, which was originally retrieved from a corresponding CWL workflow of the EBI Metagenomics project, itself a conversion of the_ rRNASelector _[6a] program into a well structured workflow allowing for better parallelization of execution and provenance tracking.)_" >}}
+  width="100%" title="Excerpt from a large microbiome bioinformatics CWL workflow [[27](https://doi.org/10.1093/nar/gkz1035)]"
+  caption="This part of the workflow (which is interpretable/executable on its own) has the aim to match the workflow inputs of genomic sequences to provided sequence-models, which are dispatched to four sub-workflows (e.g., `find_16S_matches`); the sub-workflows not detailed in the figure. <br>The sub-workflow outputs are then collated to identify unique sequence hits, then provided as overall workflow outputs. <br>Arrows define the connection between tasks and imply their partial ordering, depicted here as layers of tasks that may execute concurrently.  <br>Workflow steps (e.g., `mask_rRNA_and_tRNA`) execute command line tools, shown here with indicators for their different programming languages (e.g., `Py` for Python, `C` for the C language). <br>_(Diagram adapted from <https://w3id.org/cwl/view/git/7bb76f33bf40b5cd2604001cac46f967a209c47f/workflows/rna-selector.cwl>, which was originally retrieved from a corresponding CWL workflow of the EBI Metagenomics project, itself a conversion of the_ rRNASelector _[[25](https://doi.org/10.1007/s12275-011-1213-z)] program into a well structured workflow allowing for better parallelization of execution and provenance tracking.)_" >}}
 
+<!-- mark -->
 
 In the computational workflow depicted in <a href="#fig:sample_workflow">Figure 1</a>,
 practitioners solved the problem by adopting the CWL standards. We posit
@@ -145,7 +133,7 @@ workflow-independent description of how to run their tool(s) in the
 container, what data is required to be provided to the container, and
 what results to expect and where to find them in the container.
 
-<div class="insight">
+<div class="insight" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: smaller; max-width: 25em; min-width: 20em; background: #eee; color: #111">
 
 **Key Insights**
 
@@ -162,32 +150,30 @@ workflows, the CWL project makes the following contributions:
     polylingual workflow tasks. By being explicit about the *runtime
     environment* and any use of *software containers*, the CWL standards
     enable *portability* and *reuse*. (See
-    Section <a href="#sec:features" data-reference-type="ref" data-reference="sec:features">3</a>.)
+    Section <a href="#sec:features">3</a>.)
 
 4.  The CWL standards provide a *separation of concerns* between
     workflow authors and workflow platforms. (More in
-    Section <a href="#sec:open:ecosystem" data-reference-type="ref" data-reference="sec:open:ecosystem">4.3</a>.)
+    Section <a href="#sec:open:ecosystem">4.3</a>.)
 
 5.  The CWL standards support critical workflow concepts like
     automation, scalability, abstraction, provenance, portability, and
     reusability. (Details in
-    Section <a href="#sec:why" data-reference-type="ref" data-reference="sec:why">[sec:why]</a>).
+    Section <a href="#sec:why">[sec:why]</a>).
 
 6.  The CWL standards are developed around core principles of community
     and shared decision-making, re-use, and zero cost for participants.
-    (Section <a href="#sec:open" data-reference-type="ref" data-reference="sec:open">4</a>
+    (Section <a href="#sec:open">4</a>
     details the open standards.)
 
 7.  The CWL standards are provided as freely available open standards,
     supported by a diverse community in collaboration with industry, and
     is a Free/Open Source Software ecosystem (see Sidebar B,
-    Section <a href="#sec:sidebar:b" data-reference-type="ref" data-reference="sec:sidebar:b">4.2</a>).
+    Section <a href="#sec:sidebar:b">4.2</a>).
 
 </div>
 
-# Background on Workflows and Standards for Workflows
-
-<span id="sec:why" label="sec:why">[sec:why]</span>
+# Background on Workflows and Standards for Workflows {#sec:why}
 
 Workflows, and standards-based descriptions thereof, hold the potential
 to solve key problems in many domains of science and engineering. This
@@ -214,17 +200,16 @@ descriptions of how to run these command-line tools, and scientists and
 engineers connect their inputs and outputs so that the data flows
 through. An example of a complex workflow problem is metagenomic
 analysis, for which
-<a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">Figure 1</a>
+<a href="#fig:sample_workflow">Figure 1</a>
 illustrates a subset (a *sub-workflow*).
 
-In practice, many research and engineering groups use workflows of the
-kind described in Figure 1.
+In practice, many research and engineering groups use workflows of the kind described in Figure 1.
 However, as highlighted in a recently published “Technology Toolbox”
 article [15] published in the journal Nature, these groups typically
 lack the ability to share and collaborate across institutions and
 infrastructures without costly manual translation of their workflows.
 
-Using workflow techniques, especially with digital analysis processes,
+Using workflow techniques, especially with digital analysis processes, 
 has become quite popular and does not look to be slowing down: one
 recently celebrated its [10,000th citation](https://galaxyproject.org/blog/2020-08-10k-pubs/); and 
 [over 309 computational data analysis workflow systems](https://s.apache.org/existing-workflow-systems) are known.
@@ -298,6 +283,7 @@ incomplete descriptions in scientific reports. Moreover, the operational
 parts of the description can be provided automated by the workflow
 management system, rather than by domain experts.
 
+<div class="sidebar">
 ## Sidebar A: Monolingual and Polylingual workflow systems
 
 Workflows techniques can be implemented in many ways, i.e., with varying
@@ -353,7 +339,7 @@ model.)
 {{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
   width="100%" title=".."
   caption=".." >}}
-
+</div>
 
 # Features of the Common Workflow Language standards
 
@@ -644,6 +630,8 @@ they helped the reference implementation of the CWL standards
 themselves; they provided concrete examples to early adopters; and they
 enabled the developers and users of production implementations of the
 CWL standards to confirm their correctness.
+
+
 
 ## Sidebar B: The CWL project and Free/Open Source Software (F/OSS)
 
