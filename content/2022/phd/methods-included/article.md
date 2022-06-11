@@ -10,11 +10,12 @@ Communications of the ACM, June 2022, Vol. 65 No. 6, Pages 54-63\
 Computational workflows are widely used in data analysis, enabling innovation and decision-making for the modern society. But their growing popularity is also a cause for concern. Unless we standardize computational reuse and portability, the use of workflows may end up hampering collaboration. How can we enjoy the common benefits of computational workflows and eliminate such risks?
 
 
-### Key Insights
+**Key Insights**
 
-*
-*
-*
+* Common Workflow Language is a set of open standards for describing and sharing computational workflows, used in many science and engineering domains.
+* CWL standards support critical workflow concepts such as automation, scalability, abstraction, provenance, portability, and
+reusability. 
+* CWL standards are developed around core principles of community and shared decision making, reuse, and zero cost for participants.
 
 
 To answer this general question, in this work we advocate for workflow thinking as a shared method of reasoning across all domains and practitioners, introduce Common Workflow Language (CWL) as a pragmatic set of standards for describing and sharing computational workflows, and discuss the principles around which these standards have become central to a diverse community of users across multiple fields in science and engineering. This article focuses on an overview of CWL standards and the CWL project and is complemented by the technical detail available in the CWL standards.^[a](#FNA)^
@@ -219,7 +220,7 @@ preserving workflow-centric research objects. *J. of Web Semantics 32*
 []{#R4}4. Bell, T. et al. *Web-based Analysis Services Report.*
 Technical Report CERN-IT-Note-2018-004. (2017), CERN, Geneva,
 Switzerland.
-[http://cds.cern.ch/record/2315331/](https://cds.cern.ch/record/2315331/).
+<https://cds.cern.ch/record/2315331/>
 
 []{#R5}5. Berthold, M.R et al. KNIME-The Konstanz information miner:
 Version 2.0 and beyond. *ACM SIGKDD Explorations Newsletter 11*, 1 (Nov.

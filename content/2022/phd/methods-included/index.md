@@ -48,7 +48,7 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 - Conversion to Markdown/HTML
 - Re-insert original high resolution figures/tables
 - Re-inserted author affiliations and ORCID
-- Re-inserted hyperlinks
+- Re-inserted hyperlinks instead of footnotes
 - References modified to [house style](/2021/house-rules/citation-style/)
 - Typographical improvements for Web rendering
 - Spelling fixes
@@ -77,9 +77,19 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 ⁸ Department of Computer Science, The University of Manchester, Manchester, UK  
 ⁹ Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands
 
+<div class="insight" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: bigger; max-width: 20em; min-width: 15em; background: #eee; color: #111">
+
+**Key Insights**
+
+* Common Workflow Language is a set of open standards for describing and sharing computational workflows, used in many science and engineering domains.
+* CWL standards support critical workflow concepts such as automation, scalability, abstraction, provenance, portability, and
+reusability. 
+* CWL standards are developed around core principles of community and shared decision making, reuse, and zero cost for participants.
+</div>
+
 # Introduction {#introduction}
 
-*Computational workflows* are widely used in da0ta analysis, enabling innovation and decision-making for the modern society. But their growing popularity is also a cause for concern. Unless we standardize computational reuse and portability, the use of workflows may end up hampering collaboration. How can we enjoy the common benefits of computational workflows and eliminate such risks?
+*Computational workflows* are widely used in data analysis, enabling innovation and decision-making for the modern society. But their growing popularity is also a cause for concern. Unless we standardize computational reuse and portability, the use of workflows may end up hampering collaboration. How can we enjoy the common benefits of computational workflows and eliminate such risks?
 
 To answer this general question, in this work we advocate for workflow thinking as a shared method of reasoning across all domains and practitioners, introduce Common Workflow Language (CWL) as a pragmatic set of standards for describing and sharing computational workflows, and discuss the principles around which these standards have become central to a diverse community of users across multiple fields in science and engineering. This article focuses on an overview of CWL standards and the CWL project and is complemented by the technical detail available in the [CWL standards](https://w3id.org/cwl/v1.2/).
 
@@ -94,252 +104,64 @@ We thus identify an important problem in the broad, practical adoption of workfl
   width="100%" title="Excerpt from a large microbiome bioinformatics CWL workflow [[27](https://doi.org/10.1093/nar/gkz1035)]"
   caption="This part of the workflow (which is interpretable/executable on its own) has the aim to match the workflow inputs of genomic sequences to provided sequence-models, which are dispatched to four sub-workflows (e.g., `find_16S_matches`); the sub-workflows not detailed in the figure. <br>The sub-workflow outputs are then collated to identify unique sequence hits, then provided as overall workflow outputs. <br>Arrows define the connection between tasks and imply their partial ordering, depicted here as layers of tasks that may execute concurrently.  <br>Workflow steps (e.g., `mask_rRNA_and_tRNA`) execute command line tools, shown here with indicators for their different programming languages (e.g., `Py` for Python, `C` for the C language). <br>_(Diagram adapted from <https://w3id.org/cwl/view/git/7bb76f33bf40b5cd2604001cac46f967a209c47f/workflows/rna-selector.cwl>, which was originally retrieved from a corresponding CWL workflow of the EBI Metagenomics project, itself a conversion of the_ rRNASelector _[[25](https://doi.org/10.1007/s12275-011-1213-z)] program into a well structured workflow allowing for better parallelization of execution and provenance tracking.)_" >}}
 
+
+In the computational workflow depicted in [Figure 1](fig:sample_workflow), practitioners solved the problem by adopting the CWL standards. In this work, we posit that the CWL standards provide the common abstraction that can help overcome the main obstacles to sharing workflows between institutions and users. CWL achieves this by providing a declarative language that allows expressing computational workflows constructed from diverse software tools—each executed through their command-line interface, with the inputs and outputs of each tool clearly specified and with inputs possibly resulting from the execution of other tools. We also set out to introduce the CWL standards, with a threefold focus:
+
+1.  The CWL standards focus on maintaining a separation of concerns between the description and execution of tools and workflows, proposing a language that only includes operations commonly used across multiple communities of practice.
+2.  The CWL standards support workflow automation, scalability, abstraction, provenance, portability, and reusability.
+3.  To achieve these results, the CWL project takes a principled, community-first open source and open-standard approach.
+
+The CWL standards are the product of an open and free standards-making community. 
+While the CWL project began in bioinformatics, its many contributors shaped the standards to be useful in any domain that faces the problem of "many tools written in many programming languages by many parties."
+Since the ratification of the first version in 2016, the CWL standards have been used in other fields, including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS), geo-spatial analysis, [[13](http://docs.opengeospatial.org/per/20-042.html),[23](http://docs.opengeospatial.org/per/20-045.html),[32](https://docs.ogc.org/per/20-073.html)] and high-energy physics, [[4](https://cds.cern.ch/record/2315331/)] in addition to fast-growing bioinformatics fields such as metagenomics [[27](https://doi.org/10.1093/nar/gkz1035)] and cancer research [[24](#ttps://doi.org/10.1158/0008-5472.can-17-0387)]. 
+The CWL standards are featured in the IEEE 2791-2020 standard, sponsored and adopted by the U.S. FDA, [[16](https://doi.org/10.1109/IEEESTD.2020.9094416)] and the Netherlands\' National Plan for Open Science [[34](https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65)].
+A list of free and open source implementations of the CWL standards is offered in the Table. Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
+
+The separation of concerns proposed by the CWL standards enables diverse projects and can also benefit engineering and large industrial projects.  Likewise, users of Docker or other software-container technologies that distribute analysis tools can leverage just the CWL Command Line Tool standard to access a structured, work-flow-independent description of how to run their tool(s) in the container, what data must be provided to the container, expected results, and where to find them.
+
+### Background on Workflows and Standards for Workflows
+
+Workflows, and standards-based descriptions thereof, hold the potential to solve key problems in many domains of science and engineering.
+
+**Why workflows?** In many domains, workflows include diverse analysis components, written in multiple, different computer languages by both end users and third parties. Such polylingual and multi-party workflows are already common or dominant in data-intensive fields, such as bioinformatics, image analysis, and radio astronomy. We envision they could bring important benefits to many other domains.
+
+To thread data through analysis tools, domain experts such as bioinformaticians use specialized command-line interfaces [[12](https://doi.org/10.1093/gigascience/giz109),[31](https://doi.org/10.1186/2047-217X-2-15)], while experts in other domains use proprietary, customized frameworks [[2](https://doi.org/10.1145/3307681.3325400),[5](https://doi.org/10.1145/1656274.1656280)]. Workflow engines also help with efficiently managing the resources used to run scientific workloads [[7](https://doi.org/10.1007/978-1-84628-757-2_22),[10](https://doi.org/10.1016/j.future.2014.10.008)].
+
+The workflow approach helps compose an entire application of these command-line analysis tools: Developers build graphical or textual descriptions of how to run these command-line tools, and scientists and engineers connect their inputs and outputs so that the data flows through. An example of a complex workflow problem is metagenomic analysis, for which [Figure 1](#fig:sample_workflow) illustrates a subset (a *sub-workflow*).
+
+In practice, many research and engineering groups use workflows of the kind described in Figure 1.  However, as highlighted in a "Technology Toolbox" article recently published in *Nature,* [[29](https://doi.org/10.1038/d41586-019-02619-z)] these groups typically lack the ability to share and collaborate across institutions and infrastructures without costly manual translation of their workflows.
+
+Using workflow techniques, especially with digital analysis processes, has become quite popular and does not appear to be slowing down. One workflow-management system, Galaxy Publication Library, recently celebrated its [10,000th citation](https://galaxyproject.org/blog/2020-08-10k-pubs/), and more than 309 computational data-analysis workflow systems are [known to exist]((https://s.apache.org/existing-workflow-systems)).
+A process, digital or otherwise, may grow to such complexity that its authors and users have difficulties understanding its structure, scaling and managing it, and keeping track of what happened in the past. Process dependencies may be undocumented, obfuscated, or otherwise effectively invisible. Outsiders or newcomers may find even an extensively documented process difficult to understand if it lacks a common framework or vocabulary. 
+The need to run the process more frequently or with larger inputs is unlikely to be achieved by the initial entity—that is, either a script or a human—running the process. What seemed once a reasonable manual step—run this command here, paste the result there, and then call this person for permission—will become a bottleneck under the pressure of porting and reusing. Informal logs (if any) will quickly become unsuitable for helping an organization understand *what* happened, *when*, by *whom*, and to *which* data.  
+
+Workflow techniques aim to solve these problems by providing the abstraction, scaling, automation, and provenance (ASAP) features [[8](https://doi.org/10.1007/s13222-012-0100-z)]. Workflow constructs enable a clear abstraction about the *components*, the *relationships* between them, and the *inputs* and *outputs* of the components turning them into well-labeled tools with documented expectations. This abstraction enables:
+
+-   **Scaling:** Execution can be parallelized and distributed.
+-   **Automation:** The abstraction can be used by a workflow engine to track, plan, and manage task execution.
+-   **Provenance tracking:** Descriptions of tasks, executors, inputs, and outputs—with timestamps, identifiers (unique names), and other logs—can be stored in relation to each other to later answer structured queries.
+
+### Why Workflow Standards?
+
+
+Although workflows are very popular, prior to the CWL standards, all workflow systems were incompatible with each other. This means that users who do not use the CWL standards are required to express their computational workflows in a different way each time they use another workflow system, leading to local success but global _un_portability.
+
+The success of workflows is now their biggest drawback. Users are locked into a particular vendor, project, and often a specific hardware setup, hampering sharing and reuse. Even non-academics suffer from this situation, as the lack of standards, or their adoption, hinders effective collaboration on computational methods within and between companies. Likewise, this _unportability_ affects public/private partnerships and the potential for technology transfer from public researchers.  
+
+A second significant problem is that incomplete method descriptions are common when computational analysis is reported in academic research [[17](https://doi.org/10.1145/3186266)]. Reproduction, reuse, and replication [[11](https://doi.org/10.1145/2723872.2723875)] of these digital methods requires a complete description of which computer applications were used, how they were used, and how they were connected to each other. For precision and interoperability, this description should also be in an appropriate, standardized, machine-readable format.
+
+A standard for sharing and reusing workflows can provide a solution to describing portable, reusable workflows while also being workflow-engine and vendor neutral.
+
+Sharing workflow descriptions based on standards also addresses the second problem: The availability of the workflow description provides needed information when sharing, and the quality of the description provided by a structured, standards-based approach is much higher than the current approach of casual, unstructured, and almost always incomplete descriptions in scientific reports. Moreover, the operational parts of the description can be automated by the workflow-management system rather than by domain experts.
+
+While (data) standards are commonly adopted and have become expected for funded projects in knowledge representation fields, the same cannot yet be said about workflows and workflow engines.
+
+The CWL standards define an *explicit language*, both in syntax and in its data and execution model. Its textual syntax, derived from YAML,^[d](#FND)^ does not restrict the amount of detail. For example, [Figure 2a](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg) depicts a simple example with sparse detail, and [Figure2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg) depicts the same example but with the execution augmented with more details. Each input to a tool has a name and a type—for instance, File (see [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg), Item 1). Tool-description authors are encouraged to include documentation and labels for all components (as shown in [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg)), to enable the automatic generation of helpful visual depictions and even graphical user interfaces (GUIs) for any given CWL description. Metadata about the tool-description authors encourages attribution of their efforts. As shown in [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg), Item 3, these tool descriptions can contain well-defined hints or mandatory requirements, such as which software container to use or the amount of required compute resources: memory, number of CPU cores, amount of disk space, and/or the maximum time or deadline to complete the step or entire workflow.
+
 <!-- mark -->
 
-In the computational workflow depicted in <a href="#fig:sample_workflow">Figure 1</a>,
-practitioners solved the problem by adopting the CWL standards. We posit
-in this work that the CWL standards can help solve the main problems of
-sharing workflows between institutions and users. We also set out to
-introduce the CWL standards, with a tri-fold focus: 
 
-1. The CWL standards focuses on maintaining a separation of concerns between the
-description and execution of tools and workflows, proposing a language
-that includes only operations commonly used across multiple communities
-of practice.
-2. The CWL standards support workflow automation,
-scalability, abstraction, provenance, portability, and reusability.
-3. The CWL project takes a principled, community-first open-source and
-open-standard approach which enables this result.
 
-The CWL standards are the product of an open and free standards-making
-community. While the CWL project began in the bioinformatics domainthe
-many contributors to the CWL project shaped the standards so that it
-could be useful anywhere that experiences the problem of “many tools
-written in many programming languages by many parties”. Since the
-ratification of the first version in 2016, the CWL standards have been
-used in other fields including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS),
-geo-spatial analysis [2–4], high energy physics [5], in addition to
-fast-growing bioinformatics fields like genomics [6] and cancer
-research [7]. . The flexibility of the CWL standards enabled, for
-example, rapid collaboration on and prototyping of a COVID-19 public
-database and analysis resource [8].
-
-The separation of concerns proposed by the CWL standards enable diverse
-projects, and can also benefit engineering and large industrial
-projects. Likewise, users of Docker (or other software container
-technologies) that distribute analysis tools can use just the CWL
-Command Line Tool standard for providing a structured
-workflow-independent description of how to run their tool(s) in the
-container, what data is required to be provided to the container, and
-what results to expect and where to find them in the container.
-
-<div class="insight" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: smaller; max-width: 25em; min-width: 20em; background: #eee; color: #111">
-
-**Key Insights**
-
-Toward computational reuse and portability of polylingual, multi-party
-workflows, the CWL project makes the following contributions:
-
-1.  CWL is a set of standards for describing and sharing computational
-    workflows.
-
-2.  The CWL standards are used daily in many science and engineering
-    domains, including by multi-stakeholder teams.
-
-3.  The CWL standards use a *declarative syntax*, facilitating
-    polylingual workflow tasks. By being explicit about the *runtime
-    environment* and any use of *software containers*, the CWL standards
-    enable *portability* and *reuse*. (See
-    Section <a href="#sec:features">3</a>.)
-
-4.  The CWL standards provide a *separation of concerns* between
-    workflow authors and workflow platforms. (More in
-    Section <a href="#sec:open:ecosystem">4.3</a>.)
-
-5.  The CWL standards support critical workflow concepts like
-    automation, scalability, abstraction, provenance, portability, and
-    reusability. (Details in
-    Section <a href="#sec:why">[sec:why]</a>).
-
-6.  The CWL standards are developed around core principles of community
-    and shared decision-making, re-use, and zero cost for participants.
-    (Section <a href="#sec:open">4</a>
-    details the open standards.)
-
-7.  The CWL standards are provided as freely available open standards,
-    supported by a diverse community in collaboration with industry, and
-    is a Free/Open Source Software ecosystem (see Sidebar B,
-    Section <a href="#sec:sidebar:b">4.2</a>).
-
-</div>
-
-# Background on Workflows and Standards for Workflows {#sec:why}
-
-Workflows, and standards-based descriptions thereof, hold the potential
-to solve key problems in many domains of science and engineering. This
-section explains why.
-
-## Why Workflows?
-
-In many domains, workflows include diverse analysis components, written
-in multiple (different) computer languages, by both end-users and
-third-parties. Such *polylingual* and multi-party workflows are already
-common or dominant in data-intensive fields like bioinformatics, image
-analysis, and radio astronomy; we envision they could bring important
-benefits to many other domains.
-
-To thread data through analysis tools, domain experts such as
-bioinformaticians use specialized command-line interfaces [9–10] and
-other domains use their own customized frameworks [11–12]. Workflow
-engines also help with efficient management of the resources used to run
-scientific workloads [13–14].
-
-The workflow approach helps compose an entire application of these
-command-line analysis tools: developers build graphical or textual
-descriptions of how to run these command-line tools, and scientists and
-engineers connect their inputs and outputs so that the data flows
-through. An example of a complex workflow problem is metagenomic
-analysis, for which
-<a href="#fig:sample_workflow">Figure 1</a>
-illustrates a subset (a *sub-workflow*).
-
-In practice, many research and engineering groups use workflows of the kind described in Figure 1.
-However, as highlighted in a recently published “Technology Toolbox”
-article [15] published in the journal Nature, these groups typically
-lack the ability to share and collaborate across institutions and
-infrastructures without costly manual translation of their workflows.
-
-Using workflow techniques, especially with digital analysis processes, 
-has become quite popular and does not look to be slowing down: one
-recently celebrated its [10,000th citation](https://galaxyproject.org/blog/2020-08-10k-pubs/); and 
-[over 309 computational data analysis workflow systems](https://s.apache.org/existing-workflow-systems) are known.
-
-A process, digital or otherwise, may grow to such complexity that the
-authors and users of that process have difficulties in understanding its
-structure, scaling the process, managing the running of the process, and
-keeping track of what happened in previous enactments of the process.
-Process dependencies may be undocumented, obfuscated, or otherwise
-effectively invisible; even an extensively documented process may be
-difficult to understand by outsiders or newcomers if a common framework
-or vocabulary is lacking. The need to run the process more frequently or
-with larger inputs is unlikely to be achieved by the initial entity
-(i.e., either script or person) running the process. What seemed once a
-reasonable manual step (*run this command here and then paste the result
-there; then call this person for permission*) will, under the pressure
-of porting and reusing, become a bottleneck. Informal logs (if any) will
-quickly become unsuitable for answering an organization’s need to
-understand *what* happened, *when*, by *whom*, and to *which* data.
-
-Workflow techniques aim to solve these problems by providing the
-Abstraction, Scaling, Automation, and Provenance (*A.S.A.P.*)
-features [16]. Workflow constructs enable a clear abstraction about
-the *components*, the *relationships* between components, and the
-*inputs* and *outputs* of the components turning them into well-labeled
-tools with documented expectations. This abstraction enables *scaling*
-(execution can be parallelized and distributed), *automation* (the
-abstraction can be used by a workflow engine to track, plan, and manage
-execution of tasks), and *provenance* tracking (descriptions of tasks,
-executors, inputs, outputs; with timestamps, identifiers , and other
-logs, can be stored in relation to each other to later answer structured
-queries).
-
-## Why Workflow Standards?
-
-Although workflows are very popular, prior to the CWL standards every
-workflow system was incompatible with every other. This means that those
-users not using the CWL standards are required to express their
-computational workflows in a different way every time they have to use
-another workflow system leading to local success, but global
-*un*portability.
-
-The success of workflows is now their biggest drawback: users are locked
-into a particular vendor, project, and often a particular hardware
-setup. This hampers sharing and re-use. Even non-academics suffer from
-this situation, as the lack of standards (or the lack of their adoption)
-hinders effective collaboration on computational methods within and
-between companies. Likewise, this *unportability* affects public-private
-partnerships and the potential for technology transfer from public
-researchers.
-
-A second significant problem is that incomplete method descriptions are
-common when computational analysis is reported in academic
-research [17]. Reproduction, re-use, and replication [18] of these
-digital methods requires a complete description of what computer
-applications were used, how exactly they were used, and how they were
-connected to each other. For precision and interoperability, this
-description should also be in an appropriate standardized
-machine-readable format.
-
-A standard for sharing and reusing workflows can provide a solution to
-describing portable, re-usable workflows while also being
-workflow-engine and vendor-neutral.
-
-Sharing *workflow descriptions based on standards* also addresses the
-second problem: the availability of the workflow description provides
-needed information when sharing; and the quality of the description
-provided by a structured, standards-based approach is much higher than
-the current approach of casual, unstructured, and almost always
-incomplete descriptions in scientific reports. Moreover, the operational
-parts of the description can be provided automated by the workflow
-management system, rather than by domain experts.
-
-<div class="sidebar">
-## Sidebar A: Monolingual and Polylingual workflow systems
-
-Workflows techniques can be implemented in many ways, i.e., with varying
-degrees of formalism, which tends to correlate with execution
-flexibility and features. Typically, whereas the most *informal
-techniques* require that all processing components are written in the
-same programming language or are at least callable from the same
-programming language, the *formal workflow techniques* tend to allow
-components to be developed in multiple programming languages.
-
-Among the informal techniques, the *do-it-yourself approach* uses from a
-particular programming language its built-in capabilities. For example,
-Python provides a *threading* library, and the Java-based Apache
-Hadoop [19] provides MapReduce capabilities. To gain more flexibility
-when working with a particular programming language, *general
-third-party libraries*, such as [ipyparallel](https://pypi.org/project/ipyparallel/), can enable remote or
-distributed execution without having to re-write one’s code.
-
-A more explicit workflow structure can be achieved by using a *workflow
-library* focusing on a specific programming language. For example, in
-Parsl [11], the workflow constructs (“this is a unit of processing”,
-“here are the dependencies between the units”) are made explicit and
-added by the developer to a Python script, to upgrade it to a scalable
-workflow. (While we list Parsl here as an example of a **monolingual**
-workflow system, it also contains explicit support for executing
-external command-line tools.)
-
-Two approaches can accommodate **polylingual** workflows where the
-components are written in more than one programming language, or where
-the components come from third-parties and the user does not want to or
-cannot modify them: use of per-language *add-in libraries* or the use of
-the *Portable Operating System Interface command-line interface (POSIX
-CLI)* [20]. The use of per-language add-in libraries entails either
-explicit function calls 
-(e.g., using [ctypes](https://docs.python.org/3/library/ctypes.html) 
-in Python to call a C library) or the addition of annotations to the user’s functions, and
-requires mapping/restricting to a common cross-language data model.
-
-Essentially all programming languages support the creation of **POSIX
-CLIs** are familiar to many Linux and macOS users; scripts or binaries
-which can be invoked on the shell with a set of arguments, reading and
-writing files, and executed in a separate process. Choosing the POSIX
-command-line interface as the point of coordination means the connection
-between components is done by an array of string *arguments*
-representing program options (including paths to data files) along with
-a string-based *environment variables* (key-value pairs). Using the
-command-line as a coordination interface has the advantage of not
-needing additional implementation in every programming language, but has
-the disadvantages of process start-up time and a very simple data model.
-(As a *polylingual* workflow standard, CWL uses the POSIX CLI data
-model.)
-
-{{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
-  width="100%" title=".."
-  caption=".." >}}
-</div>
 
 # Features of the Common Workflow Language standards
 
@@ -632,6 +454,63 @@ enabled the developers and users of production implementations of the
 CWL standards to confirm their correctness.
 
 
+<div class="sidebar">
+## Sidebar A: Monolingual and Polylingual workflow systems
+
+Workflows techniques can be implemented in many ways, i.e., with varying
+degrees of formalism, which tends to correlate with execution
+flexibility and features. Typically, whereas the most *informal
+techniques* require that all processing components are written in the
+same programming language or are at least callable from the same
+programming language, the *formal workflow techniques* tend to allow
+components to be developed in multiple programming languages.
+
+Among the informal techniques, the *do-it-yourself approach* uses from a
+particular programming language its built-in capabilities. For example,
+Python provides a *threading* library, and the Java-based Apache
+Hadoop [19] provides MapReduce capabilities. To gain more flexibility
+when working with a particular programming language, *general
+third-party libraries*, such as [ipyparallel](https://pypi.org/project/ipyparallel/), can enable remote or
+distributed execution without having to re-write one’s code.
+
+A more explicit workflow structure can be achieved by using a *workflow
+library* focusing on a specific programming language. For example, in
+Parsl [11], the workflow constructs (“this is a unit of processing”,
+“here are the dependencies between the units”) are made explicit and
+added by the developer to a Python script, to upgrade it to a scalable
+workflow. (While we list Parsl here as an example of a **monolingual**
+workflow system, it also contains explicit support for executing
+external command-line tools.)
+
+Two approaches can accommodate **polylingual** workflows where the
+components are written in more than one programming language, or where
+the components come from third-parties and the user does not want to or
+cannot modify them: use of per-language *add-in libraries* or the use of
+the *Portable Operating System Interface command-line interface (POSIX
+CLI)* [20]. The use of per-language add-in libraries entails either
+explicit function calls 
+(e.g., using [ctypes](https://docs.python.org/3/library/ctypes.html) 
+in Python to call a C library) or the addition of annotations to the user’s functions, and
+requires mapping/restricting to a common cross-language data model.
+
+Essentially all programming languages support the creation of **POSIX
+CLIs** are familiar to many Linux and macOS users; scripts or binaries
+which can be invoked on the shell with a set of arguments, reading and
+writing files, and executed in a separate process. Choosing the POSIX
+command-line interface as the point of coordination means the connection
+between components is done by an array of string *arguments*
+representing program options (including paths to data files) along with
+a string-based *environment variables* (key-value pairs). Using the
+command-line as a coordination interface has the advantage of not
+needing additional implementation in every programming language, but has
+the disadvantages of process start-up time and a very simple data model.
+(As a *polylingual* workflow standard, CWL uses the POSIX CLI data
+model.)
+
+{{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
+  width="100%" title=".."
+  caption=".." >}}
+</div>
 
 ## Sidebar B: The CWL project and Free/Open Source Software (F/OSS)
 
