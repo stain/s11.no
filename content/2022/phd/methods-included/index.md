@@ -51,7 +51,9 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 - Re-inserted hyperlinks instead of footnotes
 - References modified to [house style](/2021/house-rules/citation-style/)
 - Typographical improvements for Web rendering
-- Spelling fixes
+- Spelling fixes (e.g. missing --)
+- Reinstated missing text in polylingual
+- Re-embedd acknowledgements in [online supplementary material](<https://dl.acm.org/doi/10.1145/3486897)
 
 # Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language
 
@@ -107,7 +109,7 @@ We thus identify an important problem in the broad, practical adoption of workfl
 
 In the computational workflow depicted in [Figure 1](fig:sample_workflow), practitioners solved the problem by adopting the CWL standards. In this work, we posit that the CWL standards provide the common abstraction that can help overcome the main obstacles to sharing workflows between institutions and users. CWL achieves this by providing a declarative language that allows expressing computational workflows constructed from diverse software tools—each executed through their command-line interface, with the inputs and outputs of each tool clearly specified and with inputs possibly resulting from the execution of other tools. We also set out to introduce the CWL standards, with a threefold focus:
 
-1.  The CWL standards focus on maintaining a separation of concerns between the description and execution of tools and workflows, proposing a language that only includes operations commonly used across multiple communities of practice.
+1.  The CWL standards focus on maintaining a _separation of concerns_ between the description and execution of tools and workflows, proposing a language that only includes operations commonly used across multiple communities of practice.
 2.  The CWL standards support workflow automation, scalability, abstraction, provenance, portability, and reusability.
 3.  To achieve these results, the CWL project takes a principled, community-first open source and open-standard approach.
 
@@ -115,13 +117,15 @@ The CWL standards are the product of an open and free standards-making community
 While the CWL project began in bioinformatics, its many contributors shaped the standards to be useful in any domain that faces the problem of “many tools written in many programming languages by many parties.”
 Since the ratification of the first version in 2016, the CWL standards have been used in other fields, including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS), geo-spatial analysis, [[13](http://docs.opengeospatial.org/per/20-042.html),[23](http://docs.opengeospatial.org/per/20-045.html),[32](https://docs.ogc.org/per/20-073.html)] and high-energy physics, [[4](https://cds.cern.ch/record/2315331/)] in addition to fast-growing bioinformatics fields such as metagenomics [[27](https://doi.org/10.1093/nar/gkz1035)] and cancer research [[24](https://doi.org/10.1158/0008-5472.can-17-0387)]. 
 The CWL standards are featured in the IEEE 2791-2020 standard, sponsored and adopted by the U.S. FDA, [[16](https://doi.org/10.1109/IEEESTD.2020.9094416)] and the Netherlands' National Plan for Open Science [[34](https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65)].
-A list of free and open source implementations of the CWL standards is offered in the [Table](#runners). Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
+A list of free and open source implementations of the CWL standards is offered in the [Table](#runners). 
+Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
 
 The separation of concerns proposed by the CWL standards enables diverse projects and can also benefit engineering and large industrial projects.  Likewise, users of Docker or other software-container technologies that distribute analysis tools can leverage just the CWL Command Line Tool standard to access a structured, work-flow-independent description of how to run their tool(s) in the container, what data must be provided to the container, expected results, and where to find them.
 
+
 #### Selected F/OSS workflow runners and platforms that implement the CWL standards {#runners}
 
-| Implementation                                            | Platform support                          |
+| Implementation [^snapshot]                                            | Platform support                          |
 |:-----|:---------------------------------------------------------------------|
 | [cwltool](https://pypi.org/project/cwltool)               | Linux, macOS, Windows (via WSL 2) local execution only |
 | [Arvados](https://arvados.org)                            | in the cloud on AWS, Azure and GCP, on premise & hybrid clusters using Slurm or LSF  |
@@ -129,6 +133,8 @@ The separation of concerns proposed by the CWL standards enables diverse project
 | [CWL-Airflow](https://pypi.org/project/cwl-airflow) [[21](https://doi.org/10.1093/gigascience/giz084)]  | Local execution on Linux, OS X or via dedicated Airflow enabled cluster. |
 | [StreamFlow](https://streamflow.di.unito.it/) [[6](https://doi.org/10.1109/TETC.2020.3019202)]        | Kubernetes, HPC with Singularity (PBS, Slurm), Occam, multi-node SSH, local-only (Docker, Singularity) |
 | [REANA](https://docs.reana.io/)                           | Kubernetes |
+
+[^snapshot]: Snapshot of <https://www.commonwl.org/implementations/>
 
 
 ### Background on Workflows and Standards for Workflows
@@ -149,9 +155,9 @@ The need to run the process more frequently or with larger inputs is unlikely to
 
 Workflow techniques aim to solve these problems by providing the abstraction, scaling, automation, and provenance (ASAP) features [[8](https://doi.org/10.1007/s13222-012-0100-z)]. Workflow constructs enable a clear abstraction about the *components*, the *relationships* between them, and the *inputs* and *outputs* of the components turning them into well-labeled tools with documented expectations. This abstraction enables:
 
--   **Scaling:** Execution can be parallelized and distributed.
--   **Automation:** The abstraction can be used by a workflow engine to track, plan, and manage task execution.
--   **Provenance tracking:** Descriptions of tasks, executors, inputs, and outputs—with timestamps, identifiers (unique names), and other logs—can be stored in relation to each other to later answer structured queries.
+- **Scaling:** Execution can be parallelized and distributed.
+- **Automation:** The abstraction can be used by a workflow engine to track, plan, and manage task execution.
+- **Provenance tracking:** Descriptions of tasks, executors, inputs, and outputs—with timestamps, identifiers (unique names), and other logs—can be stored in relation to each other to later answer structured queries.
 
 ### Why Workflow Standards?
 
@@ -216,7 +222,7 @@ In contrast to hard-coded approaches that rely on implicit file paths specific t
 
 CWL workflow descriptions are also *future-proof*. Forward compatibility of CWL documents is guaranteed, as each CWL document declares which version of the standards it was written for, and minor versions do not alter the required features of the major version. A [standalone upgrader](https://pypi.org/project/cwl-upgrader/) can automatically upgrade CWL documents from one version to the next, and many CWL-aware platforms will internally update user-submitted documents at runtime.
 
-**Execution of workflows in CWL format.** CWL is a set of standards, not a particular software product to install, purchase, or rent. The CWL standards need to be implemented to be useful; a list of some implementations of the CWL standards is in the [Table](#runners).  Workflow/tool runners that claim compliance with the CWL standards are allowed significant flexibility in how and where they execute a user\'s CWL documents as long as they fulfill the requirements written in those documents. For example, they are allowed (and encouraged) to distribute execution of a workflow across all available computers that can fulfill user-specified resource requirements. Aspects of execution not defined by the CWL standards include Web APIs for workflow execution and real-time monitoring.
+**Execution of workflows in CWL format.** CWL is a set of standards, not a particular software product to install, purchase, or rent. The CWL standards need to be implemented to be useful; a list of some implementations of the CWL standards is in the [Table](#runners).  Workflow/tool runners that claim compliance with the CWL standards are allowed significant flexibility in how and where they execute a user's CWL documents as long as they fulfill the requirements written in those documents. For example, they are allowed (and encouraged) to distribute execution of a workflow across all available computers that can fulfill user-specified resource requirements. Aspects of execution not defined by the CWL standards include Web APIs for workflow execution and real-time monitoring.
 
 For example, details about when a step should be considered ready for execution are available in [Section 4 of the CWL Workflow Description standard](https://w3id.org/cwl/v1.2/Workflow.html#Workflow), but once all the inputs are available, the exact timing is up to the workflow engine itself.
 
@@ -246,17 +252,22 @@ The CWL community has developed the following optimizations without requiring th
 
 ### Open Source, Open Standards, Open Community
 
-<div class="foss" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: bigger; max-width: 20em; min-width: 15em; background: #eee; color: #111">
+<div id="foss" class="foss" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: bigger; max-width: 20em; min-width: 15em; background: #eee; color: #111">
 
-*Free and Open Source implementations of the CWL standards.* As of 2021, the CWL standards have gained much traction and are widely supported in practice. In addition to the implementations in the Table, Galaxy^[1](#R1)^ and Pegasus^[10](#R10)^ also have in-development support for the CWL standards.
+*Free and Open Source implementations of the CWL standards.* As of 2021, the CWL standards have gained much traction and are widely supported in practice. In addition to the implementations in the Table, [Galaxy](https://github.com/common-workflow-language/galaxy/pull/47) [[1](https://doi.org/10.1093/nar/gky379)] and [Pegasus](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html) [[10](https://doi.org/10.1016/j.future.2014.10.008)] also have in-development support for the CWL standards.
 
 Wide adoption benefits from our principles: The CWL standards include conformance tests, but the CWL community does not yet test or certify implementations of the standards or specific technology stacks. Instead, the authors and service providers of workflow runners and workflow-management systems self-certify support for the CWL standards, based on a particular technology configuration they deploy and maintain. 
 
-*F/OSS tools and libraries for working with CWL-format documents.*^[a](#R2-A)^ CWL plug-ins exist for Atom, Vim, Emacs, Visual Studio Code, IntelliJ, gedit, and any editor that supports the Language Server Protocol (LSP)^[b](#R2-B)^ standard. There are tools to generate CWL syntax from Python (via argparse/click or via functions), ACD,^[c](#R2-C)^ CTD,^[d](#R2-D)^ and annotations in IPython Jupyter Notebooks. Libraries to generate and/or read CWL documents exist in many languages: Python, Java, R, Go, Scala, Javascript, Typescript, and C++.
+*F/OSS tools and libraries for working with CWL-format documents*[^tools]. CWL plug-ins exist for Atom, Vim, Emacs, Visual Studio Code, IntelliJ, gedit, and any editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) (LSP) standard. There are tools to generate CWL syntax from Python (via argparse/click or via functions), ACD[^ajax], CTD[^ctd] and annotations in IPython Jupyter Notebooks. Libraries to generate and/or read CWL documents exist in many languages: Python, Java, R, Go, Scala, Javascript, Typescript, and C++.
 </div>
 
-Given the numerous and diverse set of potential users, implementers, and other stakeholders, we posit that a project like CWL requires the combined development of code, standards, and community. Indeed, these requirements were part of the foundational design principles for CWL; in the long run, these principles have fostered free and open source software (see [sidebar](#foss) "The CWL Project and Free/Open Source Software") and a vibrant and active ecosystem.
+[^tools]: Summarized from <https://www.commonwl.org/tools/>.
 
+[^ajax]: "Ajax Command Definitions" as produced by the [EMBOSS tools](http://emboss.source-forge.net/developers/acd/).
+
+[^ctd]: XML-based [Common Tool Descriptors](https://github.com/WorkflowConversion/CTDSchema) [[9](https://doi.org/10.1186/s12859-016-0978-9)] originating in the OpenMS project.
+
+Given the numerous and diverse set of potential users, implementers, and other stakeholders, we posit that a project like CWL requires the combined development of code, standards, and community. Indeed, these requirements were part of the foundational design principles for CWL; in the long run, these principles have fostered free and open source software (see [sidebar](#foss) "The CWL Project and Free/Open Source Software") and a vibrant and active ecosystem.
 
 
 **The CWL principles.** The CWL project is based on a set of five principles:
@@ -268,200 +279,90 @@ Given the numerous and diverse set of potential users, implementers, and other s
 -   **Principle 4:** The project must not favor any one company or group over another, but neither should it try to be all things to all people. The community decides.
 -   **Principle 5:** Concepts and ideas must be tested frequently.  Tested and functional code is the beginning of evaluating a proposal, not the end.
 
-Over time, CWL project members learned that this approach is a superset of the OpenStand Principles, a joint “Modern Paradigm for Standards” promoted by the IAB, IEEE, IETF, Internet Society, and W3C. The CWL project additions to the OpenStand Principles are 1) to keep participation free of cost, and 2) the explicit choice of Apache License 2.0 for all its text, conformance tests, and reference implementations.
+Over time, CWL project members learned that this approach is a superset of the [OpenStand Principles](https://open-stand.org/about-us/principles/), a joint “Modern Paradigm for Standards” promoted by the IAB, IEEE, IETF, Internet Society, and W3C. The CWL project additions to the OpenStand Principles are 1) to keep participation free of cost, and 2) the explicit choice of Apache License 2.0 for all its text, conformance tests, and reference implementations.
 
-<!-- mark -->
+*Necessary and sufficient.* All these principles have proven to be essential for the CWL project. For example, Principles 2 and 3 have enabled many implementations of the CWL standards, several of which reuse different parts of the reference implementation of the CWL standards (*reference runner*). Being community-first, per Principle 1, has led participants to create several projects that are outside the CWL standards; the most important contributions have made their way back into the project (Principle 4).
 
-
-
-# Open-Source, Open Standards, Open Community
-
-Given the numerous and diverse set of potential users, implementers, and
-other stakeholders, we posit that a project like CWL requires the
-combined development of code, standards, and community. Indeed, these
-requirements were part of the foundational design principles for
-CWL (Section <a href="#sec:open:principles" data-reference-type="ref" data-reference="sec:open:principles">4.1</a>);
-in the long run, these have fostered free and open source
-software (Sidebar B, in
-Section <a href="#sec:sidebar:b" data-reference-type="ref" data-reference="sec:sidebar:b">4.2</a>),
-and a vibrant and active
-ecosystem (Section <a href="#sec:open:ecosystem" data-reference-type="ref" data-reference="sec:open:ecosystem">4.3</a>).
-
-## The CWL Principles
+As part of Principle 5, contributors to the CWL project have developed a suite of conformance tests for each version of the CWL standards. These publicly available tests were critical to the CWL project's success: They helped assess the reference implementation of the CWL standards, they provided early adopters with concrete examples, and they enabled developers and users of production implementations of the CWL standards to confirm their accuracy.
 
 
-not the end.
+**The CWL ecosystem.** Beyond the ratified initial and updated CWL standards released over the last six years, the CWL community has developed many *tools, software libraries, and connected specifications*, and has shared CWL descriptions for popular tools. 
+For example, there are software development kits (SDKs) for both [Python](https://pypi.org/project/cwl-utils/) and [Java](https://github.com/common-workflow-lab/cwljava) that are generated automatically from the CWL schema. This allows programmers to load, modify, and save CWL documents using an object-oriented model that directly corresponds to the standards themselves. CWL SDKs for other languages are possible by extending the code generation routines[^codegen]. (See [Sidebar](#foss): The CWL Project and Free/Open Source Software for practical details.)
 
-In time, the CWL project-members learned that this approach is a
-superset of the OpenStand Principles[16], a joint “Modern Paradigm for
-Standards” promoted by the IAB, IEEE, IETF, Internet Society, and W3C.
-The CWL project additions to the OpenStand Principles are: (1) to keep
-participation free of cost, and (2) the explicit choice of the Apache
-2.0 license for all its text, conformance tests, and reference
-implementations.
+[^codegen]: See the `codegen*.py` files in <https://pypi.org/project/schema-salad/7.1.20210316164414/>
 
-**Necessary and sufficient**: All these principles have proven to be
-essential for the CWL project. For example, the free cost and open
-source license (Principles 2 and 3) has enabled many implementations of
-the CWL standards, several of which re-use different parts of the
-reference . Being community-first (Principle 1) has led to several
-projects from participants that are outside the CWL standards
-themselves; the most important contributions have made their way back
-into the project (Principle 4).
-
-As part of Principle 5, contributors to the CWL project have developed a
-suite of conformance tests for each version of the CWL standards. These
-publicly available tests were critical to the CWL project’s success:
-they helped the reference implementation of the CWL standards
-themselves; they provided concrete examples to early adopters; and they
-enabled the developers and users of production implementations of the
-CWL standards to confirm their correctness.
+The CWL standards offer strong support for the acute *need to reuse* (and, correspondingly, *to share*) information on workflow execution as well as on authoring and provenance.
+The [*CWLProv*](https://w3id.org/cwl/prov/) prototype was created to show how existing standards [[3](https://doi.org/10.1016/j.websem.2015.01.003),[22](https://www.rfc-editor.org/info/rfc8493),[26](https://doi.org/10.1145/2452376.2452478)] can be combined to represent the provenance of a specific execution of a CWL workflow [[20](https://doi.org/10.1093/gigascience/giz095)]. 
+Although, to date, CWLProv has only been implemented in the CWL reference runner, interest in further development and implementation is high.
 
 
-<div class="sidebar">
-## Sidebar A: Monolingual and Polylingual workflow systems
+<div id="mono-poly-lingual" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: bigger; max-width: 20em; min-width: 15em; background: #eee; color: #111">
 
-Workflows techniques can be implemented in many ways, i.e., with varying
-degrees of formalism, which tends to correlate with execution
-flexibility and features. Typically, whereas the most *informal
-techniques* require that all processing components are written in the
-same programming language or are at least callable from the same
-programming language, the *formal workflow techniques* tend to allow
-components to be developed in multiple programming languages.
+### Sidebar: Monolingual and Polylingual Workflow Systems
 
-Among the informal techniques, the *do-it-yourself approach* uses from a
-particular programming language its built-in capabilities. For example,
-Python provides a *threading* library, and the Java-based Apache
-Hadoop [19] provides MapReduce capabilities. To gain more flexibility
-when working with a particular programming language, *general
-third-party libraries*, such as [ipyparallel](https://pypi.org/project/ipyparallel/), can enable remote or
-distributed execution without having to re-write one’s code.
+Techniques for workflows can be implemented in many waysthat is, with varying degrees of formalismwhich tends to correlate with execution flexibility and features. Whereas the most *informal techniques* typically require that all processing components are written in or are at least callable from the same programming language, *formal workflow techniques* tend to allow components to be developed in multiple programming languages.
 
-A more explicit workflow structure can be achieved by using a *workflow
-library* focusing on a specific programming language. For example, in
-Parsl [11], the workflow constructs (“this is a unit of processing”,
-“here are the dependencies between the units”) are made explicit and
-added by the developer to a Python script, to upgrade it to a scalable
-workflow. (While we list Parsl here as an example of a **monolingual**
-workflow system, it also contains explicit support for executing
-external command-line tools.)
+Among the informal techniques, the *do-it-yourself approach* uses built-in capabilities from a particular programming language. For example, Python provides a `threading` library, and the Java-based Apache Hadoop [[33](#https://doi.org/10.1186/1471-2105-11-S12-S1)] provides MapReduce capabilities. To gain flexibility when working with a particular programming  language, general third-party libraries, such as _ipyparallel_[^ipyparallel] can enable remote or distributed execution without having to rewrite one's code.
 
-Two approaches can accommodate **polylingual** workflows where the
-components are written in more than one programming language, or where
-the components come from third-parties and the user does not want to or
-cannot modify them: use of per-language *add-in libraries* or the use of
-the *Portable Operating System Interface command-line interface (POSIX
-CLI)* [20]. The use of per-language add-in libraries entails either
-explicit function calls 
-(e.g., using [ctypes](https://docs.python.org/3/library/ctypes.html) 
-in Python to call a C library) or the addition of annotations to the user’s functions, and
-requires mapping/restricting to a common cross-language data model.
+[^ipyparallel]: [IPython Parallel]([ipyparallel](https://pypi.org/project/ipyparallel/)) (ipyparallel) is a Python package and collection of CLI scripts for controlling clusters of IPython processes,
+built on the Jupyter protocol.
 
-Essentially all programming languages support the creation of **POSIX
-CLIs** are familiar to many Linux and macOS users; scripts or binaries
-which can be invoked on the shell with a set of arguments, reading and
-writing files, and executed in a separate process. Choosing the POSIX
-command-line interface as the point of coordination means the connection
-between components is done by an array of string *arguments*
-representing program options (including paths to data files) along with
-a string-based *environment variables* (key-value pairs). Using the
-command-line as a coordination interface has the advantage of not
-needing additional implementation in every programming language, but has
-the disadvantages of process start-up time and a very simple data model.
-(As a *polylingual* workflow standard, CWL uses the POSIX CLI data
-model.)
+A more explicit workflow structure can be achieved by using a *workflow library* focusing on a specific programming language. For example, in Parsl [[2](https://doi.org/10.1145/3307681.3325400)], the workflow constructs (“this is a unit of processing” or “here are the dependencies between the units”) are made explicit and added by the developer to a Python script, to upgrade it to a scalable workflow. (While we list Parsl as an example of a monolingual workflow system, it also contains explicit support for executing external command-line tools.)
 
+
+
+Two approaches can accommodate **polylingual** workflows where the components are written in more than one programming language, or where the components come from third-parties and the user does not want to or cannot modify them: use of per-language *add-in libraries* or the use of the *Portable Operating System Interface command-line interface (POSIX CLI)* [[30](https://pubs.opengroup.org/onlinepubs/9699919799.2008edition/)] can accommodate polylingual workflows, where components are written in more than one programming language or where components come from third parties and the user does not want to or cannot modify them. Using per-language add-in libraries entails either explicit
+function calls (for example, using Python *ctypes* to call a C library[^ctypes]) or the addition of annotations to the user's functions; this requires mapping/restricting to a common, cross-language data model.
+
+[^ctypes]: [ctypes](https://docs.python.org/3/library/ctypes.html) is a foreign function library for Python.
+
+Essentially all programming languages support the creation of **POSIX CLIs**, which are familiar to many Linux and macOS users as scripts or binaries that can be invoked on the shell with a set of arguments, reading and writing files, and executed in a separate process. Choosing the POSIX command-line interface as the coordination point means the connection between components is performed by an array of string *arguments* representing program options (including paths to data files) along with string-based *environment variables* (key-value pairs). Using the command line as a coordination interface has the advantage of not needing additional implementation in every programming language but is challenged by process start-up time and a very simple data model. (As a polylingual workflow standard, CWL uses the POSIX CLI data model.)
 </div>
 
-## Sidebar B: The CWL project and Free/Open Source Software (F/OSS)
 
-### Free and Open Source implementations of the CWL standards
+### Conclusion
 
-[17]
+The problem of standardizing computational reuse is only increasing in prominence and impact. Addressing this problem, various domains in science, engineering, and commerce have already started migrating to workflows, but efforts focusing on the portability and even definition of workflows remain scattered. In this work, we raise awareness to this problem and propose a community-driven solution.
 
-By 2021, the CWL standards have gained much traction and are currently
-widely supported in practice. In addition to the implementations in
-Table
-<a href="#tab:runners" data-reference-type="ref" data-reference="tab:runners">1</a>,
-Galaxy [24][18] and Pegasus [13][19] have in-development support for
-the CWL standards as well.
-
-Wide adoption benefits from our principles: The CWL standards include
-conformance tests, but the CWL community does not yet test or certify
-implementations of the CWL standards, or specific technology stacks.
-Instead, the authors and service provides of workflow runners and
-workflow management systems self-certify support for the CWL standards,
-based on a particular technology configuration they deploy and maintain.
-
-<div id="tab:runners">
+The CWL is a family of standards for the description of command-line tools and of the workflows made from these tools. It includes many features developed in collaboration with the community: support for software containers, resource requirements, workflow-level conditional branching, and more. Built on a foundation of five guiding principles, the CWL project delivers open standards, open source code, and an open community.
 
 
-</div>
+> *By design, the CWL standards do not impose any technical limitations on the size of files processed or to the number of tasks run in parallel.*
 
-### F/OSS tools and libraries for working with CWL format documents
+For the past six years, the CWL community has grown organically.  Organizations looking to write, use, or fund data-analysis workflows based upon command-line tools should adopt or even require the CWL standards, because they offer a common yet reduced set of capabilities that are both used in practice and implemented in many popular workflow systems. There are other ways CWL offers value: It is supported by a large-scale community, diverse fields have already adopted it, and its adoption is rapidly growing. Specifically:
 
-[20]<span id="sec:sidebar:b:workwith"
-label="sec:sidebar:b:workwith">[sec:sidebar:b:workwith]</span>
+1.  With a reduced set of capabilities, the CWL standards limit the complexity encountered by new users when they first start and by operators during implementation. Feedback from the community indicates these are appreciated.
+2.  CWL's use of declarative syntax allows users to specify workflows even if they do not know exactly where the workflows would (later) run.
+3.  The CWL project is governed in the public interest and produces freely available open standards. The CWL project itself is not a specific work-flow-management system, workflow runner, or vendor.  This allows potential users, operators, and vendors to avoid lock-in and be more flexible in the future.
+4.  By offering standards, the CWL project distinguishes itself, especially for the complex interactions that appear in scientific and engineering collaborations. These interactions include defining workflows from many different tools (or steps), sharing workflows, long-term archiving, fulfilling requirements of regulators (for example, U.S. FDA), and making workflow executions auditable and reproducible. This is especially useful in cooperative environments, where groups that compete also need to collaborate, or in scientific papers where results can be reused very efficiently if the analysis is described in a CWL workflow with publicly available software containers for all steps.
+5.  The CWL standards are already implemented, adopted, and used, with many production-grade implementations available as open source and with zero-cost. Thus, the different communities of users of the CWL standards already offer numerous workflow and tool descriptions.  This is akin to how the Python ecosystem of shared libraries, code, and recipes is already helpful.
 
-CWL plugins for text/code editors exist for Atom, vim, emacs, Visual
-Studio Code, IntelliJ, gedit, and any text editor that support the
-“language server protocol”[21] standard.
+This is a call for others to embrace workflow thinking and join the CWL community in creating and sharing portable and complete workflow descriptions. With the CWL standards, the methods are included and ready to (re)use.
 
-There are tools to generate CWL syntax from Python (via argparse/click
-or via functions), ACD[22], CTD[23], and annotations in IPython Jupyter
-Notebooks. Libraries to generate and/or read CWL documents exist in many
-languages: Python, Java, R, Go, Scala, Javascript, Typescript, and C++.
 
-## The CWL Ecosystem
 
-Beyond the ratified initial and updated CWL standards released over the
-last six years, the CWL community has developed many *tools, software
-libraries, connected specifications*, and has shared CWL descriptions
-for popular tools. For example, there are software development kits for
-both Python[24] and Java[25] that are generated automatically from the
-CWL schema; this allows programmers to load, modify, and save CWL
-documents using an object oriented model that has direct correspondence
-to the CWL standards themselves. CWL SDKs for other languages are
-possible by extending the code generation routines[26]. (See Sidebar B
-in
-Section <a href="#sec:sidebar:b:workwith" data-reference-type="ref" data-reference="sec:sidebar:b:workwith">[sec:sidebar:b:workwith]</a>
-for practical details.)
+## Acknowledgments
 
-The CWL standards support well the acute *need to reuse* (and,
-correspondingly, *to share*) information on workflow execution, and on
-authoring and provenance. The CWLProv[27] prototype was created to show
-how existing standards [29–31] can be combined to represent the
-provenance of a specific execution of a CWL workflow [32]. Although,
-to-date, CWLProv has only been implemented in the CWL reference runner,
-interest is high in additional implementation and further development.
+The list of those involved in the CWL project we would like to
+acknowledge is extensive. A comprehensive list is available in the
+. 
 
-# Conclusion
+### Funding acknowledgments
 
-The problem of standardizing computational reuse is only increasing in
-prominence and impact. Addressing this problem, various domains in
-science, engineering, and commerce have already started to migrate to
-workflows, but efforts focusing on the portability and even definition
-of workflows remain scattered. In this work we raise awareness to this
-problem and propose a community-driven solution.
+[European Commission](https://ec.europa.eu/programmes/horizon2020/) grants  
+BioExcel-2 (SSR) [H2020-INFRAEDI-02-2018 823830](https://cordis.europa.eu/project/id/823830),
+BioExcel (SSR) [H2020-EINFRA-2015-1 675728](https://cordis.europa.eu/project/id/675728),
+EOSC-Life (SSR) [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087),
+EOSCPilot (MRC) [H2020-INFRADEV-2016-2 739563](https://cordis.europa.eu/project/id/739563),
+IBISBA 1.0 (SSR) [H2020-INFRAIA-2017-1-two-stage 730976](https://cordis.europa.eu/project/id/730976),
+ELIXIR-EXCELERATE (SSR, HM) [H2020-INFRADEV-1-2015-1 676559](https://cordis.europa.eu/project/id/676559)
+ASTERICS (MRC) [INFRADEV-4-2014-2015 653477](https://cordis.europa.eu/project/id/653477). 
+[ELIXIR](https://elixir-europe.org/), the research infrastructure for life-science data, 
+Interoperability Platform Implementation Study (MRC). [2018-CWL](https://elixir-europe.org/about-us/commissioned-services/cwl-2018).
+Various universities have also co-sponsored this project; we thank Vrije Universiteit of Amsterdam, the Netherlands, where the first three authors have their primary affiliation.
 
-The Common Workflow Language (CWL) is a family of standards for the
-description of command line tools and of workflows made from these
-tools. It includes many features developed in collaboration with the
-community: support for software containers, resource requirements,
-workflow-level conditional branching, etc. Built on a foundation of five
-guiding principles, the CWL project delivers open standards, open-source
-code, and an open community.
+### Contributions
 
-For the past six years, the community around CWL has developed
-organically.
-
-To conclude: this is a call for others to embrace workflow thinking and
-join the CWL community in creating and sharing portable and complete
-workflow descriptions. !
-
-<div class="acks">
-
-# Acknowledgements
 
 The CWL project is immensely grateful to the following self-identified CWL Community members and their contributions to the project: 
 * [Miguel d’Arcangues Boland](https://orcid.org/0000-0002-2703-8936) (Software, Bug Reports, Maintenance), 
@@ -500,23 +401,267 @@ The contributions to the CWL project by the authors of this paper are:
 * [Stian Soiland-Reyes](https://orcid.org/0000-0001-9842-9718) (Conceptualization, Funding Acquisition, Investigation, Project Administration, Resources, Software, Supervision, Validation, User Testing, Writing – review and editing, Bug Reports, Blogposts, Business Development, Content, Documentation, Examples, Event Organizing, Packaging, Tools, Answering Questions, Reviewed Contributions, Security, Tutorials, Talks, Videos), 
 * [Bogdan Gavrilovic](https://orcid.org/0000-0003-1550-1716) (Conceptualization, Software, Validation, Bug Reports, Blogposts, Maintenance, Tools, Answering Questions, Reviewed Contributions, User Testing), 
 * [Carole A.  Goble](https://orcid.org/0000-0003-1219-2137) (Conceptualization, Funding Acquisition, Resources, Supervision, Audio, Business Development, Content, Examples, Event Organizing, Tools, Talks, Videos).
-* 
 
-Funding acknowledgements: 
+### Authors {#authors}
 
-[European Commission](https://ec.europa.eu/programmes/horizon2020/) grants  
-BioExcel-2 (SSR) [H2020-INFRAEDI-02-2018 823830](https://cordis.europa.eu/project/id/823830),
-BioExcel (SSR) [H2020-EINFRA-2015-1 675728](https://cordis.europa.eu/project/id/675728),
-EOSC-Life (SSR) [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087),
-EOSCPilot (MRC) [H2020-INFRADEV-2016-2 739563](https://cordis.europa.eu/project/id/739563),
-IBISBA 1.0 (SSR) [H2020-INFRAIA-2017-1-two-stage 730976](https://cordis.europa.eu/project/id/730976),
-ELIXIR-EXCELERATE (SSR, HM) [H2020-INFRADEV-1-2015-1 676559](https://cordis.europa.eu/project/id/676559)
-ASTERICS (MRC) [INFRADEV-4-2014-2015 653477](https://cordis.europa.eu/project/id/653477). 
-[ELIXIR](https://elixir-europe.org/), the research infrastructure for life-science data, 
-Interoperability Platform Implementation Study (MRC). [2018-CWL](https://elixir-europe.org/about-us/commissioned-services/cwl-2018).
-Various universities have also co-sponsored this project; we thank Vrije Universiteit of Amsterdam, the Netherlands, where the first three authors have their primary affiliation.
+**Michael R. Crusoe** is a promovendus at VU Amsterdam, Department of
+Computer Science, Netherlands.; CWL Project Lead at Software Freedom
+Conservancy, Inc., USA; and Project Leader Compute Platform in ELIXIR-NL
+at DTL Projects, Utrecht, Netherlands.
 
-</div>
+**Sanne Abeln** is an associate professor in Bioinformatics at VU
+Amsterdam, Department of Computer Science, Netherlands.
+
+**Alexandru Iosup** is a university research chair and full professor at
+VU Amsterdam, Department of Computer Science, Netherlands.
+
+**Peter Amstutz** is a principal software engineer at Curii Corporation,
+Sommerville, MA, USA.
+
+**John Chilton** is a computational scientist at the Nekrutenko Lab at
+Pennsylvania State University Department of Biochemistry and Molecular
+Biology, State College, PA, USA.
+
+**Neboja Tijanić** was a software engineer at Seven Bridges Genomics
+Inc., Charlestown, MA, USA.
+
+**Hervé Ménager** is a research engineer at the Institut Pasteur,
+Université de Paris, Bioinformatics and Biostatistics Hub, F-75015,
+Paris, France.
+
+**Stian Soiland-Reyes** is a technical architect at The University of
+Manchester, Department of Computer Science, Manchester, U.K.; and a
+Ph.D. candidate at the Informatics Institute, University of Amsterdam,
+Netherlands.
+
+**Bogdan Gavrilović** is a product development director at Seven Bridges
+Genomics Inc., Charlestown, MA, USA.
+
+**Carole Goble** (CBE FREng FBCS CITP) is a full professor of Computer
+Science at The University of Manchester, Department of Computer Science,
+Manchester, U.K.
+
+
+## Supplementary information
+
+Relevant Links:
+* Common Workflow Language Standards, v1.2: <https://w3id.org/cwl/v1.2/>
+* European Open Science Cloud for Research Pilot Project:
+<https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS>
+* Curii: <https://www.curii.com/>
+* DNAnexus: <https://www.dnanexus.com/>
+* IBM Spectrum LSF: <https://github.com/IBMSpectrumComputing/cwlexec>
+* Illumina Connected Analytics:
+<https://www.illumina.com/products/by-type/informatics-products/connected-analytics.html
+* Seven Bridges: <https://www.sevenbridges.com/>
+* Galaxy: The first 10,000 pubs: <https://galaxyproject.org/blog/2020-08-10k-pubs/>
+* Existing Workflow Systems: <https://s.apache.org/existing-workflow-systems>
+* Interactive Parallel Computing with IPython: <https://pypi.org/project/ipyparallel/>
+* ctypes—A foreign function library for Python: <https://docs.python.org/3/library/ctypes.html>
+* Common Workflow Language (CWL) Command Line Tool Description, v1.2:
+<https://w3id.org/cwl/v1.2/CommandLineTool.html>
+* How the CWL Command Line Tool standard specifies that tool executors should setup
+and control the runtime environment:
+<https://w3id.org/cwl/v1.2/CommandLineTool.html#Runtime_environment>
+* Common Workflow Language (CWL) Workflow Description, v1.2:
+<https://w3id.org/cwl/v1.2/Workflow.html>
+* Common Workflow Language (CWL) Workflow Description, v1.2, Workflow:
+<https://w3id.org/cwl/v1.2/Workflow.html#Workflow>
+* Workflow Success and Failure:
+<https://w3id.org/cwl/v1.2/Workflow.html#Workflow_success_and_failure>
+* CWL Upgrader 1.2.2: <https://pypi.org/project/cwl-upgrader/>
+* CWL 4.3.10 Work Reuse: <https://w3id.org/cwl/v1.2/Workflow.html#WorkReuse>
+* Open Stand: <https://open-stand.org/about-us/principles/>
+* What can execute CWL descriptions? <https://www.commonwl.org/implementations/>
+* Implement a subset of the CWL:
+<https://github.com/common-workflow-language/galaxy/pull/47>
+* 11.6. pegasus-cwl-converter:
+* <https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html>
+* Development Tools: <https://www.commonwl.org/tools/>
+* Language Server Protocol: <https://microsoft.github.io/language-server-protocol/>
+* Ajax Command Definitions as produced by the EMBOSS tools:
+<http://emboss.sourceforge.net/developers/acd/>
+* XML-based Common Tool Descriptors originating in the OpenMS project:
+<https://github.com/WorkflowConversion/CTDSchema>
+* Cwl-utils 0.13: <https://pypi.org/project/cwl-utils/>
+* Common Workflow Lab, CWL Java: <https://github.com/common-workflow-lab/cwljava>
+Crusoe et al.
+* See the *codegen*.py files:
+<https://pypi.org/project/schema-salad/7.1.20210316164414/>
+* <https://w3id.org/cwl/prov/>
+
+
+## References {#references}
+
+[]{#R1}1. Afgan, E. et al. The Galaxy platform for accessible,
+reproducible and collaborative biomedical analyses: 2018 update.
+*Nucleic Acids Research 46*, W1 (July 2018), W537W544.
+<https://doi.org/10.1093/nar/gky379>.
+
+[]{#R2}2. Babuji, Y. et al. Parsl: Pervasive parallel programming in
+Python. In *Proceedings of the 28^th^ Intern. Symp. on High-Performance
+Parallel and Distributed Computing.* Association for Computing Machinery
+(2019), 2536. <https://doi.org/10.1145/3307681.3325400>.
+
+[]{#R3}3. Belhajjame, K. et al. Using a suite of ontologies for
+preserving workflow-centric research objects. *J. of Web Semantics 32*
+(May 2015), 1642. <https://doi.org/10.1016/j.websem.2015.01.003>.
+
+[]{#R4}4. Bell, T. et al. *Web-based Analysis Services Report.*
+Technical Report CERN-IT-Note-2018-004. (2017), CERN, Geneva,
+Switzerland.
+<https://cds.cern.ch/record/2315331/>
+
+[]{#R5}5. Berthold, M.R et al. KNIME-The Konstanz information miner:
+Version 2.0 and beyond. *ACM SIGKDD Explorations Newsletter 11*, 1 (Nov.
+2009), 2631. <https://doi.org/10.1145/1656274.1656280>.
+
+[]{#R6}6. Colonnelli, I. et al. StreamFlow: Cross-breeding cloud with
+HPC. *IEEE Transactions on Emerging Topics in Computing* (2020), 11.
+<https://doi.org/10.1109/TETC.2020.3019202>.
+
+[]{#R7}7. Couvares, P. et al. Workflow management in Condor. In
+*Workflows for e-Science: Scientific Workflows for Grids*, I.J. Taylor,
+E. Deelman, D.B. Gannon, and M. Shields (Eds.). Springer, London (2007),
+357375. <https://doi.org/10.1007/978-1-84628-757-2_22>.
+
+[]{#R8}8. Cuevas-Vicenttín, C. et al. Scientific workflows and
+provenance: Introduction and research opportunities. *Datenbank-Spektrum
+12*, 3 (Nov. 2012), 193203. <https://doi.org/10.1007/s13222-012-0100-z>.
+
+[]{#R9}9. de la Garza, L. et al. From the desktop to the grid: Scalable
+bioinformatics via workflow conversion. *BMC Bioinformatics 17*, 1
+(March 2016), 127. <https://doi.org/10.1186/s12859-016-0978-9>.
+
+[]{#R10}10. Deelman, E. et al. Pegasus, a workflow management system for
+science automation. *Future Generation Computer Systems 46* (May 2015),
+1735. <https://doi.org/10.1016/j.future.2014.10.008>
+
+[]{#R11}11. Feitelson, D.G. From repeatability to reproducibility and
+corroboration. *ACM SIGOPS Operating Systems Review 49*, 1 (Jan. 2015),
+311. <https://doi.org/10.1145/2723872.2723875>.
+
+[]{#R12}12. Georgeson, P. et al. Bionitio: Demonstrating and
+facilitating best practices for bioinformatics command-line software.
+*GigaScience 8*, giz109 (Sept. 2019).
+<https://doi.org/10.1093/gigascience/giz109>.
+
+[]{#R13}13. Gonçalves, P. OGC Earth observations applications pilot:
+Terradue engineering report. OGC Public Engineering Report OGC 20-042.
+Open Geospatial Consortium.
+<http://docs.opengeospatial.org/per/20-042.html>.
+
+[]{#R14}14. Gryk, M.R. and Ludäscher, B. Workflows and provenance:
+Toward information science solutions for the natural sciences. *Library
+Trends 65*, 4 (2017), 555562. <https://doi.org/10.1353/lib.2017.0018>.
+
+[]{#R15}15. Guarracino, A. et al. COVID-19 PubSeq: Public SARS-CoV-2
+sequence resource. Bioinformatics Open Source Conference (July 2020),
+<https://sched.co/coLw>.
+
+[]{#R16}16. IEEE standard for bioinformatics analyses generated by
+high-throughput sequencing (HTS) to facilitate communication. (May 11,
+2020), <https://doi.org/10.1109/IEEESTD.2020.9094416>.
+
+[]{#R17}17. Ivie, P. and Thain, D. Reproducibility in scientific
+computing. *ACM Computing Surveys 51*, 3 (July 2018), 63:163:36.
+<https://doi.org/10.1145/3186266>.
+
+[]{#R18}18. Jiang, F. Castillo, C., and Ahalt, S. TR-19-01: A
+cloud-agnostic framework for geo-distributed data-intensive
+applications. RENCI, University of North Carolina at Chapel Hill,
+(2019), <https://renci.org/technical-reports/tr-19-01/>.
+
+[]{#R19}19. Jiang, F., Ferriter, K., and Castillo, C. PIVOT: Cost-aware
+scheduling of data-intensive applications in a cloud-agnostic system.
+RENCI, University of North Carolina at Chapel Hill, (2019).
+<https://renci.org/technical-reports/tr-19-02/>.
+
+[]{#R20}20. Khan, F.Z. et al. Sharing interoperable workflow provenance:
+A review of best practices and their practical application in CWLProv.
+*GigaScience 8*, 11 (November 2019), giz095.
+<https://doi.org/10.1093/gigascience/giz095>.
+
+[]{#R21}21. Kotliar, M., Kartashov, A.V., and Barski, A. CWL-Airflow: A
+lightweight pipeline manager supporting Common Workflow Language.
+*GigaScience 8*, 7 (July 2019), giz095.
+<https://doi.org/10.1093/gigascience/giz084>.
+
+[]{#R22}22. Kunze, J., Littman, J., Madden, E., Scancella, J., and
+Adams, C. The BagIt file packaging format (V1.0). (October 2018), DOI
+10.17487/RFC8493. <https://www.rfc-editor.org/info/rfc8493>.
+
+[]{#R23}23. Landry, T. OGC Earth observation applications pilot: CRIM
+engineering report. Open Geospatial Consortium Public Engineering Report
+20-045 (2020), <http://docs.opengeospatial.org/per/20-045.html>
+
+[]{#R24}24. Lau, J.W. et al. The Cancer Genomics Cloud: Collaborative,
+reproducible, and democratizedA new paradigm in large-scale
+computational research. *Cancer Research 77*, 21 (Oct. 2017), e3e6.
+<https://doi.org/10.1158/0008-5472.can-17-0387>.
+
+[]{#R25}25. Lee, J-H., Yi, H., and Chun, J. rRNASelector: A computer
+program for selecting ribosomal RNA encoding sequences from metagenomic
+and metatranscriptomic shotgun libraries. *The J. of Microbiology 49*, 4
+(September 2011), 689. <https://doi.org/10.1007/s12275-011-1213-z>.
+
+[]{#R26}26. Missier, P., Belhajjame, K., and Cheney, J. The W3C PROV
+family of specifications for modelling provenance metadata. In
+*Proceedings of the 16^th^ Intern. Conf. on Extending Database
+Technology.* Association for Computing Machinery (2013).
+<https://doi.org/10.1145/2452376.2452478>.
+
+[]{#R27}27. Mitchell, A-L. MGnify: The microbiome analysis resource in
+2020. *Nucleic Acids Research 48*, D1 (January 2020), D570D578.
+<https://doi.org/10.1093/nar/gkz1035>.
+
+[]{#R28}28. Oliver, H. Workflow automation for cycling systems: The Cylc
+Workflow Engine. *Computing in Science Engineering* (2019), 11.
+<https://doi.org/10.1109/MCSE.2019.2906593.00000>.
+
+[]{#R29}29. Perkel, J.M. Workflow systems turn raw data into scientific
+knowledge. *Nature* 573 (September 2019), 149150.
+<https://doi.org/10.1038/d41586-019-02619-z>.
+
+[]{#R30}30. POSIX.1-2008: IEEE Std 1003.1^™^-2008 and The Open Group
+Technical Standard Base Specifications, Issue 7. IEEE and The Open
+Group, <https://pubs.opengroup.org/onlinepubs/9699919799.2008edition/>.
+
+[]{#R31}31. Seemann, T. Ten recommendations for creating usable
+bioinformatics command line software. *GigaScience* 2, 2047-217X-2-15
+(December 2013). <https://doi.org/10.1186/2047-217X-2-15>.
+
+[]{#R32}32. Simonis, I. OGC Earth observation applications pilot:
+Summary engineering report. Open Geospatial Consortium Public
+Engineering Report OGC 20-073 (2020),
+<https://docs.ogc.org/per/20-073.html>.
+
+[]{#R33}33. Taylor, R.C. An overview of the Hadoop/MapReduce/HBase
+framework and its current applications in bioinformatics. *BMC
+Bioinformatics 11*, 12 (December 2010), S1.
+<https://doi.org/10.1186/1471-2105-11-S12-S1>.
+
+[]{#R34}34. van Wezenbeek, W.J.S.M., Touwen, H.J.J., Versteeg, A.M.C.,
+and van Wesenbeeck, A.J.M. National Open Science Plan. Ministry of
+Education, Culture, and Science, Netherlands, (2017).
+<https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65>.
+
+[]{#R35}35. Vivian, J. Toil enables reproducible, open source, big
+biomedical data analyses. *Nature Biotechnology 35*, 4 (April 2017),
+314316. <https://doi.org/10.1038/nbt.3772>.
+ 
+
+
+ 
+
+
+<!-- mark -->
+
+
+
+<div class="acks">
+
+
 
 # References
 
@@ -864,36 +1009,6 @@ and their practical application in CWLProv. *GigaScience*, **8** (2019).
 
 
 
-[[15]: Supporting cycles/loops as an optional feature has been suggested
-for a future version of the CWL standards, but it has yet to be put
-forth as a formal proposal with a prototype implementation. As a work
-around, one can launch a CWL workflow from within a workflow system that
-does support cycles, as documented in the eWaterCycle case study with
-Cylc [23].
-]
-[16]: https://open-stand.org/about-us/principles/
 
-[17]: Snapshot of <https://www.commonwl.org/implementations/>
 
-[18]: <https://github.com/common-workflow-language/galaxy/pull/47>
 
-[19]: <https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html>
-
-[20]: Summarized from <https://www.commonwl.org/tools/>
-
-[21]: <https://microsoft.github.io/language-server-protocol/>
-
-[22]: “Ajax Command Definitions” as produced by the EMBOSS tools:
-<http://emboss.sourceforge.net/developers/acd/>
-
-[23]: XML-based “Common Tool Descriptors” [28] originating in the
-OpenMS project: <https://github.com/WorkflowConversion/CTDSchema>
-
-[24]: <https://pypi.org/project/cwl-utils/>
-
-[25]: <https://github.com/common-workflow-lab/cwljava>
-
-[26]: See the `*codegen*.py` files in
-<https://pypi.org/project/schema-salad/7.1.20210316164414/>
-
-[27]: <https://w3id.org/cwl/prov/>
