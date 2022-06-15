@@ -563,7 +563,7 @@ _Open Geospatial Consortium_, OGC Public Engineering Report OGC 20-042.
 
 [14] Michael R. Gryk & Bertram Ludäscher (2017):  
 **Workflows and Provenance: Toward Information Science Solutions for the Natural Sciences**.  
-*Library Trends*, **65**(4)  
+*Library Trends* **65**(4)  
 <https://doi.org/10.1353/lib.2017.0018>
 
 [15] Andrea Guarracino, Peter Amstutz, Thomas Liener, Michael Crusoe, Adam Novak, Erik Garrison, Tazro Ohta, Bonface Munyoki, Danielle Welter, Sarah Wait Zaranek, Alexander (Sasha) Wait Zaranek, Pjotr Prins (2020):  
@@ -608,426 +608,74 @@ _RFC Editor_, RFC 8493
 _Open Geospatial Consortium_, Public Engineering Report 20-045  
 <http://docs.opengeospatial.org/per/20-045.html>
 
-[24]
+[24] Jessica W. Lau, Erik Lehnert, Anurag Sethi, Raunaq Malhotra, Gaurav Kaushik, Zeynep Onder, Nick Groves-Kirkby, Aleksandar Mihajlovic, Jack DiGiovanna, Mladen Srdic, Dragan Bajcic, Jelena Radenkovic, Vladimir Mladenovic, Damir Krstanovic, Vladan Arsenijevic, Djordje Klisic, Milan Mitrovic, Igor Bogicevic, Deniz Kural, Brandi Davis-Dusenbery (2017):   
+**The Cancer Genomics Cloud: Collaborative, Reproducible, and Democratized—A New Paradigm in Large-Scale Computational Research**.  
+*Cancer Research* **77**(21)  
+<https://doi.org/10.1158/0008-5472.can-17-0387> 
 
-<!-- mark -->
-
-
-
-[]{#R24}24. Lau, J.W. et al. The Cancer Genomics Cloud: Collaborative,
-reproducible, and democratizedA new paradigm in large-scale
-computational research. *Cancer Research 77*, 21 (Oct. 2017), e3e6.
-<https://doi.org/10.1158/0008-5472.can-17-0387>.
-
-[]{#R25}25. Lee, J-H., Yi, H., and Chun, J. rRNASelector: A computer
-program for selecting ribosomal RNA encoding sequences from metagenomic
-and metatranscriptomic shotgun libraries. *The J. of Microbiology 49*, 4
-(September 2011), 689. <https://doi.org/10.1007/s12275-011-1213-z>.
-
-[]{#R26}26. Missier, P., Belhajjame, K., and Cheney, J. The W3C PROV
-family of specifications for modelling provenance metadata. In
-*Proceedings of the 16^th^ Intern. Conf. on Extending Database
-Technology.* Association for Computing Machinery (2013).
-<https://doi.org/10.1145/2452376.2452478>.
-
-[]{#R27}27. Mitchell, A-L. MGnify: The microbiome analysis resource in
-2020. *Nucleic Acids Research 48*, D1 (January 2020), D570D578.
-<https://doi.org/10.1093/nar/gkz1035>.
-
-[]{#R28}28. Oliver, H. Workflow automation for cycling systems: The Cylc
-Workflow Engine. *Computing in Science Engineering* (2019), 11.
-<https://doi.org/10.1109/MCSE.2019.2906593.00000>.
-
-[]{#R29}29. Perkel, J.M. Workflow systems turn raw data into scientific
-knowledge. *Nature* 573 (September 2019), 149150.
-<https://doi.org/10.1038/d41586-019-02619-z>.
-
-[]{#R30}30. POSIX.1-2008: IEEE Std 1003.1^™^-2008 and The Open Group
-Technical Standard Base Specifications, Issue 7. IEEE and The Open
-Group, <https://pubs.opengroup.org/onlinepubs/9699919799.2008edition/>.
-
-[]{#R31}31. Seemann, T. Ten recommendations for creating usable
-bioinformatics command line software. *GigaScience* 2, 2047-217X-2-15
-(December 2013). <https://doi.org/10.1186/2047-217X-2-15>.
-
-[]{#R32}32. Simonis, I. OGC Earth observation applications pilot:
-Summary engineering report. Open Geospatial Consortium Public
-Engineering Report OGC 20-073 (2020),
-<https://docs.ogc.org/per/20-073.html>.
-
-[]{#R33}33. Taylor, R.C. An overview of the Hadoop/MapReduce/HBase
-framework and its current applications in bioinformatics. *BMC
-Bioinformatics 11*, 12 (December 2010), S1.
-<https://doi.org/10.1186/1471-2105-11-S12-S1>.
-
-[]{#R34}34. van Wezenbeek, W.J.S.M., Touwen, H.J.J., Versteeg, A.M.C.,
-and van Wesenbeeck, A.J.M. National Open Science Plan. Ministry of
-Education, Culture, and Science, Netherlands, (2017).
-<https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65>.
-
-[]{#R35}35. Vivian, J. Toil enables reproducible, open source, big
-biomedical data analyses. *Nature Biotechnology 35*, 4 (April 2017),
-314316. <https://doi.org/10.1038/nbt.3772>.
- 
-</div>
-
- 
-
-
-<!-- mark -->
-
-
-
-<div class="acks">
-
-
-
-# References
-
-<div id="ref-gryk_workflows_2017" >
-
-[1] Michael R. Gryk & Bertram Ludäscher (2017):  
-**Workflows and Provenance: Toward Information Science Solutions for the Natural Sciences**. 
-*Library trends*, **65** (2017) 555–562.  
-<https://doi.org/10.1353/lib.2017.0018>
-
-</div>
-
-<div id="ref-simonis_ogc_2020" >
-
-[2] Ingo Simonis (2020):  
-**OGC Earth Observation Applications Pilot: Summary Engineering Report**. 
-_Open Geospatial Consortium_, 2020  
-<https://docs.ogc.org/per/20-073.html> (accessed 18 November 2020)
-
-</div>
-
-<div id="ref-goncalves_ogc_2020" >
-
-[3] Pedro Gonçalves (2020):  
-**OGC Earth Observations Applications Pilot: Terradue Engineering Report**.  
-_Open Geospatial Consortium_, 2020  
-<http://docs.opengeospatial.org/per/20-042.html> (accessed 18 November 2020)W
-
-</div>
-
-<div id="ref-landry_ogc_2020" >
-
-[4] Tom Landry (2020):  
-*OGC Earth Observation Applications Pilot: CRIM Engineering Report**.  
-_Open Geospatial Consortium_, 2020
-<http://docs.opengeospatial.org/per/20-045.html>
-(accessed 18 November 2020) 
-
-</div>
-
-<div id="ref-bell_web-based_2017" >
-
-[5] Tim Bell, Luca Canali, Eric Grancher, Massimo Lamanna, Gavin McCance, 
-Pere Mato Vila, Danilo Piparo, Jakub Moscicki,
-Alberto Pace, Ricardo Brito Da Rocha, Tibor Simko, Tim Smith, Enric
-Tejedor Saavedra (2017):  
-**Web-based Analysis Services Report** 
-_CERN_ report (CERN-IT-Note-2018-004)
-<http://cds.cern.ch/record/2315331/> 
-
-</div>
-
-<div id="ref-mitchell_mgnify_2020" >
-
-[6] Alex L. Mitchell, Alexandre Almeida, Martin
-Beracochea, Miguel Boland, Josephine Burgin, Guy Cochrane, Michael R.
-Crusoe, Varsha Kale, Simon C. Potter, Lorna J. Richardson, Ekaterina
-Sakharova, Maxim Scheremetjew, Anton Korobeynikov, Alex Shlemov, Olga
-Kunyavskaya, Alla Lapidus, Robert D. Finn (2020):  
-**MGnify: The microbiome analysis resource in 2020**.  
-*Nucleic Acids Research*, **48** D570–D578.  
-<https://doi.org/10.1093/nar/gkz1035> 
-
-</div>
-
-<div id="ref-lee_rrnaselector_2011">
-
-[6a] Jae-Hak Lee, Hana Yi, Jongsik Chun (2011):  
+[25] Jae-Hak Lee, Hana Yi, Jongsik Chun (2011):  
 **rRNASelector: A computer program for selecting ribosomal RNA encoding sequences from metagenomic and metatranscriptomic shotgun libraries**.  
 _The Journal of Microbiology_ **49**(4)  
 <https://doi.org/10.1007/s12275-011-1213-z>
 
-</div>
+[26] Paolo Missier, Khalid Belhajjame, James Cheney (2013):  
+**The W3C PROV family of specifications for modelling provenance metadata**.  
+*Proceedings of the 16th International Conference on Extending Database Technology*  
+<https://doi.org/10.1145/2452376.2452478>
 
-<div id="ref-lau_cancer_2017" >
+[27] Alex L. Mitchell, Alexandre Almeida, Martin Beracochea, Miguel Boland, Josephine Burgin, Guy Cochrane, Michael R. Crusoe, Varsha Kale, Simon C. Potter, Lorna J. Richardson, Ekaterina Sakharova, Maxim Scheremetjew, Anton Korobeynikov, Alex Shlemov, Olga Kunyavskaya, Alla Lapidus, Robert D. Finn (2020):  
+**MGnify: The microbiome analysis resource in 2020**.  
+*Nucleic Acids Research* **48**(D1)  
+<https://doi.org/10.1093/nar/gkz1035> 
 
-[7] Jessica W. Lau, Erik Lehnert, Anurag Sethi,
-Raunaq Malhotra, Gaurav Kaushik, Zeynep Onder, Nick Groves-Kirkby,
-Aleksandar Mihajlovic, Jack DiGiovanna, Mladen Srdic, Dragan Bajcic,
-Jelena Radenkovic, Vladimir Mladenovic, Damir Krstanovic, Vladan
-Arsenijevic, Djordje Klisic, Milan Mitrovic, Igor Bogicevic, Deniz
-Kural, Brandi Davis-Dusenbery (2017):   
-**The Cancer Genomics Cloud: Collaborative, Reproducible, and Democratized—A New Paradigm in
-Large-Scale Computational Research**.  
-*Cancer Research*, **77** e3–e6.  
-<https://doi.org/10.1158/0008-5472.can-17-0387> 
+[28] Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2019):  
+**Workflow automation for cycling systems: The Cylc Workflow Engine**.  
+*Computing in Science Engineering* **21**(4)  
+<https://doi.org/10.1109/MCSE.2019.2906593>
 
-</div>
-
-<div id="ref-guarracino_covid-19_2020" >
-
-[8] Andrea Guarracino, Peter Amstutz, Thomas
-Liener, Michael Crusoe, Adam Novak, Erik Garrison, Tazro Ohta, Bonface
-Munyoki, Danielle Welter, Sarah Wait Zaranek, Alexander (Sasha) Wait
-Zaranek, Pjotr Prins (2020):  
-**COVID-19 PubSeq: Public SARS-CoV-2 Sequence Resource**.  
-_Bioinformatics Open Source Conference_ (BOSC), July 2020.  
-<https://sched.co/coLw>
-
-</div>
-
-<div id="ref-seemann_ten_2013" >
-
-[9] Torsten Seemann (2013):  
-**Ten recommendations for creating usable bioinformatics command line software**.  
-*GigaScience* **2** (2013).  
-<https://doi.org/10.1186/2047-217X-2-15> 
-
-</div>
-
-<div id="ref-georgeson_bionitio_2019" >
-
-[10] Peter Georgeson, Anna Syme, Clare Sloggett,
-Jessica Chung, Harriet Dashnow, Michael Milton, Andrew Lonsdale, David
-Powell, Torsten Seemann, Bernard Pope (2019):  
-**Bionitio: Demonstrating and facilitating best practices for bioinformatics command-line software**. 
-*GigaScience*, **8**
-<https://doi.org/10.1093/gigascience/giz109> 
-
-</div>
-
-<div id="ref-babuji_parsl_2019" >
-
-[11] Yadu Babuji, Anna Woodard, Zhuozhao Li, Daniel
-S. Katz, Ben Clifford, Rohan Kumar, Lukasz Lacinski, Ryan Chard, Justin
-M. Wozniak, Ian Foster, Michael Wilde, Kyle Chard (2019):  
-**Parsl: Pervasive Parallel Programming in Python**. 
-_Proceedings of the 28th International Symposium on High-Performance Parallel and Distributed Computing_  
-<https://doi.org/10.1145/3307681.3325400> 
-
-</div>
-
-<div id="ref-berthold_knime_2009" >
-
-[12] Michael R. Berthold, Nicolas Cebron, Fabian
-Dill, Thomas R. Gabriel, Tobias Kötter, Thorsten Meinl, Peter Ohl,
-Kilian Thiel, Bernd Wiswedel (2009):  
-**KNIME - the Konstanz information miner: Version 2.0 and beyond**.  
-*ACM SIGKDD Explorations Newsletter* **11** 
-<https://doi.org/10.1145/1656274.1656280> 
-
-</div>
-
-<div id="ref-deelman_pegasus_2015" >
-
-[13] Ewa Deelman, Karan Vahi, Gideon Juve, Mats
-Rynge, Scott Callaghan, Philip J. Maechling, Rajiv Mayani, Weiwei Chen,
-Rafael Ferreira da Silva, Miron Livny, Kent Wenger (2015):  
-**Pegasus, a workflow management system for science automation**. 
-*Future Generation Computer Systems* **46**  
-<https://doi.org/10.1016/j.future.2014.10.008> 
-
-</div>
-
-<div id="ref-couvares_workflow_2007" >
-
-[14] Peter Couvares, Tevfik Kosar, Alain Roy, Jeff Weber, Kent Wenger (2007):  
-**Workflow Management in Condor**.  
-_Workflows for e-Science: Scientific Workflows for Grids_  
-<https://doi.org/10.1007/978-1-84628-757-2_22> 
-
-</div>
-
-<div id="ref-perkel_workflow_2019" >
-
-[15] Jeffrey M. Perkel (2019):  
+[29] Jeffrey M. Perkel (2019):  
 **Workflow systems turn raw data into scientific knowledge**.  
-*Nature*, **573**  
+*Nature* **573**(7772)  
 <https://doi.org/10.1038/d41586-019-02619-z> 
 
-</div>
-
-<div id="ref-cuevas-vicenttin_scientific_2012" >
-
-[16] Víctor Cuevas-Vicenttín, Saumen Dey, Sven Köhler, Sean Riddle, Bertram Ludäscher (2012):  
-**Scientific Workflows and Provenance: Introduction and Research Opportunities**.  
-*Datenbank-Spektrum*, **12** 
-<https://doi.org/10.1007/s13222-012-0100-z> 
-
-</div>
-
-<div id="ref-ivie_reproducibility_2018" >
-
-[17] Peter Ivie & Douglas Thain (2018):  
-**Reproducibility in Scientific Computing**.  
-*ACM Computing Surveys* **51**:63
-<https://doi.org/10.1145/3186266> 
-
-</div>
-
-<div id="ref-feitelson_repeatability_2015" >
-
-[18] Dror G. Feitelson (2015):  
-**From Repeatability to Reproducibility and Corroboration**.  
-*ACM SIGOPS Operating Systems Review* **49**  
-<https://doi.org/10.1145/2723872.2723875> 
-
-</div>
-
-<div id="ref-taylor_overview_2010" >
-
-[19] Ronald C. Taylor (2010):  
-**An overview of the Hadoop/MapReduce/HBase framework and its current applications in
-bioinformatics**.  
-*BMC Bioinformatics*, **11**(S1)  
-<https://doi.org/10.1186/1471-2105-11-S12-S1> 
-
-</div>
-
-<div id="ref-the_austin_group_posix1-2008_2008" >
-
-[20] The Austin Group (2008):  
+[30] The Austin Group (2008):  
 **POSIX.1-2008 (IEEE Std 1003.1™-2008 and The Open Group Technical Standard Base Specifications, Issue 7)**.  
 _IEEE and The Open Group_  
 <https://pubs.opengroup.org/onlinepubs/9699919799.2008edition/>
 
-</div>
+[31] Torsten Seemann (2013):  
+**Ten recommendations for creating usable bioinformatics command line software**.  
+*GigaScience* **2**(1)  
+<https://doi.org/10.1186/2047-217X-2-15>
 
-<div id="ref-jiang_tr-19-01_2019" >
+[32] Ingo Simonis (2020):  
+**OGC Earth Observation Applications Pilot: Summary Engineering Report**.  
+_Open Geospatial Consortium_, Public Engineering Report OGC 20-073  
+<https://docs.ogc.org/per/20-073.html>
 
-[21] Fan Jiang, Claris Castillo, Stan Ahalt (2019):  
-**TR-19-01: A Cloud-Agnostic Framework for Geo-Distributed Data-Intensive Applications**. 
-_RENCI_ report, The University of North Carolina at Chapel Hill.
-<https://renci.org/technical-reports/tr-19-01/> 
+[33] Ronald C. Taylor (2010):  
+**An overview of the Hadoop/MapReduce/HBase framework and its current applications in
+bioinformatics**.  
+*BMC Bioinformatics* **11**(S1)  
+<https://doi.org/10.1186/1471-2105-11-S12-S1> 
 
-</div>
+[34] W.J.S.M. van Wezenbeek, H.J.J. Touwen, A.M.C. Versteeg, Astrid van Wesenbeeck (2017):  
+**Nationaal plan open science**.  
+_Ministerie van Onderwijs, Cultuur en Wetenschap_, The Netherlands  
+<https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65>.
 
-<div id="ref-jiang_pivot_2019" >
-
-[22] Fan Jiang, Kyle Ferriter, Claris Castillo
-(2019): *PIVOT: Cost-Aware Scheduling of Data-Intensive Applications in
-a Cloud-Agnostic System* (RENCI, University of North Carolina at Chapel
-Hill, 2019). <https://renci.org/technical-reports/tr-19-02/> 
-
-</div>
-
-<div id="ref-oliver_workflow_2019" >
-
-[23] H. Oliver, M. Shin, D. Matthews, O. Sanders, S.
-Bartholomew, A. Clark, B. Fitzpatrick, R. v. Haren, R. Hut, N. Drost
-(2019): Workflow Automation for Cycling Systems: The Cylc Workflow
-Engine. *Computing in Science Engineering*, (2019) 1–1.  
-<https://doi.org/10.1109/MCSE.2019.2906593> 
-
-</div>
-
-<div id="ref-afgan_galaxy_2018" >
-
-[24] Enis Afgan, Dannon Baker, Bérénice Batut,
-Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave
-Clements, Nate Coraor, Björn A. Grüning, Aysam Guerler, Jennifer
-Hillman-Jackson, Saskia Hiltemann, Vahid Jalili, Helena Rasche, Nicola
-Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, Daniel
-Blankenberg (2018): The Galaxy platform for accessible, reproducible and
-collaborative biomedical analyses: 2018 update. *Nucleic Acids
-Research*, **46** (2018) W537–W544.  
-<https://doi.org/10.1093/nar/gky379> 
-
-</div>
-
-<div id="ref-vivian_toil_2017" >
-
-[25] John Vivian, Arjun Arkal Rao, Frank Austin
+[35] ohn Vivian, Arjun Arkal Rao, Frank Austin
 Nothaft, Christopher Ketchum, Joel Armstrong, Adam Novak, Jacob Pfeil,
 Jake Narkizian, Alden D. Deran, Audrey Musselman-Brown, Hannes Schmidt,
 Peter Amstutz, Brian Craft, Mary Goldman, Kate Rosenbloom, Melissa
 Cline, Brian O’Connor, Megan Hanna, Chet Birger, W. James Kent, David A.
 Patterson, Anthony D. Joseph, Jingchun Zhu, Sasha Zaranek, Gad Getz,
-David Haussler, Benedict Paten (2017): Toil enables reproducible, open
-source, big biomedical data analyses. *Nature Biotechnology*, **35**
-(2017) 314–316.  
+David Haussler, Benedict Paten (2017):  
+**Toil enables reproducible, open source, big biomedical data analyses**.  
+*Nature Biotechnology* **35**(4)  
 <https://doi.org/10.1038/nbt.3772> 
 
 </div>
-
-<div id="ref-kotliar_cwl-airflow_2019" >
-
-[26] Michael Kotliar, Andrey V. Kartashov, Artem
-Barski (2019): CWL-Airflow: A lightweight pipeline manager supporting
-Common Workflow Language. *GigaScience*, **8** (2019).  
-<https://doi.org/10.1093/gigascience/giz084> 
-
-</div>
-
-<div id="ref-colonnelli_streamflow_2020" >
-
-[27] Iacopo Colonnelli, Barbara Cantalupo, Ivan
-Merelli, Marco Aldinucci (2020): StreamFlow: Cross-breeding cloud with
-HPC. *IEEE Transactions on Emerging Topics in Computing*, (2020) 1–1.  
-<https://doi.org/10.1109/TETC.2020.3019202> 
-
-</div>
-
-<div id="ref-de_la_garza_desktop_2016" >
-
-[28] Luis de la Garza, Johannes Veit, Andras Szolek,
-Marc Röttig, Stephan Aiche, Sandra Gesing, Knut Reinert, Oliver
-Kohlbacher (2016): From the desktop to the grid: Scalable bioinformatics
-via workflow conversion. *BMC Bioinformatics*, **17** (2016) 127.  
-<https://doi.org/10.1186/s12859-016-0978-9> 
-
-</div>
-
-<div id="ref-belhajjame_using_2015" >
-
-[29] Khalid Belhajjame, Jun Zhao, Daniel Garijo,
-Matthew Gamble, Kristina Hettne, Raul Palma, Eleni Mina, Oscar Corcho,
-José Manuel Gómez-Pérez, Sean Bechhofer, Graham Klyne, Carole Goble
-(2015): Using a suite of ontologies for preserving workflow-centric
-research objects. *Journal of Web Semantics*, **32** (2015) 16–42.  
-<https://doi.org/10.1016/j.websem.2015.01.003> 
-
-</div>
-
-<div id="ref-kunze_bagit_2018" >
-
-[30] J. Kunze, J. Littman, E. Madden, J. Scancella,
-& C. Adams (2018): *The BagIt File Packaging Format (V1.0)* (RFC Editor,
-2018).   
-<https://www.rfc-editor.org/info/rfc8493> 
-
-</div>
-
-<div id="ref-missier_w3c_2013" >
-
-[31] Paolo Missier, Khalid Belhajjame, James
-Cheney (2013): **The W3C PROV family of specifications for modelling
-provenance metadata**. *Proceedings of the 16th International Conference
-on Extending Database Technology* (New York, NY, USA: Association for
-Computing Machinery, 2013), pp. 773–776.  
-<https://doi.org/10.1145/2452376.2452478> 
-
-</div>
-
-<div id="ref-khan_sharing_2019" >
-
-[32] Farah Zaib Khan, Stian Soiland-Reyes, Richard
-O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):
-Sharing interoperable workflow provenance: A review of best practices
-and their practical application in CWLProv. *GigaScience*, **8** (2019).  
-<https://doi.org/10.1093/gigascience/giz095> 
-
-</div>
-
-
-
-
 
 
 
