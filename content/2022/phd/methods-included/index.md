@@ -46,14 +46,15 @@ This work is licensed under a [Creative Commons Attribution 4.0 International (C
 
 The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext) and [LaTeX source](https://github.com/mr-c/cwl_methods_included) with these modifications by Stian Soiland-Reyes: 
 - Conversion to Markdown/HTML
-- Re-insert original high resolution figures/tables
+- Re-insert original high resolution figures
+- Re-insert table as text
 - Re-inserted author affiliations and ORCID
 - Re-inserted hyperlinks instead of footnotes
 - References modified to [house style](/2021/house-rules/citation-style/)
 - Typographical improvements for Web rendering
 - Spelling fixes (e.g. missing --)
 - Reinstated missing text in polylingual
-- Re-embedd acknowledgements in [online supplementary material](<https://dl.acm.org/doi/10.1145/3486897)
+- Re-embed acknowledgement contributions list and related links from online supplementary material.
 
 # Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language
 
@@ -343,9 +344,8 @@ This is a call for others to embrace workflow thinking and join the CWL communit
 
 ## Acknowledgments
 
-The list of those involved in the CWL project we would like to
-acknowledge is extensive. A comprehensive list is available in the
-. 
+The list of those involved in the CWL project we would like to acknowledge is extensive.  A comprehensive list is available in the
+[online supplementary material](https://dl.acm.org/doi/10.1145/3486897) and is included below.
 
 ### Funding acknowledgments
 
@@ -493,107 +493,126 @@ Crusoe et al.
 
 ## References {#references}
 
-[]{#R1}1. Afgan, E. et al. The Galaxy platform for accessible,
-reproducible and collaborative biomedical analyses: 2018 update.
-*Nucleic Acids Research 46*, W1 (July 2018), W537W544.
-<https://doi.org/10.1093/nar/gky379>.
+<div style="font-size: smaller">
 
-[]{#R2}2. Babuji, Y. et al. Parsl: Pervasive parallel programming in
-Python. In *Proceedings of the 28^th^ Intern. Symp. on High-Performance
-Parallel and Distributed Computing.* Association for Computing Machinery
-(2019), 2536. <https://doi.org/10.1145/3307681.3325400>.
+[1] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A. Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, Daniel Blankenberg (2018):  
+**The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**.  
+*Nucleic Acids Research* **46**(W1) W537–W544  
+<https://doi.org/10.1093/nar/gky379> 
 
-[]{#R3}3. Belhajjame, K. et al. Using a suite of ontologies for
-preserving workflow-centric research objects. *J. of Web Semantics 32*
-(May 2015), 1642. <https://doi.org/10.1016/j.websem.2015.01.003>.
+[2] Yadu Babuji, Anna Woodard, Zhuozhao Li, Daniel S. Katz, Ben Clifford, Rohan Kumar, Lukasz Lacinski, Ryan Chard, Justin M. Wozniak, Ian Foster, Michael Wilde, Kyle Chard (2019):  
+**Parsl: Pervasive Parallel Programming in Python**.  
+_Proceedings of the 28th International Symposium on High-Performance Parallel and Distributed Computing_  
+<https://doi.org/10.1145/3307681.3325400> 
 
-[]{#R4}4. Bell, T. et al. *Web-based Analysis Services Report.*
-Technical Report CERN-IT-Note-2018-004. (2017), CERN, Geneva,
-Switzerland.
-<https://cds.cern.ch/record/2315331/>
+[3] Khalid Belhajjame, Jun Zhao, Daniel Garijo, Matthew Gamble, Kristina Hettne, Raul Palma, Eleni Mina, Oscar Corcho, José Manuel Gómez-Pérez, Sean Bechhofer, Graham Klyne, Carole Goble (2015):  
+**Using a suite of ontologies for preserving workflow-centric research objects**.  
+*Journal of Web Semantics* **32**  16–42  
+<https://doi.org/10.1016/j.websem.2015.01.003> 
 
-[]{#R5}5. Berthold, M.R et al. KNIME-The Konstanz information miner:
-Version 2.0 and beyond. *ACM SIGKDD Explorations Newsletter 11*, 1 (Nov.
-2009), 2631. <https://doi.org/10.1145/1656274.1656280>.
+[4] Tim Bell, Luca Canali, Eric Grancher, Massimo Lamanna, Gavin McCance,  Pere Mato Vila, Danilo Piparo, Jakub Moscicki, Alberto Pace, Ricardo Brito Da Rocha, Tibor Simko, Tim Smith, Enric
+Tejedor Saavedra (2017):  
+**Web-based Analysis Services Report**.  
+_CERN_ report (CERN-IT-Note-2018-004)  
+<http://cds.cern.ch/record/2315331/> 
 
-[]{#R6}6. Colonnelli, I. et al. StreamFlow: Cross-breeding cloud with
-HPC. *IEEE Transactions on Emerging Topics in Computing* (2020), 11.
-<https://doi.org/10.1109/TETC.2020.3019202>.
+[5]  Michael R. Berthold, Nicolas Cebron, Fabian Dill, Thomas R. Gabriel, Tobias Kötter, Thorsten Meinl, Peter Ohl, Kilian Thiel, Bernd Wiswedel (2009):  
+**KNIME - the Konstanz information miner: Version 2.0 and beyond**.  
+*ACM SIGKDD Explorations Newsletter* **11**  
+<https://doi.org/10.1145/1656274.1656280>
 
-[]{#R7}7. Couvares, P. et al. Workflow management in Condor. In
-*Workflows for e-Science: Scientific Workflows for Grids*, I.J. Taylor,
-E. Deelman, D.B. Gannon, and M. Shields (Eds.). Springer, London (2007),
-357375. <https://doi.org/10.1007/978-1-84628-757-2_22>.
+[6] Iacopo Colonnelli, Barbara Cantalupo, Ivan Merelli, Marco Aldinucci (2020):  
+**StreamFlow: Cross-breeding cloud with HPC**.  
+*IEEE Transactions on Emerging Topics in Computing* **9**(4)  
+<https://doi.org/10.1109/TETC.2020.3019202> 
 
-[]{#R8}8. Cuevas-Vicenttín, C. et al. Scientific workflows and
-provenance: Introduction and research opportunities. *Datenbank-Spektrum
-12*, 3 (Nov. 2012), 193203. <https://doi.org/10.1007/s13222-012-0100-z>.
+[7] Peter Couvares, Tevfik Kosar, Alain Roy, Jeff Weber, Kent Wenger (2007):  
+**Workflow Management in Condor**.  
+_Workflows for e-Science: Scientific Workflows for Grids_  
+<https://doi.org/10.1007/978-1-84628-757-2_22> 
 
-[]{#R9}9. de la Garza, L. et al. From the desktop to the grid: Scalable
-bioinformatics via workflow conversion. *BMC Bioinformatics 17*, 1
-(March 2016), 127. <https://doi.org/10.1186/s12859-016-0978-9>.
+[8] Víctor Cuevas-Vicenttín, Saumen Dey, Sven Köhler, Sean Riddle, Bertram Ludäscher (2012):  
+**Scientific Workflows and Provenance: Introduction and Research Opportunities**.  
+*Datenbank-Spektrum* **12**  
+<https://doi.org/10.1007/s13222-012-0100-z> 
 
-[]{#R10}10. Deelman, E. et al. Pegasus, a workflow management system for
-science automation. *Future Generation Computer Systems 46* (May 2015),
-1735. <https://doi.org/10.1016/j.future.2014.10.008>
+[9] Luis de la Garza, Johannes Veit, Andras Szolek, Marc Röttig, Stephan Aiche, Sandra Gesing, Knut Reinert, Oliver Kohlbacher (2016):  
+**From the desktop to the grid: Scalable bioinformatics via workflow conversion**.  
+*BMC Bioinformatics* **17**:127  
+<https://doi.org/10.1186/s12859-016-0978-9>
 
-[]{#R11}11. Feitelson, D.G. From repeatability to reproducibility and
-corroboration. *ACM SIGOPS Operating Systems Review 49*, 1 (Jan. 2015),
-311. <https://doi.org/10.1145/2723872.2723875>.
+[10] Ewa Deelman, Karan Vahi, Gideon Juve, Mats Rynge, Scott Callaghan, Philip J. Maechling, Rajiv Mayani, Weiwei Chen, Rafael Ferreira da Silva, Miron Livny, Kent Wenger (2015):  
+**Pegasus, a workflow management system for science automation**.  
+*Future Generation Computer Systems* **46**  
+<https://doi.org/10.1016/j.future.2014.10.008> 
 
-[]{#R12}12. Georgeson, P. et al. Bionitio: Demonstrating and
-facilitating best practices for bioinformatics command-line software.
-*GigaScience 8*, giz109 (Sept. 2019).
-<https://doi.org/10.1093/gigascience/giz109>.
+[11] Dror G. Feitelson (2015):  
+**From Repeatability to Reproducibility and Corroboration**.  
+*ACM SIGOPS Operating Systems Review* **49**  
+<https://doi.org/10.1145/2723872.2723875> 
 
-[]{#R13}13. Gonçalves, P. OGC Earth observations applications pilot:
-Terradue engineering report. OGC Public Engineering Report OGC 20-042.
-Open Geospatial Consortium.
-<http://docs.opengeospatial.org/per/20-042.html>.
+[12] Peter Georgeson, Anna Syme, Clare Sloggett, Jessica Chung, Harriet Dashnow, Michael Milton, Andrew Lonsdale, David Powell, Torsten Seemann, Bernard Pope (2019):  
+**Bionitio: Demonstrating and facilitating best practices for bioinformatics command-line software**.  
+*GigaScience* **8**
+<https://doi.org/10.1093/gigascience/giz109> 
 
-[]{#R14}14. Gryk, M.R. and Ludäscher, B. Workflows and provenance:
-Toward information science solutions for the natural sciences. *Library
-Trends 65*, 4 (2017), 555562. <https://doi.org/10.1353/lib.2017.0018>.
+[13] Pedro Gonçalves (2020):  
+**OGC Earth Observations Applications Pilot: Terradue Engineering Report**.  
+_Open Geospatial Consortium_, OGC Public Engineering Report OGC 20-042.
+<http://docs.opengeospatial.org/per/20-042.html> 
 
-[]{#R15}15. Guarracino, A. et al. COVID-19 PubSeq: Public SARS-CoV-2
-sequence resource. Bioinformatics Open Source Conference (July 2020),
-<https://sched.co/coLw>.
+[14] Michael R. Gryk & Bertram Ludäscher (2017):  
+**Workflows and Provenance: Toward Information Science Solutions for the Natural Sciences**.  
+*Library Trends*, **65**(4)  
+<https://doi.org/10.1353/lib.2017.0018>
 
-[]{#R16}16. IEEE standard for bioinformatics analyses generated by
-high-throughput sequencing (HTS) to facilitate communication. (May 11,
-2020), <https://doi.org/10.1109/IEEESTD.2020.9094416>.
+[15] Andrea Guarracino, Peter Amstutz, Thomas Liener, Michael Crusoe, Adam Novak, Erik Garrison, Tazro Ohta, Bonface Munyoki, Danielle Welter, Sarah Wait Zaranek, Alexander (Sasha) Wait Zaranek, Pjotr Prins (2020):  
+**COVID-19 PubSeq: Public SARS-CoV-2 Sequence Resource**.  
+_Bioinformatics Open Source Conference_ (BOSC), July 2020  
+<https://sched.co/coLw>
 
-[]{#R17}17. Ivie, P. and Thain, D. Reproducibility in scientific
-computing. *ACM Computing Surveys 51*, 3 (July 2018), 63:163:36.
-<https://doi.org/10.1145/3186266>.
+[16] **IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication**. _IEEE Std_ **2791-2020**. ISBN 978-1-5044-6466-6. <https://doi.org/10.1109/IEEESTD.2020.9094416> [[preprint](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html)]
 
-[]{#R18}18. Jiang, F. Castillo, C., and Ahalt, S. TR-19-01: A
-cloud-agnostic framework for geo-distributed data-intensive
-applications. RENCI, University of North Carolina at Chapel Hill,
-(2019), <https://renci.org/technical-reports/tr-19-01/>.
+[17] Peter Ivie & Douglas Thain (2018):  
+**Reproducibility in Scientific Computing**.  
+*ACM Computing Surveys* **51**:63  
+<https://doi.org/10.1145/3186266>
 
-[]{#R19}19. Jiang, F., Ferriter, K., and Castillo, C. PIVOT: Cost-aware
-scheduling of data-intensive applications in a cloud-agnostic system.
-RENCI, University of North Carolina at Chapel Hill, (2019).
-<https://renci.org/technical-reports/tr-19-02/>.
+[18] Fan Jiang, Claris Castillo, Stan Ahalt (2019):  
+**TR-19-01: A Cloud-Agnostic Framework for Geo-Distributed Data-Intensive Applications**. 
+_RENCI_ report, The University of North Carolina at Chapel Hill  
+<https://renci.org/technical-reports/tr-19-01/> 
 
-[]{#R20}20. Khan, F.Z. et al. Sharing interoperable workflow provenance:
-A review of best practices and their practical application in CWLProv.
-*GigaScience 8*, 11 (November 2019), giz095.
-<https://doi.org/10.1093/gigascience/giz095>.
+[19] Fan Jiang, Kyle Ferriter, Claris Castillo (2019):  
+**PIVOT: Cost-Aware Scheduling of Data-Intensive Applications in a Cloud-Agnostic System**.  
+_RENCI_ report, The University of North Carolina at Chapel Hill  
+<https://renci.org/technical-reports/tr-19-02/> 
 
-[]{#R21}21. Kotliar, M., Kartashov, A.V., and Barski, A. CWL-Airflow: A
-lightweight pipeline manager supporting Common Workflow Language.
-*GigaScience 8*, 7 (July 2019), giz095.
-<https://doi.org/10.1093/gigascience/giz084>.
+[20] Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
+**Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**.  
+*GigaScience* **8**(11):giz095  
+<https://doi.org/10.1093/gigascience/giz095> 
 
-[]{#R22}22. Kunze, J., Littman, J., Madden, E., Scancella, J., and
-Adams, C. The BagIt file packaging format (V1.0). (October 2018), DOI
-10.17487/RFC8493. <https://www.rfc-editor.org/info/rfc8493>.
+[21] Michael Kotliar, Andrey V. Kartashov, Artem Barski (2019):  
+**CWL-Airflow: A lightweight pipeline manager supporting Common Workflow Language**.  
+*GigaScience* **8**(7):giz084
+<https://doi.org/10.1093/gigascience/giz084> 
+ 
+[22] J. Kunze, J. Littman, E. Madden, J. Scancella, C. Adams (2018):  
+**The BagIt File Packaging Format (V1.0)**.  
+_RFC Editor_, RFC 8493  
+<https://doi.org/10.17487/RFC8493>
 
-[]{#R23}23. Landry, T. OGC Earth observation applications pilot: CRIM
-engineering report. Open Geospatial Consortium Public Engineering Report
-20-045 (2020), <http://docs.opengeospatial.org/per/20-045.html>
+[23] Tom Landry (2020):  
+**OGC Earth Observation Applications Pilot: CRIM Engineering Report**.  
+_Open Geospatial Consortium_, Public Engineering Report 20-045  
+<http://docs.opengeospatial.org/per/20-045.html>
+
+[24]
+
+<!-- mark -->
+
+
 
 []{#R24}24. Lau, J.W. et al. The Cancer Genomics Cloud: Collaborative,
 reproducible, and democratizedA new paradigm in large-scale
@@ -650,7 +669,7 @@ Education, Culture, and Science, Netherlands, (2017).
 biomedical data analyses. *Nature Biotechnology 35*, 4 (April 2017),
 314316. <https://doi.org/10.1038/nbt.3772>.
  
-
+</div>
 
  
 
