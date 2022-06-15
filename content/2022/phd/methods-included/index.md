@@ -112,7 +112,7 @@ In the computational workflow depicted in [Figure 1](fig:sample_workflow), pract
 3.  To achieve these results, the CWL project takes a principled, community-first open source and open-standard approach.
 
 The CWL standards are the product of an open and free standards-making community. 
-While the CWL project began in bioinformatics, its many contributors shaped the standards to be useful in any domain that faces the problem of "many tools written in many programming languages by many parties."
+While the CWL project began in bioinformatics, its many contributors shaped the standards to be useful in any domain that faces the problem of “many tools written in many programming languages by many parties.”
 Since the ratification of the first version in 2016, the CWL standards have been used in other fields, including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS), geo-spatial analysis, [[13](http://docs.opengeospatial.org/per/20-042.html),[23](http://docs.opengeospatial.org/per/20-045.html),[32](https://docs.ogc.org/per/20-073.html)] and high-energy physics, [[4](https://cds.cern.ch/record/2315331/)] in addition to fast-growing bioinformatics fields such as metagenomics [[27](https://doi.org/10.1093/nar/gkz1035)] and cancer research [[24](https://doi.org/10.1158/0008-5472.can-17-0387)]. 
 The CWL standards are featured in the IEEE 2791-2020 standard, sponsored and adopted by the U.S. FDA, [[16](https://doi.org/10.1109/IEEESTD.2020.9094416)] and the Netherlands' National Plan for Open Science [[34](https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65)].
 A list of free and open source implementations of the CWL standards is offered in the [Table](#runners). Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
@@ -141,7 +141,7 @@ To thread data through analysis tools, domain experts such as bioinformaticians 
 
 The workflow approach helps compose an entire application of these command-line analysis tools: Developers build graphical or textual descriptions of how to run these command-line tools, and scientists and engineers connect their inputs and outputs so that the data flows through. An example of a complex workflow problem is metagenomic analysis, for which [Figure 1](#fig:sample_workflow) illustrates a subset (a *sub-workflow*).
 
-In practice, many research and engineering groups use workflows of the kind described in Figure 1.  However, as highlighted in a "Technology Toolbox" article recently published in *Nature,* [[29](https://doi.org/10.1038/d41586-019-02619-z)] these groups typically lack the ability to share and collaborate across institutions and infrastructures without costly manual translation of their workflows.
+In practice, many research and engineering groups use workflows of the kind described in Figure 1.  However, as highlighted in a “Technology Toolbox” article recently published in *Nature,* [[29](https://doi.org/10.1038/d41586-019-02619-z)] these groups typically lack the ability to share and collaborate across institutions and infrastructures without costly manual translation of their workflows.
 
 Using workflow techniques, especially with digital analysis processes, has become quite popular and does not appear to be slowing down. One workflow-management system, Galaxy Publication Library, recently celebrated its [10,000th citation](https://galaxyproject.org/blog/2020-08-10k-pubs/), and more than 309 computational data-analysis workflow systems are [known to exist]((https://s.apache.org/existing-workflow-systems)).
 A process, digital or otherwise, may grow to such complexity that its authors and users have difficulties understanding its structure, scaling and managing it, and keeping track of what happened in the past. Process dependencies may be undocumented, obfuscated, or otherwise effectively invisible. Outsiders or newcomers may find even an extensively documented process difficult to understand if it lacks a common framework or vocabulary. 
@@ -204,10 +204,9 @@ enable execution portability by being explicit about data locations and executio
 
 The CWL standards explicitly support the use of *software container* technologies, such as Docker and Singularity, to enable the portability of the underlying analysis tools. [Figure 2b](#fig:syntax), Item 2 illustrates the process of pulling a Docker container image from the [Quay.io registry](https://quay.io/repository/biocontainers/spoa?tab=tags); then, the workflow engine automates the mounting of files and folders within the container. The container included in the figure has been developed by a trusted author and is commonly used in the bioinformatics field, with the expectation that its results are reproducible. Indeed, the use of containers can be seen as a confirmation that a tool's execution is reproducible when using only its explicitly declared runtime environment. Similarly, when *distributed execution* is desired, no changes to the CWL tool description are needed. File or directory inputs are already explicitly defined in the CWL description, so the (distributed) workflow runner can handle job placement and data routing between compute nodes without additional configuration.  
 
-Via these two features—special handling of data paths and the optional but recommended use of software containers—the CWL standards enable portability (execution "without change"). While portability can be affected by various factors not controllable by software container technology—for instance, variation in the underlying operating-system kernel or in processor results—in practice, the exact same software container and data inputs lead to portability without further adjustment from the user.
+Via these two features—special handling of data paths and the optional but recommended use of software containers—the CWL standards enable portability (execution  “without change”). While portability can be affected by various factors not controllable by software container technology—for instance, variation in the underlying operating-system kernel or in processor results—in practice, the exact same software container and data inputs lead to portability without further adjustment from the user.
 
 To support features that are _not_ in the CWL standards, the standards define *extension points* that permit name-spaced, vendor-specific features in explicitly defined ways. If these extensions do not fundamentally change how the tool should operate, then they are added to the hints list, and other CWL-compatible engines can ignore them.  However, if the extension is required to properly run the tool being described—for instance, due to the need for some specialized hardware—then the extension is listed under `requirements`, and CWL-compatible engines can recognize and explicitly declare their inability to execute that CWL description.
-
 
 **The [CWL Workflow Description Standard](https://w3id.org/cwl/v1.2/Workflow.html)** builds upon the CWL Command Line Tool Standard. It has the same YAML- or JSON-style syntax, with explicit workflow-level inputs, outputs, and documentation ([Figure 2c](#fig:syntax)).  Workflow descriptions consist of a list of steps, comprising CWL Command Line Tools or CWL sub-workflows, each re-exposing their tool's required inputs. Inputs for each step are connected by referencing the name of either the common *workflow inputs* or of outputs from other steps. The *workflow outputs* expose selected outputs from workflow steps, making explicit which intermediate-step outputs will be returned from the workflow. All connections include identifiers, which CWL document authors are encouraged to name meaningfully—for example, `reference_genome` instead of `input7`.
 
@@ -239,7 +238,7 @@ The CWL community has developed the following optimizations without requiring th
 -   Interactions with command-line tools beside 1) constructing the command line and making available file inputs (both user-provided and synthesized from other inputs just prior to execution) and 2) consuming the output of the tool once its execution is finished, in the form of files created/changed, the POSIX standard output and error streams, and the POSIX exit code of the tool.
 -   Advanced control-flow techniques beyond conditional steps.
 -   Runtime workflow graph manipulations: dynamically adding or removing new steps during workflow execution, beyond any predefined conditional step execution tests that are in the original workflow description.
--   Workflows that contain cycles: \"Repeat this step or sub-workflow a specific number of times\" or \"Repeat this step or sub-workflow until a condition is met.\"[^cycles]
+-   Workflows that contain cycles: “Repeat this step or sub-workflow a specific number of times” or “Repeat this step or sub-workflow until a condition is met.”[^cycles]
 -   Workflows that need specific steps run on a specific day or at a specific time.
 
 [^cycles]: Supporting cycles/loops as an optional feature has been suggested for a future version of the CWL standards, but it has yet to be put forth as a formal proposal with a prototype implementation. As a work around, one can launch a CWL workflow from within a workflow system that does support cycles, as documented in the eWaterCycle case study with Cylc [[28](https://doi.org/10.1109/MCSE.2019.2906593.00000)].
@@ -269,10 +268,9 @@ Given the numerous and diverse set of potential users, implementers, and other s
 -   **Principle 4:** The project must not favor any one company or group over another, but neither should it try to be all things to all people. The community decides.
 -   **Principle 5:** Concepts and ideas must be tested frequently.  Tested and functional code is the beginning of evaluating a proposal, not the end.
 
-Over time, CWL project members learned that this approach is a superset of the OpenStand Principles, a joint "Modern Paradigm for Standards" promoted by the IAB, IEEE, IETF, Internet Society, and W3C. The CWL project additions to the OpenStand Principles are 1) to keep participation free of cost, and 2) the explicit choice of Apache License 2.0 for all its text, conformance tests, and reference implementations.
+Over time, CWL project members learned that this approach is a superset of the OpenStand Principles, a joint “Modern Paradigm for Standards” promoted by the IAB, IEEE, IETF, Internet Society, and W3C. The CWL project additions to the OpenStand Principles are 1) to keep participation free of cost, and 2) the explicit choice of Apache License 2.0 for all its text, conformance tests, and reference implementations.
 
 <!-- mark -->
-
 
 
 
@@ -291,26 +289,7 @@ ecosystem (Section <a href="#sec:open:ecosystem" data-reference-type="ref" dat
 
 ## The CWL Principles
 
-The CWL project is based on a set of five principles:
 
-**Principle 1**: The core of the project is the community of people who
-care about its goals.
-
-**Principle 2**: To achieve the best possible results, there should be
-few, if any, barriers to participation. Specifically, to attract people
-with diverse experiences and perspectives, there must be no cost to
-participate.
-
-**Principle 3**: To enable the best outcomes, project outputs should be
-used as people see fit. Thus, the standards themselves must be licensed
-for reuse, with no acquisition price.
-
-**Principle 4**: The project must not favor any one company or group
-over another, but neither should it try to be all things to all people.
-The community decides.
-
-**Principle 5**: The concepts and ideas must be tested frequently:
-tested and functional code is the beginning of evaluating a proposal,
 not the end.
 
 In time, the CWL project-members learned that this approach is a
