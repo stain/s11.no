@@ -41,6 +41,8 @@ Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Ne
 _Communications of the ACM_ **65**(6)  
 <https://doi.org/10.1145/3486897>
 
+<h3>Copyright and license</h3>
+
 Ⓒ Copyright 2022 ACM, Inc. and the authors.  
 This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
