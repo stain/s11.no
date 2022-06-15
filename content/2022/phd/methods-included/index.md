@@ -113,11 +113,23 @@ In the computational workflow depicted in [Figure 1](fig:sample_workflow), pract
 
 The CWL standards are the product of an open and free standards-making community. 
 While the CWL project began in bioinformatics, its many contributors shaped the standards to be useful in any domain that faces the problem of "many tools written in many programming languages by many parties."
-Since the ratification of the first version in 2016, the CWL standards have been used in other fields, including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS), geo-spatial analysis, [[13](http://docs.opengeospatial.org/per/20-042.html),[23](http://docs.opengeospatial.org/per/20-045.html),[32](https://docs.ogc.org/per/20-073.html)] and high-energy physics, [[4](https://cds.cern.ch/record/2315331/)] in addition to fast-growing bioinformatics fields such as metagenomics [[27](https://doi.org/10.1093/nar/gkz1035)] and cancer research [[24](#ttps://doi.org/10.1158/0008-5472.can-17-0387)]. 
-The CWL standards are featured in the IEEE 2791-2020 standard, sponsored and adopted by the U.S. FDA, [[16](https://doi.org/10.1109/IEEESTD.2020.9094416)] and the Netherlands\' National Plan for Open Science [[34](https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65)].
-A list of free and open source implementations of the CWL standards is offered in the Table. Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
+Since the ratification of the first version in 2016, the CWL standards have been used in other fields, including hydrology, [radio astronomy](https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c434868f&appId=PPGMS), geo-spatial analysis, [[13](http://docs.opengeospatial.org/per/20-042.html),[23](http://docs.opengeospatial.org/per/20-045.html),[32](https://docs.ogc.org/per/20-073.html)] and high-energy physics, [[4](https://cds.cern.ch/record/2315331/)] in addition to fast-growing bioinformatics fields such as metagenomics [[27](https://doi.org/10.1093/nar/gkz1035)] and cancer research [[24](https://doi.org/10.1158/0008-5472.can-17-0387)]. 
+The CWL standards are featured in the IEEE 2791-2020 standard, sponsored and adopted by the U.S. FDA, [[16](https://doi.org/10.1109/IEEESTD.2020.9094416)] and the Netherlands' National Plan for Open Science [[34](https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65)].
+A list of free and open source implementations of the CWL standards is offered in the [Table](#runners). Multiple, commercially supported systems that follow the CWL standards for executing workflows are also available from vendors such as Curii (Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina (Illumina Connected Analytics), and Seven Bridges. The flexibility of the CWL standards enabled, for example, rapid collaboration on and prototyping of a COVID-19 public database and analysis resource [[15](https://sched.co/coLw)].
 
 The separation of concerns proposed by the CWL standards enables diverse projects and can also benefit engineering and large industrial projects.  Likewise, users of Docker or other software-container technologies that distribute analysis tools can leverage just the CWL Command Line Tool standard to access a structured, work-flow-independent description of how to run their tool(s) in the container, what data must be provided to the container, expected results, and where to find them.
+
+#### Selected F/OSS workflow runners and platforms that implement the CWL standards {#runners}
+
+| Implementation                                            | Platform support                          |
+|:-----|:---------------------------------------------------------------------|
+| [cwltool](https://pypi.org/project/cwltool)               | Linux, macOS, Windows (via WSL 2) local execution only |
+| [Arvados](https://arvados.org)                            | in the cloud on AWS, Azure and GCP, on premise & hybrid clusters using Slurm or LSF  |
+| [Toil](https://pypi.org/project/toil-cwl-runner) [[35](https://doi.org/10.1038/nbt.3772)]     | AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque also local execution on Linux, macOS, MS Windows (via WSL 2) |
+| [CWL-Airflow](https://pypi.org/project/cwl-airflow) [[21](https://doi.org/10.1093/gigascience/giz084)]  | Local execution on Linux, OS X or via dedicated Airflow enabled cluster. |
+| [StreamFlow](https://streamflow.di.unito.it/) [[6](https://doi.org/10.1109/TETC.2020.3019202)]        | Kubernetes, HPC with Singularity (PBS, Slurm), Occam, multi-node SSH, local-only (Docker, Singularity) |
+| [REANA](https://docs.reana.io/)                           | Kubernetes |
+
 
 ### Background on Workflows and Standards for Workflows
 
@@ -156,240 +168,113 @@ Sharing workflow descriptions based on standards also addresses the second probl
 
 While (data) standards are commonly adopted and have become expected for funded projects in knowledge representation fields, the same cannot yet be said about workflows and workflow engines.
 
-The CWL standards define an *explicit language*, both in syntax and in its data and execution model. Its textual syntax, derived from YAML,^[d](#FND)^ does not restrict the amount of detail. For example, [Figure 2a](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg) depicts a simple example with sparse detail, and [Figure2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg) depicts the same example but with the execution augmented with more details. Each input to a tool has a name and a type—for instance, File (see [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg), Item 1). Tool-description authors are encouraged to include documentation and labels for all components (as shown in [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg)), to enable the automatic generation of helpful visual depictions and even graphical user interfaces (GUIs) for any given CWL description. Metadata about the tool-description authors encourages attribution of their efforts. As shown in [Figure 2b](https://dl.acm.org/cms/attachment/104f8085-f6d0-41e2-b0e2-3cf89fb7211d/f2.jpg), Item 3, these tool descriptions can contain well-defined hints or mandatory requirements, such as which software container to use or the amount of required compute resources: memory, number of CPU cores, amount of disk space, and/or the maximum time or deadline to complete the step or entire workflow.
+### Features of the Common Workflow Language Standards
+
+The Common Workflow Language standards aim to cover the common needs of users and the commonly implemented features of workflow runners or platforms. The remainder of this section presents an overview of CWL features, how they translate to executing workflows in CWL format, and where the CWL standards are not helpful.
+
+The CWL standards support polylingual and multi-party workflows, for which they enable computational reuse and portability. To do so, each release of the CWL standards has two[^schemasalad] main components: (1) a standard for describing command-line tools and (2) a standard for describing workflows that compose such tool descriptions. The goal of the *[CWL Command Line Tool Description Standard](https://w3id.org/cwl/v1.2/CommandLineTool.html)* is to describe how a particular command-line tool works: What are the _inputs_ and _parameters_ and their types? How do you add the correct flags and switches to the command-line invocation? Where do you find the _output_ files?
+
+[^schemasalad]: The third component, [Schema Salad](https://www.commonwl.org/v1.2/SchemaSalad.html), is only of interest to those who want to parse the syntax of the schema language that is used to define the syntax of CWL itself.
+
+{{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
+  width="100%" title="Example of CWL syntax and progressive enhancement."
+  caption="(a) and (b) describe the same tool, but (b) is enhanced with additional features: human-readable documentation; file format identifiers for better validation of workflow connections; recommended software container image for more reproducible results and easier installation; and dynamically specified resource requirements to optimize task scheduling and resource usage without manual intervention. Resource requirements are expressed as hints. (c) shows an example of CWL Workflow syntax, where the underlying tool descriptions (`grep.cwl` and `wc.cwl`) are in external files for ease of reuse." >}}
+
+The CWL standards define an *explicit language*, both in syntax and in its data and execution model. 
+Its textual syntax, derived from YAML[^yaml] does not restrict the amount of detail. For example, [Figure 2a](#fig:syntax) depicts a simple example with sparse detail, and Figure 2b] depicts the same example but with the execution augmented with more details. 
+Each input to a tool has a name and a type—for instance, `File` (see Figure 2b, Item 1).
+Tool-description authors are encouraged to include documentation and labels for all components (as shown in Figure 2b, to enable the automatic generation of helpful visual depictions and even graphical user interfaces (GUIs) for any given CWL description. Metadata about the tool-description authors encourages attribution of their efforts. 
+As shown in Figure 2b, Item 3, these tool descriptions can contain well-defined hints or mandatory requirements, such as which software container to use or the amount of required compute resources: memory, number of CPU cores, amount of disk space, and/or the maximum time or deadline to complete the step or entire workflow.
+
+[^yaml]: JSON is an acceptable subset of YAML, and common when converting from another format to CWL syntax.
+
+
+**The CWL execution model is explicit.** Each tool's runtime environment is explicit, and any required elements must be specified by the CWL tool-description author (in contrast to hints, which are optional)[^runtime]. Each tool invocation uses a separate working directory, populated according to the CWL tool descriptionfor example, with the input files explicitly specified by the workflow author. Some applications expect particular filenames, directory layouts, and environment variables, and there are additional constructs in the CWL Command Line Tool standard to satisfy their needs.
+
+[^runtime]: For details on how the CWL Command Line Tool standard specifies that tool executors should set up and control the runtime environment, visit <https://w3id.org/cwl/v1.2/CommandLineTool.html#Runtime_environment> which also specifies which directories tools are allowed to write to.
+
+
+**The explicit runtime model enables portability**, by being explicit about data locations. As [Figure 3](#fig3) indicates, this enables the execution of CWL workflows in diverse environments as provided by various implementations of the CWL standards: the local environment of the author-scientist (for instance, a single desktop computer, laptop, or workstation), a remote batch production environment (for example, a cluster, an entire data center, or even a global multi-data center infrastructure), and an on-demand cloud environment.
+
+{{< figure src="figure3.svg" link="figure3.svg" id="fig:portability" 
+  width="100%" title="Example of CWL portability."
+  caption="The same workflow description runs on the scientist’s own laptop or single machine, on any
+batch-production environment, and on any common public or private cloud. The CWL standards
+enable execution portability by being explicit about data locations and execution models." >}}
+
+The CWL standards explicitly support the use of *software container* technologies, such as Docker and Singularity, to enable the portability of the underlying analysis tools. [Figure 2b](#fig:syntax), Item 2 illustrates the process of pulling a Docker container image from the [Quay.io registry](https://quay.io/repository/biocontainers/spoa?tab=tags); then, the workflow engine automates the mounting of files and folders within the container. The container included in the figure has been developed by a trusted author and is commonly used in the bioinformatics field, with the expectation that its results are reproducible. Indeed, the use of containers can be seen as a confirmation that a tool's execution is reproducible when using only its explicitly declared runtime environment. Similarly, when *distributed execution* is desired, no changes to the CWL tool description are needed. File or directory inputs are already explicitly defined in the CWL description, so the (distributed) workflow runner can handle job placement and data routing between compute nodes without additional configuration.  
+
+Via these two features—special handling of data paths and the optional but recommended use of software containers—the CWL standards enable portability (execution "without change"). While portability can be affected by various factors not controllable by software container technology—for instance, variation in the underlying operating-system kernel or in processor results—in practice, the exact same software container and data inputs lead to portability without further adjustment from the user.
+
+To support features that are _not_ in the CWL standards, the standards define *extension points* that permit name-spaced, vendor-specific features in explicitly defined ways. If these extensions do not fundamentally change how the tool should operate, then they are added to the hints list, and other CWL-compatible engines can ignore them.  However, if the extension is required to properly run the tool being described—for instance, due to the need for some specialized hardware—then the extension is listed under `requirements`, and CWL-compatible engines can recognize and explicitly declare their inability to execute that CWL description.
+
+
+**The [CWL Workflow Description Standard](https://w3id.org/cwl/v1.2/Workflow.html)** builds upon the CWL Command Line Tool Standard. It has the same YAML- or JSON-style syntax, with explicit workflow-level inputs, outputs, and documentation ([Figure 2c](#fig:syntax)).  Workflow descriptions consist of a list of steps, comprising CWL Command Line Tools or CWL sub-workflows, each re-exposing their tool's required inputs. Inputs for each step are connected by referencing the name of either the common *workflow inputs* or of outputs from other steps. The *workflow outputs* expose selected outputs from workflow steps, making explicit which intermediate-step outputs will be returned from the workflow. All connections include identifiers, which CWL document authors are encouraged to name meaningfully—for example, `reference_genome` instead of `input7`.
+
+CWL workflows form explicit dataflows, as required for a particular computational analysis. The connectivity between steps defines the partial execution order. Parallel execution of steps is permitted and encouraged whenever multiple steps have all their inputs satisfied. For example, in [Figure 1](#fig:sample_workflow), `find_16S_matches` and `find_S5_matches` are at the same data-dependency level and can execute concurrently or sequentially in any order. Additionally, a *scatter* construct allows the repeated execution of a CWL step (perhaps overlapping in time, depending on the available resources), where most of the inputs are the same except for one or more inputs that vary. This is done without having to modify the underlying tool description. Starting with CWL version 1.2, workflows can also *conditionally skip* execution of a step (tool or workflow), based upon a specified intermediate input or custom Boolean evaluation.  Combining these features allows for a flexible *branch* mechanism, which allows workflow engines to calculate data dependencies before the workflow starts and thus retains the predictability of the dataflow paradigm.
+
+In contrast to hard-coded approaches that rely on implicit file paths specific to each workflow, CWL workflows are more *flexible*, *reusable*, and *portable*, which enables scalability. The use of explicit runtime environments in the CWL standards, combined with explicit inputs/outputs to form the dataflow, enables step reordering and explicit handling of iterations. The same features enable scalable remote execution and, more generally, flexible use of runtime environments. Moreover, individual tool definitions from multiple workflows can be reused in any new workflow.
+
+CWL workflow descriptions are also *future-proof*. Forward compatibility of CWL documents is guaranteed, as each CWL document declares which version of the standards it was written for, and minor versions do not alter the required features of the major version. A [standalone upgrader](https://pypi.org/project/cwl-upgrader/) can automatically upgrade CWL documents from one version to the next, and many CWL-aware platforms will internally update user-submitted documents at runtime.
+
+**Execution of workflows in CWL format.** CWL is a set of standards, not a particular software product to install, purchase, or rent. The CWL standards need to be implemented to be useful; a list of some implementations of the CWL standards is in the [Table](#runners).  Workflow/tool runners that claim compliance with the CWL standards are allowed significant flexibility in how and where they execute a user\'s CWL documents as long as they fulfill the requirements written in those documents. For example, they are allowed (and encouraged) to distribute execution of a workflow across all available computers that can fulfill user-specified resource requirements. Aspects of execution not defined by the CWL standards include Web APIs for workflow execution and real-time monitoring.
+
+For example, details about when a step should be considered ready for execution are available in [Section 4 of the CWL Workflow Description standard](https://w3id.org/cwl/v1.2/Workflow.html#Workflow), but once all the inputs are available, the exact timing is up to the workflow engine itself.
+
+Step execution may result in a temporary or permanent failure, as [defined](https://w3id.org/cwl/v1.2/Workflow.html#Workflow_success_and_failure) in Section 4 of the CWL Workflow Description standard. The workflow engine must control any automatic failure recovery attempts—for instance, to re-execute a workflow step. Most workflow engines that implement the CWL standards feature the ability to attempt several re-executions, set by the user, before reporting permanent failure.
+
+The CWL community has developed the following optimizations without requiring that users rewrite their workflows to benefit:
+
+-   Automatic streaming of data inputs and outputs instead of waiting for all data to be downloaded or uploaded (where those data inputs or outputs are marked with `streamable: true`).
+-   Workflow step placement based on data location [[18](https://renci.org/technical-reports/tr-19-01/)], resource needs, and/or cost of data transfer [[19](https://renci.org/technical-reports/tr-19-02/)].
+-   The reuse of the results from previously computed steps, even from a different workflow, as long as the inputs are identical. This can be controlled by the user via the [`WorkReuse` directive](https://w3id.org/cwl/v1.2/Workflow.html#WorkReuse) in the CWL Workflow Standard.
+
+
+**Real-world usage at scale.** CWL users and vendors routinely report that they analyze 5,000 whole-genome sequences in a single workflow execution. One customer of a commercial vendor reported a successful workflow run containing an 8,000-wide step; the entire workflow had 25,000 container executions. By design, the CWL standards do not impose any technical limitations on the size of files processed or to the number of tasks run in parallel. The major scalability bottlenecks are hardware-related—not having enough machines with enough memory, compute power, or disk space to process ever-growing data at a greater scale. As these boundaries move in the future with technological advances, the CWL standards should be able to keep up and not be a limitation.
+
+**When is CWL not useful?** The CWL standards were designed for a particular style of command-line, tool-based data analysis. Therefore, the following situations are out of scope and not appropriate (or possible) to describe using CWL syntax:
+
+-   Safe interaction with stateful (web) services.
+-   Real-time communication between workflow steps.
+-   Interactions with command-line tools beside 1) constructing the command line and making available file inputs (both user-provided and synthesized from other inputs just prior to execution) and 2) consuming the output of the tool once its execution is finished, in the form of files created/changed, the POSIX standard output and error streams, and the POSIX exit code of the tool.
+-   Advanced control-flow techniques beyond conditional steps.
+-   Runtime workflow graph manipulations: dynamically adding or removing new steps during workflow execution, beyond any predefined conditional step execution tests that are in the original workflow description.
+-   Workflows that contain cycles: \"Repeat this step or sub-workflow a specific number of times\" or \"Repeat this step or sub-workflow until a condition is met.\"[^cycles]
+-   Workflows that need specific steps run on a specific day or at a specific time.
+
+[^cycles]: Supporting cycles/loops as an optional feature has been suggested for a future version of the CWL standards, but it has yet to be put forth as a formal proposal with a prototype implementation. As a work around, one can launch a CWL workflow from within a workflow system that does support cycles, as documented in the eWaterCycle case study with Cylc [[28](https://doi.org/10.1109/MCSE.2019.2906593.00000)].
+
+
+### Open Source, Open Standards, Open Community
+
+<div class="foss" style="float: right; border: thin #424242 solid; padding: 0.5em; margin: 1em; margin-right: 0; font-size: bigger; max-width: 20em; min-width: 15em; background: #eee; color: #111">
+
+*Free and Open Source implementations of the CWL standards.* As of 2021, the CWL standards have gained much traction and are widely supported in practice. In addition to the implementations in the Table, Galaxy^[1](#R1)^ and Pegasus^[10](#R10)^ also have in-development support for the CWL standards.
+
+Wide adoption benefits from our principles: The CWL standards include conformance tests, but the CWL community does not yet test or certify implementations of the standards or specific technology stacks. Instead, the authors and service providers of workflow runners and workflow-management systems self-certify support for the CWL standards, based on a particular technology configuration they deploy and maintain. 
+
+*F/OSS tools and libraries for working with CWL-format documents.*^[a](#R2-A)^ CWL plug-ins exist for Atom, Vim, Emacs, Visual Studio Code, IntelliJ, gedit, and any editor that supports the Language Server Protocol (LSP)^[b](#R2-B)^ standard. There are tools to generate CWL syntax from Python (via argparse/click or via functions), ACD,^[c](#R2-C)^ CTD,^[d](#R2-D)^ and annotations in IPython Jupyter Notebooks. Libraries to generate and/or read CWL documents exist in many languages: Python, Java, R, Go, Scala, Javascript, Typescript, and C++.
+</div>
+
+Given the numerous and diverse set of potential users, implementers, and other stakeholders, we posit that a project like CWL requires the combined development of code, standards, and community. Indeed, these requirements were part of the foundational design principles for CWL; in the long run, these principles have fostered free and open source software (see [sidebar](#foss) "The CWL Project and Free/Open Source Software") and a vibrant and active ecosystem.
+
+
+
+**The CWL principles.** The CWL project is based on a set of five principles:
+
+-   **Principle 1:** At the core of the project is the community of people who care about its goals.
+-   **Principle 2:** To achieve the best possible results, there should be few, if any, barriers to participation. Specifically, to attract people with diverse experiences and perspectives, there must be no cost to participate.
+-   **Principle 3:** To enable the best outcomes, project outputs should
+    be used as people see fit. Thus, the standards themselves must be licensed for reuse, with no acquisition price.
+-   **Principle 4:** The project must not favor any one company or group over another, but neither should it try to be all things to all people. The community decides.
+-   **Principle 5:** Concepts and ideas must be tested frequently.  Tested and functional code is the beginning of evaluating a proposal, not the end.
+
+Over time, CWL project members learned that this approach is a superset of the OpenStand Principles, a joint "Modern Paradigm for Standards" promoted by the IAB, IEEE, IETF, Internet Society, and W3C. The CWL project additions to the OpenStand Principles are 1) to keep participation free of cost, and 2) the explicit choice of Apache License 2.0 for all its text, conformance tests, and reference implementations.
 
 <!-- mark -->
 
 
 
-
-# Features of the Common Workflow Language standards
-
-<span id="sec:design" label="sec:design">[sec:design]</span>
-
-The CWL standard support polylingual and multi-party workflows, for
-which they enable computational reuse and portability (see also the CACM
-Box for main features). To do so, each release of the CWL standards has
-two[^6] main components: (1) a standard for describing *command line*
-tools; and (2) a standard for describing *workflows* that compose such
-tool descriptions. The goal of the **[CWL Command Line Tool Description
-Standard](https://w3id.org/cwl/v1.2/CommandLineTool.html)** is to describe how a particular command line tool works:
-what are the *inputs* and *parameters* and their types; how to add the
-correct flags and switches to the *command line* invocation; and where
-to find the *output files*.
-
-[^6]: The third component, *Schema Salad*, is only of interest to those
-who want to parse the syntax of the schema language that is used to
-define the syntax of CWL itself.
-
-The CWL standards define an *explicit language*, both in syntax, and in
-its data and execution model. Its textual syntax is derived from
-YAML[8]. This syntax does not restrict the amount of detail; for
-example,
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>A
-depicts a simple example with sparse detail, and
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>B
-depicts the same example but with the execution augmented with further
-details. Each *input* to a tool has a name and a type (e.g., File, see
-label 1 in the figure). Authors of tool descriptions are encouraged to
-include *documentation* and *labels* for all components (i.e., as in
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>B),
-to enable the automatic generation of helpful visual depictions and even
-Graphical User Interfaces for any given CWL description. *Metadata*
-about the tool description authors themselves encourages attribution of
-their efforts. As shown in
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>B,
-item 3, these tool descriptions can contain *hints* or mandatory
-*requirements* such as which software container to use or how much
-compute resources are required (memory, number of CPU cores, disk space,
-and/or the maximum time or deadline to complete the step or entire
-workflow.)
-
-*The CWL execution model is explicit*: Each tool’s runtime environment
-is explicit and any required elements must be specified by the CWL
-tool-description author.[9] Each tool invocation uses a separate working
-directory, populated according to the CWL tool description, e.g., with
-the input files explicitly specified by the workflow author.
-
-{{< figure src="figure3.svg" link="figure3.svg" id="fig:portability" 
-  width="100%" title=".."
-  caption=".." >}}
-
-
-**The explicit runtime model enables portability**, by being explicit
-about data locations. As
-Figure <a href="#fig:portability" data-reference-type="ref" data-reference="fig:portability">[fig:portability]</a>
-indicates, this enables execution of CWL workflows on diverse
-environments as provided by various implementations of the CWL
-standards: the local environment of the author-scientist (e.g., a single
-desktop computer, laptop, or workstation), a remote batch
-production-environment (e.g., a cluster, an entire datacenter, or even a
-global multi-datacenter infrastructure), and an on-demand cloud
-environment.
-
-The CWL standards explicitly support the use of *software container*
-technologies, such as Docker and Singularity, to enable portability of
-the underlying analysis tools.
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>B,
-item 2, illustrates the process of pulling a Docker container-image from
-the [Quay.io](Quay.io) registry; then, the workflow engine automates the
-mounting of files and folders within the container. The container
-included in the figure has been developed by a trusted author and is
-commonly used in the bioinformatics field with an expectation its
-results are reproducible. Indeed, the use of containers can be seen as a
-confirmation that a tool’s execution is reproducible, when using only
-its explicitly declared runtime-environment. Similarly, when
-*distributed execution* is desired, no changes to the CWL
-tool-description are needed: because the file or directory inputs are
-already explicitly defined in the CWL description, the (distributed) can
-handle (without additional configuration) both job placement and data
-routing between compute nodes.
-
-To support features that are *not* in the CWL standards, the CWL
-standards define *extension points* that permit (namespaced)
-vendor-specific features in explicitly defined ways. If these extensions
-do not fundamentally change how the tool should operate, then they are
-list and other CWL compatible engines can ignore them. However, if the
-extension is required to properly run the tool being described, e.g.,
-due to the need for some specialized hardware, then the extension is
-listed under *requirements* and CWL compatible engines can recognize and
-explicitly declare their inability to execute that CWL description.
-
-The **CWL Workflow Description Standard**[10] builds upon the CWL
-Command Line Tool Standard: it has the same YAML- or JSON-style syntax,
-with explicit workflow level inputs, outputs, and documentation (see
-Figure <a href="#fig:syntax" data-reference-type="ref" data-reference="fig:syntax">[fig:syntax]</a>C).
-The workflow descriptions consists of a list of *steps*, comprised of
-CWL CommandLineTools or CWL sub-workflows, each re-exposing their tool’s
-required *inputs*. Inputs are connected by referencing the name of
-either the common *workflow inputs* or particular outputs of other
-steps. The *workflow outputs* expose selected outputs from workflow
-steps, making explicit which intermediate step outputs will be returned
-from the workflow. All connections include identifiers, which CWL
-document authors are encouraged to name meaningfully, e.g.,
-`reference_genome` instead of `input7`.
-
-CWL workflows form explicit *data flows*, as required for the particular
-computational analysis. The connectivity between steps defines the
-partial execution order. Parallel execution of steps is permitted and
-encouraged whenever multiple steps have all of their inputs satisfied,
-e.g., in
-Figure <a href="#fig:sample_workflow" data-reference-type="ref" data-reference="fig:sample_workflow">[fig:sample_workflow]</a>,
-`find_16S_matches` and `find_S5_matches` are at the same data dependency
-level and can execute concurrently or sequentially in any order.
-(perhaps overlapping in time, depending on the resources available)
-where most of the inputs are the same except for one or more inputs that
-vary. This is done without requiring the modification of the underlying
-tool description. Starting with CWL version 1.2, workflows can also
-conditionally *skip execution* of a (tool or workflow) step, based upon
-a specified intermediate input or custom boolean evaluation. Combining
-these features allows for a flexible *branch* mechanism that allows
-workflow engines to calculate data dependencies before the workflow
-starts, and thus retains the predictability of the data flow paradigm.
-
-In contrast to hard-coded approaches that rely on implicit file-paths
-particular for each workflow, CWL workflows are more *flexible*,
-*reusable*, and *portable* (which enables scalability). The use in the
-CWL standards of explicit runtime environments, combined with explicit
-inputs/outputs to form the data flow, enables step reordering and
-explicit handling of iterations. The same features enable *scalable*
-remote execution and, more generally, flexible use of runtime
-environments. Moreover, individual tool definitions from multiple
-workflows can be reused in any new workflow.
-
-CWL workflow descriptions are also *future-proof*. Forward compatibility
-of CWL documents is guaranteed, as each CWL document declares which
-version of the standards it was written for and minor versions do not
-alter the required features of the major version. A stand-alone
-upgrader[11] can automatically upgrade CWL documents from one version to
-the next, and many CWL-aware platforms will internally update
-user-submitted documents at runtime.
-
-## Execution of workflows in CWL format
-
-CWL is a set of standards, not a particular software product to install,
-purchase, or rent. The CWL standards need to be implemented to be
-useful; a list of some implementations of the CWL standards is in Table
-<a href="#tab:runners" data-reference-type="ref" data-reference="tab:runners">1</a>.
-Workflow/tool runners that claim compliance with the CWL standards are
-allowed significant flexibility in how and where they execute a user’s
-CWL documents as long as they fulfill the requirements written in those
-documents. For example, they are allowed (and encouraged) to distribute
-execution of a workflow across all available computers that can fulfill
-the resource requirements specified by the user. Aspects of execution
-not defined by the CWL standards include (web) APIs for workflow
-execution and real-time monitoring.
-
-For example details about when a step should be considered ready for
-execution are available in §4 of CWL Workflow Description standard[12]
-but once all the inputs are available the exact timing is up to the
-workflow engine itself.
-
-Step execution may result in a temporary or permanent failure, as
-defined in §4 of CWL Workflow Description standard[13]. It is up to the
-workflow engine to control any automatic attempts to recover from
-failures, e.g., to re-execute a Workflow step. Most workflow engines
-that implement the CWL standards offer the feature of attempting a
-number of re-executions, as set by the user, before reporting permanent
-failure.
-
-The CWL community has developed the following optimizations without
-requiring that users re-write their workflows to benefit:
-
-1.  Automatic streaming of data inputs and outputs instead of waiting
-    for all the data to be downloaded or uploaded (where those data
-    inputs or outputs are marked with “streamable: true”)
-
-2.  Workflow step placement based upon data location [21], resource
-    needs, and/or cost of data transfer [22]
-
-3.  The re-use of the results from previously computed steps, even from
-    a different workflow, as long as the inputs are identical. This can
-    be controlled by the user via the “WorkReuse” directive[14].
-
-Real world usage at scale: routinely CWL users and vendors report that
-they analyze 5000 whole genome sequences in a single workflow execution;
-one customer of a commercial vendor reported a successful run of a
-workflow that contained an 8,000-wide step; the entire workflow had
-25,000 container executions. By design, the CWL standards do not impose
-any technical limitations to the size of files processed or to the
-number of tasks run in parallel. The major scalability bottlenecks are
-hardware-related — not having enough machines with enough memory,
-compute or disk space to process more and more data at a larger scale.
-As these boundaries move in the future with technological advances, the
-CWL standards should be able to keep up and not be a cause of
-limitations.
-
-## When is CWL not useful?
-
-The CWL standards were designed for a particular style of command-line
-tool based data analysis. Therefore, the following situations are out of
-scope and not appropriate (or possible) to describe using CWL syntax:
-
-1.  Safe interaction with stateful (web) services
-
-2.  Real-time communication between workflow steps
-
-3.  Interactions with command line tools beside 1) constructing the
-    command line and making available file inputs (both user provided
-    and synthesized from other inputs just prior to execution) and 2)
-    consuming the output of the tool once its execution is finished, in
-    the form of files created/changed, the POSIX standard output and
-    error streams, and the POSIX exit code of the tool
-
-4.  Advanced control-flow techniques beyond conditional steps
-
-5.  Runtime workflow graph manipulations: dynamically adding or removing
-    new steps during workflow execution, beyond any predefined
-    conditional step execution tests that are in the original workflow
-    description
-
-6.  Workflows that contain cycles: “repeat this step or sub-workflow a
-    specific number of times” or “repeat this step or sub-workflow until
-    a condition is met.”[15]
-
-7.  Workflows that need particular steps run at or during a specific
-    day/time-frame
 
 # Open-Source, Open Standards, Open Community
 
@@ -507,9 +392,6 @@ the disadvantages of process start-up time and a very simple data model.
 (As a *polylingual* workflow standard, CWL uses the POSIX CLI data
 model.)
 
-{{< figure src="figure2.svg" link="figure2.svg" id="fig:syntax" 
-  width="100%" title=".."
-  caption=".." >}}
 </div>
 
 ## Sidebar B: The CWL project and Free/Open Source Software (F/OSS)
@@ -534,26 +416,6 @@ based on a particular technology configuration they deploy and maintain.
 
 <div id="tab:runners">
 
-| Implementation                                            | Platform support                          |
-|:----------------------------------------------------------|:------------------------------------------|
-| [cwltool](https://pypi.org/project/cwltool)               | Linux, macOS, Windows (via WSL 2)         |
-|                                                           | local execution only                      |
-| [Arvados](https://arvados.org)                            | in the cloud on AWS, Azure and GCP,       |
-|                                                           | on premise & hybrid clusters using Slurm  |
-|                                                           | or LSF                                    |
-| [Toil](https://pypi.org/project/toil-cwl-runner)[25]    | AWS, Azure, GCP, Grid Engine, HTCondor,   |
-|                                                           | LSF, Mesos, OpenStack, Slurm, PBS/Torque  |
-|                                                           | also local execution on Linux, macOS,     |
-|                                                           | MS Windows (via WSL 2)                    |
-| [CWL-Airflow](https://pypi.org/project/cwl-airflow)[26] | Local execution on Linux, OS X            |
-|                                                           | or via dedicated Airflow enabled cluster. |
-| [StreamFlow](https://streamflow.di.unito.it/)[27]       | Kubernetes, HPC with Singularity          |
-|                                                           | (PBS, Slurm), Occam, multi-node SSH,      |
-|                                                           | local-only (Docker, Singularity)          |
-| [REANA](https://docs.reana.io/)                           | Kubernetes                                |
-
-Selected F/OSS workflow runners and platforms that implement the CWL
-standards.
 
 </div>
 
@@ -1021,32 +883,15 @@ and their practical application in CWLProv. *GigaScience*, **8** (2019).
 </div>
 
 
-[8]: JSON is an acceptable subset of YAML, and common when converting
-from another format to CWL syntax.
 
-[9]: Details on how the CWL Command Line Tool standard specifies that
-tool executors should setup and control the runtime environment,
-available at
-<https://w3id.org/cwl/v1.2/CommandLineTool.html#Runtime_environment>,
-which also specifies which directories tools are allowed to write to.
 
-[10]: <https://w3id.org/cwl/v1.2/Workflow.html>
-
-[11]: <https://pypi.org/project/cwl-upgrader/>
-
-[12]: <https://w3id.org/cwl/v1.2/Workflow.html#Workflow>
-
-[13]: <https://w3id.org/cwl/v1.2/Workflow.html#Workflow_success_and_failure>
-
-[14]: <https://w3id.org/cwl/v1.2/Workflow.html#WorkReuse>
-
-[15]: Supporting cycles/loops as an optional feature has been suggested
+[[15]: Supporting cycles/loops as an optional feature has been suggested
 for a future version of the CWL standards, but it has yet to be put
 forth as a formal proposal with a prototype implementation. As a work
 around, one can launch a CWL workflow from within a workflow system that
 does support cycles, as documented in the eWaterCycle case study with
 Cylc [23].
-
+]
 [16]: https://open-stand.org/about-us/principles/
 
 [17]: Snapshot of <https://www.commonwl.org/implementations/>
