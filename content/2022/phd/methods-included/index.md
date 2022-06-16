@@ -49,9 +49,9 @@ This work is licensed under a [Creative Commons Attribution 4.0 International (C
 
 The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext) and [LaTeX source](https://github.com/mr-c/cwl_methods_included) with these modifications by Stian Soiland-Reyes: 
 - Conversion to Markdown/HTML
-- Re-insert original high resolution figures
-- Re-insert table as text
-- Re-inserted author affiliations and ORCID
+- Re-inserted original high resolution figures as SVG
+- Re-inserted table as text
+- Re-inserted author affiliations & ORCIDs
 - Re-inserted hyperlinks instead of footnotes
 - References modified to [house style](/2021/house-rules/citation-style/)
 - Typographical improvements for Web rendering
@@ -60,7 +60,7 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 - Some long paragraphs split for improved readability
 - Spelling fixes (e.g. missing — in "") 
 - Reinstated missing text in [sidebar](#mono-poly-lingual)
-- Re-embed acknowledgement contributions list and related links from online supplementary material.
+- Re-embed from online supplementary material: acknowledgement contributions list w/CRediT, related links
 
 </div>
 
