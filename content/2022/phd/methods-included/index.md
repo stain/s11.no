@@ -93,6 +93,23 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 
 </div>
 
+## Video abstract
+
+
+<figure id="fig:abstract">
+<div style="padding:56.25% 0 0 0;position:relative;">
+<iframe src="https://player.vimeo.com/video/712414782?h=f13545ab45" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+<figcaption>
+
+[Common Workflow Language](https://vimeo.com/712414782) by [Mark Robinson](https://orcid.org/0000-0002-8184-7507), The University of Manchester.
+
+</figcaption>
+</figure>
+
+
+
+
 <div id="insight" class="sidebar">
 
 **Key Insights**
@@ -103,8 +120,6 @@ reusability.
 * CWL standards are developed around core principles of community and shared decision making, reuse, and zero cost for participants.
 </div>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/712414782?h=f13545ab45" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/712414782">Common Workflow Language</a> from <a href="https://vimeo.com/user4730653">CACM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>    
     
 ## Introduction {#introduction}
 
@@ -738,3 +753,4 @@ David Haussler, Benedict Paten (2017):
 
 
 
+<script src="https://player.vimeo.com/api/player.js"></script>
