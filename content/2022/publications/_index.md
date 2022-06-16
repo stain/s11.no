@@ -25,11 +25,13 @@ aliases:
 
 ## 2022
 
-Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, CWL Community (2022):  
-[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext).  
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The CWL Community (2022):  
+[**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](/2022/phd/methods-included/).  
 _Communications of the ACM_ **65**(6)  
 <https://doi.org/10.1145/3486897>  
 [arXiv:2105.07028 [cs.DC]](https://arxiv.org/abs/2105.07028)
+[[pdf](https://www.research.manchester.ac.uk/portal/files/218742952/3486897.pdf)]
+[[html](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext)]
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 [**Packaging research artefacts with RO-Crate**](/2022/phd/ro-crate/).  
