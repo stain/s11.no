@@ -58,7 +58,7 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 - Inline headers changed back to sub-headings
 - Sidebars reformatted
 - Some long paragraphs split for improved readability
-- Spelling fixes (e.g. missing --)
+- Spelling fixes (e.g. missing — in "") 
 - Reinstated missing text in [sidebar](#mono-poly-lingual)
 - Re-embed acknowledgement contributions list and related links from online supplementary material.
 
