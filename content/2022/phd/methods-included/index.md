@@ -61,7 +61,7 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 - Spelling fixes (e.g. missing — in "") 
 - Reinstated missing text in [sidebar](#mono-poly-lingual)
 - Re-embed from online supplementary material: acknowledgement contributions list w/CRediT, related links
-
+- Video abstract re-encoded to avoid Vimeo dependency
 </div>
 
 # Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language
@@ -97,12 +97,34 @@ The text below has been adapted from [ACM's HTML article](https://cacm.acm.org/m
 
 
 <figure id="fig:abstract">
-<div style="padding:56.25% 0 0 0;position:relative;">
-<iframe src="https://player.vimeo.com/video/712414782?h=f13545ab45" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+ <video controls="controls" poster="video/cwl-intro.jpeg" width="100%">
+   <source src="video/cwl-intro-video-vp9.webm" type='video/webm; codecs="vp9,vorbis"' />
+   <source src="video/cwl-intro-video-h264.m4v" type='video/mp4"' />   
+   <track src="video/subtitles/english.vtt" label="English" kind="captions" srclang="en-us" default="" />
+   <track src="video/subtitles/chinese_simplified.vtt" label="中文" kind="subtitles" srclang="zh-Hans" />
+   <track src="video/subtitles/japanese.vtt" label="日本語" kind="subtitles" srclang="ja" />
+   <track src="video/subtitles/french.vtt" label="Français" kind="subtitles" srclang="fr-fr" />
+   <track src="video/subtitles/lithuanian.vtt" label="Lietuvių kalba" kind="subtitles" srclang="lt" />
+   <track src="video/subtitles/romanian.vtt" label="Român" kind="subtitles" srclang="ro" />
+   <track src="video/subtitles/russian.vtt" label="Русский язык" kind="subtitles" srclang="ru" />
+   <track src="video/subtitles/ukranian.vtt" label="Українська" kind="subtitles" srclang="uk" />
+   <track src="video/subtitles/urdu.vtt" label="اردو" kind="subtitles" srclang="ur" /> 
+   <p>
+   See video abstract at 
+   <a href="https://player.vimeo.com/video/712414782">Vimeo</a>, 
+   <a href="https://www.youtube.com/watch?v=86eY8xs-Vo8">YouTube</a>,
+   download as 
+   <a href="video/cwl-intro-video-h264.m4v">mp4</a> or
+   <a href="video/cwl-intro-video-vp9.webm">webm</a>.
+   </p>
+  </video> 
+
 <figcaption>
 
-[Common Workflow Language](https://vimeo.com/712414782) by [Mark Robinson](https://orcid.org/0000-0002-8184-7507), The University of Manchester.
+[Intro to Common Workflow Language](https://vimeo.com/712414782).
+Adapted from [CWLViewer](https://www.youtube.com/watch?v=_yjhVTmvxLU) by 
+[Mark Robinson](https://orcid.org/0000-0002-8184-7507), The University of Manchester.
 
 </figcaption>
 </figure>
