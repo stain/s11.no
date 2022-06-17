@@ -42,8 +42,8 @@ params:
     IndexOptions Charset=UTF-8
     IndexOptions -FancyIndexing -HTMLTable +FoldersFirst +NameWidth=40 +TrackModified
     <FilesMatch "\.html$">
-      Header add Link "</css/bundle.css>;rel=preload"
-      Header add Link "</images/cc-by-4.0.svg>;rel=preload"
+      Header add Link "</2022/css/bundle.css>;rel=preload"
+      Header add Link "</2022/images/cc-by-4.0.svg>;rel=preload"
     </FilesMatch>
 
 permalinks:
