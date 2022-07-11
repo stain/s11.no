@@ -9,7 +9,7 @@
          color: black;
          text-align: justify;
          margin: 1em;
-       }
+       }e
        h1,h2,h3,h4 {
          font-family: arial, helvetica, sans-serif;
        }
@@ -247,9 +247,11 @@
     </style>
   </head>
   <body>
+    <main>
+      <article>
     <h1>HTML på en ryddig måte - forståelse og bruk</h1>
     <h2 class="sub">HTML-kurs ved Nettverksgruppa for Aktivitetsuken 2000</h2>
-
+    <section id="introduksjon">
     <h2>Introduksjon</h2>
       <p>
         Internett er fullt av informasjon. Det som kjennetegner
@@ -279,7 +281,8 @@
         oversiktlig måte, slik at du skjønner hva du driver med
         og ikke gjetter på måfå.
       </p>
-
+    </section>
+    <section id="syntaks">
     <h2>Syntaks</h2>
       <dl>
         <dt>syn~tak´s</dt>
@@ -414,7 +417,8 @@
           kan den finne på å tolke resten av dokumentet som en del av
           <code>em</code>-elementet. (Netscape finner ofte på slikt)
         </p>
-      <h3>Attributter</h3>
+      <section id="attributter">
+        <h3>Attributter</h3>
          <p>
            Et element kan også ha <em>attributter</em>, det vil si egenskaper.
            Attributtene angis bare i starttagen, ikke i sluttagen.
@@ -450,7 +454,9 @@
           stilsett. På den måten kan du holde selve dokumentdelen
           ryddig og oversiktlig.
         </p>
-      <h3>Selvavsluttende elementer, <code>img</code></h3>
+      </section>
+      <section id="selvavsluttende">
+        <h3>Selvavsluttende elementer, <code>img</code></h3>
         <p>
           Nå skal vi introdusere et viktig element, nemlig elementet for
           å sette inn bilder. <code>img</code> står for engelsk <em>image</em>,
@@ -518,7 +524,8 @@
           bildet til å være et menyvalg, for eksempel, så vil det være
           lurt å skrive i <code>alt</code>-attributtet hvilket menypunkt det er.
         </p>
-
+      </section>
+    <section id="entiteter">
       <h3>Entiteter</h3>
         <p>
           Det er ikke alle tegn som du kan finne på å bruke som er
@@ -567,7 +574,8 @@
            </p>
          </div>
         </div>
-
+      </section>
+    <section>
       <h3>Kommentarer</h3>
         <p>
           Mange ganger kan det være fornuftig å bruke kommentering i HTML-koden
@@ -655,7 +663,9 @@
           men jeg vil anbefale at du bare bruker blokkelementer, og har
           linjeelementene inne i blokkelementer.
         </p>
-
+        </section>
+    </section>
+    <section> 
     <h2>Flere elementer</h2>
       <h3>Overskrifter</h3>
         <p>
@@ -709,6 +719,8 @@
           overskrift for alle som ikke kan se bildet, slik at
           overskriften ikke forsvinner i den vanlige tekstflyten.
         </p>
+      <section>
+      <section>
        <h3>Lenker</h3>
          <p>
            En grunnleggende egenskap ved et dokument uttrykt i HTML er at
@@ -809,6 +821,8 @@
              </p>
           </div>
          </div>
+         </section>
+         <section>
        <h3>Lister</h3>
          <div class="eksempel">
            <p class="info">
@@ -878,6 +892,8 @@
            <code>dt</code> kan du bruke linjeelementer, mens innenfor
            <code>dd</code> kan du bruke både blokk- og linjeelementer.
          </p>
+        </section>
+      <section>
        <h3>Tabeller</h3>
          <p>
            Tabeller er svært nyttige når man skal presentere datamangder.
@@ -938,7 +954,8 @@
            <code>div</code>-elementet for å oppnå slik formattering.
          </p>
 
-
+        </section>
+      <section>
     <h2>Stilsett</h2>
       <p>
         Vi nevnte i begynnelsen at vi ønsket å skille struktur og utseende.
@@ -1116,7 +1133,7 @@ em.farge {
           ville ikke fått større skrift, som er definert for
           <code>em</code>-elementer som er medlem av klassen <code>farge</code>.
         </p>
-
+      <section>
       <h3>Størrelser</h3>
         <p>
           Mange av egenskapene i CSS angir størrelser. Man vil angi
@@ -1162,8 +1179,8 @@ em.farge {
           en leser. Bruker du derimot relative størrelser fornuftig kan
           du ønske alle velkommen.
         </p>
-
-
+      </section>
+      <section>
       <h3>Egenskaper</h3>
         <p>
           Her er de egenskapene som du kanskje mest får bruk for. Flere
@@ -1251,7 +1268,8 @@ blockquote {
           kan du reversere den ved å gi den egenskapen <code>normal</code>
           istedet for <code>bold</code> eller <code>italic</code>.
         </p>
-
+      </section>
+      <section>
       <h3>Marger og bokser</h3>
         <p>
           Ethvert element kan bli gitt egenskaper for marger og rammelinje.
@@ -1465,6 +1483,8 @@ body {
           og <code>background-position: center center;</code> Se spesifikasjonen for
           flere detaljer.
         </p>
+      </section>
+      <section>
       <h3>Generelt</h3>
         <p>
           <code>a:link, a:visited: a:active { text-decoration: underline; } </code>
@@ -1525,7 +1545,8 @@ ul {
           </div>
         </div>
 
-
+  </section>
+  <section>
     <h2>Oversiktlig kode</h2>
       <p>
         Vi vil her komme med forslag til teknikker for å skrive HTML
@@ -1580,7 +1601,7 @@ html
           slik som i <code class="feil">&lt;em&gt; Flapp og hei ..
           &lt;p&gt; blapper uten grenser&lt;/p&gt; flapper &lt;em&gt;</code>.
         </p>
-
+      <section>
       <h3>Avslutt alle elementer</h3>
         <p>
           Gjør det til en hovedregel at med en gang du har skrevet en
@@ -1593,6 +1614,8 @@ html
           arbeider med elementer som inneholder hverandre.
           Vær konsekvent, husk å avslutte elementer som ikke har noen sluttag.
         </p>
+      </section>
+    <section>
       <h3>Følg spesifikasjonene</h3>
         <p>
           Ved å HTML-spesifikasjonen sørger du for at dokumentene dine ikke
@@ -1601,6 +1624,8 @@ html
           skal oppføre seg merkelig, fordi du har oversikt over
           dokumentstrukturen og
         </p>
+      </section>
+      <section>
       <h3>Bruk innrykk</h3>
         <p>
           Ved å benytte seg av innrykk får du lett oversikt over hvilke
@@ -1609,6 +1634,7 @@ html
           Du bør selv finne ut hvilken innrykkingsstil som passer deg best.
           Her kommer noen varianter:
         </p>
+      <section>
         <h4>Alle blokkelementer innrykkes uansett</h4>
           <div class="eksempel">
             <p class="info">
@@ -1636,6 +1662,8 @@ html
             elementer er avsluttet, og at det er ingen tvil om at det korte avsnittet
             er en del av punktlisten. Samtidig ser vi at dette blir fort veldig stort.
           </p>
+          </section>
+        <section>
         <h4>Forenklet innrykk</h4>
           <div class="eksempel">
             <p class="info">
@@ -1666,7 +1694,8 @@ html
             punkt på punktlisten kan vi lett risikere å miste den ene &lt;/li&gt;en,
             og om avsnittet blir lengre kan &lt;/p&gt; bli vanskeligere å få øye på.
           </p>
-
+        </section>
+      <section>
         <h4>Bruk av linjeskift</h4>
           <div class="eksempel">
             <p class="info">
@@ -1700,6 +1729,8 @@ html
             tilgang til en veldig enkel editor hvor det å bruke innrykk
             fører til så mye merarbeid at det ikke lønner seg.
           </p>
+        </section>
+        <section>
         <h4>Logisk innrykk</h4>
           <div class="eksempel">
             <p class="info">
@@ -1736,6 +1767,8 @@ html
           viktig at en er konsekvent i metodevalget, hvis ikke kan
           det lett bli rotete.
         </p>
+        </section>
+      <section>
         <h4>Stians forslag</h4>
           <div class="eksempel">
             <p class="info">
@@ -1765,7 +1798,9 @@ html
 &lt;/body&gt;
             </pre>
           </div>
-
+          </section>
+</section>
+<section>
       <h3>Separer struktur og utseende</h3>
         <ul>
           <li>Si mest mulig om strukturen i HTML-koden, og minst mulig om utseendet.</li>
@@ -1783,7 +1818,11 @@ html
           sjekker dokumentet ditt opp mot spesifikasjonen du har valgt å bruke
           og forteller deg om eventuelle feil.
         </p>
+        </section>
+        </section>
+      </article>
 
+      <section>
     <h2>Referanser</h2>
       <dl>
         <dt>
@@ -1822,10 +1861,13 @@ html
           som flest mulig kan støtte.
         </dd>
       </dl>
-
+    </section>
+    </main>
+    <footer>
     <address>
     Originally published 2000-09-13 at <a
     href="http://www.nvg.org/nvg/kurs/html/">http://www.nvg.org/nvg/kurs/html/</a>
     by Stian Søiland</address>
+    </footer>
   </body>
 </html>
