@@ -3,9 +3,9 @@ title: Creating lightweight FAIR Digital Objects with RO-Crate
 lang: en-GB
 categories:
   - PhD
-date-meta: '2022-07-10s'
+date-meta: '2022-07-10'
 summary: >
-  Poster abstract submitted to FAIR Digital Objects conference
+  Poster abstract submitted to FAIR Digital Objects conference (FDO2022)
 description: >
   RO-Crate is a lightweight method to package research outputs along with their metadata, based on Linked Data principles and W3C standards. RO-Crate provides a flexible mechanism for researchers archiving and publishing rich data packages (or any other research outcome) by capturing their dependencies and context. However, additional measures should be taken to ensure that a crate is also following the FAIR principles, including consistent use of persistent identifiers, provenance, community standards, clear machine/human-readable licensing for metadata and data, and Web publication of RO-Crates.
 
