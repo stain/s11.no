@@ -6,7 +6,7 @@ tags:
 categories:
   - PhD
 url: /2022/phd/ 
-summary: Draft of PhD thesis outline for The University of Manchester
+summary: Draft of PhD thesis outline, University of Amsterdam
 aliases:
 ---
 
