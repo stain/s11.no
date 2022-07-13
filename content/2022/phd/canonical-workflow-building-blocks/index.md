@@ -42,6 +42,8 @@ _Data Intelligence_ **4**(2)
 
 _Stian Soiland-Reyes¹², Genís Bayarri³, Pau Andrio⁴, Robin Long⁵⁶, Douglas Lowe⁶, Ania Niewielska⁷, Adam Hospital³, Paul Groth²_
 
+<div class="affiliations">
+
 ¹ Department of Computer Science, The University of Manchester, Manchester, UK  
 ² Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
 ³ Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain  
@@ -50,6 +52,7 @@ _Stian Soiland-Reyes¹², Genís Bayarri³, Pau Andrio⁴, Robin Long⁵⁶, Dou
 ⁶ Research IT, The University of Manchester, Manchester, UK  
 ⁷ European Bioinformatics Institute (EMBL-EBI), Cambridge, UK  
 
+</div>
 
 ## Abstract
 

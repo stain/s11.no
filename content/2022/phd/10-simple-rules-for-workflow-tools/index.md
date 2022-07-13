@@ -1,5 +1,5 @@
 ---
-title: 10 Simple Rules for making a software tool workflow-ready
+title: Ten Simple Rules for making a software tool workflow-ready
 lang: en-GB
 categories:
   - PhD
@@ -13,21 +13,23 @@ description: >
 
     Despite significant increase in uptake of workflow tools, there is little specific guidance for writing software intended to slot in as a tool within a workflow; or on converting an existing standalone research-quality software tool into a reusable, composable, well-behaved citizen within a larger workflow.
 
-    In this paper we present 10 simple rules for how a software tool can be prepared for workflow use.
+    In this paper we present ten simple rules for how a software tool can be prepared for workflow use.
 ---
 
 
 <h2>Cite as</h2>
 
 Paul Brack, Peter Crowther, Stian Soiland-Reyes, Stuart Owen, Douglas Lowe, Alan R Williams, Quentin Groom, Mathias Dillen, Frederik Coppens, Björn Grüning, Ignacio Eguinoa, Philip Ewels, Carole Goble (2022):  
-**10 Simple Rules for making a software tool workflow-ready**.  
+**Ten Simple Rules for making a software tool workflow-ready**.  
 _PLOS Computational Biology_ **18**(3):e1009823  
 <https://doi.org/10.1371/journal.pcbi.1009823>
 
 
-# 10 Simple Rules for making a software tool workflow-ready
+# Ten Simple Rules for making a software tool workflow-ready
 
 _Paul Brack¹, Peter Crowther², Stian Soiland-Reyes¹⁸, Stuart Owen¹, Douglas Lowe¹, Alan R Williams¹, Quentin Groom³, Mathias Dillen³, Frederik Coppens⁴⁵, Björn Grüning⁶, Ignacio Eguinoa⁴⁵, Philip Ewels⁷, Carole Goble¹_
+
+<div class="affiliations">
 
 ¹ Department of Computer Science, The University of Manchester, Manchester, UK  
 ² Melandra Limited, UK  
@@ -37,6 +39,8 @@ _Paul Brack¹, Peter Crowther², Stian Soiland-Reyes¹⁸, Stuart Owen¹, Dougla
 ⁶ Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany  
 ⁷ Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden  
 ⁸ University of Amsterdam, Amsterdam, The Netherlands  
+
+</div>
 
 ## Introduction
 

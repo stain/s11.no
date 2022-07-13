@@ -71,12 +71,15 @@ _Data Intelligence_ **4**(2)
 
 _Alex Hardisty<sup>1</sup>, Paul Brack<sup>2</sup>, Carole Goble<sup>2</sup>, Laurence Livermore<sup>3</sup>, Ben Scott<sup>3</sup>, Quentin Groom<sup>4</sup>, Stuart Owen<sup>2</sup>, Stian Soiland-Reyes<sup>2,5</sup>_
 
+<div class="affiliations">
+
 <sup>1</sup>School of Computer Science and Informatics, Cardiff University, Cardiff CF24 3AA, Cardiff, UK  
 <sup>2</sup>The Department of Computer Science, The University of Manchester, Manchester, UK  
 <sup>3</sup>The Natural History Museum, London, London, SW7 5BD, UK  
 <sup>4</sup>Meise Botanic Garden, Nieuwelaan 38, 1860 Meise, BE  
 <sup>5</sup>Informatics Institute, Faculty of Science, University of Amsterdam, NL  
 
+</div>
 
 ## Abstract
 

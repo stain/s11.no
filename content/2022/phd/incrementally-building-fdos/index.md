@@ -31,13 +31,13 @@ _Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Obj
 
 # Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows
 
-_Oliver Woolland<sup>‡</sup>, Paul Brack<sup>‡</sup>, Stian Soiland-Reyes<sup>‡«</sup>, Ben Scott<sup>§</sup>, Laurence Livermore<sup>§</sup>_
+_Oliver Woolland¹, Paul Brack¹, Stian Soiland-Reyes¹², Ben Scott³, Laurence Livermore³_
 
 <div class="affiliations">
 
-‡ The University of Manchester, Manchester, United Kingdom  
-« University of Amsterdam, Amsterdam, Netherlands  
-§ The Natural History Museum, London, United Kingdom  
+¹ The University of Manchester, Manchester, United Kingdom  
+² University of Amsterdam, Amsterdam, Netherlands  
+³ The Natural History Museum, London, United Kingdom  
 
 </div>
 

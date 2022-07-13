@@ -58,6 +58,8 @@ _Data Science_  (pre-press)
 
 _Stian Soiland-Reyes<sup>a,b</sup>, Peter Sefton<sup>c</sup>, Mercè Crosas<sup>d</sup>, Leyla Jael Castro<sup>e</sup>, Frederik Coppens<sup>f</sup>, José M. Fernández<sup>g</sup>, Daniel Garijo<sup>h</sup>, Björn Grüning<sup>i</sup>, Marco La Rosa<sup>j</sup>, Simone Leo<sup>k</sup>, Eoghan Ó Carragáin<sup>l</sup>, Marc Portier<sup>m</sup>, Ana Trisovic<sup>d</sup>, RO-Crate Community<sup>n</sup>, Paul Groth<sup>b</sup>, Carole Goble<sup>a</sup>_
 
+<div class="affiliations">
+
 <sup>a</sup> Department of Computer Science, The University of Manchester, Manchester, UK  
 <sup>b</sup> Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
 <sup>c</sup> Faculty of Science, University Technology Sydney, Australia  
@@ -72,6 +74,8 @@ _Stian Soiland-Reyes<sup>a,b</sup>, Peter Sefton<sup>c</sup>, Mercè Crosas<sup>
 <sup>l</sup> University College Cork, Ireland.  
 <sup>m</sup> Vlaams Instituut voor de Zee, Oostende, Belgium.  
 <sup>n</sup> <https://www.researchobject.org/ro-crate/community> (see [Appendix B](#communitylist))  
+
+</div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
 * **Modifications**: Formatting as Markdown; figure caption formatting; reference in s11 house style; added identifiers, authors and years clarified where missing in citations; inline citation hyperlinks to open access version where available.

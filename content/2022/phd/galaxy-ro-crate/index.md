@@ -27,14 +27,14 @@ _Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Obj
 
 # Enhancing RDM in Galaxy by integrating RO-Crate
 
-Paul De Geest<sup>‡</sup>, Frederik Coppens<sup>‡</sup>, Stian Soiland-Reyes<sup>§,|</sup>, Ignacio Eguinoa<sup>‡</sup>, Simone Leo<sup>¶</sup>
+_Paul De Geest¹, Frederik Coppens¹, Stian Soiland-Reyes²³, Ignacio Eguinoa¹, Simone Leo⁴_
 
 <div class="affiliations">
 
-‡ VIB-UGent Center for Plant Systems Biology, Gent, Belgium  
-§ Department of Computer Science, The University of Manchester, Manchester, United Kingdom  
-| Informatics Institute, University of Amsterdam, Amsterdam, Netherlands  
-¶ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy  
+¹ VIB-UGent Center for Plant Systems Biology, Gent, Belgium  
+² Department of Computer Science, The University of Manchester, Manchester, United Kingdom  
+³ Informatics Institute, University of Amsterdam, Amsterdam, Netherlands  
+⁴ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy  
 
 </div>
 

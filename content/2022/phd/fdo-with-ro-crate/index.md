@@ -23,18 +23,18 @@ _Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Obj
 
 # Creating lightweight FAIR Digital Objects with RO-Crate
 
-_Stian Soiland-Reyes<sup>‡«</sup>, Peter Sefton<sup>§</sup>, Leyla Jael Castro<sup>|</sup>, Frederik Coppens<sup>¶</sup>, Daniel Garijo<sup>#</sup>, Simone Leo<sup>¤</sup>, Marc Portier<sup>»</sup>, Paul Groth<sup>«</sup>_
+_Stian Soiland-Reyes¹², Peter Sefton³, Leyla Jael Castro⁴, Frederik Coppens<⁵, Daniel Garijo⁶, Simone Leo⁷, Marc Portier⁸, Paul Groth²_
 
 <div class="affiliations">
 
-‡ The University of Manchester, Manchester, United Kingdom  
-§ The University of Queensland School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia  
-| ZB Med, Cologne, Germany  
-¶ VIB-UGent Center for Plant Systems Biology, Ghent, Belgium  
-\# Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
-¤ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy
-» Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
-« Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
+¹ The University of Manchester, Manchester, United Kingdom  
+² Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
+³ The University of Queensland School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia  
+⁴ ZB Med, Cologne, Germany  
+⁵ VIB-UGent Center for Plant Systems Biology, Ghent, Belgium  
+⁶ Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
+⁷ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy
+⁸ Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
 
 </div>
 

@@ -19,15 +19,15 @@ _Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Obj
 
 # Updating Linked Data practices for FAIR Digital Object principles
 
-_Stian Soiland-Reyes<sup>‡«</sup>, Leyla Jael Castro<sup>|</sup>, Daniel Garijo<sup>#</sup>, Marc Portier<sup>¤</sup>, Carole Goble<sup>‡</sup>, Paul Groth<sup>«</sup>_
+_Stian Soiland-Reyes¹², Leyla Jael Castro³, Daniel Garijo⁴, Marc Portier⁵, Carole Goble¹, Paul Groth²_
 
 <div class="affiliations">
 
-‡ Department of Computer Science, The University of Manchester, Manchester, United Kingdom  
-« Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
-| ZB Med, Cologne, Germany  
-\# Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
-¤ Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
+¹ Department of Computer Science, The University of Manchester, Manchester, United Kingdom  
+² Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
+³ ZB Med, Cologne, Germany  
+⁴ Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
+⁵ Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
 
 </div>
 
