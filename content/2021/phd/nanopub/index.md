@@ -27,17 +27,36 @@ _PeerJ Computer Science_ **7**:e387
 <https://doi.org/10.7717/peerj-cs.387>
 
 
+<h3>Copyright and license</h3>
+
+Ⓒ Copyright 2021 Kuhn et al.
+
+This is an open access article distributed under the terms of the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, reproduction and adaptation in any medium and for any purpose provided that it is properly attributed. For attribution, the original author(s), title, publication source (PeerJ Computer Science) and either DOI or URL of the article must be cited.
+
+The text below has been adapted from the author's Overleaf manuscript with these modifications by Stian Soiland-Reyes: 
+- Citations changed to [s11 house style](https://s11.no/2021/house-rules/citation-style/)
+- Hyperlinks made inline
+- Original SVG for figure 1, 2, 3
+- Corrected indentation in code example
+- Re-added table DOIs from publisher edition
+- Re-added competing ionterest and author contributions from publisher edition
+- Data availability re-added from publisher edition, reformatted to s11 house style
+
+
 # Semantic Micro-Contributions with Decentralized Nanopublication Services
 
 _Tobias Kuhn¹, Vincent Emonet², Haris Antonatos³, Haris Antonatos⁴, Stian Soiland-Reyes⁵⁶, Michel Dumontier³_
+
+<div class="affiliations">
 
 ¹ Department of Computer Science, VU Amsterdam, Amsterdam, Netherlands  
 ² IDLab, Ghent University, Belgium  
 ³ Institute of Data Science, Maastricht University, Maastricht. Netherlands  
 ⁴ SciFY, Athens, Greece  
-⁵ Department of Computer Science, The University of Manchester, UK  
-⁶ Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
+⁵ Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
+⁶ Department of Computer Science, The University of Manchester, UK  
 
+</div>
 
 ## Abstract
 
@@ -775,7 +794,7 @@ result. For query (1) in LDF mode, this was true for 4 cases out of 5.
 | 15 | `papers` |  | 2.30 |  |
 | 16 | `papers_x` |  | 10.07 |  |
 
-_**Table 1**: Average execution times of the successful query executions in seconds._
+_**Table 1**: Average execution times of the successful query executions in seconds. Cite as: <https://doi.org/10.7717/peerj-cs.387/table-1>_
 
 Next, we can look at the time performance. Table 1 shows the average execution times per query
 and service type, including only the calls that returned a full result.
@@ -864,7 +883,7 @@ once a 4 as responses (average 4.7).
 | 10: I needed to learn a lot of things before I could get going with this system.              |                 |   0 |   1 |  4  |   8 |  16 |  83.62 |
 |                                                                                               |  **total:**     |   1 |  13 | 44  | 127 | 105 |  77.76 |
 
-**Table 2**: SUS usability evaluation results. 
+_**Table 2**: SUS usability evaluation results. Cite as: <https://doi.org/10.7717/peerj-cs.387/table-2>_
 
 Table 2 shows the results of the SUS questions.
 Overall, our system achieved a SUS score of 77.76, which is clearly
@@ -962,13 +981,69 @@ aggregations. We believe that our approach of semantic
 micro-contributions could in fact be the starting point of bringing
 Linked Data publishing to the masses.
 
-## Acknowledgments {#acknowledgments .unnumbered}
 
-RT is a postdoctoral fellow of the Research Foundation --- Flanders
-(FWO) (1274521N). Support for VE and MD was provided by the Biomedical
-Data Translator project funded by National Institutes of Health (No.
-OT2TR003434-01). SSR was funded by BioExcel-2 (European Commission
-H2020-INFRAEDI-02-2018-823830).
+## Competing Interests
+
+Haris Antonatos is employed by SciFY. The authors declare that they have no competing interests.
+
+## Author Contributions
+
+Tobias Kuhn
+: conceived and designed the experiments, performed the experiments, analyzed the data, performed the computation work, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.
+
+Ruben Taelman
+: performed the experiments, prepared figures and/or tables, authored or reviewed drafts of the paper, and approved the final draft.
+
+Vincent Emonet
+: performed the experiments, authored or reviewed drafts of the paper, and approved the final draft.
+
+Haris Antonatos
+: performed the experiments, authored or reviewed drafts of the paper, and approved the final draft.
+
+Stian Soiland-Reyes
+: performed the experiments, authored or reviewed drafts of the paper, and approved the final draft.
+
+Michel Dumontier
+: performed the experiments, authored or reviewed drafts of the paper, and approved the final draft.
+
+## Data Availability
+
+The following information was supplied regarding data availability:
+
+Supplemental data for the performance evaluation is available at Zenodo:
+
+Tobias Kuhn, & Vincent Emonet. (2020-08-21).  
+**peta-pico/nanopub-services-eval 1.0 (Version 1.0)**.  
+_Zenodo_   
+<https://doi.org/10.5281/zenodo.3994068>
+
+Supplemental data for the usability evaluation is available at Zenodo:
+
+Tobias Kuhn. (2020-08-21):  
+**peta-pico/nanobench-usability-eval 1.0 (Version 1.0)**. 
+_Zenodo_.  
+<https://doi.org/10.5281/zenodo.3994066>
+
+The code for Nanobench (release nanobench-1.7) is available at Zenodo: 
+
+Tobias Kuhn, & Vincent Emonet. (2020-11-26):  
+**peta-pico/nanobench: nanobench-1.7 (Version nanobench-1.7)**.
+_Zenodo_  
+<https://doi.org/10.5281/zenodo.4292171>
+
+The code for the nanopublication services (release nanopub-services-1.0) is also available at Zenodo:
+
+Tobias Kuhn (2020-11-26):  
+**peta-pico/nanopub-services: nanopub-services-1.0 (Version nanopub-services-1.0)**.  
+_Zenodo_. 
+<https://doi.org/10.5281/zenodo.4291594>.
+
+
+## Funding
+
+Ruben Taelman is a postdoctoral fellow of the Research Foundation — Flanders (FWO) (1274521N). Support for Vincent Emonet and Michel Dumontier was provided by the Biomedical Data Translator project funded by National Institutes of Health (No. OT2TR003434-01). Stian Soiland-Reyes was funded by BioExcel-2 (European Commission H2020-INFRAEDI-02-2018-823830). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+
 
 ## References
 
