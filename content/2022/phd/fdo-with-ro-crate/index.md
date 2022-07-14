@@ -1,5 +1,6 @@
 ---
-title: Creating lightweight FAIR Digital Objects with RO-Crate
+title: "Chapter 4: Creating lightweight FAIR Digital Objects with RO-Crate"
+weight: 40
 lang: en-GB
 categories:
   - PhD
@@ -23,7 +24,7 @@ _Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Obj
 
 # Creating lightweight FAIR Digital Objects with RO-Crate
 
-_Stian Soiland-Reyes¹², Peter Sefton³, Leyla Jael Castro⁴, Frederik Coppens<⁵, Daniel Garijo⁶, Simone Leo⁷, Marc Portier⁸, Paul Groth²_
+_Stian Soiland-Reyes¹², Peter Sefton³, Leyla Jael Castro⁴, Frederik Coppens⁵, Daniel Garijo⁶, Simone Leo⁷, Marc Portier⁸, Paul Groth²_
 
 <div class="affiliations">
 

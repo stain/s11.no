@@ -1,5 +1,6 @@
 ---
-title: "Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
+title: "Supplementary 3: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
+weight: 230
 bib: references.bib
 categories:
     - PhD

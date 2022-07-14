@@ -1,5 +1,6 @@
 ---
-title: Packaging research artefacts with RO-Crate
+title: "Chapter 5: Packaging research artefacts with RO-Crate"
+weight: 50
 bib: ro-crate
 categories:
   - PhD
