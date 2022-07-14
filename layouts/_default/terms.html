@@ -11,7 +11,7 @@
         <dt>          
           <a rel="item s:hasPart" typeof="s:Collection s:CreativeWork" 
              href="{{ $tagurl }}">
-            <span property="s:title" >{{ $key | humanize }}</span>
+            <span property="s:name" >{{ $key | humanize }}</span>
           </a>
         </dt>
         {{ range $value.Pages }}
