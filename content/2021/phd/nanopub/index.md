@@ -1,5 +1,6 @@
 ---
-title: "Supplementary 4: Semantic micro-contributions with decentralized nanopublication services"
+title: "Supplement 5: Semantic micro-contributions with decentralized nanopublication services"
+weight: 250
 categories:
   - PhD
 author:

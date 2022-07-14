@@ -1,6 +1,6 @@
- ---
+---
 title: "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-weight: 220
+weight: 230
 lang: en-GB
 categories:
   - PhD
@@ -89,7 +89,7 @@ _Data Intelligence_ **2**(1-2)
 
 [4] EOSC-Life <https://www.eosc-life.eu/>
 
-[5] Alex Hardisty, Peter Wittenburg eds (2020):  
+[5] Alex Hardisty, Peter Wittenburg (eds.) (2020):  
 **Canonical Workflow Framework for Research CWFR- Position Paper** V2.  
 <https://codata.org/wp-content/uploads/2021/01/CWFR-position-paper-v3.pdf>
 
@@ -118,9 +118,11 @@ _Journal of Structural Biology_ **204**(3)
 _Genome Biology_ **20**:164  
 <https://doi.org/10.1186/s13059-019-1772-6>
 
-[11] Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Röst, Julian Uszkoreit, Harald Barsnes, Marc Vaudel, Pablo Moreno, Laurent Gatto, Jonas Weber, Mingze Bai, Rafael C Jimenez, Timo Sachsenberg, Julianus Pfeuffer, Roberto Vera Alvarez, Johannes Griss, Alexey I Nesvizhskii, Yasset Perez-Riverol, **BioContainers: an open-source and community-driven framework for software standardization**.  
+<!-- FIXME: Year -->
+[11] Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Röst, Julian Uszkoreit, Harald Barsnes, Marc Vaudel, Pablo Moreno, Laurent Gatto, Jonas Weber, Mingze Bai, Rafael C Jimenez, Timo Sachsenberg, Julianus Pfeuffer, Roberto Vera Alvarez, Johannes Griss, Alexey I Nesvizhskii, Yasset Perez-Riverol, (20??):  
+**BioContainers: an open-source and community-driven framework for software standardization**.  
 _Bioinformatics_ **33**(16)  
-<https://doi.org/10.1093/bioinformatics/btx192>
+<https://doi.org/10.1093/bioinformatics/btx192>S
 
 [12] OpenEBench <https://openebench.bsc.es/about>
 
