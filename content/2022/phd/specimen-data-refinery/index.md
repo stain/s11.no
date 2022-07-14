@@ -1047,9 +1047,9 @@ special issue.
 infrastructure. Deliverable D6.6. ICEDIG.  
 <https://doi.org/10.5281/zenodo.3532937>
 
-[29] De Smedt, K., Koureas, D., Wittenburg, P. (2020). FAIR Digital
-Objects for Science: From Data Pieces to Actionable Knowledge Units.
-Publications 8 (2).  
+[29] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
+**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
+*Publications* **8**(2):21  
 <https://doi.org/10.3390/publications8020021>
 
 [30] Hardisty, A., Saarenmaa, H., Casino, A., Dillen, M., Gödderz, K.,

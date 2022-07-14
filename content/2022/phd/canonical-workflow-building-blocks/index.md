@@ -247,7 +247,8 @@ The authors would also like to acknowledge contributions from: Felix Amaladoss, 
 <https://doi.org/10.3233/ds-190026>
 
 [8] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
-**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**. *Publications* **8**(2):21  
+**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
+*Publications* **8**(2):21  
 <https://doi.org/10.3390/publications8020021>
 
 [9] Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  

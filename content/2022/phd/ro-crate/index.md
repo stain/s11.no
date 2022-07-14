@@ -979,7 +979,7 @@ As of 2021-10-04, the _RO-Crate_ Community members are:
 <hr />
 
 
-## References take 1
+## References
 
 [1] E. Afgan, D. Baker, B. Batut, M. van den Beek, D. Bouvier, M. Cech, J. Chilton, D. Clements, N. Coraor, B.A. Grüning, A. Guerler, J. Hillman-Jackson, S. Hiltemann, V. Jalili, H. Rasche, N. Soranzo, J. Goecks, J. Taylor, A. Nekrutenko and D. Blankenberg (2018): **The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**. _Nucleic Acids Research_ **46**(W1) W537–W544. <https://doi.org/10.1093/nar/gky379>
 
