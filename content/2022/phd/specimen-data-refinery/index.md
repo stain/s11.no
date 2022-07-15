@@ -1,7 +1,7 @@
 ---
 title: >
-    Chapter 7: The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections
-weight: 70
+    Chapter 8: The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections
+weight: 80
 categories:
   - PhD
 keywords:

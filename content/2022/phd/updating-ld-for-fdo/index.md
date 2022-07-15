@@ -1,6 +1,6 @@
 ---
-title: "Chapter 3: Updating Linked Data practices for FAIR Digital Object principles"
-weight: 30
+title: "Chapter 2: Updating Linked Data practices for FAIR Digital Object principles"
+weight: 20
 lang: en-GB
 categories:
   - PhD

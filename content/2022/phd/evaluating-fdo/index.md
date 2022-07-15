@@ -1,6 +1,6 @@
 ---
-title: "Chapter 2: Evaluating FAIR Digital Object as a distributed object system"
-weight: 20
+title: "Chapter 3: Evaluating FAIR Digital Object as a distributed object system"
+weight: 30
 lang: en-GB
 categories:
   - PhD

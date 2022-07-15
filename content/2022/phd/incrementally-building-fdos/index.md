@@ -1,6 +1,6 @@
 ---
-title: "Chapter 8: Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows"
-weight: 80
+title: "Chapter 7: Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows"
+weight: 70
 lang: en-GB
 categories:
   - PhD

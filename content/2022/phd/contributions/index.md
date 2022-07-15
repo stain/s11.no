@@ -12,6 +12,54 @@ summary: >
 
 ## My contributions
 
+<!--
+
+All Aspects
+Designing 
+technical advice
+Insight
+Supervision
+Technical support
+
+Abbreviations
+Statement of Contribution
+Summary
+Summary in Dutch
+Acknowledgments in Dutch
+Publications
+About the Author
+
+https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/doctorate-regulations-_uva_en_2020-28-08-2020.pdf
+
+The doctoral manuscript that is submitted to the supervisor for final approval must be identical in form
+and content to the doctoral thesis submitted to the Doctorate Committee for assessment and public
+defence during the doctoral thesis defence ceremony. It should include the following elements:
+a. a title page as supplied by the Office of the Beadle;
+b. a table of contents;
+c. an overview of the literature consulted;
+d. if the doctoral thesis consists of articles or contains articles by multiple authors: a page with a
+complete reference list for each article with a list of authors for each article and an explanation of the
+relative contribution of the co-authors;
+e. an explanation of how the research was funded, if applicable, as laid down in Article 29, paragraph 6;
+f. a separate summary bearing the title of the thesis in the language in which it is written;
+g. a separate summary bearing the title of the thesis, both in Dutch;
+h. a separate summary bearing the title of the thesis, both in English.
+An acknowledgements section is optional.
+
+...
+
+If the thesis manuscript includes articles that have been written by several authors, it is the duty of the
+supervisor to evaluate whether the doctoral candidate has made an independent contribution to the
+articles that is sufficient to warrant the conferral of the doctorate. If necessary, the supervisor will inform
+the Doctorate Committee of the manner in which the articles were written and what the contribution of
+the doctoral candidate was. As defined in Article 15, paragraph 5, the candidate is required to include a
+list of references in the thesis manuscript
+
+
+
+
+-->
+
 ## Contributor affiliations
 
 <!-- TODO: Sort by surname, add ORCIDs -->
