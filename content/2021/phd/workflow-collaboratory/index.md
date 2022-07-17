@@ -72,79 +72,78 @@ This work has received funding from the European Commission's Horizon 2020 resea
 
 ### References
 
-[Reiter 2021] Taylor Reiter, Phillip T Brooks, Luiz Irber, Shannon E K Joslin, Charles M Reid, Camille Scott, C Titus Brown, N Tessa Pierce-Ward (2021):  
-**Streamlining data-intensive biology with workflow systems**.  
-_GigaScience_ **10**(1):giaa140  
-<https://doi.org/10.1093/gigascience/giaa140>
-
-[Hufsky 2020] <small>Franziska Hufsky, Kevin Lamkiewicz, Alexandre Almeida, Abdel Aouacheria, Cecilia Arighi, Alex Bateman, Jan Baumbach, Niko Beerenwinkel, Christian Brandt, Marco Cacciabue, Sara Chuguransky, Oliver Drechsel, Robert D Finn, Adrian Fritz, Stephan Fuchs, Georges Hattab, Anne-Christin Hauschild, Dominik Heider, Marie Hoffmann, Martin Hölzer, Stefan Hoops, Lars Kaderali, Ioanna Kalvari, Max von Kleist, Renó Kmiecinski, Denise Kühnert, Gorka Lasso, Pieter Libin, Markus List, Hannah F Löchel, Maria J Martin, Roman Martin, Julian Matschinske, Alice C McHardy, Pedro Mendes, Jaina Mistry, Vincent Navratil, Eric P Nawrocki, Áine Niamh O’Toole, Nancy Ontiveros-Palacios, Anton I Petrov, Guillermo Rangel-Pineros, Nicole Redaschi, Susanne Reimering, Knut Reinert, Alejandro Reyes, Lorna Richardson, David L Robertson, Sepideh Sadegh, Joshua B Singer, Kristof Theys, Chris Upton, Marius Welzel, Lowri Williams, Manja Marz</small> (2020):  
-**Computational strategies to combat COVID-19: useful tools to accelerate SARS-CoV-2 and coronavirus research**.  
-_Briefings in Bioinformatics_ **22**(2):bbaa232  
-<https://doi.org/10.1093/bib/bbaa232>
-
-[Goble 2020] Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, and Daniel Schober (2020):  
-**FAIR Computational Workflows**.  
-_Data Intelligence_ **2**(1-2)  
-<https://doi.org/10.1162/dint_a_00033>
-
-[Hardisty 2020] Alex Hardisty, Peter Wittenburg (eds.) (2020):  
-**Canonical Workflow Framework for Research CWFR- Position Paper** V2.  
-<https://codata.org/wp-content/uploads/2021/01/CWFR-position-paper-v3.pdf>
-
 [Afgan 2018] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, and Daniel Blankenberg (2018):  
 **The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**.  
 _Nucleic Acids Research_ **46**(W1)  
 <https://doi.org/10.1093/nar/gky379>
-
-[Köster 2012] Johannes Köster, Sven Rahmann (2012):  
-**Snakemake—a scalable bioinformatics workflow engine**.  
-_Bioinformatics_ **28**(19)  
-<https://doi.org/10.1093/bioinformatics/bts480>
-
-[Di Tommaso 2017] Paolo Di Tommaso, Maria Chatzou, Evan W Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame  (2017):   
-**Nextflow enables reproducible computational workflows.**  
-_Nature Biotechnology_ **35**(4)  
-<https://doi.org/10.1038/nbt.3820>
-
-[Gómez-Blanco 2018] J. Gómez-Blanco, J.M. de la Rosa-Trevín, R. Marabini, L. del Cano, A. Jiménez, M. Martínez, R. Melero, T. Majtner, D. Maluenda, J. Mota, Y. Rancel, E Ramírez-Aportela, J.L. Vilas, M. Carroni, S. Fleischmann, E. Lindahl, A.W. Ashton, M. Basham, D.K. Clare, K. Savage, C.A. Siebert, G.G. Sharov, C.O.S. Sorzano, P. Conesa, J.M. Carazo (2018):  
-**Using Scipion for stream image processing at Cryo-EM facilities**.  
-_Journal of Structural Biology_ **204**(3)  
-<https://doi.org/10.1016/j.jsb.2018.10.001>
-
-[Ison 2019] Jon Ison, Hans Ienasescu, Piotr Chmura, Emil Rydza, Hervé Ménager, Matúš Kalaš, Veit Schwämmle, Björn Grüning, Niall Beard, Rodrigo Lopez, Severine Duvaud, Heinz Stockinger, Bengt Persson, Radka Svobodová Vařeková, Tomáš Raček, Jiří Vondrášek, Hedi Peterson, Ahto Salumets, Inge Jonassen, Rob Hooft, Tommi Nyrönen, Alfonso Valencia, Salvador Capella, Josep Gelpí, Federico Zambelli, Babis Savakis, Brane Leskošek, Kristoffer Rapacki, Christophe Blanchet, Rafael Jimenez, Arlindo Oliveira, Gert Vriend, Olivier Collin, Jacques van Helden, Peter Løngreen & Søren Brunak (2019):  
-**The _bio.tools_ registry of software tools and data resources for the life sciences**.  
-_Genome Biology_ **20**:164  
-<https://doi.org/10.1186/s13059-019-1772-6>
-
-[da Veiga Leprevost 2017] Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Röst, Julian Uszkoreit, Harald Barsnes, Marc Vaudel, Pablo Moreno, Laurent Gatto, Jonas Weber, Mingze Bai, Rafael C Jimenez, Timo Sachsenberg, Julianus Pfeuffer, Roberto Vera Alvarez, Johannes Griss, Alexey I Nesvizhskii, Yasset Perez-Riverol (2017):  
-**BioContainers: an open-source and community-driven framework for software standardization**.  
-_Bioinformatics_ **33**(16)  
-<https://doi.org/10.1093/bioinformatics/btx192>
 
 [Amstutz 2016] Peter Amstutz, Michael R. Crusoe, Nebojša Tijanić (editors), Brad Chapman, John Chilton, Michael Heuer, Andrey Kartashov, Dan Leehr, Hervé Ménager, Maya Nedeljkovich,  Matt Scales, Stian Soiland-Reyes, Luka Stojanovic (2016):  
 [**Common Workflow Language, v1.0**](https://w3id.org/cwl/v1.0/).  
 Specification, _Common Workflow Language working group_.  
 <https://doi.org/10.6084/m9.figshare.3115156.v2>
 
-[Ison 2013] Jon Ison, Matúš Kalaš, Inge Jonassen, Dan Bolser, Mahmut Uludag, Hamish McWilliam, James Malone, Rodrigo Lopez, Steve Pettifer, Peter Rice (2013):  
-**EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats**.  
-*Bioinformatics* **29**(10)  
-<https://doi.org/10.1093/bioinformatics/btt113>
+[BioExcel 2020] BioExcel (2020):  
+**Creating workflows with Common Workflow Language**.  
+_BioExcel Best Practice Guides_  
+<https://docs.bioexcel.eu/cwl-best-practice-guide/devpractice/partial.html>
 
 [Ó Carragáin 2019] Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
 **A lightweight approach to research object data packaging**.  
 _Bioinformatics Open Source Conference_ (BOSC2019)  
 <https://doi.org/10.5281/zenodo.3250687>
 
+[Goble 2020] Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, and Daniel Schober (2020):  
+**FAIR Computational Workflows**.  
+_Data Intelligence_ **2**(1-2)  
+<https://doi.org/10.1162/dint_a_00033>
+
+[Gómez-Blanco 2018] J. Gómez-Blanco, J.M. de la Rosa-Trevín, R. Marabini, L. del Cano, A. Jiménez, M. Martínez, R. Melero, T. Majtner, D. Maluenda, J. Mota, Y. Rancel, E Ramírez-Aportela, J.L. Vilas, M. Carroni, S. Fleischmann, E. Lindahl, A.W. Ashton, M. Basham, D.K. Clare, K. Savage, C.A. Siebert, G.G. Sharov, C.O.S. Sorzano, P. Conesa, J.M. Carazo (2018):  
+**Using Scipion for stream image processing at Cryo-EM facilities**.  
+_Journal of Structural Biology_ **204**(3)  
+<https://doi.org/10.1016/j.jsb.2018.10.001>
+
+[Hardisty 2020] Alex Hardisty, Peter Wittenburg (eds.) (2020):  
+**Canonical Workflow Framework for Research CWFR- Position Paper** V2.  
+<https://codata.org/wp-content/uploads/2021/01/CWFR-position-paper-v3.pdf>
+
+[Hufsky 2020] <small>Franziska Hufsky, Kevin Lamkiewicz, Alexandre Almeida, Abdel Aouacheria, Cecilia Arighi, Alex Bateman, Jan Baumbach, Niko Beerenwinkel, Christian Brandt, Marco Cacciabue, Sara Chuguransky, Oliver Drechsel, Robert D Finn, Adrian Fritz, Stephan Fuchs, Georges Hattab, Anne-Christin Hauschild, Dominik Heider, Marie Hoffmann, Martin Hölzer, Stefan Hoops, Lars Kaderali, Ioanna Kalvari, Max von Kleist, Renó Kmiecinski, Denise Kühnert, Gorka Lasso, Pieter Libin, Markus List, Hannah F Löchel, Maria J Martin, Roman Martin, Julian Matschinske, Alice C McHardy, Pedro Mendes, Jaina Mistry, Vincent Navratil, Eric P Nawrocki, Áine Niamh O’Toole, Nancy Ontiveros-Palacios, Anton I Petrov, Guillermo Rangel-Pineros, Nicole Redaschi, Susanne Reimering, Knut Reinert, Alejandro Reyes, Lorna Richardson, David L Robertson, Sepideh Sadegh, Joshua B Singer, Kristof Theys, Chris Upton, Marius Welzel, Lowri Williams, Manja Marz</small> (2020):  
+**Computational strategies to combat COVID-19: useful tools to accelerate SARS-CoV-2 and coronavirus research**.  
+_Briefings in Bioinformatics_ **22**(2):bbaa232  
+<https://doi.org/10.1093/bib/bbaa232>
+
+[Ison 2013] Jon Ison, Matúš Kalaš, Inge Jonassen, Dan Bolser, Mahmut Uludag, Hamish McWilliam, James Malone, Rodrigo Lopez, Steve Pettifer, Peter Rice (2013):  
+**EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats**.  
+*Bioinformatics* **29**(10)  
+<https://doi.org/10.1093/bioinformatics/btt113>
+
+[Ison 2019] Jon Ison, Hans Ienasescu, Piotr Chmura, Emil Rydza, Hervé Ménager, Matúš Kalaš, Veit Schwämmle, Björn Grüning, Niall Beard, Rodrigo Lopez, Severine Duvaud, Heinz Stockinger, Bengt Persson, Radka Svobodová Vařeková, Tomáš Raček, Jiří Vondrášek, Hedi Peterson, Ahto Salumets, Inge Jonassen, Rob Hooft, Tommi Nyrönen, Alfonso Valencia, Salvador Capella, Josep Gelpí, Federico Zambelli, Babis Savakis, Brane Leskošek, Kristoffer Rapacki, Christophe Blanchet, Rafael Jimenez, Arlindo Oliveira, Gert Vriend, Olivier Collin, Jacques van Helden, Peter Løngreen & Søren Brunak (2019):  
+**The _bio.tools_ registry of software tools and data resources for the life sciences**.  
+_Genome Biology_ **20**:164  
+<https://doi.org/10.1186/s13059-019-1772-6>
+
+[Köster 2012] Johannes Köster, Sven Rahmann (2012):  
+**Snakemake—a scalable bioinformatics workflow engine**.  
+_Bioinformatics_ **28**(19)  
+<https://doi.org/10.1093/bioinformatics/bts480>
+
+[Reiter 2021] Taylor Reiter, Phillip T Brooks, Luiz Irber, Shannon E K Joslin, Charles M Reid, Camille Scott, C Titus Brown, N Tessa Pierce-Ward (2021):  
+**Streamlining data-intensive biology with workflow systems**.  
+_GigaScience_ **10**(1):giaa140  
+<https://doi.org/10.1093/gigascience/giaa140>
+
 [De Smedt 2020] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
 **FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
 *Publications* **8**(2):21  
 <https://doi.org/10.3390/publications8020021>
 
+[Di Tommaso 2017] Paolo Di Tommaso, Maria Chatzou, Evan W Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame  (2017):   
+**Nextflow enables reproducible computational workflows.**  
+_Nature Biotechnology_ **35**(4)  
+<https://doi.org/10.1038/nbt.3820>
 
-[BioExcel 2020] BioExcel (2020):  
-**Creating workflows with Common Workflow Language**.  
-_BioExcel Best Practice Guides_  
-<https://docs.bioexcel.eu/cwl-best-practice-guide/devpractice/partial.html>
+[da Veiga Leprevost 2017] Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Röst, Julian Uszkoreit, Harald Barsnes, Marc Vaudel, Pablo Moreno, Laurent Gatto, Jonas Weber, Mingze Bai, Rafael C Jimenez, Timo Sachsenberg, Julianus Pfeuffer, Roberto Vera Alvarez, Johannes Griss, Alexey I Nesvizhskii, Yasset Perez-Riverol (2017):  
+**BioContainers: an open-source and community-driven framework for software standardization**.  
+_Bioinformatics_ **33**(16)  
+<https://doi.org/10.1093/bioinformatics/btx192>
 
 </div>
