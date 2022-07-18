@@ -22,7 +22,7 @@ Description: >
 
 <h2>Cite as</h2>
 
-Tobias Kuhn, Vincent Emonet, Haris Antonatos, Stian Soiland-Reyes, Michel Dumontier (2021):  
+Tobias Kuhn, Ruben Taelman, Vincent Emonet, Haris Antonatos, Stian Soiland-Reyes, Michel Dumontier (2021):  
 **Semantic micro-contributions with decentralized nanopublication services**.  
 _PeerJ Computer Science_ **7**:e387  
 <https://doi.org/10.7717/peerj-cs.387>
@@ -46,7 +46,7 @@ The text below has been adapted from the author's Overleaf manuscript with these
 
 # Semantic Micro-Contributions with Decentralized Nanopublication Services
 
-_Tobias Kuhn¹, Vincent Emonet², Haris Antonatos³, Haris Antonatos⁴, Stian Soiland-Reyes⁵⁶, Michel Dumontier³_
+_Tobias Kuhn¹, Ruben Taelman², Vincent Emonet³, Haris Antonatos⁴, Stian Soiland-Reyes⁵⁶, Michel Dumontier³_
 
 <div class="affiliations">
 
