@@ -225,8 +225,9 @@ proposed.
 The approaches above mostly assume requests are targeted towards a
 central server. This centralization comes with the downsides that such a
 server forms a single point of failure, that we need to trust in the
-authority that runs it, and that it is difficult to scale. To address
-these problems, a number of more decentralized approaches have been
+authority that runs it, and that it is difficult to scale. 
+
+To address these problems, a number of more decentralized approaches have been
 proposed. LDF interfaces such as TPF, as introduced above, can in fact
 also be used in a more distributed fashion, as fragments can be
 published across different servers \[22\]. Distributed approaches to
@@ -320,7 +321,9 @@ the personal identifier and the public key are mentioned in the
 publication info graph (yellow) together with the digital signature that
 is calculated with the respective private key on the entire
 nanopublication, excluding only the `npx:hasSignature` triple and the
-hash code of the trusty URI. The trusty URI (here represented with the
+hash code of the trusty URI. 
+
+The trusty URI (here represented with the
 prefix `this:`) is calculated as a last step, which therefore also
 covers the signature. This makes the nanopublication including its
 signature verifiable and immutable.
@@ -1002,7 +1005,9 @@ the two types of services, and that these two service types are indeed
 complementary. The grlc services run reliably and fast on the types of
 queries they are designed for. The LDF services can run most of these
 kinds of queries too, albeit in a much slower fashion, and they are
-reasonably fast for simple kinds of unrestricted queries. The results of
+reasonably fast for simple kinds of unrestricted queries. 
+
+The results of
 the usability study indicate that our Nanobench client application
 connecting to these services is indeed easily and efficiently usable,
 even for users with no prior experience in Linked Data publishing.
@@ -1012,7 +1017,9 @@ involved tools and methods. For example, our approach does not yet
 exploit the full potential of replication in our decentralized setting.
 Existing work has shown that a client-side algorithm can enable
 effective load-balancing over TPF servers \[33\], and we plan to extend
-this work to QPF. As another example, our otherwise decentralized
+this work to QPF. 
+
+As another example, our otherwise decentralized
 approach currently uses centralized ORCID identifiers. We are therefore
 investigating decentralized forms of authentication, such as
 [WebID-OIDC](https://github.com/solid/webid-oidc-spec) or an approach similar to the web of trust \[34\], where
@@ -1032,16 +1039,21 @@ correctly return them, but this is quite resource intensive.
 Another issue that needs to be taken care of in future work is identity
 management when private keys are compromised, lost, or simply replaced
 as a measure of precaution. For that, we envisage that introduction
-nanopublications are extended so users can also list old public keys. On
-top of that, we are going to need a method for users to re-claim old
+nanopublications are extended so users can also list old public keys. 
+
+On top of that, we are going to need a method for users to re-claim old
 nanopublications they signed with an old key that has since been
 compromised by a third party (possibly by linking to them with an index
-nanopublication signed with a new key). This will also require
+nanopublication signed with a new key). 
+
+This will also require
 modifications in how we deal with retracted and superseded
 nanopublications, as they might then be signed with a different key.
 This is not trivial but can be dealt with within our framework, as
 opposed to Blockchain-based solutions where identity is inseparably
-linked to private key access. Currently, users need to install Nanobench
+linked to private key access. 
+
+Currently, users need to install Nanobench
 locally to ensure secure private key access and proper decentralization,
 but a more flexible and more powerful handling of private keys as
 explained above will also allow us to provide login-based public
@@ -1051,6 +1063,7 @@ can significantly increase the ease of use of our approach.
 More work is also needed on the templating features to also cover the
 provenance and publication info graphs. We also plan to more closely
 align our templating vocabulary with existing RDF shape standards.
+
 Moreover, we are working on making our templating approach more general
 and more powerful, by adding repeatable statement patterns among other
 features, such that we can express, for example, templates of templates
@@ -1061,7 +1074,9 @@ The tools and applications we described above in a sense just scratch
 the surface of what can become possible with our general approach in the
 nearer future, from Linked Data publications of the latest scientific
 findings, to formally organized argumentation and automated real-time
-aggregations. We believe that our approach of semantic
+aggregations. 
+
+We believe that our approach of semantic
 micro-contributions could in fact be the starting point of bringing
 Linked Data publishing to the masses.
 
