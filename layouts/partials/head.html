@@ -16,7 +16,7 @@
     <link rel="canonical" href="{{ .Permalink }}"/>
   
     {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s s:encoding" typeof="s:MediaObject" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+        {{ printf `<link rel="%s s:encoding" typeof="s:MediaObject" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
     <!-- Styles -->
