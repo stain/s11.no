@@ -398,7 +398,7 @@ which is one of six instances of this service in our network[^2].
 
 [^2]: A live example of a QPF client that can query over this API can be
     found at
-    <http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fldf.nanopubs.knows.idlab.ugent.be%2Fnp>
+    <http://query.linkeddatafragments.org/#datasources=https%3A//ldf.nanopubs.knows.idlab.ugent.be/np>
 
 
 ### Nanopublication Services
@@ -1048,37 +1048,130 @@ Ruben Taelman is a postdoctoral fellow of the Research Foundation — Flanders (
 
 ## References
 
-1. Christian Bizer, Tom Heath, & Tim Berners-Lee (2011): **Linked Data: The story so far**. *Semantic services, interoperability and web applications: Emerging concepts* (IGI Global, 2011), pp. 205--227
-2. Max Schmachtenberg, Christian Bizer, & Heiko Paulheim (2014): **Adoption of the linked data best practices in different topical domains**. *International semantic web conference* (Springer, 2014), pp. 245--260
-3. Tim Berners-Lee (2009): Linked Data. (2009)
-4. Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark, & Elias Torres (2013): *SPARQL 1.1 protocol* (W3C, 2013). <https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/>
-5. Sören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, & Zachary Ives (2007): **DBpedia: A nucleus for a web of open data**. *The semantic web* (Springer, 2007), pp. 722--735. <https://doi.org/<https://doi.org/10.1007/978-3-540-76298-0_52>
-6. Denny Vrandečić & Markus Krötzsch (2014): **Wikidata: A free collaborative knowledgebase**. *Communications of the ACM*, **57** (2014) 78--85
-7. David Shotton (2009): **Semantic publishing: The coming revolution in scientific journal publishing**. *Learned Publishing*, **22** (2009) 85--94 8. Tobias Kuhn & Michel Dumontier (2017): Genuine semantic publishing. *Data Science*, **1** (2017) 139--154
-9. Barend Mons, Herman van Haagen, Christine Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen, Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda Giardine, Jan Velterop, Paul Groth, & Erik Schultes (2011): The value of data. *Nature genetics*, **43** (2011) 281--283 10. Tobias Kuhn, Paolo Emilio Barbano, Mate Levente Nagy, & Michael Krauthammer (2013): **Broadening the scope of nanopublications**. *Extended semantic web conference* (Springer, 2013), pp. 487--501
-11. Tobias Kuhn & Michel Dumontier (2015): Making digital artifacts on the web verifiable and reliable. *IEEE Transactions on Knowledge and Data Engineering*, **27** (2015) 2390--2400
-12. Tobias Kuhn, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, & Michel Dumontier (2016): Decentralized provenance-aware publishing with nanopublications. *PeerJ Computer Science*, **2** (2016) e78
-13. Tobias Kuhn, Egon Willighagen, Chris Evelo, Núria Queralt-Rosinach, Emilio Centeno, & Laura I. Furlong (2017): **Reliable granular references to changing linked data**. *International semantic web conference* (Springer, 2017), pp.  436--451
-14. Chiara Ghidini, Barbara Kump, Stefanie Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, & Luciano Serafini (2009): **Moki: The enterprise modelling wiki**. *European semantic web conference* (Springer, 2009), pp.  831--835
-15. Joachim Baumeister, Jochen Reutelshoefer, & Frank Puppe (2011): KnowWE: A semantic wiki for knowledge engineering.  *Applied Intelligence*, **35** (2011) 323--344
-16. Tobias Kuhn (2008): **AceWiki: A Natural and Expressive Semantic Wiki**. *Proceedings of Semantic Web User Interaction at CHI 2008: Exploring HCI Challenges* (_CEUR Workshop Proceedings_, 2008)
-17. Carlos Buil-Aranda, Aidan Hogan, Jürgen Umbrich, & Pierre-Yves Vandenbussche (2013): **SPARQL web-querying infrastructure: Ready for action?** *The semantic web--ISWC 2013* (Springer, 2013), pp. 277--293.  <http://link.springer.com/chapter/10.1007/978-3-642-41338-4_18>
-18. Ruben Verborgh, Miel Vander Sande, Olaf Hartig, Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald Haesendonck, & Pieter Colpaert (2016): Triple Pattern Fragments: A low-cost knowledge graph interface for the Web. *Journal of Web Semantics*, **37--38** (2016) 184--206.  <https://doi.org/10.1016/j.websem.2016.03.003>
-19. Ruben Taelman, Joachim Van Herwegen, Miel Vander Sande, & Ruben Verborgh (2018): **Comunica: A modular SPARQL query engine for the web**. *17th international semantic web conference* (2018).  <https://comunica.github.io/Article-ISWC2018-Resource/>
-20. Albert Meroño-Peñuela & Rinke Hoekstra (2016): **Grlc makes GitHub taste like Linked Data APIs**. *European semantic web conference* (Springer, 2016), pp. 342--353 21. Steve Speicher, John Arwe, & Ashok Malhotra
-(2015): Linked Data Platform 1.0. (2015)
-22. Harm Delva, Julian Andres Rojas Melendez, Pieter Colpaert, & Ruben Verborgh (2019): **Decentralized publication and consumption of transfer footpaths**. *First international workshop on semantics for transport* (2019), pp. 1--7
-23. Ramanathan V. Guha, Dan Brickley, & Steve Macbeth (2016): Schema. Org: Evolution of structured data on the web.  *Communications of the ACM*, **59** (2016) 44--51
-24. Jeroen Werbrouck, Ruben Taelman, Ruben Verborgh, Pieter Pauwels, Jakob Beetz, & Erik Mannens (2020): **Pattern-based access control in a decentralised collaboration environment**. *Proceedings of the 8th linked data in architecture and
-construction workshop* (CEUR-WS.org, 2020)
-25. Raf Buyle, Ruben Taelman, Katrien Mostaert, Geroen Joris, Erik Mannens, Ruben Verborgh, & Tim Berners-Lee (2019): **Streamlining governmental processes by putting citizens in control of their personal data**. *International conference on electronic governance and open society: Challenges in eurasia* (Springer, 2019), pp. 346--359
-26. Ruben Taelman, Simon Steyskal, & Sabrina Kirrane (2020): **Towards querying in decentralized environments with privacy-preserving aggregation**. *Proceedings of the 4th workshop on storing, querying, and benchmarking the web of data* (2020).  <https://rubensworks.github.io/article-privacy-decentralized/>
-27. Allan Third & John Domingue (2017): **LinkChains: Exploring the space of decentralised trustworthy linked data**. *Workshop on decentralizing the semantic web 2017* (CEUR-WS, 2017)
-28. Markus Lanthaler & Christian Gütl (2013): Hydra: A vocabulary for hypermedia-driven web APIs. *LDOW*, **996** (2013) 29. Pasquale Lisena, Albert Meroño-Peñuela, Tobias Kuhn, & Raphaël Troncy (2019): **Easy web API development with SPARQL transformer**. *International semantic web conference* (Springer, 2019),
-pp. 454--470
-30. John Brooke (1996): SUS-a quick and dirty usability scale. *Usability evaluation in industry*, **189** (1996) 4--7
-31. Aaron Bangor, Philip T. Kortum, & James T.  Miller (2008): An empirical evaluation of the system usability scale.  *Intl. Journal of Human--Computer Interaction*, **24** (2008) 574--594
-32. Tobias Kuhn (2016): **Nanopub-java: A java library for nanopublications**. *Linked science: Proceedings of the 5th workshop on linked science 2015-best practices and the road ahead (LISC 2015)* (CEUR Workshop Proceedings, 2016), pp. 19--25
-33. Thomas Minier, Hala Skaf-Molli, Pascal Molli, & Maria-Esther Vidal (2018): **Intelligent clients for replicated Triple Pattern Fragments**. *European semantic web conference* (Springer, 2018), pp. 400--414
-34. Germano Caronni (2000): **Walking the web of trust**. *WET ICE 2000* (IEEE, 2000), pp. 153--158]
-
+1. Christian Bizer, Tom Heath, & Tim Berners-Lee (2011):  
+**Linked Data: The story so far**. 
+*Semantic services, interoperability and web applications: Emerging concepts*
+<https://doi.org/10.4018/978-1-60960-593-3.ch008>
+2. Max Schmachtenberg, Christian Bizer, & Heiko Paulheim (2014):   
+**Adoption of the linked data best practices in different topical domains**.  
+*International semantic web conference*.  
+<https://doi.org/10.1007/978-3-319-11964-9_16>
+3. Tim Berners-Lee (2009): **Linked Data** <https://www.w3.org/DesignIssues/LinkedData.html>
+4. Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark, & Elias Torres (2013):   
+*SPARQL 1.1 protocol* (W3C, 2013). <https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/>
+5. Sören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, & Zachary Ives (2007):  
+**DBpedia: A nucleus for a web of open data**.  
+*The semantic web*
+<https://doi.org/10.1007/978-3-540-76298-0_52>
+6. Denny Vrandečić & Markus Krötzsch (2014):   
+**Wikidata: A free collaborative knowledgebase**. *Communications of the ACM*, **57**  
+<https://doi.org/10.1145/2629489>
+7. David Shotton (2009):  
+**Semantic publishing: The coming revolution in scientific journal publishing**. *Learned Publishing*, **22**   
+<https://doi.org/10.1087/2009202>
+8. Tobias Kuhn & Michel Dumontier (2017):  
+**Genuine semantic publishing**.  
+*Data Science*, **1**
+<https://doi.org/10.3233/DS-170010>
+9. Barend Mons, Herman van Haagen, Christine Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen, Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda Giardine, Jan Velterop, Paul Groth, & Erik Schultes (2011):  
+**The value of data**. *Nature genetics*, **43**(4)  
+<https://doi.org/10.1038/ng0411-281>
+10. Tobias Kuhn, Paolo Emilio Barbano, Mate Levente Nagy, & Michael Krauthammer (2013):  
+**Broadening the scope of nanopublications**. *Extended semantic web conference*  
+<https://doi.org/10.1007/978-3-642-38288-8_33>
+11. Tobias Kuhn & Michel Dumontier (2015):  
+**Making digital artifacts on the web verifiable and reliable**.  
+*IEEE Transactions on Knowledge and Data Engineering* **27**(9)
+Mhttps://doi.org/10.1109/TKDE.2015.2419657>
+12. Tobias Kuhn, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, & Michel Dumontier (2016):  
+**Decentralized provenance-aware publishing with nanopublications**.  
+*PeerJ Computer Science*, **2**(1):e78  
+<https://doi.org/10.7717/peerj-cs.78>
+13. Tobias Kuhn, Egon Willighagen, Chris Evelo, Núria Queralt-Rosinach, Emilio Centeno, & Laura I. Furlong (2017):  
+**Reliable granular references to changing linked data**.  
+*International Semantic Web Conference*  
+<https://doi.org/10.1007/978-3-319-68288-4_26>
+14. Chiara Ghidini, Barbara Kump, Stefanie Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, & Luciano Serafini (2009):  
+**Moki: The enterprise modelling wiki**.  
+*European semantic web conference*  
+<https://doi.org/10.1007/978-3-642-02121-3_65>
+15. Joachim Baumeister, Jochen Reutelshoefer, & Frank Puppe (2011):  
+**KnowWE: A semantic wiki for knowledge engineering**.   
+*Applied Intelligence*, **35**(3)
+<https://doi.org/10.1007/s10489-010-0224-5>
+16. Tobias Kuhn (2008):  
+**AceWiki: A Natural and Expressive Semantic Wiki**.  
+*Proceedings of Semantic Web User Interaction at CHI 2008: Exploring HCI Challenges*, _CEUR Workshop Proceedings_ **543**
+<http://ceur-ws.org/Vol-543/kuhn_swui2008.pdf>
+17. Carlos Buil-Aranda, Aidan Hogan, Jürgen Umbrich, & Pierre-Yves Vandenbussche (2013):  
+**SPARQL web-querying infrastructure: Ready for action?**  
+*The semantic web--ISWC 2013*.  
+<https://doi.org/10.1007/978-3-642-41338-4_18>
+18. Ruben Verborgh, Miel Vander Sande, Olaf Hartig, Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald Haesendonck, & Pieter Colpaert (2016):  
+**Triple Pattern Fragments: A low-cost knowledge graph interface for the Web**.   
+*Journal of Web Semantics*, **37--38**   
+<https://doi.org/10.1016/j.websem.2016.03.003>
+19. Ruben Taelman, Joachim Van Herwegen, Miel Vander Sande, & Ruben Verborgh (2018):  
+**Comunica: A modular SPARQL query engine for the web**. *17th international semantic web conference* (2018).  
+<https://doi.org/10.1007/978-3-030-00668-6_15> [[preprint](https://comunica.github.io/Article-ISWC2018-Resource/)]
+20. Albert Meroño-Peñuela & Rinke Hoekstra (2016):  
+**Grlc makes GitHub taste like Linked Data APIs**.  
+*European semantic web conference*
+<https://doi.org/10.1007%2F978-3-319-47602-5_48>
+21. Steve Speicher, John Arwe, & Ashok Malhotra (2015):  
+**Linked Data Platform 1.0**.   
+_W3C Recommendation_
+<https://www.w3.org/TR/ldp/>
+22. Harm Delva, Julian Andres Rojas Melendez, Pieter Colpaert, & Ruben Verborgh (2019):  
+**Decentralized publication and consumption of transfer footpaths**.  
+*First international workshop on semantics for transport*, _CEUR Workshop proceedings_ **2447**   
+<http://ceur-ws.org/Vol-2447/paper4.pdf>
+23. Ramanathan V. Guha, Dan Brickley, & Steve Macbeth (2016):  
+**Schema.Org: Evolution of structured data on the web**.  
+*Communications of the ACM*, **59**(2)   
+<https://doi.org/10.1145/2844544>
+24. Jeroen Werbrouck, Ruben Taelman, Ruben Verborgh, Pieter Pauwels, Jakob Beetz, & Erik Mannens (2020):  
+**Pattern-based access control in a decentralised collaboration environment**.  
+*Proceedings of the 8th linked data in architecture and construction workshop*, _CEUR Workshop proceedings_ **2636**  
+<http://ceur-ws.org/Vol-2636/09paper.pdf>
+25. Raf Buyle, Ruben Taelman, Katrien Mostaert, Geroen Joris, Erik Mannens, Ruben Verborgh, & Tim Berners-Lee (2019):   
+**Streamlining governmental processes by putting citizens in control of their personal data**.  
+*International conference on electronic governance and open society: Challenges in eurasia* (Springer, 2019), pp. 346--359
+<https://doi.org/10.1007/978-3-030-39296-3_26>
+26. Ruben Taelman, Simon Steyskal, & Sabrina Kirrane (2020):   
+**Towards querying in decentralized environments with privacy-preserving aggregation**.  
+*Proceedings of the 4th workshop on storing, querying, and benchmarking the web of data*, _CEUR Workshop proceedings_ **2722**  
+<https://rubensworks.github.io/article-privacy-decentralized/>
+<http://ceur-ws.org/Vol-2722/quweda2020-paper-3.pdf>
+27. Allan Third & John Domingue (2017):  
+**LinkChains: Exploring the space of decentralised trustworthy linked data**.  
+*Proceedings of the Workshop on Decentralizing the Semantic Web (DeSemWeb)*,  
+_CEUR Workshop proceedings_ **1934**
+<http://ceur-ws.org/Vol-1934/contribution-06.pdf>
+28. Markus Lanthaler & Christian Gütl (2013):   
+**Hydra: A vocabulary for hypermedia-driven web APIs**.  
+*Proceedings of the WWW2013 Workshop on Linked Data on the Web*, _CEUR Workshop proceedings_ **996**  
+<http://ceur-ws.org/Vol-996/papers/ldow2013-paper-03.pdf>
+29. Pasquale Lisena, Albert Meroño-Peñuela, Tobias Kuhn, & Raphaël Troncy (2019):  
+**Easy web API development with SPARQL transformer**.  
+*International semantic web conference*  
+<https://doi.org/10.1007/978-3-030-30796-7_28>
+30. John Brooke (1996):   
+**SUS-a quick and dirty usability scale**.  
+*Usability evaluation in industry*, **189**  
+<https://doi.org/10.1201/9781498710411-35>
+31. Aaron Bangor, Philip T. Kortum, & James T.  Miller (2008):  
+**An empirical evaluation of the system usability scale**.  
+*Intl. Journal of Human--Computer Interaction* **24**  
+<https://doi.org/10.1080/10447310802205776>
+32. Tobias Kuhn (2016):   
+**Nanopub-java: A Java library for nanopublications**.  
+*Linked science: Proceedings of the 5th workshop on linked science 2015-best practices and the road ahead (LISC 2015)*, _CEUR Workshop Proceedings_ **1572**
+<http://ceur-ws.org/Vol-1572/paper4.pdf>
+33. Thomas Minier, Hala Skaf-Molli, Pascal Molli, & Maria-Esther Vidal (2018):  
+**Intelligent clients for replicated Triple Pattern Fragments**.  
+*European semantic web conference* (Springer, 2018), pp. 400--414  
+<https://doi.org/10.1007/978-3-319-93417-4_26>
+34. Germano Caronni (2000):  
+**Walking the web of trust**. *WET ICE 2000* (IEEE, 2000), pp. 153--158]
+<https://doi.org/10.1109/ENABL.2000.883720>
