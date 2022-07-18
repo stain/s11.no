@@ -189,16 +189,14 @@ Mercè Crosas
 : Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA
 : Secretària de Govern Obert, Catalunya, Barcelona, ES
 
-José M. Fernández
+José Mª Fernández
 : Barcelona Supercomputing Center, Barcelona, Spain
 
 Björn Grüning
-: Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain
+: Bioinformatics Group, University of Freiburg, Germany
 
 Marco La Rosa
 : PARADISEC, Melbourne, Australia
-
-
 
 Ana Trisovic
 : Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA
@@ -210,3 +208,27 @@ Tobias Kuhn
 
 Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 : Research IT, The University of Manchester, Manchester, UK
+
+Carole Goble
+: Department of Computer Science, The University of Manchester, Manchester, UK
+
+Finn Bacall
+: Department of Computer Science, The University of Manchester, Manchester, UK
+
+Bert Droesbeke
+: Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium
+: VIB Center for Plant Systems Biology, Ghent, Belgium
+
+Luca Pireddu
+: Center for Advanced Studies, Research and Development in Sardinia (CRS4), Pula, Italy
+
+Laura Rodriguez-Navas
+: Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain
+
+Salvador Capella-Gutierrez
+: Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain
+
+Beatriz Serrano-Solano
+: Bioinformatics Group, University of Freiburg, Germany
+
+
