@@ -36,7 +36,10 @@ This is an open access article distributed under the terms of the [Creative Comm
 
 The text below has been adapted from the author's Overleaf manuscript with these modifications by Stian Soiland-Reyes: 
 - Citations changed to [s11 house style](https://s11.no/2021/house-rules/citation-style/)
+- Added DOIs and CEUR-WS links where missing
 - Hyperlinks made inline
+- Inline lists converted to bullet points
+- Text split into smaller paragraphs
 - Original SVG for figure 1, 2, 3
 - Corrected indentation in code example
 - Re-added table DOIs from publisher edition
@@ -63,7 +66,9 @@ _Tobias Kuhn¹, Ruben Taelman², Vincent Emonet³, Haris Antonatos⁴, Stian Soi
 
 While the publication of Linked Data has become increasingly common, the process tends to be a relatively complicated and heavy-weight one.
 Linked Data is typically published by centralized entities in the form of larger dataset releases, which has the downsides that there is a central bottleneck in the form of the organization or individual responsible for the releases. Moreover, certain kinds of data entries, in particular those with subjective or original content, currently do not fit into any existing dataset and are therefore more difficult to publish.
+
 To address these problems, we present here an approach to use nanopublications and a decentralized network of services to allow users to directly publish small Linked Data statements through a simple and user-friendly interface, called _Nanobench_, powered by semantic templates that are themselves published as nanopublications. The published nanopublications are cryptographically verifiable and can be queried through a redundant and decentralized network of services, based on the grlc API generator and a new quad extension of Triple Pattern Fragments.
+
 We show here that these two kinds of services are complementary and together allow us to query nanopublications in a reliable and efficient manner. We also show that Nanobench makes it indeed very easy for users to publish Linked Data statements, even for those who have no prior experience in Linked Data publishing.
 
 
@@ -78,7 +83,9 @@ files on the web. Such files are not regularly indexed on a global scale
 by any of the existing search engines and therefore often lack
 discoverability, but they are the only option that does not require the
 setup of a web server for users wanting to publish Linked Data on their
-own. While one of the fundamental ideas behind the web is that anyone
+own. 
+
+While one of the fundamental ideas behind the web is that anyone
 should be able to express themselves, Linked Data publishing is
 therefore mostly done by large centralized entities such as DBpedia
 \[5\] and Wikidata \[6\]. Even such community-driven datasets have clear
@@ -87,11 +94,15 @@ for subjective or original content, such as personal opinions or new
 scientific findings that have otherwise not yet been published. It is
 therefore difficult for web users to publish their own personal pieces
 of Linked Data in a manner that the published data can be easily
-discovered, queried, and aggregated. To solve these shortcomings, we
+discovered, queried, and aggregated. 
+
+To solve these shortcomings, we
 propose here a complementary approach to allow for what we call semantic
 micro-contributions. In contrast to the existing Linked Data publishing
 paradigms, semantic micro-contributions allow individual web users to
-easily and independently publish small snippets of Linked Data. We show
+easily and independently publish small snippets of Linked Data. 
+
+We show
 below how such semantic micro-contributions can be achieved with
 nanopublications and semantic templates, and how we can make such a
 system redundant and reliable with a decentralized network of services.
@@ -141,22 +152,28 @@ authors (i.e. the researchers), should cover not just metadata
 properties but the content of the scientific findings themselves, and
 should become the main publication object instead of papers with
 narrative text, in what we called *genuine semantic publishing* \[8\].
+
 Nanopublications \[9\] are one of the most prominent proposals to
 implement this. They are small independent pieces of Linked Data that
 encapsulate atomic statements in the form of a few RDF triples (this
 part is called the *assertion graph*) together with formal provenance
 information (the *provenance graph*, e.g. pointing to the study that the
 assertion was derived from) and metadata (the *publication info graph*,
-e.g. by whom and when was the nanopublication created). While the
+e.g. by whom and when was the nanopublication created). 
+
+While the
 original nanopublication proposal focused on assertions with domain
 statements (such as expressing a link between a gene and a disease), we
 subsequently suggested to broaden their scope and to use them also to
 express bibliographic and other meta-level information, statements about
 other nanopublications, vocabulary definitions, and generally any kind
-of small and coherent snippet of Linked Data \[10\]. In order to make
+of small and coherent snippet of Linked Data \[10\]. 
+
+In order to make
 nanopublications verifiable and to enforce their immutability, we then
 showed how cryptographic hash values can be calculated on their content
 and included in their identifiers in the form of *trusty URIs* \[11\].
+
 Based on this, we established a decentralized and open server network,
 through which anybody can reliably publish and retrieve nanopublications
 \[12\], and we introduced index nanopublications, which allow for
@@ -177,7 +194,9 @@ In terms of Linked Data APIs, SPARQL endpoints \[4\] are probably the
 most well-known example and they are often used for providing queryable
 access to RDF datasets. In practice, such endpoints often suffer from
 availability problems \[17\], due to their public nature and the
-uncontrolled complexity of SPARQL queries. The Linked Data Fragments
+uncontrolled complexity of SPARQL queries. 
+
+The Linked Data Fragments
 (LDF) framework \[18\] was initiated as an attempt to investigate
 alternative RDF query interfaces, where the total query effort can be
 distributed between server and client. Triple Pattern Fragments
@@ -187,14 +206,18 @@ complex SPARQL queries need to take up part of the execution load
 themselves. Through client-side query engines, such as Comunica \[19\],
 complex SPARQL queries can be split into multiple triple pattern queries
 that can be executed separately by a TPF server and then joined to
-create the full result on the client-side. Another approach to address
+create the full result on the client-side. 
+
+Another approach to address
 the problems of full SPARQL endpoints is grlc \[20\], a tool that
 automatically generates APIs from SPARQL templates. By providing a small
 number of possible API operations instead of SPARQL's virtually
 unlimited query possibilities, grlc makes Linked Data access easier and
 better manageable on both, the client and server side. A further
 noteworthy technology is the Linked Data Platform (LDP) \[21\] to manage
-and provide Linked Data. In order to establish connections between
+and provide Linked Data. 
+
+In order to establish connections between
 producers and consumers of Linked Data, subscription and notification
 protocols such as [WebSub](https://www.w3.org/TR/websub/) and [provenance pingbacks](https://www.w3.org/TR/prov-aq/#provenance-pingback) have been
 proposed.
@@ -208,14 +231,18 @@ proposed. LDF interfaces such as TPF, as introduced above, can in fact
 also be used in a more distributed fashion, as fragments can be
 published across different servers \[22\]. Distributed approaches to
 semantically annotate web pages like schema.org \[23\] have moreover
-shown strong adoption. Another example is Solid \[**Solid?**\], where
+shown strong adoption. 
+
+Another example is Solid \[35\], where
 users have their own personal Linked Data pod, in which they can store
 their own data and thereby are in full control of who can access it.
 Solid thereby targets personal and potentially confidential data, with a
 focus on access control and minimizing data duplication. The Solid
 ecosystem has been applied in a number of use cases, such as
 collaboration within decentralized construction projects \[24\], and
-decentralization of citizen data within governments \[25\]. Such
+decentralization of citizen data within governments \[25\]. 
+
+Such
 approaches where data is distributed but not replicated, however, often
 lead to major difficulties when queries need to be executed over such a
 federation of data sources \[26\].
@@ -225,13 +252,17 @@ only distributed but also replicated, which typically target open and
 public data and have an emphasis on scalability and reliability.
 Blockchain-based solutions fall into the latter category, for which a
 whole range exists of possible approaches to integrate Linked Data
-\[27\]. A core trade-off of all blockchain-based approaches is to either
+\[27\]. 
+
+A core trade-off of all blockchain-based approaches is to either
 sacrifice some degree of decentralization with permissioned blockchains
 or to pay the price of the expensive mining process. For applications
 that do not crucially depend on a fixed and agreed-upon order of events,
 as cryptocurrencies do for their transaction ledger, the costs of
 Blockchain-based solutions in fact often do not seem to offset their
-benefits. Our approach to be presented below also falls into this second
+benefits. 
+
+Our approach to be presented below also falls into this second
 category of decentralization approaches with replicated data sources,
 but does not entail the costs of Blockchain-based approaches.
 
@@ -247,7 +278,9 @@ them, as introduced above. The core of this new approach is to allow
 end-users to directly publish Linked Data snippets in the form of
 nanopublications with our existing decentralized nanopublication
 publishing network through an interface powered by semantic templates,
-which are themselves published as nanopublications. Below we explain how
+which are themselves published as nanopublications. 
+
+Below we explain how
 users can establish their identity by announcing their public key, and
 how they can then sign, publish, and update their nanopublications. Then
 we describe our extension of Triple Pattern Fragments to support quads
@@ -263,7 +296,9 @@ application called *Nanobench*.
 Nanopublications typically specify their creator in the publication info
 graph, but because anybody can publish anything they want through the
 existing open nanopublication network, there is no guarantee that this
-creator link is accurate. For that reason, we propose here a method to
+creator link is accurate. 
+
+For that reason, we propose here a method to
 add a digital signature to the publication graph. With our approach,
 users have to first introduce their identifier and public key before
 they can publish their own nanopublications. This introduction is itself
@@ -325,13 +360,16 @@ possible in the future.
 The elements introduced so far allow us to cryptographically verify that
 given nanopublications were published by the same user who introduced
 herself in her introduction nanopublication, but they still allow
-anybody to claim any ORCID identifier (or other kind of identifier). To
-add this missing link, users can add the link of their introduction
+anybody to claim any ORCID identifier (or other kind of identifier). 
+
+To add this missing link, users can add the link of their introduction
 nanopublication to their ORCID profile under _"Websites & Social Links"_,
 which proves that they have control of that account. This link is
 represented with `foaf:page` when the user identifier is resolved with a
 HTTP GET request asking for an RDF representation via content
-negotiation. This is thereby a general method that can work on any URL
+negotiation. 
+
+This is thereby a general method that can work on any URL
 scheme and identification mechanism providing dereferenceable user
 identifiers, but for simplicity we will restrict our discussion here to
 ORCID identifiers.
@@ -415,7 +453,9 @@ present here our implementation of a new service layer built on top of
 the existing publication layer. While we are using a triple store with
 SPARQL under the hood, we do not provide a full-blown SPARQL endpoint to
 users in order to address the above-mentioned problems of availability
-and scalability. For our nanopublication service layer, we employ a mix
+and scalability. 
+
+For our nanopublication service layer, we employ a mix
 of two kinds of services that are more restricted than SPARQL but also
 more scalable. The first kind of service is based on LDF via our QPF
 API, as introduced above, and allows only for simple queries at the
@@ -428,7 +468,9 @@ number of predefined patterns.
 The LDF-based services reduce the complexity and load on the server by
 only allowing for very simple queries to be asked to the server, and
 delegate the responsibility of orchestrating them to answer more complex
-questions to the client. The grlc-based services reduce the complexity
+questions to the client. 
+
+The grlc-based services reduce the complexity
 and load by allowing only for queries that are based on a small number
 of SPARQL templates that are hand-crafted for optimized performance.
 These two kinds of services are thereby designed to be complementary,
@@ -485,11 +527,15 @@ have to be created while loading new nanopublications. Most importantly,
 digital signatures cannot be checked in SPARQL directly, as this
 involves translating the triples of a nanopublication into a normalized
 serialization and then calculating a cryptographic hash function on it,
-which goes beyond SPARQL's capabilities. Other aspects like deep
+which goes beyond SPARQL's capabilities. 
+
+Other aspects like deep
 backlinks are complicated because it is not sufficient to check whether
 a link is present, but we also need to check that the respective triple
 is located in the linking nanopublication (as a triple linking two
-nanopublications could itself be located in a third nanopublication). In
+nanopublications could itself be located in a third nanopublication). 
+
+In
 order to solve these problems, additional triples in two administrative
 graphs are generated when new nanopublications are loaded. Concretely,
 the following triples are added for each nanopublication (placeholders
@@ -535,14 +581,18 @@ administrative graphs as explained above.
 While the restriction to predefined templates with grlc significantly
 improves the scalability of the system as compared to unrestricted
 SPARQL, further measures will be needed in the future if the number of
-nanopublications keeps growing to new orders of magnitude. The services
+nanopublications keeps growing to new orders of magnitude. 
+
+The services
 presented here are designed in such a way that such measures are
 possible with minimal changes to the API. The 14 query templates of the
 grlc services can be distributed to different servers, for example, such
 that a single server would only be responsible for one of the 14 kinds
 of queries. This server could then use an optimized data structure for
 exactly that kind of query and would only need to hold a fraction of the
-data. The `find_` queries could moreover be further compartmentalized based on
+data. 
+
+The `find_` queries could moreover be further compartmentalized based on
 publication date, for example each server instance just covering a
 single year. The LDF-based services could be distributed in a similar
 fashion, for example based on the predicate namespace.
@@ -570,7 +620,9 @@ create their own feed, they have to first set up their profile.
 Nanobench provides close guidance through this process, which involves
 the declaration of the user's ORCID identifier, the creation of an RSA
 key pair, and the publication of an introduction nanopublication that
-links the public key to the ORCID identifier. The last step of linking
+links the public key to the ORCID identifier.
+
+The last step of linking
 the new introduction nanopublication from the user's ORCID profile is
 not strictly necessary for the user to start publishing nanopublications
 and is therefore marked as optional.
@@ -578,21 +630,21 @@ and is therefore marked as optional.
 Once the user profile is completed, a list of templates is shown in the
 _"publish"_ part of the interface. Templates are published as
 nanopublications as well, and so this list can be populated via a call
-to the `find_signed_nanopubs_with_pattern` operation of the grlc-based services. Currently, the list
+to the `find_signed_nanopubs_with_pattern` operation of the grlc-based services. 
+
+Currently, the list
 includes templates for free-text commenting on a URL, expressing a
 relation to another person, declaring that the user has read a given
 paper, expressing a gene--disease association, retracting a
 nanopublication, describing a datasets with a SPARQL endpoint, and
 publishing an arbitrary RDF triple. After selecting a template, a form
 is automatically generated that allows the user to fill in information
-according to that template, as shown in Figure
-[3](#fig:nanobench){reference-type="ref" reference="fig:nanobench"}.
+according to that template, as shown in [Figure 3](#fig:nanobench).
 
 Templates describe the kind of statements users can publish and also
 provide additional information on how the input form should be presented
 to the user. This is an example of a template (the same one that is
-shown in Figure [3](#fig:nanobench){reference-type="ref"
-reference="fig:nanobench"}), defined in the assertion graph of a
+shown in [Figure 3](#fig:nanobench), defined in the assertion graph of a
 nanopublication:
 
     sub:assertion {
@@ -616,7 +668,9 @@ with `rdfs:label`. Moreover, it is linked to the statement templates (i.e. trip
 in the nanopublications to be published) via `hasStatement`. The above
 example has just one such statement template, but more complex templates
 involve several of them. These templates then use regular RDF
-reification to point to their subjects, predicates, and objects. In the
+reification to point to their subjects, predicates, and objects. 
+
+In the
 case of multiple statements, their order in the form can be defined with
 `statementOrder` and some of them can be marked as optional by
 classifying them as `OptionalStatement`. `rdfs:label` can be used on all the elements
@@ -629,6 +683,7 @@ template statements can be declared placeholders with the class
 `UriPlaceholder`, and similarly for literals with `LiteralPlaceholder`.
 Such placeholders are represented as input elements, such as text fields
 or drop-down menus, in the form that is generated from the template.
+
 Currently supported more specific placeholder types include
 `TrustyUriPlaceholder`, which requires a trusty URI (such as a
 nanopublication URI), and `RestrictedChoicePlaceholder`, which leads to
@@ -643,7 +698,9 @@ nanopublication by following the template and replacing all the
 placeholders with the user's input. For the provenance graph, only a
 simple `prov:wasAttributedTo` link to the user's identifier is currently added (we are working
 on extending the coverage of templates to the provenance and publication
-info graphs). In the publication info graph, Nanobench adds a timestamp,
+info graphs). 
+
+In the publication info graph, Nanobench adds a timestamp,
 specifies the user as the creator of the nanopublication, and adds a
 `wasCreatedFromTemplate` link that points to the underlying template
 nanopublication. Then, Nanobench adds a digital signature element to the
@@ -674,33 +731,43 @@ For this performance evaluation we wanted to find out how well the two
 types of services --- LDF-based and grlc-based --- perform in our
 network of services, how they compare, and to what extent they are
 really complementary. For this purpose, we defined a set of concrete
-queries that we can then submit to both services. We started with the 14
+queries that we can then submit to both services. 
+
+We started with the 14
 query templates of the grlc-based service, and instantiated each of them
 with a simple set of parameters to make 14 concrete executable queries.
 As parameter values, we chose generic yet realistically useful examples
 that return non-trivial answer sets for the kind of nanopublications
-that the current templates describe: (1) `find_nanopubs` restricted to the month
-2020-02; (2) `find_nanopubs_with_pattern` with the predicate value set to `foaf:knows`; (3) `find_nanopubs_with_text` on the free-text
-keyword _"john"_; (4) `find_nanopubs_with_uri` to search for nanopublications mentioning a given
-ORCID identifier; (5--8) of the form `find_signed_nanopubs_*` are given the same parameters as
-(1--4); (9) `get_all_indexes` and (10) `get_all_users` do not need parameters; (11) `get_backlinks` and (12) `get_deep_backlinks` are given the
-URI of a specific nanopublication, which has a substantial number of
-backlinks; (13) `get_latest_version` is given the URI of the first version of a template
-nanopublication that has afterwards been updated four times; and (14) `get_nanopub_count`
-is, like (1), restricted to the month 2020-02.
+that the current templates describe: 
+
+- (1) `find_nanopubs` restricted to the month 2020-02; 
+- (2) `find_nanopubs_with_pattern` with the predicate value set to `foaf:knows`; 
+- (3) `find_nanopubs_with_text` on the free-text keyword _"john"_; 
+- (4) `find_nanopubs_with_uri` to search for nanopublications mentioning a given ORCID identifier; 
+- (5--8) of the form `find_signed_nanopubs_*` are given the same parameters as (1--4); 
+- (9) `get_all_indexes` 
+- (10) `get_all_users` do not need parameters; 
+- (11) `get_backlinks` and 
+- (12) `get_deep_backlinks` are given the URI of a specific nanopublication, which has a substantial number of backlinks; 
+- (13) `get_latest_version` is given the URI of the first version of a template nanopublication that has afterwards been updated four times; 
+- (14) `get_nanopub_count` is, like (1), restricted to the month 2020-02.
 
 We can run these queries via the grlc-powered API but we can also use an
 LDF engine like Comunica to run them against our LDF-based services. The
 latter comes with some caveats, as the free text queries of `find_nanopubs_with_text` and `find_signed_nanopubs_with_text` depend
 on implementation-dependent non-standard extensions of SPARQL that do
-not work with LDF-style query execution. Moreover, Comunica currently
+not work with LDF-style query execution. 
+
+Moreover, Comunica currently
 lacks support for complex property paths, which are needed for `get_deep_backlinks` and `get_latest_version`.
 Queries (3), (7), (12), and (13) can therefore only be run on the
 grlc-based services but not on the LDF-based ones.
 
 However, the power of the LDF-based services is of course that they can
 (potentially) run arbitrary SPARQL queries (with some restrictions, as
-mentioned above). To demonstrate and test this ability, we created
+mentioned above). 
+
+To demonstrate and test this ability, we created
 another query (15) that in a simple way combines the outputs of two of
 the currently available templates. Specifically, it checks for a given
 user (below abbreviated as `me:`) who he has declared to know via the
@@ -718,7 +785,9 @@ purposes, as it misses a number of checks. It does not check that both
 triples are in the assertion graphs of signed nanopublications, that the
 first is signed with the public key corresponding to the user in subject
 position, and that neither of the nanopublications is superseded or
-retracted. We therefore define query (16) that includes all these
+retracted. 
+
+We therefore define query (16) that includes all these
 checks. This query is more complicated, and we show here for
 illustration just the SPARQL fragment of the part necessary to check
 that the second nanopublication `?np2` with public key `?pubkey2` was not retracted:
@@ -739,7 +808,9 @@ be found in the [supplemental material](https://doi.org/10.5281/zenodo.3994068) 
 To evaluate the performance of the nanopublication services, we accessed
 them in a clearly defined setting from a number of different locations
 from personal computers via home networks, by running the 16 queries
-specified above on all service instances of both kinds. For that, we
+specified above on all service instances of both kinds. 
+
+For that, we
 created a Docker image that accesses the grlc-based services with simple
 HTTP requests via `curl` and the LDF-based ones with the [Comunica](https://github.com/comunica/comunica) engine
 1.12.1. The results as well as the execution time of all the calls are
@@ -751,7 +822,9 @@ of services, the timeout is set to 60 seconds.
 We ran the Dockerized evaluation process described above at five places
 in four different countries. Each of them ran all of the compatible
 queries on each of the six existing service instance for both of the two
-kinds. For each query we therefore have 30 outcomes for grlc and another
+kinds. 
+
+For each query we therefore have 30 outcomes for grlc and another
 30 outcomes for LDF. These outcomes fall into the general categories of
 timeout, error, and full result. In the case of the LDF-based services,
 timeout and error outcomes can come with partial results.
@@ -766,7 +839,9 @@ With grlc, 96% of the calls succeeded and only 4% resulted in an error
 succeeded, 21% reached the timeout, and 6% gave an error. The latter two
 sometimes gave partial results: overall 6% reached a timeout while still
 giving partial results, and overall 3% gave an error with a partial
-result. For LDF, these types of outcomes are not evenly distributed. Two
+result. 
+
+For LDF, these types of outcomes are not evenly distributed. Two
 queries --- `find_nanopubs_with_uri` (4) and `get_all_indexes` (9) --- never fully succeeded, but the former
 sometimes gave partial results. For the remaining queries, however,
 these LDF calls returned at least a partial result in 97% of the cases.
@@ -800,7 +875,9 @@ _**Table 1**: Average execution times of the successful query executions in seco
 Next, we can look at the time performance. Table 1 shows the average execution times per query
 and service type, including only the calls that returned a full result.
 The successful queries to the grlc services took on average from 0.21 to
-6.46 seconds. For the LDF services, these numbers range from 1.53 to
+6.46 seconds. 
+
+For the LDF services, these numbers range from 1.53 to
 35.26 seconds (but they can be a bit misleading as they ignore the fact
 that the LDF services repeatedly hit the time limit of 60 seconds). For
 the queries that could successfully be run on both kinds of services,
@@ -834,8 +911,8 @@ Nanobench and to publish some nanopublications on their own.
 
 Next, we created an anonymous usability questionnaire, consisting of the
 ten standard questions of the widely used System Usability Scale (SUS)
-\[30\]. We added to that the questions "Have you published RDF / Linked
-Data before?" and "Have you digitally signed RDF / Linked Data before?",
+\[30\]. We added to that the questions _"Have you published RDF / Linked
+Data before?"_ and _"Have you digitally signed RDF / Linked Data before?"_,
 and as a follow up to each of them --- if the answer was "yes" ---
 whether Nanobench was harder or easier to use for publishing and signing
 Linked Data, respectively, compared to how they previously did it. The
@@ -853,9 +930,11 @@ can be found in the [supplemental material](https://doi.org/10.5281/zenodo.39940
 Overall, 42 users registered in the decentralized system by publishing
 an introduction nanopublication. 29 of them (69%) also linked this
 introduction nanopublication from their ORCID accounts, which was a step
-that was marked as optional. Collectively, they published 81
+that was marked as optional.  Collectively, they published 81
 nanopublications, not counting their introduction nanopublications, via
-the use of seven distinct templates. After applying the exclusion
+the use of seven distinct templates. 
+
+After applying the exclusion
 criteria defined above, we arrived at a set of 29 users to whom we sent
 the anonymous usability questionnaire (this set of users is overlapping
 but different from the set of 29 users mentioned just above). After
@@ -898,14 +977,18 @@ The participants were moreover given the possibility to provide further
 feedback in a free-text field. We received a variety of comments for
 further improvement, but except for the point that the required local
 installation was somewhat inconvenient, no point was mentioned more than
-once. The other comments concerned the search page being confusing (this
+once. 
+
+The other comments concerned the search page being confusing (this
 part of the interface was indeed not the focus of the study), the lack
 of support for batch publishing of multiple similar nanopublications,
 the lack of integrated ORCID lookup, the relatively small number of
 general-purpose templates, the lack of RDF prefix recognition, the fact
 that not all lengthy URIs are masked with readable labels in the user
 interface, and the fact that the confirmation checkbox did not mention
-the possibility of retraction. A further comment was that a command-line
+the possibility of retraction. 
+
+A further comment was that a command-line
 interface would have been preferred in the particular context of the
 given participant. Such a command-line interface actually exists (as
 part of the nanopub-java library \[32\]) but was not the focus of this
@@ -1013,7 +1096,7 @@ The following information was supplied regarding data availability:
 
 Supplemental data for the performance evaluation is available at Zenodo:
 
-Tobias Kuhn, & Vincent Emonet. (2020-08-21).  
+Tobias Kuhn, Vincent Emonet. (2020-08-21).  
 **peta-pico/nanopub-services-eval 1.0 (Version 1.0)**.  
 _Zenodo_   
 <https://doi.org/10.5281/zenodo.3994068>
@@ -1027,7 +1110,7 @@ _Zenodo_.
 
 The code for Nanobench (release nanobench-1.7) is available at Zenodo: 
 
-Tobias Kuhn, & Vincent Emonet. (2020-11-26):  
+Tobias Kuhn, Vincent Emonet. (2020-11-26):  
 **peta-pico/nanobench: nanobench-1.7 (Version nanobench-1.7)**.
 _Zenodo_  
 <https://doi.org/10.5281/zenodo.4292171>
@@ -1048,130 +1131,143 @@ Ruben Taelman is a postdoctoral fellow of the Research Foundation — Flanders (
 
 ## References
 
-1. Christian Bizer, Tom Heath, & Tim Berners-Lee (2011):  
-**Linked Data: The story so far**. 
-*Semantic services, interoperability and web applications: Emerging concepts*
+1. Christian Bizer, Tom Heath, Tim Berners-Lee (2011):  
+**Linked Data: The story so far**.   
+*Semantic services, interoperability and web applications: Emerging concepts*  
 <https://doi.org/10.4018/978-1-60960-593-3.ch008>
-2. Max Schmachtenberg, Christian Bizer, & Heiko Paulheim (2014):   
+2. Max Schmachtenberg, Christian Bizer, Heiko Paulheim (2014):   
 **Adoption of the linked data best practices in different topical domains**.  
 *International semantic web conference*.  
 <https://doi.org/10.1007/978-3-319-11964-9_16>
-3. Tim Berners-Lee (2009): **Linked Data** <https://www.w3.org/DesignIssues/LinkedData.html>
-4. Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark, & Elias Torres (2013):   
-*SPARQL 1.1 protocol* (W3C, 2013). <https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/>
-5. Sören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, & Zachary Ives (2007):  
+3. Tim Berners-Lee (2009):  
+**Linked Data**.  
+<https://www.w3.org/DesignIssues/LinkedData.html>
+4. Lee Feigenbaum, Gregory Todd Williams, Kendall Grant Clark, Elias Torres (2013):   
+**SPARQL 1.1 protocol**.  
+_W3C Recommendation_
+<https://www.w3.org/TR/2013/RECsparql11-protocol-20130321/>
+5. Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, Zachary Ives (2007):  
 **DBpedia: A nucleus for a web of open data**.  
-*The semantic web*
+*The Semantic Web*
 <https://doi.org/10.1007/978-3-540-76298-0_52>
 6. Denny Vrandečić & Markus Krötzsch (2014):   
-**Wikidata: A free collaborative knowledgebase**. *Communications of the ACM*, **57**  
+**Wikidata: A free collaborative knowledgebase**.  
+*Communications of the ACM* **57**(10)  
 <https://doi.org/10.1145/2629489>
 7. David Shotton (2009):  
-**Semantic publishing: The coming revolution in scientific journal publishing**. *Learned Publishing*, **22**   
+**Semantic publishing: The coming revolution in scientific journal publishing**.  
+*Learned Publishing* **22**(2)  
 <https://doi.org/10.1087/2009202>
-8. Tobias Kuhn & Michel Dumontier (2017):  
+8. Tobias Kuhn, Michel Dumontier (2017):  
 **Genuine semantic publishing**.  
-*Data Science*, **1**
+*Data Science* **1**(1--2)
 <https://doi.org/10.3233/DS-170010>
-9. Barend Mons, Herman van Haagen, Christine Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen, Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda Giardine, Jan Velterop, Paul Groth, & Erik Schultes (2011):  
-**The value of data**. *Nature genetics*, **43**(4)  
+9. Barend Mons, Herman van Haagen, Christine Chichester, Johan T. den Dunnen, Gertjan van Ommen, Erik van Mulligen, Bharat Singh, Rob Hooft, Marco Roos, Joel Hammond, Bruce Kiesel, Belinda Giardine, Jan Velterop, Paul Groth, Erik Schultes (2011):  
+**The value of data**.  
+*Nature genetics* **43**(4)  
 <https://doi.org/10.1038/ng0411-281>
-10. Tobias Kuhn, Paolo Emilio Barbano, Mate Levente Nagy, & Michael Krauthammer (2013):  
-**Broadening the scope of nanopublications**. *Extended semantic web conference*  
+10. Tobias Kuhn, Paolo Emilio Barbano, Mate Levente Nagy, Michael Krauthammer (2013):  
+**Broadening the scope of nanopublications**.  
+*Extended semantic web conference*  
 <https://doi.org/10.1007/978-3-642-38288-8_33>
-11. Tobias Kuhn & Michel Dumontier (2015):  
+11. Tobias Kuhn,  Michel Dumontier (2015):  
 **Making digital artifacts on the web verifiable and reliable**.  
-*IEEE Transactions on Knowledge and Data Engineering* **27**(9)
-Mhttps://doi.org/10.1109/TKDE.2015.2419657>
-12. Tobias Kuhn, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, & Michel Dumontier (2016):  
+*IEEE Transactions on Knowledge and Data Engineering* **27**(9)  
+<https://doi.org/10.1109/TKDE.2015.2419657>
+12. Tobias Kuhn, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, Michel Dumontier (2016):  
 **Decentralized provenance-aware publishing with nanopublications**.  
-*PeerJ Computer Science*, **2**(1):e78  
+*PeerJ Computer Science* **2**(1):e78  
 <https://doi.org/10.7717/peerj-cs.78>
-13. Tobias Kuhn, Egon Willighagen, Chris Evelo, Núria Queralt-Rosinach, Emilio Centeno, & Laura I. Furlong (2017):  
+13. Tobias Kuhn, Egon Willighagen, Chris Evelo, Núria Queralt-Rosinach, Emilio Centeno, Laura I. Furlong (2017):  
 **Reliable granular references to changing linked data**.  
 *International Semantic Web Conference*  
 <https://doi.org/10.1007/978-3-319-68288-4_26>
-14. Chiara Ghidini, Barbara Kump, Stefanie Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, & Luciano Serafini (2009):  
+14. Chiara Ghidini, Barbara Kump, Stefanie Lindstaedt, Nahid Mahbub, Viktoria Pammer, Marco Rospocher, Luciano Serafini (2009):  
 **Moki: The enterprise modelling wiki**.  
 *European semantic web conference*  
 <https://doi.org/10.1007/978-3-642-02121-3_65>
-15. Joachim Baumeister, Jochen Reutelshoefer, & Frank Puppe (2011):  
+15. Joachim Baumeister, Jochen Reutelshoefer, Frank Puppe (2011):  
 **KnowWE: A semantic wiki for knowledge engineering**.   
-*Applied Intelligence*, **35**(3)
+*Applied Intelligence* **35**(3)  
 <https://doi.org/10.1007/s10489-010-0224-5>
 16. Tobias Kuhn (2008):  
 **AceWiki: A Natural and Expressive Semantic Wiki**.  
-*Proceedings of Semantic Web User Interaction at CHI 2008: Exploring HCI Challenges*, _CEUR Workshop Proceedings_ **543**
+*Proceedings of Semantic Web User Interaction at CHI 2008: Exploring HCI Challenges*, _CEUR Workshop Proceedings_ **543**  
 <http://ceur-ws.org/Vol-543/kuhn_swui2008.pdf>
-17. Carlos Buil-Aranda, Aidan Hogan, Jürgen Umbrich, & Pierre-Yves Vandenbussche (2013):  
+17. Carlos Buil-Aranda, Aidan Hogan, Jürgen Umbrich, Pierre-Yves Vandenbussche (2013):  
 **SPARQL web-querying infrastructure: Ready for action?**  
-*The semantic web--ISWC 2013*.  
+_International Semantic Web Conference_, *The Semantic Web – ISWC 2013*.  
 <https://doi.org/10.1007/978-3-642-41338-4_18>
-18. Ruben Verborgh, Miel Vander Sande, Olaf Hartig, Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald Haesendonck, & Pieter Colpaert (2016):  
+18. Ruben Verborgh, Miel Vander Sande, Olaf Hartig, Joachim Van Herwegen, Laurens De Vocht, Ben De Meester, Gerald Haesendonck, Pieter Colpaert (2016):  
 **Triple Pattern Fragments: A low-cost knowledge graph interface for the Web**.   
-*Journal of Web Semantics*, **37--38**   
+*Journal of Web Semantics* **37–38**   
 <https://doi.org/10.1016/j.websem.2016.03.003>
-19. Ruben Taelman, Joachim Van Herwegen, Miel Vander Sande, & Ruben Verborgh (2018):  
-**Comunica: A modular SPARQL query engine for the web**. *17th international semantic web conference* (2018).  
+19. Ruben Taelman, Joachim Van Herwegen, Miel Vander Sande, Ruben Verborgh (2018):  
+[**Comunica: A modular SPARQL query engine for the web**](https://comunica.github.io/Article-ISWC2018-Resource/).  
+*17th international semantic web conference*  
 <https://doi.org/10.1007/978-3-030-00668-6_15> [[preprint](https://comunica.github.io/Article-ISWC2018-Resource/)]
-20. Albert Meroño-Peñuela & Rinke Hoekstra (2016):  
+20. Albert Meroño-Peñuela, Rinke Hoekstra (2016):  
 **Grlc makes GitHub taste like Linked Data APIs**.  
-*European semantic web conference*
-<https://doi.org/10.1007%2F978-3-319-47602-5_48>
-21. Steve Speicher, John Arwe, & Ashok Malhotra (2015):  
+*European semantic web conference*, _ESWC 2016: The Semantic Web_
+<https://doi.org/10.1007/978-3-319-47602-5_48>
+21. Steve Speicher, John Arwe, Ashok Malhotra (2015):  
 **Linked Data Platform 1.0**.   
-_W3C Recommendation_
+_W3C Recommendation_  
 <https://www.w3.org/TR/ldp/>
-22. Harm Delva, Julian Andres Rojas Melendez, Pieter Colpaert, & Ruben Verborgh (2019):  
-**Decentralized publication and consumption of transfer footpaths**.  
+22. Harm Delva, Julian Andres Rojas Melendez, Pieter Colpaert, Ruben Verborgh (2019):  
+[**Decentralized publication and consumption of transfer footpaths**](https://hdelva.be/articles/decentralized-footpaths/).  
 *First international workshop on semantics for transport*, _CEUR Workshop proceedings_ **2447**   
 <http://ceur-ws.org/Vol-2447/paper4.pdf>
-23. Ramanathan V. Guha, Dan Brickley, & Steve Macbeth (2016):  
+23. Ramanathan V. Guha, Dan Brickley, Steve Macbeth (2016):  
 **Schema.Org: Evolution of structured data on the web**.  
-*Communications of the ACM*, **59**(2)   
+*Communications of the ACM* **59**(2)   
 <https://doi.org/10.1145/2844544>
-24. Jeroen Werbrouck, Ruben Taelman, Ruben Verborgh, Pieter Pauwels, Jakob Beetz, & Erik Mannens (2020):  
+24. Jeroen Werbrouck, Ruben Taelman, Ruben Verborgh, Pieter Pauwels, Jakob Beetz, Erik Mannens (2020):  
 **Pattern-based access control in a decentralised collaboration environment**.  
 *Proceedings of the 8th linked data in architecture and construction workshop*, _CEUR Workshop proceedings_ **2636**  
 <http://ceur-ws.org/Vol-2636/09paper.pdf>
-25. Raf Buyle, Ruben Taelman, Katrien Mostaert, Geroen Joris, Erik Mannens, Ruben Verborgh, & Tim Berners-Lee (2019):   
+25. Raf Buyle, Ruben Taelman, Katrien Mostaert, Geroen Joris, Erik Mannens, Ruben Verborgh, Tim Berners-Lee (2019):   
 **Streamlining governmental processes by putting citizens in control of their personal data**.  
-*International conference on electronic governance and open society: Challenges in eurasia* (Springer, 2019), pp. 346--359
-<https://doi.org/10.1007/978-3-030-39296-3_26>
-26. Ruben Taelman, Simon Steyskal, & Sabrina Kirrane (2020):   
-**Towards querying in decentralized environments with privacy-preserving aggregation**.  
+*International conference on electronic governance and open society: Challenges in Eurasia*  
+<https://doi.org/10.1007/978-3-030-39296-3_26> [[preprint](https://drive.verborgh.org/publications/buyle_egose_2019.pdf)]
+26. Ruben Taelman, Simon Steyskal, Sabrina Kirrane (2020):   
+[**Towards querying in decentralized environments with privacy-preserving aggregation**](https://rubensworks.github.io/article-privacy-decentralized/).  
 *Proceedings of the 4th workshop on storing, querying, and benchmarking the web of data*, _CEUR Workshop proceedings_ **2722**  
-<https://rubensworks.github.io/article-privacy-decentralized/>
 <http://ceur-ws.org/Vol-2722/quweda2020-paper-3.pdf>
-27. Allan Third & John Domingue (2017):  
+27. Allan Third, John Domingue (2017):  
 **LinkChains: Exploring the space of decentralised trustworthy linked data**.  
 *Proceedings of the Workshop on Decentralizing the Semantic Web (DeSemWeb)*,  
 _CEUR Workshop proceedings_ **1934**
 <http://ceur-ws.org/Vol-1934/contribution-06.pdf>
-28. Markus Lanthaler & Christian Gütl (2013):   
+28. Markus Lanthaler, Christian Gütl (2013):   
 **Hydra: A vocabulary for hypermedia-driven web APIs**.  
 *Proceedings of the WWW2013 Workshop on Linked Data on the Web*, _CEUR Workshop proceedings_ **996**  
 <http://ceur-ws.org/Vol-996/papers/ldow2013-paper-03.pdf>
-29. Pasquale Lisena, Albert Meroño-Peñuela, Tobias Kuhn, & Raphaël Troncy (2019):  
+29. Pasquale Lisena, Albert Meroño-Peñuela, Tobias Kuhn, Raphaël Troncy (2019):  
 **Easy web API development with SPARQL transformer**.  
 *International semantic web conference*  
 <https://doi.org/10.1007/978-3-030-30796-7_28>
 30. John Brooke (1996):   
 **SUS-a quick and dirty usability scale**.  
-*Usability evaluation in industry*, **189**  
+*Usability evaluation in industry* **189**  
 <https://doi.org/10.1201/9781498710411-35>
-31. Aaron Bangor, Philip T. Kortum, & James T.  Miller (2008):  
+31. Aaron Bangor, Philip T. Kortum, James T.  Miller (2008):  
 **An empirical evaluation of the system usability scale**.  
-*Intl. Journal of Human--Computer Interaction* **24**  
+*Interanational Journal of Human–Computer Interaction* **24**  
 <https://doi.org/10.1080/10447310802205776>
 32. Tobias Kuhn (2016):   
 **Nanopub-java: A Java library for nanopublications**.  
-*Linked science: Proceedings of the 5th workshop on linked science 2015-best practices and the road ahead (LISC 2015)*, _CEUR Workshop Proceedings_ **1572**
+*Linked science: Proceedings of the 5th workshop on linked science 2015-best practices and the road ahead (LISC 2015)*, _CEUR Workshop Proceedings_ **1572**  
 <http://ceur-ws.org/Vol-1572/paper4.pdf>
-33. Thomas Minier, Hala Skaf-Molli, Pascal Molli, & Maria-Esther Vidal (2018):  
+33. Thomas Minier, Hala Skaf-Molli, Pascal Molli, Maria-Esther Vidal (2018):  
 **Intelligent clients for replicated Triple Pattern Fragments**.  
-*European semantic web conference* (Springer, 2018), pp. 400--414  
+*European semantic web conference*  
 <https://doi.org/10.1007/978-3-319-93417-4_26>
 34. Germano Caronni (2000):  
-**Walking the web of trust**. *WET ICE 2000* (IEEE, 2000), pp. 153--158]
+**Walking the web of trust**.  
+*WET ICE 2000*   
 <https://doi.org/10.1109/ENABL.2000.883720>
+35. Essam Mansour, Andrei Vlad Sambra, Sandro Hawke, Maged Zereba, Sarven Capadisli, Abdurrahman Ghanem, Ashraf Aboulnaga, Tim Berners-Lee (2016):  
+**A Demonstration of the Solid Platform for Social Web Applications**.  
+_WWW '16 Companion: Proceedings of the 25th International Conference Companion on World Wide Web_  
+<https://doi.org/10.1145/2872518.2890529>
