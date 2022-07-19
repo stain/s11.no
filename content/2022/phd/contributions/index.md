@@ -52,17 +52,254 @@ If the thesis manuscript includes articles that have been written by several aut
 supervisor to evaluate whether the doctoral candidate has made an independent contribution to the
 articles that is sufficient to warrant the conferral of the doctorate. If necessary, the supervisor will inform
 the Doctorate Committee of the manner in which the articles were written and what the contribution of
-the doctoral candidate was. As defined in Article 15, paragraph 5, the candidate is required to include a
+the doctoral candidate was. 
+As defined in Article 15, paragraph 5, the candidate is required to include a
 list of references in the thesis manuscript
-
-
-
 
 -->
 
+Below are the author contributions to published articles that form part of this thesis. Contributions are classified primarily according to the Contributor Roles Taxonomy [CASRAI CrEDiT](https://casrai.org/credit/):
+
+Except for chapter 8, I am the main author of the corresponding manuscripts and have contributed to all aspects of the research. 
+
+For Chapter 4 and 5 I co-chair the [RO-Crate community](https://www.researchobject.org/ro-crate/community) together with Peter Sefton.
+
+For Chapter 6 I am deputy work package leader in BioExcel, with Adam Hospital as work package leader. 
+
+For Chapter 7 I have contributed to all aspects of the research, including supervision, and wrote the original manuscript.
+
+In Chapter 8 my main contributions are to section 2.2, 2.3.2, 4.1, 7.1, 7.2. In the corresponding research I have contributed to designing, technical advice, insight and supervision.
+
+### Chapter contributions
+
+**Chapter 2**: [**Updating Linked Data practices for FAIR Digital Object principles**](../updating-ld-for-fdo/):
+
+Stian Soiland-Reyes
+: Conceptualization, Formal Analysis, Funding acquisition, Investigation, Software, Writing – original draft, Writing – review and editing
+
+Leyla Jael Castro
+: Writing – original draft
+
+Daniel Garijo
+: Conceptualization, Funding acquisition, Writing – review and editing
+
+Marc Portier
+: Investigation, Writing – original draft, Writing – review and editing
+
+Carole Goble:
+: Funding acquisition, Supervision
+
+Paul Groth
+: Supervision
+
+
+**Chapter 3**: [Evaluating FAIR Digital Object as a distributed object system](../evaluating-fdo/)
+
+Stian Soiland-Reyes
+: Conceptualization, Formal Analysis, Funding acquisition, Investigation, Methodology, Software, Writing – original draft, Writing – review and editing 
+
+Carole Goble
+: Funding acquisition, Supervision, Writing – review and editing
+
+Paul Groth
+: Methodology, Supervision, Writing – original draft, Writing – review and editing
+
+
+**Chapter 4**: [Creating lightweight FAIR Digital Objects with RO-Crate](../fdo-with-ro-crate/)
+
+Stian Soiland-Reyes
+: Conceptualization, Funding acquisition, Project administration, Software, Writing – original draft, Writing – review & editing
+
+Peter Sefton
+: Funding acquisition, Project administration, Software
+
+Leyla Jael Castro
+: Writing – original draft, Writing – review & editing
+
+Frederik Coppens
+: Funding acquisition, Supervision, Writing – review & editing
+
+Daniel Garijo
+: Software, Writing – review and editing
+
+Simone Leo
+: Conceptualization, Project administration, Software, Writing – original draft
+
+Marc Portier
+: Writing – review & editing
+
+Paul Groth
+: Supervision
+
+
+**Chapter 5**: [Packaging research artefacts with RO-Crate](../ro-crate/)
+
+Stian Soiland-Reyes
+: Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review \& editing
+
+Peter Sefton
+: Conceptualization, Investigation, Methodology, Project administration, Resources, Software, Writing – review \& editing
+
+Mercè Crosas
+: Writing – review \& editing
+
+Leyla Jael Castro
+: Methodology, Writing – review \& editing
+
+Frederik Coppens
+: Writing – review \& editing
+
+José M. Fernández
+: Methodology, Software, Writing – review \& editing
+
+Daniel Garijo
+: Methodology, Writing – review \& editing
+
+Björn Grüning
+: Writing – review \& editing
+
+Marco La Rosa
+: Software, Methodology, Writing – review \& editing
+
+Simone Leo
+: Software, Methodology, Writing – review \& editing
+
+Eoghan Ó Carragáin
+: Investigation, Methodology, Project administration, Writing – review \& editing
+
+Marc Portier
+: Methodology, Writing – review \& editing
+
+Ana Trisovic
+: Software, Writing – review \& editing
+
+RO-Crate Community
+: Investigation, Software, Validation, Writing – review \& editing
+
+Paul Groth
+: Methodology, Supervision, Writing – original draft, Writing – review \& editing
+
+Carole Goble
+: Conceptualization, Funding acquisition, Methodology, Project administration, Supervision, Visualization, Writing – review \& editing
+
+
+**Chapter 6**: [Making Canonical Workflow Building Blocks interoperable across workflow languages](../canonical-workflow-building-blocks/)
+
+Stian Soiland-Reyes
+: Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Supervision, Writing -- original draft, Writing -- review & editing 
+
+Genís Bayarri
+: Software, Software Documentation
+
+Pau Andrio
+: Methodology, Software, Validation, Software Documentation
+
+Robin Long
+: Software, Software Documentation
+
+Douglas Lowe
+: Software, Software Documentation
+
+Ania Niewielska
+: Methodology, Resources, Software
+
+Adam Hospital
+: Methodology, Project administration, Resuorces, Software, Validation, Visualization, Writing -- original draft, Writing -- review & editing
+
+Paul Groth
+: Methodology, Supervision, Writing -- review & editing
+
+
+**Chapter 7**: [Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows ](../incrementally-building-fdos/)
+
+Oliver Woolland
+: Data curation, Resources, Software, Visualization, Writing – review & editing
+
+Paul Brack
+: Conceptualization, Software
+
+Stian Soiland-Reyes
+: Investigation, Methodology, Supervision, Writing – original draft, Writing – review & editing
+
+Ben Scott
+: Data curation, Software, Validation
+
+Laurence Livermore
+: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Writing – review & editing
+
+
+
+**Chapter 8**: [The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections](../specimen-data-refinery/)
+
+Alex Hardisty
+: Conceptualization, Investigation, Supervision, Validation, Writing -- original draft, Writing -- review & editing, Approval.
+
+Paul Brack
+: Investigation, Writing -- original draft, Writing -- review & editing.
+
+Carole Goble
+: Conceptualization, Supervision, Writing -- review & editing
+
+Laurence Livermore
+: Conceptualization, Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
+
+Ben Scott
+: Investigation, Writing -- original draft, Writing -- review & editing.
+
+Quentin Groom
+: Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
+
+Stuart Owen
+: Investigation, Writing -- original draft, Writing -- review & editing.
+
+Stian Soiland-Reyes
+: Investigation, Writing -- original draft, Writing -- review & editing.
+
+
+### Supplementary publications
+
+I have also contributed as co-author to these articles during the PhD period, provided as supplements:
+
+**TODO**: Prune this list!
+
+[Supplement 1: Ten Simple Rules for making a software tool workflow-ready ](../10-simple-rules-for-workflow-tools/)
+
+[Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate](../galaxy-ro-crate/)
+
+[Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory Zenodo white paper](../workflow-collaboratory/)
+
+[Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language](../methods-included/)
+
+[Supplement 5: Semantic micro-contributions with decentralized nanopublication services](/2021/phd/nanopub/)
+
+[Supplement 6: Perspectives on automated composition of workflows in the life sciences](https://doi.org/10.12688/f1000research.54159.1)
+
+[Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data](https://doi.org/10.1007/978-3-030-80960-7_16)
+
+[Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences.](https://doi.org/10.5281/zenodo.5093125)
+
+[Supplement 9: A Community Roadmap for Scientific Workflows Research and Development](https://doi.org/10.1109/WORKS54523.2021.00016)
+
+[Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR](https://doi.org/10.1162/dint_a_00025) _(Main contribution pre-dates UvA affiliation)_
+
+[Supplement 11: FAIR Computational Workflows](https://doi.org/10.1162/dint_a_00033) _(Main contribution pre-dates UvA affiliation)_
+
+[Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv](https://doi.org/10.1093/gigascience/giz095) _(Main contribution pre-dates UvA affiliation)_
+
+[Supplement 14: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html)
+
+I have been involved in All Aspects of the research for supplement 1, 2, 3, 4, 11, 12.
+
+For Supplement 4 I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
+
+For Supplement 14 I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
+
+<!-- TODO: Reformat above as full citations -->
+
+
 ## Contributor affiliations
 
-<!-- TODO:add ORCIDs -->
+<!-- TODO: Remove co-authors from supplements only -->
 
 
 Sanne Abeln <https://orcid.org/0000-0002-2779-7174>
