@@ -35,7 +35,7 @@ _Communications of the ACM_ **65**(6)
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 [**Packaging research artefacts with RO-Crate**](/2022/phd/ro-crate/).  
-_Data Science_  (pre-press)  
+_Data Science_ **5**(2)  
 <https://doi.org/10.3233/DS-210053>  
 [arXiv:2108.06503](https://arxiv.org/abs/arXiv:2108.06503) [cs.DL]
 [[html](https://www.researchobject.org/2021-packaging-research-artefacts-with-ro-crate/manuscript.html)]
