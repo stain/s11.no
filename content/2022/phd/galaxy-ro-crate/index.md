@@ -23,7 +23,8 @@ keywords:
 
 Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
 **Enhancing RDM in Galaxy by integrating RO-Crate**.  
-_Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (submitted)
+[1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (poster)  
+_Research Ideas and Outcomes_ (accepted)
 
 
 # Enhancing RDM in Galaxy by integrating RO-Crate

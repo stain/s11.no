@@ -18,12 +18,34 @@ aliases:
 }
 </style>
 
-<p>
-<strong>Note:</strong> This page is adapted from <a href="https://www.research.manchester.ac.uk/portal/en/researchers/stian-soilandreyes(0b55a0bb-452c-455a-8af6-fe7cc4094c83)/publications.html">www.research.manchester.ac.uk</a> which may be more up to date or include preprints.
-</p>
-
 
 ## 2022
+
+Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
+[**Updating Linked Data practices for FAIR Digital Object principles**](/2022/phd/updating-ld-for-fdo/).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (abstract).  
+_Research Ideas and Outcomes_ (accepted)
+
+Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+[**Creating lightweight FAIR Digital Objects with RO-Crate**](/2022/phd/fdo-with-ro-crate/).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ (accepted)
+
+Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):  
+[**Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**](/2022/phd/incrementally-building-fdos/).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ (accepted)
+
+Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
+[**Enhancing RDM in Galaxy by integrating RO-Crate**](/2022/phd/galaxy-ro-crate/).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ (accepted)
+
+Laurence Livermore, Paul Brack, Ben Scott, Stian Soiland-Reyes, Oliver Woolland (2022):  
+[**The Specimen Data Refinery: Using a scientific workflow approach for information extraction**](https://doi.org/10.3897/biss.6.93500)
+Biodiversity Information Standards ([TDWG 2022](https://www.tdwg.org/conferences/2022/)).
+_Biodiversity Information Science and Standards_ **6**:e93500  
+<https://doi.org/10.3897/biss.6.93500>
 
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The CWL Community (2022):  
 [**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**](/2022/phd/methods-included/).  
@@ -64,6 +86,12 @@ _Research Data Alliance_
 
 ## 2021
 
+Petr Holub, Rudolf Wittner, Cecilia Mascia, Francesca Frexia, Heimo Müller, Markus Plass, Clare Allocca, Fay Betsou, Tony Burdett, Ibon Cancio, Adriane Chapman, Martin Chapman, Melanie Courtot, Vasa Curcin, Johann Eder, Mark Elliot, Katrina Exter, Elliot Fairweather, Carole Goble, Martin Golebiewski, Bron Kisler, Andreas Kremer, Sheng Lin-Gibson, Anna Marsano, Marco Mattavelli, Josh Moore, Hiroki Nakae, Isabelle Perseil, Ayat Salman, James Sluka, Stian Soiland-Reyes, Caterina Strambio-De-Castillia, Michael Sussman, Jason R. Swedlow, Kurt Zatloukal, Jörg Geiger (2021):  
+[**Towards a Common Standard for Data and Specimen Provenance in Life Sciences**](https://doi.org/10.5281/zenodo.5093125).  
+_Zenodo_ (Working Paper)
+<https://doi.org/10.5281/zenodo.5093125>
+
+
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
 Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez,
 Paulos Charonyktakis, Michael R. Crusoe,
@@ -86,7 +114,7 @@ _2021 IEEE Workshop on Workflows in Support of Large-Scale Science ([WORKS](http
 [arXiv:2110.02168](https://arxiv.org/abs/2110.02168) [cs.DC]
 
 Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodriguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
-[**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**](https://doi.org/10.5281/zenodo.4605654).  
+[**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**](/2021/phd/workflow-collaboratory/).  
 _Zenodo_
 <https://doi.org/10.5281/zenodo.4605654>
 
@@ -154,7 +182,7 @@ _PLOS Biology._  **16**(12):e3000099
 ([bioXriv:191783](https://doi.org/10.1101/191783))
 
 Stian Soiland-Reyes, Marcos Cáceres (2018):  
-[**The Archive and Package (arcp) URI scheme**](https://www.research.manchester.ac.uk/portal/files/76956641/arcp.html).  
+[**The Archive and Package (arcp) URI scheme**](/2018/arcp.html).  
 _2018 IEEE 14th International Conference on e-Science (e-Science)_.  
 <https://doi.org/10.1109/eScience.2018.00018>  
 [[html]](http://s11.no/2018/arcp.html)
@@ -236,7 +264,7 @@ _CEUR Workshop Proceedings_ **1700**(04)
 <http://ceur-ws.org/Vol-1700/paper-04.pdf>
 
 Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
-[**Tracking workflow execution with TavernaProv**](https://s11.no/2016/provweek-tavernaprov/).  
+[**Tracking workflow execution with TavernaProv**](/2016/provweek-tavernaprov/).  
 At _[PROV: Three Years Later](http://provenanceweek.org/2016/p3yl/programme.html)_, [Provenance Week 2016](http://www2.mitre.org/public/provenance2016/).  
 <https://doi.org/10.5281/zenodo.51314>
 [html](https://s11.no/2016/provweek-tavernaprov/)
@@ -326,7 +354,7 @@ _Journal of Biomedical Semantics_ **4**:37
 <https://doi.org/10.1186/2041-1480-4-37>
 
 Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark (2013):  
-**Web Annotation as a First Class Object**.  
+[**Web Annotation as a First Class Object**](/2013/web-annotation/).  
 _IEEE Internet Computing_ **17**(6) pp 71-75.
 [https://doi.org/10.1109/MIC.2013.123](https://doi.org/10.1109/MIC.2013.123)
 [[html]](http://s11.no/2013/web-annotation/)
@@ -423,7 +451,6 @@ Peter Li, Juan I Castrillo, Giles Velarde, Ingo Wassink, Stian Soiland-Reyes, St
 [**Performing statistical analyses on quantitative data in Taverna workflows: An example using R and maxdBrowse to identify differentially-expressed genes from microarray data**](https://doi.org/10.1186/1471-2105-9-334).  
 _BMC Bioinformatics_ **7**:334  
 <https://doi.org/10.1186/1471-2105-9-334>
-
 
 Peter Li, Tom Oinn, Stian Soiland, Douglas B. Kell (2008):  
 [**Automated manipulation of systems biology models using libSBML within Taverna workflows**](https://doi.org/10.1093/bioinformatics/btm578).   

@@ -19,7 +19,8 @@ description: >
 
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
 **Creating lightweight FAIR Digital Objects with RO-Crate**.  
-_Research Ideas and Outcomes_, [1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (submitted)
+[1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (poster)  
+_Research Ideas and Outcomes_ (accepted)
 
 
 # Creating lightweight FAIR Digital Objects with RO-Crate

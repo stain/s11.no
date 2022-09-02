@@ -8,6 +8,18 @@ categories:
 
 **Note**: This list is **Work in progress** and incomplete, showing documents (reports, specifications and deliverables) (co)authored by Stian Soiland-Reyes.
 
+
+Neil P. Chue Hong, Daniel S. Katz, Michelle Barker; Anna-Lena Lamprecht, Carlos Martinez, Fotis E. Psomopoulos, Jen Harrow, Leyla Jael Castro, Morane Gruenpeter, Paula Andrea Martinez, Tom Honeyman; Alexander Struck, Allen Lee, Axel Loewe, Ben van Werkhoven, Catherine Jones, Daniel Garijo, Esther Plomp, Francoise Genova, Hugh Shanahan, Joanna Leng, Maggie Hellström, Malin Sandström, Manodeep Sinha, Mateusz Kuzak, Patricia Herterich, Qian Zhang, Sharif Islam, Susanna-Assunta Sansone, Tom Pollard, Udayanto Dwi Atmojo; Alan Williams, Andreas Czerniak, Anna Niehues, Anne Claire Fouilloux, Bala Desinghu, Carole Goble, Céline Richard, Charles Gray, Chris Erdmann, Daniel Nüst, Daniele Tartarini, Elena Ranguelova, Hartwig Anzt, Ilian Todorov, James McNally, Javier Moldon, Jessica Burnett, Julián Garrido-Sánchez, Khalid Belhajjame, Laurents Sesink, Lorraine Hwang, Marcos Roberto Tovani-Palone, Mark D. Wilkinson, Mathieu Servillat, Matthias Liffers, Merc Fox, Nadica Miljković, Nick Lynch, Paula Martinez Lavanchy, Sandra Gesing, Sarah Stevens, Sergio Martinez Cuesta, Silvio Peroni, Stian Soiland-Reyes, Tom Bakker, Tovo Rabemanantsoa, Vanessa Sochat, Yo Yehudi, FAIR4RS WG (2022):  
+[**FAIR Principles for Research Software version 1.0 (FAIR4RS Principles v1.0)**](https://www.rd-alliance.org/system/files/FAIR4RS%20principles%20v1.0.pdf).  
+_Research Data Alliance_  
+<https://doi.org/10.15497/RDA00068>
+
+Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark van de Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder (2022):  
+[**FAIR Digital Object Demonstrators 2021**](https://doi.org/10.5281/zenodo.5872645).   
+Report, FAIR Digital Objects Forum. _Zenodo_  
+<https://doi.org/10.5281/zenodo.5872645>
+
+
 Bert Droesbeke; floradanna; Pinar Alper; Daniel Faria; Martin Cook; Munazah; Korbinian Bösl; Niclas Jareborg; wittigue; Markus Englund; elinkronander; Frederik Coppens; YvonneKallberg; Pete; Laura Portell Silva; Siiri Fuchs; Chris Child; MijkeJetten; minnami; Carole Goble; Olivier Collin; Ivan Mičetić; Karel Berka; Federico Bianchini; Rob Hooft; afablondon; Stian Soiland-Reyes; Michael R. Crusoe; Sirarat Sarntivijai (2021):  
 **[elixir-europe/rdmkit](https://rdmkit.elixir-europe.org/): v1.0.0 - Public release**.  
 _Zenodo_
