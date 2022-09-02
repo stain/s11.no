@@ -27,7 +27,7 @@ _Stian Soiland-Reyes¹², Leyla Jael Castro³, Daniel Garijo⁴, Marc Portier⁵
 
 ¹ Department of Computer Science, The University of Manchester, Manchester, United Kingdom  
 ² Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, Netherlands  
-³ ZB Med, Cologne, Germany  
+³ Informationszentrum Lebenswissenschaften (ZB Med), Cologne, Germany  
 ⁴ Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
 ⁵ Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
 
@@ -39,7 +39,7 @@ _Stian Soiland-Reyes¹², Leyla Jael Castro³, Daniel Garijo⁴, Marc Portier⁵
 
 The _FAIR principles_ [[Wilkinson 2016](https://doi.org/10.1038/sdata.2016.18)] are fundamental for data discovery, sharing, consumption and reuse; however their broad interpretation and many ways to implement can lead to inconsistencies and incompatibility [[Jacobsen 2020](https://doi.org/10.1162/dint_r_00024)].
 
-The European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has been instrumental in maturing and encouraging FAIR practices across a wide range of research areas. Linked Data in the form of [RDF](https://www.w3.org/TR/rdf11-primer/) is the common way to implement machine-readability in FAIR, however the principles do not prescribe RDF or any particular technology [[Mons 2017](https://doi.org/10.3233/ISU-170824)].
+The European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has been instrumental in maturing and encouraging FAIR practices across a wide range of research areas. Linked Data in the form of [RDF](https://www.w3.org/TR/rdf11-primer/) (Resource Description Framework) is the common way to implement machine-readability in FAIR, however the principles do not prescribe RDF or any particular technology [[Mons 2017](https://doi.org/10.3233/ISU-170824)].
 
 
 #### FAIR Digital Object
@@ -62,9 +62,9 @@ Although LD practices align to FAIR [[Hasnain 2018](https://doi.org/10.1007/978-
 
 Considering the potential of FDOs when combined with the mature technology stack of LD, here we briefly discuss how FDO principles can be achieved using existing standards. The general principles (G1–G9) apply well: Open standards with HTTP being stable for 30 years, JSON-LD is widely used, FAIR practitioners mainly use RDF, and a clear abstraction between the RDF model with stable bindings available in multiple serialisations. 
 
-However, when considering the specific principles (FDOF1–FODF12) we find that additional constraints and best practices need to be established – arbitrary LD resources cannot be assumed to follow FDO principles. This is equivalent to how existing use of DOIP is not FDO-compliant without additional constraints.s
+However, when considering the specific principles (FDOF1–FDOF12) we find that additional constraints and best practices need to be established – arbitrary LD resources cannot be assumed to follow FDO principles. This is equivalent to how existing use of DOIP is not FDO-compliant without additional constraints.
 
-Namely, persistent identifiers (PIDs) (FDOF1) are common in LD world (e.g. using [http://purl.org/](http://purl.org/) or [https://w3id.org/](https://w3id.org/)), however they don’t always have a declared type (FDOF2), or the PID may not even appear in the metadata. URL-based PIDs are resolvable (FDOF3), typically over HTTP using redirections and content-negotiation. One great advantage of RDF is that all attributes are defined semantic artefacts with PIDs (FDOF4), and attributes can be reused across vocabularies. 
+Namely, persistent identifiers (PIDs) [[McMurry 2017](https://doi.org/10.1371/journal.pbio.2001414)] (FDOF1) are common in LD world (e.g. using [http://purl.org/](http://purl.org/) or [https://w3id.org/](https://w3id.org/)), however they don’t always have a declared type (FDOF2), or the PID may not even appear in the metadata. URL-based PIDs are resolvable (FDOF3), typically over HTTP using redirections and content-negotiation. One great advantage of RDF is that all attributes are defined semantic artefacts with PIDs (FDOF4), and attributes can be reused across vocabularies. 
 
 While CRUD operations (FDOF6) are supported by native HTTP operations (GET/PUT/POST/DELETE) as in [LDP](https://www.w3.org/TR/ldp/), there is little consistency on how to define operation interfaces in LD (FDOF5). Existing REST approaches like [OpenAPI](https://swagger.io/specification/) and [URI templates](https://doi.org/10.17487/RFC6570) are mature and good candidates, and should be related to defined types to support machine-actionable composition (FDOF7). HTTP error code _410 Gone_ is used in tombstone pages for removed resources (FDOF12), although more frequent is _404 Not Found_.
 
@@ -114,7 +114,7 @@ Leyla Jael Castro is supported by a German Research Foundation DFG grant for NFD
 Daniel Garijo is supported by the Madrid Government (Comunidad de Madrid-Spain) under the Multiannual Agreement with Universidad Politécnica de Madrid in the line Support for R&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation)
 
 
-## Contributions
+## Author contributions
 
 Author contributions to this article according to the Contributor Roles Taxonomy [CASRAI CrEDiT](https://casrai.org/credit/):
 
@@ -222,6 +222,11 @@ _Data Intelligence_ **2**(1):10–29
 _PeerJ Computer Science_ **7**:e387  
 <https://doi.org/10.7717/peerj-cs.387> 
 
+[McMurry 2017]  <small>Julie A McMurry, Nick Juty, Niklas Blomberg, Tony Burdett, Tom Conlin, Nathalie Conte, Mélanie Courtot, John Deck, Michel Dumontier, Donal K Fellows, Alejandra Gonzalez-Beltran, Philipp Gormanns, Jeffrey Grethe, Janna Hastings, Jean-Karim Hériché, Henning Hermjakob, Jon C Ison, Rafael C Jimenez, Simon Jupp, John Kunze, Camille Laibe, Nicolas Le Novère, James Malone, Maria Jesus Martin, Johanna R McEntyre, Chris Morris, Juha Muilu, Wolfgang Müller, Philippe Rocca-Serra, Susanna-Assunta Sansone, Murat Sariyar, Jacky L Snoep, Stian Soiland-Reyes, Natalie J Stanford, Neil Swainston, Nicole Washington, Alan R Williams, Sarala M Wimalaratne, Lilly M Winfree, Katherine Wolstencroft, Carole Goble, Cristopher J Mungall, Melissa A Haendel, Helen Parkinson</small> (2017):  
+**Identifiers for the 21st century: How to design, provision, and reuse identifiers to maximize utility and impact of life science data.**  
+_PLOS Biology_ **15**(6):e2001414
+<https://doi.org/10.1371/journal.pbio.2001414>
+
 [Mons 2017] Barend Mons, Cameron Neylon, Jan Velterop, Michel Dumontier, Luiz Olavo Bonino da Silva Santos, Mark D. Wilkinson (2017):  
 **Cloudy, increasingly FAIR; revisiting the FAIR Data guiding principles for the European Open Science Cloud**.  
 _Information Services & Use_ **37**(1)  
@@ -234,11 +239,11 @@ _Data analytics and management in data intensive domains: 20th international con
 
 [Soiland-Reyes 2022] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 [**Packaging research artefacts with RO-Crate**](../ro-crate/).  
-_Data Science_ (pre-press)  
+_Data Science_ **5**(2)  
 <https://doi.org/10.3233/DS-210053>
 
 [Van de Sompel 2022] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):   
-**FAIR Signposting Profile**. (version 20220421).  
+**FAIR Signposting Profile**. (version 20220727).  
 <https://signposting.org/FAIR/>
 
 [Wilkinson 2016] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C ’t Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):  
