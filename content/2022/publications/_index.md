@@ -42,7 +42,7 @@ Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Le
 _Research Ideas and Outcomes_ (accepted)
 
 Laurence Livermore, Paul Brack, Ben Scott, Stian Soiland-Reyes, Oliver Woolland (2022):  
-[**The Specimen Data Refinery: Using a scientific workflow approach for information extraction**](https://doi.org/10.3897/biss.6.93500)
+[**The Specimen Data Refinery: Using a scientific workflow approach for information extraction**](https://doi.org/10.3897/biss.6.93500)  
 Biodiversity Information Standards ([TDWG 2022](https://www.tdwg.org/conferences/2022/)).
 _Biodiversity Information Science and Standards_ **6**:e93500  
 <https://doi.org/10.3897/biss.6.93500>

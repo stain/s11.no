@@ -156,9 +156,10 @@ _Nucleic Acids Research_ **46**(W1)
 _Communications of the ACM_ **65**(6)  
 <https://doi.org/10.1145/3486897>
 
-[De Geest 2022] Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022): \
-**Enhancing RDM in Galaxy by integrating RO-Crate**.  \
-_Submitted_
+[De Geest 2022] Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
+[**Enhancing RDM in Galaxy by integrating RO-Crate**](../galaxy-ro-crate/).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ (accepted)
 
 [Hardisty 2019] Alex R Hardisty, Keping Ma, Gil Nelson, Jose Fortes (2019):  
 **‘openDS’ – A New Standard for Digital Specimens and Other Natural Science Digital Object Types**.  
