@@ -199,18 +199,23 @@ This list of project deliverables is adapted from <http://wf4ever.org/web/guest/
    - [D5.2: Creation of an Astrophysical Community of Preserved Workflow Users](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:59)  
     `oai:repo.wf4ever-project.org:59` (30/11/2013)  
    - [D5.3v1: Propagation of interdependent quantities in the calculation of luminosities of galaxies](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:29)  
-    `oai:repo.wf4ever-project.org:29` (30/11/2011)  
+    `oai:repo.wf4ever-project.org:29` (30/11/2011)   
+    <https://doi.org/10.5281/zenodo.6804281>
    - [D5.3v2 Calculation of Luminosity profiles for a Sample of Galaxies extracted from Catalogues using Isolation Criteria](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:41)  
-    `oai:repo.wf4ever-project.org:41` (30/09/2012)  
+    `oai:repo.wf4ever-project.org:41` (30/09/2012)   
+    <https://doi.org/10.5281/zenodo.6804335>
    - [D5.3v3 Astronomy Workflows v3](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:63)  
     `oai:repo.wf4ever-project.org:63` (30/09/2013)
  * WP6: Work package description: Workflow Preservation for Genome Wide Analyses for Genomics and BioBanking communities
    - [D6.1: Genomics Workflow Preservation Requirements](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:21)  
     `oai:repo.wf4ever-project.org:21` (31/05/2011)  
+    <https://doi.org/10.5281/zenodo.6759827> 
    - [D6.1: Addendum: Biological User Requirements](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:30)  
     `oai:repo.wf4ever-project.org:30` (3/12/2011)  
+    <https://doi.org/10.5281/zenodo.6759872> 
    - [D6.2: Final Report on the creation of a Comunity of Users in Genomics](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:53)  
     `oai:repo.wf4ever-project.org:53` (30/11/2013)  
+    <https://doi.org/10.5281/zenodo.6759940>
    - [D6.3v1: Genome Wide Association Study Workflows v1](http://web.archive.org/web/20151004034816/http://repo.wf4ever-project.org/dlibra/docmetadata?id=oai:repo.wf4ever-project.org:31)  
     `oai:repo.wf4ever-project.org:31` (2/12/2011)  
     <https://doi.org/10.5281/zenodo.3967616>
