@@ -5,24 +5,7 @@ draft: false
 tags: ['PROV', 'Tools', 'Tutorials']
 ---
 
-This blog post shows how RESTful web services can provide, and link to, provenance data for their exposed resources by using the [PROV-AQ](http://www.w3.org/TR/prov-aq/ "PROV-AQ: Provenance access and query") mechanism of HTTP Link headers. This is demonstrated by showing how to update a _hello world_ REST service implemented with Java and [JAX-RS 2.0](http://jax-rs-spec.java.net/nonav/2.0-SNAPSHOT/apidocs/index.html "JAX-RS 2.0-SNAPSHOT javadocs") to provide these links. The  [PROV-AQ HTTP mechanism](http://www.w3.org/TR/prov-aq/#resource-accessed-by-http "Resource accessed by HTTP") is easiest explained by an example: 
-
-```http
-GET http://example.com/resource.html HTTP/1.1
-Accept: text/html
-
-HTTP/1.1 200 OK
-Content-type: text/html
-Link: <http://example.com/resource-provenance>; 
-         rel="http://www.w3.org/ns/prov#has_provenance"; 
-         anchor="http://example.com/resource"
-
-<html>
-  <!-- ... -->
-</html>
-```
-
-This request for `http://example.com/resource.html` returns some HTML, but also provides a `Link:` header that says that the provenance is located at `http://example.com/resource-provenance`. Within this file, the resource is known as the _anchor_ `http://example.com/resource` rather than `http://example.com/resource.html`. The anchor URI can be omitted if it is the same as the one requested. Link headers are specified by [RFC 5988](http://tools.ietf.org/html/rfc5988 "RFC5988 Web linking"), which also defines standard relations like `rel="previous"`. PROV-AQ uses `rel="http://www.w3.org/ns/prov#has_provenance"` to say that the linked resource has the provenance data for the requested resource. PROV-AQ also defines other relations for [provenance query services](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#specifying-provenance-query-services "PROV-AQ: Specifying provenance query services") and [provenance pingback](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#forward-provenance "PROV-AQ: Forward provenance"), which is not covered by this blog post.
+This blog post shows how RESTful web services can provide, and link to, provenance data for their exposed resources by using the [PROV-AQ](http://www.w3.org/TR/prov-aq/ "PROV-AQ: Provenance access and query") mechanism of HTTP Link headers. This is demonstrated by showing how to update a _hello world_ REST service implemented with Java and [JAX-RS 2.0](http://jax-rs-spec.java.net/nonav/2.0-SNAPSHOT/apidocs/index.html "JAX-RS 2.0-SNAPSHOT javadocs") to provide these links. The  [PROV-AQ HTTP mechanism](http://www.w3.org/TR/prov-aq/#resource-accessed-by-http "Resource accessed by HTTP") is easiest explained by an example: https://gist.github.com/stain/5253726 This request for `http://example.com/resource.html` returns some HTML, but also provides a `Link:` header that says that the provenance is located at `http://example.com/resource-provenance`. Within this file, the resource is known as the _anchor_ `http://example.com/resource` rather than `http://example.com/resource.html`. The anchor URI can be omitted if it is the same as the one requested. Link headers are specified by [RFC 5988](http://tools.ietf.org/html/rfc5988 "RFC5988 Web linking"), which also defines standard relations like `rel="previous"`. PROV-AQ uses `rel="http://www.w3.org/ns/prov#has_provenance"` to say that the linked resource has the provenance data for the requested resource. PROV-AQ also defines other relations for [provenance query services](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#specifying-provenance-query-services "PROV-AQ: Specifying provenance query services") and [provenance pingback](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#forward-provenance "PROV-AQ: Forward provenance"), which is not covered by this blog post.
 
 Background
 ==========
@@ -52,41 +35,4 @@ A restful client who has requested [http://localhost:8080/paq/hello/Alice](http
 Finding the provenance links
 ============================
 
-If you have not followed the tutorial above, make sure you **check out** the `paq` branch from [https://github.com/stain/paq](https://github.com/stain/paq) to include the PROV-AQ Link headers. If you are still running the web server from above, stop it with **Ctrl-C**.  Now change to the **paq** branch and restart the server: https://gist.github.com/stain/5255982 Now retrieving the hello world resource with `-i` should show us the new `Link:` header: https://gist.github.com/stain/5256011 Just to verify we did generate our absolute URIs right above, we follow the link: https://gist.github.com/stain/5256018 Let's try to do some hackish shell script to extract this URL: https://gist.github.com/stain/5256036 _Note, the above will not work if the Link header spans multiple lines, which would be legal according to HTTP 1.1 and RFC 5988._ If we now have a [ProvToolbox](https://github.com/lucmoreau/ProvToolbox) installed, we can generate a diagram. The [below shell script paq2svg.sh](https://gist.github.com/stain/5256128/raw/483b96c4317d4416dbd9c6c366ebcf9bc4920c28/paq2svg.sh "paq2svg.sh") assumes that [toolbox-0.1.3-release.zip](http://openprovenance.org/java/maven-releases/org/openprovenance/prov/toolbox/0.1.3/toolbox-0.1.3-release.zip) was unzipped into `$HOME/software/provToolbox`: 
-
-
-```bash
-#!/bin/bash
-
-set -e
-
-PROVTOOLBOX="$HOME/software/provToolbox"
-PROVCONVERT="$PROVTOOLBOX/bin/provconvert"
-
-provUri=`curl -s -I $1 | grep ^Link:.*has_provenance  | sed 's/.*<//' | sed 's/>.*//' | head -n 1`
-
-provn=/tmp/$$.provn
-
-curl -s -o $provn $provUri
-
-svg=/tmp/$$.svg
-
-cd $PROVTOOLBOX
-$PROVCONVERT -infile $provn -outfile $svg
-echo "Created $svg"
-```
-
-Running this against the Alice helloworld URI should look up the PROV-AQ header, download the provenance, and then generate an SVG diagram using `provconvert`: 
-
-    stain@ralph-ubuntu:~/src/paq$ ./paq2svg.sh http://localhost:8080/paq/hello/Alice
-    InteropFramework run() -> {hello=http://localhost:8080/paq/hello/, app=http://localhost:8080/paq/}
-    log4j:WARN No appenders could be found for logger (org.openprovenance.prov.interop.InteropFramework).
-    log4j:WARN Please initialize the log4j system properly.
-    log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-    ProvToDot role no label
-    ProvToDot role no label (by default)
-    Created /tmp/21903.svg
-
-An example of this diagram for Alice, converted to PNG: 
-
-![PROV diagram, Alice pointing to name (derivation) and hello (attribution)](alice.png)
+If you have not followed the tutorial above, make sure you **check out** the `paq` branch from [https://github.com/stain/paq](https://github.com/stain/paq) to include the PROV-AQ Link headers. If you are still running the web server from above, stop it with **Ctrl-C**.  Now change to the **paq** branch and restart the server: https://gist.github.com/stain/5255982 Now retrieving the hello world resource with `-i` should show us the new `Link:` header: https://gist.github.com/stain/5256011 Just to verify we did generate our absolute URIs right above, we follow the link: https://gist.github.com/stain/5256018 Let's try to do some hackish shell script to extract this URL: https://gist.github.com/stain/5256036 _Note, the above will not work if the Link header spans multiple lines, which would be legal according to HTTP 1.1 and RFC 5988._ If we now have a [ProvToolbox](https://github.com/lucmoreau/ProvToolbox) installed, we can generate a diagram. The [below shell script paq2svg.sh](https://gist.github.com/stain/5256128/raw/483b96c4317d4416dbd9c6c366ebcf9bc4920c28/paq2svg.sh "paq2svg.sh") assumes that [toolbox-0.1.3-release.zip](http://openprovenance.org/java/maven-releases/org/openprovenance/prov/toolbox/0.1.3/toolbox-0.1.3-release.zip) was unzipped into `$HOME/software/provToolbox`: https://gist.github.com/stain/5256128 Running this against the Alice helloworld URI should look up the PROV-AQ header, download the provenance, and then generate an SVG diagram using `provconvert`: https://gist.github.com/stain/5256099 An example of this diagram for Alice, converted to PNG: ![](https://raw.github.com/stain/paq/paq/examples/alice.png)
