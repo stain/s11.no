@@ -1,0 +1,24 @@
+document
+  prefix ex <http://example.com/>
+  prefix s <http://schema.org/>
+  
+  entity(ex:regionList)
+  entity(ex:dataset, [ prov:type='s:Dataset' ])
+  entity(ex:composition)
+  
+  activity(ex:composing, [ prov:type='ex:Composing', 
+     prov:label="Composing region and data" ])
+
+  agent(ex:derek,
+       [ prov:type='prov:Person', s:givenName="Derek", 
+         s:email="derek@example.org" ])
+
+  used(ex:composing, ex:dataset, 2011-11-16T16:00:00)
+  used(ex:composing, ex:regionList, -)
+  
+  wasGeneratedBy(ex:composition, ex:composing, 2011-11-16T16:45:00)
+  
+  wasAssociatedWith(ex:composing, ex:derek, -)
+  wasAttributedTo(ex:composition, ex:derek)
+
+endDocument

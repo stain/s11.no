@@ -1,11 +1,12 @@
 ---
 title: 'Installing ProvToolbox in Windows'
 date: Wed, 02 Dec 2020 06:54:03 +0000
-draft: false
-tags: ['Uncategorized']
+categories:
+    - PROV
+    - Practical Provenance
 ---
 
-While there are several tools available for [validating and visualizing PROV](https://practicalprovenance.wordpress.com/2020/11/13/validating-and-visualising-prov/), the [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is perhaps the most useful for validating PROV-N syntax. However, the normal releases [does not run in Windows](https://github.com/lucmoreau/ProvToolbox/issues/153) due to a operating system restriction for command line and folder path length.
+While there are several tools available for [validating and visualizing PROV](../validating-and-visualising-prov/), the [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is perhaps the most useful for validating PROV-N syntax. However, the normal releases [does not run in Windows](https://github.com/lucmoreau/ProvToolbox/issues/153) due to a operating system restriction for command line and folder path length.
 
 We have [suggested a fix](https://github.com/lucmoreau/ProvToolbox/pull/166), but while we wait for that, here we describe a patch build that should work on Windows. We also show how to install dependencies: Java for executing ProvToolbox, and [Graphviz](https://graphviz.org/download/) for visualization. (See also [macOS install](https://practicalprovenance.wordpress.com/2020/12/08/installing-provtoolbox-on-macos/)).
 
@@ -36,62 +37,62 @@ From [https://adoptopenjdk.net/](https://adoptopenjdk.net/) select [Other Platfo
 *   Architecture: **x64** (64-bit Windows)
     *   If you use 32-bit Windows, say on an older or smaller machine, try **x86** instead
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image.png?w=1024)
+![](image.png)
 
 Download the **JRE** as a **MSI** installer (the _ZIP_ file does not include an installer).
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-1.png?w=295)
+![](image-1.png)
 
 Before you open the MSI you may need to change the Windows Store settings to allow installing applications. From the start menu type **Add or Remove Programs** to open the Settings pane for **Choose where to get apps**. Select **Anywhere**.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-2.png?w=908)
+![](image-2.png)
 
 Now double-click the MSI file from the Download folder and walk through the Installer. Enable the "_Set JAVA\_HOME environment variable_" option.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-3.png?w=510)
+![](image-3.png)
 
 Now open the Command Prompt window:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-4.png?w=834)
+![](image-4.png)
 
 Run `java -version` to check you now got OpenJDK 11 installed on the PATH.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-5.png?w=978)
+![](image-5.png)
 
 Install ProvToolbox (patched)
 -----------------------------
 
 Now we will install ProvToolbox 0.9.5 including the [suggested fix](https://github.com/lucmoreau/ProvToolbox/pull/166) so it runs in Windows. Until this fix has been accepted, for now we'll use the [ProvToolbox 0.9.5 for Windows](https://github.com/stain/ProvToolbox/releases/tag/ProvToolbox-0.9.5.windows) patch release from the _fork_ [https://github.com/**stain**/ProvToolbox/](https://github.com/stain/ProvToolbox/).
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-6.png?w=467)
+![](image-6.png)
 
 Download [provconvert-0.9.5-windows.zip](https://github.com/stain/ProvToolbox/releases/download/ProvToolbox-0.9.5.windows/provconvert-0.9.5-windows.zip) and, after opening, click **Extract All**:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-7.png?w=517)
+![](image-7.png)
 
 Shorten the path to install the folder to your home directory, e.g. `C:\Users\stain`
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-8.png?w=611)
+![](image-8.png)
 
 You should now have a folder ProvToolbox in your home directory:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-9.png?w=840)
+![](image-9.png)
 
 You should now be able to run `ProvToolbox\bin\provconvert` from the Command Prompt open in your home directory:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-10.png?w=601)
+![](image-10.png)
 
 Note that if you change the directory with `cd` you will need to modify the path to provconvert. To avoid that we'll add it to the System Environment Variable `PATH`. In the **Start** menu, type `PATH` and select **Settings -> Edit the system environment variables**.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-11.png?w=337)
+![](image-11.png)
 
 Click **System Environment**, then under **User variables** select **PATH** and click **Edit**. (If not found, click New and set _Variable Name_ as `PATH`). Add a new line (or set _Variable Value_) where you can use Browse to navigate to find the full path of the `ProvToolbox\bin` folder:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-12.png?w=539)
+![](image-12.png)
 
 After applying the settings with **OK** you will need to close and **restart the Command Prompt** window. This time `provconvert -version` should work from any path.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-13.png?w=442)
+![](image-13.png)
 
 Install Graphviz for Windows
 ----------------------------
@@ -102,42 +103,42 @@ Following the link for downloading [Stable Windows Install Packages](https://www
 
 You will need to allow the unsifned package to install
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-14.png?w=445)
+![](image-14.png)
 
 When running the install wizard for GraphViz, make sure you enable to **add GraphViz to the system PATH for the current user**:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-15.png?w=493)
+![](image-15.png)
 
 Close and restart the Command Prompt Window. This time `**dot -V**` (notice capital) should work:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-16.png?w=441)
+![](image-16.png)
 
 Unfortunately the installer of GraphViz does not initialize the plugins for graphical formats. To fix this we need to open another Command Prompt, but **running as Administrator**:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-21.png?w=527)
+![](image-21.png)
 
 In this window, run `**dot -c**` to initialize the GraphViz plugins.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-22.png?w=953)
+![](image-22.png)
 
 Installing Visual Studio Code
 -----------------------------
 
 [VSCode](https://code.visualstudio.com/) is a free and lightweight text editor which is useful for writing \*.provn files. The **User Installer** for **64-bit Windows** should work for most users.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-17.png?w=613)
+![](image-17.png)
 
 **Note:** After installing VSCode you will need to **Restart Windows** to pick up the updated `PATH` for ProvToolbox.
 
 ### Running provconvert from VSCode
 
-Remember to save PROV-N files ([example](https://gist.github.com/stain/18113538dac002ebebc97a238e57e296)) with the extension `.provn` so that ProvToolbox can recognize the file type. The first time you may need to select **No Extension** and add `.provn` yourself to the filename.
+Remember to save PROV-N files ([example](example.provn)) with the extension `.provn` so that ProvToolbox can recognize the file type. The first time you may need to select **No Extension** and add `.provn` yourself to the filename.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-19.png?w=1024)
+![](image-19.png)
 
 In VSCode's menu, select **Terminal -> New Terminal**, an embedded command prompt should open in the correct directory. Check with `dir *.provn` that the file is present with the correct name.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-20.png?w=1021)
+![](image-20.png)
 
 You should now be able to convert the provn file to a PNG image, in our example using the command:
 
@@ -145,12 +146,12 @@ You should now be able to convert the provn file to a PNG image, in our example 
 provconvert -infile alice.provn -outfile alice.png
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-23.png?w=888)
+![](image-23.png)
 
-You will be able to navigate and open the PNG image within VSCode. See [validating and visualisation](https://practicalprovenance.wordpress.com/2020/11/13/validating-and-visualising-prov/) for details.
+You will be able to navigate and open the PNG image within VSCode. See [validating and visualisation](../validating-and-visualising-prov/) for details.
 
 If you have made a syntactical error in the PROV-N file, then `provconvert` report errors by line numbers, which you can recognize within the VSCode editor. Note that VSCode has no native PROVN support and so its _Problems_ tab is currently unable to detect these errors.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/image-24.png?w=600)
+![](image-24.png)
 
 Remember an error early in the file, such as a broken `prefix`, or a missing `)`, may cause phantom errors to be reported later in the file.

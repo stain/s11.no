@@ -1,13 +1,15 @@
 ---
 title: 'Attribution vs association'
 date: Tue, 01 Dec 2020 15:19:39 +0000
-draft: false
-tags: ['attribution', 'roles', 'Uncategorized']
+categories:
+    - PROV
+    - Practical Provenance
+tags: ['attribution', 'roles']
 ---
 
 A valid question when writing provenance in responsibility view and process view is. Should we attribute contributors from entities, isn't that what the activities are showing? In this blog post we explore the different options.
 
-Specially when [roles](https://practicalprovenance.wordpress.com/2020/12/01/multiple-agents-sharing-roles/) it may seem unnecessary to also declare `wasAttributedTo` statements.
+Specially when [roles](../multiple-agents-sharing-roles/) it may seem unnecessary to also declare `wasAttributedTo` statements.
 
 It is true that you can conclude from:
 
@@ -38,8 +40,7 @@ wasAssociatedWith(ex:Charlie, ex:WritingCards, prov:role=['ex:Addressing'])
 entity(ex:cardToEve) 
 ```
 
-Now from this we may want to give the cards attribution to the individual agents, and while we can perhaps assume Charlie has written the address on all the cards, we don't know if it was Alice or Bob who  
-wrote the particular card going to Frank.
+Now from this we may want to give the cards attribution to the individual agents, and while we can perhaps assume Charlie has written the address on all the cards, we don't know if it was Alice or Bob who wrote the particular card going to Frank.
 
 We therefore can add more specifically:
 
@@ -61,4 +62,4 @@ This highlights that _responsibility view_ and _process view_ can complement eac
 
 It is part of our modelling to decide what is considered "work height" in terms of attributions. Perhaps we should not consider Charlie putting on addresses as part of writing the cards, if what mattered was the personalized message, not how the cards were posted.
 
-It is possible to also assign `prov:type` to `wasAttributedTo` relations, e.g. `ex:authorship`, but this can easily become overlapping with the [roles](https://practicalprovenance.wordpress.com/2020/12/01/multiple-agents-sharing-roles/) in associations with the corresponding activity. This is perhaps more useful when the activity is not explicitly declared, or we want to declare explicit contributor roles using metadata models like [CRediT](https://casrai.org/credit/).
+It is possible to also assign `prov:type` to `wasAttributedTo` relations, e.g. `ex:authorship`, but this can easily become overlapping with the [roles](../multiple-agents-sharing-roles/) in associations with the corresponding activity. This is perhaps more useful when the activity is not explicitly declared, or we want to declare explicit contributor roles using metadata models like [CRediT](https://casrai.org/credit/).
