@@ -5,7 +5,7 @@ draft: false
 tags: ['adoptopenjdk', 'conda', 'graphviz', 'homebrew', 'macos', 'provtoolbox', 'Tools', 'Tutorials']
 ---
 
-[ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is a useful command line tool for [validating and visualizing](https://practicalprovenance.wordpress.com/2020/11/13/validating-and-visualising-prov/) PROV documents, but unfortunately it can be a bit of a challenge to [install on Windows](https://practicalprovenance.wordpress.com/2020/12/02/installing-provtoolbox-in-windows/) and on **macOS** because of its dependency requirements.
+[ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is a useful command line tool for [validating and visualizing](../validating-and-visualising-prov/) PROV documents, but unfortunately it can be a bit of a challenge to [install on Windows](../installing-provtoolbox-in-windows/) and on **macOS** because of its dependency requirements.
 
 This post suggests three step-by-step methods of installing ProvToolbox on your Mac – you should follow the method you feel most comfortable with, but can try the other methods in case of problems.
 
@@ -73,7 +73,7 @@ While there are multiple ways to [install Conda on macOS](https://docs.conda.io/
 
 First open the **Terminal** application from **Applications/Utilities**:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/04-terminal.png?w=739)
+![](04-terminal.png)
 
 To install Miniconda, run these two commands:
 
@@ -83,11 +83,11 @@ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 sh Miniconda3-latest-MacOSX-x86_64.sh 
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/bioconda2.png?w=823)
+![](bioconda2.png)
 
 As installation finishes, ensure you say **yes** to allow `conda init` to modify your `PATH`.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/condainstalled.png?w=823)
+![](condainstalled.png)
 
 Here the Conda _base environment_ have been installed under `/Users/testuser/miniconda3` however we need to start a new terminal to _activate_ it.
 
@@ -106,7 +106,7 @@ First, in a **new terminal window**, check that the `conda` command is working b
 conda search graphviz
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/14-graphviz.png?w=914)
+![](14-graphviz.png)
 
 We can install graphviz and OpenJDK 11 at the same time using:
 
@@ -114,11 +114,11 @@ We can install graphviz and OpenJDK 11 at the same time using:
 conda install graphviz openjdk=11
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/conda-install-openjdk.png?w=823)
+![](conda-install-openjdk.png)
 
 After Conda has resolved dependencies, answer **y** to install:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/conda-install-graphviz-openjdk.png?w=823)
+![](conda-install-graphviz-openjdk.png)
 
 After download and installation has finished, verify both GraphViz and Java work:
 
@@ -127,7 +127,7 @@ dot -V
 java -version
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/installed.png?w=823)
+![](installed.png)
 
 You can now skip to the section on **installing ProvToolbox**.
 
@@ -142,7 +142,7 @@ HomeBrew
 
 First open the **Terminal** application, found under **Applications/Utilities**.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/04-terminal.png?w=1024)
+![](04-terminal.png)
 
 Following the instructions on the [HomeBrew home page](https://brew.sh/), paste this command line _on a single line_ to start installing, providing your user password for administrator rights:
 
@@ -150,17 +150,17 @@ Following the instructions on the [HomeBrew home page](https://brew.sh/), paste 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/07-brew-install.png?w=585)
+![](07-brew-install.png)
 
 The defaults for installing are usually fine:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/08-brew-install.png?w=585)
+![](08-brew-install.png)
 
 **Note:** If you get a similar warning about **old macOS version**, using HomeBrew may not work well on your machine (as we found in our testing). Try instead the **Conda** method described above.
 
 After installing HomeBrew you may get a warning about _shallow clone_, this can be ignored unless you are developing your own brew recipes.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/09-brew-installed.png?w=585)
+![](09-brew-installed.png)
 
 ### Installing GraphViz with Homebrew
 
@@ -170,7 +170,7 @@ To activate brew it should be sufficient to start a new Terminal window. Test th
 brew search graphviz
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/10-brew-search.png?w=585)
+![](10-brew-search.png)
 
 In this case you are ready to install:
 
@@ -178,7 +178,7 @@ In this case you are ready to install:
 brew install graphviz
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/11-brew-installing.png?w=585)
+![](11-brew-installing.png)
 
 On a good day the above should complete and you would be able to verify the installation of graphviz:
 
@@ -188,7 +188,7 @@ dot -V
 
 However on our test machine we got a stack trace error indicating a bug in Homebrew itself. This is why this method of Homebrew is not recommended for older Macs.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/12-brew-broken.png?w=914)
+![](12-brew-broken.png)
 
 ### Installing OpenJDK with HomeBrew
 
@@ -210,7 +210,7 @@ Verify the Java version:
 java -version
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/05-java-version-1.png?w=585)
+![](05-java-version-1.png)
 
 Iain Emsley [recommends](https://austgate.co.uk/2021/06/installing-and-using-provconvert-on-osx/) to additionally add this symlink (if it does not already point to a different JDK) so that the Java application wrappers on MacOS know where to look. Note that depending on your Homebrew install you may need to replace `/usr/local/opt` with `/opt/openjdk` (see output from `brew install`):
 
@@ -227,7 +227,7 @@ Installing manually
 
 While using a packaging system can help you keep your OpenJDK install updated, if you were unable to use Conda or HomeBrew to install Java, as an **fallback** it is also possible to download the standalone AdoptOpenJDK installer.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/01-adoptopenjdk.png?w=828)
+![](01-adoptopenjdk.png)
 
 From the [AdoptOpenJDK](https://adoptopenjdk.net/) make sure you select:
 
@@ -238,15 +238,15 @@ From the [AdoptOpenJDK](https://adoptopenjdk.net/) make sure you select:
 
 If these options are not available, select them from the **[Other Platforms](https://adoptopenjdk.net/releases.html)** page. Download the **pkg** installer of the **JRE**.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/02-pkg.png?w=1024)
+![](02-pkg.png)
 
 Walk through the installer and use the default settings.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/03-install.png?w=620)
+![](03-install.png)
 
 Now open a _new_ **Terminal** from **Applications/Utilities**
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/04-terminal.png?w=739)
+![](04-terminal.png)
 
 The installer should have adjusted your `PATH`. To check the installed version, run:
 
@@ -254,7 +254,7 @@ The installer should have adjusted your `PATH`. To check the installed version, 
 java -version
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/05-java-version.png?w=585)
+![](05-java-version.png)
 
 If you don't get the correct Java version you will need to adjust your `PATH` and/or `JAVA_HOME` environmental variables.
 
@@ -267,15 +267,15 @@ Installing ProvToolbox
 
 Following the [ProvToolbox install instructions for "Other Platforms"](https://github.com/lucmoreau/ProvToolbox/wiki/Installation#34-other-platforms), download the [provconvert-0.9.5-release.zip](https://repo1.maven.org/maven2/org/openprovenance/prov/provconvert/0.9.5/provconvert-0.9.5-release.zip):
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/16-provconvert-zip.png?w=1024)
+![](16-provconvert-zip.png)
 
 Opening with **Archive Utility** will unzip to your `Downloads` directory. From there, move the `ProvToolbox` directory to your `**Applications**` folder:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/30-drag-copy-provtoolbox.png?w=1024)
+![](30-drag-copy-provtoolbox.png)
 
 Next we will add the `provconvert` command line to your `PATH`. First open the **Terminal** from **Applications/Utilities**:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/04-terminal.png?w=739)
+![](04-terminal.png)
 
 Become the **root** user and carefully run:
 
@@ -291,7 +291,7 @@ exit
 
 **Tip:** You can use the **Tab** button to auto-complete the paths.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/35-path.png?w=823)
+![](35-path.png)
 
 To activate the new PATH, either **restart Terminal** or **log out** of macOS and in again. Now verify with:
 
@@ -299,13 +299,13 @@ To activate the new PATH, either **restart Terminal** or **log out** of macOS an
 provconvert -version
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/95-provconvert.png?w=823)
+![](95-provconvert.png)
 
-You can now start [validating and visualizing](https://practicalprovenance.wordpress.com/2020/11/13/validating-and-visualising-prov/) PROV-N with ProvToolbox.
+You can now start [validating and visualizing](../validating-and-visualising-prov/) PROV-N with ProvToolbox.
 
 **Tip:** Convert to **png** and use the `**open**` command to preview the diagram:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/99-provconvert-open.png?w=715)
+![](99-provconvert-open.png)
 
 You can use the commands `**cd**` and `**ls**` to **c**hange **d**irectory and **l**i**s**t directories in the Terminal. If you are unfamiliar with navigating the shell, you may find it easiest to save the provn files directly in your home directory.
 
@@ -313,8 +313,8 @@ You can use the commands `**cd**` and `**ls**` to **c**hange **d**irectory and *
 
 While you may use an editor like **Application/Utilities/TextEdit** bundled with macOS for creating PROVN files, you may find an editor like [VSCode](https://code.visualstudio.com/download) more convenient, particularly as it allows opening an [embedded terminal](https://code.visualstudio.com/docs/editor/integrated-terminal). After installing, try **View -> Terminal** in the menu.
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/90-vscode-provconvert-in.png?w=1024)
+![](90-vscode-provconvert-in.png)
 
 If you convert to **png** you can preview the diagram within VSCode:
 
-![](https://practicalprovenance.files.wordpress.com/2020/12/92-vscode-with-png.png?w=1024)
+![](92-vscode-with-png.png)

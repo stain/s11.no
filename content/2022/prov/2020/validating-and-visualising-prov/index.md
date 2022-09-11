@@ -105,7 +105,7 @@ In addition there are graphical tools for PROV editing, validation, conversion a
 
 The [PROV-N Editor](https://openprovenance.org/tools/editor/) is an online text editor that provides syntax highlighting and autocomplete for PROV-N, and is useful for beginners new to PROV-N.
 
-![](https://practicalprovenance.files.wordpress.com/2020/11/provn-editor.png?w=1001)
+![](provn-editor.png)
 
 Screenshot of [https://openprovenance.org/tools/editor/](https://openprovenance.org/tools/editor/) as of 2020-11-13
 
@@ -113,7 +113,7 @@ Note that the starting example PROV-N aims to be somewhat complete, including th
 
 We recommend using the [PROV-N Editor](https://openprovenance.org/tools/editor/) starting with a [simpler example](https://gist.github.com/stain/18113538dac002ebebc97a238e57e296), and to use **copy-paste** to save the PROV-N locally to a file, using a text editor like [Visual Studio Code](https://code.visualstudio.com/) (which unfortunately do not have syntax highlighting for PROV-N):
 
-[![](https://practicalprovenance.files.wordpress.com/2020/11/vscode.png?w=1024)](https://vscodium.com/)
+[![](vscode.png)](https://vscodium.com/)
 
 PROV-N example from above edited in VSCodium
 
@@ -139,7 +139,7 @@ endDocument
 
 While the above "scruffy" PROV-N file is syntactically valid, and each of the statements are OK semantically, as a whole we seem to have added a semantic violation of causality; an [entity can't be generated from entities not yet existing](https://www.w3.org/TR/prov-constraints/#entity-constraints). An attempt to draw the above as a diagram will show an endless loop of derivations:
 
-![](https://openprovenance.org/store/documents/3334.svg)
+![](https://openprovenance.org/store/documents/3334.svg) <!-- FIXME: 403 Forbidden -->
 
 To ensure your PROV-N is both syntactically valid and semantically consistent, it is best to use a PROV **validator**.
 
@@ -147,9 +147,9 @@ To ensure your PROV-N is both syntactically valid and semantically consistent, i
 
 The [openprovenance.org PROV validator](https://openprovenance.org/services/view/validator) can support PROV-N; remember to tick the correct syntax, specially when pasting rather than uploading a file with the correct extension.
 
-![](https://practicalprovenance.files.wordpress.com/2020/11/provvalidator.png?w=947)
+![](provvalidator.png)
 
-![](https://practicalprovenance.files.wordpress.com/2020/11/validated.png?w=947)
+![](validated.png)
 
 The checks performed by the PROV Validator mainly focus on [semantic constraints](https://www.w3.org/TR/prov-constraints/) such as correct typing and ensuring provenance goes backwards in time without any causality loops (e.g. you can't be your own grandparent).
 
@@ -179,11 +179,11 @@ To use the command line tool, the PROV Toolbox must be installed locally on a de
 *   [graphviz](https://graphviz.org/) command `dot` (only needed for generating diagrams)
     *   [Linux Graphviz install](https://graphviz.org/download/#linux)
     *   [macOS Graphviz install](https://graphviz.org/download/#mac)
-    *   [Windows Graphviz downloads](https://graphviz.org/download/#windows) (but see [Windows install instructions](https://practicalprovenance.wordpress.com/2020/12/02/installing-provtoolbox-in-windows/))
+    *   [Windows Graphviz downloads](https://graphviz.org/download/#windows) (but see [Windows install instructions](../installing-provtoolbox-in-windows/))
 
 [Binary packages](https://github.com/lucmoreau/ProvToolbox/wiki/Installation#3-installing-binary-release) of PROV Toolbox are included for Linux (RedHat/Centos, Debian/Ubuntu) and macOS although they are not always updated.
 
-**Note:** Installing Java and [PROV Toolbox in Windows](https://practicalprovenance.wordpress.com/2020/12/02/installing-provtoolbox-in-windows/) users requires a series of steps that are [detailed separately](https://practicalprovenance.wordpress.com/2020/12/02/installing-provtoolbox-in-windows/).
+**Note:** Installing Java and [PROV Toolbox in Windows](../installing-provtoolbox-in-windows/) users requires a series of steps that are [detailed separately](../installing-provtoolbox-in-windows/).
 
 After installing or unzipping to a subdirectory you should be able to run its `provconvert` or `bin/provconvert` command:
 
@@ -282,9 +282,9 @@ If you have installed Graphviz `dot` you can also make SVG or PNG images:
 bin/provconvert -infile test.provn -outfile test.svg
 ```
 
-![](https://practicalprovenance.files.wordpress.com/2020/11/test.png?w=959)
+![](test.png)
 
-Note that on Windows you would need to modify the PATH system variable for GraphViz to work, see installing [PROV Toolbox for Windows](https://practicalprovenance.wordpress.com/2020/12/02/installing-provtoolbox-in-windows/).
+Note that on Windows you would need to modify the PATH system variable for GraphViz to work, see installing [PROV Toolbox for Windows](../installing-provtoolbox-in-windows/).
 
 ### PROV Store
 

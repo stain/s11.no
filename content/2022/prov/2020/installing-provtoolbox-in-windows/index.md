@@ -8,7 +8,7 @@ categories:
 
 While there are several tools available for [validating and visualizing PROV](../validating-and-visualising-prov/), the [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is perhaps the most useful for validating PROV-N syntax. However, the normal releases [does not run in Windows](https://github.com/lucmoreau/ProvToolbox/issues/153) due to a operating system restriction for command line and folder path length.
 
-We have [suggested a fix](https://github.com/lucmoreau/ProvToolbox/pull/166), but while we wait for that, here we describe a patch build that should work on Windows. We also show how to install dependencies: Java for executing ProvToolbox, and [Graphviz](https://graphviz.org/download/) for visualization. (See also [macOS install](https://practicalprovenance.wordpress.com/2020/12/08/installing-provtoolbox-on-macos/)).
+We have [suggested a fix](https://github.com/lucmoreau/ProvToolbox/pull/166), but while we wait for that, here we describe a patch build that should work on Windows. We also show how to install dependencies: Java for executing ProvToolbox, and [Graphviz](https://graphviz.org/download/) for visualization. (See also [macOS install](../installing-provtoolbox-on-macos/)).
 
 Install Java for Windows
 ------------------------
@@ -37,7 +37,7 @@ From [https://adoptopenjdk.net/](https://adoptopenjdk.net/) select [Other Platfo
 *   Architecture: **x64** (64-bit Windows)
     *   If you use 32-bit Windows, say on an older or smaller machine, try **x86** instead
 
-![](image.png)
+![Releases of AdoptOpenJDK](adoptopenjdk-releases.png)
 
 Download the **JRE** as a **MSI** installer (the _ZIP_ file does not include an installer).
 

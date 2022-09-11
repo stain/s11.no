@@ -9,7 +9,7 @@ tags: ['attribution', 'roles']
 
 A valid question when writing provenance in responsibility view and process view is. Should we attribute contributors from entities, isn't that what the activities are showing? In this blog post we explore the different options.
 
-Specially when [roles](../multiple-agents-sharing-roles/) it may seem unnecessary to also declare `wasAttributedTo` statements.
+Specially with [roles](../multiple-agents-sharing-roles/) it may seem unnecessary to also declare `wasAttributedTo` statements.
 
 It is true that you can conclude from:
 
