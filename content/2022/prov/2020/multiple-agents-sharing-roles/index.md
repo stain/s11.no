@@ -1,8 +1,9 @@
 ---
 title: 'Multiple agents sharing roles'
 date: Tue, 01 Dec 2020 15:03:48 +0000
-draft: false
-tags: ['Uncategorized']
+categories:
+    - Practical Provenance
+tags: ['PROV', 'FAQ', 'role', 'groups', 'collections']
 ---
 
 Assuming the task of writing provenance for a student group exercise, consider the question:

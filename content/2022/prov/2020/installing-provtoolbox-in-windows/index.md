@@ -2,8 +2,8 @@
 title: 'Installing ProvToolbox in Windows'
 date: Wed, 02 Dec 2020 06:54:03 +0000
 categories:
-    - PROV
     - Practical Provenance
+tags: ['PROV', 'ProvToolbox', 'Windows', 'Java', 'AdoptOpenJDK', 'tutorial']
 ---
 
 While there are several tools available for [validating and visualizing PROV](../validating-and-visualising-prov/), the [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is perhaps the most useful for validating PROV-N syntax. However, the normal releases [does not run in Windows](https://github.com/lucmoreau/ProvToolbox/issues/153) due to a operating system restriction for command line and folder path length.

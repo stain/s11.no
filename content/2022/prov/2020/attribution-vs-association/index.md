@@ -2,9 +2,8 @@
 title: 'Attribution vs association'
 date: Tue, 01 Dec 2020 15:19:39 +0000
 categories:
-    - PROV
     - Practical Provenance
-tags: ['attribution', 'roles']
+tags: ['attribution', 'roles', 'FAQ', 'PROV']
 ---
 
 A valid question when writing provenance in responsibility view and process view is. Should we attribute contributors from entities, isn't that what the activities are showing? In this blog post we explore the different options.

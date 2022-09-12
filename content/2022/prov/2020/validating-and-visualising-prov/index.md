@@ -1,8 +1,9 @@
 ---
 title: 'Validating and visualising PROV'
 date: Fri, 13 Nov 2020 11:57:12 +0000
-draft: false
-tags: ['command line', 'PROV', 'prov-n', 'tool', 'Uncategorized', 'validation']
+categories:
+    - Practical Provenance
+tags: ['command line', 'PROV', 'prov-n', 'tools', 'validation', 'ProvToolbox']
 ---
 
 This blog post gives a gentle PROV-N introdction and then explores tools for validating and visualising PROV.

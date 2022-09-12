@@ -1,8 +1,9 @@
 ---
 title: 'Installing ProvToolbox on macOS'
 date: Tue, 08 Dec 2020 16:48:12 +0000
-draft: false
-tags: ['adoptopenjdk', 'conda', 'graphviz', 'homebrew', 'macos', 'provtoolbox', 'Tools', 'Tutorials']
+categories:
+    - Practical Provenance
+tags: ['PROV', 'ProvToolbox', 'AdoptOpenJDK', 'Conda', 'graphviz', 'homebrew', 'macos', 'tools', 'tutorial']
 ---
 
 [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is a useful command line tool for [validating and visualizing](../validating-and-visualising-prov/) PROV documents, but unfortunately it can be a bit of a challenge to [install on Windows](../installing-provtoolbox-in-windows/) and on **macOS** because of its dependency requirements.

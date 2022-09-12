@@ -2,7 +2,9 @@
 title: 'What are good PROV-N prefixes?'
 date: Tue, 01 Dec 2020 12:22:22 +0000
 draft: false
-tags: ['namespace', 'prefix', 'prov-n', 'Uncategorized', 'uri']
+categories:
+    - Practical Provenance
+tags: ['PROV', 'namespace', 'prefix', 'prov-n', 'uri']
 ---
 
 In this blog post we explore the role of PROV-N prefixes and how to decide on a good namespace to use your own custom provenance terms.
