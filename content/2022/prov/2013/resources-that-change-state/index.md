@@ -1,8 +1,9 @@
 ---
 title: 'Resources that change state'
 date: Tue, 29 Oct 2013 15:10:42 +0000
-draft: false
-tags: ['PROV']
+categories:
+    - Practical Provenance
+tags: ['PROV', 'FAQ']
 ---
 
 The [PROV](http://www.w3.org/TR/prov-overview/ "PROV overview") working group received a question from Mike:

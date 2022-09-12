@@ -1,7 +1,8 @@
 ---
 title: 'Tracking versions with PAV'
 date: Sat, 07 May 2016 12:23:32 +0000
-draft: false
+categories:
+    - Practical Provenance
 tags: ['PAV', 'tutorial', 'versioning']
 ---
 
