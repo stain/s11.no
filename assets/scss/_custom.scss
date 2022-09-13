@@ -62,9 +62,13 @@ strong {
 pre, code, kbd, samp {
   font-family: $font-family-mono;
 }
-pre { 
-  font-size: small;  
+p code { 
+  font-size: $font-size-base * 0.8;
+}
+pre, pre code { 
   line-height: 1.45;
+  font-size: $font-size-base * 0.8;
+  overflow: scroll;
 }
 
 blockquote { 
@@ -72,7 +76,10 @@ blockquote {
   font-weight: 700;
   font-style: italic;
   line-height: 1.1;
-  font-size: 1.50em;
+  font-size: $font-size-base * 1.2;
+}
+blockquote code { 
+  font-size: $font-size-base * 0.9;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
