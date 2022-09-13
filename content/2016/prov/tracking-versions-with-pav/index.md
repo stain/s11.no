@@ -4,6 +4,8 @@ date: Sat, 07 May 2016 12:23:32 +0000
 categories:
     - Practical Provenance
 tags: ['PAV', 'tutorial', 'versioning']
+aliases:
+    -  /2022/prov/2016/05/07/tracking-versions-with-pav/
 ---
 
 The [PAV ontology](../2013/pav/) specializes the [W3C PROV-O](http://www.w3.org/TR/prov-o/) standard to give a lightweight approach to recording details about a resource, giving its Provenance, Authorship and Versioning. Our [paper on PAV](https://doi.org/10.1186/2041-1480-4-37) explores all of these aspects in details. In this blog post we discuss **Versioning** as modelled by PAV, including their hierarchical organization.
