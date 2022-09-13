@@ -4,6 +4,8 @@ date: Tue, 08 Dec 2020 16:48:12 +0000
 categories:
     - Practical Provenance
 tags: ['PROV', 'ProvToolbox', 'AdoptOpenJDK', 'Conda', 'graphviz', 'homebrew', 'macos', 'tools', 'tutorial']
+aliases:
+    -  /2022/prov/2020/12/08/installing-provtoolbox-on-macos/
 ---
 
 [ProvToolbox](http://lucmoreau.github.io/ProvToolbox/) is a useful command line tool for [validating and visualizing](../validating-and-visualising-prov/) PROV documents, but unfortunately it can be a bit of a challenge to [install on Windows](../installing-provtoolbox-in-windows/) and on **macOS** because of its dependency requirements.
@@ -25,7 +27,7 @@ This post suggests three step-by-step methods of installing ProvToolbox on your 
 5.  [Installing ProvToolbox](#provtoolbox)
     1.  [Using ProvToolbox from VSCode](#vscode)
 
-Overview of requirements
+Overview of requirements {#requirements}
 ------------------------
 
 As of 2020-08, ProvToolbox 0.9.5 is the latest [release](https://github.com/lucmoreau/ProvToolbox/wiki/Releases), which requires:
@@ -37,7 +39,7 @@ There is also an outdated [installer of ProvToolbox for macOS](https://github.co
 
 **Warning:** This guide has been developed for **Intel-based Macs**, if you are using the new ARM64 Mac you will either need to use compatibility modes or install/compile these individual dependencies manually.
 
-### Software packaging for macOS
+### Software packaging for macOS {#packaging}
 
 Traditionally software installations on macOS are either drag-drop _Application_ bundles (as from the Mac App Store or _dmg_ disk images) or the wizard-based _pkg_ installation packages, which can modify the Operating System.
 
@@ -65,7 +67,7 @@ $ type python
 python is /home/stain/miniconda3/bin/python
 ```
 
-Conda
+Conda {#conda}
 -----
 
 We found that using the package manager Conda gave the most consistent results for installing the dependencies of ProvToolbox. The large selection of packages in [Anaconda repository](https://anaconda.org/) is also useful for data science purposes, such as using Jupyter Notebook or R.
@@ -99,7 +101,7 @@ source $HOME/miniconda/bin/activate
 conda init zsh
 ```
 
-### Installing Graphviz and OpenJDK with Conda
+### Installing Graphviz and OpenJDK with Conda {#graphviz-openjdk-conda}
 
 First, in a **new terminal window**, check that the `conda` command is working by searching for Graphviz:
 
@@ -130,16 +132,16 @@ java -version
 
 ![](installed.png)
 
-You can now skip to the section on **installing ProvToolbox**.
+You can now skip to the section on [**installing ProvToolbox**](#provtoolbox).
 
-HomeBrew
+HomeBrew {#homebrew}
 --------
 
 [HomeBrew](https://brew.sh/) is a popular package management system for macOS that can help with installing pre-built open source software. However, installing and using HomeBrew itself is not always trivial. This section is provided as an **alternative to the Conda method** above.
 
 **Warning:** In our testing we found HomeBrew **did not work** using an older macOS 10.11. If you are using the newest macOS version on compatible hardware, you are free to try this approach, which can be useful later as HomeBrew adds a convenient way to install many other data science tools in recent versions, e.g. R, LaTeX, Snakemake.
 
-### Installing HomeBrew
+### Installing HomeBrew {#installing-homebrew}
 
 First open the **Terminal** application, found under **Applications/Utilities**.
 
@@ -163,7 +165,7 @@ After installing HomeBrew you may get a warning about _shallow clone_, this can 
 
 ![](09-brew-installed.png)
 
-### Installing GraphViz with Homebrew
+### Installing GraphViz with Homebrew {#graphviz-homebrew}
 
 To activate brew it should be sufficient to start a new Terminal window. Test this by doing running:
 
@@ -191,7 +193,7 @@ However on our test machine we got a stack trace error indicating a bug in Homeb
 
 ![](12-brew-broken.png)
 
-### Installing OpenJDK with HomeBrew
+### Installing OpenJDK with HomeBrew {#openjdk-homebrew}
 
 **Warning**: This section has not been tested.
 
@@ -219,10 +221,10 @@ Iain Emsley [recommends](https://austgate.co.uk/2021/06/installing-and-using-pro
 
 If both Graphviz and Java are working, you can now skip to the section on **installing ProvToolbox**.
 
-Installing manually
+Installing manually {#manual-install}
 -------------------
 
-### Installing AdoptOpenJDK manually
+### Installing AdoptOpenJDK manually {#adoptopenjdk}
 
 [AdoptOpenJDK](https://adoptopenjdk.net/) is a community effort for packaging binary installers/packages of the open source Java implementation OpenJDK, avoiding restrictive licenses and registration requirements.
 
@@ -259,11 +261,11 @@ java -version
 
 If you don't get the correct Java version you will need to adjust your `PATH` and/or `JAVA_HOME` environmental variables.
 
-### Installing Graphviz manually
+### Installing Graphviz manually {##graphviz}
 
 Compiling and installing [Graphviz](https://graphviz.org/) from source code is a non-trivial task on macOS. Some outdated [pkg installers of Graphviz](http://www.ryandesign.com/graphviz/) have been made but we have not tested these. A recent blog post details how [graphviz can be compiled using brew dependencies](https://medium.com/@scrossoracle/building-graphviz-from-source-on-macos-b6a846d73949), but this should only be needed for PDF support compared to `brew install graphviz` described above. If you already use [MacPorts](https://www.macports.org/) then try `sudo port install graphviz`
 
-Installing ProvToolbox
+Installing ProvToolbox {#provtoolbox}
 ----------------------
 
 Following the [ProvToolbox install instructions for "Other Platforms"](https://github.com/lucmoreau/ProvToolbox/wiki/Installation#34-other-platforms), download the [provconvert-0.9.5-release.zip](https://repo1.maven.org/maven2/org/openprovenance/prov/provconvert/0.9.5/provconvert-0.9.5-release.zip):
@@ -310,7 +312,7 @@ You can now start [validating and visualizing](../validating-and-visualising-pro
 
 You can use the commands `**cd**` and `**ls**` to **c**hange **d**irectory and **l**i**s**t directories in the Terminal. If you are unfamiliar with navigating the shell, you may find it easiest to save the provn files directly in your home directory.
 
-### Using ProvToolbox from VSCode
+### Using ProvToolbox from VSCode {#vscode}
 
 While you may use an editor like **Application/Utilities/TextEdit** bundled with macOS for creating PROVN files, you may find an editor like [VSCode](https://code.visualstudio.com/download) more convenient, particularly as it allows opening an [embedded terminal](https://code.visualstudio.com/docs/editor/integrated-terminal). After installing, try **View -> Terminal** in the menu.
 
