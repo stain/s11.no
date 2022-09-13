@@ -18,7 +18,7 @@ This blog post explores the different PROV patterns that could describe this sce
 
 If you all worked together without distinguishing roles, then you can either assign the same role to each agent (showing you shared that role) or not have any roles.
 
-```
+```prolog
 prefix ex [http://example.com/](http://example.com/)
 prefix terms [http://example.com/terms#](http://example.com/terms#)
 agent(ex:Alice)
@@ -56,7 +56,7 @@ closest match of the three. We also see that there is an equivalent type [Organi
 
 While PROV literature does not cover well how to use external vocabularies like schema.org, we can take advantage of such types and attributes in PROV-N and express group membership using [schema.org/member](http://schema.org/member), adding a [parentOrganization](http://schema.org/parentOrganization) relation to the University for good measure.
 
-```
+```prolog
 prefix s <http://schema.org/> 
 ```
 
