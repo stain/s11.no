@@ -9,6 +9,7 @@ aliases:
     - /2014/prov/
     - /2016/prov/
     - /2020/prov/
+    - /2022/categories/practical-provenance/
 ---
 
 This is an archive of the blog _Practical Provenance_, previously hosted at <https://practicalprovenance.wordpress.com/> 

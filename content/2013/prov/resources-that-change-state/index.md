@@ -4,13 +4,15 @@ date: Tue, 29 Oct 2013 15:10:42 +0000
 categories:
     - Practical Provenance
 tags: ['PROV', 'FAQ']
+aliases:
+    -  /2022/prov/2013/10/29/resources-that-change-state/
 ---
 
 The [PROV](http://www.w3.org/TR/prov-overview/ "PROV overview") working group received a question from Mike:
 
-> My understanding is that an entity referenced in a PROV [bundle](http://www.w3.org/TR/prov-dm/#component4 "bundle") (e.g. via [wasGeneratedBy](http://www.w3.org/TR/prov-dm/#term-Generation "generation")) must be in the bundle...but I do not wish to duplicate entity definitions through out my bundles. My entities are long lived and will exist in multiple bundles. 
-> So lets say I have a resource for alarms which contains a list of all alarms my company monitors. If I turn off the alarm at `alarm/1`, my understanding is that in PROV a new [entity](http://www.w3.org/TR/prov-dm/#term-entity "entity") is created for the new state of `alarm/1`. 
-> But in my actual data store, I don't create a new record, I just toggle a flag. So there is a disconnect between how my PROV looks and how my data looks. This is by design is my understanding. 
+> My understanding is that an entity referenced in a PROV [bundle](http://www.w3.org/TR/prov-dm/#component4 "bundle") (e.g. via [wasGeneratedBy](http://www.w3.org/TR/prov-dm/#term-Generation "generation")) must be in the bundle...but I do not wish to duplicate entity definitions through out my bundles. My entities are long lived and will exist in multiple bundles.   
+> So lets say I have a resource for alarms which contains a list of all alarms my company monitors. If I turn off the alarm at `alarm/1`, my understanding is that in PROV a new [entity](http://www.w3.org/TR/prov-dm/#term-entity "entity") is created for the new state of `alarm/1`.   
+> But in my actual data store, I don't create a new record, I just toggle a flag. So there is a disconnect between how my PROV looks and how my data looks. This is by design is my understanding.   
 > So I would have a new entity in my prov for the `alarm/1` in the new state which is a specialization of `alarm/1`, yes? Ultimately, I want to display all of the provenance for `alarm/1` so I can see its history from creation to invalidation. Am I going about this the wrong way?
 
 Here is my reply (slightly revised for this post). My examples use the [Turtle syntax](http://www.w3.org/TR/turtle/ "Turtle, Terse RDF Triple Language") and [PROV-O](http://www.w3.org/TR/prov-o/), but are also applicable to other serializations of PROV, like [PROV-XML](http://www.w3.org/TR/prov-xml/ "PROV-XML") or [PROV-JSON](http://provenance.ecs.soton.ac.uk/prov-json/). This is a very good question. I am not sure how this relates to [bundles](http://www.w3.org/TR/prov-dm/#component4 "bundles"), so I'll start with the topic of entities and then move on to specializations and finally bundles.
@@ -71,8 +73,8 @@ We might specify a new subclass `ex:AlarmState` with the understanding of 'locki
 
 However both of these are [specializations of](http://www.w3.org/TR/prov-o/#specializationOf "prov:specializationOf") the entity that describe the alarm regardless of status. 
 
-[![2013-10-29-entity-specializationOf](2013-10-29-entity-specializationof.png)]  
-[[powerpoint source](2013-10-29-entity-specializationOf.pptx)]\]
+![2013-10-29-entity-specializationOf](2013-10-29-entity-specializationof.png)  
+[[powerpoint source](2013-10-29-entity-specializationOf.pptx)]
 
 You might want to organize these states in an order so you don't need to compare the start/end timestamps, using [prov:wasRevisionOf](http://www.w3.org/TR/prov-o/#wasRevisionOf "prov:wasRevisionOf"). 
 
@@ -136,8 +138,15 @@ As in any kind of modelling, consideration needs to taken as to what granularity
 
 Hi Stian, I like the way you developed this example. Something that the working group has never fully discussed is how we can determine which properties can be fluctuating for an entity, and which have been frozen. In your example, how can a third-party decide whether ex:currentStatus "active" is or is not a fixed attribute-value for an entity? Any thoughts on this?
 <hr />
+
 #### 
 [soilandreyes](http://soiland-reyes.com/stian/work/ "soiland-reyes@cs.manchester.ac.uk") - <time datetime="2013-10-29 17:16:37">Oct 2, 2013</time>
 
-That is a good question. For other readers: Initially in the working group we had the idea that _all properties_ on an entity was in "snapshot". However we relaxed this requirement as it meant you were forced to always mint a new URI for the Entity to describe a Resource (which might already have other, mutable properties), and we would rather have the ability for the Entity to normally have the same URI as the resource. Specializations should thus be needed only when you really need several abstraction levels. But the question then becomes as how you can know of what is "in flux" and what is a more permanent record that is a true property for the resource over its entire lifetime. One way to do this is to just say so in the ontology of a class that you assign to the entity. This could even be programmatic, so in owl, if we have `:Professor` which is a subclass of `prov:Person` - this could be used as a `prov:specializationOf` for a person as they have not been professors their whole life. In OWL we can require that professors have the property restriction "prov:actedOnBehalfOf exact 1 schema:University" - this would require such a relation to exist in order to be a Professor and could be said to be "locked down". However, as OWL nor RDF deals with resource changes over time - this does not mean that the resource has always been a Professor or that the professor was always working at the same university. Perhaps a more formal solution would be a way to specify this immutability as a similar statement for a given class/type of entities.
+That is a good question. For other readers: Initially in the working group we had the idea that _all properties_ on an entity was in "snapshot". However we relaxed this requirement as it meant you were forced to always mint a new URI for the Entity to describe a Resource (which might already have other, mutable properties), and we would rather have the ability for the Entity to normally have the same URI as the resource. 
+
+Specializations should thus be needed only when you really need several abstraction levels. But the question then becomes as how you can know of what is "in flux" and what is a more permanent record that is a true property for the resource over its entire lifetime. One way to do this is to just say so in the ontology of a class that you assign to the entity. 
+
+This could even be programmatic, so in owl, if we have `:Professor` which is a subclass of `prov:Person` - this could be used as a `prov:specializationOf` for a person as they have not been professors their whole life. In OWL we can require that professors have the property restriction `prov:actedOnBehalfOf exact 1 schema:University` -- this would require such a relation to exist in order to be a Professor and could be said to be "locked down". 
+
+However, as OWL nor RDF deals with resource changes over time - this does not mean that the resource has always been a Professor or that the professor was always working at the same university. Perhaps a more formal solution would be a way to specify this immutability as a similar statement for a given class/type of entities.
 <hr />
