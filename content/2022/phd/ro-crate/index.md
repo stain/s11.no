@@ -1181,7 +1181,7 @@ _Publications_ **8**(2):21
 _Nature Biotechnology_ **35**(4) (2017), 316–319.   
 <https://doi.org/10.1038/nbt.3820>
 
-[40]Mathias Dillen, Quentin Groom, Donat Agosti, Lars Nielsen (2019):  
+[40] Mathias Dillen, Quentin Groom, Donat Agosti, Lars Nielsen (2019):  
 **Zenodo, an archive and publishing repository: A tale of two herbarium specimen pilot projects**.  
 _Biodiversity Information Science and Standards_ **3**:e37080 (2019).   
 <https://doi.org/10.3897/biss.3.37080>
@@ -1204,32 +1204,32 @@ RFC 3987, _Internet Requests for Comments_, RFC Editor, (2005).
 **GitHub – Finn-Lab/MGS-gut: Analysing Metagenomic Species (MGS)**.  
 <https://github.com/Finn-Lab/MGS-gut>
 
-[45] P.A. Ewels, A. Peltzer, S. Fillinger, H. Patel, J. Alneberg, A. Wilm, M.U. Garcia, P. Di Tommaso and S. Nahnsen (2020):  
+[45] Philip A Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, Sven Nahnsen (2020):  
 **The nf-core framework for community-curated bioinformatics pipelines**.  
 _Nature Biotechnology_ **38**(3), 276–278.   
 <https://doi.org/10.1038/s41587-020-0439-x>
 
-[46] S. Farnel and A. Shiri (2014):  
+[46] Sharon Farnel, Ali Shiri (2014):  
 **Metadata for research data: Current practices and trends**.  
 _2014 Proceedings of the International Conference on Dublin Core and Metadata Applications_, W. Moen and A. Rushing, eds, Dublin Core Metadata Initiative, ISSN 1939-1366.  
 <https://dcpapers.dublincore.org/pubs/article/view/3714>.
 
-[47] D. Foundation (2018):  
+[47] DONA Foundation (2018):  
 ***Digital Object Interface Protocol Specification, version 2.0**.  
 Technical Report.  
 <https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf>
 
-[48] A. Garcia-Silva, J.M. Gomez-Perez, R. Palma, M. Krystek, S. Mantovani, F. Foglini, V. Grande, F. De Leo, S. Salvi, E. Trasatti, V. Romaniello, M. Albani, C. Silvagni, R. Leone, F. Marelli, S. Albani, M. Lazzarini, H.J. Napier, H.M. Glaves, T. Aldridge, C. Meertens, F. Boler, H.W. Loescher, C. Laney, M.A. Genazzio, D. Crawl and I. Altintas (2019):  
+[48] <small>Andres Garcia-Silva, Jose Manuel Gomez-Perez, Raul Palma, Marcin Krystek, Simone Mantovani, Federica Foglini, Valentina Grande, Francesco De Leo, Stefano Salvi, Elisa Trasatti, Vito Romaniello, Mirko Albani, Cristiano Silvagni, Rosemarie Leone, Fulvio Marelli, Sergio Albani, Michele Lazzarini, Hazel J. Napier, Helen M. Glaves, Timothy Aldridge, Charles Meertens, Fran Boler, Henry W. Loescher, Christine Laney, Melissa A. Genazzio, Daniel Crawl, Ilkay Altintas</small> (2019):  
 **Enabling FAIR research in Earth science through research objects**.  
 _Future Generation Computer Systems_ **98** pp. 550–564.  
 <https://arxiv.org/abs/1809.10617>   
 <https://doi.org/10.1016/j.future.2019.03.046>
 
-[49] P. Sefton, M. Lynch, Stian Soiland-Reyes (2021):  
+[49] Peter Sefton, Mike Lynch, Stian Soiland-Reyes (2021):  
 **GitHub – UTS-eResearch/ro-crate-js: Research Object Crate (RO-Crate) utilities**.  
 <https://github.com/UTS-eResearch/ro-crate-js>
 
-[50] Ignacio Eguinoa, Stian Soiland-Reyes, Bert Droesbeke, Michael .R. Crusoe (2020):  
+[50] Ignacio Eguinoa, Stian Soiland-Reyes, Bert Droesbeke, Michael R. Crusoe (2020):  
 **GitHub – workflowhub-eu/galaxy2cwl: Standalone version tool to get cwl descriptions (initially an abstract cwl interface) of galaxy workflows and Galaxy workflows executions**.  
 <https://github.com/workflowhub-eu/galaxy2cwl>
 
@@ -1248,66 +1248,70 @@ _Nature Methods_ **16**(3) (2019), 207–207.
 **What Is Reproducibility? The R\* Brouhaha**.  
 _SciRepro Workshop_, TPDL, Hannover, Germany, 2016. <http://repscience2016.research-infrastructures.eu/img/CaroleGoble-ReproScience2016v2.pdf>
 
-[55] Carole Goble, S. Cohen-Boulakia, Stian Soiland-Reyes, D. Garijo, Y. Gil, M.R. Crusoe, K. Peters and D. Schober (2019):  
+[55] Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2019):  
 **FAIR Computational Workflows**.  
 _Data Intelligence_ **2**(1–2) pp. 108–121.   
 <https://doi.org/10.1162/dint_a_00033>
 
-[56] Carole Goble, Stian Soiland-Reyes, Finn Bacall, S. Owen, A. Williams, I. Eguinoa, B. Droesbeke, S. Leo, L. Pireddu, L. Rodríguez-Navas, J.M. Fernández, S. Capella-Gutierrez, H. Ménager, B. Grüning, B. Serrano-Solano, P. Ewels and F. Coppens (2021):  
+[56] <small>Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodriguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens</small> (2021):  
 **Implementing FAIR digital objects in the EOSC-life workflow collaboratory**.  
 _Zenodo_. <https://doi.org/10.5281/zenodo.4605654>
 
-[57] Carole A. Goble, J. Bhagat, S. Aleksejevs, D. Cruickshank, D. Michaelides, D. Newman, M. Borkum, S. Bechhofer, M. Roos, P. Li and D. De Roure (2010):  
+[57] Carole A Goble, Jiten Bhagat, Sergejs Aleksejevs, Don Cruickshank, Danius Michaelides, David Newman, Mark Borkum, Sean Bechhofer, Marco Roos, Peter Li, David De Roure (2010):  
 **myExperiment: A repository and social network for the sharing of bioinformatics workflows**.  
 _Nucleic Acids Research_ **38**(Web Server issue) W677–W682.   
 <https://doi.org/10.1093/nar/gkq429>
 
-[58] A. Gray, Carole Goble and R. Jimenez, Bioschemas Community (2017):  
+[58] Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community(2017):  
 **Bioschemas: From Potato Salad to Protein Annotation**.  
-_ISWC_, Vienna, Austria. <https://iswc2017.semanticweb.org/paper-579/>
+_ISWC_, Vienna, Austria.  
+<https://iswc2017.semanticweb.org/paper-579/>
 
-[59] R.L. Grossman, A. Heath, M. Murphy, M. Patterson and W. Wells (2016):  
+[59] Robert L Grossman, Allison Heath, Mark Murphy, Maria Patterson, Walt Wells (2016):  
 **A case for data commons: Toward data science as a service**.  
 _Computing in Science & Engineering_ **18**(5) pp. 10–20.   
 <https://doi.org/10.1109/MCSE.2016.92>
 
-[60] B. Grüning, J. Chilton, J. Köster, R. Dale, N. Soranzo, M. van den Beek, J. Goecks, R. Backofen, A. Nekrutenko and J. Taylor (2018):  
+[60] Björn Grüning, John Chilton, Johannes Köster, Ryan Dale, Nicola Soranzo, Marius van den Beek, Jeremy Goecks, Rolf Backofen, Anton Nekrutenko, James Taylor (2018):  
 **Practical computational reproducibility in the life sciences**.  
 _Cell Systems_ **6**(6) pp. 631–635.   
 <https://doi.org/10.1016/j.cels.2018.03.014>
 
-[61] B. Grüning, R. Dale, A. Sjödin, B.A. Chapman, J. Rowe, C.H. Tomkins-Tinch, R. Valieris, J. Köster and Bioconda Team (2018):  
+[61] Björn Grüning, Ryan Dale, Andreas Sjödin, Brad A Chapman, Jillian Rowe, Christopher H Tomkins-Tinch, Renan Valieris, Johannes Köster, Bioconda Team (2018):  
 **Bioconda: Sustainable and comprehensive software distribution for the life sciences**.  
 _Nature Methods_ **15**(7) pp. 475–476.   
 <https://doi.org/10.1038/s41592-018-0046-7>
 
-[62] R.V. Guha, D. Brickley and S. Macbeth (2015):  
+[62] Ramanathan V Guha, Dan Brickley, Steve Macbeth (2015):  
 **Schema.org: Evolution of Structured Data on the Web: Big data makes common schemas even more necessary**.  
 _Queue_ **13**(9) pp. 10–37.   
 <https://doi.org/10.1145/2857274.2857276>
 
-[63] T. Heath and C. Bizer (2011):  
+[63] Tom Heath, Christian Bizer (2011):  
 **Linked Data: Evolving the Web into a Global Data Space**.  
 _Synthesis Lectures on the Semantic Web: Theory and Technology_ **1** pp. 1–136, ISSN 2160-4711. ISBN 9781608454310 / ISBN 9781608454303. <https://identifiers.org/isbn/9781608454303>   
 <https://doi.org/10.2200/S00334ED1V01Y201102WBE001>
 
-[64] **IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication**.  
+[64] **IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication** (2020).  
 _IEEE Std_ **2791-2020**.  
-ISBN 978-1-5044-6466-6. <https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html>   
-<https://doi.org/10.1109/IEEESTD.2020.9094416>
+ISBN 978-1-5044-6466-6.  
+<https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html>   
+<https://doi.org/10.1109/ieeestd.2020.9094416>
 
-[65] M.A. Jensen, V. Ferretti, R.L. Grossman and L.M. Staudt (2017):  
+[65] Mark A Jensen, Vincent Ferretti, Robert L Grossman, Louis M Staudt (2017):  
 **The NCI Genomic Data Commons as an engine for precision medicine**.  
 _Blood_ **130**(4) pp. 453–459.   
 <https://doi.org/10.1182/blood-2017-03-735654>
 
-[66] M.B. Jones, S. Richard, D. Vieglais, A. Shepherd, R. Duerr, D. Fils and L. McGibbney (2021):  
+[66] Matthew B. Jones, Stephen Richard, Dave Vieglais, Adam Shepherd, Ruth Duerr, Dougl Fils, Lewis McGibbney (2021):  
 **Science-on-Schema.org v1.2.0**   
 <https://doi.org/10.5281/zenodo.4477164>
 
-[67] M. Katsumi and M. Grüninger (2016):  
+[67] Megan Katsumi, Michael Grüninger (2016):  
 **What is ontology reuse?**.  
-In: _Formal Ontology in Information Systems_, R. Ferrario and W. Kuhn, eds, _Frontiers in Artificial Intelligence and Applications_ **283** pp. 9–22. ISBN 978-1-61499-660-6.   
+In: _Formal Ontology in Information Systems_, R. Ferrario and W. Kuhn, eds,  
+_Frontiers in Artificial Intelligence and Applications_ **283**  
+ISBN 978-1-61499-660-6.   
 <https://doi.org/10.3233/978-1-61499-660-6-9>
 
 [68] Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
@@ -1315,38 +1319,42 @@ In: _Formal Ontology in Information Systems_, R. Ferrario and W. Kuhn, eds, _F
 _GigaScience_ **8**(11).   
 <https://doi.org/10.1093/gigascience/giz095>
 
-[69] J. Kim, E. Deelman, Y. Gil, G. Mehta and V. Ratnakar (2008):  
+[69] Jihie Kim, Ewa Deelman, Yolanda Gil, Gaurang Mehta, Varun Ratnakar (2008):  
 **Provenance trails in the Wings/Pegasus system**.  
 _Concurrency and Computation: Practice and Experience_ **20**(5) pp. 587–597.   
 <https://doi.org/10.1002/cpe.1228>
 
-[70] T. Kluyver, B. Ragan-Kelley, F. Pérez, B. Granger, M. Bussonnier, J. Frederic, K. Kelley, J. Hamrick, J. Grout, S. Corlay, P. Ivanov, D. Avila, S. Abdalla, C. Willing and Jupyter Development Team (2016):  
-**Jupyter Notebooks – a publishing format for reproducible computational workflows**, in: _Positioning and Power in Academic Publishing: Players, Agents and Agendas_, _Proceedings of the 20th International Conference on Electronic Publishing_, pp. 87–90, ISBN 978-1-61499-649-1.   
+[70] <small>Thomas Kluyver, Benjamin Ragan-Kelley, Fernando Pérez, Brian Granger, Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Jason Grout, Sylvain Corlay, Paul Ivanov, Damián Avila, Safia Abdalla, Carol Willing, Jupyter Development Team</small> (2016):  
+**Jupyter Notebooks – a publishing format for reproducible computational workflows**.  
+in: _Positioning and Power in Academic Publishing: Players, Agents and Agendas_,  
+_Proceedings of the 20th International Conference on Electronic Publishing_, pp. 87–90, ISBN 978-1-61499-649-1.   
 <https://doi.org/10.3233/978-1-61499-649-1-87>
 
-[71] L. Koesten, K. Gregory, P. Groth and E. Simperl (2021):  
+[71] Laura Koesten, Kathleen Gregory, Paul Groth, Elena Simperl (2021):  
 **Talking datasets – understanding data sensemaking behaviours**.  
 _International journal of human-computer studies_ **146**:102562.   
 <https://doi.org/10.1016/j.ijhcs.2020.102562>
 
-[72] L. Koesten, P. Vougiouklis, E. Simperl and P. Groth (2020):  
+[72] Laura Koesten, Pavlos Vougiouklis, Elena Simperl, Paul Groth (2020):  
 **Dataset reuse: Toward translating principles to practice**.  
 _Patterns_ **1**(8):100136.   
 <https://doi.org/10.1016/j.patter.2020.100136>
 
-[73] J. Köster and S. Rahmann (2012):  
+[73] Johannes Köster, Sven Rahmann (2012):  
 **Snakemake – a scalable bioinformatics workflow engine**.  
 _Bioinformatics_ **28**(19) pp. 2520–2522.   
 <https://doi.org/10.1093/bioinformatics/bts480>
 
-[74] J. Kunze, J. Littman, E. Madden, J. Scancella and C. Adams (2018):  
+[74] J. Kunze, J. Littman, E. Madden, J. Scancella, C. Adams (2018):  
 **The BagIt File Packaging Format**, (V1.0), RFC 8493, _Internet Requests for Comments_, RFC Editor.   
 <https://doi.org/10.17487/RFC8493>
 
-[75] K. Kurowski, O. Corcho, C. Choirat, M. Eriksson, F. Coppens, M. van de Sanden and M. Ojsteršek, EOSC Interoperability Framework, Technical Report, 2021.   
+[75] Krzysztof Kurowski, Oscar Corcho, Christine Choirat, Magnus Eriksson, Frederik Coppens, Mark van de Sanden, Milan Ojsteršek (2021):  
+**EOSC Interoperability Framework**.  
+_Publications Office of the EU_, Technical Report, 2021.   
 <https://doi.org/10.2777/620649>
 
-[76] C. Kyle, G. Niall, H. Mihael, K. Kacper, L. Bertram, M. Timothy, N. Jarek, S. Victoria, T. Ian, T. Thomas, M.J. Turk, C. Willis (2020):  
+[76] Kyle Chard, Niall Gaffney, Mihael Hategan, Kacper Kowalik, Bertram Ludäscher, Timothy McPhillips, Jarek Nabrzyski, Victoria Stodden, Ian Taylor, Thomas Thelen, Matthew J. Turk, Craig Willis (2020):  
 **Toward enabling reproducibility for data-intensive research using the Whole Tale platform**.  
 _Advances in Parallel Computing_ **36** pp 766–778.   
 <https://doi.org/10.3233/APC200107>
