@@ -43,8 +43,8 @@ description: >
 ---
 
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"),
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro"),
   @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 </style>
 
@@ -1002,7 +1002,7 @@ _W3C Recommendation_ (2020)
 _Nature_ **568**(7753) 499–504.   
 <https://doi.org/10.1038/s41586-019-0965-1>
 
-[5] G. Alterovitz, D. Dean, C. Goble, M.R. Crusoe, S. Soiland-Reyes, A. Bell, A. Hayes, A. Suresh, A. Purkayastha, C.H. King, D. Taylor, E. Johanson, E.E. Thompson, E. Donaldson, H. Morizono, H. Tsang, J.K. Vora, J. Goecks, J. Yao, J.S. Almeida, J. Keeney, K. Addepalli, K. Krampis, K.M. Smith, L. Guo, M. Walderhaug, M. Schito, M. Ezewudo, N. Guimera, P. Walsh, R. Kahsay, S. Gottipati, T.C. Rodwell, T. Bloom, Y. Lai, V. Simonyan and R. Mazumder (2018):  
+[5] Gil Alterovitz, Dennis A Dean II, Carole Goble, Michael R Crusoe, Stian Soiland-Reyes, Amanda Bell, Anais Hayes, Anita Suresh, Charles Hadley S King IV, Dan Taylor, KanakaDurga Addepalli, Elaine Johanson, Elaine E Thompson, Eric Donaldson, Hiroki Morizono, Hsinyi Tsang, Jeet K Vora, Jeremy Goecks, Jianchao Yao, Jonas S Almeida, Jonathon Keeney, KanakaDurga Addepalli, Konstantinos Krampis, Krista Smith, Lydia Guo, Mark Walderhaug, Marco Schito, Matthew Ezewudo, Nuria Guimera, Paul Walsh, Robel Kahsay, Srikanth Gottipati, Timothy C Rodwell, Toby Bloom, Yuching Lai, Vahan Simonyan, Raja Mazumder (2018):  
 **Enabling precision medicine via standard communication of HTS provenance, analysis, and results**.  
 _PLOS Biology_ **16**(12):e3000099   
 <https://doi.org/10.1371/journal.pbio.3000099>
@@ -1017,11 +1017,11 @@ _Universal Access in the Information Society_ **16** pp 851–862.
 _Zenodo_ <https://github.com/GhaithArf/ro-crate-rda-madmp-mapper>   
 <https://doi.org/10.5281/zenodo.3922136>
 
-[8] F. Bacall, S. Soiland-Reyes and M. Soares e Silva (2019):  
+[8] Finn Bacall, Stian Soiland-Reyes and M. Soares e Silva (2019):  
 **eScienceLab: RO-Composer**.  
 <https://esciencelab.org.uk/projects/ro-composer/> <https://github.com/ResearchObject/research-object-composer>
 
-[9] F. Bacall and M. Whitwell (2022):  
+[9] Finn Bacall and M. Whitwell (2022):  
 **GitHub – ResearchObject/ro-crate-ruby: A Ruby gem for creating, manipulating and reading RO-Crates**.  
 <https://github.com/ResearchObject/ro-crate-ruby>
 
@@ -1034,7 +1034,7 @@ _PLOS Pathogens_ **16**(8):e1008643.
 **The Australian Research Data Commons**, _Data Science Journal_ **18** (2019).   
 <https://doi.org/10.5334/dsj-2019-044>
 
-[12] S. Bechhofer, I. Buchan, D. De Roure, P. Missier, J. Ainsworth, J. Bhagat, P. Couch, D. Cruickshank, M. Delderfield, I. Dunlop, M. Gamble, D. Michaelides, S. Owen, D. Newman, S. Sufi and C. Goble (2013):  
+[12] S. Bechhofer, I. Buchan, D. De Roure, P. Missier, J. Ainsworth, J. Bhagat, P. Couch, D. Cruickshank, M. Delderfield, I. Dunlop, M. Gamble, D. Michaelides, S. Owen, D. Newman, S. Sufi and Carole Goble (2013):  
 **Why Linked Data is not enough for scientists**.  
 _Future Generation Computer Systems_ **29**(2), pp. 599–611.   
 <https://doi.org/10.1016/j.future.2011.08.004>
@@ -1044,7 +1044,7 @@ _Future Generation Computer Systems_ **29**(2), pp. 599–611.
 _GitHub_.  
 <https://github.com/KockataEPich/CheckMyCrate>
 
-[14] K. Belhajjame, J. Zhao, D. Garijo, M. Gamble, K. Hettne, R. Palma, E. Mina, O. Corcho, J.M. Gómez-Pérez, S. Bechhofer, G. Klyne and C. Goble (2015):  
+[14] K. Belhajjame, J. Zhao, D. Garijo, M. Gamble, K. Hettne, R. Palma, E. Mina, O. Corcho, J.M. Gómez-Pérez, S. Bechhofer, G. Klyne and Carole Goble (2015):  
 **Using a suite of ontologies for preserving workflow-centric research objects**.  
 _Web Semantics: Science, Services and Agents on the World Wide Web_ **32** pp. 16–42.   
 <https://doi.org/10.1016/j.websem.2015.01.003>
@@ -1059,7 +1059,7 @@ _Frontiers in Neuroinformatics_ **11**:69.
 _Nucleic Acids Research_ **35**(Database issue) , D301–D303.   
 <https://doi.org/10.1093/nar/gkl971>
 
-[17] F. Bietrix, J.M. Carazo, S. Capella-Gutierrez, F. Coppens, M.L. Chiusano, R. David, J.M. Fernandez, M. Fratelli, J.-K. Heriche, C. Goble, P. Gribbon, P. Holub, R.P. Joosten, S. Leo, S. Owen, H. Parkinson, R. Pieruschka, L. Pireddu, L. Porcu, M. Raess, L. Rodriguez- Navas, A. Scherer, S. Soiland-Reyes and J. Tang (2021):  
+[17] F. Bietrix, J.M. Carazo, S. Capella-Gutierrez, F. Coppens, M.L. Chiusano, R. David, J.M. Fernandez, M. Fratelli, J.-K. Heriche, Carole Goble, P. Gribbon, P. Holub, R.P. Joosten, S. Leo, S. Owen, H. Parkinson, R. Pieruschka, L. Pireddu, L. Porcu, M. Raess, L. Rodriguez- Navas, A. Scherer, Stian Soiland-Reyes and J. Tang (2021):  
 **EOSC-life methodology framework to enhance reproducibility within EOSC-life**.  
 _Zenodo_. <https://doi.org/10.5281/zenodo.4705078>
 
@@ -1089,7 +1089,7 @@ _PUBLISSO_.
 in: _Advances in Information Retrieval_, J.M. Jose, E. Yilmaz, J. Magalhães, P. Castells, N. Ferro, M.J. Silva and F. Martins (eds.). ISBN 978-3-030-45442-5.   
 <https://doi.org/10.1007/978-3-030-45442-5_15>
 
-[23] E. Ó Carragáin, C. Goble, P. Sefton and S. Soiland-Reyes (2019):  
+[23] Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
 **A lightweight approach to research object data packaging**.  
 _Bioinformatics Open Source Conference (BOSC2019)_, 2019-07-24/2019-07-25, Basel, Switzerland.  
 _Zenodo_.   
@@ -1099,7 +1099,7 @@ _Zenodo_.
 **Library of Congress Subject Headings: Principles and Application**, 3rd edn, p. 556. <https://eric.ed.gov/?id=ED387146>.  
 [ISBN 9781563081910](https://identifiers.org/isbn/9781563081910).
 
-[25] K. Chard, M. D’Arcy, B. Heavner, I. Foster, C. Kesselman, R. Madduri, A. Rodriguez, S. Soiland-Reyes, C. Goble, K. Clark, E.W. Deutsch, I. Dinov, N. Price and A. Toga (2016):  
+[25] K. Chard, M. D’Arcy, B. Heavner, I. Foster, C. Kesselman, R. Madduri, A. Rodriguez, Stian Soiland-Reyes, Carole Goble, K. Clark, E.W. Deutsch, I. Dinov, N. Price and A. Toga (2016):  
 **I’ll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets**.  
 _2016 IEEE International Conference on Big Data (Big Data)_, IEEE, pp. 319–328.  
 ISBN 978-1-4673-9005-7.   
@@ -1156,7 +1156,7 @@ _Trends in Biotechnology_ **30**(5) pp. 241–242.
 **LifeMonitor, a testing and monitoring service for scientific workflows**.  
 <https://about.lifemonitor.eu/>
 
-[36] M.R. Crusoe, S. Abeln, A. Iosup, P. Amstutz, J. Chilton, N. Tijanić, H. Ménager, S. Soiland-Reyes and C. Goble (2022):  
+[36] M.R. Crusoe, S. Abeln, A. Iosup, P. Amstutz, J. Chilton, N. Tijanić, H. Ménager, Stian Soiland-Reyes and Carole Goble (2022):  
 **Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.  
 _Communications of the ACM_, accepted. <https://arxiv.org/abs/2105.07028>   
 <https://doi.org/10.1145/3486897>
@@ -1181,7 +1181,7 @@ _Nature Biotechnology_ **35**(4) (2017), 316–319.
 _Biodiversity Information Science and Standards_ **3**:e37080 (2019).   
 <https://doi.org/10.3897/biss.3.37080>
 
-[41] B. Droesbeke, I. Eguinoa, A. Gaignard, L. Simone, L. Pireddu, L. Rodríguez-Navas and S. Soiland-Reyes (2022):  
+[41] B. Droesbeke, I. Eguinoa, A. Gaignard, L. Simone, L. Pireddu, L. Rodríguez-Navas and Stian Soiland-Reyes (2022):  
 **GitHub – ResearchObject/ro-crate-py: Python library for RO-Crate**.  
 <https://github.com/researchobject/ro-crate-py>  
 <https://doi.org/10.5281/zenodo.3956493>
@@ -1220,18 +1220,18 @@ _Future Generation Computer Systems_ **98** pp. 550–564.
 <https://arxiv.org/abs/1809.10617>   
 <https://doi.org/10.1016/j.future.2019.03.046>
 
-[49] P. Sefton, M. Lynch, S. Soiland-Reyes (2021):  
+[49] P. Sefton, M. Lynch, Stian Soiland-Reyes (2021):  
 **GitHub – UTS-eResearch/ro-crate-js: Research Object Crate (RO-Crate) utilities**.  
 <https://github.com/UTS-eResearch/ro-crate-js>
 
-[50] I. Eguinoa, S. Soiland-Reyes, B. Droesbeke, M.R. Crusoe (2020):  
+[50] Ignacio Eguinoa, Stian Soiland-Reyes, Bert Droesbeke, Michael .R. Crusoe (2020):  
 **GitHub – workflowhub-eu/galaxy2cwl: Standalone version tool to get cwl descriptions (initially an abstract cwl interface) of galaxy workflows and Galaxy workflows executions**.  
 <https://github.com/workflowhub-eu/galaxy2cwl>
 
-[51] M. La Rosa (2021):  
+[51] Marco La Rosa (2021):  
 **GitHub – CoEDL/modpdsc**, <https://github.com/CoEDL/modpdsc/>
 
-[52] M. La Rosa (2021):  
+[52] Marco La Rosa (2021):  
 **GitHub – CoEDL/ocfl-tools: Tools to process and manipulate an OCFL tree**.  
 <https://github.com/CoEDL/ocfl-tools>
 
@@ -1239,25 +1239,25 @@ _Future Generation Computer Systems_ **98** pp. 550–564.
 _Nature Methods_ **16**(3) (2019), 207–207.   
 <https://doi.org/10.1038/s41592-019-0350-x>
 
-[54] C. Goble (2016):  
+[54] Carole Goble (2016):  
 **What Is Reproducibility? The R\* Brouhaha**.  
 _SciRepro Workshop_, TPDL, Hannover, Germany, 2016. <http://repscience2016.research-infrastructures.eu/img/CaroleGoble-ReproScience2016v2.pdf>
 
-[55] C. Goble, S. Cohen-Boulakia, S. Soiland-Reyes, D. Garijo, Y. Gil, M.R. Crusoe, K. Peters and D. Schober (2019):  
+[55] Carole Goble, S. Cohen-Boulakia, Stian Soiland-Reyes, D. Garijo, Y. Gil, M.R. Crusoe, K. Peters and D. Schober (2019):  
 **FAIR Computational Workflows**.  
 _Data Intelligence_ **2**(1–2) pp. 108–121.   
 <https://doi.org/10.1162/dint_a_00033>
 
-[56] C. Goble, S. Soiland-Reyes, F. Bacall, S. Owen, A. Williams, I. Eguinoa, B. Droesbeke, S. Leo, L. Pireddu, L. Rodríguez-Navas, J.M. Fernández, S. Capella-Gutierrez, H. Ménager, B. Grüning, B. Serrano-Solano, P. Ewels and F. Coppens (2021):  
+[56] Carole Goble, Stian Soiland-Reyes, Finn Bacall, S. Owen, A. Williams, I. Eguinoa, B. Droesbeke, S. Leo, L. Pireddu, L. Rodríguez-Navas, J.M. Fernández, S. Capella-Gutierrez, H. Ménager, B. Grüning, B. Serrano-Solano, P. Ewels and F. Coppens (2021):  
 **Implementing FAIR digital objects in the EOSC-life workflow collaboratory**.  
 _Zenodo_. <https://doi.org/10.5281/zenodo.4605654>
 
-[57] C.A. Goble, J. Bhagat, S. Aleksejevs, D. Cruickshank, D. Michaelides, D. Newman, M. Borkum, S. Bechhofer, M. Roos, P. Li and D. De Roure (2010):  
+[57] Carole A. Goble, J. Bhagat, S. Aleksejevs, D. Cruickshank, D. Michaelides, D. Newman, M. Borkum, S. Bechhofer, M. Roos, P. Li and D. De Roure (2010):  
 **myExperiment: A repository and social network for the sharing of bioinformatics workflows**.  
 _Nucleic Acids Research_ **38**(Web Server issue) W677–W682.   
 <https://doi.org/10.1093/nar/gkq429>
 
-[58] A. Gray, C. Goble and R. Jimenez, Bioschemas Community (2017):  
+[58] A. Gray, Carole Goble and R. Jimenez, Bioschemas Community (2017):  
 **Bioschemas: From Potato Salad to Protein Annotation**.  
 _ISWC_, Vienna, Austria. <https://iswc2017.semanticweb.org/paper-579/>
 
@@ -1305,7 +1305,7 @@ _Blood_ **130**(4) pp. 453–459.
 In: _Formal Ontology in Information Systems_, R. Ferrario and W. Kuhn, eds, _Frontiers in Artificial Intelligence and Applications_ **283** pp. 9–22. ISBN 978-1-61499-660-6.   
 <https://doi.org/10.3233/978-1-61499-660-6-9>
 
-[68] F.Z. Khan, S. Soiland-Reyes, R.O. Sinnott, A. Lonie, C. Goble and M.R. Crusoe (2019):  
+[68] Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
 **Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**.  
 _GigaScience_ **8**(11).   
 <https://doi.org/10.1093/gigascience/giz095>
@@ -1350,7 +1350,7 @@ _Advances in Parallel Computing_ **36** pp 766–778.
 **Arkisto Platform: Describo Online**.  
 <https://arkisto-platform.github.io/describo-online/>
 
-[78] M. La Rosa and P. Sefton (2021):  
+[78] M. La Rosa and Peter Sefton (2021):  
 **Arkisto Platform: Describo**.  
 <https://arkisto-platform.github.io/describo/>
 
@@ -1359,12 +1359,12 @@ _Advances in Parallel Computing_ **36** pp 766–778.
 _Science Editing_ **7**(1) pp. 65–69.   
 <https://doi.org/10.6087/kcse.192>
 
-[80] A.-L. Lamprecht, L. Garcia, M. Kuzak, C. Martinez, R. Arcila, E. Martin Del Pico, V. Dominguez Del Angel, S. van de Sandt, J. Ison, P.A. Martinez, P. McQuilton, A. Valencia, J. Harrow, F. Psomopoulos, J.L. Gelpi, N. Chue Hong, C. Goble and S. Capella-Gutierrez (2019):  
+[80] Anna-Lena Lamprecht, Leyla Garcia, Mateusz Kuzak, Carlos Martinez, Ricardo Arcila, Eva Martin Del Pico, Victoria Dominguez Del Angel, Stephanie Van De Sandt, Jon Ison, Paula Andrea Martinez, Peter Mcquilton, Alfonso Valencia, Jennifer Harrow, Fotis Psomopoulos, Josep Ll. Gelpi, Neil Chue Hong, Carole Goble, Salvador Capella-Gutierrez (2019):  
 **Towards FAIR principles for research software**.  
 _Data Science_ **3**(1) pp. 1–23.   
 <https://doi.org/10.3233/DS-190026>
 
-[81] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, D. Garijo, S. Soiland-Reyes, S. Zednik and J. Zhao (2013):  
+[81] T. Lebo, S. Sahoo, D. McGuinness, K. Belhajjame, J. Cheney, D. Corsar, D. Garijo, Stian Soiland-Reyes, S. Zednik and J. Zhao (2013):  
 **PROV-O: The PROV Ontology**.  
 _W3C Recommendation_ 30 April 2013. <https://www.w3.org/TR/2013/REC-prov-o-20130430/>
 
@@ -1377,7 +1377,7 @@ _Patterns_ **2**(9):100322.
 **Protein Ligand Complex MD Setup tutorial using BioExcel Building Blocks (biobb) (jupyter notebook)**.  
 <https://doi.org/10.48546/workflowhub.workflow.56.1>
 
-[84] M. Lynch and P. Sefton (2022):  
+[84] M. Lynch and Peter Sefton (2022):  
 **npm: ro-crate-excel**.  
 _npm_ <https://www.npmjs.com/package/ro-crate-excel>
 
@@ -1385,14 +1385,14 @@ _npm_ <https://www.npmjs.com/package/ro-crate-excel>
 **Managing large files – GitHub Docs**.  
 <https://docs.github.com/en/repositories/working-with-files/managing-large-files>
 
-[86] J.A. McMurry, N. Juty, N. Blomberg, T. Burdett, T. Conlin, N. Conte, M. Courtot, J. Deck, M. Dumontier, D.K. Fellows, A. Gonzalez-Beltran, P. Gormanns, J. Grethe, J. Hastings, J.-K. Hériché, H. Hermjakob, J.C. Ison, R.C. Jimenez, S. Jupp, J. Kunze, C. Laibe, N. Le Novère, J. Malone, M.J. Martin, J.R. McEntyre, C. Morris, J. Muilu, W. Müller, P. Rocca-Serra, S.-A. Sansone, M. Sariyar, J.L. Snoep, S. Soiland-Reyes, N.J. Stanford, N. Swainston, N. Washington, A.R. Williams, S.M. Wimalaratne, L.M. Winfree, K. Wolstencroft, C. Goble, C.J. Mungall, M.A. Haendel and H. Parkinson (2017):  
+[86] <small>Julie A McMurry, Nick Juty, Niklas Blomberg, Tony Burdett, Tom Conlin, Nathalie Conte, Mélanie Courtot, John Deck, Michel Dumontier, Donal K Fellows, Alejandra Gonzalez-Beltran, Philipp Gormanns, Jeffrey Grethe, Janna Hastings, Jean-Karim Hériché, Henning Hermjakob, Jon C Ison, Rafael C Jimenez, Simon Jupp, John Kunze, Camille Laibe, Nicolas Le Novère, James Malone, Maria Jesus Martin, Johanna R McEntyre, Chris Morris, Juha Muilu, Wolfgang Müller, Philippe Rocca-Serra, Susanna-Assunta Sansone, Murat Sariyar, Jacky L Snoep, Stian Soiland-Reyes, Natalie J Stanford, Neil Swainston, Nicole Washington, Alan R Williams, Sarala M Wimalaratne, Lilly M Winfree, Katherine Wolstencroft, Carole Goble, Cristopher J Mungall, Melissa A Haendel, Helen Parkinson</small> (2017):  
 **Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data**.  
 _PLOS Biology_ **15**(6):e2001414.   
 <https://doi.org/10.1371/journal.pbio.2001414>
 
 [87] T. Miksa, M. Jaoua and G. Arfaoui (2020):  
 **Research object crates and machine-actionable data management plans**.  
-in: _1st Workshop on Research Data Management for Linked Open Science_.   
+_1st Workshop on Research Data Management for Linked Open Science_.   
 <https://doi.org/10.4126/frl01-006423291>
 
 [88] T. Miksa, S. Simms, D. Mietchen and S. Jones (2019):  
@@ -1400,35 +1400,41 @@ in: _1st Workshop on Research Data Management for Linked Open Science_.
 _PLOS Computational Biology_ **15**(3): e1006750.   
 <https://doi.org/10.1371/journal.pcbi.1006750>
 
-[89] S. Möller, H.N. Krabbenhöft, A. Tille, D. Paleino, A. Williams, K. Wolstencroft, C. Goble, R. Holland, D. Belhachemi and C. Plessy (2010):  
+[89] Steffen Möller, Hajo Nils Krabbenhöft, Andreas Tille, David Paleino, Alan Williams, Katy Wolstencroft, Carole Goble, Richard Holland, Dominique Belhachemi, Charles Plessy (2010):  
 **Community-driven computational biology with Debian Linux**.  
 _BMC Bioinformatics_ **11**(Suppl 12):S5.   
 <https://doi.org/10.1186/1471-2105-11-S12-S5>
 
-[90] S. Möller, S.W. Prescott, L. Wirzenius, P. Reinholdtsen, B. Chapman, P. Prins, S. Soiland-Reyes, F. Klötzl, A. Bagnacani, M. Kalaš, A. Tille and M.R. Crusoe (2017):  
+[90] Steffen Möller, Stuart W. Prescott, Lars Wirzenius; Petter Reinholdtsen, Brad Chapman, Pjotr Prins, Stian Soiland-Reyes, Fabian Klötzl, Andrea Bagnacani, Matúš Kalaš, Andreas Tille, Michael R. Crusoe (2017):  
 **Robust cross-platform workflows: How technical and scientific communities collaborate to develop, test and share best practices for data analysis**.  
 _Data Science and Engineering_ **2**(3) pp. 232–244.   
 <https://doi.org/10.1007/s41019-017-0050-4>
 
-[91] B. Mons (2018):  
+[91] Barend Mons (2018):  
 **Data Stewardship for Open Science**, 1st edn. Taylor & Francis, p. 240. [ISBN 9781315351148](https://identifiers.org/isbn/9781315351148).
 
 [92] myExperiment (2009):  
 **myExperiment Ontology Modules**.  
-_Internet Archive_ <https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies>
+_myExperiment_ / _Internet Archive_  
+<https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies>
 
 [93] D. Newman, S. Bechhofer and D. De Roure (2009):  
 **myExperiment: An ontology for e-Research**.  
-in: _Proceedings of the Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009)_, T. Clark, J.S. Luciano, M.S. Marshall, E. Prud’Hommeaux and S. Stephens, eds, _CEUR Workshop Proceedings_ **523**, CEUR-WS, 2009. ISSN 1613-0073. <http://ceur-ws.org/Vol-523/Newman.pdf>
+in: _Proceedings of the Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009)_, T. Clark, J.S. Luciano, M.S. Marshall, E. Prud’Hommeaux and S. Stephens, eds,  
+_CEUR Workshop Proceedings_ **523**. ISSN 1613-0073.  
+<http://ceur-ws.org/Vol-523/Newman.pdf>
 
-[94] C. Neylon (2017):  
+[94] Cameron Neylon (2017):  
 **As a researcher … I’m a bit bloody fed up with Data Management**.  
+_Science in the Open_ (blog)
 <https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/>.
 
 [95] npm:  
-**ro-crate-html-js**, <https://www.npmjs.com/package/ro-crate-html-js>
+**ro-crate-html-js**  
+<https://www.npmjs.com/package/ro-crate-html-js>
 
-[96] **OCFL, Oxford Common File Layout Specification**, Recommendation, 2020. <https://ocfl.io/1.0/spec/>
+[96] **OCFL, Oxford Common File Layout Specification**, Recommendation, 2020.  
+<https://ocfl.io/1.0/spec/>
 
 [97] A. Piper (2020):  
 **Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters**.  
@@ -1439,7 +1445,7 @@ _History Australia_ **17**(3) pp. 525–541.
 **RDF 1.1 Concepts and Abstract Syntax**.  
 _W3C Recommendation_ 25 Feb 2014. <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>.
 
-[99] H.L. Rehm, A.J.H. Page, L. Smith, J.B. Adams, G. Alterovitz, L.J. Babb, M.P. Barkley, M. Baudis, M.J.S. Beauvais, T. Beck, J.S. Beckmann, S. Beltran, D. Bernick, A. Bernier, J.K. Bonfield, T.F. Boughtwood, G. Bourque, S.R. Bowers, A.J. Brookes, M. Brudno, M.H. Brush, D. Bujold, T. Burdett, O.J. Buske, M.N. Cabili, D.L. Cameron, R.J. Carroll, E. Casas-Silva, D. Chakravarty, B.P. Chaudhari, S.H. Chen, J.M. Cherry, J. Chung, M. Cline, H.L. Clissold, R.M. Cook-Deegan, M. Courtot, F. Cunningham, M. Cupak, R.M. Davies, D. Denisko, M.J. Doerr, L.I. Dolman, E.S. Dove, L.J. Dursi, S.O.M. Dyke, J.A. Eddy, K. Eilbeck, K.P. Ellrott, S. Fairley, K.A. Fakhro, H.V. Firth, M.S. Fitzsimons, M. Fiume, P. Flicek, I.M. Fore, M.A. Freeberg, R.R. Freimuth, L.A. Fromont, J. Fuerth, C.L. Gaff, W. Gan, E.M. Ghanaim, D. Glazer, R.C. Green, M. Griffith, O.L. Griffith, R.L. Grossman, T. Groza, J.M. Guidry Auvil, R. Guigó, D. Gupta, M.A. Haendel, A. Hamosh, D.P. Hansen, R.K. Hart, D.M. Hartley, D. Haussler, R.M. Hendricks-Sturrup, C.W.L. Ho, A.E. Hobb, M.M. Hoffman, O.M. Hofmann, P. Holub, J.S. Hsu, J.-P. Hubaux, S.E. Hunt, A. Husami, J.O. Jacobsen, S.S. Jamuar, E.L. Janes, F. Jeanson, A. Jené, A.L. Johns, Y. Joly, S.J.M. Jones, A. Kanitz, K. Kato, T.M. Keane, K. Kekesi-Lafrance, J. Kelleher, G. Kerry, S.-S. Khor, B.M. Knoppers, M.A. Konopko, K. Kosaki, M. Kuba, J. Lawson, R. Leinonen, S. Li, M.F. Lin, M. Linden, X. Liu, I.U. Liyanage, J. Lopez, A.M. Lucassen, M. Lukowski, A.L. Mann, J. Marshall, M. Mattioni, A. Metke-Jimenez, A. Middleton, R.J. Milne, F. Molnár-Gábor, N. Mulder, M.C. Munoz-Torres, R. Nag, H. Nakagawa, J. Nasir, A. Navarro, T.H. Nelson, A. Niewielska, A. Nisselle, J. Niu, T.H. Nyrönen, B.D. O’Connor, S. Oesterle, S. Ogishima, V. Ota Wang, L.A.D. Paglione, E. Palumbo, H.E. Parkinson, A.A. Philippakis, A.D. Pizarro, A. Prlic, J. Rambla, A. Rendon, R.A. Rider, P.N. Robinson, K.W. Rodarmer, L.L. Rodriguez, A.F. Rubin, M. Rueda, G.A. Rushton, R.S. Ryan, G.I. Saunders, H. Schuilenburg, T. Schwede, S. Scollen, A. Senf, N.C. Sheffield, N. Skantharajah, A.V. Smith, H.J. Sofia, D. Spalding, A.B. Spurdle, Z. Stark, L.D. Stein, M. Suematsu, P. Tan, J.A. Tedds, A.A. Thomson, A. Thorogood, T.L. Tickle, K. Tokunaga, J. Törnroos, D. Torrents, S. Upchurch, A. Valencia, R.V. Guimera, J. Vamathevan, S. Varma, D.F. Vears, C. Viner, C. Voisin, A.H. Wagner, S.E. Wallace, B.P. Walsh, M.S. Williams, E.C. Winkler, B.J. Wold, G.M. Wood, J.P. Woolley, C. Yamasaki, A.D. Yates, C.K. Yung, L.J. Zass, K. Zaytseva, J. Zhang, P. Goodhand, K. North and E. Birney (2021):  
+[99] <small>Heidi L. Rehm, Angela J.H. Page, Lindsay Smith, Jeremy B. Adams, Gil Alterovitz, Lawrence J. Babb, Maxmillian P. Barkley, Michael Baudis, Michael J.S. Beauvais, Tim Beck, Jacques S. Beckmann, Sergi Beltran, David Bernick, Alexander Bernier, James K. Bonfield, Tiffany F. Boughtwood, Guillaume Bourque, Sarion R. Bowers, Anthony J. Brookes, Michael Brudno, Matthew H. Brush, David Bujold, Tony Burdett, Orion J. Buske, Moran N. Cabili, Daniel L. Cameron, Robert J. Carroll, Esmeralda Casas-Silva, Debyani Chakravarty, Bimal P. Chaudhari, Shu Hui Chen, J. Michael Cherry, Justina Chung, Melissa Cline, Hayley L. Clissold, Robert M. Cook-Deegan, Mélanie Courtot, Fiona Cunningham, Miro Cupak, Robert M. Davies, Danielle Denisko, Megan J. Doerr, Lena I. Dolman, Edward S. Dove, L. Jonathan Dursi, Stephanie O.M. Dyke, James A. Eddy, Karen Eilbeck, Kyle P. Ellrott, Susan Fairley, Khalid A. Fakhro, Helen V. Firth, Michael S. Fitzsimons, Marc Fiume, Paul Flicek, Ian M. Fore, Mallory A. Freeberg, Robert R. Freimuth, Lauren A. Fromont, Jonathan Fuerth, Clara L. Gaff, Weiniu Gan, Elena M. Ghanaim, David Glazer, Robert C. Green, Malachi Griffith, Obi L. Griffith, Robert L. Grossman, Tudor Groza, Jaime M. Guidry Auvil, Roderic Guigó, Dipayan Gupta, Melissa A. Haendel, Ada Hamosh, David P. Hansen, Reece K. Hart, Dean Mitchell Hartley, David Haussler, Rachele M. Hendricks-Sturrup, Calvin W.L. Ho, Ashley E. Hobb, Michael M. Hoffman, Oliver M. Hofmann, Petr Holub, Jacob Shujui Hsu, Jean-Pierre Hubaux, Sarah E. Hunt, Ammar Husami, Julius O. Jacobsen, Saumya S. Jamuar, Elizabeth L. Janes, Francis Jeanson, Aina Jené, Amber L. Johns, Yann Joly, Steven J.M. Jones, Alexander Kanitz, Kazuto Kato, Thomas M. Keane, Kristina Kekesi-Lafrance, Jerome Kelleher, Giselle Kerry, Seik-Soon Khor, Bartha M. Knoppers, Melissa A. Konopko, Kenjiro Kosaki, Martin Kuba, Jonathan Lawson, Rasko Leinonen, Stephanie Li, Michael F. Lin, Mikael Linden, Xianglin Liu, Isuru Udara Liyanage, Javier Lopez, Anneke M. Lucassen, Michael Lukowski, Alice L. Mann, John Marshall, Michele Mattioni, Alejandro Metke-Jimenez, Anna Middleton, Richard J. Milne, Fruzsina Molnár-Gábor, Nicola Mulder, Monica C. Munoz-Torres, Rishi Nag, Hidewaki Nakagawa, Jamal Nasir, Arcadi Navarro, Tristan H. Nelson, Ania Niewielska, Amy Nisselle, Jeffrey Niu, Tommi H. Nyrönen, Brian D. O’Connor, Sabine Oesterle, Soichi Ogishima, Vivian Ota Wang, Laura A.D. Paglione, Emilio Palumbo, Helen E. Parkinson, Anthony A. Philippakis, Angel D. Pizarro, Andreas Prlic, Jordi Rambla, Augusto Rendon, Renee A. Rider, Peter N. Robinson, Kurt W. Rodarmer, Laura Lyman Rodriguez, Alan F. Rubin, Manuel Rueda, Gregory A. Rushton, Rosalyn S. Ryan, Gary I. Saunders, Helen Schuilenburg, Torsten Schwede, Serena Scollen, Alexander Senf, Nathan C. Sheffield, Neerjah Skantharajah, Albert V. Smith, Heidi J. Sofia, Dylan Spalding, Amanda B. Spurdle, Zornitza Stark, Lincoln D. Stein, Makoto Suematsu, Patrick Tan, Jonathan A. Tedds, Alastair A. Thomson, Adrian Thorogood, Timothy L. Tickle, Katsushi Tokunaga, Juha Törnroos, David Torrents, Sean Upchurch, Alfonso Valencia, Roman Valls Guimera, Jessica Vamathevan, Susheel Varma, Danya F. Vears, Coby Viner, Craig Voisin, Alex H. Wagner, Susan E. Wallace, Brian P. Walsh, Marc S. Williams, Eva C. Winkler, Barbara J. Wold, Grant M. Wood, J. Patrick Woolley, Chisato Yamasaki, Andrew D. Yates, Christina K. Yung, Lyndon J. Zass, Ksenia Zaytseva, Junjun Zhang, Peter Goodhand, Kathryn North, Ewan Birney</small> (2021):  
 **GA4GH: International policies and standards for data sharing across genomic research and healthcare**.  
 _Cell Genomics_ **1**(2):100029.   
 <https://doi.org/10.1016/j.xgen.2021.100029>
@@ -1454,44 +1460,44 @@ _College & Research Libraries News_ **76**(6) pp. 306–310. <http://resolver.su
 _PLOS Computational Biology_ **9**(10):e1003285.   
 <https://doi.org/10.1371/journal.pcbi.1003285>
 
-[102] L.M. Schriml, M. Chuvochina, N. Davies, E.A. Eloe-Fadrosh, R.D. Finn, P. Hugenholtz, C.I. Hunter, B.L. Hurwitz, N.C. Kyrpides, F. Meyer, I.K. Mizrachi, S.-A. Sansone, G. Sutton, S. Tighe and R. Walls (2020):  
+[102] Lynn M. Schriml, Maria Chuvochina, Neil Davies, Emiley A. Eloe-Fadrosh, Robert D. Finn, Philip Hugenholtz, Christopher I. Hunter, Bonnie L. Hurwitz, Nikos C. Kyrpides, Folker Meyer, Ilene Karsch Mizrachi, Susanna-Assunta Sansone, Granger Sutton, Scott Tighe, Ramona Walls (2020):  
 **COVID-19 pandemic reveals the peril of ignoring metadata standards**.  
 _Scientific Data_ **7**(1):188.   
 <https://doi.org/10.1038/s41597-020-0524-5>
 
-[103] P. Sefton, G. Devine, C. Evenhuis, M. Lynch, S. Wise, M. Lake and D. Loxton (2018):  
+[103] Peter Sefton, G. Devine, C. Evenhuis, M. Lynch, S. Wise, M. Lake and D. Loxton (2018):  
 **DataCrate: a method of packaging, distributing, displaying and archiving Research Objects**.  
 in: _Workshop on Research Objects (RO 2018)_, 29 Oct 2018 at IEEE eScience 2018, Amsterdam, Netherland. _Zenodo_   
 <https://doi.org/10.5281/zenodo.1445817>
 
-[104] P. Sefton (2021):  
+[104] Peter Sefton (2021):  
 **FAIR Data Management; It’s a lifestyle not a lifecycle**.  
 _ptsefton.com_. <http://ptsefton.com/2021/04/07/rdmpic/>
 
-[105] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall and T. Thelen (2019):  
+[105] <small>Peter Sefton, Eoghan Ó Carragáin, Stian Soiland-Reyes, Oscar Corcho, Daniel Garijo, Raul Palma, Frederik Coppens, Carole Goble, José María Fernández, Kyle Chard, Jose Manuel Gomez-Perez, Michael R Crusoe, Ignacio Eguinoa, Nick Juty, Kristi Holmes, Jason A. Clark, Salvador Capella-Gutierrez, Alasdair J. G. Gray, Stuart Owen, Alan R. Williams, Giacomo Tartari, Finn Bacall, Thomas Thelen</small> (2019):  
 **RO-Crate Metadata Specification 1.0**.  
 <https://doi.org/10.5281/zenodo.3541888>
 
-[106] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L.R.-N. Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst, S. Leo and M. Portier (2021):  
+[106] <small>Peter Sefton, Eoghan Ó Carragáin, Stian Soiland-Reyes, Oscar Corcho, Daniel Garijo, Raul Palma, Frederik Coppens, Carole Goble, José María Fernández, Kyle Chard, Jose Manuel Gomez-Perez, Michael R Crusoe, Ignacio Eguinoa, Nick Juty, Kristi Holmes, Jason A. Clark, Salvador Capella-Gutierrez, Alasdair J. G. Gray, Stuart Owen, Alan R. Williams, Giacomo Tartari, Finn Bacall, Thomas Thelen, Hervé Ménager, Laura Rodríguez-Navas, Paul Walk, brandon whitehead, Mark Wilkinson, Paul Groth, Erich Bremer, LJ Garcia Castro, Karl Sebby, Alexander Kanitz, Ana Trisovic, Gavin Kennedy, Mark Graves, Jasper Koehorst, Simone Leo, Marc Portier</small> (2021):  
 **RO-Crate Metadata Specification 1.1.1**.  
 <https://doi.org/10.5281/zenodo.4541002>
 
-[107] P. Sefton, E. Ó Carragáin, S. Soiland-Reyes, O. Corcho, D. Garijo, R. Palma, F. Coppens, C. Goble, J.M. Fernández, K. Chard, J.M. Gomez-Perez, M.R. Crusoe, I. Eguinoa, N. Juty, K. Holmes, J.A. Clark, S. Capella-Gutierrez, A.J.G. Gray, S. Owen, A.R. Williams, G. Tartari, F. Bacall, T. Thelen, H. Ménager, L. Rodríguez-Navas, P. Walk, B. Whitehead, M. Wilkinson, P. Groth, E. Bremer, L.G. Castro, K. Sebby, A. Kanitz, A. Trisovic, G. Kennedy, M. Graves, J. Koehorst and S. Leo (2020):  
+[107] <small>Peter Sefton, Eoghan Ó Carragáin, Stian Soiland-Reyes, Oscar Corcho, Daniel Garijo, Raul Palma, Frederik Coppens, Carole Goble, José María Fernández, Kyle Chard, Jose Manuel Gomez-Perez, Michael R Crusoe, Ignacio Eguinoa, Nick Juty, Kristi Holmes, Jason A. Clark, Salvador Capella-Gutierrez, Alasdair J. G. Gray, Stuart Owen, Alan R. Williams, Giacomo Tartari, Finn Bacall, Thomas Thelen, Hervé Ménager, Laura Rodríguez-Navas, Paul Walk, brandon whitehead, Mark Wilkinson, Paul Groth, Erich Bremer, LJ Garcia Castro, Karl Sebby, Alexander Kanitz, Ana Trisovic, Gavin Kennedy, Mark Graves, Jasper Koehorst, Simone Leo</small> (2020):  
 **RO-Crate Metadata Specification 1.1**.  
 <https://doi.org/10.5281/zenodo.4031327>
 
-[108] S. Soiland-Reyes (2020):  
+[108] Stian Soiland-Reyes (2020):  
 **I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**, _Twitter_ <https://twitter.com/soilandreyes/status/1250721245622079488>
 
-[109] S. Soiland-Reyes (2021):  
+[109] Stian Soiland-Reyes (2021):  
 **Describing and packaging workflows using RO-Crate and BioCompute Objects** _Zenodo_, Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12.   
 <https://doi.org/10.5281/zenodo.4633732>
 
-[110] S. Soiland-Reyes, P. Alper and C. Goble (2016):  
+[110] Stian Soiland-Reyes, P. Alper and Carole Goble (2016):  
 **Tracking Workflow Execution With TavernaPROV**, _ProvenanceWeek 2016_, session "PROV: Three Years Later". <https://s11.no/2016/provweek-tavernaprov/>   
 <https://doi.org/10.5281/zenodo.51314>
 
-[111] S. Soiland-Reyes, M. Gamble and R. Haines (2014):  
+[111] Stian Soiland-Reyes, M. Gamble and R. Haines (2014):  
 **Research Object Bundle 1.0**.  
 <https://w3id.org/bundle/2014-11-05/> <https://doi.org/10.5281/zenodo.12586>.
 
@@ -1504,19 +1510,23 @@ _Science_ **354**(6317) pp. 1240–1241.
 <https://doi.org/10.1126/science.aah6168>
 
 [114] N. Thieberger and L. Barwick (2012):  
-**Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC)**, in: _Melanesian Languages on the Edge of Asia: Challenges for the 21st Century_, N. Evans and M. Klamer, eds, _Language Documentation & Conservation Special Publication_ **SP05** University of Hawai’i Press, pp. 239–253. ISBN 978-0-9856211-2-4] <http://hdl.handle.net/10125/4567>
+**Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC)**, in: _Melanesian Languages on the Edge of Asia: Challenges for the 21st Century_, N. Evans and M. Klamer, eds,  
+_Language Documentation & Conservation Special Publication_ **SP05** University of Hawai’i Press, pp. 239–253. ISBN 978-0-9856211-2-4  
+<http://hdl.handle.net/10125/4567>
 
 [115] **Tools: Data Portal & Discovery**.  
 <https://arkisto-platform.github.io/tools/portal/>
 
 [116] R. Troncy, W. Bailer, M. Höffernig and M. Hausenblas (2010):  
 **VAMP: A service for validating MPEG-7 descriptions w.r.t. to formal profile definitions**.  
-_Multimedia tools and applications_ **46**(2–3) pp. 307–329. <https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511>   
+_Multimedia tools and applications_ **46**(2–3) pp. 307–329.  
+<https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511>   
 <https://doi.org/10.1007/s11042-009-0397-2>
 
-[117] H. Van de Sompel and C. Lagoze (2007):  
+[117] Herbert Van de Sompel, Carl Lagoze (2007):  
 **Interoperability for the discovery, use, and re-use of units of scholarly communication**.  
-_CTWatch Quarterly_ **3**(3). <http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/>
+_CTWatch Quarterly_ **3**(3).  
+<http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/>
 
 [118] T. Vergoulis, K. Zagganas, L. Kavouras, M. Reczko, S. Sartzetakis and T. Dalamagas (2021):  
 **SCHeMa: Scheduling Scientific Containers on a Cluster of Heterogeneous Machines**.  
@@ -1536,7 +1546,7 @@ Draft Tag Finding, 2007. <https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-3
 _Research Data Alliance_   
 <https://doi.org/10.15497/rda00039>
 
-[122] S. Walton, L. Livermore, O. Bánki, R. Cubey, R. Drinkwater, M. Englund, C. Goble, Q. Groom, C. Kermorvant, I. Rey, C. Santos, B. Scott, A. Williams and Z. Wu (2020):  
+[122] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert W. N. Cubey, Robyn Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher Kermorvant, Isabel Rey, Celia M Santos, Ben Scott, Alan R. Williams, Zhengzhe Wu (2020):  
 **Landscape analysis for the specimen data refinery**.  
 _Research Ideas and Outcomes_ **6**.  
 <https://doi.org/10.3897/rio.6.e57602>
