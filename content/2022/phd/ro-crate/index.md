@@ -992,12 +992,12 @@ _Zenodo/AGU_
 <https://data.agu.org/DataCitationCoP/2nd-workshop-data-citation>  
 <https://doi.org/10.5281/zenodo.4916734>
 
-[3] R. Albertoni, D. Browning, S. Cox, A. Gonzalez Beltran, A. Perego, P. Winstanley and Dataset Exchange Working Group (2020):  
+[3] Riccardo Albertoni, David Browning, Simon Cox, Alejandra Gonzalez Beltran, Andrea Perego, Peter Winstanley, Dataset Exchange Working Group (2020):  
 **Data Catalog Vocabulary (DCAT) – Version 2**.  
 _W3C Recommendation_ (2020)  
 <https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/>
 
-[4] A. Almeida, A.L. Mitchell, M. Boland, S.C. Forster, G.B. Gloor, A. Tarkowska, T.D. Lawley and R.D. Finn (2019):  
+[4] Alexandre Almeida, Alex L. Mitchell, Miguel Boland, Samuel C. Forster, Gregory B. Gloor, Aleksandra Tarkowska, Trevor D. Lawley, Robert D. Finn (2019):  
 **A new genomic blueprint of the human gut microbiota**.  
 _Nature_ **568**(7753) 499–504.   
 <https://doi.org/10.1038/s41586-019-0965-1>
@@ -1007,73 +1007,76 @@ _Nature_ **568**(7753) 499–504.
 _PLOS Biology_ **16**(12):e3000099   
 <https://doi.org/10.1371/journal.pbio.3000099>
 
-[6] R.C. Amorim, J.A. Castro, J. Rocha da Silva and C. Ribeiro (2016):  
+[6] Ricardo Carvalho Amorim, João Aguiar Castro, João Rocha da Silva, Cristina Ribeiro (2016):  
 **A comparison of research data management platforms: Architecture, flexible metadata and interoperability**.  
 _Universal Access in the Information Society_ **16** pp 851–862.   
 <https://doi.org/10.1007/s10209-016-0475-y>
 
-[7] G. Arfaoui and M. Jaoua (2020):  
+[7] Ghaith Arfaoui, Maroua Jaoua (2020):  
 **RO-Crate RDA maDMP Mapper**.  
 _Zenodo_ <https://github.com/GhaithArf/ro-crate-rda-madmp-mapper>   
 <https://doi.org/10.5281/zenodo.3922136>
 
-[8] Finn Bacall, Stian Soiland-Reyes and M. Soares e Silva (2019):  
+[8] Finn Bacall, Stian Soiland-Reyes, Marina Soares e Silva (2019):  
 **eScienceLab: RO-Composer**.  
-<https://esciencelab.org.uk/projects/ro-composer/> <https://github.com/ResearchObject/research-object-composer>
+<https://esciencelab.org.uk/projects/ro-composer/>  
+<https://github.com/ResearchObject/research-object-composer>
 
-[9] Finn Bacall and M. Whitwell (2022):  
+[9] Finn Bacall, Martyn Whitwell (2022):  
 **GitHub – ResearchObject/ro-crate-ruby: A Ruby gem for creating, manipulating and reading RO-Crates**.  
 <https://github.com/ResearchObject/ro-crate-ruby>
 
-[10] D. Baker, M. van den Beek, D. Blankenberg, D. Bouvier, J. Chilton, N. Coraor, F. Coppens, I. Eguinoa, S. Gladman, B. Grüning, N. Keener, D. Larivière, A. Lonie, S. Kosakovsky Pond, W. Maier, A. Nekrutenko, J. Taylor and S. Weaver (2020):  
+[10] Dannon Baker, Marius van den Beek, Daniel Blankenberg, Dave Bouvier, John Chilton, Nate Coraor, Frederik Coppens, Ignacio Eguinoa, Simon Gladman, Björn Grüning, Nicholas Keener, Delphine Larivière, Andrew Lonie, Sergei Kosakovsky Pond, Wolfgang Maier, Anton Nekrutenko, James Taylor, Steven Weaver (2020):  
 **No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics**.  
 _PLOS Pathogens_ **16**(8):e1008643.   
 <https://doi.org/10.1371/journal.ppat.1008643>
 
-[11] M. Barker, R. Wilkinson and A. Treloar (2019):  
+[11] Michelle Barker, Ross Wilkinson, Andrew Treloar (2019):  
 **The Australian Research Data Commons**, _Data Science Journal_ **18** (2019).   
 <https://doi.org/10.5334/dsj-2019-044>
 
-[12] S. Bechhofer, I. Buchan, D. De Roure, P. Missier, J. Ainsworth, J. Bhagat, P. Couch, D. Cruickshank, M. Delderfield, I. Dunlop, M. Gamble, D. Michaelides, S. Owen, D. Newman, S. Sufi and Carole Goble (2013):  
+[12] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):  
 **Why Linked Data is not enough for scientists**.  
 _Future Generation Computer Systems_ **29**(2), pp. 599–611.   
 <https://doi.org/10.1016/j.future.2011.08.004>
 
-[13] K. Belchev (2021):  
+[13] Kostadin Belchev (2021):  
 **KockataEPich/CheckMyCrate: A command line application for validating a RO-Crate object against a JSON profile**.  
 _GitHub_.  
 <https://github.com/KockataEPich/CheckMyCrate>
 
-[14] K. Belhajjame, J. Zhao, D. Garijo, M. Gamble, K. Hettne, R. Palma, E. Mina, O. Corcho, J.M. Gómez-Pérez, S. Bechhofer, G. Klyne and Carole Goble (2015):  
+[14] Khalid Belhajjame, Jun Zhao, Daniel Garijo, Matthew Gamble, Kristina Hettne, Raul Palma, Eleni Mina, Oscar Corcho, José Manuel Gómez-Pérez, Sean Bechhofer, Graham Klyne, Carole Goble (2015):  
 **Using a suite of ontologies for preserving workflow-centric research objects**.  
 _Web Semantics: Science, Services and Agents on the World Wide Web_ **32** pp. 16–42.   
 <https://doi.org/10.1016/j.websem.2015.01.003>
 
-[15] F.C.Y. Benureau and N.P. Rougier (2017):  
+[15] Fabien C. Y. Benureau, Nicolas P. Rougier (2017):  
 **Re-run, repeat, reproduce, reuse, replicate: Transforming code into scientific contributions**.  
 _Frontiers in Neuroinformatics_ **11**:69.   
 <https://doi.org/10.3389/fninf.2017.00069>
 
-[16] H. Berman, K. Henrick, H. Nakamura and J.L. Markley (2007):  
+[16] Helen Berman, Kim Henrick, Haruki Nakamura, John L Markley (2007):  
 **The worldwide Protein Data Bank (wwPDB): Ensuring a single, uniform archive of PDB data**.  
 _Nucleic Acids Research_ **35**(Database issue) , D301–D303.   
 <https://doi.org/10.1093/nar/gkl971>
 
-[17] F. Bietrix, J.M. Carazo, S. Capella-Gutierrez, F. Coppens, M.L. Chiusano, R. David, J.M. Fernandez, M. Fratelli, J.-K. Heriche, Carole Goble, P. Gribbon, P. Holub, R.P. Joosten, S. Leo, S. Owen, H. Parkinson, R. Pieruschka, L. Pireddu, L. Porcu, M. Raess, L. Rodriguez- Navas, A. Scherer, Stian Soiland-Reyes and J. Tang (2021):  
+[17] Florence Bietrix, José Maria Carazo, Salvador Capella-Gutierrez, Frederik Coppens, Maria Luisa Chiusano, Romain David, Jose Maria Fernandez, Maddalena Fratelli, Jean-Karim Heriche, Carole Goble, Philip Gribbon, Petr Holub, Robbie Joosten, Simone Leo, Stuart Owen, Helen Parkinson, Roland Pieruschka, Luca Pireddu, Luca Porcu, Michael Raess, Laura Rodriguez-Navas, Andreas Scherer, Stian Soiland-Reyes, Jing Tang (2021):  
 **EOSC-life methodology framework to enhance reproducibility within EOSC-life**.  
-_Zenodo_. <https://doi.org/10.5281/zenodo.4705078>
+_Zenodo_  
+<https://doi.org/10.5281/zenodo.4705078>
 
-[18] C. Bizer, T. Heath and T. Berners-Lee (2011):  
+[18] Christian Bizer, Tom Heath, Tim Berners-Lee (2011):  
 **Linked data: The story so far**.  
-In _Semantic Services, Interoperability and Web Applications: Emerging Concepts_, A. Sheth, ed., IGI Global, 2011, pp. 205–227. ISBN 9781609605933.   
+In _Semantic Services, Interoperability and Web Applications: Emerging Concepts_, Amit Sheth (ed.) 
+ISBN 9781609605933   
 <https://doi.org/10.4018/978-1-60960-593-3.ch008>
 
-[19] A. Brand, L. Allen, M. Altman, M. Hlava and J. Scott (2015):  
+[19] Amy Brand, Liz Allen, Micah Altman, Marjorie Hlava, Jo Scott (2015):  
 **Beyond authorship: Attribution, contribution, collaboration, and credit**.  
 _Learned Publishing_ **28**(2) pp. 151–155.   
 <https://doi.org/10.1087/20150211>
 
-[20] G. Brenner (2020):  
+[20] Gabriel Brenner (2020):  
 **BrennerG/Ro-Crate\_2\_ma-DMP: v1.0.0**.  
 <https://github.com/BrennerG/Ro-Crate_2_ma-DMP>  
 <https://doi.org/10.5281/zenodo.3903463>
@@ -1084,9 +1087,10 @@ _PUBLISSO_.
 <https://repository.publisso.de/resource/frl:6423289>   
 <https://doi.org/10.4126/frl01-006423289>
 
-[22] J. Cardoso, D. Proença and J. Borbinha (2020):  
+[22] João Cardoso, Diogo Proença, José Borbinha (2020):  
 **Machine-actionable data management plans: A knowledge retrieval approach to automate the assessment of funders’ requirements**.  
-in: _Advances in Information Retrieval_, J.M. Jose, E. Yilmaz, J. Magalhães, P. Castells, N. Ferro, M.J. Silva and F. Martins (eds.). ISBN 978-3-030-45442-5.   
+_ECIR 2020: Advances in Information Retrieval_  
+ISBN 978-3-030-45442-5.   
 <https://doi.org/10.1007/978-3-030-45442-5_15>
 
 [23] Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
@@ -1095,59 +1099,60 @@ _Bioinformatics Open Source Conference (BOSC2019)_, 2019-07-24/2019-07-25, Basel
 _Zenodo_.   
 <https://doi.org/10.5281/zenodo.3250687>
 
-[24] L.M. Chan (1995):  
-**Library of Congress Subject Headings: Principles and Application**, 3rd edn, p. 556. <https://eric.ed.gov/?id=ED387146>.  
+[24] Lois Mai Chan (1995):  
+**Library of Congress Subject Headings: Principles and Application**, 3rd edn, p. 556.  
 [ISBN 9781563081910](https://identifiers.org/isbn/9781563081910).
 
-[25] K. Chard, M. D’Arcy, B. Heavner, I. Foster, C. Kesselman, R. Madduri, A. Rodriguez, Stian Soiland-Reyes, Carole Goble, K. Clark, E.W. Deutsch, I. Dinov, N. Price and A. Toga (2016):  
+[25] Kyle Chard, Mike D’ Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):  
 **I’ll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets**.  
 _2016 IEEE International Conference on Big Data (Big Data)_, IEEE, pp. 319–328.  
 ISBN 978-1-4673-9005-7.   
 <https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf>  
 <https://doi.org/10.1109/BigData.2016.7840618>
 
-[26] K. Chard, N. Gaffney, M.B. Jones, K. Kowalik, B. Ludascher, T. McPhillips, J. Nabrzyski, V. Stodden, I. Taylor, T. Thelen, M.J. Turk and C. Willis (2019):  
+[26] Kyle Chard, Niall Gaffney, Matthew B. Jones, Kacper Kowalik, Bertram Ludascher, Timothy McPhillips, Jarek Nabrzyski, Victoria Stodden, Ian Taylor, Thomas Thelen, Matthew J. Turk, Craig Willis (2019):  
 **Application of BagIt-serialized research object bundles for packaging and re-execution of computational analyses**.  
 _15th International Conference on eScience (eScience 2019)_, IEEE, pp. 514–521.  
 ISBN 978-1-7281-2451-3.   
 <https://zenodo.org/record/3381754>  
 <https://doi.org/10.1109/eScience.2019.00068>
 
-[27] K. Chard, S. Tuecke and I. Foster (2014):  
+[27] Kyle Chard, Steven Tuecke and Ian Foster (2014):  
 **Efficient and secure transfer, synchronization, and sharing of big data**.  
 _IEEE Cloud Computing_ **1**(3) pp. 46–55.   
 <https://doi.org/10.1109/MCC.2014.52>
 
-[28] P. Ciccarese, R. Sanderson and B. Young (2017):  
+[28] Paolo Ciccarese, Robert Sanderson, Benjamin Young (2017):  
 **Web Annotation Data Model**.   
-_W3C Recommendation_, W3C.  
+_W3C Recommendation_ 23 February 2017.
 <https://www.w3.org/TR/2017/REC-annotation-model-20170223/>
 
-[29] J.F. Claerbout and M. Karrenbach (1992):  
+[29] Jon F. Claerbout, Martin Karrenbach (1992):  
 **Electronic documents give reproducible research a new meaning**.  
 _SEG Technical Program Expanded Abstracts 1992_, Society of Exploration Geophysicists, pp. 601–604.   
 <https://doi.org/10.1190/1.1822162>
 
-[30] S. Cohen-Boulakia, K. Belhajjame, O. Collin, J. Chopard, C. Froidevaux, A. Gaignard, K. Hinsen, P. Larmande, Y.L. Bras, F. Lemoine, F. Mareuil, H. Ménager, C. Pradal and C. Blanchet (2017):  
+[30] <small>Sarah Cohen-Boulakia, Khalid Belhajjame, Olivier Collin, Jérôme Chopard, Christine Froidevaux, Alban Gaignard, Konrad Hinsen, Pierre Larmande, Yvan Le Bras, Frédéric Lemoine, Fabien Mareuil, Hervé Ménager, Christophe Pradal, Christophe Blanchet</small> (2017):  
 **Scientific workflows for computational reproducibility in the life sciences: Status, challenges and opportunities**.  
 _Future Generation Computer Systems_ **75** pp. 284–298.   
 <https://doi.org/10.1016/j.future.2017.01.012>
 
-[31] S. Cossu, E. Cowles, K. Estlund, C. Harlow, T. Johnson, M. Matienzo, D. Lamb, L. Rayle, R. Sanderson, J. Stroop and A. Woods (2018):  
+[31] Stefano Cossu, Esmé Cowles, Karen Estlund, Christina Harlow, Tom Johnson, Mark Matienzo, Danny Lamb, Lynette Rayle, Rob Sanderson, Jon Stroop, Andrew Woods (2018):  
 **Portland Common Data Model**.  
+_GitHub duraspace/pcdm Wiki_ (2018-06-15)
 <https://github.com/duraspace/pcdm/wiki>
 
-[32] M. Crosas (2011):  
+[32] Mercè Crosas (2011):  
 **The DataVerse Network: An open-source application for sharing, discovering and preserving data**.  
 _D-Lib Magazine_ **17**(1/2)a   
 <https://doi.org/10.1045/january2011-crosas>
 
-[33] M. Crosas (2020):  
+[33] Mercè Crosas (2020):  
 **Harvard Data Commons**.  
 _European Dataverse Workshop 2020_, Tromsø, Norway. ISSN 2387-3086.   
 <https://doi.org/10.7557/5.5422>
 
-[34] L.C. Crosswell and J.M. Thornton (2012):  
+[34] Lindsey C Crosswell, Janet M Thornton (2012):  
 **ELIXIR: A distributed infrastructure for European biological data**.  
 _Trends in Biotechnology_ **30**(5) pp. 241–242.   
 <https://doi.org/10.1016/j.tibtech.2012.02.002>
@@ -1156,32 +1161,32 @@ _Trends in Biotechnology_ **30**(5) pp. 241–242.
 **LifeMonitor, a testing and monitoring service for scientific workflows**.  
 <https://about.lifemonitor.eu/>
 
-[36] M.R. Crusoe, S. Abeln, A. Iosup, P. Amstutz, J. Chilton, N. Tijanić, H. Ménager, Stian Soiland-Reyes and Carole Goble (2022):  
+[36] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble (2022):  
 **Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.  
 _Communications of the ACM_, accepted. <https://arxiv.org/abs/2105.07028>   
 <https://doi.org/10.1145/3486897>
 
-[37] F. da Veiga Leprevost, B.A. Grüning, S. Alves Aflitos, H.L. Röst, J. Uszkoreit, H. Barsnes, M. Vaudel, P. Moreno, L. Gatto, J. Weber, M. Bai, R.C. Jimenez, T. Sachsenberg, J. Pfeuffer, R. Vera Alvarez, J. Griss, A.I. Nesvizhskii and Y. Perez-Riverol (2017):  
+[37] <small>Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Röst, Julian Uszkoreit, Harald Barsnes, Marc Vaudel, Pablo Moreno, Laurent Gatto, Jonas Weber, Mingze Bai, Rafael C Jimenez, Timo Sachsenberg, Julianus Pfeuffer, Roberto Vera Alvarez, Johannes Griss, Alexey I Nesvizhskii, Yasset Perez-Riverol</small> (2017):  
 **BioContainers: An open-source and community-driven framework for software standardization**.  
 _Bioinformatics_ **33**(16) pp. 2580–2582.   
 <https://doi.org/10.1093/bioinformatics/btx192>
 
-[38] K. De Smedt, D. Koureas and P. Wittenburg (2020):  
+[38] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
 **FAIR digital objects for science: From data pieces to actionable knowledge units**.  
 _Publications_ **8**(2):21   
 <https://doi.org/10.3390/publications8020021>
 
-[39] P. Di Tommaso, M. Chatzou, E.W. Floden, P.P. Barja, E. Palumbo and C. Notredame (2017):  
+[39] Paolo Di Tommaso, Maria Chatzou, Evan W Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame (2017):  
 **Nextflow enables reproducible computational workflows**.  
 _Nature Biotechnology_ **35**(4) (2017), 316–319.   
 <https://doi.org/10.1038/nbt.3820>
 
-[40] M. Dillen, Q. Groom, D. Agosti and L. Nielsen (2019):  
+[40]Mathias Dillen, Quentin Groom, Donat Agosti, Lars Nielsen (2019):  
 **Zenodo, an archive and publishing repository: A tale of two herbarium specimen pilot projects**.  
 _Biodiversity Information Science and Standards_ **3**:e37080 (2019).   
 <https://doi.org/10.3897/biss.3.37080>
 
-[41] B. Droesbeke, I. Eguinoa, A. Gaignard, L. Simone, L. Pireddu, L. Rodríguez-Navas and Stian Soiland-Reyes (2022):  
+[41] Bert Droesbeke, Ignacio Eguinoa, Alban Gaignard, Leo Simone, Luca Pireddu, Laura Rodríguez-Navas, Stian Soiland-Reyes (2022):  
 **GitHub – ResearchObject/ro-crate-py: Python library for RO-Crate**.  
 <https://github.com/researchobject/ro-crate-py>  
 <https://doi.org/10.5281/zenodo.3956493>
