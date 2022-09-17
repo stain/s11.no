@@ -4,6 +4,8 @@ date: Tue, 02 Apr 2013 16:00:38 +0000
 categories:
     - Practical Provenance
 tags: ['PROV', 'Tools', 'Tutorials', 'ProvToolbox', 'signposting']
+aliases:
+    - /2022/prov/2013/04/02/locating-provenance/
 ---
 
 This blog post shows how RESTful web services can provide, and link to, provenance data for their exposed resources by using the [PROV-AQ](http://www.w3.org/TR/prov-aq/ "PROV-AQ: Provenance access and query") mechanism of HTTP Link headers. This is demonstrated by showing how to update a _hello world_ REST service implemented with Java and [JAX-RS 2.0](http://jax-rs-spec.java.net/nonav/2.0-SNAPSHOT/apidocs/index.html "JAX-RS 2.0-SNAPSHOT javadocs") to provide these links. 
