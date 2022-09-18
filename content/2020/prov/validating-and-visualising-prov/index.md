@@ -55,7 +55,7 @@ Let's go through the PROV-N line by line:
 
 *   `prefix` maps `ex` to the URI _namespace_ starting with `http://example.com/`
     *   PROV identifiers like `ex:dataset1` can be expanded to a Linked Data global identifier `http://example.com/dataset1` (which in an ideal world would _describe_ or perhaps let you _download_ the dataset)
-    *   External vocabularies like [schema.org](http://schema.org/) can be reused, e.g. the property `'s:givenName'` expands with the prefix `s:` to form the URI [http://schema.org/givenName](http://schema.org/givenName)
+    *   External vocabularies like [schema.org](http://schema.org/) can be reused, e.g. the property `s:givenName` expands with the prefix `s:` to form the URI [http://schema.org/givenName](http://schema.org/givenName)
     *   `prefix prov <http://www.w3.org/ns/prov#>` is implicit, and is the internal namespace for PROV types and attributes.
     *   **Tip**: It is possible to declare `default <http://example.com/>` after which `ex:regionList` can be shortened to `regionList`, however it is recommended to always use explicit prefixes to ease reuse and combination of PROV-N files.
 *   `entity(ex:regionList)` declares the existence of an **entity** with that identifier. It can thereafter be used in relationships expecting an entity.
