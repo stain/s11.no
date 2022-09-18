@@ -5,10 +5,6 @@ categories:
  - Practical Provenance
 url: "/2022/prov/"
 aliases:
-    - /2013/prov/
-    - /2014/prov/
-    - /2016/prov/
-    - /2020/prov/
     - /2022/categories/practical-provenance/
 ---
 
@@ -19,9 +15,11 @@ This blog is about how to practically create and use [provenance](http://en.wiki
 Students of the course _Understanding Data and their Environment_ (UDatE) at The University of Manchester may be prefer this reading order:
 
 * [Validating and visualising PROV](/2020/prov/validating-and-visualising-prov/)
-* [Installing ProvToolbox on MacOS](/2020/prov/installing-provtoolbox-on-macos/)
+* [Installing ProvToolbox in Windows](/2020/prov/installing-provtoolbox-in-windows/)
 * [Installing ProvToolbox on MacOS](/2020/prov/installing-provtoolbox-on-macos/)
 * [FAQ: Multiple agents sharing roles](/2020/prov/multiple-agents-sharing-roles/)
 * [FAQ: What are good PROV-N prefixes](/2020/prov/what-are-good-prov-n-prefixes/)
 * [FAQ: Attribution vs Association](/2020/prov/attribution-vs-association/)
+
+## List of content (2022--2013)
 
