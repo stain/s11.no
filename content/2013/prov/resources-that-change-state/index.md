@@ -69,7 +69,7 @@ Now what if we wanted to know how it changed from active to disabled, but don't 
     prov:generatedAtTime "2013-10-28T23:50:00Z" .
 ```
 
-We might specify a new subclass `ex:AlarmState` with the understanding of 'locking down' the `ex:currentStatus` field - such subclasses would allow different kind of specialization, in case you also needed a specialization like `ex:BrightnessLog`. Each state has a different [generation](http://www.w3.org/TR/prov-o/#generatedAtTime "prov:generatedAtTime") and [invalidation time](http://www.w3.org/TR/prov-o/#invalidatedAtTime "prov:invalidatedAtTime"), indicating the life span of the state. This is a continuous span, so the alarm state that was disabled last week is different from the disabled alarm state today, because the alarm was active in the mean time. 
+We might specify a new subclass `ex:AlarmState` with the understanding of 'locking down' the `ex:currentStatus` field -- such subclasses would allow different kind of specialization, in case you also needed a specialization like `ex:BrightnessLog`. Each state has a different [generation](http://www.w3.org/TR/prov-o/#generatedAtTime "prov:generatedAtTime") and [invalidation time](http://www.w3.org/TR/prov-o/#invalidatedAtTime "prov:invalidatedAtTime"), indicating the life span of the state. This is a continuous span, so the alarm state that was disabled last week is different from the disabled alarm state today, because the alarm was active in the mean time. 
 
 However both of these are [specializations of](http://www.w3.org/TR/prov-o/#specializationOf "prov:specializationOf") the entity that describe the alarm regardless of status. 
 
@@ -89,7 +89,7 @@ So what if we want to describe who disabled it? A simple solution is to now just
 <alarm/1/state/124> prov:wasAttributedTo <customer/5>.
 ```
 
-So now we know that `customer/5` caused the alarm to be disabled somehow (it was probably not a corrupt supervisor at the security company). If you want to detail this more, say to record how the customer did this (e.g. clicking the alarm panel) - then you can introduce an [activity](http://www.w3.org/TR/prov-o/#Activity "prov:Activity") to describe the transition: 
+So now we know that `customer/5` caused the alarm to be disabled somehow (it was probably not a corrupt supervisor at the security company). If you want to detail this more, say to record how the customer did this (e.g. clicking the alarm panel) -- then you can introduce an [activity](http://www.w3.org/TR/prov-o/#Activity "prov:Activity") to describe the transition: 
 
 ```turtle
 <alarm/1/state/123> prov:wasInvalidatedBy <activities/987> ;
@@ -102,13 +102,13 @@ So now we know that `customer/5` caused the alarm to be disabled somehow (it was
 Bundles
 -------
 
-Now as to get back to the bundles - a [prov:Bundle](http://www.w3.org/TR/prov-o/#Bundle "prov:Bundle") is defined as
+Now as to get back to the bundles -- a [prov:Bundle](http://www.w3.org/TR/prov-o/#Bundle "prov:Bundle") is defined as:
 
 > a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed
 
 Now I would say that any resource that contains provenance statements (and in particular PROV statements) is a prov:Bundle. However this fact and typing might not be recorded anywhere, and it would generally only be used as a term when you want to describe provenance of provenance records, or if you are cataloguing provenance traces. So moving to your example, perhaps the provenance of the longer-living entities (the alarm and their installations) are recorded in a separate resource, e.g. `alarm/all`; while you record short-lived alarm states in a different resource, e.g. `events/2013-10` for alarm events this month. 
 
-Now you might not want to include the full provenance of `alarm/1` within `events/2013-10` - and so you can use [prov:mentionOf](http://www.w3.org/TR/prov-links/ "PROV: Linking Across Provenance Bundles") and `prov:asInBundle` to indicate that you are specializing an entity that is described in a different bundle. 
+Now you might not want to include the full provenance of `alarm/1` within `events/2013-10` -- and so you can use [prov:mentionOf](http://www.w3.org/TR/prov-links/ "PROV: Linking Across Provenance Bundles") and `prov:asInBundle` to indicate that you are specializing an entity that is described in a different bundle. 
 
 ```turtle
 <alarm/1/state/124> prov:mentionOf <alarm/1> ;
@@ -134,19 +134,19 @@ As in any kind of modelling, consideration needs to taken as to what granularity
 # Comments
 
 #### 
-[lucmoreau](http://lucmoreau.wordpress.com "l.moreau@ecs.soton.ac.uk") - <time datetime="2013-10-29 15:52:02">Oct 2, 2013</time>
+[lucmoreau](http://lucmoreau.wordpress.com "l.moreau@ecs.soton.ac.uk") --- <time datetime="2013-10-29 15:52:02">Oct 2, 2013</time>
 
-Hi Stian, I like the way you developed this example. Something that the working group has never fully discussed is how we can determine which properties can be fluctuating for an entity, and which have been frozen. In your example, how can a third-party decide whether ex:currentStatus "active" is or is not a fixed attribute-value for an entity? Any thoughts on this?
+Hi Stian, I like the way you developed this example. Something that the working group has never fully discussed is how we can determine which properties can be fluctuating for an entity, and which have been frozen. In your example, how can a third-party decide whether `ex:currentStatus` "active" is or is not a fixed attribute-value for an entity? Any thoughts on this?
 <hr />
 
 #### 
-[soilandreyes](http://soiland-reyes.com/stian/work/ "soiland-reyes@cs.manchester.ac.uk") - <time datetime="2013-10-29 17:16:37">Oct 2, 2013</time>
+[soilandreyes](http://soiland-reyes.com/stian/work/ "soiland-reyes@cs.manchester.ac.uk") --- <time datetime="2013-10-29 17:16:37">Oct 2, 2013</time>
 
 That is a good question. For other readers: Initially in the working group we had the idea that _all properties_ on an entity was in "snapshot". However we relaxed this requirement as it meant you were forced to always mint a new URI for the Entity to describe a Resource (which might already have other, mutable properties), and we would rather have the ability for the Entity to normally have the same URI as the resource. 
 
 Specializations should thus be needed only when you really need several abstraction levels. But the question then becomes as how you can know of what is "in flux" and what is a more permanent record that is a true property for the resource over its entire lifetime. One way to do this is to just say so in the ontology of a class that you assign to the entity. 
 
-This could even be programmatic, so in owl, if we have `:Professor` which is a subclass of `prov:Person` - this could be used as a `prov:specializationOf` for a person as they have not been professors their whole life. In OWL we can require that professors have the property restriction `prov:actedOnBehalfOf exact 1 schema:University` -- this would require such a relation to exist in order to be a Professor and could be said to be "locked down". 
+This could even be programmatic, so in owl, if we have `:Professor` which is a subclass of `prov:Person` -- this could be used as a `prov:specializationOf` for a person as they have not been professors their whole life. In OWL we can require that professors have the property restriction `prov:actedOnBehalfOf exact 1 schema:University` -- this would require such a relation to exist in order to be a Professor and could be said to be "locked down". 
 
-However, as OWL nor RDF deals with resource changes over time - this does not mean that the resource has always been a Professor or that the professor was always working at the same university. Perhaps a more formal solution would be a way to specify this immutability as a similar statement for a given class/type of entities.
+However, as OWL nor RDF deals with resource changes over time -- this does not mean that the resource has always been a Professor or that the professor was always working at the same university. Perhaps a more formal solution would be a way to specify this immutability as a similar statement for a given class/type of entities.
 <hr />

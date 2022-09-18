@@ -28,20 +28,35 @@ Link: <http://example.com/resource-provenance>;
 
 ```
 
-This request for `http://example.com/resource.html` returns some HTML, but also provides a `Link:` header that says that the provenance is located at `http://example.com/resource-provenance`. Within this file, the resource is known as the _anchor_ `http://example.com/resource` rather than `http://example.com/resource.html`. The anchor URI can be omitted if it is the same as the one requested. Link headers are specified by [RFC 5988](http://tools.ietf.org/html/rfc5988 "RFC5988 Web linking"), which also defines standard relations like `rel="previous"`. PROV-AQ uses `rel="http://www.w3.org/ns/prov#has_provenance"` to say that the linked resource has the provenance data for the requested resource. PROV-AQ also defines other relations for [provenance query services](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#specifying-provenance-query-services "PROV-AQ: Specifying provenance query services") and [provenance pingback](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#forward-provenance "PROV-AQ: Forward provenance"), which is not covered by this blog post.
+This request for `http://example.com/resource.html` returns some HTML, but also provides a `Link:` header that says that the provenance is located at `http://example.com/resource-provenance`. 
+
+Within this file, the resource is known as the _anchor_ `http://example.com/resource` rather than `http://example.com/resource.html`. The anchor URI can be omitted if it is the same as the one requested. 
+
+Link headers are specified by [RFC 5988](http://tools.ietf.org/html/rfc5988 "RFC5988 Web linking"), which also defines standard relations like `rel="previous"`. PROV-AQ uses `rel="http://www.w3.org/ns/prov#has_provenance"` to say that the linked resource has the provenance data for the requested resource. 
+
+PROV-AQ also defines other relations for [provenance query services](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#specifying-provenance-query-services "PROV-AQ: Specifying provenance query services") and [provenance pingback](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#forward-provenance "PROV-AQ: Forward provenance"), which is not covered by this blog post.
 
 Background
 ==========
 
-[RESTful web services](http://shop.oreilly.com/product/9780596529260.do "Leonard Richardson, Sam Ruby: RESTful Web Services"), or "[Web APIs](http://en.wikipedia.org/wiki/Web_API "Wikipedia: Web API")", are popular ways of exposing structured data on the web, in addition to providing simple ways to programmatically access popular services such as [Twitter](https://dev.twitter.com/docs/api "Twitter REST API"), [Dropbox](https://www.dropbox.com/developers/core/api "Dropbox REST API") and [Google+](https://developers.google.com/+/api/ "Google+ REST API"). Using REST with RDF forms the foundation for [Linked Data](http://linkeddata.org/ "Linked Data"), which has grown to become a standardized way to expose and interrelate public datasets, such as from [data.gov.uk](http://data.gov.uk/linked-data "Linked Data at data.gov.uk").  The web standardization consortium [W3C](http://www.w3.org/) and its [provenance working group](http://www.w3.org/2011/prov/ "W3C Provenance working group") has published the [PROV family of specifications](http://www.w3.org/TR/prov-overview/ "W3C PROV family of provenance specifications") for describing provenance data, in particular a [PROV primer](http://www.w3.org/TR/prov-primer/ "PROV primer") that introduces the PROV data model, and [PROV-O](http://www.w3.org/TR/prov-o/ "PROV-O"), an [OWL](http://www.w3.org/TR/owl2-primer/ "W3C: OWL2 Primer") ontology for using the PROV data model in RDF. In order to suggest a common way to _locate_ such provenance data for a given web resource, the provenance working group has proposed the note [PROV-AQ: Provenance access and query](http://www.w3.org/TR/prov-aq/ "PROV-AQ: Provenance access and query") (PAQ). This note specifies how to locate provenance by a general [HTTP resource](http://www.w3.org/TR/prov-aq/#resource-accessed-by-http "Resource accessed by HTTP"),  from within an [HTML document](http://www.w3.org/TR/prov-aq/#resource-represented-as-html "Resource represented as HTML") or within a [RDF representation](http://www.w3.org/TR/prov-aq/#resource-represented-as-rdf "Resource represented as RDF"). In this blog post we demonstrate the first of these, by using HTTP Link headers.
+[RESTful web services](http://shop.oreilly.com/product/9780596529260.do "Leonard Richardson, Sam Ruby: RESTful Web Services"), or "[Web APIs](http://en.wikipedia.org/wiki/Web_API "Wikipedia: Web API")", are popular ways of exposing structured data on the web, in addition to providing simple ways to programmatically access popular services such as [Twitter](https://dev.twitter.com/docs/api "Twitter REST API"), [Dropbox](https://www.dropbox.com/developers/core/api "Dropbox REST API") and [Google+](https://developers.google.com/+/api/ "Google+ REST API"). 
+
+Using REST with RDF forms the foundation for [Linked Data](http://linkeddata.org/ "Linked Data"), which has grown to become a standardized way to expose and interrelate public datasets, such as from [data.gov.uk](http://data.gov.uk/linked-data "Linked Data at data.gov.uk").
+
+The web standardization consortium [W3C](http://www.w3.org/) and its [provenance working group](http://www.w3.org/2011/prov/ "W3C Provenance working group") has published the [PROV family of specifications](http://www.w3.org/TR/prov-overview/ "W3C PROV family of provenance specifications") for describing provenance data, in particular a [PROV primer](http://www.w3.org/TR/prov-primer/ "PROV primer") that introduces the PROV data model, and [PROV-O](http://www.w3.org/TR/prov-o/ "PROV-O"), an [OWL](http://www.w3.org/TR/owl2-primer/ "W3C: OWL2 Primer") ontology for using the PROV data model in RDF. 
+
+In order to suggest a common way to _locate_ such provenance data for a given web resource, the provenance working group has proposed the note [PROV-AQ: Provenance access and query](http://www.w3.org/TR/prov-aq/ "PROV-AQ: Provenance access and query") (PAQ). This note specifies how to locate provenance by a general [HTTP resource](http://www.w3.org/TR/prov-aq/#resource-accessed-by-http "Resource accessed by HTTP"),  from within an [HTML document](http://www.w3.org/TR/prov-aq/#resource-represented-as-html "Resource represented as HTML") or within a [RDF representation](http://www.w3.org/TR/prov-aq/#resource-represented-as-rdf "Resource represented as RDF"). 
+
+In this blog post we demonstrate the first of these, by using _HTTP Link headers_.
+
 
 Provenance from a RESTful service in Java
 =========================================
 
 The GitHub project [https://github.com/stain/paq/](https://github.com/stain/paq/) contains a simple _Hello World_ service implemented in Java using  [JAX-RS 2.0](http://jax-rs-spec.java.net/nonav/2.0-SNAPSHOT/apidocs/index.html "JAX-RS 2.0-SNAPSHOT javadocs") backed by the library [CXF](http://cxf.apache.org/docs/jax-rs-basics.html "CXF: JAX-RS basics"). There are two branches in this project:
 
-*   _master_ - REST service that can say hello, and return provenance of greeting
-*   _paq_ - REST service that also provides link between greeting and its provenance
+*   _master_ -- REST service that can say hello, and return provenance of greeting
+*   _paq_ -- REST service that also provides link between greeting and its provenance
 
 Below we'll assume you have checked out the _master_ branch with git: 
 
@@ -129,9 +144,9 @@ Note that we used the `-i` parameter above to verify that the correct media-ty
 
 This provenance says that the resource [http://localhost:8080/paq/hello/Alice](http://localhost:8080/paq/hello/Alice) was derived from a name with value "Alice", and made by the (web) service [http://localhost:8080/paq/hello](http://localhost:8080/paq/hello). 
 
-This PROV-N trace is generated by [`HelloWorld.helloProvenance()`](https://github.com/stain/paq/blob/master/src/main/java/com/example/provaq/rest/HelloWorld.java#L30) by filling in the URIs and name in the template [src/main/resources/provTemplate.txt](https://github.com/stain/paq/blob/master/src/main/resources/provTemplate.txt) - a more detailed provenance trace might include things like timestamps and details about who provided the name, and might, through content-negotation, be provided in different representations such as [PROV-O](http://www.w3.org/TR/prov-o/ "W3C: The PROV ontology (PROV-O)") and [PROV-XML](http://www.w3.org/TR/prov-xml/ "W3C: The PROV XML Schema (PROV-XML)"). 
+This PROV-N trace is generated by [`HelloWorld.helloProvenance()`](https://github.com/stain/paq/blob/master/src/main/java/com/example/provaq/rest/HelloWorld.java#L30) by filling in the URIs and name in the template [src/main/resources/provTemplate.txt](https://github.com/stain/paq/blob/master/src/main/resources/provTemplate.txt) -- a more detailed provenance trace might include things like timestamps and details about who provided the name, and might, through content-negotation, be provided in different representations such as [PROV-O](http://www.w3.org/TR/prov-o/ "W3C: The PROV ontology (PROV-O)") and [PROV-XML](http://www.w3.org/TR/prov-xml/ "W3C: The PROV XML Schema (PROV-XML)"). 
 
-Our provenance method is a bit more complicated than `hello()` as it [generates the absolute URIs](http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-URIcalculationusingUriInfoandUriBuilder) for the greeting resource (depending on the name parameter) and then build the PROV-N trace - here using a simple [MessageFormat](http://docs.oracle.com/javase/7/docs/api/java/text/MessageFormat.html) template: 
+Our provenance method is a bit more complicated than `hello()` as it [generates the absolute URIs](http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-URIcalculationusingUriInfoandUriBuilder) for the greeting resource (depending on the name parameter) and then build the PROV-N trace -- here using a simple [MessageFormat](http://docs.oracle.com/javase/7/docs/api/java/text/MessageFormat.html) template: 
 
 ```java
     @GET
@@ -170,9 +185,11 @@ Our provenance method is a bit more complicated than `hello()` as it [generate
 Providing links to the provenance
 ---------------------------------
 
-A restful client who has requested [http://localhost:8080/paq/hello/Alice](http://localhost:8080/paq/hello/Alice) will not magically know that there is a provenance trace at [http://localhost:8080/paq/provenance/hello/Alice](http://localhost:8080/paq/provenance/hello/Alice) - the URI for the provenance resource could just as well have been say [http://localhost:8080/about/history/1337](http://localhost:8080/about/history/1337). As we described above, the PROV-AQ says that a [resource accessed by HTTP](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#resource-accessed-by-http) can describe its provenance trace by adding a `Link:` header with the relation `"http://www.w3.org/ns/prov#has_provenance"`. So in our case, this can be achieved with: 
+A restful client who has requested [http://localhost:8080/paq/hello/Alice](http://localhost:8080/paq/hello/Alice) will not magically know that there is a provenance trace at [http://localhost:8080/paq/provenance/hello/Alice](http://localhost:8080/paq/provenance/hello/Alice) - the URI for the provenance resource could just as well have been say [http://localhost:8080/about/history/1337](http://localhost:8080/about/history/1337). 
 
-```http
+As we described above, the PROV-AQ says that a [resource accessed by HTTP](http://www.w3.org/TR/2013/WD-prov-aq-20130312/#resource-accessed-by-http) can describe its provenance trace by adding a `Link:` header with the relation `"http://www.w3.org/ns/prov#has_provenance"`. So in our case, this can be achieved with: 
+
+```
 Link: <http://localhost:8080/paq/provenance/hello/Alice>;
        rel="http://www.w3.org/ns/prov#has_provenance"
 ```
