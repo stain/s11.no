@@ -31,6 +31,10 @@ params:
   orcidURL: "https://orcid.org/0000-0001-9842-9718"
   YEAR: 2022   # Year used in permalinks
   htaccess: |
+    Redirect 301 /2022/prov/feed/ /2022/prov/index.xml
+    Redirect 301 /2022/prov/about/ /2022/prov/
+    RedirectMatch 303 ^/20(1.|20|21)/prov/$ /2022/prov/
+    RedirectMatch 303 ^/2022/prov/20../../$ /2022/prov/
     RedirectMatch 301 ^/202[01]/archive/$ /2022/archive/
     Redirect 301 /202[01]/categories/ /2022/categories/
     Redirect 301 /202[01]/tags/ /2022/tags/
