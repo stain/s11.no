@@ -3,6 +3,7 @@ title: Practical Provenance
 date: Mon, 25 Mar 2013 10:59:04 +0000
 categories: 
  - Practical Provenance
+ - Archive
 url: "/2022/prov/"
 aliases:
     - /2022/categories/practical-provenance/

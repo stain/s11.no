@@ -10,7 +10,7 @@ tags:
   - PROV
   - provenance
   - vocabulary
-alias:
+aliases:
  - /2022/prov/2013/03/28/pav/
 summary: >
     PAV is a lightweight ontology for tracking _Provenance, Authoring and Versioning_.  PAV supplies terms for distinguishing between the different roles of the agents contributing content in current web based systems: _contributors_, _authors_, _curators_ and digital artifact _creators_. The ontology also provides terms for tracking provenance of digital entities that are published on the web and then _accessed_, _transformed_ and _consumed_. 

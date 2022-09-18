@@ -3,6 +3,7 @@ title: 'PROV released as W3C Recommendations'
 date: Wed, 01 May 2013 10:09:04 +0000
 categories:
     - Practical Provenance
+    - Archive
 tags: ['PROV', 'W3C']
 aliases:
     - /2022/prov/2013/05/01/prov-released-as-w3c-recommendations/
