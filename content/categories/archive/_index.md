@@ -7,6 +7,7 @@ categories:
   - Archive
 url: /2022/archive/ 
 aliases:
+ - /2022/categories/archive/
  - /2021/categories/archive/
  - /2021/archive/
 ---

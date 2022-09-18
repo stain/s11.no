@@ -1,5 +1,5 @@
 ---
-title: 'Practical Provenance'
+title: Practical Provenance
 date: Mon, 25 Mar 2013 10:59:04 +0000
 categories: 
  - Practical Provenance

@@ -8,6 +8,7 @@ categories:
 url: /2022/phd/ 
 summary: Draft of PhD thesis outline, University of Amsterdam
 aliases:
+ - /2022/categories/phd/
 ---
 
 Beside [working at The University of Manchester](/about/) I am a [PhD Candidate](https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/).
