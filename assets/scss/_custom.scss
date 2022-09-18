@@ -8,16 +8,16 @@ aside #TableOfContents {
   color: #29627e;
   font-size: smaller;
 }
-aside #TableOfContents > ul:before {
+aside #TableOfContents > ul::before {
   content: "Content:"
 }
-aside #TableOfContents ul li ul:before {
+aside #TableOfContents ul li ul::before {
   content: "［"
 }
 aside #TableOfContents ul li ul {
   display: inline;
 }
-aside #TableOfContents ul li ul:after {
+aside #TableOfContents ul li ul::after {
   content: "］"
 }
 
@@ -161,19 +161,47 @@ main {
   }
 }
 
-ul.tags { 
+ul.tags,ul.categories { 
   display: inline;
   list-style-type: none;
   padding: 0;
   
   li {
     display: inline;
+  }
+}
+
+ul.tags { 
+  li {
     color: $color-blossom;
     font-size: smaller;
     font-family: $font-family-quote;
     margin-left: 1em;
   }
 }
+
+ul.categories { 
+  li {
+    color: $color-blossom;
+    font-size: smaller;
+    background: #eee;
+    border-color: #424242;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-style: solid;
+    border-width: thin;
+    padding: 0.2em;
+    font-family: $font-family-serif;
+    margin-right: 1em;
+  }
+  li::before { 
+    content: "⃝";
+    padding-right: 1.3em;
+    color: #424242;
+  }
+}
+
+
 time { 
   font-size: smaller;
   font-style: italic;

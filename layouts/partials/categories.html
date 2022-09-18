@@ -1,0 +1,5 @@
+<ul class="categories">
+    {{ range (.GetTerms "categories") }}
+        <li><a typeof="s:Collection" property="s:isPartOf" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+</ul>
