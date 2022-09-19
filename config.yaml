@@ -35,6 +35,7 @@ params:
     Redirect 301 /2022/prov/about/ /2022/prov/
     RedirectMatch 303 ^/20(1.|20|21)/prov/$ /2022/prov/
     RedirectMatch 303 ^/2022/prov/20../../$ /2022/prov/
+    RedirectMatch 303 ^/2022/prov/category/(.*)$ /2022/tags/$1/
     RedirectMatch 301 ^/202[01]/archive/$ /2022/archive/
     Redirect 301 /202[01]/categories/ /2022/categories/
     Redirect 301 /202[01]/tags/ /2022/tags/
