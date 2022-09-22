@@ -55,7 +55,7 @@ We show our recent experiences with building SDR using the Galaxy workflow syste
 
 We implemented the use case _De novo digitization_ in Galaxy [[Brack 2022](https://doi.org/10.48546/workflowhub.workflow.373.1)]. Shown in [Figure 1](#fig:workflow) the workflow steps exchange openDS JSON [[Hardisty 2019](https://doi.org/10.3897/biss.3.37033)], for incremental completion of a digital specimen. Initial stages build a template openDS from a CSV with metadata and image references – subsequent analysis completes the rest of the JSON with _regions_ of interest, _text_ digitised from handwriting, and recognized _named entities_.
 
-{{< figure src="figure1.png" link="figure1.jpg" id="fig:workflow" 
+{{< figure src="figure1.png" link="figure1.png" id="fig:workflow" 
   width="100%" title="FDO propagation in workflow"
   caption="Draft Galaxy workflow _De Novo digitization_  [[Brack 2022](https://doi.org/10.48546/workflowhub.workflow.373.1)] shows propagation of partial Open Digital Specimen FDOs between individual canonical workflow building blocks. First steps process a CSV file to create the initial openDS, where referenced images are analysed to detect text lines which are OCRed and then recognized as named entities. Bands indicate flow of collections of openDS, processed concurrently by each step. The final step bundles the collection of openDS FDOs as JSON files in a ZIP archive" >}}
 
