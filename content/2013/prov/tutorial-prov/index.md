@@ -5,6 +5,9 @@ tags: ['PROV', 'Tutorials']
 categories:
     - Practical Provenance
     - Archive
+authors:
+    - name: Khalid Belhajjame
+      orcid: https://orcid.org/0000-0001-6938-0820    
 aliases:
     - /2022/prov/2013/03/27/tutorial-prov/
 ---

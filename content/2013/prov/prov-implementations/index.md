@@ -4,8 +4,9 @@ date: Sat, 30 Mar 2013 13:45:25 +0000
 categories:
     - Practical Provenance
     - Archive
-author:
-    - Khalid Belhajjame
+authors:
+    - name: Khalid Belhajjame
+      orcid: https://orcid.org/0000-0001-6938-0820
 tags: ['PROV', 'W3C Provenance Working Group', 'World Wide Web Consortium']
 ---
 

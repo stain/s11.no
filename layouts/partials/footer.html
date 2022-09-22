@@ -14,15 +14,25 @@
     <a href="http://creativecommons.org/licenses/by/4.0/"><img 
         alt="Creative Commons Licence" src="/2022/images/cc-by-4.0.svg" /></a>
      This work by 
-     <a rel="author s:author"
-        href="{{ $.Site.Params.ORCIDURL }}"
-        typeof="s:Person">
-        <span property="s:name">{{ $.Site.Params.authorName }}</span></a>
+    {{ if .Params.authors }}
+      {{- range $k,$v := .Params.authors -}}
+        {{- if $k -}}, {{ end }}
+        <a rel="author s:author" typeof="s:Person"
+        href="{{ $v.orcid }}">
+          <span property="s:name">{{ $v.name }}</span>
+        </a>
+      {{- end -}}
+    {{ else }}    
+      <a rel="author s:author" typeof="s:Person"
+         href="{{ $.Site.Params.ORCIDURL }}">
+        <span property="s:name">{{ $.Site.Params.authorName }}</span>
+      </a>
+    {{ end }}
         is licensed under a 
-     <a property="s:license" 
-        typeof="s:CreativeWork"
+     <a property="s:license" typeof="s:CreativeWork"
         href="http://creativecommons.org/licenses/by/4.0/">
-        <span property="s:name">Creative Commons Attribution 4.0 International License</span></a>.
+        <span property="s:name">Creative Commons Attribution 4.0 International License</span>
+      </a>.
   </div>
 </footer>
 

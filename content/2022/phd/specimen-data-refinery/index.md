@@ -56,7 +56,23 @@ description: >
     canonical workflow component libraries and its conformance with the
     requirements of an emerging FDO Core Specification being developed by
     the FDO Forum.
-
+authors:
+  - name: Alex Hardisty
+    orcid: https://orcid.org/0000-0002-0767-4310
+  - name: Paul Brack
+    orcid: https://orcid.org/0000-0002-5432-2748
+  - name: Carole Goble
+    orcid: https://orcid.org/0000-0003-1219-2137
+  - name: Laurence Livermore
+    orcid: https://orcid.org/0000-0002-7341-1842
+  - name: Ben Scott
+    orcid: https://orcid.org/0000-0002-5590-7174
+  - name: Quentin Groom
+    orcid: https://orcid.org/0000-0002-0596-5376
+  - name: Stuart Owen
+    orcid: https://orcid.org/0000-0003-2130-0865
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718
 ---
 
 <h2>Cite as</h2>

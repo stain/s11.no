@@ -21,6 +21,17 @@ description: >
   Specimen Data Refinery (SDR) is a developing platform for automating transcription of specimens from natural history collections. SDR is based on computational workflows and digital twins using FAIR Digital Objects.
 
   We show our recent experiences with building SDR using the Galaxy workflow system and combining two FDO methodologies with open digital specimens (openDS) and RO-Crate data packaging. We suggest FDO improvements for incremental building of digital objects in computational workflows.
+authors:
+  - name: Oliver Woolland
+    orcid: https://orcid.org/0000-0002-4565-9760
+  - name: Paul Brack
+    orcid: https://orcid.org/0000-0002-5432-2748
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718  
+  - name: Ben Scott
+    orcid: https://orcid.org/0000-0002-5590-7174
+  - name: Laurence Livermore
+    orcid: https://orcid.org/0000-0002-7341-1842
 ---
 
 <h2>Cite as</h2>

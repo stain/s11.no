@@ -15,6 +15,33 @@ description: >
     Despite significant increase in uptake of workflow tools, there is little specific guidance for writing software intended to slot in as a tool within a workflow; or on converting an existing standalone research-quality software tool into a reusable, composable, well-behaved citizen within a larger workflow.
 
     In this paper we present ten simple rules for how a software tool can be prepared for workflow use.
+authors:
+  - name: Paul Brack
+    orcid: https://orcid.org/0000-0002-5432-2748
+  - name: Peter Crowther
+    orcid: https://orcid.org/0000-0002-2222-9418
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718
+  - name: Stuart Owen
+    orcid: https://orcid.org/0000-0003-2130-0865
+  - name: Douglas Lowe
+    orcid: https://orcid.org/0000-0002-1248-3594
+  - name: Alan R Williams
+    orcid: https://orcid.org/0000-0003-3156-2105
+  - name: Quentin Groom
+    orcid: https://orcid.org/0000-0002-0596-5376
+  - name: Mathias Dillen
+    orcid: https://orcid.org/0000-0002-3973-1252
+  - name: Frederik Coppens
+    orcid: https://orcid.org/0000-0001-6565-5145
+  - name: Björn Grüning
+    orcid: https://orcid.org/0000-0002-3079-6586
+  - name: Ignacio Eguinoa
+    orcid: https://orcid.org/0000-0002-6190-122X
+  - name: Philip Ewels
+    orcid: https://orcid.org/0000-0003-4101-2502
+  - name: Carole Goble
+    orcid: https://orcid.org/0000-0003-1219-2137
 ---
 
 
