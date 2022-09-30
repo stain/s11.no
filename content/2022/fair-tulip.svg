@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="127.99991mm"
-   height="215.17992mm"
+   width="483.77917"
+   height="813.27844"
    viewBox="0 0 127.99991 215.17992"
    version="1.1"
    id="svg5"
@@ -12,7 +12,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1084">FAIR tulip</title>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -23,19 +28,21 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="43"
-     inkscape:cy="907"
+     inkscape:zoom="1"
+     inkscape:cx="155"
+     inkscape:cy="369.5"
      inkscape:window-width="2486"
      inkscape:window-height="1376"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g18075"
      fit-margin-top="4"
      fit-margin-left="4"
      fit-margin-right="4"
-     fit-margin-bottom="4" />
+     fit-margin-bottom="4"
+     scale-x="1"
+     units="px" />
   <defs
      id="defs2">
     <rect
@@ -181,7 +188,8 @@
            id="text32747-7-9-2-7-3"
            style="font-weight:600;font-size:11.2889px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
            inkscape:transform-center-x="17.361147"
-           inkscape:transform-center-y="0.47309923">
+           inkscape:transform-center-y="0.47309923"
+           transform="translate(0,15.52851)">
           <path
              d="m 75.530021,144.61465 v -1.19662 H 76.5686 v -5.4864 H 75.530021 V 136.735 h 3.578581 v 1.19663 h -1.049867 v 5.4864 h 1.049867 v 1.19662 z"
              id="path11623" />
@@ -299,14 +307,14 @@
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:none;stroke-width:0.264583"
            x="74.954956"
-           y="144.52217"
+           y="160.14316"
            id="text32747-7-9-2-7"
            inkscape:transform-center-x="17.361147"
            inkscape:transform-center-y="0.47309923"><tspan
              sodipodi:role="line"
              id="tspan93757"
              x="74.954956"
-             y="144.52217">Interoperable</tspan></text>
+             y="160.14316">Interoperable</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -327,4 +335,48 @@
       </g>
     </g>
   </g>
+  <metadata
+     id="metadata1082">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>FAIR tulip</dc:title>
+        <dc:date>2022-09-30</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Stian Soiland-Reyes &lt;https://orcid.org/0000-0001-9842-9718&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>The University of Manchester</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>https://s11.no/2022/fair-tulip.svg</dc:identifier>
+        <dc:language>en</dc:language>
+        <dc:source>Original design by Meznah Aloqalaa &lt;https://orcid.org/0000-0002-1382-3896&gt; using Canva, recreated in Inkscape</dc:source>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Meznah Aloqalaa &lt;https://orcid.org/0000-0002-1382-3896&gt;</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Public Domain</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
 </svg>
