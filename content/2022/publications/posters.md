@@ -8,7 +8,54 @@ categories:
 
 This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=poster).
 
-Evelo C, Willighagen EL, Lynch N, Williams-Jones B, Loizou A, Soiland-Reyes S et al. The Open PHACTS Discovery Platform from a network biology perspective. 2016. Poster session presented at Network Biology SIG 2016, Orlando, United States. [https://doi.org/10.7490/f1000research.1112676.1](https://doi.org/10.7490/f1000research.1112676.1)
 
-Siebes R, de Boer V, Williams-Jones B, Soiland-Reyes S. Drug Discovery and Big Linked Data. 2016. Poster session presented at Semantic Web Applications and Tools for Life Sciences (SWAT4LS) 2016, Amsterdam, Netherlands.
+Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+[**Creating lightweight FAIR Digital Objects with RO-Crate**](/2022/phd/fdo-with-ro-crate/).  
+_1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/))_ (poster)  
+<https://doi.org/10.5281/zenodo.7245315>
+<https://doi./org/10.3897/rio.8.e93937>  
+
+Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):  
+[**Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**](/2022/phd/incrementally-building-fdos/).  
+_1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/))_ (poster)  
+<https://doi.org/10.5281/zenodo.7233688>
+<https://doi./org/10.3897/rio.8.e94349>  
+
+Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
+[**Enhancing RDM in Galaxy by integrating RO-Crate**](/2022/phd/galaxy-ro-crate/).  
+_1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/))_ (poster)
+<https://doi.org/10.5281/zenodo.7257146>
+<https://doi./org/10.3897/rio.8.e95164>  
+
+Rudolf Wittner, Petr Holub, Jörg Geiger, Heimo Müller, Carole Goble, Stian Soiland-Reyes, Elliot Fairweather, Luca Pireddu, Francesca Frexia, Cecilia Mascia, Gianluigi Zanetti, Hiroki Nakae, Caterina Strambio-De-Castillia, Josh Moore, David Grunwald, Swedlow, Jason (2020):  
+**ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**.  
+_Provenance Week 2020_  
+<https://doi.org/10.5281/zenodo.5074819>
+
+
+Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+**RO-Crate, a lightweight approach to Research Object data packaging**.  
+_Bioinformatics Open Source Conference (BOSC)_, ISMB/ECCB 2019, Basel, Switzerland. 
+<https://doi.org/10.5281/zenodo.3343031>  
+<https://doi.org/10.5281/zenodo.3250687>
+
+Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Michael R. Crusoe (2018):  
+[**CWLProv – Interoperable retrospective provenance capture and its challenges**](https://doi.org/10.7490/f1000research.1115721.1).  
+_Bioinformatics Open Source Conference (BOSC) 2018_  (poster)  
+<https://doi.org/10.7490/f1000research.1115721.1>
+
+Mark Robinson, Stian Soiland-Reyes, Michael R. Crusoe, Carole Goble (2017):  
+**CWL Viewer: the Common Workflow Language viewer**.  
+_Bioinformatics Open Source Conference (BOSC) 2017_  (poster)  
+<https://doi.org/10.7490/f1000research.1114375.1>  
+[[abstract/slides](https://doi.org/10.7490/f1000research.1114453.1)]
+
+Evelo C, Willighagen EL, Lynch N, Williams-Jones B, Loizou A, Soiland-Reyes S et al. (2016):  
+**The Open PHACTS Discovery Platform from a network biology perspective**.  
+_Network Biology SIG 2016, Orlando, United States_ (Poster)  
+<https://doi.org/10.7490/f1000research.1112676.1>
+
+Siebes R, de Boer V, Williams-Jones B, Soiland-Reyes S. (2016):  
+**Drug Discovery and Big Linked Data**.  
+_Semantic Web Applications and Tools for Life Sciences (SWAT4LS) 2016_, Amsterdam, Netherlands (poster).
 
