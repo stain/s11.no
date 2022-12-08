@@ -42,11 +42,6 @@ description: >
     An RO-Crate is a structured archive of all the items that contributed to a research outcome, including their identifiers, provenance, relations and annotations. As a general purpose packaging approach for data and their metadata, RO-Crate is used across multiple areas, including bioinformatics, digital humanities and regulatory sciences. By applying "just enough" Linked Data standards, RO-Crate simplifies the process of making research outputs FAIR while also enhancing research reproducibility.
 ---
 
-<style>
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"),
-  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro"),
-  @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-</style>
 
 <h2>Cite as</h2>
 
