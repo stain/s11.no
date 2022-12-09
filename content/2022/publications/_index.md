@@ -24,26 +24,26 @@ aliases:
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
 [**Updating Linked Data practices for FAIR Digital Object principles**](/2022/phd/updating-ld-for-fdo/).  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (abstract).  
-_Research Ideas and Outcomes_ **8**:e94501
-<https://doi./org/10.3897/rio.8.94501>
+_Research Ideas and Outcomes_ **8**:e94501  
+<https://doi.org/10.3897/rio.8.94501>
 
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
 [**Creating lightweight FAIR Digital Objects with RO-Crate**](/2022/phd/fdo-with-ro-crate/).  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
-_Research Ideas and Outcomes_ **8**:e93937
-<https://doi./org/10.3897/rio.8.93937>
+_Research Ideas and Outcomes_ **8**:e93937  
+<https://doi.org/10.3897/rio.8.93937>
 
 Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):  
 [**Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**](/2022/phd/incrementally-building-fdos/).  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
-_Research Ideas and Outcomes_ **8**:e94349
-<https://doi./org/10.3897/rio.8.94349>
+_Research Ideas and Outcomes_ **8**:e94349  
+<https://doi.org/10.3897/rio.8.94349>
 
 Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
 [**Enhancing RDM in Galaxy by integrating RO-Crate**](/2022/phd/galaxy-ro-crate/).  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
-_Research Ideas and Outcomes_ **8**:e95164
-<https://doi./org/10.3897/rio.8.95164>
+_Research Ideas and Outcomes_ **8**:e95164  
+<https://doi.org/10.3897/rio.8.95164>
 
 Laurence Livermore, Paul Brack, Ben Scott, Stian Soiland-Reyes, Oliver Woolland (2022):  
 [**The Specimen Data Refinery: Using a scientific workflow approach for information extraction**](https://doi.org/10.3897/biss.6.93500)  
@@ -261,11 +261,11 @@ _[IEEE International Conference on Big Data 2016](http://cci.drexel.edu/bigdata/
 [[zenodo]](https://zenodo.org/record/820878)
 
 Antonis Troumpoukis, Angelos Charalambidis, Giannis Mouchakis, Stasinos Konstantopoulos, Ronald Siebes, Victor de Boer, Stian Soiland-Reyes, Daniela Digles (2016):  
-[**Developing a Benchmark Suite for Semantic Web Data from Existing Workflows**](http://ceur-ws.org/Vol-1700/paper-04.pdf).  
-_[Proceedings](http://ceur-ws.org/Vol-1700/) of the Workshop on Benchmarking Linked Data (BLINK 2016), co-located with the 15th International Semantic Web Conference (ISWC)_
-_CEUR Workshop Proceedings_ **1700**(04)
+[**Developing a Benchmark Suite for Semantic Web Data from Existing Workflows**](https://ceur-ws.org/Vol-1700/paper-04.pdf).  
+_[Proceedings](https://ceur-ws.org/Vol-1700/) of the Workshop on Benchmarking Linked Data (BLINK 2016), co-located with the 15th International Semantic Web Conference (ISWC)_
+In: _CEUR Workshop Proceedings_ **1700**:04
 <https://doi.org/10.5281/zenodo.159568>
-<http://ceur-ws.org/Vol-1700/paper-04.pdf>
+<https://ceur-ws.org/Vol-1700/paper-04.pdf>
 
 Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
 [**Tracking workflow execution with TavernaProv**](/2016/provweek-tavernaprov/).  
@@ -289,6 +289,14 @@ _Nucleic Acids Research_ **45**(D1) pp D404–D407.
 <https://doi.org/10.1093/nar/gkw1032>
 
 
+Ronald Siebes, Victor de Boer, Bryn Williams-Jones, Stian Soiland-Reyes (2016):  
+[**Drug Discovery and Big Linked Data**](https://ceur-ws.org/Vol-1795/paper29.pdf).  
+_Semantic Web Applications and Tools for Life Sciences (SWAT4LS) 2016_, Amsterdam, Netherlands.
+In: _CEUR Workshop Proceedings_ **1795**:29  
+<https://ceur-ws.org/Vol-1795/paper29.pdf>
+
+
+
 ## 2015
 
 Peter Amstutz, Nebojša Tijanić, Stian Soiland-Reyes, John Kern, Luka Stojanovic,
@@ -308,25 +316,20 @@ _Bioinformatics Open Source Conference_ (BOSC 2015), Dublin, Ireland, 2015-06-10
 
 
 Anna Gaulton, Lee Harland, Mark Davies, George Papadatos, Antonis Loizou, Nathan Dedman, Daniela Digles, Stian Soiland-Reyes, Valery Tkachenk, Stefan Senger, John P Overington, Nick Lynch (2015):  
-[**Semantic-web access to patent annotations**](http://ceur-ws.org/Vol-1546/poster_59.pdf).
+**Semantic-web access to patent annotations**.  
 _SWAT4LS International Conference: Semantic web applications and tools for life sciences_, Riley Auditorium, Gillespie Center, Clare College, Cambridge, England, 2015-12-07/2015-12-10.  
-[[abstract](http://ceur-ws.org/Vol-1546/poster_59.pdf)]
+In: _CEUR Workshop Proceedings_ **1546**:59 pp. 212-213
+~~[[abstract](https://ceur-ws.org/Vol-1546/poster_59.pdf)]~~ ([archived 2021-06-17](https://web.archive.org/web/20210617161106/https://ceur-ws.org/Vol-1546/poster_59.pdf))
 [[poster](https://www.research.manchester.ac.uk/portal/files/45510842/151207_Cambridge_SWAT4LS_Anna_Gaulton_Semantic_Web_Access_to_Patent_Annotations.pdf)]
 
 
 ## 2014
 
-Raúl Palma, Piotr Hołubowicz, Kevin Page, Stian Soiland-Reyes, Graham
-Klyne, Cezary Mazurek (2014):  
-[**A suite of APIs for the management of research objects**](http://ceur-ws.org/Vol-1268/paper8.pdf).  
-_ISWC Developers Workshop 2014_, Riva del Garda, Italy.
-[[pdf](http://ceur-ws.org/Vol-1268/paper8.pdf)]
-
-Raul Palma, Piotr Hołubowicz, Kevin Page, Stian Soiland-Reyes, Graham Klyne, Cezary Mazurek (2014):  
-[**A Suite of APIs for the Management of Research Objects**](http://ceur-ws.org/Vol-1268/paper8.pdf).  
-_ISWC-DEV 2014: Proceedings of the ISWC Developers Workshop 2014_, 
-_CEUR Workshop Proceedings_ **1268**
-<http://ceur-ws.org/Vol-1268/paper8.pdf>
+Raúl Palma, Piotr Hołubowicz, Kevin Page, Stian Soiland-Reyes, Graham Klyne, Cezary Mazurek (2014):  
+[**A suite of APIs for the management of research objects**](https://ceur-ws.org/Vol-1268/paper8.pdf).  
+_ISWC-DEV 2014: Proceedings of the ISWC Developers Workshop 2014_. 
+In: _CEUR Workshop Proceedings_ **1268**:8  
+[[pdf](https://ceur-ws.org/Vol-1268/paper8.pdf)]
 
 Frank T Bergmann, Richard Adams, Stuart Moodie, Jonathan Cooper, Mihai Glont, Martin Golebiewski, Michael Hucka, Camille Laibe, Andrew K Miller, David P Nickerson, Brett G Olivier, Nicolas Rodriguez, Herbert M Sauro, Martin Scharm, Stian Soiland-Reyes, Dagmar Waltemath, Florent Yvon, Nicolas Le Novère (2014):  
 [**COMBINE archive and OMEX format: one file to share all information to reproduce a modeling project**](https://doi.org/10.1186/s12859-014-0369-z).    
@@ -359,8 +362,8 @@ _Journal of Biomedical Semantics_ **4**:37
 
 Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark (2013):  
 [**Web Annotation as a First Class Object**](/2013/web-annotation/).  
-_IEEE Internet Computing_ **17**(6) pp 71-75.
-[https://doi.org/10.1109/MIC.2013.123](https://doi.org/10.1109/MIC.2013.123)
+_IEEE Internet Computing_ **17**(6) pp https://www.research.manchester.ac.uk/portal/files/45797718/datastream.pdf71-75.
+<https://doi.org/10.1109/MIC.2013.123>
 [[html]](http://s11.no/2013/web-annotation/)
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/web-annotation-as-a-firstclass-object(16ac93c0-c2af-4e73-b5f8-7d0582556dd7).html)
 [arXiv:1310.6555](http://arxiv.org/abs/1310.6555)
@@ -386,11 +389,18 @@ _Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp.
 
 ## 2012 
 
-Goble C, Zhao J, Klyne G, Hołubowicz P, Palma R, Soiland-Reyes S et al. (2012):  
-[**RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences**](http://ceur-ws.org/Vol-951/paper9.pdf).  
-_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22, _CEUR Workshop Proceedings_ **951**
-<http://ceur-ws.org/Vol-951/paper9.pdf>
-    
+Jun Zhao, Graham Klyne, Piotr Hołubowicz, Raúl Palma, Stian Soiland-Reyes, Kristina Hettne, José Enrique Ruiz, Marco Roos, Kevin Page, José Manuel Gómez-Pérez, David De Roure, Carole Goble (2012):  
+[**RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences**](https://ceur-ws.org/Vol-951/paper9.pdf).  
+_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.
+In: _CEUR Workshop Proceedings_ **951**:9  
+<https://ceur-ws.org/Vol-951/paper9.pdf>
+
+Kevin Page, Raúl Palma, Piotr Hołubowicz, Graham Klyne, Stian Soiland-Reyes, Don Cruickshank, Rafael González Cabero, Esteban Garciá Cuesta, David De Roure, Jun Zhao, José Manuel Gómez-Pérez (2012):  
+[**From Workflows to Research Objects: An Architecture for Preserving the Semantics of Science**](https://ceur-ws.org/Vol-951/paper7.pdf).  
+_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.
+In: _CEUR Workshop Proceedings_ **951**:7  
+<https://ceur-ws.org/Vol-951/paper7.pdf>
+
 Kristina Hettne, Stian Soiland-Reyes, Graham Klyne, Khalid Belhajjame, Matthew Gamble, Sean Bechhofer, Marco Roos, Oscar Corcho (2011):  
 [**Workflow forever: Semantic Web Semantic models and tools for preserving and digitally publishing computational experiments**](https://www.research.manchester.ac.uk/portal/files/38535608/FULL_TEXT.pdf).  
 _ACM International Conference Proceeding Series_ (SWAT4LS '11).  
@@ -398,9 +408,9 @@ _ACM International Conference Proceeding Series_ (SWAT4LS '11).
 [[preprint](https://www.research.manchester.ac.uk/portal/en/publications/workflow-forever-semantic-web-semantic-models-and-tools-for-preserving-and-digitally-publishing-computational-experiments(4a0cccc2-2263-448a-ae32-ca82c5621d25).html)]
 
 Khalid Belhajjame, Oscar Corcho, Daniel Garijo, Jun Zhao, Paolo Missier, David R. Newman, Raul Palma, Sean Bechhofer, Esteban Garcia Cuesta, Jose Manuel Gomez-Perez, Graham Klyne, Kevin Page, Marco Roos, José Enrique Ruiz, Stian Soiland-Reyes, Lourdes Verdes-Montenegro, David De Roure, Carole Goble (2012):  
-[**Workflow-centric research objects: First class citizens in scholarly discourse**](http://ceur-ws.org/Vol-903/paper-01.pdf).  
-_CEUR Workshop Proceedings_ **903** pp. 1--12.
-<http://ceur-ws.org/Vol-903/paper-01.pdf>
+[**Workflow-centric research objects: First class citizens in scholarly discourse**](https://ceur-ws.org/Vol-903/paper-01.pdf).  
+_CEUR Workshop Proceedings_ **903**:1
+<https://ceur-ws.org/Vol-903/paper-01.pdf>
 
 ## 2011
 

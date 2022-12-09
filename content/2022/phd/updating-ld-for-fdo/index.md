@@ -6,7 +6,7 @@ categories:
   - PhD
 date-meta: '2022-07-10'
 summary: >
-  Talk abstract submitted to FAIR Digital Objects conference (FDO2022)
+  Talk abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >
   ..
 ---
@@ -15,8 +15,9 @@ description: >
 
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
 **Updating Linked Data practices for FAIR Digital Object principles**.  
-[1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (abstract).  
-_Research Ideas and Outcomes_ (accepted)
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (abstract).  
+_Research Ideas and Outcomes_ **8**:e94501  
+<https://doi.org/10.3897/rio.8.94501>
 
 
 # Updating Linked Data practices for FAIR Digital Object principles
@@ -99,6 +100,7 @@ Stian Soiland-Reyes
 
 First International Conference on FAIR Digital Objects, presentation
 
+* Slides: <https://doi.org/10.5281/zenodo.7256428>
 
 ## Acknowledgements
 

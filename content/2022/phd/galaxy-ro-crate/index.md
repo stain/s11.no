@@ -6,7 +6,7 @@ categories:
   - PhD
 date-meta: '2022-07-10'
 summary: >
-  Talk abstract submitted to FAIR Digital Objects conference (FDO2022)
+  Poster abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >
   We introduce how the Galaxy research environment integrates with RO-Crate as an implementation of Findable Accessible Interoperable Reproducible Digital Objects and how using RO-Crate as an exchange mechanism of workflows and their execution history helps integrate Galaxy with the wider ecosystem of ELIXIR and EOSC to enable FAIR and reproducible data analysis.
 keywords:
@@ -23,9 +23,9 @@ keywords:
 
 Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
 **Enhancing RDM in Galaxy by integrating RO-Crate**.  
-[1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (poster)  
-_Research Ideas and Outcomes_ (accepted)
-
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ **8**:e95164  
+<https://doi.org/10.3897/rio.8.95164>
 
 # Enhancing RDM in Galaxy by integrating RO-Crate
 
@@ -79,7 +79,9 @@ Paul De Geest
 
 ## Submitted to be presented at
 
-First International Conference on FAIR Digital Objects, presentation
+First International Conference on FAIR Digital Objects, poster
+
+* Poster: <https://doi.org/10.5281/zenodo.7257146>
 
 
 ## References

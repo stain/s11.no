@@ -16,7 +16,7 @@ keywords:
   - specimen
   - digitization
 summary: >
-  Poster abstract accapted for FAIR Digital Objects conference (FDO2022)
+  Poster abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >
   Specimen Data Refinery (SDR) is a developing platform for automating transcription of specimens from natural history collections. SDR is based on computational workflows and digital twins using FAIR Digital Objects.
 
@@ -38,8 +38,9 @@ authors:
 
 Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):  
 **Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**.  
-[1st International Conference on FAIR Digital Objects](https://www.fdo2022.org/) (poster)  
-_Research Ideas and Outcomes_ (accepted)
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+_Research Ideas and Outcomes_ **8**:e94349  
+<https://doi.org/10.3897/rio.8.94349>
 
 
 # Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows
@@ -119,6 +120,7 @@ Stian Soiland-Reyes
 
 First International Conference on FAIR Digital Objects, poster
 
+* Poster: <https://doi.org/10.5281/zenodo.7233688>
 
 ## Acknowledgements
 
