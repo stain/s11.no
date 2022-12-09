@@ -120,6 +120,22 @@ Stian Soiland-Reyes
 
 First International Conference on FAIR Digital Objects, poster
 
+<picture>
+  <!--<source srcset="2022-10-26-fdo2022-poster-sdr.svg" type="image/svg+xml" media="(min-width: 1920px)">-->
+  <source srcset="2022-10-26-fdo2022-poster-sdr-1920.webp" type="image/webp" media="(min-width: 1024px)" />
+  <source srcset="2022-10-26-fdo2022-poster-sdr-1920.png" type="image/png" media="(min-width: 1024px)" />
+  <source srcset="2022-10-26-fdo2022-poster-sdr-1024.webp" type="image/webp" media="(min-width: 640px)" />
+  <source srcset="2022-10-26-fdo2022-poster-sdr-1024.png" type="image/png" media="(min-width: 640px)" />
+  <!--
+  <source srcset="2022-10-26-fdo2022-poster-sdr-640.webp" type="image/webp" media="(max-width: 640px)" />
+  <source srcset="2022-10-26-fdo2022-poster-sdr-640.png" type="image/png" media="(max-width: 640px)" />
+  -->
+  <a href="https://doi.org/10.5281/zenodo.7233688">
+    <img src="2022-10-26-fdo2022-poster-sdr-640.png" 
+      alt="FDO2022 poster: Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows" />  
+  </a>
+</picture>
+
 * Poster: <https://doi.org/10.5281/zenodo.7233688>
 
 ## Acknowledgements
