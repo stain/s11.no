@@ -40,7 +40,7 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore 
 **Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**.  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
 _Research Ideas and Outcomes_ **8**:e94349  
-<https://doi.org/10.3897/rio.8.94349>
+<https://doi.org/10.3897/rio.8.e94349>
 
 
 # Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows
