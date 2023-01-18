@@ -6,7 +6,7 @@ categories:
   - PhD
 date-meta: '2022-07-10'
 summary: >
-  Poster abstract presentde at FAIR Digital Objects conference (FDO2022)
+  Poster abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >
   RO-Crate is a lightweight method to package research outputs along with their metadata, based on Linked Data principles and W3C standards. RO-Crate provides a flexible mechanism for researchers archiving and publishing rich data packages (or any other research outcome) by capturing their dependencies and context. However, additional measures should be taken to ensure that a crate is also following the FAIR principles, including consistent use of persistent identifiers, provenance, community standards, clear machine/human-readable licensing for metadata and data, and Web publication of RO-Crates.
 
@@ -21,7 +21,7 @@ Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel G
 **Creating lightweight FAIR Digital Objects with RO-Crate**.  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
 _Research Ideas and Outcomes_ **8**:e93937  
-<https://doi.org/10.3897/rio.8.93937>
+<https://doi.org/10.3897/rio.8.e93937>
 
 # Creating lightweight FAIR Digital Objects with RO-Crate
 
