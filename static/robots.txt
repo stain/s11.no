@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /scrap
+Sitemap: https://s11.no/sitemap.xml
