@@ -17,7 +17,7 @@ Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Gobl
 **Updating Linked Data practices for FAIR Digital Object principles**.  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (abstract).  
 _Research Ideas and Outcomes_ **8**:e94501  
-<https://doi.org/10.3897/rio.8.94501>
+<https://doi.org/10.3897/rio.8.e94501>
 
 
 # Updating Linked Data practices for FAIR Digital Object principles
