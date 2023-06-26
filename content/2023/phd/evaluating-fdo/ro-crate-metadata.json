@@ -704,13 +704,13 @@
                     "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
                 },
                 {
-                    "@id": "https://doi.org/10.17487/rfc7230"
+                    "@id": "#web-http11"
                 },
                 {
-                    "@id": "https://doi.org/10.17487/rfc7540"
+                    "@id": "#web-http2"
                 },
                 {
-                    "@id": "https://doi.org/10.17487/rfc9114"
+                    "@id": "#web-http3"
                 },
                 {
                     "@id": "#web-URL"
@@ -721,6 +721,9 @@
             "@id": "#web-Resource",
             "@type": "DefinedTerm",
             "name": "Resource",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Resource"
+            },
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-resources"
         },
         {
@@ -728,23 +731,35 @@
             "@type": "DefinedTerm",
             "name": "Server",
             "alternateName": "Origin Server",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Service"
+            },
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-origin-server"
         },
         {
             "@id": "#web-ConditionalRequests",
             "@type": "DefinedTerm",
             "name": "Conditional Requests",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Transaction"
+            },
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-conditional-requests"
         },
         {
             "@id": "#web-Method",
             "@type": "DefinedTerm",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Operation"
+            },
             "name": "Method",
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-methods"
         },
         {
             "@id": "#web-query",
             "@type": "DefinedTerm",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Operation"
+            },
             "name": "Query",
             "url": "https://www.rfc-editor.org/rfc/rfc3986#section-3.4"
         },
@@ -752,38 +767,68 @@
             "@id": "#web-Request",
             "@type": "DefinedTerm",
             "name": "Request",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Request"
+            },
             "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.1"
         },
         {
             "@id": "#web-Response",
             "@type": "DefinedTerm",
             "name": "Response",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Response"
+            },
             "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.2"
         },
         {
             "@id": "#web-Message",
             "@type": "DefinedTerm",
             "name": "Message",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Message"
+            },            
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-messages"
         },
         {
             "@id": "#web-Representation",
             "@type": "DefinedTerm",
             "name": "Representation",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Message"
+            },  
             "url": "https://www.rfc-editor.org/rfc/rfc9110#name-representations"
         },
         {
-            "@id": "https://doi.org/10.17487/rfc7230"
+            "@id": "#web-http11",
+            "url": "https://doi.org/10.17487/rfc7230",
+            "name": "HTTP/1.1",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Protocol"
+            }
         },
         {
-            "@id": "https://doi.org/10.17487/rfc7540"
+            "@id": "#web-http2",
+            "url": "https://doi.org/10.17487/rfc7540",
+            "name": "HTTP/2",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Protocol"
+            }
         },
         {
-            "@id": "https://doi.org/10.17487/rfc9114"
+            "@id": "#web-http3",
+            "url": "https://doi.org/10.17487/rfc9114",
+            "name": "HTTP/3",
+            "skos:broadMatch": {
+                "@id": "#metamodel-Protocol"
+            }
         },
         {
             "@id": "#web-URL",
             "@type": "DefinedTerm",
+            "skos:closeMatch": {
+                "@id": "#metamodel-Link"
+            },            
             "name": "Uniform Resource Locator",
             "alternateName": "URL",
             "url": "https://doi.org/10.17487/rfc3986"
