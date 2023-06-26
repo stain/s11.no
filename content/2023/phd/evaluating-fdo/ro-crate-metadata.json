@@ -164,7 +164,7 @@
             "@id": "#metamodel",
             "@type": [
                 "DefinedTermSet",
-                "ConceptScheme"
+                "skos:ConceptScheme"
             ],
             "name": "A structural metamodel of resources and of their interactions",
             "description": "Terms from the (Delgado 2016) metamodel expressed hierarchically as a SKOS concept scheme. For definitions, see (Delgado 2018) which unfortunately is not Open Access",
@@ -451,10 +451,9 @@
             "@id": "#fdo",
             "@type": [
                 "DefinedTermSet",
-                "ConceptScheme"
+                "skos:ConceptScheme"
             ],
             "name": "A partial list of FDO terms (for Table 2)",
-            "description": "Terms are mapped to the ",
             "dct:creator": [
                 {
                     "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -642,6 +641,45 @@
             "name": "JSON Web Signature",
             "alternateName": "JWS",
             "url": "https://doi.org/10.17487/RFC7515"
+        },
+        {
+            "@id": "#web",
+            "@type": [
+                "DefinedTermSet",
+                "skos:ConceptScheme"
+            ],
+            "name": "A partial list of Web terms (for Table 2)",
+            "dct:creator": [
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                }
+            ],
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "isBasedOn": [
+                { "@id": "https://doi.org/10.17487/RFC9110"}
+            ],
+            "skos:hasTopConcept": {
+                "@id": "#web-Web"
+            },
+            "hasDefinedTerm": [
+                {"@id": "#web-Resource"},
+                {"@id": "#web-Server"},
+                {"@id": "#web-ConditionalRequests"},
+                {"@id": "#web-Method"},
+                {"@id": "#web-query"},
+                {"@id": "#web-Request"},
+                {"@id": "#web-Response"},
+                {"@id": "#web-Message"},
+                {"@id": "#web-Representation"},
+                {"@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"},
+                {"@id": "http://dbpedia.org/resource/Transport_Layer_Security"},
+                {"@id": "https://doi.org/10.17487/rfc7230"},
+                {"@id": "https://doi.org/10.17487/rfc7540"},
+                {"@id": "https://doi.org/10.17487/rfc9114"},
+                {"@id": "#web-URL"}
+            ]
         },
         {
             "@id": "table3.html",
