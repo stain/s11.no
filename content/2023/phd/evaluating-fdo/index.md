@@ -290,7 +290,7 @@ From our evaluation, we can observe:
 | FDOF11: *FDO collections w/ semantic relations*    | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. [2022](#ref-DataInformationView))</span>).    |    | LDP Containers required by specification, also user-created (eg. `BasicContainer`).    | Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">(Dataset Exchange Working Group [2023](#ref-w3-vocab-dcat-3))</span>, [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span>    |
 | FDOF12: *Deleted FDO preserve PID w/ tombstone*    | Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish “Not Found” or “Gone”    | Formalise tombstone requirements with new FDO type    | `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialisation    | Formalise tombstone requirements and serialisation    |
 
-_**Table 3**: Checking FDO guidelines [Bonino 2019]()  against its current implementations as DOIP [DONA 2018]() and Linked Data Platform (LDP) [Bonino 2022](), with suggestions for required additions._
+_**Table 3**: Checking FDO guidelines [Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)  against its current implementations as DOIP [DONA 2018](https://hdl.handle.net/0.DOIP/DOIPV2.0) and Linked Data Platform (LDP) [Bonino 2022](https://fairdigitalobjectframework.org/), with suggestions for required additions._
 
 </div>
 
@@ -689,6 +689,7 @@ WD-Implementation-of-Attributes-0.4-20230314\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825572>
 
+[Bonino 2016]
 Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar,
 Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger
 (2016):\
@@ -700,6 +701,7 @@ iSTE Press.\
 Preprint:
 <https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability>
 
+[Bonino 2019]
 Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
 Leggott, Carlo Zwölf (2019):\
 **FAIR digital object framework**.\
@@ -707,6 +709,7 @@ FDOF technical implementation guideline.\
 *Group of European Data Experts in RDA (GEDE-RDA)*\
 <https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
 
+[Bonino 2022]
 Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince
 Sales (2022):\
 **FAIR Digital Object Framework Documentation**\
@@ -792,7 +795,7 @@ DOI (2020):\
 <https://www.doi.org/factsheets/DOIProxy.html> (accessed 24 January
 2023)
 
-DONA (2018):\
+[DONA 2018] DONA (2018):\
 **Digital object interface protocol specification, version 2.0**.\
 *DONA Foundation*\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
