@@ -43,7 +43,17 @@
                 },
                 {
                     "@id": "table5.html"
+                },
+                {
+                    "@id": "#metamodel"
+                },
+                {
+                    "@id": "#fdo"
+                },
+                {
+                    "@id": "#web"
                 }
+
             ]
         },
         {
@@ -148,6 +158,9 @@
                 },
                 {
                     "@id": "#fdo"
+                },
+                {
+                    "@id": "#web"
                 }
             ],
             "citation": {
@@ -492,16 +505,8 @@
         },
         {
             "@id": "#fdo",
-            "@type": [
-                "DefinedTermSet",
-                "skos:ConceptScheme"
-            ],
+            "@type": "DefinedTermSet",
             "name": "A partial list of FDO terms (for Table 2)",
-            "dct:creator": [
-                {
-                    "@id": "https://orcid.org/0000-0001-9842-9718"
-                }
-            ],
             "creator": {
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
@@ -513,9 +518,6 @@
                     "@id": "https://doi.org/10.5281/zenodo.7782262"
                 }
             ],
-            "skos:hasTopConcept": {
-                "@id": "#fdo-FDO"
-            },
             "hasDefinedTerm": [
                 {
                     "@id": "#fdo-FDO"
@@ -687,16 +689,8 @@
         },
         {
             "@id": "#web",
-            "@type": [
-                "DefinedTermSet",
-                "skos:ConceptScheme"
-            ],
+            "@type": "DefinedTermSet",
             "name": "A partial list of Web terms (for Table 2)",
-            "dct:creator": [
-                {
-                    "@id": "https://orcid.org/0000-0001-9842-9718"
-                }
-            ],
             "creator": {
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
@@ -705,9 +699,6 @@
                     "@id": "https://doi.org/10.17487/RFC9110"
                 }
             ],
-            "skos:hasTopConcept": {
-                "@id": "#web-Web"
-            },
             "hasDefinedTerm": [
                 {
                     "@id": "#web-Resource"
