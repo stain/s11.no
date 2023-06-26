@@ -75,7 +75,7 @@ The concept of **FAIR Digital Objects** <span class="citation" data-cites="schul
 
 In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persistent identifier* (PID) such as a DOI, resolve to a *PID Record* that gives the object a *type* along with a mechanism to retrieve its *bit sequences*, *metadata* and references to further programmatic *operations*. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing <span class="citation" data-cites="wittenburgDigitalObjectsDrivers2019a">(Wittenburg et al. [2019](#ref-wittenburgDigitalObjectsDrivers2019a))</span>.
 
-Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span>, in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
+Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span>, in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
 
 #### FDO approaches {#sec:fdo-approaches}
 
@@ -97,13 +97,13 @@ The FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObje
 
 The **FDO Forum Document Standards** <span class="citation" data-cites="fdo-DocProcessStd">(C. Weiland et al. [2022](#ref-fdo-DocProcessStd))</span> documents the recommendation process within the forum, starting at *Working Draft* (WD) status within the closed working group and later within the open forum, then *Proposed Recommendation* (PR) published for public review, finalised as *FDO Forum Recommendation* (REC) following any revisions. In addition, the forum may choose to *endorse* existing third-party notes and specifications.
 
-The **FDO Requirement Specifications** <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> is an update of <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in Table [\[tbl:fdo-checks\]](#tbl:fdo-checks) are largely equivalent, but in this specification clarified with references to other FDO documents.
+The **FDO Requirement Specifications** <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> is an update of [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in Table [\[tbl:fdo-checks\]](#tbl:fdo-checks) are largely equivalent, but in this specification clarified with references to other FDO documents.
 
 The **Machine actionability** <span class="citation" data-cites="fdo-MachineActionDef">(Weiland et al. [2022](#ref-fdo-MachineActionDef))</span> sets out to define what is meant by *machine actionability* for FDOs. *Machine readable* is defined as elements of bit-sequences defined by structural specification, *machine interpretable* elements that can be identified and related with semantic artefacts, while *machine actionable* are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
 
 **Configuration Types** <span class="citation" data-cites="fdo-ConfigurationTypes">(Lannom, Peters-von Gehlen, et al. [2022](#ref-fdo-ConfigurationTypes))</span> classifies different granularities for organising FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting <span class="citation" data-cites="vandesompel2015 vandesompelFAIRSignpostingProfile2022">(Van de Sompel and Nelson [2015](#ref-vandesompel2015); Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span>.
 
-**PID Profiles & Attributes** <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. [2022](#ref-fdo-PIDProfileAttributes))</span> specifies that PIDs must be formally associated with a *PID Profile*, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the *kernel attributes*, building on recommendations from RDA’s *PID Information Types* working group <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the *PID Record* <span class="citation" data-cites="islam_2023">(Islam [2023](#ref-islam_2023))</span>, compared with a richer set of more specific attributes as part of the *metadata* for an FDO, possibly represented as a separate FDO.
+**PID Profiles & Attributes** [[Anders 2022]] specifies that PIDs must be formally associated with a *PID Profile*, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the *kernel attributes*, building on recommendations from RDA’s *PID Information Types* working group <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the *PID Record* <span class="citation" data-cites="islam_2023">(Islam [2023](#ref-islam_2023))</span>, compared with a richer set of more specific attributes as part of the *metadata* for an FDO, possibly represented as a separate FDO.
 
 **Kernel Attributes & Metadata** <span class="citation" data-cites="fdo-KernelAttributes">(Broeder et al. [2022](#ref-fdo-KernelAttributes))</span> elaborates on categories of FDO Mandatory, FDO Optional and Community Attributes, recommending kernel attributes like `dateCreated`, `ScientificDomain`, `PersistencePolicy`, `digitalObjectMutability`, etc. This document expands on RDA Recommendation on PID Kernel Information <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. It is worth noting that both documents are relatively abstract and do not establish PIDs or namespaces for the kernel attributes.
 
@@ -111,7 +111,7 @@ The **Machine actionability** <span class="citation" data-cites="fdo-MachineActi
 
 **DOIP Endorsement Request** <span class="citation" data-cites="fdo-DOIPEndorsement">(Ulrich Schwardmann et al. [2022](#ref-fdo-DOIPEndorsement))</span> is an endorsement of the DOIP v2.0 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> specification as a potential FDO implementation, as it has been applied by several institutions <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span>. The document proposes that DOIP shall be assessed for completeness against FDO – in this initial draft this is justified as *“we can state that DOIP is compliant with the FDO specification documents in process”* (the documents listed above).
 
-**Upload of FDO** <span class="citation" data-cites="fdo-FDO-Upload">(Blanchi et al. [2022](#ref-fdo-FDO-Upload))</span> illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync <span class="citation" data-cites="ResourceSyncFrameworkSpecification">(*ANSI/NISO Z39.99-2017, ResourceSync Framework Specification* [2017](#ref-ResourceSyncFrameworkSpecification))</span> is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, without adding any particular requirements.
+**Upload of FDO** <span class="citation" data-cites="fdo-FDO-Upload">(Blanchi et al. [2022](#ref-fdo-FDO-Upload))</span> illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync [[NISO 2017]] is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, without adding any particular requirements.
 
 **Typing FAIR Digital Objects** <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span> defines what *type* means for FDOs, primarily to enable machine actionability and to define an FDO’s purpose. This document lays out requirements for how *FDO Types* should themselves be specified as FDOs, and how an *FDO Type Framework* allows organising and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
 
@@ -165,11 +165,11 @@ To better understand the relationship between the FDO framework and other existi
 
 1.  An Interoperability Framework and Distributed Platform for Fast Data Applications [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)], which proposes quality measurements for comparing how frameworks support interoperability, particularly from a service architectural view.
 
-2.  The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>, validated against its current implementations for completeness.
+2.  The FAIR Digital Object guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)], validated against its current implementations for completeness.
 
 3.  A Comparison Framework for Middleware Infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span>, which suggest dimensions like openness, performance and transparency, mainly focused on remote computational methods.
 
-4.  Cross-checks against RDA’s FAIR Data Maturity Model <span class="citation" data-cites="bahimFAIRDataMaturity2020a">(Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span> to find how the FAIR principles are achieved in FDO, in particular considering access, sharing and openness.
+4.  Cross-checks against RDA’s FAIR Data Maturity Model [[Bahim 2020]] to find how the FAIR principles are achieved in FDO, in particular considering access, sharing and openness.
 
 5.  EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> which gives recommendations for technical, semantic, organisational and legal interoperability, particularly from a metadata perspective.
 
@@ -238,7 +238,7 @@ _**Table 2**: Mapping the Metamodel concepts from the Interoperability Framework
 
 ### Assessing FDO implementations {#sec:doip-fdo-compare}
 
-The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> sets out recommendations for FDO implementations. Note that the proposed update to FDO specification <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> clarifies these definitions with equivalent identifiers[<sup>9</sup>](#fn9) and relates them to further FDO requirements such as FDO Data Type Registries.
+The FAIR Digital Object guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)] sets out recommendations for FDO implementations. Note that the proposed update to FDO specification <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> clarifies these definitions with equivalent identifiers[<sup>9</sup>](#fn9) and relates them to further FDO requirements such as FDO Data Type Registries.
 
 In Table [\[tbl:fdo-checks\]](#tbl:fdo-checks) we evaluate completeness of the guidelines in two current FDO realizations, using DOIPv2 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> and using Linked Data Platform <span class="citation" data-cites="w3-ldp">(Speicher, Arwe, and Malhotra [2015](#ref-w3-ldp))</span>, as proposed by <span class="citation" data-cites="FDOFramework">Bonino da Silva Santos, Guizzardi, and Sales ([2022](#ref-FDOFramework))</span>.
 
@@ -277,7 +277,7 @@ From our evaluation, we can observe:
 | G7: *encapsulation*    | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).    | Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span>.    | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.    | Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>    |
 | G8: *technology independence*    | In theory independent, in reality depends on single implementations of Handle system and DOIP    | Encourage open source DOIP testbeds and lighter reference implementations    | Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.    | Develop demonstrator of FDOF usage based on existing LDP server.    |
 | G9: *standard compliance*    | Handle <span class="citation" data-cites="rfc3650">(Sun, Lannom, and Boesch [2003](#ref-rfc3650))</span>, DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>. FDO requirements not standardised yet.    | Formalise standard process of FDO requirements <span class="citation" data-cites="fdo-DocProcessStd">(C. Weiland et al. [2022](#ref-fdo-DocProcessStd))</span>    | HTTP, LDP. However FDOF is not yet standardised.    | Formalise FDOF from FDOF-SEM working group.    |
-| FDOF1: *PID as basis*    | Extensive use of Handle system.    | Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. [2022](#ref-fdo-PIDProfileAttributes))</span>. Register `0.DOIP/*` and `0.FDO/*` as actual PIDs.    | HTTP URLs as basis for identifiers, but they are frequently not persistent.    | Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">(McMurry et al. [2017](#ref-McMurry_2017))</span>.    |
+| FDOF1: *PID as basis*    | Extensive use of Handle system.    | Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve [[Anders 2022]]. Register `0.DOIP/*` and `0.FDO/*` as actual PIDs.    | HTTP URLs as basis for identifiers, but they are frequently not persistent.    | Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">(McMurry et al. [2017](#ref-McMurry_2017))</span>.    |
 | FDOF2: *PID record w/ type*    | Unspecified how to resolve from Handle to DOIP Service (\!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA`    | Document requirements for PID Record    | w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.    | Add FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span> at PID provider for minimal PID record    |
 | FDOF3: *PID resolvable to bytestream & metadata*    | Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.    | Clarify expectations for multiple items. Recommend chunks to not be used.    | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.    | Add FAIR Signposting and preference order.    |
 | FDOF4: *Additional attributes*    | Freetext attribute keys. Attributes should be defined for FDO type.    | Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.    | All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.    | Clarify type expectations of required/recommended/optional attributes.    |
@@ -287,10 +287,10 @@ From our evaluation, we can observe:
 | FDOF8: *Metadata as FDO, semantic assertions*    | DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property.    | Specify a `0.FDO/metadata` or similar to point to Metadata FDOs.    | Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, `rdfs:seeAlso` is common.    | Use FAIR Signposting `describedby` link relation to additional metadata PIDs    |
 | FDOF9: *Different metadata levels*    | Defines open-ended “Response Attributes” without namespaces, but mandated as “None” for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (may need FDOF8).    | Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately.    | Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.    | Define how to navigate to alternate views and their semantic implications, e.g. `owl:sameAs`    |
 | FDOF10: *Metadata schemas by community*    | Metadata schemas are in practice managed on single Cordra server as local types, using JSON Schema.    | Require types to be FDOs with registered PIDs, implement shared types.    | Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. [OBO Foundry](https://obofoundry.org/) <span class="citation" data-cites="smithOBOFoundryCoordinated2007a">(Smith et al. [2007](#ref-smithOBOFoundryCoordinated2007a))</span>    | Rather document better how individual ad-hoc schemas can be started for prototypes.    |
-| FDOF11: *FDO collections w/ semantic relations*    | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. [2022](#ref-DataInformationView))</span>).    |    | LDP Containers required by specification, also user-created (eg. `BasicContainer`).    | Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">(Dataset Exchange Working Group [2023](#ref-w3-vocab-dcat-3))</span>, [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span>    |
+| FDOF11: *FDO collections w/ semantic relations*    | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. [2022](#ref-DataInformationView))</span>).    |    | LDP Containers required by specification, also user-created (eg. `BasicContainer`).    | Clarify relation to other collections like DCAT 3 [[Albertoni 2023]], [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span>    |
 | FDOF12: *Deleted FDO preserve PID w/ tombstone*    | Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish “Not Found” or “Gone”    | Formalise tombstone requirements with new FDO type    | `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialisation    | Formalise tombstone requirements and serialisation    |
 
-_**Table 3**: Checking FDO guidelines [Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)  against its current implementations as DOIP [DONA 2018](https://hdl.handle.net/0.DOIP/DOIPV2.0) and Linked Data Platform (LDP) [Bonino 2022](https://fairdigitalobjectframework.org/), with suggestions for required additions._
+_**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implementations as DOIP [[DONA 2018]] and Linked Data Platform (LDP) [[Bonino 2022]], with suggestions for required additions._
 
 </div>
 
@@ -346,7 +346,7 @@ Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation"
 
 In addition to having “FAIR” in its name, the FAIR Digital Object guidelines <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> also include *G3: FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness*.
 
-Here we evaluate to what extent the FDO guidelines and its implementation with DOIP and Linked Data Platform <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span> comply with the FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span>. Here we’ve used the RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020">(FAIR Data Maturity Model Working Group [2020](#ref-groupFAIRDataMaturity2020))</span> as it has decomposed the FAIR principles to a structured list of FAIR indicators <span class="citation" data-cites="bahimFAIRDataMaturity2020a">(Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span>, importantly considering *Data* and *Metadata* separately. In our interpretation for Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model) we have for simplicity chosen to interpret “data” in FDOs as the associated bytestream of arbitrary formats, with remaining JSON or RDF structures always considered as metadata.
+Here we evaluate to what extent the FDO guidelines and its implementation with DOIP and Linked Data Platform <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span> comply with the FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span>. Here we’ve used the RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020">(FAIR Data Maturity Model Working Group [2020](#ref-groupFAIRDataMaturity2020))</span> as it has decomposed the FAIR principles to a structured list of FAIR indicators [[Bahim 2020]], importantly considering *Data* and *Metadata* separately. In our interpretation for Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model) we have for simplicity chosen to interpret “data” in FDOs as the associated bytestream of arbitrary formats, with remaining JSON or RDF structures always considered as metadata.
 
 From this evaluation we observe:
 
@@ -383,7 +383,7 @@ From this evaluation we observe:
 | RDA-A1-03M    | Metadata identifier resolves to a metadata record    | FDOF8+FDOF2    | —    | —    | `Content-Location` or HTTP redirection may indicate metadata URI    |
 | RDA-A1-03D    | Data identifier resolves to a digital object    | FDOF2    | Required, but frequently not directly resolvable    | Recommended, but any URI acceptable    | Resolvable HTTP/HTTPS URIs are most common, now infrequent URNs are not directly resolvable    |
 | RDA-A1-04M    | Metadata is accessed through standardised protocol    | G9 FDOF3    | Retrievable from PID (FDOF3). Informal DOIP standard maintained by DONA Foundation    | LDP standard maintained by W3C, HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)    | Formal HTTP standards maintained by IETF, HTTP content negotiation, informal FAIR Signposting    |
-| RDA-A1-04D    | Data is accessible through standardised protocol    | G9    | (see above)    | HTTP <span class="citation" data-cites="rfc9110">(Fielding, Nottingham, and Reschke [2022](#ref-rfc9110))</span>    | HTTP/HTTPS, FTP (now less common), GridFTP <span class="citation" data-cites="allcockGlobusStripedGridFTP">(Allcock et al. [2005](#ref-allcockGlobusStripedGridFTP))</span> (for large data), ARK <span class="citation" data-cites="ARKIdentifierScheme">(Kunze and Bermès [2022](#ref-ARKIdentifierScheme))</span>    |
+| RDA-A1-04D    | Data is accessible through standardised protocol    | G9    | (see above)    | HTTP <span class="citation" data-cites="rfc9110">(Fielding, Nottingham, and Reschke [2022](#ref-rfc9110))</span>    | HTTP/HTTPS, FTP (now less common), GridFTP [[Allcock 2005]] (for large data), ARK <span class="citation" data-cites="ARKIdentifierScheme">(Kunze and Bermès [2022](#ref-ARKIdentifierScheme))</span>    |
 | RDA-A1-05D    | Data can be accessed automatically (i.e. by a computer program)    | G4 FDOF3 FDOF6    | Required, but few client libraries    | HTTP `GET`, content-negotiation for `fdof/object`    | Ubiquitous, hundreds of HTTP libraries    |
 | RDA-A1.1-01M    | Metadata is accessible through a free access protocol    | G1 G8 G9    | Partially realised: Handle system is open[<sup>13</sup>](#fn13) protocol <span class="citation" data-cites="rfc3652">(Sun et al. [2003](#ref-rfc3652))</span>. One server implementation <span class="citation" data-cites="HandleNetRegistry">(CNRI [2022](#ref-HandleNetRegistry))</span>, free[<sup>14</sup>](#fn14). One DOIPv2 implementation ([Cordra](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source). | LDP is open W3C recommendation <span class="citation" data-cites="w3-ldp">(Speicher, Arwe, and Malhotra [2015](#ref-w3-ldp))</span>. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).    |
 | RDA-A1.1-01D    | Data is accessible through a free access protocol    | G9    | (see above)    | URI, DNS, HTTP, TLS    | URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)    |
@@ -412,9 +412,10 @@ From this evaluation we observe:
 | RDA-R1.3-02M    | Metadata is expressed in compliance with a machine-understandable community standard    | FDOF4 FDOF10    | Recommended                                                                                                                                                                                       14    | —    | Common practice for ontologies, specially in bioinformatics, e.g. BioPortal <span class="citation" data-cites="NCBOBioPortal">(“NCBO BioPortal” [n.d.](#ref-NCBOBioPortal))</span>, Darwin Core <span class="citation" data-cites="wieczorekDarwinCoreEvolving2012">(Wieczorek et al. [2012](#ref-wieczorekDarwinCoreEvolving2012))</span>    |
 | RDA-R1.3-02D    | Data is expressed in compliance with a machine-understandable community standard    | (FDOR2)    | No, FDO is typed but data can be any bytestream    | —    | Occassionally, (e.g. [GFF3](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md), [FITS](https://fits.gsfc.nasa.gov/fits_standard.html), [ESRI](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml))    |
 
-Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020 bahimFAIRDataMaturity2020a">(FAIR Data Maturity Model Working Group [2020](#ref-groupFAIRDataMaturity2020); Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>, FDO implemented with the protocol DOIPv2 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>, Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span> and examples from Linked Data practices in general. (— indicates *Unspecified*, may be possible with additional conventions) <span id="tbl:fair-data-maturity-model" label="tbl:fair-data-maturity-model">\[tbl:fair-data-maturity-model\]</span>
+Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020]] [[Bahim 2020]] (first 2 columns) against the FDO guidelines [[Bonino 2019]], FDO implemented with the protocol DOIPv2 [[DONA 2018]], Linked Data Platform (LDP) [[Bonino 2022]] and examples from Linked Data practices in general. (— indicates *Unspecified*, may be possible with additional conventions) <span id="tbl:fair-data-maturity-model" label="tbl:fair-data-maturity-model">\[tbl:fair-data-maturity-model\]</span>
 
 </div>
+
 
 ### EOSC Interoperability Framework
 
@@ -467,7 +468,7 @@ Likewise, search and indexing is important FAIR aspect for Findability, but is p
 | Legal    | Harmonised terms-of-use    | Undefined    | Undefined    |
 | Legal    | Alignment between EOSC and national legislation    | Not applicable    | Not applicable    |
 
-Assessing EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b), sec. 3.6)</span> against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> and Linked Data practices.
+Assessing EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b), sec. 3.6)</span> against the FDO guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)] and Linked Data practices.
 
 </div>
 
@@ -577,6 +578,8 @@ Contributions to this article according to the [CASRAI CRediT](https://credit.ni
 References 
 ==========
 
+[NISO 2017]: http://www.openarchives.org/rs/1.1/resourcesync "ANSI/NISO Z39.99-2017, ResourceSync Framework Specification"
+\[NISO 2017\]
 NISO (2017):\
 **ANSI/NISO Z39.99-2017, ResourceSync Framework Specification**.\
 *National Information Standards Organization ResourceSync Standing
@@ -584,18 +587,23 @@ Committee*.\
 <https://doi.org/10.3789/ansi.niso.z39.99-2017>\
 <http://www.openarchives.org/rs/1.1/resourcesync>
 
-Riccardo Albertonim David Browning, Simon Cox, Alejandra Gonzalez
+[Albertoni 2023]: https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/ "Data Catalog Vocabulary (DCAT)- Version 3"
+\[Albertoni 2023\]
+Riccardo Albertoni, David Browning, Simon Cox, Alejandra Gonzalez
 Beltran, Andrea Perego, Peter Winstanley (2023):\
 **Data Catalog Vocabulary (DCAT)- Version 3**.\
 <https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/>
 
-William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link,
+[Allcock 2005]: https://doi.org/10.1109/sc.2005.72 "The Globus Striped GridFTP Framework and Server"
+\[Allcock 2005\] William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link,
 Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):\
 **The Globus Striped GridFTP Framework and Server**.\
 *SC '05: Proceedings of the 2005 ACM/IEEE Conference on Supercomputing*,
 Seattle, WA, USA, IEEE\
 <https://doi.org/10.1109/sc.2005.72>
 
+[Anders 2022]: https://doi.org/10.5281/zenodo.7825630 "PR-PIDProfileAttributes-2.1-20221017: FDO PID profiles & attributes"
+\[Anders 2022\]
 Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry
 Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
 **FDO PID profiles & attributes**\
@@ -603,6 +611,8 @@ Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825630>
 
+[Anders 2023]: https://doi.org/10.5281/zenodo.7782262 "PR-RequirementSpec-3.0: FAIR Digital Objects Forum FDO requirement specifications"
+\[Anders 2023\]
 Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
 Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert
 Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes,
@@ -615,11 +625,12 @@ George Strawn, Peter Wittenburg (eds.)\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7782262>
 
+[Bahim 2020]: https://doi.org/10.5334/dsj-2020-041 "The FAIR data maturity model: An approach to harmonise FAIR assessments"
+\[Bahim 2020\]
 Christophe Bahim, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog,
 Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley Stall
 (2020):\
-**The FAIR data maturity model: An approach to harmonise FAIR
-assessments**.\
+**The FAIR data maturity model: An approach to harmonise FAIR assessments**.\
 *Data Science Journal* **19**(1)\
 <https://doi.org/10.5334/dsj-2020-041>
 
@@ -701,7 +712,9 @@ iSTE Press.\
 Preprint:
 <https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability>
 
-[Bonino 2019]
+[Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
+
+\[Bonino 2019\]
 Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
 Leggott, Carlo Zwölf (2019):\
 **FAIR digital object framework**.\
@@ -795,7 +808,8 @@ DOI (2020):\
 <https://www.doi.org/factsheets/DOIProxy.html> (accessed 24 January
 2023)
 
-[DONA 2018] DONA (2018):\
+[DONA 2018]: https://hdl.handle.net/0.DOIP/DOIPV2.0 "Digital object interface protocol specification, version 2.0"
+\[DONA 2018\] DONA (2018):\
 **Digital object interface protocol specification, version 2.0**.\
 *DONA Foundation*\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
@@ -845,6 +859,8 @@ Clemm (2002):\
 Versioning).\
 *RFC Editor*, RFC 3253. <https://doi.org/10.17487/rfc3253>
 
+[RDA 2020]: https://doi.org/10.15497/rda00050 "FAIR data maturity model: Specification and guidelines"
+\[RDA 2020\]
 FAIR Data Maturity Model Working Group (2020):\
 **FAIR data maturity model: Specification and guidelines**.\
 *Research Data Alliance*\
