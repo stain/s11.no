@@ -22,13 +22,16 @@
             },
             "cite-as": "https://doi.org/10.5281/zenodo.8075229",
             "url": "https://w3id.org/ro/doi/10.5281/zenodo.8075229",
-            "datePublished": "2023-06-23",
+            "datePublished": "2023-06-26",
             "name": "Comparison tables for evaluating FAIR Digital Object and Linked Data",
             "description": "RO-Crate and tables from the paper \"Evaluating FAIR Digital Object and Linked Data as distributed object systems\".\n\nWe systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself.",
             "license": {
                 "@id": "http://spdx.org/licenses/CC-BY-4.0"
             },
             "hasPart": [
+                {
+                    "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+                },
                 {
                     "@id": "table1.html"
                 },
@@ -958,7 +961,8 @@
             "dateModified": "2023-06-14T00:03:40Z",
             "publisher": {
                 "@id": "https://arxiv.org/"
-            }
+            },
+            "url": "https://s11.no/2023/phd/evaluating-fdo/"
         },
         {
             "@id": "https://arxiv.org/",
