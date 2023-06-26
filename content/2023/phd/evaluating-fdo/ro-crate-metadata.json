@@ -25,6 +25,9 @@
             "datePublished": "2023-06-26",
             "name": "Comparison tables for evaluating FAIR Digital Object and Linked Data",
             "description": "RO-Crate and tables from the paper \"Evaluating FAIR Digital Object and Linked Data as distributed object systems\".\n\nWe systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself.",
+            "distribution": {
+                "@id": "https://zenodo.org/record/8075230/files/evaluating-fdo-and-ld-crate.zip"
+            },
             "license": {
                 "@id": "http://spdx.org/licenses/CC-BY-4.0"
             },
@@ -62,6 +65,12 @@
             ]
         },
         {
+            "@id": "https://zenodo.org/record/8075230/files/evaluating-fdo-and-ld-crate.zip",
+            "@type": "DataDownload",
+            "encodingFormat": ["application/zip", {"@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263"}],
+            "contentSize": "174349"
+        },
+        {
             "@id": "#table1-assessments",
             "@type": "AssessAction",
             "name": "Considerations for Table 1 based on literature",
@@ -97,6 +106,7 @@
                 "ScholarlyArticle",
                 "WebPage"
             ],
+            "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems (HTML)",
             "author": [
                 {
                     "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -111,6 +121,12 @@
             "sameAs": {
                 "@id": "https://doi.org/10.48550/arXiv.2306.07436"
             },
+            "encodingFormat": [
+                "text/html",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
+                }
+            ],
             "hasPart": [
                 {
                     "@id": "table1.html"
@@ -1003,7 +1019,7 @@
         },
         {
             "@id": "https://doi.org/10.48550/arXiv.2306.07436",
-            "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
+            "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems (PDF)",
             "@type": "ScholarlyArticle",
             "datePublished": "2023-06-12",
             "identifier": "https://doi.org/10.48550/arXiv.2306.07436",
@@ -1054,6 +1070,12 @@
             "@type": "DefinedTerm",
             "name": "Hypertext Markup Language 5",
             "alternateName": "HTML5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263",
+            "@type": "DefinedTerm",
+            "name": "ZIP Format",
+            "alternateName": "ZIP"
         },
         {
             "@id": "http://spdx.org/licenses/CC-BY-4.0",
