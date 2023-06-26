@@ -142,6 +142,10 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
                 }
             ],
+            "encodesCreativeWork": [
+                { "@id": "#metamodel" },
+                { "@id": "#fdo" }
+            ],
             "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             }
@@ -449,7 +453,8 @@
                 "DefinedTermSet",
                 "ConceptScheme"
             ],
-            "name": "A partial list of FDO terms",
+            "name": "A partial list of FDO terms (for Table 2)",
+            "description": "Terms are mapped to the ",
             "dct:creator": [
                 {
                     "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -499,7 +504,22 @@
                 },
                 {
                     "@id": "#fdo-DOIPTransportProtocol"
-                }
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Persistent_identifier"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Handle"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
+                }                
             ]
         },
         {
@@ -509,7 +529,8 @@
             "alternateName": "FDO",
             "skos:broader": {
                 "@id": "#fdo-DO"
-            }
+            },
+            "url": "https://doi.org/10.5281/zenodo.7782262"
         },
         {
             "@id": "#fdo-DO",
@@ -590,6 +611,9 @@
             "@type": "DefinedTerm",
             "name": "Persistent Identifier",
             "alternateName": "PID",
+            "skos:narrower": {
+                "@id": "http://dbpedia.org/resource/Handle"
+            },
             "url": "https://doi.org/10.1371/journal.pbio.2001414"
         },
         {
@@ -602,19 +626,22 @@
             "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol",
             "@type": "DefinedTerm",
             "name": "Transmission Control Protocol",
-            "alternateName": "TCP/IP"
+            "alternateName": "TCP/IP",
+            "url": "https://doi.org/10.17487/RFC9293"
         },
         {
             "@id": "http://dbpedia.org/resource/Transport_Layer_Security",
             "@type": "DefinedTerm",
             "name": "Transport Layer Security",
-            "alternateName": "TLS"
+            "alternateName": "TLS",
+            "url": "https://doi.org/10.17487/RFC8446"
         },
         {
             "@id": "http://dbpedia.org/resource/JSON_Web_Signature",
             "@type": "DefinedTerm",
             "name": "JSON Web Signature",
-            "alternateName": "JWS"
+            "alternateName": "JWS",
+            "url": "https://doi.org/10.17487/RFC7515"
         },
         {
             "@id": "table3.html",
