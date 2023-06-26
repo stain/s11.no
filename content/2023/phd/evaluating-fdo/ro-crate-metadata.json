@@ -176,7 +176,7 @@
                     "@id": "https://orcid.org/0000-0001-9842-9718"
                 }
             ],
-            "author": { 
+            "author": {
                 "@id": "https://orcid.org/0000-0002-2536-4906"
             },
             "creator": {
@@ -234,6 +234,16 @@
             "skos:related": {
                 "@id": "#metamodel-Service"
             },
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-DO"
+                }
+            ],
+            "skos:narrowMatch": [
+                {
+                    "@id": "#fdo-FDO"
+                }
+            ],
             "skos:prefLabel": "Resource",
             "skos:inScheme": {
                 "@id": "#metamodel"
@@ -247,6 +257,16 @@
             ],
             "name": "Link",
             "skos:prefLabel": "Link",
+            "skos:closeMatch": [
+                {
+                    "@id": "http://dbpedia.org/resource/Persistent_identifier"
+                }
+            ],
+            "skos:narrowMatch": [
+                {
+                    "@id": "http://dbpedia.org/resource/Handle"
+                }
+            ],
             "skos:broader": {
                 "@id": "#metamodel-Resource"
             },
@@ -262,6 +282,11 @@
             ],
             "name": "Service",
             "skos:prefLabel": "Service",
+            "skos:narrowMatch": [
+                {
+                    "@id": "#fdo-DOIP-service"
+                }
+            ],
             "skos:inScheme": {
                 "@id": "#metamodel"
             }
@@ -288,6 +313,11 @@
                 "skos:Concept"
             ],
             "name": "Process",
+            "skos:narrowMatch": [
+                {
+                    "@id": "#fdo-Extended-operations"
+                }
+            ],
             "skos:prefLabel": "Process",
             "skos:inScheme": {
                 "@id": "#metamodel"
@@ -300,6 +330,11 @@
                 "skos:Concept"
             ],
             "name": "Operation",
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-DOIPOperation"
+                }
+            ],
             "skos:broader": {
                 "@id": "#metamodel-Resource"
             },
@@ -314,6 +349,11 @@
                 "skos:Concept"
             ],
             "name": "Message",
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-Segment"
+                }
+            ],
             "skos:broader": {
                 "@id": "#metamodel-Resource"
             },
@@ -332,6 +372,11 @@
             ],
             "name": "Request",
             "skos:prefLabel": "Request",
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-DOIPRequest"
+                }
+            ],
             "skos:broader": {
                 "@id": "#metamodel-Message"
             },
@@ -346,6 +391,11 @@
                 "skos:Concept"
             ],
             "name": "Response",
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-DOIPRequest"
+                }
+            ],
             "skos:broader": {
                 "@id": "#metamodel-Message"
             },
@@ -359,6 +409,11 @@
                 "DefinedTerm",
                 "skos:Concept"
             ],
+            "skos:closeMatch": [
+                {
+                    "@id": "#fdo-DOIPTransportProtocol"
+                }
+            ],
             "name": "Channel",
             "skos:inScheme": {
                 "@id": "#metamodel"
@@ -371,6 +426,11 @@
                 "skos:Concept"
             ],
             "name": "Protocol",
+            "skos:narrowMatch": [
+                {
+                    "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+                }
+            ],
             "skos:related": [
                 {
                     "@id": "#metamodel-Message"
@@ -382,6 +442,120 @@
             "skos:inScheme": {
                 "@id": "#metamodel"
             }
+        },
+        {
+            "@id": "#fdo-FDO",
+            "@type": "DefinedTerm",
+            "name": "FAIR Digital Object",
+            "alternateName": "FDO",
+            "skos:broader": {
+                "@id": "#fdo-DO"
+            }
+        },
+        {
+            "@id": "#fdo-DO",
+            "@type": "DefinedTerm",
+            "name": "Digital Object",
+            "identifier": "0.TYPE/DO",
+            "alternateName": "DO",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=23"
+        },
+        {
+            "@id": "#fdo-DOIP-service",
+            "@type": "DefinedTerm",
+            "name": "DOIP service",
+            "identifier": "0.TYPE/DOIPServiceInfo",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=10"
+        },
+        {
+            "@id": "#fdo-Extended-operations",
+            "@type": "DefinedTerm",
+            "name": "Extended operations",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=12",
+            "skos:broader": {
+                "@id": "#fdo-DOIPOperation"
+            }
+        },
+        {
+            "@id": "#fdo-DOIPOperation",
+            "@type": "DefinedTerm",
+            "name": "DOIP Operation",
+            "identifier": "0.TYPE/DOIPOperation",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=11"
+        },
+        {
+            "@id": "#fdo-DOIPRequest",
+            "@type": "DefinedTerm",
+            "identifier": "0.DOIP/Request",
+            "name": "DOIP Request",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=15"
+        },
+        {
+            "@id": "#fdo-DOIPResponse",
+            "@type": "DefinedTerm",
+            "identifier": "0.DOIP/Response",
+            "name": "DOIP Response",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=16"
+        },
+        {
+            "@id": "#fdo-Segment",
+            "@type": "DefinedTerm",
+            "name": "Segment",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=14"
+        },
+        {
+            "@id": "#fdo-requestId",
+            "@type": "DefinedTerm",
+            "name": "requestId",
+            "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=22"
+        },
+        {
+            "@id": "#fdo-DOIPTransportProtocol",
+            "@type": "DefinedTerm",
+            "identifier": "0.DOIP/Transport",
+            "name": "DOIP Transport Protocol",
+            "skos:narrower": [
+                {
+                    "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
+                }
+            ]
+        },
+        {
+            "@id": "http://dbpedia.org/resource/Persistent_identifier",
+            "@type": "DefinedTerm",
+            "name": "Persistent Identifier",
+            "alternateName": "PID",
+            "url": "https://doi.org/10.1371/journal.pbio.2001414"
+        },
+        {
+            "@id": "http://dbpedia.org/resource/Handle",
+            "@type": "DefinedTerm",
+            "name": "Handle",
+            "url": "https://doi.org/10.17487/rfc3650"
+        },
+        {
+            "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol",
+            "@type": "DefinedTerm",
+            "name": "Transmission Control Protocol",
+            "alternateName": "TCP/IP"
+        },
+        {
+            "@id": "http://dbpedia.org/resource/Transport_Layer_Security",
+            "@type": "DefinedTerm",
+            "name": "Transport Layer Security",
+            "alternateName": "TLS"
+        },
+        {
+            "@id": "http://dbpedia.org/resource/JSON_Web_Signature",
+            "@type": "DefinedTerm",
+            "name": "JSON Web Signature",
+            "alternateName": "JWS"
         },
         {
             "@id": "table3.html",
