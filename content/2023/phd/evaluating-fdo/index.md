@@ -49,5263 +49,548 @@ FAIR Digital Object (FDO) is an emerging concept that is highlighted by European
 
 We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.
 
-<h1 class="unnumbered" id="sec:introduction">Introduction</h1>
-<p>The FAIR principles <span class="citation"
-data-cites="wilkinsonFAIRGuidingPrinciples2016e"></span> encourage
-sharing of scientific data with machine-readable metadata and the use of
-interoperable formats, and are being adapted by a wide range of research
-infrastructures. They have been widely recognised by the research
-community and policy makers as a goal to strive for. In particular, the
-European Open Science Cloud (<a href="https://www.eosc.eu/">EOSC</a>)
-has promoted adaptation of FAIR data sharing of data resources across
-electronic research infrastructures <span class="citation"
-data-cites="monsCloudyIncreasinglyFAIR2017b"></span>. The EOSC
-Interoperability Framework <span class="citation"
-data-cites="corchoEOSCInteroperabilityFramework2021b"></span> puts
-particular emphasis on how interoperability can be achieved technically,
-semantically, organisationally, and legally – laying out a vision of how
-data, publication, software and services can work together to form an
-ecosystem of rich digital objects.</p>
-<p>Specifically, the EOSC Interoperability framework highlights the
-emerging FAIR Digital Object (FDO) concept <span class="citation"
-data-cites="schultesFAIRPrinciplesDigital2019a"></span> as a possible
-foundation for building a semantically interoperable ecosystem to fully
-realise the FAIR principles beyond individual repositories and
-infrastructures. The FDO approach has great potential, as it proposes
-strong requirements for identifiers, types, access and formalises
-interactive operations on objects.</p>
-<p>In other discourse, Linked Data <span class="citation"
-data-cites="bizerLinkedDataStory2009a"></span> has been seen as an
-established set of principles based on Semantic Web technologies that
-can achieve the vision of the FAIR principles <span class="citation"
-data-cites="boninodasilvasantosFAIRDataPoints2016a hasnainAssessingFAIRData2018a"></span>.
-Yet regular researchers and developers of emerging platforms for
-computation and data management are reluctant to adapt such a FAIR
-Linked Data approach fully <span class="citation"
-data-cites="verborghSemanticWebIdentity2020a"></span>, opting instead
-for custom in-house models and JSON-derived formats from RESTful Web
-services <span class="citation"
-data-cites="merono-penuelaConclusionFutureChallenges2021a neumannAnalysisPublicREST2021a"></span>.
-While such focus on simplicity gives rapid development and highly
-specialised services, it raises wider concerns on interoperability <span
-class="citation"
-data-cites="turcoaneLinkedDataJSONLD2014a wilkinsonWorkflowsWhenParts2022b"></span>.</p>
-<p>One challenge that may, perhaps counter-intuitively, steer developers
-towards a not-invented-here mentality <span class="citation"
-data-cites="stefiDevelopersMakeUnbiased2015 stefiDevelopReuseTwo2015a"></span>
-when exposing their data on the Web is the heterogeneity and apparent
-complexity of Semantic Web approaches themselves <span class="citation"
-data-cites="merono-penuelaWebDataApis2021b"></span>.</p>
-<p>These approaches, thus, form two of the major avenues for allowing
-developers and the wider research community to achieve the goal of FAIR
-data. Given their importance, in this article, we aim to examine the
-relationships between FAIR and FAIR Digital Objects, contrasted with
-Linked Data and the Web in general.</p>
-<p>Concretely, the contribution of this paper is a systematic comparison
-between FDO and Linked Data using 5 different conceptual frameworks that
-capture different perspectives on interoperability and readiness for
-implementation.</p>
-<h1 class="unnumbered" id="sec:background">Background and related
-work</h1>
-<p>In the following, we discuss the related work with respect to FAIR
-Digital Objects and Linked Data. We do so by looking through the lens of
-development of these technologies over time, including future
-directions.</p>
-<h2 class="unnumbered" id="sec:fdo">FAIR Digital Object</h2>
-<p>The concept of <strong>FAIR Digital Objects</strong> <span
-class="citation" data-cites="schultesFAIRPrinciplesDigital2019a"></span>
-has been introduced as way to expose research data as active objects
-that conform to the FAIR principles <span class="citation"
-data-cites="wilkinsonFAIRGuidingPrinciples2016e"></span>. This builds on
-the <em>Digital Object</em> (DO) concept <span class="citation"
-data-cites="kahnFrameworkDistributedDigital2006b"></span>, first
-introduced by <span class="citation"
-data-cites="kahnFrameworkDistributedDigital1995a"></span> as a system of
-<em>repositories</em> containing <em>digital objects</em> identified by
-<em>handles</em> and described by <em>metadata</em> which may have
-references to other handles. DO was the inspiration for the <span
-class="citation" data-cites="x1255FrameworkDiscovery"></span> framework
-which introduced an abstract <em>Digital Entity Interface Protocol</em>
-for managing such objects programmatically, first realised by the
-Digital Object Interface Protocol (DOIP) <span class="citation"
-data-cites="DigitalObjectInterface"></span>.</p>
-<p>In brief, the structure of a FAIR Digital Object (FDO) is to, given a
-<em>persistent identifier</em> (PID) such as a DOI, resolve to a <em>PID
-Record</em> that gives the object a <em>type</em> along with a mechanism
-to retrieve its <em>bit sequences</em>, <em>metadata</em> and references
-to further programmatic <em>operations</em>. The type of an FDO (itself
-an FDO) defines attributes to semantically describe and relate such FDOs
-to other concepts (typically other FDOs referenced by PIDs). The premise
-of systematically building an ecosystem of such digital objects is to
-give researchers a way to organise complex digital entities, associated
-with identifiers, metadata, and supporting automated processing <span
-class="citation"
-data-cites="wittenburgDigitalObjectsDrivers2019a"></span>.</p>
-<p>Recently, FDOs have been recognised by the European Open Science
-Cloud (<a href="https://eosc.eu/">EOSC</a>) as a suggested part of its
-Interoperability Framework <span class="citation"
-data-cites="corchoEOSCInteroperabilityFramework2021b"></span>, in
-particular for deploying active and interoperable FAIR resources that
-are <em>machine actionable</em>. Development of the FDO concept
-continued within Research Data Alliance (<a
-href="https://www.rd-alliance.org/">RDA</a>) groups and EOSC projects
-like <a href="https://www.go-fair.org/">GO-FAIR</a>, concluding with a
-set of guidelines for implementing FDO <span class="citation"
-data-cites="boninoFAIRDigitalObject"></span>. The <a
-href="https://fairdo.org/">FAIR Digital Objects Forum</a> has since
-taken over the maturing of FDO through focused working groups which have
-currently drafted several more detailed specification documents (see
-<em>Next steps for FDO</em> ).</p>
-<h3 class="unnumbered" id="sec:fdo-approaches">FDO approaches</h3>
-<p>FDO is an evolving concept. A set of FDO Demonstrators <span
-class="citation" data-cites="wittenburgFAIRDigitalObject2022b"></span>
-highlight how current adapters are approaching implementations of FDO
-from different angles:</p>
-<ul class="incremental">
-<li><p>Building on the Digital Object concept, using the simplified
-<span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> specification,
-which detail how to exchange JSON objects through a text-based
-protocol<a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a> (usually TCP/IP over TLS). The main
-DOIP operations are retrieving, creating and updating digital objects.
-These are mostly realised using the reference implementation <a
-href="https://cordra.org/">Cordra</a>. FDO types are registered in the
-local Cordra instance, where they are specified using JSON Schema <span
-class="citation" data-cites="Draftbhuttonjsonschema"></span> and PIDs
-are assigned using the Handle system. Several type registries have been
-established.</p></li>
-<li><p>Following the traditional Linked Data approach, but using the
-DOIP protocol, e.g. using JSON-LD and schema.org within DOIP (NIST for
-material science).</p></li>
-<li><p>Approaching the FDO principles from existing Linked Data
-practices on the Web (e.g. WorkflowHub use of RO-Crate and
-schema.org).</p></li>
-</ul>
-<p>From this it becomes apparent that there is a potentially large
-overlap between the goals and approaches of FAIR Digital Objects and
-Linked Data, which we’ll cover .</p>
-<h3 class="unnumbered" id="sec:next-step-fdo">Next steps for FDO</h3>
-<p>The FAIR Digital Object Forum <span class="citation"
-data-cites="FAIRDigitalObjects"></span> working groups have prepared
-detailed requirement documents <span class="citation"
-data-cites="fdo-Specs"></span> setting out the path for realising FDOs,
-named <em>FDO Recommendations</em>. As of 2023-02-02, most of these
-documents are open for public review, while some are still in draft
-stages for internal review. As these documents clarify the future aims
-and focus of FAIR Digital Objects <span class="citation"
-data-cites="fdo-Roadmap"></span>, we provide their brief summaries
-below:</p>
-<p><strong>FAIR Digital Object Overview and Specifications</strong>
-<span class="citation" data-cites="fdo-Overview"></span> is a
-comprehensive overview of FAIR Digital Object specifications listed
-below. It serves as a primer that introduces FDO concepts and the
-remaining documents. It is accompanied by an FDO Glossary <span
-class="citation" data-cites="fdo-Glossary"></span>.</p>
-<p>The <strong>FDO Forum Document Standards</strong> <span
-class="citation" data-cites="fdo-DocProcessStd"></span> documents the
-recommendation process within the forum, starting at <em>Working
-Draft</em> (WD) status within the closed working group and later within
-the open forum, then <em>Proposed Recommendation</em> (PR) published for
-public review, finalised as <em>FDO Forum Recommendation</em> (REC)
-following any revisions. In addition, the forum may choose to
-<em>endorse</em> existing third-party notes and specifications.</p>
-<p>The <strong>FDO Requirement Specifications</strong> <span
-class="citation" data-cites="fdo-RequirementSpec"></span> is an update
-of <span class="citation" data-cites="boninoFAIRDigitalObject"></span>
-as the foundational definition of FDO. This sets the criteria for
-classifying an digital entity as a FAIR Digital Object, allowing for
-multiple implementations. The requirements shown in Table <a
-href="#tbl:fdo-checks" data-reference-type="ref+page"
-data-reference="tbl:fdo-checks">[tbl:fdo-checks]</a> are largely
-equivalent, but in this specification clarified with references to other
-FDO documents.</p>
-<p>The <strong>Machine actionability</strong> <span class="citation"
-data-cites="fdo-MachineActionDef"></span> sets out to define what is
-meant by <em>machine actionability</em> for FDOs. <em>Machine
-readable</em> is defined as elements of bit-sequences defined by
-structural specification, <em>machine interpretable</em> elements that
-can be identified and related with semantic artefacts, while <em>machine
-actionable</em> are elements with a type with operations in a symbolic
-grammar. The document largely describes requirements for resolving an
-FDO to metadata, and how types should be related to possible
-operations.</p>
-<p><strong>Configuration Types</strong> <span class="citation"
-data-cites="fdo-ConfigurationTypes"></span> classifies different
-granularities for organising FDOs in terms of PIDs, PID Records,
-Metadata and bit sequences, e.g. as a single FDO or several
-daisy-chained FDOs. Different patterns used by current DOIP deployments
-are considered, as well as FAIR Signposting <span class="citation"
-data-cites="vandesompelFAIRSignpostingProfile2022"></span></p>
-<p><strong>PID Profiles &amp; Attributes</strong> <span class="citation"
-data-cites="fdo-PIDProfileAttributes"></span> specifies that PIDs must
-be formally associated with a <em>PID Profile</em>, a separate FDO that
-defines attributes required and recommended by FDOs following said
-profile. This forms the <em>kernel attributes</em>, building on
-recommendations from RDA’s <em>PID Information Types</em> working group
-<span class="citation"
-data-cites="weigelRDARecommendationPID2018"></span>. This document makes
-a clear distinction between a minimal set of attributes needed for PID
-resolution and FDO navigation, which needs to be part of the <em>PID
-Record</em> <span class="citation" data-cites="islam_2023"></span>,
-compared with a richer set of more specific attributes as part of the
-<em>metadata</em> for an FDO, possibly represented as a separate
-FDO.</p>
-<p><strong>Kernel Attributes &amp; Metadata</strong> <span
-class="citation" data-cites="fdo-KernelAttributes"></span> elaborates on
-categories of FDO Mandatory, FDO Optional and Community Attributes,
-recommending kernel attributes like <code>dateCreated</code>,
-<code>ScientificDomain</code>, <code>PersistencePolicy</code>,
-<code>digitalObjectMutability</code>, etc. This document expands on RDA
-Recommendation on PID Kernel Information <span class="citation"
-data-cites="weigelRDARecommendationPID2018"></span>. It is worth noting
-that both documents are relatively abstract and do not establish PIDs or
-namespaces for the kernel attributes.</p>
-<p><strong>Granularity, Versioning, Mutability</strong> <span
-class="citation" data-cites="fdo-Granularity"></span> considers how
-granularity decisions for forming FDOs must be agreed by different
-communities depending on their pragmatic usage requirements. The affect
-on versioning, mutability and changes to PIDs are considered, based on
-use cases and existing PID practices.</p>
-<p><strong>DOIP Endorsement Request</strong> <span class="citation"
-data-cites="fdo-DOIPEndorsement"></span> is an endorsement of the DOIP
-v2.0 <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> specification as a
-potential FDO implementation, as it has been applied by several
-institutions <span class="citation"
-data-cites="wittenburgFAIRDigitalObject2022b"></span>. The document
-proposes that DOIP shall be assessed for completeness against FDO – in
-this initial draft this is justified as <em>“we can state that DOIP is
-compliant with the FDO specification documents in process”</em> (the
-documents listed above).</p>
-<p><strong>Upload of FDO</strong> <span class="citation"
-data-cites="fdo-FDO-Upload"></span> illustrates the operations for
-uploading an FDO to a repository, what checks it should do (for instance
-conformance with the PID Profile, if PIDs resolve). ResourceSync <span
-class="citation" data-cites="ResourceSyncFrameworkSpecification"></span>
-is suggested as one type of service to list FDOs. This document
-highlights potential practices by repositories and their clients,
-without adding any particular requirements.</p>
-<p><strong>Typing FAIR Digital Objects</strong> <span class="citation"
-data-cites="fdo-TypingFDOs"></span> defines what <em>type</em> means for
-FDOs, primarily to enable machine actionability and to define an FDO’s
-purpose. This document lays out requirements for how <em>FDO Types</em>
-should themselves be specified as FDOs, and how an <em>FDO Type
-Framework</em> allows organising and locating types. Operations
-applicable to an FDO is not predefined for a type, however operations
-naturally will require certain FDO types to work. How to define such FDO
-operations is not specified.</p>
-<p><strong>Implementation of Attributes, Types, Profiles and
-Registries</strong> <span class="citation"
-data-cites="fdo-ImplAttributesTypesProfiles"></span> details how to
-establish FDO registries for types and FDO profiles, with their
-association with PID systems. This document suggest policies and
-governance structures, together with guidelines for implementations, but
-without mandating any explicit technology choices. Differences in use of
-attributes are examplified using FDO PIDs for scientific instruments,
-and the proto-FDO approach of <a
-href="https://de.dariah.eu/">DARIAH-DE</a> <span class="citation"
-data-cites="schwardmannTwoExamplesHow2022"></span>.</p>
-<p>It is worth pointing out at that, except for the DOIP endorsement,
-all of these documents are conceptual, in the sense that they permit any
-technical implementation of FDO, if used according to the
-recommendations. See bibliography <a href="#sec:fdo-bibliography"
-data-reference-type="ref+page"
-data-reference="sec:fdo-bibliography">[sec:fdo-bibliography]</a> for the
-citation per document above.</p>
-<h2 class="unnumbered" id="sec:ld">From the Semantic Web to Linked
-Data</h2>
-<p>In order to describe <em>Linked Data</em> as it is used today, we’ll
-start with an (opinionated) description of the evolution of its
-foundation, the <em>Semantic Web</em>.</p>
-<h3 class="unnumbered" id="sec:semweb">A brief history of the Semantic
-Web</h3>
-<p>The <strong>Semantic Web</strong> was developed as a vision by Tim
-Berners-Lee <span class="citation"
-data-cites="berners-leeWeavingWebOriginal1999"></span>, at a time that
-the Web had already become widely established for information exchange,
-being a global set of hypermedia documents which are cross-related using
-universal links in the form of URLs. The foundations of the Web
-(e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media
-types) were standardised by <a
-href="https://www.w3.org/standards/">W3C</a>, <a
-href="https://www.ecma-international.org/">Ecma</a>, <a
-href="https://www.ietf.org/standards/">IETF</a> and later <a
-href="https://whatwg.org/">WHATWG</a>. The goal of Semantic Web was to
-further develop the machine-readable aspects of the Web, in particular
-adding <em>meaning</em> (or semantics) to not just the link relations,
-but also to the <em>resources</em> that the URLs identified, and for
-machines thus being able to meaningfully navigate across such resources,
-e.g. to answer a particular query.</p>
-<p>Through W3C, the Semantic Web was realised with the Resource
-Description Framework (RDF) <span class="citation"
-data-cites="w3-rdf11-primer"></span> that used <em>triples</em> of
-subject-predicate-object statements, with its initial serialisation
-format <span class="citation" data-cites="w3-rdf-syntax99"></span> being
-RDF/XML (XML was at the time seen as a natural data-focused evolution
-from the document-centric SGML and HTML).</p>
-<p>While triple-based knowledge representations were not new <span
-class="citation"
-data-cites="stanczykProcessModellingInformation1987"></span>, the main
-innovation of RDF was the use of global identifiers in the form of
-URIs<a href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a> as the primary identifier of the
-<em>subject</em> (what the statement is about), <em>predicate</em>
-(relation/attribute of the subject) and <em>object</em> (what is pointed
-to). By using URIs not just for documents<a href="#fn3"
-class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>,
-the Semantic Web builds a self-described system of types and properties,
-where the meaning of a relation can be resolved by following its
-hyperlink to the definition within a <em>vocabulary</em>. By applying
-these principles as well to any kind of resource that could be described
-at a URL, this then forms a global distributed Semantic Web.</p>
-<p>The early days of the Semantic Web saw fairly lightweight approaches
-with the establishment of vocabularies such as FOAF (to describe people
-and their affiliations) and Dublin Core (for bibliographic data).
-Vocabularies themselves were formalised using RDFS or simply as
-human-readable HTML web pages defining each term. The main approach of
-this <em>Web of Data</em> was that a URI identified a <em>resource</em>
-(e.g. an author) with a HTML <em>representation</em> for human readers,
-along with a RDF representation for machine-readable data of the same
-resource. By using <em>content negotiation</em> in HTTP<a href="#fn4"
-class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>,
-the same identifier could be used in both views, avoiding
-<code>index.html</code> vs <code>index.rdf</code> exposure in the URLs.
-The concept of <em>namespaces</em> gave a way to give a group of RDF
-resources with the same URI base from a Semantic Web-aware service a
-common <em>prefix</em>, avoiding repeated long URLs.</p>
-<p>The mid-2000s saw large academic interest and growth of the Semantic
-Web, with the development of more formal representation system for
-ontologies, such as OWL <span class="citation"
-data-cites="w3-owl2-overview"></span>, allowing complex class
-hierarchies and logic inference rules following <em>open world</em>
-paradigm (e.g. a <em>ex:Parent</em> is equivalent to a subclass of
-<em>foaf:Person</em> which must <em>ex:hasChild</em> at least one
-<em>foaf:Person</em>, then if we know <em>:Alice a ex:Parent</em> we can
-infer <em>:Alice ex:hasChild <span>[</span>a
-foaf:Person<span>]</span></em> even if we don’t know who that child is).
-More human-readable syntaxes of RDF such as Turtle (shown in this
-paragraph) evolved at this time, and conferences such as <a
-href="https://iswc2022.semanticweb.org/">ISWC</a> <span class="citation"
-data-cites="horrocksSemanticWebISWC2002"></span> gained traction, with a
-large interest in knowledge representation and logic systems based on
-Semantic Web technologies evolving at the same time.</p>
-<p>Established Semantic Web services and standards include SPARQL <span
-class="citation" data-cites="w3-sparql11-overview"></span>
-(pattern-based triple queries), <a
-href="https://www.w3.org/TR/rdf11-concepts/#section-dataset">named
-graphs</a> <span class="citation" data-cites="w3-rdf11-concepts"></span>
-(triples expanded to <em>quads</em> to indicate statement source or
-represent conflicting views), triple/quad stores (graph databases such
-as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including
-Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and
-numerous graph visualisation (many of which struggle with usability for
-more than 20 nodes).</p>
-<p>The creation of RDF-based knowledge graphs grew particularly in
-fields like bioinformatics, e.g. for describing genomes and proteins
-<span class="citation"
-data-cites="gobleStateNationData2008c williamsOpenPHACTSSemantic2012c"></span>.
-In theory, the use of RDF by the life sciences would enable
-interoperability between the many data repositories and support combined
-views of the many aspects of bio-entities – however in practice most
-institutions ended up making their own ontologies and identifiers, for
-what to the untrained eye would mean roughly the same. One can argue
-that the toll of adding the semantic logic system of rich ontologies
-meant that small, but fundamental, differences in opinion
-(e.g. <em>should a gene identifier signify just the particular DNA
-sequence letters, or those letters as they appear in a particular
-position on a human chromosome?</em>) lead to large differences in
-representational granularity, and thus needed different identifiers.</p>
-<p>Facing these challenges, thanks to the use of universal identifiers
-in the form of URIs, <em>mappings</em> could retrospectively be
-developed not just between resources, but also across vocabularies. Such
-mappings can be expressed themselves using lightweight and flexible RDF
-vocabularies such as SKOS <span class="citation"
-data-cites="w3-skos-primer"></span>
-(e.g. <code>dct:title skos:closeMatch schema:name</code> to indicate
-near equivalence of two properties). Automated ontology mappings have
-identified large potential overlaps (e.g. 372 definitions of
-<code>Person</code>) <span class="citation"
-data-cites="huHowMatchableAre2011a"></span>.</p>
-<p>The move towards <em>Open Science</em> data sharing practices did
-from the late 2000s encourage knowledge providers to distribute
-collections of RDF descriptions as downloadable <em>datasets</em> <a
-href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a>, so that their clients can avoid
-thousands of HTTP requests for individual resources. This enabled local
-processing, mapping and data integration across datasets (e.g. Open
-PHACTS <span class="citation"
-data-cites="grothAPIcentricLinkedData2014b"></span>), rather than
-relying on the providers’ RDF and SPARQL endpoints (which could become
-overloaded when handling many concurrent, complex queries).</p>
-<p>With these trends, an emerging problem was that adopters of the
-Semantic Web primarily utillised it as a set of graph technologies, with
-little consideration to existing Web resources. This meant that links
-stayed mainly within a single information system, with little URI reuse
-even with large term overlaps <span class="citation"
-data-cites="kamdarSystematicAnalysisTerm2017a"></span>. Just like
-<em>link rot</em> affect regular Web pages and their citations from
-scholarly communication <span class="citation"
-data-cites="kleinScholarlyContextNot2014a"></span>, for a majority of
-described RDF resources in the <a href="https://lod-cloud.net/">Linked
-Open Data</a> (LOD) Cloud’s gathering of more than thousand datasets,
-unfortunately do not actually link to (still) downloadable
-(<em>dereferenceable</em>) Linked Data <span class="citation"
-data-cites="polleresMoreDecentralizedVision2020a"></span>. Another
-challenge facing potential adopters is the plethora of choices, not just
-to navigate, understand and select to reuse the many possible
-vocabularies and ontologies <span class="citation"
-data-cites="carrieroLandscapeOntologyReuse2020a"></span>, but also
-technological choices on RDF serialisation (at least <a
-href="https://www.w3.org/TR/rdf11-primer/#section-graph-syntax">7
-formats</a>), type system (RDFS <span class="citation"
-data-cites="w3-rdf-schema"></span>, OWL <span class="citation"
-data-cites="w3-owl2-overview"></span>, OBO <span class="citation"
-data-cites="tirmiziMappingOBOOWL2011a"></span>, SKOS <span
-class="citation" data-cites="w3-skos-primer"></span>), hash vs slash,
-HTTP status codes and PID redirection strategies <span class="citation"
-data-cites="sauermannCoolURIsSemantic2011"></span>.</p>
-<h3 class="unnumbered" id="sec:ld-web">Linked Data: Rebuilding the Web
-of Data</h3>
-<p>The <strong>Linked Data</strong> concept <span class="citation"
-data-cites="bizerLinkedDataStory2009a"></span> was kickstarted as a set
-of best practices <span class="citation"
-data-cites="LinkedDataDesign"></span> to bring the Web aspect back into
-focus. Crucially to Linked Data is the <em>reuse of existing URIs</em>,
-rather than making new identifiers. This means a loosening of the
-semantic restrictions previously applied, and an emphasis on building
-navigable data resources, rather than elaborate graph
-representations.</p>
-<p>Vocabularies like <a href="https://schema.org/">schema.org</a>
-evolved not long after, intended for lightweight semantic markup of
-existing Web pages, primarily to improve search engines’ understanding
-of types and embedded data. In addition to several such embedded
-<em>microformats</em> <span class="citation"
-data-cites="OpenGraphProtocol w3-rdfa-primer HTMLStandard"></span> or we
-find JSON-LD <span class="citation" data-cites="w3-json-ld"></span> as a
-Web-focused RDF serialisation that aims for improved programmatic
-generation and consumption, including from Web applications. JSON-LD is
-as of 2023-05-18 used<a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a> by 45% of the top 10 million
-websites <span class="citation"
-data-cites="UsageStatisticsJSONLD"></span>.</p>
-<p>Recently there has been a renewed emphasis to improve the
-<em>Developer Experience</em> <span class="citation"
-data-cites="DesigningLinkedData2018"></span> for consumption of Linked
-Data, for instance RDF Shapes – expressed in SHACL <span
-class="citation" data-cites="w3-shacl"></span> or ShEx <span
-class="citation" data-cites="ShapeExpressionsShEx"></span> – can be used
-to validate RDF Data <span class="citation"
-data-cites="gayoValidatingRDFData2017a thorntonUsingShapeExpressions2019a"></span>
-before consuming it programmatically, or reshaping data to fit other
-models. While a varied set of tools for Linked Data consumptions have
-been identified, most of them still require developers to gain
-significant knowledge of the underlying Semantic Web technologies, which
-hampers adaption by non-LD experts <span class="citation"
-data-cites="klimekSurveyToolsLinked2019a"></span>, which then tend to
-prefer non-semantic two-dimensional formats such as CSV files.</p>
-<p>A valid concern is that the Semantic Web research community has still
-not fully embraced the Web, and that the “final 20%” engineering effort
-is frequently overlooked in favour of chasing new trends such as Big
-Data and AI, rather than making powerful Linked Data technologies
-available to the wider groups of Web developers <span class="citation"
-data-cites="verborghSemanticWebIdentity2020a"></span>. One bridging gap
-here by the Linked Data movement has been “linked data by stealth”
-approaches such as structured data entry spreadsheets powered by
-ontologies <span class="citation"
-data-cites="wolstencroftRightFieldEmbeddingOntology2011b"></span>, the
-use of Linked Data as part of REST Web APIs <span class="citation"
-data-cites="pageRESTLinkedData2011"></span>, and as shown by the big
-uptake by publishers to annotate the Web using schema.org <span
-class="citation" data-cites="bernsteinNewLookSemantic2016a"></span>,
-with vocabulary use patterns documented by copy-pastable JSON-LD
-examples, rather than by formalised ontologies or developer requirements
-to understand the full Semantic Web stack.</p>
-<h1 class="unnumbered" id="method">Method</h1>
-<p>Our main motivation for this article is to investigate how the
-promises of FAIR Digital Objects may differ from the learnt experiences
-of Linked Data and the Web. We also reflect back from FDO’s motivation
-of machine-actionability to consider the Web as a distributed
-computational system.</p>
-<p>To better understand the relationship between the FDO framework and
-other exisiting approaches, we use the following for analysis:</p>
-<ol class="incremental">
-<li><p>An Interoperability Framework and Distributed Platform for Fast
-Data Applications <span class="citation"
-data-cites="delgadoInteroperabilityFrameworkDistributed2016a"></span>,
-which proposes quality measurements for comparing how frameworks support
-interoperability, particularly from a service architectural
-view.</p></li>
-<li><p>The FAIR Digital Object guidelines <span class="citation"
-data-cites="boninoFAIRDigitalObject"></span>, validated against its
-current implementations for completeness.</p></li>
-<li><p>A Comparison Framework for Middleware Infrastructures <span
-class="citation"
-data-cites="zarrasComparisonFrameworkMiddleware2004a"></span>, which
-suggest dimensions like openness, performance and transparency, mainly
-focused on remote computational methods.</p></li>
-<li><p>Cross-checks against RDA’s FAIR Data Maturity Model <span
-class="citation" data-cites="bahimFAIRDataMaturity2020a"></span> to find
-how the FAIR principles are achieved in FDO, in particular considering
-access, sharing and openness.</p></li>
-<li><p>EOSC Interoperability Framework <span class="citation"
-data-cites="corchoEOSCInteroperabilityFramework2021b"></span> which
-gives recommendations for technical, semantic, organisational and legal
-interoperability, particularly from a metadata perspective.</p></li>
-</ol>
-<p>The reason for this wide-ranged comparison is to exercise the
-different dimensions that together form FAIR Digital Objects: Data,
-Metadata, Service, Access, Operations, Computation. We have left out
-further comparisons on type systems, persistent identifiers and social
-aspects as principles and practices within these dimensions are still
-taking form within the FDO community (as detailed ).</p>
-<p>Some of these frameworks invite a comparison on a conceptual level,
-while others relate better to implementations and current practices. For
-these we consider FAIR Digital Objects and the Web conceptually, and for
-implementations we contrast between the main FDO realisation using the
-DOIPv2 protocol <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> against Linked
-Data in general practice.</p>
-<h2 class="unnumbered" id="sec:interoperability-compare">Considering
-FDO/Web as interoperability framework for Fast Data</h2>
-<p>The Interoperability Framework for Fast Data Applications <span
-class="citation"
-data-cites="delgadoInteroperabilityFrameworkDistributed2016a"></span>
-categorises interoperability between applications along 6 strands,
-covering different architectural levels: from <em>symbiotic</em>
-(agreement to cooperate) and <em>pragmatic</em> (ability to choreograph
-processes), through <em>semantic</em> (common understanding) and
-<em>syntactic</em> (common message formats), to low-level
-<em>connective</em> (transport-level) and <em>environmental</em>
-(deployment practices).</p>
-<p>We have chosen to investigate using this framework as it covers the
-higher levels of the OSI Model <span class="citation"
-data-cites="stallingsHandbookComputercommunicationsStandards1990"></span>
-better with regards to automated machine-to-machine interaction (and
-thus interoperability), which is a crucial aspect of the FAIR
-principles. In Table <a href="#tbl:fdo-web-interoperability-framework"
-data-reference-type="ref+page"
-data-reference="tbl:fdo-web-interoperability-framework">[tbl:fdo-web-interoperability-framework]</a>
-we use the interoperability framework to compare the current FAIR
-Digital Object approach against the Web and its Linked Data
-practices.</p>
-<p>Based on the analysis shown in Table <a
-href="#tbl:fdo-web-interoperability-framework" data-reference-type="ref"
-data-reference="tbl:fdo-web-interoperability-framework">1</a>, we draw
-the following conclusions:</p>
-<p>The Web has already showed us how one can compose workflows of
-hetereogeneous Web Services <span class="citation"
-data-cites="wolstencroftTavernaWorkflowSuite2013d"></span>. However,
-this is mostly done via developer or human interaction <span
-class="citation"
-data-cites="lamprechtPerspectivesAutomatedComposition2021b"></span>.
-Similiarly, FDO does not enable automatic composition because operation
-semantics are not well defined. There is a question as to whether the
-extebsuve documentation and broad developer usage that is available for
-Web APIs could potentially be utillised for FDO.</p>
-<p>A difference between Web technologies and FDO is the stringency of
-the requirements for both syntax and semantics. Whereas the Web allows
-many different syntactic formats (e.g. from HTML to XML, PDFs), FDO
-realised with DOIP requires JSON. On the semantic front, FDO mandates
-that every object have a well-defined type and structured form. This is
-clearly not the case on the Web.</p>
-<p>In terms of connectivity and the deployment of applications, the Web
-has a plethora of software, services, and protocols that are widely
-deployed. These have shown interoperability. The Web standards bodies
-(e.g. IETF and W3C) follow the OpenStand principles <span
-class="citation" data-cites="ModernStandardsParadigm"></span> to embrace
-openness, transparency, and broad consensus. In contrast, FDO has a
-small number of implementations and corresponding protocols, although
-with a growing community, as evidenced at the first international FDO
-conference <span class="citation"
-data-cites="looFirstInternationalConference2022"></span>. This is not to
-say that it is not worth developing further Handle+DOIP implementations
-in the future, but we note that the current FDO functionality can easily
-be implemented using Web technologies, even as DOIP-over-HTTP <span
-class="citation" data-cites="DOIPAPIHTTPa"></span>.</p>
-<p>It’s also a question as to whether a highly constrained protocol
-revolving around persistent identifiers is in fact necessary. For
-example, DOIs are mostly resolved on the web <span class="citation"
-data-cites="DOIResolutionDocumentation"></span> using HTTP redirects
-with the common <code>https://doi.org/</code> prefix, hiding their
-Handle nature as an implementation detail <span class="citation"
-data-cites="DOIHandbookResolution"></span>.</p>
+
+
+## Introduction
+
+The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for <span class="citation" data-cites="h2020fair2016">(European Commission [2016](#ref-h2020fair2016))</span>. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
+
+Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object (FDO) concept <span class="citation" data-cites="schultesFAIRPrinciplesDigital2019a">(Schultes and Wittenburg [2019](#ref-schultesFAIRPrinciplesDigital2019a))</span> as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
+
+In other discourse, Linked Data <span class="citation" data-cites="bizerLinkedDataStory2009a">(Bizer, Heath, and Berners-Lee [2009](#ref-bizerLinkedDataStory2009a))</span> has been seen as an established set of principles based on Semantic Web technologies that can achieve the vision of the FAIR principles <span class="citation" data-cites="boninodasilvasantosFAIRDataPoints2016a hasnainAssessingFAIRData2018a">(Bonino Da Silva Santos et al. [2016](#ref-boninodasilvasantosFAIRDataPoints2016a); Hasnain and Rebholz-Schuhmann [2018](#ref-hasnainAssessingFAIRData2018a))</span>. Yet regular researchers and developers of emerging platforms for computation and data management are reluctant to adapt such a “FAIR Linked Data approach” fully <span class="citation" data-cites="verborghSemanticWebIdentity2020a">(Verborgh and Vander Sande [2020](#ref-verborghSemanticWebIdentity2020a))</span>, opting instead for custom in-house models and JSON-derived formats from RESTful Web services <span class="citation" data-cites="merono-penuelaConclusionFutureChallenges2021a neumannAnalysisPublicREST2021a">(Meroño-Peñuela, Lisena, and Martínez-Ortiz [2021](#ref-merono-penuelaConclusionFutureChallenges2021a)[a](#ref-merono-penuelaConclusionFutureChallenges2021a); Neumann, Laranjeiro, and Bernardino [2021](#ref-neumannAnalysisPublicREST2021a))</span>. While such focus on simplicity allows for rapid development and highly specialised services, it raises wider concerns about interoperability <span class="citation" data-cites="turcoaneLinkedDataJSONLD2014a wilkinsonWorkflowsWhenParts2022b">(Turcoane [2014](#ref-turcoaneLinkedDataJSONLD2014a); S. R. Wilkinson et al. [2022](#ref-wilkinsonWorkflowsWhenParts2022b))</span>.
+
+One challenge that may, perhaps counter-intuitively, steer developers towards a not-invented-here mentality <span class="citation" data-cites="stefiDevelopersMakeUnbiased2015 stefiDevelopReuseTwo2015a">(Stefi [2015](#ref-stefiDevelopersMakeUnbiased2015); Stefi and Hess [2015](#ref-stefiDevelopReuseTwo2015a))</span> when exposing their data on the Web is the heterogeneity and apparent complexity of Semantic Web approaches themselves <span class="citation" data-cites="merono-penuelaWebDataApis2021b">(Meroño-Peñuela, Lisena, and Martínez-Ortiz [2021](#ref-merono-penuelaWebDataApis2021b)[b](#ref-merono-penuelaWebDataApis2021b))</span>.
+
+These approaches – FDO and Linked Data – thus, form two of the major avenues for allowing developers and the wider research community to achieve the goal of FAIR data. Given their importance, in this article, we aim to compare FAIR Digital Objects with Linked Data and the Web architecture in the context of the discourse around FAIR data.
+
+Concretely, the contribution of this paper is <span>**a systematic comparison between FDO and Linked Data using 5 different conceptual frameworks**</span> that capture different perspectives on interoperability and readiness for implementation.
+
+## Background and related work
+
+In the following, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.
+
+### FAIR Digital Object
+
+The concept of **FAIR Digital Objects** <span class="citation" data-cites="schultesFAIRPrinciplesDigital2019a">(Schultes and Wittenburg [2019](#ref-schultesFAIRPrinciplesDigital2019a))</span> has been introduced as way to expose research data as active objects that conform to the FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span>. This builds on the *Digital Object* (DO) concept <span class="citation" data-cites="kahnFrameworkDistributedDigital2006b">(Kahn and Wilensky [2006](#ref-kahnFrameworkDistributedDigital2006b))</span>, first introduced by <span class="citation" data-cites="kahnFrameworkDistributedDigital1995a">Kahn and Wilensky ([1995](#ref-kahnFrameworkDistributedDigital1995a))</span> as a system of *repositories* containing *digital objects* identified by *handles* and described by *metadata* which may have references to other handles. DO was the inspiration for the <span class="citation" data-cites="x1255FrameworkDiscovery">(“Series X: Data Networks, Open System Communications and Security” [2013](#ref-x1255FrameworkDiscovery))</span> framework which introduced an abstract *Digital Entity Interface Protocol* for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) <span class="citation" data-cites="DigitalObjectInterface">(Reilly [2009](#ref-DigitalObjectInterface))</span>.
+
+In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persistent identifier* (PID) such as a DOI, resolve to a *PID Record* that gives the object a *type* along with a mechanism to retrieve its *bit sequences*, *metadata* and references to further programmatic *operations*. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing <span class="citation" data-cites="wittenburgDigitalObjectsDrivers2019a">(Wittenburg et al. [2019](#ref-wittenburgDigitalObjectsDrivers2019a))</span>.
+
+Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span>, in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
+
+#### FDO approaches
+
+FDO is an evolving concept. A set of FDO Demonstrators <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span> highlight how current adapters are approaching implementations of FDO from different angles:
+
+  - Building on the Digital Object concept, using the simplified <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> specification, which detail how to exchange JSON objects through a text-based protocol[<sup>1</sup>](#fn1) (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation Cordra <span class="citation" data-cites="tupelo-schneckrobertBriefIntroductionCordra2022">(Tupelo-Schneck, Robert and Lannom [2022](#ref-tupelo-schneckrobertBriefIntroductionCordra2022))</span>. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema <span class="citation" data-cites="Draftbhuttonjsonschema">(Wright et al. [2022](#ref-Draftbhuttonjsonschema))</span> and PIDs are assigned using the Handle system. Several type registries have been established.
+
+  - Following a Linked Data approach, but using the DOIP protocol, e.g. using JSON-LD and schema.org within DOIP in Materal Sciences archives <span class="citation" data-cites="10.1002/jcc.26842">(Riccardi et al. [2022](#ref-10.1002/jcc.26842))</span>.
+
+  - Approaching the FDO principles from existing Linked Data practices on the Web, e.g. WorkflowHub use of RO-Crate and schema.org <span class="citation" data-cites="10.3897/rio.8.e93937">(Soiland-Reyes, Sefton, et al. [2022](#ref-10.3897/rio.8.e93937))</span>.
+
+From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we will cover .
+
+#### Next steps for FDO
+
+The FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObjects">(“FAIR Digital Objects Forum” [n.d.](#ref-FAIRDigitalObjects))</span> working groups have prepared detailed requirement documents <span class="citation" data-cites="fdo-Specs">(*FDO Specification Documents - November 2022* [2022](#ref-fdo-Specs))</span> setting out the path for realising FDOs, named *FDO Recommendations*. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects <span class="citation" data-cites="fdo-Roadmap">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-Roadmap)[a](#ref-fdo-Roadmap))</span>, we provide a brief summary of each:
+
+**FAIR Digital Object Overview and Specifications** <span class="citation" data-cites="fdo-Overview">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Peters-von Gehlen, et al. [2023](#ref-fdo-Overview))</span> is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents. It is accompanied by an FDO Glossary <span class="citation" data-cites="fdo-Glossary">(Broeder and Wittenburg [2022](#ref-fdo-Glossary))</span>.
+
+The **FDO Forum Document Standards** <span class="citation" data-cites="fdo-DocProcessStd">(C. Weiland et al. [2022](#ref-fdo-DocProcessStd))</span> documents the recommendation process within the forum, starting at *Working Draft* (WD) status within the closed working group and later within the open forum, then *Proposed Recommendation* (PR) published for public review, finalised as *FDO Forum Recommendation* (REC) following any revisions. In addition, the forum may choose to *endorse* existing third-party notes and specifications.
+
+The **FDO Requirement Specifications** <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> is an update of <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in Table [\[tbl:fdo-checks\]](#tbl:fdo-checks) are largely equivalent, but in this specification clarified with references to other FDO documents.
+
+The **Machine actionability** <span class="citation" data-cites="fdo-MachineActionDef">(Weiland et al. [2022](#ref-fdo-MachineActionDef))</span> sets out to define what is meant by *machine actionability* for FDOs. *Machine readable* is defined as elements of bit-sequences defined by structural specification, *machine interpretable* elements that can be identified and related with semantic artefacts, while *machine actionable* are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
+
+**Configuration Types** <span class="citation" data-cites="fdo-ConfigurationTypes">(Lannom, Peters-von Gehlen, et al. [2022](#ref-fdo-ConfigurationTypes))</span> classifies different granularities for organising FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting <span class="citation" data-cites="vandesompel2015 vandesompelFAIRSignpostingProfile2022">(Van de Sompel and Nelson [2015](#ref-vandesompel2015); Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span>.
+
+**PID Profiles & Attributes** <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. [2022](#ref-fdo-PIDProfileAttributes))</span> specifies that PIDs must be formally associated with a *PID Profile*, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the *kernel attributes*, building on recommendations from RDA’s *PID Information Types* working group <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the *PID Record* <span class="citation" data-cites="islam_2023">(Islam [2023](#ref-islam_2023))</span>, compared with a richer set of more specific attributes as part of the *metadata* for an FDO, possibly represented as a separate FDO.
+
+**Kernel Attributes & Metadata** <span class="citation" data-cites="fdo-KernelAttributes">(Broeder et al. [2022](#ref-fdo-KernelAttributes))</span> elaborates on categories of FDO Mandatory, FDO Optional and Community Attributes, recommending kernel attributes like `dateCreated`, `ScientificDomain`, `PersistencePolicy`, `digitalObjectMutability`, etc. This document expands on RDA Recommendation on PID Kernel Information <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. It is worth noting that both documents are relatively abstract and do not establish PIDs or namespaces for the kernel attributes.
+
+**Granularity, Versioning, Mutability** <span class="citation" data-cites="fdo-Granularity">(Hellström, Zwölf, and Wittenburg [2022](#ref-fdo-Granularity))</span> considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
+
+**DOIP Endorsement Request** <span class="citation" data-cites="fdo-DOIPEndorsement">(Ulrich Schwardmann et al. [2022](#ref-fdo-DOIPEndorsement))</span> is an endorsement of the DOIP v2.0 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> specification as a potential FDO implementation, as it has been applied by several institutions <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span>. The document proposes that DOIP shall be assessed for completeness against FDO – in this initial draft this is justified as *“we can state that DOIP is compliant with the FDO specification documents in process”* (the documents listed above).
+
+**Upload of FDO** <span class="citation" data-cites="fdo-FDO-Upload">(Blanchi et al. [2022](#ref-fdo-FDO-Upload))</span> illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync <span class="citation" data-cites="ResourceSyncFrameworkSpecification">(*ANSI/NISO Z39.99-2017, ResourceSync Framework Specification* [2017](#ref-ResourceSyncFrameworkSpecification))</span> is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, without adding any particular requirements.
+
+**Typing FAIR Digital Objects** <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span> defines what *type* means for FDOs, primarily to enable machine actionability and to define an FDO’s purpose. This document lays out requirements for how *FDO Types* should themselves be specified as FDOs, and how an *FDO Type Framework* allows organising and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
+
+**Implementation of Attributes, Types, Profiles and Registries** <span class="citation" data-cites="fdo-ImplAttributesTypesProfiles">(Blanchi et al. [2023](#ref-fdo-ImplAttributesTypesProfiles))</span> details how to establish FDO registries for types and FDO profiles, with their association with PID systems. This document suggest policies and governance structures, together with guidelines for implementations, but without mandating any explicit technology choices. Differences in use of attributes are examplified using FDO PIDs for scientific instruments, and the proto-FDO approach of [DARIAH-DE](https://de.dariah.eu/) <span class="citation" data-cites="schwardmannTwoExamplesHow2022">(Schwardmann and Kálmán [2022](#ref-schwardmannTwoExamplesHow2022))</span>.
+
+See bibliography [\[sec:fdo-bibliography\]](#sec:fdo-bibliography) for the citation per document above. It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span> are thus not fully consolidated in choices such as protocols, type systems and serialisations – this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem.
+
+### From the Semantic Web to Linked Data
+
+In order to describe *Linked Data* as it is used today, we’ll start with an (opinionated) description of the evolution of its foundation, the *Semantic Web*.
+
+#### A brief history of the Semantic Web
+
+The **Semantic Web** was developed as a vision by Tim Berners-Lee <span class="citation" data-cites="berners-leeWeavingWebOriginal1999">(Berners-Lee and Fischetti [1999](#ref-berners-leeWeavingWebOriginal1999))</span>, at a time that the Web had already become widely established for information exchange, being a global set of hypermedia documents which are cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardised by [W3C](https://www.w3.org/standards/), [Ecma](https://www.ecma-international.org/), [IETF](https://www.ietf.org/standards/) and later [WHATWG](https://whatwg.org/). The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding *meaning* (or semantics) to not just the link relations, but also to the *resources* that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.
+
+Through W3C, the Semantic Web was realised with the Resource Description Framework (RDF) <span class="citation" data-cites="w3-rdf11-primer">(Schreiber and Raimond [2014](#ref-w3-rdf11-primer))</span> that used *triples* of subject-predicate-object statements, with its initial serialisation format <span class="citation" data-cites="w3-rdf-syntax99">(Lassila and Swick [1999](#ref-w3-rdf-syntax99))</span> being RDF/XML (XML was at the time seen as a natural data-focused evolution from the document-centric SGML and HTML).
+
+While triple-based knowledge representations were not new <span class="citation" data-cites="stanczykProcessModellingInformation1987">(Stanczyk [1987](#ref-stanczykProcessModellingInformation1987))</span>, the main innovation of RDF was the use of global identifiers in the form of URIs[<sup>2</sup>](#fn2) as the primary identifier of the *subject* (what the statement is about), *predicate* (relation/attribute of the subject) and *object* (what is pointed to). By using URIs not just for documents[<sup>3</sup>](#fn3), the Semantic Web builds a self-described system of types and properties, where the meaning of a relation can be resolved by following its hyperlink to the definition within a *vocabulary*. By applying these principles as well to any kind of resource that could be described at a URL, this then forms a global distributed Semantic Web.
+
+The early days of the Semantic Web saw fairly lightweight approaches with the establishment of vocabularies such as FOAF (to describe people and their affiliations) and Dublin Core (for bibliographic data). Vocabularies themselves were formalised using RDFS or simply as human-readable HTML web pages defining each term. The main approach of this *Web of Data* was that a URI identified a *resource* (e.g. an author) with a HTML *representation* for human readers, along with a RDF representation for machine-readable data of the same resource. By using [*content negotiation*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation) in HTTP, the same identifier could be used in both views, avoiding `index.html` vs `index.rdf` exposure in the URLs. The concept of *namespaces* gave a way to give a group of RDF resources with the same URI base from a Semantic Web-aware service a common *prefix*, avoiding repeated long URLs.
+
+The mid-2000s saw large academic interest and growth of the Semantic Web, with the development of more formal representation system for ontologies, such as OWL <span class="citation" data-cites="w3-owl2-overview">(W3C OWL Working Group [2012](#ref-w3-owl2-overview))</span>, allowing complex class hierarchies and logic inference rules following *open world* paradigm. More human-readable syntaxes for RDF such as Turtle evolved at this time, and conferences such as [ISWC](https://iswc2022.semanticweb.org/) <span class="citation" data-cites="horrocksSemanticWebISWC2002">(Horrocks and Hendler [2002](#ref-horrocksSemanticWebISWC2002))</span> gained traction, with a large interest in knowledge representation and logic systems based on Semantic Web technologies evolving at the same time.
+
+Established Semantic Web services and standards include: SPARQL <span class="citation" data-cites="w3-sparql11-overview">(SPARQL WG [2013](#ref-w3-sparql11-overview))</span> (pattern-based triple queries), [named graphs](https://www.w3.org/TR/rdf11-concepts/#section-dataset) <span class="citation" data-cites="w3-rdf11-concepts">(Wood, Cyganiak, and Lanthaler [2014](#ref-w3-rdf11-concepts))</span> (triples expanded to *quads* to indicate statement source or represent conflicting views), triple/quad stores (graph databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and graph visualisation.
+
+RDF is one way to implement *knowledge graphs*, a system of named edges and nodes[<sup>5</sup>](#fn5) <span class="citation" data-cites="nurdiati2008">(Nurdiati and Hoede [2008](#ref-nurdiati2008))</span>, which when used to represent a sufficiently detailed model of the world, can then be queried and processed to answer detailed research questions. The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g. for describing genomes and proteins <span class="citation" data-cites="gobleStateNationData2008c williamsOpenPHACTSSemantic2012c">(Goble and Stevens [2008](#ref-gobleStateNationData2008c); Williams et al. [2012](#ref-williamsOpenPHACTSSemantic2012c))</span>. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities – however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g. *should a gene identifier signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?*) lead to large differences in representational granularity, and thus needed different identifiers.
+
+Facing these challenges, thanks to the use of universal identifiers in the form of URIs, *mappings* could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS <span class="citation" data-cites="w3-skos-primer">(Isaac and Summers [2009](#ref-w3-skos-primer))</span> (e.g. `dct:title skos:closeMatch schema:name` to indicate near equivalence of two properties). Exemplifying the need for such cross-references, automated ontology mappings have identified large potential overlaps like 372 definitions of `Person` <span class="citation" data-cites="huHowMatchableAre2011a">(Hu et al. [2011](#ref-huHowMatchableAre2011a))</span>.
+
+The move towards *Open Science* data sharing practices did from the late 2000s encourage knowledge providers to distribute collections of RDF descriptions as downloadable *datasets*,[<sup>6</sup>](#fn6) so that their clients can avoid thousands of HTTP requests for individual resources. This enabled local processing, mapping and data integration across datasets (e.g. Open PHACTS <span class="citation" data-cites="grothAPIcentricLinkedData2014b">(Groth et al. [2014](#ref-grothAPIcentricLinkedData2014b))</span>), rather than relying on the providers’ RDF and SPARQL endpoints (which could become overloaded when handling many concurrent, complex queries).
+
+With these trends, an emerging problem was that adopters of the Semantic Web primarily utillised it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps <span class="citation" data-cites="kamdarSystematicAnalysisTerm2017a">(Kamdar, Tudorache, and Musen [2017](#ref-kamdarSystematicAnalysisTerm2017a))</span>. Just like *link rot* affect regular Web pages and their citations from scholarly communication <span class="citation" data-cites="kleinScholarlyContextNot2014a">(Klein et al. [2014](#ref-kleinScholarlyContextNot2014a))</span>, for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud’s gathering of more than thousand datasets, unfortunately do not actually link to (still) downloadable (*dereferenceable*) Linked Data <span class="citation" data-cites="polleresMoreDecentralizedVision2020a">(Polleres et al. [2020](#ref-polleresMoreDecentralizedVision2020a))</span>. Another challenge facing potential adopters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies <span class="citation" data-cites="carrieroLandscapeOntologyReuse2020a">(Carriero et al. [2020](#ref-carrieroLandscapeOntologyReuse2020a))</span>, but also technological choices on RDF serialisation (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS <span class="citation" data-cites="w3-rdf-schema">(Guha and Brickley [2014](#ref-w3-rdf-schema))</span>, OWL <span class="citation" data-cites="w3-owl2-overview">(W3C OWL Working Group [2012](#ref-w3-owl2-overview))</span>, OBO <span class="citation" data-cites="tirmiziMappingOBOOWL2011a">(Tirmizi et al. [2011](#ref-tirmiziMappingOBOOWL2011a))</span>, SKOS <span class="citation" data-cites="w3-skos-primer">(Isaac and Summers [2009](#ref-w3-skos-primer))</span>), and deployment challenges <span class="citation" data-cites="sauermannCoolURIsSemantic2011">(Sauermann et al. [2008](#ref-sauermannCoolURIsSemantic2011))</span> (e.g. hash vs slash in namespaces, HTTP status codes and PID redirection strategies).
+
+#### Linked Data: Rebuilding the Web of Data
+
+The **Linked Data** (LD) concept <span class="citation" data-cites="bizerLinkedDataStory2009a">(Bizer, Heath, and Berners-Lee [2009](#ref-bizerLinkedDataStory2009a))</span> was kickstarted as a set of best practices <span class="citation" data-cites="LinkedDataDesign">(Berners-Lee [2006](#ref-LinkedDataDesign))</span> to bring the Web aspect of the Semantic Web back into focus. Crucial to Linked Data is the *reuse of existing URIs*, rather than making new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigable data resources, rather than elaborate graph representations.
+
+Vocabularies like [schema.org](https://schema.org/) evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines’ understanding of types and embedded data. In addition to several such embedded *microformats* <span class="citation" data-cites="OpenGraphProtocol w3-rdfa-primer HTMLStandard">(“The Open Graph Protocol” [n.d.](#ref-OpenGraphProtocol); “Microdata” [2023](#ref-HTMLStandard); Sporny et al. [2015](#ref-w3-rdfa-primer))</span>, we find JSON-LD <span class="citation" data-cites="w3-json-ld">(Sporny et al. [2020](#ref-w3-json-ld))</span> as a Web-focused RDF serialisation that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is as of 2023-05-18 used[<sup>7</sup>](#fn7) by 45% of the top 10 million websites <span class="citation" data-cites="UsageStatisticsJSONLD">(W3Techs [n.d.](#ref-UsageStatisticsJSONLD))</span>.
+
+Recently there has been a renewed emphasis to improve the *Developer Experience* <span class="citation" data-cites="DesigningLinkedData2018">(Verborgh [2018](#ref-DesigningLinkedData2018))</span> for consumption of Linked Data, for instance RDF Shapes – expressed in SHACL <span class="citation" data-cites="w3-shacl">(Kontokostas and Knublauch [2017](#ref-w3-shacl))</span> or ShEx <span class="citation" data-cites="ShapeExpressionsShEx">(Baker and Prud’hommeaux [2019](#ref-ShapeExpressionsShEx))</span> – can be used to validate RDF Data <span class="citation" data-cites="gayoValidatingRDFData2017a thorntonUsingShapeExpressions2019a">(Gayo et al. [2017](#ref-gayoValidatingRDFData2017a); Thornton et al. [2019](#ref-thorntonUsingShapeExpressions2019a))</span> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying Semantic Web technologies, which hampers adaption by non-LD experts <span class="citation" data-cites="klimekSurveyToolsLinked2019a">(Klímek, Škoda, and Nečaský [2019](#ref-klimekSurveyToolsLinked2019a))</span>, which then tend to prefer non-semantic two-dimensional formats such as CSV files.
+
+A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the “final 20%” engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers <span class="citation" data-cites="verborghSemanticWebIdentity2020a">(Verborgh and Vander Sande [2020](#ref-verborghSemanticWebIdentity2020a))</span>. One bridging gap here by the Linked Data movement has been “Linked Data by stealth” approaches such as structured data entry spreadsheets powered by ontologies <span class="citation" data-cites="wolstencroftRightFieldEmbeddingOntology2011b">(Wolstencroft et al. [2011](#ref-wolstencroftRightFieldEmbeddingOntology2011b))</span>, the use of Linked Data as part of REST Web APIs <span class="citation" data-cites="pageRESTLinkedData2011">(Page, De Roure, and Martinez [2011](#ref-pageRESTLinkedData2011))</span>, and as shown by the big uptake by publishers to annotate the Web using schema.org <span class="citation" data-cites="bernsteinNewLookSemantic2016a">(Bernstein, Hendler, and Noy [2016](#ref-bernsteinNewLookSemantic2016a))</span>, with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalised ontologies or developer requirements to understand the full Semantic Web stack.
+
+Linked Data provides technologies that have evolved over time to satisfy its primary purpose of data interoperability. The needs to embrace the Web and developer experience have been central lessons learned. In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
+
+## Method
+
+Our main motivation for this article is to investigate how FAIR Digital Objects may differ from the learnt experiences of Linked Data and the Web. We also aim to reflect back from FDO’s motivation of machine-actionability to consider the Web as a distributed computational system.
+
+To better understand the relationship between the FDO framework and other existing approaches, we use the following for analysis:
+
+1.  An Interoperability Framework and Distributed Platform for Fast Data Applications <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span>, which proposes quality measurements for comparing how frameworks support interoperability, particularly from a service architectural view.
+
+2.  The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>, validated against its current implementations for completeness.
+
+3.  A Comparison Framework for Middleware Infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span>, which suggest dimensions like openness, performance and transparency, mainly focused on remote computational methods.
+
+4.  Cross-checks against RDA’s FAIR Data Maturity Model <span class="citation" data-cites="bahimFAIRDataMaturity2020a">(Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span> to find how the FAIR principles are achieved in FDO, in particular considering access, sharing and openness.
+
+5.  EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> which gives recommendations for technical, semantic, organisational and legal interoperability, particularly from a metadata perspective.
+
+The reason for this wide-ranged comparison is to exercise the different dimensions that together form FAIR Digital Objects: Data, Metadata, Service, Access, Operations, Computation. We have left out further considerations on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community (as detailed ).
+
+Some of these frameworks invite a comparison on a conceptual level, while others relate better to implementations and current practices. For conceptual comparisons we consider FAIR Digital Objects and the Web broadly. For implementations, we contrast the main FDO realisation using the DOIPv2 protocol <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> against Linked Data as implemented in general practice[<sup>8</sup>](#fn8).
+
+## Results
+
+### Considering FDO/Web as interoperability framework for Fast Data
+
+The Interoperability Framework for Fast Data Applications <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span> categorises interoperability between applications along 6 strands, covering different architectural levels: from *symbiotic* (agreement to cooperate) and *pragmatic* (ability to choreograph processes), through *semantic* (common understanding) and *syntactic* (common message formats), to low-level *connective* (transport-level) and *environmental* (deployment practices).
+
+We have chosen to investigate using this framework as it covers the higher levels of the OSI Model <span class="citation" data-cites="stallingsHandbookComputercommunicationsStandards1990">(Stallings [1990](#ref-stallingsHandbookComputercommunicationsStandards1990))</span> better with regards to automated machine-to-machine interaction (and thus interoperability), which is a crucial aspect of the FAIR principles. In Table [\[tbl:fdo-web-interoperability-framework\]](#tbl:fdo-web-interoperability-framework) we use the interoperability framework to compare the current FAIR Digital Object approach against the Web and its Linked Data practices.
+
+Based on the analysis shown in Table [1](#tbl:fdo-web-interoperability-framework), we draw the following conclusions:
+
+The Web has already showed us how one can compose workflows of hetereogeneous Web Services <span class="citation" data-cites="wolstencroftTavernaWorkflowSuite2013d">(Wolstencroft et al. [2013](#ref-wolstencroftTavernaWorkflowSuite2013d))</span>. However, this is mostly done via developer or human interaction <span class="citation" data-cites="lamprechtPerspectivesAutomatedComposition2021b">(Lamprecht et al. [2021](#ref-lamprechtPerspectivesAutomatedComposition2021b))</span>. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the extensive documentation and broad developer usage that is available for Web APIs could potentially be utilised for FDO.
+
+A difference between Web technologies and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO realised with DOIP requires JSON. On the semantic front, FDO mandates that every object have a well-defined type and structured form. This is clearly not the case on the Web.
+
+In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoperability. The Web standards bodies (e.g. IETF and W3C) follow the OpenStand principles <span class="citation" data-cites="ModernStandardsParadigm">(“The Modern Standards Paradigm - Five Key Principles” [2017](#ref-ModernStandardsParadigm))</span> to embrace openness, transparency, and broad consensus. In contrast, FDO has a small number of implementations and corresponding protocols, although with a growing community, as evidenced at the first international FDO conference <span class="citation" data-cites="looFirstInternationalConference2022">(Loo [2022](#ref-looFirstInternationalConference2022))</span>. This is not to say that it is not worth developing further Handle+DOIP implementations in the future, but we note that the current FDO functionality can easily be implemented using Web technologies, even as DOIP-over-HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI [2023](#ref-DOIPAPIHTTPa)[b](#ref-DOIPAPIHTTPa))</span>.
+
+It is also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are mostly resolved on the web using HTTP redirects with the common `https://doi.org/` prefix, hiding their Handle nature as an implementation detail <span class="citation" data-cites="DOIHandbookResolution">(DOI [2019](#ref-DOIHandbookResolution))</span>.
+
 <div id="tbl:fdo-web-interoperability-framework">
-<table>
-<caption>Considering FDO and Web according to the quality levels of the
-Interoperability Framework for Fast Data <span class="citation"
-data-cites="delgadoInteroperabilityFrameworkDistributed2016a"></span>.
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><em>Quality</em></th>
-<th style="text-align: left;">FDO w/ DOIP</th>
-<th style="text-align: left;">Web w/ Linked Data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><em>Quality</em></td>
-<td style="text-align: left;">FDO w/ DOIP</td>
-<td style="text-align: left;">Web w/ Linked Data</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Symbiotic</strong>: <em>to what
-extent multiple applications can agree to interact, align, collaborate
-or cooperate</em></td>
-<td style="text-align: left;">The purpose of FDO is to enable federated
-machine actionable digital objects for scholarly purposes, in practice
-this also requires agreement of compatibility between FDO types. FDO
-encourages research communities to develop common type registries to be
-shared across instances. In current DOIP practice, each service have
-their own types, attributes and operations. The wider symbiosis is
-consistent use of PIDs.</td>
-<td style="text-align: left;">The Web is loosely coupled and encourages
-collaboration and linking by URL. In practice, REST APIs <span
-class="citation"
-data-cites="fieldingArchitecturalStylesDesign2000a"></span> end up being
-mandated centrally by dominant (often commercial) providers <span
-class="citation"
-data-cites="fieldingReflectionsRESTArchitectural2017a"></span>, and the
-clients are required to use each API as-is with special code per
-service. Use of Linked Data enables common tooling and semantic mapping
-across differences.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Pragmatic</strong>: <em>using
-interaction contracts so processes can be choreographed in
-workflows</em></td>
-<td style="text-align: left;">FDO types and operations enable detailed
-choreography (Canonical Workflow Frameworks for Research <span
-class="citation" data-cites="cwfr"></span>).
-<code>0.TYPE/DOIPOperation</code> has lightweight definition of
-operation, <code>0.DOIP/Request</code> or <code>0.DOIP/Response</code>
-may give FDO Type or any other kind of “specifics” (incl. human readable
-docs). Semantics/purpose of operations not formalised (similar
-operations can be grouped with
-<code>0.DOIP/OperationReference</code>).</td>
-<td style="text-align: left;">“Follow your nose” crawler navigation,
-which may lead to frequent dead ends. Operational composition, typically
-within a single API provider, documented by OpenAPI 3 <span
-class="citation" data-cites="OpenAPISpecificationV3"></span>, schema.org
-Actions <span class="citation" data-cites="SchemaOrgActions"></span>,
-WSDL/SOAP <span class="citation" data-cites="w3-wsdl20-primer"></span>,
-but frequently just as human-readable developer
-documentation/examples.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring
-consistent understanding of messages, interoperability of rules,
-knowledge and ontologies</em></td>
-<td style="text-align: left;">FDO semantic enable navigation and typing.
-Every FDO has a type. Types maintained in FDO Type registries, which may
-add additional semantics, e.g. the ePIC <a
-href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType
-for Model</a>. No single type semantic, Type FDOs can link to existing
-vocabularies &amp; ontologies. JSON-LD used within some FDO objects
-(e.g. DISSCO Digital Specimen, NIST Material Science schema) <span
-class="citation"
-data-cites="wittenburgFAIRDigitalObject2022b"></span></td>
-<td style="text-align: left;">Lightweight HTTP semantics for
-authenticity/navigation. Semantic Type not commonly expressed on
-PID/header level, may be declared within Linked Data metadata. Semantic
-of type implied by Linked Data formats (e.g. OWL2, RDFS), although
-choice of type system may not be explicit.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Syntactic</strong>:
-<em>serialising messages for digital exchange, structure
-representation</em></td>
-<td style="text-align: left;">DOIP serialise FDOs as JSON, metadata
-commonly use JSON, typed with JSON Schema. Multiple byte stream
-attachments of any media type.</td>
-<td style="text-align: left;">Textual HTTP headers (including any
-signposting), single byte stream of any media type, e.g. Linked Data
-formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with
-RDFa, JSON-LD or Microdata). XML was previously the main syntax used by
-APIs, JSON is now dominant.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Connective</strong>:
-<em>transferring messages to another application, e.g. wrapping in other
-protocols</em></td>
-<td style="text-align: left;">DOIP <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> is
-transport-independent, commonly TLS TCP/IP port 9000), <a
-href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP
-over HTTP</a></td>
-<td style="text-align: left;">HTTP/1.1 (TCP/IP port 80), HTTP/1.1+TLS
-(TCP/IP 443), HTTP/2 (as HTTP/1* but binary), HTTP/3 (like HTTP/2+TLS
-but UDP)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Environmental</strong>: <em>how
-applications are deployed and affected by its environment,
-portability</em></td>
-<td style="text-align: left;">Main DOIP implementation is <a
-href="https://www.cordra.org/">Cordra</a>, which can be single-instance
-or <a
-href="https://www.cordra.org/documentation/configuration/distributed-deployment.html">distributed</a>.
-Cordra <a
-href="https://www.cordra.org/documentation/configuration/storage-backends.html">storage
-backends</a> include file system, S3, MongoDB (itself scalable). Unique
-DOIP protocol can be hard to add to existing Web application frameworks,
-although proxy services have been developed (e.g. B2SHARE adapter).</td>
-<td style="text-align: left;">HTTP services widely deployed in a myriad
-of ways, ranging from single instance servers, horizontally &amp;
-vertically scaled application servers, to (for static content)
-multi-cloud Content-Delivery Networks (CDN). Current scalable cloud
-technologies for Web hosting may not support HTTP features previously
-seen as important for Semantic Web, e.g. content negotiation and
-semantic HTTP status codes.</td>
-</tr>
-</tbody>
-</table>
+
+| Quality                                                                                                            | FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Web w/ Linked Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Quality                                                                                                            | FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Web w/ Linked Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Symbiotic**: *to what extent multiple applications can agree to interact, align, collaborate or cooperate*       | The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.                                                                                                                                                  | The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span> end up being mandated centrally by dominant (often commercial) providers <span class="citation" data-cites="fieldingReflectionsRESTArchitectural2017a">(Fielding et al. [2017](#ref-fieldingReflectionsRESTArchitectural2017a))</span>, and the clients are required to use each API as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences. |
+| **Pragmatic**: *using interaction contracts so processes can be choreographed in workflows*                        | FDO types and operations enable detailed choreography (Canonical Workflows; <span class="citation" data-cites="cwfr">CWFR Group ([2021](#ref-cwfr))</span>). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with `0.DOIP/OperationReference`).                                                                                                        | “Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(“Schema.Org Actions” [n.d.](#ref-SchemaOrgActions))</span>, WSDL/SOAP <span class="citation" data-cites="w3-wsdl20-primer">(Liu and Booth [2007](#ref-w3-wsdl20-primer))</span>, but frequently just as human-readable developer documentation with examples.                              |
+| **Semantic**: *ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies* | FDO semantic enable navigation and typing. Every FDO has a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC [PID-InfoType for Model](https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6). No single type semantic, Type FDOs can link to existing vocabularies & ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span> | Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.                                                                                                                                                                                                                                                                                                                                                                            |
+| **Syntactic**: *serialising messages for digital exchange, structure representation*                               | DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.                                                                                                                                                                                                                                                                                                                                                                                                                                           | Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.                                                                                                                                                                                                                                                                                                                                                                               |
+| **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*                   | <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI [2023](#ref-DOIPAPIHTTPa)[b](#ref-DOIPAPIHTTPa))</span>                                                                                                                                                                                              | HTTP/1.1, TCP/IP port 80 <span class="citation" data-cites="rfc2616">(Fielding et al. [1999](#ref-rfc2616))</span>; HTTP/1.1+TLS, TCP/IP 443 <span class="citation" data-cites="rfc2818">(Rescorla [2000](#ref-rfc2818))</span>; HTTP/2, as HTTP/1\* but binary <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson [2015](#ref-rfc7540))</span>; HTTP/3, like HTTP/2+TLS but UDP <span class="citation" data-cites="rfc9114">(Bishop [2022](#ref-rfc9114))</span>                                                                                                                                                                            |
+| **Environmental**: *how applications are deployed and affected by its environment, portability*                    | Main DOIP implementation is [*Cordra*](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).                                                                    | HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.                                                                                                                                                                                                                                                                         |
+
+Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span>. <span id="tbl:fdo-web-interoperability-framework" label="tbl:fdo-web-interoperability-framework">\[tbl:fdo-web-interoperability-framework\]</span>
+
 </div>
-<h3 class="unnumbered" id="mapping-of-metamodel-concepts">Mapping of
-Metamodel concepts</h3>
-<p>The Interoperability Framework for Fast Data also provides a brief
-<em>metamodel</em> which we use in Table <a
-href="#tbl:metamodel-concepts" data-reference-type="ref+page"
-data-reference="tbl:metamodel-concepts">[tbl:metamodel-concepts]</a> to
-map and examplify corresponding concepts in FDO’s DOIP realization and
-the Web using HTTP semantics <span class="citation"
-data-cites="rfc9110"></span>.</p>
-<p>From this mapping we can identify the conceptual similarities between
-DOIP and HTTP, often with common terminology. Notable are that neither
-DOIP or HTTP have strong support for transactions (explored further ),
-as well that HTTP has poor direct support for processes, as the Web is
-primarily stateless by design.</p>
+
+#### Mapping of Metamodel concepts
+
+The Interoperability Framework for Fast Data also provides a brief *metamodel* which we use in Table [\[tbl:metamodel-concepts\]](#tbl:metamodel-concepts) to map and examplify corresponding concepts in FDO’s DOIP realization and the Web using HTTP semantics <span class="citation" data-cites="rfc9110">(Fielding, Nottingham, and Reschke [2022](#ref-rfc9110))</span>.
+
+From this mapping we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further ), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
+
 <div id="tbl:metamodel-concepts">
-<table>
-<caption>Mapping the Metamodel concepts from the Interoperability
-Framework for Fast Data <span class="citation"
-data-cites="delgadoInteroperabilityFrameworkDistributed2016a"></span> to
-equivalent concepts for FDO and Web. </caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Metamodel concept</th>
-<th style="text-align: left;">FDO/DOIP concept</th>
-<th style="text-align: left;">Web/HTTP concept</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Resource</td>
-<td style="text-align: left;">FDO/DO</td>
-<td style="text-align: left;">Resource</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Service</td>
-<td style="text-align: left;">DOIP service</td>
-<td style="text-align: left;">Server/endpoint</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Transaction</td>
-<td style="text-align: left;">(not supported)</td>
-<td style="text-align: left;">Conditional requests,
-<code>409 Conflict</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Process</td>
-<td style="text-align: left;">Extended operations</td>
-<td style="text-align: left;">(primarily stateless),
-<code>100 Continue</code>, <code>202 Accepted</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Operation</td>
-<td style="text-align: left;">DOIP Operation</td>
-<td style="text-align: left;">Method, query parameters</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Request</td>
-<td style="text-align: left;">DOIP Request</td>
-<td style="text-align: left;">Request</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Response</td>
-<td style="text-align: left;">DOIP Response</td>
-<td style="text-align: left;">Response</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Message</td>
-<td style="text-align: left;">Segment, <code>requestId</code></td>
-<td style="text-align: left;">Message, Representation</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Channel</td>
-<td style="text-align: left;">DOIP Transport protocol (e.g. TCP/IP,
-TLS). JSWS signatures.</td>
-<td style="text-align: left;">TCP/IP, TLS, UDP</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Protocol</td>
-<td style="text-align: left;">DOIP 2.0, ++</td>
-<td style="text-align: left;">HTTP/1.1, HTTP/2, HTTP/3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Link</td>
-<td style="text-align: left;">PID/Handle</td>
-<td style="text-align: left;">URL</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 class="unnumbered" id="sec:doip-fdo-compare">Assessing FDO
-implementations</h2>
-<p>The FAIR Digital Object guidelines <span class="citation"
-data-cites="boninoFAIRDigitalObject"></span> sets out recommendations
-for FDO implementations. In Table <a href="#tbl:fdo-checks"
-data-reference-type="ref+page"
-data-reference="tbl:fdo-checks">[tbl:fdo-checks]</a> we evaluate the two
-current implementations, using DOIPv2 <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> and using Linked
-Data Platform <span class="citation" data-cites="w3-ldp"></span>, as
-proposed by <span class="citation"
-data-cites="FDOFramework"></span>.</p>
-<p>Note that the draft update to FDO specification <span
-class="citation" data-cites="fdo-RequirementSpec"></span> clarifies
-these definitions with equivalent identifiers<a href="#fn7"
-class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and
-relates them to further FDO requirements such as FDO Data Type
-Registries.</p>
-<p>A key observation from this is that simply using DOIP does not
-achieve many of the FDO guidelines. Rather the guidelines set out how a
-protocol like DOIPs should be used to achieve FAIR Digital Object goals.
-The DOIP Endorsement <span class="citation"
-data-cites="fdo-DOIPEndorsement"></span> sets out that to comply, DOIP
-must be used according to the set of FDO requirement documents (details
-), and notes <em>Achieving FDO compliance requires more than DOIP and
-full compliance is thus left to system designers</em>. Likewise, a
-Linked Data approach will need to follow the same requirements to comply
-as an FDO implementation.</p>
-<p>From our evaluation, we can observe:</p>
-<ul class="incremental">
-<li><p>G1 and G2 call for stability and trustworthiness. While the
-foundations of both DOIP and Linked Data approaches are now well
-established – the FDO requirements and in particular how they can be
-implemented are still taking shape and subject to change.</p></li>
-<li><p>Machine actionability (G4, G6) is a core feature of both FDOs and
-Linked Data. Conceptually they differ in the which way types and
-operations are discovered, with FDO seemingly more rigorous. In
-practice, however, we see that DOIP also relies on dynamic discovery of
-operations and that operation expectations for types (FDOF7) have not
-yet been defined.</p></li>
-<li><p>FDO proposes that types can have additional operations beyond
-CRUD (FDOF5, FDOF6), while Linked Data mainly achieves this with RESTful
-patterns using CRUD on additional resources,
-e.g. <code>order/152/items</code>. These are mainly stylistics but
-affect the architectural view – FDOs have more of an object-oriented
-approach.</p></li>
-<li><p>FDO puts strong emphasis on the use of PIDs (FDOF1, FDOF2, FDOF3,
-FDOF5), but in current practice DOIP use local types, local extended
-operations (FDOF5) and attributes (FDOF4) that are not bound to any
-global namespace.</p></li>
-<li><p>Linked Data have a strong emphasis on semantics (FDOF8), and
-metadata schemas developed by community agreements (FDOF10). FDO types
-need to be made reusable across servers.</p></li>
-<li><p>While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in
-practice this is not found (or linked with custom keys), particularly
-due to lack of namespaces and the favouring of local types rather than
-type/property re-use. Linked Data frequently have multiple
-representations, but often not sufficiently linked, perhaps
-<code>prov:specializationOf</code> <span class="citation"
-data-cites="w3-prov-o"></span></p></li>
-<li><p>FDO collections are not yet defined for DOIP, while Linked Data
-seemingly have too many alternatives, LDP has specific native support
-for containers.</p></li>
-<li><p>Tombstones for deleted resources are not well supported, nor
-specified, for either approach, although the continued availability of
-metadata when data is removed is a requirement for FAIR principles (see
-RDA-A2-01M in Table <a href="#RDA-A2-01M" data-reference-type="ref+page"
-data-reference="RDA-A2-01M">[RDA-A2-01M]</a>).</p></li>
-<li><p>DOIP supports multiple chunks of data for an object (FDOF3),
-while Linked Data can support content-negotiation. In either case it can
-be unclear to clients what is the meaning or equivalence of any
-additional chunks.</p></li>
-</ul>
-<div class="landscape">
-<div class="small">
-<div id="tbl:fdo-checks">
-<table>
-<caption>Checking FDO guidelines <span class="citation"
-data-cites="boninoFAIRDigitalObject fdo-RequirementSpec"></span> against
-its current implementations as DOIP <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> and Linked Data
-Platform (LDP) <span class="citation" data-cites="FDOFramework"></span>,
-with suggestions for required additions. </caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>FDO Guideline</strong></th>
-<th style="text-align: left;">DOIP 2.0</th>
-<th style="text-align: left;">FDO suggestions</th>
-<th style="text-align: left;">Linked Data Platform</th>
-<th style="text-align: left;">LDP suggestion</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>FDO Guideline</strong></td>
-<td style="text-align: left;">DOIP 2.0</td>
-<td style="text-align: left;">FDO suggestions</td>
-<td style="text-align: left;">Linked Data Platform</td>
-<td style="text-align: left;">LDP suggestion</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">G1: <em>invest for many decades</em></td>
-<td style="text-align: left;">Handle system stable for 20 years, DOIP
-2.0 since 2017.</td>
-<td style="text-align: left;">Ensure FDO types will not be
-protocol-bound as DOIP might be updated/replaced</td>
-<td style="text-align: left;">HTTP stable for 30 years, Semantic Web for
-20 years. <code>http://</code> URIs replaced by
-<code>https://</code>.</td>
-<td style="text-align: left;">Keep flexibility of RDF serialisation
-formats which may change more frequently</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">G2: <em>trustworthiness</em></td>
-<td style="text-align: left;">DOI/Handle trusted by all major academic
-publishers and data repositories. DOIP relatively unknown, in effect
-only one implementation.</td>
-<td style="text-align: left;">Further promote DOIP and justify its
-benefits. Build tutorials and OSI open source implementations.
-Standardise DOIP-over-HTTP alternative.</td>
-<td style="text-align: left;">JSON-LD used by half of all websites <span
-class="citation" data-cites="UsageStatisticsJSONLD"></span>, however
-previous bad experiences with Semantic Web may deter adopters</td>
-<td style="text-align: left;">Ensure simplicity for end developers,
-rather than semantic overengineering. Example-driven documentation.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">G3: <em>follows FAIR principles</em></td>
-<td style="text-align: left;">See Table <a
-href="#tbl:fair-data-maturity-model" data-reference-type="ref+page"
-data-reference="tbl:fair-data-maturity-model">[tbl:fair-data-maturity-model]</a></td>
-<td style="text-align: left;">Ensure all FAIR principles are covered,
-build complete examples.</td>
-<td style="text-align: left;">Touched briefly, see Table <a
-href="#tbl:fair-data-maturity-model" data-reference-type="ref+page"
-data-reference="tbl:fair-data-maturity-model">[tbl:fair-data-maturity-model]</a></td>
-<td style="text-align: left;">Add explicit expression to show each FAIR
-pcinciple fulfilled.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">G4: <em>machine actionability</em></td>
-<td style="text-align: left;">CRUD and extension operations dynamically
-listed (see Table <a href="#tbl:fdo-web-middleware"
-data-reference-type="ref+page"
-data-reference="tbl:fdo-web-middleware">[tbl:fdo-web-middleware]</a>)</td>
-<td style="text-align: left;">Specify which operations should work for a
-given type, to reduce need for dynamic lookup. Specify input/output
-expectations formally (e.g. JSON Schema).</td>
-<td style="text-align: left;">HTTP CRUD operations, Open API (see Table
-<a href="#tbl:fdo-web-middleware" data-reference-type="ref+page"
-data-reference="tbl:fdo-web-middleware">[tbl:fdo-web-middleware]</a>)</td>
-<td style="text-align: left;">Document operations so client can make
-subsequent HTTP calls.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">G5: <em>abstraction principle</em></td>
-<td style="text-align: left;">Handle PIDs as abstraction base. DOIP
-operations can use any transport protocol.</td>
-<td style="text-align: left;">Document transport protocols as FDOs,
-recommend which transport to use.</td>
-<td style="text-align: left;">URI as abstraction base. Does not specify
-PID requirements.</td>
-<td style="text-align: left;">Give stronger deployment
-recommendations.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">G6: <em>stable binding between
-entities</em></td>
-<td style="text-align: left;">Machine-navigation through PIDs and
-operations specified per type. Unclear when metadata field is a PID or
-plain text.</td>
-<td style="text-align: left;">Make datatype of fields explicit to
-support navigation.</td>
-<td style="text-align: left;">Machine-navigation through URIs via
-properties and types. Unclear when URI should be followed or is just
-identifier, but always distinct from plain text.</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">G7: <em>encapsulation</em></td>
-<td style="text-align: left;">Operations discovered at runtime
-(<code>0.DOIP/Op.ListOperations</code>).</td>
-<td style="text-align: left;">Allow method discovery by type FDOs in
-advance (see PR-TypingFDOs-2.0-20220608).</td>
-<td style="text-align: left;">HTTP methods discovered at runtime
-(<code>OPTIONS</code>), indempotent methods attempted directly.
-Unsupported methods reported using LDP constraints to human-readable
-text.</td>
-<td style="text-align: left;">Declare supported methods in advance,
-e.g. OpenAPI <span class="citation"
-data-cites="OpenAPISpecificationV3"></span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">G8: <em>technology independence</em></td>
-<td style="text-align: left;">In theory independent, in reality depends
-on single implementations of Handle system and DOIP</td>
-<td style="text-align: left;">Encourage open source DOIP testbeds and
-lighter reference implementations</td>
-<td style="text-align: left;">Multiple HTTP implementations, multiple
-LDP implementations. No FDOF implementations.</td>
-<td style="text-align: left;">Develop demonstrator of FDOF usage based
-on existing LDP server.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">G9: <em>standard compliance</em></td>
-<td style="text-align: left;">Handle <span class="citation"
-data-cites="rfc3650"></span>, DOIP <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span>. FDO requirements
-not standardised yet.</td>
-<td style="text-align: left;">Formalise standard process of FDO
-requirements <span class="citation"
-data-cites="fdo-DocProcessStd"></span></td>
-<td style="text-align: left;">HTTP, LDP. FDOF not yet standardised</td>
-<td style="text-align: left;">Formalise FDOF from FDOF-SEM working
-group</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF1: <em>PID as basis</em></td>
-<td style="text-align: left;">Extensive use of Handle system.</td>
-<td style="text-align: left;">Clarify how local testing handles can be
-used during development, how “temporary” FDOs should evolve <span
-class="citation" data-cites="fdo-PIDProfileAttributes"></span>. Register
-<code>0.DOIP/*</code> and <code>0.FDO/*</code> as PIDs.</td>
-<td style="text-align: left;">HTTP URLs as basis for identifiers, but
-they are frequently not persistent.</td>
-<td style="text-align: left;">Add strong guidance for PID services like
-w3id and persistence policies.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF2: <em>PID record w/ type</em></td>
-<td style="text-align: left;">Unspecified how to resolve from Handle to
-DOIP Service (!), in practice <code>10320/loc</code>,
-<code>0.TYPE/DOIPService</code>, <code>URL</code>,
-<code>URL_REPLICA</code></td>
-<td style="text-align: left;">Document requirements for PID Record</td>
-<td style="text-align: left;">w3id/purl PIDs redirect without giving any
-metadata. Datacite DOIs content-negotiate to give registered
-metadata.</td>
-<td style="text-align: left;">Add FAIR Signposting at PID provider for
-minimal PID record</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF3: <em>PID resolvable to bytestream
-&amp; metadata</em></td>
-<td style="text-align: left;">Byte stream resolvable
-(<code>0.DOIP/Retrieve</code>), <code>includeElementData</code> option
-can retrieve bytestream or full object structure. No method/attribute
-defined for separate metadata, only directly in PID Record. Unclear
-meaning of multiple items and bytestream chunks.</td>
-<td style="text-align: left;">Clarify expectations for multiple items.
-Recommend chunks to not be used.</td>
-<td style="text-align: left;">URIs resolvable by default. Multiple ways
-to resolve metadata, unclear preference.</td>
-<td style="text-align: left;">Add FAIR Signposting and preference
-order.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF4: <em>Additional attributes</em></td>
-<td style="text-align: left;">Freetext attribute keys. Attributes should
-be defined for FDO type (?).</td>
-<td style="text-align: left;">Require that attribute keys should be PIDs
-(or have predefined mapping to PIDs). Explicitly allow attributes not
-already defined in type.</td>
-<td style="text-align: left;">All attributes individually identified.
-Any Linked Data attributes can be used by URI or with mapped
-prefix.</td>
-<td style="text-align: left;">Clarify type expectations of
-required/recommended/optional attributes.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF5: <em>Interface: operation by
-PID</em></td>
-<td style="text-align: left;">Extended operations use PID, but
-“pid-like” DOIP operations/types are not registered as handles.</td>
-<td style="text-align: left;">Register <code>0.DOIP/*</code> and
-<code>0.FDO/*</code> as PIDs. Clarify that operations can be mapped to
-protocol directly.</td>
-<td style="text-align: left;">CRUD operations used directly in HTTP
-(e.g. <code>PUT</code>). Unclear how to provide PID for additional
-operations.</td>
-<td style="text-align: left;">Specify how additional operations should
-be called over HTTP.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF6: <em>CRUD operations +
-extensions</em></td>
-<td style="text-align: left;"><code>0.DOIP/Op.Create</code>,
-<code>Op.Retrieve</code>, <code>Op.Update</code>, <code>Op.Delete</code>
-but also <code>0.DOIP/Op.Search</code>.</td>
-<td style="text-align: left;">Document</td>
-<td style="text-align: left;"><code>PUT</code>, <code>GET</code>,
-<code>POST</code>, <code>DELETE</code>, <code>PATCH</code>,
-<code>HEAD</code> – extension operations (e.g. WebDAV <code>COPY</code>)
-not used, resource patterns <span class="citation"
-data-cites="martinekuanWebAPIDesign"></span> are used instead.</td>
-<td style="text-align: left;">Document how operation resources can be
-discovered from an LPD container. Document search API.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF7: <em>FDOF Types related to
-operations</em></td>
-<td style="text-align: left;">Not yet formalised, by DOIP discoverable
-on a given FDO rather than type. PR-TypingFDOs leaves this open.</td>
-<td style="text-align: left;">Add explicit relation between type and
-operations</td>
-<td style="text-align: left;"><code>OPTIONS</code> per LDP Resource, but
-not by type. Common types (<code>ldp:Resource</code>,
-<code>ldp:Container</code>) indicate LDP support, but are not
-required.</td>
-<td style="text-align: left;">Always make LDP types explicit in FDO
-profile.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF8: <em>Metadata as FDO, semantic
-assertions</em></td>
-<td style="text-align: left;">DOIP includes all metadata in PID Record.
-Separate Metadata FDO need custom property.</td>
-<td style="text-align: left;">Specify a <code>0.FDO/metadata</code> or
-similar to point to Metadata FDOs.</td>
-<td style="text-align: left;">Assertions are always with semantics,
-using RDF vocabularies. Unspecified how to find additional metadata
-resources, <code>rdfs:seeAlso</code> is common.</td>
-<td style="text-align: left;">Use FAIR Signposting
-<code>describedby</code> link relation to additional metadata PIDs</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF9: <em>Different metadata
-levels</em></td>
-<td style="text-align: left;">Defines open-ended “Response Attributes”
-without namespaces, but mandated as “None” for all CRUD operations.
-Metadata would need to be bundled within custom FDO types or attributes.
-Unclear how levels are separated within single FDO representation (need
-FDOF8?).</td>
-<td style="text-align: left;">Declare which metadata are expected within
-response attribute or within FDO object. Require PIDs for custom
-attributes. Define how alternate metadata levels can be represented
-separately.</td>
-<td style="text-align: left;">Undefined how to handle multiple metadata
-granularities or domains, alternative LDP containers can present
-different views on same stored objects.</td>
-<td style="text-align: left;">Define how to navigate to alternate views
-and their semantic implications, e.g. <code>owl:sameAs</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF10: <em>Metadata schemas by
-community</em></td>
-<td style="text-align: left;">Metadata schemas are in practice managed
-on single CORDA server as local types, using JSON Schema.</td>
-<td style="text-align: left;">Require types to be FDOs with registered
-PIDs, implement shared types.</td>
-<td style="text-align: left;">Plethora of existing RDF
-vocabularies/ontologies managed by larger communities, e.g. <a
-href="https://obofoundry.org/">OBO Foundry</a> <span class="citation"
-data-cites="smithOBOFoundryCoordinated2007a"></span></td>
-<td style="text-align: left;">Rather document better how individual
-ad-hoc schemas can be started for prototypes.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FDOF11: <em>FDO collections w/ semantic
-relations</em></td>
-<td style="text-align: left;">Collection type undefined by DOIP.
-Informal use of <code>HAS_PARTS</code> Handle attribute (e.g. <span
-class="citation" data-cites="DataInformationView"></span>).</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">LDP Containers required by specification,
-also user-created (eg. <code>BasicContainer</code>).</td>
-<td style="text-align: left;">Clarify relation to other collections like
-DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3"></span>, <a
-href="https://schema.org/Dataset">Schema.org Dataset</a>, OAI-ORE <span
-class="citation" data-cites="ORESpecificationAbstract"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FDOF12: <em>Deleted FDO preserve PID w/
-tombstone</em></td>
-<td style="text-align: left;">Tombstone for deleted resource undefined
-by DOIP. <code>0.DOIP/Status.104</code> status code does not distinguish
-“Not Found” or “Gone”</td>
-<td style="text-align: left;">Formalise tombstone requirements with new
-FDO type</td>
-<td style="text-align: left;"><code>410 Gone</code> recommended, but
-<code>404 Not Found</code> common. No requirement for tombstone
-serialisation</td>
-<td style="text-align: left;">Formalise tombstone requirements and
-serialisation</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<h2 class="unnumbered" id="sec:middleware">Comparing FDO and Web as
-middleware infrastructures</h2>
-<p>In this section we take the perspective that FDO principles are in
-effect proposing a global infrastructure of machine-actionable digital
-objects. As such we can consider implementations of FDO as
-<strong>middleware infrastructures</strong> for programmatic usage, and
-can evaluate them based on expectations for client and server
-developers.</p>
-<p>We argue that the Web, with its now ubiquitous use of REST API <span
-class="citation"
-data-cites="fieldingArchitecturalStylesDesign2000a"></span>, can be
-compared as a similar global middleware. Note that while early moves for
-developing Semantic Web Services <span class="citation"
-data-cites="fenselSemanticWebServices2011"></span> attempted to merge
-the Web Service and RDF aspects, we are here considering mainly the
-current programmatic Web and its mostly light-weight use of 3 out of
-possible <em>5 stars Linked Data</em> <span class="citation"
-data-cites="OpenData"></span>.</p>
-<p>For this purpose, we here utillise the Comparison Framework for
-Middleware Infrastructures <span class="citation"
-data-cites="zarrasComparisonFrameworkMiddleware2004a"></span> that
-formalise multiple dimensions of openness, scalability, transparency, as
-well as characteristics known from Object-oriented programming such as
-modularity, encapsulation and inheritance.</p>
-<p>Based on the analysis in Table <a href="#tbl:fdo-web-middleware"
-data-reference-type="ref+page"
-data-reference="tbl:fdo-web-middleware">[tbl:fdo-web-middleware]</a>, we
-make the following observations:</p>
-<ul class="incremental">
-<li><p>With respect to the aspect of <em>Performance</em>, it is
-interesting to note that while the first version of DOIP <span
-class="citation" data-cites="DigitalObjectInterface"></span> supported
-multiplexed channels similar to HTTP/2 (allowing concurrent transfer of
-several digital objects). Multiplexing was removed for the much
-simplified DOIP 2.0 <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span>. Unlike DOIP 1.0,
-DOIP 2.0 will require a DO response to be sent back completely, as a
-series of segments (which again can be split the bytes of each binary
-<em>element</em> into sized <em>chunks</em>), before transmission of
-another DO response can start on the transport channel. It is unclear
-what is the purpose of splitting a binary into chunks on a channel which
-no longer can be multiplexed and the only property of a chunk is its
-size<a href="#fn8" class="footnote-ref" id="fnref8"
-role="doc-noteref"><sup>8</sup></a>.</p></li>
-<li><p>HTTP has strong support for scalability and caching, but this
-mostly assumes read-operations from static resources. FDO has no view on
-immutability or validity of retrieved objects, but this should be taken
-into consideration to support large-scale usage.</p></li>
-<li><p>HTTP optimisations for performance (e.g. HTTP/2, multiplexing) is
-largely used for commercial media distribution (e.g. Netflix), and not
-commonly used by providers of FAIR data</p></li>
-<li><p>Cloud deployment of Web applications give many middleware
-benefits (Scalability, Distribution, Access transparancy, Location
-transparancy) – it is unclear how DOIP as a custom protocol would
-perform in a cloud setting as most of this infrastructure assumes HTTP
-as the protocol.</p></li>
-<li><p>Programmatically the Web is rather unstructured as middleware, as
-there are many implementation choices. Usually it is undeclared what to
-expect for a given URI/service, and programmers follow documented
-examples for a particular service rather than automated programmatic
-exploration across providers. This mean one can consider the Web as an
-ecosystem of smaller middlewares with commonalities.</p></li>
-<li><p>Many providers of FAIR Linked Data also provide programmatic REST
-API endpoints, e.g. <a
-href="https://www.uniprot.org/help/programmatic_access">UNIPROT</a>, <a
-href="https://chembl.gitbook.io/chembl-interface-documentation/web-services">ChEMBL</a>,
-but keeping the FAIR aspects such as retrieving metadata in such a
-scenario may require combining different services using multiple formats
-and identifier conventions.</p></li>
-</ul>
-<div class="landscape">
-<div class="small">
-<div id="tbl:fdo-web-middleware">
-<table>
-<caption>Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span
-class="citation" data-cites="foundationDigitalObjectInterface"></span>)
-and Web technologies (using Linked Data) as middleware infrastructures
-<span class="citation"
-data-cites="zarrasComparisonFrameworkMiddleware2004a"></span> </caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><em>Quality</em></th>
-<th style="text-align: left;">FDO w/ DOIP</th>
-<th style="text-align: left;">Web w/ Linked Data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><em>Quality</em></td>
-<td style="text-align: left;">FDO w/ DOIP</td>
-<td style="text-align: left;">Web w/ Linked Data</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Openness</strong>: <em>framework
-enable extension of applications</em></td>
-<td style="text-align: left;">FDOs can be cross-linked using PIDs,
-pointing to multiple FDO endpoints. Custom DOIP operations can be
-exposed, although it is unclear if these can be outside the FDO server.
-PID minting requires Handle.net prefix subscription, or use of services
-like <a href="https://datacite.org/">Datacite</a>, <a
-href="https://eudat.eu/services/userdoc/b2handle">B2Handle</a>.</td>
-<td style="text-align: left;">The Web is inherently open and made by
-cross-linked URLs. Participation requires DNS domain purchase (many free
-alternatives also exists). PID minting can be free using PURL/ARK
-services, or can use DOI/Handle with HTTP redirects.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Scalability</strong>:
-<em>application should be effective at many different scales</em></td>
-<td style="text-align: left;">No defined methods for caching or
-mirroring, although this could be handled by backend, depending on
-exposed FDO operations (e.g. Cordra can scale to multiple backend
-nodes)</td>
-<td style="text-align: left;">Cache control headers reduce repeated
-transfer and assist explicit and transparent proxies for speed-up. HTTP
-<code>GET</code> can be scaled to world-population-wide with
-Content-Delivery Networks (CDNs), while write-access scalability is
-typically manage by backend.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Performance</strong>:
-<em>efficient and predictable execution</em></td>
-<td style="text-align: left;">DOIP has been shown moderately scalable to
-100 millions of objects, create operation at 900 requests/second . DOIP
-protocol is reusable for many operations, multiple requests may be
-answered out of order (by <code>requestId</code>). Multiple connections
-possible. Setup is typically through TCP and TLS which adds
-latency.</td>
-<td style="text-align: left;">HTTP traffic is about 10% of global
-Internet traffic, excluding video and social networks <span
-class="citation" data-cites="sandvineGlobalInternetPhenomena"></span>.
-HTTP 1 connections are serial and reusable, and concurrent connections
-is common. HTTP/2 adds asynchronous responses and multiplexed streams
-<span class="citation" data-cites="rfc7540"></span> but still has
-TCP+TLS startup costs. For reduced latency, HTTP/3 <span
-class="citation" data-cites="rfc9114"></span> use QUIC <span
-class="citation" data-cites="rfc9000"></span> rather than TCP, already
-adapted heavily (30% of EMEA traffic) of which Instagram &amp; Facebook
-video is the majority of traffic <span class="citation"
-data-cites="joras2020"></span>.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Distribution
-transparency</strong>: <em>application perceived as a consistent whole
-rather than independent elements.</em></td>
-<td style="text-align: left;">Each FDO is accessed separately along with
-its components (typically from the same endpoint). FDOs should provide
-the mandatory kernel metadata fields. FDOs of the same declared type
-typically share additional attributes (although that schema may not be
-declared). DOIP does not enforce metadata typing constraints, this need
-to be established as FDO conventions.</td>
-<td style="text-align: left;">Each URL accessed separately. Common HTTP
-headers provide basic metadata, although it is often not reliable. A
-multitude of schemas and serializations for metadata exists, conventions
-might be implied by a declared profile or certain media types. Metadata
-is not always machine findable, may need pre-agreed API URI Templates
-<span class="citation" data-cites="rfc6570"></span>, content-negotiation
-<span class="citation" data-cites="ContentNegotiationHTTP"></span> or
-FAIR Signposting <span class="citation"
-data-cites="vandesompelFAIRSignpostingProfile2022"></span>.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Access transparency</strong>:
-<em>local/remote elements accessed similarly</em></td>
-<td style="text-align: left;">FDOs should be accessed through PID
-indirection, this means difficult to make private test setup. Commonly a
-fixed DOIP server is used directly, which permits local non-PID
-identifiers.</td>
-<td style="text-align: left;">Global HTTP protocol frequently used
-locally and behind firewalls, but at risk of non-global URIs
-(e.g. <code>http://localhost/object/1</code>) and SSL issues
-(e.g. self-signed certificates, local CAs)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Location transparency</strong>:
-<em>elements accessed without knowledge of physical location</em></td>
-<td style="text-align: left;">FDOs always accessed through PIDs.
-Multiple locations possible in Handle system, can expose geo-info.</td>
-<td style="text-align: left;">PIDs and URL redirects. DNS aliases and IP
-routing can hide location. Geo-localised servers common for large cloud
-deployments.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Concurrency transparency</strong>:
-<em>concurrent processing without interference</em></td>
-<td style="text-align: left;">No explicit concurrency measures. FDO
-kernel metadata can include checksum and date.</td>
-<td style="text-align: left;">HTTP operations are classified as being
-stateless/idempotent or not (e.g. <code>PUT</code> changes state, but
-can be repeated on failure), although these constraints are
-occassionally violated by Web applications. Cache control,
-<code>ETag</code> (e.g. checksum) and modification date in HTTP headers
-allows detection of concurrent changes on a single resource.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Failure transparency</strong>:
-<em>service provisioning resilient to failures</em></td>
-<td style="text-align: left;">DOIP status codes,
-e.g. <code>0.DOIP/Status.104</code>, additional codes can be added as
-custom attributes</td>
-<td style="text-align: left;">HTTP <a
-href="https://datatracker.ietf.org/doc/html/rfc7231#section-6.5">status
-codes</a> e.g. <code>404 Not Found</code>, specific meaning of standard
-codes can be <a
-href="https://swagger.io/docs/specification/describing-responses/">documented
-in Open API</a>. Custom codes uncommon.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Migration transparency</strong>:
-<em>allow relocating elements without interfering application</em></td>
-<td style="text-align: left;">Update of PID record URLs, indirection
-through <code>0.TYPE/DOIPServiceInfo</code> (not always used
-consistently). No redirection from DOIP service.</td>
-<td style="text-align: left;">HTTP <code>30x</code> status codes provide
-temporary or permanent redirections, commonly used for PURLs but also by
-endpoints.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Persistence transparency</strong>:
-<em>conceal deactivation/reactivation of elements from their
-users</em></td>
-<td style="text-align: left;">FDO requires use of PIDs for object
-persistence, including a tombstone response for deleted objects. There
-is no guarantee that an FDO is immutable or will even stay the same type
-(note: CORDRA extends DOIP with <a
-href="https://www.cordra.org/documentation/design/object-versioning.html">version
-tracking</a>).</td>
-<td style="text-align: left;">URLs are not required to persist, although
-encouraged <span class="citation"
-data-cites="berners-lee-cool-uris"></span>. Persistence requires
-convention to use PIDs/PURLs and HTTP <code>410 Gone</code>. An URL may
-change its content, change in type may sometimes force new URLs if
-exposing extensions like <code>.json</code>. Memento <span
-class="citation" data-cites="rfc7089"></span> expose versioned
-snapshots. WebDAV <code>VERSION-CONTROL</code> method <span
-class="citation" data-cites="rfc3253"></span> (used by SVN).</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Transaction transparency</strong>:
-<em>coordinate execution of atomic/isolated transactions</em></td>
-<td style="text-align: left;">No transaction capabilities declared by
-FDO or DOIP. Internal synchronisation possible in backend for Extended
-operations.</td>
-<td style="text-align: left;">Limited transaction capabilities
-(e.g. <code>If-Unmodified-Since</code>) on same resource. WebDAV <a
-href="https://datatracker.ietf.org/doc/html/rfc4918#section-6">locking
-mechanisms</a> <span class="citation" data-cites="rfc4918"></span> with
-<code>LOCK</code> and <code>UNLOCK</code> methods.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Modularity</strong>:
-<em>application as collection of connected/distributed
-elements</em></td>
-<td style="text-align: left;">FDOs are inheritedly modular using global
-PID spaces and their cross-references. In practice, FDOs of a given type
-are exposed through a single server shared within a particular
-community/institution.</td>
-<td style="text-align: left;">The Web is inheritently modular in that
-distributed objects are cross-referenced within a global URI space. In
-practice, an API’s set of resources will be exposed through a single
-HTTP service, but modularity enables fine-grained scalability in
-backend.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Encapsulation</strong>:
-<em>separate interface from implementation. Specify interface as
-contract, multiple implementations possible</em></td>
-<td style="text-align: left;">Indirection by PID gives separation. FDO
-principles are protocol independent, although it may be unclear which
-protocol to use for which FDO (although <code>0.DOIP/Transport</code>
-can be specified after already contacting DOIP). Cordra supports <a
-href="https://www.cordra.org/documentation/api/doip.html">native
-DOIP</a>, <a
-href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP
-over HTTP</a> and <a
-href="https://www.cordra.org/documentation/api/rest-api.html">Cordra
-REST API</a>)</td>
-<td style="text-align: left;">HTTP/1.1 semantics can seemlessly upgrade
-to HTTP/2 and HTTP/3. <code>http</code> vs <code>https</code> URIs
-exposes encryption detail<a href="#fn9" class="footnote-ref" id="fnref9"
-role="doc-noteref"><sup>9</sup></a>. Implementation details may leak
-into URIs (e.g. <code>search.aspx</code>), countered by deliberate
-design of URI patterns <span class="citation"
-data-cites="berners-lee-cool-uris"></span>) and PIDs via Persistent URLs
-(PURL).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Inheritance</strong>: <em>Deriving
-specialised interface from another type</em></td>
-<td style="text-align: left;">DOIP types nested with parents, implying
-shared FDO structures (unclear if operations are inherited). FDO
-establishes need for multiple Data Type Registries (e.g. managed by a
-community for a particular domain). Semantics of type system currently
-undefined for FDO and DOIP, syntactic types can also piggyback of FDO
-type’s schema (e.g. <a
-href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA
-<code>$ref</code></a> use of <a
-href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON
-Schema references</a> <span class="citation"
-data-cites="Draftbhuttonjsonschema"></span>)</td>
-<td style="text-align: left;">Syntactically Media Type with multiple
-suffixes <span class="citation"
-data-cites="Draftietfmediamansuffixes00MediaTypes"></span> (mainly used
-with <code>+json</code>), declaration of subtypes as profiles (RFC6906)
-. In metadata, semantic type systems (RDFS <span class="citation"
-data-cites="w3-rdf-schema"></span>), OWL2 <span class="citation"
-data-cites="w3-owl2-overview"></span>, SKOS <span class="citation"
-data-cites="w3-skos-primer"></span>). OpenAPI 3 <span class="citation"
-data-cites="OpenAPISpecificationV3"></span> <a
-href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance
-and Polymorphism</a>. XML <code>xsd:schemaLocation</code> or
-<code>xsd:type</code> <span class="citation"
-data-cites="w3-xmlschema11"></span>, JSON <code>$schema</code> <span
-class="citation" data-cites="Draftbhuttonjsonschema"></span>), JSON-LD
-<code>@context</code> <span class="citation"
-data-cites="w3-json-ld"></span>. Large number of domain-specific and
-general ontologies define semantic types, but finding and selecting
-remains a challenge.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Signal interfaces</strong>:
-<em>asynchronous handling of messages</em></td>
-<td style="text-align: left;">DOIP 2.0 is synchronous, in FDO async
-operations undefined. Could be handled as custom jobs/futures FDOs</td>
-<td style="text-align: left;">HTTP/2 <a
-href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed
-streams</a> <span class="citation" data-cites="rfc7540"></span>, Web
-Sockets <span class="citation" data-cites="WebSocketsStandard"></span>,
-Linked Data Notifications <span class="citation"
-data-cites="w3-ldn"></span>, AtomPub <span class="citation"
-data-cites="rfc5023"></span>, SWORD <span class="citation"
-data-cites="SWORDSpecification"></span>, Micropub <span class="citation"
-data-cites="w3-micropub"></span>, more typically ad-hoc jobs/futures
-REST resources</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Operation interfaces</strong>:
-<em>defining operations possible on an instance, interface of
-request/response messages</em></td>
-<td style="text-align: left;">CRUD predefined in DOIP, custom operations
-through <code>0.DOIP/Op.ListOperations</code> (can be FDOs of type
-<code>0.TYPE/DOIPOperation</code>, more typically local identifiers like
-<code>"getProvenance"</code>)</td>
-<td style="text-align: left;">CRUD predefined in <a
-href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP
-methods</a> <span class="citation" data-cites="rfc7231"></span>, (<a
-href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended
-by registration</a>), URI Templates <span class="citation"
-data-cites="rfc6570"></span>, <a
-href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI
-operations</a> <span class="citation"
-data-cites="OpenAPISpecificationV3"></span>, HATEOAS<a href="#fn10"
-class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>
-incl. Hydra <span class="citation"
-data-cites="HydraW3CCommunity"></span>, schema.org Actions <span
-class="citation" data-cites="SchemaOrgActions"></span>, JSON HAL <span
-class="citation" data-cites="Draftkellyjsonhal08"></span> &amp; Link
-headers (RFC8288) <span class="citation"
-data-cites="rfc8288"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Stream interfaces</strong>:
-<em>operations that can handle continuous information streams</em></td>
-<td style="text-align: left;">Undefined in FDO. DOIP can support
-multiple byte stream elements (need custom FDO type to determine stream
-semantics)</td>
-<td style="text-align: left;">HTTP 1.1 <span class="citation"
-data-cites="rfc7230"></span> <a
-href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked
-transfer</a>, HLS (RFC8216) <span class="citation"
-data-cites="rfc8216"></span>, MPEG-DASH <span class="citation"
-data-cites="iso23009"></span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<h2 class="unnumbered" id="sec:fair-compare">Assessing FDO against
-FAIR</h2>
-<p>In addition to having “FAIR” in its name, the FAIR Digital Object
-guidelines <span class="citation"
-data-cites="fdo-RequirementSpec"></span> also include <em>G3: FDOs must
-offer compliance with the FAIR principles through measurable indicators
-of FAIRness</em>.</p>
-<p>Here we evaluate to what extent the FDO guidelines and its
-implementation with DOIP and Linked Data Platform <span class="citation"
-data-cites="FDOFramework"></span> comply with the FAIR principles <span
-class="citation"
-data-cites="wilkinsonFAIRGuidingPrinciples2016e"></span>. Here we’ve
-used the RDA’s FAIR Data Maturity Model <span class="citation"
-data-cites="groupFAIRDataMaturity2020"></span> as it has decomposed the
-FAIR principles to a structured list of FAIR indicators <span
-class="citation" data-cites="bahimFAIRDataMaturity2020a"></span>,
-importantly considering <em>Data</em> and <em>Metadata</em> separately.
-In our interpretation for Table <a href="#tbl:fair-data-maturity-model"
-data-reference-type="ref+page"
-data-reference="tbl:fair-data-maturity-model">[tbl:fair-data-maturity-model]</a>
-we have for simplicity chosen to interpret “data” in FDOs as the
-associated bytestream of arbitrary formats, with remaining JSON or RDF
-structures always considered as metadata.</p>
-<p>From this evaluation we observe:</p>
-<ul class="incremental">
-<li><p>Linked Data in general is strong on metadata indicators, but LDP
-approach is weak as it has little concrete metadata guidance.</p></li>
-<li><p>FDO/DOIP are stronger on identifier indicators, while Linked Data
-approach for identifiers relies on best practices.</p></li>
-<li><p>Indicators on standard protocols (RDA-A1-04M, RDA-A1-04D,
-RDA-A1.1-01M, RDA-A1.1-01D) favour LDP’s mature standards (HTTP, URI) –
-the DOIPv2 specification <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span> has currently only
-a couple of implementations and is expressed informally. The underlying
-Handle system for PIDs is arguably mature and commonly used by
-researchers (this article alone references about 80 DOIs), however DOIs
-are more commonly accessed as HTTP redirects through resolvers like <a
-href="https://doi.org/" class="uri">https://doi.org/</a> and <a
-href="http://hdl.handle.net/" class="uri">http://hdl.handle.net/</a>
-rather than the Handle protocol.</p></li>
-<li><p>RDA-A1-02M and RDA-A1-02D highlights access by manual
-intervention, which is common for http/https URIs, but also using above
-PID resolvers for DOIP implementation <a
-href="https://www.cordra.org/">CORDRA</a> (e.g. <a
-href="https://hdl.handle.net/21.14100/90ec1c7b-6f5e-4e12-9137-0cedd16d1bce"
-class="uri">https://hdl.handle.net/21.14100/90ec1c7b-6f5e-4e12-9137-0cedd16d1bce</a>),
-yet neither LDP, FDO nor DOIP specifications recommends human-readable
-representations to be provided</p></li>
-<li><p>Neither DOIP nor LDP require license to be expressed
-(RDA-R1.1-01M, RDA-R1.1-02M, RDA-R1.1-03M), yet this is crucial for
-re-use and machine actionability of FAIR data and metadata to be
-legal</p></li>
-<li><p>Machine-understandable types, provenance and data/metadata
-standards (RDA-R1.1-03M RDA-R1.3-02M, RDA-R1.3-02M, RDA-R1.3-02D) are
-important for machine actionability, but are currently unspecified for
-FDOs. <span class="citation"
-data-cites="fdo-ImplAttributesTypesProfiles"></span> explores possible
-machine-readable FDO types, however the type systems themselves have not
-yet been formalised. Linked Data on the other side have too many
-semantic and syntactic type systems, making it difficult to write
-consistent clients.</p></li>
-<li><p>Indicators for FAIR data are weak for either approach, as too
-much reliance is put on metadata. For instance in Linked Data, given a
-URL of a CSV file, what is its persistant identifier or license
-information? FAIR Signposting <span class="citation"
-data-cites="vandesompelFAIRSignpostingProfile2022"></span> can improve
-findability of metadata using HTTP Link relations, which enable an
-FDO-like overlay for any HTTP resource. In DOIP, responses for
-bytestreams can include the data identifier: if that is a PID (not
-enforced by DOIP), its metadata is accessible.</p></li>
-<li><p>Resolving FDOs via Handle PIDs to the corresponding DOIP server
-is currently undefined by FDO and DOIP specifications.
-<code>0.TYPE/DOIPServiceInfo</code> lookup is only possible once DOIP
-server is known.</p></li>
-</ul>
-<div class="landscape">
-<div class="small">
-<div id="RDA-A2-01M">
-<table>
-<caption>Assessing RDA’s FAIR Data Maturity Model <span class="citation"
-data-cites="groupFAIRDataMaturity2020 bahimFAIRDataMaturity2020a"></span>
-(first 2 columns) against the FDO guidelines <span class="citation"
-data-cites="boninoFAIRDigitalObject"></span>, FDO implemented with the
-protocol DOIPv2 <span class="citation"
-data-cites="foundationDigitalObjectInterface"></span>, Linked Data
-Platform (LDP) <span class="citation" data-cites="FDOFramework"></span>
-and examples from Linked Data practices in general. (— indicates
-<em>Unspecified</em>, may be possible with additional conventions) <span
-id="tbl:fair-data-maturity-model"
-label="tbl:fair-data-maturity-model"></span></caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">FAIR ID</th>
-<th style="text-align: left;">Indicator</th>
-<th style="text-align: left;">FDO guidelines</th>
-<th style="text-align: left;">FDO/DOIP</th>
-<th style="text-align: left;">FDO/LDP</th>
-<th style="text-align: left;">Linked Data examples</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">FAIR ID</td>
-<td style="text-align: left;">Indicator</td>
-<td style="text-align: left;">FDO guidelines</td>
-<td style="text-align: left;">FDO/DOIP</td>
-<td style="text-align: left;">FDO/LDP</td>
-<td style="text-align: left;">Linked Data examples</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-F1-01M</td>
-<td style="text-align: left;">Metadata is identified by a persistent
-identifier</td>
-<td style="text-align: left;">FDOF4</td>
-<td style="text-align: left;">Optional <em>Metadata FDO</em> w/separate
-PID</td>
-<td style="text-align: left;">Content-negotiation to URL, not required
-to be PID</td>
-<td style="text-align: left;">Metadata typically don’t have own PID</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-F1-01D</td>
-<td style="text-align: left;">Data is identified by a persistent
-identifier</td>
-<td style="text-align: left;">FDOF1</td>
-<td style="text-align: left;">PIDs required (FDOF1). Handle, DOI.</td>
-<td style="text-align: left;">FDOF-IR (Identifier Record). PID can be
-any URI</td>
-<td style="text-align: left;">“Cool” URIs <span class="citation"
-data-cites="berners-lee-cool-uris"></span>, PURL services
-incl. <code>purl.org</code>, <code>w3id.org</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-F1-02M</td>
-<td style="text-align: left;">Metadata is identified by a globally
-unique identifier</td>
-<td style="text-align: left;">FDOR4 FDOF8</td>
-<td style="text-align: left;">Optional <em>Metadata FDO</em>,
-unspecified how to indicate</td>
-<td style="text-align: left;">Content-negotiation to URL</td>
-<td style="text-align: left;">Not required, content-negotiation can
-redirect to URL or <code>Content-Location</code>. FAIR Signposting.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-F1-02D</td>
-<td style="text-align: left;">Data is identified by a globally unique
-identifier</td>
-<td style="text-align: left;">FDOF1</td>
-<td style="text-align: left;">All FDOs have PIDs (FDOR1), DOIP uses
-Handle system</td>
-<td style="text-align: left;">FDOF-IR (Identifier Record)</td>
-<td style="text-align: left;">Always accessed by URL</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-F2-01M</td>
-<td style="text-align: left;">Rich metadata is provided to allow
-discovery</td>
-<td style="text-align: left;">FDOF2 FDOF4 FDOF8 FDOF9</td>
-<td style="text-align: left;">FDO has key-value metadata. Unclear how to
-link to additional metadata.</td>
-<td style="text-align: left;">FDOF-IR links to multiple metadata
-records</td>
-<td style="text-align: left;">RDF-based metadata by content negotiation
-or FAIR Signposting. Embedded in landing page (RDFa).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-F3-01M</td>
-<td style="text-align: left;">Metadata includes the identifier for the
-data</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;"><code>id</code> and <code>type</code> are
-required metadata elements PIDs, also implicit as requests must use
-PID</td>
-<td style="text-align: left;">PID only required in FDOF-IR record.</td>
-<td style="text-align: left;">PID inclusion typical, but often
-inconsistent (e.g. <code>www.example.com</code> vs
-<code>example.com</code>) or missing (use of <code>&lt;&gt;</code> as
-<em>this</em> subject)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-F4-01M</td>
-<td style="text-align: left;">Metadata is offered in such a way that it
-can be harvested and indexed</td>
-<td style="text-align: left;">FDOF10</td>
-<td style="text-align: left;">No, registries not required (except Data
-Type Registries). Handle registry only searchable by PID.</td>
-<td style="text-align: left;">Not specified</td>
-<td style="text-align: left;">Not specified, several
-registries/catalogues for vocabularies/types (e.g. <span
-class="citation" data-cites="NCBOBioPortal"></span>). Indexing by search
-engines if exposing HTML w/schema.org.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1-01M</td>
-<td style="text-align: left;">Metadata contains information to enable
-the user to get access to the data</td>
-<td style="text-align: left;">FDOF3 FDOF6</td>
-<td style="text-align: left;">Directly by DOIP, but not included in FDO
-metadata. <code>handle.net</code> HTTP resolution may redirect to
-landing page</td>
-<td style="text-align: left;">Any property can point to URIs, but
-unclear if it is data</td>
-<td style="text-align: left;">Common with clickable “follow your nose”
-URLs</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A1-02M</td>
-<td style="text-align: left;">Metadata can be accessed manually
-(i.e. with human intervention)</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">(Cordra HTML landing page from
-<code>handle.net</code> URIs)</td>
-<td style="text-align: left;">Optional content-negotiation, e.g. by
-Apache Marmotta, OpenLink Virtuoso</td>
-<td style="text-align: left;">HTTP content-negotiation to HTML is
-common</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1-02D</td>
-<td style="text-align: left;">Data can be accessed manually (i.e. with
-human intervention)</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">(Cordra HTML landing page from
-<code>handle.net</code> URIs)</td>
-<td style="text-align: left;">Optional content-negotiation</td>
-<td style="text-align: left;">Direct download, HTML landing pages common
-for DOIs</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A1-03M</td>
-<td style="text-align: left;">Metadata identifier resolves to a metadata
-record</td>
-<td style="text-align: left;">FDOF8+FDOF2</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;"><code>Content-Location</code> or HTTP
-redirection may indicate metadata URI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1-03D</td>
-<td style="text-align: left;">Data identifier resolves to a digital
-object</td>
-<td style="text-align: left;">FDOF2</td>
-<td style="text-align: left;">Required, but frequently not directly
-resolvable</td>
-<td style="text-align: left;">Recommended, but any URI acceptable</td>
-<td style="text-align: left;">Resolvable HTTP/HTTPS URIs are most
-common, now infrequent URNs are not directly resolvable</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A1-04M</td>
-<td style="text-align: left;">Metadata is accessed through standardised
-protocol</td>
-<td style="text-align: left;">G9 FDOF3</td>
-<td style="text-align: left;">Retrievable from PID (FDOF3). Informal
-DOIP standard maintained by DONA Foundation</td>
-<td style="text-align: left;">LDP standard maintained by W3C, HTTP
-standards maintained by IETF, FDO components resolved by informal
-proposals (custom vocabulary, extra HTTP methods) or HTTP content
-negotiation)</td>
-<td style="text-align: left;">Formal HTTP standards maintained by IETF,
-HTTP content negotiation, informal FAIR Signposting</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1-04D</td>
-<td style="text-align: left;">Data is accessible through standardised
-protocol</td>
-<td style="text-align: left;">G9</td>
-<td style="text-align: left;">(see above)</td>
-<td style="text-align: left;">HTTP <span class="citation"
-data-cites="rfc9110"></span></td>
-<td style="text-align: left;">HTTP/HTTPS, FTP (now less common), GridFTP
-<span class="citation" data-cites="allcockGlobusStripedGridFTP"></span>
-(for large data), ARK <span class="citation"
-data-cites="ARKIdentifierScheme"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A1-05D</td>
-<td style="text-align: left;">Data can be accessed automatically
-(i.e. by a computer program)</td>
-<td style="text-align: left;">G4 FDOF3 FDOF6</td>
-<td style="text-align: left;">Required, but few client libraries</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Ubiquitous, hundreds of HTTP
-libraries</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1.1-01M</td>
-<td style="text-align: left;">Metadata is accessible through a free
-access protocol</td>
-<td style="text-align: left;">G1 G8 G9</td>
-<td style="text-align: left;">Partially realised: Handle system is
-open<a href="#fn11" class="footnote-ref" id="fnref11"
-role="doc-noteref"><sup>11</sup></a> protocol <span class="citation"
-data-cites="rfc3652"></span>. One server implementation <span
-class="citation" data-cites="HandleNetRegistry"></span>, free<a
-href="#fn12" class="footnote-ref" id="fnref12"
-role="doc-noteref"><sup>12</sup></a>. One DOIPv2 implementation (<a
-href="https://www.cordra.org/">CORDRA</a>): free under BSD-like license
-(not recognised as Open Source).</td>
-<td style="text-align: left;">LDP is open W3C recommendation <span
-class="citation" data-cites="w3-ldp"></span>. <a
-href="https://www.w3.org/wiki/LDP_Implementations">Multiple LDP
-implementations</a>.</td>
-<td style="text-align: left;">DNS, HTTP, TLS, RDF standards are open,
-free and universal, large number of Open Source clients and <a
-href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">servers</a>.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A1.1-01D</td>
-<td style="text-align: left;">Data is accessible through a free access
-protocol</td>
-<td style="text-align: left;">G9</td>
-<td style="text-align: left;">(see above)</td>
-<td style="text-align: left;">URI, DNS, HTTP, TLS</td>
-<td style="text-align: left;">URI, DNS, HTTP, TLS. Non-free DRM may be
-used (e.g. subscription video streaming)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-A1.2-01D</td>
-<td style="text-align: left;">Data is accessible through an access
-protocol that supports authentication and authorisation</td>
-<td style="text-align: left;">(FDOR9)</td>
-<td style="text-align: left;">TLS certificates,
-<code>authentication</code> field (details unspecified)</td>
-<td style="text-align: left;">Implied</td>
-<td style="text-align: left;">HTTP authentication, TLS certificates</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-A2-01M</td>
-<td style="text-align: left;">Metadata is guaranteed to remain available
-after data is no longer available</td>
-<td style="text-align: left;">FDOF12</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Unspecified, however FDOF-IR links to
-separate metadata records</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I1-01M</td>
-<td style="text-align: left;">Metadata uses knowledge representation
-expressed in standardised format</td>
-<td style="text-align: left;">FDOF8</td>
-<td style="text-align: left;">Required, but not currently defined</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Always implied by use of RDF
-syntaxes.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I1-01D</td>
-<td style="text-align: left;">Data uses knowledge representation
-expressed in standardised format</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Common (e.g. HDF5, JSON, XML), yet common
-scientific data formats frequently not standardised</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I1-02M</td>
-<td style="text-align: left;">Metadata uses machine-understandable
-knowledge representation</td>
-<td style="text-align: left;">FDOF8</td>
-<td style="text-align: left;">Required</td>
-<td style="text-align: left;">Optional RDF metadata with any
-vocabulary</td>
-<td style="text-align: left;">Always implied by use of RDF
-syntaxes.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I1-02D</td>
-<td style="text-align: left;">Data uses machine-understandable knowledge
-representation</td>
-<td style="text-align: left;">G4 G7 FDOR2</td>
-<td style="text-align: left;">No requirements on binary data
-formats</td>
-<td style="text-align: left;">Only indirectly, <a
-href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-basic-container">LDP
-Basic Container</a> reference only information resources</td>
-<td style="text-align: left;">Common, specially for scientific data
-formats</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I2-01M</td>
-<td style="text-align: left;">Metadata uses FAIR-compliant
-vocabularies</td>
-<td style="text-align: left;">G3 FDOF10</td>
-<td style="text-align: left;">Informally required</td>
-<td style="text-align: left;">Unspecified, implied by use of RDF?</td>
-<td style="text-align: left;">FAIR practices for LD vocabularies
-increasingly common, sometimes inconsistent (e.g. PURLs that don’t
-resolve) or incomplete (e.g. unknown license)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I2-01D</td>
-<td style="text-align: left;">Data uses FAIR-compliant vocabularies</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Uncommon, except for some XML and
-RDF-embedding formats, e.g. Extensible Metadata Platform (XMP) <span
-class="citation" data-cites="iso16684"></span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I3-01M</td>
-<td style="text-align: left;">Metadata includes references to other
-metadata</td>
-<td style="text-align: left;">FDOR8</td>
-<td style="text-align: left;">Implied (attributes to PIDs), currently
-unspecified if given attribute is value or reference</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">By definition (Linked Data reference
-existing URIs <span class="citation" data-cites="DataW3C"></span>),
-<code>rdfs:seeAlso</code>, FAIR signposting <span class="citation"
-data-cites="vandesompelFAIRSignpostingProfile2022"></span>
-<code>describedby</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I3-01D</td>
-<td style="text-align: left;">Data includes references to other
-data</td>
-<td style="text-align: left;">G6 FDOR3 FDOR11</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">URL hyperlinks common in several formats
-(HTML, PDF, JSON, XML).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I3-02M</td>
-<td style="text-align: left;">Metadata includes references to other
-data</td>
-<td style="text-align: left;">G6 FDOR3 FDOR8</td>
-<td style="text-align: left;">Implied from custom FDO type’s
-attribute</td>
-<td style="text-align: left;">LDP Direct Container members can be any
-resources</td>
-<td style="text-align: left;">URI objects are frequently data
-references, may be indirect via PID</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I3-02D</td>
-<td style="text-align: left;">Data includes qualified references to
-other data</td>
-<td style="text-align: left;">FDOR3 FDOR11</td>
-<td style="text-align: left;">Only indirectly through FDO metadata</td>
-<td style="text-align: left;">Indirectly through LDP membership</td>
-<td style="text-align: left;">Uncommon: Link relations, FAIR
-Signposting</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-I3-03M</td>
-<td style="text-align: left;">Metadata includes qualified references to
-other metadata</td>
-<td style="text-align: left;">(FDOR3)</td>
-<td style="text-align: left;">Qualification by attribute keys defined
-per FDO Type</td>
-<td style="text-align: left;"><a
-href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-direct-container">LDP
-Direct Container</a></td>
-<td style="text-align: left;">Qualifications by property, PROV bundles
-<span class="citation" data-cites="w3-prov-links"></span>, <a
-href="https://schema.org/Role">schema.org/Role</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-I3-04M</td>
-<td style="text-align: left;">Metadata include qualified references to
-other data</td>
-<td style="text-align: left;">(FDOR3)</td>
-<td style="text-align: left;">Qualification by attribute keys defined
-per FDO type</td>
-<td style="text-align: left;"><a
-href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-indirect-container">LDP
-Indirect Container</a></td>
-<td style="text-align: left;">Qualifications by property, n-ary
-indirection (schema.org Role <span class="citation"
-data-cites="hollandIntroducingRole2014"></span>,
-<code>prov:specializationOf</code> <span class="citation"
-data-cites="w3-prov-o"></span>, OAI-ORE Proxy <span class="citation"
-data-cites="ORESpecificationAbstract"></span>)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-R1-01M</td>
-<td style="text-align: left;">Plurality of accurate and relevant
-attributes are provided to allow reuse</td>
-<td style="text-align: left;">FDOF4</td>
-<td style="text-align: left;">Required. Kernel metadata attributes
-desired <span class="citation" data-cites="fdo-KernelAttributes"></span>
-but not assigned PIDs yet.</td>
-<td style="text-align: left;">Unspecified. Multiple metadata records can
-allow multiple semantic profiles.</td>
-<td style="text-align: left;">Large number of general and
-domain-specific vocabularies can make it hard to find relevant
-attributes. Rough consensus on kernel metadata: schema.org <span
-class="citation" data-cites="SchemaOrg"></span>, Dublin Core Terms <span
-class="citation" data-cites="DCMIMetadataTerms"></span>, DCAT <span
-class="citation" data-cites="w3-vocab-dcat-2"></span>, FOAF <span
-class="citation" data-cites="FOAFVocabularySpecification"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-R1.1-01M</td>
-<td style="text-align: left;">Metadata includes information about the
-licence under which the data can be reused</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;"><code>licenseConditions</code> URL/PID in
-kernel metadata <span class="citation"
-data-cites="fdo-KernelAttributes"></span></td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Dublin Core Terms <code>dct:license</code>
-frequently recommended, frequently not required, e.g. <a
-href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by
-DCAT 2</a> <span class="citation"
-data-cites="w3-vocab-dcat-2"></span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-R1.1-02M</td>
-<td style="text-align: left;">Metadata refers to a standard reuse
-licence</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;"><a
-href="https://spdx.org/licenses/">SPDX</a> and <a
-href="https://creativecommons.org/">Creative Commons</a> URIs common,
-identifiers often inconsistent</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-R1.1-03M</td>
-<td style="text-align: left;">Metadata refers to a
-machine-understandable reuse licence</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;"><a
-href="https://spdx.dev/resources/use/#documents">SPDX documents</a>
-uncommon</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-R1.2-01M</td>
-<td style="text-align: left;">Metadata includes provenance information
-according to community-specific standards</td>
-<td style="text-align: left;">FDOR9 FDOR10</td>
-<td style="text-align: left;">Unspecified (some CORDRA types add
-getProvenance methods). PID Kernel attributes? Unspecified W3C PROV-O,
-PAV</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-R1.2-02M</td>
-<td style="text-align: left;">Metadata includes provenance information
-according to a cross-community language</td>
-<td style="text-align: left;">FDOR9 FDOR8</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">W3C PROV-O <span class="citation"
-data-cites="w3-prov-o"></span>, PAV <span class="citation"
-data-cites="ciccaresePAVOntologyProvenance2013e"></span>, Dublin Core
-Terms <span class="citation" data-cites="DCMIMetadataTerms"></span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-R1.3-01M</td>
-<td style="text-align: left;">Metadata complies with a community
-standard</td>
-<td style="text-align: left;">FDOR10 FROR8</td>
-<td style="text-align: left;">(Emerging, e.g. DiSSCo Digital Specimen
-<span class="citation"
-data-cites="hardistySpecimenDataRefinery2022a"></span>)</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Common, e.g. DCAT 2 <span class="citation"
-data-cites="w3-vocab-dcat-2"></span>, BioSchemas <span class="citation"
-data-cites="Bioschemas"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-R1.3-01D</td>
-<td style="text-align: left;">Data complies with a community
-standard</td>
-<td style="text-align: left;">(FDOR3)</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Common, HTTP use registered IANA <a
-href="https://www.iana.org/assignments/media-types/media-types.xhtml">media
-types</a>, additional scientific file formats frequently not
-standardised or identified</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RDA-R1.3-02M</td>
-<td style="text-align: left;">Metadata is expressed in compliance with a
-machine-understandable community standard</td>
-<td style="text-align: left;">FDOF4 FDOF10</td>
-<td style="text-align: left;">Recommended</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Common practice for ontologies, specially
-in bioinformatics, e.g. BioPortal <span class="citation"
-data-cites="NCBOBioPortal"></span>, Darwin Core <span class="citation"
-data-cites="wieczorekDarwinCoreEvolving2012"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RDA-R1.3-02D</td>
-<td style="text-align: left;">Data is expressed in compliance with a
-machine-understandable community standard</td>
-<td style="text-align: left;">(FDOR2)</td>
-<td style="text-align: left;">No, FDO is typed but data can be any
-bytestream</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">Occassionally, (e.g. <a
-href="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md">GFF3</a>,
-<a href="https://fits.gsfc.nasa.gov/fits_standard.html">FITS</a>, <a
-href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml">ESRI</a>)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<h1 class="unnumbered" id="sec:eosc-interoperability-framework">EOSC
-Interoperability Framework</h1>
-<p>The European Open Science Cloud (EOSC) is a large EU initiative to
-promote Open Science by implementing a joint research infrastructure by
-federating existing and new services and focusing on interoperability,
-accessability, best practices as well as technical infrastructure <span
-class="citation" data-cites="10.2777/940154"></span>. The EOSC
-Interoperability Framework <span class="citation"
-data-cites="corchoEOSCInteroperabilityFramework2021b"></span> details
-the principles for creating a common way to achieve interoperability
-between all digital aspects of research activities in EOSC, including
-data, protocols and software. The recommendations are realized through 4
-layers, Technical (e.g. protocols), Semantic (e.g. metadata models),
-Organisational (e.g. recommendations) and Legal (e.g. agreements), with
-a particular aim to address the FAIR interoperability principles and
-building on the concept of FAIR Digital Objects.</p>
-<p>In Table <a href="#tbl:eosc" data-reference-type="ref+page"
-data-reference="tbl:eosc">[tbl:eosc]</a> we review the EOSC
-Interoperability Framework (EOSC IF) recommendations, and evaluate to
-what extent they are addressed by the principles of FDO and Linked Data
-or their common implementations.</p>
-<p>Firstly, we observe that the EOSC IF recommendations are at a high
-level, mainly affecting governance and practices by communities. This
-<em>Organizational</em> level is also highlighted by the FDO
-recommendations, for instance the FDO Typing <span class="citation"
-data-cites="fdo-TypingFDOs"></span> propose a governance structure to
-recognize community-endorsed services. While these community aspects are
-not mandated by Linked Data practices, best practices have become
-established for aspects like ontology development <span class="citation"
-data-cites="10.1186/s13326-021-00240-6"></span>. EOSC IF’s technical
-layer is likewise at a architecturally high level, such as service-level
-agreements, but also highlight PID policies which is strongly required
-by FDO, while Linked Data communities choose PID practices separately.
-The recommendations for the Semantic layer, is largely already
-implemented by Linked Data practices, yet for FDO mostly consist of
-encouragements. For instance <em>clear definitions of semantic
-concepts</em> is required by FDO guidelines, but how to technically
-define them has not been formalised by FDO specifications.</p>
-<p>The Legal layer of interoperability is perhaps the one most
-emphasised by EOSC, by enabling collaboration across organizational
-barriers to joinly build a research infrastructure, but this is an area
-that both FDO and Linked Data are relatively weak in directly
-supporting. The EOSC IF recommendations in this layer are still largely
-related to governance practices and metadata, for instance licensing,
-privacy and usage policies; yet these are essential for
-cross-institutional and cross-repository access of FAIR objects.</p>
-<p>Likewise, search and indexing is important FAIR aspect for
-Findability, but is poorly supported globally by FDO and Linked Data.
-Efforts such as Open Research Knowledge Graph (ORKG) <span
-class="citation" data-cites="10.1007/978-3-030-30760-8_31"></span>,
-DataCite’s PID Graph <span class="citation"
-data-cites="10.5438/jwvf-8a66"></span> and Google Knowledge Graph <span
-class="citation" data-cites="singhal2012"></span> have improved
-programmatic findability to some degree, however not significantly for
-domain-specific semantic artefacts, currently scattered across multiple
-semantic catalogues <span class="citation"
-data-cites="10.48550/arXiv.2305.06746"></span>. There is a strong role
-for organizations like EOSC to provide such broader registries, moving
-beyond scholarly output metadata federations. The EOSC Marketplace<a
-href="#fn13" class="footnote-ref" id="fnref13"
-role="doc-noteref"><sup>13</sup></a> has for instance recently been
-expanded to include training material, software and data sources.</p>
-<div id="tbl:eosc">
-<table>
-<caption>Assessing EOSC Interoperability Framework <span
-class="citation"
-data-cites="corchoEOSCInteroperabilityFramework2021b"></span> against
-the FDO guidelines <span class="citation"
-data-cites="boninoFAIRDigitalObject"></span> and Linked Data
-practices.</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Layer</th>
-<th style="text-align: left;">Recommendation</th>
-<th style="text-align: left;">FDO</th>
-<th style="text-align: left;">Linked Data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Open Specification</td>
-<td style="text-align: left;">FDO specifications are semi-open, process
-gradually more transparent</td>
-<td style="text-align: left;">Open and transparent standard processes
-through W3C &amp; IETF</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Common security &amp; privacy
-framework</td>
-<td style="text-align: left;">Unspecified</td>
-<td style="text-align: left;">TLS for encryption, multiple approaches
-for single-sign-on (e.g. ORCID, Life Science Login). Privacy largely
-unspecified.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Easy SLAs for service providers</td>
-<td style="text-align: left;">Unspecified</td>
-<td style="text-align: left;">None</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Access data in different formats</td>
-<td style="text-align: left;">None formalised, custom operations or
-relations</td>
-<td style="text-align: left;">Content-negotiation,
-<code>rel=alternate</code> relations</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Coarse-grained/fine-grained search
-tools</td>
-<td style="text-align: left;">Freetext <code>0.DOIP/Op.Search</code> on
-local DOIP, no federation</td>
-<td style="text-align: left;">Coarse-grained e.g. <a
-href="https://datasetsearch.research.google.com/">Google Dataset
-Search</a>, fine-grained (e.g. federated SPARQL) require detailed
-vocabulary/metadata insight</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Technical</td>
-<td style="text-align: left;">Clear PID policy</td>
-<td style="text-align: left;">Strong FDO requirements, tends towards
-Handle system.</td>
-<td style="text-align: left;">Not required, different communities set
-policies</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Clear definitions for
-concepts/metadata/schemas</td>
-<td style="text-align: left;">Required by FDO requirements, but not yet
-formalised</td>
-<td style="text-align: left;">Ontologies, SKOS, OWL</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Semantic artefacts w/ open licenses</td>
-<td style="text-align: left;">All artefacts are PIDs, license not yet
-required by kernel metadata</td>
-<td style="text-align: left;">Open License is best practice for ontology
-publishing</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Documentation for each semantic
-artefact</td>
-<td style="text-align: left;">No direct rendering from FDO, no
-requirement for human-readable description</td>
-<td style="text-align: left;">Ontology rendering,
-content-negotiation</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Repositories of artefacts</td>
-<td style="text-align: left;">Required, but not formalised</td>
-<td style="text-align: left;">Bioontologies, otherwise not usually
-federated</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Repositories w/ clear governance</td>
-<td style="text-align: left;">Recommended</td>
-<td style="text-align: left;">Largely self-governed repositories, if
-well-established may have clear governance.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Minimal metadata model for federated
-discovery</td>
-<td style="text-align: left;">Kernel metadata <span class="citation"
-data-cites="fdo-KernelAttributes"></span> based on RDA recommendations
-<span class="citation"
-data-cites="weigelRDARecommendationPID2018"></span>.</td>
-<td style="text-align: left;">DCAT, schema.org, Dublin Core</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Crosswalks from minimal metadata
-model</td>
-<td style="text-align: left;">FDO Typing recommends referencing existing
-type definitions, but not as separate crosswalks</td>
-<td style="text-align: left;">Multiple crosswalks for common metadata
-models, but frequently not in semantic format</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Extensibility options for diciplinary
-metadata</td>
-<td style="text-align: left;">Communities encouraged to establish own
-types</td>
-<td style="text-align: left;">Extensible by design, domain-specific
-metadata may be at different granularity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">Clear protocols/building blocks for
-federation/harvesting of artefact catalogues</td>
-<td style="text-align: left;">Collection types not yet defined</td>
-<td style="text-align: left;">SWORD, OAI-PMH</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Organisational</td>
-<td style="text-align: left;">Interoperability-focused rules of
-participation recommendations</td>
-<td style="text-align: left;">Recommended</td>
-<td style="text-align: left;">Implied only by some communities, tendency
-to specialise</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Organisational</td>
-<td style="text-align: left;">Usage recommendations of standardised data
-formats</td>
-<td style="text-align: left;">None</td>
-<td style="text-align: left;">None – but common for metadata
-(e.g. JSON-LD)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Organisational</td>
-<td style="text-align: left;">Usage recommendations of vocabularies</td>
-<td style="text-align: left;">Recommended by community</td>
-<td style="text-align: left;">Common (see <a
-href="https://rdmkit.elixir-europe.org/metadata_management">RDMKit</a>)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Organisational</td>
-<td style="text-align: left;">Usage recommendations of metadata</td>
-<td style="text-align: left;">Recommended by community</td>
-<td style="text-align: left;">RO-Crate, Bioschemas</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Organisational</td>
-<td style="text-align: left;">Management of permanent organization
-names/functions</td>
-<td style="text-align: left;">Handle owner, but unclear contact. Contact
-info in DOIP service provider</td>
-<td style="text-align: left;">ROR. DCAT contacts.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Standardised human and machine-readable
-licenses</td>
-<td style="text-align: left;">None</td>
-<td style="text-align: left;"><a
-href="https://spdx.org/licenses/">SPDX</a>, but not that frequently
-used</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Permissive licenses for metadata (CC0,
-CC-BY-4.0)</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Both CC0, CC-BY-4.0 common, e.g. in
-DCAT</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Different licenses for different
-parts</td>
-<td style="text-align: left;">Each part as separate FDO can have
-separate license</td>
-<td style="text-align: left;">DCAT, RO-Crate, Named graphs for splitting
-metadata</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Mark expired/inexistent copyright</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Unclear, semantics assume copyright
-valid</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Mark orphaned data</td>
-<td style="text-align: left;">Tombstone for deleted data, but no owner
-of DOIP server means FDO disappears</td>
-<td style="text-align: left;">Frequently data and endpoint has no known
-maintainer, archiving in common repositories becoming common</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">List recommended licenses</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Best practice recommendations</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Track license evolution for dataset</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Versioning with PAV/PROV/DCAT</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Policy/guidance for patent/trade secrets
-violation</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Undefined, legal owner may be
-specified</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">GDPR compliance for personal data</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Undefined</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Restrict access/use if legally
-required</td>
-<td style="text-align: left;">By transport protocol (undefined by
-FDO/DOIP)</td>
-<td style="text-align: left;">Diverging approaches, typically landing
-pages w/ auth&amp;auth or click-thru</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Harmonised terms-of-use</td>
-<td style="text-align: left;">Undefined</td>
-<td style="text-align: left;">Undefined</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Legal</td>
-<td style="text-align: left;">Alignment between EOSC and national
-legislation</td>
-<td style="text-align: left;">Not applicable</td>
-<td style="text-align: left;">Not applicable</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h1 class="unnumbered" id="sec:discussion">Discussion</h1>
-<p>We have evaluated the FAIR Digital Object concept using multiple
-frameworks, and contrasted FDO against existing experiences from Linked
-Data on the Web. In this section we discuss the implications of this
-evaluation, and propose how these two approaches can be better
-combined.</p>
-<h2 class="unnumbered" id="framework-evaluation">Framework
-evaluation</h2>
-<p>Having considered FDO and the Web architecture as interoperability
-frameworks (<a href="#sec:interoperability-compare"
-data-reference-type="ref+page"
-data-reference="sec:interoperability-compare">[sec:interoperability-compare]</a>),
-we observe that neither are magic bullets, but each bring different
-aspects of interoperability. The Web comes with a large degree of
-flexibility and openness, however this means interoperability can suffer
-as services have different APIs and data models, although with common
-patterns. This is also true for Linked Data on the Web, with many
-overlapping ontologies and frequent inconsistencies in resolution
-mechanisms; although somewhat alleviated in recent years by schema.org
-becoming common metadata model for semantic markup inline in Web pages.
-The Web is based on a common HTTP protocol which has remained stable
-architecturally throughout its 32 years of largely backwards-compatible
-evolution. FDO on the other side sets down multiple rigid rules for
-identifiers, types, methods etc. that are advanterous for
-interoperability and predictability for FAIR consumption. Yet there is a
-large degree of freedom in how the FDO rules can be implemented by a
-given community, for instance there is no common metadata model or
-identifier resolution mechanism, and DOIP is just one possible transport
-method for FDOs, which itself does not enforce these rules.</p>
-<p>When evaluating FDO implementations against the FDO guidelines (<a
-href="#sec:doip-fdo-compare" data-reference-type="ref+page"
-data-reference="sec:doip-fdo-compare">[sec:doip-fdo-compare]</a>) we see
-that several technical pieces and community practices still need to be
-developed and further defined, for instance the FDO type system, how to
-declare FDO actions, how to resolve persistent identifiers, or how to
-know which pattern of FDO composition is used. Achieving fully
-interoperable FAIR digital objects would require further convergence on
-implementation practices, and it is not given that his need to diverge
-from the established Web architecture. It is not clear from FDO
-guidelines if moving from HTTP/DNS to DOIP/Handle as a way to expose
-distributed digital objects will benefit FAIR practitioners, when both
-approaches require additional restrictions, equably implementable, such
-as using persistent identifiers or pre-defining an object’s type.</p>
-<p>Considering this, by comparing FDO and Web as middleware (<a
-href="#sec:middleware" data-reference-type="ref+page"
-data-reference="sec:middleware">[sec:middleware]</a>) we saw that
-programmatic access to digital objects, a core promise of FDO, is not
-particularly improved by the use of the protocol DOIP as compared to
-HTTP, e.g. lack of concurrency transparancy. Recent updates to HTTP have
-added many features needed for large-scale usage such as video streaming
-services (e.g. caching, multiplexing, cloud deployments), and having the
-option to transparantly apply these also to FDOs seems like a strong
-incentive. Many programmatic features are however missing or needing
-custom extensions in both aspects, such as transactions, asynchronous
-operations and streaming.</p>
-<p>By assessing FDO against the FAIR principles (<a
-href="#sec:fair-compare" data-reference-type="ref+page"
-data-reference="sec:fair-compare">[sec:fair-compare]</a>) we found that
-both FDO implementations are underspecified in several aspects
-(licences, provenance, data references, data vocabularies, metadata
-persistence). While there are implementations of each of these in
-general Linked Data examples, there is no single set of implementation
-guides that fully realizes the FAIR principles. <em>FAIRification</em>
-efforts like the FAIR Cookbook <span class="citation"
-data-cites="faircookbook"></span> and FAIR Implementation Profiles <span
-class="citation" data-cites="FIP"></span> are bringing existing
-practices together, but there remains a potential role for FDO in giving
-a coherent set of implementation practices that can practically achieve
-FAIR. Significant effort, also within EOSC, is now moving towards FAIR
-metrics <span class="citation" data-cites="Devaraju_2021"></span>, which
-in practice need to make additional assumptions on how FAIR principles
-are implemented, but these are not always formalized <span
-class="citation" data-cites="10.5281/zenodo.7463421"></span> nor can
-they be taken to be universally correct <span class="citation"
-data-cites="10.5281/zenodo.7848102"></span>. Given that most of the
-existing FAIR guides and assessment tools are focused on Web and Linked
-Data, it would be reasonable for FDO to then provide a profile of such
-implementation choices that can achieve best of both worlds.</p>
-<p>EOSC has been largely supportive of FDO, FAIR and related services.
-By contrasting the EOSC Interoperability Framework (<a
-href="#sec:eosc-interoperability-framework"
-data-reference-type="ref+page"
-data-reference="sec:eosc-interoperability-framework">[sec:eosc-interoperability-framework]</a>)
-with FDO, we found that there are important dimensions that are not
-solved at a technical level, but through organization collaboration,
-legal requirements and building community practices. FDO recommendations
-highlight community aspects, but at the same time the largest FAIR
-communities in many science domains are already producing and consuming
-Linked Data. Just as the Linked Data community has a challenge in
-convincing more research fields to use Semantic Web technologies, FDO
-currently need to build many new communities in areas that have shown
-interest in that approach (e.g. material science). It may be advantegous
-for both these effort to be aligned and jointly promoted under the EOSC
-umbrella.</p>
-<h2 class="unnumbered" id="sec:what-does-it-mean-for-linked-data">What
-does FDO mean for Linked Data?</h2>
-<p>The FAIR Digital Object approach raises many important points for
-Linked Data practictioners. At first glance, the explicit requirements
-of FDOs may seem to be easy to furfill by different parts of the
-Semantic Web Cake <span class="citation"
-data-cites="SemanticWebXML2000"></span>, as we have previously proposed
-<span class="citation" data-cites="10.3897/rio.8.e94501"></span>.
-However, this deeper investigation, based on multiple frameworks,
-highlights that the openness and variability of how Linked Data is
-deployed can make it difficult to achieve the FDO goals without
-significant effort.</p>
-<p>While RDF and Linked Data have been suggested as prime candidates for
-making FAIR data, we argue that when different developers have too many
-degrees of freedom (such as serialization formats, vocabularies,
-identifiers, navigation), interoperability is hampered – this makes it
-hard for machines to reliably consume multiple FAIR resources across
-repositories and data providers. Indeed, this may be one reason why the
-initial FDO effort steered away from Linked Data approaches, but now
-seems in a danger of opening the many same degrees of freedom within
-FDO.</p>
-<p>We therefore identify the need for a new explicit FDO profile of
-Linked Data that sets pragmatic constraints and stronger recommendations
-for consistent and developer-friendly deployment of digital objects.
-Such a combination of efforts will utillise both the benefits of mature
-Semantic Web technologies (e.g. federated knowledge graph queries and
-rich validation) and data management practices that follow FDO guidance
-in order to grow a rigid (yet flexible) ecosystem of machine-actionable
-scholarly objects. It is beyond the scope of this work to detail such a
-profile, but its main priorities could be:</p>
-<ul class="incremental">
-<li><p>Use HTTP(S) as protocol</p></li>
-<li><p>Use URIs as identifiers, with persistent identifier
-promises</p></li>
-<li><p>Provide consistent identifier resolution that does not require
-heuristics</p></li>
-<li><p>Common core metadata model</p></li>
-<li><p>References are always URIs, and should be persistent
-identifiers</p></li>
-<li><p>Types, attributes and actions are self-defined by their
-identifier</p></li>
-</ul>
-<p>The FAIR and Linked Data communities likewise need to recognize the
-need for simpler, more pragmatic approaches that make it easier for FAIR
-practitioners to adapt the technologies with "just enough" semantics. We
-have previously proposed the combination of RO-Crate <span
-class="citation" data-cites="10.3233/ds-210053"></span> and Signposting
-<span class="citation"
-data-cites="vandesompelFAIRSignpostingProfile2022"></span> as a mean to
-implement FDO <span class="citation"
-data-cites="10.3897/rio.8.e93937"></span> over HTTP using a common
-Linked Data metadata model.</p>
-<p>However it may be sufficient to use HTTP-based FAIR Signposting alone
-to achieve the above list, if one considers only a small metadata model,
-and rather reference from the signposting which metadata resources are
-additionally available. This will allow any Linked Data resource to
-gradually participate in the FDO ecosystem, with minimal effort and
-non-intrusive implementation changes. FDO implementations like Cordra
-typically already use HTTP APIs that align with DOIP <span
-class="citation" data-cites="DOIPAPIHTTPa"></span>, these can be
-augmented with Signposting headers without necessarily moving to a
-Linked Data metadata model.</p>
-<h1 class="unnumbered" id="conclusion">Conclusion</h1>
-<p>In this work we have considered FAIR Digital Objects (FDO) as a
-potential distributed object system and compared FDO with established
-Web approaches focusing on Linked Data. We have described the background
-of the Semantic Web and FAIR Digital Objects, and evaluated both using
-multiple conceptual frameworks.</p>
-<p>We find that both FDO and Linked Data approaches can significantly
-benefit from each-other and should be aligned further. Namely Linked
-Data proponents need to make their technologies more approachable,
-agreeing on predictable and consistent implementations of FAIR
-principles.</p>
-<p>The FDO recommendations show that FAIR thinking in this regard need
-to move beyond data publishing and into machine actionability across
-digital objects, and with broader community consensus. As flexibility
-for extensions is a necessary ingredient alongside rigidity for core
-concepts, the FDO community likewise need to settle on directly
-implementable specifications rather than just guidelines, and avoid
-making similar mistakes as the early Semantic Web adopters.</p>
-<p>By implementing the goals of FAIR Digital Objects with the mature
-technology stack developed for Linked Data, EOSC research
-infrastructures and researchers in general can create and use FAIR
-machine-actionable research outputs for decades to come.</p>
-<h1 class="unnumbered" id="acknowledgments">Acknowledgments</h1>
-<div class="small">
-<p>This work was funded by the European Union programmes <em>Horizon
-2020</em> under grant agreements H2020-INFRAEDI-02-2018 823830
-(BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and <em>Horizon
-Europe</em> under grant agreements HORIZON-INFRA-2021-EMERGENCY-01
-101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388
-(EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344
-(FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); and by UK
-Research and Innovation (UKRI) under the UK government’s <em>Horizon
-Europe funding guarantee</em> grants 10038963 (EuroScienceGateway),
-10038992(FAIR-IMPACT), 10038930 (BioDT).</p>
-</div>
-<h1 class="unnumbered" id="author-contributions">Author
-contributions</h1>
-<div class="small">
-<p>Contributions to this article according to the CASRAI CRediT
-taxonomy<a href="#fn14" class="footnote-ref" id="fnref14"
-role="doc-noteref"><sup>14</sup></a>:</p>
-<div class="description">
-<p>Conceptualization, Funding acquisition, Investigation, Methodology,
-Writing – original draft, Writing – review &amp; editing</p>
-<p>Funding acquisition, Supervision, Writing – review &amp; editing</p>
-<p>Conceptualization, Methodology, Supervision, Writing – review &amp;
-editing</p>
-</div>
-</div>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>For a brief introduction to DOIP 2.0, see <span
-class="citation" data-cites="DOIPExamplesCordraa"></span><a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>URIs <span class="citation" data-cites="rfc3986"></span>
-are generalised forms of URLs that include locator-less identifiers such
-as ISBN book numbers (URNs). The distinction between locator-full and
-locator-less identifiers have weakened in recent years <span
-class="citation" data-cites="InfoURIRegistry"></span>, for instance DOI
-identifiers now are commonly expressed with the prefix
-<code>https://doi.org/</code> rather than as URNs with
-<code>info:doi:</code> given that the URL/URN gap has been bridged by
-HTTP resolvers and the use of Persistent Identifiers (PIDs) <span
-class="citation" data-cites="jutyIdentifiersOrgMIRIAM2011"></span>. RDF
-1.1 formats use Unicode to support IRIs <span class="citation"
-data-cites="rfc3987"></span>, which extends URIs to include
-international characters and domain names.<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>URIs can also identify <em>non-information
-resources</em> for any kind of physical object (e.g. people), such
-identifiers can resolve with <code>303 See Other</code> redirections to
-a corresponding <em>information resources</em> <span class="citation"
-data-cites="sauermannCoolURIsSemantic2011"></span>.<a href="#fnref3"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><a
-href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation"
-class="uri">https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation</a><a
-href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><em>Datasets</em> that distribute RDF graphs should not
-be confused with <a
-href="https://www.w3.org/TR/rdf11-concepts/#section-dataset">RDF
-Datasets</a> used for partitioning <em>named graphs</em>.<a
-href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Presumably this large uptake of JSON-LD is mainly for
-the purpose of Search Engine Optimisation (SEO), with typically small
-amounts of metadata which may not constitute Linked Data as introduced
-above, however this deployment nevertheless constitute
-machine-actionable structured data.<a href="#fnref6"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Newer <span class="citation"
-data-cites="fdo-RequirementSpec"></span> renames <code>FDOF*</code> to
-<code>FDOR*</code> but follows same ordering.<a href="#fnref7"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Although it is possible with
-<code>0.DOIP/Op.Retrieve</code> to request only particular individual
-elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code>
-request, it is not possible to select individual chunks of an element’s
-bytestream.<a href="#fnref8" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>The <code>http</code> protocol (port 80) can in theory
-also upgrade <span class="citation" data-cites="rfc2817"></span> to TLS
-encryption, as commonly used by <a
-href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet
-Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best
-practice is explicit <code>https</code> (port 443) URLs to ensure
-following links stay secure.<a href="#fnref9" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>HATEOAS: Hypermedia as the Engine of Application State
-<span class="citation"
-data-cites="fieldingArchitecturalStylesDesign2000a"></span>, an
-important element of the REST architectural style.<a href="#fnref10"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>The <code>Handle.net</code> system was previously
-covered by software patent <a
-href="https://patents.google.com/patent/US6135646A/en">US6135646A</a>
-which <a
-href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a>
-in 2013.<a href="#fnref11" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>The <a
-href="http://www.handle.net/HNRj/HNR-9-License.pdf">Handle.net public
-license</a> is not OSI-approved <span class="citation"
-data-cites="LicensesStandardsOpen"></span> as an open source license –
-it includes usage restrictions and requires Service Agreements. It is
-not a DOIP requirement to host a local Handle instance, e.g. EOSC
-provides the <a
-href="https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c">B2HANDLE</a>
-service for acquiring Handle prefixes.<a href="#fnref12"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p><a href="https://marketplace.eosc-portal.eu/"
-class="uri">https://marketplace.eosc-portal.eu/</a><a href="#fnref13"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p><a href="https://credit.niso.org/"
-class="uri">https://credit.niso.org/</a><a href="#fnref14"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
-<h1 id="references-from-chapter-3">References</h1>
-<div class="thebibliography">
-<p><span>9</span></p>
-<p>NISO (2017):<br />
-<strong>ANSI/NISO Z39.99-2017, ResourceSync Framework
-Specification</strong>.<br />
-<em>National Information Standards Organization ResourceSync Standing
-Committee</em>.<br />
-<a href="https://doi.org/10.3789/ansi.niso.z39.99-2017"
-class="uri">https://doi.org/10.3789/ansi.niso.z39.99-2017</a><br />
-<a href="http://www.openarchives.org/rs/1.1/resourcesync"
-class="uri">http://www.openarchives.org/rs/1.1/resourcesync</a></p>
-<p>Riccardo Albertonim David Browning, Simon Cox, Alejandra Gonzalez
-Beltran, Andrea Perego, Peter Winstanley (2023):<br />
-<strong>Data Catalog Vocabulary (DCAT)- Version 3</strong>.<br />
-<a href="https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/"
-class="uri">https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/</a></p>
-<p>William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link,
-Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):<br />
-<strong>The <span>Globus Striped GridFTP Framework</span> and
-<span>Server</span></strong>.<br />
-<em>SC ’05: Proceedings of the 2005 ACM/IEEE Conference on
-Supercomputing</em>, <span>Seattle, WA, USA</span>,
-<span>IEEE</span><br />
-<a href="https://doi.org/10.1109/sc.2005.72"
-class="uri">https://doi.org/10.1109/sc.2005.72</a></p>
-<p>Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry
-Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):<br />
-<strong><span>FDO PID</span> profiles &amp; attributes</strong><br />
-<em>FDO Specification Documents</em>
-PR-PIDProfileAttributes-2.1-20221017<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825630"
-class="uri">https://doi.org/10.5281/zenodo.7825630</a></p>
-<p>Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström,
-Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen,
-Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian
-Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter
-Wittenburg, Carlo Zwölf (2023):<br />
-<strong><span>FAIR Digital Objects Forum FDO</span> requirement
-specifications</strong>. Version 3.0.<br />
-George Strawn, Peter Wittenburg (eds.)<br />
-<em>FDO Specification Documents</em> PR-RequirementSpec-3.0<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7782262"
-class="uri">https://doi.org/10.5281/zenodo.7782262</a></p>
-<p>Christophe Bahim, Carlos Casorrán-Amilburu, Makx Dekkers, Edit
-Herczog, Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley
-Stall (2020):<br />
-<strong>The <span>FAIR</span> data maturity model: <span>An</span>
-approach to harmonise <span>FAIR</span> assessments</strong>.<br />
-<em>Data Science Journal</em> <strong>19</strong>(1)<br />
-<a href="https://doi.org/10.5334/dsj-2020-041"
-class="uri">https://doi.org/10.5334/dsj-2020-041</a></p>
-<p>Thomas Baker and Eric Prud’hommeaux (2019):<br />
-<strong>Shape <span>Expressions</span> (<span>ShEx</span>) 2.1
-<span>Primer</span></strong>.<br />
-<a href="http://shex.io/shex-primer/"
-class="uri">http://shex.io/shex-primer/</a> (accessed 26 May 2022)</p>
-<p>Mike Belshe, Roberto Peon, Martin Thomson (2015):<br />
-<strong>Hypertext Transfer Protocol Version 2 (HTTP/2)</strong><br />
-<em>RFC Editor</em>, RFC 7540<br />
-<a href="https://doi.org/10.17487/rfc7540"
-class="uri">https://doi.org/10.17487/rfc7540</a></p>
-<p>Tim Berners-Lee (1998):<br />
-<strong>Cool <span>URIs</span> don’t change</strong>.<br />
-<em>Style Guide for online hypertext</em>, W3C<br />
-<a href="https://www.w3.org/Provider/Style/URI"
-class="uri">https://www.w3.org/Provider/Style/URI</a></p>
-<p>Tim Berners-Lee, Mark Fischetti (1999):<br />
-<strong>Weaving the <span>Web</span>: The original design and ultimate
-destiny of the <span>World Wide Web</span> by its
-inventor</strong>.<br />
-<a href="https://identifiers.org/isbn/9780062515865">ISBN
-978-0-06-251586-5</a></p>
-<p>Tim Berners-Lee (2000):<br />
-<strong>Semantic Web on XML</strong>.<br />
-<em>XML 2000</em>, Washington DC, 2000-12-06.<br />
-<a href="https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html"
-class="uri">https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a>
-(accessed 24 January 2023)</p>
-<p>Tim Berners-Lee, Roy T. Fielding, Larry M. Masinter (2005):<br />
-<strong>Uniform <span>Resource Identifier</span> (<span>URI</span>):
-<span>Generic Syntax</span></strong>.<br />
-<em>RFC Editor</em>, RFC 3986<br />
-<a href="https://doi.org/10.17487/rfc3986"
-class="uri">https://doi.org/10.17487/rfc3986</a></p>
-<p>Tim Berners-Lee (2006):<br />
-<strong>Linked <span>Data</span></strong><br />
-<em>Design Issues</em>, W3C<br />
-<a href="https://www.w3.org/DesignIssues/LinkedData.html"
-class="uri">https://www.w3.org/DesignIssues/LinkedData.html</a></p>
-<p>Abraham Bernstein, James Hendler, Natalya Noy (2016):<br />
-<strong>A new look at the semantic web</strong>.<br />
-<em>Communications of the ACM</em> <strong>59</strong>(9)<br />
-<a href="https://doi.org/10.1145/2890489"
-class="uri">https://doi.org/10.1145/2890489</a></p>
-<p>Mike Bishop (2022):<br />
-<strong><span>HTTP</span>/3</strong><br />
-<em>RFC Editor</em>, RFC 9114<br />
-<a href="https://doi.org/10.17487/rfc9114"
-class="uri">https://doi.org/10.17487/rfc9114</a></p>
-<p>Christian Bizer, Tom Heath, Tim Berners-Lee (2009):<br />
-<strong>Linked data - the story so far</strong>.<br />
-<em>International journal on Semantic Web and information systems</em>
-<strong>5</strong>(3)<br />
-<a href="https://doi.org/10.4018/jswis.2009081901"
-class="uri">https://doi.org/10.4018/jswis.2009081901</a></p>
-<p>Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif,
-Alexander Schlemmer, Dieter van Uytvanck, Peter Wittenburg (2022):<br />
-<strong>FDO – upload of FDO</strong>.<br />
-<em>FDO Specification Documents</em> PEN-FDO-Upload-1.1-20221017<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825549"
-class="uri">https://doi.org/10.5281/zenodo.7825549</a></p>
-<p>Christophe Blanchi, Maggie Hellström; Larry Lannom; Andreas Pfeil;
-Ulrich Schwardmann; Peter Wittenburg (2022):<br />
-<strong>Implementation of attributes, types, profiles and
-registries</strong>.<br />
-<em>FDO Specification Documents</em>
-WD-Implementation-of-Attributes-0.4-20230314<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825572"
-class="uri">https://doi.org/10.5281/zenodo.7825572</a></p>
-<p>Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar,
-Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger
-(2016):<br />
-<strong>FAIR Data points supporting big data
-interoperability</strong>.<br />
-<em>Enterprise interoperability in the digitized and networked factory
-of the future</em>, Martin Zelm, Guy Doumeingts, Joao Pedro Mendonça
-(eds.).<br />
-iSTE Press.<br />
-<a href="http://www.iste.co.uk/book.php?id=1073">ISBN
-978-1-84704-044-2</a><br />
-Preprint: <a
-href="https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability"
-class="uri">https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability</a></p>
-<p>Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
-Leggott, Carlo Zwölf (2019):<br />
-<strong><span>FAIR</span> digital object framework</strong>.<br />
-FDOF technical implementation guideline.<br />
-<em>Group of European Data Experts in RDA (GEDE-RDA)</em><br />
-<a
-href="https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
-class="uri">https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx</a></p>
-<p>Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince
-Sales (2022):<br />
-<strong>FAIR Digital Object Framework Documentation</strong><br />
-<a href="https://fairdigitalobjectframework.org/"
-class="uri">https://fairdigitalobjectframework.org/</a> (accessed 26 May
-2022)</p>
-<p>Dan Brickley, Libby Miller (2014):<br />
-<strong>FOAF Vocabulary Specification</strong>.<br />
-<a href="http://xmlns.com/foaf/spec/"
-class="uri">http://xmlns.com/foaf/spec/</a> (accessed 26 May 2022)</p>
-<p>Daan Broeder, Peter Wittenburg (2022):<br />
-<strong><span>FDO</span> glossary november 2022</strong>.<br />
-<em>FDO Specification Documents</em> (internal draft)<br />
-FAIR Digital Objects Forum <a
-href="https://drive.google.com/file/d/1KJ9l0p96naKi_2HPJ_MPqPTwS_zlP92G"
-class="uri">https://drive.google.com/file/d/1KJ9l0p96naKi_2HPJ_MPqPTwS_zlP92G</a>
-(accessed 2 February 2023)</p>
-<p>David Browning, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo
-Albertoni, Alejandra Gonzalez Beltran (2020):<br />
-<strong>Data Catalog Vocabulary (<span>DCAT</span>)</strong> - Version
-2.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/"
-class="uri">https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/</a></p>
-<p>CNRI (2023):<br />
-<strong>DOIP API for HTTP Clients</strong><br />
-<em>Cordra® Software Technical Manual Version 2.5.0</em><br />
-Corporation for National Research Initiatives.<br />
-<a
-href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html"
-class="uri">https://www.cordra.org/documentation/api/doip-api-for-http-clients.html</a>
-(accessed 13 June 2023)</p>
-<p>CNRI (2023):<br />
-<strong>DOIP and Examples</strong><br />
-<em>Cordra® Software Technical Manual Version 2.5.0</em><br />
-Corporation for National Research Initiatives.<br />
-<a href="https://www.cordra.org/documentation/api/doip.html"
-class="uri">https://www.cordra.org/documentation/api/doip.html</a>
-(accessed 14 June 2023)</p>
-<p>Sarven Capadisli, Amy Guy, eds. (2017):<br />
-<strong>Linked Data Notifications</strong>.<br />
-<a href="https://www.w3.org/TR/2017/REC-ldn-20170502/"
-class="uri">https://www.w3.org/TR/2017/REC-ldn-20170502/</a></p>
-<p>Valentina Anita Carriero, Marilena Daquino, Aldo Gangemi, Andrea
-Giovanni Nuzzolese, Silvio Peroni, Valentina Presutti, Francesca Tomasi
-(2020):<br />
-<strong>The landscape of ontology reuse approaches</strong>.<br />
-In Giuseppe Cota, Marilena Daquino, Gian Luca Pozzato,eds.,
-<em>Applications and practices in ontology design, extraction, and
-reasoning</em><br />
-<a href="https://doi.org/10.3233/ssw200033"
-class="uri">https://doi.org/10.3233/ssw200033</a></p>
-<p>Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG
-Gray, Carole Goble, Tim Clark (2013):<br />
-<strong>PAV ontology: Provenance, authoring and
-versioning</strong>.<br />
-<em>Journal of Biomedical Semantics</em> <strong>4</strong>(1):37.<br />
-<a href="https://doi.org/10.1186/2041-1480-4-37"
-class="uri">https://doi.org/10.1186/2041-1480-4-37</a></p>
-<p>Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek,
-Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
-(2021):<br />
-<strong>EOSC Interoperability Framework</strong>.<br />
-<em>Publications Office of the EU</em><br />
-<a href="https://doi.org/10.2777/620649"
-class="uri">https://doi.org/10.2777/620649</a></p>
-<p>Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras
-Micsik, Silvio Peroni, Emanuele Storti (2023):<br />
-<strong>A maturity model for catalogues of semantic
-artefacts</strong>.<br />
-<em>arXiv</em> 2305.06746 [cs.DL]<br />
-<a href="https://doi.org/10.48550/arXiv.2305.06746"
-class="uri">https://doi.org/10.48550/arXiv.2305.06746</a></p>
-<p>DCMI Usage Board (2020):<br />
-<strong>DCMI Metadata Terms</strong>.<br />
-DCMI Recommendation<br />
-<a
-href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/"
-class="uri">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/</a></p>
-<p>DOI (2017):<br />
-<strong><span>DOI Handbook</span> -
-<span>Resolution</span></strong>.<br />
-<em>DOI Handbook</em><br />
-International DOI Foundation<br />
-<a href="https://doi.org/10.1000/182"
-class="uri">https://doi.org/10.1000/182</a><br />
-<a href="https://www.doi.org/doi_handbook/3_Resolution.html"
-class="uri">https://www.doi.org/doi_handbook/3_Resolution.html</a></p>
-<p>DOI (2020):<br />
-<strong>DOI Resolution Documentation</strong>.<br />
-<a href="https://www.doi.org/factsheets/DOIProxy.html"
-class="uri">https://www.doi.org/factsheets/DOIProxy.html</a> (accessed
-24 January 2023)</p>
-<p>DONA (2018):<br />
-<strong>Digital object interface protocol specification, version
-2.0</strong>.<br />
-<em>DONA Foundation</em><br />
-<a href="https://hdl.handle.net/0.DOIP/DOIPV2.0"
-class="uri">https://hdl.handle.net/0.DOIP/DOIPV2.0</a></p>
-<p>José Carlos Martins Delgado (2016):<br />
-<strong>An Interoperability Framework and Distributed Platform for Fast
-Data Applications</strong>.<br />
-In: <em>Data <span>Science</span> and <span>Big Data
-Computing</span></em><br />
-<a href="https://doi.org/10.1007/978-3-319-31861-5_1"
-class="uri">https://doi.org/10.1007/978-3-319-31861-5_1</a></p>
-<p>Anusuriya Devaraju, Mustapha Mokrane, Linas Cepinskas, Robert Huber,
-Patricia Herterich, Jerry de Vries, Vesa Akerman, Hervé L’Hours, Joy
-Davidson, Michael Diepenbroek (2021):<br />
-<strong>From conceptualization to implementation: <span>FAIR</span>
-assessment of research data objects</strong>.<br />
-<em>Data Science Journal</em> <strong>20</strong> (2021).<br />
-<a href="https://doi.org/10.5334/dsj-2021-004"
-class="uri">https://doi.org/10.5334/dsj-2021-004</a></p>
-<p>Lisa M. Dusseault (2007):<br />
-<strong>HTTP Extensions for Web Distributed Authoring and
-Versioning</strong> (WebDAV).<br />
-<em>RFC Editor</em>, RFC 4918.<br />
-<a href="https://doi.org/10.17487/rfc4918"
-class="uri">https://doi.org/10.17487/rfc4918</a></p>
-<p>Martin J. Dürst, Michel Suignard (2005):<br />
-<strong>Internationalized <span>Resource Identifiers</span>
-(<span>IRIs</span>)</strong>.<br />
-<em>RFC Editor</em>, RFC 3987<br />
-<a href="https://doi.org/10.17487/rfc3987"
-class="uri">https://doi.org/10.17487/rfc3987</a></p>
-<p>European Commission, Directorate-General for Research and Innovation
-(2016):<br />
-<strong>Realising the European open science cloud – First report and
-recommendations of the Commission high level expert group on the
-European Open Science Cloud</strong>.<br />
-<em>Publications Office of the EU</em><br />
-<a href="https://doi.org/10.2777/940154"
-class="uri">https://doi.org/10.2777/940154</a></p>
-<p>Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et
-al. (2023):<br />
-<strong>Web <span>API</span> design best practices</strong>.<br />
-<em>Azure Architecture Center</em><br />
-<a
-href="https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design"
-class="uri">https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design</a>
-(accessed 24 January 2023)</p>
-<p>Tim Ellison, Christopher Kaler, Jim Amsden, Jim Whitehead, Geoffrey
-M. Clemm (2002):<br />
-<strong>Versioning Extensions to WebDAV</strong> (Web Distributed
-Authoring and Versioning).<br />
-<em>RFC Editor</em>, RFC 3253. <a
-href="https://doi.org/10.17487/rfc3253"
-class="uri">https://doi.org/10.17487/rfc3253</a></p>
-<p>FAIR Data Maturity Model Working Group (2020):<br />
-<strong>FAIR data maturity model: Specification and
-guidelines</strong>.<br />
-<em>Research Data Alliance</em><br />
-<a href="https://doi.org/10.15497/rda00050"
-class="uri">https://doi.org/10.15497/rda00050</a></p>
-<p>FDO (2022):<br />
-<strong>FDO Specification Documents - November 2022</strong> <em>FAIR
-Digital Objects Forum</em> <a
-href="https://hdl.handle.net/20.500.14132/fdo-spec-docs"
-class="uri">https://hdl.handle.net/20.500.14132/fdo-spec-docs</a><br />
-<a href="https://fairdo.org/specifications/"
-class="uri">https://fairdo.org/specifications/</a> (accessed 2 February
-2023)<br />
-<span>FAIR Digital Objects Forum</span><br />
-<a href="https://fairdo.org/" class="uri">https://fairdo.org/</a>
-(accessed 26 May 2022)</p>
-<p>Martin Fenner, Amir Aryani (2019):<br />
-<strong>Introducing the PID graph</strong>.<br />
-<em>DataCite Blog</em><br />
-<a href="https://doi.org/10.5438/jwvf-8a66"
-class="uri">https://doi.org/10.5438/jwvf-8a66</a></p>
-<p>Dieter Fensel, Federico Michele Facca, Elena Simperl, Ioan Toma
-(2011):<br />
-<strong>Semantic <span>Web Services</span></strong><br />
-<a href="https://doi.org/10.1007/978-3-642-19193-0"
-class="uri">https://doi.org/10.1007/978-3-642-19193-0</a></p>
-<p>Roy Thomas Fielding (2000):<br />
-<strong>Architectural styles and the design of network-based software
-architectures</strong><br />
-Doctoral Thesis, <em>University of California</em>, Irvine.<br />
-<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
-class="uri">https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm</a>
-(accessed 28 June 2022) <span>RFC Editor</span>, RFC Roy T. Fielding,
-Mark Nottingham, David Orchard, Joe Gregorio, Marc Hadley (2012):<br />
-<strong>URI Template</strong>. <em>RFC Editor</em>, RFC 6570<br />
-<a href="https://doi.org/10.17487/rfc6570"
-class="uri">https://doi.org/10.17487/rfc6570</a></p>
-<p>Roy T. Fielding, Julian Reschke (2014):<br />
-<strong>Hypertext <span>Transfer Protocol</span>
-(<span>HTTP</span>/1.1): <span>Message Syntax</span> and
-<span>Routing</span></strong><br />
-<em>RFC Editor</em>, RFC 7230<br />
-<a href="https://doi.org/10.17487/rfc7230"
-class="uri">https://doi.org/10.17487/rfc7230</a></p>
-<p>Roy T. Fielding, Julian Reschke (2014):<br />
-<strong>Hypertext <span>Transfer Protocol</span>
-(<span>HTTP</span>/1.1): <span>Semantics</span> and
-<span>Content</span></strong><br />
-<em>RFC Editor</em>, RFC 7231<br />
-<a href="https://doi.org/10.17487/rfc7231"
-class="uri">https://doi.org/10.17487/rfc7231</a></p>
-<p>Roy T. Fielding, Richard N. Taylor, Justin R. Erenkrantz, Michael M.
-Gorlick, Jim Whitehead, Rohit Khare, Peyman Oreizy (2017):<br />
-<strong>Reflections on the <span>REST</span> architectural style and
-"principled design of the modern web architecture" (impact paper
-award)</strong>.<br />
-<em>Proceedings of the 2017 11th joint meeting on foundations of
-software engineering - <span>ESEC</span>/<span>FSE</span> 2017</em>, New
-York, New York, USA.<br />
-<a href="https://doi.org/10.1145/3106237.3121282"
-class="uri">https://doi.org/10.1145/3106237.3121282</a></p>
-<p>Roy T. Fielding, Mark Nottingham, Julian Reschke (2022):<br />
-<strong>HTTP Semantics</strong><br />
-<em>RFC Editor</em>, RFC 9110<br />
-<a href="https://doi.org/10.17487/rfc9110"
-class="uri">https://doi.org/10.17487/rfc9110</a></p>
-<p>Carole Goble, Robert Stevens (2008):<br />
-<strong>State of the nation in data integration for
-bioinformatics</strong>.<br />
-<em>Journal of Biomedical Informatics</em> <strong>41</strong>(5)<br />
-<a href="https://doi.org/10.1016/j.jbi.2008.01.008"
-class="uri">https://doi.org/10.1016/j.jbi.2008.01.008</a></p>
-<p>Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community
-(2017):<br />
-<strong>Bioschemas: From potato salad to protein
-annotation</strong>.<br />
-<em>Proceedings of the ISWC 2017 posters &amp; demonstrations and
-industry tracks co-located with 16th international semantic web
-conference (ISWC 2017)</em>, Vienna, Austria.<br />
-<em>CEUR Workshop Proceedings</em> <strong>1963</strong><br />
-<a href="https://ceur-ws.org/Vol-1963/paper579.pdf"
-class="uri">https://ceur-ws.org/Vol-1963/paper579.pdf</a></p>
-<p>Paul Groth, Antonis Loizou, Alasdair J. G. Gray, Carole Goble, Lee
-Harland, Steve Pettifer (2014):<br />
-<strong>API-centric Linked Data integration: <span>The Open PHACTS
-Discovery Platform</span> case study</strong>.<br />
-<em>Journal of Web Semantics</em> <strong>29</strong><br />
-<a href="https://doi.org/10.1016/j.websem.2014.03.003"
-class="uri">https://doi.org/10.1016/j.websem.2014.03.003</a></p>
-<p>Ramanathan Guha and Dan Brickley (2014):<br />
-<strong>RDF Schema 1.1</strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="http://www.w3.org/TR/rdf-schema/"
-class="uri">http://www.w3.org/TR/rdf-schema/</a></p>
-<p>CNRI (2022):<br />
-<strong>Handle.Net Software</strong>.<br />
-<a href="https://www.handle.net/download_hnr.html"
-class="uri">https://www.handle.net/download_hnr.html</a> (accessed 24
-January 2023)</p>
-<p>Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben
-Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):<br />
-<strong>The Specimen Data Refinery: A Canonical Workflow Framework and
-FAIR Digital Object Approach to Speeding up Digital Mobilisation of
-Natural History Collections</strong>.<br />
-<em>Data Intelligence</em> <strong>4</strong>(2)<br />
-<a href="https://doi.org/10.1162/dint_a_00134"
-class="uri">https://doi.org/10.1162/dint_a_00134</a></p>
-<p>Ali Hasnain, Dietrich Rebholz-Schuhmann (2018):<br />
-<strong>Assessing FAIR data principles against the 5-star open data
-principles</strong>.<br />
-<em>The Semantic Web: ESWC 2018 satellite events</em>, Heraklion, Crete,
-Greece, 2018-06-03/–07<br />
-<a href="https://doi.org/10.1007/978-3-319-98192-5_60"
-class="uri">https://doi.org/10.1007/978-3-319-98192-5_60</a></p>
-<p>Michael Hausenblas et al. (2012):<br />
-<strong>5-star <span>Open Data</span></strong>.<br />
-<a href="http://5stardata.info/" class="uri">http://5stardata.info/</a>
-(accessed 24 January 2023)</p>
-<p>Maggie Hellström, Carlo Zwölf, Peter Wittenburg (2022):<br />
-<strong>FDO – granularity, versioning, mutability</strong>.<br />
-<em>FDO Specification Documents</em> PR-Granularity-2.2-20221017<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825686"
-class="uri">https://doi.org/10.5281/zenodo.7825686</a></p>
-<p>Vicki Tardif Holland, Jason Johnson (2014):<br />
-<strong>Introducing ’<span>Role</span>’</strong>.<br />
-<em>schema blog</em><br />
-<a href="http://blog.schema.org/2014/06/introducing-role.html"
-class="uri">http://blog.schema.org/2014/06/introducing-role.html</a></p>
-<p>Bill de hÓra, Joe Gregorio (2007):<br />
-<strong>The <span>Atom Publishing Protocol</span></strong>.<br />
-<em>RFC Editor</em>, RFC 5023<br />
-<a href="https://doi.org/10.17487/rfc5023"
-class="uri">https://doi.org/10.17487/rfc5023</a></p>
-<p>Ian Horrocks, James Hendler, eds. (2002):<br />
-<strong>The <span>Semantic Web</span> — <span>ISWC</span>
-2002</strong><br />
-First International Semantic Web Conference, Sardinia, Italy, June 9-12,
-2002<br />
-<a href="https://doi.org/10.1007/3-540-48005-6"
-class="uri">https://doi.org/10.1007/3-540-48005-6</a></p>
-<p>Wei Hu, Jianfeng Chen, Hang Zhang, Yuzhong Qu (2011):<br />
-<strong>How matchable are four thousand ontologies on the semantic
-web</strong>.<br />
-In Grigoris Antoniou, Marko Grobelnik, Elena Simperl, Bijan Parsia,
-Dimitris Plexousakis, Pieter De Leenheer, Jeff Pan,eds., <em>The
-semantic web: <span>Research</span> and applications</em>, pp.
-290–304<br />
-ISBN 978-3-642-21033-4</p>
-<p>ISO (2019):<br />
-<strong><span>ISO</span> 16684-1:2019 — graphic technology — extensible
-metadata platform (XMP)</strong> — part 1: Data model, serialization and
-core properties.<br />
-ISO standard<br />
-<a href="https://www.iso.org/standard/75163.html"
-class="uri">https://www.iso.org/standard/75163.html</a></p>
-<p>ISO/IEC (2022):<br />
-<strong><span>ISO</span>/<span>IEC</span> 23009-1:2022 — information
-technology — dynamic adaptive streaming over HTTP (DASH)</strong> — part
-1: Media presentation description and segment formats.<br />
-ISO standard<br />
-<a href="https://www.iso.org/standard/83314.html"
-class="uri">https://www.iso.org/standard/83314.html</a></p>
-<p>ITU-T (2013):<br />
-<strong>X.1255 : Framework for Discovery of Identity Management
-Information</strong>.<br />
-<em>Series X: Data networks, open system communications and
-security</em> ITU-T X.1255<br />
-The International Telecommunication Union (ITU).<br />
-<a href="https://www.itu.int/rec/T-REC-X.1255-201309-I"
-class="uri">https://www.itu.int/rec/T-REC-X.1255-201309-I</a></p>
-<p>Antoine Isaac and Ed Summers (2009):<br />
-<strong>SKOS Simple Knowledge Organization System Primer</strong>.<br />
-W3C Note<br />
-<a href="https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/"
-class="uri">https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/</a></p>
-<p>Sharif Islam (2023):<br />
-<strong>FAIR digital objects, persistent identifiers and machine
-actionability</strong>.<br />
-<em>FAIR Connect</em> <strong>1</strong>(1)<br />
-<a href="https://doi.org/10.3233/FC-230001"
-class="uri">https://doi.org/10.3233/FC-230001</a></p>
-<p>Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie,
-Islam Sharif, Jejkal Thomas, Lannom Larry, Peters-von Gehlen Karsten,
-Quick Robert, Schlemmer Alexander, Schwardmann Ulrich, Soiland-Reyes
-Stian, Strawn George, Dieter van Uytvanck, Claus Weiland, Peter
-Wittenburg, &amp; Carlo Zwölf (2023):<br />
-<strong><span>FAIR</span> digital object technical overview</strong>.
-Version PEN 2.0.<br />
-<em>FDO Specification Documents</em> Full FDO Overview PEN-2.0-v2<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7824714"
-class="uri">https://doi.org/10.5281/zenodo.7824714</a></p>
-<p>Jana Iyengar, Martin Thomson (2021):<br />
-<strong><span>QUIC</span>: <span>A UDP-Based Multiplexed</span> and
-<span>Secure Transport</span></strong><br />
-<em>RFC Editor</em>, RFC 9000<br />
-<a href="https://doi.org/10.17487/rfc9000"
-class="uri">https://doi.org/10.17487/rfc9000</a></p>
-<p>Mohamad Yaser Jaradeh, Allard Oelen, Manuel Prinz, Markus Stocker,
-Sören Auer (2019):<br />
-<strong>Open research knowledge graph: A system
-walkthrough</strong>.<br />
-<em>Digital libraries for open knowledge</em> 348–351.<br />
-<a href="https://doi.org/10.1007/978-3-030-30760-8_31"
-class="uri">https://doi.org/10.1007/978-3-030-30760-8_31</a></p>
-<p>Richard Jones and Neil Jefferies (2022):<br />
-<strong>SWORD 3.0 Specification</strong>.<br />
-<a href="https://swordapp.github.io/swordv3/swordv3.html"
-class="uri">https://swordapp.github.io/swordv3/swordv3.html</a>
-(accessed 26 May 2022)</p>
-<p>Matt Joras, Yang Chi (2020):<br />
-<strong>How Facebook is bringing QUIC to billions</strong>.<br />
-<em>Engineering at Meta</em><br />
-<a
-href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions"
-class="uri">https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions</a></p>
-<p>Nick Juty, Nicolas Le Novère, Camille Laibe (2011):<br />
-<strong>Identifiers.org and <span>MIRIAM Registry</span>: Community
-resources to provide persistent identification</strong>.<br />
-<em>Nucleic Acids Research</em> <strong>40</strong>(D1)<br />
-<a href="https://doi.org/10.1093/nar/gkr1097"
-class="uri">https://doi.org/10.1093/nar/gkr1097</a></p>
-<p>Robert Kahn, Robert Wilensky (1995):<br />
-<strong>A framework for distributed digital object services</strong>
-(CNRI).<br />
-<a href="http://www.cnri.reston.va.us/k-w.html"
-class="uri">http://www.cnri.reston.va.us/k-w.html</a> (accessed 9 May
-2022)</p>
-<p>Robert Kahn, Robert Wilensky (2006):<br />
-<strong>A framework for distributed digital object
-services</strong>.<br />
-<em>International Journal on Digital Libraries</em>
-<strong>6</strong><br />
-<a href="https://doi.org/10.1007/s00799-005-0128-x"
-class="uri">https://doi.org/10.1007/s00799-005-0128-x</a></p>
-<p>Maulik R. Kamdar, Tania Tudorache, Mark A. Musen (2017):<br />
-<strong>A systematic analysis of term reuse and term overlap across
-biomedical ontologies</strong>.<br />
-<em>Semantic Web</em> <strong>8</strong>(6)<br />
-<a href="https://doi.org/10.3233/sw-160238"
-class="uri">https://doi.org/10.3233/sw-160238</a></p>
-<p>Mike Kelly (2016):<br />
-<strong>JSON Hypertext Application Language</strong>.<br />
-<em>Internet Engineering Task Force</em><br />
-<a href="https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/"
-class="uri">https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/</a></p>
-<p>Rohit Khare, Scott Lawrence (2000):<br />
-<strong>Upgrading to <span>TLS Within HTTP</span>/1.1</strong>.<br />
-<em>RFC Editor</em>, RFC 2817.<br />
-<a href="https://doi.org/10.17487/rfc2817"
-class="uri">https://doi.org/10.17487/rfc2817</a></p>
-<p>Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar
-Shankar, Lyudmila Balakireva, Ke Zhou, Richard Tobin (2014):<br />
-<strong>Scholarly Context Not Found: One in Five Articles Suffers from
-Reference Rot</strong>.<br />
-<em>PLOS ONE</em> <strong>9</strong>(12):e115253<br />
-<a href="https://doi.org/10.1371/journal.pone.0115253"
-class="uri">https://doi.org/10.1371/journal.pone.0115253</a></p>
-<p>Jakub Klímek, Petr Škoda, Martin Nečaský (2019):<br />
-<strong>Survey of tools for linked data consumption</strong>.<br />
-<em>Semantic Web</em> <strong>10</strong>(4)<br />
-<a href="https://doi.org/10.3233/SW-180316"
-class="uri">https://doi.org/10.3233/SW-180316</a></p>
-<p>Dimitris Kontokostas, Holger Knublauch (2017):<br />
-<strong>Shapes <span>Constraint Language</span>
-(<span>SHACL</span>)</strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/shacl/"
-class="uri">https://www.w3.org/TR/shacl/</a> (accessed 26 May 2022)</p>
-<p>John A. Kunze, Emmanuelle Bermès (2022):<br />
-<strong>The ARK Identifier Scheme</strong>.<br />
-<em>Internet Engineering Task Force</em><br />
-<a href="https://datatracker.ietf.org/doc/draft-kunze-ark/36/"
-class="uri">https://datatracker.ietf.org/doc/draft-kunze-ark/36/</a></p>
-<p>Jose Emilio Labra Gayo, Eric Prud’hommeaux, Iovka Boneva, Dimitris
-Kontokostas (2017):<br />
-<strong>Validating <span>RDF Data</span></strong>.<br />
-<em>Synthesis Lectures on the Semantic Web: Theory and Technology</em>
-<strong>7</strong><br />
-<a href="https://doi.org/10.2200/s00786ed1v01y201707wbe016"
-class="uri">https://doi.org/10.2200/s00786ed1v01y201707wbe016</a></p>
-<p>Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson,
-Robert Sanderson, Simeon Warner (2008):<br />
-<strong>ORE Specification</strong> - <span>Abstract Data
-Model</span>.<br />
-<em>Open Archives Initiative</em><br />
-<a href="http://www.openarchives.org/ore/1.0/datamodel#Proxies"
-class="uri">http://www.openarchives.org/ore/1.0/datamodel#Proxies</a></p>
-<p>Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
-Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar
-Ben Hadj Amor, Salvador Capella-Gutierrez, Paulos Charonyktakis, Michael
-R. Crusoe, Yolanda Gil, Carole Goble, Timothy J. Griffin, Paul Groth,
-Hans Ienasescu, Pratik Jagtap, Matúš Kalaš, Vedran Kasalica, Alireza
-Khanteymoori, Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller,
-Robin A. Richardson, Vincent Robert, Stian Soiland-Reyes, Robert
-Stevens, Szoke Szaniszlo, Suzan Verberne, Aswin Verhoeven, Katherine
-Wolstencroft (2021):<br />
-<strong>Perspectives on automated composition of workflows in the life
-sciences</strong>.<br />
-<em>F1000Research</em> <strong>10</strong> (2021):897<br />
-<a href="https://doi.org/10.12688/f1000research.54159.1"
-class="uri">https://doi.org/10.12688/f1000research.54159.1</a></p>
-<p>Larry Lannom, Lt. Col. Brian P. Boesch, Sam Sun (2003):<br />
-<strong>Handle System Overview</strong><br />
-<em>RFC Editor</em>, RFC 3650<br />
-<a href="https://doi.org/10.17487/rfc3650"
-class="uri">https://doi.org/10.17487/rfc3650</a></p>
-<p>Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003):
-<strong>Handle <span>System Protocol</span> (ver 2.1)
-<span>Specification</span></strong>.<br />
-<em>RFC Editor</em>, RFC 3652<br />
-<a href="https://doi.org/10.17487/rfc3652"
-class="uri">https://doi.org/10.17487/rfc3652</a></p>
-<p>Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas
-Pfeil, Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):<br />
-<strong><span>FDO</span> configuration types</strong>.<br />
-<em>FDO Specification Documents</em>
-PR-ConfigurationTypes-2.1-20221017<br />
-FAIR Digital Objects Forum<br />
-<a href="https://doi.org/10.5281/zenodo.7825703"
-class="uri">https://doi.org/10.5281/zenodo.7825703</a></p>
-<p>Larry Lannom, Ulrich Schwardmann, Christophe Blanchi, Ivonne Anders,
-Claus Weiland, Peter Wittenburg (2022):<br />
-<strong>FAIR digital objects roadmap. Version 5 november
-2022</strong>.<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7824673"
-class="uri">https://doi.org/10.5281/zenodo.7824673</a></p>
-<p>Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg
-(2022):<br />
-<strong>Typing <span>FAIR</span> digital objects</strong>.<br />
-<em>FDO Specification Documents</em> PR-TypingFDOs-2.0-20220608<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825599"
-class="uri">https://doi.org/10.5281/zenodo.7825599</a></p>
-<p>Markus Lanthaler, ed. (2021):<br />
-<strong>Hydra Core Vocabulary</strong><br />
-Hydra W3C Community Group<br />
-<a href="http://www.hydra-cg.com/spec/latest/core/"
-class="uri">http://www.hydra-cg.com/spec/latest/core/</a></p>
-<p>Ora Lassila, Ralph R. Swick (1999):<br />
-<strong>Resource <span>Description Framework</span> (<span>RDF</span>)
-<span>Model</span> and <span>Syntax Specification</span></strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/"
-class="uri">https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/</a></p>
-<p>Timothy Lebo and Deborah McGuinness and Satya Sahoo (2013):<br />
-<strong>PROV-O: The PROV Ontology</strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2013/REC-prov-o-20130430/"
-class="uri">https://www.w3.org/TR/2013/REC-prov-o-20130430/</a></p>
-<p>Timothy Lebo, Luc Moreau (2013):<br />
-<strong>Linking <span>Across Provenance Bundles</span></strong>.<br />
-<em>W3C Note</em><br />
-<a href="https://www.w3.org/TR/2013/NOTE-prov-links-20130430/"
-class="uri">https://www.w3.org/TR/2013/NOTE-prov-links-20130430/</a></p>
-<p>Kevin Liu, David Booth (2007):<br />
-<strong>Web Services Description Language</strong> (WSDL) Version 2.0
-Part 0: Primer.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/"
-class="uri">https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/</a></p>
-<p>Tina Loo, ed. (2022):<br />
-<strong>First International Conference on FAIR Digital
-Objects</strong>.<br />
-<em>Research Ideas and Outcomes</em><br />
-<a href="https://doi.org/10.3897/rio.coll.190"
-class="uri">https://doi.org/10.3897/rio.coll.190</a></p>
-<p>MDN (2023):<br />
-<strong>HTTP Content negotiation</strong>.<br />
-<em>Web technology for developers</em>.<br />
-MDN Web Docs<br />
-<a
-href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation"
-class="uri">https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation</a>
-(accessed 26 May 2022)</p>
-<p>Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):
-<strong>Conclusion and future challenges</strong>.<br />
-<em>Web data apis for knowledge graphs: <span>Easing</span> access to
-semantic data for application developers</em><br />
-Synthesis Lectures on Data, Semantics, and Knowledge<br />
-<a href="https://doi.org/10.1007/978-3-031-01917-3_7"
-class="uri">https://doi.org/10.1007/978-3-031-01917-3_7</a></p>
-<p>Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):
-<strong>Web data APIs over <span>SPARQL</span></strong>.<br />
-<em>Web Data APIs for Knowledge Graphs : Easing access to semantic data
-for application developers</em>, Synthesis Lectures on Data, Semantics,
-and Knowledge.<br />
-<a href="https://doi.org/10.1007/978-3-031-01917-3_3"
-class="uri">https://doi.org/10.1007/978-3-031-01917-3_3</a></p>
-<p>Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron
-Ratovsky, Uri Sarid, eds. (2021):<br />
-<strong>OpenAPI Specification</strong> v3.1.0.<br />
-<em>OpenAPI Initiative</em>, The Linux Foundation.<br />
-<a href="https://spec.openapis.org/oas/v3.1.0.html"
-class="uri">https://spec.openapis.org/oas/v3.1.0.html</a> (accessed 21
-March 2023)</p>
-<p>Barend Mons, Cameron Neylon, Jan Velterop, Michel Dumontier, Luiz
-Olavo Bonino Silva Santos, Mark D. Wilkinson (2017):<br />
-<strong>Cloudy, increasingly <span>FAIR</span>; revisiting the
-<span>FAIR</span> data guiding principles for the European Open Science
-Cloud</strong>.<br />
-<em>Information Services &amp; Use</em> <strong>37</strong>(1)<br />
-<a href="https://doi.org/10.3233/ISU-170824"
-class="uri">https://doi.org/10.3233/ISU-170824</a></p>
-<p>NCBO BioPortal.<br />
-National Center for Biomedical Ontology<br />
-<a href="https://bioportal.bioontology.org/ontologies"
-class="uri">https://bioportal.bioontology.org/ontologies</a> (accessed
-26 May 2022)</p>
-<p>Andy Neumann, Nuno Laranjeiro, Jorge Bernardino (2021):<br />
-<strong>An analysis of public <span>REST</span> web service
-apis</strong>.<br />
-<em>IEEE Transactions on Services Computing</em>
-<strong>14</strong>(4)<br />
-<a href="https://doi.org/10.1109/TSC.2018.2847344"
-class="uri">https://doi.org/10.1109/TSC.2018.2847344</a></p>
-<p>Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty
-Mutlu, Silje Zink, Susan Michie (2021):<br />
-<strong>Why and how to engage expert stakeholders in ontology
-development: Insights from social and behavioural
-sciences</strong>.<br />
-<em>Journal of Biomedical Semantics</em> <strong>12</strong><br />
-<a href="https://doi.org/10.1186/s13326-021-00240-6"
-class="uri">https://doi.org/10.1186/s13326-021-00240-6</a></p>
-<p>Mark Nottingham (2017):<br />
-<strong>Web <span>Linking</span></strong>.<br />
-<em>RFC Editor</em>, RFC 8288<br />
-<a href="https://doi.org/10.17487/rfc8288"
-class="uri">https://doi.org/10.17487/rfc8288</a></p>
-<p>OCLC (2010):<br />
-<strong>"Info" <span>URI Registry</span></strong>
-(<span>Frozen</span>).<br />
-OCLC<br />
-<a href="http://info-uri.info/" class="uri">http://info-uri.info/</a>
-(accessed 24 January 2023)</p>
-<p><strong>The <span>Open Graph</span> protocol</strong>.<br />
-<a href="https://ogp.me/" class="uri">https://ogp.me/</a> (accessed 26
-May 2022)</p>
-<p>OSI (2022):<br />
-<strong>Licenses &amp; <span>Standards</span></strong>. Open Source
-Initiative<br />
-<a href="https://opensource.org/licenses"
-class="uri">https://opensource.org/licenses</a> (accessed 24 January
-2023)</p>
-<p>OpenStand (2017):<br />
-<strong>The <span>Modern Standards Paradigm</span></strong> - <span>Five
-Key Principles</span>.<br />
-<a href="https://open-stand.org/about-us/principles/"
-class="uri">https://open-stand.org/about-us/principles/</a> (accessed 24
-January 2023)</p>
-<p>Kevin R. Page, David C. De Roure, Kirk Martinez (2011):<br />
-<strong><span>REST</span> and <span>Linked Data</span></strong>.<br />
-<em>Proceedings of the <span>Second International Workshop</span> on
-<span>RESTful Design</span> - <span>WS-REST</span> ’11</em><br />
-<a href="https://doi.org/10.1145/1967428.1967435"
-class="uri">https://doi.org/10.1145/1967428.1967435</a></p>
-<p>Roger Pantos, William May (2017):<br />
-<strong>HTTP Live Streaming</strong>.<br />
-<em>RFC Editor</em>, RFC 8216<br />
-<a href="https://doi.org/10.17487/rfc8216"
-class="uri">https://doi.org/10.17487/rfc8216</a></p>
-<p>Aaron Parecki, ed. (2017):<br />
-<strong>Micropub</strong>. <em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2017/REC-micropub-20170523/"
-class="uri">https://www.w3.org/TR/2017/REC-micropub-20170523/</a></p>
-<p>Axel Polleres, Maulik Rajendra Kamdar, Javier David Fernández, Tania
-Tudorache, Mark Alan Musen (2020):<br />
-<strong>A more decentralized vision for linked data</strong>.<br />
-<em>Semantic Web</em> <strong>11</strong>(1)<br />
-<a href="https://doi.org/10.3233/SW-190380"
-class="uri">https://doi.org/10.3233/SW-190380</a></p>
-<p>Sean Reilly (2009):<br />
-<strong>Digital Object Interface Protocol Version 1.0</strong>.<br />
-<a href="https://www.dona.net/doipv1doc"
-class="uri">https://www.dona.net/doipv1doc</a> (accessed 26 May
-2022)</p>
-<p>Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano
-(2022):<br />
-<strong>WebSockets Standard</strong>.<br />
-<em>WHATWG</em><br />
-<a href="https://websockets.spec.whatwg.org/"
-class="uri">https://websockets.spec.whatwg.org/</a> (accessed 26 May
-2022)</p>
-<p>Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba
-Abbassi-Daloii, Salvador Capella-Gutierrez, Ishwar Chandramouliswaran,
-Andrea Splendiani, Tony Burdett, Robert T. Giessmann, David Henderson,
-Dominique Batista, Ibrahim Emam, Yojana Gadiya, Lucas Giovanni, Egon
-Willighagen, Chris Evelo, Alasdair J. G. Gray, Philip Gribbon, Nick
-Juty, Danielle Welter, Karsten Quast, Paul Peeters, Tom Plasterer, Colin
-Wood, Eelke van der Horst, Dorothy Reilly, Herman van Vlijmen, Serena
-Scollen, Allyson Lister, Milo Thurston, Ramon Granell, Gabriel
-Backianathan, Sebastian Baier, Anne Cambon Thomsen, Martin Cook, Melanie
-Courtot, Mike d’Arcy, Kurt Dauth, Eva Marin del Piico, Leyla Garcia,
-Ulrich Goldmann, Valentin Grouès, Daniel J. B. Clarke, Erwan Lefloch,
-Isuru Liyanage, Petros Papadopoulos, Cyril Pommier, Emiliano Reynares,
-Francesco Ronzano, Alejandra Delfin-Rossaro, Venkata Sagatopam, Ashni
-Sedani, Vitaly Sedlyarov, Liubov Shilova, Sukhi Singh, Jolanda Strubel,
-Kees van Bochove, Zachary Warnes, Peter Woollard, Fuqi Xu, Andrea
-Zaliani, Susanna-Assunta Sansone and (2023):<br />
-<strong>The <span>FAIR</span> cookbook - the essential resource for and
-by <span>FAIR</span> doers</strong>.<br />
-<em>Scientific Data</em> <strong>10</strong>(10)<br />
-<a href="https://doi.org/10.1038/s41597-023-02166-3"
-class="uri">https://doi.org/10.1038/s41597-023-02166-3</a></p>
-<p>Sandvine (2022):<br />
-<strong>Global Internet Phenomena Report</strong>.<br />
-<a href="https://www.sandvine.com/global-internet-phenomena-report-2022"
-class="uri">https://www.sandvine.com/global-internet-phenomena-report-2022</a>
-(accessed 26 May 2022)</p>
-<p>Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel
-(2011):<br />
-<strong>Cool URIs for the semantic web</strong><br />
-<em>W3C Interest Group Note</em><br />
-<a href="http://www.w3.org/TR/cooluris/"
-class="uri">http://www.w3.org/TR/cooluris/</a></p>
-<p><strong>Schema.org</strong><br />
-<a href="https://schema.org/" class="uri">https://schema.org/</a>
-(accessed 26 May 2022)</p>
-<p><strong>Schema.org <span>Actions</span></strong>.<br />
-<em>schema.org</em>.<br />
-<a href="https://schema.org/docs/actions.html"
-class="uri">https://schema.org/docs/actions.html</a> (accessed 26 May
-2022)</p>
-<p>Guus Schreiber and Yves Raimond (2014):<br />
-<strong>RDF 1.1 Primer</strong>.<br />
-<em>W3C Note</em><br />
-<a href="http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624"
-class="uri">http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624</a></p>
-<p>Erik Schultes, Peter Wittenburg (2019):<br />
-<strong>FAIR principles and digital objects: Accelerating convergence on
-a data infrastructure</strong>.<br />
-<em>Data analytics and management in data intensive domains</em>: 20th
-international conference, <span>DAMDID</span>/<span>RCDL</span> 2018,
-Moscow, Russia, 2018-10-09/–12.<br />
-<a href="https://doi.org/10.1007/978-3-030-23584-0_1"
-class="uri">https://doi.org/10.1007/978-3-030-23584-0_1</a><br />
-Preprint: <a
-href="https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D"
-class="uri">https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D</a></p>
-<p>Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl,
-Marek Suchánek, Tobias Kuhn (2020):<br />
-<strong>Reusable <span>FAIR</span> implementation profiles as
-accelerators of <span>FAIR</span> convergence</strong>.<br />
-<em>International Conference on Conceptual Modeling</em>, ER 2020:
-Advances in Conceptual Modeling, 2022-11-03/–06, Vienna, Austria.<br />
-<em>Lecture notes in Computer Science</em> <strong>12584</strong><br />
-<a href="https://doi.org/10.1007/978-3-030-65847-2_13"
-class="uri">https://doi.org/10.1007/978-3-030-65847-2_13</a></p>
-<p>Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg
-(2022):<br />
-<strong>DOIP endorsement request</strong>.<br />
-<em>FDO Specification Documents</em>
-PED-DOIPEndorsement-1.1-20221017<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7824796"
-class="uri">https://doi.org/10.5281/zenodo.7824796</a></p>
-<p>Ulrich Schwardmann, Tibor Kálmán (2022):<br />
-<strong>Two <span>Examples</span> on <span>How FDO Types</span> can
-<span>Support Machine</span> and <span>Human
-Readability</span></strong>.<br />
-<em>Research Ideas and Outcomes</em> <strong>8</strong><br />
-<a href="https://doi.org/10.3897/rio.8.e96014"
-class="uri">https://doi.org/10.3897/rio.8.e96014</a></p>
-<p>Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk
-Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, Thomas Jung (2022):<br />
-<strong>IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP
-historical</strong>.<br />
-<a href="https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi"
-class="uri">https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi</a><br />
-<a
-href="https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87"
-class="uri">https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87</a></p>
-<p>Amit Singhal (2012):<br />
-<strong>Introducing the knowledge graph: Things, not
-strings</strong>.<br />
-<a
-href="https://blog.google/products/search/introducing-knowledge-graph-things-not/"
-class="uri">https://blog.google/products/search/introducing-knowledge-graph-things-not/</a>
-(accessed 18 May 2023)</p>
-<p>Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard,
-William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia
-Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra,
-Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam
-Shah, Patricia L. Whetzel, Suzanna Lewis (2007):<br />
-<strong>The <span>OBO Foundry</span>: Coordinated evolution of
-ontologies to support biomedical data integration</strong>.<br />
-<em>Nature Biotechnology</em> <strong>25</strong>(11)<br />
-<a href="https://doi.org/10.1038/nbt1346"
-class="uri">https://doi.org/10.1038/nbt1346</a></p>
-<p>Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik
-Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth
-(2022):<br />
-<strong>Creating lightweight <span>FAIR</span> digital objects with
-<span>RO</span>-crate</strong>.<br />
-<em>Research Ideas and Outcomes</em> <strong>10</strong>(8). <a
-href="https://doi.org/10.3897/rio.8.e93937"
-class="uri">https://doi.org/10.3897/rio.8.e93937</a></p>
-<p>Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
-Frederik Coppens, José M. Fernández, Daniel Garijo, BjÃ¶rn GrÃ¼ning,
-Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana
-Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):<br />
-<strong>Packaging research artefacts with
-<span>RO</span>-crate</strong>.<br />
-<em>Data Science</em> <strong>5</strong>(2)<br />
-<a href="https://doi.org/10.3233/ds-210053"
-class="uri">https://doi.org/10.3233/ds-210053</a></p>
-<p>Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier,
-Carole Goble, Paul Groth (2022):<br />
-<strong>Updating linked data practices for <span>FAIR</span> digital
-object principles</strong>.<br />
-<em>Research Ideas and Outcomes</em> <strong>10</strong>(8).<br />
-<a href="https://doi.org/10.3897/rio.8.e94501"
-class="uri">https://doi.org/10.3897/rio.8.e94501</a></p>
-<p>Steve Speicher, John Arwe, Ashok Malhotra (2015):<br />
-<strong>Linked data platform 1.0</strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2015/REC-ldp-20150226/"
-class="uri">https://www.w3.org/TR/2015/REC-ldp-20150226/</a></p>
-<p>Manu Sporny, Ivan Herman, Ben Adida, Mark Birbeck (2015):<br />
-<strong>RDFa 1.1 Primer</strong> - Third Edition.<br />
-<em>W3C Note</em><br />
-<a href="https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/"
-class="uri">https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/</a></p>
-<p>Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
-Pierre-Antoine Champin, Niklas Lindström (2020):<br />
-<strong>JSON-LD 1.1</strong>.<br />
-<em>W3C Recommendation</em>.<br />
-<a href="https://www.w3.org/TR/2020/REC-json-ld11-20200716/"
-class="uri">https://www.w3.org/TR/2020/REC-json-ld11-20200716/</a></p>
-<p>Manu Sporny, Amy Guy (2023):<br />
-<strong>Media Types with Multiple Suffixes</strong>.<br />
-Internet Engineering Task Force.<br />
-<a
-href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/"
-class="uri">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/</a></p>
-<p>William Stallings (1990):<br />
-<strong>Handbook of computer-communications standards: <span>The</span>
-open systems (<span>OSI</span>) model and <span>OSI-related</span>
-standards</strong>, 2nd ed.<br />
-Sams.<br />
-<a href="https://identifiers.org/isbn/9780672226977">ISBN
-978-0-672-22697-7</a></p>
-<p>Stefan K. Stanczyk (1987):<br />
-<strong>Process modelling for information system
-description</strong>.<br />
-<em>The Open University</em><br />
-<a href="https://doi.org/10.21954/ou.ro.0000f821"
-class="uri">https://doi.org/10.21954/ou.ro.0000f821</a></p>
-<p>Anisa Stefi, Thomas Hess (2015):<br />
-<strong>To develop or to reuse? Two perspectives on external reuse in
-software projects</strong>.<br />
-<em>International Conference of Software Business</em> (ICSOB 2015),
-Braga, Portugal, 2015-06-10/–12.<br />
-<em>ICSOB 2015: Software business</em><br />
-<a href="http://doi.org/10.1007/978-3-319-19593-3_18"
-class="uri">http://doi.org/10.1007/978-3-319-19593-3_18</a></p>
-<p>Anisa Stefi (2015):<br />
-<strong>Do Developers Make Unbiased Decisions? - The Effect of
-Mindfulness and Not-Invented-Here Bias on the Adoption of Software
-Components</strong>.<br />
-<em>European Conference on Information Systems</em> (ECIS 2015),
-Münster, Germany, 2015-05-26/–29<br />
-<a href="https://doi.org/10.18151/7217489"
-class="uri">https://doi.org/10.18151/7217489</a></p>
-<p>Henry Thompson and Sandy Gao and David Beech and Murray Maloney and
-Noah Mendelsohn and Michael Sperberg-McQueen (2012):<br />
-<strong>W3C XML Schema Definition Language</strong> (<span>XSD</span>)
-1.1 <span>Part</span> 1: <span>Structures</span>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/"
-class="uri">https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/</a></p>
-<p>Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio
-Labra Gayo, Daniel Mietchen, Eric Prud, Andra Waagmeester (2019):<br />
-<strong>Using shape expressions (<span>ShEx</span>) to share
-<span>RDF</span> data models and to guide curation with rigorous
-validation</strong>.<br />
-<em>The Semantic Web: 16th international conference</em>, (ESWC 2019),
-Portorož, Slovenia, 2019-06-02/–06.<br />
-<a href="https://doi.org/10.1007/978-3-030-21348-0_39"
-class="uri">https://doi.org/10.1007/978-3-030-21348-0_39</a></p>
-<p>Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan
-Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):<br />
-<strong>Mapping between the <span>OBO</span> and <span>OWL</span>
-ontology languages</strong>.<br />
-<em>Journal of Biomedical Semantics</em> <strong>2</strong>:S3 <a
-href="https://doi.org/10.1186/2041-1480-2-s1-s3"
-class="uri">https://doi.org/10.1186/2041-1480-2-s1-s3</a></p>
-<p>Ovidiu Turcoane (2014):<br />
-<strong>Linked data, <span>JSON-LD</span> and the semantics of cultural
-and scientific heritage</strong>.<br />
-<em>Digital Presentation and Preservation of Cultural and Scientific
-Heritage</em> <strong>4</strong><br />
-<a href="https://doi.org/10.55630/dipp.2014.4.11"
-class="uri">https://doi.org/10.55630/dipp.2014.4.11</a></p>
-<p>Herbert Van de Sompel, Michael Nelson, Robert Sanderson (2013):<br />
-<strong><span>HTTP Framework</span> for <span>Time-Based Access</span>
-to <span>Resource States</span> – <span>Memento</span></strong>.<br />
-<em>RFC Editor</em>, RFC 7089<br />
-<a href="https://doi.org/10.17487/rfc7089"
-class="uri">https://doi.org/10.17487/rfc7089</a></p>
-<p>Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson,
-Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff,
-Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes,
-&amp; Mark Wilkinson (2022):<br />
-<strong>FAIR Signposting Profile</strong>.<br />
-<a href="https://signposting.org/FAIR/"
-class="uri">https://signposting.org/FAIR/</a> (accessed 5 January
-2023)</p>
-<p>Ruben Verborgh (2018):<br />
-<strong>Designing a <span>Linked Data</span> developer
-experience</strong>.<br />
-<a
-href="https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/"
-class="uri">https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/</a>
-(accessed 26 May 2022)</p>
-<p>Ruben Verborgh, Miel Vander Sande (2020):<br />
-<strong>The semantic web identity crisis: In search of the trivialities
-that never were</strong>.<br />
-<em>Semantic Web</em> <strong>11</strong>(1)<br />
-<a href="https://doi.org/10.3233/SW-190372"
-class="uri">https://doi.org/10.3233/SW-190372</a></p>
-<p>Maaike Verburg, Robert Huber, Clement Jonquet, Daniel Garijo (2023):
-<strong>FAIR-IMPACT project response to "FAIR Assessment Tools: Towards
-an "Apples to Apples" Comparisons"</strong>.<br />
-<em>Zenodo</em><br />
-<a href="https://doi.org/10.5281/zenodo.7848102"
-class="uri">https://doi.org/10.5281/zenodo.7848102</a></p>
-<p>W3C OWL Working Group (2012):<br />
-<strong><span>OWL</span> 2 <span>Web Ontology Language Document
-Overview</span></strong> (<span>Second Edition</span>).<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2012/REC-owl2-overview-20121211"
-class="uri">https://www.w3.org/TR/2012/REC-owl2-overview-20121211</a></p>
-<p>The W3C SPARQL Working Group (2013):<br />
-<strong><span>SPARQL</span> 1.1 <span>Overview</span></strong>.<br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/"
-class="uri">https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/</a>
-(accessed 26 May 2022)</p>
-<p>W3C (2015):<br />
-<strong>Linked Data</strong><br />
-<a href="https://www.w3.org/standards/semanticweb/data"
-class="uri">https://www.w3.org/standards/semanticweb/data</a> (accessed
-26 May 2022)</p>
-<p>W3Techs 2023:<br />
-<strong>Usage Statistics of JSON-LD for Websites</strong>.
-2023-05.<br />
-<em>W3Techs - World Wide Web Technology Surveys</em>, Q-Success.<br />
-<a href="https://w3techs.com/technologies/details/da-jsonld"
-class="uri">https://w3techs.com/technologies/details/da-jsonld</a>
-(accessed 18 May 2023)</p>
-<p>WHATWG (2023):<br />
-<strong>Microdata</strong>.<br />
-<em>HTML Living Standard</em><br />
-<a href="https://html.spec.whatwg.org/multipage/microdata.html"
-class="uri">https://html.spec.whatwg.org/multipage/microdata.html</a>
-(accessed 13 June 2023)</p>
-<p>Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich
-Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa
-(2018):<br />
-<strong><span>RDA Recommendation</span> on <span>PID Kernel
-Information</span></strong><br />
-<em>Research Data Alliance</em><br />
-<a href="https://doi.org/10.15497/rda00031"
-class="uri">https://doi.org/10.15497/rda00031</a></p>
-<p>Daan Broeder, Peter Wittenburg, Ivonne Anders, Karsten Peters-von
-Gehlen (2022):<br />
-<strong>FDO – kernel attributes &amp; metadata</strong>.<br />
-<em>FDO Specification Documents</em>
-PR-FDO-KernelAttributesAndMetadata-2.0-20221017<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a href="https://doi.org/10.5281/zenodo.7825693"
-class="uri">https://doi.org/10.5281/zenodo.7825693</a></p>
-<p>C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R.
-Hanisch, Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg
-(2022):<br />
-<strong>FAIR Digital Objects Forum Document Standards</strong>
-WD-DocProcessStd-1.1-20220129 (internal draft)<br />
-<em>FAIR Digital Objects Forum</em><br />
-<a
-href="https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_"
-class="uri">https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_</a>
-(accessed 30 November 2022)</p>
-<p>Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter
-Wittenburg (2022):<br />
-<strong><span>FDO</span> machine actionability</strong>. Version
-2.2<br />
-<em>FAIR Digital Objects Forum Document Standards</em>
-PR-MachineActionDef-2.2-20221119<br />
-<em>FAIR Digital Objects Forum</em> <a
-href="https://doi.org/10.5281/zenodo.7825650"
-class="uri">https://doi.org/10.5281/zenodo.7825650</a></p>
-<p>John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus
-Döring, Renato Giovanni, Tim Robertson, David Vieglais (2012):<br />
-<strong>Darwin <span>Core</span>: <span>An Evolving Community-Developed
-Biodiversity Data Standard</span></strong>.<br />
-<em>PLOS ONE</em> <strong>7</strong>(1):e29715. <a
-href="https://doi.org/10.1371/journal.pone.0029715"
-class="uri">https://doi.org/10.1371/journal.pone.0029715</a></p>
-<p>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg,
-Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem
-Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman,
-Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier
-Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra
-Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey
-S. Grethe, Jaap Heringa, Peter A. C. ’t Hoen, Rob Hooft, Tobias Kuhn,
-Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons,
-Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene
-van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag,
-Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van
-der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter
-Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):<br />
-<strong>The <span>FAIR Guiding Principles</span> for scientific data
-management and stewardship</strong>.<br />
-<em>Scientific Data</em> <strong>3</strong>(1)<br />
-<a href="https://doi.org/10.1038/sdata.2016.18"
-class="uri">https://doi.org/10.1038/sdata.2016.18</a></p>
-<p>Mark D. Wilkinson, Susanna-Assunta Sansone, Grootveld Marjan,
-Josefine Nordling, Richard Dennis, David Hecker (2022):<br />
-<strong>FAIR Assessment Tools: Towards an "Apples to Apples"
-Comparisons</strong>.<br />
-EOSC FAIR Metrics subgroup<br />
-<em>Zenodo</em><br />
-<a href="https://doi.org/10.5281/zenodo.7463421"
-class="uri">https://doi.org/10.5281/zenodo.7463421</a></p>
-<p>Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight,
-Jeremy Logan, Patrick Widener, Matthew Wolf (2022):<br />
-<strong>F*** workflows: When parts of <span>FAIR</span> are
-missing</strong>.<br />
-<em>arXiv</em> 2209.09022 [cs.DL]<br />
-<a href="https://doi.org/10.48550/arxiv.2209.09022"
-class="uri">https://doi.org/10.48550/arxiv.2209.09022</a></p>
-<p>Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer,
-Christine Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas
-Blomberg, Gerhard Ecker, Carole Goble, Barend Mons (2012):<br />
-<strong>Open <span>PHACTS</span>: Semantic interoperability for drug
-discovery</strong>.<br />
-<em>Drug Discovery Today</em> <strong>17</strong>(21-22) (2012)<br />
-<a href="https://doi.org/10.1016/j.drudis.2012.05.016"
-class="uri">https://doi.org/10.1016/j.drudis.2012.05.016</a></p>
-<p>Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik
-Schultes (2019):<br />
-<strong>Digital objects as drivers towards convergence in data
-infrastructures</strong>.<br />
-<em>B2Share</em><br />
-<a
-href="https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11"
-class="uri">https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11</a></p>
-<p>Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman,
-Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal,
-Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer,
-Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert
-Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer
-Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp
-Wieder (2022):<br />
-<strong>FAIR digital object demonstrators 2021</strong>.<br />
-<em>Zenodo</em><br />
-<a href="https://doi.org/10.5281/zenodo.5872645"
-class="uri">https://doi.org/10.5281/zenodo.5872645</a></p>
-<p>Peter Wittenburg, et al (2023):<br />
-<strong>Canonical workflow frameworks for research</strong>.<br />
-<em>OSF</em><br />
-<a href="https://osf.io/3rekv/"
-class="uri">https://osf.io/3rekv/</a></p>
-<p>Katy Wolstencroft, Stuart Owen, Matthew Horridge, Olga Krebs,
-Wolfgang Mueller, Jacky L. Snoep, Franco du Preez, Carole Goble
-(2011):<br />
-<strong>RightField: Embedding ontology annotation in
-spreadsheets</strong>.<br />
-<em>Bioinformatics</em> <strong>27</strong>(14)<br />
-<a href="https://doi.org/10.1093/bioinformatics/btr312"
-class="uri">https://doi.org/10.1093/bioinformatics/btr312</a></p>
-<p>Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams,
-David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra
-Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex
-Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib
-Sufi, Carole Goble (2013):<br />
-<strong>The <span>Taverna</span> workflow suite: Designing and executing
-workflows of <span>Web Services</span> on the desktop, web or in the
-cloud</strong>.<br />
-<em>Nucleic Acids Research</em> <strong>41</strong>(W1)<br />
-<a href="https://doi.org/10.1093/nar/gkt328"
-class="uri">https://doi.org/10.1093/nar/gkt328</a></p>
-<p>David Wood, Richard Cyganiak, Markus Lanthaler (2014):<br />
-<strong>RDF 1.1 Concepts and Abstract Syntax</strong><br />
-<em>W3C Recommendation</em><br />
-<a href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/"
-class="uri">https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/</a></p>
-<p>Austin Wright, Henry Andrews, Ben Hutton, Greg Dennis (2022):<br />
-<strong>JSON schema: A media type for describing JSON
-documents</strong>.<br />
-<em>Internet Engineering Task Force</em><br />
-<a href="https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/"
-class="uri">https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/</a></p>
-<p>Apostolos Zarras (2004):<br />
-<strong>A <span>Comparison Framework</span> for <span>Middleware
-Infrastructures</span></strong>.<br />
-<em>The Journal of Object Technology</em> <strong>3</strong>(5)<br />
-<a href="https://doi.org/10.5381/jot.2004.3.5.a2"
-class="uri">https://doi.org/10.5381/jot.2004.3.5.a2</a></p>
+| Metamodel concept | FDO/DOIP concept                                             | Web/HTTP concept                                      |
+| :---------------- | :----------------------------------------------------------- | :---------------------------------------------------- |
+| Resource          | FDO/DO                                                       | Resource                                              |
+| Service           | DOIP service                                                 | Server/endpoint                                       |
+| Transaction       | (not supported)                                              | Conditional requests, `409 Conflict`                  |
+| Process           | Extended operations                                          | (primarily stateless), `100 Continue`, `202 Accepted` |
+| Operation         | DOIP Operation                                               | Method, query parameters                              |
+| Request           | DOIP Request                                                 | Request                                               |
+| Response          | DOIP Response                                                | Response                                              |
+| Message           | Segment, `requestId`                                         | Message, Representation                               |
+| Channel           | DOIP Transport protocol (e.g. TCP/IP, TLS). JSWS signatures. | TCP/IP, TLS, UDP                                      |
+| Protocol          | DOIP 2.0, ++                                                 | HTTP/1.1, HTTP/2, HTTP/3                              |
+| Link              | PID/Handle                                                   | URL                                                   |
+
+Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span> to equivalent concepts for FDO and Web. <span id="tbl:metamodel-concepts" label="tbl:metamodel-concepts">\[tbl:metamodel-concepts\]</span>
+
 </div>
 
+### Assessing FDO implementations
 
-<!--
+The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> sets out recommendations for FDO implementations. Note that the proposed update to FDO specification <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> clarifies these definitions with equivalent identifiers[<sup>9</sup>](#fn9) and relates them to further FDO requirements such as FDO Data Type Registries.
 
+In Table [\[tbl:fdo-checks\]](#tbl:fdo-checks) we evaluate completeness of the guidelines in two current FDO realizations, using DOIPv2 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> and using Linked Data Platform <span class="citation" data-cites="w3-ldp">(Speicher, Arwe, and Malhotra [2015](#ref-w3-ldp))</span>, as proposed by <span class="citation" data-cites="FDOFramework">Bonino da Silva Santos, Guizzardi, and Sales ([2022](#ref-FDOFramework))</span>.
 
-# Evaluating FAIR Digital Object and Linked Data as distributed object systems {#evaluating-fdo-ld}
-
-The FAIR principles [@Wilkinson; @2016] encourage sharing of scientific
-data with machine-readable metadata and the use of interoperable
-formats, and are being adapted by a wide range of research
-infrastructures. They have been widely recognised by the research
-community and policy makers as a goal to strive for. In particular, the
-European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted
-adaptation of FAIR data sharing of data resources across electronic
-research infrastructures [@monsCloudyIncreasinglyFAIR2017b]. The EOSC
-Interoperability Framework [@corchoEOSCInteroperabilityFramework2021b]
-puts particular emphasis on how interoperability can be achieved
-technically, semantically, organisationally, and legally -- laying out a
-vision of how data, publication, software and services can work together
-to form an ecosystem of rich digital objects.
-
-Specifically, the EOSC Interoperability framework highlights the
-emerging FAIR Digital Object (FDO) concept
-[@schultesFAIRPrinciplesDigital2019a] as a possible foundation for
-building a semantically interoperable ecosystem to fully realise the
-FAIR principles beyond individual repositories and infrastructures. The
-FDO approach has great potential, as it proposes strong requirements for
-identifiers, types, access and formalises interactive operations on
-objects.
-
-In other discourse, Linked Data [@bizerLinkedDataStory2009a] has been
-seen as an established set of principles based on Semantic Web
-technologies that can achieve the vision of the FAIR principles
-[@boninodasilvasantosFAIRDataPoints2016a; @hasnainAssessingFAIRData2018a].
-Yet regular researchers and developers of emerging platforms for
-computation and data management are reluctant to adapt such a FAIR
-Linked Data approach fully [@verborghSemanticWebIdentity2020a], opting
-instead for custom in-house models and JSON-derived formats from RESTful
-Web services
-[@merono-penuelaConclusionFutureChallenges2021a; @neumannAnalysisPublicREST2021a].
-While such focus on simplicity gives rapid development and highly
-specialised services, it raises wider concerns on interoperability
-[@turcoaneLinkedDataJSONLD2014a; @wilkinsonWorkflowsWhenParts2022b].
-
-One challenge that may, perhaps counter-intuitively, steer developers
-towards a not-invented-here mentality
-[@stefiDevelopersMakeUnbiased2015; @stefiDevelopReuseTwo2015a] when
-exposing their data on the Web is the heterogeneity and apparent
-complexity of Semantic Web approaches themselves
-[@merono-penuelaWebDataApis2021b].
-
-These approaches, thus, form two of the major avenues for allowing
-developers and the wider research community to achieve the goal of FAIR
-data. Given their importance, in this article, we aim to examine the
-relationships between FAIR and FAIR Digital Objects, contrasted with
-Linked Data and the Web in general.
-
-Concretely, the contribution of this paper is a systematic comparison
-between FDO and Linked Data using 5 different conceptual frameworks that
-capture different perspectives on interoperability and readiness for
-implementation.
-
-## Background and related work {#background}
-
-In the following, we discuss the related work with respect to FAIR
-Digital Objects and Linked Data. We do so by looking through the lens of
-development of these technologies over time, including future
-directions.
-
-The concept of **FAIR Digital Objects**
-[@schultesFAIRPrinciplesDigital2019a] has been introduced as way to
-expose research data as active objects that conform to the FAIR
-principles [@Wilkinson; @2016]. This builds on the *Digital Object* (DO)
-concept [@kahnFrameworkDistributedDigital2006b], first introduced in
-1995 [@kahnFrameworkDistributedDigital1995a] as a system of
-*repositories* containing *digital objects* identified by *handles* and
-described by *metadata* which may have references to other handles. DO
-was the inspiration for the ITU X.1255 framework
-[@x1255FrameworkDiscovery] which introduced an abstract *Digital Entity
-Interface Protocol* for managing such objects programmatically, first
-realised by the Digital Object Interface Protocol (DOIP)
-[@DigitalObjectInterface].
-
-In brief, the structure of a FAIR Digital Object (FDO) is to, given a
-*persistent identifier* (PID) such as a DOI, resolve to a *PID Record*
-that gives the object a *type* along with a mechanism to retrieve its
-*bit sequences*, *metadata* and references to further programmatic
-*operations*. The type of an FDO (itself an FDO) defines attributes to
-semantically describe and relate such FDOs to other concepts (typically
-other FDOs referenced by PIDs). The premise of systematically building
-an ecosystem of such digital objects is to give researchers a way to
-organise complex digital entities, associated with identifiers,
-metadata, and supporting automated processing
-[@wittenburgDigitalObjectsDrivers2019a].
-
-Recently, FDOs have been recognised by the European Open Science Cloud
-([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability
-Framework [@corchoEOSCInteroperabilityFramework2021b], in particular for
-deploying active and interoperable FAIR resources that are *machine
-actionable*. Development of the FDO concept continued within Research
-Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC
-projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set
-of guidelines for implementing FDO [@boninoFAIRDigitalObject]. The [FAIR
-Digital Objects Forum](https://fairdo.org/) has since taken over the
-maturing of FDO through focused working groups which have currently
-drafted several more detailed specification documents (see *Next steps
-for FDO* ).
-
-### FDO approaches
-
-FDO is an evolving concept. A set of FDO Demonstrators
-[@wittenburgFAIRDigitalObject2022b] highlight how current adapters are
-approaching implementations of FDO from different angles:
-
--   Building on the Digital Object concept, using the simplified DOIP
-    v2.0 [@foundationDigitalObjectInterface] specification, which detail
-    how to exchange JSON objects through a text-based protocol[^1]
-    (usually TCP/IP over TLS). The main DOIP operations are retrieving,
-    creating and updating digital objects. These are mostly realised
-    using the reference implementation [Cordra](https://cordra.org/).
-    FDO types are registered in the local Cordra instance, where they
-    are specified using JSON Schema [@Draftbhuttonjsonschema] and PIDs
-    are assigned using the Handle system. Several type registries have
-    been established.
-
--   Following the traditional Linked Data approach, but using the DOIP
-    protocol, e.g. using JSON-LD and schema.org within DOIP (NIST for
-    material science).
-
--   Approaching the FDO principles from existing Linked Data practices
-    on the Web (e.g. WorkflowHub use of RO-Crate and schema.org).
-
-From this it becomes apparent that there is a potentially large overlap
-between the goals and approaches of FAIR Digital Objects and Linked
-Data, which we'll cover .
-
-### Next steps for FDO {#next-step-fdo}
-
-The FAIR Digital Object Forum [@FAIRDigitalObjects] working groups have
-prepared detailed requirement documents [@fdo-Specs] setting out the
-path for realising FDOs, named *FDO Recommendations*. As of 2023-02-02,
-most of these documents are open for public review, while some are still
-in draft stages for internal review. As these documents clarify the
-future aims and focus of FAIR Digital Objects [@fdo-Roadmap], we provide
-their brief summaries below:
-
-**FAIR Digital Object Overview and Specifications** [@fdo-Overview] is a
-comprehensive overview of FAIR Digital Object specifications listed
-below. It serves as a primer that introduces FDO concepts and the
-remaining documents. It is accompanied by an FDO Glossary
-[@fdo-Glossary].
-
-The **FDO Forum Document Standards** [@fdo-DocProcessStd] documents the
-recommendation process within the forum, starting at *Working Draft*
-(WD) status within the closed working group and later within the open
-forum, then *Proposed Recommendation* (PR) published for public review,
-finalised as *FDO Forum Recommendation* (REC) following any revisions.
-In addition, the forum may choose to *endorse* existing third-party
-notes and specifications.
-
-The **FDO Requirement Specifications** [@fdo-RequirementSpec] is an
-update of [@boninoFAIRDigitalObject] as the foundational definition of
-FDO. This sets the criteria for classifying an digital entity as a FAIR
-Digital Object, allowing for multiple implementations. The requirements
-shown in Table
-[\[fdo-checks\]](#fdo-checks){reference-type="ref+page"
-reference="fdo-checks"} are largely equivalent, but in this
-specification clarified with references to other FDO documents.
-
-The **Machine actionability** [@fdo-MachineActionDef] sets out to define
-what is meant by *machine actionability* for FDOs. *Machine readable* is
-defined as elements of bit-sequences defined by structural
-specification, *machine interpretable* elements that can be identified
-and related with semantic artefacts, while *machine actionable* are
-elements with a type with operations in a symbolic grammar. The document
-largely describes requirements for resolving an FDO to metadata, and how
-types should be related to possible operations.
-
-**Configuration Types** [@fdo-ConfigurationTypes] classifies different
-granularities for organising FDOs in terms of PIDs, PID Records,
-Metadata and bit sequences, e.g. as a single FDO or several
-daisy-chained FDOs. Different patterns used by current DOIP deployments
-are considered, as well as FAIR Signposting
-[@vandesompelFAIRSignpostingProfile2022]
-
-**PID Profiles & Attributes** [@fdo-PIDProfileAttributes] specifies that
-PIDs must be formally associated with a *PID Profile*, a separate FDO
-that defines attributes required and recommended by FDOs following said
-profile. This forms the *kernel attributes*, building on recommendations
-from RDA's *PID Information Types* working group
-[@weigelRDARecommendationPID2018]. This document makes a clear
-distinction between a minimal set of attributes needed for PID
-resolution and FDO navigation, which needs to be part of the *PID
-Record* [@islam_2023], compared with a richer set of more specific
-attributes as part of the *metadata* for an FDO, possibly represented as
-a separate FDO.
-
-**Kernel Attributes & Metadata** [@fdo-KernelAttributes] elaborates on
-categories of FDO Mandatory, FDO Optional and Community Attributes,
-recommending kernel attributes like `dateCreated`, `ScientificDomain`,
-`PersistencePolicy`, `digitalObjectMutability`, etc. This document
-expands on RDA Recommendation on PID Kernel Information
-[@weigelRDARecommendationPID2018]. It is worth noting that both
-documents are relatively abstract and do not establish PIDs or
-namespaces for the kernel attributes.
-
-**Granularity, Versioning, Mutability** [@fdo-Granularity] considers how
-granularity decisions for forming FDOs must be agreed by different
-communities depending on their pragmatic usage requirements. The affect
-on versioning, mutability and changes to PIDs are considered, based on
-use cases and existing PID practices.
-
-**DOIP Endorsement Request** [@fdo-DOIPEndorsement] is an endorsement of
-the DOIP v2.0 [@foundationDigitalObjectInterface] specification as a
-potential FDO implementation, as it has been applied by several
-institutions [@wittenburgFAIRDigitalObject2022b]. The document proposes
-that DOIP shall be assessed for completeness against FDO -- in this
-initial draft this is justified as *"we can state that DOIP is compliant
-with the FDO specification documents in process"* (the documents listed
-above).
-
-**Upload of FDO** [@fdo-FDO-Upload] illustrates the operations for
-uploading an FDO to a repository, what checks it should do (for instance
-conformance with the PID Profile, if PIDs resolve). ResourceSync
-[@ResourceSyncFrameworkSpecification] is suggested as one type of
-service to list FDOs. This document highlights potential practices by
-repositories and their clients, without adding any particular
-requirements.
-
-**Typing FAIR Digital Objects** [@fdo-TypingFDOs] defines what *type*
-means for FDOs, primarily to enable machine actionability and to define
-an FDO's purpose. This document lays out requirements for how *FDO
-Types* should themselves be specified as FDOs, and how an *FDO Type
-Framework* allows organising and locating types. Operations applicable
-to an FDO is not predefined for a type, however operations naturally
-will require certain FDO types to work. How to define such FDO
-operations is not specified.
-
-**Implementation of Attributes, Types, Profiles and Registries**
-[@fdo-ImplAttributesTypesProfiles] details how to establish FDO
-registries for types and FDO profiles, with their association with PID
-systems. This document suggest policies and governance structures,
-together with guidelines for implementations, but without mandating any
-explicit technology choices. Differences in use of attributes are
-examplified using FDO PIDs for scientific instruments, and the proto-FDO
-approach of [DARIAH-DE](https://de.dariah.eu/)
-[@schwardmannTwoExamplesHow2022].
-
-It is worth pointing out at that, except for the DOIP endorsement, all
-of these documents are conceptual, in the sense that they permit any
-technical implementation of FDO, if used according to the
-recommendations. See bibliography
-[\[fdo-bibliography\]](#fdo-bibliography){reference-type="ref+page"
-reference="fdo-bibliography"} for the citation per document above.
-
-### From the Semantic Web to Linked Data {#ld}
-
-In order to describe *Linked Data* as it is used today, we'll start with
-an (opinionated) description of the evolution of its foundation, the
-*Semantic Web*.
-
-### A brief history of the Semantic Web {#semweb .unnumbered}
-
-The **Semantic Web** was developed as a vision by Tim Berners-Lee
-[@berners-leeWeavingWebOriginal1999], at a time that the Web had already
-become widely established for information exchange, being a global set
-of hypermedia documents which are cross-related using universal links in
-the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS,
-HTML, CSS, ECMAScript/JavaScript, media types) were standardised by
-[W3C](https://www.w3.org/standards/),
-[Ecma](https://www.ecma-international.org/),
-[IETF](https://www.ietf.org/standards/) and later
-[WHATWG](https://whatwg.org/). The goal of Semantic Web was to further
-develop the machine-readable aspects of the Web, in particular adding
-*meaning* (or semantics) to not just the link relations, but also to the
-*resources* that the URLs identified, and for machines thus being able
-to meaningfully navigate across such resources, e.g. to answer a
-particular query.
-
-Through W3C, the Semantic Web was realised with the Resource Description
-Framework (RDF) [@w3-rdf11-primer] that used *triples* of
-subject-predicate-object statements, with its initial serialisation
-format [@w3-rdf-syntax99] being RDF/XML (XML was at the time seen as a
-natural data-focused evolution from the document-centric SGML and HTML).
-
-While triple-based knowledge representations were not new
-[@stanczykProcessModellingInformation1987], the main innovation of RDF
-was the use of global identifiers in the form of URIs[^2] as the primary
-identifier of the *subject* (what the statement is about), *predicate*
-(relation/attribute of the subject) and *object* (what is pointed to).
-By using URIs not just for documents[^3], the Semantic Web builds a
-self-described system of types and properties, where the meaning of a
-relation can be resolved by following its hyperlink to the definition
-within a *vocabulary*. By applying these principles as well to any kind
-of resource that could be described at a URL, this then forms a global
-distributed Semantic Web.
-
-The early days of the Semantic Web saw fairly lightweight approaches
-with the establishment of vocabularies such as FOAF (to describe people
-and their affiliations) and Dublin Core (for bibliographic data).
-Vocabularies themselves were formalised using RDFS or simply as
-human-readable HTML web pages defining each term. The main approach of
-this *Web of Data* was that a URI identified a *resource* (e.g. an
-author) with a HTML *representation* for human readers, along with a RDF
-representation for machine-readable data of the same resource. By using
-*content negotiation* in HTTP[^4], the same identifier could be used in
-both views, avoiding `index.html` vs `index.rdf` exposure in the URLs.
-The concept of *namespaces* gave a way to give a group of RDF resources
-with the same URI base from a Semantic Web-aware service a common
-*prefix*, avoiding repeated long URLs.
-
-The mid-2000s saw large academic interest and growth of the Semantic
-Web, with the development of more formal representation system for
-ontologies, such as OWL [@w3-owl2-overview], allowing complex class
-hierarchies and logic inference rules following *open world* paradigm
-(e.g. a *ex:Parent* is equivalent to a subclass of *foaf:Person* which
-must *ex:hasChild* at least one *foaf:Person*, then if we know *:Alice a
-ex:Parent* we can infer *:Alice ex:hasChild \[a foaf:Person\]* even if
-we don't know who that child is). More human-readable syntaxes of RDF
-such as Turtle (shown in this paragraph) evolved at this time, and
-conferences such as [ISWC](https://iswc2022.semanticweb.org/)
-[@horrocksSemanticWebISWC2002] gained traction, with a large interest in
-knowledge representation and logic systems based on Semantic Web
-technologies evolving at the same time.
-
-Established Semantic Web services and standards include SPARQL
-[@w3-sparql11-overview] (pattern-based triple queries), [named
-graphs](https://www.w3.org/TR/rdf11-concepts/#section-dataset)
-[@w3-rdf11-concepts] (triples expanded to *quads* to indicate statement
-source or represent conflicting views), triple/quad stores (graph
-databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF
-libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib,
-RDF.rb, rdflib.js), and numerous graph visualisation (many of which
-struggle with usability for more than 20 nodes).
-
-The creation of RDF-based knowledge graphs grew particularly in fields
-like bioinformatics, e.g. for describing genomes and proteins
-[@gobleStateNationData2008c; @williamsOpenPHACTSSemantic2012c]. In
-theory, the use of RDF by the life sciences would enable
-interoperability between the many data repositories and support combined
-views of the many aspects of bio-entities -- however in practice most
-institutions ended up making their own ontologies and identifiers, for
-what to the untrained eye would mean roughly the same. One can argue
-that the toll of adding the semantic logic system of rich ontologies
-meant that small, but fundamental, differences in opinion (e.g. *should
-a gene identifier signify just the particular DNA sequence letters, or
-those letters as they appear in a particular position on a human
-chromosome?*) lead to large differences in representational granularity,
-and thus needed different identifiers.
-
-Facing these challenges, thanks to the use of universal identifiers in
-the form of URIs, *mappings* could retrospectively be developed not just
-between resources, but also across vocabularies. Such mappings can be
-expressed themselves using lightweight and flexible RDF vocabularies
-such as SKOS [@w3-skos-primer]
-(e.g. `dct:title skos:closeMatch schema:name` to indicate near
-equivalence of two properties). Automated ontology mappings have
-identified large potential overlaps (e.g. 372 definitions of `Person`)
-[@huHowMatchableAre2011a].
-
-The move towards *Open Science* data sharing practices did from the late
-2000s encourage knowledge providers to distribute collections of RDF
-descriptions as downloadable *datasets* [^5], so that their clients can
-avoid thousands of HTTP requests for individual resources. This enabled
-local processing, mapping and data integration across datasets
-(e.g. Open PHACTS [@grothAPIcentricLinkedData2014b]), rather than
-relying on the providers' RDF and SPARQL endpoints (which could become
-overloaded when handling many concurrent, complex queries).
-
-With these trends, an emerging problem was that adopters of the Semantic
-Web primarily utillised it as a set of graph technologies, with little
-consideration to existing Web resources. This meant that links stayed
-mainly within a single information system, with little URI reuse even
-with large term overlaps [@kamdarSystematicAnalysisTerm2017a]. Just like
-*link rot* affect regular Web pages and their citations from scholarly
-communication [@kleinScholarlyContextNot2014a], for a majority of
-described RDF resources in the [Linked Open
-Data](https://lod-cloud.net/) (LOD) Cloud's gathering of more than
-thousand datasets, unfortunately do not actually link to (still)
-downloadable (*dereferenceable*) Linked Data
-[@polleresMoreDecentralizedVision2020a]. Another challenge facing
-potential adopters is the plethora of choices, not just to navigate,
-understand and select to reuse the many possible vocabularies and
-ontologies [@carrieroLandscapeOntologyReuse2020a], but also
-technological choices on RDF serialisation (at least [7
-formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)),
-type system (RDFS [@w3-rdf-schema], OWL [@w3-owl2-overview], OBO
-[@tirmiziMappingOBOOWL2011a], SKOS [@w3-skos-primer]), hash vs slash,
-HTTP status codes and PID redirection strategies
-[@sauermannCoolURIsSemantic2011].
-
-### Linked Data: Rebuilding the Web of Data {#ld-web}
-
-The **Linked Data** concept [@bizerLinkedDataStory2009a] was kickstarted
-as a set of best practices [@LinkedDataDesign] to bring the Web aspect
-back into focus. Crucially to Linked Data is the *reuse of existing
-URIs*, rather than making new identifiers. This means a loosening of the
-semantic restrictions previously applied, and an emphasis on building
-navigable data resources, rather than elaborate graph representations.
-
-Vocabularies like [schema.org](https://schema.org/) evolved not long
-after, intended for lightweight semantic markup of existing Web pages,
-primarily to improve search engines' understanding of types and embedded
-data. In addition to several such embedded *microformats*
-[@OpenGraphProtocol; @w3-rdfa-primer; @HTMLStandard] or we find JSON-LD
-[@w3-json-ld] as a Web-focused RDF serialisation that aims for improved
-programmatic generation and consumption, including from Web
-applications. JSON-LD is as of 2023-05-18 used[^6] by 45% of the top 10
-million websites [@UsageStatisticsJSONLD].
-
-Recently there has been a renewed emphasis to improve the *Developer
-Experience* [@DesigningLinkedData2018] for consumption of Linked Data,
-for instance RDF Shapes -- expressed in SHACL [@w3-shacl] or ShEx
-[@ShapeExpressionsShEx] -- can be used to validate RDF Data
-[@gayoValidatingRDFData2017a; @thorntonUsingShapeExpressions2019a]
-before consuming it programmatically, or reshaping data to fit other
-models. While a varied set of tools for Linked Data consumptions have
-been identified, most of them still require developers to gain
-significant knowledge of the underlying Semantic Web technologies, which
-hampers adaption by non-LD experts [@klimekSurveyToolsLinked2019a],
-which then tend to prefer non-semantic two-dimensional formats such as
-CSV files.
-
-A valid concern is that the Semantic Web research community has still
-not fully embraced the Web, and that the "final 20%" engineering effort
-is frequently overlooked in favour of chasing new trends such as Big
-Data and AI, rather than making powerful Linked Data technologies
-available to the wider groups of Web developers
-[@verborghSemanticWebIdentity2020a]. One bridging gap here by the Linked
-Data movement has been "linked data by stealth" approaches such as
-structured data entry spreadsheets powered by ontologies
-[@wolstencroftRightFieldEmbeddingOntology2011b], the use of Linked Data
-as part of REST Web APIs [@pageRESTLinkedData2011], and as shown by the
-big uptake by publishers to annotate the Web using schema.org
-[@bernsteinNewLookSemantic2016a], with vocabulary use patterns
-documented by copy-pastable JSON-LD examples, rather than by formalised
-ontologies or developer requirements to understand the full Semantic Web
-stack.
-
-## Method {#method}
-
-### Comparing FDO and existing approaches {#comparing}
-
-Our main motivation for this article is to investigate how the promises
-of FAIR Digital Objects may differ from the learnt experiences of Linked
-Data and the Web. We also reflect back from FDO's motivation of
-machine-actionability to consider the Web as a distributed computational
-system.
-
-To better understand the relationship between the FDO framework and
-other exisiting approaches, we use the following for analysis:
-
-1.  An Interoperability Framework and Distributed Platform for Fast Data
-    Applications [@delgadoInteroperabilityFrameworkDistributed2016a],
-    which proposes quality measurements for comparing how frameworks
-    support interoperability, particularly from a service architectural
-    view.
-
-2.  The FAIR Digital Object guidelines [@boninoFAIRDigitalObject],
-    validated against its current implementations for completeness.
-
-3.  A Comparison Framework for Middleware Infrastructures
-    [@zarrasComparisonFrameworkMiddleware2004a], which suggest
-    dimensions like openness, performance and transparency, mainly
-    focused on remote computational methods.
-
-4.  Cross-checks against RDA's FAIR Data Maturity Model
-    [@bahimFAIRDataMaturity2020a] to find how the FAIR principles are
-    achieved in FDO, in particular considering access, sharing and
-    openness.
-
-5.  EOSC Interoperability Framework
-    [@corchoEOSCInteroperabilityFramework2021b] which gives
-    recommendations for technical, semantic, organisational and legal
-    interoperability, particularly from a metadata perspective.
-
-The reason for this wide-ranged comparison is to exercise the different
-dimensions that together form FAIR Digital Objects: Data, Metadata,
-Service, Access, Operations, Computation. We have left out further
-comparisons on type systems, persistent identifiers and social aspects
-as principles and practices within these dimensions are still taking
-form within the FDO community (as detailed ).
-
-Some of these frameworks invite a comparison on a conceptual level,
-while others relate better to implementations and current practices. For
-these we consider FAIR Digital Objects and the Web conceptually, and for
-implementations we contrast between the main FDO realisation using the
-DOIPv2 protocol [@foundationDigitalObjectInterface] against Linked Data
-in general practice.
-
-### Considering FDO/Web as interoperability framework for Fast Data {#interoperability-compare}
-
-The Interoperability Framework for Fast Data Applications
-[@delgadoInteroperabilityFrameworkDistributed2016a] categorises
-interoperability between applications along 6 strands, covering
-different architectural levels: from *symbiotic* (agreement to
-cooperate) and *pragmatic* (ability to choreograph processes), through
-*semantic* (common understanding) and *syntactic* (common message
-formats), to low-level *connective* (transport-level) and
-*environmental* (deployment practices).
-
-We have chosen to investigate using this framework as it covers the
-higher levels of the OSI Model
-[@stallingsHandbookComputercommunicationsStandards1990] better with
-regards to automated machine-to-machine interaction (and thus
-interoperability), which is a crucial aspect of the FAIR principles. In
-Table
-[\[fdo-web-interoperability-framework\]](#fdo-web-interoperability-framework){reference-type="ref+page"
-reference="fdo-web-interoperability-framework"} we use the
-interoperability framework to compare the current FAIR Digital Object
-approach against the Web and its Linked Data practices.
-
-::: {#fdo-web-interoperability-framework}
-  *Quality*                                                                                                            FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Web w/ Linked Data
-  -------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  *Quality*                                                                                                            FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Web w/ Linked Data
-  **Symbiotic**: *to what extent multiple applications can agree to interact, align, collaborate or cooperate*         The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.                                                                               The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs [@fieldingArchitecturalStylesDesign2000a] end up being mandated centrally by dominant (often commercial) providers [@fieldingReflectionsRESTArchitectural2017a], and the clients are required to use each API as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.
-  **Pragmatic**: *using interaction contracts so processes can be choreographed in workflows*                          FDO types and operations enable detailed choreography (Canonical Workflow Frameworks for Research [@cwfr]). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of "specifics" (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with `0.DOIP/OperationReference`).                                                                                      "Follow your nose" crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 [@OpenAPISpecificationV3], schema.org Actions [@SchemaOrgActions], WSDL/SOAP [@w3-wsdl20-primer], but frequently just as human-readable developer documentation/examples.
-  **Semantic**: *ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies*   FDO semantic enable navigation and typing. Every FDO has a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC [PID-InfoType for Model](https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6). No single type semantic, Type FDOs can link to existing vocabularies & ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) [@wittenburgFAIRDigitalObject2022b]                                        Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.
-  **Syntactic**: *serialising messages for digital exchange, structure representation*                                 DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.                                                                                                                                                                                                                                                                                                                                                                        Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.
-  **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*                     DOIP [@foundationDigitalObjectInterface] is transport-independent, commonly TLS TCP/IP port 9000), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html)                                                                                                                                                                                                                                                                                                                HTTP/1.1 (TCP/IP port 80), HTTP/1.1+TLS (TCP/IP 443), HTTP/2 (as HTTP/1\* but binary), HTTP/3 (like HTTP/2+TLS but UDP)
-  **Environmental**: *how applications are deployed and affected by its environment, portability*                      Main DOIP implementation is [Cordra](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).   HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to (for static content) multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.
-
-  : Considering FDO and Web according to the quality levels of the
-  Interoperability Framework for Fast Data
-  [@delgadoInteroperabilityFrameworkDistributed2016a].
-:::
-
-Based on the analysis shown in Table
-[1](#fdo-web-interoperability-framework){reference-type="ref"
-reference="fdo-web-interoperability-framework"}, we draw the
-following conclusions:
-
-The Web has already showed us how one can compose workflows of
-hetereogeneous Web Services [@wolstencroftTavernaWorkflowSuite2013d].
-However, this is mostly done via developer or human interaction
-[@lamprechtPerspectivesAutomatedComposition2021b]. Similiarly, FDO does
-not enable automatic composition because operation semantics are not
-well defined. There is a question as to whether the extebsuve
-documentation and broad developer usage that is available for Web APIs
-could potentially be utillised for FDO.
-
-A difference between Web technologies and FDO is the stringency of the
-requirements for both syntax and semantics. Whereas the Web allows many
-different syntactic formats (e.g. from HTML to XML, PDFs), FDO realised
-with DOIP requires JSON. On the semantic front, FDO mandates that every
-object have a well-defined type and structured form. This is clearly not
-the case on the Web.
-
-In terms of connectivity and the deployment of applications, the Web has
-a plethora of software, services, and protocols that are widely
-deployed. These have shown interoperability. The Web standards bodies
-(e.g. IETF and W3C) follow the OpenStand principles
-[@ModernStandardsParadigm] to embrace openness, transparency, and broad
-consensus. In contrast, FDO has a small number of implementations and
-corresponding protocols, although with a growing community, as evidenced
-at the first international FDO conference
-[@looFirstInternationalConference2022]. This is not to say that it is
-not worth developing further Handle+DOIP implementations in the future,
-but we note that the current FDO functionality can easily be implemented
-using Web technologies, even as DOIP-over-HTTP [@DOIPAPIHTTPa].
-
-It's also a question as to whether a highly constrained protocol
-revolving around persistent identifiers is in fact necessary. For
-example, DOIs are mostly resolved on the web
-[@DOIResolutionDocumentation] using HTTP redirects with the common
-`https://doi.org/` prefix, hiding their Handle nature as an
-implementation detail [@DOIHandbookResolution].
-
-### Mapping of Metamodel concepts
-
-The Interoperability Framework for Fast Data also provides a brief
-*metamodel* which we use in Table
-[\[metamodel-concepts\]](#metamodel-concepts){reference-type="ref+page"
-reference="metamodel-concepts"} to map and examplify corresponding
-concepts in FDO's DOIP realization and the Web using HTTP semantics
-[@rfc9110].
-
-From this mapping we can identify the conceptual similarities between
-DOIP and HTTP, often with common terminology. Notable are that neither
-DOIP or HTTP have strong support for transactions (explored further ),
-as well that HTTP has poor direct support for processes, as the Web is
-primarily stateless by design.
-
-::: {#metamodel-concepts}
-  Metamodel concept   FDO/DOIP concept                                               Web/HTTP concept
-  ------------------- -------------------------------------------------------------- -------------------------------------------------------
-  Resource            FDO/DO                                                         Resource
-  Service             DOIP service                                                   Server/endpoint
-  Transaction         (not supported)                                                Conditional requests, `409 Conflict`
-  Process             Extended operations                                            (primarily stateless), `100 Continue`, `202 Accepted`
-  Operation           DOIP Operation                                                 Method, query parameters
-  Request             DOIP Request                                                   Request
-  Response            DOIP Response                                                  Response
-  Message             Segment, `requestId`                                           Message, Representation
-  Channel             DOIP Transport protocol (e.g. TCP/IP, TLS). JSWS signatures.   TCP/IP, TLS, UDP
-  Protocol            DOIP 2.0, ++                                                   HTTP/1.1, HTTP/2, HTTP/3
-  Link                PID/Handle                                                     URL
-
-  : Mapping the Metamodel concepts from the Interoperability Framework
-  for Fast Data [@delgadoInteroperabilityFrameworkDistributed2016a] to
-  equivalent concepts for FDO and Web.
-:::
-
-### Assessing FDO implementations {#doip-fdo-compare}
-
-The FAIR Digital Object guidelines [@boninoFAIRDigitalObject] sets out
-recommendations for FDO implementations. In Table
-[\[fdo-checks\]](#fdo-checks){reference-type="ref+page"
-reference="fdo-checks"} we evaluate the two current implementations,
-using DOIPv2 [@foundationDigitalObjectInterface] and using Linked Data
-Platform [@w3-ldp], as proposed by [@FDOFramework].
-
-::: landscape
-::: small
-::: {#fdo-checks}
-  **FDO Guideline**                                  DOIP 2.0                                                                                                                                                                                                                                                                 FDO suggestions                                                                                                                                                                               Linked Data Platform                                                                                                                                                    LDP suggestion
-  -------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **FDO Guideline**                                  DOIP 2.0                                                                                                                                                                                                                                                                 FDO suggestions                                                                                                                                                                               Linked Data Platform                                                                                                                                                    LDP suggestion
-  G1: *invest for many decades*                      Handle system stable for 20 years, DOIP 2.0 since 2017.                                                                                                                                                                                                                  Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced                                                                                                                 HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs replaced by `https://`.                                                                             Keep flexibility of RDF serialisation formats which may change more frequently
-  G2: *trustworthiness*                              DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.                                                                                                                                   Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.                                                   JSON-LD used by half of all websites [@UsageStatisticsJSONLD], however previous bad experiences with Semantic Web may deter adopters                                    Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.
-  G3: *follows FAIR principles*                      See Table [\[fair-data-maturity-model\]](#fair-data-maturity-model){reference-type="ref+page" reference="fair-data-maturity-model"}                                                                                                                          Ensure all FAIR principles are covered, build complete examples.                                                                                                                              Touched briefly, see Table [\[fair-data-maturity-model\]](#fair-data-maturity-model){reference-type="ref+page" reference="fair-data-maturity-model"}        Add explicit expression to show each FAIR pcinciple fulfilled.
-  G4: *machine actionability*                        CRUD and extension operations dynamically listed (see Table [\[fdo-web-middleware\]](#fdo-web-middleware){reference-type="ref+page" reference="fdo-web-middleware"})                                                                                         Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).                                      HTTP CRUD operations, Open API (see Table [\[fdo-web-middleware\]](#fdo-web-middleware){reference-type="ref+page" reference="fdo-web-middleware"})          Document operations so client can make subsequent HTTP calls.
-  G5: *abstraction principle*                        Handle PIDs as abstraction base. DOIP operations can use any transport protocol.                                                                                                                                                                                         Document transport protocols as FDOs, recommend which transport to use.                                                                                                                       URI as abstraction base. Does not specify PID requirements.                                                                                                             Give stronger deployment recommendations.
-  G6: *stable binding between entities*              Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text.                                                                                                                                                   Make datatype of fields explicit to support navigation.                                                                                                                                       Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text.               
-  G7: *encapsulation*                                Operations discovered at runtime (`0.DOIP/Op.ListOperations`).                                                                                                                                                                                                           Allow method discovery by type FDOs in advance (see PR-TypingFDOs-2.0-20220608).                                                                                                              HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.      Declare supported methods in advance, e.g. OpenAPI [@OpenAPISpecificationV3]
-  G8: *technology independence*                      In theory independent, in reality depends on single implementations of Handle system and DOIP                                                                                                                                                                            Encourage open source DOIP testbeds and lighter reference implementations                                                                                                                     Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.                                                                                   Develop demonstrator of FDOF usage based on existing LDP server.
-  G9: *standard compliance*                          Handle [@rfc3650], DOIP [@foundationDigitalObjectInterface]. FDO requirements not standardised yet.                                                                                                                                                                      Formalise standard process of FDO requirements [@fdo-DocProcessStd]                                                                                                                           HTTP, LDP. FDOF not yet standardised                                                                                                                                    Formalise FDOF from FDOF-SEM working group
-  FDOF1: *PID as basis*                              Extensive use of Handle system.                                                                                                                                                                                                                                          Clarify how local testing handles can be used during development, how "temporary" FDOs should evolve [@fdo-PIDProfileAttributes]. Register `0.DOIP/*` and `0.FDO/*` as PIDs.                  HTTP URLs as basis for identifiers, but they are frequently not persistent.                                                                                             Add strong guidance for PID services like w3id and persistence policies.
-  FDOF2: *PID record w/ type*                        Unspecified how to resolve from Handle to DOIP Service (!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA`                                                                                                                                          Document requirements for PID Record                                                                                                                                                          w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.                                                       Add FAIR Signposting at PID provider for minimal PID record
-  FDOF3: *PID resolvable to bytestream & metadata*   Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.       Clarify expectations for multiple items. Recommend chunks to not be used.                                                                                                                     URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.                                                                                      Add FAIR Signposting and preference order.
-  FDOF4: *Additional attributes*                     Freetext attribute keys. Attributes should be defined for FDO type (?).                                                                                                                                                                                                  Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.                                                     All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.                                                            Clarify type expectations of required/recommended/optional attributes.
-  FDOF5: *Interface: operation by PID*               Extended operations use PID, but "pid-like" DOIP operations/types are not registered as handles.                                                                                                                                                                         Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly.                                                                                        CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations.                                                               Specify how additional operations should be called over HTTP.
-  FDOF6: *CRUD operations + extensions*              `0.DOIP/Op.Create`, `Op.Retrieve`, `Op.Update`, `Op.Delete` but also `0.DOIP/Op.Search`.                                                                                                                                                                                 Document                                                                                                                                                                                      `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, `HEAD` -- extension operations (e.g. WebDAV `COPY`) not used, resource patterns [@martinekuanWebAPIDesign] are used instead.   Document how operation resources can be discovered from an LPD container. Document search API.
-  FDOF7: *FDOF Types related to operations*          Not yet formalised, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open.                                                                                                                                                                Add explicit relation between type and operations                                                                                                                                             `OPTIONS` per LDP Resource, but not by type. Common types (`ldp:Resource`, `ldp:Container`) indicate LDP support, but are not required.                                 Always make LDP types explicit in FDO profile.
-  FDOF8: *Metadata as FDO, semantic assertions*      DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property.                                                                                                                                                                                    Specify a `0.FDO/metadata` or similar to point to Metadata FDOs.                                                                                                                              Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, `rdfs:seeAlso` is common.                          Use FAIR Signposting `describedby` link relation to additional metadata PIDs
-  FDOF9: *Different metadata levels*                 Defines open-ended "Response Attributes" without namespaces, but mandated as "None" for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (need FDOF8?).   Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately.   Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.                      Define how to navigate to alternate views and their semantic implications, e.g. `owl:sameAs`
-  FDOF10: *Metadata schemas by community*            Metadata schemas are in practice managed on single CORDA server as local types, using JSON Schema.                                                                                                                                                                       Require types to be FDOs with registered PIDs, implement shared types.                                                                                                                        Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. [OBO Foundry](https://obofoundry.org/) [@smithOBOFoundryCoordinated2007a]          Rather document better how individual ad-hoc schemas can be started for prototypes.
-  FDOF11: *FDO collections w/ semantic relations*    Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. [@DataInformationView]).                                                                                                                                                                                                                                                                                                                                                         LDP Containers required by specification, also user-created (eg. `BasicContainer`).                                                                                     Clarify relation to other collections like DCAT 3 [@w3-vocab-dcat-3], [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE [@ORESpecificationAbstract]
-  FDOF12: *Deleted FDO preserve PID w/ tombstone*    Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish "Not Found" or "Gone"                                                                                                                                             Formalise tombstone requirements with new FDO type                                                                                                                                            `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialisation                                                                          Formalise tombstone requirements and serialisation
-
-  : Checking FDO guidelines
-  [@boninoFAIRDigitalObject; @fdo-RequirementSpec] against its current
-  implementations as DOIP [@foundationDigitalObjectInterface] and Linked
-  Data Platform (LDP) [@FDOFramework], with suggestions for required
-  additions.
-:::
-:::
-:::
-
-Note that the draft update to FDO specification [@fdo-RequirementSpec]
-clarifies these definitions with equivalent identifiers[^7] and relates
-them to further FDO requirements such as FDO Data Type Registries.
-
-A key observation from this is that simply using DOIP does not achieve
-many of the FDO guidelines. Rather the guidelines set out how a protocol
-like DOIPs should be used to achieve FAIR Digital Object goals. The DOIP
-Endorsement [@fdo-DOIPEndorsement] sets out that to comply, DOIP must be
-used according to the set of FDO requirement documents (details ), and
-notes *Achieving FDO compliance requires more than DOIP and full
-compliance is thus left to system designers*. Likewise, a Linked Data
-approach will need to follow the same requirements to comply as an FDO
-implementation.
+A key observation from this is that simply using DOIP does not achieve many of the FDO guidelines. Rather the guidelines set out how a protocol like DOIPs should be used to achieve FAIR Digital Object goals. The DOIP Endorsement <span class="citation" data-cites="fdo-DOIPEndorsement">(Ulrich Schwardmann et al. [2022](#ref-fdo-DOIPEndorsement))</span> set out that to comply, DOIP must be used according to the set of FDO requirement documents (details ), and notes *Achieving FDO compliance requires more than DOIP and full compliance is thus left to system designers*. Likewise, a Linked Data approach will need to follow the same requirements to actually comply as an FDO implementation.
 
 From our evaluation, we can observe:
 
--   G1 and G2 call for stability and trustworthiness. While the
-    foundations of both DOIP and Linked Data approaches are now well
-    established -- the FDO requirements and in particular how they can
-    be implemented are still taking shape and subject to change.
+  - G1 and G2 call for stability and trustworthiness. While the foundations of both DOIP and Linked Data approaches are now well established – the FDO requirements and in particular how they can be implemented are still taking shape and subject to change.
 
--   Machine actionability (G4, G6) is a core feature of both FDOs and
-    Linked Data. Conceptually they differ in the which way types and
-    operations are discovered, with FDO seemingly more rigorous. In
-    practice, however, we see that DOIP also relies on dynamic discovery
-    of operations and that operation expectations for types (FDOF7) have
-    not yet been defined.
+  - Machine actionability (G4, G6) is a core feature of both FDOs and Linked Data. Conceptually they differ in the which way types and operations are discovered, with FDO seemingly more rigorous. In practice, however, we see that DOIP also relies on dynamic discovery of operations and that operation expectations for types (FDOF7) have not yet been defined.
 
--   FDO proposes that types can have additional operations beyond CRUD
-    (FDOF5, FDOF6), while Linked Data mainly achieves this with RESTful
-    patterns using CRUD on additional resources, e.g. `order/152/items`.
-    These are mainly stylistics but affect the architectural view --
-    FDOs have more of an object-oriented approach.
+  - FDO proposes that types can have additional operations beyond CRUD (FDOF5, FDOF6), while Linked Data mainly achieves this with RESTful patterns using CRUD on additional resources, e.g. `order/152/items`. These are mainly stylistics but affect the architectural view – FDOs have more of an object-oriented approach.
 
--   FDO puts strong emphasis on the use of PIDs (FDOF1, FDOF2, FDOF3,
-    FDOF5), but in current practice DOIP use local types, local extended
-    operations (FDOF5) and attributes (FDOF4) that are not bound to any
-    global namespace.
+  - FDO puts strong emphasis on the use of PIDs (FDOF1, FDOF2, FDOF3, FDOF5), but in current practice DOIP use local types, local extended operations (FDOF5) and attributes (FDOF4) that are not bound to any global namespace.
 
--   Linked Data have a strong emphasis on semantics (FDOF8), and
-    metadata schemas developed by community agreements (FDOF10). FDO
-    types need to be made reusable across servers.
+  - Linked Data have a strong emphasis on semantics (FDOF8), and metadata schemas developed by community agreements (FDOF10). FDO types need to be made reusable across servers.
 
--   While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in
-    practice this is not found (or linked with custom keys),
-    particularly due to lack of namespaces and the favouring of local
-    types rather than type/property re-use. Linked Data frequently have
-    multiple representations, but often not sufficiently linked, perhaps
-    `prov:specializationOf` [@w3-prov-o]
+  - While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in practice this is not found (or linked with custom keys), particularly due to lack of namespaces and the favouring of local types rather than type/property re-use. Linked Data frequently have multiple representations, but often not sufficiently linked (link relation `alternate` <span class="citation" data-cites="rfc8288">(Nottingham [2017](#ref-rfc8288))</span>) or related (`prov:specializationOf` from <span class="citation" data-cites="w3-prov-o">Lebo, McGuinness, and Sahoo ([2013](#ref-w3-prov-o))</span>).
 
--   FDO collections are not yet defined for DOIP, while Linked Data
-    seemingly have too many alternatives, LDP has specific native
-    support for containers.
+  - FDO collections are not yet defined for DOIP, while Linked Data seemingly have too many alternatives. LDP has specific native support for containers.
 
--   Tombstones for deleted resources are not well supported, nor
-    specified, for either approach, although the continued availability
-    of metadata when data is removed is a requirement for FAIR
-    principles (see RDA-A2-01M in Table
-    [\[RDA-A2-01M\]](#RDA-A2-01M){reference-type="ref+page"
-    reference="RDA-A2-01M"}).
+  - Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (see RDA-A2-01M in Table [\[RDA-A2-01M\]](#RDA-A2-01M)).
 
--   DOIP supports multiple chunks of data for an object (FDOF3), while
-    Linked Data can support content-negotiation. In either case it can
-    be unclear to clients what is the meaning or equivalence of any
-    additional chunks.
+  - DOIP supports multiple chunks of data for an object (FDOF3), while Linked Data can support content-negotiation. In either case it can be unclear to clients what is the meaning or equivalence of any additional chunks.
 
-### Comparing FDO and Web as middleware infrastructures {#middleware}
+<div id="tbl:fdo-checks">
 
-In this section we take the perspective that FDO principles are in
-effect proposing a global infrastructure of machine-actionable digital
-objects. As such we can consider implementations of FDO as **middleware
-infrastructures** for programmatic usage, and can evaluate them based on
-expectations for client and server developers.
+| **FDO Guideline**                                | DOIP 2.0                                                                                                                                                                                                                                                                                                                                          | FDO suggestions                                                                                                                                                                                                                                                                   | Linked Data Platform                                                                                                                                                                                                                                               | LDP suggestion                                                                                                                                                                                                                                                                                                                                                  |
+| :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FDO Guideline**                                | DOIP 2.0                                                                                                                                                                                                                                                                                                                                          | FDO suggestions                                                                                                                                                                                                                                                                   | Linked Data Platform                                                                                                                                                                                                                                               | LDP suggestion                                                                                                                                                                                                                                                                                                                                                  |
+| G1: *invest for many decades*                    | Handle system stable for 20 years, DOIP 2.0 since 2017.                                                                                                                                                                                                                                                                                           | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced                                                                                                                                                                                                     | HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs mostly replaced by `https://`.                                                                                                                                                                 | Keep flexibility of RDF serialisation formats which may change more frequently                                                                                                                                                                                                                                                                                  |
+| G2: *trustworthiness*                            | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.                                                                                                                                                                                                            | Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.                                                                                                                                       | JSON-LD used by half of all websites <span class="citation" data-cites="UsageStatisticsJSONLD">(W3Techs [n.d.](#ref-UsageStatisticsJSONLD))</span>, however previous bad experiences with Semantic Web may deter adopters                                          | Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.                                                                                                                                                                                                                                                       |
+| G3: *follows FAIR principles*                    | See Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model)                                                                                                                                                                                                                                                                       | Ensure all FAIR principles are covered, build complete examples.                                                                                                                                                                                                                  | Touched briefly, see Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model)                                                                                                                                                                       | Add explicit expression to show each FAIR principle fulfilled.                                                                                                                                                                                                                                                                                                  |
+| G4: *machine actionability*                      | CRUD and extension operations dynamically listed (see Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware))                                                                                                                                                                                                                                | Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).                                                                                                                          | HTTP CRUD operations, Open API (see Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware))                                                                                                                                                                   | Document operations so client can make subsequent HTTP calls.                                                                                                                                                                                                                                                                                                   |
+| G5: *abstraction principle*                      | Handle PIDs as abstraction base. DOIP operations can use any transport protocol.                                                                                                                                                                                                                                                                  | Document transport protocols as FDOs, recommend which transport to use.                                                                                                                                                                                                           | URI as abstraction base. Does not specify PID requirements.                                                                                                                                                                                                        | Give stronger deployment recommendations.                                                                                                                                                                                                                                                                                                                       |
+| G6: *stable binding between entities*            | Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text.                                                                                                                                                                                                                            | Make datatype of fields explicit to support navigation.                                                                                                                                                                                                                           | Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text.                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                 |
+| G7: *encapsulation*                              | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).                                                                                                                                                                                                                                                                                    | Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span>.                                                                              | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.                                                                                                 | Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>                                                                                                                                                                                        |
+| G8: *technology independence*                    | In theory independent, in reality depends on single implementations of Handle system and DOIP                                                                                                                                                                                                                                                     | Encourage open source DOIP testbeds and lighter reference implementations                                                                                                                                                                                                         | Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.                                                                                                                                                                              | Develop demonstrator of FDOF usage based on existing LDP server.                                                                                                                                                                                                                                                                                                |
+| G9: *standard compliance*                        | Handle <span class="citation" data-cites="rfc3650">(Sun, Lannom, and Boesch [2003](#ref-rfc3650))</span>, DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>. FDO requirements not standardised yet. | Formalise standard process of FDO requirements <span class="citation" data-cites="fdo-DocProcessStd">(C. Weiland et al. [2022](#ref-fdo-DocProcessStd))</span>                                                                                                                    | HTTP, LDP. However FDOF is not yet standardised.                                                                                                                                                                                                                   | Formalise FDOF from FDOF-SEM working group.                                                                                                                                                                                                                                                                                                                     |
+| FDOF1: *PID as basis*                            | Extensive use of Handle system.                                                                                                                                                                                                                                                                                                                   | Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. [2022](#ref-fdo-PIDProfileAttributes))</span>. Register `0.DOIP/*` and `0.FDO/*` as actual PIDs. | HTTP URLs as basis for identifiers, but they are frequently not persistent.                                                                                                                                                                                        | Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">(McMurry et al. [2017](#ref-McMurry_2017))</span>.                                                                                                                                                                                     |
+| FDOF2: *PID record w/ type*                      | Unspecified how to resolve from Handle to DOIP Service (\!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA`                                                                                                                                                                                                                  | Document requirements for PID Record                                                                                                                                                                                                                                              | w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.                                                                                                                                                  | Add FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span> at PID provider for minimal PID record                                                                                                                                          |
+| FDOF3: *PID resolvable to bytestream & metadata* | Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.                                                                                | Clarify expectations for multiple items. Recommend chunks to not be used.                                                                                                                                                                                                         | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.                                                                                                                                                                                 | Add FAIR Signposting and preference order.                                                                                                                                                                                                                                                                                                                      |
+| FDOF4: *Additional attributes*                   | Freetext attribute keys. Attributes should be defined for FDO type.                                                                                                                                                                                                                                                                               | Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.                                                                                                                                         | All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.                                                                                                                                                       | Clarify type expectations of required/recommended/optional attributes.                                                                                                                                                                                                                                                                                          |
+| FDOF5: *Interface: operation by PID*             | Extended operations use PID, but “pid-like” DOIP operations/types are not registered as handles.                                                                                                                                                                                                                                                  | Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly.                                                                                                                                                                            | CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations.                                                                                                                                                          | Specify how additional operations should be called over HTTP.                                                                                                                                                                                                                                                                                                   |
+| FDOF6: *CRUD operations + extensions*            | `0.DOIP/Op.Create`, `Op.Retrieve`, `Op.Update`, `Op.Delete` but also `0.DOIP/Op.Search`.                                                                                                                                                                                                                                                          | Document                                                                                                                                                                                                                                                                          | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, `HEAD` – extension operations (e.g. WebDAV `COPY`) not used, resource patterns <span class="citation" data-cites="martinekuanWebAPIDesign">(Ekuan et al. [2023](#ref-martinekuanWebAPIDesign))</span> are used instead.   | Document how operation resources can be discovered from an LPD container. Document search API.                                                                                                                                                                                                                                                                  |
+| FDOF7: *FDOF Types related to operations*        | Not yet formalised, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open.                                                                                                                                                                                                                                         | Add explicit relation between type and operations                                                                                                                                                                                                                                 | `OPTIONS` per LDP Resource, but not by type. Common types (`ldp:Resource`, `ldp:Container`) indicate LDP support, but are not required.                                                                                                                            | Always make LDP types explicit in FDO profile.                                                                                                                                                                                                                                                                                                                  |
+| FDOF8: *Metadata as FDO, semantic assertions*    | DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property.                                                                                                                                                                                                                                                             | Specify a `0.FDO/metadata` or similar to point to Metadata FDOs.                                                                                                                                                                                                                  | Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, `rdfs:seeAlso` is common.                                                                                                                     | Use FAIR Signposting `describedby` link relation to additional metadata PIDs                                                                                                                                                                                                                                                                                    |
+| FDOF9: *Different metadata levels*               | Defines open-ended “Response Attributes” without namespaces, but mandated as “None” for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (may need FDOF8).                                                                         | Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately.                                                                                       | Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.                                                                                                                 | Define how to navigate to alternate views and their semantic implications, e.g. `owl:sameAs`                                                                                                                                                                                                                                                                    |
+| FDOF10: *Metadata schemas by community*          | Metadata schemas are in practice managed on single Cordra server as local types, using JSON Schema.                                                                                                                                                                                                                                               | Require types to be FDOs with registered PIDs, implement shared types.                                                                                                                                                                                                            | Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. [OBO Foundry](https://obofoundry.org/) <span class="citation" data-cites="smithOBOFoundryCoordinated2007a">(Smith et al. [2007](#ref-smithOBOFoundryCoordinated2007a))</span> | Rather document better how individual ad-hoc schemas can be started for prototypes.                                                                                                                                                                                                                                                                             |
+| FDOF11: *FDO collections w/ semantic relations*  | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. [2022](#ref-DataInformationView))</span>).                                                                                                                                          |                                                                                                                                                                                                                                                                                   | LDP Containers required by specification, also user-created (eg. `BasicContainer`).                                                                                                                                                                                | Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">(Dataset Exchange Working Group [2023](#ref-w3-vocab-dcat-3))</span>, [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span> |
+| FDOF12: *Deleted FDO preserve PID w/ tombstone*  | Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish “Not Found” or “Gone”                                                                                                                                                                                                                      | Formalise tombstone requirements with new FDO type                                                                                                                                                                                                                                | `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialisation                                                                                                                                                                     | Formalise tombstone requirements and serialisation                                                                                                                                                                                                                                                                                                              |
 
-We argue that the Web, with its now ubiquitous use of REST API
-[@fieldingArchitecturalStylesDesign2000a], can be compared as a similar
-global middleware. Note that while early moves for developing Semantic
-Web Services [@fenselSemanticWebServices2011] attempted to merge the Web
-Service and RDF aspects, we are here considering mainly the current
-programmatic Web and its mostly light-weight use of 3 out of possible *5
-stars Linked Data* [@OpenData].
+Checking FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject fdo-RequirementSpec">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject); Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> against its current implementations as DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> and Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span>, with suggestions for required additions. <span id="tbl:fdo-checks" label="tbl:fdo-checks">\[tbl:fdo-checks\]</span>
 
-For this purpose, we here utillise the Comparison Framework for
-Middleware Infrastructures [@zarrasComparisonFrameworkMiddleware2004a]
-that formalise multiple dimensions of openness, scalability,
-transparency, as well as characteristics known from Object-oriented
-programming such as modularity, encapsulation and inheritance.
+</div>
 
-::: landscape
-::: small
-::: {#fdo-web-middleware}
-  *Quality*                                                                                                                       FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Web w/ Linked Data
-  ------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  *Quality*                                                                                                                       FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Web w/ Linked Data
-  **Openness**: *framework enable extension of applications*                                                                      FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like [Datacite](https://datacite.org/), [B2Handle](https://eudat.eu/services/userdoc/b2handle).                                                                                                                                                                                                                              The Web is inherently open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.
-  **Scalability**: *application should be effective at many different scales*                                                     No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)                                                                                                                                                                                                                                                                                                                                                                                                       Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.
-  **Performance**: *efficient and predictable execution*                                                                          DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second . DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by `requestId`). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.                                                                                                                                                                                                                                                             HTTP traffic is about 10% of global Internet traffic, excluding video and social networks [@sandvineGlobalInternetPhenomena]. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams [@rfc7540] but still has TCP+TLS startup costs. For reduced latency, HTTP/3 [@rfc9114] use QUIC [@rfc9000] rather than TCP, already adapted heavily (30% of EMEA traffic) of which Instagram & Facebook video is the majority of traffic [@joras2020].
-  **Distribution transparency**: *application perceived as a consistent whole rather than independent elements.*                  Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.                                                                                                                                                                                                         Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates [@rfc6570], content-negotiation [@ContentNegotiationHTTP] or FAIR Signposting [@vandesompelFAIRSignpostingProfile2022].
-  **Access transparency**: *local/remote elements accessed similarly*                                                             FDOs should be accessed through PID indirection, this means difficult to make private test setup. Commonly a fixed DOIP server is used directly, which permits local non-PID identifiers.                                                                                                                                                                                                                                                                                                                                                                                           Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. `http://localhost/object/1`) and SSL issues (e.g. self-signed certificates, local CAs)
-  **Location transparency**: *elements accessed without knowledge of physical location*                                           FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localised servers common for large cloud deployments.
-  **Concurrency transparency**: *concurrent processing without interference*                                                      No explicit concurrency measures. FDO kernel metadata can include checksum and date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                HTTP operations are classified as being stateless/idempotent or not (e.g. `PUT` changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, `ETag` (e.g. checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.
-  **Failure transparency**: *service provisioning resilient to failures*                                                          DOIP status codes, e.g. `0.DOIP/Status.104`, additional codes can be added as custom attributes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     HTTP [status codes](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5) e.g. `404 Not Found`, specific meaning of standard codes can be [documented in Open API](https://swagger.io/docs/specification/describing-responses/). Custom codes uncommon.
-  **Migration transparency**: *allow relocating elements without interfering application*                                         Update of PID record URLs, indirection through `0.TYPE/DOIPServiceInfo` (not always used consistently). No redirection from DOIP service.                                                                                                                                                                                                                                                                                                                                                                                                                                           HTTP `30x` status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.
-  **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*                                  FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).                                                                                                                                                                                                                                                                        URLs are not required to persist, although encouraged [@berners-lee-cool-uris]. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento [@rfc7089] expose versioned snapshots. WebDAV `VERSION-CONTROL` method [@rfc3253] (used by SVN).
-  **Transaction transparency**: *coordinate execution of atomic/isolated transactions*                                            No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.                                                                                                                                                                                                                                                                                                                                                                                                                                                          Limited transaction capabilities (e.g. `If-Unmodified-Since`) on same resource. WebDAV [locking mechanisms](https://datatracker.ietf.org/doc/html/rfc4918#section-6) [@rfc4918] with `LOCK` and `UNLOCK` methods.
-  **Modularity**: *application as collection of connected/distributed elements*                                                   FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.                                                                                                                                                                                                                                                                                                                                                                            The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API's set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.
-  **Encapsulation**: *separate interface from implementation. Specify interface as contract, multiple implementations possible*   Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although `0.DOIP/Transport` can be specified after already contacting DOIP). Cordra supports [native DOIP](https://www.cordra.org/documentation/api/doip.html), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html) and [Cordra REST API](https://www.cordra.org/documentation/api/rest-api.html))                                                                                              HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. `http` vs `https` URIs exposes encryption detail[^8]. Implementation details may leak into URIs (e.g. `search.aspx`), countered by deliberate design of URI patterns [@berners-lee-cool-uris]) and PIDs via Persistent URLs (PURL).
-  **Inheritance**: *Deriving specialised interface from another type*                                                             DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type's schema (e.g. [CORDRA `$ref`]((https://www.cordra.org/documentation/design/schemas.html#schema-references)) use of [JSON Schema references](https://json-schema.org/draft/2020-12/json-schema-core.html#references) [@Draftbhuttonjsonschema])   Syntactically Media Type with multiple suffixes [@Draftietfmediamansuffixes00MediaTypes] (mainly used with `+json`), declaration of subtypes as profiles (RFC6906) [@rfc6906]. In metadata, semantic type systems (RDFS [@w3-rdf-schema]), OWL2 [@w3-owl2-overview], SKOS [@w3-skos-primer]). OpenAPI 3 [@OpenAPISpecificationV3] [inheritance and Polymorphism](https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism). XML `xsd:schemaLocation` or `xsd:type` [@w3-xmlschema11], JSON `$schema` [@Draftbhuttonjsonschema]), JSON-LD `@context` [@w3-json-ld]. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.
-  **Signal interfaces**: *asynchronous handling of messages*                                                                      DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs                                                                                                                                                                                                                                                                                                                                                                                                                                                                            HTTP/2 [multiplexed streams](https://datatracker.ietf.org/doc/html/rfc7540#section-5) [@rfc7540], Web Sockets [@WebSocketsStandard], Linked Data Notifications [@w3-ldn], AtomPub [@rfc5023], SWORD [@SWORDSpecification], Micropub [@w3-micropub], more typically ad-hoc jobs/futures REST resources
-  **Operation interfaces**: *defining operations possible on an instance, interface of request/response messages*                 CRUD predefined in DOIP, custom operations through `0.DOIP/Op.ListOperations` (can be FDOs of type `0.TYPE/DOIPOperation`, more typically local identifiers like `"getProvenance"`)                                                                                                                                                                                                                                                                                                                                                                                                 CRUD predefined in [HTTP methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3) [@rfc7231], ([extended by registration](https://www.iana.org/assignments/http-methods/http-methods.xhtml)), URI Templates [@rfc6570], [OpenAPI operations](https://spec.openapis.org/oas/v3.1.0.html#operation-object) [@OpenAPISpecificationV3], HATEOAS[^9] incl. Hydra [@HydraW3CCommunity], schema.org Actions [@SchemaOrgActions], JSON HAL [@Draftkellyjsonhal08] & Link headers (RFC8288) [@rfc8288]
-  **Stream interfaces**: *operations that can handle continuous information streams*                                              Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)                                                                                                                                                                                                                                                                                                                                                                                                                                                               HTTP 1.1 [@rfc7230] [chunked transfer](https://datatracker.ietf.org/doc/html/rfc7230#section-4.1), HLS (RFC8216) [@rfc8216], MPEG-DASH [@iso23009]
+### Comparing FDO and Web as middleware infrastructures
 
-  : Comparing FAIR Digital Object (with the DOIP 2.0 protocol
-  [@foundationDigitalObjectInterface]) and Web technologies (using
-  Linked Data) as middleware infrastructures
-  [@zarrasComparisonFrameworkMiddleware2004a]
-:::
-:::
-:::
+In this section, we take the perspective that FDO principles are in effect proposing a global infrastructure of machine-actionable digital objects. As such we can consider implementations of FDO as **middleware infrastructures** for programmatic usage, and can evaluate them based on expectations for client and server developers.
 
-Based on the analysis in Table
-[\[fdo-web-middleware\]](#fdo-web-middleware){reference-type="ref+page"
-reference="fdo-web-middleware"}, we make the following observations:
+We argue that the Web, with its now ubiquitous use of REST API <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span>, can be compared as a similar global middleware. Note that while early moves for developing Semantic Web Services <span class="citation" data-cites="fenselSemanticWebServices2011">(Fensel et al. [2011](#ref-fenselSemanticWebServices2011))</span> attempted to merge the Web Service and RDF aspects, we are here considering mainly the current programmatic Web and its mostly light-weight use of 3 out of possible *5 stars Linked Data* <span class="citation" data-cites="OpenData">(Michael Hausenblas et al. [2012](#ref-OpenData))</span>.
 
--   With respect to the aspect of *Performance*, it is interesting to
-    note that while the first version of DOIP [@DigitalObjectInterface]
-    supported multiplexed channels similar to HTTP/2 (allowing
-    concurrent transfer of several digital objects). Multiplexing was
-    removed for the much simplified DOIP 2.0
-    [@foundationDigitalObjectInterface]. Unlike DOIP 1.0, DOIP 2.0 will
-    require a DO response to be sent back completely, as a series of
-    segments (which again can be split the bytes of each binary
-    *element* into sized *chunks*), before transmission of another DO
-    response can start on the transport channel. It is unclear what is
-    the purpose of splitting a binary into chunks on a channel which no
-    longer can be multiplexed and the only property of a chunk is its
-    size[^10].
+For this purpose, we here utillise the Comparison Framework for Middleware Infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span> that formalise multiple dimensions of openness, scalability, transparency, as well as characteristics known from Object-oriented programming such as modularity, encapsulation and inheritance.
 
--   HTTP has strong support for scalability and caching, but this mostly
-    assumes read-operations from static resources. FDO has no view on
-    immutability or validity of retrieved objects, but this should be
-    taken into consideration to support large-scale usage.
+Based on the analysis in Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware), we make the following observations:
 
--   HTTP optimisations for performance (e.g. HTTP/2, multiplexing) is
-    largely used for commercial media distribution (e.g. Netflix), and
-    not commonly used by providers of FAIR data
+  - With respect to the aspect of *Performance*, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="DigitalObjectInterface">(Reilly [2009](#ref-DigitalObjectInterface))</span> supported multiplexed channels similar to HTTP/2 (allowing concurrent transfer of several digital objects). Multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>. Unlike DOIP 1.0, DOIP 2.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary *element* into sized *chunks*), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size[<sup>10</sup>](#fn10).
 
--   Cloud deployment of Web applications give many middleware benefits
-    (Scalability, Distribution, Access transparancy, Location
-    transparancy) -- it is unclear how DOIP as a custom protocol would
-    perform in a cloud setting as most of this infrastructure assumes
-    HTTP as the protocol.
+  - HTTP has strong support for scalability and caching, but this mostly assumes read-operations from static resources. FDO has no view on immutability or validity of retrieved objects, but this should be taken into consideration to support large-scale usage.
 
--   Programmatically the Web is rather unstructured as middleware, as
-    there are many implementation choices. Usually it is undeclared what
-    to expect for a given URI/service, and programmers follow documented
-    examples for a particular service rather than automated programmatic
-    exploration across providers. This mean one can consider the Web as
-    an ecosystem of smaller middlewares with commonalities.
+  - HTTP optimisations for performance (e.g. HTTP/2, multiplexing) is largely used for commercial media distribution (e.g. Netflix), and not commonly used by providers of FAIR data
 
--   Many providers of FAIR Linked Data also provide programmatic REST
-    API endpoints,
-    e.g. [UNIPROT](https://www.uniprot.org/help/programmatic_access),
-    [ChEMBL](https://chembl.gitbook.io/chembl-interface-documentation/web-services),
-    but keeping the FAIR aspects such as retrieving metadata in such a
-    scenario may require combining different services using multiple
-    formats and identifier conventions.
+  - Cloud deployment of Web applications give many middleware benefits (Scalability, Distribution, Access transparancy, Location transparancy) – it is unclear how DOIP as a custom protocol would perform in a cloud setting as most of this infrastructure assumes HTTP as the protocol.
 
-### Assessing FDO against FAIR {#fair-compare}
+  - Programmatically the Web is rather unstructured as middleware, as there are many implementation choices. Usually it is undeclared what to expect for a given URI/service, and programmers follow documented examples for a particular service rather than automated programmatic exploration across providers. This mean one can consider the Web as an ecosystem of smaller middlewares with commonalities.
 
-In addition to having "FAIR" in its name, the FAIR Digital Object
-guidelines [@fdo-RequirementSpec] also include *G3: FDOs must offer
-compliance with the FAIR principles through measurable indicators of
-FAIRness*.
+  - Many providers of FAIR Linked Data also provide programmatic REST API endpoints, e.g. [UNIPROT](https://www.uniprot.org/help/programmatic_access), [ChEMBL](https://chembl.gitbook.io/chembl-interface-documentation/web-services), but keeping the FAIR aspects such as retrieving metadata in such a scenario may require combining different services using multiple formats and identifier conventions.
 
-Here we evaluate to what extent the FDO guidelines and its
-implementation with DOIP and Linked Data Platform [@FDOFramework] comply
-with the FAIR principles [@Wilkinson; @2016]. Here we've used the RDA's
-FAIR Data Maturity Model [@groupFAIRDataMaturity2020] as it has
-decomposed the FAIR principles to a structured list of FAIR indicators
-[@bahimFAIRDataMaturity2020a], importantly considering *Data* and
-*Metadata* separately. In our interpretation for Table
-[\[fair-data-maturity-model\]](#fair-data-maturity-model){reference-type="ref+page"
-reference="fair-data-maturity-model"} we have for simplicity chosen
-to interpret "data" in FDOs as the associated bytestream of arbitrary
-formats, with remaining JSON or RDF structures always considered as
-metadata.
+<div id="tbl:fdo-web-middleware">
 
-::: {#RDA-A2-01M}
-  FAIR ID        Indicator                                                                                      FDO guidelines            FDO/DOIP                                                                                                                                                                                                                                                     FDO/LDP                                                                                                                                                                                 Linked Data examples
-  -------------- ---------------------------------------------------------------------------------------------- ------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  FAIR ID        Indicator                                                                                      FDO guidelines            FDO/DOIP                                                                                                                                                                                                                                                     FDO/LDP                                                                                                                                                                                 Linked Data examples
-  RDA-F1-01M     Metadata is identified by a persistent identifier                                              FDOF4                     Optional *Metadata FDO* w/separate PID                                                                                                                                                                                                                       Content-negotiation to URL, not required to be PID                                                                                                                                      Metadata typically don't have own PID
-  RDA-F1-01D     Data is identified by a persistent identifier                                                  FDOF1                     PIDs required (FDOF1). Handle, DOI.                                                                                                                                                                                                                          FDOF-IR (Identifier Record). PID can be any URI                                                                                                                                         "Cool" URIs [@berners-lee-cool-uris], PURL services incl. `purl.org`, `w3id.org`
-  RDA-F1-02M     Metadata is identified by a globally unique identifier                                         FDOR4 FDOF8               Optional *Metadata FDO*, unspecified how to indicate                                                                                                                                                                                                         Content-negotiation to URL                                                                                                                                                              Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting.
-  RDA-F1-02D     Data is identified by a globally unique identifier                                             FDOF1                     All FDOs have PIDs (FDOR1), DOIP uses Handle system                                                                                                                                                                                                          FDOF-IR (Identifier Record)                                                                                                                                                             Always accessed by URL
-  RDA-F2-01M     Rich metadata is provided to allow discovery                                                   FDOF2 FDOF4 FDOF8 FDOF9   FDO has key-value metadata. Unclear how to link to additional metadata.                                                                                                                                                                                      FDOF-IR links to multiple metadata records                                                                                                                                              RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).
-  RDA-F3-01M     Metadata includes the identifier for the data                                                  ---                       `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID                                                                                                                                                                  PID only required in FDOF-IR record.                                                                                                                                                    PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as *this* subject)
-  RDA-F4-01M     Metadata is offered in such a way that it can be harvested and indexed                         FDOF10                    No, registries not required (except Data Type Registries). Handle registry only searchable by PID.                                                                                                                                                           Not specified                                                                                                                                                                           Not specified, several registries/catalogues for vocabularies/types (e.g. [@NCBOBioPortal]). Indexing by search engines if exposing HTML w/schema.org.
-  RDA-A1-01M     Metadata contains information to enable the user to get access to the data                     FDOF3 FDOF6               Directly by DOIP, but not included in FDO metadata. `handle.net` HTTP resolution may redirect to landing page                                                                                                                                                Any property can point to URIs, but unclear if it is data                                                                                                                               Common with clickable "follow your nose" URLs
-  RDA-A1-02M     Metadata can be accessed manually (i.e. with human intervention)                               ---                       (Cordra HTML landing page from `handle.net` URIs)                                                                                                                                                                                                            Optional content-negotiation, e.g. by Apache Marmotta, OpenLink Virtuoso                                                                                                                HTTP content-negotiation to HTML is common
-  RDA-A1-02D     Data can be accessed manually (i.e. with human intervention)                                   ---                       (Cordra HTML landing page from `handle.net` URIs)                                                                                                                                                                                                            Optional content-negotiation                                                                                                                                                            Direct download, HTML landing pages common for DOIs
-  RDA-A1-03M     Metadata identifier resolves to a metadata record                                              FDOF8+FDOF2               ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     `Content-Location` or HTTP redirection may indicate metadata URI
-  RDA-A1-03D     Data identifier resolves to a digital object                                                   FDOF2                     Required, but frequently not directly resolvable                                                                                                                                                                                                             Recommended, but any URI acceptable                                                                                                                                                     Resolvable HTTP/HTTPS URIs are most common, now infrequent URNs are not directly resolvable
-  RDA-A1-04M     Metadata is accessed through standardised protocol                                             G9 FDOF3                  Retrievable from PID (FDOF3). Informal DOIP standard maintained by DONA Foundation                                                                                                                                                                           LDP standard maintained by W3C, HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)   Formal HTTP standards maintained by IETF, HTTP content negotiation, informal FAIR Signposting
-  RDA-A1-04D     Data is accessible through standardised protocol                                               G9                        (see above)                                                                                                                                                                                                                                                  HTTP [@rfc9110]                                                                                                                                                                         HTTP/HTTPS, FTP (now less common), GridFTP [@allcockGlobusStripedGridFTP] (for large data), ARK [@ARKIdentifierScheme]
-  RDA-A1-05D     Data can be accessed automatically (i.e. by a computer program)                                G4 FDOF3 FDOF6            Required, but few client libraries                                                                                                                                                                                                                                                                                                                                                                                                                   Ubiquitous, hundreds of HTTP libraries
-  RDA-A1.1-01M   Metadata is accessible through a free access protocol                                          G1 G8 G9                  Partially realised: Handle system is open[^11] protocol [@rfc3652]. One server implementation [@HandleNetRegistry], free[^12]. One DOIPv2 implementation ([CORDRA](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source).   LDP is open W3C recommendation [@w3-ldp]. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations).                                                                  DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).
-  RDA-A1.1-01D   Data is accessible through a free access protocol                                              G9                        (see above)                                                                                                                                                                                                                                                  URI, DNS, HTTP, TLS                                                                                                                                                                     URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)
-  RDA-A1.2-01D   Data is accessible through an access protocol that supports authentication and authorisation   (FDOR9)                   TLS certificates, `authentication` field (details unspecified)                                                                                                                                                                                               Implied                                                                                                                                                                                 HTTP authentication, TLS certificates
-  RDA-A2-01M     Metadata is guaranteed to remain available after data is no longer available                   FDOF12                    ---                                                                                                                                                                                                                                                          Unspecified, however FDOF-IR links to separate metadata records                                                                                                                         ---
-  RDA-I1-01M     Metadata uses knowledge representation expressed in standardised format                        FDOF8                     Required, but not currently defined                                                                                                                                                                                                                          ---                                                                                                                                                                                     Always implied by use of RDF syntaxes.
-  RDA-I1-01D     Data uses knowledge representation expressed in standardised format                            ---                       ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     Common (e.g. HDF5, JSON, XML), yet common scientific data formats frequently not standardised
-  RDA-I1-02M     Metadata uses machine-understandable knowledge representation                                  FDOF8                     Required                                                                                                                                                                                                                                                     Optional RDF metadata with any vocabulary                                                                                                                                               Always implied by use of RDF syntaxes.
-  RDA-I1-02D     Data uses machine-understandable knowledge representation                                      G4 G7 FDOR2               No requirements on binary data formats                                                                                                                                                                                                                       Only indirectly, [LDP Basic Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-basic-container) reference only information resources                                        Common, specially for scientific data formats
-  RDA-I2-01M     Metadata uses FAIR-compliant vocabularies                                                      G3 FDOF10                 Informally required                                                                                                                                                                                                                                          Unspecified, implied by use of RDF?                                                                                                                                                     FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don't resolve) or incomplete (e.g. unknown license)
-  RDA-I2-01D     Data uses FAIR-compliant vocabularies                                                          ---                       ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     Uncommon, except for some XML and RDF-embedding formats, e.g. Extensible Metadata Platform (XMP) [@iso16684]
-  RDA-I3-01M     Metadata includes references to other metadata                                                 FDOR8                     Implied (attributes to PIDs), currently unspecified if given attribute is value or reference                                                                                                                                                                 ---                                                                                                                                                                                     By definition (Linked Data reference existing URIs [@DataW3C]), `rdfs:seeAlso`, FAIR signposting [@vandesompelFAIRSignpostingProfile2022] `describedby`
-  RDA-I3-01D     Data includes references to other data                                                         G6 FDOR3 FDOR11           ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     URL hyperlinks common in several formats (HTML, PDF, JSON, XML).
-  RDA-I3-02M     Metadata includes references to other data                                                     G6 FDOR3 FDOR8            Implied from custom FDO type's attribute                                                                                                                                                                                                                     LDP Direct Container members can be any resources                                                                                                                                       URI objects are frequently data references, may be indirect via PID
-  RDA-I3-02D     Data includes qualified references to other data                                               FDOR3 FDOR11              Only indirectly through FDO metadata                                                                                                                                                                                                                         Indirectly through LDP membership                                                                                                                                                       Uncommon: Link relations, FAIR Signposting
-  RDA-I3-03M     Metadata includes qualified references to other metadata                                       (FDOR3)                   Qualification by attribute keys defined per FDO Type                                                                                                                                                                                                         [LDP Direct Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-direct-container)                                                                                            Qualifications by property, PROV bundles [@w3-prov-links], [schema.org/Role](https://schema.org/Role)
-  RDA-I3-04M     Metadata include qualified references to other data                                            (FDOR3)                   Qualification by attribute keys defined per FDO type                                                                                                                                                                                                         [LDP Indirect Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-indirect-container)                                                                                        Qualifications by property, n-ary indirection (schema.org Role [@hollandIntroducingRole2014], `prov:specializationOf` [@w3-prov-o], OAI-ORE Proxy [@ORESpecificationAbstract])
-  RDA-R1-01M     Plurality of accurate and relevant attributes are provided to allow reuse                      FDOF4                     Required. Kernel metadata attributes desired [@fdo-KernelAttributes] but not assigned PIDs yet.                                                                                                                                                              Unspecified. Multiple metadata records can allow multiple semantic profiles.                                                                                                            Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org [@SchemaOrg], Dublin Core Terms [@DCMIMetadataTerms], DCAT [@w3-vocab-dcat-2], FOAF [@FOAFVocabularySpecification]
-  RDA-R1.1-01M   Metadata includes information about the licence under which the data can be reused             ---                       `licenseConditions` URL/PID in kernel metadata [@fdo-KernelAttributes]                                                                                                                                                                                       ---                                                                                                                                                                                     Dublin Core Terms `dct:license` frequently recommended, frequently not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@w3-vocab-dcat-2]
-  RDA-R1.1-02M   Metadata refers to a standard reuse licence                                                    ---                       ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     [SPDX](https://spdx.org/licenses/) and [Creative Commons](https://creativecommons.org/) URIs common, identifiers often inconsistent
-  RDA-R1.1-03M   Metadata refers to a machine-understandable reuse licence                                      ---                       ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     [SPDX documents](https://spdx.dev/resources/use/#documents) uncommon
-  RDA-R1.2-01M   Metadata includes provenance information according to community-specific standards             FDOR9 FDOR10              Unspecified (some CORDRA types add getProvenance methods). PID Kernel attributes? Unspecified W3C PROV-O, PAV                                                                                                                                                                                                                                                                                                                                        
-  RDA-R1.2-02M   Metadata includes provenance information according to a cross-community language               FDOR9 FDOR8               ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     W3C PROV-O [@w3-prov-o], PAV [@ciccaresePAVOntologyProvenance2013e], Dublin Core Terms [@DCMIMetadataTerms]
-  RDA-R1.3-01M   Metadata complies with a community standard                                                    FDOR10 FROR8              (Emerging, e.g. DiSSCo Digital Specimen [@hardistySpecimenDataRefinery2022a])                                                                                                                                                                                ---                                                                                                                                                                                     Common, e.g. DCAT 2 [@w3-vocab-dcat-2], BioSchemas [@Bioschemas]
-  RDA-R1.3-01D   Data complies with a community standard                                                        (FDOR3)                   ---                                                                                                                                                                                                                                                          ---                                                                                                                                                                                     Common, HTTP use registered IANA [media types](https://www.iana.org/assignments/media-types/media-types.xhtml), additional scientific file formats frequently not standardised or identified
-  RDA-R1.3-02M   Metadata is expressed in compliance with a machine-understandable community standard           FDOF4 FDOF10              Recommended                                                                                                                                                                                                                                                  ---                                                                                                                                                                                     Common practice for ontologies, specially in bioinformatics, e.g. BioPortal [@NCBOBioPortal], Darwin Core [@wieczorekDarwinCoreEvolving2012]
-  RDA-R1.3-02D   Data is expressed in compliance with a machine-understandable community standard               (FDOR2)                   No, FDO is typed but data can be any bytestream                                                                                                                                                                                                              ---                                                                                                                                                                                     Occassionally, (e.g. [GFF3](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md), [FITS](https://fits.gsfc.nasa.gov/fits_standard.html), [ESRI](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml))
+| Quality                                                                                                                       | FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Web w/ Linked Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| :---------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Quality                                                                                                                       | FDO w/ DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Web w/ Linked Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Openness**: *framework enable extension of applications*                                                                    | FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like [Datacite](https://datacite.org/), [B2Handle](https://eudat.eu/services/userdoc/b2handle).                                                                                                                                                                                                                                                                                                                          | The Web is inherently open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Scalability**: *application should be effective at many different scales*                                                   | No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Performance**: *efficient and predictable execution*                                                                        | DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second . DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by `requestId`). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.                                                                                                                                                                                                                                                                                                                                                         | HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="sandvineGlobalInternetPhenomena">(Sandvine [n.d.](#ref-sandvineGlobalInternetPhenomena))</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson [2015](#ref-rfc7540))</span> but still has TCP+TLS startup costs. For reduced latency, HTTP/3 <span class="citation" data-cites="rfc9114">(Bishop [2022](#ref-rfc9114))</span> use QUIC <span class="citation" data-cites="rfc9000">(Iyengar and Thomson [2021](#ref-rfc9000))</span> rather than TCP, already adapted heavily (30% of EMEA traffic) of which Instagram & Facebook video is the majority of traffic <span class="citation" data-cites="joras2020">(Joras and Chi [2020](#ref-joras2020))</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Distribution transparency**: *application perceived as a consistent whole rather than independent elements.*                | Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.                                                                                                                                                                                                                                                                                                     | Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates <span class="citation" data-cites="rfc6570">(Gregorio et al. [2012](#ref-rfc6570))</span>, content-negotiation <span class="citation" data-cites="ContentNegotiationHTTP">(MDN [2023](#ref-ContentNegotiationHTTP))</span> or FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Access transparency**: *local/remote elements accessed similarly*                                                           | FDOs should be accessed through PID indirection, this means difficult to make private test setup. Commonly a fixed DOIP server is used directly, which permits local non-PID identifiers.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. `http://localhost/object/1`) and SSL issues (e.g. self-signed certificates, local CAs)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Location transparency**: *elements accessed without knowledge of physical location*                                         | FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localised servers common for large cloud deployments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Concurrency transparency**: *concurrent processing without interference*                                                    | No explicit concurrency measures. FDO kernel metadata can include checksum and date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | HTTP operations are classified as being stateless/idempotent or not (e.g. `PUT` changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, `ETag` (e.g. checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Failure transparency**: *service provisioning resilient to failures*                                                        | DOIP status codes, e.g. `0.DOIP/Status.104`, additional codes can be added as custom attributes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | HTTP [status codes](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5) e.g. `404 Not Found`, specific meaning of standard codes can be [documented in Open API](https://swagger.io/docs/specification/describing-responses/). Custom codes uncommon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Migration transparency**: *allow relocating elements without interfering application*                                       | Update of PID record URLs, indirection through `0.TYPE/DOIPServiceInfo` (not always used consistently). No redirection from DOIP service.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | HTTP `30x` status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*                                | FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).                                                                                                                                                                                                                                                                                                                                                                    | URLs are not required to persist, although encouraged <span class="citation" data-cites="berners-lee-cool-uris">(Berners-Lee [1998](#ref-berners-lee-cool-uris))</span>. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento <span class="citation" data-cites="rfc7089">(Van de Sompel, Nelson, and Sanderson [2013](#ref-rfc7089))</span> expose versioned snapshots. WebDAV `VERSION-CONTROL` method <span class="citation" data-cites="rfc3253">(Clemm et al. [2002](#ref-rfc3253))</span> (used by SVN).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Transaction transparency**: *coordinate execution of atomic/isolated transactions*                                          | No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Limited transaction capabilities (e.g. `If-Unmodified-Since`) on same resource. WebDAV [locking mechanisms](https://datatracker.ietf.org/doc/html/rfc4918#section-6) <span class="citation" data-cites="rfc4918">(Dusseault [2007](#ref-rfc4918))</span> with `LOCK` and `UNLOCK` methods.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Modularity**: *application as collection of connected/distributed elements*                                                 | FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API’s set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Encapsulation**: *separate interface from implementation. Specify interface as contract, multiple implementations possible* | Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although `0.DOIP/Transport` can be specified after already contacting DOIP). Cordra supports [native DOIP](https://www.cordra.org/documentation/api/doip.html), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html) and [Cordra REST API](https://www.cordra.org/documentation/api/rest-api.html))                                                                                                                                                                                          | HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. `http` vs `https` URIs exposes encryption detail[<sup>11</sup>](#fn11). Implementation details may leak into URIs (e.g. `search.aspx`), countered by deliberate design of URI patterns <span class="citation" data-cites="berners-lee-cool-uris">(Berners-Lee [1998](#ref-berners-lee-cool-uris))</span>) and PIDs via Persistent URLs (PURL).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Inheritance**: *Deriving specialised interface from another type*                                                           | DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. [CORDRA `$ref`](\(https://www.cordra.org/documentation/design/schemas.html#schema-references\)) use of [JSON Schema references](https://json-schema.org/draft/2020-12/json-schema-core.html#references) <span class="citation" data-cites="Draftbhuttonjsonschema">(Wright et al. [2022](#ref-Draftbhuttonjsonschema))</span>) | Syntactically Media Type with multiple suffixes <span class="citation" data-cites="Draftietfmediamansuffixes00MediaTypes">(Sporny and Guy [2023](#ref-Draftietfmediamansuffixes00MediaTypes))</span> (mainly used with `+json`), declaration of subtypes as profiles (RFC6906) . In metadata, semantic type systems (RDFS <span class="citation" data-cites="w3-rdf-schema">(Guha and Brickley [2014](#ref-w3-rdf-schema))</span>), OWL2 <span class="citation" data-cites="w3-owl2-overview">(W3C OWL Working Group [2012](#ref-w3-owl2-overview))</span>, SKOS <span class="citation" data-cites="w3-skos-primer">(Isaac and Summers [2009](#ref-w3-skos-primer))</span>). OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span> [inheritance and Polymorphism](https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism). XML `xsd:schemaLocation` or `xsd:type` <span class="citation" data-cites="w3-xmlschema11">(Thompson et al. [2012](#ref-w3-xmlschema11))</span>, JSON `$schema` <span class="citation" data-cites="Draftbhuttonjsonschema">(Wright et al. [2022](#ref-Draftbhuttonjsonschema))</span>), JSON-LD `@context` <span class="citation" data-cites="w3-json-ld">(Sporny et al. [2020](#ref-w3-json-ld))</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge. |
+| **Signal interfaces**: *asynchronous handling of messages*                                                                    | DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | HTTP/2 [multiplexed streams](https://datatracker.ietf.org/doc/html/rfc7540#section-5) <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson [2015](#ref-rfc7540))</span>, Web Sockets <span class="citation" data-cites="WebSocketsStandard">(Rice et al. [2022](#ref-WebSocketsStandard))</span>, Linked Data Notifications <span class="citation" data-cites="w3-ldn">(Capadisli and Guy [2017](#ref-w3-ldn))</span>, AtomPub <span class="citation" data-cites="rfc5023">(Gregorio and de hÓra [2007](#ref-rfc5023))</span>, SWORD <span class="citation" data-cites="SWORDSpecification">(Jones and Jefferies [2021](#ref-SWORDSpecification))</span>, Micropub <span class="citation" data-cites="w3-micropub">(Parecki [2017](#ref-w3-micropub))</span>, more typically ad-hoc jobs/futures REST resources                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Operation interfaces**: *defining operations possible on an instance, interface of request/response messages*               | CRUD predefined in DOIP, custom operations through `0.DOIP/Op.ListOperations` (can be FDOs of type `0.TYPE/DOIPOperation`, more typically local identifiers like `"getProvenance"`)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | CRUD predefined in [HTTP methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3) <span class="citation" data-cites="rfc7231">(Fielding and Reschke [2014](#ref-rfc7231)[b](#ref-rfc7231))</span>, ([extended by registration](https://www.iana.org/assignments/http-methods/http-methods.xhtml)), URI Templates <span class="citation" data-cites="rfc6570">(Gregorio et al. [2012](#ref-rfc6570))</span>, [OpenAPI operations](https://spec.openapis.org/oas/v3.1.0.html#operation-object) <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>, HATEOAS[<sup>12</sup>](#fn12) incl. Hydra <span class="citation" data-cites="HydraW3CCommunity">(Lanthaler [2021](#ref-HydraW3CCommunity))</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(“Schema.Org Actions” [n.d.](#ref-SchemaOrgActions))</span>, JSON HAL <span class="citation" data-cites="Draftkellyjsonhal08">(Kelly [2016](#ref-Draftkellyjsonhal08))</span> & Link headers (RFC8288) <span class="citation" data-cites="rfc8288">(Nottingham [2017](#ref-rfc8288))</span>                                                                                                                                                                                                                                                                                                             |
+| **Stream interfaces**: *operations that can handle continuous information streams*                                            | Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | HTTP 1.1 <span class="citation" data-cites="rfc7230">(Fielding and Reschke [2014](#ref-rfc7230)[a](#ref-rfc7230))</span> [chunked transfer](https://datatracker.ietf.org/doc/html/rfc7230#section-4.1), HLS (RFC8216) <span class="citation" data-cites="rfc8216">(Pantos and May [2017](#ref-rfc8216))</span>, MPEG-DASH <span class="citation" data-cites="iso23009">(*ISO/IEC 23009-1:2022 — Information Technology — Dynamic Adaptive Streaming over Http (Dash) — Part 1: Media Presentation Description and Segment Formats* [2022](#ref-iso23009))</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  : Assessing RDA's FAIR Data Maturity Model
-  [@groupFAIRDataMaturity2020; @bahimFAIRDataMaturity2020a] (first 2
-  columns) against the FDO guidelines [@boninoFAIRDigitalObject], FDO
-  implemented with the protocol DOIPv2
-  [@foundationDigitalObjectInterface], Linked Data Platform (LDP)
-  [@FDOFramework] and examples from Linked Data practices in general.
-  (--- indicates *Unspecified*, may be possible with additional
-  conventions) []{#fair-data-maturity-model
-  label="fair-data-maturity-model"}
-:::
+Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span> <span id="tbl:fdo-web-middleware" label="tbl:fdo-web-middleware">\[tbl:fdo-web-middleware\]</span>
+
+</div>
+
+### Assessing FDO against FAIR
+
+In addition to having “FAIR” in its name, the FAIR Digital Object guidelines <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> also include *G3: FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness*.
+
+Here we evaluate to what extent the FDO guidelines and its implementation with DOIP and Linked Data Platform <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span> comply with the FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span>. Here we’ve used the RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020">(FAIR Data Maturity Model Working Group [2020](#ref-groupFAIRDataMaturity2020))</span> as it has decomposed the FAIR principles to a structured list of FAIR indicators <span class="citation" data-cites="bahimFAIRDataMaturity2020a">(Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span>, importantly considering *Data* and *Metadata* separately. In our interpretation for Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model) we have for simplicity chosen to interpret “data” in FDOs as the associated bytestream of arbitrary formats, with remaining JSON or RDF structures always considered as metadata.
 
 From this evaluation we observe:
 
--   Linked Data in general is strong on metadata indicators, but LDP
-    approach is weak as it has little concrete metadata guidance.
+  - Linked Data in general is strong on metadata indicators, but LDP approach is weak as it has little concrete metadata guidance.
 
--   FDO/DOIP are stronger on identifier indicators, while Linked Data
-    approach for identifiers relies on best practices.
+  - FDO/DOIP are stronger on identifier indicators, while Linked Data approach for identifiers relies on best practices.
 
--   Indicators on standard protocols (RDA-A1-04M, RDA-A1-04D,
-    RDA-A1.1-01M, RDA-A1.1-01D) favour LDP's mature standards (HTTP,
-    URI) -- the DOIPv2 specification [@foundationDigitalObjectInterface]
-    has currently only a couple of implementations and is expressed
-    informally. The underlying Handle system for PIDs is arguably mature
-    and commonly used by researchers (this article alone references
-    about 80 DOIs), however DOIs are more commonly accessed as HTTP
-    redirects through resolvers like <https://doi.org/> and
-    <http://hdl.handle.net/> rather than the Handle protocol.
+  - Indicators on standard protocols (RDA-A1-04M, RDA-A1-04D, RDA-A1.1-01M, RDA-A1.1-01D) favour LDP’s mature standards (HTTP, URI) – the DOIPv2 specification <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> has currently only a couple of implementations and is expressed informally. The underlying Handle system for PIDs is arguably mature and commonly used by researchers (this article alone references about 80 DOIs), however DOIs are more commonly accessed as HTTP redirects through resolvers like <https://doi.org/> and <http://hdl.handle.net/> rather than the Handle protocol.
 
--   RDA-A1-02M and RDA-A1-02D highlights access by manual intervention,
-    which is common for http/https URIs, but also using above PID
-    resolvers for DOIP implementation [CORDRA](https://www.cordra.org/)
-    (e.g. <https://hdl.handle.net/21.14100/90ec1c7b-6f5e-4e12-9137-0cedd16d1bce>),
-    yet neither LDP, FDO nor DOIP specifications recommends
-    human-readable representations to be provided
+  - RDA-A1-02M and RDA-A1-02D highlights access by manual intervention, which is common for http/https URIs, but also using above PID resolvers for DOIP implementation [CORDRA](https://www.cordra.org/) (e.g. <https://hdl.handle.net/21.14100/90ec1c7b-6f5e-4e12-9137-0cedd16d1bce>), yet neither LDP, FDO nor DOIP specifications recommends human-readable representations to be provided
 
--   Neither DOIP nor LDP require license to be expressed (RDA-R1.1-01M,
-    RDA-R1.1-02M, RDA-R1.1-03M), yet this is crucial for re-use and
-    machine actionability of FAIR data and metadata to be legal
+  - Neither DOIP nor LDP require license to be expressed (RDA-R1.1-01M, RDA-R1.1-02M, RDA-R1.1-03M), yet this is crucial for re-use and machine actionability of FAIR data and metadata to be legal
 
--   Machine-understandable types, provenance and data/metadata standards
-    (RDA-R1.1-03M RDA-R1.3-02M, RDA-R1.3-02M, RDA-R1.3-02D) are
-    important for machine actionability, but are currently unspecified
-    for FDOs. [@fdo-ImplAttributesTypesProfiles] explores possible
-    machine-readable FDO types, however the type systems themselves have
-    not yet been formalised. Linked Data on the other side have too many
-    semantic and syntactic type systems, making it difficult to write
-    consistent clients.
+  - Machine-understandable types, provenance and data/metadata standards (RDA-R1.1-03M RDA-R1.3-02M, RDA-R1.3-02M, RDA-R1.3-02D) are important for machine actionability, but are currently unspecified for FDOs. <span class="citation" data-cites="fdo-ImplAttributesTypesProfiles">(Blanchi et al. [2023](#ref-fdo-ImplAttributesTypesProfiles))</span> explores possible machine-readable FDO types, however the type systems themselves have not yet been formalised. Linked Data on the other side have too many semantic and syntactic type systems, making it difficult to write consistent clients.
 
--   Indicators for FAIR data are weak for either approach, as too much
-    reliance is put on metadata. For instance in Linked Data, given a
-    URL of a CSV file, what is its persistant identifier or license
-    information? FAIR Signposting
-    [@vandesompelFAIRSignpostingProfile2022] can improve findability of
-    metadata using HTTP Link relations, which enable an FDO-like overlay
-    for any HTTP resource. In DOIP, responses for bytestreams can
-    include the data identifier: if that is a PID (not enforced by
-    DOIP), its metadata is accessible.
+  - Indicators for FAIR data are weak for either approach, as too much reliance is put on metadata. For instance in Linked Data, given a URL of a CSV file, what is its persistant identifier or license information? Signposting <span class="citation" data-cites="vandesompel2015">(Van de Sompel and Nelson [2015](#ref-vandesompel2015))</span> can improve findability of metadata using HTTP Link relations, which enable an FDO-like overlay for any HTTP resource. In DOIP, responses for bytestreams can include the data identifier: if that is a PID (not enforced by DOIP), its metadata is accessible.
 
--   Resolving FDOs via Handle PIDs to the corresponding DOIP server is
-    currently undefined by FDO and DOIP specifications.
-    `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is
-    known.
+  - Resolving FDOs via Handle PIDs to the corresponding DOIP server is currently undefined by FDO and DOIP specifications. `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is known.
 
-## EOSC Interoperability Framework
+<div id="RDA-A2-01M">
 
-The European Open Science Cloud (EOSC) is a large EU initiative to
-promote Open Science by implementing a joint research infrastructure by
-federating existing and new services and focusing on interoperability,
-accessability, best practices as well as technical infrastructure
-[@10.2777/940154]. The EOSC Interoperability Framework
-[@corchoEOSCInteroperabilityFramework2021b] details the principles for
-creating a common way to achieve interoperability between all digital
-aspects of research activities in EOSC, including data, protocols and
-software. The recommendations are realized through 4 layers, Technical
-(e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g.
-recommendations) and Legal (e.g. agreements), with a particular aim to
-address the FAIR interoperability principles and building on the concept
-of FAIR Digital Objects.
+| FAIR ID                                                                  | Indicator                                                                                    | FDO guidelines          | FDO/DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                             | FDO/LDP                                                                                                                                                                                                           | Linked Data examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FAIR ID                                                                  | Indicator                                                                                    | FDO guidelines          | FDO/DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                             | FDO/LDP                                                                                                                                                                                                           | Linked Data examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| RDA-F1-01M                                                               | Metadata is identified by a persistent identifier                                            | FDOF4                   | Optional *Metadata FDO* w/separate PID                                                                                                                                                                                                                                                                                                                                                                                                               | Content-negotiation to URL, not required to be PID                                                                                                                                                                | Metadata typically don’t have own PID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| RDA-F1-01D                                                               | Data is identified by a persistent identifier                                                | FDOF1                   | PIDs required (FDOF1). Handle, DOI.                                                                                                                                                                                                                                                                                                                                                                                                                  | FDOF-IR (Identifier Record). PID can be any URI                                                                                                                                                                   | “Cool” URIs <span class="citation" data-cites="berners-lee-cool-uris">(Berners-Lee [1998](#ref-berners-lee-cool-uris))</span>, PURL services incl. `purl.org`, `w3id.org`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| RDA-F1-02M                                                               | Metadata is identified by a globally unique identifier                                       | FDOR4 FDOF8             | Optional *Metadata FDO*, unspecified how to indicate                                                                                                                                                                                                                                                                                                                                                                                                 | Content-negotiation to URL                                                                                                                                                                                        | Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| RDA-F1-02D                                                               | Data is identified by a globally unique identifier                                           | FDOF1                   | All FDOs have PIDs (FDOR1), DOIP uses Handle system                                                                                                                                                                                                                                                                                                                                                                                                  | FDOF-IR (Identifier Record)                                                                                                                                                                                       | Always accessed by URL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| RDA-F2-01M                                                               | Rich metadata is provided to allow discovery                                                 | FDOF2 FDOF4 FDOF8 FDOF9 | FDO has key-value metadata. Unclear how to link to additional metadata.                                                                                                                                                                                                                                                                                                                                                                              | FDOF-IR links to multiple metadata records                                                                                                                                                                        | RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| RDA-F3-01M                                                               | Metadata includes the identifier for the data                                                | —                       | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID                                                                                                                                                                                                                                                                                                                                                          | PID only required in FDOF-IR record.                                                                                                                                                                              | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as *this* subject)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| RDA-F4-01M                                                               | Metadata is offered in such a way that it can be harvested and indexed                       | FDOF10                  | No, registries not required (except Data Type Registries). Handle registry only searchable by PID.                                                                                                                                                                                                                                                                                                                                                   | —                                                                                                                                                                                                                 | Not specified, several registries/catalogues for vocabularies/types (e.g. <span class="citation" data-cites="NCBOBioPortal">(“NCBO BioPortal” [n.d.](#ref-NCBOBioPortal))</span>). Indexing by search engines if exposing HTML w/schema.org.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| RDA-A1-01M                                                               | Metadata contains information to enable the user to get access to the data                   | FDOF3 FDOF6             | Directly by DOIP, but not included in FDO metadata. `handle.net` HTTP resolution may redirect to landing page                                                                                                                                                                                                                                                                                                                                        | Any property can point to URIs, but unclear if it is data                                                                                                                                                         | Common with clickable “follow your nose” URLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| RDA-A1-02M                                                               | Metadata can be accessed manually (i.e. with human intervention)                             | —                       | (Cordra HTML landing page from `handle.net` URIs)                                                                                                                                                                                                                                                                                                                                                                                                    | Optional content-negotiation, e.g. by Apache Marmotta, OpenLink Virtuoso                                                                                                                                          | HTTP content-negotiation to HTML is common                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| RDA-A1-02D                                                               | Data can be accessed manually (i.e. with human intervention)                                 | —                       | (Cordra HTML landing page from `handle.net` URIs)                                                                                                                                                                                                                                                                                                                                                                                                    | Optional content-negotiation                                                                                                                                                                                      | Direct download, HTML landing pages common for DOIs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| RDA-A1-03M                                                               | Metadata identifier resolves to a metadata record                                            | FDOF8+FDOF2             | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | `Content-Location` or HTTP redirection may indicate metadata URI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| RDA-A1-03D                                                               | Data identifier resolves to a digital object                                                 | FDOF2                   | Required, but frequently not directly resolvable                                                                                                                                                                                                                                                                                                                                                                                                     | Recommended, but any URI acceptable                                                                                                                                                                               | Resolvable HTTP/HTTPS URIs are most common, now infrequent URNs are not directly resolvable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| RDA-A1-04M                                                               | Metadata is accessed through standardised protocol                                           | G9 FDOF3                | Retrievable from PID (FDOF3). Informal DOIP standard maintained by DONA Foundation                                                                                                                                                                                                                                                                                                                                                                   | LDP standard maintained by W3C, HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)                             | Formal HTTP standards maintained by IETF, HTTP content negotiation, informal FAIR Signposting                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| RDA-A1-04D                                                               | Data is accessible through standardised protocol                                             | G9                      | (see above)                                                                                                                                                                                                                                                                                                                                                                                                                                          | HTTP <span class="citation" data-cites="rfc9110">(Fielding, Nottingham, and Reschke [2022](#ref-rfc9110))</span>                                                                                                  | HTTP/HTTPS, FTP (now less common), GridFTP <span class="citation" data-cites="allcockGlobusStripedGridFTP">(Allcock et al. [2005](#ref-allcockGlobusStripedGridFTP))</span> (for large data), ARK <span class="citation" data-cites="ARKIdentifierScheme">(Kunze and Bermès [2022](#ref-ARKIdentifierScheme))</span>                                                                                                                                                                                                                                                                                                                                        |
+| RDA-A1-05D                                                               | Data can be accessed automatically (i.e. by a computer program)                              | G4 FDOF3 FDOF6          | Required, but few client libraries                                                                                                                                                                                                                                                                                                                                                                                                                   | HTTP `GET`, content-negotiation for `fdof/object`                                                                                                                                                                 | Ubiquitous, hundreds of HTTP libraries                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| RDA-A1.1-01M                                                             | Metadata is accessible through a free access protocol                                        | G1 G8 G9                | Partially realised: Handle system is open[<sup>13</sup>](#fn13) protocol <span class="citation" data-cites="rfc3652">(Sun et al. [2003](#ref-rfc3652))</span>. One server implementation <span class="citation" data-cites="HandleNetRegistry">(CNRI [2022](#ref-HandleNetRegistry))</span>, free[<sup>14</sup>](#fn14). One DOIPv2 implementation ([Cordra](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source). | LDP is open W3C recommendation <span class="citation" data-cites="w3-ldp">(Speicher, Arwe, and Malhotra [2015](#ref-w3-ldp))</span>. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| RDA-A1.1-01D                                                             | Data is accessible through a free access protocol                                            | G9                      | (see above)                                                                                                                                                                                                                                                                                                                                                                                                                                          | URI, DNS, HTTP, TLS                                                                                                                                                                                               | URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| RDA-A1.2-01D                                                             | Data is accessible through an access protocol that supports authentication and authorisation | (FDOR9)                 | TLS certificates, `authentication` field (details unspecified)                                                                                                                                                                                                                                                                                                                                                                                       | Implied                                                                                                                                                                                                           | HTTP authentication, TLS certificates                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| RDA-A2-01M<span id="RDA-A2-01M" label="RDA-A2-01M">\[RDA-A2-01M\]</span> | Metadata is guaranteed to remain available after data is no longer available                 | FDOF12                  | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Unspecified, however FDOF-IR links to separate metadata records                                                                                                                                                   | —                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| RDA-I1-01M                                                               | Metadata uses knowledge representation expressed in standardised format                      | FDOF8                   | Required, but not currently defined                                                                                                                                                                                                                                                                                                                                                                                                                  | —                                                                                                                                                                                                                 | Always implied by use of RDF syntaxes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| RDA-I1-01D                                                               | Data uses knowledge representation expressed in standardised format                          | —                       | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | Common (e.g. HDF5, JSON, XML), yet common scientific data formats frequently not standardised                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| RDA-I1-02M                                                               | Metadata uses machine-understandable knowledge representation                                | FDOF8                   | Required                                                                                                                                                                                                                                                                                                                                                                                                                                             | Optional RDF metadata with any vocabulary                                                                                                                                                                         | Always implied by use of RDF syntaxes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| RDA-I1-02D                                                               | Data uses machine-understandable knowledge representation                                    | G4 G7 FDOR2             | No requirements on binary data formats                                                                                                                                                                                                                                                                                                                                                                                                               | Only indirectly, [LDP Basic Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-basic-container) reference only information resources                                                                  | Common, specially for scientific data formats                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| RDA-I2-01M                                                               | Metadata uses FAIR-compliant vocabularies                                                    | G3 FDOF10               | Informally required                                                                                                                                                                                                                                                                                                                                                                                                                                  | Unspecified, implied by use of RDF?                                                                                                                                                                               | FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don’t resolve) or incomplete (e.g. unknown license)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| RDA-I2-01D                                                               | Data uses FAIR-compliant vocabularies                                                        | —                       | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | Uncommon, except for some XML and RDF-embedding formats, e.g. Extensible Metadata Platform (XMP) <span class="citation" data-cites="iso16684">(*ISO 16684-1:2019 — Graphic Technology — Extensible Metadata Platform (Xmp) — Part 1: Data Model, Serialization and Core Properties* [2019](#ref-iso16684))</span>                                                                                                                                                                                                                                                                                                                                           |
+| RDA-I3-01M                                                               | Metadata includes references to other metadata                                               | FDOR8                   | Implied (attributes to PIDs), currently unspecified if given attribute is value or reference                                                                                                                                                                                                                                                                                                                                                         | —                                                                                                                                                                                                                 | By definition (Linked Data reference existing URIs <span class="citation" data-cites="DataW3C">(“Linked Data” [2015](#ref-DataW3C))</span>), `rdfs:seeAlso`, FAIR signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. [2022](#ref-vandesompelFAIRSignpostingProfile2022))</span> `describedby`                                                                                                                                                                                                                                                                                                      |
+| RDA-I3-01D                                                               | Data includes references to other data                                                       | G6 FDOR3 FDOR11         | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | URL hyperlinks common in several formats (HTML, PDF, JSON, XML).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| RDA-I3-02M                                                               | Metadata includes references to other data                                                   | G6 FDOR3 FDOR8          | Implied from custom FDO type’s attribute                                                                                                                                                                                                                                                                                                                                                                                                             | LDP Direct Container members can be any resources                                                                                                                                                                 | URI objects are frequently data references, may be indirect via PID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| RDA-I3-02D                                                               | Data includes qualified references to other data                                             | FDOR3 FDOR11            | Only indirectly through FDO metadata                                                                                                                                                                                                                                                                                                                                                                                                                 | Indirectly through LDP membership                                                                                                                                                                                 | Uncommon: Link relations, FAIR Signposting                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| RDA-I3-03M                                                               | Metadata includes qualified references to other metadata                                     | (FDOR3)                 | Qualification by attribute keys defined per FDO Type                                                                                                                                                                                                                                                                                                                                                                                                 | [LDP Direct Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-direct-container)                                                                                                                      | Qualifications by property, PROV bundles <span class="citation" data-cites="w3-prov-links">(Lebo and Moreau [2013](#ref-w3-prov-links))</span>, [schema.org/Role](https://schema.org/Role)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| RDA-I3-04M                                                               | Metadata include qualified references to other data                                          | (FDOR3)                 | Qualification by attribute keys defined per FDO type                                                                                                                                                                                                                                                                                                                                                                                                 | [LDP Indirect Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-indirect-container)                                                                                                                  | Qualifications by property, n-ary indirection (schema.org Role <span class="citation" data-cites="hollandIntroducingRole2014">(Holland and Johnson [2014](#ref-hollandIntroducingRole2014))</span>, `prov:specializationOf` <span class="citation" data-cites="w3-prov-o">(Lebo, McGuinness, and Sahoo [2013](#ref-w3-prov-o))</span>, OAI-ORE Proxy <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span>)                                                                                                                                                                             |
+| RDA-R1-01M                                                               | Plurality of accurate and relevant attributes are provided to allow reuse                    | FDOF4                   | Required. Kernel metadata attributes desired <span class="citation" data-cites="fdo-KernelAttributes">(Broeder et al. [2022](#ref-fdo-KernelAttributes))</span> but not assigned PIDs yet.                                                                                                                                                                                                                                                           | Unspecified. Multiple metadata records can allow multiple semantic profiles.                                                                                                                                      | Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org <span class="citation" data-cites="SchemaOrg">(“Schema.Org - Schema.Org” [n.d.](#ref-SchemaOrg))</span>, Dublin Core Terms <span class="citation" data-cites="DCMIMetadataTerms">(DCMI Usage Board [2020](#ref-DCMIMetadataTerms))</span>, DCAT <span class="citation" data-cites="w3-vocab-dcat-2">(Browning et al. [2020](#ref-w3-vocab-dcat-2))</span>, FOAF <span class="citation" data-cites="FOAFVocabularySpecification">(Brickley and Miller [2014](#ref-FOAFVocabularySpecification))</span> |
+| RDA-R1.1-01M                                                             | Metadata includes information about the licence under which the data can be reused           | —                       | `licenseConditions` URL/PID in kernel metadata <span class="citation" data-cites="fdo-KernelAttributes">(Broeder et al. [2022](#ref-fdo-KernelAttributes))</span>                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | Dublin Core Terms `dct:license` frequently recommended, frequently not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) <span class="citation" data-cites="w3-vocab-dcat-2">(Browning et al. [2020](#ref-w3-vocab-dcat-2))</span>                                                                                                                                                                                                                                                                                                                                                                              |
+| RDA-R1.1-02M                                                             | Metadata refers to a standard reuse licence                                                  | —                       | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | [SPDX](https://spdx.org/licenses/) and [Creative Commons](https://creativecommons.org/) URIs common, identifiers often inconsistent                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| RDA-R1.1-03M                                                             | Metadata refers to a machine-understandable reuse licence                                    | —                       | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | [SPDX documents](https://spdx.dev/resources/use/#documents) uncommon                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| RDA-R1.2-01M                                                             | Metadata includes provenance information according to community-specific standards           | FDOR9 FDOR10            | Unspecified (some Cordra types add getProvenance methods). PID Kernel attributes?                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | W3C PROV-O, PAV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| RDA-R1.2-02M                                                             | Metadata includes provenance information according to a cross-community language             | FDOR9 FDOR8             | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | W3C PROV-O <span class="citation" data-cites="w3-prov-o">(Lebo, McGuinness, and Sahoo [2013](#ref-w3-prov-o))</span>, PAV <span class="citation" data-cites="ciccaresePAVOntologyProvenance2013e">(Ciccarese et al. [2013](#ref-ciccaresePAVOntologyProvenance2013e))</span>, Dublin Core Terms <span class="citation" data-cites="DCMIMetadataTerms">(DCMI Usage Board [2020](#ref-DCMIMetadataTerms))</span>                                                                                                                                                                                                                                              |
+| RDA-R1.3-01M                                                             | Metadata complies with a community standard                                                  | FDOR10 FROR8            | (Emerging, e.g. DiSSCo Digital Specimen <span class="citation" data-cites="hardistySpecimenDataRefinery2022a">(Hardisty et al. [2022](#ref-hardistySpecimenDataRefinery2022a))</span>)                                                                                                                                                                                                                                                               | —                                                                                                                                                                                                                 | Common, e.g. DCAT 2 <span class="citation" data-cites="w3-vocab-dcat-2">(Browning et al. [2020](#ref-w3-vocab-dcat-2))</span>, BioSchemas <span class="citation" data-cites="Bioschemas">(Gray et al. [2017](#ref-Bioschemas))</span>                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| RDA-R1.3-01D                                                             | Data complies with a community standard                                                      | (FDOR3)                 | —                                                                                                                                                                                                                                                                                                                                                                                                                                                    | —                                                                                                                                                                                                                 | Common, HTTP use registered IANA [media types](https://www.iana.org/assignments/media-types/media-types.xhtml), additional scientific file formats frequently not standardised or identified                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| RDA-R1.3-02M                                                             | Metadata is expressed in compliance with a machine-understandable community standard         | FDOF4 FDOF10            | Recommended                                                                                                                                                                                                                                                                                                                                                                                                                                          | —                                                                                                                                                                                                                 | Common practice for ontologies, specially in bioinformatics, e.g. BioPortal <span class="citation" data-cites="NCBOBioPortal">(“NCBO BioPortal” [n.d.](#ref-NCBOBioPortal))</span>, Darwin Core <span class="citation" data-cites="wieczorekDarwinCoreEvolving2012">(Wieczorek et al. [2012](#ref-wieczorekDarwinCoreEvolving2012))</span>                                                                                                                                                                                                                                                                                                                  |
+| RDA-R1.3-02D                                                             | Data is expressed in compliance with a machine-understandable community standard             | (FDOR2)                 | No, FDO is typed but data can be any bytestream                                                                                                                                                                                                                                                                                                                                                                                                      | —                                                                                                                                                                                                                 | Occassionally, (e.g. [GFF3](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md), [FITS](https://fits.gsfc.nasa.gov/fits_standard.html), [ESRI](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml))                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-In Table [\[eosc\]](#eosc){reference-type="ref+page"
-reference="eosc"} we review the EOSC Interoperability Framework
-(EOSC IF) recommendations, and evaluate to what extent they are
-addressed by the principles of FDO and Linked Data or their common
-implementations.
+Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020 bahimFAIRDataMaturity2020a">(FAIR Data Maturity Model Working Group [2020](#ref-groupFAIRDataMaturity2020); Bahim et al. [2020](#ref-bahimFAIRDataMaturity2020a))</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>, FDO implemented with the protocol DOIPv2 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>, Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework))</span> and examples from Linked Data practices in general. (— indicates *Unspecified*, may be possible with additional conventions) <span id="tbl:fair-data-maturity-model" label="tbl:fair-data-maturity-model">\[tbl:fair-data-maturity-model\]</span>
 
-::: {#eosc}
+</div>
 
-Layer | Recommendation | FDO | Linked Data
--- | -- | -- | --
-  Technical      | Open Specification                                                                | FDO specifications are semi-open, process gradually more transparent                                     | Open and transparent standard processes through W3C & IETF
-  Technical      | Common security & privacy framework                                               | Unspecified                                                                                              | TLS for encryption, multiple approaches for single-sign-on (e.g. ORCID, Life Science Login). Privacy largely unspecified.
-  Technical      | Easy SLAs for service providers                                                   | Unspecified                                                                                              | None
-  Technical      | Access data in different formats                                                  | None formalised, custom operations or relations                                                          | Content-negotiation, `rel=alternate` relations
-  Technical      | Coarse-grained/fine-grained search tools                                          | Freetext `0.DOIP/Op.Search` on local DOIP, no federation                                                 | Coarse-grained e.g. [Google Dataset Search](https://datasetsearch.research.google.com/), fine-grained (e.g. federated SPARQL) require detailed vocabulary/metadata insight
-  Technical      | Clear PID policy                                                                  | Strong FDO requirements, tends towards Handle system.                                                    | Not required, different communities set policies
-  Semantic       | Clear definitions for concepts/metadata/schemas                                   | Required by FDO requirements, but not yet formalised                                                     | Ontologies, SKOS, OWL
-  Semantic       | Semantic artefacts w/ open licenses                                               | All artefacts are PIDs, license not yet required by kernel metadata                                      | Open License is best practice for ontology publishing
-  Semantic       | Documentation for each semantic artefact                                          | No direct rendering from FDO, no requirement for human-readable description                              | Ontology rendering, content-negotiation
-  Semantic       | Repositories of artefacts                                                         | Required, but not formalised                                                                             | Bioontologies, otherwise not usually federated
-  Semantic       | Repositories w/ clear governance                                                  | Recommended                                                                                              | Largely self-governed repositories, if well-established may have clear governance.
-  Semantic       | Minimal metadata model for federated discovery                                    | Kernel metadata [@fdo-KernelAttributes] based on RDA recommendations [@weigelRDARecommendationPID2018].  | DCAT, schema.org, Dublin Core
-  Semantic       | Crosswalks from minimal metadata model                                            | FDO Typing recommends referencing existing type definitions, but not as separate crosswalks              | Multiple crosswalks for common metadata models, but frequently not in semantic format
-  Semantic       | Extensibility options for diciplinary metadata                                    | Communities encouraged to establish own types                                                            | Extensible by design, domain-specific metadata may be at different granularity
-  Semantic       | Clear protocols/building blocks for federation/harvesting of artefact catalogues  | Collection types not yet defined                                                                         | SWORD, OAI-PMH
-  Organisational |  Interoperability-focused rules of participation recommendations                  |  Recommended                                                                                             | Implied only by some communities, tendency to specialise
-  Organisational |  Usage recommendations of standardised data formats                               |  None                                                                                                    | None -- but common for metadata (e.g. JSON-LD)
-  Organisational |  Usage recommendations of vocabularies                                            |  Recommended by community                                                                                | Common (see [RDMKit](https://rdmkit.elixir-europe.org/metadata_management))
-  Organisational |  Usage recommendations of metadata                                                |  Recommended by community                                                                                | RO-Crate, Bioschemas
-  Organisational |  Management of permanent organization names/functions                             |  Handle owner, but unclear contact. Contact info in DOIP service provider                                | ROR. DCAT contacts.
-  Legal          |  Standardised human and machine-readable licenses                                 |  None                                                                                                    | [SPDX](https://spdx.org/licenses/), but not that frequently used
-  Legal          |  Permissive licenses for metadata (CC0, CC-BY-4.0)                                |  Undefined                                                                                               | Both CC0, CC-BY-4.0 common, e.g. in DCAT
-  Legal          |  Different licenses for different parts                                           |  Each part as separate FDO can have separate license                                                     | DCAT, RO-Crate, Named graphs for splitting metadata
-  Legal          |  Mark expired/inexistent copyright                                                |  Undefined                                                                                               | Unclear, semantics assume copyright valid
-  Legal          |  Mark orphaned data                                                               |  Tombstone for deleted data, but no owner of DOIP server means FDO disappears                            | Frequently data and endpoint has no known maintainer, archiving in common repositories becoming common
-  Legal          |  List recommended licenses                                                        |  Undefined                                                                                               | Best practice recommendations
-  Legal          |  Track license evolution for dataset                                              |  Undefined                                                                                               | Versioning with PAV/PROV/DCAT
-  Legal          |  Policy/guidance for patent/trade secrets violation                               |  Undefined                                                                                               | Undefined, legal owner may be specified
-  Legal          |  GDPR compliance for personal data                                                |  Undefined                                                                                               | Undefined
-  Legal          |  Restrict access/use if legally required                                          |  By transport protocol (undefined by FDO/DOIP)                                                           | Diverging approaches, typically landing pages w/ auth&auth or click-thru
-  Legal          |  Harmonised terms-of-use                                                          |  Undefined                                                                                               | Undefined
-  Legal          |  Alignment between EOSC and national legislation                                  |  Not applicable                                                                                          | Not applicable
+### EOSC Interoperability Framework
 
-  : Assessing EOSC Interoperability Framework
-  [@corchoEOSCInteroperabilityFramework2021b section 3.6] against the
-  FDO guidelines [@boninoFAIRDigitalObject] and Linked Data practices.
+The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure <span class="citation" data-cites="10.2777/940154">(Ayris et al. [2016](#ref-10.2777/940154))</span>. The EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects.
 
-:::
+As covered in our introduction[\[sec:introduction\]](#sec:introduction), EOSC proposes FAIR Digital Objects as a way to improve interoperability, for instance invoked by scientific workflows, carried by metadata frameworks and semantic artefacts. Therefore we here find it important to summarize how FDO and Linked Data can help satisfy the EOSC requirements.
 
-Firstly, we observe that the EOSC IF recommendations are at a high
-level, mainly affecting governance and practices by communities. This
-*Organizational* level is also highlighted by the FDO recommendations,
-for instance the FDO Typing [@fdo-TypingFDOs] propose a governance
-structure to recognize community-endorsed services. While these
-community aspects are not mandated by Linked Data practices, best
-practices have become established for aspects like ontology development
-[@10.1186/s13326-021-00240-6]. EOSC IF's technical layer is likewise at
-a architecturally high level, such as service-level agreements, but also
-highlight PID policies which is strongly required by FDO, while Linked
-Data communities choose PID practices separately. The recommendations
-for the Semantic layer, is largely already implemented by Linked Data
-practices, yet for FDO mostly consist of encouragements. For instance
-*clear definitions of semantic concepts* is required by FDO guidelines,
-but how to technically define them has not been formalised by FDO
-specifications.
+In Table [\[tbl:eosc\]](#tbl:eosc) we review the EOSC Interoperability Framework (EOSC IF) recommendations, and evaluate to what extent they are addressed by the principles of FDO and Linked Data or their common implementations.
 
-The Legal layer of interoperability is perhaps the one most emphasised
-by EOSC, by enabling collaboration across organizational barriers to
-joinly build a research infrastructure, but this is an area that both
-FDO and Linked Data are relatively weak in directly supporting. The EOSC
-IF recommendations in this layer are still largely related to governance
-practices and metadata, for instance licensing, privacy and usage
-policies; yet these are essential for cross-institutional and
-cross-repository access of FAIR objects.
+Firstly, we observe that the EOSC IF recommendations are at a high level, mainly affecting governance and practices by communities. This *Organizational* level is also highlighted by the FDO recommendations, for instance the FDO Typing <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span> propose a governance structure to recognize community-endorsed services. While these community aspects are not mandated by Linked Data practices, best practices have become established for aspects like ontology development <span class="citation" data-cites="10.1186/s13326-021-00240-6">(Norris et al. [2021](#ref-10.1186/s13326-021-00240-6))</span>. EOSC IF’s *Technical* layer is likewise at a architecturally high level, such as service-level agreements, but also highlight PID policies which is strongly required by FDO, while Linked Data communities choose PID practices separately. The recommendations for the *Semantic* layer is largely already implemented by Linked Data practices, yet for FDO mostly consist of encouragements. For instance *clear definitions of semantic concepts* is required by FDO guidelines, but how to technically define them has not been formalised by FDO specifications.
 
-Likewise, search and indexing is important FAIR aspect for Findability,
-but is poorly supported globally by FDO and Linked Data. Efforts such as
-Open Research Knowledge Graph (ORKG) [@10.1007/978-3-030-30760-8_31],
-DataCite's PID Graph [@10.5438/jwvf-8a66] and Google Knowledge Graph
-[@singhal2012] have improved programmatic findability to some degree,
-however not significantly for domain-specific semantic artefacts,
-currently scattered across multiple semantic catalogues
-[@10.48550/arXiv.2305.06746]. There is a strong role for organizations
-like EOSC to provide such broader registries, moving beyond scholarly
-output metadata federations. The EOSC Marketplace[^13] has for instance
-recently been expanded to include training material, software and data
-sources.
+The *Legal* layer of interoperability is perhaps the one most emphasised by EOSC, by enabling collaboration across organizational barriers to joinly build a research infrastructure, but this is an area that both FDO and Linked Data are relatively weak in directly supporting. The EOSC IF recommendations in this layer are largely related to governance practices and metadata, for instance licensing, privacy and usage policies; these are also essential for cross-institutional and cross-repository access of FAIR objects.
 
-## Discussion {#discussion}
+Likewise, search and indexing is important FAIR aspect for Findability, but is poorly supported globally by FDO and Linked Data. Efforts such as Open Research Knowledge Graph (ORKG) <span class="citation" data-cites="10.1007/978-3-030-30760-8_31">(Jaradeh et al. [2019](#ref-10.1007/978-3-030-30760-8_31))</span>, DataCite’s PID Graph <span class="citation" data-cites="10.5438/jwvf-8a66">(Fenner and Aryani [2019](#ref-10.5438/jwvf-8a66))</span> and Google Knowledge Graph <span class="citation" data-cites="singhal2012">(Singhal [2012](#ref-singhal2012))</span> have improved programmatic findability to some degree, however not significantly for domain-specific semantic artefacts, currently scattered across multiple semantic catalogues <span class="citation" data-cites="10.48550/arXiv.2305.06746">(Corcho et al. [2023](#ref-10.48550/arXiv.2305.06746))</span>. There is a strong role for organizations like EOSC to provide such broader registries, moving beyond scholarly output metadata federations. The [EOSC Marketplace](https://marketplace.eosc-portal.eu/) has for instance recently been expanded to include training material, software and data sources.
 
-We have evaluated the FAIR Digital Object concept using multiple
-frameworks, and contrasted FDO against existing experiences from Linked
-Data on the Web. In this section we discuss the implications of this
-evaluation, and propose how these two approaches can be better combined.
+<div id="tbl:eosc">
 
-## Framework evaluation
+| Layer          | Recommendation                                                                   | FDO                                                                                                                                                                                                                                                                                                    | Linked Data                                                                                                                                                                |
+| :------------- | :------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Technical      | Open Specification                                                               | FDO specifications are semi-open, process gradually more transparent                                                                                                                                                                                                                                   | Open and transparent standard processes through W3C & IETF                                                                                                                 |
+| Technical      | Common security & privacy framework                                              | Unspecified                                                                                                                                                                                                                                                                                            | TLS for encryption, multiple approaches for single-sign-on (e.g. ORCID, Life Science Login). Privacy largely unspecified.                                                  |
+| Technical      | Easy SLAs for service providers                                                  | Unspecified                                                                                                                                                                                                                                                                                            | None                                                                                                                                                                       |
+| Technical      | Access data in different formats                                                 | None formalised, custom operations or relations                                                                                                                                                                                                                                                        | Content-negotiation, `rel=alternate` relations                                                                                                                             |
+| Technical      | Coarse-grained/fine-grained search tools                                         | Freetext `0.DOIP/Op.Search` on local DOIP, no federation                                                                                                                                                                                                                                               | Coarse-grained e.g. [Google Dataset Search](https://datasetsearch.research.google.com/), fine-grained (e.g. federated SPARQL) require detailed vocabulary/metadata insight |
+| Technical      | Clear PID policy                                                                 | Strong FDO requirements, tends towards Handle system.                                                                                                                                                                                                                                                  | Not required, different communities set policies                                                                                                                           |
+| Semantic       | Clear definitions for concepts/metadata/schemas                                  | Required by FDO requirements, but not yet formalised                                                                                                                                                                                                                                                   | Ontologies, SKOS, OWL                                                                                                                                                      |
+| Semantic       | Semantic artefacts w/ open licenses                                              | All artefacts are PIDs, license not yet required by kernel metadata                                                                                                                                                                                                                                    | Open License is best practice for ontology publishing                                                                                                                      |
+| Semantic       | Documentation for each semantic artefact                                         | No direct rendering from FDO, no requirement for human-readable description                                                                                                                                                                                                                            | Ontology rendering, content-negotiation                                                                                                                                    |
+| Semantic       | Repositories of artefacts                                                        | Required, but not formalised                                                                                                                                                                                                                                                                           | Bioontologies, otherwise not usually federated                                                                                                                             |
+| Semantic       | Repositories w/ clear governance                                                 | Recommended                                                                                                                                                                                                                                                                                            | Largely self-governed repositories, if well-established may have clear governance.                                                                                         |
+| Semantic       | Minimal metadata model for federated discovery                                   | Kernel metadata <span class="citation" data-cites="fdo-KernelAttributes">(Broeder et al. [2022](#ref-fdo-KernelAttributes))</span> based on RDA recommendations <span class="citation" data-cites="weigelRDARecommendationPID2018">(Weigel et al. [2018](#ref-weigelRDARecommendationPID2018))</span>. | DCAT, schema.org, Dublin Core                                                                                                                                              |
+| Semantic       | Crosswalks from minimal metadata model                                           | FDO Typing recommends referencing existing type definitions, but not as separate crosswalks                                                                                                                                                                                                            | Multiple crosswalks for common metadata models, but frequently not in semantic format                                                                                      |
+| Semantic       | Extensibility options for diciplinary metadata                                   | Communities encouraged to establish own types                                                                                                                                                                                                                                                          | Extensible by design, domain-specific metadata may be at different granularity                                                                                             |
+| Semantic       | Clear protocols/building blocks for federation/harvesting of artefact catalogues | Collection types not yet defined                                                                                                                                                                                                                                                                       | SWORD, OAI-PMH                                                                                                                                                             |
+| Organisational | Interoperability-focused rules of participation recommendations                  | Recommended                                                                                                                                                                                                                                                                                            | Implied only by some communities, tendency to specialise                                                                                                                   |
+| Organisational | Usage recommendations of standardised data formats                               | None                                                                                                                                                                                                                                                                                                   | None – but common for metadata (e.g. JSON-LD)                                                                                                                              |
+| Organisational | Usage recommendations of vocabularies                                            | Recommended by community                                                                                                                                                                                                                                                                               | Common (see [RDMKit](https://rdmkit.elixir-europe.org/metadata_management))                                                                                                |
+| Organisational | Usage recommendations of metadata                                                | Recommended by community                                                                                                                                                                                                                                                                               | RO-Crate, Bioschemas                                                                                                                                                       |
+| Organisational | Management of permanent organization names/functions                             | Handle owner, but unclear contact. Contact info in DOIP service provider                                                                                                                                                                                                                               | ROR. DCAT contacts.                                                                                                                                                        |
+| Legal          | Standardised human and machine-readable licenses                                 | None                                                                                                                                                                                                                                                                                                   | [SPDX](https://spdx.org/licenses/), but not that frequently used                                                                                                           |
+| Legal          | Permissive licenses for metadata (CC0, CC-BY-4.0)                                | Undefined                                                                                                                                                                                                                                                                                              | Both CC0, CC-BY-4.0 common, e.g. in DCAT                                                                                                                                   |
+| Legal          | Different licenses for different parts                                           | Each part as separate FDO can have separate license                                                                                                                                                                                                                                                    | DCAT, RO-Crate, Named graphs for splitting metadata                                                                                                                        |
+| Legal          | Mark expired/inexistent copyright                                                | Undefined                                                                                                                                                                                                                                                                                              | Unclear, semantics assume copyright valid                                                                                                                                  |
+| Legal          | Mark orphaned data                                                               | Tombstone for deleted data, but no owner of DOIP server means FDO disappears                                                                                                                                                                                                                           | Frequently data and endpoint has no known maintainer, archiving in common repositories becoming common                                                                     |
+| Legal          | List recommended licenses                                                        | Undefined                                                                                                                                                                                                                                                                                              | Best practice recommendations                                                                                                                                              |
+| Legal          | Track license evolution for dataset                                              | Undefined                                                                                                                                                                                                                                                                                              | Versioning with PAV/PROV/DCAT                                                                                                                                              |
+| Legal          | Policy/guidance for patent/trade secrets violation                               | Undefined                                                                                                                                                                                                                                                                                              | Undefined, legal owner may be specified. [ODRL](https://www.w3.org/TR/2018/REC-odrl-vocab-20180215/) can express policies.                                                 |
+| Legal          | GDPR compliance for personal data                                                | Undefined                                                                                                                                                                                                                                                                                              | Undefined                                                                                                                                                                  |
+| Legal          | Restrict access/use if legally required                                          | By transport protocol (undefined by FDO/DOIP)                                                                                                                                                                                                                                                          | Diverging approaches, typically landing pages w/ auth\&auth or click-thru                                                                                                  |
+| Legal          | Harmonised terms-of-use                                                          | Undefined                                                                                                                                                                                                                                                                                              | Undefined                                                                                                                                                                  |
+| Legal          | Alignment between EOSC and national legislation                                  | Not applicable                                                                                                                                                                                                                                                                                         | Not applicable                                                                                                                                                             |
 
-Having considered FDO and the Web architecture as interoperability
-frameworks
-([\[interoperability-compare\]](#interoperability-compare){reference-type="ref+page"
-reference="interoperability-compare"}), we observe that neither are
-magic bullets, but each bring different aspects of interoperability. The
-Web comes with a large degree of flexibility and openness, however this
-means interoperability can suffer as services have different APIs and
-data models, although with common patterns. This is also true for Linked
-Data on the Web, with many overlapping ontologies and frequent
-inconsistencies in resolution mechanisms; although somewhat alleviated
-in recent years by schema.org becoming common metadata model for
-semantic markup inline in Web pages. The Web is based on a common HTTP
-protocol which has remained stable architecturally throughout its 32
-years of largely backwards-compatible evolution. FDO on the other side
-sets down multiple rigid rules for identifiers, types, methods etc. that
-are advanterous for interoperability and predictability for FAIR
-consumption. Yet there is a large degree of freedom in how the FDO rules
-can be implemented by a given community, for instance there is no common
-metadata model or identifier resolution mechanism, and DOIP is just one
-possible transport method for FDOs, which itself does not enforce these
-rules.
+Assessing EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b), sec. 3.6)</span> against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> and Linked Data practices.
 
-When evaluating FDO implementations against the FDO guidelines
-([\[doip-fdo-compare\]](#doip-fdo-compare){reference-type="ref+page"
-reference="doip-fdo-compare"}) we see that several technical pieces
-and community practices still need to be developed and further defined,
-for instance the FDO type system, how to declare FDO actions, how to
-resolve persistent identifiers, or how to know which pattern of FDO
-composition is used. Achieving fully interoperable FAIR digital objects
-would require further convergence on implementation practices, and it is
-not given that his need to diverge from the established Web
-architecture. It is not clear from FDO guidelines if moving from
-HTTP/DNS to DOIP/Handle as a way to expose distributed digital objects
-will benefit FAIR practitioners, when both approaches require additional
-restrictions, equably implementable, such as using persistent
-identifiers or pre-defining an object's type.
+</div>
 
-Considering this, by comparing FDO and Web as middleware
-([\[middleware\]](#middleware){reference-type="ref+page"
-reference="middleware"}) we saw that programmatic access to digital
-objects, a core promise of FDO, is not particularly improved by the use
-of the protocol DOIP as compared to HTTP, e.g. lack of concurrency
-transparancy. Recent updates to HTTP have added many features needed for
-large-scale usage such as video streaming services (e.g. caching,
-multiplexing, cloud deployments), and having the option to transparantly
-apply these also to FDOs seems like a strong incentive. Many
-programmatic features are however missing or needing custom extensions
-in both aspects, such as transactions, asynchronous operations and
-streaming.
+## Discussion
 
-By assessing FDO against the FAIR principles
-([\[fair-compare\]](#fair-compare){reference-type="ref+page"
-reference="fair-compare"}) we found that both FDO implementations
-are underspecified in several aspects (licences, provenance, data
-references, data vocabularies, metadata persistence). While there are
-implementations of each of these in general Linked Data examples, there
-is no single set of implementation guides that fully realizes the FAIR
-principles. *FAIRification* efforts like the FAIR Cookbook
-[@faircookbook] and FAIR Implementation Profiles [@FIP] are bringing
-existing practices together, but there remains a potential role for FDO
-in giving a coherent set of implementation practices that can
-practically achieve FAIR. Significant effort, also within EOSC, is now
-moving towards FAIR metrics [@Devaraju_2021], which in practice need to
-make additional assumptions on how FAIR principles are implemented, but
-these are not always formalized [@10.5281/zenodo.7463421] nor can they
-be taken to be universally correct [@10.5281/zenodo.7848102]. Given that
-most of the existing FAIR guides and assessment tools are focused on Web
-and Linked Data, it would be reasonable for FDO to then provide a
-profile of such implementation choices that can achieve best of both
-worlds.
+We have evaluated the FAIR Digital Object concept using multiple frameworks, and contrasted FDO against existing experiences from Linked Data on the Web. In this section we discuss the implications of this evaluation, and propose how these two approaches can be better combined.
 
-EOSC has been largely supportive of FDO, FAIR and related services. By
-contrasting the EOSC Interoperability Framework
-([\[eosc-interoperability-framework\]](#eosc-interoperability-framework){reference-type="ref+page"
-reference="eosc-interoperability-framework"}) with FDO, we found
-that there are important dimensions that are not solved at a technical
-level, but through organization collaboration, legal requirements and
-building community practices. FDO recommendations highlight community
-aspects, but at the same time the largest FAIR communities in many
-science domains are already producing and consuming Linked Data. Just as
-the Linked Data community has a challenge in convincing more research
-fields to use Semantic Web technologies, FDO currently need to build
-many new communities in areas that have shown interest in that approach
-(e.g. material science). It may be advantegous for both these effort to
-be aligned and jointly promoted under the EOSC umbrella.
+### Framework evaluation
 
-## What does FDO mean for Linked Data? {#what-does-it-mean-for-linked-data}
+Having considered FDO and the Web architecture as interoperability frameworks ([\[sec:interoperability-compare\]](#sec:interoperability-compare)), we observe that neither are magic bullets, but each bring different aspects of interoperability. The Web comes with a large degree of flexibility and openness, however this means interoperability can suffer as services have different APIs and data models, although with common patterns. This is also true for Linked Data on the Web, with many overlapping ontologies and frequent inconsistencies in resolution mechanisms; although somewhat alleviated in recent years by schema.org becoming common metadata model for semantic markup inline in Web pages. The Web is based on a common HTTP protocol which has remained stable architecturally throughout its 32 years of largely backwards-compatible evolution. FDO on the other side sets down multiple rigid rules for identifiers, types, methods etc. that are advanterous for interoperability and predictability for FAIR consumption. Yet there is a large degree of freedom in how the FDO rules can be implemented by a given community, for instance there is no common metadata model or identifier resolution mechanism, and DOIP is just one possible transport method for FDOs, which itself does not enforce these rules.
 
-The FAIR Digital Object approach raises many important points for Linked
-Data practictioners. At first glance, the explicit requirements of FDOs
-may seem to be easy to furfill by different parts of the Semantic Web
-Cake [@SemanticWebXML2000 slide 10], as we have previously proposed
-[@10.3897/rio.8.e94501]. However, this deeper investigation, based on
-multiple frameworks, highlights that the openness and variability of how
-Linked Data is deployed can make it difficult to achieve the FDO goals
-without significant effort.
+When evaluating FDO implementations against the FDO guidelines ([\[sec:doip-fdo-compare\]](#sec:doip-fdo-compare)) we see that several technical pieces and community practices still need to be developed and further defined, for instance the FDO type system, how to declare FDO actions, how to resolve persistent identifiers, or how to know which pattern of FDO composition is used. Achieving fully interoperable FAIR Digital Objects would require further convergence on implementation practices, and it is not given that this needs to diverge from the established Web architecture. It is not clear from FDO guidelines if moving from HTTP/DNS to DOIP/Handle as a way to expose distributed digital objects will benefit FAIR practitioners, when both approaches require additional equably implementable restrictions and conventions, such as using persistent identifiers or pre-defining an object’s type.
 
-While RDF and Linked Data have been suggested as prime candidates for
-making FAIR data, we argue that when different developers have too many
-degrees of freedom (such as serialization formats, vocabularies,
-identifiers, navigation), interoperability is hampered -- this makes it
-hard for machines to reliably consume multiple FAIR resources across
-repositories and data providers. Indeed, this may be one reason why the
-initial FDO effort steered away from Linked Data approaches, but now
-seems in a danger of opening the many same degrees of freedom within
-FDO.
+Considering this, by comparing FDO and Web as middleware ([\[sec:middleware\]](#sec:middleware)) we saw that programmatic access to digital objects, a core promise of FDO, is not particularly improved by the use of the protocol DOIP as compared to HTTP, e.g. lack of concurrency and transparancy. Recent updates to HTTP have added many features needed for large-scale usage such as video streaming services (e.g. caching, multiplexing, cloud deployments), and having the option to transparently apply these also to FDOs seems like a strong incentive. Many programmatic features for distributed objects are however missing or needing custom extensions in both aspects, such as transactions, asynchronous operations and streaming.
 
-We therefore identify the need for a new explicit FDO profile of Linked
-Data that sets pragmatic constraints and stronger recommendations for
-consistent and developer-friendly deployment of digital objects. Such a
-combination of efforts will utillise both the benefits of mature
-Semantic Web technologies (e.g. federated knowledge graph queries and
-rich validation) and data management practices that follow FDO guidance
-in order to grow a rigid (yet flexible) ecosystem of machine-actionable
-scholarly objects. It is beyond the scope of this work to detail such a
-profile, but its main priorities could be:
+By assessing FDO against the FAIR principles ([\[sec:fair-compare\]](#sec:fair-compare)) we found that both FDO implementations are underspecified in several aspects (licences, provenance, data references, data vocabularies, metadata persistence). While there are implementations of each of these in general Linked Data examples, there is no single set of implementation guides that fully realizes the FAIR principles. *FAIRification* efforts like the FAIR Cookbook <span class="citation" data-cites="faircookbook">(Rocca-Serra et al. [2023](#ref-faircookbook))</span> and FAIR Implementation Profiles <span class="citation" data-cites="FIP">(Schultes et al. [2020](#ref-FIP))</span> are bringing existing practices together, but there remains a potential role for FDO in giving a coherent set of implementation practices that can practically achieve FAIR. Significant effort, also within EOSC, is now moving towards FAIR metrics <span class="citation" data-cites="Devaraju_2021">(Devaraju et al. [2021](#ref-Devaraju_2021))</span>, which in practice need to make additional assumptions on how FAIR principles are implemented, but these are not always formalized <span class="citation" data-cites="10.5281/zenodo.7463421">(Mark D Wilkinson et al. [2022](#ref-10.5281/zenodo.7463421))</span> nor can they be taken to be universally correct <span class="citation" data-cites="10.5281/zenodo.7848102">(Verburg et al. [2023](#ref-10.5281/zenodo.7848102))</span>. Given that most of the existing FAIR guides and assessment tools are focused on Web and Linked Data, it would be reasonable for FDO to then provide a profile of such implementation choices that can achieve best of both worlds.
 
--   Use HTTP(S) as protocol
+EOSC has been largely supportive of FDO, FAIR and related services. By contrasting the EOSC Interoperability Framework ([\[sec:eosc-interoperability-framework\]](#sec:eosc-interoperability-framework)) with FDO, we found that there are important dimensions that are not solved at a technical level, but through organization collaboration, legal requirements and building community practices. FDO recommendations highlight community aspects, but at the same time the largest FAIR communities in many science domains are already producing and consuming Linked Data. Just as the Linked Data community has a challenge in convincing more research fields to use Semantic Web technologies, FDO currently need to build many new communities in areas that have shown interest in that approach (e.g. material science). It may be advantageous for both these effort to be aligned and jointly promoted under the EOSC umbrella.
 
--   Use URIs as identifiers, with persistent identifier promises
+### What does FDO mean for Linked Data?
 
--   Provide consistent identifier resolution that does not require
-    heuristics
+The FAIR Digital Object approach raises many important points for Linked Data practictioners. At first glance, the explicit requirements of FDOs may seem to be easy to furfill by different parts of the Semantic Web Cake <span class="citation" data-cites="SemanticWebXML2000">(Berners-Lee [2000](#ref-SemanticWebXML2000) slide 10)</span>, as has previously been proposed <span class="citation" data-cites="10.3897/rio.8.e94501">(Soiland-Reyes, Castro, et al. [2022](#ref-10.3897/rio.8.e94501))</span>. However, this deeper investigation, based on multiple frameworks, highlights that the openness and variability of how Linked Data is deployed can make it difficult to achieve the FDO goals without significant effort.
 
--   Common core metadata model
+While RDF and Linked Data have been suggested as prime candidates for making FAIR data, we argue that when different developers have too many degrees of freedom (such as serialization formats, vocabularies, identifiers, navigation), interoperability is hampered – this makes it hard for machines to reliably consume multiple FAIR resources across repositories and data providers. Indeed, this may be one reason why the initial FDO effort steered away from Linked Data approaches, but now seems in a danger of opening the many same degrees of freedom within FDO.
 
--   References are always URIs, and should be persistent identifiers
+We therefore identify the need for a new explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects. Such a combination of efforts could utillise both the benefits of mature Semantic Web technologies (e.g. federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow an ecosystem of machine-actionable objects. It is beyond the scope of this work to detail such a profile, but we suggest the following potential key aspects:
 
--   Types, attributes and actions are self-defined by their identifier
+  - Use HTTP(S) as protocol
 
-The FAIR and Linked Data communities likewise need to recognize the need
-for simpler, more pragmatic approaches that make it easier for FAIR
-practitioners to adapt the technologies with \"just enough\" semantics.
-We have previously proposed the combination of RO-Crate
-[@10.3233/ds-210053] and Signposting
-[@vandesompelFAIRSignpostingProfile2022] as a mean to implement FDO
-[@10.3897/rio.8.e93937] over HTTP using a common Linked Data metadata
-model.
+  - Use URIs as identifiers, with persistent identifier promises
 
-However it may be sufficient to use HTTP-based FAIR Signposting alone to
-achieve the above list, if one considers only a small metadata model,
-and rather reference from the signposting which metadata resources are
-additionally available. This will allow any Linked Data resource to
-gradually participate in the FDO ecosystem, with minimal effort and
-non-intrusive implementation changes. FDO implementations like Cordra
-typically already use HTTP APIs that align with DOIP [@DOIPAPIHTTPa],
-these can be augmented with Signposting headers without necessarily
-moving to a Linked Data metadata model.
+  - Provide consistent identifier resolution that does not require heuristics
+
+  - Common core metadata model
+
+  - References are always URIs, and should be persistent identifiers
+
+  - Types, attributes and actions are self-defined by their identifier
+
+  - Use Web approaches directly where possible, rather than wrap in a new model
+
+The FAIR and Linked Data communities likewise need to recognize the need for simpler, more pragmatic approaches that make it easier for FAIR practitioners to adapt the technologies with "just enough" semantics.
 
 ## Conclusion
 
-In this work we have considered FAIR Digital Objects (FDO) as a
-potential distributed object system and compared FDO with established
-Web approaches focusing on Linked Data. We have described the background
-of the Semantic Web and FAIR Digital Objects, and evaluated both using
-multiple conceptual frameworks.
+In this work, we have considered FAIR Digital Objects (FDO) as a potential distributed object system for FAIR data and compared it with established Web approaches focusing on Linked Data. We have described the background of the Semantic Web and FAIR Digital Objects, and evaluated both using multiple conceptual frameworks.
 
-We find that both FDO and Linked Data approaches can significantly
-benefit from each-other and should be aligned further. Namely Linked
-Data proponents need to make their technologies more approachable,
-agreeing on predictable and consistent implementations of FAIR
-principles.
+We find that both FDO and Linked Data approaches can significantly benefit from each-other and should be aligned further. Namely, Linked Data proponents need to make their technologies more approachable, agreeing on predictable and consistent implementations of FAIR principles.
 
-The FDO recommendations show that FAIR thinking in this regard need to
-move beyond data publishing and into machine actionability across
-digital objects, and with broader community consensus. As flexibility
-for extensions is a necessary ingredient alongside rigidity for core
-concepts, the FDO community likewise need to settle on directly
-implementable specifications rather than just guidelines, and avoid
-making similar mistakes as the early Semantic Web adopters.
+The FDO recommendations show that FAIR thinking in this regard need to move beyond data publishing and into machine actionability across digital objects, and with broader community consensus. As flexibility for extensions is a necessary ingredient alongside rigidity for core concepts, the FDO community likewise need to settle on directly implementable specifications rather than just guidelines, and avoid making similar mistakes as learnt by early Semantic Web adopters.
 
-By implementing the goals of FAIR Digital Objects with the mature
-technology stack developed for Linked Data, EOSC research
-infrastructures and researchers in general can create and use FAIR
-machine-actionable research outputs for decades to come.
+By implementing the goals of FAIR Digital Objects with the mature technology stack developed for Linked Data, EOSC research infrastructures and researchers in general can create and use FAIR machine-actionable research outputs for decades to come.
+
+## Acknowledgments
+
+This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); HORIZON-CL4-2021-HUMAN-01-01 101070305 (ENEXA) and by UK Research and Innovation (UKRI) under the UK government’s *Horizon Europe funding guarantee* grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
+
+We would like to acknowledge the FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObjects">(“FAIR Digital Objects Forum” [n.d.](#ref-FAIRDigitalObjects))</span> community and working groups, where SSR and CG are members.
+
+## Author contributions
+
+Contributions to this article according to the [CASRAI CRediT](https://credit.niso.org/) taxonomy:
+
+  - Stian Soiland-Reyes  
+    Conceptualization, Formal Analysis, Funding acquisition, Investigation, Methodology, Writing – original draft, Writing – review & editing
+
+  - Carole Goble  
+    Funding acquisition, Supervision, Writing – review & editing
+
+  - Paul Groth  
+    Conceptualization, Methodology, Supervision, Writing – review & editing
 
 
-## References
+[^1]: For a brief introduction to DOIP 2.0, see <span class="citation" data-cites="DOIPExamplesCordraa">CNRI ([2023](#ref-DOIPExamplesCordraa)[a](#ref-DOIPExamplesCordraa))</span>[↩︎](#fnref1)
+    
+[^2]: URIs <span class="citation" data-cites="rfc3986">(Berners-Lee, Fielding, and Masinter [2005](#ref-rfc3986))</span> are generalised forms of URLs that include locator-less identifiers such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years <span class="citation" data-cites="InfoURIRegistry">(OCLC [2010](#ref-InfoURIRegistry))</span>, for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) <span class="citation" data-cites="jutyIdentifiersOrgMIRIAM2011">(Juty, Le Novere, and Laibe [2011](#ref-jutyIdentifiersOrgMIRIAM2011))</span>. RDF 1.1 formats use Unicode to support *IRI*s <span class="citation" data-cites="rfc3987">(Dürst and Suignard [2005](#ref-rfc3987))</span>, which extends URIs to include international characters and domain names.
+    
 
-::: thebibliography
-9
+[^3]: URIs can also identify *non-information resources* for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding *information resources* <span class="citation" data-cites="sauermannCoolURIsSemantic2011">(Sauermann et al. [2008](#ref-sauermannCoolURIsSemantic2011))</span>.    
 
-::: {#ResourceSyncFrameworkSpecification}
-ANSI/NISO Z39.99-2017
-:::
+[^4]: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation>[↩︎](#fnref4)
+    
+
+[^5]: In RDF, each triple represent an edge that is named using its property URI, and the nodes are subject/object as URIs, blank nodes or (for objects) typed literal values <span class="citation" data-cites="w3-rdf11-primer">(Schreiber and Raimond [2014](#ref-w3-rdf11-primer))</span>.[↩︎](#fnref5)
+    
+
+[^6] *Datasets* that distribute RDF graphs should not be confused with [*RDF Datasets*](https://www.w3.org/TR/rdf11-concepts/#section-dataset) used for partitioning *named graphs*.[↩︎](#fnref6)
+    
+
+[^7]:    
+    Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.[↩︎](#fnref7)
+    
+[^8]:    
+    For further background on FDO implemented with Linked Data see <span class="citation" data-cites="FDOFramework 10.3897/rio.8.e94501">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework); Soiland-Reyes, Castro, et al. [2022](#ref-10.3897/rio.8.e94501))</span>[↩︎](#fnref8)
+    
+[^9]:
+    Newer <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> renames `FDOF*` to `FDOR*` but follows same ordering.[↩︎](#fnref9)
+
+[^10]:
+    Although it is possible with `0.DOIP/Op.Retrieve` to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s `Range` request, it is not possible to select individual chunks of an element’s bytestream.[↩︎](#fnref10)
+
+[^11]:    
+    The `http` protocol (port 80) can in theory also upgrade <span class="citation" data-cites="rfc2817">(Khare and Lawrence [2000](#ref-rfc2817))</span> to TLS encryption, as commonly used by [Internet Printing Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2) for `ipp` URIs, but on the Web, best practice is explicit `https` (port 443) URLs to ensure following links stay secure.[↩︎](#fnref11)
+    
+    </div>
+
+[^12]:
+   HATEOAS: Hypermedia as the Engine of Application State <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span>, an important element of the REST architectural style.[↩︎](#fnref12)
+    
+[^13]:
+    The `Handle.net` system was previously covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) which [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013.
+
+[^14]:
+    The [Handle.net public license](http://www.handle.net/HNRj/HNR-9-License.pdf) is not OSI-approved <span class="citation" data-cites="LicensesStandardsOpen">(“Licenses & Standards” [2022](#ref-LicensesStandardsOpen))</span> as an open source license – it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c) service for acquiring Handle prefixes.
+
+
+
+References 
+==========
 
 NISO (2017):\
 **ANSI/NISO Z39.99-2017, ResourceSync Framework Specification**.\
@@ -5314,18 +599,10 @@ Committee*.\
 <https://doi.org/10.3789/ansi.niso.z39.99-2017>\
 <http://www.openarchives.org/rs/1.1/resourcesync>
 
-::: {#w3-vocab-dcat-3}
-Albertoni 2023
-:::
-
 Riccardo Albertonim David Browning, Simon Cox, Alejandra Gonzalez
 Beltran, Andrea Perego, Peter Winstanley (2023):\
 **Data Catalog Vocabulary (DCAT)- Version 3**.\
 <https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/>
-
-::: {#allcockGlobusStripedGridFTP}
-Allcock 2005
-:::
 
 William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link,
 Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):\
@@ -5334,20 +611,12 @@ Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):\
 Seattle, WA, USA, IEEE\
 <https://doi.org/10.1109/sc.2005.72>
 
-::: {#fdo-PIDProfileAttributes}
-Anders 2022
-:::
-
 Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry
 Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
 **FDO PID profiles & attributes**\
 *FDO Specification Documents* PR-PIDProfileAttributes-2.1-20221017\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825630>
-
-::: {#fdo-RequirementSpec}
-Anders 2023
-:::
 
 Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
 Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert
@@ -5361,10 +630,6 @@ George Strawn, Peter Wittenburg (eds.)\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7782262>
 
-::: {#bahimFAIRDataMaturity2020a}
-Bahim 2020
-:::
-
 Christophe Bahim, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog,
 Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley Stall
 (2020):\
@@ -5373,44 +638,24 @@ assessments**.\
 *Data Science Journal* **19**(1)\
 <https://doi.org/10.5334/dsj-2020-041>
 
-::: {#ShapeExpressionsShEx}
-Baker 2019
-:::
-
 Thomas Baker and Eric Prud'hommeaux (2019):\
 **Shape Expressions (ShEx) 2.1 Primer**.\
 <http://shex.io/shex-primer/> (accessed 26 May 2022)
-
-::: {#rfc7540}
-Belshe 2022
-:::
 
 Mike Belshe, Roberto Peon, Martin Thomson (2015):\
 **Hypertext Transfer Protocol Version 2 (HTTP/2)**\
 *RFC Editor*, RFC 7540\
 <https://doi.org/10.17487/rfc7540>
 
-::: {#berners-lee-cool-uris}
-Berners-Lee 1998
-:::
-
 Tim Berners-Lee (1998):\
 **Cool URIs don't change**.\
 *Style Guide for online hypertext*, W3C\
 <https://www.w3.org/Provider/Style/URI>
 
-::: {#berners-leeWeavingWebOriginal1999}
-Berners-Lee 1999
-:::
-
 Tim Berners-Lee, Mark Fischetti (1999):\
 **Weaving the Web: The original design and ultimate destiny of the World
 Wide Web by its inventor**.\
 [ISBN 978-0-06-251586-5](https://identifiers.org/isbn/9780062515865)
-
-::: {#SemanticWebXML2000}
-Berners-Lee 2000
-:::
 
 Tim Berners-Lee (2000):\
 **Semantic Web on XML**.\
@@ -5418,55 +663,31 @@ Tim Berners-Lee (2000):\
 <https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html> (accessed
 24 January 2023)
 
-::: {#rfc3986}
-Berners-Lee 2005
-:::
-
 Tim Berners-Lee, Roy T. Fielding, Larry M. Masinter (2005):\
 **Uniform Resource Identifier (URI): Generic Syntax**.\
 *RFC Editor*, RFC 3986\
 <https://doi.org/10.17487/rfc3986>
-
-::: {#LinkedDataDesign}
-Berners-Lee 2006
-:::
 
 Tim Berners-Lee (2006):\
 **Linked Data**\
 *Design Issues*, W3C\
 <https://www.w3.org/DesignIssues/LinkedData.html>
 
-::: {#bernsteinNewLookSemantic2016a}
-Bernstein 2016
-:::
-
 Abraham Bernstein, James Hendler, Natalya Noy (2016):\
 **A new look at the semantic web**.\
 *Communications of the ACM* **59**(9)\
 <https://doi.org/10.1145/2890489>
-
-::: {#rfc9114}
-Bishop 2022
-:::
 
 Mike Bishop (2022):\
 **HTTP/3**\
 *RFC Editor*, RFC 9114\
 <https://doi.org/10.17487/rfc9114>
 
-::: {#bizerLinkedDataStory2009a}
-Bizer 2009
-:::
-
 Christian Bizer, Tom Heath, Tim Berners-Lee (2009):\
 **Linked data - the story so far**.\
 *International journal on Semantic Web and information systems*
 **5**(3)\
 <https://doi.org/10.4018/jswis.2009081901>
-
-::: {#fdo-FDO-Upload}
-Blanchi 2022
-:::
 
 Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif, Alexander
 Schlemmer, Dieter van Uytvanck, Peter Wittenburg (2022):\
@@ -5475,10 +696,6 @@ Schlemmer, Dieter van Uytvanck, Peter Wittenburg (2022):\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825549>
 
-::: {#fdo-ImplAttributesTypesProfiles}
-Blanchi 2023
-:::
-
 Christophe Blanchi, Maggie Hellström; Larry Lannom; Andreas Pfeil;
 Ulrich Schwardmann; Peter Wittenburg (2022):\
 **Implementation of attributes, types, profiles and registries**.\
@@ -5486,10 +703,6 @@ Ulrich Schwardmann; Peter Wittenburg (2022):\
 WD-Implementation-of-Attributes-0.4-20230314\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825572>
-
-::: {#boninodasilvasantosFAIRDataPoints2016a}
-Bonino 2016
-:::
 
 Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar,
 Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger
@@ -5502,10 +715,6 @@ iSTE Press.\
 Preprint:
 <https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability>
 
-::: {#boninoFAIRDigitalObject}
-Bonino 2019
-:::
-
 Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
 Leggott, Carlo Zwölf (2019):\
 **FAIR digital object framework**.\
@@ -5513,26 +722,14 @@ FDOF technical implementation guideline.\
 *Group of European Data Experts in RDA (GEDE-RDA)*\
 <https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
 
-::: {#FDOFramework}
-Bonino 2022
-:::
-
 Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince
 Sales (2022):\
 **FAIR Digital Object Framework Documentation**\
 <https://fairdigitalobjectframework.org/> (accessed 26 May 2022)
 
-::: {#FOAFVocabularySpecification}
-Brickley 2014
-:::
-
 Dan Brickley, Libby Miller (2014):\
 **FOAF Vocabulary Specification**.\
 <http://xmlns.com/foaf/spec/> (accessed 26 May 2022)
-
-::: {#fdo-Glossary}
-Broeder 2022
-:::
 
 Daan Broeder, Peter Wittenburg (2022):\
 **FDO glossary november 2022**.\
@@ -5541,19 +738,11 @@ FAIR Digital Objects Forum
 <https://drive.google.com/file/d/1KJ9l0p96naKi_2HPJ_MPqPTwS_zlP92G>
 (accessed 2 February 2023)
 
-::: {#w3-vocab-dcat-2}
-Browning 2022
-:::
-
 David Browning, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo
 Albertoni, Alejandra Gonzalez Beltran (2020):\
 **Data Catalog Vocabulary (DCAT)** - Version 2.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/>
-
-::: {#DOIPAPIHTTPa}
-CNRI 2023a
-:::
 
 CNRI (2023):\
 **DOIP API for HTTP Clients**\
@@ -5562,10 +751,6 @@ Corporation for National Research Initiatives.\
 <https://www.cordra.org/documentation/api/doip-api-for-http-clients.html>
 (accessed 13 June 2023)
 
-::: {#DOIPExamplesCordraa}
-CNRI 2023b
-:::
-
 CNRI (2023):\
 **DOIP and Examples**\
 *Cordra® Software Technical Manual Version 2.5.0*\
@@ -5573,17 +758,9 @@ Corporation for National Research Initiatives.\
 <https://www.cordra.org/documentation/api/doip.html> (accessed 14 June
 2023)
 
-::: {#w3-ldn}
-Capadisli 2017
-:::
-
 Sarven Capadisli, Amy Guy, eds. (2017):\
 **Linked Data Notifications**.\
 <https://www.w3.org/TR/2017/REC-ldn-20170502/>
-
-::: {#carrieroLandscapeOntologyReuse2020a}
-Carriero 1010
-:::
 
 Valentina Anita Carriero, Marilena Daquino, Aldo Gangemi, Andrea
 Giovanni Nuzzolese, Silvio Peroni, Valentina Presutti, Francesca Tomasi
@@ -5594,19 +771,11 @@ In Giuseppe Cota, Marilena Daquino, Gian Luca Pozzato,eds.,
 reasoning*\
 <https://doi.org/10.3233/ssw200033>
 
-::: {#ciccaresePAVOntologyProvenance2013e}
-Ciccarese 2013
-:::
-
 Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG
 Gray, Carole Goble, Tim Clark (2013):\
 **PAV ontology: Provenance, authoring and versioning**.\
 *Journal of Biomedical Semantics* **4**(1):37.\
 <https://doi.org/10.1186/2041-1480-4-37>
-
-::: {#corchoEOSCInteroperabilityFramework2021b}
-Corcho 2021
-:::
 
 Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek,
 Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
@@ -5615,28 +784,16 @@ Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
 *Publications Office of the EU*\
 <https://doi.org/10.2777/620649>
 
-::: {#10.48550/arXiv.2305.06746}
-Corcho 2023
-:::
-
 Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras
 Micsik, Silvio Peroni, Emanuele Storti (2023):\
 **A maturity model for catalogues of semantic artefacts**.\
 *arXiv* 2305.06746 \[cs.DL\]\
 <https://doi.org/10.48550/arXiv.2305.06746>
 
-::: {#DCMIMetadataTerms}
-DCMI 2020
-:::
-
 DCMI Usage Board (2020):\
 **DCMI Metadata Terms**.\
 DCMI Recommendation\
 <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/>
-
-::: {#DOIHandbookResolution}
-DOI 2017
-:::
 
 DOI (2017):\
 **DOI Handbook - Resolution**.\
@@ -5645,37 +802,21 @@ International DOI Foundation\
 <https://doi.org/10.1000/182>\
 <https://www.doi.org/doi_handbook/3_Resolution.html>
 
-::: {#DOIResolutionDocumentation}
-DOI 2020
-:::
-
 DOI (2020):\
 **DOI Resolution Documentation**.\
 <https://www.doi.org/factsheets/DOIProxy.html> (accessed 24 January
 2023)
-
-::: {#foundationDigitalObjectInterface}
-DONA 2018
-:::
 
 DONA (2018):\
 **Digital object interface protocol specification, version 2.0**.\
 *DONA Foundation*\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
 
-::: {#delgadoInteroperabilityFrameworkDistributed2016a}
-Delgado 2016
-:::
-
 José Carlos Martins Delgado (2016):\
 **An Interoperability Framework and Distributed Platform for Fast Data
 Applications**.\
 In: *Data Science and Big Data Computing*\
 <https://doi.org/10.1007/978-3-319-31861-5_1>
-
-::: {#Devaraju_2021}
-Devaraju 2021
-:::
 
 Anusuriya Devaraju, Mustapha Mokrane, Linas Cepinskas, Robert Huber,
 Patricia Herterich, Jerry de Vries, Vesa Akerman, Hervé L'Hours, Joy
@@ -5685,28 +826,16 @@ data objects**.\
 *Data Science Journal* **20** (2021).\
 <https://doi.org/10.5334/dsj-2021-004>
 
-::: {#rfc4918}
-Dusseault 2007
-:::
-
 Lisa M. Dusseault (2007):\
 **HTTP Extensions for Web Distributed Authoring and Versioning**
 (WebDAV).\
 *RFC Editor*, RFC 4918.\
 <https://doi.org/10.17487/rfc4918>
 
-::: {#rfc3987}
-Dürst 2005
-:::
-
 Martin J. Dürst, Michel Suignard (2005):\
 **Internationalized Resource Identifiers (IRIs)**.\
 *RFC Editor*, RFC 3987\
 <https://doi.org/10.17487/rfc3987>
-
-::: {#10.2777/940154}
-EOSC 2016
-:::
 
 European Commission, Directorate-General for Research and Innovation
 (2016):\
@@ -5716,10 +845,6 @@ European Open Science Cloud**.\
 *Publications Office of the EU*\
 <https://doi.org/10.2777/940154>
 
-::: {#martinekuanWebAPIDesign}
-Ekuan 2023
-:::
-
 Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et al.
 (2023):\
 **Web API design best practices**.\
@@ -5727,88 +852,52 @@ Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et al.
 <https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design>
 (accessed 24 January 2023)
 
-::: {#rfc3253}
-Ellison 2002
-:::
-
 Tim Ellison, Christopher Kaler, Jim Amsden, Jim Whitehead, Geoffrey M.
 Clemm (2002):\
 **Versioning Extensions to WebDAV** (Web Distributed Authoring and
 Versioning).\
 *RFC Editor*, RFC 3253. <https://doi.org/10.17487/rfc3253>
 
-::: {#groupFAIRDataMaturity2020}
-FAIR Maturity 2020
-:::
-
 FAIR Data Maturity Model Working Group (2020):\
 **FAIR data maturity model: Specification and guidelines**.\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00050>
 
-::: {#fdo-Specs}
-FDO Specs
-:::
-
 FDO (2022):\
 **FDO Specification Documents - November 2022** *FAIR Digital Objects
 Forum* <https://hdl.handle.net/20.500.14132/fdo-spec-docs>\
 <https://fairdo.org/specifications/> (accessed 2 February 2023)\
-[FDO]{#FAIRDigitalObjects} FAIR Digital Objects Forum\
+FAIR Digital Objects Forum\
 <https://fairdo.org/> (accessed 26 May 2022)
-
-::: {#10.5438/jwvf-8a66}
-Fenner 2019
-:::
 
 Martin Fenner, Amir Aryani (2019):\
 **Introducing the PID graph**.\
 *DataCite Blog*\
 <https://doi.org/10.5438/jwvf-8a66>
 
-::: {#fenselSemanticWebServices2011}
-Fensel 2011
-:::
-
 Dieter Fensel, Federico Michele Facca, Elena Simperl, Ioan Toma (2011):\
 **Semantic Web Services**\
 <https://doi.org/10.1007/978-3-642-19193-0>
-
-::: {#fieldingArchitecturalStylesDesign2000a}
-Fielding 2000
-:::
 
 Roy Thomas Fielding (2000):\
 **Architectural styles and the design of network-based software
 architectures**\
 Doctoral Thesis, *University of California*, Irvine.\
 <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm> (accessed
-28 June 2022) RFC Editor, RFC [Fielding 2012]{#rfc6570} Roy T. Fielding,
-Mark Nottingham, David Orchard, Joe Gregorio, Marc Hadley (2012):\
+28 June 2022) RFC Editor, RFC Roy T. Fielding, Mark Nottingham, David
+Orchard, Joe Gregorio, Marc Hadley (2012):\
 **URI Template**. *RFC Editor*, RFC 6570\
 <https://doi.org/10.17487/rfc6570>
-
-::: {#rfc7230}
-Fielding 2014a
-:::
 
 Roy T. Fielding, Julian Reschke (2014):\
 **Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing**\
 *RFC Editor*, RFC 7230\
 <https://doi.org/10.17487/rfc7230>
 
-::: {#rfc7231}
-Fielding 2014b
-:::
-
 Roy T. Fielding, Julian Reschke (2014):\
 **Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content**\
 *RFC Editor*, RFC 7231\
 <https://doi.org/10.17487/rfc7231>
-
-::: {#fieldingReflectionsRESTArchitectural2017a}
-Fielding 2017
-:::
 
 Roy T. Fielding, Richard N. Taylor, Justin R. Erenkrantz, Michael M.
 Gorlick, Jim Whitehead, Rohit Khare, Peyman Oreizy (2017):\
@@ -5818,27 +907,15 @@ the modern web architecture\" (impact paper award)**.\
 engineering - ESEC/FSE 2017*, New York, New York, USA.\
 <https://doi.org/10.1145/3106237.3121282>
 
-::: {#rfc9110}
-Fielding 2022
-:::
-
 Roy T. Fielding, Mark Nottingham, Julian Reschke (2022):\
 **HTTP Semantics**\
 *RFC Editor*, RFC 9110\
 <https://doi.org/10.17487/rfc9110>
 
-::: {#gobleStateNationData2008c}
-Goble 2008
-:::
-
 Carole Goble, Robert Stevens (2008):\
 **State of the nation in data integration for bioinformatics**.\
 *Journal of Biomedical Informatics* **41**(5)\
 <https://doi.org/10.1016/j.jbi.2008.01.008>
-
-::: {#Bioschemas}
-Gray 2017
-:::
 
 Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community
 (2017):\
@@ -5849,10 +926,6 @@ tracks co-located with 16th international semantic web conference (ISWC
 *CEUR Workshop Proceedings* **1963**\
 <https://ceur-ws.org/Vol-1963/paper579.pdf>
 
-::: {#grothAPIcentricLinkedData2014b}
-Groth 2014
-:::
-
 Paul Groth, Antonis Loizou, Alasdair J. G. Gray, Carole Goble, Lee
 Harland, Steve Pettifer (2014):\
 **API-centric Linked Data integration: The Open PHACTS Discovery
@@ -5860,26 +933,14 @@ Platform case study**.\
 *Journal of Web Semantics* **29**\
 <https://doi.org/10.1016/j.websem.2014.03.003>
 
-::: {#w3-rdf-schema}
-Guha 2014
-:::
-
 Ramanathan Guha and Dan Brickley (2014):\
 **RDF Schema 1.1**.\
 *W3C Recommendation*\
 <http://www.w3.org/TR/rdf-schema/>
 
-::: {#HandleNetRegistry}
-Handle
-:::
-
 CNRI (2022):\
 **Handle.Net Software**.\
 <https://www.handle.net/download_hnr.html> (accessed 24 January 2023)
-
-::: {#hardistySpecimenDataRefinery2022a}
-Hardisty 2022
-:::
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott,
 Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):\
@@ -5889,10 +950,6 @@ History Collections**.\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00134>
 
-::: {#hasnainAssessingFAIRData2018a}
-Hasnain 2018
-:::
-
 Ali Hasnain, Dietrich Rebholz-Schuhmann (2018):\
 **Assessing FAIR data principles against the 5-star open data
 principles**.\
@@ -5900,17 +957,9 @@ principles**.\
 Greece, 2018-06-03/--07\
 <https://doi.org/10.1007/978-3-319-98192-5_60>
 
-::: {#OpenData}
-Hausenblas 2012
-:::
-
 Michael Hausenblas et al. (2012):\
 **5-star Open Data**.\
 <http://5stardata.info/> (accessed 24 January 2023)
-
-::: {#fdo-Granularity}
-Hellström 2022
-:::
 
 Maggie Hellström, Carlo Zwölf, Peter Wittenburg (2022):\
 **FDO -- granularity, versioning, mutability**.\
@@ -5918,37 +967,21 @@ Maggie Hellström, Carlo Zwölf, Peter Wittenburg (2022):\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825686>
 
-::: {#hollandIntroducingRole2014}
-Holland 2014
-:::
-
 Vicki Tardif Holland, Jason Johnson (2014):\
 **Introducing 'Role'**.\
 *schema blog*\
 <http://blog.schema.org/2014/06/introducing-role.html>
-
-::: {#rfc5023}
-hÓra 2007
-:::
 
 Bill de hÓra, Joe Gregorio (2007):\
 **The Atom Publishing Protocol**.\
 *RFC Editor*, RFC 5023\
 <https://doi.org/10.17487/rfc5023>
 
-::: {#horrocksSemanticWebISWC2002}
-Horrocks 2022
-:::
-
 Ian Horrocks, James Hendler, eds. (2002):\
 **The Semantic Web --- ISWC 2002**\
 First International Semantic Web Conference, Sardinia, Italy, June 9-12,
 2002\
 <https://doi.org/10.1007/3-540-48005-6>
-
-::: {#huHowMatchableAre2011a}
-Hu 2011
-:::
 
 Wei Hu, Jianfeng Chen, Hang Zhang, Yuzhong Qu (2011):\
 **How matchable are four thousand ontologies on the semantic web**.\
@@ -5957,10 +990,6 @@ Dimitris Plexousakis, Pieter De Leenheer, Jeff Pan,eds., *The semantic
 web: Research and applications*, pp. 290--304\
 ISBN 978-3-642-21033-4
 
-::: {#iso16684}
-ISO 16684
-:::
-
 ISO (2019):\
 **ISO 16684-1:2019 --- graphic technology --- extensible metadata
 platform (XMP)** --- part 1: Data model, serialization and core
@@ -5968,20 +997,12 @@ properties.\
 ISO standard\
 <https://www.iso.org/standard/75163.html>
 
-::: {#iso23009}
-ISO 23009-1
-:::
-
 ISO/IEC (2022):\
 **ISO/IEC 23009-1:2022 --- information technology --- dynamic adaptive
 streaming over HTTP (DASH)** --- part 1: Media presentation description
 and segment formats.\
 ISO standard\
 <https://www.iso.org/standard/83314.html>
-
-::: {#x1255FrameworkDiscovery}
-ITU-T X.1255
-:::
 
 ITU-T (2013):\
 **X.1255 : Framework for Discovery of Identity Management
@@ -5991,28 +1012,16 @@ X.1255\
 The International Telecommunication Union (ITU).\
 <https://www.itu.int/rec/T-REC-X.1255-201309-I>
 
-::: {#w3-skos-primer}
-Isaac 2009
-:::
-
 Antoine Isaac and Ed Summers (2009):\
 **SKOS Simple Knowledge Organization System Primer**.\
 W3C Note\
 <https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/>
-
-::: {#islam_2023}
-Islam 2023
-:::
 
 Sharif Islam (2023):\
 **FAIR digital objects, persistent identifiers and machine
 actionability**.\
 *FAIR Connect* **1**(1)\
 <https://doi.org/10.3233/FC-230001>
-
-::: {#fdo-Overview}
-Ivonne 2023
-:::
 
 Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam
 Sharif, Jejkal Thomas, Lannom Larry, Peters-von Gehlen Karsten, Quick
@@ -6024,18 +1033,10 @@ Carlo Zwölf (2023):\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824714>
 
-::: {#rfc9000}
-Iyengar 2021
-:::
-
 Jana Iyengar, Martin Thomson (2021):\
 **QUIC: A UDP-Based Multiplexed and Secure Transport**\
 *RFC Editor*, RFC 9000\
 <https://doi.org/10.17487/rfc9000>
-
-::: {#10.1007/978-3-030-30760-8_31}
-Jaradeh 201
-:::
 
 Mohamad Yaser Jaradeh, Allard Oelen, Manuel Prinz, Markus Stocker, Sören
 Auer (2019):\
@@ -6043,26 +1044,14 @@ Auer (2019):\
 *Digital libraries for open knowledge* 348--351.\
 <https://doi.org/10.1007/978-3-030-30760-8_31>
 
-::: {#SWORDSpecification}
-Jones 2022
-:::
-
 Richard Jones and Neil Jefferies (2022):\
 **SWORD 3.0 Specification**.\
 <https://swordapp.github.io/swordv3/swordv3.html> (accessed 26 May 2022)
-
-::: {#joras2020}
-Joras 2020
-:::
 
 Matt Joras, Yang Chi (2020):\
 **How Facebook is bringing QUIC to billions**.\
 *Engineering at Meta*\
 <https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions>
-
-::: {#jutyIdentifiersOrgMIRIAM2011}
-Juty 2011
-:::
 
 Nick Juty, Nicolas Le Novère, Camille Laibe (2011):\
 **Identifiers.org and MIRIAM Registry: Community resources to provide
@@ -6070,26 +1059,14 @@ persistent identification**.\
 *Nucleic Acids Research* **40**(D1)\
 <https://doi.org/10.1093/nar/gkr1097>
 
-::: {#kahnFrameworkDistributedDigital1995a}
-Kahn 1995
-:::
-
 Robert Kahn, Robert Wilensky (1995):\
 **A framework for distributed digital object services** (CNRI).\
 <http://www.cnri.reston.va.us/k-w.html> (accessed 9 May 2022)
-
-::: {#kahnFrameworkDistributedDigital2006b}
-Kahn 2006
-:::
 
 Robert Kahn, Robert Wilensky (2006):\
 **A framework for distributed digital object services**.\
 *International Journal on Digital Libraries* **6**\
 <https://doi.org/10.1007/s00799-005-0128-x>
-
-::: {#kamdarSystematicAnalysisTerm2017a}
-Kamdar 2017
-:::
 
 Maulik R. Kamdar, Tania Tudorache, Mark A. Musen (2017):\
 **A systematic analysis of term reuse and term overlap across biomedical
@@ -6097,27 +1074,15 @@ ontologies**.\
 *Semantic Web* **8**(6)\
 <https://doi.org/10.3233/sw-160238>
 
-::: {#Draftkellyjsonhal08}
-Kelly 2016
-:::
-
 Mike Kelly (2016):\
 **JSON Hypertext Application Language**.\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/>
 
-::: {#rfc2817}
-Khare 2000
-:::
-
 Rohit Khare, Scott Lawrence (2000):\
 **Upgrading to TLS Within HTTP/1.1**.\
 *RFC Editor*, RFC 2817.\
 <https://doi.org/10.17487/rfc2817>
-
-::: {#kleinScholarlyContextNot2014a}
-Klein 2014
-:::
 
 Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
 Lyudmila Balakireva, Ke Zhou, Richard Tobin (2014):\
@@ -6126,36 +1091,20 @@ Reference Rot**.\
 *PLOS ONE* **9**(12):e115253\
 <https://doi.org/10.1371/journal.pone.0115253>
 
-::: {#klimekSurveyToolsLinked2019a}
-Klímek 2019
-:::
-
 Jakub Klímek, Petr Škoda, Martin Nečaský (2019):\
 **Survey of tools for linked data consumption**.\
 *Semantic Web* **10**(4)\
 <https://doi.org/10.3233/SW-180316>
-
-::: {#w3-shacl}
-Kontokostas 2017
-:::
 
 Dimitris Kontokostas, Holger Knublauch (2017):\
 **Shapes Constraint Language (SHACL)**.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/shacl/> (accessed 26 May 2022)
 
-::: {#ARKIdentifierScheme}
-Kunze 2022
-:::
-
 John A. Kunze, Emmanuelle Bermès (2022):\
 **The ARK Identifier Scheme**.\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-kunze-ark/36/>
-
-::: {#gayoValidatingRDFData2017a}
-Labra Gayo 2017
-:::
 
 Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris
 Kontokostas (2017):\
@@ -6163,19 +1112,11 @@ Kontokostas (2017):\
 *Synthesis Lectures on the Semantic Web: Theory and Technology* **7**\
 <https://doi.org/10.2200/s00786ed1v01y201707wbe016>
 
-::: {#ORESpecificationAbstract}
-Lagoze 2008
-:::
-
 Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson,
 Robert Sanderson, Simeon Warner (2008):\
 **ORE Specification** - Abstract Data Model.\
 *Open Archives Initiative*\
 <http://www.openarchives.org/ore/1.0/datamodel#Proxies>
-
-::: {#lamprechtPerspectivesAutomatedComposition2021b}
-Lamprecht 2021
-:::
 
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle, Mohammad
 Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj
@@ -6191,27 +1132,15 @@ sciences**.\
 *F1000Research* **10** (2021):897\
 <https://doi.org/10.12688/f1000research.54159.1>
 
-::: {#rfc3650}
-Lannom 2003a
-:::
-
 Larry Lannom, Lt. Col. Brian P. Boesch, Sam Sun (2003):\
 **Handle System Overview**\
 *RFC Editor*, RFC 3650\
 <https://doi.org/10.17487/rfc3650>
 
-::: {#rfc3652}
-Lannom 2003b
-:::
-
 Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003): **Handle
 System Protocol (ver 2.1) Specification**.\
 *RFC Editor*, RFC 3652\
 <https://doi.org/10.17487/rfc3652>
-
-::: {#fdo-ConfigurationTypes}
-Lannom 2022a
-:::
 
 Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil,
 Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):\
@@ -6220,19 +1149,11 @@ Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):\
 FAIR Digital Objects Forum\
 <https://doi.org/10.5281/zenodo.7825703>
 
-::: {#fdo-Roadmap}
-Lannom 2022b
-:::
-
 Larry Lannom, Ulrich Schwardmann, Christophe Blanchi, Ivonne Anders,
 Claus Weiland, Peter Wittenburg (2022):\
 **FAIR digital objects roadmap. Version 5 november 2022**.\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824673>
-
-::: {#fdo-TypingFDOs}
-Lannom 2022c
-:::
 
 Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg
 (2022):\
@@ -6241,18 +1162,10 @@ Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825599>
 
-::: {#HydraW3CCommunity}
-Lanthaler 2021
-:::
-
 Markus Lanthaler, ed. (2021):\
 **Hydra Core Vocabulary**\
 Hydra W3C Community Group\
 <http://www.hydra-cg.com/spec/latest/core/>
-
-::: {#w3-rdf-syntax99}
-Lassila 1999
-:::
 
 Ora Lassila, Ralph R. Swick (1999):\
 **Resource Description Framework (RDF) Model and Syntax
@@ -6260,27 +1173,15 @@ Specification**.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/>
 
-::: {#w3-prov-o}
-Lebo 2013a
-:::
-
 Timothy Lebo and Deborah McGuinness and Satya Sahoo (2013):\
 **PROV-O: The PROV Ontology**.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2013/REC-prov-o-20130430/>
 
-::: {#w3-prov-links}
-Lebo 2013b
-:::
-
 Timothy Lebo, Luc Moreau (2013):\
 **Linking Across Provenance Bundles**.\
 *W3C Note*\
 <https://www.w3.org/TR/2013/NOTE-prov-links-20130430/>
-
-::: {#w3-wsdl20-primer}
-Liu 2007
-:::
 
 Kevin Liu, David Booth (2007):\
 **Web Services Description Language** (WSDL) Version 2.0 Part 0:
@@ -6288,18 +1189,10 @@ Primer.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/>
 
-::: {#looFirstInternationalConference2022}
-Loo 2022
-:::
-
 Tina Loo, ed. (2022):\
 **First International Conference on FAIR Digital Objects**.\
 *Research Ideas and Outcomes*\
 <https://doi.org/10.3897/rio.coll.190>
-
-::: {#ContentNegotiationHTTP}
-MDN 2023
-:::
 
 MDN (2023):\
 **HTTP Content negotiation**.\
@@ -6308,20 +1201,12 @@ MDN Web Docs\
 <https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation>
 (accessed 26 May 2022)
 
-::: {#merono-penuelaConclusionFutureChallenges2021a}
-Meroño-Peñuela 2021a
-:::
-
 Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):
 **Conclusion and future challenges**.\
 *Web data apis for knowledge graphs: Easing access to semantic data for
 application developers*\
 Synthesis Lectures on Data, Semantics, and Knowledge\
 <https://doi.org/10.1007/978-3-031-01917-3_7>
-
-::: {#merono-penuelaWebDataApis2021b}
-Meroño-Peñuela 2021b
-:::
 
 Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):
 **Web data APIs over SPARQL**.\
@@ -6330,19 +1215,11 @@ application developers*, Synthesis Lectures on Data, Semantics, and
 Knowledge.\
 <https://doi.org/10.1007/978-3-031-01917-3_3>
 
-::: {#OpenAPISpecificationV3}
-Miller 2021
-:::
-
 Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron
 Ratovsky, Uri Sarid, eds. (2021):\
 **OpenAPI Specification** v3.1.0.\
 *OpenAPI Initiative*, The Linux Foundation.\
 <https://spec.openapis.org/oas/v3.1.0.html> (accessed 21 March 2023)
-
-::: {#monsCloudyIncreasinglyFAIR2017b}
-Mons 2017
-:::
 
 Barend Mons, Cameron Neylon, Jan Velterop, Michel Dumontier, Luiz Olavo
 Bonino Silva Santos, Mark D. Wilkinson (2017):\
@@ -6351,26 +1228,14 @@ for the European Open Science Cloud**.\
 *Information Services & Use* **37**(1)\
 <https://doi.org/10.3233/ISU-170824>
 
-::: {#NCBOBioPortal}
-NCBO
-:::
-
 NCBO BioPortal.\
 National Center for Biomedical Ontology\
 <https://bioportal.bioontology.org/ontologies> (accessed 26 May 2022)
-
-::: {#neumannAnalysisPublicREST2021a}
-Neumann 2021
-:::
 
 Andy Neumann, Nuno Laranjeiro, Jorge Bernardino (2021):\
 **An analysis of public REST web service apis**.\
 *IEEE Transactions on Services Computing* **14**(4)\
 <https://doi.org/10.1109/TSC.2018.2847344>
-
-::: {#10.1186/s13326-021-00240-6}
-Norris 2021
-:::
 
 Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty Mutlu,
 Silje Zink, Susan Michie (2021):\
@@ -6379,50 +1244,26 @@ Insights from social and behavioural sciences**.\
 *Journal of Biomedical Semantics* **12**\
 <https://doi.org/10.1186/s13326-021-00240-6>
 
-::: {#rfc8288}
-Nottingham 2017
-:::
-
 Mark Nottingham (2017):\
 **Web Linking**.\
 *RFC Editor*, RFC 8288\
 <https://doi.org/10.17487/rfc8288>
-
-::: {#InfoURIRegistry}
-OCLC 2010
-:::
 
 OCLC (2010):\
 **\"Info\" URI Registry** (Frozen).\
 OCLC\
 <http://info-uri.info/> (accessed 24 January 2023)
 
-::: {#OpenGraphProtocol}
-Open Graph
-:::
-
 **The Open Graph protocol**.\
 <https://ogp.me/> (accessed 26 May 2022)
-
-::: {#LicensesStandardsOpen}
-OpenSource 2022
-:::
 
 OSI (2022):\
 **Licenses & Standards**. Open Source Initiative\
 <https://opensource.org/licenses> (accessed 24 January 2023)
 
-::: {#ModernStandardsParadigm}
-OpenStand 2017
-:::
-
 OpenStand (2017):\
 **The Modern Standards Paradigm** - Five Key Principles.\
 <https://open-stand.org/about-us/principles/> (accessed 24 January 2023)
-
-::: {#pageRESTLinkedData2011}
-Page 2011
-:::
 
 Kevin R. Page, David C. De Roure, Kirk Martinez (2011):\
 **REST and Linked Data**.\
@@ -6430,26 +1271,14 @@ Kevin R. Page, David C. De Roure, Kirk Martinez (2011):\
 WS-REST '11*\
 <https://doi.org/10.1145/1967428.1967435>
 
-::: {#rfc8216}
-Pantos 2017
-:::
-
 Roger Pantos, William May (2017):\
 **HTTP Live Streaming**.\
 *RFC Editor*, RFC 8216\
 <https://doi.org/10.17487/rfc8216>
 
-::: {#w3-micropub}
-Parecki 2017
-:::
-
 Aaron Parecki, ed. (2017):\
 **Micropub**. *W3C Recommendation*\
 <https://www.w3.org/TR/2017/REC-micropub-20170523/>
-
-::: {#polleresMoreDecentralizedVision2020a}
-Polleres 2020
-:::
 
 Axel Polleres, Maulik Rajendra Kamdar, Javier David Fernández, Tania
 Tudorache, Mark Alan Musen (2020):\
@@ -6457,26 +1286,14 @@ Tudorache, Mark Alan Musen (2020):\
 *Semantic Web* **11**(1)\
 <https://doi.org/10.3233/SW-190380>
 
-::: {#DigitalObjectInterface}
-Reilly 2009
-:::
-
 Sean Reilly (2009):\
 **Digital Object Interface Protocol Version 1.0**.\
 <https://www.dona.net/doipv1doc> (accessed 26 May 2022)
-
-::: {#WebSocketsStandard}
-Rice 2022
-:::
 
 Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano (2022):\
 **WebSockets Standard**.\
 *WHATWG*\
 <https://websockets.spec.whatwg.org/> (accessed 26 May 2022)
-
-::: {#faircookbook}
-Rocca-Serra 2023
-:::
 
 Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba Abbassi-Daloii,
 Salvador Capella-Gutierrez, Ishwar Chandramouliswaran, Andrea
@@ -6498,51 +1315,27 @@ Zaliani, Susanna-Assunta Sansone and (2023):\
 *Scientific Data* **10**(10)\
 <https://doi.org/10.1038/s41597-023-02166-3>
 
-::: {#sandvineGlobalInternetPhenomena}
-Sandvine 2022
-:::
-
 Sandvine (2022):\
 **Global Internet Phenomena Report**.\
 <https://www.sandvine.com/global-internet-phenomena-report-2022>
 (accessed 26 May 2022)
-
-::: {#sauermannCoolURIsSemantic2011}
-Sauermann 2011
-:::
 
 Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel (2011):\
 **Cool URIs for the semantic web**\
 *W3C Interest Group Note*\
 <http://www.w3.org/TR/cooluris/>
 
-::: {#SchemaOrg}
-schema
-:::
-
 **Schema.org**\
 <https://schema.org/> (accessed 26 May 2022)
-
-::: {#SchemaOrgActions}
-schema actions
-:::
 
 **Schema.org Actions**.\
 *schema.org*.\
 <https://schema.org/docs/actions.html> (accessed 26 May 2022)
 
-::: {#w3-rdf11-primer}
-Schreiber 2014
-:::
-
 Guus Schreiber and Yves Raimond (2014):\
 **RDF 1.1 Primer**.\
 *W3C Note*\
 <http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624>
-
-::: {#schultesFAIRPrinciplesDigital2019a}
-Schultes 2019
-:::
 
 Erik Schultes, Peter Wittenburg (2019):\
 **FAIR principles and digital objects: Accelerating convergence on a
@@ -6554,10 +1347,6 @@ international conference, DAMDID/RCDL 2018, Moscow, Russia,
 Preprint:
 <https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D>
 
-::: {#FIP}
-Schultes 2020
-:::
-
 Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl,
 Marek Suchánek, Tobias Kuhn (2020):\
 **Reusable FAIR implementation profiles as accelerators of FAIR
@@ -6567,10 +1356,6 @@ Conceptual Modeling, 2022-11-03/--06, Vienna, Austria.\
 *Lecture notes in Computer Science* **12584**\
 <https://doi.org/10.1007/978-3-030-65847-2_13>
 
-::: {#fdo-DOIPEndorsement}
-Schwardmann 2022a
-:::
-
 Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg
 (2022):\
 **DOIP endorsement request**.\
@@ -6578,19 +1363,11 @@ Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824796>
 
-::: {#schwardmannTwoExamplesHow2022}
-Schwardmann 2022b
-:::
-
 Ulrich Schwardmann, Tibor Kálmán (2022):\
 **Two Examples on How FDO Types can Support Machine and Human
 Readability**.\
 *Research Ideas and Outcomes* **8**\
 <https://doi.org/10.3897/rio.8.e96014>
-
-::: {#DataInformationView}
-Semmler 2022
-:::
 
 Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk
 Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, Thomas Jung (2022):\
@@ -6599,18 +1376,10 @@ historical**.\
 <https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi>\
 <https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87>
 
-::: {#singhal2012}
-Singhal 2012
-:::
-
 Amit Singhal (2012):\
 **Introducing the knowledge graph: Things, not strings**.\
 <https://blog.google/products/search/introducing-knowledge-graph-things-not/>
 (accessed 18 May 2023)
-
-::: {#smithOBOFoundryCoordinated2007a}
-Smith 2007
-:::
 
 Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William
 Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland,
@@ -6622,19 +1391,11 @@ biomedical data integration**.\
 *Nature Biotechnology* **25**(11)\
 <https://doi.org/10.1038/nbt1346>
 
-::: {#10.3897/rio.8.e93937}
-Soiland-Reyes 2022ff
-:::
-
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens,
 Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):\
 **Creating lightweight FAIR digital objects with RO-crate**.\
 *Research Ideas and Outcomes* **10**(8).
 <https://doi.org/10.3897/rio.8.e93937>
-
-::: {#10.3233/ds-210053}
-Soiland-Reyes 2022xx
-:::
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
 Frederik Coppens, José M. Fernández, Daniel Garijo, BjÃ¶rn GrÃ¼ning,
@@ -6644,37 +1405,21 @@ Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/ds-210053>
 
-::: {#10.3897/rio.8.e94501}
-Soiland-Reyes 2022zz
-:::
-
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier,
 Carole Goble, Paul Groth (2022):\
 **Updating linked data practices for FAIR digital object principles**.\
 *Research Ideas and Outcomes* **10**(8).\
 <https://doi.org/10.3897/rio.8.e94501>
 
-::: {#w3-ldp}
-Speicher 2015
-:::
-
 Steve Speicher, John Arwe, Ashok Malhotra (2015):\
 **Linked data platform 1.0**.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2015/REC-ldp-20150226/>
 
-::: {#w3-rdfa-primer}
-Sporny 2015
-:::
-
 Manu Sporny, Ivan Herman, Ben Adida, Mark Birbeck (2015):\
 **RDFa 1.1 Primer** - Third Edition.\
 *W3C Note*\
 <https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/>
-
-::: {#w3-json-ld}
-Sporny 2020
-:::
 
 Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
 Pierre-Antoine Champin, Niklas Lindström (2020):\
@@ -6682,18 +1427,10 @@ Pierre-Antoine Champin, Niklas Lindström (2020):\
 *W3C Recommendation*.\
 <https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
 
-::: {#Draftietfmediamansuffixes00MediaTypes}
-Sporny 2023
-:::
-
 Manu Sporny, Amy Guy (2023):\
 **Media Types with Multiple Suffixes**.\
 Internet Engineering Task Force.\
 <https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/>
-
-::: {#stallingsHandbookComputercommunicationsStandards1990}
-Stallings 1990
-:::
 
 William Stallings (1990):\
 **Handbook of computer-communications standards: The open systems (OSI)
@@ -6701,18 +1438,10 @@ model and OSI-related standards**, 2nd ed.\
 Sams.\
 [ISBN 978-0-672-22697-7](https://identifiers.org/isbn/9780672226977)
 
-::: {#stanczykProcessModellingInformation1987}
-Stanczyk 1987
-:::
-
 Stefan K. Stanczyk (1987):\
 **Process modelling for information system description**.\
 *The Open University*\
 <https://doi.org/10.21954/ou.ro.0000f821>
-
-::: {#stefiDevelopReuseTwo2015a}
-Stefi 2015a
-:::
 
 Anisa Stefi, Thomas Hess (2015):\
 **To develop or to reuse? Two perspectives on external reuse in software
@@ -6722,10 +1451,6 @@ Portugal, 2015-06-10/--12.\
 *ICSOB 2015: Software business*\
 <http://doi.org/10.1007/978-3-319-19593-3_18>
 
-::: {#stefiDevelopersMakeUnbiased2015}
-Stefi 2015b
-:::
-
 Anisa Stefi (2015):\
 **Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and
 Not-Invented-Here Bias on the Adoption of Software Components**.\
@@ -6733,19 +1458,11 @@ Not-Invented-Here Bias on the Adoption of Software Components**.\
 Germany, 2015-05-26/--29\
 <https://doi.org/10.18151/7217489>
 
-::: {#w3-xmlschema11}
-Thompson 2012
-:::
-
 Henry Thompson and Sandy Gao and David Beech and Murray Maloney and Noah
 Mendelsohn and Michael Sperberg-McQueen (2012):\
 **W3C XML Schema Definition Language** (XSD) 1.1 Part 1: Structures.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/>
-
-::: {#thorntonUsingShapeExpressions2019a}
-Thornton 2019
-:::
 
 Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio Labra
 Gayo, Daniel Mietchen, Eric Prud, Andra Waagmeester (2019):\
@@ -6755,19 +1472,11 @@ curation with rigorous validation**.\
 Portorož, Slovenia, 2019-06-02/--06.\
 <https://doi.org/10.1007/978-3-030-21348-0_39>
 
-::: {#tirmiziMappingOBOOWL2011a}
-Tirmizi 2011
-:::
-
 Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan
 Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
 **Mapping between the OBO and OWL ontology languages**.\
 *Journal of Biomedical Semantics* **2**:S3
 <https://doi.org/10.1186/2041-1480-2-s1-s3>
-
-::: {#turcoaneLinkedDataJSONLD2014a}
-Turcoane 2014
-:::
 
 Ovidiu Turcoane (2014):\
 **Linked data, JSON-LD and the semantics of cultural and scientific
@@ -6776,18 +1485,15 @@ heritage**.\
 Heritage* **4**\
 <https://doi.org/10.55630/dipp.2014.4.11>
 
-::: {#rfc7089}
-Van de Sompel 2013
-:::
-
 Herbert Van de Sompel, Michael Nelson, Robert Sanderson (2013):\
 **HTTP Framework for Time-Based Access to Resource States -- Memento**.\
 *RFC Editor*, RFC 7089\
 <https://doi.org/10.17487/rfc7089>
 
-::: {#vandesompelFAIRSignpostingProfile2022}
-Van de Sompel 2022
-:::
+Herbert Van de Sompel, Michael L. Nelson (2015):  
+**Reminiscing About 15 Years of Interoperability Efforts**.  
+*D-Lib Magazine* **21**(11/12).  
+<https://doi.org/10.1045/november2015-vandesompel>
 
 Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson,
 Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff,
@@ -6796,18 +1502,10 @@ Mark Wilkinson (2022):\
 **FAIR Signposting Profile**.\
 <https://signposting.org/FAIR/> (accessed 5 January 2023)
 
-::: {#DesigningLinkedData2018}
-Verborgh 2018
-:::
-
 Ruben Verborgh (2018):\
 **Designing a Linked Data developer experience**.\
 <https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/>
 (accessed 26 May 2022)
-
-::: {#verborghSemanticWebIdentity2020a}
-Verborgh 2020
-:::
 
 Ruben Verborgh, Miel Vander Sande (2020):\
 **The semantic web identity crisis: In search of the trivialities that
@@ -6815,28 +1513,16 @@ never were**.\
 *Semantic Web* **11**(1)\
 <https://doi.org/10.3233/SW-190372>
 
-::: {#10.5281/zenodo.7848102}
-Verburg 2023
-:::
-
 Maaike Verburg, Robert Huber, Clement Jonquet, Daniel Garijo (2023):
 **FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an
 \"Apples to Apples\" Comparisons\"**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7848102>
 
-::: {#w3-owl2-overview}
-W3C 2012
-:::
-
 W3C OWL Working Group (2012):\
 **OWL 2 Web Ontology Language Document Overview** (Second Edition).\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2012/REC-owl2-overview-20121211>
-
-::: {#w3-sparql11-overview}
-W3C 2013
-:::
 
 The W3C SPARQL Working Group (2013):\
 **SPARQL 1.1 Overview**.\
@@ -6844,17 +1530,9 @@ The W3C SPARQL Working Group (2013):\
 <https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/> (accessed
 26 May 2022)
 
-::: {#DataW3C}
-W3C 2015
-:::
-
 W3C (2015):\
 **Linked Data**\
 <https://www.w3.org/standards/semanticweb/data> (accessed 26 May 2022)
-
-::: {#UsageStatisticsJSONLD}
-W3Techs 2023
-:::
 
 W3Techs 2023:\
 **Usage Statistics of JSON-LD for Websites**. 2023-05.\
@@ -6862,29 +1540,17 @@ W3Techs 2023:\
 <https://w3techs.com/technologies/details/da-jsonld> (accessed 18 May
 2023)
 
-::: {#HTMLStandard}
-WHATWG 2023
-:::
-
 WHATWG (2023):\
 **Microdata**.\
 *HTML Living Standard*\
 <https://html.spec.whatwg.org/multipage/microdata.html> (accessed 13
 June 2023)
 
-::: {#weigelRDARecommendationPID2018}
-Weigel 2018
-:::
-
 Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich
 Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa (2018):\
 **RDA Recommendation on PID Kernel Information**\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00031>
-
-::: {#fdo-KernelAttributes}
-Weigel 2022
-:::
 
 Daan Broeder, Peter Wittenburg, Ivonne Anders, Karsten Peters-von Gehlen
 (2022):\
@@ -6894,10 +1560,6 @@ PR-FDO-KernelAttributesAndMetadata-2.0-20221017\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825693>
 
-::: {#fdo-DocProcessStd}
-Weiland 2022a
-:::
-
 C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch,
 Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg (2022):\
 **FAIR Digital Objects Forum Document Standards**
@@ -6906,10 +1568,6 @@ WD-DocProcessStd-1.1-20220129 (internal draft)\
 <https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_>
 (accessed 30 November 2022)
 
-::: {#fdo-MachineActionDef}
-Weiland 2022b
-:::
-
 Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter
 Wittenburg (2022):\
 **FDO machine actionability**. Version 2.2\
@@ -6917,20 +1575,12 @@ Wittenburg (2022):\
 PR-MachineActionDef-2.2-20221119\
 *FAIR Digital Objects Forum* <https://doi.org/10.5281/zenodo.7825650>
 
-::: {#wieczorekDarwinCoreEvolving2012}
-Wieczorek 2012
-:::
-
 John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring,
 Renato Giovanni, Tim Robertson, David Vieglais (2012):\
 **Darwin Core: An Evolving Community-Developed Biodiversity Data
 Standard**.\
 *PLOS ONE* **7**(1):e29715.
 <https://doi.org/10.1371/journal.pone.0029715>
-
-::: {#monsCloudyIncreasinglyFAIR2017b}
-Wilkinson 2016
-:::
 
 Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle
 Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
@@ -6950,10 +1600,6 @@ stewardship**.\
 *Scientific Data* **3**(1)\
 <https://doi.org/10.1038/sdata.2016.18>
 
-::: {#10.5281/zenodo.7463421}
-Wilkinson 2022a
-:::
-
 Mark D. Wilkinson, Susanna-Assunta Sansone, Grootveld Marjan, Josefine
 Nordling, Richard Dennis, David Hecker (2022):\
 **FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons**.\
@@ -6961,19 +1607,11 @@ EOSC FAIR Metrics subgroup\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7463421>
 
-::: {#wilkinsonWorkflowsWhenParts2022b}
-Wilkinson 2022b
-:::
-
 Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight,
 Jeremy Logan, Patrick Widener, Matthew Wolf (2022):\
 **F\*\*\* workflows: When parts of FAIR are missing**.\
 *arXiv* 2209.09022 \[cs.DL\]\
 <https://doi.org/10.48550/arxiv.2209.09022>
-
-::: {#williamsOpenPHACTSSemantic2012c}
-Williams 2012
-:::
 
 Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer, Christine
 Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas Blomberg,
@@ -6982,20 +1620,12 @@ Gerhard Ecker, Carole Goble, Barend Mons (2012):\
 *Drug Discovery Today* **17**(21-22) (2012)\
 <https://doi.org/10.1016/j.drudis.2012.05.016>
 
-::: {#wittenburgDigitalObjectsDrivers2019a}
-Wittenburg 2019
-:::
-
 Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik Schultes
 (2019):\
 **Digital objects as drivers towards convergence in data
 infrastructures**.\
 *B2Share*\
 <https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11>
-
-::: {#wittenburgFAIRDigitalObject2022b}
-Wittenburg 2022
-:::
 
 Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman,
 Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal,
@@ -7008,28 +1638,16 @@ Wieder (2022):\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.5872645>
 
-::: {#cwfr}
-Wittenburg 2023
-:::
-
 Peter Wittenburg, et al (2023):\
 **Canonical workflow frameworks for research**.\
 *OSF*\
 <https://osf.io/3rekv/>
-
-::: {#wolstencroftRightFieldEmbeddingOntology2011b}
-Wolstencroft 2011
-:::
 
 Katy Wolstencroft, Stuart Owen, Matthew Horridge, Olga Krebs, Wolfgang
 Mueller, Jacky L. Snoep, Franco du Preez, Carole Goble (2011):\
 **RightField: Embedding ontology annotation in spreadsheets**.\
 *Bioinformatics* **27**(14)\
 <https://doi.org/10.1093/bioinformatics/btr312>
-
-::: {#wolstencroftTavernaWorkflowSuite2013d}
-Wolstencroft 2013
-:::
 
 Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams,
 David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra
@@ -7041,99 +1659,18 @@ Services on the desktop, web or in the cloud**.\
 *Nucleic Acids Research* **41**(W1)\
 <https://doi.org/10.1093/nar/gkt328>
 
-::: {#w3-rdf11-concepts}
-Wood 2014
-:::
-
 David Wood, Richard Cyganiak, Markus Lanthaler (2014):\
 **RDF 1.1 Concepts and Abstract Syntax**\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>
-
-::: {#Draftbhuttonjsonschema}
-Wright 2022
-:::
 
 Austin Wright, Henry Andrews, Ben Hutton, Greg Dennis (2022):\
 **JSON schema: A media type for describing JSON documents**.\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/>
 
-::: {#zarrasComparisonFrameworkMiddleware2004a}
-Zarras 2004
-:::
-
 Apostolos Zarras (2004):\
 **A Comparison Framework for Middleware Infrastructures**.\
 *The Journal of Object Technology* **3**(5)\
 <https://doi.org/10.5381/jot.2004.3.5.a2>
 :::
-
-
-
-[^1]: For a brief introduction to DOIP 2.0, see [@DOIPExamplesCordraa]
-
-[^2]: URIs [@rfc3986] are generalised forms of URLs that include
-    locator-less identifiers such as ISBN book numbers (URNs). The
-    distinction between locator-full and locator-less identifiers have
-    weakened in recent years [@InfoURIRegistry], for instance DOI
-    identifiers now are commonly expressed with the prefix
-    `https://doi.org/` rather than as URNs with `info:doi:` given that
-    the URL/URN gap has been bridged by HTTP resolvers and the use of
-    Persistent Identifiers (PIDs) [@jutyIdentifiersOrgMIRIAM2011]. RDF
-    1.1 formats use Unicode to support IRIs [@rfc3987], which extends
-    URIs to include international characters and domain names.
-
-[^3]: URIs can also identify *non-information resources* for any kind of
-    physical object (e.g. people), such identifiers can resolve with
-    `303 See Other` redirections to a corresponding *information
-    resources* [@sauermannCoolURIsSemantic2011].
-
-[^4]: \ <https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation>
-
-[^5]: *Datasets* that distribute RDF graphs should not be confused with
-    [RDF
-    Datasets](https://www.w3.org/TR/rdf11-concepts/#section-dataset)
-    used for partitioning *named graphs*.
-
-[^6]: Presumably this large uptake of JSON-LD is mainly for the purpose
-    of Search Engine Optimisation (SEO), with typically small amounts of
-    metadata which may not constitute Linked Data as introduced above,
-    however this deployment nevertheless constitute machine-actionable
-    structured data.
-
-[^7]: Newer [@fdo-RequirementSpec] renames `FDOF*` to `FDOR*` but
-    follows same ordering.
-
-[^8]: The `http` protocol (port 80) can in theory also upgrade
-    [@rfc2817] to TLS encryption, as commonly used by [Internet Printing
-    Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2)
-    for `ipp` URIs, but on the Web, best practice is explicit `https`
-    (port 443) URLs to ensure following links stay secure.
-
-[^9]: HATEOAS: Hypermedia as the Engine of Application State
-    [@fieldingArchitecturalStylesDesign2000a], an important element of
-    the REST architectural style.
-
-[^10]: Although it is possible with `0.DOIP/Op.Retrieve` to request only
-    particular individual elements of an DO (e.g. one file), unlike
-    HTTP's `Range` request, it is not possible to select individual
-    chunks of an element's bytestream.
-
-[^11]: The `Handle.net` system was previously covered by software patent
-    [US6135646A](https://patents.google.com/patent/US6135646A/en) which
-    [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461)
-    in 2013.
-
-[^12]: The [Handle.net public
-    license](http://www.handle.net/HNRj/HNR-9-License.pdf) is not
-    OSI-approved [@LicensesStandardsOpen] as an open source license --
-    it includes usage restrictions and requires Service Agreements. It
-    is not a DOIP requirement to host a local Handle instance, e.g. EOSC
-    provides the
-    [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c)
-    service for acquiring Handle prefixes.
-
-[^13]: <https://marketplace.eosc-portal.eu/>
-
--->
