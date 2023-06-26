@@ -163,7 +163,7 @@ Our main motivation for this article is to investigate how FAIR Digital Objects 
 
 To better understand the relationship between the FDO framework and other existing approaches, we use the following for analysis:
 
-1.  An Interoperability Framework and Distributed Platform for Fast Data Applications <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span>, which proposes quality measurements for comparing how frameworks support interoperability, particularly from a service architectural view.
+1.  An Interoperability Framework and Distributed Platform for Fast Data Applications [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)], which proposes quality measurements for comparing how frameworks support interoperability, particularly from a service architectural view.
 
 2.  The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>, validated against its current implementations for completeness.
 
@@ -181,7 +181,7 @@ Some of these frameworks invite a comparison on a conceptual level, while others
 
 ### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
 
-The Interoperability Framework for Fast Data Applications <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span> categorises interoperability between applications along 6 strands, covering different architectural levels: from *symbiotic* (agreement to cooperate) and *pragmatic* (ability to choreograph processes), through *semantic* (common understanding) and *syntactic* (common message formats), to low-level *connective* (transport-level) and *environmental* (deployment practices).
+The Interoperability Framework for Fast Data Applications [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)] categorises interoperability between applications along 6 strands, covering different architectural levels: from *symbiotic* (agreement to cooperate) and *pragmatic* (ability to choreograph processes), through *semantic* (common understanding) and *syntactic* (common message formats), to low-level *connective* (transport-level) and *environmental* (deployment practices).
 
 We have chosen to investigate using this framework as it covers the higher levels of the OSI Model <span class="citation" data-cites="stallingsHandbookComputercommunicationsStandards1990">(Stallings [1990](#ref-stallingsHandbookComputercommunicationsStandards1990))</span> better with regards to automated machine-to-machine interaction (and thus interoperability), which is a crucial aspect of the FAIR principles. In Table [\[tbl:fdo-web-interoperability-framework\]](#tbl:fdo-web-interoperability-framework) we use the interoperability framework to compare the current FAIR Digital Object approach against the Web and its Linked Data practices.
 
@@ -206,7 +206,7 @@ It is also a question as to whether a highly constrained protocol revolving arou
 | **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*    | <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI [2023](#ref-DOIPAPIHTTPa)[b](#ref-DOIPAPIHTTPa))</span>    | HTTP/1.1, TCP/IP port 80 <span class="citation" data-cites="rfc2616">(Fielding et al. [1999](#ref-rfc2616))</span>; HTTP/1.1+TLS, TCP/IP 443 <span class="citation" data-cites="rfc2818">(Rescorla [2000](#ref-rfc2818))</span>; HTTP/2, as HTTP/1\* but binary <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson [2015](#ref-rfc7540))</span>; HTTP/3, like HTTP/2+TLS but UDP <span class="citation" data-cites="rfc9114">(Bishop [2022](#ref-rfc9114))</span>    |
 | **Environmental**: *how applications are deployed and affected by its environment, portability*    | Main DOIP implementation is [*Cordra*](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).    | HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.    |
 
-Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span>. <span id="tbl:fdo-web-interoperability-framework" label="tbl:fdo-web-interoperability-framework">\[tbl:fdo-web-interoperability-framework\]</span>
+_**Table 1**: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)]_
 
 </div>
 
@@ -232,7 +232,7 @@ From this mapping[^15] we can identify the conceptual similarities between DOIP 
 | Protocol          | DOIP 2.0, ++      | HTTP/1.1, HTTP/2, HTTP/3    |
 | Link              | PID/Handle        | URL    |
 
-Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span> to equivalent concepts for FDO and Web. <span id="tbl:metamodel-concepts" label="tbl:metamodel-concepts">\[tbl:metamodel-concepts\]</span>
+Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)] to equivalent concepts for FDO and Web. <span id="tbl:metamodel-concepts" label="tbl:metamodel-concepts">\[tbl:metamodel-concepts\]</span>
 
 </div>
 
@@ -798,10 +798,9 @@ DONA (2018):\
 *DONA Foundation*\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
 
-José Carlos Martins Delgado (2016):\
-**An Interoperability Framework and Distributed Platform for Fast Data
-Applications**.\
-In: *Data Science and Big Data Computing*\
+[Delgado 2016] José Carlos Martins Delgado (2016):\
+**An Interoperability Framework and Distributed Platform for Fast Data Applications**.\
+*Data Science and Big Data Computing*\
 <https://doi.org/10.1007/978-3-319-31861-5_1>
 
 Anusuriya Devaraju, Mustapha Mokrane, Linas Cepinskas, Robert Huber,
