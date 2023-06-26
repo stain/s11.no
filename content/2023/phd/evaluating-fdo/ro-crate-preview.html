@@ -38,6 +38,9 @@
           "@id": "https://doi.org/10.48550/arXiv.2306.07436"
         },
         {
+          "@id": "main.html"
+        },
+        {
           "@id": "table1.html"
         },
         {
@@ -112,12 +115,55 @@
       "dateModified": "2023-06-14T00:03:40Z",
       "publisher": {
         "@id": "https://arxiv.org/"
+      }
+    },
+    {
+      "@id": "main.html",
+      "@type": [
+        "File",
+        "ScholarlyArticle",
+        "WebPage"
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "sameAs": {
+        "@id": "https://doi.org/10.48550/arXiv.2306.07436"
       },
+      "hasPart": [
+        {
+          "@id": "table1.html"
+        },
+        {
+          "@id": "table2.html"
+        },
+        {
+          "@id": "table3.html"
+        },
+        {
+          "@id": "table4.html"
+        },
+        {
+          "@id": "table5.html"
+        }
+      ],
       "url": "https://s11.no/2023/phd/evaluating-fdo/"
     },
     {
       "@id": "table1.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fdo-web-interoperability-framework",
       "name": "Table 1",
       "description": "Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data (Delgado 2016). ",
       "encodingFormat": [
@@ -140,7 +186,11 @@
     },
     {
       "@id": "table2.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:metamodel-concepts",
       "name": "Table 2",
       "description": "Mapping the Metamodel concepts from the Interoperability Framework for Fast Data (Delgado 2016) to equivalent concepts for FDO and Web. ",
       "encodingFormat": [
@@ -166,7 +216,11 @@
     },
     {
       "@id": "table3.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fdo-checks",
       "name": "Table 3",
       "description": "Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.",
       "encodingFormat": [
@@ -192,7 +246,11 @@
     },
     {
       "@id": "table4.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fdo-web-middleware",
       "name": "Table 4",
       "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
       "encodingFormat": [
@@ -204,7 +262,11 @@
     },
     {
       "@id": "table5.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fair-data-maturity-model",
       "name": "Table 5",
       "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
       "encodingFormat": [
@@ -457,6 +519,16 @@
         "@id": "https://orcid.org/0000-0002-2536-4906"
       },
       "year": "2016"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "name": "Carole Goble"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth"
     },
     {
       "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
@@ -978,7 +1050,11 @@
     },
     {
       "@id": "table6.html",
-      "@type": "File",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:eosc",
       "name": "Table 6",
       "description": "Assessing EOSC Interoperability Framework (Corcho et al. 2021, sec. 3.6) against the FDO guidelines (Bonino et al. 2019) and Linked Data practices.",
       "encodingFormat": [
@@ -989,16 +1065,6 @@
       ]
     },
     {
-      "@id": "https://orcid.org/0000-0003-1219-2137",
-      "@type": "Person",
-      "name": "Carole Goble"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0183-6910",
-      "@type": "Person",
-      "name": "Paul Groth"
-    },
-    {
       "@id": "https://arxiv.org/",
       "@type": "Organization",
       "name": "arXiv"
@@ -1007,7 +1073,6 @@
 }
 </script>
 
-    
 <script src="ro-crate-preview_files/ro-crate-dynamic.min.js"></script>
 
 <link rel="stylesheet" href="ro-crate-preview_files/bootstrap.min.css" />
@@ -1091,6 +1156,8 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//doi.org/10.48550/arXiv.2306.07436">Evaluating FAIR Digital Object and Linked Data as distributed object systems</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
                         
                         <li><a href="#table1.html">Table 1</a></li>
                         
@@ -1241,6 +1308,64 @@ We systematically evaluate FDO and its implementations as a global distributed o
             </tr><tr>
             <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//arxiv.org/">arXiv</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
+            <td style='text-align:left'><a href="#main.html">main.html</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="main.html">⬇️ Download: </a> main.html</h3>
+            
+            <iframe src='main.html' width='100%' height='500'></iframe>
+            
+            
+        <div id="main.html">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>main.html</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>ScholarlyArticle</span></li>
+                        
+                        <li><span>WebPage</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0003-1219-2137">Carole Goble</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0003-0183-6910">Paul Groth</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.48550/arXiv.2306.07436">Evaluating FAIR Digital Object and Linked Data as distributed object systems</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#table1.html">Table 1</a></li>
+                        
+                        <li><a href="#table2.html">Table 2</a></li>
+                        
+                        <li><a href="#table3.html">Table 3</a></li>
+                        
+                        <li><a href="#table4.html">Table 4</a></li>
+                        
+                        <li><a href="#table5.html">Table 5</a></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><a href="https://s11.no/2023/phd/evaluating-fdo/">https://s11.no/2023/phd/evaluating-fdo/</a></td>
@@ -1270,7 +1395,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>Table 1</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>Table</span></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data (Delgado 2016). </span></td>
@@ -1281,6 +1410,9 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cssSelector<span>&nbsp;</span><a href="http://schema.org/cssSelector">[?]</a></th>
+            <td style='text-align:left'><span>#tbl:fdo-web-interoperability-framework</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -1293,7 +1425,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1317,7 +1453,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>Table 2</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>Table</span></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Mapping the Metamodel concepts from the Interoperability Framework for Fast Data (Delgado 2016) to equivalent concepts for FDO and Web. </span></td>
@@ -1328,6 +1468,9 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cssSelector<span>&nbsp;</span><a href="http://schema.org/cssSelector">[?]</a></th>
+            <td style='text-align:left'><span>#tbl:metamodel-concepts</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">encodesCreativeWork<span>&nbsp;</span><a href="http://schema.org/encodesCreativeWork">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -1342,7 +1485,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1366,7 +1513,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>Table 3</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>Table</span></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.</span></td>
@@ -1377,6 +1528,9 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cssSelector<span>&nbsp;</span><a href="http://schema.org/cssSelector">[?]</a></th>
+            <td style='text-align:left'><span>#tbl:fdo-checks</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">citation<span>&nbsp;</span><a href="http://schema.org/citation">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -1390,7 +1544,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1414,7 +1572,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>Table 4</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>Table</span></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) </span></td>
@@ -1425,9 +1587,16 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cssSelector<span>&nbsp;</span><a href="http://schema.org/cssSelector">[?]</a></th>
+            <td style='text-align:left'><span>#tbl:fdo-web-middleware</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1451,7 +1620,11 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>Table 5</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>Table</span></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) </span></td>
@@ -1462,9 +1635,16 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cssSelector<span>&nbsp;</span><a href="http://schema.org/cssSelector">[?]</a></th>
+            <td style='text-align:left'><span>#tbl:fair-data-maturity-model</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></li>
+                        
+                        <li><a href="#main.html">main.html</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>

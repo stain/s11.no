@@ -33,6 +33,9 @@
                     "@id": "https://doi.org/10.48550/arXiv.2306.07436"
                 },
                 {
+                    "@id": "main.html"
+                },
+                {
                     "@id": "table1.html"
                 },
                 {
@@ -56,7 +59,6 @@
                 {
                     "@id": "#web"
                 }
-
             ]
         },
         {
@@ -89,8 +91,52 @@
             "url": "https://doi.org/10.5281/zenodo.8075229"
         },
         {
+            "@id": "main.html",
+            "@type": [
+                "File",
+                "ScholarlyArticle",
+                "WebPage"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-1219-2137"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-0183-6910"
+                }
+            ],
+            "sameAs": {
+                "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+            },
+            "hasPart": [
+                {
+                    "@id": "table1.html"
+                },
+                {
+                    "@id": "table2.html"
+                },
+                {
+                    "@id": "table3.html"
+                },
+                {
+                    "@id": "table4.html"
+                },
+                {
+                    "@id": "table5.html"
+                }
+            ],
+            "url": "https://s11.no/2023/phd/evaluating-fdo/"
+        },
+        {
             "@id": "table1.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:fdo-web-interoperability-framework",
             "name": "Table 1",
             "description": "Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data (Delgado 2016). ",
             "encodingFormat": [
@@ -146,7 +192,11 @@
         },
         {
             "@id": "table2.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:metamodel-concepts",
             "name": "Table 2",
             "description": "Mapping the Metamodel concepts from the Interoperability Framework for Fast Data (Delgado 2016) to equivalent concepts for FDO and Web. ",
             "encodingFormat": [
@@ -264,7 +314,7 @@
                 },
                 {
                     "@id": "#web-Resource"
-                }                
+                }
             ],
             "skos:narrowMatch": [
                 {
@@ -822,14 +872,18 @@
             "@type": "DefinedTerm",
             "skos:closeMatch": {
                 "@id": "#metamodel-Link"
-            },            
+            },
             "name": "Uniform Resource Locator",
             "alternateName": "URL",
             "url": "https://doi.org/10.17487/rfc3986"
         },
         {
             "@id": "table3.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:fdo-checks",
             "name": "Table 3",
             "description": "Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.",
             "encodingFormat": [
@@ -901,7 +955,11 @@
         },
         {
             "@id": "table4.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:fdo-web-middleware",
             "name": "Table 4",
             "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
             "encodingFormat": [
@@ -913,7 +971,11 @@
         },
         {
             "@id": "table5.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:fair-data-maturity-model",
             "name": "Table 5",
             "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
             "encodingFormat": [
@@ -925,7 +987,11 @@
         },
         {
             "@id": "table6.html",
-            "@type": "File",
+            "@type": [
+                "File",
+                "Table"
+            ],
+            "cssSelector": "#tbl:eosc",
             "name": "Table 6",
             "description": "Assessing EOSC Interoperability Framework (Corcho et al. 2021, sec. 3.6) against the FDO guidelines (Bonino et al. 2019) and Linked Data practices.",
             "encodingFormat": [
@@ -961,8 +1027,7 @@
             "dateModified": "2023-06-14T00:03:40Z",
             "publisher": {
                 "@id": "https://arxiv.org/"
-            },
-            "url": "https://s11.no/2023/phd/evaluating-fdo/"
+            }
         },
         {
             "@id": "https://arxiv.org/",
