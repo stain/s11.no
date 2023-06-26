@@ -51,7 +51,7 @@ We compare the FDO approach with established Linked Data practices and the exist
 
 
 
-## Introduction
+## Introduction {#sec:introduction}
 
 The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for <span class="citation" data-cites="h2020fair2016">(European Commission [2016](#ref-h2020fair2016))</span>. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
@@ -65,11 +65,11 @@ These approaches – FDO and Linked Data – thus, form two of the major avenues
 
 Concretely, the contribution of this paper is <span>**a systematic comparison between FDO and Linked Data using 5 different conceptual frameworks**</span> that capture different perspectives on interoperability and readiness for implementation.
 
-## Background and related work
+## Background and related work {#sec:background}
 
 In the following, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.
 
-### FAIR Digital Object
+### FAIR Digital Object {#sec:fdo}
 
 The concept of **FAIR Digital Objects** <span class="citation" data-cites="schultesFAIRPrinciplesDigital2019a">(Schultes and Wittenburg [2019](#ref-schultesFAIRPrinciplesDigital2019a))</span> has been introduced as way to expose research data as active objects that conform to the FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span>. This builds on the *Digital Object* (DO) concept <span class="citation" data-cites="kahnFrameworkDistributedDigital2006b">(Kahn and Wilensky [2006](#ref-kahnFrameworkDistributedDigital2006b))</span>, first introduced by <span class="citation" data-cites="kahnFrameworkDistributedDigital1995a">Kahn and Wilensky ([1995](#ref-kahnFrameworkDistributedDigital1995a))</span> as a system of *repositories* containing *digital objects* identified by *handles* and described by *metadata* which may have references to other handles. DO was the inspiration for the <span class="citation" data-cites="x1255FrameworkDiscovery">(“Series X: Data Networks, Open System Communications and Security” [2013](#ref-x1255FrameworkDiscovery))</span> framework which introduced an abstract *Digital Entity Interface Protocol* for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) <span class="citation" data-cites="DigitalObjectInterface">(Reilly [2009](#ref-DigitalObjectInterface))</span>.
 
@@ -77,7 +77,7 @@ In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persisten
 
 Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span>, in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span>. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
 
-#### FDO approaches
+#### FDO approaches {#sec:fdo-approaches}
 
 FDO is an evolving concept. A set of FDO Demonstrators <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span> highlight how current adapters are approaching implementations of FDO from different angles:
 
@@ -89,7 +89,7 @@ FDO is an evolving concept. A set of FDO Demonstrators <span class="citation" da
 
 From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we will cover .
 
-#### Next steps for FDO
+#### Next steps for FDO {#sec:next-step-fdo}
 
 The FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObjects">(“FAIR Digital Objects Forum” [n.d.](#ref-FAIRDigitalObjects))</span> working groups have prepared detailed requirement documents <span class="citation" data-cites="fdo-Specs">(*FDO Specification Documents - November 2022* [2022](#ref-fdo-Specs))</span> setting out the path for realising FDOs, named *FDO Recommendations*. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects <span class="citation" data-cites="fdo-Roadmap">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-Roadmap)[a](#ref-fdo-Roadmap))</span>, we provide a brief summary of each:
 
@@ -119,11 +119,11 @@ The **Machine actionability** <span class="citation" data-cites="fdo-MachineActi
 
 See bibliography [\[sec:fdo-bibliography\]](#sec:fdo-bibliography) for the citation per document above. It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. [2022](#ref-wittenburgFAIRDigitalObject2022b))</span> are thus not fully consolidated in choices such as protocols, type systems and serialisations – this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem.
 
-### From the Semantic Web to Linked Data
+### From the Semantic Web to Linked Data {#sec:ld}
 
 In order to describe *Linked Data* as it is used today, we’ll start with an (opinionated) description of the evolution of its foundation, the *Semantic Web*.
 
-#### A brief history of the Semantic Web
+#### A brief history of the Semantic Web {#sec:semweb}
 
 The **Semantic Web** was developed as a vision by Tim Berners-Lee <span class="citation" data-cites="berners-leeWeavingWebOriginal1999">(Berners-Lee and Fischetti [1999](#ref-berners-leeWeavingWebOriginal1999))</span>, at a time that the Web had already become widely established for information exchange, being a global set of hypermedia documents which are cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardised by [W3C](https://www.w3.org/standards/), [Ecma](https://www.ecma-international.org/), [IETF](https://www.ietf.org/standards/) and later [WHATWG](https://whatwg.org/). The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding *meaning* (or semantics) to not just the link relations, but also to the *resources* that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.
 
@@ -145,7 +145,7 @@ The move towards *Open Science* data sharing practices did from the late 2000s e
 
 With these trends, an emerging problem was that adopters of the Semantic Web primarily utillised it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps <span class="citation" data-cites="kamdarSystematicAnalysisTerm2017a">(Kamdar, Tudorache, and Musen [2017](#ref-kamdarSystematicAnalysisTerm2017a))</span>. Just like *link rot* affect regular Web pages and their citations from scholarly communication <span class="citation" data-cites="kleinScholarlyContextNot2014a">(Klein et al. [2014](#ref-kleinScholarlyContextNot2014a))</span>, for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud’s gathering of more than thousand datasets, unfortunately do not actually link to (still) downloadable (*dereferenceable*) Linked Data <span class="citation" data-cites="polleresMoreDecentralizedVision2020a">(Polleres et al. [2020](#ref-polleresMoreDecentralizedVision2020a))</span>. Another challenge facing potential adopters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies <span class="citation" data-cites="carrieroLandscapeOntologyReuse2020a">(Carriero et al. [2020](#ref-carrieroLandscapeOntologyReuse2020a))</span>, but also technological choices on RDF serialisation (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS <span class="citation" data-cites="w3-rdf-schema">(Guha and Brickley [2014](#ref-w3-rdf-schema))</span>, OWL <span class="citation" data-cites="w3-owl2-overview">(W3C OWL Working Group [2012](#ref-w3-owl2-overview))</span>, OBO <span class="citation" data-cites="tirmiziMappingOBOOWL2011a">(Tirmizi et al. [2011](#ref-tirmiziMappingOBOOWL2011a))</span>, SKOS <span class="citation" data-cites="w3-skos-primer">(Isaac and Summers [2009](#ref-w3-skos-primer))</span>), and deployment challenges <span class="citation" data-cites="sauermannCoolURIsSemantic2011">(Sauermann et al. [2008](#ref-sauermannCoolURIsSemantic2011))</span> (e.g. hash vs slash in namespaces, HTTP status codes and PID redirection strategies).
 
-#### Linked Data: Rebuilding the Web of Data
+#### Linked Data: Rebuilding the Web of Data {#sec:ld-web}
 
 The **Linked Data** (LD) concept <span class="citation" data-cites="bizerLinkedDataStory2009a">(Bizer, Heath, and Berners-Lee [2009](#ref-bizerLinkedDataStory2009a))</span> was kickstarted as a set of best practices <span class="citation" data-cites="LinkedDataDesign">(Berners-Lee [2006](#ref-LinkedDataDesign))</span> to bring the Web aspect of the Semantic Web back into focus. Crucial to Linked Data is the *reuse of existing URIs*, rather than making new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigable data resources, rather than elaborate graph representations.
 
@@ -157,7 +157,7 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 Linked Data provides technologies that have evolved over time to satisfy its primary purpose of data interoperability. The needs to embrace the Web and developer experience have been central lessons learned. In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
 
-## Method
+## Method {#sec:method}
 
 Our main motivation for this article is to investigate how FAIR Digital Objects may differ from the learnt experiences of Linked Data and the Web. We also aim to reflect back from FDO’s motivation of machine-actionability to consider the Web as a distributed computational system.
 
@@ -177,9 +177,9 @@ The reason for this wide-ranged comparison is to exercise the different dimensio
 
 Some of these frameworks invite a comparison on a conceptual level, while others relate better to implementations and current practices. For conceptual comparisons we consider FAIR Digital Objects and the Web broadly. For implementations, we contrast the main FDO realisation using the DOIPv2 protocol <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> against Linked Data as implemented in general practice[<sup>8</sup>](#fn8).
 
-## Results
+## Results {#sec;results}
 
-### Considering FDO/Web as interoperability framework for Fast Data
+### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
 
 The Interoperability Framework for Fast Data Applications <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado [2016](#ref-delgadoInteroperabilityFrameworkDistributed2016a))</span> categorises interoperability between applications along 6 strands, covering different architectural levels: from *symbiotic* (agreement to cooperate) and *pragmatic* (ability to choreograph processes), through *semantic* (common understanding) and *syntactic* (common message formats), to low-level *connective* (transport-level) and *environmental* (deployment practices).
 
@@ -211,11 +211,11 @@ Considering FDO and Web according to the quality levels of the Interoperability 
 
 </div>
 
-#### Mapping of Metamodel concepts
+#### Mapping of Metamodel concepts {#sec:metamodel}
 
 The Interoperability Framework for Fast Data also provides a brief *metamodel* which we use in Table [\[tbl:metamodel-concepts\]](#tbl:metamodel-concepts) to map and examplify corresponding concepts in FDO’s DOIP realization and the Web using HTTP semantics <span class="citation" data-cites="rfc9110">(Fielding, Nottingham, and Reschke [2022](#ref-rfc9110))</span>.
 
-From this mapping we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further ), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
+From this mapping[^15] we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further in [section on middleware](#middleware)), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
 
 <div id="tbl:metamodel-concepts">
 
@@ -237,7 +237,7 @@ Mapping the Metamodel concepts from the Interoperability Framework for Fast Data
 
 </div>
 
-### Assessing FDO implementations
+### Assessing FDO implementations {#sec:doip-fdo-compare}
 
 The FAIR Digital Object guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(Bonino et al. [2019](#ref-boninoFAIRDigitalObject))</span> sets out recommendations for FDO implementations. Note that the proposed update to FDO specification <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> clarifies these definitions with equivalent identifiers[<sup>9</sup>](#fn9) and relates them to further FDO requirements such as FDO Data Type Registries.
 
@@ -296,7 +296,7 @@ Checking FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObje
 
 </div>
 
-### Comparing FDO and Web as middleware infrastructures
+### Comparing FDO and Web as middleware infrastructures {#middleware}
 
 In this section, we take the perspective that FDO principles are in effect proposing a global infrastructure of machine-actionable digital objects. As such we can consider implementations of FDO as **middleware infrastructures** for programmatic usage, and can evaluate them based on expectations for client and server developers.
 
@@ -345,7 +345,7 @@ Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation"
 
 </div>
 
-### Assessing FDO against FAIR
+### Assessing FDO against FAIR {#sec:fair-compare}
 
 In addition to having “FAIR” in its name, the FAIR Digital Object guidelines <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> also include *G3: FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness*.
 
@@ -369,7 +369,7 @@ From this evaluation we observe:
 
   - Resolving FDOs via Handle PIDs to the corresponding DOIP server is currently undefined by FDO and DOIP specifications. `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is known.
 
-<div id="RDA-A2-01M">
+<div id="tbl:fair-data-maturity-model">
 
 | FAIR ID                                                                  | Indicator                                                                                    | FDO guidelines          | FDO/DOIP                                                                                                                                                                                                                                                                                                                                                                                                                                             | FDO/LDP                                                                                                                                                                                                           | Linked Data examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -475,11 +475,11 @@ Assessing EOSC Interoperability Framework <span class="citation" data-cites="cor
 
 </div>
 
-## Discussion
+## Discussion {#sec:discussion}
 
 We have evaluated the FAIR Digital Object concept using multiple frameworks, and contrasted FDO against existing experiences from Linked Data on the Web. In this section we discuss the implications of this evaluation, and propose how these two approaches can be better combined.
 
-### Framework evaluation
+### Framework evaluation {#sec:framework-evaluation}
 
 Having considered FDO and the Web architecture as interoperability frameworks ([\[sec:interoperability-compare\]](#sec:interoperability-compare)), we observe that neither are magic bullets, but each bring different aspects of interoperability. The Web comes with a large degree of flexibility and openness, however this means interoperability can suffer as services have different APIs and data models, although with common patterns. This is also true for Linked Data on the Web, with many overlapping ontologies and frequent inconsistencies in resolution mechanisms; although somewhat alleviated in recent years by schema.org becoming common metadata model for semantic markup inline in Web pages. The Web is based on a common HTTP protocol which has remained stable architecturally throughout its 32 years of largely backwards-compatible evolution. FDO on the other side sets down multiple rigid rules for identifiers, types, methods etc. that are advanterous for interoperability and predictability for FAIR consumption. Yet there is a large degree of freedom in how the FDO rules can be implemented by a given community, for instance there is no common metadata model or identifier resolution mechanism, and DOIP is just one possible transport method for FDOs, which itself does not enforce these rules.
 
@@ -491,7 +491,7 @@ By assessing FDO against the FAIR principles ([\[sec:fair-compare\]](#sec:fair-c
 
 EOSC has been largely supportive of FDO, FAIR and related services. By contrasting the EOSC Interoperability Framework ([\[sec:eosc-interoperability-framework\]](#sec:eosc-interoperability-framework)) with FDO, we found that there are important dimensions that are not solved at a technical level, but through organization collaboration, legal requirements and building community practices. FDO recommendations highlight community aspects, but at the same time the largest FAIR communities in many science domains are already producing and consuming Linked Data. Just as the Linked Data community has a challenge in convincing more research fields to use Semantic Web technologies, FDO currently need to build many new communities in areas that have shown interest in that approach (e.g. material science). It may be advantageous for both these effort to be aligned and jointly promoted under the EOSC umbrella.
 
-### What does FDO mean for Linked Data?
+### What does FDO mean for Linked Data? {#sec:what-does-it-mean-for-linked-data}
 
 The FAIR Digital Object approach raises many important points for Linked Data practictioners. At first glance, the explicit requirements of FDOs may seem to be easy to furfill by different parts of the Semantic Web Cake <span class="citation" data-cites="SemanticWebXML2000">(Berners-Lee [2000](#ref-SemanticWebXML2000) slide 10)</span>, as has previously been proposed <span class="citation" data-cites="10.3897/rio.8.e94501">(Soiland-Reyes, Castro, et al. [2022](#ref-10.3897/rio.8.e94501))</span>. However, this deeper investigation, based on multiple frameworks, highlights that the openness and variability of how Linked Data is deployed can make it difficult to achieve the FDO goals without significant effort.
 
@@ -515,7 +515,7 @@ We therefore identify the need for a new explicit FDO profile of Linked Data tha
 
 The FAIR and Linked Data communities likewise need to recognize the need for simpler, more pragmatic approaches that make it easier for FAIR practitioners to adapt the technologies with "just enough" semantics.
 
-## Conclusion
+## Conclusion {#sec:conclusion}
 
 In this work, we have considered FAIR Digital Objects (FDO) as a potential distributed object system for FAIR data and compared it with established Web approaches focusing on Linked Data. We have described the background of the Semantic Web and FAIR Digital Objects, and evaluated both using multiple conceptual frameworks.
 
@@ -525,7 +525,7 @@ The FDO recommendations show that FAIR thinking in this regard need to move beyo
 
 By implementing the goals of FAIR Digital Objects with the mature technology stack developed for Linked Data, EOSC research infrastructures and researchers in general can create and use FAIR machine-actionable research outputs for decades to come.
 
-## Acknowledgments
+## Acknowledgments 
 
 This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); HORIZON-CL4-2021-HUMAN-01-01 101070305 (ENEXA) and by UK Research and Innovation (UKRI) under the UK government’s *Horizon Europe funding guarantee* grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
 
@@ -548,12 +548,10 @@ Contributions to this article according to the [CASRAI CRediT](https://credit.ni
 [^1]: For a brief introduction to DOIP 2.0, see <span class="citation" data-cites="DOIPExamplesCordraa">CNRI ([2023](#ref-DOIPExamplesCordraa)[a](#ref-DOIPExamplesCordraa))</span>[↩︎](#fnref1)
     
 [^2]: URIs <span class="citation" data-cites="rfc3986">(Berners-Lee, Fielding, and Masinter [2005](#ref-rfc3986))</span> are generalised forms of URLs that include locator-less identifiers such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years <span class="citation" data-cites="InfoURIRegistry">(OCLC [2010](#ref-InfoURIRegistry))</span>, for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) <span class="citation" data-cites="jutyIdentifiersOrgMIRIAM2011">(Juty, Le Novere, and Laibe [2011](#ref-jutyIdentifiersOrgMIRIAM2011))</span>. RDF 1.1 formats use Unicode to support *IRI*s <span class="citation" data-cites="rfc3987">(Dürst and Suignard [2005](#ref-rfc3987))</span>, which extends URIs to include international characters and domain names.
-    
 
 [^3]: URIs can also identify *non-information resources* for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding *information resources* <span class="citation" data-cites="sauermannCoolURIsSemantic2011">(Sauermann et al. [2008](#ref-sauermannCoolURIsSemantic2011))</span>.    
 
-[^4]: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation>[↩︎](#fnref4)
-    
+[^4]: \ <https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation>
 
 [^5]: In RDF, each triple represent an edge that is named using its property URI, and the nodes are subject/object as URIs, blank nodes or (for objects) typed literal values <span class="citation" data-cites="w3-rdf11-primer">(Schreiber and Raimond [2014](#ref-w3-rdf11-primer))</span>.[↩︎](#fnref5)
     
@@ -561,32 +559,23 @@ Contributions to this article according to the [CASRAI CRediT](https://credit.ni
 [^6] *Datasets* that distribute RDF graphs should not be confused with [*RDF Datasets*](https://www.w3.org/TR/rdf11-concepts/#section-dataset) used for partitioning *named graphs*.[↩︎](#fnref6)
     
 
-[^7]:    
-    Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.[↩︎](#fnref7)
+[^7]: Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.[↩︎](#fnref7)
     
-[^8]:    
-    For further background on FDO implemented with Linked Data see <span class="citation" data-cites="FDOFramework 10.3897/rio.8.e94501">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework); Soiland-Reyes, Castro, et al. [2022](#ref-10.3897/rio.8.e94501))</span>[↩︎](#fnref8)
+[^8]: For further background on FDO implemented with Linked Data see <span class="citation" data-cites="FDOFramework 10.3897/rio.8.e94501">(Bonino da Silva Santos, Guizzardi, and Sales [2022](#ref-FDOFramework); Soiland-Reyes, Castro, et al. [2022](#ref-10.3897/rio.8.e94501))</span>[↩︎](#fnref8)
     
-[^9]:
-    Newer <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> renames `FDOF*` to `FDOR*` but follows same ordering.[↩︎](#fnref9)
+[^9]: Newer <span class="citation" data-cites="fdo-RequirementSpec">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Gehlen, et al. [2023](#ref-fdo-RequirementSpec))</span> renames `FDOF*` to `FDOR*` but follows same ordering.[↩︎](#fnref9)
 
-[^10]:
-    Although it is possible with `0.DOIP/Op.Retrieve` to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s `Range` request, it is not possible to select individual chunks of an element’s bytestream.[↩︎](#fnref10)
+[^10]: Although it is possible with `0.DOIP/Op.Retrieve` to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s `Range` request, it is not possible to select individual chunks of an element’s bytestream.[↩︎](#fnref10)
 
-[^11]:    
-    The `http` protocol (port 80) can in theory also upgrade <span class="citation" data-cites="rfc2817">(Khare and Lawrence [2000](#ref-rfc2817))</span> to TLS encryption, as commonly used by [Internet Printing Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2) for `ipp` URIs, but on the Web, best practice is explicit `https` (port 443) URLs to ensure following links stay secure.[↩︎](#fnref11)
+[^11]: The `http` protocol (port 80) can in theory also upgrade <span class="citation" data-cites="rfc2817">(Khare and Lawrence [2000](#ref-rfc2817))</span> to TLS encryption, as commonly used by [Internet Printing Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2) for `ipp` URIs, but on the Web, best practice is explicit `https` (port 443) URLs to ensure following links stay secure.
     
-    </div>
-
-[^12]:
-   HATEOAS: Hypermedia as the Engine of Application State <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span>, an important element of the REST architectural style.[↩︎](#fnref12)
+[^12]:   HATEOAS: Hypermedia as the Engine of Application State <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span>, an important element of the REST architectural style.[↩︎](#fnref12)
     
-[^13]:
-    The `Handle.net` system was previously covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) which [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013.
+[^13]: The `Handle.net` system was previously covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) which [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013.
 
-[^14]:
-    The [Handle.net public license](http://www.handle.net/HNRj/HNR-9-License.pdf) is not OSI-approved <span class="citation" data-cites="LicensesStandardsOpen">(“Licenses & Standards” [2022](#ref-LicensesStandardsOpen))</span> as an open source license – it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c) service for acquiring Handle prefixes.
+[^14]: The [Handle.net public license](http://www.handle.net/HNRj/HNR-9-License.pdf) is not OSI-approved <span class="citation" data-cites="LicensesStandardsOpen">(“Licenses & Standards” [2022](#ref-LicensesStandardsOpen))</span> as an open source license – it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c) service for acquiring Handle prefixes.
 
+[^15]: An equivalent SKOS mappping [[Isaac and Summers 2009](https://www.w3.org/TR/2009/NOTE-skos-primer-20090818)] is provided as part of the [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.8075229) [[Soiland-Reyes 2023](https://doi.org/10.5281/zenodo.8075229)].
 
 
 References 
@@ -1168,8 +1157,7 @@ Hydra W3C Community Group\
 <http://www.hydra-cg.com/spec/latest/core/>
 
 Ora Lassila, Ralph R. Swick (1999):\
-**Resource Description Framework (RDF) Model and Syntax
-Specification**.\
+**Resource Description Framework (RDF) Model and Syntax Specification**.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/>
 
@@ -1239,8 +1227,7 @@ Andy Neumann, Nuno Laranjeiro, Jorge Bernardino (2021):\
 
 Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty Mutlu,
 Silje Zink, Susan Michie (2021):\
-**Why and how to engage expert stakeholders in ontology development:
-Insights from social and behavioural sciences**.\
+**Why and how to engage expert stakeholders in ontology development: Insights from social and behavioural sciences**.\
 *Journal of Biomedical Semantics* **12**\
 <https://doi.org/10.1186/s13326-021-00240-6>
 
@@ -1338,8 +1325,7 @@ Guus Schreiber and Yves Raimond (2014):\
 <http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624>
 
 Erik Schultes, Peter Wittenburg (2019):\
-**FAIR principles and digital objects: Accelerating convergence on a
-data infrastructure**.\
+**FAIR principles and digital objects: Accelerating convergence on a data infrastructure**.\
 *Data analytics and management in data intensive domains*: 20th
 international conference, DAMDID/RCDL 2018, Moscow, Russia,
 2018-10-09/--12.\
@@ -1349,8 +1335,7 @@ Preprint:
 
 Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl,
 Marek Suchánek, Tobias Kuhn (2020):\
-**Reusable FAIR implementation profiles as accelerators of FAIR
-convergence**.\
+**Reusable FAIR implementation profiles as accelerators of FAIR convergence**.\
 *International Conference on Conceptual Modeling*, ER 2020: Advances in
 Conceptual Modeling, 2022-11-03/--06, Vienna, Austria.\
 *Lecture notes in Computer Science* **12584**\
@@ -1364,15 +1349,13 @@ Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg
 <https://doi.org/10.5281/zenodo.7824796>
 
 Ulrich Schwardmann, Tibor Kálmán (2022):\
-**Two Examples on How FDO Types can Support Machine and Human
-Readability**.\
+**Two Examples on How FDO Types can Support Machine and Human Readability**.\
 *Research Ideas and Outcomes* **8**\
 <https://doi.org/10.3897/rio.8.e96014>
 
 Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk
 Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, Thomas Jung (2022):\
-**IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP
-historical**.\
+**IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP historical**.\
 <https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi>\
 <https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87>
 
@@ -1386,8 +1369,7 @@ Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland,
 Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan
 Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah,
 Patricia L. Whetzel, Suzanna Lewis (2007):\
-**The OBO Foundry: Coordinated evolution of ontologies to support
-biomedical data integration**.\
+**The OBO Foundry: Coordinated evolution of ontologies to support biomedical data integration**.\
 *Nature Biotechnology* **25**(11)\
 <https://doi.org/10.1038/nbt1346>
 
@@ -1411,6 +1393,12 @@ Carole Goble, Paul Groth (2022):\
 *Research Ideas and Outcomes* **10**(8).\
 <https://doi.org/10.3897/rio.8.e94501>
 
+[Soiland-Reyes 2023] Stian Soiland-Reyes (2023):  
+**Comparison tables for evaluating FAIR Digital Object and Linked Data**.  
+RO-Crate. _Zenodo_  
+<https://w3id.org/ro/doi/10.5281/zenodo.8075229>  
+<https://doi.org/10.5281/zenodo.8075229>
+
 Steve Speicher, John Arwe, Ashok Malhotra (2015):\
 **Linked data platform 1.0**.\
 *W3C Recommendation*\
@@ -1433,8 +1421,7 @@ Internet Engineering Task Force.\
 <https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/>
 
 William Stallings (1990):\
-**Handbook of computer-communications standards: The open systems (OSI)
-model and OSI-related standards**, 2nd ed.\
+**Handbook of computer-communications standards: The Open Systems (OSI) model and OSI-related standards**, 2nd ed.\
 Sams.\
 [ISBN 978-0-672-22697-7](https://identifiers.org/isbn/9780672226977)
 
@@ -1444,16 +1431,14 @@ Stefan K. Stanczyk (1987):\
 <https://doi.org/10.21954/ou.ro.0000f821>
 
 Anisa Stefi, Thomas Hess (2015):\
-**To develop or to reuse? Two perspectives on external reuse in software
-projects**.\
+**To develop or to reuse? Two perspectives on external reuse in software projects**.\
 *International Conference of Software Business* (ICSOB 2015), Braga,
 Portugal, 2015-06-10/--12.\
 *ICSOB 2015: Software business*\
 <http://doi.org/10.1007/978-3-319-19593-3_18>
 
 Anisa Stefi (2015):\
-**Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and
-Not-Invented-Here Bias on the Adoption of Software Components**.\
+**Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components**.\
 *European Conference on Information Systems* (ECIS 2015), Münster,
 Germany, 2015-05-26/--29\
 <https://doi.org/10.18151/7217489>
@@ -1466,8 +1451,7 @@ Mendelsohn and Michael Sperberg-McQueen (2012):\
 
 Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio Labra
 Gayo, Daniel Mietchen, Eric Prud, Andra Waagmeester (2019):\
-**Using shape expressions (ShEx) to share RDF data models and to guide
-curation with rigorous validation**.\
+**Using shape expressions (ShEx) to share RDF data models and to guide curation with rigorous validation**.\
 *The Semantic Web: 16th international conference*, (ESWC 2019),
 Portorož, Slovenia, 2019-06-02/--06.\
 <https://doi.org/10.1007/978-3-030-21348-0_39>
@@ -1479,8 +1463,7 @@ Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
 <https://doi.org/10.1186/2041-1480-2-s1-s3>
 
 Ovidiu Turcoane (2014):\
-**Linked data, JSON-LD and the semantics of cultural and scientific
-heritage**.\
+**Linked data, JSON-LD and the semantics of cultural and scientific heritage**.\
 *Digital Presentation and Preservation of Cultural and Scientific
 Heritage* **4**\
 <https://doi.org/10.55630/dipp.2014.4.11>
@@ -1508,14 +1491,12 @@ Ruben Verborgh (2018):\
 (accessed 26 May 2022)
 
 Ruben Verborgh, Miel Vander Sande (2020):\
-**The semantic web identity crisis: In search of the trivialities that
-never were**.\
+**The semantic web identity crisis: In search of the trivialities that never were**.\
 *Semantic Web* **11**(1)\
 <https://doi.org/10.3233/SW-190372>
 
 Maaike Verburg, Robert Huber, Clement Jonquet, Daniel Garijo (2023):
-**FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an
-\"Apples to Apples\" Comparisons\"**.\
+**FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons\"**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7848102>
 
@@ -1577,8 +1558,7 @@ PR-MachineActionDef-2.2-20221119\
 
 John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring,
 Renato Giovanni, Tim Robertson, David Vieglais (2012):\
-**Darwin Core: An Evolving Community-Developed Biodiversity Data
-Standard**.\
+**Darwin Core: An Evolving Community-Developed Biodiversity Data Standard**.\
 *PLOS ONE* **7**(1):e29715.
 <https://doi.org/10.1371/journal.pone.0029715>
 
@@ -1595,8 +1575,7 @@ Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater,
 George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik
 van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg,
 Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):\
-**The FAIR Guiding Principles for scientific data management and
-stewardship**.\
+**The FAIR Guiding Principles for scientific data management and stewardship**.\
 *Scientific Data* **3**(1)\
 <https://doi.org/10.1038/sdata.2016.18>
 
@@ -1622,8 +1601,7 @@ Gerhard Ecker, Carole Goble, Barend Mons (2012):\
 
 Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik Schultes
 (2019):\
-**Digital objects as drivers towards convergence in data
-infrastructures**.\
+**Digital objects as drivers towards convergence in data infrastructures**.\
 *B2Share*\
 <https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11>
 
@@ -1654,8 +1632,7 @@ David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra
 Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex
 Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib
 Sufi, Carole Goble (2013):\
-**The Taverna workflow suite: Designing and executing workflows of Web
-Services on the desktop, web or in the cloud**.\
+**The Taverna workflow suite: Designing and executing workflows of Web Services on the desktop, web or in the cloud**.\
 *Nucleic Acids Research* **41**(W1)\
 <https://doi.org/10.1093/nar/gkt328>
 
@@ -1673,4 +1650,4 @@ Apostolos Zarras (2004):\
 **A Comparison Framework for Middleware Infrastructures**.\
 *The Journal of Object Technology* **3**(5)\
 <https://doi.org/10.5381/jot.2004.3.5.a2>
-:::
+
