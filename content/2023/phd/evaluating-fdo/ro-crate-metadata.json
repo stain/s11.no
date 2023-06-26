@@ -143,8 +143,12 @@
                 }
             ],
             "encodesCreativeWork": [
-                { "@id": "#metamodel" },
-                { "@id": "#fdo" }
+                {
+                    "@id": "#metamodel"
+                },
+                {
+                    "@id": "#fdo"
+                }
             ],
             "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
@@ -518,7 +522,7 @@
                 },
                 {
                     "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
-                }                
+                }
             ]
         },
         {
@@ -658,28 +662,131 @@
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
             "isBasedOn": [
-                { "@id": "https://doi.org/10.17487/RFC9110"}
+                {
+                    "@id": "https://doi.org/10.17487/RFC9110"
+                }
             ],
             "skos:hasTopConcept": {
                 "@id": "#web-Web"
             },
             "hasDefinedTerm": [
-                {"@id": "#web-Resource"},
-                {"@id": "#web-Server"},
-                {"@id": "#web-ConditionalRequests"},
-                {"@id": "#web-Method"},
-                {"@id": "#web-query"},
-                {"@id": "#web-Request"},
-                {"@id": "#web-Response"},
-                {"@id": "#web-Message"},
-                {"@id": "#web-Representation"},
-                {"@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"},
-                {"@id": "http://dbpedia.org/resource/Transport_Layer_Security"},
-                {"@id": "https://doi.org/10.17487/rfc7230"},
-                {"@id": "https://doi.org/10.17487/rfc7540"},
-                {"@id": "https://doi.org/10.17487/rfc9114"},
-                {"@id": "#web-URL"}
+                {
+                    "@id": "#web-Resource"
+                },
+                {
+                    "@id": "#web-Server"
+                },
+                {
+                    "@id": "#web-ConditionalRequests"
+                },
+                {
+                    "@id": "#web-Method"
+                },
+                {
+                    "@id": "#web-query"
+                },
+                {
+                    "@id": "#web-Request"
+                },
+                {
+                    "@id": "#web-Response"
+                },
+                {
+                    "@id": "#web-Message"
+                },
+                {
+                    "@id": "#web-Representation"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
+                },
+                {
+                    "@id": "https://doi.org/10.17487/rfc7230"
+                },
+                {
+                    "@id": "https://doi.org/10.17487/rfc7540"
+                },
+                {
+                    "@id": "https://doi.org/10.17487/rfc9114"
+                },
+                {
+                    "@id": "#web-URL"
+                }
             ]
+        },
+        {
+            "@id": "#web-Resource",
+            "@type": "DefinedTerm",
+            "name": "Resource",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-resources"
+        },
+        {
+            "@id": "#web-Server",
+            "@type": "DefinedTerm",
+            "name": "Server",
+            "alternateName": "Origin Server",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-origin-server"
+        },
+        {
+            "@id": "#web-ConditionalRequests",
+            "@type": "DefinedTerm",
+            "name": "Conditional Requests",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-conditional-requests"
+        },
+        {
+            "@id": "#web-Method",
+            "@type": "DefinedTerm",
+            "name": "Method",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-methods"
+        },
+        {
+            "@id": "#web-query",
+            "@type": "DefinedTerm",
+            "name": "Query",
+            "url": "https://www.rfc-editor.org/rfc/rfc3986#section-3.4"
+        },
+        {
+            "@id": "#web-Request",
+            "@type": "DefinedTerm",
+            "name": "Request",
+            "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.1"
+        },
+        {
+            "@id": "#web-Response",
+            "@type": "DefinedTerm",
+            "name": "Response",
+            "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.2"
+        },
+        {
+            "@id": "#web-Message",
+            "@type": "DefinedTerm",
+            "name": "Message",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-messages"
+        },
+        {
+            "@id": "#web-Representation",
+            "@type": "DefinedTerm",
+            "name": "Representation",
+            "url": "https://www.rfc-editor.org/rfc/rfc9110#name-representations"
+        },
+        {
+            "@id": "https://doi.org/10.17487/rfc7230"
+        },
+        {
+            "@id": "https://doi.org/10.17487/rfc7540"
+        },
+        {
+            "@id": "https://doi.org/10.17487/rfc9114"
+        },
+        {
+            "@id": "#web-URL",
+            "@type": "DefinedTerm",
+            "name": "Uniform Resource Locator",
+            "alternateName": "URL",
+            "url": "https://doi.org/10.17487/rfc3986"
         },
         {
             "@id": "table3.html",
