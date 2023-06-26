@@ -444,6 +444,65 @@
             }
         },
         {
+            "@id": "#fdo",
+            "@type": [
+                "DefinedTermSet",
+                "ConceptScheme"
+            ],
+            "name": "A partial list of FDO terms",
+            "dct:creator": [
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                }
+            ],
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "isBasedOn": [
+                {
+                    "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+                },
+                {
+                    "@id": "https://doi.org/10.5281/zenodo.7782262"
+                }
+            ],
+            "skos:hasTopConcept": {
+                "@id": "#fdo-FDO"
+            },
+            "hasDefinedTerm": [
+                {
+                    "@id": "#fdo-FDO"
+                },
+                {
+                    "@id": "#fdo-DO"
+                },
+                {
+                    "@id": "#fdo-DOIP-service"
+                },
+                {
+                    "@id": "#fdo-Extended-operations"
+                },
+                {
+                    "@id": "#fdo-DOIPOperation"
+                },
+                {
+                    "@id": "#fdo-DOIPRequest"
+                },
+                {
+                    "@id": "#fdo-DOIPResponse"
+                },
+                {
+                    "@id": "#fdo-Segment"
+                },
+                {
+                    "@id": "#fdo-requestId"
+                },
+                {
+                    "@id": "#fdo-DOIPTransportProtocol"
+                }
+            ]
+        },
+        {
             "@id": "#fdo-FDO",
             "@type": "DefinedTerm",
             "name": "FAIR Digital Object",
