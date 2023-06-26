@@ -53,7 +53,7 @@ We compare the FDO approach with established Linked Data practices and the exist
 
 ## Introduction {#sec:introduction}
 
-The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for <span class="citation" data-cites="h2020fair2016">(European Commission [2016](#ref-h2020fair2016))</span>. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
+The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for <span class="citation" data-cites="h2020fair2016">(European Commission [2016](#ref-h2020fair2016))</span>. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework [[Corcho 2021]] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
 Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object (FDO) concept <span class="citation" data-cites="schultesFAIRPrinciplesDigital2019a">(Schultes and Wittenburg [2019](#ref-schultesFAIRPrinciplesDigital2019a))</span> as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
 
@@ -75,7 +75,7 @@ The concept of **FAIR Digital Objects** <span class="citation" data-cites="schul
 
 In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persistent identifier* (PID) such as a DOI, resolve to a *PID Record* that gives the object a *type* along with a mechanism to retrieve its *bit sequences*, *metadata* and references to further programmatic *operations*. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing <span class="citation" data-cites="wittenburgDigitalObjectsDrivers2019a">(Wittenburg et al. [2019](#ref-wittenburgDigitalObjectsDrivers2019a))</span>.
 
-Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span>, in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
+Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [[Corcho 2021]], in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see *Next steps for FDO* ).
 
 #### FDO approaches {#sec:fdo-approaches}
 
@@ -167,11 +167,11 @@ To better understand the relationship between the FDO framework and other existi
 
 2.  The FAIR Digital Object guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)], validated against its current implementations for completeness.
 
-3.  A Comparison Framework for Middleware Infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span>, which suggest dimensions like openness, performance and transparency, mainly focused on remote computational methods.
+3.  A Comparison Framework for Middleware Infrastructures [[Zarras 2004]], which suggest dimensions like openness, performance and transparency, mainly focused on remote computational methods.
 
 4.  Cross-checks against RDA’s FAIR Data Maturity Model [[Bahim 2020]] to find how the FAIR principles are achieved in FDO, in particular considering access, sharing and openness.
 
-5.  EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> which gives recommendations for technical, semantic, organisational and legal interoperability, particularly from a metadata perspective.
+5.  EOSC Interoperability Framework [[Corcho 2021]] which gives recommendations for technical, semantic, organisational and legal interoperability, particularly from a metadata perspective.
 
 The reason for this wide-ranged comparison is to exercise the different dimensions that together form FAIR Digital Objects: Data, Metadata, Service, Access, Operations, Computation. We have left out further considerations on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community (as detailed ).
 
@@ -197,6 +197,8 @@ It is also a question as to whether a highly constrained protocol revolving arou
 
 <div id="tbl:fdo-web-interoperability-framework">
 
+_**Table 1**: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)]_
+
 | Quality    | FDO w/ DOIP    | Web w/ Linked Data    |
 | :---- | :---- | :---- |
 | **Symbiotic**: *to what extent multiple applications can agree to interact, align, collaborate or cooperate*    | The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.    | The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span> end up being mandated centrally by dominant (often commercial) providers <span class="citation" data-cites="fieldingReflectionsRESTArchitectural2017a">(Fielding et al. [2017](#ref-fieldingReflectionsRESTArchitectural2017a))</span>, and the clients are required to use each API as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences. |
@@ -205,8 +207,6 @@ It is also a question as to whether a highly constrained protocol revolving arou
 | **Syntactic**: *serialising messages for digital exchange, structure representation*    | DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.    | Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.    |
 | **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*    | <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span> is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI [2023](#ref-DOIPAPIHTTPa)[b](#ref-DOIPAPIHTTPa))</span>    | HTTP/1.1, TCP/IP port 80 <span class="citation" data-cites="rfc2616">(Fielding et al. [1999](#ref-rfc2616))</span>; HTTP/1.1+TLS, TCP/IP 443 <span class="citation" data-cites="rfc2818">(Rescorla [2000](#ref-rfc2818))</span>; HTTP/2, as HTTP/1\* but binary <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson [2015](#ref-rfc7540))</span>; HTTP/3, like HTTP/2+TLS but UDP <span class="citation" data-cites="rfc9114">(Bishop [2022](#ref-rfc9114))</span>    |
 | **Environmental**: *how applications are deployed and affected by its environment, portability*    | Main DOIP implementation is [*Cordra*](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).    | HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.    |
-
-_**Table 1**: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)]_
 
 </div>
 
@@ -217,6 +217,8 @@ The Interoperability Framework for Fast Data also provides a brief *metamodel* w
 From this mapping[^15] we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further in [section on middleware](#sec;middleware)), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
 
 <div id="tbl:metamodel-concepts">
+
+_**Table 2**: Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)] to equivalent concepts for FDO and Web._
 
 | Metamodel concept | FDO/DOIP concept      | Web/HTTP concept      |
 | :---------------- | :----------------------------------------------------------- | :---------------------------------------------------- |
@@ -231,8 +233,6 @@ From this mapping[^15] we can identify the conceptual similarities between DOIP 
 | Channel           | DOIP Transport protocol (e.g. TCP/IP, TLS). JSWS signatures. | TCP/IP, TLS, UDP    |
 | Protocol          | DOIP 2.0, ++      | HTTP/1.1, HTTP/2, HTTP/3    |
 | Link              | PID/Handle        | URL    |
-
-_**Table 2**: Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [[Delgado 2016](https://doi.org/10.1007/978-3-319-31861-5_1)] to equivalent concepts for FDO and Web._
 
 </div>
 
@@ -266,12 +266,14 @@ From our evaluation, we can observe:
 
 <div id="tbl:fdo-checks">
 
+_**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implementations as DOIP [[DONA 2018]] and Linked Data Platform (LDP) [[Bonino 2022]], with suggestions for required additions._
+
 | **FDO Guideline**    | DOIP 2.0    | FDO suggestions    | Linked Data Platform    | LDP suggestion    |
 | :-------- | :-------- | :-------- | :-------- | :-------- |
 | G1: *invest for many decades*    | Handle system stable for 20 years, DOIP 2.0 since 2017.    | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced    | HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs mostly replaced by `https://`.    | Keep flexibility of RDF serialisation formats which may change more frequently    |
 | G2: *trustworthiness*    | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.    | Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.    | JSON-LD used by half of all websites <span class="citation" data-cites="UsageStatisticsJSONLD">(W3Techs [n.d.](#ref-UsageStatisticsJSONLD))</span>, however previous bad experiences with Semantic Web may deter adopters    | Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.    |
 | G3: *follows FAIR principles*    | See Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model)    | Ensure all FAIR principles are covered, build complete examples.    | Touched briefly, see Table [\[tbl:fair-data-maturity-model\]](#tbl:fair-data-maturity-model)    | Add explicit expression to show each FAIR principle fulfilled.    |
-| G4: *machine actionability*    | CRUD and extension operations dynamically listed (see Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware))    | Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).    | HTTP CRUD operations, Open API (see Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware))    | Document operations so client can make subsequent HTTP calls.    |
+| G4: *machine actionability*    | CRUD and extension operations dynamically listed (see [Table 4](#tbl:fdo-web-middleware))    | Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).    | HTTP CRUD operations, Open API (see [Table 4](#tbl:fdo-web-middleware))    | Document operations so client can make subsequent HTTP calls.    |
 | G5: *abstraction principle*    | Handle PIDs as abstraction base. DOIP operations can use any transport protocol.    | Document transport protocols as FDOs, recommend which transport to use.    | URI as abstraction base. Does not specify PID requirements.    | Give stronger deployment recommendations.    |
 | G6: *stable binding between entities*    | Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text.    | Make datatype of fields explicit to support navigation.    | Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text.    |    |
 | G7: *encapsulation*    | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).    | Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-TypingFDOs)[b](#ref-fdo-TypingFDOs))</span>.    | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.    | Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>    |
@@ -290,8 +292,6 @@ From our evaluation, we can observe:
 | FDOF11: *FDO collections w/ semantic relations*    | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. [2022](#ref-DataInformationView))</span>).    |    | LDP Containers required by specification, also user-created (eg. `BasicContainer`).    | Clarify relation to other collections like DCAT 3 [[Albertoni 2023]], [Schema.org Dataset](https://schema.org/Dataset), OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. [2008](#ref-ORESpecificationAbstract))</span>    |
 | FDOF12: *Deleted FDO preserve PID w/ tombstone*    | Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish “Not Found” or “Gone”    | Formalise tombstone requirements with new FDO type    | `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialisation    | Formalise tombstone requirements and serialisation    |
 
-_**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implementations as DOIP [[DONA 2018]] and Linked Data Platform (LDP) [[Bonino 2022]], with suggestions for required additions._
-
 </div>
 
 ### Comparing FDO and Web as middleware infrastructures {#middleware}
@@ -300,9 +300,9 @@ In this section, we take the perspective that FDO principles are in effect propo
 
 We argue that the Web, with its now ubiquitous use of REST API <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Fielding [2000](#ref-fieldingArchitecturalStylesDesign2000a))</span>, can be compared as a similar global middleware. Note that while early moves for developing Semantic Web Services <span class="citation" data-cites="fenselSemanticWebServices2011">(Fensel et al. [2011](#ref-fenselSemanticWebServices2011))</span> attempted to merge the Web Service and RDF aspects, we are here considering mainly the current programmatic Web and its mostly light-weight use of 3 out of possible *5 stars Linked Data* <span class="citation" data-cites="OpenData">(Michael Hausenblas et al. [2012](#ref-OpenData))</span>.
 
-For this purpose, we here utillise the Comparison Framework for Middleware Infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span> that formalise multiple dimensions of openness, scalability, transparency, as well as characteristics known from Object-oriented programming such as modularity, encapsulation and inheritance.
+For this purpose, we here utillise the Comparison Framework for Middleware Infrastructures [[Zarras 2004]] that formalise multiple dimensions of openness, scalability, transparency, as well as characteristics known from Object-oriented programming such as modularity, encapsulation and inheritance.
 
-Based on the analysis in Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middleware), we make the following observations:
+Based on the analysis in [Table 4](#tbl:fdo-web-middleware), we make the following observations:
 
   - With respect to the aspect of *Performance*, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="DigitalObjectInterface">(Reilly [2009](#ref-DigitalObjectInterface))</span> supported multiplexed channels similar to HTTP/2 (allowing concurrent transfer of several digital objects). Multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>. Unlike DOIP 1.0, DOIP 2.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary *element* into sized *chunks*), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size[<sup>10</sup>](#fn10).
 
@@ -338,7 +338,7 @@ Based on the analysis in Table [\[tbl:fdo-web-middleware\]](#tbl:fdo-web-middlew
 | **Operation interfaces**: *defining operations possible on an instance, interface of request/response messages*    | CRUD predefined in DOIP, custom operations through `0.DOIP/Op.ListOperations` (can be FDOs of type `0.TYPE/DOIPOperation`, more typically local identifiers like `"getProvenance"`)    | CRUD predefined in [HTTP methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3) <span class="citation" data-cites="rfc7231">(Fielding and Reschke [2014](#ref-rfc7231)[b](#ref-rfc7231))</span>, ([extended by registration](https://www.iana.org/assignments/http-methods/http-methods.xhtml)), URI Templates <span class="citation" data-cites="rfc6570">(Gregorio et al. [2012](#ref-rfc6570))</span>, [OpenAPI operations](https://spec.openapis.org/oas/v3.1.0.html#operation-object) <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span>, HATEOAS[<sup>12</sup>](#fn12) incl. Hydra <span class="citation" data-cites="HydraW3CCommunity">(Lanthaler [2021](#ref-HydraW3CCommunity))</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(“Schema.Org Actions” [n.d.](#ref-SchemaOrgActions))</span>, JSON HAL <span class="citation" data-cites="Draftkellyjsonhal08">(Kelly [2016](#ref-Draftkellyjsonhal08))</span> & Link headers (RFC8288) <span class="citation" data-cites="rfc8288">(Nottingham [2017](#ref-rfc8288))</span>    |
 | **Stream interfaces**: *operations that can handle continuous information streams*    | Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)    | HTTP 1.1 <span class="citation" data-cites="rfc7230">(Fielding and Reschke [2014](#ref-rfc7230)[a](#ref-rfc7230))</span> [chunked transfer](https://datatracker.ietf.org/doc/html/rfc7230#section-4.1), HLS (RFC8216) <span class="citation" data-cites="rfc8216">(Pantos and May [2017](#ref-rfc8216))</span>, MPEG-DASH <span class="citation" data-cites="iso23009">(*ISO/IEC 23009-1:2022 — Information Technology — Dynamic Adaptive Streaming over Http (Dash) — Part 1: Media Presentation Description and Segment Formats* [2022](#ref-iso23009))</span>    |
 
-Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="foundationDigitalObjectInterface">(“Digital Object Interface Protocol Specification, Version 2.0” [2018](#ref-foundationDigitalObjectInterface))</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(Zarras [2004](#ref-zarrasComparisonFrameworkMiddleware2004a))</span> <span id="tbl:fdo-web-middleware" label="tbl:fdo-web-middleware">\[tbl:fdo-web-middleware\]</span>
+_**Table 4**: Comparing FAIR Digital Object (with the DOIP 2.0 protocol [[DONA 2018]]) and Web technologies (using Linked Data) as middleware infrastructures [[Zarras 2004]]_
 
 </div>
 
@@ -367,6 +367,8 @@ From this evaluation we observe:
   - Resolving FDOs via Handle PIDs to the corresponding DOIP server is currently undefined by FDO and DOIP specifications. `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is known.
 
 <div id="tbl:fair-data-maturity-model">
+
+_**Table 5**: Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020],  [Bahim 2020]] (first 2 columns) against the FDO guidelines [[Bonino 2019]], FDO implemented with the protocol DOIPv2 [[DONA 2018]], Linked Data Platform (LDP) [[Bonino 2022]] and examples from Linked Data practices in general. (— indicates *Unspecified*, may be possible with additional conventions)_
 
 | FAIR ID    | Indicator    | FDO guidelines    | FDO/DOIP    | FDO/LDP    | Linked Data examples    |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -412,14 +414,12 @@ From this evaluation we observe:
 | RDA-R1.3-02M    | Metadata is expressed in compliance with a machine-understandable community standard    | FDOF4 FDOF10    | Recommended                                                                                                                                                                                       14    | —    | Common practice for ontologies, specially in bioinformatics, e.g. BioPortal <span class="citation" data-cites="NCBOBioPortal">(“NCBO BioPortal” [n.d.](#ref-NCBOBioPortal))</span>, Darwin Core <span class="citation" data-cites="wieczorekDarwinCoreEvolving2012">(Wieczorek et al. [2012](#ref-wieczorekDarwinCoreEvolving2012))</span>    |
 | RDA-R1.3-02D    | Data is expressed in compliance with a machine-understandable community standard    | (FDOR2)    | No, FDO is typed but data can be any bytestream    | —    | Occassionally, (e.g. [GFF3](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md), [FITS](https://fits.gsfc.nasa.gov/fits_standard.html), [ESRI](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml))    |
 
-Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020]] [[Bahim 2020]] (first 2 columns) against the FDO guidelines [[Bonino 2019]], FDO implemented with the protocol DOIPv2 [[DONA 2018]], Linked Data Platform (LDP) [[Bonino 2022]] and examples from Linked Data practices in general. (— indicates *Unspecified*, may be possible with additional conventions) <span id="tbl:fair-data-maturity-model" label="tbl:fair-data-maturity-model">\[tbl:fair-data-maturity-model\]</span>
-
 </div>
 
 
-### EOSC Interoperability Framework
+### EOSC Interoperability Framework {#sec:eosc}
 
-The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure <span class="citation" data-cites="10.2777/940154">(Ayris et al. [2016](#ref-10.2777/940154))</span>. The EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b))</span> details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects.
+The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure <span class="citation" data-cites="10.2777/940154">(Ayris et al. [2016](#ref-10.2777/940154))</span>. The EOSC Interoperability Framework [[Corcho 2021]] details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects.
 
 As covered in our introduction[\[sec:introduction\]](#sec:introduction), EOSC proposes FAIR Digital Objects as a way to improve interoperability, for instance invoked by scientific workflows, carried by metadata frameworks and semantic artefacts. Therefore we here find it important to summarize how FDO and Linked Data can help satisfy the EOSC requirements.
 
@@ -432,6 +432,8 @@ The *Legal* layer of interoperability is perhaps the one most emphasised by EOSC
 Likewise, search and indexing is important FAIR aspect for Findability, but is poorly supported globally by FDO and Linked Data. Efforts such as Open Research Knowledge Graph (ORKG) <span class="citation" data-cites="10.1007/978-3-030-30760-8_31">(Jaradeh et al. [2019](#ref-10.1007/978-3-030-30760-8_31))</span>, DataCite’s PID Graph <span class="citation" data-cites="10.5438/jwvf-8a66">(Fenner and Aryani [2019](#ref-10.5438/jwvf-8a66))</span> and Google Knowledge Graph <span class="citation" data-cites="singhal2012">(Singhal [2012](#ref-singhal2012))</span> have improved programmatic findability to some degree, however not significantly for domain-specific semantic artefacts, currently scattered across multiple semantic catalogues <span class="citation" data-cites="10.48550/arXiv.2305.06746">(Corcho et al. [2023](#ref-10.48550/arXiv.2305.06746))</span>. There is a strong role for organizations like EOSC to provide such broader registries, moving beyond scholarly output metadata federations. The [EOSC Marketplace](https://marketplace.eosc-portal.eu/) has for instance recently been expanded to include training material, software and data sources.
 
 <div id="tbl:eosc">
+
+_**Table 6**: Assessing EOSC Interoperability Framework [[Corcho 2021], [sec 3.6](https://op.europa.eu/o/opportal-service/download-handler?identifier=d787ea54-6a87-11eb-aeb5-01aa75ed71a1&format=pdf#page=29)] against the FDO guidelines [[Bonino 2019]] and Linked Data practices._
 
 | Layer    | Recommendation    | FDO    | Linked Data    |
 | :---- | :---- | :---- | :---- |
@@ -467,8 +469,6 @@ Likewise, search and indexing is important FAIR aspect for Findability, but is p
 | Legal    | Restrict access/use if legally required    | By transport protocol (undefined by FDO/DOIP)    | Diverging approaches, typically landing pages w/ auth\&auth or click-thru    |
 | Legal    | Harmonised terms-of-use    | Undefined    | Undefined    |
 | Legal    | Alignment between EOSC and national legislation    | Not applicable    | Not applicable    |
-
-Assessing EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(Corcho et al. [2021](#ref-corchoEOSCInteroperabilityFramework2021b), sec. 3.6)</span> against the FDO guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)] and Linked Data practices.
 
 </div>
 
@@ -722,7 +722,8 @@ FDOF technical implementation guideline.\
 *Group of European Data Experts in RDA (GEDE-RDA)*\
 <https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
 
-[Bonino 2022]
+[Bonino 2022]: https://fairdigitalobjectframework.org/ "FAIR Digital Object Framework Documentation"
+\[Bonino 2022\]
 Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince
 Sales (2022):\
 **FAIR Digital Object Framework Documentation**\
@@ -778,6 +779,8 @@ Gray, Carole Goble, Tim Clark (2013):\
 *Journal of Biomedical Semantics* **4**(1):37.\
 <https://doi.org/10.1186/2041-1480-4-37>
 
+[Corcho 2021]: https://doi.org/10.2777/620649 "EOSC Interoperability Framework"
+\[Corcho 2021\]
 Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek,
 Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
 (2021):\
@@ -1660,6 +1663,8 @@ Austin Wright, Henry Andrews, Ben Hutton, Greg Dennis (2022):\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/>
 
+[Zarras 2004]: https://doi.org/10.5381/jot.2004.3.5.a2 "A Comparison Framework for Middleware Infrastructures"
+\[Zarras 2004\]
 Apostolos Zarras (2004):\
 **A Comparison Framework for Middleware Infrastructures**.\
 *The Journal of Object Technology* **3**(5)\
