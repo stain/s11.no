@@ -555,7 +555,7 @@ Contributions to this article according to the [CASRAI CRediT](https://credit.ni
 [^5]: In RDF, each triple represent an edge that is named using its property URI, and the nodes are subject/object as URIs, blank nodes or (for objects) typed literal values <span class="citation" data-cites="w3-rdf11-primer">(Schreiber and Raimond [2014](#ref-w3-rdf11-primer))</span>.
     
 
-[^6] *Datasets* that distribute RDF graphs should not be confused with [*RDF Datasets*](https://www.w3.org/TR/rdf11-concepts/#section-dataset) used for partitioning *named graphs*.
+[^6]: *Datasets* that distribute RDF graphs should not be confused with [*RDF Datasets*](https://www.w3.org/TR/rdf11-concepts/#section-dataset) used for partitioning *named graphs*.
     
 
 [^7]: Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.
