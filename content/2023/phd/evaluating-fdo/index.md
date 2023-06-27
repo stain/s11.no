@@ -603,7 +603,7 @@ Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Ulr
 
 [Anders 2023]: https://doi.org/10.5281/zenodo.7782262 "PR-RequirementSpec-3.0: FAIR Digital Objects Forum FDO requirement specifications"
 \[Anders 2023\]
-Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):\
+<small>Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf</small> (2023):\
 **FAIR Digital Objects Forum FDO requirement specifications**. Version 3.0.\
 George Strawn, Peter Wittenburg (eds.)\
 *FDO Specification Documents* PR-RequirementSpec-3.0\
@@ -718,9 +718,8 @@ Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar, Rajaram Ka
 *Enterprise interoperability in the digitized and networked factory of the future*, 
 Martin Zelm, Guy Doumeingts, Joao Pedro Mendonça (eds.).\
 iSTE Press.\
-[ISBN 978-1-84704-044-2](http://www.iste.co.uk/book.php?id=1073)\
-Preprint:
-<https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability>
+[ISBN 978-1-84704-044-2](http://www.iste.co.uk/book.php?id=1073)
+[[preprint](https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability)]
 
 [Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
 \[Bonino 2019\]
@@ -747,7 +746,7 @@ Dan Brickley, Libby Miller (2014):\
 Daan Broeder, Peter Wittenburg (2022):\
 **FDO glossary november 2022**.\
 *FDO Specification Documents* (internal draft)\
-FAIR Digital Objects Forum
+FAIR Digital Objects Forum\
 <https://hdl.handle.net/20.500.14132/fdo-spec-docs>
 (accessed 2 February 2023)
 
@@ -785,7 +784,7 @@ reasoning*\
 \[Ciccarese 2013\]
 Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, Tim Clark (2013):\
 **PAV ontology: Provenance, authoring and versioning**.\
-*Journal of Biomedical Semantics* **4**(1):37.\
+*Journal of Biomedical Semantics* **4**(1):37\
 <https://doi.org/10.1186/2041-1480-4-37>
 
 [CNRI 2022]
@@ -833,12 +832,6 @@ DCMI Usage Board (2020):\
 DCMI Recommendation\
 <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/>
 
-[de hÓra 2007]
-Bill de hÓra, Joe Gregorio (2007):\
-**The Atom Publishing Protocol**.\
-*RFC Editor*, RFC 5023\
-<https://doi.org/10.17487/rfc5023>
-
 [Delgado 2016]: https://doi.org/10.1007/978-3-319-31861-5_1 "An Interoperability Framework and Distributed Platform for Fast Data Applications"
 \[Delgado 2016\]
 José Carlos Martins Delgado (2016):\
@@ -869,7 +862,7 @@ International DOI Foundation\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
 
 [Dürst 2005]: https://www.rfc-editor.org/rfc/rfc3987.html "RFC 3987: Internationalized Resource Identifiers (IRIs)"
-[Dürst 2005]
+\[Dürst 2005\]
 Martin J. Dürst, Michel Suignard (2005):\
 **Internationalized Resource Identifiers (IRIs)**.\
 *RFC Editor*, RFC 3987\
@@ -936,7 +929,8 @@ Doctoral Thesis, *University of California*, Irvine.\
 
 [Fielding 2012]
 Roy T. Fielding, Mark Nottingham, David Orchard, Joe Gregorio, Marc Hadley (2012):\
-**URI Template**. *RFC Editor*, RFC 6570\
+**URI Template**. \
+*RFC Editor*, RFC 6570\
 <https://doi.org/10.17487/rfc6570>
 
 [Fielding 2014a]
@@ -982,6 +976,12 @@ Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):\
 *CEUR Workshop Proceedings* **1963**\
 <https://ceur-ws.org/Vol-1963/paper579.pdf>
 
+[Gregorio 2007]
+Joe Gregorio, Bill de hÓra (2007):\
+**The Atom Publishing Protocol**.\
+*RFC Editor*, RFC 5023\
+<https://doi.org/10.17487/rfc5023>
+
 [Groth 2014]
 Paul Groth, Antonis Loizou, Alasdair J. G. Gray, Carole Goble, Lee
 Harland, Steve Pettifer (2014):\
@@ -997,7 +997,7 @@ Ramanathan Guha, Dan Brickley (2014):\
 
 [Hardisty 2022]
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):\
-**The Specimen Data Refinery: A Canonical Workflow Framework and FAIR Digital Object Approach to Speeding up Digital Mobilisation of Natural History Collections**.\
+**The Specimen Data Refinery**: A Canonical Workflow Framework and FAIR Digital Object Approach to Speeding up Digital Mobilisation of Natural History Collections.\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00134>
 
@@ -1037,7 +1037,7 @@ Wei Hu, Jianfeng Chen, Hang Zhang, Yuzhong Qu (2011):\
 **How matchable are four thousand ontologies on the semantic web**.\
 In Grigoris Antoniou, Marko Grobelnik, Elena Simperl, Bijan Parsia, Dimitris Plexousakis, Pieter De Leenheer, Jeff Pan,eds.,\
 *The semantic web: Research and applications*, pp. 290--304\
-ISBN 978-3-642-21033-4
+[ISBN 978-3-642-21033-4](https://identifiers.org/isbn/9783642210334)
 
 [Isaac 2009]
 Antoine Isaac and Ed Summers (2009):\
@@ -1081,7 +1081,7 @@ Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam Sharif,
 
 [Iyengar 2021]
 Jana Iyengar, Martin Thomson (2021):\
-**QUIC: A UDP-Based Multiplexed and Secure Transport**\
+**QUIC: A UDP-Based Multiplexed and Secure Transport**.\
 *RFC Editor*, RFC 9000\
 <https://doi.org/10.17487/rfc9000>
 
@@ -1185,20 +1185,20 @@ Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003):\
 *RFC Editor*, RFC 3652\
 <https://doi.org/10.17487/rfc3652>
 
-[Lannom 2022]
+[Lannom 2022a]
 Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):\
 **FDO configuration types**.\
 *FDO Specification Documents* PR-ConfigurationTypes-2.1-20221017\
 FAIR Digital Objects Forum\
 <https://doi.org/10.5281/zenodo.7825703>
 
-[Lannom 2022]
+[Lannom 2022b]
 Larry Lannom, Ulrich Schwardmann, Christophe Blanchi, Ivonne Anders, Claus Weiland, Peter Wittenburg (2022):\
 **FAIR digital objects roadmap. Version 5 november 2022**.\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824673>
 
-[Lannom 2022]
+[Lannom 2022c]
 Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg (2022):\
 **Typing FAIR digital objects**.\
 *FDO Specification Documents* PR-TypingFDOs-2.0-20220608\
@@ -1364,7 +1364,7 @@ Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano (2022):\
 <https://websockets.spec.whatwg.org/> (accessed 26 May 2022)
 
 [Rocca-Serra 2023]
-Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba Abbassi-Daloii, Salvador Capella-Gutierrez, Ishwar Chandramouliswaran, Andrea Splendiani, Tony Burdett, Robert T. Giessmann, David Henderson, Dominique Batista, Ibrahim Emam, Yojana Gadiya, Lucas Giovanni, Egon Willighagen, Chris Evelo, Alasdair J. G. Gray, Philip Gribbon, Nick Juty, Danielle Welter, Karsten Quast, Paul Peeters, Tom Plasterer, Colin Wood, Eelke van der Horst, Dorothy Reilly, Herman van Vlijmen, Serena Scollen, Allyson Lister, Milo Thurston, Ramon Granell, Gabriel Backianathan, Sebastian Baier, Anne Cambon Thomsen, Martin Cook, Melanie Courtot, Mike d'Arcy, Kurt Dauth, Eva Marin del Piico, Leyla Garcia, Ulrich Goldmann, Valentin Grouès, Daniel J. B. Clarke, Erwan Lefloch, Isuru Liyanage, Petros Papadopoulos, Cyril Pommier, Emiliano Reynares, Francesco Ronzano, Alejandra Delfin-Rossaro, Venkata Sagatopam, Ashni Sedani, Vitaly Sedlyarov, Liubov Shilova, Sukhi Singh, Jolanda Strubel, Kees van Bochove, Zachary Warnes, Peter Woollard, Fuqi Xu, Andrea Zaliani, Susanna-Assunta Sansone (2023):\
+<small>Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba Abbassi-Daloii, Salvador Capella-Gutierrez, Ishwar Chandramouliswaran, Andrea Splendiani, Tony Burdett, Robert T. Giessmann, David Henderson, Dominique Batista, Ibrahim Emam, Yojana Gadiya, Lucas Giovanni, Egon Willighagen, Chris Evelo, Alasdair J. G. Gray, Philip Gribbon, Nick Juty, Danielle Welter, Karsten Quast, Paul Peeters, Tom Plasterer, Colin Wood, Eelke van der Horst, Dorothy Reilly, Herman van Vlijmen, Serena Scollen, Allyson Lister, Milo Thurston, Ramon Granell, Gabriel Backianathan, Sebastian Baier, Anne Cambon Thomsen, Martin Cook, Melanie Courtot, Mike d'Arcy, Kurt Dauth, Eva Marin del Piico, Leyla Garcia, Ulrich Goldmann, Valentin Grouès, Daniel J. B. Clarke, Erwan Lefloch, Isuru Liyanage, Petros Papadopoulos, Cyril Pommier, Emiliano Reynares, Francesco Ronzano, Alejandra Delfin-Rossaro, Venkata Sagatopam, Ashni Sedani, Vitaly Sedlyarov, Liubov Shilova, Sukhi Singh, Jolanda Strubel, Kees van Bochove, Zachary Warnes, Peter Woollard, Fuqi Xu, Andrea Zaliani, Susanna-Assunta Sansone</small> (2023):\
 **The FAIR cookbook - the essential resource for and by FAIR doers**.\
 *Scientific Data* **10**(10)\
 <https://doi.org/10.1038/s41597-023-02166-3>
@@ -1381,9 +1381,11 @@ Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel (2011):\
 *W3C Interest Group Note*\
 <http://www.w3.org/TR/cooluris/>
 
+[schema]
 **Schema.org**\
 <https://schema.org/> (accessed 26 May 2022)
 
+[schema Actions]
 **Schema.org Actions**.\
 *schema.org*.\
 <https://schema.org/docs/actions.html> (accessed 26 May 2022)
@@ -1400,9 +1402,8 @@ Erik Schultes, Peter Wittenburg (2019):\
 *Data analytics and management in data intensive domains*: 20th
 international conference, DAMDID/RCDL 2018, Moscow, Russia,
 2018-10-09/--12.\
-<https://doi.org/10.1007/978-3-030-23584-0_1>\
-Preprint:
-<https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D>
+<https://doi.org/10.1007/978-3-030-23584-0_1>
+[[preprint](https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D)]
 
 [Schultes 2020]
 Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl, Marek Suchánek, Tobias Kuhn (2020):\
@@ -1432,14 +1433,14 @@ Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk Barbi, Jan H
 <https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87>
 
 [Singhal 2012]: https://blog.google/products/search/introducing-knowledge-graph-things-not/ "Introducing the knowledge graph: Things, not strings"
-[Singhal 2012]
+\[Singhal 2012]
 Amit Singhal (2012):\
 **Introducing the knowledge graph: Things, not strings**.\
 <https://blog.google/products/search/introducing-knowledge-graph-things-not/>
 (accessed 18 May 2023)
 
 [Smith 2007]
-Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah, Patricia L. Whetzel, Suzanna Lewis (2007):\
+<small>Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah, Patricia L. Whetzel, Suzanna Lewis</small> (2007):\
 **The OBO Foundry: Coordinated evolution of ontologies to support biomedical data integration**.\
 *Nature Biotechnology* **25**(11)\
 <https://doi.org/10.1038/nbt1346>
@@ -1451,7 +1452,7 @@ Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel G
 <https://doi.org/10.3897/rio.8.e93937>
 
 [Soiland-Reyes 2022b]
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, BjÃ¶rn GrÃ¼ning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
 **Packaging research artefacts with RO-crate**.\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/ds-210053>
@@ -1639,7 +1640,7 @@ John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring, Renato
 <https://doi.org/10.1371/journal.pone.0029715>
 
 [Wilkinson 2016]
-Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):\
+<small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):\
 **The FAIR Guiding Principles for scientific data management and stewardship**.\
 *Scientific Data* **3**(1)\
 <https://doi.org/10.1038/sdata.2016.18>
@@ -1670,7 +1671,7 @@ Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik Schultes (2019):
 <https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11>
 
 [Wittenburg 2022]
-Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder (2022):\
+<small>Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder</small> (2022):\
 **FAIR digital object demonstrators 2021**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.5872645>
@@ -1688,7 +1689,7 @@ Katy Wolstencroft, Stuart Owen, Matthew Horridge, Olga Krebs, Wolfgang Mueller, 
 <https://doi.org/10.1093/bioinformatics/btr312>
 
 [Wolstencroft 2013]
-Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib Sufi, Carole Goble (2013):\
+<small>Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib Sufi, Carole Goble</small> (2013):\
 **The Taverna workflow suite: Designing and executing workflows of Web Services on the desktop, web or in the cloud**.\
 *Nucleic Acids Research* **41**(W1)\
 <https://doi.org/10.1093/nar/gkt328>
