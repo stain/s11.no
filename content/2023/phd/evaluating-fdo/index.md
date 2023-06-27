@@ -707,7 +707,7 @@ Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif, Alexander Schlemm
 <https://doi.org/10.5281/zenodo.7825549>
 
 [Blanchi 2022b]: https://doi.org/10.5281/zenodo.7825572 "Implementation of attributes, types, profiles and registries"
-[Blanchi 2022b]
+\[Blanchi 2022b\]
 Christophe Blanchi, Maggie Hellström, Larry Lannom, Andreas Pfeil, Ulrich Schwardmann, Peter Wittenburg (2022):\
 **Implementation of attributes, types, profiles and registries**.\
 *FDO Specification Documents*
@@ -716,7 +716,7 @@ WD-Implementation-of-Attributes-0.4-20230314\
 <https://doi.org/10.5281/zenodo.7825572>
 
 [Bonino 2016]: https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability "FAIR Data points supporting big data interoperability"
-[Bonino 2016]
+\[Bonino 2016\]
 Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar, Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger (2016):\
 **FAIR Data points supporting big data interoperability**.\
 *Enterprise interoperability in the digitized and networked factory of the future*, 
@@ -912,8 +912,8 @@ First report and recommendations of the Commission high level expert group on th
 FDO (2022):\
 **FDO Specification Documents - November 2022**  
 *FAIR Digital Objects Forum*  
-<https://hdl.handle.net/20.500.14132/fdo-spec-docs>
-<https://fairdo.org/specifications/> (accessed 2 February 2023)\
+<https://hdl.handle.net/20.500.14132/fdo-spec-docs>\
+<https://fairdo.org/specifications/> (accessed 2 February 2023)
 
 [Fenner 2019]: https://doi.org/10.5438/jwvf-8a66 "Introducing the PID graph"
 \[Fenner 2019\]
@@ -929,7 +929,7 @@ Dieter Fensel, Federico Michele Facca, Elena Simperl, Ioan Toma (2011):\
 <https://doi.org/10.1007/978-3-642-19193-0>
 
 [Fielding 2000]: https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm "Architectural styles and the design of network-based software architectures"
-[Fielding 2000]
+\[Fielding 2000]
 Roy Thomas Fielding (2000):\
 **Architectural styles and the design of network-based software architectures**\
 Doctoral Thesis, *University of California*, Irvine.\
@@ -1031,7 +1031,7 @@ Greece, 2018-06-03/--07\
 <https://doi.org/10.1007/978-3-319-98192-5_60>
 
 [Hausenblas 2012]: http://5stardata.info/ "5-Star Open Data"
-[Hausenblas 2012]
+\[Hausenblas 2012\]
 Michael Hausenblas et al. (2012):\
 **5-star Open Data**.\
 <http://5stardata.info/> (accessed 24 January 2023)
@@ -1067,7 +1067,7 @@ In Grigoris Antoniou, Marko Grobelnik, Elena Simperl, Bijan Parsia, Dimitris Ple
 [ISBN 978-3-642-21033-4](https://identifiers.org/isbn/9783642210334)
 
 [Isaac 2009]: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/ "SKOS Simple Knowledge Organization System Primer"
-[Isaac 2009]
+\[Isaac 2009\]
 Antoine Isaac and Ed Summers (2009):\
 **SKOS Simple Knowledge Organization System Primer**.\
 W3C Note\
@@ -1217,7 +1217,7 @@ Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson, Robert Sander
 
 [Lamprecht 2021]: https://doi.org/10.12688/f1000research.54159.1 "Perspectives on automated composition of workflows in the life sciences"
 \[Lamprecht 2021\]
-Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle, Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez, Paulos Charonyktakis, Michael R.  Crusoe, Yolanda Gil, Carole Goble, Timothy J. Griffin, Paul Groth, Hans Ienasescu, Pratik Jagtap, Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori, Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson, Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):\
+<small>Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle, Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez, Paulos Charonyktakis, Michael R.  Crusoe, Yolanda Gil, Carole Goble, Timothy J. Griffin, Paul Groth, Hans Ienasescu, Pratik Jagtap, Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori, Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson, Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft</small> (2021):\
 **Perspectives on automated composition of workflows in the life sciences**.\
 *F1000Research* **10** (2021):897\
 <https://doi.org/10.12688/f1000research.54159.1>
@@ -1313,7 +1313,7 @@ MDN Web Docs\
 
 [Meroño-Peñuela 2021a]: https://doi.org/10.1007/978-3-031-01917-3_7 "Conclusion and future challenges"
 \[Meroño-Peñuela 2021a\]
-Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021)
+Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):\
 **Conclusion and future challenges**.\
 *Web data apis for knowledge graphs: Easing access to semantic data for
 application developers*\
@@ -1322,7 +1322,7 @@ Synthesis Lectures on Data, Semantics, and Knowledge\
 
 [Meroño-Peñuela 2021b]: https://doi.org/10.1007/978-3-031-01917-3_3 "Web data APIs over SPARQL"
 \[Meroño-Peñuela 2021b\]
-Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021)
+Albert Meroño-Peñuela, Pasquale Lisena, Carlos Martínez-Ortiz (2021):\
 **Web data APIs over SPARQL**.\
 *Web Data APIs for Knowledge Graphs : Easing access to semantic data for
 application developers*, Synthesis Lectures on Data, Semantics, and
@@ -1542,10 +1542,10 @@ Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel G
 *Research Ideas and Outcomes* **10**(8).
 <https://doi.org/10.3897/rio.8.e93937>
 
-[Soiland-Reyes 2022b]: https://doi.org/10.3233/ds-210053 "Packaging research artefacts with RO-crate"
+[Soiland-Reyes 2022b]: https://doi.org/10.3233/ds-210053 "Packaging research artefacts with RO-Crate"
 \[Soiland-Reyes 2022b\]
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
-**Packaging research artefacts with RO-crate**.\
+**Packaging research artefacts with RO-Crate**.\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/ds-210053>
 
@@ -1553,7 +1553,7 @@ Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Co
 \[Soiland-Reyes 2022c\]
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):\
 **Updating linked data practices for FAIR digital object principles**.\
-*Research Ideas and Outcomes* **10**(8).\
+*Research Ideas and Outcomes* **10**(8)\
 <https://doi.org/10.3897/rio.8.e94501>
 
 [Soiland-Reyes 2023]: https://w3id.org/ro/doi/10.5281/zenodo.8075229 "Comparison tables for evaluating FAIR Digital Object and Linked Data"
@@ -1641,7 +1641,7 @@ Portorož, Slovenia, 2019-06-02/--06.\
 \[Tirmizi 2011\]
 Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
 **Mapping between the OBO and OWL ontology languages**.\
-*Journal of Biomedical Semantics* **2**:S3
+*Journal of Biomedical Semantics* **2**:S3\
 <https://doi.org/10.1186/2041-1480-2-s1-s3>
 
 [Turcoane 2014]: https://doi.org/10.55630/dipp.2014.4.11 "Linked data, JSON-LD and the semantics of cultural and scientific heritage"
@@ -1688,7 +1688,7 @@ Ruben Verborgh, Miel Vander Sande (2020):\
 
 [Verburg 2023]: https://doi.org/10.5281/zenodo.7848102 "FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons\""
 \[Verburg 2023\]
-Maaike Verburg, Robert Huber, Clement Jonquet, Daniel Garijo (2023)
+Maaike Verburg, Robert Huber, Clement Jonquet, Daniel Garijo (2023):\
 **FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons\"**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7848102>
@@ -1776,7 +1776,7 @@ EOSC FAIR Metrics subgroup\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7463421>
 
-[Wilkinson 2022]: https://doi.org/10.48550/arxiv.2209.09022 "F\"
+[Wilkinson 2022]: https://doi.org/10.48550/arxiv.2209.09022 "F\*\*\* workflows: When parts of FAIR are missing"
 \[Wilkinson 2022\]
 Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight, Jeremy Logan, Patrick Widener, Matthew Wolf (2022):\
 **F\*\*\* workflows: When parts of FAIR are missing**.\
