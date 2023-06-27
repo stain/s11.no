@@ -55,7 +55,7 @@ An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.8075229) i
 
 ## Introduction {#sec:introduction}
 
-The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for <span class="citation" data-cites="h2020fair2016">(European Commission [2016](#ref-h2020fair2016))</span>. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework [[Corcho 2021]] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
+The FAIR principles <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016e">(Wilkinson et al. [2016](#ref-wilkinsonFAIRGuidingPrinciples2016e))</span> encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for [[EU 2016]]. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures <span class="citation" data-cites="monsCloudyIncreasinglyFAIR2017b">(Mons et al. [2017](#ref-monsCloudyIncreasinglyFAIR2017b))</span>. The EOSC Interoperability Framework [[Corcho 2021]] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally – laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
 Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object (FDO) concept <span class="citation" data-cites="schultesFAIRPrinciplesDigital2019a">(Schultes and Wittenburg [2019](#ref-schultesFAIRPrinciplesDigital2019a))</span> as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
 
@@ -93,7 +93,7 @@ From this it becomes apparent that there is a potentially large overlap between 
 
 #### Next steps for FDO {#sec:next-step-fdo}
 
-The FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObjects">(“FAIR Digital Objects Forum” [n.d.](#ref-FAIRDigitalObjects))</span> working groups have prepared detailed requirement documents <span class="citation" data-cites="fdo-Specs">(*FDO Specification Documents - November 2022* [2022](#ref-fdo-Specs))</span> setting out the path for realising FDOs, named *FDO Recommendations*. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects <span class="citation" data-cites="fdo-Roadmap">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-Roadmap)[a](#ref-fdo-Roadmap))</span>, we provide a brief summary of each:
+The [FAIR Digital Object Forum](https://fairdo.org/) working groups have prepared detailed requirement documents [[FDO 2022]] setting out the path for realising FDOs, named *FDO Recommendations*. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects <span class="citation" data-cites="fdo-Roadmap">(Lannom, Schwardmann, Blanchi, et al. [2022](#ref-fdo-Roadmap)[a](#ref-fdo-Roadmap))</span>, we provide a brief summary of each:
 
 **FAIR Digital Object Overview and Specifications** <span class="citation" data-cites="fdo-Overview">(Anders, Blanchi, Broder, Hellström, Islam, Jejkal, Lannom, Peters-von Gehlen, et al. [2023](#ref-fdo-Overview))</span> is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents. It is accompanied by an FDO Glossary [[Broeder 2022]].
 
@@ -286,7 +286,7 @@ _**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implem
 | FDOF3: *PID resolvable to bytestream & metadata*    | Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.    | Clarify expectations for multiple items. Recommend chunks to not be used.    | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.    | Add FAIR Signposting and preference order.    |
 | FDOF4: *Additional attributes*    | Freetext attribute keys. Attributes should be defined for FDO type.    | Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.    | All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.    | Clarify type expectations of required/recommended/optional attributes.    |
 | FDOF5: *Interface: operation by PID*    | Extended operations use PID, but “pid-like” DOIP operations/types are not registered as handles.    | Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly.    | CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations.    | Specify how additional operations should be called over HTTP.    |
-| FDOF6: *CRUD operations + extensions*    | `0.DOIP/Op.Create`, `Op.Retrieve`, `Op.Update`, `Op.Delete` but also `0.DOIP/Op.Search`.    | Document    | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, `HEAD` – extension operations (e.g. WebDAV `COPY`) not used, resource patterns <span class="citation" data-cites="martinekuanWebAPIDesign">(Ekuan et al. [2023](#ref-martinekuanWebAPIDesign))</span> are used instead.    | Document how operation resources can be discovered from an LPD container. Document search API.    |
+| FDOF6: *CRUD operations + extensions*    | `0.DOIP/Op.Create`, `Op.Retrieve`, `Op.Update`, `Op.Delete` but also `0.DOIP/Op.Search`.    | Document    | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, `HEAD` – extension operations (e.g. WebDAV `COPY`) not used, resource patterns  [[Ekuan 2023]] are used instead.    | Document how operation resources can be discovered from an LPD container. Document search API.    |
 | FDOF7: *FDOF Types related to operations*    | Not yet formalised, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open.    | Add explicit relation between type and operations    | `OPTIONS` per LDP Resource, but not by type. Common types (`ldp:Resource`, `ldp:Container`) indicate LDP support, but are not required.    | Always make LDP types explicit in FDO profile.    |
 | FDOF8: *Metadata as FDO, semantic assertions*    | DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property.    | Specify a `0.FDO/metadata` or similar to point to Metadata FDOs.    | Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, `rdfs:seeAlso` is common.    | Use FAIR Signposting `describedby` link relation to additional metadata PIDs    |
 | FDOF9: *Different metadata levels*    | Defines open-ended “Response Attributes” without namespaces, but mandated as “None” for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (may need FDOF8).    | Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately.    | Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.    | Define how to navigate to alternate views and their semantic implications, e.g. `owl:sameAs`    |
@@ -331,8 +331,8 @@ Based on the analysis in [Table 4](#tbl:fdo-web-middleware), we make the followi
 | **Concurrency transparency**: *concurrent processing without interference*    | No explicit concurrency measures. FDO kernel metadata can include checksum and date.    | HTTP operations are classified as being stateless/idempotent or not (e.g. `PUT` changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, `ETag` (e.g. checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.    |
 | **Failure transparency**: *service provisioning resilient to failures*    | DOIP status codes, e.g. `0.DOIP/Status.104`, additional codes can be added as custom attributes    | HTTP [status codes](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5) e.g. `404 Not Found`, specific meaning of standard codes can be [documented in Open API](https://swagger.io/docs/specification/describing-responses/). Custom codes uncommon.    |
 | **Migration transparency**: *allow relocating elements without interfering application*    | Update of PID record URLs, indirection through `0.TYPE/DOIPServiceInfo` (not always used consistently). No redirection from DOIP service.    | HTTP `30x` status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.    |
-| **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*    | FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).    | URLs are not required to persist, although encouraged [[Berners-Lee 1998]]. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento <span class="citation" data-cites="rfc7089">(Van de Sompel, Nelson, and Sanderson [2013](#ref-rfc7089))</span> expose versioned snapshots. WebDAV `VERSION-CONTROL` method <span class="citation" data-cites="rfc3253">(Clemm et al. [2002](#ref-rfc3253))</span> (used by SVN).    |
-| **Transaction transparency**: *coordinate execution of atomic/isolated transactions*    | No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.    | Limited transaction capabilities (e.g. `If-Unmodified-Since`) on same resource. WebDAV [locking mechanisms](https://datatracker.ietf.org/doc/html/rfc4918#section-6) <span class="citation" data-cites="rfc4918">(Dusseault [2007](#ref-rfc4918))</span> with `LOCK` and `UNLOCK` methods.    |
+| **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*    | FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).    | URLs are not required to persist, although encouraged [[Berners-Lee 1998]]. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento <span class="citation" data-cites="rfc7089">(Van de Sompel, Nelson, and Sanderson [2013](#ref-rfc7089))</span> expose versioned snapshots. WebDAV `VERSION-CONTROL` method [[Ellison 2002]] (used by SVN).    |
+| **Transaction transparency**: *coordinate execution of atomic/isolated transactions*    | No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.    | Limited transaction capabilities (e.g. `If-Unmodified-Since`) on same resource. WebDAV [locking mechanisms](https://datatracker.ietf.org/doc/html/rfc4918#section-6) [[Dusseault 2007]] with `LOCK` and `UNLOCK` methods.    |
 | **Modularity**: *application as collection of connected/distributed elements*    | FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.    | The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API’s set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.    |
 | **Encapsulation**: *separate interface from implementation. Specify interface as contract, multiple implementations possible*    | Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although `0.DOIP/Transport` can be specified after already contacting DOIP). Cordra supports [native DOIP](https://www.cordra.org/documentation/api/doip.html), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html) and [Cordra REST API](https://www.cordra.org/documentation/api/rest-api.html))    | HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. `http` vs `https` URIs exposes encryption detail[^11]. Implementation details may leak into URIs (e.g. `search.aspx`), countered by deliberate design of URI patterns [[Berners-Lee 1998]]) and PIDs via Persistent URLs (PURL).    |
 | **Inheritance**: *Deriving specialised interface from another type*    | DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. [CORDRA `$ref`](\(https://www.cordra.org/documentation/design/schemas.html#schema-references\)) use of [JSON Schema references](https://json-schema.org/draft/2020-12/json-schema-core.html#references) <span class="citation" data-cites="Draftbhuttonjsonschema">(Wright et al. [2022](#ref-Draftbhuttonjsonschema))</span>)    | Syntactically Media Type with multiple suffixes <span class="citation" data-cites="Draftietfmediamansuffixes00MediaTypes">(Sporny and Guy [2023](#ref-Draftietfmediamansuffixes00MediaTypes))</span> (mainly used with `+json`), declaration of subtypes as profiles (RFC6906) . In metadata, semantic type systems (RDFS <span class="citation" data-cites="w3-rdf-schema">(Guha and Brickley [2014](#ref-w3-rdf-schema))</span>), OWL2 <span class="citation" data-cites="w3-owl2-overview">(W3C OWL Working Group [2012](#ref-w3-owl2-overview))</span>, SKOS <span class="citation" data-cites="w3-skos-primer">(Isaac and Summers [2009](#ref-w3-skos-primer))</span>). OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. [2021](#ref-OpenAPISpecificationV3))</span> [inheritance and Polymorphism](https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism). XML `xsd:schemaLocation` or `xsd:type` <span class="citation" data-cites="w3-xmlschema11">(Thompson et al. [2012](#ref-w3-xmlschema11))</span>, JSON `$schema` <span class="citation" data-cites="Draftbhuttonjsonschema">(Wright et al. [2022](#ref-Draftbhuttonjsonschema))</span>), JSON-LD `@context` <span class="citation" data-cites="w3-json-ld">(Sporny et al. [2020](#ref-w3-json-ld))</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.    |
@@ -431,7 +431,7 @@ Firstly, we observe that the EOSC IF recommendations are at a high level, mainly
 
 The *Legal* layer of interoperability is perhaps the one most emphasised by EOSC, by enabling collaboration across organizational barriers to joinly build a research infrastructure, but this is an area that both FDO and Linked Data are relatively weak in directly supporting. The EOSC IF recommendations in this layer are largely related to governance practices and metadata, for instance licensing, privacy and usage policies; these are also essential for cross-institutional and cross-repository access of FAIR objects.
 
-Likewise, search and indexing is important FAIR aspect for Findability, but is poorly supported globally by FDO and Linked Data. Efforts such as Open Research Knowledge Graph (ORKG) <span class="citation" data-cites="10.1007/978-3-030-30760-8_31">(Jaradeh et al. [2019](#ref-10.1007/978-3-030-30760-8_31))</span>, DataCite’s PID Graph <span class="citation" data-cites="10.5438/jwvf-8a66">(Fenner and Aryani [2019](#ref-10.5438/jwvf-8a66))</span> and Google Knowledge Graph <span class="citation" data-cites="singhal2012">(Singhal [2012](#ref-singhal2012))</span> have improved programmatic findability to some degree, however not significantly for domain-specific semantic artefacts, currently scattered across multiple semantic catalogues [[Corcho 2023]]. There is a strong role for organizations like EOSC to provide such broader registries, moving beyond scholarly output metadata federations. The [EOSC Marketplace](https://marketplace.eosc-portal.eu/) has for instance recently been expanded to include training material, software and data sources.
+Likewise, search and indexing is important FAIR aspect for Findability, but is poorly supported globally by FDO and Linked Data. Efforts such as Open Research Knowledge Graph (ORKG) <span class="citation" data-cites="10.1007/978-3-030-30760-8_31">(Jaradeh et al. [2019](#ref-10.1007/978-3-030-30760-8_31))</span>, DataCite’s PID Graph [[Fenner 2019]] and Google Knowledge Graph [[Singhal 2012]] have improved programmatic findability to some degree, however not significantly for domain-specific semantic artefacts, currently scattered across multiple semantic catalogues [[Corcho 2023]]. There is a strong role for organizations like EOSC to provide such broader registries, moving beyond scholarly output metadata federations. The [EOSC Marketplace](https://marketplace.eosc-portal.eu/) has for instance recently been expanded to include training material, software and data sources.
 
 <div id="tbl:eosc">
 
@@ -486,7 +486,7 @@ When evaluating FDO implementations [against the FDO guidelines](#sec:doip-fdo-c
 
 Considering this, by comparing FDO and Web [as middleware](#sec:middleware) we saw that programmatic access to digital objects, a core promise of FDO, is not particularly improved by the use of the protocol DOIP as compared to HTTP, e.g. lack of concurrency and transparancy. Recent updates to HTTP have added many features needed for large-scale usage such as video streaming services (e.g. caching, multiplexing, cloud deployments), and having the option to transparently apply these also to FDOs seems like a strong incentive. Many programmatic features for distributed objects are however missing or needing custom extensions in both aspects, such as transactions, asynchronous operations and streaming.
 
-By assessing FDO [against the FAIR principles](#sec:fair-compare) we found that both FDO implementations are underspecified in several aspects (licences, provenance, data references, data vocabularies, metadata persistence). While there are implementations of each of these in general Linked Data examples, there is no single set of implementation guides that fully realizes the FAIR principles. *FAIRification* efforts like the FAIR Cookbook <span class="citation" data-cites="faircookbook">(Rocca-Serra et al. [2023](#ref-faircookbook))</span> and FAIR Implementation Profiles <span class="citation" data-cites="FIP">(Schultes et al. [2020](#ref-FIP))</span> are bringing existing practices together, but there remains a potential role for FDO in giving a coherent set of implementation practices that can practically achieve FAIR. Significant effort, also within EOSC, is now moving towards FAIR metrics <span class="citation" data-cites="Devaraju_2021">(Devaraju et al. [2021](#ref-Devaraju_2021))</span>, which in practice need to make additional assumptions on how FAIR principles are implemented, but these are not always formalized <span class="citation" data-cites="10.5281/zenodo.7463421">(Mark D Wilkinson et al. [2022](#ref-10.5281/zenodo.7463421))</span> nor can they be taken to be universally correct <span class="citation" data-cites="10.5281/zenodo.7848102">(Verburg et al. [2023](#ref-10.5281/zenodo.7848102))</span>. Given that most of the existing FAIR guides and assessment tools are focused on Web and Linked Data, it would be reasonable for FDO to then provide a profile of such implementation choices that can achieve best of both worlds.
+By assessing FDO [against the FAIR principles](#sec:fair-compare) we found that both FDO implementations are underspecified in several aspects (licences, provenance, data references, data vocabularies, metadata persistence). While there are implementations of each of these in general Linked Data examples, there is no single set of implementation guides that fully realizes the FAIR principles. *FAIRification* efforts like the FAIR Cookbook <span class="citation" data-cites="faircookbook">(Rocca-Serra et al. [2023](#ref-faircookbook))</span> and FAIR Implementation Profiles <span class="citation" data-cites="FIP">(Schultes et al. [2020](#ref-FIP))</span> are bringing existing practices together, but there remains a potential role for FDO in giving a coherent set of implementation practices that can practically achieve FAIR. Significant effort, also within EOSC, is now moving towards FAIR metrics [[Devaraju 2021]], which in practice need to make additional assumptions on how FAIR principles are implemented, but these are not always formalized <span class="citation" data-cites="10.5281/zenodo.7463421">(Mark D Wilkinson et al. [2022](#ref-10.5281/zenodo.7463421))</span> nor can they be taken to be universally correct <span class="citation" data-cites="10.5281/zenodo.7848102">(Verburg et al. [2023](#ref-10.5281/zenodo.7848102))</span>. Given that most of the existing FAIR guides and assessment tools are focused on Web and Linked Data, it would be reasonable for FDO to then provide a profile of such implementation choices that can achieve best of both worlds.
 
 EOSC has been largely supportive of FDO, FAIR and related services. By contrasting the [EOSC Interoperability Framework](#sec:eosc-interoperability-framework) with FDO, we found that there are important dimensions that are not solved at a technical level, but through organization collaboration, legal requirements and building community practices. FDO recommendations highlight community aspects, but at the same time the largest FAIR communities in many science domains are already producing and consuming Linked Data. Just as the Linked Data community has a challenge in convincing more research fields to use Semantic Web technologies, FDO currently need to build many new communities in areas that have shown interest in that approach (e.g. material science). It may be advantageous for both these effort to be aligned and jointly promoted under the EOSC umbrella.
 
@@ -528,7 +528,7 @@ By implementing the goals of FAIR Digital Objects with the mature technology sta
 
 This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); HORIZON-CL4-2021-HUMAN-01-01 101070305 (ENEXA) and by UK Research and Innovation (UKRI) under the UK government’s *Horizon Europe funding guarantee* grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
 
-We would like to acknowledge the FAIR Digital Object Forum <span class="citation" data-cites="FAIRDigitalObjects">(“FAIR Digital Objects Forum” [n.d.](#ref-FAIRDigitalObjects))</span> community and working groups, where SSR and CG are members.
+We would like to acknowledge the [FAIR Digital Object Forum](https://fairdo.org/) community and working groups, where SSR and CG are members.
 
 ## Author contributions
 
@@ -546,7 +546,7 @@ Contributions to this article according to the [CASRAI CRediT](https://credit.ni
 
 [^1]: For a brief introduction to DOIP 2.0, see [[CNRI 2023a]]
     
-[^2]: URIs <span class="citation" data-cites="rfc3986">(Berners-Lee, Fielding, and Masinter [2005](#ref-rfc3986))</span> are generalised forms of URLs that include locator-less identifiers such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years <span class="citation" data-cites="InfoURIRegistry">(OCLC [2010](#ref-InfoURIRegistry))</span>, for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) <span class="citation" data-cites="jutyIdentifiersOrgMIRIAM2011">(Juty, Le Novere, and Laibe [2011](#ref-jutyIdentifiersOrgMIRIAM2011))</span>. RDF 1.1 formats use Unicode to support *IRI*s <span class="citation" data-cites="rfc3987">(Dürst and Suignard [2005](#ref-rfc3987))</span>, which extends URIs to include international characters and domain names.
+[^2]: URIs <span class="citation" data-cites="rfc3986">(Berners-Lee, Fielding, and Masinter [2005](#ref-rfc3986))</span> are generalised forms of URLs that include locator-less identifiers such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years <span class="citation" data-cites="InfoURIRegistry">(OCLC [2010](#ref-InfoURIRegistry))</span>, for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) <span class="citation" data-cites="jutyIdentifiersOrgMIRIAM2011">(Juty, Le Novere, and Laibe [2011](#ref-jutyIdentifiersOrgMIRIAM2011))</span>. RDF 1.1 formats use Unicode to support *IRI*s [[Dürst 2005]], which extends URIs to include international characters and domain names.
 
 [^3]: URIs can also identify *non-information resources* for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding *information resources* <span class="citation" data-cites="sauermannCoolURIsSemantic2011">(Sauermann et al. [2008](#ref-sauermannCoolURIsSemantic2011))</span>.    
 
@@ -591,14 +591,12 @@ Committee*.\
 
 [Albertoni 2023]: https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/ "Data Catalog Vocabulary (DCAT)- Version 3"
 \[Albertoni 2023\]
-Riccardo Albertoni, David Browning, Simon Cox, Alejandra Gonzalez
-Beltran, Andrea Perego, Peter Winstanley (2023):\
+Riccardo Albertoni, David Browning, Simon Cox, Alejandra Gonzalez Beltran, Andrea Perego, Peter Winstanley (2023):\
 **Data Catalog Vocabulary (DCAT)- Version 3**.\
 <https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/>
 
 [Allcock 2005]: https://marketing.globuscs.info/production/strapi/uploads/gridftp_final_cca95d9e12.pdf "The Globus Striped GridFTP Framework and Server"
-\[Allcock 2005\] William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link,
-Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):\
+\[Allcock 2005\] William Allcock, John Bresnahan, Rajkumar Kettimuthu, Michael Link, Catalin Dumitrescu, Ioan Raicu, Ian Foster (2005):\
 **The Globus Striped GridFTP Framework and Server**.\
 *SC '05: Proceedings of the 2005 ACM/IEEE Conference on Supercomputing*,
 Seattle, WA, USA, IEEE\
@@ -606,8 +604,7 @@ Seattle, WA, USA, IEEE\
 
 [Anders 2022]: https://doi.org/10.5281/zenodo.7825630 "PR-PIDProfileAttributes-2.1-20221017: FDO PID profiles & attributes"
 \[Anders 2022\]
-Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry
-Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
+Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
 **FDO PID profiles & attributes**\
 *FDO Specification Documents* PR-PIDProfileAttributes-2.1-20221017\
 *FAIR Digital Objects Forum*\
@@ -615,13 +612,8 @@ Lannom, Ulrich Schwardmann, Peter Wittenburg (2022):\
 
 [Anders 2023]: https://doi.org/10.5281/zenodo.7782262 "PR-RequirementSpec-3.0: FAIR Digital Objects Forum FDO requirement specifications"
 \[Anders 2023\]
-Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
-Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert
-Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes,
-George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg,
-Carlo Zwölf (2023):\
-**FAIR Digital Objects Forum FDO requirement specifications**. Version
-3.0.\
+Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):\
+**FAIR Digital Objects Forum FDO requirement specifications**. Version 3.0.\
 George Strawn, Peter Wittenburg (eds.)\
 *FDO Specification Documents* PR-RequirementSpec-3.0\
 *FAIR Digital Objects Forum*\
@@ -638,7 +630,7 @@ Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley Stall
 
 [Baker 2019]: http://shex.io/shex-primer/ "Shape Expressions (ShEx) 2.1 Primer"
 \[Baker 2019\]
-Thomas Baker and Eric Prud'hommeaux (2019):\
+Thomas Baker, Eric Prud'hommeaux (2019):\
 **Shape Expressions (ShEx) 2.1 Primer**.\
 <http://shex.io/shex-primer/> (accessed 26 May 2022)
 
@@ -660,8 +652,7 @@ Tim Berners-Lee (1998):\
 Wide Web by its inventor"
 \[Berners-Lee 1999\]
 Tim Berners-Lee, Mark Fischetti (1999):\
-**Weaving the Web: The original design and ultimate destiny of the World
-Wide Web by its inventor**.\
+**Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor**.\
 [ISBN 978-0-06-251586-5](https://identifiers.org/isbn/9780062515865)
 
 [Berners-Lee 2000]: https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html "Semantic Web on XML"
@@ -706,15 +697,13 @@ Christian Bizer, Tom Heath, Tim Berners-Lee (2009):\
 **5**(3)\
 <https://doi.org/10.4018/jswis.2009081901>
 
-Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif, Alexander
-Schlemmer, Dieter van Uytvanck, Peter Wittenburg (2022):\
+Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif, Alexander Schlemmer, Dieter van Uytvanck, Peter Wittenburg (2022):\
 **FDO -- upload of FDO**.\
 *FDO Specification Documents* PEN-FDO-Upload-1.1-20221017\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825549>
 
-Christophe Blanchi, Maggie Hellström; Larry Lannom; Andreas Pfeil;
-Ulrich Schwardmann; Peter Wittenburg (2022):\
+Christophe Blanchi, Maggie Hellström, Larry Lannom, Andreas Pfeil, Ulrich Schwardmann, Peter Wittenburg (2022):\
 **Implementation of attributes, types, profiles and registries**.\
 *FDO Specification Documents*
 WD-Implementation-of-Attributes-0.4-20230314\
@@ -722,12 +711,10 @@ WD-Implementation-of-Attributes-0.4-20230314\
 <https://doi.org/10.5281/zenodo.7825572>
 
 [Bonino 2016]
-Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar,
-Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger
-(2016):\
+Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar, Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger (2016):\
 **FAIR Data points supporting big data interoperability**.\
-*Enterprise interoperability in the digitized and networked factory of
-the future*, Martin Zelm, Guy Doumeingts, Joao Pedro Mendonça (eds.).\
+*Enterprise interoperability in the digitized and networked factory of the future*, 
+Martin Zelm, Guy Doumeingts, Joao Pedro Mendonça (eds.).\
 iSTE Press.\
 [ISBN 978-1-84704-044-2](http://www.iste.co.uk/book.php?id=1073)\
 Preprint:
@@ -736,8 +723,7 @@ Preprint:
 [Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
 
 \[Bonino 2019\]
-Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
-Leggott, Carlo Zwölf (2019):\
+Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf (2019):\
 **FAIR digital object framework**.\
 FDOF technical implementation guideline.\
 *Group of European Data Experts in RDA (GEDE-RDA)*\
@@ -745,8 +731,7 @@ FDOF technical implementation guideline.\
 
 [Bonino 2022]: https://fairdigitalobjectframework.org/ "FAIR Digital Object Framework Documentation"
 \[Bonino 2022\]
-Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince
-Sales (2022):\
+Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince Sales (2022):\
 **FAIR Digital Object Framework Documentation**\
 <https://fairdigitalobjectframework.org/> (accessed 26 May 2022)
 
@@ -767,8 +752,7 @@ FAIR Digital Objects Forum
 
 [Browning 2020]: https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/ "Data Catalog Vocabulary (DCAT) - Version 2"
 \[Browning 2020\]
-David Browning, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo
-Albertoni, Alejandra Gonzalez Beltran (2020):\
+David Browning, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo Albertoni, Alejandra Gonzalez Beltran (2020):\
 **Data Catalog Vocabulary (DCAT)** - Version 2.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/>
@@ -799,9 +783,7 @@ Sarven Capadisli, Amy Guy, eds. (2017):\
 
 [Carriero 2020]: https://doi.org/10.3233/ssw200033 "The landscape of ontology reuse approaches"
 \[Carriero 2020\]
-Valentina Anita Carriero, Marilena Daquino, Aldo Gangemi, Andrea
-Giovanni Nuzzolese, Silvio Peroni, Valentina Presutti, Francesca Tomasi
-(2020):\
+Valentina Anita Carriero, Marilena Daquino, Aldo Gangemi, Andrea Giovanni Nuzzolese, Silvio Peroni, Valentina Presutti, Francesca Tomasi (2020):\
 **The landscape of ontology reuse approaches**.\
 *Applications and practices in ontology design, extraction, and
 reasoning*\
@@ -809,16 +791,14 @@ reasoning*\
 
 [Ciccarese 2013]: https://doi.org/10.1186/2041-1480-4-37 "PAV ontology: Provenance, authoring and versioning"
 \[Ciccarese 2013\]
-Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG
-Gray, Carole Goble, Tim Clark (2013):\
+Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, Tim Clark (2013):\
 **PAV ontology: Provenance, authoring and versioning**.\
 *Journal of Biomedical Semantics* **4**(1):37.\
 <https://doi.org/10.1186/2041-1480-4-37>
 
 [Corcho 2021]: https://doi.org/10.2777/620649 "EOSC Interoperability Framework"
 \[Corcho 2021\]
-Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek,
-Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
+Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek, Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
 (2021):\
 **EOSC Interoperability Framework**.\
 *Publications Office of the EU*\
@@ -826,8 +806,7 @@ Christine Choirat, Mark Sanden, Frederik Coppens, EOSC Executive Board
 
 [Corcho 2023]: https://doi.org/10.48550/arXiv.2305.06746 "A maturity model for catalogues of semantic artefacts"
 \[Corcho 2023\]
-Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras
-Micsik, Silvio Peroni, Emanuele Storti (2023):\
+Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras Micsik, Silvio Peroni, Emanuele Storti (2023):\
 **A maturity model for catalogues of semantic artefacts**.\
 *arXiv* 2305.06746 \[cs.DL\]\
 <https://doi.org/10.48550/arXiv.2305.06746>
@@ -861,42 +840,48 @@ José Carlos Martins Delgado (2016):\
 *Data Science and Big Data Computing*\
 <https://doi.org/10.1007/978-3-319-31861-5_1>
 
-Anusuriya Devaraju, Mustapha Mokrane, Linas Cepinskas, Robert Huber,
-Patricia Herterich, Jerry de Vries, Vesa Akerman, Hervé L'Hours, Joy
-Davidson, Michael Diepenbroek (2021):\
-**From conceptualization to implementation: FAIR assessment of research
-data objects**.\
-*Data Science Journal* **20** (2021).\
+[Devaraju 2021]: https://doi.org/10.5334/dsj-2021-004 "From conceptualization to implementation: FAIR assessment of research data objects"
+\[Devaraju 2021\]
+Anusuriya Devaraju, Mustapha Mokrane, Linas Cepinskas, Robert Huber, Patricia Herterich, Jerry de Vries, Vesa Akerman, Hervé L'Hours, Joy Davidson, Michael Diepenbroek (2021):\
+**From conceptualization to implementation: FAIR assessment of research data objects**.\
+*Data Science Journal* **20** \
 <https://doi.org/10.5334/dsj-2021-004>
 
+[Dusseault 2007]: https://www.rfc-editor.org/rfc/rfc4918.html "RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning**
+(WebDAV)"
+\[Dusseault 2007\]
 Lisa M. Dusseault (2007):\
 **HTTP Extensions for Web Distributed Authoring and Versioning**
 (WebDAV).\
 *RFC Editor*, RFC 4918.\
 <https://doi.org/10.17487/rfc4918>
 
+[Dürst 2005]: https://www.rfc-editor.org/rfc/rfc3987.html "RFC 3987: Internationalized Resource Identifiers (IRIs)"
+[Dürst 2005]
 Martin J. Dürst, Michel Suignard (2005):\
 **Internationalized Resource Identifiers (IRIs)**.\
 *RFC Editor*, RFC 3987\
 <https://doi.org/10.17487/rfc3987>
 
-European Commission, Directorate-General for Research and Innovation
-(2016):\
-**Realising the European open science cloud -- First report and
-recommendations of the Commission high level expert group on the
-European Open Science Cloud**.\
+[EU 2016]: https://op.europa.eu/o/opportal-service/download-handler?identifier=2ec2eced-9ac5-11e6-868c-01aa75ed71a1&format=pdf "Realising the European open science cloud"
+\[EU 2016\]
+European Commission, Directorate-General for Research and Innovation (2016):\
+**Realising the European Open Science Cloud**.
+First report and recommendations of the Commission high level expert group on the European Open Science Cloud. \
 *Publications Office of the EU*\
 <https://doi.org/10.2777/940154>
 
-Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et al.
-(2023):\
+[Ekuan 2023]: https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design "Web API design best practices"
+\[Ekuan 2023\]
+Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et al.  (2023):\
 **Web API design best practices**.\
 *Azure Architecture Center*\
 <https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design>
 (accessed 24 January 2023)
 
-Tim Ellison, Christopher Kaler, Jim Amsden, Jim Whitehead, Geoffrey M.
-Clemm (2002):\
+[Ellison 2002]: https://www.rfc-editor.org/rfc/rfc3253.html "RFC 3253: Versioning Extensions to WebDAV"
+\[Ellison 2002\]
+Tim Ellison, Christopher Kaler, Jim Amsden, Jim Whitehead, Geoffrey M.  Clemm (2002):\
 **Versioning Extensions to WebDAV** (Web Distributed Authoring and
 Versioning).\
 *RFC Editor*, RFC 3253. <https://doi.org/10.17487/rfc3253>
@@ -908,13 +893,16 @@ FAIR Data Maturity Model Working Group (2020):\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00050>
 
+[FDO 2022]: https://fairdo.org/specifications/ "FDO Specification Documents"
+\[FDO 2022]
 FDO (2022):\
-**FDO Specification Documents - November 2022** *FAIR Digital Objects
-Forum* <https://hdl.handle.net/20.500.14132/fdo-spec-docs>\
+**FDO Specification Documents - November 2022**  
+*FAIR Digital Objects Forum*  
+<https://hdl.handle.net/20.500.14132/fdo-spec-docs>
 <https://fairdo.org/specifications/> (accessed 2 February 2023)\
-FAIR Digital Objects Forum\
-<https://fairdo.org/> (accessed 26 May 2022)
 
+[Fenner 2019]: https://doi.org/10.5438/jwvf-8a66 "Introducing the PID graph"
+\[Fenner 2019\]
 Martin Fenner, Amir Aryani (2019):\
 **Introducing the PID graph**.\
 *DataCite Blog*\
@@ -925,12 +913,12 @@ Dieter Fensel, Federico Michele Facca, Elena Simperl, Ioan Toma (2011):\
 <https://doi.org/10.1007/978-3-642-19193-0>
 
 Roy Thomas Fielding (2000):\
-**Architectural styles and the design of network-based software
-architectures**\
+**Architectural styles and the design of network-based software architectures**\
 Doctoral Thesis, *University of California*, Irvine.\
 <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm> (accessed
-28 June 2022) RFC Editor, RFC Roy T. Fielding, Mark Nottingham, David
-Orchard, Joe Gregorio, Marc Hadley (2012):\
+28 June 2022) 
+
+Roy T. Fielding, Mark Nottingham, David Orchard, Joe Gregorio, Marc Hadley (2012):\
 **URI Template**. *RFC Editor*, RFC 6570\
 <https://doi.org/10.17487/rfc6570>
 
@@ -944,12 +932,9 @@ Roy T. Fielding, Julian Reschke (2014):\
 *RFC Editor*, RFC 7231\
 <https://doi.org/10.17487/rfc7231>
 
-Roy T. Fielding, Richard N. Taylor, Justin R. Erenkrantz, Michael M.
-Gorlick, Jim Whitehead, Rohit Khare, Peyman Oreizy (2017):\
-**Reflections on the REST architectural style and \"principled design of
-the modern web architecture\" (impact paper award)**.\
-*Proceedings of the 2017 11th joint meeting on foundations of software
-engineering - ESEC/FSE 2017*, New York, New York, USA.\
+Roy T. Fielding, Richard N. Taylor, Justin R. Erenkrantz, Michael M.  Gorlick, Jim Whitehead, Rohit Khare, Peyman Oreizy (2017):\
+**Reflections on the REST architectural style and \"principled design of the modern web architecture\" (impact paper award)**.\
+*Proceedings of the 2017 11th joint meeting on foundations of software engineering - ESEC/FSE 2017*, New York, New York, USA.\
 <https://doi.org/10.1145/3106237.3121282>
 
 Roy T. Fielding, Mark Nottingham, Julian Reschke (2022):\
@@ -965,16 +950,13 @@ Carole Goble, Robert Stevens (2008):\
 Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community
 (2017):\
 **Bioschemas: From potato salad to protein annotation**.\
-*Proceedings of the ISWC 2017 posters & demonstrations and industry
-tracks co-located with 16th international semantic web conference (ISWC
-2017)*, Vienna, Austria.\
+*Proceedings of the ISWC 2017 posters & demonstrations and industry tracks co-located with 16th international semantic web conference (ISWC 2017)*, Vienna, Austria.\
 *CEUR Workshop Proceedings* **1963**\
 <https://ceur-ws.org/Vol-1963/paper579.pdf>
 
 Paul Groth, Antonis Loizou, Alasdair J. G. Gray, Carole Goble, Lee
 Harland, Steve Pettifer (2014):\
-**API-centric Linked Data integration: The Open PHACTS Discovery
-Platform case study**.\
+**API-centric Linked Data integration: The Open PHACTS Discovery Platform case study**.\
 *Journal of Web Semantics* **29**\
 <https://doi.org/10.1016/j.websem.2014.03.003>
 
@@ -987,17 +969,13 @@ CNRI (2022):\
 **Handle.Net Software**.\
 <https://www.handle.net/download_hnr.html> (accessed 24 January 2023)
 
-Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott,
-Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):\
-**The Specimen Data Refinery: A Canonical Workflow Framework and FAIR
-Digital Object Approach to Speeding up Digital Mobilisation of Natural
-History Collections**.\
+Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):\
+**The Specimen Data Refinery: A Canonical Workflow Framework and FAIR Digital Object Approach to Speeding up Digital Mobilisation of Natural History Collections**.\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00134>
 
 Ali Hasnain, Dietrich Rebholz-Schuhmann (2018):\
-**Assessing FAIR data principles against the 5-star open data
-principles**.\
+**Assessing FAIR data principles against the 5-star open data principles**.\
 *The Semantic Web: ESWC 2018 satellite events*, Heraklion, Crete,
 Greece, 2018-06-03/--07\
 <https://doi.org/10.1007/978-3-319-98192-5_60>
@@ -1024,36 +1002,30 @@ Bill de hÓra, Joe Gregorio (2007):\
 
 Ian Horrocks, James Hendler, eds. (2002):\
 **The Semantic Web --- ISWC 2002**\
-First International Semantic Web Conference, Sardinia, Italy, June 9-12,
-2002\
+First International Semantic Web Conference, Sardinia, Italy, June 9-12, 2002\
 <https://doi.org/10.1007/3-540-48005-6>
 
 Wei Hu, Jianfeng Chen, Hang Zhang, Yuzhong Qu (2011):\
 **How matchable are four thousand ontologies on the semantic web**.\
-In Grigoris Antoniou, Marko Grobelnik, Elena Simperl, Bijan Parsia,
-Dimitris Plexousakis, Pieter De Leenheer, Jeff Pan,eds., *The semantic
-web: Research and applications*, pp. 290--304\
+In Grigoris Antoniou, Marko Grobelnik, Elena Simperl, Bijan Parsia, Dimitris Plexousakis, Pieter De Leenheer, Jeff Pan,eds.,\
+*The semantic web: Research and applications*, pp. 290--304\
 ISBN 978-3-642-21033-4
 
 ISO (2019):\
-**ISO 16684-1:2019 --- graphic technology --- extensible metadata
-platform (XMP)** --- part 1: Data model, serialization and core
-properties.\
+**ISO 16684-1:2019 --- graphic technology --- extensible metadata platform (XMP)** 
+--- part 1: Data model, serialization and core properties.\
 ISO standard\
 <https://www.iso.org/standard/75163.html>
 
 ISO/IEC (2022):\
-**ISO/IEC 23009-1:2022 --- information technology --- dynamic adaptive
-streaming over HTTP (DASH)** --- part 1: Media presentation description
-and segment formats.\
+**ISO/IEC 23009-1:2022 --- information technology --- dynamic adaptive streaming over HTTP (DASH)** --- 
+part 1: Media presentation description and segment formats.\
 ISO standard\
 <https://www.iso.org/standard/83314.html>
 
 ITU-T (2013):\
-**X.1255 : Framework for Discovery of Identity Management
-Information**.\
-*Series X: Data networks, open system communications and security* ITU-T
-X.1255\
+**X.1255 : Framework for Discovery of Identity Management Information**.\
+*Series X: Data networks, open system communications and security* ITU-T X.1255\
 The International Telecommunication Union (ITU).\
 <https://www.itu.int/rec/T-REC-X.1255-201309-I>
 
@@ -1063,16 +1035,11 @@ W3C Note\
 <https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/>
 
 Sharif Islam (2023):\
-**FAIR digital objects, persistent identifiers and machine
-actionability**.\
+**FAIR digital objects, persistent identifiers and machine actionability**.\
 *FAIR Connect* **1**(1)\
 <https://doi.org/10.3233/FC-230001>
 
-Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam
-Sharif, Jejkal Thomas, Lannom Larry, Peters-von Gehlen Karsten, Quick
-Robert, Schlemmer Alexander, Schwardmann Ulrich, Soiland-Reyes Stian,
-Strawn George, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, &
-Carlo Zwölf (2023):\
+Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam Sharif, Jejkal Thomas, Lannom Larry, Peters-von Gehlen Karsten, Quick Robert, Schlemmer Alexander, Schwardmann Ulrich, Soiland-Reyes Stian, Strawn George, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, & Carlo Zwölf (2023):\
 **FAIR digital object technical overview**. Version PEN 2.0.\
 *FDO Specification Documents* Full FDO Overview PEN-2.0-v2\
 *FAIR Digital Objects Forum*\
@@ -1083,8 +1050,7 @@ Jana Iyengar, Martin Thomson (2021):\
 *RFC Editor*, RFC 9000\
 <https://doi.org/10.17487/rfc9000>
 
-Mohamad Yaser Jaradeh, Allard Oelen, Manuel Prinz, Markus Stocker, Sören
-Auer (2019):\
+Mohamad Yaser Jaradeh, Allard Oelen, Manuel Prinz, Markus Stocker, Sören Auer (2019):\
 **Open research knowledge graph: A system walkthrough**.\
 *Digital libraries for open knowledge* 348--351.\
 <https://doi.org/10.1007/978-3-030-30760-8_31>
@@ -1099,8 +1065,7 @@ Matt Joras, Yang Chi (2020):\
 <https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions>
 
 Nick Juty, Nicolas Le Novère, Camille Laibe (2011):\
-**Identifiers.org and MIRIAM Registry: Community resources to provide
-persistent identification**.\
+**Identifiers.org and MIRIAM Registry: Community resources to provide persistent identification**.\
 *Nucleic Acids Research* **40**(D1)\
 <https://doi.org/10.1093/nar/gkr1097>
 
@@ -1114,8 +1079,7 @@ Robert Kahn, Robert Wilensky (2006):\
 <https://doi.org/10.1007/s00799-005-0128-x>
 
 Maulik R. Kamdar, Tania Tudorache, Mark A. Musen (2017):\
-**A systematic analysis of term reuse and term overlap across biomedical
-ontologies**.\
+**A systematic analysis of term reuse and term overlap across biomedical ontologies**.\
 *Semantic Web* **8**(6)\
 <https://doi.org/10.3233/sw-160238>
 
@@ -1129,10 +1093,8 @@ Rohit Khare, Scott Lawrence (2000):\
 *RFC Editor*, RFC 2817.\
 <https://doi.org/10.17487/rfc2817>
 
-Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
-Lyudmila Balakireva, Ke Zhou, Richard Tobin (2014):\
-**Scholarly Context Not Found: One in Five Articles Suffers from
-Reference Rot**.\
+Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila Balakireva, Ke Zhou, Richard Tobin (2014):\
+**Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot**.\
 *PLOS ONE* **9**(12):e115253\
 <https://doi.org/10.1371/journal.pone.0115253>
 
@@ -1151,29 +1113,18 @@ John A. Kunze, Emmanuelle Bermès (2022):\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-kunze-ark/36/>
 
-Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris
-Kontokostas (2017):\
+Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris Kontokostas (2017):\
 **Validating RDF Data**.\
 *Synthesis Lectures on the Semantic Web: Theory and Technology* **7**\
 <https://doi.org/10.2200/s00786ed1v01y201707wbe016>
 
-Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson,
-Robert Sanderson, Simeon Warner (2008):\
+Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson, Robert Sanderson, Simeon Warner (2008):\
 **ORE Specification** - Abstract Data Model.\
 *Open Archives Initiative*\
 <http://www.openarchives.org/ore/1.0/datamodel#Proxies>
 
-Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle, Mohammad
-Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj
-Amor, Salvador Capella-Gutierrez, Paulos Charonyktakis, Michael R.
-Crusoe, Yolanda Gil, Carole Goble, Timothy J. Griffin, Paul Groth, Hans
-Ienasescu, Pratik Jagtap, Matúš Kalaš, Vedran Kasalica, Alireza
-Khanteymoori, Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller,
-Robin A. Richardson, Vincent Robert, Stian Soiland-Reyes, Robert
-Stevens, Szoke Szaniszlo, Suzan Verberne, Aswin Verhoeven, Katherine
-Wolstencroft (2021):\
-**Perspectives on automated composition of workflows in the life
-sciences**.\
+Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle, Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez, Paulos Charonyktakis, Michael R.  Crusoe, Yolanda Gil, Carole Goble, Timothy J. Griffin, Paul Groth, Hans Ienasescu, Pratik Jagtap, Matúš Kalaš, Vedran Kasalica, Alireza Khanteymoori, Tobias Kuhn, Hailiang Mei, Hervé Ménager, Steffen Möller, Robin A. Richardson, Vincent Robert, Stian Soiland-Reyes, Robert Stevens, Szoke Szaniszlo, Suzan Verberne, Aswin Verhoeven, Katherine Wolstencroft (2021):\
+**Perspectives on automated composition of workflows in the life sciences**.\
 *F1000Research* **10** (2021):897\
 <https://doi.org/10.12688/f1000research.54159.1>
 
@@ -1182,26 +1133,23 @@ Larry Lannom, Lt. Col. Brian P. Boesch, Sam Sun (2003):\
 *RFC Editor*, RFC 3650\
 <https://doi.org/10.17487/rfc3650>
 
-Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003): **Handle
-System Protocol (ver 2.1) Specification**.\
+Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003):\
+**Handle System Protocol (ver 2.1) Specification**.\
 *RFC Editor*, RFC 3652\
 <https://doi.org/10.17487/rfc3652>
 
-Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil,
-Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):\
+Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):\
 **FDO configuration types**.\
 *FDO Specification Documents* PR-ConfigurationTypes-2.1-20221017\
 FAIR Digital Objects Forum\
 <https://doi.org/10.5281/zenodo.7825703>
 
-Larry Lannom, Ulrich Schwardmann, Christophe Blanchi, Ivonne Anders,
-Claus Weiland, Peter Wittenburg (2022):\
+Larry Lannom, Ulrich Schwardmann, Christophe Blanchi, Ivonne Anders, Claus Weiland, Peter Wittenburg (2022):\
 **FAIR digital objects roadmap. Version 5 november 2022**.\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824673>
 
-Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg
-(2022):\
+Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, Peter Wittenburg (2022):\
 **Typing FAIR digital objects**.\
 *FDO Specification Documents* PR-TypingFDOs-2.0-20220608\
 *FAIR Digital Objects Forum*\
@@ -1259,14 +1207,12 @@ application developers*, Synthesis Lectures on Data, Semantics, and
 Knowledge.\
 <https://doi.org/10.1007/978-3-031-01917-3_3>
 
-Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron
-Ratovsky, Uri Sarid, eds. (2021):\
+Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron Ratovsky, Uri Sarid, eds. (2021):\
 **OpenAPI Specification** v3.1.0.\
 *OpenAPI Initiative*, The Linux Foundation.\
 <https://spec.openapis.org/oas/v3.1.0.html> (accessed 21 March 2023)
 
-Barend Mons, Cameron Neylon, Jan Velterop, Michel Dumontier, Luiz Olavo
-Bonino Silva Santos, Mark D. Wilkinson (2017):\
+Barend Mons, Cameron Neylon, Jan Velterop, Michel Dumontier, Luiz Olavo Bonino Silva Santos, Mark D. Wilkinson (2017):\
 **Cloudy, increasingly FAIR; revisiting the FAIR data guiding principles
 for the European Open Science Cloud**.\
 *Information Services & Use* **37**(1)\
@@ -1281,8 +1227,7 @@ Andy Neumann, Nuno Laranjeiro, Jorge Bernardino (2021):\
 *IEEE Transactions on Services Computing* **14**(4)\
 <https://doi.org/10.1109/TSC.2018.2847344>
 
-Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty Mutlu,
-Silje Zink, Susan Michie (2021):\
+Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty Mutlu, Silje Zink, Susan Michie (2021):\
 **Why and how to engage expert stakeholders in ontology development: Insights from social and behavioural sciences**.\
 *Journal of Biomedical Semantics* **12**\
 <https://doi.org/10.1186/s13326-021-00240-6>
@@ -1323,8 +1268,7 @@ Aaron Parecki, ed. (2017):\
 **Micropub**. *W3C Recommendation*\
 <https://www.w3.org/TR/2017/REC-micropub-20170523/>
 
-Axel Polleres, Maulik Rajendra Kamdar, Javier David Fernández, Tania
-Tudorache, Mark Alan Musen (2020):\
+Axel Polleres, Maulik Rajendra Kamdar, Javier David Fernández, Tania Tudorache, Mark Alan Musen (2020):\
 **A more decentralized vision for linked data**.\
 *Semantic Web* **11**(1)\
 <https://doi.org/10.3233/SW-190380>
@@ -1338,22 +1282,7 @@ Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano (2022):\
 *WHATWG*\
 <https://websockets.spec.whatwg.org/> (accessed 26 May 2022)
 
-Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba Abbassi-Daloii,
-Salvador Capella-Gutierrez, Ishwar Chandramouliswaran, Andrea
-Splendiani, Tony Burdett, Robert T. Giessmann, David Henderson,
-Dominique Batista, Ibrahim Emam, Yojana Gadiya, Lucas Giovanni, Egon
-Willighagen, Chris Evelo, Alasdair J. G. Gray, Philip Gribbon, Nick
-Juty, Danielle Welter, Karsten Quast, Paul Peeters, Tom Plasterer, Colin
-Wood, Eelke van der Horst, Dorothy Reilly, Herman van Vlijmen, Serena
-Scollen, Allyson Lister, Milo Thurston, Ramon Granell, Gabriel
-Backianathan, Sebastian Baier, Anne Cambon Thomsen, Martin Cook, Melanie
-Courtot, Mike d'Arcy, Kurt Dauth, Eva Marin del Piico, Leyla Garcia,
-Ulrich Goldmann, Valentin Grouès, Daniel J. B. Clarke, Erwan Lefloch,
-Isuru Liyanage, Petros Papadopoulos, Cyril Pommier, Emiliano Reynares,
-Francesco Ronzano, Alejandra Delfin-Rossaro, Venkata Sagatopam, Ashni
-Sedani, Vitaly Sedlyarov, Liubov Shilova, Sukhi Singh, Jolanda Strubel,
-Kees van Bochove, Zachary Warnes, Peter Woollard, Fuqi Xu, Andrea
-Zaliani, Susanna-Assunta Sansone and (2023):\
+Philippe Rocca-Serra, Wei Gu, Vassilios Ioannidis, Tooba Abbassi-Daloii, Salvador Capella-Gutierrez, Ishwar Chandramouliswaran, Andrea Splendiani, Tony Burdett, Robert T. Giessmann, David Henderson, Dominique Batista, Ibrahim Emam, Yojana Gadiya, Lucas Giovanni, Egon Willighagen, Chris Evelo, Alasdair J. G. Gray, Philip Gribbon, Nick Juty, Danielle Welter, Karsten Quast, Paul Peeters, Tom Plasterer, Colin Wood, Eelke van der Horst, Dorothy Reilly, Herman van Vlijmen, Serena Scollen, Allyson Lister, Milo Thurston, Ramon Granell, Gabriel Backianathan, Sebastian Baier, Anne Cambon Thomsen, Martin Cook, Melanie Courtot, Mike d'Arcy, Kurt Dauth, Eva Marin del Piico, Leyla Garcia, Ulrich Goldmann, Valentin Grouès, Daniel J. B. Clarke, Erwan Lefloch, Isuru Liyanage, Petros Papadopoulos, Cyril Pommier, Emiliano Reynares, Francesco Ronzano, Alejandra Delfin-Rossaro, Venkata Sagatopam, Ashni Sedani, Vitaly Sedlyarov, Liubov Shilova, Sukhi Singh, Jolanda Strubel, Kees van Bochove, Zachary Warnes, Peter Woollard, Fuqi Xu, Andrea Zaliani, Susanna-Assunta Sansone (2023):\
 **The FAIR cookbook - the essential resource for and by FAIR doers**.\
 *Scientific Data* **10**(10)\
 <https://doi.org/10.1038/s41597-023-02166-3>
@@ -1389,16 +1318,14 @@ international conference, DAMDID/RCDL 2018, Moscow, Russia,
 Preprint:
 <https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D>
 
-Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl,
-Marek Suchánek, Tobias Kuhn (2020):\
+Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl, Marek Suchánek, Tobias Kuhn (2020):\
 **Reusable FAIR implementation profiles as accelerators of FAIR convergence**.\
 *International Conference on Conceptual Modeling*, ER 2020: Advances in
 Conceptual Modeling, 2022-11-03/--06, Vienna, Austria.\
 *Lecture notes in Computer Science* **12584**\
 <https://doi.org/10.1007/978-3-030-65847-2_13>
 
-Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg
-(2022):\
+Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg (2022):\
 **DOIP endorsement request**.\
 *FDO Specification Documents* PED-DOIPEndorsement-1.1-20221017\
 *FAIR Digital Objects Forum*\
@@ -1409,42 +1336,34 @@ Ulrich Schwardmann, Tibor Kálmán (2022):\
 *Research Ideas and Outcomes* **8**\
 <https://doi.org/10.3897/rio.8.e96014>
 
-Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk
-Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, Thomas Jung (2022):\
+Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, Thomas Jung (2022):\
 **IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP historical**.\
 <https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi>\
 <https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87>
 
+[Singhal 2012]: https://blog.google/products/search/introducing-knowledge-graph-things-not/ "Introducing the knowledge graph: Things, not strings"
+[Singhal 2012]
 Amit Singhal (2012):\
 **Introducing the knowledge graph: Things, not strings**.\
 <https://blog.google/products/search/introducing-knowledge-graph-things-not/>
 (accessed 18 May 2023)
 
-Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William
-Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland,
-Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan
-Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah,
-Patricia L. Whetzel, Suzanna Lewis (2007):\
+Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah, Patricia L. Whetzel, Suzanna Lewis (2007):\
 **The OBO Foundry: Coordinated evolution of ontologies to support biomedical data integration**.\
 *Nature Biotechnology* **25**(11)\
 <https://doi.org/10.1038/nbt1346>
 
-Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens,
-Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):\
+Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):\
 **Creating lightweight FAIR digital objects with RO-crate**.\
 *Research Ideas and Outcomes* **10**(8).
 <https://doi.org/10.3897/rio.8.e93937>
 
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
-Frederik Coppens, José M. Fernández, Daniel Garijo, BjÃ¶rn GrÃ¼ning,
-Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana
-Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, BjÃ¶rn GrÃ¼ning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
 **Packaging research artefacts with RO-crate**.\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/ds-210053>
 
-Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier,
-Carole Goble, Paul Groth (2022):\
+Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):\
 **Updating linked data practices for FAIR digital object principles**.\
 *Research Ideas and Outcomes* **10**(8).\
 <https://doi.org/10.3897/rio.8.e94501>
@@ -1465,8 +1384,7 @@ Manu Sporny, Ivan Herman, Ben Adida, Mark Birbeck (2015):\
 *W3C Note*\
 <https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/>
 
-Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
-Pierre-Antoine Champin, Niklas Lindström (2020):\
+Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, Pierre-Antoine Champin, Niklas Lindström (2020):\
 **JSON-LD 1.1**.\
 *W3C Recommendation*.\
 <https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
@@ -1499,21 +1417,18 @@ Anisa Stefi (2015):\
 Germany, 2015-05-26/--29\
 <https://doi.org/10.18151/7217489>
 
-Henry Thompson and Sandy Gao and David Beech and Murray Maloney and Noah
-Mendelsohn and Michael Sperberg-McQueen (2012):\
+Henry Thompson, Sandy Gao, David Beech, Murray Maloney, Noah Mendelsohn, Michael Sperberg-McQueen (2012):\
 **W3C XML Schema Definition Language** (XSD) 1.1 Part 1: Structures.\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/>
 
-Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio Labra
-Gayo, Daniel Mietchen, Eric Prud, Andra Waagmeester (2019):\
+Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio Labra Gayo, Daniel Mietchen, Eric Prud, Andra Waagmeester (2019):\
 **Using shape expressions (ShEx) to share RDF data models and to guide curation with rigorous validation**.\
 *The Semantic Web: 16th international conference*, (ESWC 2019),
 Portorož, Slovenia, 2019-06-02/--06.\
 <https://doi.org/10.1007/978-3-030-21348-0_39>
 
-Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan
-Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
+Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
 **Mapping between the OBO and OWL ontology languages**.\
 *Journal of Biomedical Semantics* **2**:S3
 <https://doi.org/10.1186/2041-1480-2-s1-s3>
@@ -1534,10 +1449,7 @@ Herbert Van de Sompel, Michael L. Nelson (2015):
 *D-Lib Magazine* **21**(11/12).  
 <https://doi.org/10.1045/november2015-vandesompel>
 
-Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson,
-Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff,
-Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, &
-Mark Wilkinson (2022):\
+Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
 **FAIR Signposting Profile**.\
 <https://signposting.org/FAIR/> (accessed 5 January 2023)
 
@@ -1583,91 +1495,63 @@ WHATWG (2023):\
 <https://html.spec.whatwg.org/multipage/microdata.html> (accessed 13
 June 2023)
 
-Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich
-Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa (2018):\
+Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa (2018):\
 **RDA Recommendation on PID Kernel Information**\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00031>
 
-Daan Broeder, Peter Wittenburg, Ivonne Anders, Karsten Peters-von Gehlen
-(2022):\
+Daan Broeder, Peter Wittenburg, Ivonne Anders, Karsten Peters-von Gehlen (2022):\
 **FDO -- kernel attributes & metadata**.\
 *FDO Specification Documents*
 PR-FDO-KernelAttributesAndMetadata-2.0-20221017\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825693>
 
-C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch,
-Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg (2022):\
+C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch, Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg (2022):\
 **FAIR Digital Objects Forum Document Standards**
 WD-DocProcessStd-1.1-20220129 (internal draft)\
 *FAIR Digital Objects Forum*\
 <https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_>
 (accessed 30 November 2022)
 
-Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter
-Wittenburg (2022):\
+Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter Wittenburg (2022):\
 **FDO machine actionability**. Version 2.2\
 *FAIR Digital Objects Forum Document Standards*
 PR-MachineActionDef-2.2-20221119\
 *FAIR Digital Objects Forum* <https://doi.org/10.5281/zenodo.7825650>
 
-John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring,
-Renato Giovanni, Tim Robertson, David Vieglais (2012):\
+John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring, Renato Giovanni, Tim Robertson, David Vieglais (2012):\
 **Darwin Core: An Evolving Community-Developed Biodiversity Data Standard**.\
 *PLOS ONE* **7**(1):e29715.
 <https://doi.org/10.1371/journal.pone.0029715>
 
-Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle
-Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
-Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony
-J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott
-Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran,
-Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap
-Heringa, Peter A. C. 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost
-Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer,
-Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik,
-Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater,
-George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik
-van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg,
-Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):\
+Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):\
 **The FAIR Guiding Principles for scientific data management and stewardship**.\
 *Scientific Data* **3**(1)\
 <https://doi.org/10.1038/sdata.2016.18>
 
-Mark D. Wilkinson, Susanna-Assunta Sansone, Grootveld Marjan, Josefine
-Nordling, Richard Dennis, David Hecker (2022):\
+Mark D. Wilkinson, Susanna-Assunta Sansone, Grootveld Marjan, Josefine Nordling, Richard Dennis, David Hecker (2022):\
 **FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons**.\
 EOSC FAIR Metrics subgroup\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.7463421>
 
-Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight,
-Jeremy Logan, Patrick Widener, Matthew Wolf (2022):\
+Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight, Jeremy Logan, Patrick Widener, Matthew Wolf (2022):\
 **F\*\*\* workflows: When parts of FAIR are missing**.\
 *arXiv* 2209.09022 \[cs.DL\]\
 <https://doi.org/10.48550/arxiv.2209.09022>
 
-Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer, Christine
-Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas Blomberg,
-Gerhard Ecker, Carole Goble, Barend Mons (2012):\
+Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer, Christine Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas Blomberg, Gerhard Ecker, Carole Goble, Barend Mons (2012):\
 **Open PHACTS: Semantic interoperability for drug discovery**.\
 *Drug Discovery Today* **17**(21-22) (2012)\
 <https://doi.org/10.1016/j.drudis.2012.05.016>
 
-Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik Schultes
-(2019):\
+Peter Wittenburg, George Strawn, Barend Mons, Luiz Bonino, Erik Schultes (2019):\
 **Digital objects as drivers towards convergence in data infrastructures**.\
 *B2Share*\
 <https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11>
 
-Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman,
-Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal,
-Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer,
-Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert
-Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer
-Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp
-Wieder (2022):\
+Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder (2022):\
 **FAIR digital object demonstrators 2021**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.5872645>
@@ -1677,17 +1561,12 @@ Peter Wittenburg, et al (2023):\
 *OSF*\
 <https://osf.io/3rekv/>
 
-Katy Wolstencroft, Stuart Owen, Matthew Horridge, Olga Krebs, Wolfgang
-Mueller, Jacky L. Snoep, Franco du Preez, Carole Goble (2011):\
+Katy Wolstencroft, Stuart Owen, Matthew Horridge, Olga Krebs, Wolfgang Mueller, Jacky L. Snoep, Franco du Preez, Carole Goble (2011):\
 **RightField: Embedding ontology annotation in spreadsheets**.\
 *Bioinformatics* **27**(14)\
 <https://doi.org/10.1093/bioinformatics/btr312>
 
-Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams,
-David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra
-Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex
-Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib
-Sufi, Carole Goble (2013):\
+Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib Sufi, Carole Goble (2013):\
 **The Taverna workflow suite: Designing and executing workflows of Web Services on the desktop, web or in the cloud**.\
 *Nucleic Acids Research* **41**(W1)\
 <https://doi.org/10.1093/nar/gkt328>
