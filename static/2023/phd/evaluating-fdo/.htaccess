@@ -1,0 +1,4 @@
+Header add Link "<ro-crate-metadata.json>;rel=describedby;type=\"application/ld+json\";profile=\"http://www.w3.org/ns/json-ld#flattened http://www.w3.org/ns/json-ld#compacted https://w3id.org/ro/crate\""
+Header add Link "<ro-crate-preview.html>;rel=describedby;type=\"text/html\""
+Header add Link "<https://w3id.org/ro/doi/10.5281/zenodo.8075229>;rel=cite-as"
+

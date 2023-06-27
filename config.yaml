@@ -55,13 +55,21 @@ params:
       Header add Link "</2022/fonts/caveat-v17-latin_cyrillic-regular.woff2>;rel=preload;as=font"
       Header add Link "</2022/fonts/oswald-v49-latin-600.woff2>;rel=preload;as=font"
     </FilesMatch>
+    <Files "ro-crate-metadata.json">
+      Header add Link "<ro-crate-preview.html>;rel=alternate;type=\"text/html\""
+      Header add Link "<./>;rel=describes"
+      ForceType "application/ld+json; profile=\"http://www.w3.org/ns/json-ld#flattened http://www.w3.org/ns/json-ld#compacted https://w3id.org/ro/crate\""
+    </Files>
+    <Files "ro-crate-preview.html">
+      Header add Link "<ro-crate-metadata.json>;rel=alternate;type=\"application/ld+json\""
+      Header add Link "<./>;rel=describes"
+    </Files>
 
 permalinks:
   /: /:year/:filename/
   posts: /:year/:filename/
   tags: /2022/tags/:slug/
   categories: /2022/categories/:slug/
-
 
 taxonomies:
   category: categories
