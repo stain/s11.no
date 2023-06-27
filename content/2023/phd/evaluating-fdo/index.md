@@ -1429,11 +1429,13 @@ FAIR Data Maturity Model Working Group (2020):\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00050>
 
+[Reilly 2009]: https://www.dona.net/doipv1doc "Digital Object Interface Protocol 1.0"
 [Reilly 2009]
 Sean Reilly (2009):\
 **Digital Object Interface Protocol Version 1.0**.\
 <https://www.dona.net/doipv1doc> (accessed 26 May 2022)
 
+[Rice 2022]: https://websockets.spec.whatwg.org/ "WebSockets Standard"
 [Rice 2022]
 Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano (2022):\
 **WebSockets Standard**.\
@@ -1461,11 +1463,13 @@ Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel (2011):\
 *W3C Interest Group Note*\
 <http://www.w3.org/TR/cooluris/>
 
-[schema]
+[schema]: https://schema.org/
+\[schema\]
 **Schema.org**\
 <https://schema.org/> (accessed 26 May 2022)
 
-[schema Actions]
+[schema Actions]: https://schema.org/docs/actions.html
+\[schema Actions\]
 **Schema.org Actions**.\
 *schema.org*.\
 <https://schema.org/docs/actions.html> (accessed 26 May 2022)
@@ -1552,7 +1556,9 @@ Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Gobl
 *Research Ideas and Outcomes* **10**(8).\
 <https://doi.org/10.3897/rio.8.e94501>
 
-[Soiland-Reyes 2023] Stian Soiland-Reyes (2023):  
+[Soiland-Reyes 2023]: https://w3id.org/ro/doi/10.5281/zenodo.8075229 "Comparison tables for evaluating FAIR Digital Object and Linked Data"
+[Soiland-Reyes 2023]
+Stian Soiland-Reyes (2023):  
 **Comparison tables for evaluating FAIR Digital Object and Linked Data**.  
 RO-Crate. _Zenodo_  
 <https://w3id.org/ro/doi/10.5281/zenodo.8075229>  
@@ -1660,7 +1666,8 @@ Herbert Van de Sompel, Michael L. Nelson (2015)
 *D-Lib Magazine* **21**(11/12).  
 <https://doi.org/10.1045/november2015-vandesompel>
 
-[Van de Sompel 2022]
+[Van de Sompel 2022]: https://signposting.org/FAIR/ "FAIR Signposting Profile"
+\[Van de Sompel 2022\]
 Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
 **FAIR Signposting Profile**.\
 <https://signposting.org/FAIR/> (accessed 5 January 2023)
@@ -1693,18 +1700,21 @@ W3C OWL Working Group (2012):\
 *W3C Recommendation*\
 <https://www.w3.org/TR/2012/REC-owl2-overview-20121211>
 
-[W3C 2013]
+[W3C 2013]: https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/ "SPARQL 1.1 Overview"
+\[W3C 2013]
 The W3C SPARQL Working Group (2013):\
 **SPARQL 1.1 Overview**.\
 *W3C Recommendation*\
-<https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/> (accessed
-26 May 2022)
+<https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/>
 
-[W3C 2015]
+[W3C 2015]: https://www.w3.org/standards/semanticweb/data "Linked Data"
+\[W3C 2015]
 W3C (2015):\
 **Linked Data**\
 <https://www.w3.org/standards/semanticweb/data> (accessed 26 May 2022)
 
+[W3Tech 2023]: https://w3techs.com/technologies/details/da-jsonld "Usage Statistics of JSON-LD for Websites"
+\[W3Tech 2023]
 W3Techs 2023:\
 **Usage Statistics of JSON-LD for Websites**. 2023-05.\
 *W3Techs - World Wide Web Technology Surveys*, Q-Success.\
@@ -1718,7 +1728,8 @@ Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich Schwardman
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00031>
 
-[WHATWG 2023]
+[WHATWG 2023]: https://html.spec.whatwg.org/multipage/microdata.html "Microdata"
+\[WHATWG 2023]
 WHATWG (2023):\
 **Microdata**.\
 *HTML Living Standard*\
@@ -1734,12 +1745,14 @@ WD-DocProcessStd-1.1-20220129 (internal draft)\
 <https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_>
 (accessed 30 November 2022)
 
-[Weiland 2022]
+[Weiland 2022]: https://doi.org/10.5281/zenodo.7825650 "FDO machine actionability"
+\[Weiland 2022]
 Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter Wittenburg (2022):\
 **FDO machine actionability**. Version 2.2\
 *FAIR Digital Objects Forum Document Standards*
 PR-MachineActionDef-2.2-20221119\
-*FAIR Digital Objects Forum* <https://doi.org/10.5281/zenodo.7825650>
+*FAIR Digital Objects Forum*\
+<https://doi.org/10.5281/zenodo.7825650>
 
 [Wieczorek 2012]: https://doi.org/10.1371/journal.pone.0029715 "Darwin Core: An Evolving Community-Developed Biodiversity Data Standard"
 \[Wieczorek 2012\]
