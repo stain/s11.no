@@ -204,10 +204,10 @@ _**Table 1**: Considering FDO and Web according to the quality levels of the Int
 | Quality    | FDO w/ DOIP    | Web w/ Linked Data    |
 | :---- | :---- | :---- |
 | **Symbiotic**: *to what extent multiple applications can agree to interact, align, collaborate or cooperate*    | The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.    | The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs [[Fielding 2000]] end up being mandated centrally by dominant (often commercial) providers [[Fielding 2017]], and the clients are required to use each API as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences. |
-| **Pragmatic**: *using interaction contracts so processes can be choreographed in workflows*    | FDO types and operations enable detailed choreography (Canonical Workflows; <span class="citation" data-cites="cwfr">CWFR Group ([2021](#ref-cwfr))</span>). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with `0.DOIP/OperationReference`).    | “Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 [[Miller 2021]], schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(“Schema.Org Actions” [n.d.](#ref-SchemaOrgActions))</span>, WSDL/SOAP [[Liu 2007]], but frequently just as human-readable developer documentation with examples.    |
+| **Pragmatic**: *using interaction contracts so processes can be choreographed in workflows*    | FDO types and operations enable detailed choreography (Canonical Workflows [[CWFR 2021]]). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with `0.DOIP/OperationReference`).    | “Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 [[Miller 2021]], [schema.org Actions], WSDL/SOAP [[Liu 2007]], but frequently just as human-readable developer documentation with examples.    |
 | **Semantic**: *ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies* | FDO semantic enable navigation and typing. Every FDO has a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC [PID-InfoType for Model](https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6). No single type semantic, Type FDOs can link to existing vocabularies & ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) [[Wittenburg 2022]] | Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.    |
 | **Syntactic**: *serialising messages for digital exchange, structure representation*    | DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.    | Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.    |
-| **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*    | [[DONA 2018]] is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI [2023](#ref-DOIPAPIHTTPa)[b](#ref-DOIPAPIHTTPa))</span>    | HTTP/1.1, TCP/IP port 80 [[Fielding 1999]]; HTTP/1.1+TLS, TCP/IP 443 [[Rescorla 2000]]; HTTP/2, as HTTP/1\* but binary [[Belshe 2015]]; HTTP/3, like HTTP/2+TLS but UDP [[Bishop 2022]]    |
+| **Connective**: *transferring messages to another application, e.g. wrapping in other protocols*    | [[DONA 2018]] is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP [CNRI 2023b]   | HTTP/1.1, TCP/IP port 80 [[Fielding 1999]]; HTTP/1.1+TLS, TCP/IP 443 [[Rescorla 2000]]; HTTP/2, as HTTP/1\* but binary [[Belshe 2015]]; HTTP/3, like HTTP/2+TLS but UDP [[Bishop 2022]]    |
 | **Environmental**: *how applications are deployed and affected by its environment, portability*    | Main DOIP implementation is [*Cordra*](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).    | HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.    |
 
 </div>
@@ -242,7 +242,7 @@ _**Table 2**: Mapping the Metamodel concepts from the Interoperability Framework
 
 The FAIR Digital Object guidelines [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)] sets out recommendations for FDO implementations. Note that the proposed update to FDO specification [[Anders 2023]] clarifies these definitions with equivalent identifiers[^9] and relates them to further FDO requirements such as FDO Data Type Registries.
 
-In [Table 3](#tbl:fdo-checks) we evaluate completeness of the guidelines in two current FDO realizations, using DOIPv2 [[DONA 2018]] and using Linked Data Platform [[Speicher 2015]], as proposed by <span class="citation" data-cites="FDOFramework">Bonino da Silva Santos, Guizzardi, and Sales ([2022](#ref-FDOFramework))</span>.
+In [Table 3](#tbl:fdo-checks) we evaluate completeness of the guidelines in two current FDO realizations, using DOIPv2 [[DONA 2018]] and using Linked Data Platform [[Speicher 2015]], as proposed by [[Bonino 2022]].
 
 A key observation from this is that simply using DOIP does not achieve many of the FDO guidelines. Rather the guidelines set out how a protocol like DOIPs should be used to achieve FAIR Digital Object goals. The DOIP Endorsement [[Ulrich 2022]] set out that to comply, DOIP must be used according to the set of FDO requirement documents (details ), and notes *Achieving FDO compliance requires more than DOIP and full compliance is thus left to system designers*. Likewise, a Linked Data approach will need to follow the same requirements to actually comply as an FDO implementation.
 
@@ -258,11 +258,11 @@ From our evaluation, we can observe:
 
   - Linked Data have a strong emphasis on semantics (FDOF8), and metadata schemas developed by community agreements (FDOF10). FDO types need to be made reusable across servers.
 
-  - While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in practice this is not found (or linked with custom keys), particularly due to lack of namespaces and the favouring of local types rather than type/property re-use. Linked Data frequently have multiple representations, but often not sufficiently linked (link relation `alternate` [[Nottingham 2017]]) or related (`prov:specializationOf` from <span class="citation" data-cites="w3-prov-o">Lebo, McGuinness, and Sahoo ([2013](#ref-w3-prov-o))</span>).
+  - While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in practice this is not found (or linked with custom keys), particularly due to lack of namespaces and the favouring of local types rather than type/property re-use. Linked Data frequently have multiple representations, but often not sufficiently linked (link relation `alternate` [[Nottingham 2017]]) or related (`prov:specializationOf` from [[Lebo 2013a]]).
 
   - FDO collections are not yet defined for DOIP, while Linked Data seemingly have too many alternatives. LDP has specific native support for containers.
 
-  - Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (see RDA-A2-01M in Table [\[RDA-A2-01M\]](#RDA-A2-01M)).
+  - Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (see [RDA-A2-01M](#RDA-A2-01M) in [Table 5](#tbl:fair-data-maturity-model).
 
   - DOIP supports multiple chunks of data for an object (FDOF3), while Linked Data can support content-negotiation. In either case it can be unclear to clients what is the meaning or equivalence of any additional chunks.
 
@@ -392,7 +392,7 @@ _**Table 5**: Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020],  [Bahim 2
 | RDA-A1.1-01M    | Metadata is accessible through a free access protocol    | G1 G8 G9    | Partially realised: Handle system is open[^13] protocol [[Sun 2003]]. One server implementation [[CNRI 2022]], free[^14]. One DOIPv2 implementation ([Cordra](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source). | LDP is open W3C recommendation [[Speicher 2015]]. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).    |
 | RDA-A1.1-01D    | Data is accessible through a free access protocol    | G9    | (see above)    | URI, DNS, HTTP, TLS    | URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)    |
 | RDA-A1.2-01D    | Data is accessible through an access protocol that supports authentication and authorisation | (FDOR9)    | TLS certificates, `authentication` field (details unspecified)    | Implied    | HTTP authentication, TLS certificates    |
-| RDA-A2-01M<span id="RDA-A2-01M" label="RDA-A2-01M">\[RDA-A2-01M\]</span> | Metadata is guaranteed to remain available after data is no longer available    | FDOF12    | —    | Unspecified, however FDOF-IR links to separate metadata records    | —    |
+| <span id="RDA-A2-01M" label="RDA-A2-01M">RDA-A2-01M</span> | Metadata is guaranteed to remain available after data is no longer available    | FDOF12    | —    | Unspecified, however FDOF-IR links to separate metadata records    | —    |
 | RDA-I1-01M    | Metadata uses knowledge representation expressed in standardised format    | FDOF8    | Required, but not currently defined    | —    | Always implied by use of RDF syntaxes.    |
 | RDA-I1-01D    | Data uses knowledge representation expressed in standardised format    | —    | —    | —    | Common (e.g. HDF5, JSON, XML), yet common scientific data formats frequently not standardised    |
 | RDA-I1-02M    | Metadata uses machine-understandable knowledge representation    | FDOF8    | Required    | Optional RDF metadata with any vocabulary    | Always implied by use of RDF syntaxes.    |
@@ -830,6 +830,14 @@ Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras Micsik, Sil
 **A maturity model for catalogues of semantic artefacts**.\
 *arXiv* 2305.06746 \[cs.DL\]\
 <https://doi.org/10.48550/arXiv.2305.06746>
+
+[CWFR 2021]: https://osf.io/3rekv/ "Canonical Workflow Frameworks for Research"
+\[CWFR 2021]
+CWFR Group (2021)\
+**Canonical Workflow Frameworks for Research: Position Paper**\
+Alex Hardisty, Peter Wittenburg (eds.). 
+_OSF_
+<https://osf.io/3rekv/>
 
 [DCMI 2020]: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/ "DCMI Metadata Terms"
 \[DCMI 2020\]
@@ -1463,12 +1471,12 @@ Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel (2011):\
 *W3C Interest Group Note*\
 <http://www.w3.org/TR/cooluris/>
 
-[schema]: https://schema.org/
+[schema.org]: https://schema.org/
 \[schema\]
 **Schema.org**\
 <https://schema.org/> (accessed 26 May 2022)
 
-[schema Actions]: https://schema.org/docs/actions.html
+[schema.org Actions]: https://schema.org/docs/actions.html
 \[schema Actions\]
 **Schema.org Actions**.\
 *schema.org*.\
