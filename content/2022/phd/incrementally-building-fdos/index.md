@@ -57,7 +57,7 @@ _Oliver Woolland¹, Paul Brack¹, Stian Soiland-Reyes¹², Ben Scott³, Laurence
 
 ## Abstract
 
-_Specimen Data Refinery_ (SDR) is a developing platform for automating transcription of specimens from natural history collections [[Hardisty 2022](https://doi.org/10.1162/dint_a_00134)]. SDR is based on computational workflows and digital twins using FAIR Digital Objects.
+_Specimen Data Refinery_ (SDR) is a developing platform for automating transcription of specimens from natural history collections [[Hardisty 2022](/2022/phd/specimen-data-refinery/)]. SDR is based on computational workflows and digital twins using FAIR Digital Objects.
 
 We show our recent experiences with building SDR using the Galaxy workflow system and combining two FDO methodologies with open digital specimens (openDS) and RO-Crate data packaging. We suggest FDO improvements for incremental building of digital objects in computational workflows.
 
@@ -96,7 +96,7 @@ Several of our tools process the referenced images, currently https URLs in open
 
 ### RO-Crate lessons
 
-Galaxy is developing support for importing and exporting[ Workflow Run Crates](https://www.researchobject.org/workflow-run-crate/), a profile of RO-Crate [Soiland-Reyes 2022b](https://doi.org/10.3233/DS-210053) to captures execution history of a workflow, including its definition and intermediate data [De Geest 2022]. SDR is adopting this support to combine openDS FDOs with workflow provenance, as envisioned by [[Walton 2020](https://doi.org/10.3897/rio.6.e57602)].
+Galaxy is developing support for importing and exporting [Workflow Run Crates](https://www.researchobject.org/workflow-run-crate/), a profile of RO-Crate [[Soiland-Reyes 2022b](/2022/phd/fdo-with-ro-crate/)] to captures execution history of a workflow, including its definition and intermediate data [[De Geest 2022](/2022/phd/galaxy-ro-crate/)]. SDR is adopting this support to combine openDS FDOs with workflow provenance, as envisioned by [[Walton 2020](https://doi.org/10.3897/rio.6.e57602)].
 
 Our prototype _de novo_ workflow returns results as a ZIP file of openDS objects. End-users should also get copies of the referenced images and generated visualisations, along with workflow execution metadata. We are investigating ways to embed the preliminary Galaxy workflow history before the final step, so that this result can be an enriched RO-Crate.
 
@@ -107,7 +107,7 @@ SDR is an example of machine-assisted construction of FDOs, which highlight the 
 
 Further work will investigate the use of RO-Crate as a wrapper of partial FDOs, but this needs to be coupled with more flexible FDO types as profiles, in order to restrict “impossible” ordering of steps depending on particular inner FDO fragments. A distinction needs to be made between open digital specimens that are in “draft” state and those that can be pushed to DiSSCo registries.
 
-We are experimenting with changing the SDR components into Canonical Workflow Building Blocks [[Soiland-Reyes 2022a](https://doi.org/10.1162/dint_a_00135)] using the Common Workflow Language [[Crusoe 2022](https://doi.org/10.1145/3486897)]. This gives flexibility to scalably execute SDR workflows on  different compute backends such as HPC or local cluster, without the additional setup of Galaxy servers.
+We are experimenting with changing the SDR components into Canonical Workflow Building Blocks [[Soiland-Reyes 2022a](/2022/phd/canonical-workflow-building-blocks/)] using the Common Workflow Language [[Crusoe 2022](/2022/phd/methods-included/)]. This gives flexibility to scalably execute SDR workflows on  different compute backends such as HPC or local cluster, without the additional setup of Galaxy servers.
 
 
 
@@ -188,7 +188,8 @@ _Communications of the ACM_ **65**(6)
 [De Geest 2022] Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
 [**Enhancing RDM in Galaxy by integrating RO-Crate**](../galaxy-ro-crate/).  
 1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
-_Research Ideas and Outcomes_ (accepted)
+_Research Ideas and Outcomes_ 
+<https://doi.org/10.3897/rio.8.e95164>
 
 [Hardisty 2019] Alex R Hardisty, Keping Ma, Gil Nelson, Jose Fortes (2019):  
 **‘openDS’ – A New Standard for Digital Specimens and Other Natural Science Digital Object Types**.  
