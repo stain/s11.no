@@ -282,7 +282,7 @@ _**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implem
 | G6: *stable binding between entities*    | Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text.    | Make datatype of fields explicit to support navigation.    | Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text.    |    |
 | G7: *encapsulation*    | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).    | Allow method discovery by type FDOs in advance [[Lannom 2022a]].    | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.    | Declare supported methods in advance, e.g. OpenAPI [[Miller 2021]]    |
 | G8: *technology independence*    | In theory independent, in reality depends on single implementations of Handle system and DOIP    | Encourage open source DOIP testbeds and lighter reference implementations    | Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.    | Develop demonstrator of FDOF usage based on existing LDP server.    |
-| G9: *standard compliance*    | Handle [[Lannom 2003]], DOIP [[DONA 2018]]. FDO requirements not standardised yet.    | Formalise standard process of FDO requirements [[Weiland 2022a]]    | HTTP, LDP. However FDOF is not yet standardised.    | Formalise FDOF from FDOF-SEM working group.    |
+| G9: *standard compliance*    | Handle [[Sun 2003a]], DOIP [[DONA 2018]]. FDO requirements not standardised yet.    | Formalise standard process of FDO requirements [[Weiland 2022a]]    | HTTP, LDP. However FDOF is not yet standardised.    | Formalise FDOF from FDOF-SEM working group.    |
 | FDOF1: *PID as basis*    | Extensive use of Handle system.    | Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve [[Anders 2022]]. Register `0.DOIP/*` and `0.FDO/*` as actual PIDs.    | HTTP URLs as basis for identifiers, but they are frequently not persistent.    | Add strong guidance for PID services like w3id and persistence policies [[McMurry 2017]].    |
 | FDOF2: *PID record w/ type*    | Unspecified how to resolve from Handle to DOIP Service (\!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA`    | Document requirements for PID Record    | w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.    | Add FAIR Signposting [[Van de Sompel 2022]] at PID provider for minimal PID record    |
 | FDOF3: *PID resolvable to bytestream & metadata*    | Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.    | Clarify expectations for multiple items. Recommend chunks to not be used.    | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.    | Add FAIR Signposting and preference order.    |
@@ -327,19 +327,19 @@ Based on the analysis in [Table 4](#tbl:fdo-web-middleware), we make the followi
 | **Openness**: *framework enable extension of applications*    | FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like [Datacite](https://datacite.org/), [B2Handle](https://eudat.eu/services/userdoc/b2handle).    | The Web is inherently open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.    |
 | **Scalability**: *application should be effective at many different scales*    | No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)    | Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.    |
 | **Performance**: *efficient and predictable execution*    | DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second. DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by `requestId`). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.    | HTTP traffic is about 10% of global Internet traffic, excluding video and social networks [[Sandvine 2022]]. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams [[Belshe 2015]] but still has TCP+TLS startup costs. For reduced latency, HTTP/3 [[Bishop 2022]] use QUIC [[Iyengar 2021]] rather than TCP, already adapted heavily (30% of EMEA traffic) of which Instagram & Facebook video is the majority of traffic [[Joras 2020]].    |
-| **Distribution transparency**: *application perceived as a consistent whole rather than independent elements.*    | Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.    | Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates [[Fielding 2012]], content-negotiation [[MDN 2023]] or FAIR Signposting [[Van de Sompel 2022]].    |
+| **Distribution transparency**: *application perceived as a consistent whole rather than independent elements.*    | Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.    | Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates [[Gregorio 2012]], content-negotiation [[MDN 2023]] or FAIR Signposting [[Van de Sompel 2022]].    |
 | **Access transparency**: *local/remote elements accessed similarly*    | FDOs should be accessed through PID indirection, this means difficult to make private test setup. Commonly a fixed DOIP server is used directly, which permits local non-PID identifiers.    | Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. `http://localhost/object/1`) and SSL issues (e.g. self-signed certificates, local CAs)    |
 | **Location transparency**: *elements accessed without knowledge of physical location*    | FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.    | PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localised servers common for large cloud deployments.    |
 | **Concurrency transparency**: *concurrent processing without interference*    | No explicit concurrency measures. FDO kernel metadata can include checksum and date.    | HTTP operations are classified as being stateless/idempotent or not (e.g. `PUT` changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, `ETag` (e.g. checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.    |
 | **Failure transparency**: *service provisioning resilient to failures*    | DOIP status codes, e.g. `0.DOIP/Status.104`, additional codes can be added as custom attributes    | HTTP [status codes](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5) e.g. `404 Not Found`, specific meaning of standard codes can be [documented in Open API](https://swagger.io/docs/specification/describing-responses/). Custom codes uncommon.    |
 | **Migration transparency**: *allow relocating elements without interfering application*    | Update of PID record URLs, indirection through `0.TYPE/DOIPServiceInfo` (not always used consistently). No redirection from DOIP service.    | HTTP `30x` status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.    |
-| **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*    | FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: Cordra extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).    | URLs are not required to persist, although encouraged [[Berners-Lee 1998]]. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento [[Van de Sompel 2013]] expose versioned snapshots. WebDAV `VERSION-CONTROL` method [[Ellison 2002]] (used by SVN).    |
+| **Persistence transparency**: *conceal deactivation/reactivation of elements from their users*    | FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: Cordra extends DOIP with [version tracking](https://www.cordra.org/documentation/design/object-versioning.html)).    | URLs are not required to persist, although encouraged [[Berners-Lee 1998]]. Persistence requires convention to use PIDs/PURLs and HTTP `410 Gone`. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like `.json`. Memento [[Van de Sompel 2013]] expose versioned snapshots. WebDAV `VERSION-CONTROL` method [[Clemm 2002]] (used by SVN).    |
 | **Transaction transparency**: *coordinate execution of atomic/isolated transactions*    | No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.    | Limited transaction capabilities (e.g. `If-Unmodified-Since`) on same resource. WebDAV [locking mechanisms](https://datatracker.ietf.org/doc/html/rfc4918#section-6) [[Dusseault 2007]] with `LOCK` and `UNLOCK` methods.    |
 | **Modularity**: *application as collection of connected/distributed elements*    | FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.    | The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API’s set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.    |
 | **Encapsulation**: *separate interface from implementation. Specify interface as contract, multiple implementations possible*    | Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although `0.DOIP/Transport` can be specified after already contacting DOIP). Cordra supports [native DOIP](https://www.cordra.org/documentation/api/doip.html), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html) and [Cordra REST API](https://www.cordra.org/documentation/api/rest-api.html))    | HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. `http` vs `https` URIs exposes encryption detail[^11]. Implementation details may leak into URIs (e.g. `search.aspx`), countered by deliberate design of URI patterns [[Berners-Lee 1998]]) and PIDs via Persistent URLs (PURL).    |
 | **Inheritance**: *Deriving specialised interface from another type*    | DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. [Cordra `$ref`](https://www.cordra.org/documentation/design/schemas.html#schema-references) use of [JSON Schema references](https://json-schema.org/draft/2020-12/json-schema-core.html#references) [[Wright 2022]])    | Syntactically Media Type with multiple suffixes [[Sporny 2023]] (mainly used with `+json`), declaration of subtypes as profiles (RFC6906) . In metadata, semantic type systems (RDFS [[Guha 2014]]), OWL2 [[W3C 2012]], SKOS [[Isaac 2009]]). OpenAPI 3 [[Miller 2021]] [inheritance and Polymorphism](https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism). XML `xsd:schemaLocation` or `xsd:type` [[Thompson 2012]], JSON `$schema` [[Wright 2022]]), JSON-LD `@context` [[Sporny 2020]]. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.    |
 | **Signal interfaces**: *asynchronous handling of messages*    | DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs    | HTTP/2 [multiplexed streams](https://datatracker.ietf.org/doc/html/rfc7540#section-5) [[Belshe 2015]], Web Sockets [[Rice 2022]], Linked Data Notifications [[Capadisli 2017]], AtomPub [[Gregorio 2007]], SWORD [[Jones 2022]], Micropub [[Parecki 2017]], more typically ad-hoc jobs/futures REST resources    |
-| **Operation interfaces**: *defining operations possible on an instance, interface of request/response messages*    | CRUD predefined in DOIP, custom operations through `0.DOIP/Op.ListOperations` (can be FDOs of type `0.TYPE/DOIPOperation`, more typically local identifiers like `"getProvenance"`)    | CRUD predefined in [HTTP methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3) [[Fielding 2014b]] , ([extended by registration](https://www.iana.org/assignments/http-methods/http-methods.xhtml)), URI Templates [[Fielding 2012]], [OpenAPI operations](https://spec.openapis.org/oas/v3.1.0.html#operation-object) [[Miller 2021]], HATEOAS[^12] incl. Hydra [[Lanthaler 2021]], [schema.org Actions], JSON HAL [[Kelly 2016]] & Link headers (RFC8288) [[Nottingham 2017]]    |
+| **Operation interfaces**: *defining operations possible on an instance, interface of request/response messages*    | CRUD predefined in DOIP, custom operations through `0.DOIP/Op.ListOperations` (can be FDOs of type `0.TYPE/DOIPOperation`, more typically local identifiers like `"getProvenance"`)    | CRUD predefined in [HTTP methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3) [[Fielding 2014b]] , ([extended by registration](https://www.iana.org/assignments/http-methods/http-methods.xhtml)), URI Templates [[Gregorio 2012]], [OpenAPI operations](https://spec.openapis.org/oas/v3.1.0.html#operation-object) [[Miller 2021]], HATEOAS[^12] incl. Hydra [[Lanthaler 2021]], [schema.org Actions], JSON HAL [[Kelly 2016]] & Link headers (RFC8288) [[Nottingham 2017]]    |
 | **Stream interfaces**: *operations that can handle continuous information streams*    | Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)    | HTTP 1.1 [[Fielding 2014a]] [chunked transfer](https://datatracker.ietf.org/doc/html/rfc7230#section-4.1), HLS (RFC8216) [[Pantos 2017]], MPEG-DASH [[ISO 23009]]    |
 
 _**Table 4**: Comparing FAIR Digital Object (with the DOIP 2.0 protocol [[DONA 2018]]) and Web technologies (using Linked Data) as middleware infrastructures [[Zarras 2004]]_
@@ -392,7 +392,7 @@ _**Table 5**: Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020],  [Bahim 2
 | RDA-A1-04M    | Metadata is accessed through standardised protocol    | G9 FDOF3    | Retrievable from PID (FDOF3). Informal DOIP standard maintained by DONA Foundation    | LDP standard maintained by W3C, HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)    | Formal HTTP standards maintained by IETF, HTTP content negotiation, informal FAIR Signposting    |
 | RDA-A1-04D    | Data is accessible through standardised protocol    | G9    | (see above)    | HTTP [[Fielding 2022]]    | HTTP/HTTPS, FTP (now less common), GridFTP [[Allcock 2005]] (for large data), ARK [[Kunze 2022]]    |
 | RDA-A1-05D    | Data can be accessed automatically (i.e. by a computer program)    | G4 FDOF3 FDOF6    | Required, but few client libraries    | HTTP `GET`, content-negotiation for `fdof/object`    | Ubiquitous, hundreds of HTTP libraries    |
-| RDA-A1.1-01M    | Metadata is accessible through a free access protocol    | G1 G8 G9    | Partially realised: Handle system is open[^13] protocol [[Lannom 2003]]. One server implementation [[CNRI 2022]], free[^14]. One DOIPv2 implementation ([Cordra](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source). | LDP is open W3C recommendation [[Speicher 2015]]. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).    |
+| RDA-A1.1-01M    | Metadata is accessible through a free access protocol    | G1 G8 G9    | Partially realised: Handle system is open[^13] protocol [[Sun 2003b]]. One server implementation [[CNRI 2022]], free[^14]. One DOIPv2 implementation ([Cordra](https://www.cordra.org/)): free under BSD-like license (not recognised as Open Source). | LDP is open W3C recommendation [[Speicher 2015]]. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).    |
 | RDA-A1.1-01D    | Data is accessible through a free access protocol    | G9    | (see above)    | URI, DNS, HTTP, TLS    | URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)    |
 | RDA-A1.2-01D    | Data is accessible through an access protocol that supports authentication and authorisation | (FDOR9)    | TLS certificates, `authentication` field (details unspecified)    | Implied    | HTTP authentication, TLS certificates    |
 | <span id="RDA-A2-01M" label="RDA-A2-01M">RDA-A2-01M</span> | Metadata is guaranteed to remain available after data is no longer available    | FDOF12    | —    | Unspecified, however FDOF-IR links to separate metadata records    | —    |
@@ -793,6 +793,12 @@ Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carol
 *Journal of Biomedical Semantics* **4**(1):37\
 <https://doi.org/10.1186/2041-1480-4-37>
 
+[Clemm 2002]: https://www.rfc-editor.org/rfc/rfc3253.html "RFC 3253: Versioning Extensions to WebDAV"
+\[Clemm 2002\]
+Geoffrey M. Clemm, Jim Amsden, Tim Ellison, Christopher Kaler, Jim Whitehead (2002):\
+**Versioning Extensions to WebDAV** (Web Distributed Authoring and Versioning).\
+*RFC Editor*, RFC 3253\
+<https://doi.org/10.17487/rfc3253>
 
 [CNRI 2022]: https://www.handle.net/download_hnr.html "Handle.Net Software"
 \[CNRI 2022\]
@@ -885,8 +891,7 @@ Martin J. Dürst, Michel Suignard (2005):\
 *RFC Editor*, RFC 3987\
 <https://doi.org/10.17487/rfc3987>
 
-[Dusseault 2007]: https://www.rfc-editor.org/rfc/rfc4918.html "RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning**
-(WebDAV)"
+[Dusseault 2007]: https://www.rfc-editor.org/rfc/rfc4918.html "RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)"
 \[Dusseault 2007\]
 Lisa M. Dusseault (2007):\
 **HTTP Extensions for Web Distributed Authoring and Versioning**
@@ -901,13 +906,6 @@ Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler et al.  (2023):\
 *Azure Architecture Center*\
 <https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design>
 (accessed 24 January 2023)
-
-[Ellison 2002]: https://www.rfc-editor.org/rfc/rfc3253.html "RFC 3253: Versioning Extensions to WebDAV"
-\[Ellison 2002\]
-Tim Ellison, Christopher Kaler, Jim Amsden, Jim Whitehead, Geoffrey M.  Clemm (2002):\
-**Versioning Extensions to WebDAV** (Web Distributed Authoring and
-Versioning).\
-*RFC Editor*, RFC 3253. <https://doi.org/10.17487/rfc3253>
 
 [FDO 2022]: https://fairdo.org/specifications/ "FDO Specification Documents"
 \[FDO 2022]
@@ -945,21 +943,14 @@ Doctoral Thesis, *University of California*, Irvine.\
 <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm> (accessed
 28 June 2022) 
 
-[Fielding 2012]: https://doi.org/10.17487/rfc6570 "URI Template"
-\[Fielding 2012\]
-Roy T. Fielding, Mark Nottingham, David Orchard, Joe Gregorio, Marc Hadley (2012):\
-**URI Template**. \
-*RFC Editor*, RFC 6570\
-<https://doi.org/10.17487/rfc6570>
-
-[Fielding 2014a]: https://doi.org/10.17487/rfc7230 "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing"
+[Fielding 2014a]: https://doi.org/10.17487/rfc7230 "RFC 7230: Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing"
 \[Fielding 2014a\]
 Roy T. Fielding, Julian Reschke (2014):\
 **Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing**\
 *RFC Editor*, RFC 7230\
 <https://doi.org/10.17487/rfc7230>
 
-[Fielding 2014b]: https://doi.org/10.17487/rfc7231 "Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content"
+[Fielding 2014b]: https://doi.org/10.17487/rfc7231 "RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content"
 \[Fielding 2014b\]
 Roy T. Fielding, Julian Reschke (2014):\
 **Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content**\
@@ -973,7 +964,7 @@ Roy T. Fielding, Richard N. Taylor, Justin R. Erenkrantz, Michael M.  Gorlick, J
 *Proceedings of the 2017 11th joint meeting on foundations of software engineering - ESEC/FSE 2017*, New York, New York, USA.\
 <https://doi.org/10.1145/3106237.3121282>
 
-[Fielding 2022]: https://doi.org/10.17487/rfc9110 "HTTP Semantics"
+[Fielding 2022]: https://doi.org/10.17487/rfc9110 "RFC 9110: HTTP Semantics"
 \[Fielding 2022\]
 Roy T. Fielding, Mark Nottingham, Julian Reschke (2022):\
 **HTTP Semantics**\
@@ -1002,12 +993,19 @@ Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):\
 *CEUR Workshop Proceedings* **1963**\
 <https://ceur-ws.org/Vol-1963/paper579.pdf>
 
-[Gregorio 2007]: https://doi.org/10.17487/rfc5023 "The Atom Publishing Protocol"
+[Gregorio 2007]: https://doi.org/10.17487/rfc5023 "RFC 5023: The Atom Publishing Protocol"
 \[Gregorio 2007\]
 Joe Gregorio, Bill de hÓra (2007):\
 **The Atom Publishing Protocol**.\
 *RFC Editor*, RFC 5023\
 <https://doi.org/10.17487/rfc5023>
+
+[Gregorio 2012]: https://doi.org/10.17487/rfc6570 "RFC 6570: URI Template"
+\[Gregorio 2012\]
+Joe Gregorio, Roy T. Fielding, Marc Hadley, Mark Nottingham, David Orchard (2012):\
+**URI Template**. \
+*RFC Editor*, RFC 6570\
+<https://doi.org/10.17487/rfc6570>
 
 [Groth 2014]: https://doi.org/10.1016/j.websem.2014.03.003 "API-centric Linked Data integration: The Open PHACTS Discovery Platform case study"
 \[Groth 2014\]
@@ -1121,7 +1119,7 @@ Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam Sharif,
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7824714>
 
-[Iyengar 2021]: https://doi.org/10.17487/rfc9000 "QUIC: A UDP-Based Multiplexed and Secure Transport"
+[Iyengar 2021]: https://doi.org/10.17487/rfc9000 "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
 \[Iyengar 2021\]
 Jana Iyengar, Martin Thomson (2021):\
 **QUIC: A UDP-Based Multiplexed and Secure Transport**.\
@@ -1182,7 +1180,7 @@ Mike Kelly (2016):\
 *Internet Engineering Task Force*\
 <https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/>
 
-[Khare 2000]: https://doi.org/10.17487/rfc2817 "Upgrading to TLS Within HTTP/1.1"
+[Khare 2000]: https://doi.org/10.17487/rfc2817 "RFC 2817: Upgrading to TLS Within HTTP/1.1"
 \[Khare 2000\]
 Rohit Khare, Scott Lawrence (2000):\
 **Upgrading to TLS Within HTTP/1.1**.\
@@ -1231,16 +1229,16 @@ Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson, Robert Sander
 *F1000Research* **10** (2021):897\
 <https://doi.org/10.12688/f1000research.54159.1>
 
-[Lannom 2003]: https://doi.org/10.17487/rfc3650 "Handle System Overview"
-\[Lannom 2003\]
-Larry Lannom, Lt. Col. Brian P. Boesch, Sam Sun (2003):\
+[Sun 2003a]: https://doi.org/10.17487/rfc3650 "RFC 3650: Handle System Overview"
+\[Sun 2003a\]
+Sam Sun, Larry Lannom, Brian P. Boesch (2003):\
 **Handle System Overview**\
 *RFC Editor*, RFC 3650\
 <https://doi.org/10.17487/rfc3650>
 
-[Lannom 2003]: https://doi.org/10.17487/rfc3652 "Handle System Protocol (ver 2.1) Specification"
-\[Lannom 2003\]
-Larry Lannom, Jason Petrone, Sean Reilly, Sam Sun (2003):\
+[Sun 2003b]: https://doi.org/10.17487/rfc3652 "RFC 3652: Handle System Protocol (ver 2.1) Specification"
+\[Sun 2003b\]
+Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003) (2003):\
 **Handle System Protocol (ver 2.1) Specification**.\
 *RFC Editor*, RFC 3652\
 <https://doi.org/10.17487/rfc3652>
@@ -1378,7 +1376,7 @@ Emma Norris, Janna Hastings, Marta M. Marques, Ailbhe N. Finnerty Mutlu, Silje Z
 *Journal of Biomedical Semantics* **12**\
 <https://doi.org/10.1186/s13326-021-00240-6>
 
-[Nottingham 2017]: https://doi.org/10.17487/rfc8288 "Web Linking"
+[Nottingham 2017]: https://doi.org/10.17487/rfc8288 "RFC 8288: Web Linking"
 \[Nottingham 2017\]
 Mark Nottingham (2017):\
 **Web Linking**.\
@@ -1425,7 +1423,7 @@ Kevin R. Page, David C. De Roure, Kirk Martinez (2011):\
 WS-REST '11*\
 <https://doi.org/10.1145/1967428.1967435>
 
-[Pantos 2017]: https://doi.org/10.17487/rfc8216 "HTTP Live Streaming"
+[Pantos 2017]: https://doi.org/10.17487/rfc8216 "RFC 8216: HTTP Live Streaming"
 \[Pantos 2017\]
 Roger Pantos, William May (2017):\
 **HTTP Live Streaming**.\
@@ -1452,7 +1450,7 @@ FAIR Data Maturity Model Working Group (2020):\
 *Research Data Alliance*\
 <https://doi.org/10.15497/rda00050>
 
-[Rescorla 2000]: https://www.rfc-editor.org/rfc/rfc2818.html "RFC 2818 HTTP over TLS"
+[Rescorla 2000]: https://www.rfc-editor.org/rfc/rfc2818.html "RFC 2818: HTTP over TLS"
 \[Rescorla 2000\]
 Eric Rescorla (2000):\
 **HTTP Over TLS**.\
@@ -1698,7 +1696,7 @@ Ovidiu Turcoane (2014):\
 Heritage* **4**\
 <https://doi.org/10.55630/dipp.2014.4.11>
 
-[Van de Sompel 2013]: https://doi.org/10.17487/rfc7089 "HTTP Framework for Time-Based Access to Resource States -- Memento"
+[Van de Sompel 2013]: https://doi.org/10.17487/rfc7089 "RFC 7089: HTTP Framework for Time-Based Access to Resource States -- Memento"
 \[Van de Sompel 2013\]
 Herbert Van de Sompel, Michael Nelson, Robert Sanderson (2013):\
 **HTTP Framework for Time-Based Access to Resource States -- Memento**.\
