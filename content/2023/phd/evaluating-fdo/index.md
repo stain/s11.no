@@ -23,8 +23,6 @@ description: >
   We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.  
 ---
 
-**Note**: This article is awaiting re-formatting for the Web.
-
 <h2>Cite as</h2>
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
@@ -44,6 +42,10 @@ _Stian Soiland-Reyes¹², Carole Goble¹, Paul Groth²_
 ² Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
 
 </div>
+
+* **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
+* **Modifications**: Formatting as Markdown; figure caption formatting; tables repositioned and re-styles; reference in s11 house style; inline citation hyperlinks to open access version where available; disclaimer added to acknowledgement.
+
 
 ## Abstract
 
@@ -523,9 +525,13 @@ By implementing the goals of FAIR Digital Objects with the mature technology sta
 
 ## Acknowledgments 
 
-This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); HORIZON-CL4-2021-HUMAN-01-01 101070305 (ENEXA) and by UK Research and Innovation (UKRI) under the UK government’s *Horizon Europe funding guarantee* grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
+This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 [823830](https://doi.org/10.3030/823830) ([BioExcel-2](https://bioexcel.eu/)), H2020-INFRAEOSC-2018-2 [824087](https://doi.org/10.3030/824087) ([EOSC-Life](https://www.eosc-life.eu/)) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 [101046203](https://doi.org/10.3030/101046203) ([BY-COVID](https://by-covid.eu/)), HORIZON-INFRA-2021-EOSC-01 [101057388](https://doi.org/10.3030/101057388) ([EuroScienceGateway](https://eurosciencegateway.eu/)), HORIZON-INFRA-2021-EOSC-01-05 [101057344](https://doi.org/10.3030/101057344) ([FAIR-IMPACT](https://fair-impact.eu/)), HORIZON-INFRA-2021-TECH-01 [101057437](https://doi.org/10.3030/101057437) ([BioDT](https://biodt.eu/)), HORIZON-CL4-2021-HUMAN-01-01 [101070305](https://doi.org/10.3030/101070305) ([ENEXA](https://enexa.eu/)) and by UK Research and Innovation (UKRI) under the UK government’s *Horizon Europe funding guarantee* grants [10038963](https://gtr.ukri.org/projects?ref=10038963) (EuroScienceGateway), [10038992](https://gtr.ukri.org/projects?ref=10038992) (FAIR-IMPACT), [10038930](https://gtr.ukri.org/projects?ref=10038930) (BioDT).
+
 
 We would like to acknowledge the [FAIR Digital Object Forum](https://fairdo.org/) community and working groups, where SSR and CG are members.
+
+Views and opinions expressed in this work are those of the authors only and do not necessarily reflect those of the funded projects, FAIR Digital Object Forum, European Union nor the European Commission. 
+
 
 ## Author contributions
 
