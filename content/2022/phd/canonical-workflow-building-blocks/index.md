@@ -1,6 +1,6 @@
 ---
-title: "Chapter 6: Making Canonical Workflow Building Blocks interoperable across workflow languages"
-weight: 60
+title: "Making Canonical Workflow Building Blocks interoperable across workflow languages"
+weight: 51
 bib: cwbb
 categories:
   - PhD

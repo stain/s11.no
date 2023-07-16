@@ -1,6 +1,6 @@
 ---
-title: "Chapter 4: Creating lightweight FAIR Digital Objects with RO-Crate"
-weight: 40
+title: "Creating lightweight FAIR Digital Objects with RO-Crate"
+weight: 42
 lang: en-GB
 categories:
   - PhD

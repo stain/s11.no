@@ -1,5 +1,5 @@
 ---
-title: "Chapter 10: Contributions"
+title: "Appendix B: Contributions"
 weight: 110
 lang: en-GB
 categories:

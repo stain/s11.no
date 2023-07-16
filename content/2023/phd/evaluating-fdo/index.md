@@ -1,6 +1,6 @@
 ---
-title: "Chapter 3: Evaluating FAIR Digital Object and Linked Data as distributed object systems"
-weight: 30
+title: "Evaluating FAIR Digital Object and Linked Data as distributed object systems"
+weight: 31
 lang: en-GB
 aliases:
  - /2022/phd/evaluating-fdo/
@@ -655,8 +655,7 @@ Tim Berners-Lee (1998):\
 *Style Guide for online hypertext*, W3C\
 <https://www.w3.org/Provider/Style/URI>
 
-[Berners-Lee 1999]: https://identifiers.org/isbn/9780062515865 "Weaving the Web: The original design and ultimate destiny of the World
-Wide Web by its inventor"
+[Berners-Lee 1999]: https://identifiers.org/isbn/9780062515865 "Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor"
 \[Berners-Lee 1999\]
 Tim Berners-Lee, Mark Fischetti (1999):\
 **Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor**.\

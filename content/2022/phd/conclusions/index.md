@@ -1,6 +1,6 @@
 ---
-title: "Chapter 9: Summary"
-weight: 90
+title: "Chapter 6: Conclusions"
+weight: 60
 lang: en-GB
 categories:
   - PhD

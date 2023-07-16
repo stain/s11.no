@@ -1,6 +1,6 @@
 ---
-title: "Chapter 11: Acknowledgements"
-weight: 110
+title: "Appendix A: Acknowledgements"
+weight: 100
 lang: en-GB
 categories:
   - PhD
