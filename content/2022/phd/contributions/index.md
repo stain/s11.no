@@ -61,7 +61,7 @@ list of references in the thesis manuscript
 Here I detail my contributions for each chapter of this thesis, and list
 all the other contributors and their affiliations.
 
-# Thesis contributions {#my-contributions}
+## Thesis contributions
 
 Below are the author contributions to published articles that form part
 of this thesis. Contributions are classified primarily according to the
@@ -75,7 +75,7 @@ corresponding manuscripts and have contributed to all aspects of the
 research. See details below:
 
 
-## Contributions for *Evaluating FAIR Digital Object as a distributed object system* {#fdo}
+### Contributions for *Evaluating FAIR Digital Object as a distributed object system* {#fdo}
 
 
 Chapter
@@ -97,7 +97,7 @@ Paul Groth
 I am the main author of the corresponding manuscript and have
 contributed to all aspects of the research.
 
-## Contributions for *Updating Linked Data practices for FAIR Digital Object principles* {#updating-ld}
+### Contributions for *Updating Linked Data practices for FAIR Digital Object principles* {#updating-ld}
 
 Section [3.2](../updating-ld-for-fdo) was co-authored by:
 
@@ -128,7 +128,7 @@ Netherlands.
 - Slides: <https://doi.org/10.5281/zenodo.7256428>
 
 
-## Contributions for *Packaging research artefacts with RO-Crate* {#packagingrocrate}
+### Contributions for *Packaging research artefacts with RO-Crate* {#packagingrocrate}
 
 Section [4.1](../ro-crate/) was co-authored by:
 
@@ -190,7 +190,7 @@ Simone Leo. Subsection
 and edited by me.
 
 
-## Contributions for *Creating lightweight FAIR Digital Objects with RO-Crate* {#lightweight}
+### Contributions for *Creating lightweight FAIR Digital Objects with RO-Crate* {#lightweight}
 
 Section [4.2](../fdo-with-ro-crate/) was co-authored by:
 
@@ -221,14 +221,14 @@ Paul Groth
 I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
 
-## Contributions for *Formalizing RO-Crate in First Order Logic* {#formalizing}
+### Contributions for *Formalizing RO-Crate in First Order Logic* {#formalizing}
 
-Section [4.3](../ro-crate/formalizing/) was published as an appendix in [Packaging research artefacts with RO-Crate](../ro-crate/)
+Section [4.3](../ro-crate/formalizing/) was published as an appendix in [Packaging research artefacts with RO-Crate](../ro-crate/).
 
 I am the sole author of the corresponding appendix and have contributed to all aspects of the research.
 
 
-## Contributions for *Making Canonical Workflow Building Blocks interoperable across workflow languages* {#canonical}
+### Contributions for *Making Canonical Workflow Building Blocks interoperable across workflow languages* {#canonical}
 
 Section [5.1](../canonical-workflow-building-blocks/) was co-authored by:
 
@@ -259,7 +259,7 @@ Paul Groth
 I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
 
-## Contributions for **The Specimen Data Refinery** {#specimen-refinery}
+### Contributions for **The Specimen Data Refinery** {#specimen-refinery}
 
 [Section 5.2](../specimen-data-refinery/) was co-authored by:
 
@@ -292,7 +292,7 @@ My main contributions are to section [5.2.2.2](../specimen-data-refinery/#workfl
 I have contributed to designing, technical advice, insight and supervision.
 
 
-## Contributions for *Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows* {#incrementally-fdo}
+### Contributions for *Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows* {#incrementally-fdo}
 
 [Section 5.3](../incrementally-building-fdos/) was co-authored by:
 
@@ -323,7 +323,7 @@ Netherlands.
 
 
 
-### Supplementary publications
+## Supplementary publications
 
 I have also contributed as co-author to these articles during the PhD period, provided as supplements:
 
@@ -331,19 +331,19 @@ I have also contributed as co-author to these articles during the PhD period, pr
 
 [Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate](../galaxy-ro-crate/)
 
-[Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory Zenodo white paper](../workflow-collaboratory/)
+[Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory Zenodo white paper](../../../2021/phd/workflow-collaboratory/)
 
 [Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language](../methods-included/)
 
-[Supplement 5: Semantic micro-contributions with decentralized nanopublication services](/2021/phd/nanopub/)
+[Supplement 5: Semantic micro-contributions with decentralized nanopublication services](../../../2021/phd/nanopub/)
 
 [Supplement 6: Perspectives on automated composition of workflows in the life sciences](https://doi.org/10.12688/f1000research.54159.1)
 
-[Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data](https://doi.org/10.1007/978-3-030-80960-7_16)
+[Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data](https://www.research.manchester.ac.uk/portal/files/195948339/ProvenanceWeek_2020_Poster_ISO_23494_Provenance_LNCS_format_1_.pdf)
 
-[Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences.](https://doi.org/10.5281/zenodo.5093125)
+[Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences](https://doi.org/10.5281/zenodo.5093125)
 
-[Supplement 9: A Community Roadmap for Scientific Workflows Research and Development](https://doi.org/10.1109/WORKS54523.2021.00016)
+[Supplement 9: A Community Roadmap for Scientific Workflows Research and Development](https://arxiv.org/pdf/2110.02168)
 
 [Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR](https://doi.org/10.1162/dint_a_00025) _(Main contribution pre-dates UvA affiliation)_
 
@@ -530,15 +530,14 @@ Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 : Research IT, The University of Manchester, Manchester, UK
 
 
-# Community roles
+## Community roles
 
 For [chapter 2](../../../2023/phd/fdo-and-linked-data/) and [section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/).
 
 For [chapter 3](../../../2023/phd/ro-crate/) I co-chair the
-\footurl{https://www.researchobject.org/ro-crate/community}{RO-Crate
-community}\footnote{see section \vref{ro-crate-community}} together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1).
+[RO-Crate community](https://www.researchobject.org/ro-crate/community) (see [appendix A](../acknowledgements/#ro-crate-community)) together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1).
 
-For [section 5.1](../canonical-workflow-building-blocks/) I was deputy work package leader in BioExcel-2, with Adam Hospital as work package leader. For this section 
+For [section 5.1](../canonical-workflow-building-blocks/) I was deputy work package leader in BioExcel-2, with Adam Hospital as work package leader. 
 
 For section 5.1 and [Supplement 4](../methods-included/)) I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
 
@@ -546,65 +545,225 @@ For [Supplement 14](https://www.research.manchester.ac.uk/portal/en/publications
 
 
 
-# Software contributions
+## Software contributions
 
 During this PhD I have contributed to several software applications and
 libraries:
 
-- [signposting](https://pypi.org/project/signposting/), link parser library for Python [@10.5281/zenodo.7256713] (main author)
-- [Benchmarks for Apples-to-Apples FAIR Signposting](https://w3id.org/a2a-fair-metrics/), main author and maintainer
-- [ro-crate-py](ttps://pypi.org/project/rocrate/) (initial author, contributor; main author is Simone Leo)
+- [signposting](https://pypi.org/project/signposting/)  -- link parser library for Python (main author)  
+  <https://doi.org/10.5281/zenodo.7256713>
+- [Benchmarks for Apples-to-Apples FAIR Signposting](https://w3id.org/a2a-fair-metrics/) -- main author and maintainer
+- [ro-crate-py](https://pypi.org/project/rocrate/)  -- initial author, contributor; main author is Simone Leo  
+  <https://doi.org/10.5281/zenodo.8005944>
 - [ro-index-paper](https://github.com/stain/ro-index-paper) -- early prototype for survey of Research Object usage
-- [runcrate](https://github.com/ResearchObject/runcrate) <https://doi.org/10.5281/zenodo.7764062>
-- [ro-crate-preview](https://github.com/marketplace/actions/ro-crate-preview), GitHub action Build HTML preview of RO-Crate. Contributed as supervisor, documentation, bug fixes.
-- [cwlviewer](https://view.commonwl.org/), [contributed feature](https://github.com/common-workflow-language/cwlviewer/pull/241)
-- [ro-crate-validator-py](https://github.com/ResearchObject/ro-crate-validator-py), supervisor
+- [runcrate](https://github.com/ResearchObject/runcrate) contributor, main author is Simone Leo  
+  <https://doi.org/10.5281/zenodo.7764062> 
+- [ro-crate-preview](https://github.com/marketplace/actions/ro-crate-preview), GitHub action Build HTML preview of RO-Crate. Contributed as supervisor, documentation, bug fixes. Main author is Gerard Capes.
+- [cwlviewer](https://view.commonwl.org/), [contributed feature](https://github.com/common-workflow-language/cwlviewer/pull/241), main author is Mark Robinson
+- [ro-crate-validator-py](https://github.com/ResearchObject/ro-crate-validator-py), supervisor, main author is Xuanqi "Logan" Li
 
 
-# Standard contributions
+## Standard contributions
 
-- RO-Crate Specification [1.1.3](https://w3id.org/ro/crate/1.1), contributing as co-chair of RO-Crate community and editor.
-- RO-Crate Specification [1.2 (draft)](https://www.researchobject.org/ro-crate/1.2-DRAFT/). I am the main editor of this release and have contributed several new sections including [RO-Crate profiles](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles)
+- RO-Crate Specification [1.1.3](https://w3id.org/ro/crate/1.1), contributing as co-chair of RO-Crate community and editor.  
+  <https://doi.org/10.5281/zenodo.7867028>
+- RO-Crate Specification [1.2 (draft)](https://www.researchobject.org/ro-crate/1.2-DRAFT/). I am the main editor of this release and have contributed several new sections including [RO-Crate profiles](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles).
 - [IEEE 2791-2020](https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d), contributing as member of P2791 Working Group. I was responsible for aspects of identifiers and internal review.
+  <https://doi.org/10.1109/IEEESTD.2020.9094416>
 - [JSON Schema for IEEE 2791](https://w3id.org/ieee/ieee-2791-schema), contributing as member of P2791 Working Group and internal review.
-- [RFC9264 Linkset](https://doi.org/10.17487/rfc9264): JSON-LD context and reviewed.
+  <https://w3id.org/ieee/ieee-2791-schema>
+- [RFC9264 Linkset](https://www.rfc-editor.org/rfc/rfc9264.html): JSON-LD context and reviewed.
+  <https://doi.org/10.17487/rfc9264>
 
 
-# Training material contributions
+## Training material contributions
 
-- <https://www.researchobject.org/packaging_data_with_ro-crate/>
-- <https://carpentries-incubator.github.io/cwl-novice-tutorial/>
-- <http://docs.bioexcel.eu/cwl-best-practice-guide/>
-- <http://docs.bioexcel.eu/cwl-engine-guide/>
-
-
-# Dataset contributions
-
-- Packing provenance using CPM RO-Crate profile <https://doi.org/10.5281/zenodo.8095888>
-- Zenodo metadata JSON records as of 2019-09-16 <https://doi.org/10.5281/zenodo.3531504>
-- Open PHACTS Linksets 2.1.1 <https://doi.org/10.5281/zenodo.4704867>
-- Packaging research artefacts with RO-Crate <https://w3id.org/ro/doi/10.5281/zenodo.5146227>
-- Comparison tables for evaluating FAIR Digital Object and Linked Data <https://w3id.org/ro/doi/10.5281/zenodo.8075229>
-- BY-COVID WP5 T5.2 Baseline Use Case <https://by-covid.github.io/BY-COVID_WP5_T5.2_baseline-use-case/>    
-- [RO-Crate specification dataset](https://www.researchobject.org/ro-crate/1.1/ro-crate-preview.html)
+- **Packaging Data using RO-Crate**.  
+  _Galaxy Smörgåsbord 2023_  
+  <https://training.galaxyproject.org/topics/fair/tutorials/ro-crate-intro/tutorial.html>
+- **Introduction to Workflows with Common Workflow Language**.  
+  _The Carpentries Incubator_  
+  (main author: Douglas Lowe)  
+  <https://carpentries-incubator.github.io/cwl-novice-tutorial/>
+- **Creating workflows with Common Workflow Language**.  
+  (main author: Douglas Lowe)  
+  <http://docs.bioexcel.eu/cwl-best-practice-guide/>
+- **Common Workflow Language Engines**.  
+  (main author: Robin Long)  
+  <http://docs.bioexcel.eu/cwl-engine-guide/>
 
 
-# Presentation contributions
+## Dataset contributions
 
-_TODO_
+- Packing provenance using CPM RO-Crate profile  
+  <https://doi.org/10.5281/zenodo.8095888>
+- Zenodo metadata JSON records as of 2019-09-16  
+  <https://doi.org/10.5281/zenodo.3531504>
+- Open PHACTS Linksets 2.1.1  
+  <https://doi.org/10.5281/zenodo.4704867>
+- Packaging research artefacts with RO-Crate  
+  <https://w3id.org/ro/doi/10.5281/zenodo.5146227>  
+  <https://doi.org/10.5281/zenodo.5146227>
+- Comparison tables for evaluating FAIR Digital Object and Linked Data  
+  <https://w3id.org/ro/doi/10.5281/zenodo.8075229>  
+  <https://doi.org/10.5281/zenodo.8075229>
+- BY-COVID WP5 T5.2 Baseline Use Case  
+  <https://by-covid.github.io/BY-COVID_WP5_T5.2_baseline-use-case/>    
+  <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
+- [RO-Crate specification dataset 1.1.2](https://www.researchobject.org/ro-crate/1.1/ro-crate-preview.html)
 
-- https://www.researchobject.org/ro-crate/outreach.html?1921
+
+## Presentation contributions
+
+Stian Soiland-Reyes, Leyla Jael Garcia (2023):  
+[**Overview of FAIR data publishing with Bioschemas & RO-Crate**](https://doi.org/10.7490/f1000research.1119459.1).  
+_ELIXIR All Hands meeting 2023_, workshop "Building lightweight FAIR data packages with Bioschemas and RO-Crate", Dublin, Ireland, 2023-06-05/--08  
+<https://doi.org/10.7490/f1000research.1119459.1>
+
+Stian Soiland-Reyes, Carole Goble (2023):  
+[**Building diverse collections using RO-Crate**](https://doi.org/10.7490/f1000research.1119466.1).  
+_ELIXIR All Hands meeting 2023_, mini-symposium "Biodiversity, Food Security and Pathogens", Dublin, Ireland, 2023-06-05/--08  
+<https://doi.org/10.7490/f1000research.1119466.1>
+
+Stian Soiland-Reyes, Carole Goble (2023):  
+[**Building diverse FDO Collections using RO-Crate**](https://doi.org/10.5281/zenodo.7828632).  
+_FAIR Digital Object Forum_, workshop "[Defining FDO Collections](https://drive.google.com/drive/folders/1B59aoM2sPVJaISNLwPdVTnfiRASA-rFP)", 2023-04-14.  
+[[slides](https://doi.org/10.5281/zenodo.7828632)]
+[[video](https://youtu.be/5GYdN5B1tc8)]
+
+Carole Goble, Stian Soiland-Reyes (2023):  
+[**Sharing research artefacts as FAIR Digital Objects using RO-Crate**](https://doi.org/10.5281/zenodo.7559338).  
+_Brookhaven National Laboratory_, 2023-01-23.  
+(presented by Stian Soiland-Reyes)  
+<https://doi.org/10.5281/zenodo.7559338>
+[[slides](https://doi.org/10.5281/zenodo.7559338)]
+[[video](https://youtu.be/0T4FBbpgtQo)]
+
+Justin Clark-Casey, Stian Soiland-Reyes (2022):  
+[**Making EOSC Research Objects FAIR with RO-Crate**: A common metadata overlay for EOSC repositories](https://doi.org/10.5281/zenodo.7323480).  
+_[EOSC Symposium 2022](https://events.eoscfuture.eu/symposium2022/programme)_  
+(presentation by Justin Clark-Casey)
+<https://doi.org/10.5281/zenodo.7323480>
+
+Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
+[**Updating Linked Data practices for FAIR Digital Object principles**](https://doi.org/10.3897/rio.8.e94501).  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (presentation).  
+_Research Ideas and Outcomes_ **8**:e94501  
+<https://doi.org/10.3897/rio.8.e94501> 
+[[slides](https://doi.org/10.5281/zenodo.7256428)
+
+Stian Soiland-Reyes (2021):  
+[**RO-Crate — A brief "crash course"**](https://slides.com/soilandreyes/2021-11-23-ro-crate-crash-course/).  
+_[ELIXIR Data-Interoperability](https://elixir-europe.org/events/data-interoperability-joint-platform-f2f-hybrid-meeting) Joint Platform F2F Hybrid Meeting_, 2021-11-23.
+
+Stian Soiland-Reyes (2021):  
+[**Reproducibility; Research Objects (RO-Crate) and Common Workflow Language (CWL)**](https://slides.com/soilandreyes/2021-10-07-reproducibility-research-objects).  
+_[WoSSS21](https://wosss.org/wosss21/S3-StianSoiland-Reyes):Workshop on Sustainable Software Sustainability_, 2021-10-07.
+[[video recording](https://www.youtube.com/watch?v=vNHqTcHnfyI)]
+
+Stian Soiland-Reyes (2021):  
+[**Sharing FAIR Research Objects to improve reproducibility**](http://slides.com/soilandreyes/2021-07-15-sharing-fair-research-objects).  
+_ZB-Med Seminar_, 2021-07-15.  
+[[video recording](https://youtu.be/CL_fqtQRPmw)]
+<https://doi.org/10.5281/zenodo.5105857>
+
+Stian Soiland-Reyes (2021):  
+[**RO-Crate, workflows and FAIR Digital Objects**](http://slides.com/soilandreyes/2021-07-02-ro-crate-workflows-fdo).  
+_FAIR Digital Object Forum_, [CWFR & FDO SEM meeting](https://osf.io/v8xjz/), 2021-07-02
+[[video recording](https://youtu.be/gTT0m_zQsPU)], [[slides](http://slides.com/soilandreyes/2021-07-02-ro-crate-workflows-fdo)]
+<https://doi.org/10.5281/zenodo.5060283>
+
+Stian Soiland-Reyes (2021):  
+[**Capturing “Just enough” Data, Software and Metadata with RO-Crate**](http://slides.com/soilandreyes/2021-06-21-capturing-just-enough-data-software-and-metadata-with-ro-crate).  
+_FAIR Festival 2021_, FAIR Implementation Challenges & Solutions, 2021-06-21.
+<https://doi.org/10.5281/zenodo.5007432>
+
+Stian Soiland-Reyes (2021):  
+[**Capturing Just Enough Data, Software and Metadata with RO-Crate**](http://slides.com/soilandreyes/2021-06-17-capturing-just-enough-with-ro-crate).  
+_[Dataverse community meeting 2021](https://projects.iq.harvard.edu/dcm2021)_, Software Metadata and Containerization, 2021-06-17.
+[[video recording](https://youtu.be/LJq-mzT9v8o?t=1731)]
+<https://doi.org/10.5281/zenodo.4973678>
+
+Stian Soiland-Reyes (2021):
+[**Capturing workflow life cycle with RO-Crate**](http://slides.com/soilandreyes/2021-06-11-ro-crate-workflows).
+_ELIXIR All Hands 2021_, Workshop: Workflow Life Cycle, 2021-06-11
+<https://doi.org/10.5281/zenodo.4926088>
+
+Stian Soiland-Reyes (2021):  
+[**Describing and packaging workflows using RO-Crate and BioCompute Objects**](https://youtu.be/3APqPwRIRkA).  
+_Webinar for U.S. Food and Drug Administration (FDA)_, 2021-05-12.  [[Video recording](https://youtu.be/3APqPwRIRkA)] [[slides](https://doi.org/10.5281/zenodo.4633732)]  
+<https://doi.org/10.5281/zenodo.4633732>
+
+Stian Soiland-Reyes (2021):  
+[**Data provenance with RO-Crate**](http://slides.com/soilandreyes/2021-05-19-recording-provenance-with-ro-crate).  
+_EOSC-Life retreat 2021_, Provenance of tools and workflows; FAIRification of workflows, 2021-05-19.
+
+Stian Soiland-Reyes, Carole Goble (2021):  
+[**RO-Crate: Describing and packaging FAIR Research Objects**](https://doi.org/10.5281/zenodo.4633655).  
+_[Scottish Covid-19 Response Consortium](https://www.gla.ac.uk/research/az/scrc/)_, 2021-03-18 
+<https://doi.org/10.5281/zenodo.4633655>
+
+Stian Soiland-Reyes, Carole Goble (2021):  
+[**Publishing workflows in WorkflowHub.eu using CWL, and packaging with RO-Crate**](https://cwl.discourse.group/t/publishing-workflows-in-workflowhub-eu-using-cwl-and-packaging-with-ro-crate/293).  
+_[2021 Common Workflow Language Virtual Conference](https://github.com/common-workflow-language/common-workflow-language/wiki/2021-CWL-Mini-Conference)_
+[[video recording](https://youtu.be/_tyMPj4emw0)]
+
+Stian Soiland-Reyes (2020):
+[**Packaging workflows with RO-Crate**](https://docs.google.com/presentation/d/1lYAdqm7RESqA9zplTXd4JFJUmome66ui/edit#slide=id.p18)
+_FAIR Workflows_ workshop at [International FAIR Convergence Symposium](https://www.go-fair.org/events/international-fair-convergence-symposium/)_, 2020-11-30.
+[Video recording](https://vimeo.com/499270810) 
+[Slides](https://drive.google.com/file/d/1lYAdqm7RESqA9zplTXd4JFJUmome66ui/view?usp=sharing)
+
+Stian Soiland-Reyes, Ignacio Eguinoa (2020):  
+[**Packaging workflows with RO-Crate**](https://doi.org/10.5281/zenodo.4011999).  
+[_Workshop on FAIR Computational Workflows_](https://web.archive.org/web/20201203233816/https://eccb2020.info/ntbew01-workshop-on-fair-computational-workflows/), 19th European Conference on Computational Biology ([ECCB 2020](https://web.archive.org/web/20201203233816/https://eccb2020.info/ntbew01-workshop-on-fair-computational-workflows/)).  
+<https://doi.org/10.5281/zenodo.4011999>
+
+Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+**RO-Crate, a lightweight approach to Research Object data packaging.**.  
+RO-15 at _Workshop on Research Objects ([RO 2019](http://www.researchobject.org/ro2019/))_, IEEE eScience 2019, 2019-09-24, San Diego, CA, USA.  
+<https://doi.org/10.5281/zenodo.3337883> [[slides](http://slides.com/soilandreyes/2019-09-24-ro-crate)]
+
+
+Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+***RO-Crate, a lightweight approach to Research Object data packaging*** [version 1; not peer reviewed].  
+Talk at _Bioinformatics Open Source Conference (BOSC2019)_. _F1000Research_ 2019, **8**(ISCB Comm J):1196 (slides)  
+<https://doi.org/10.7490/f1000research.1117129.1> [[slides](https://slides.com/soilandreyes/2019-07-24-bosc-ro-crate>)]
 
 
 ## Poster contributions
 
-- <https://doi.org/10.5281/zenodo.8004793>
-- <https://doi.org/10.5281/zenodo.8004796>
-- <https://doi.org/10.5281/zenodo.7257146>
-- <https://doi.org/10.5281/zenodo.7245315>
-- <https://doi.org/10.5281/zenodo.7233688>
-- <https://doi.org/10.5281/zenodo.5004842>
-- <https://doi.org/10.5281/zenodo.3343031>
-- <https://doi.org/10.7490/f1000research.1117130.1>
-- <https://doi.org/10.7490/f1000research.1119445.1>
-- <https://doi.org/10.7490/f1000research.1119430.1>
+
+- Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+  ***RO-Crate, a lightweight approach to Research Object data packaging*** [version 1; not peer reviewed].  
+  Poster at _Bioinformatics Open Source Conference (BOSC2019)_.  _F1000Research_ 2019, **8**(ISCB Comm J):1197 (poster)  
+  <https://doi.org/10.7490/f1000research.1117130.1> 
+- **RO-Crate, a lightweight approach to Research Object data packaging**.  
+  _Bioinformatics Open Source Conference (BOSC)_ (BOSC), ISMB/ECCB 2019, Basel, Switzerland, 24-25 July 2019  
+  <https://doi.org/10.5281/zenodo.3343031>  
+  <https://doi.org/10.7490/f1000research.1117130.1>
+- **ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**.  
+  _Provenance Week 2020_  
+  (presented by Rudolf Wittner)  
+  <https://doi.org/10.5281/zenodo.5004842>
+- **Improving Galaxy provenance export using RO-Crate**.  
+  _1st International Conference on FAIR Digital Objects_ (FDO2022), Leiden, The Netherlands, 2022-10-26/--28  
+  <https://doi.org/10.5281/zenodo.7257146>
+- **Creating lightweight FAIR Digital Objects with RO-Crate and FAIR Signposting**.  
+  _1st International Conference on FAIR Digital Objects_ (FDO2022), Leiden, The Netherlands, 2022-10-26/--28 
+  <https://doi.org/10.5281/zenodo.7245315>
+- **Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**.  
+  _1st International Conference on FAIR Digital Objects_ (FDO2022), Leiden, The Netherlands, 2022-10-26/--28  
+  (presented by Paul De Geest)  
+  <https://doi.org/10.5281/zenodo.7233688>
+- **Making workflow provenance FAIR across workflow systems with Workflow Run RO-Crate**.  
+  _Elixir All Hands 2023_, Dublin, Ireland, 2023-06-05 / --08  
+  <https://doi.org/10.5281/zenodo.8004793>  
+  <https://doi.org/10.7490/f1000research.1119445.1>
+- **Sharing data as machine-actionable objects using RO-Crate, Bioschemas and Signposting**.  
+  _Elixir All Hands 2023_, Dublin, Ireland, 2023-06-05 / --08  
+  <https://doi.org/10.5281/zenodo.8004796>
+- **WorkflowHub – a fair registry for workflows**
+  _Elixir All Hands 2023_, Dublin, Ireland, 2023-06-05 / --08  
+  (presented by Carole Goble)  
+  <https://doi.org/10.7490/f1000research.1119430.1>
