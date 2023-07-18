@@ -308,7 +308,7 @@ colour and distortion of the shape of the organism arising from
 preparation and preservation processes can lead to the loss of important
 identification clues that might be present on a living example.
 
-### 2.2 Workflow management systems and canonical workflows for research
+### 2.2 Workflow management systems and canonical workflows for research {#workflow-management-systems-and-canonical-workflows-for-research}
 
 A workflow chains together atomised and executable components with the
 relationships between them to clearly define a control flow and a data
@@ -433,7 +433,7 @@ for the Distributed System of Scientific Collections (DiSSCo) [6, 25,
 
 Henceforth we refer to these as openDS FDOs.
 
-#### 2.3.2 FAIR packaging of research/workflow objects with RO-Crate
+#### 2.3.2 FAIR packaging of research/workflow objects with RO-Crate {#fair-packaging-of-researchworkflow-objects-with-ro-crate}
 
 The useful outcomes of research are not just traditional publications
 nor data products but everything that goes into and supports an
@@ -547,7 +547,7 @@ part of the pivotal technology to achieve high rates of mass FAIR
 digitization expected through the planned DiSSCo research
 infrastructure [6, 25, 30].
 
-### 4.1. FDO types
+### 4.1. FDO types {#fdo-types}
 
 In the Specimen Data Refinery (see figure 2) the role of openDS FDOs
 is planned as the basis for the primary workflow inputs and outputs,
@@ -721,7 +721,7 @@ ensuring unambiguity and referential integrity for every processed
 object. In production, DOIs will be minted by the DiSSCo service; for
 the proof-of-concept Handles with prefix `20.5000.1025/` will be used.
 
-## 7. Discussion
+## 7. Discussion {#discussion}
 
 ### 7.1. What is being achieved?
 
