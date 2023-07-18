@@ -541,7 +541,7 @@ For [section 5.1](../canonical-workflow-building-blocks/) I was deputy work pack
 
 For section 5.1 and [Supplement 4](../methods-included/)) I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
 
-For [Supplement 14](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html) I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
+For [Supplement 13](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html) I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
 
 
 
