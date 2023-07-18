@@ -603,7 +603,11 @@ Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Ulr
 
 [Anders 2023]: https://doi.org/10.5281/zenodo.7782262 "PR-RequirementSpec: FAIR Digital Objects Forum FDO requirement specifications"
 \[Anders 2023\]
-<small>Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf</small> (2023):\
+<small>Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
+Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert
+Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes,
+George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg,
+Carlo Zwölf</small> (2023):\
 **FAIR Digital Objects Forum FDO requirement specifications**. Version 3.0.\
 George Strawn, Peter Wittenburg (eds.)\
 *FDO Specification Documents* PR-RequirementSpec-3.0\
@@ -1118,7 +1122,11 @@ The International Telecommunication Union (ITU).\
 
 [Ivonne 2023]: https://doi.org/10.5281/zenodo.7824714 "FAIR digital object technical overview"
 \[Ivonne 2023\]
-Anders Ivonne, Blanchi Christophe, Broder Daan, Hellström Maggie, Islam Sharif, Jejkal Thomas, Lannom Larry, Peters-von Gehlen Karsten, Quick Robert, Schlemmer Alexander, Schwardmann Ulrich, Soiland-Reyes Stian, Strawn George, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, & Carlo Zwölf (2023):\
+Anders Ivonne, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
+Islam, Thomas Jejkal, Larry Lannom Larry, Karsten Peters-von Gehlen,
+Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian
+Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter
+Wittenburg, Carlo Zwölf (2023):\
 **FAIR digital object technical overview**. Version PEN 2.0.\
 *FDO Specification Documents* Full FDO Overview PEN-2.0-v2\
 *FAIR Digital Objects Forum*\
