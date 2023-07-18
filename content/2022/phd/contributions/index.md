@@ -58,21 +58,49 @@ list of references in the thesis manuscript
 
 -->
 
-Below are the author contributions to published articles that form part of this thesis. Contributions are classified primarily according to the Contributor Roles Taxonomy [CASRAI CrEDiT](https://casrai.org/credit/):
+Here I detail my contributions for each chapter of this thesis, and list
+all the other contributors and their affiliations.
 
-Except for chapter 8, I am the main author of the corresponding manuscripts and have contributed to all aspects of the research. 
+# Thesis contributions {#my-contributions}
 
-For Chapter 4 and 5 I co-chair the [RO-Crate community](https://www.researchobject.org/ro-crate/community) together with Peter Sefton.
+Below are the author contributions to published articles that form part
+of this thesis. Contributions are classified primarily according to the
+Contributor Roles Taxonomy ([CASRAI CrEDiT](https://casrai.org/credit/). See also
+appendix A](../acknowledgements/) for acknowledgements beyond
+authorship covered below.
 
-For Chapter 6 I am deputy work package leader in BioExcel, with Adam Hospital as work package leader. 
+For all chapters except section
+[5.2](../specimen-data-refinery/), I am the main author of the
+corresponding manuscripts and have contributed to all aspects of the
+research. See details below:
 
-For Chapter 7 I have contributed to all aspects of the research, including supervision, and wrote the original manuscript.
 
-In Chapter 8 my main contributions are to section 2.2, 2.3.2, 4.1, 7.1, 7.2. In the corresponding research I have contributed to designing, technical advice, insight and supervision.
+## Contributions for *Evaluating FAIR Digital Object as a distributed object system* {#fdo}
 
-### Chapter contributions
 
-**Chapter 2**: [**Updating Linked Data practices for FAIR Digital Object principles**](../updating-ld-for-fdo/):
+Chapter
+[2](../../../2023/phd/background/) and section
+[3.1](../../../2023/phd/evaluating-fdo) were co-authored by:
+
+Stian Soiland-Reyes
+:   Conceptualization, Data Curation, Formal Analysis, Funding
+    acquisition, Investigation, Methodology, Software, Writing --
+    original draft, Writing -- review and editing
+
+Carole Goble
+:   Funding acquisition, Supervision, Writing -- review and editing
+
+Paul Groth
+:   Conceptualization, Methodology, Supervision, Writing -- original
+    draft, Writing -- review and editing
+
+I am the main author of the corresponding manuscript and have
+contributed to all aspects of the research.
+
+## Contributions for *Updating Linked Data practices for FAIR Digital Object principles* {#updating-ld}
+
+Section [3.2](../updating-ld-for-fdo) was co-authored by:
+
 
 Stian Soiland-Reyes
 : Conceptualization, Formal Analysis, Funding acquisition, Investigation, Software, Writing – original draft, Writing – review and editing
@@ -93,46 +121,16 @@ Paul Groth
 : Supervision
 
 
-**Chapter 3**: [Evaluating FAIR Digital Object as a distributed object system](../evaluating-fdo/)
+This work was presented as talk by Stian Soiland-Reyes at First
+International Conference on FAIR Digital Objects, Leiden, The
+Netherlands.
 
-Stian Soiland-Reyes
-: Conceptualization, Formal Analysis, Funding acquisition, Investigation, Methodology, Software, Writing – original draft, Writing – review and editing 
-
-Carole Goble
-: Funding acquisition, Supervision, Writing – review and editing
-
-Paul Groth
-: Methodology, Supervision, Writing – original draft, Writing – review and editing
+- Slides: <https://doi.org/10.5281/zenodo.7256428>
 
 
-**Chapter 4**: [Creating lightweight FAIR Digital Objects with RO-Crate](../fdo-with-ro-crate/)
+## Contributions for *Packaging research artefacts with RO-Crate* {#packagingrocrate}
 
-Stian Soiland-Reyes
-: Conceptualization, Funding acquisition, Project administration, Software, Writing – original draft, Writing – review & editing
-
-Peter Sefton
-: Funding acquisition, Project administration, Software
-
-Leyla Jael Castro
-: Writing – original draft, Writing – review & editing
-
-Frederik Coppens
-: Funding acquisition, Supervision, Writing – review & editing
-
-Daniel Garijo
-: Software, Writing – review and editing
-
-Simone Leo
-: Conceptualization, Project administration, Software, Writing – original draft
-
-Marc Portier
-: Writing – review & editing
-
-Paul Groth
-: Supervision
-
-
-**Chapter 5**: [Packaging research artefacts with RO-Crate](../ro-crate/)
+Section [4.1](../ro-crate/) was co-authored by:
 
 Stian Soiland-Reyes
 : Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review \& editing
@@ -183,7 +181,56 @@ Carole Goble
 : Conceptualization, Funding acquisition, Methodology, Project administration, Supervision, Visualization, Writing – review \& editing
 
 
-**Chapter 6**: [Making Canonical Workflow Building Blocks interoperable across workflow languages](../canonical-workflow-building-blocks/)
+I am the main author of the corresponding manuscript and have
+contributed to all aspects of the research. Subsection
+[4.1.4.1](../ro-crate/#profile-for-testing-workflows) was primarily authored by
+Simone Leo. Subsection
+[4.1.4.5](../ro-crate/#institutionalrepos) with figure
+[4.4](../ro-crate/#fig:hdc) was authored by Mercè Crosas and Ana Trisovic
+and edited by me.
+
+
+## Contributions for *Creating lightweight FAIR Digital Objects with RO-Crate* {#lightweight}
+
+Section [4.2](../fdo-with-ro-crate/) was co-authored by:
+
+Stian Soiland-Reyes
+: Conceptualization, Funding acquisition, Project administration, Software, Writing -- original draft, Writing -- review & editing
+
+Peter Sefton
+: Funding acquisition, Project administration, Software
+
+Leyla Jael Castro
+: Writing -- original draft, Writing -- review & editing
+
+Frederik Coppens
+: Funding acquisition, Supervision, Writing -- review & editing
+
+Daniel Garijo
+: Software, Writing -- review and editing
+
+Simone Leo
+: Conceptualization, Project administration, Software, Writing -- original draft
+
+Marc Portier
+: Writing -- review & editing
+
+Paul Groth
+: Supervision
+
+I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
+
+
+## Contributions for *Formalizing RO-Crate in First Order Logic* {#formalizing}
+
+Section [4.3](../ro-crate/formalizing/) was published as an appendix in [Packaging research artefacts with RO-Crate](../ro-crate/)
+
+I am the sole author of the corresponding appendix and have contributed to all aspects of the research.
+
+
+## Contributions for *Making Canonical Workflow Building Blocks interoperable across workflow languages* {#canonical}
+
+Section [5.1](../canonical-workflow-building-blocks/) was co-authored by:
 
 Stian Soiland-Reyes
 : Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Supervision, Writing -- original draft, Writing -- review & editing 
@@ -209,27 +256,12 @@ Adam Hospital
 Paul Groth
 : Methodology, Supervision, Writing -- review & editing
 
-
-**Chapter 7**: [Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows ](../incrementally-building-fdos/)
-
-Oliver Woolland
-: Data curation, Resources, Software, Visualization, Writing – review & editing
-
-Paul Brack
-: Conceptualization, Software
-
-Stian Soiland-Reyes
-: Investigation, Methodology, Supervision, Writing – original draft, Writing – review & editing
-
-Ben Scott
-: Data curation, Software, Validation
-
-Laurence Livermore
-: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Writing – review & editing
+I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
 
+## Contributions for **The Specimen Data Refinery** {#specimen-refinery}
 
-**Chapter 8**: [The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections](../specimen-data-refinery/)
+[Section 5.2](../specimen-data-refinery/) was co-authored by:
 
 Alex Hardisty
 : Conceptualization, Investigation, Supervision, Validation, Writing -- original draft, Writing -- review & editing, Approval.
@@ -256,11 +288,44 @@ Stian Soiland-Reyes
 : Investigation, Writing -- original draft, Writing -- review & editing.
 
 
+My main contributions are to section [5.2.2.2](../specimen-data-refinery/#workflow-management-systems-and-canonical-workflows-for-research), [5.2.2.3](../specimen-data-refinery/#fair-packaging-of-researchworkflow-objects-with-ro-crate), [5.2.4.1](../specimen-data-refinery/#fdo-types), [5.2.7](../specimen-data-refinery/#discussion). In the corresponding research
+I have contributed to designing, technical advice, insight and supervision.
+
+
+## Contributions for *Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows* {#incrementally-fdo}
+
+[Section 5.3](../incrementally-building-fdos/) was co-authored by:
+
+Oliver Woolland
+: Data curation, Resources, Software, Visualization, Writing – review & editing
+
+Paul Brack
+: Conceptualization, Software
+
+Stian Soiland-Reyes
+: Investigation, Methodology, Supervision, Writing – original draft, Writing – review & editing
+
+Ben Scott
+: Data curation, Software, Validation
+
+Laurence Livermore
+: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Writing – review & editing
+
+
+I am the main author of the corresponding manuscript and have
+contributed to all aspects of the research.
+
+This work was presented as a poster by Stian Soiland-Reyes at First
+International Conference on FAIR Digital Objects, Leiden, The
+Netherlands.
+
+- Poster: <https://doi.org/10.5281/zenodo.7233688>
+
+
+
 ### Supplementary publications
 
 I have also contributed as co-author to these articles during the PhD period, provided as supplements:
-
-**TODO**: Prune this list!
 
 [Supplement 1: Ten Simple Rules for making a software tool workflow-ready ](../10-simple-rules-for-workflow-tools/)
 
@@ -286,15 +351,12 @@ I have also contributed as co-author to these articles during the PhD period, pr
 
 [Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv](https://doi.org/10.1093/gigascience/giz095) _(Main contribution pre-dates UvA affiliation)_
 
-[Supplement 14: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html)
+[Supplement 13: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html)
+
+[Supplement 14: BioHackEU22 Project 22: Plant data exchange and standard interoperability](https://doi.org/10.37044/osf.io/c724r)
 
 I have been involved in All Aspects of the research for supplement 1, 2, 3, 4, 11, 12.
 
-For Supplement 4 I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
-
-For Supplement 14 I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
-
-<!-- TODO: Reformat above as full citations -->
 
 
 ## Contributor affiliations
@@ -466,3 +528,83 @@ Alan R Williams <https://orcid.org/0000-0003-3156-2105>
 
 Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 : Research IT, The University of Manchester, Manchester, UK
+
+
+# Community roles
+
+For [chapter 2](../../../2023/phd/fdo-and-linked-data/) and [section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/).
+
+For [chapter 3](../../../2023/phd/ro-crate/) I co-chair the
+\footurl{https://www.researchobject.org/ro-crate/community}{RO-Crate
+community}\footnote{see section \vref{ro-crate-community}} together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1).
+
+For [section 5.1](../canonical-workflow-building-blocks/) I was deputy work package leader in BioExcel-2, with Adam Hospital as work package leader. For this section 
+
+For section 5.1 and [Supplement 4](../methods-included/)) I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
+
+For [Supplement 14](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html) I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
+
+
+
+# Software contributions
+
+During this PhD I have contributed to several software applications and
+libraries:
+
+- [signposting](https://pypi.org/project/signposting/), link parser library for Python [@10.5281/zenodo.7256713] (main author)
+- [Benchmarks for Apples-to-Apples FAIR Signposting](https://w3id.org/a2a-fair-metrics/), main author and maintainer
+- [ro-crate-py](ttps://pypi.org/project/rocrate/) (initial author, contributor; main author is Simone Leo)
+- [ro-index-paper](https://github.com/stain/ro-index-paper) -- early prototype for survey of Research Object usage
+- [runcrate](https://github.com/ResearchObject/runcrate) <https://doi.org/10.5281/zenodo.7764062>
+- [ro-crate-preview](https://github.com/marketplace/actions/ro-crate-preview), GitHub action Build HTML preview of RO-Crate. Contributed as supervisor, documentation, bug fixes.
+- [cwlviewer](https://view.commonwl.org/), [contributed feature](https://github.com/common-workflow-language/cwlviewer/pull/241)
+- [ro-crate-validator-py](https://github.com/ResearchObject/ro-crate-validator-py), supervisor
+
+
+# Standard contributions
+
+- RO-Crate Specification [1.1.3](https://w3id.org/ro/crate/1.1), contributing as co-chair of RO-Crate community and editor.
+- RO-Crate Specification [1.2 (draft)](https://www.researchobject.org/ro-crate/1.2-DRAFT/). I am the main editor of this release and have contributed several new sections including [RO-Crate profiles](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles)
+- [IEEE 2791-2020](https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d), contributing as member of P2791 Working Group. I was responsible for aspects of identifiers and internal review.
+- [JSON Schema for IEEE 2791](https://w3id.org/ieee/ieee-2791-schema), contributing as member of P2791 Working Group and internal review.
+- [RFC9264 Linkset](https://doi.org/10.17487/rfc9264): JSON-LD context and reviewed.
+
+
+# Training material contributions
+
+- <https://www.researchobject.org/packaging_data_with_ro-crate/>
+- <https://carpentries-incubator.github.io/cwl-novice-tutorial/>
+- <http://docs.bioexcel.eu/cwl-best-practice-guide/>
+- <http://docs.bioexcel.eu/cwl-engine-guide/>
+
+
+# Dataset contributions
+
+- Packing provenance using CPM RO-Crate profile <https://doi.org/10.5281/zenodo.8095888>
+- Zenodo metadata JSON records as of 2019-09-16 <https://doi.org/10.5281/zenodo.3531504>
+- Open PHACTS Linksets 2.1.1 <https://doi.org/10.5281/zenodo.4704867>
+- Packaging research artefacts with RO-Crate <https://w3id.org/ro/doi/10.5281/zenodo.5146227>
+- Comparison tables for evaluating FAIR Digital Object and Linked Data <https://w3id.org/ro/doi/10.5281/zenodo.8075229>
+- BY-COVID WP5 T5.2 Baseline Use Case <https://by-covid.github.io/BY-COVID_WP5_T5.2_baseline-use-case/>    
+- [RO-Crate specification dataset](https://www.researchobject.org/ro-crate/1.1/ro-crate-preview.html)
+
+
+# Presentation contributions
+
+_TODO_
+
+- https://www.researchobject.org/ro-crate/outreach.html?1921
+
+
+## Poster contributions
+
+- <https://doi.org/10.5281/zenodo.8004793>
+- <https://doi.org/10.5281/zenodo.8004796>
+- <https://doi.org/10.5281/zenodo.7257146>
+- <https://doi.org/10.5281/zenodo.7245315>
+- <https://doi.org/10.5281/zenodo.7233688>
+- <https://doi.org/10.5281/zenodo.5004842>
+- <https://doi.org/10.5281/zenodo.3343031>
+- <https://doi.org/10.7490/f1000research.1117130.1>
+- <https://doi.org/10.7490/f1000research.1119445.1>
+- <https://doi.org/10.7490/f1000research.1119430.1>

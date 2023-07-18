@@ -416,7 +416,7 @@ From these varied uses of RO-Crate we observe natural differences in their detai
 
 We here describe three different RO-Crate profiles developed for use with WorkflowHub.
 
-#### Profile for describing workflows
+#### Profile for describing workflows {#profile-for-describing-workflows}
 
 Being cross-domain, WorkflowHub has to cater for many different workflow systems. Many of these, for instance Nextflow [[39](https://doi.org/10.1038/nbt.3820)] and Snakemake [[73](https://doi.org/10.1093/bioinformatics/bts480)], by virtue of their script-like nature, reference multiple neighbouring files typically maintained in a GitHub repository. This calls for a data exchange method that allows keeping related files together. WorkflowHub has tackled this problem by adopting RO-Crate as the packaging mechanism [[17](https://doi.org/10.5281/zenodo.4705078)], typing and annotating the constituent files of a workflow and — crucially — marking up the workflow language, as many workflow engines use common file extensions like `*.xml` and `*.json`. Workflows are further described with authors, license, diagram previews and a listing of their inputs and outputs. RO-Crates can thus be used for interoperable deposition of workflows to WorkflowHub, but are also used as an archive for downloading workflows, embedding metadata registered with the WorkflowHub entry and translated workflow files such as abstract Common Workflow Language (CWL) [[36](https://arxiv.org/abs/2105.07028)] definitions and diagrams [[56](https://doi.org/10.5281/zenodo.4605654)]. 
 
@@ -436,7 +436,7 @@ WorkflowHub has recently enabled minting of Digital Object Identifiers (DOIs), a
     CWLProv and TavernaProv predate RO-Crate, but use RO-Bundle [[111](https://w3id.org/bundle/2014-11-05/)], a similar Research Object packaging method with JSON-LD metadata.  
 
 
-#### Profile for testing workflows
+#### Profile for testing workflows {#profile-for-testing-workflows}
 
 The value of computational workflows, however, is potentially undermined by the "collapse" over time of the software and services they depend upon: for instance, software dependencies can change in a non-backwards-compatible manner, or active maintenance may cease; an external resource, such as a reference index or a database query service, could shift to a different URL or modify its access protocol; or the workflow itself may develop hard-to-find bugs as it is updated. This _workflow decay_ can take a big toll on the workflow's reusability and on the reproducibility of any processes it evokes [[125](https://www.research.manchester.ac.uk/portal/files/174861334/why_decay.pdf)].
 
