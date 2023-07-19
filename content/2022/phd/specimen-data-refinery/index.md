@@ -82,6 +82,13 @@ Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin 
 _Data Intelligence_ **4**(2)  
 <https://doi.org/10.1162/dint_a_00134>
 
+## License and modifications
+
+- **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
+
+- **Modifications**: Formatting as Markdown; figures replaced with higher resolutions from source; figure caption formatting; references in s11 house style; added DOIs and URLs; cited preprints replaced with later publications; inline citation hyperlinks.
+
+
 # The Specimen Data Refinery
 ## A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections
 
@@ -148,15 +155,15 @@ A key limiting factor in organising and using information from physical
 specimens curated in natural history collections is making that
 information computable ('machine-actionable') and extendable. More than
 85% of available information currently resides on labels attached to
-specimens or in physical ledgers [1]. Label data are commonly
+specimens or in physical ledgers [[1]]. Label data are commonly
 transcribed manually with high cost and low throughput, rendering such a
 task constraining for many institutions at current funding levels.
 However, the advent of rapid, high-quality digital imaging has meant
 that digitizing specimens, including their labels, is now faster and
-cheaper [2]. With initiatives such as Advancing Digitization of
+cheaper [[2]]. With initiatives such as Advancing Digitization of
 Biological Collections (ADBC), integrated Digitized Biocollections
-(iDigBio) and the Distributed System of Scientific Collections (DiSSCo)
-[3-6] aiming to increase the rate and accuracy of both mass and
+(iDigBio) and the Distributed System of Scientific Collections (DiSSCo) [[3]] [[4]] [[5]] [[6]]
+aiming to increase the rate and accuracy of both mass and
 on-demand digitization of natural history collections, the gap between
 expectations of what should be digitally available and computable, and
 what can be achieved using traditional transcription approaches is
@@ -172,37 +179,37 @@ the addition of photographic images of specimens and the public
 availability of specimen data records, through data portals of the
 institutions themselves as well as international data infrastructures
 like the Global Biodiversity Information Facility (GBIF), such bodies of
-data have been rapidly exploited for research [7,8]. It has become
+data have been rapidly exploited for research [[7]] [[8]]. It has become
 clear that widespread digitization of data about physical specimens in
 collections and the advent of high-throughput digitization processes 
-[9--13] is transforming and will radically further transform the range of
+[[9]] [[10]] [[11]] [[12]] [[13]] is transforming and will radically further transform the range of
 scientific research opportunities and questions that can be addressed
-[14,15]. Scientific conclusions and policy decisions evidenced by
+[[14]] [[15]]. Scientific conclusions and policy decisions evidenced by
 digital specimen data enhance humankind's ability to conserve, protect,
-and predict the biodiversity of our world [16,17].
+and predict the biodiversity of our world [[16]] [[17]].
 
 Harnessing technologies developed to harvest, organise, analyse and
 enhance information from sources such as scholarly literature,
 third-party databases, data aggregators, data linkage services and
 geocoders and reapplying these approaches to specimens' labels and other
 artefacts offers the prospect of greatly accelerated data capture in a
-computable form [18]. Tools of particular interest span the fields of
+computable form [[18]]. Tools of particular interest span the fields of
 computer vision, optical character recognition, handwriting recognition,
 named entity recognition and language translation.
 
-Workflow technologies from the ELIXIR Research Infrastructure [19],
-including Galaxy [20], Common Workflow Language [21], Research
-Object Crates (RO-Crates) [22,23] and WorkflowHub [24], and
+Workflow technologies from the ELIXIR Research Infrastructure [[19]],
+including Galaxy [[20]], Common Workflow Language [[21]], Research
+Object Crates (RO-Crates) [[22]] [[23]] and WorkflowHub [[24]], and
 selected tools are integrated in a cloud-based workflow platform for
-natural history specimens -- the 'Specimen Data Refinery' [1] that
+natural history specimens -- the 'Specimen Data Refinery' [[1]] that
 will become one of the main services to be offered by the planned DiSSCo
-research infrastructure [5]. The tools themselves, implemented with
+research infrastructure [[5]]. The tools themselves, implemented with
 findable, accessible, interoperable, and reusable (FAIR) characteristics
-[26] are packaged into canonical workflow component libraries [27],
+[[25]] are packaged into canonical workflow component libraries [[26]],
 rendering them reusable, and interoperable with one another. FAIR
 Digital Objects are adopted as the common input/output pattern, fully
 compatible with digital objects at the core of DiSSCo data management
-[28].
+[[27]].
 
 The Refinery brings together domain-specific workflows for processing
 specimen images and extracting text and data from images with canonical
@@ -213,13 +220,13 @@ the data resulting from workflow execution.
 FAIR Digital Objects (FDO) are created by packaging outputs of workflows
 and workflow components as digital objects with metadata, a persistent
 identifier, and a specific type definition against which operations can
-be executed [29]. The Refinery uses two kinds of FDOs:
+be executed [[28]]. The Refinery uses two kinds of FDOs:
 
--   **computable Digital Specimen (DS) objects** [30] from DISSCo for
+-   **computable Digital Specimen (DS) objects** [[29]] from DISSCo for
     the scientific input/output data that can be consumed/produced by
     workflows and other applications.
 
--   **workflow objects, implemented as RO-Crates** [23], from ELIXIR
+-   **workflow objects, implemented as RO-Crates** [[23]], from ELIXIR
     gather and archive the diverse set of workflow process data -- the
     digital and real-world resources, configurations and actions (the
     provenance) contributing to a unit of digitization or other work
@@ -236,7 +243,7 @@ SDR, in this early report following SDR prototyping and
 conceptualization, we focus on what we found to be essential in the use
 of FDOs and CWFR canonical step libraries, and on the compliance of
 canonical workflow (component) inputs and outputs with the requirements
-of the FDO Framework [31].
+of the FDO Framework [[30]].
 
 ##  2. Related Work
 
@@ -254,8 +261,8 @@ Although there is a great deal of variety among images of different
 kinds of collection objects that are digitized (see figure 1) there are
 visual similarities between them. Most images contain labels, scale bars
 and often, colour charts as well as the specimen itself. This makes them
-amenable to improved approaches to object detection [32] and
-segmentation into 'regions of interest' [33] as precursive steps for
+amenable to improved approaches to object detection [[31]] and
+segmentation into 'regions of interest' [[32]] as precursive steps for
 multiple kinds of workflows.
 
 
@@ -269,10 +276,10 @@ workflow to send just the relevant region(s) of interest from an image
 to later workflow steps. Not only does this decrease data transfer time
 and minimise computational overheads but it can also substantially
 increase the accuracy of subsequent OCR processing and semantic
-recognition steps [18].
+recognition steps [[18]].
 
 Much of the data about specimens is stored on their handwritten, typed
-or printed labels or in registers/ledgers [34]. Direct manual
+or printed labels or in registers/ledgers [[34]]. Direct manual
 transcription into local databases with manual georeferencing is the
 primary method used today to capture this data. Potentially, OCR can
 significantly increase transcription speeds whilst reducing cost;
@@ -286,15 +293,15 @@ history collections. Shortfalls in accuracy and disambiguation can be
 made up by exploiting Natural Language Processing (NLP) advances such as
 named entity recognition to identify text segments belonging to
 predefined categories (for example, species name, collector, locality,
-date) [18]. Nevertheless, this only works well on a small proportion
+date) [[18]]. Nevertheless, this only works well on a small proportion
 of captured data in the absence of 'human in the loop' input. To better
 automate disambiguation of people's names, for example, access to other
 contextual 'helper' data are needed (e.g., biographical data in
 Wikidata) as well as cross-comparison with other data from the specimen,
-such as the date of collection and location [35].
+such as the date of collection and location [[35]].
 
 Automated identification of species from images of living organisms has
-achieved impressive levels of accuracy [36--41] with techniques
+achieved impressive levels of accuracy [[36]] [[37]] [[38]] [[39]] [[40]] [[41] with techniques
 translated to an increasing range of enthusiastically received consumer
 applications for plant and animal identification using mobile phones
 (e.g., [Plantsnap](https://www.plantsnap.com/), 
@@ -316,14 +323,14 @@ flow. Their significant defining characteristics are (i) abstraction,
 through the separation of the workflow specification (the work to be
 done) from its execution (how it is done), and (ii) composition whereby
 the components can be cleanly combined and reused and workflows
-themselves can be neatly packaged as components [42]. Workflow
+themselves can be neatly packaged as components [[42]]. Workflow
 management systems typically provide the necessary mechanisms for
 explicitly defining workflows in a reusable way together with a workflow
 engine that executes the workflow steps and keeps an accountable record
 of the processing -- logging the codes executed and the data lineage of
 the results. In the past decade there has been a rise in popularity in
 both the development of WfMS and their use, driven by the increasing
-scales of data and the accompanying complexity of its processing [42].
+scales of data and the accompanying complexity of its processing [[42]].
 
 Workflow management systems typically vary in the features they provide
 for supporting: workflow programming language and control flow
@@ -331,18 +338,18 @@ expressivity; data type management; code wrapping, containerisation and
 integration with software management tools; exploitation of
 computational architectures; availability of development and logging
 tools; licensing and so on. Although several hundred kinds of such
-systems exist [43], communities tend to cluster around a few popular
+systems exist [[43]], communities tend to cluster around a few popular
 systems based on their "plugged-in" availability of data type specialist
 codes, the catered-for skills level of the workflow developers, and its
 documentation, community support and perceived sustainability. For the
-Specimen Data Refinery, the Galaxy workflow system [20] in conjunction
-with Common Workflow Language (CWL) [21] has been chosen. CWL is a
+Specimen Data Refinery, the Galaxy workflow system [[20]] in conjunction
+with Common Workflow Language (CWL) [[21]] has been chosen. CWL is a
 workflow specification standard geared towards supporting interoperable
 and scalable production pipelines, abstracting away from the internal
 data structures of some of the language-specific workflow systems.
 
 Originally designed for computational biology and with many available
-tool components, Galaxy [20] supports multiple domains. Workflows can
+tool components, Galaxy [[20]] supports multiple domains. Workflows can
 be built by manually experimenting with data manipulations in a 'data
 playground' and subsequently converting histories of those to workflows,
 or by a more traditional drag-and-drop composition approach. New
@@ -350,7 +357,7 @@ components can be created by wrapping existing programs, with in-built
 dependency management and automated conversion to executable containers.
 As such, Galaxy and CWL offer possibilities for a rich canonical
 workflow component landscape with a workflow management regime that can
-be both easily FAIR compliant and efficient internally [27]. The
+be both easily FAIR compliant and efficient internally [[26]]. The
 WorkflowHub, which facilitates CWL and enables workflows to be
 registered, shared and published, is mutually coupled with Galaxy so
 that workflows can be discovered in the Hub and immediately executed in
@@ -378,13 +385,13 @@ locations where specimens were collected.
 ### 2.3 FAIR Digital Objects
 
 Galaxy/CWL environments offer the possibility to integrate generic
-digital object methods [44--46] for the interactions between workflow
+digital object methods [[44]] [[45]] [[46] for the interactions between workflow
 components, thus making them able to meet the need and ease the burden
 of compiling FAIR compliant data throughout the research lifecycle
-[27].
+[[26]].
 
 A digital object exhibiting FAIR characteristics is a FAIR Digital
-Object [29] and is defined formally as "a unit composed of data and/or
+Object [[28]] and is defined formally as "a unit composed of data and/or
 metadata regulated by structures or schemas, and with an assigned
 globally unique and persistent identifier (PID), which is findable,
 accessible, interoperable and reusable both by humans and computers for
@@ -394,7 +401,7 @@ the object".
 Supporting 'FAIRness' internally and acting as glue between the steps
 of canonical workflows, FDOs record and can represent the state of a
 workflow, its inputs and outputs, and the component steps performed in
-a comprehensive manner [27]. Each FDO is anchored by a globally
+a comprehensive manner [[26]]. Each FDO is anchored by a globally
 unique and resolvable, persistent identifier (PID) (such as a DOI®,
 for example) that clearly refers to one digital entity. The PID
 resolution offers persistent references to find, access and reuse all
@@ -415,7 +422,7 @@ information extracted and captured from labels by digitization
 workflows) with other data -- often to be found from third-party sources
 -- derived from analysis and use of the specimen.
 
-openDS [47] is the developing specification for open Digital Specimens
+openDS [[47]] is the developing specification for open Digital Specimens
 and other related object types, defining: i) the logical structure and
 content of Digital Specimen (DS), Basic Image Object (BIO) and other
 object types, and the operations permitted on them; ii) the handling
@@ -423,7 +430,7 @@ rules and behaviors governing digital specimen object operations in
 general; and iii) serialization and packaging as JavaScript Object
 Notation (JSON) for lightweight data interchange between systems,
 sub-systems and components of systems (for which, read 'workflow
-components' [48]. openDS is essential to future FAIR digitization of
+components' [[48]]. openDS is essential to future FAIR digitization of
 natural history collections and to Digital Specimens as self-standing
 digital objects on the Internet, amenable to computer processing. It
 contributes to the new transformative generation of FAIR infrastructure
@@ -440,24 +447,24 @@ nor data products but everything that goes into and supports an
 investigative work or production pipelining activity. This includes
 input and intermediate data, parameter settings, final outputs,
 software programs and workflows, and configuration information
-sufficient to make the work reproducible. Research objects [49] are
+sufficient to make the work reproducible. Research objects [[49]] are
 a general approach to describing and associating all of this content
 together in a machine-readable form so that it can be easily
 preserved, shared and exchanged. Workflow objects are a specific
 subclass of research objects.
 
-RO-Crate [22,23] has been established as a community standard to
+RO-Crate [[22]] [[23]] has been established as a community standard to
 practically achieve FAIR packaging of research objects with their
 structured metadata. Based on well-established Web standards, RO-Crate
-uses JSON-LD [50] with [Schema.org](https://schema.org/) [51] for
+uses JSON-LD [[50]] with [Schema.org](https://schema.org/) [[51]] for
 its common metadata representation. It is extensible with
 domain-specific vocabularies in a growing range of specializing
-RO-Crate profiles, e.g., for domains such as earth sciences [52],
-biosciences [53]; for object types such as data or workflow [54];
+RO-Crate profiles, e.g., for domains such as earth sciences [[52]],
+biosciences [[53]]; for object types such as data or workflow [[54]];
 or for workflow runs). RO-Crate has been proposed for the
 implementation of FAIR Digital Objects on the World Wide Web as a
 common representation of the FDO Metadata objects foreseen by the FDO
-Framework [53,31]. Combined with FAIR Signposting [55] for
+Framework [[53]] [[30]]. Combined with FAIR Signposting [[55]] for
 resolving persistent identifiers (PID) to FDOs on the World Wide Web,
 these RO-Crates are findable, accessible, interoperable, and reusable
 by machines to both create and obtain the information they need to
@@ -472,7 +479,7 @@ Henceforth, we refer to RO-Crate FDOs.
 In the lengthy history of collectors and museums curating artefacts
 and specimens, we see that there have been and always will be
 ambiguities, uncertainties, and inaccuracies in interpretations of
-recorded information and attached labels [56]. The practices of
+recorded information and attached labels [[56]]. The practices of
 different collectors and curators vary and change over time. There are
 constraints of the label medium itself arising from the specifics of
 accepted preparation and preservation processes (e.g., tiny,
@@ -506,7 +513,7 @@ rapid and easy access for institutions with limited capabilities and
 capacities for digitization. Hosted workflows represent "primacy of
 method" for a community evolving towards a new research culture that
 is becoming increasingly dependent on working digitally and
-collaboratively [57,58].
+collaboratively [[57]] [[58]].
 
 ### 3.2. Users, user stories and specimen categories
 
@@ -668,7 +675,7 @@ at least 1,000 unique specimens for each of the three categories of
 preserved specimen types: herbarium sheets, microscope slides and
 pinned insects. For herbarium sheet images we will reuse an existing
 benchmark dataset of 1,800 herbarium specimen images with
-corresponding transcribed data [59]. For microscope slide and pinned
+corresponding transcribed data [[59]]. For microscope slide and pinned
 insect specimen images similar evaluation datasets will be prepared
 against the same label characteristics: written in different
 languages; printed or handwritten; covering a wide range of dates;
@@ -704,7 +711,7 @@ information, which is then converted to an openDS object before the
 workflow proper begins.
 
 Each SDR Galaxy tool defines the properties it requires in JSONPath
-syntax [60]. The wrapper validates that these properties exist in
+syntax [[60]]. The wrapper validates that these properties exist in
 the openDS object, plucks them from the openDS JSON, makes them
 available as named parameters, and passes these through to the tool
 processing (via either a Docker or Python command line). The wrapper
@@ -734,8 +741,8 @@ and associated provenance capture:
     as the common intermediary pattern (canonical state) between steps
     within a workflow. They comply with DiSSCo data management
     principles and needs as outlined in the DiSSCo Data Management Plan
-    [28] allowing specimen data to be processed and extended in a
-    fully FAIR manner [6].
+    [[27]] allowing specimen data to be processed and extended in a
+    fully FAIR manner [[6]].
 
 -   RO-Crate FDOs record both the workflow definition and information
     about its configuration (shared as a method object) together with
@@ -743,10 +750,10 @@ and associated provenance capture:
     details that are captured proprietarily within the adopted Galaxy
     environment and transformed to a common pattern (as another kind of
     canonical state) of provenance for later scrutiny and
-    reproducibility of the work. These kinds of Research Objects [49]
+    reproducibility of the work. These kinds of Research Objects [[49]]
     are an established mechanism whereby computational methods become
     first-class citizens alongside data, to be easily shared, discussed,
-    reused and repurposed [61].
+    reused and repurposed [[61]].
 
 Both kinds of FDO are essential. They complement one another to
 support implementation of the FAIR principles, especially the
@@ -754,7 +761,7 @@ interoperable and reusable principles by making workflows
 self-documenting. This renders automated whole processes (or fragments
 thereof) for digitizing and extending natural history specimens' data
 as FAIR without adding additional load to the researchers that stand
-to benefit most from that [27]. Each FDO type originates from
+to benefit most from that [[26]]. Each FDO type originates from
 different Research Infrastructures (ELIXIR, DiSSCo) with different
 implementation frameworks. Yet, they interoperate effectively due to
 their clear roles, common conceptual model and separation of concerns.
@@ -762,16 +769,16 @@ their clear roles, common conceptual model and separation of concerns.
 ### 7.2. Different FDO implementations working together 
 
 openDS FDOs have their heritage in distributed digital object services
-[46] and are implemented through Digital Object Architecture (DOA)
-[62] with Digital Object Interface Protocol (DOIP) [63], Digital
-Object Identifier Resolution Protocol (DO-IRP) [64], and
-recommendations of the Research Data Alliance [65]. Serialized as
+[[46]] and are implemented through Digital Object Architecture (DOA)
+[[62]] with Digital Object Interface Protocol (DOIP) [[63]], Digital
+Object Identifier Resolution Protocol (DO-IRP) [[64]], and
+recommendations of the Research Data Alliance [[65]]. Serialized as
 JSON, they are machine-actionable and compatible with established
 protocols of the World Wide Web.
 
 RO-Crates are native to the World Wide Web, based on established web
 protocols, machine-readable metadata using Linked Data Platform
-methods [66], JSON-LD and Schema.org [49], and community-accepted
+methods [[66]], JSON-LD and Schema.org [[49]], and community-accepted
 packaging mechanisms such as BagIt. This makes RO-Crates
 straightforward to incorporate into pre-existing platforms such as
 Galaxy and data repositories such as Zenodo and DataVerse.
@@ -804,7 +811,7 @@ roles for data (openDS) and self-documented method (RO-Crate) so their
 different forms is not an issue. In future there may be a need to map
 and convert between the approaches (e.g., for reconstructing past
 processing), which would be assisted by the common FDO conceptual
-model [31].
+model [[30]].
 
 ### 7.3. Key domain challenges ahead
 
@@ -866,7 +873,7 @@ historical backlog of unidentified specimens. The Meise Botanic Garden
 11% not yet identified to species level. Furthermore, it is calculated
 that half of the World's estimated 70,000 plant species yet to be
 described have already been collected and are waiting in collections
-still to be 'discovered' [21]. The same is likely to be true for
+still to be 'discovered' [[21]]. The same is likely to be true for
 other groups of organisms, especially insects. Unnamed specimens tend
 to have lowest priority for digitization and their data are rarely
 shared. Machine learning as canonical steps in SDR workflows presents
@@ -910,8 +917,8 @@ research and innovation programme under grant agreement numbers 823827
 
 ## References
 
-
-[1] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn
+[1]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
+\[1\] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn
 Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher
 Kermorvant, Isabel Rey, Celia Santos, Ben Scott, Alan Williams, Zhengzhe
 Wu (2020):\
@@ -919,113 +926,128 @@ Wu (2020):\
 *Research Ideas and Outcomes* **6**:e57602\
 <https://doi.org/10.3897/rio.6.e57602>
 
-[2] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
+[2]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
+\[2\] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
 **Digitization of the New York Botanical Garden herbarium**.\
 *Brittonia*, **68**(3)\
 <https://doi.org/10.1007/s12228-016-9423-7>
 
-[3] Gil Nelson, Shari Ellis (2019):\
-**The history and impact of digitization and digital data mobilization
-on biodiversity research**.\
+[3]: https://doi.org/10.1098/rstb.2017.0391 "The history and impact of digitization and digital data mobilization on biodiversity research"
+\[3\] Gil Nelson, Shari Ellis (2019):\
+**The history and impact of digitization and digital data mobilization on biodiversity research**.\
 *Philosophical Transactions of the Royal Society B: Biological Sciences*
 **374**(1763):20170391\
 <https://doi.org/10.1098/rstb.2017.0391>
 
-[4] Gil Nelson, Deborah L Paul (2019):\
+[4]: https://doi.org/10.3897/biss.3.37896 "DiSSCo, iDigBio and the Future of Global Collaboration"
+\[4\] Gil Nelson, Deborah L Paul (2019):\
 **DiSSCo, iDigBio and the Future of Global Collaboration**.\
 *Biodiversity Information Science and Standards* **3**:e37896.\
 <https://doi.org/10.3897/biss.3.37896>
 
-[5] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
-**DiSSCo as a New Regional Model for Scientific Collections in
-Europe**.\
+[5]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
+\[5\] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
+**DiSSCo as a New Regional Model for Scientific Collections in Europe**.\
 *Biodiversity Information Science and Standards* **3**:e37502.\
 <https://doi.org/10.3897/biss.3.37502>
 
-[6]Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
+[6]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
+\[6\] Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
 **FAIR Data and Services in Biodiversity Science and Geoscience**.\
 *Data Intelligence* **2**(1--2):122--130.\
 <https://doi.org/10.1162/dint_a_00034>
 
-[7] GBIF Secretariat. (2021):\
+[7]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
+\[7\] GBIF Secretariat. (2021):\
 **GBIF Science Review 2020**.\
 <https://doi.org/10.35035/bezp-jj23>
 
-[8] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart,
+[8]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
+\[8\] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart,
 Dmitry Schigel (2021):\
 **Data integration enables global biodiversity synthesis**.\
 *Proceedings of the National Academy of Sciences* **118**(6)\
 <https://doi.org/10.1073/pnas.2018093118>
 
-[9] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee
+[9]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens"
+\[9\] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee
 Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C.
 Davis (2018):\
 **Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system**.\
 *Taxon* **67**(1)\
 <https://doi.org/10.12705/671.10>
 
-[10] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
+[10]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
+\[10\] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
 Vincent Smith (2019):\
 **A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides**.\
 *Biodiversity Data Journal* **7**:e32342.\
 <https://doi.org/10.3897/BDJ.7.e32342>
 
-[11] Mark Hereld, Nicola Ferrier (2019):\
+[11]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
+\[11\] Mark Hereld, Nicola Ferrier (2019):\
 **LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
 *Biodiversity Information Science and Standards* **3**:e37228.\
 <https://doi.org/10.3897/biss.3.37228>
 
-[12] Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
+[12]: https://doi.org/10.31219/osf.io/s2p73 "ALICE"
+\[12\] Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
 Blagoderov, Alice Jenny Butcher, James Durrant, Pieter Holtzhausen,
 Phaedra Kokkini, Laurence Livermore, Helen Hardy, Vincent Smith (2018):\
 **ALICE: Angled Label Image Capture and Extraction for high throughput insect specimen digitisation**.\
 _OSF_
 <https://doi.org/10.31219/osf.io/s2p73>
 
-[13] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
+[13]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
+\[13\] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
 Wu, Hannu Saarenmaa (2017):\
 **Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging**.\
 *2017 IEEE 13th International Conference on E-Science (e-Science)*\
 <https://doi.org/10.1109/eScience.2017.85>
 
-[14] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
+[14]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change"
+\[14\] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
 **The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis**.\
 *BioScience* **69**(10)\
 <https://doi.org/10.1093/biosci/biz094>
 
-[15] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
+[15]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts"
+\[15\] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
 Kerr, Mark Vellend (2019):\
 **Using insect natural history collections to study global change impacts: challenges and opportunities**.\
 *Philosophical Transactions of the Royal Society B: Biological Sciences*
 **374**(1763):20170405\
 <https://doi.org/10.1098/rstb.2017.0405>
 
-[16] Myrna E Watanabe (2019):\
+[16]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections"
+\[16\] Myrna E Watanabe (2019):\
 **The Evolution of Natural History Collections: New research tools move specimens, data to center stage**.\
 *BioScience* **69**(3)\
 <https://doi.org/10.1093/biosci/biy163>
 
-[17] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
+[17]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
+\[17\] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
 Vasconcelos, Barnaby E. Walker, Cátia Canteiro, Eve J. Lucas (2019):\
 **Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups**.\
 *Conservation Biology* **33**(3)\
 <https://doi.org/10.1111/cobi.13289>
 
-[18] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence
-Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
-**Towards a scientific workflow featuring Natural Language Processing
-for the digitisation of natural history collections**.\
+[18]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
+\[18\] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
+**Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections**.\
 *Research Ideas and Outcomes* **6**:e58030.\
 <https://doi.org/10.3897/rio.6.e58030>
 
-[19] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
+[19]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE"
+\[19\] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
 Blomberg (2021):\
-**ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the
-life science research of the future**.\
+**ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the life science research of the future**.\
 *EMBO Journal* **40**(6):e107409\
 <https://doi.org/10.15252/embj.2020107409>
 
-[20] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave
+[20]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative
+biomedical analyses"
+\[20\] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave
 Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A
 Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann,
 Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James
@@ -1035,22 +1057,24 @@ biomedical analyses: 2018 update**.\
 *Nucleic Acids Research* **46**(W1) W537--W544\
 <https://doi.org/10.1093/nar/gky379>
 
-[21] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
+[21]: ../methods-included/ "Methods Included"
+\[21\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
 Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan
 Gavrilović, Carole Goble, The CWL Community (2022):\
-**Methods Included: Standardizing Computational Reuse and Portability
-with the Common Workflow Language**.\
+**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.\
 *Communications of the ACM* **65**(6)\
 <https://doi.org/10.1145/3486897>
 
-[22] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
+[22]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging*"
+\[22\] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
 Stian Soiland-Reyes (2019):\
 **A lightweight approach to research object data packaging**.\
 *Bioinformatics Open Source Conference (BOSC2019)*,
 2019-07-24/2019-07-25, Basel, Switzerland.\
 <https://doi.org/10.5281/zenodo.3250687>
 
-[23] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
+[23]: https://doi.org/10.3233/DS-210053 "Packaging research artefacts with RO-Crate"
+\[23\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
 Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco
 La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic,
 RO-Crate Community, Paul Groth, Carole Goble (2022):\
@@ -1058,7 +1082,8 @@ RO-Crate Community, Paul Groth, Carole Goble (2022):\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/DS-210053>
 
-[24] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
+[24]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+\[24\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
 Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
 Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
 Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
@@ -1067,7 +1092,8 @@ Frederik Coppens (2021):\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.4605654>
 
-[26] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
+[25]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
+\[25\] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
 Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony
 J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott
 Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran,
@@ -1083,51 +1109,55 @@ Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):\
 *Scientific Data* **3**(1):160018\
 <https://doi.org/10.1038/sdata.2016.18>
 
-[27] Peter Wittenburg, Alex Hardisty, Yann Le Franc, Amirpasha Mozaffari,
+[26]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
+\[26\] Peter Wittenburg, Alex Hardisty, Yann Le Franc, Amirpasha Mozaffari,
 Limor Peer, Nikolay A. Skvortsov, Zhiming Zhao, Alessandro
 Spinuso (2022):\
 **Canonical Workflows to Make Data FAIR**.\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00132>
 
-[28] Alex Hardisty (2019):\
+[27]: https://doi.org/10.5281/zenodo.3532937 "Provisional Data Management Plan for DiSSCo infrastructure"
+\[27\] Alex Hardisty (2019):\
 **Provisional Data Management Plan for DiSSCo infrastructure**.\
 *Zenodo*, DiSSCo Deliverable D6.6\
 <https://doi.org/10.5281/zenodo.3532937>
 
-[29] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
+[28]: https://doi.org/10.3390/publications8020021 "FAIR Digital Objects for Science"
+\[28\] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
 **FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
 *Publications* **8**(2):21  
 <https://doi.org/10.3390/publications8020021>
 
-[30] Alex Hardisty, Hannu Saarenmaa, Ana Casino, Mathias Dillen, Karsten
+[29]: https://doi.org/10.3897/rio.6.e54280 "Conceptual design blueprint for the DiSSCo digitization infrastructure"
+\[29\] Alex Hardisty, Hannu Saarenmaa, Ana Casino, Mathias Dillen, Karsten
 Gödderz, Quentin Groom, Helen Hardy, Dimitris Koureas, Abraham Nieva de
 la Hidalga, Deborah Paul, Veljo Runnel, Xavier Vermeersch, Myriam van
 Walsum, Luc Willemse (2020):\
-**Conceptual design blueprint for the DiSSCo digitization infrastructure
-- DELIVERABLE D8.1**.\
+**Conceptual design blueprint for the DiSSCo digitization infrastructure - DELIVERABLE D8.1**.\
 *Research Ideas and Outcomes* **6**:e54280.\
 <https://doi.org/10.3897/rio.6.e54280>
 
-[31] Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
+[30]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
+\[30\] Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
 Leggott, Carlo Zwölf (2019):\
 **FAIR digital object framework v1.02**.\
 FDOF technical implementation guideline.\
 *Group of European Data Experts in RDA (GEDE-RDA)*\
 <https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
 
-[32] Abdelaziz Triki, Bassem Bouaziz, Walid Mahdi, Jitendra Gaikwad (2020):\
-**Objects Detection from Digitized Herbarium Specimen based on Improved
-YOLO V3**.\
+[31]: https://doi.org/10.5220/0009170005230529 "Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3"
+\[31\] Abdelaziz Triki, Bassem Bouaziz, Walid Mahdi, Jitendra Gaikwad (2020):\
+**Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3**.\
 *Proceedings of the 15th International Joint Conference on Computer
 Vision, Imaging and Computer Graphics Theory and Applications* **4**\
 <https://doi.org/10.5220/0009170005230529>
 
-[33] Abraham Nieva de la Hidalga, Paul L. Rosin, Xianfang Sun, Laurence
+[32]: https://doi.org/10.1007/s00138-022-01276-z "Cross-validation of a semantic segmentation network for natural history collection specimens"
+\[32\] Abraham Nieva de la Hidalga, Paul L. Rosin, Xianfang Sun, Laurence
 Livermore, James Durrant, James Turner, Mathias Dillen, Alicia Musson,
 Sarah Phillips, Quentin Groom, Alex Hardisty (2022):\
-**Cross-validation of a semantic segmentation network for natural
-history collection specimens**.\
+**Cross-validation of a semantic segmentation network for natural history collection specimens**.\
 *Machine Vision and Applications* **33**(3)\
 <https://doi.org/10.1007/s00138-022-01276-z>
 
