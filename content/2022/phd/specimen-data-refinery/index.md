@@ -279,7 +279,7 @@ increase the accuracy of subsequent OCR processing and semantic
 recognition steps [[18]].
 
 Much of the data about specimens is stored on their handwritten, typed
-or printed labels or in registers/ledgers [[34]]. Direct manual
+or printed labels or in registers/ledgers [[33]]. Direct manual
 transcription into local databases with manual georeferencing is the
 primary method used today to capture this data. Potentially, OCR can
 significantly increase transcription speeds whilst reducing cost;
@@ -298,10 +298,10 @@ of captured data in the absence of 'human in the loop' input. To better
 automate disambiguation of people's names, for example, access to other
 contextual 'helper' data are needed (e.g., biographical data in
 Wikidata) as well as cross-comparison with other data from the specimen,
-such as the date of collection and location [[35]].
+such as the date of collection and location [[34]].
 
 Automated identification of species from images of living organisms has
-achieved impressive levels of accuracy [[36]] [[37]] [[38]] [[39]] [[40]] [[41] with techniques
+achieved impressive levels of accuracy [[35]] [[36]] [[37]] [[38]] [[39]] [[40] with techniques
 translated to an increasing range of enthusiastically received consumer
 applications for plant and animal identification using mobile phones
 (e.g., [Plantsnap](https://www.plantsnap.com/), 
@@ -323,14 +323,14 @@ flow. Their significant defining characteristics are (i) abstraction,
 through the separation of the workflow specification (the work to be
 done) from its execution (how it is done), and (ii) composition whereby
 the components can be cleanly combined and reused and workflows
-themselves can be neatly packaged as components [[42]]. Workflow
+themselves can be neatly packaged as components [[41]]. Workflow
 management systems typically provide the necessary mechanisms for
 explicitly defining workflows in a reusable way together with a workflow
 engine that executes the workflow steps and keeps an accountable record
 of the processing -- logging the codes executed and the data lineage of
 the results. In the past decade there has been a rise in popularity in
 both the development of WfMS and their use, driven by the increasing
-scales of data and the accompanying complexity of its processing [[42]].
+scales of data and the accompanying complexity of its processing [[41]].
 
 Workflow management systems typically vary in the features they provide
 for supporting: workflow programming language and control flow
@@ -338,7 +338,7 @@ expressivity; data type management; code wrapping, containerisation and
 integration with software management tools; exploitation of
 computational architectures; availability of development and logging
 tools; licensing and so on. Although several hundred kinds of such
-systems exist [[43]], communities tend to cluster around a few popular
+systems exist [[42]], communities tend to cluster around a few popular
 systems based on their "plugged-in" availability of data type specialist
 codes, the catered-for skills level of the workflow developers, and its
 documentation, community support and perceived sustainability. For the
@@ -385,7 +385,7 @@ locations where specimens were collected.
 ### 2.3 FAIR Digital Objects
 
 Galaxy/CWL environments offer the possibility to integrate generic
-digital object methods [[44]] [[45]] [[46] for the interactions between workflow
+digital object methods [[43]] [[44]] [[45] for the interactions between workflow
 components, thus making them able to meet the need and ease the burden
 of compiling FAIR compliant data throughout the research lifecycle
 [[26]].
@@ -422,7 +422,7 @@ information extracted and captured from labels by digitization
 workflows) with other data -- often to be found from third-party sources
 -- derived from analysis and use of the specimen.
 
-openDS [[47]] is the developing specification for open Digital Specimens
+openDS [[46]] is the developing specification for open Digital Specimens
 and other related object types, defining: i) the logical structure and
 content of Digital Specimen (DS), Basic Image Object (BIO) and other
 object types, and the operations permitted on them; ii) the handling
@@ -430,7 +430,7 @@ rules and behaviors governing digital specimen object operations in
 general; and iii) serialization and packaging as JavaScript Object
 Notation (JSON) for lightweight data interchange between systems,
 sub-systems and components of systems (for which, read 'workflow
-components' [[48]]. openDS is essential to future FAIR digitization of
+components' [[47]]. openDS is essential to future FAIR digitization of
 natural history collections and to Digital Specimens as self-standing
 digital objects on the Internet, amenable to computer processing. It
 contributes to the new transformative generation of FAIR infrastructure
@@ -447,7 +447,7 @@ nor data products but everything that goes into and supports an
 investigative work or production pipelining activity. This includes
 input and intermediate data, parameter settings, final outputs,
 software programs and workflows, and configuration information
-sufficient to make the work reproducible. Research objects [[49]] are
+sufficient to make the work reproducible. Research objects [[48]] are
 a general approach to describing and associating all of this content
 together in a machine-readable form so that it can be easily
 preserved, shared and exchanged. Workflow objects are a specific
@@ -456,15 +456,15 @@ subclass of research objects.
 RO-Crate [[22]] [[23]] has been established as a community standard to
 practically achieve FAIR packaging of research objects with their
 structured metadata. Based on well-established Web standards, RO-Crate
-uses JSON-LD [[50]] with [Schema.org](https://schema.org/) [[51]] for
+uses JSON-LD [[49]] with [Schema.org](https://schema.org/) [[50]] for
 its common metadata representation. It is extensible with
 domain-specific vocabularies in a growing range of specializing
-RO-Crate profiles, e.g., for domains such as earth sciences [[52]],
-biosciences [[53]]; for object types such as data or workflow [[54]];
+RO-Crate profiles, e.g., for domains such as earth sciences [[51]],
+biosciences [[52]]; for object types such as data or workflow [[53]];
 or for workflow runs). RO-Crate has been proposed for the
 implementation of FAIR Digital Objects on the World Wide Web as a
 common representation of the FDO Metadata objects foreseen by the FDO
-Framework [[53]] [[30]]. Combined with FAIR Signposting [[55]] for
+Framework [[52]] [[30]]. Combined with FAIR Signposting [[54]] for
 resolving persistent identifiers (PID) to FDOs on the World Wide Web,
 these RO-Crates are findable, accessible, interoperable, and reusable
 by machines to both create and obtain the information they need to
@@ -479,7 +479,7 @@ Henceforth, we refer to RO-Crate FDOs.
 In the lengthy history of collectors and museums curating artefacts
 and specimens, we see that there have been and always will be
 ambiguities, uncertainties, and inaccuracies in interpretations of
-recorded information and attached labels [[56]]. The practices of
+recorded information and attached labels [[55]]. The practices of
 different collectors and curators vary and change over time. There are
 constraints of the label medium itself arising from the specifics of
 accepted preparation and preservation processes (e.g., tiny,
@@ -513,7 +513,7 @@ rapid and easy access for institutions with limited capabilities and
 capacities for digitization. Hosted workflows represent "primacy of
 method" for a community evolving towards a new research culture that
 is becoming increasingly dependent on working digitally and
-collaboratively [[57]] [[58]].
+collaboratively [[56]] [[57]].
 
 ### 3.2. Users, user stories and specimen categories
 
@@ -675,7 +675,7 @@ at least 1,000 unique specimens for each of the three categories of
 preserved specimen types: herbarium sheets, microscope slides and
 pinned insects. For herbarium sheet images we will reuse an existing
 benchmark dataset of 1,800 herbarium specimen images with
-corresponding transcribed data [[59]]. For microscope slide and pinned
+corresponding transcribed data [[58]]. For microscope slide and pinned
 insect specimen images similar evaluation datasets will be prepared
 against the same label characteristics: written in different
 languages; printed or handwritten; covering a wide range of dates;
@@ -711,7 +711,7 @@ information, which is then converted to an openDS object before the
 workflow proper begins.
 
 Each SDR Galaxy tool defines the properties it requires in JSONPath
-syntax [[60]]. The wrapper validates that these properties exist in
+syntax [[59]]. The wrapper validates that these properties exist in
 the openDS object, plucks them from the openDS JSON, makes them
 available as named parameters, and passes these through to the tool
 processing (via either a Docker or Python command line). The wrapper
@@ -750,10 +750,10 @@ and associated provenance capture:
     details that are captured proprietarily within the adopted Galaxy
     environment and transformed to a common pattern (as another kind of
     canonical state) of provenance for later scrutiny and
-    reproducibility of the work. These kinds of Research Objects [[49]]
+    reproducibility of the work. These kinds of Research Objects [[48]]
     are an established mechanism whereby computational methods become
     first-class citizens alongside data, to be easily shared, discussed,
-    reused and repurposed [[61]].
+    reused and repurposed [[60]].
 
 Both kinds of FDO are essential. They complement one another to
 support implementation of the FAIR principles, especially the
@@ -769,16 +769,16 @@ their clear roles, common conceptual model and separation of concerns.
 ### 7.2. Different FDO implementations working together 
 
 openDS FDOs have their heritage in distributed digital object services
-[[46]] and are implemented through Digital Object Architecture (DOA)
-[[62]] with Digital Object Interface Protocol (DOIP) [[63]], Digital
-Object Identifier Resolution Protocol (DO-IRP) [[64]], and
-recommendations of the Research Data Alliance [[65]]. Serialized as
+[[45]] and are implemented through Digital Object Architecture (DOA)
+[[60]] with Digital Object Interface Protocol (DOIP) [[61]], Digital
+Object Identifier Resolution Protocol (DO-IRP) [[62]], and
+recommendations of the Research Data Alliance [[63]]. Serialized as
 JSON, they are machine-actionable and compatible with established
 protocols of the World Wide Web.
 
 RO-Crates are native to the World Wide Web, based on established web
 protocols, machine-readable metadata using Linked Data Platform
-methods [[66]], JSON-LD and Schema.org [[49]], and community-accepted
+methods [[64]], JSON-LD and Schema.org [[48]], and community-accepted
 packaging mechanisms such as BagIt. This makes RO-Crates
 straightforward to incorporate into pre-existing platforms such as
 Galaxy and data repositories such as Zenodo and DataVerse.
@@ -1161,90 +1161,107 @@ Sarah Phillips, Quentin Groom, Alex Hardisty (2022):\
 *Machine Vision and Applications* **33**(3)\
 <https://doi.org/10.1007/s00138-022-01276-z>
 
-[34] Stephanie Walton, Laurence Livermore, Mathias Dillen, Sofie De Smedt, Quentin Groom, Anne Koivunen, Sarah Phillips (2020):\
+[33]: https://doi.org/10.3897/rio.6.e56211 "A cost analysis of transcription systems"
+\[33\] Stephanie Walton, Laurence Livermore, Mathias Dillen, Sofie De Smedt, Quentin Groom, Anne Koivunen, Sarah Phillips (2020):\
 **A cost analysis of transcription systems**.\
 *Research Ideas and Outcomes* **6**:e56211.\
 <https://doi.org/10.3897/rio.6.e56211>
 
-[35] Quentin Groom, Anton Güntsch, Pieter Huybrechts, Nicole Kearney, Siobhan
+[34]: https://doi.org/10.1093/database/baaa072 "People are essential to linking biodiversity data"
+\[34\] Quentin Groom, Anton Güntsch, Pieter Huybrechts, Nicole Kearney, Siobhan
 Leachman, Nicky Nicolson, Roderic D M Page, David P Shorthouse, Anne E
 Thessen, Elspeth Haston (2020):\
-**People are essential to linking biodiversity data** *Database*
-**2020**\
+**People are essential to linking biodiversity data**.\\
+*Database* **2020**\
 <https://doi.org/10.1093/database/baaa072>
 
-[36] Alexander Knyshov, Samantha Hoang, Christiane Weirauch (2021):\
+[35]: https://doi.org/10.1093/isd/ixab004 "Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case" 
+\[35\] Alexander Knyshov, Samantha Hoang, Christiane Weirauch (2021):\
 **Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case**: Identification of Plant Bugs (Hemiptera: Miridae) Using a Small Number of Training Images.\
 *Insect Systematics and Diversity* **5**(2)\
 <https://doi.org/10.1093/isd/ixab004>
 
-[37] Burhan Rashid Hussein, Owais Ahmed Malik, Wee-Hong Ong, Johan Willem Frederik Slik (2021):\
+[36]: https://doi.org/10.48550/arXiv.2104.08732 "Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens"
+\[36\] Burhan Rashid Hussein, Owais Ahmed Malik, Wee-Hong Ong, Johan Willem Frederik Slik (2021):\
 **Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens: A Systematic Literature Review**.\
 *arXiv* 2104.08732v1\
 <https://doi.org/10.48550/arXiv.2104.08732>
 
-[38] Jose Carranza-Rojas, Herve Goeau, Pierre Bonnet, Erick Mata-Montero,
+[37]: https://doi.org/10.1186/s12862-017-1014-z "Going deeper in the automated identification of Herbarium specimens"
+\[37\] Jose Carranza-Rojas, Herve Goeau, Pierre Bonnet, Erick Mata-Montero,
 Alexis Joly (2017):\
 **Going deeper in the automated identification of Herbarium specimens**.\
 *BMC Evolutionary Biology* **17**(1)\
 <https://doi.org/10.1186/s12862-017-1014-z>
 
-[39] Damon P. Little, Melissa Tulig, Kiat Chuan Tan, Yulong Liu, Serge
+[38]: https://doi.org/10.1002/aps3.11365 "An algorithm competition for automatic species identification from herbarium specimens"
+\[38\] Damon P. Little, Melissa Tulig, Kiat Chuan Tan, Yulong Liu, Serge
 Belongie, Christine Kaeser‐Chen, Fabián A. Michelangeli, Kiran Panesar,
 R.V. Guha, Barbara A. Ambrose (2020):\
 **An algorithm competition for automatic species identification from herbarium specimens**.\
 *Applications in Plant Sciences* **8**(6):e11365\
 <https://doi.org/10.1002/aps3.11365>
 
-[40] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
-**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**. *Applications in Plant
-Sciences* **8**(6):e11372\
+[39]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails"
+\[39\] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
+**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
+*Applications in Plant Sciences* **8**(6):e11372\
 <https://doi.org/10.1002/aps3.11372>
 
-[41] Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
-**Computer vision applied to herbarium specimens of German trees: testing the future utility of the millions of herbarium specimen images for automated identification**\
+[40]: https://doi.org/10.1186/s12862-016-0827-5 "Computer vision applied to herbarium specimens of German trees"
+\[40\] Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
+**Computer vision applied to herbarium specimens of German trees**: testing the future utility of the millions of herbarium specimen images for automated identification.\
 . *BMC Evolutionary Biology* **16**(1)\
 <https://doi.org/10.1186/s12862-016-0827-5>
 
-[42] Malcolm Atkinson, Sandra Gesing, Johan Montagnat, Ian Taylor (2017):\
+[41]: https://doi.org/10.1016/j.future.2017.05.041 "Scientific workflows: Past, present and future"
+\[41\] Malcolm Atkinson, Sandra Gesing, Johan Montagnat, Ian Taylor (2017):\
 **Scientific workflows: Past, present and future**.\
 *Future Generation Computer Systems* **75**\
 <https://doi.org/10.1016/j.future.2017.05.041>
 
-[43] Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel
+[42]: https://s.apache.org/existing-workflow-systems "Existing Workflow systems"
+\[42\] Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel
 Lampa, et al. (2022):\
 **Existing Workflow systems**.\
 *Common Workflow Language wiki*, GitHub.
 <https://s.apache.org/existing-workflow-systems> updated 2022-09-13,
 accessed 2023-01-23.
 
-[44] Yuk Hui (2012):\
+[43]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
+\[43\] Yuk Hui (2012):\
 **What is a Digital Object?**\
 *Metaphilosophy* **43**(4)\
 <https://doi.org/10.1111/j.1467-9973.2012.01761.x>
 
-[45] Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
-**The ambivalent ontology of digital artifacts**. *MIS Quarterly*
-**37**(2) pp. 357--370.\
+[44]: https://www.jstor.org/stable/43825913 "The ambivalent ontology of digital artifacts"
+\[44\] Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
+**The ambivalent ontology of digital artifacts**.\
+*MIS Quarterly* **37**(2) pp. 357--370.\
 ISSN 0276-7783\
 <https://www.jstor.org/stable/43825913>\
 <https://misq.umn.edu/the-ambivalent-ontology-of-digital-artifacts.html>
 
-[46] Robert Kahn, Robert Wilensky (2006):\
+[45]: https://doi.org/10.1007/s00799-005-0128-x "A framework for distributed digital object services"
+\[45\] Robert Kahn, Robert Wilensky (2006):\
 **A framework for distributed digital object services**.\
 *International Journal on Digital Libraries* **6**\
 <https://doi.org/10.1007/s00799-005-0128-x>
 
-[47] openDS (2021):\
+[46]: https://github.com/DiSSCo/openDS "Draft specification for open Digital Specimens (openDS)"
+\[[46]\] openDS (2021):\
 **Draft specification for open Digital Specimens (openDS)**\
 <https://github.com/DiSSCo/openDS> (accessed 2021-08-10)
 
-[48] Tim Bray (2017): **The JavaScript Object Notation (JSON) Data Interchange Format**.\
+[47]: https://www.rfc-editor.org/rfc/rfc8259.html "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+\[[47]\] Tim Bray (2017): \
+**The JavaScript Object Notation (JSON) Data Interchange Format**.\
 STD 90, RFC 8259\
 *RFC Editor*, Internet Engineering Task Force.\
 <https://doi.org/10.17487/rfc8259>
 
-[49] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John
+[48]: https://doi.org/10.1016/j.future.2011.08.004 "Why Linked Data is not enough for scientists"
+\[[48]\] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John
 Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark
 Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart
 Owen, David Newman, Shoaib Sufi, Carole Goble (2013):\
@@ -1252,21 +1269,25 @@ Owen, David Newman, Shoaib Sufi, Carole Goble (2013):\
 *Future Generation Computer Systems* **29**(2) pp. 599--611.\
 <https://doi.org/10.1016/j.future.2011.08.004>
 
-[50] Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
-Pierre-Antoine Champin, Niklas Lindström (2020): **JSON-LD 1.1: A
-JSON-based Serialization for Linked Data**.\
+[49]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1"
+\[[49]\] Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
+Pierre-Antoine Champin, Niklas Lindström (2020):\
+**JSON-LD 1.1: A JSON-based Serialization for Linked Data**.\
 *W3C Recommendation* 16 July 2020\
 <https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
 
-[51] **Schema.org - Schema.org**\
+[50]: https://schema.org/ "schema.org"
+\[50\] **Schema.org - Schema.org**\
 <https://schema.org/> (accessed 2021-08-10).
 
-[52] Oscar Corcho, Esteban González, Daniel Garijo, Raul Palma (2021):\
+[51]: https://doi.org/10.5281/zenodo.4913285 "RO Model Adapted to EOSC"
+\[[51]\] Oscar Corcho, Esteban González, Daniel Garijo, Raul Palma (2021):\
 **D5.1 RO Model Adapted to EOSC**\
 RELIANCE deliverable, *Zenodo*\
 <https://doi.org/10.5281/zenodo.4913285>
 
-[53] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
+[52]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+\[[52]\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
 Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
 Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
 Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
@@ -1275,21 +1296,25 @@ Frederik Coppens (2021):\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.4605654>
 
-[54] Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):\
-**Workflow RO-Crate Profile 1.0.**\
+[53]: https://w3id.org/workflowhub/workflow-ro-crate/1.0 "Workflow RO-Crate Profile 1.0"
+\[[53]\] Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):\
+**Workflow RO-Crate Profile 1.0**.\
 *WorkflowHub community*\
 <https://w3id.org/workflowhub/workflow-ro-crate/1.0>
 
-[55] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
+[54]: https://signposting.org/FAIR/ "FAIR Signposting Profile"
+\[[54]\] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
 **FAIR Signposting Profile**. (version 20220727).\
 <https://signposting.org/FAIR/>
 
-[56] Krisztina Lohonya, Laurence Livermore, Malcolm Penn (2020):
+[55]: https://doi.org/10.3897/BDJ.8.e50503 "Georeferencing the Natural History Museum's Chinese type collection"
+\[[55]\] Krisztina Lohonya, Laurence Livermore, Malcolm Penn (2020):
 **Georeferencing the Natural History Museum's Chinese type collection: of plateaus, pagodas and plants**.\
 *Biodiversity Data Journal* **8**:e50503.\
 <https://doi.org/10.3897/BDJ.8.e50503>
 
-[57] David De Roure, Carole Goble (2010):\
+[56]: http://eprints.soton.ac.uk/id/eprint/270817 "Anchors in shifting sand: the primacy of method in the web of data"
+\[[56]\] David De Roure, Carole Goble (2010):\
 **Anchors in shifting sand: the primacy of method in the web of data**.\
 *Proceedings of the WebSci10: Extending the Frontiers of Society
 On-Line*, at Web Science Conference 2010 Raleigh, NC: US
@@ -1297,54 +1322,53 @@ On-Line*, at Web Science Conference 2010 Raleigh, NC: US
 <https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/>\
 <http://eprints.soton.ac.uk/id/eprint/270817>
 
-[58] <small>Alex R. Hardisty, Finn Bacall, Niall Beard, Maria-Paula Balcázar-Vargas, Bachir Balech, Zoltán Barcza, Sarah J. Bourlat, Renato De Giovanni, Yde de Jong, Francesca De Leo, Laura Dobor, Giacinto Donvito, Donal Fellows, Antonio Fernandez Guerra, Nuno Ferreira, Yuliya Fetyukova, Bruno Fosso, Jonathan Giddy, Carole Goble, Anton Güntsch, Robert Haines, Vera Hernández Ernst, Hannes Hettling, Dóra Hidy, Ferenc Horváth, Dóra Ittzés, Péter Ittzés, Andrew Jones, Renzo Kottmann, Robert Kulawik, Sonja Leidenberger, Päivi Lyytikäinen-Saarenmaa, Cherian Mathew, Norman Morrison, Aleksandra Nenadic, Abraham Nieva de la Hidalga, Matthias Obst, Gerard Oostermeijer, Elisabeth Paymal, Graziano Pesole, Salvatore Pinto, Axel Poigné, Francisco Quevedo Fernandez, Monica Santamaria, Hannu Saarenmaa, Gergely Sipos, Karl-Heinz Sylla, Marko Tähtinen, Saverio Vicario, Rutger Aldo Vos, Alan R. Williams, Pelin Yilmaz</small> (2016):\
+[57]: https://doi.org/10.1186/s12898-016-0103-y "BioVeL"
+\[[57]\] <small>Alex R. Hardisty, Finn Bacall, Niall Beard, Maria-Paula Balcázar-Vargas, Bachir Balech, Zoltán Barcza, Sarah J. Bourlat, Renato De Giovanni, Yde de Jong, Francesca De Leo, Laura Dobor, Giacinto Donvito, Donal Fellows, Antonio Fernandez Guerra, Nuno Ferreira, Yuliya Fetyukova, Bruno Fosso, Jonathan Giddy, Carole Goble, Anton Güntsch, Robert Haines, Vera Hernández Ernst, Hannes Hettling, Dóra Hidy, Ferenc Horváth, Dóra Ittzés, Péter Ittzés, Andrew Jones, Renzo Kottmann, Robert Kulawik, Sonja Leidenberger, Päivi Lyytikäinen-Saarenmaa, Cherian Mathew, Norman Morrison, Aleksandra Nenadic, Abraham Nieva de la Hidalga, Matthias Obst, Gerard Oostermeijer, Elisabeth Paymal, Graziano Pesole, Salvatore Pinto, Axel Poigné, Francisco Quevedo Fernandez, Monica Santamaria, Hannu Saarenmaa, Gergely Sipos, Karl-Heinz Sylla, Marko Tähtinen, Saverio Vicario, Rutger Aldo Vos, Alan R. Williams, Pelin Yilmaz</small> (2016):\
 **BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology**.\
 *BMC Ecology* **16**(1)\
 <https://doi.org/10.1186/s12898-016-0103-y>
 
-[59] Mathias Dillen, Quentin Groom, Simon Chagnoux, Anton Güntsch, Alex
+[58]: https://doi.org/10.3897/BDJ.7.e31817 "A benchmark dataset of herbarium specimen imagfes with label data"
+\[[58]\] Mathias Dillen, Quentin Groom, Simon Chagnoux, Anton Güntsch, Alex
 Hardisty, Elspeth Haston, Laurence Livermore, Veljo Runnel, Leif
 Schulman, Luc Willemse, Zhengzhe Wu, Sarah Phillips (2019):\
 **A benchmark dataset of herbarium specimen imagfes with label data**.\
 *Biodiversity Data Journal* **7**:e31817.\
 <https://doi.org/10.3897/BDJ.7.e31817>
 
-[60] JSONPath WG (2023):\
+[59]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath"
+\[[59]\] JSONPath WG (2023):\
 **JSONPath: Query Expressions for JSON.**\
 Stefan Gössner, Glyn Normington, Carsten Bormann (eds).\
 Internet-Draft draft-ietf-jsonpath-base-10\
 <https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10>
 
-[61] David De Roure, Carole Goble (2010):\
-**Anchors in shifting sand: the primacy of method in the web of data**.\
-*Proceedings of the WebSci10: Extending the Frontiers of Society
-On-Line*, at Web Science Conference 2010 Raleigh, NC: US
-2010-04-26/--27\
-<https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/>\
-<http://eprints.soton.ac.uk/id/eprint/270817>
-
-[62] DONA Foundation (2021):\
+[60]: https://www.dona.net/node/88 "Digital Object Architecture"
+\[[60]\] DONA Foundation (2021):\
 **Digital Object Architecture**.\
 <https://www.dona.net/node/88> (accessed 2021-08-10)
 
-[63] DONA Foundation (2018):\
+[61]: https://hdl.handle.net/0.DOIP/DOIPV2.0 "Digital Object Interface Protocol specification"
+\[[61]\] DONA Foundation (2018):\
 **Digital Object Interface Protocol specification, version 2.0**.\
 *DONA Foundation*\
 <https://hdl.handle.net/0.DOIP/DOIPV2.0>
 
-[64] Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003):\
+[62]: https://www.rfc-editor.org/rfc/rfc3652.html "RFC 3652: Handle System Protocol (ver 2.1) Specification"
+\[[62]\] Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003):\
 **Handle System Protocol (ver 2.1) Specification**.\
 *RFC Editor*, RFC 3652\
 <https://doi.org/10.17487/rfc3652>
 
-[65] Sharif Islam, Alex Hardisty, Wouter Addink, Claus Weiland, Falko
+[63]: https://doi.org/10.5334/dsj-2020-050 "Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections"
+\[[63]\] Sharif Islam, Alex Hardisty, Wouter Addink, Claus Weiland, Falko
 Glöckler (2020):\
-**Incorporating RDA Outputs in the Design of a European Research
-Infrastructure for natural history Collections**.\
+**Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections**.\
 *Data Science Journal* **19**:50\
 <https://doi.org/10.5334/dsj-2020-050>
 
-[66] Steve Speicher, John Arwe, Ashok Malhotra (eds) (2015):\
+[64]: http://www.w3.org/TR/2015/REC-ldp-20150226/ "Linked Data Platform 1.0"
+\[[64]\] Steve Speicher, John Arwe, Ashok Malhotra (eds) (2015):\
 **Linked Data Platform 1.0**.\
 *W3C Recommendation* 26 February 2015\
 <http://www.w3.org/TR/2015/REC-ldp-20150226/>
