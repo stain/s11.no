@@ -167,6 +167,7 @@ Finn Bacall, Stian Soiland-Reyes, Marina Soares e Silva (2019):\
 
 Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):\
 **Workflow RO-Crate Profile 1.0.**\
+*WorkflowHub community*\
 <https://w3id.org/workflowhub/workflow-ro-crate/1.0>
 
 Finn Bacall, Martyn Whitwell (2022):\
@@ -401,8 +402,7 @@ credit**.\
 *Learned Publishing* **28**(2) pp. 151--155.\
 <https://doi.org/10.1087/20150211>
 
-T Bray (ed.) (2017): **The JavaScript Object Notation (JSON) Data
-Interchange Format**.\
+Tim Bray (2017): **The JavaScript Object Notation (JSON) Data Interchange Format**.\
 STD 90, RFC 8259\
 *RFC Editor*, Internet Engineering Task Force.\
 <https://doi.org/10.17487/rfc8259>
@@ -445,8 +445,7 @@ Plans**.\
 
 Jose Carranza-Rojas, Herve Goeau, Pierre Bonnet, Erick Mata-Montero,
 Alexis Joly (2017):\
-**Going deeper in the automated identification of Herbarium
-specimens**.\
+**Going deeper in the automated identification of Herbarium specimens**.\
 *BMC Evolutionary Biology* **17**(1)\
 <https://doi.org/10.1186/s12862-017-1014-z>
 
@@ -934,8 +933,7 @@ Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
 Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
 Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
 Frederik Coppens (2021):\
-**Implementing FAIR Digital Objects in the EOSC-Life Workflow
-Collaboratory**.\
+**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.4605654>
 
@@ -1029,14 +1027,12 @@ Pinto, Axel Poigné, Francisco Quevedo Fernandez, Monica Santamaria,
 Hannu Saarenmaa, Gergely Sipos, Karl-Heinz Sylla, Marko Tähtinen,
 Saverio Vicario, Rutger Aldo Vos, Alan R. Williams, Pelin
 Yilmaz (2016):\
-**BioVeL: a virtual laboratory for data analysis and modelling in
-biodiversity science and ecology**.\
+**BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology**.\
 *BMC Ecology* **16**(1)\
 <https://doi.org/10.1186/s12898-016-0103-y>
 
 Alex R Hardisty, Keping Ma, Gil Nelson, Jose Fortes (2019):\
-**'openDS' -- A New Standard for Digital Specimens and Other Natural
-Science Digital Object Types**.\
+**'openDS' -- A New Standard for Digital Specimens and Other Natural Science Digital Object Types**.\
 *Biodiversity Information Science and Standards* **3**:e37033\
 <https://doi.org/10.3897/biss.3.37033>
 
@@ -1089,8 +1085,7 @@ Tom Heath, Christian Bizer (2011):\
 <https://doi.org/10.2200/S00334ED1V01Y201102WBE001>
 
 J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
-**The Changing Uses of Herbarium Data in an Era of Global Change: An
-Overview Using Automated Content Analysis**.\
+**The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis**.\
 *BioScience* **69**(10)\
 <https://doi.org/10.1093/biosci/biz094>
 
@@ -1107,8 +1102,7 @@ Maggie Hellström, Carlo Zwölf, Peter Wittenburg (2022):\
 <https://doi.org/10.5281/zenodo.7825686>
 
 Mark Hereld, Nicola Ferrier (2019):\
-**LightningBug ONE: An experiment in high-throughput digitization of
-pinned insects**.\
+**LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
 *Biodiversity Information Science and Standards* **3**:e37228.\
 <https://doi.org/10.3897/biss.3.37228>
 
@@ -1487,7 +1481,7 @@ Robert Kahn, Robert Wilensky (2006):\
 *International Journal on Digital Libraries* **6**(2)\
 <https://doi.org/10.1007/s00799-005-0128-x>
 
-Kallinikos, Jannis, Aaltonen, Aleksi Ville, Attila Marton (2013):\
+Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
 **The ambivalent ontology of digital artifacts**. *MIS Quarterly*
 **37**(2) pp. 357--370.\
 ISSN 0276-7783\
@@ -1503,8 +1497,7 @@ Wilkinson, Vanessa Sochat, Hartwig Anzt, Carole Goble, FAIR4RS Subgroup
 
 Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
 Kerr, Mark Vellend (2019):\
-**Using insect natural history collections to study global change
-impacts: challenges and opportunities**.\
+**Using insect natural history collections to study global change impacts: challenges and opportunities**.\
 *Philosophical Transactions of the Royal Society B: Biological Sciences*
 **374**(1763):20170405\
 <https://doi.org/10.1098/rstb.2017.0405>
@@ -1543,9 +1536,7 @@ Agendas*\
 <https://doi.org/10.3233/978-1-61499-649-1-87>
 
 Alexander Knyshov, Samantha Hoang, Christiane Weirauch (2021):\
-**Pretrained Convolutional Neural Networks Perform Well in a Challenging
-Test Case: Identification of Plant Bugs (Hemiptera: Miridae) Using a
-Small Number of Training Images**.\
+**Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case**: Identification of Plant Bugs (Hemiptera: Miridae) Using a Small Number of Training Images.\
 *Insect Systematics and Diversity* **5**(2)\
 <https://doi.org/10.1093/isd/ixab004>
 
@@ -1599,8 +1590,7 @@ Greenberg (2021):\
 Damon P. Little, Melissa Tulig, Kiat Chuan Tan, Yulong Liu, Serge
 Belongie, Christine Kaeser‐Chen, Fabián A. Michelangeli, Kiran Panesar,
 R.V. Guha, Barbara A. Ambrose (2020):\
-**An algorithm competition for automatic species identification from
-herbarium specimens**.\
+**An algorithm competition for automatic species identification from herbarium specimens**.\
 *Applications in Plant Sciences* **8**(6):e11365\
 <https://doi.org/10.1002/aps3.11365>
 
@@ -1614,8 +1604,7 @@ Laurence Livermore, Oliver Woolland (2022):\
 <https://doi.org/10.48546/workflowhub.workflow.375.1>
 
 Krisztina Lohonya, Laurence Livermore, Malcolm Penn (2020):
-**Georeferencing the Natural History Museum's Chinese type collection:
-of plateaus, pagodas and plants**.\
+**Georeferencing the Natural History Museum's Chinese type collection: of plateaus, pagodas and plants**.\
 *Biodiversity Data Journal* **8**:e50503.\
 <https://doi.org/10.3897/BDJ.8.e50503>
 
@@ -1881,8 +1870,8 @@ Tudorache, Mark Alan Musen (2020):\
 Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
 Blagoderov, Alice Jenny Butcher, James Durrant, Pieter Holtzhausen,
 Phaedra Kokkini, Laurence Livermore, Helen Hardy, Vincent Smith (2018):\
-**ALICE: Angled Label Image Capture and Extraction for high throughput
-insect specimen digitisation**.\
+**ALICE: Angled Label Image Capture and Extraction for high throughput insect specimen digitisation**.\
+_OSF_
 <https://doi.org/10.31219/osf.io/s2p73>
 
 Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael
@@ -2351,15 +2340,13 @@ Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003):\
 Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee
 Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C.
 Davis (2018):\
-**Large-scale digitization of herbarium specimens: Development and usage
-of an automated, high-throughput conveyor system**.\
+**Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system**.\
 *Taxon* **67**(1)\
 <https://doi.org/10.12705/671.10>
 
 Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
 Wu, Hannu Saarenmaa (2017):\
-**Mass Digitization of Individual Pinned Insects Using Conveyor-Driven
-Imaging**.\
+**Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging**.\
 *2017 IEEE 13th International Conference on E-Science (e-Science)*\
 <https://doi.org/10.1109/eScience.2017.85>
 
@@ -2412,7 +2399,7 @@ Sequeda, Nigam H. Shah, Daniel P. Miranker (2011):\
 
 **Linked Data Mashups: A Review on Technologies, Applications and
 Challenges** *Intelligent Information and Database Systems*. ACIIDS
-2014. Ngoc Thanh Nguyen, Boonwat Attachoo, Bogdan Trawiński, Kulwadee
+1.    Ngoc Thanh Nguyen, Boonwat Attachoo, Bogdan Trawiński, Kulwadee
 Somboonviwat (eds.).\
 *Lecture Notes in Computer Science* **8398**\
 <https://doi.org/10.1007/978-3-319-05458-2_27>
@@ -2453,9 +2440,7 @@ Heritage* **4**\
 <https://doi.org/10.55630/dipp.2014.4.11>
 
 Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
-**Computer vision applied to herbarium specimens of German trees:
-testing the future utility of the millions of herbarium specimen images
-for automated identification**\
+**Computer vision applied to herbarium specimens of German trees: testing the future utility of the millions of herbarium specimen images for automated identification**\
 . *BMC Evolutionary Biology* **16**(1)\
 <https://doi.org/10.1186/s12862-016-0827-5>
 
