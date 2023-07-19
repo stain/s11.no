@@ -18,7 +18,7 @@ _This page is not yet adapted for the Web_
 ## Community acknowledgements
 
 
-### RO-Crate Community {#communitylist}
+#### RO-Crate Community {#communitylist}
 
 
 I am forever grateful for all the wonderful discussions, technical contributrions and long-lasting friendships formed in the RO-Crate community since its early inception [@OCarragain; @2019] at Workshop on Research Objects [(RO2018)](https://www.researchobject.org/ro2018/). Without you there would not have been any RO-Crate!
@@ -139,45 +139,45 @@ My work presented in this thesis has been undertaken during several research pro
 
 Where indicated, UKRI funding from UK Research and Innovation were granted under the UK government's *Horizon Europe funding guarantee*.
 
-Funding and acknowledgements for co-authored chapters
-=====================================================
+## Funding and acknowledgements for co-authored chapters
 
-Acknowledgements for *Evaluating FAIR Digital Object and Linked Data as distributed object systems* {#ch11:fdo}
----------------------------------------------------------------------------------------------------
 
-Setions [\[ch3:background\]](#ch3:background){reference-type="ref+page" reference="ch3:background"} and [\[ch3:evaluating-fdo-ld\]](#ch3:evaluating-fdo-ld){reference-type="ref+page" reference="ch3:evaluating-fdo-ld"} are adapted from an arXiv preprint submitted to PeerJ CS for peer review.
+### Acknowledgements for *Evaluating FAIR Digital Object and Linked Data as distributed object systems* {#ch11:fdo}
 
-### Published As {#published-as .unnumbered}
+[Chapter 2](../../../2023/phd/background/) and 
+[section 3.1](../../../2023/phd/evaluating-fdo) are adapted from an arXiv preprint submitted to PeerJ CS for peer review.
+
+#### Published As
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):\
 **Evaluating FAIR Digital Object and Linked Data as distributed object systems**.\
 *arXiv* 2306.07436 \[cs.DC\]\
 <https://doi.org/10.48550/arXiv.2306.07436>
 
-### Acknowledgements {#acknowledgements .unnumbered}
+#### Acknowledgements
 
 We would like to acknowledge the [FAIR Digital Object Forum](https://fairdo.org/) community and working groups, where SSR and CG are members.
 
-### License and modifications {#license-and-modifications .unnumbered}
+#### License and modifications
 
 -   **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
 
 -   **Modifications**: Minor LaTeX changes; references in s11 house style; citations merged and renumbered; funding and references moved to separate chapters. Background moved to separate chapter.
 
-### Funding {#funding .unnumbered}
+#### Funding
 
 This work was funded by the European Union programmes *Horizon 2020* under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and *Horizon Europe* under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT), HORIZON-CL4-2021-HUMAN-01-01 101070305 (ENEXA); and by UK Research and Innovation (UKRI) under the UK government's *Horizon Europe funding guarantee* grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
 
 Views and opinions expressed in this work are those of the authors only and do not necessarily reflect those of the funded projects, FAIR Digital Object Forum, European Union nor the European Commission.
 
-Acknowledgements for *Updating Linked Data practices for FAIR Digital Object principles* {#ch11:updating-ld}
-----------------------------------------------------------------------------------------
 
-Section [\[ch2:updating-linked-data-practices-for-fair-digital-object-principles\]](#ch2:updating-linked-data-practices-for-fair-digital-object-principles){reference-type="ref" reference="ch2:updating-linked-data-practices-for-fair-digital-object-principles"} is adapted from a published peer-reviewed conference abstract, presented as talk by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects[^3] (FDO2022) on 2022-08-26/--28 in Leiden, The Netherlands.
+### Acknowledgements for *Updating Linked Data practices for FAIR Digital Object principles* {#ch11:updating-ld}
+
+[Section 3.2](../updating-ld-for-fdo) is adapted from a published peer-reviewed conference abstract, presented as talk by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects ([FDO2022](https://www.fdo2022.org/)) on 2022-08-26/--28 in Leiden, The Netherlands.
 
 -   Slides: <https://doi.org/10.5281/zenodo.7256428>
 
-### Published As {#published-as-1 .unnumbered}
+#### Published As
 
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):\
 **Updating Linked Data practices for FAIR Digital Object principles**.\
@@ -185,17 +185,17 @@ Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Gobl
 *Research Ideas and Outcomes* **8**:e94501\
 <https://doi.org/10.3897/rio.8.e94501>
 
-### License and modifications {#license-and-modifications-1 .unnumbered}
+#### License and modifications
 
 -   **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
 
--   **Modifications**: Formatting as Markdown and LaTeX; figure caption formatting; reference in s11 house style[^4]; citations merged and renumbered; new introduction; acknowledgements and references moved to separate chapters.
+-   **Modifications**: Formatting as Markdown and LaTeX; figure caption formatting; reference in [s11 house style](../../../2021/house-rules/citation-style/); citations merged and renumbered; new introduction; acknowledgements and references moved to separate chapters.
 
-### Acknowledgements {#acknowledgements-1 .unnumbered}
+#### Acknowledgements
 
 We would like to acknowledge the [RO-Crate community](https://www.researchobject.org/ro-crate/community.html) and the [WorkflowHub Club](https://about.workflowhub.eu/project/acknowledgements/). Thanks to Rudolf Wittner for valuable comments.
 
-### Funding {#funding-1 .unnumbered}
+#### Funding
 
 European Commission Horizon 2020 (EOSC-Life [824087](https://cordis.europa.eu/project/id/824087)), Horizon Europe (BY-COVID [101046203](https://cordis.europa.eu/project/id/101046203), FAIR-IMPACT [101057344](https://cordis.europa.eu/project/id/101057344)).
 
@@ -203,12 +203,11 @@ Leyla Jael Castro is supported by a German Research Foundation DFG grant for NFD
 
 Daniel Garijo is supported by the Madrid Government (Comunidad de Madrid-Spain) under the Multiannual Agreement with Universidad Politécnica de Madrid in the line Support for R&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation)
 
-Acknowledgements for *Packaging research artefacts with RO-Crate* {#ch11:packagingrocrate}
------------------------------------------------------------------
+### Acknowledgements for *Packaging research artefacts with RO-Crate* {#ch11:packagingrocrate}
 
-Sections [\[ch5:packaging-research-artefacts-with-ro-crate\]](#ch5:packaging-research-artefacts-with-ro-crate){reference-type="ref+page" reference="ch5:packaging-research-artefacts-with-ro-crate"} and [\[ch5:formaldefinition\]](#ch5:formaldefinition){reference-type="ref+page" reference="ch5:formaldefinition"} are adapted from an article published in the journal *Data Science*.
+[Section 4.1](../ro-crate/) and [4.3](../ro-crate/formalizing/) are adapted from an article published in the journal *Data Science*.
 
-### Published As {#published-as-2 .unnumbered}
+#### Published As
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):\
 **Packaging research artefacts with RO-Crate**.\
@@ -217,13 +216,13 @@ Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Co
 
 An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.5146227) is archived at <https://doi.org/10.5281/zenodo.5146227>
 
-### License and modifications {#license-and-modifications-2 .unnumbered}
+#### License and modifications
 
 -   **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
 
 -   **Modifications**: Formatting as Markdown and LaTeX; figure caption formatting; reference in s11 house style; added identifiers, authors and years clarified where missing in citations; inline citation hyperlinks to open access version where available; citations merged and renumbered; acknowledgements and references moved to separate chapters.
 
-### Funding {#funding-2 .unnumbered}
+#### Funding
 
 This work has received funding from the European Commission's Horizon 2020 research and innovation programme for projects [BioExcel-2](https://cordis.europa.eu/project/id/823830) (H2020-INFRAEDI-2018-1 823830), [IBISBA 1.0](https://cordis.europa.eu/project/id/730976) (H2020-INFRAIA-2017-1-two-stage 730976), [PREP-IBISBA](https://cordis.europa.eu/project/id/871118) (H2020-INFRADEV-2019-2 871118), [EOSC-Life](https://cordis.europa.eu/project/id/824087) (H2020-INFRAEOSC-2018-2 824087), [SyntheSys+](https://cordis.europa.eu/project/id/823827) (H2020-INFRAIA-2018-1 823827). From the Horizon Europe Framework Programme this work has received funding for [BY-COVID](https://cordis.europa.eu/project/id/101046203) (HORIZON-INFRA-2021-EMERGENCY-01 101046203).
 
@@ -231,50 +230,14 @@ Björn Grüning is supported by DataPLANT [(NFDI 7/1 -- 42077441)](https://gepri
 
 Ana Trisovic is funded by the Alfred P. Sloan Foundation [(grant number P-2020-13988)](https://sloan.org/grant-detail/9555). Harvard Data Commons is supported by an award from Harvard University Information Technology (HUIT).
 
-### Contributions {#contributions .unnumbered}
 
-We would also like to acknowledge contributions from:
+### Acknowledgements for *Creating lightweight FAIR Digital Objects with RO-Crate* {#ch11:lightweight}
 
-Finn Bacall
-
-:   Software, Methodology
-
-Herbert Van de Sompel
-
-:   Writing -- review & editing
-
-Ignacio Eguinoa
-
-:   Software, Methodology
-
-Nick Juty
-
-:   Writing -- review & editing
-
-Oscar Corcho
-
-:   Writing -- review & editing
-
-Stuart Owen
-
-:   Writing -- review & editing
-
-Laura Rodríguez-Navas
-
-:   Software, Visualization, Writing -- review & editing
-
-Alan R. Williams
-
-:   Writing -- review & editing
-
-Acknowledgements for *Creating lightweight FAIR Digital Objects with RO-Crate* {#ch11:lightweight}
-------------------------------------------------------------------------------
-
-Section [\[ch4:lightweight-fdo\]](#ch4:lightweight-fdo){reference-type="ref+page" reference="ch4:lightweight-fdo"} is adapted from a published peer-reviewed conference abstract, presented as poster by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects [(FDO2022)](https://www.fdo2022.org/) on 022-08-26/--28 in Leiden, The Netherlands.
+[Section 4.2](../fdo-with-ro-crate/) is adapted from a published peer-reviewed conference abstract, presented as poster by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects [(FDO2022)](https://www.fdo2022.org/) on 022-08-26/--28 in Leiden, The Netherlands.
 
 -   Poster: <https://doi.org/10.5281/zenodo.7245315>
 
-### Published As {#published-as-3 .unnumbered}
+#### Published As
 
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):\
 **Creating lightweight FAIR Digital Objects with RO-Crate**.\
@@ -282,17 +245,17 @@ Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel G
 *Research Ideas and Outcomes* **8**:e93937\
 <https://doi.org/10.3897/rio.8.e93937>
 
-### License and modifications {#license-and-modifications-3 .unnumbered}
+#### License and modifications
 
 -   **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
 
 -   **Modifications**: Formatting as Markdown and LaTeX; figure caption formatting; references in s11 house style; citations merged and renumbered; acknowledgements and references moved to separate chapters.
 
-### Acknowledgements {#acknowledgements-2 .unnumbered}
+#### Acknowledgements
 
 We would like to acknowledge the [RO-Crate community](https://www.researchobject.org/ro-crate/community.html) and the [WorkflowHub Club](https://about.workflowhub.eu/project/acknowledgements/).
 
-### Funding {#funding-3 .unnumbered}
+#### Funding
 
 European Commission Horizon 2020 (BioExcel-2 [823830](https://cordis.europa.eu/project/id/823830), EOSC-Life [824087](https://cordis.europa.eu/project/id/824087)), Horizon Europe (BY-COVID [101046203](https://cordis.europa.eu/project/id/101046203), FAIR-IMPACT [101057344](https://cordis.europa.eu/project/id/101057344)).
 
@@ -302,48 +265,47 @@ Leyla Jael Castro is supported by a German Research Foundation DFG grant for NFD
 
 Frederik Coppens is supported by Research Foundation - Flanders (FWO) for ELIXIR Belgium (I002819N).
 
-Acknowledgements for *Making Canonical Workflow Building Blocks* {#ch11:canonical}
-----------------------------------------------------------------
 
-Section [\[ch6:making-canonical-workflow-building-blocks-interoperable-across-workflow-languages\]](#ch6:making-canonical-workflow-building-blocks-interoperable-across-workflow-languages){reference-type="ref+page" reference="ch6:making-canonical-workflow-building-blocks-interoperable-across-workflow-languages"} is adapted from journal article published in *Data Intelligence*.
+### Acknowledgements for *Making Canonical Workflow Building Blocks* {#ch11:canonical}
 
-### Published As {#published-as-4 .unnumbered}
+[Section 5.1](../canonical-workflow-building-blocks/) is adapted from journal article published in *Data Intelligence*.
+
+#### Published As
 
 Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):\
 **Making Canonical Workflow Building Blocks interoperable across workflow languages**.\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00135>
 
-::: {#acknowledgements-3}
-### Acknowledgements {#acknowledgements-3 .unnumbered}
-:::
+#### Acknowledgements
 
 This work has been done as part of the BioExcel CoE (<https://www.bioexcel.eu/>), a project funded by the European Union contracts [H2020-INFRAEDI-02-2018 823830](https://cordis.europa.eu/project/id/823830), [H2020-EINFRA-2015-1 675728](https://cordis.europa.eu/project/id/675728). Additional work is funded through EOSC-Life (<https://www.eosc-life.eu/>) contract [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087), and ELIXIR-CONVERGE (<https://elixir-europe.org/>) contract [H2020-INFRADEV-2019-2 871075](https://cordis.europa.eu/project/id/871075).
 
 The authors would also like to acknowledge contributions from: Felix Amaladoss, Cibin Sadasivan Baby, Finn Bacall, Rosa M. Badia, Sarah Butcher, Gerard Capes, Michael R. Crusoe, Alberto Eusebi, Carole Goble, Josep Lluís Gelpí, Modesto Orozco, Geoff Williams, Felix Amaladoss
 
-Acknowledgements for *The Specimen Data Refinery* {#ch11:refinery}
--------------------------------------------------
 
-Section [\[ch8:the-specimen-data-refinery\]](#ch8:the-specimen-data-refinery){reference-type="ref+page" reference="ch8:the-specimen-data-refinery"} is adapted from a journal article published in *Data Intelligence*.
+### Acknowledgements for *The Specimen Data Refinery* {#ch11:refinery}
 
-### Published As {#published-as-5 .unnumbered}
+[Section 5.2](../specimen-data-refinery/) is adapted from a journal article published in *Data Intelligence*.
+
+#### Published As
 
 Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):\
 **The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections.**\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00134>
 
-### Acknowledgements {#acknowledgements-4 .unnumbered}
+#### Acknowledgements
 
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement numbers 823827 (SYNTHESYS Plus), 871043 (DiSSCo Prepare), 823830 (BioExcel-2), 824087 (EOSC-Life).
 
-Acknowledgements for *Incrementally building FAIR Digital Objects* {#ch11:incrementally-fdo}
-------------------------------------------------------------------
 
-Section [\[ch7:incrementally-building-fair-digital-objects-with-specimen-data-refinery-workflows\]](#ch7:incrementally-building-fair-digital-objects-with-specimen-data-refinery-workflows){reference-type="ref+page" reference="ch7:incrementally-building-fair-digital-objects-with-specimen-data-refinery-workflows"} is adapted from an abstract presented as poster by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects[^5] (FDO2022) on 2022-08-26/--28 in Leiden, The Netherlands.
+### Acknowledgements for *Incrementally building FAIR Digital Objects* {#ch11:incrementally-fdo}
 
-### Published As {#published-as-6 .unnumbered}
+
+[Section 5.3](../incrementally-building-fdos/) is adapted from an abstract presented as poster by Stian Soiland-Reyes at First International Conference on FAIR Digital Objects ([FDO2022](https://www.fdo2022.org/)) on 2022-08-26/--28 in Leiden, The Netherlands.
+
+#### Published As
 
 Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):\
 **Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**.\
@@ -351,19 +313,15 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore 
 *Research Ideas and Outcomes* **8**:e94349\
 <https://doi.org/10.3897/rio.8.e94349>
 
-### Acknowledgements {#acknowledgements-5 .unnumbered}
+#### Acknowledgements
 
 We acknowledge the [SYNTHESYS+](https://www.synthesys.info/) and [DiSSCO](https://www.dissco.eu/) project members who have been invaluable in early evaluation and feedback on the development of SDR.
 
 
-### Funding {#funding-2 .unnumbered}
+#### Funding
 
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement numbers [823827](https://doi.org/10.3030/823827) (SYNTHESYS Plus), [871043](https://doi.org/10.3030/871043) (DiSSCo Prepare), [823830](https://doi.org/10.3030/823830) (BioExcel-2), [824087](https://doi.org/10.3030/824087) (EOSC-Life).
 
 
 
-[^3]: <https://www.fdo2022.org/>
 
-[^4]: <https://s11.no/2021/house-rules/citation-style/>
-
-[^5]: <https://www.fdo2022.org/>

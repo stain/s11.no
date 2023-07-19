@@ -69,8 +69,8 @@ Contributor Roles Taxonomy ([CASRAI CrEDiT](https://casrai.org/credit/). See als
 appendix A](../acknowledgements/) for acknowledgements beyond
 authorship covered below.
 
-For all chapters except section
-[5.2](../specimen-data-refinery/), I am the main author of the
+For all chapters except 
+[section 5.2](../specimen-data-refinery/), I am the main author of the
 corresponding manuscripts and have contributed to all aspects of the
 research. See details below:
 
@@ -78,9 +78,8 @@ research. See details below:
 ### Contributions for *Evaluating FAIR Digital Object as a distributed object system* {#fdo}
 
 
-Chapter
-[2](../../../2023/phd/background/) and section
-[3.1](../../../2023/phd/evaluating-fdo) were co-authored by:
+[Chapter 2](../../../2023/phd/background/) and 
+[section 3.1](../../../2023/phd/evaluating-fdo) were co-authored by:
 
 Stian Soiland-Reyes
 :   Conceptualization, Data Curation, Formal Analysis, Funding
@@ -99,7 +98,7 @@ contributed to all aspects of the research.
 
 ### Contributions for *Updating Linked Data practices for FAIR Digital Object principles* {#updating-ld}
 
-Section [3.2](../updating-ld-for-fdo) was co-authored by:
+[Section 3.2](../updating-ld-for-fdo) was co-authored by:
 
 
 Stian Soiland-Reyes
@@ -130,7 +129,7 @@ Netherlands.
 
 ### Contributions for *Packaging research artefacts with RO-Crate* {#packagingrocrate}
 
-Section [4.1](../ro-crate/) was co-authored by:
+[Section 4.1](../ro-crate/) was co-authored by:
 
 Stian Soiland-Reyes
 : Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review \& editing
@@ -192,7 +191,7 @@ and edited by me.
 
 ### Contributions for *Creating lightweight FAIR Digital Objects with RO-Crate* {#lightweight}
 
-Section [4.2](../fdo-with-ro-crate/) was co-authored by:
+[Section 4.2](../fdo-with-ro-crate/) was co-authored by:
 
 Stian Soiland-Reyes
 : Conceptualization, Funding acquisition, Project administration, Software, Writing -- original draft, Writing -- review & editing
@@ -221,16 +220,42 @@ Paul Groth
 I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
 
+The co-authors would also like to acknowledge contributions from:
+
+Finn Bacall
+:   Software, Methodology
+
+Herbert Van de Sompel
+:   Writing -- review & editing
+
+Ignacio Eguinoa
+:   Software, Methodology
+
+Nick Juty
+:   Writing -- review & editing
+
+Oscar Corcho
+:   Writing -- review & editing
+
+Stuart Owen
+:   Writing -- review & editing
+
+Laura Rodríguez-Navas
+:   Software, Visualization, Writing -- review & editing
+
+Alan R. Williams
+:   Writing -- review & editing
+
 ### Contributions for *Formalizing RO-Crate in First Order Logic* {#formalizing}
 
-Section [4.3](../ro-crate/formalizing/) was published as an appendix in [Packaging research artefacts with RO-Crate](../ro-crate/).
+[Section 4.3](../ro-crate/formalizing/) was published as an appendix in [Packaging research artefacts with RO-Crate](../ro-crate/).
 
 I am the sole author of the corresponding appendix and have contributed to all aspects of the research.
 
 
 ### Contributions for *Making Canonical Workflow Building Blocks interoperable across workflow languages* {#canonical}
 
-Section [5.1](../canonical-workflow-building-blocks/) was co-authored by:
+[Section 5.1](../canonical-workflow-building-blocks/) was co-authored by:
 
 Stian Soiland-Reyes
 : Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Supervision, Writing -- original draft, Writing -- review & editing 
@@ -642,7 +667,7 @@ _Brookhaven National Laboratory_, 2023-01-23.
 Justin Clark-Casey, Stian Soiland-Reyes (2022):  
 [**Making EOSC Research Objects FAIR with RO-Crate**: A common metadata overlay for EOSC repositories](https://doi.org/10.5281/zenodo.7323480).  
 _[EOSC Symposium 2022](https://events.eoscfuture.eu/symposium2022/programme)_  
-(presentation by Justin Clark-Casey)
+(presentation by Justin Clark-Casey)  
 <https://doi.org/10.5281/zenodo.7323480>
 
 Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
