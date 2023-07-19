@@ -402,7 +402,8 @@ credit**.\
 *Learned Publishing* **28**(2) pp. 151--155.\
 <https://doi.org/10.1087/20150211>
 
-Tim Bray (2017): **The JavaScript Object Notation (JSON) Data Interchange Format**.\
+Tim Bray (2017): \
+**The JavaScript Object Notation (JSON) Data Interchange Format**.\
 STD 90, RFC 8259\
 *RFC Editor*, Internet Engineering Task Force.\
 <https://doi.org/10.17487/rfc8259>
@@ -961,8 +962,8 @@ Orchard (2012):\
 Quentin Groom, Anton Güntsch, Pieter Huybrechts, Nicole Kearney, Siobhan
 Leachman, Nicky Nicolson, Roderic D M Page, David P Shorthouse, Anne E
 Thessen, Elspeth Haston (2020):\
-**People are essential to linking biodiversity data** *Database*
-**2020**\
+**People are essential to linking biodiversity data**.\
+*Database* **2020**\
 <https://doi.org/10.1093/database/baaa072>
 
 Robert L Grossman, Allison Heath, Mark Murphy, Maria Patterson, Walt
@@ -1482,8 +1483,8 @@ Robert Kahn, Robert Wilensky (2006):\
 <https://doi.org/10.1007/s00799-005-0128-x>
 
 Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
-**The ambivalent ontology of digital artifacts**. *MIS Quarterly*
-**37**(2) pp. 357--370.\
+**The ambivalent ontology of digital artifacts**.\
+*MIS Quarterly* **37**(2) pp. 357--370.\
 ISSN 0276-7783\
 <https://www.jstor.org/stable/43825913>\
 <https://misq.umn.edu/the-ambivalent-ontology-of-digital-artifacts.html>
@@ -1876,9 +1877,8 @@ _OSF_
 
 Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael
 D. Windham (2020):\
-**Using computer vision on herbarium specimen images to discriminate
-among closely related horsetails (Equisetum)**. *Applications in Plant
-Sciences* **8**(6):e11372\
+**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
+*Applications in PlantSciences* **8**(6):e11372\
 <https://doi.org/10.1002/aps3.11372>
 
 RDF Working Group (2014):\
@@ -2284,8 +2284,8 @@ Manu Sporny, Ivan Herman, Ben Adida, Mark Birbeck (2015):\
 <https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/>
 
 Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler,
-Pierre-Antoine Champin, Niklas Lindström (2020): **JSON-LD 1.1: A
-JSON-based Serialization for Linked Data**.\
+Pierre-Antoine Champin, Niklas Lindström (2020):\
+**JSON-LD 1.1: A JSON-based Serialization for Linked Data**.\
 *W3C Recommendation* 16 July 2020\
 <https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
 
@@ -2440,7 +2440,7 @@ Heritage* **4**\
 <https://doi.org/10.55630/dipp.2014.4.11>
 
 Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
-**Computer vision applied to herbarium specimens of German trees: testing the future utility of the millions of herbarium specimen images for automated identification**\
+**Computer vision applied to herbarium specimens of German trees**: testing the future utility of the millions of herbarium specimen images for automated identification.\
 . *BMC Evolutionary Biology* **16**(1)\
 <https://doi.org/10.1186/s12862-016-0827-5>
 
