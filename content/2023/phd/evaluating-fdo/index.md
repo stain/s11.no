@@ -785,6 +785,7 @@ David Browning, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo Albertoni, 
 \[Capadisli 2017\]
 Sarven Capadisli, Amy Guy, eds. (2017):\
 **Linked Data Notifications**.\
+_W3C Recommendation_\
 <https://www.w3.org/TR/2017/REC-ldn-20170502/>
 
 [Carriero 2020]: https://doi.org/10.3233/ssw200033 "The landscape of ontology reuse approaches"
