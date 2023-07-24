@@ -149,12 +149,14 @@ workaround](https://sourceforge.net/p/lsid/mailman/message/1002397/).
 If LSIDs were linked to at all, then most common would be
 application-specific `http://` links which embeds the LSID somewhere in
 its path or parameters, e.g.
-~~<http://ipni.org/urn:lsid:ipni.org:names:986604-1:1.1.2.1.1.2>`` [[now <http://ipni.org/urn:lsid:ipni.org:names:986604-1>]]
+~~<http://ipni.org/urn:lsid:ipni.org:names:986604-1:1.1.2.1.1.2>~~ [in 2023 <http://ipni.org/urn:lsid:ipni.org:names:986604-1>]
 which uses HTTP [303 See Other](https://en.wikipedia.org/wiki/HTTP_303)
 redirects to a HTML representation on ~~<http://www.ipni.org/ipni/plantNameByVersion.do?id=986604-1&version=1.1.2.1.1.2&output\_format=lsid-metadata&show\_history=true>~~
-[[now <https://ipni.org/n/986604-1>]] [[alternative archived 2011-06-22](https://web.archive.org/web/20110622063128/http://ipni.org/ipni/plantNameByVersion.do;jsessionid=002B3F489727A748FE733A1D420213CB?id=46732-1&version=1.1.2.2.1.1&output_format=lsid-metadata&show_history=true)] 
+[in 2023 <https://ipni.org/n/986604-1>] 
 (and thus is a [Cool
 URI](https://www.w3.org/TR/cooluris/#r303uri))
+
+[see also [urn:lsid:ipni.org:names:46732-1:1.1.2.2.1.1, archived 2011-06-22](https://web.archive.org/web/20110622063128/http://ipni.org/ipni/plantNameByVersion.do;jsessionid=002B3F489727A748FE733A1D420213CB?id=46732-1&version=1.1.2.2.1.1&output_format=lsid-metadata&show_history=true)]
 
 `urn:lsid` was never [registered with
 IANA](http://www.iana.org/assignments/urn-namespaces/)
@@ -373,7 +375,7 @@ So I can use <http://purl.uniprot.org/uniprot/P99999> [[archived 2017-09-25](htt
 to refer to a protein, and even if you have no special code to resolve
 this, you can just paste the link into your browser and read about
 *Cytochrome c* protein. But if you [retrieve that Uniprot URI as Linked
-Data](http://rdf.greggkellogg.net/distiller?in_fmt=rdfxml&minimal=true&uri=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999&command=serialize&format=rdfxml&output_format=turtle&url=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999) [[not archived]],
+Data](http://rdf.greggkellogg.net/distiller?in_fmt=rdfxml&minimal=true&uri=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999&command=serialize&format=rdfxml&output_format=turtle&url=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999),
 then you can [programmatically
 access](https://www.uniprot.org/help/programmatic_access) [[archived 2017-08-06](https://web.archive.org/web/20170806092501/http://www.uniprot.org/help/programmatic_access)]
 the data, or retrieve just the [FASTA
