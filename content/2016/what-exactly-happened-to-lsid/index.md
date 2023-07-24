@@ -24,19 +24,10 @@ summary: |
 ---
 
 
-# What exactly happened to LSID? 
-
 > What exactly happened to LSID? It was a technically sound approach it
 > would seem and one whose failure we would do well to learn more from.
 
-Authors:
-
--   Stian Soiland-Reyes, [eScience Lab, University of Manchester](http://www.esciencelab.org.uk/)\
-    <https://orcid.org/0000-0001-9842-9718>
--   Alan R Williams, [eScience Lab, University of Manchester](http://www.esciencelab.org.uk/)\
-    <https://orcid.org/0000-0003-3156-2105>
-
-**Cite as:** <https://doi.org/10.5281/zenodo.46804>
+## Cite as
 
 Stian Soiland-Reyes, Alan R Williams (2016):\
 **What exactly happened to LSID?**\
@@ -47,6 +38,12 @@ Stian Soiland-Reyes, Alan R Williams (2016):\
 ------------------------------------------------------------------------
 
 # What exactly happened to LSID?
+
+-   Stian Soiland-Reyes, [eScience Lab, University of Manchester](http://www.esciencelab.org.uk/)\
+    <https://orcid.org/0000-0001-9842-9718>
+-   Alan R Williams, [eScience Lab, University of Manchester](http://www.esciencelab.org.uk/)\
+    <https://orcid.org/0000-0003-3156-2105>
+
 
 **Life Science Identifiers**
 ([LSID](https://en.wikipedia.org/wiki/LSID))
@@ -362,8 +359,8 @@ REST services are now ubiquitous on the web,  and with
 [JSON](http://www.json.org/)
 taking over as a much simpler data format than XML, REST now power not
 just most [bioinformatics web
-services](https://esciencelab.org.uk/products/biocatalogue/) [[archived 2020-08-06](https://web.archive.org/web/20200806012139/https://www.biocatalogue.org//)
-but also today's modern mobile apps and [https://en.wikipedia.org/wiki/Web_application),
+services](https://esciencelab.org.uk/products/biocatalogue/) [[archived 2020-08-06](https://web.archive.org/web/20200806012139/https://www.biocatalogue.org/)]
+but also today's modern mobile apps and [web applications](https://en.wikipedia.org/wiki/Web_application),
 like Facebook, Twitter and GMail.
 
 So with REST the HTTP Resources and their URIs become first citizens
@@ -376,19 +373,18 @@ So I can use <http://purl.uniprot.org/uniprot/P99999> [[archived 2017-09-25](htt
 to refer to a protein, and even if you have no special code to resolve
 this, you can just paste the link into your browser and read about
 *Cytochrome c* protein. But if you [retrieve that Uniprot URI as Linked
-Data](https://web.archive.org/web/20200805021230/http://rdf.greggkellogg.net/distiller?in_fmt=rdfxml&minimal=true&uri=http://purl.uniprot.org/uniprot/P99999),
+Data](http://rdf.greggkellogg.net/distiller?in_fmt=rdfxml&minimal=true&uri=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999&command=serialize&format=rdfxml&output_format=turtle&url=http:%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999) [[not archived]],
 then you can [programmatically
-access](https://web.archive.org/web/20200805021230/http://www.uniprot.org/help/programmatic_access)
+access](https://www.uniprot.org/help/programmatic_access) [[archived 2017-08-06](https://web.archive.org/web/20170806092501/http://www.uniprot.org/help/programmatic_access)]
 the data, or retrieve just the [FASTA
-sequence](https://web.archive.org/web/20200805021230/http://www.uniprot.org/uniprot/P12345.fasta). 
+sequence](https://www.uniprot.org/uniprot/P12345.fasta) [[archived 2019-08-28](https://web.archive.org/web/20190828213820/https://www.uniprot.org/uniprot/P12345.fasta]). 
 Even as a uniprot.org assigned identifier, the URI works well with
 third-party APIs, e.g. with with [Open
-PHACTS](https://web.archive.org/web/20200805021230/https://www.openphacts.org/)
+PHACTS](https://esciencelab.org.uk/projects/openphacts/) [[archived 2017-08-14](https://web.archive.org/web/20170814105641/http://www.openphacts.org/)]
 to retrieve the [related
 pathways](https://web.archive.org/web/20200805021230/https://beta.openphacts.org/2.0/pathways/byTarget?uri=http%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP99999&app_id=161aeb7d&app_key=333c09ae195d777b68a117bb42f29b1c).
 
-As a plain old URI,
-[http://purl.uniprot.org/uniprot/P99999](https://web.archive.org/web/20200805021230/http://purl.uniprot.org/uniprot/P99999)
+As a plain old URI, <http://purl.uniprot.org/uniprot/P99999>
 can be added to web pages, publications and other repositories without
 any further explanation.
 
@@ -397,28 +393,28 @@ Centralization
 
 Since last decade we have moved back towards centralised architectures.
 While our architectures consists of distributed REST services (e.g.
-[ElasticSearch](https://web.archive.org/web/20200805021230/https://www.elastic.co/products/elasticsearch)
+[ElasticSearch](https://www.elastic.co/elasticsearch/) [[archived 2017-08-05](https://web.archive.org/web/20170805070835/https://www.elastic.co/products/elasticsearch)]
 and [Apache
-CouchDB](https://web.archive.org/web/20200805021230/http://couchdb.apache.org/))
+CouchDB](https://couchdb.apache.org/) [[archived 2017-08-06](https://web.archive.org/web/20170806095247/http://couchdb.apache.org/)])
 and *vertically scalable* platforms (e.g. [Apache
-Hadoop](https://web.archive.org/web/20200805021230/http://hadoop.apache.org/),
-[Docker](https://web.archive.org/web/20200805021230/https://www.docker.com/)
+Hadoop](https://hadoop.apache.org/) [[archived 2017-08-04](https://web.archive.org/web/20170804160424/http://hadoop.apache.org/)],
+[Docker](https://www.docker.com/) [[archived 2017-08-05](https://web.archive.org/web/20170805050552/https://www.docker.com/)]
 microservices), but now it is running on centralised *cloud* *services*
 owned by a handful of companies like [Amazon
-AWS](https://web.archive.org/web/20200805021230/https://aws.amazon.com/),
-[DigitalOcean](https://web.archive.org/web/20200805021230/https://www.digitalocean.com/)
+AWS](https://aws.amazon.com/) [[archived 2017-08-05](https://web.archive.org/web/20170805023840/https://aws.amazon.com/)],
+[DigitalOcean](https://www.digitalocean.com/) [[archived 2017-08-04](https://web.archive.org/web/20170804024304/https://www.digitalocean.com/)]
 and [Microsoft
-Azure](https://web.archive.org/web/20200805021230/https://azure.microsoft.com/).
+Azure](https://azure.microsoft.com/) [[archived 2017-08-04](https://web.archive.org/web/20170804201738/https://azure.microsoft.com/en-us/).
 
 Large data integration efforts like
-[Uniprot](https://web.archive.org/web/20200805021230/http://www.uniprot.org/)
+[Uniprot](https://www.uniprot.org/) [[archived 2017-08-04](https://web.archive.org/web/20170804181944/http://www.uniprot.org/)]
 and
-[ChEMBL](https://web.archive.org/web/20200805021230/https://www.ebi.ac.uk/chembl/)
+[ChEMBL](https://www.ebi.ac.uk/chembl/) [[archived 2017-07-10](https://web.archive.org/web/20170710162120/https://www.ebi.ac.uk/chembl/)]
 have also effectively centralised ID allocations in bioinformatics. Yet
 after the advent of [next-gen
-sequencing](https://web.archive.org/web/20200805021230/http://www.illumina.com/technology/next-generation-sequencing.html)
+sequencing](https://www.illumina.com/science/technology/next-generation-sequencing.html) [[archived 2017-07-12](https://web.archive.org/web/20170712122515/https://www.illumina.com/science/technology/next-generation-sequencing.html)]
 and [robotic synthesis and
-analysis](https://web.archive.org/web/20200805021230/http://synbiochem.co.uk/facilities/)
+analysis](https://synbiochem.co.uk/facilities/) [[archived 2016-10-29](https://web.archive.org/web/20161029101943/http://synbiochem.co.uk/facilities/)]
 we are also producing more data than ever before.
 
 Difficult to integrate
