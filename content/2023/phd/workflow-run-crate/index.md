@@ -61,6 +61,4 @@ Recording the provenance of scientific computation results is fundamental to sup
 
 _This manuscript is under development and will be published as a preprint once submitted._
 
-<https://docs.google.com/document/d/1rq22Vu_lmmRLkmnZivsKVdRidq4aoePs-l20gHFYpu0/edit>
-
 
