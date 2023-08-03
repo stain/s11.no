@@ -10,4 +10,8 @@ summary: >
 
 (This thesis chapter will summarize this PhD study and give further considerations)
 
-(deze samenvatting zal op de een of andere manier zelfs in het Nederlands herhaald worden.)
+
+## References
+
+See chapter [references](../references/).
+

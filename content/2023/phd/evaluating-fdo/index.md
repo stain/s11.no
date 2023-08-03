@@ -1699,7 +1699,7 @@ Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan Sequeda, Nig
 \[Tupelo-Schneck 2022\]
 Robert Tupelo-Schneck, Larry Lannom (2022):\
 **Brief Introduction to Cordra & DOIP**.\
-\emph{RDA FAIR DO Fabric} \\
+_RDA FAIR DO Fabric_ \\
 <https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf>
 
 [Turcoane 2014]: https://doi.org/10.55630/dipp.2014.4.11 "Linked data, JSON-LD and the semantics of cultural and scientific heritage"

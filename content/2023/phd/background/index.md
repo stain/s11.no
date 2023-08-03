@@ -134,7 +134,7 @@ A valid concern is that the Semantic Web research community has still not fully 
 Linked Data provides technologies that have evolved over time to satisfy its primary purpose of data interoperability. The needs to embrace the Web and developer experience have been central lessons learned. In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
 
 
-_This chapter is an extract from the preprint [Evaluating FAIR Digital Object and Linked Data as distributed object systems](../evaluating-fdo/), authored by Stian Soiland-Reyes, Carole Goble, Paul Groth._
+_This chapter is an extract from the preprint [Evaluating FAIR Digital Object and Linked Data as distributed object systems](../evaluating-fdo/), authored by Stian Soiland-Reyes, Carole Goble, Paul Groth. Figures added here are not part of the preprint._
 
 ## References
 
