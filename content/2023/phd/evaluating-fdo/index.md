@@ -274,8 +274,8 @@ From our evaluation, we can observe:
 
 _**Table 3**: Checking FDO guidelines [[Bonino 2019]] against its current implementations as DOIP [[DONA 2018]] and Linked Data Platform (LDP) [[Bonino 2022]], with suggestions for required additions._
 
-| **FDO Guideline**    | DOIP 2.0    | FDO suggestions    | Linked Data Platform    | LDP suggestion    |
-| :-------- | :-------- | :-------- | :-------- | :-------- |
+| **FDO Guideline** | DOIP 2.0 | FDO suggestions | Linked Data Platform | LDP suggestion |
+| :---------------- | :------- | :-------------- | :------------------- | :------------- |
 | G1: *invest for many decades*    | Handle system stable for 20 years, DOIP 2.0 since 2017.    | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced    | HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs mostly replaced by `https://`.    | Keep flexibility of RDF serialisation formats which may change more frequently    |
 | G2: *trustworthiness*    | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.    | Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.    | JSON-LD used by half of all websites [[W3Tech 2023]], however previous bad experiences with Semantic Web may deter adopters    | Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.    |
 | G3: *follows FAIR principles*    | See [Table 5](#tbl:fair-data-maturity-model)    | Ensure all FAIR principles are covered, build complete examples.    | Touched briefly, see [Table 5](#tbl:fair-data-maturity-model)    | Add explicit expression to show each FAIR principle fulfilled.    |
@@ -324,8 +324,8 @@ Based on the analysis in [Table 4](#tbl:fdo-web-middleware), we make the followi
 
 <div id="tbl:fdo-web-middleware">
 
-| Quality    | FDO w/ DOIP    | Web w/ Linked Data    |
-| :--------    | :--------    | :--------    |
+| Quality | FDO w/ DOIP | Web w/ Linked Data |
+| :------ | :---------- | :----------------- |
 | **Openness**: *framework enable extension of applications*    | FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like [Datacite](https://datacite.org/), [B2Handle](https://eudat.eu/services/userdoc/b2handle).    | The Web is inherently open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.    |
 | **Scalability**: *application should be effective at many different scales*    | No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)    | Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.    |
 | **Performance**: *efficient and predictable execution*    | DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second. DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by `requestId`). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.    | HTTP traffic is about 10% of global Internet traffic, excluding video and social networks [[Sandvine 2022]]. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams [[Belshe 2015]] but still has TCP+TLS startup costs. For reduced latency, HTTP/3 [[Bishop 2022]] use QUIC [[Iyengar 2021]] rather than TCP, already adapted heavily (30% of EMEA traffic) of which Instagram & Facebook video is the majority of traffic [[Joras 2020]].    |
@@ -377,8 +377,8 @@ From this evaluation we observe:
 _**Table 5**: Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020],  [Bahim 2020]] (first 2 columns) against the FDO guidelines [[Bonino 2019]], FDO implemented with the protocol DOIPv2 [[DONA 2018]], Linked Data Platform (LDP) [[Bonino 2022]] and examples from Linked Data practices in general.\
 (— indicates *Unspecified*, may be possible with additional conventions)_
 
-| FAIR ID    | Indicator    | FDO guidelines    | FDO/DOIP    | FDO/LDP    | Linked Data examples    |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| FAIR ID    | Indicator | FDO guidelines | FDO/DOIP | FDO/LDP | Linked Data examples |
+| :--------- | :-------- | :------------- | :------- | :------ | :------------------- |
 | RDA-F1-01M    | Metadata is identified by a persistent identifier    | FDOF4    | Optional *Metadata FDO* w/separate PID    | Content-negotiation to URL, not required to be PID    | Metadata typically don’t have own PID    |
 | RDA-F1-01D    | Data is identified by a persistent identifier    | FDOF1    | PIDs required (FDOF1). Handle, DOI.    | FDOF-IR (Identifier Record). PID can be any URI    | “Cool” URIs [[Berners-Lee 1998]], PURL services incl. `purl.org`, `w3id.org`    |
 | RDA-F1-02M    | Metadata is identified by a globally unique identifier    | FDOR4 FDOF8    | Optional *Metadata FDO*, unspecified how to indicate    | Content-negotiation to URL    | Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting.    |
@@ -442,8 +442,8 @@ Likewise, search and indexing is important FAIR aspect for Findability, but is p
 
 _**Table 6**: Assessing EOSC Interoperability Framework [[Corcho 2021], [sec 3.6](https://op.europa.eu/o/opportal-service/download-handler?identifier=d787ea54-6a87-11eb-aeb5-01aa75ed71a1&format=pdf#page=29)] against the FDO guidelines [[Bonino 2019]] and Linked Data practices._
 
-| Layer    | Recommendation    | FDO    | Linked Data    |
-| :---- | :---- | :---- | :---- |
+| Layer | Recommendation | FDO | Linked Data |
+| :---- | :------------- | :-- | :---------- |
 | Technical    | Open Specification    | FDO specifications are semi-open, process gradually more transparent    | Open and transparent standard processes through W3C & IETF    |
 | Technical    | Common security & privacy framework    | Unspecified    | TLS for encryption, multiple approaches for single-sign-on (e.g. ORCID, Life Science Login). Privacy largely unspecified.    |
 | Technical    | Easy SLAs for service providers    | Unspecified    | None    |
