@@ -59,6 +59,6 @@ Recording the provenance of scientific computation results is fundamental to sup
 
 ## (Work in progress)
 
-_This manuscript is under development and will be published as a preprint once submitted._
+_This manuscript is under development by the [Workflow Run Crate working group](https://www.researchobject.org/workflow-run-crate/) and will be published as a preprint once submitted._
 
 
