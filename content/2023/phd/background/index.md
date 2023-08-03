@@ -10,11 +10,11 @@ summary: >
 
 In the following chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.
 
-### FAIR Digital Object {#sec:fdo}
+## FAIR Digital Object {#sec:fdo}
 
 The concept of **FAIR Digital Objects** [[Schultes 2019]] has been introduced as way to expose research data as active objects that conform to the FAIR principles [[Wilkinson 2016]]. This builds on the *Digital Object* (DO) concept [[Kahn 2006]], first introduced by [[Kahn 1995]] as a system of *repositories* containing *digital objects* identified by *handles* and described by *metadata* which may have references to other handles. DO was the inspiration for the [ITU-T X.1255] framework which introduced an abstract *Digital Entity Interface Protocol* for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) [[Reilly 2009]].
 
-In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persistent identifier* (PID) such as a DOI, resolve to a *PID Record* that gives the object a *type* along with a mechanism to retrieve its *bit sequences*, *metadata* and references to further programmatic *operations* (figure 1). The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing [[Wittenburg 2019]].
+In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persistent identifier* (PID) such as a DOI, resolve to a *PID Record* that gives the object a *type* along with a mechanism to retrieve its *bit sequences*, *metadata* and references to further programmatic *operations* ([Figure 1](#fig:fdo)). The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing [[Wittenburg 2019]].
 
 {{< figure src="fdo.svg" link="fdo.svg" id="fig:fdo" 
   width="100%" title="Idealised overview of a FAIR Digital Object"
@@ -22,7 +22,7 @@ In brief, the structure of a FAIR Digital Object (FDO) is to, given a *persisten
 
 Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [[Corcho 2021]], in particular for deploying active and interoperable FAIR resources that are *machine actionable*. Development of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [[Bonino 2019](https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx)]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see [*Next steps for FDO*](#sec:next-step-fdo)).
 
-#### FDO approaches {#sec:fdo-approaches}
+### FDO approaches {#sec:fdo-approaches}
 
 FDO is an evolving concept. A set of FDO Demonstrators [[Wittenburg 2022]] highlights how current adapters are approaching implementations of FDO from different angles:
 
@@ -34,7 +34,7 @@ FDO is an evolving concept. A set of FDO Demonstrators [[Wittenburg 2022]] highl
 
 From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we will cover in a subsequent [section](#sec:ld).
 
-#### Next steps for FDO {#sec:next-step-fdo}
+### Next steps for FDO {#sec:next-step-fdo}
 
 The [FAIR Digital Object Forum](https://fairdo.org/) working groups have prepared detailed requirement documents [[FDO 2022]] setting out the path for realising FDOs, named *FDO Recommendations*. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects [[Lannom 2022b]], we provide a brief summary of each:
 
@@ -64,24 +64,24 @@ The **Machine actionability** [[Weiland 2022b]] sets out to define what is meant
 
 It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations [[Wittenburg 2022]] are thus not fully consolidated in choices such as protocols, type systems and serialisations – this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem.
 
-### From the Semantic Web to Linked Data {#sec:ld}
+## From the Semantic Web to Linked Data {#sec:ld}
 
 In order to describe *Linked Data* as it is used today, we’ll start with an (opinionated) description of the evolution of its foundation, the *Semantic Web*.
 
-#### A brief history of the Semantic Web {#sec:semweb}
+### A brief history of the Semantic Web {#sec:semweb}
 
 The **Semantic Web** was developed as a vision by Tim Berners-Lee [[Berners-Lee 1999]], at a time that the Web had already become widely established for information exchange, being a global set of hypermedia documents which are cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardised by [W3C](https://www.w3.org/standards/), [Ecma](https://www.ecma-international.org/), [IETF](https://www.ietf.org/standards/) and later [WHATWG](https://whatwg.org/). The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding *meaning* (or semantics) to not just the link relations, but also to the *resources* that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.
 
 Through W3C, the Semantic Web was realised with the Resource Description Framework (RDF) [[Schreiber 2014]] that used *triples* of subject-predicate-object statements, with its initial serialisation format [[Lassila 1999]] being RDF/XML (XML was at the time seen as a natural data-focused evolution from the document-centric SGML and HTML).
 
-While triple-based knowledge representations were not new [[Stanczyk 1987]], the main innovation of RDF was the use of global identifiers in the form of URIs[^2] as the primary identifier of the *subject* (what the statement is about), *predicate* (relation/attribute of the subject) and *object* (what is pointed to -- see [Figure 3](#triples)). By using URIs not just for documents[^3], the Semantic Web builds a self-described system of types and properties, where the meaning of a relation can be resolved by following its hyperlink to the definition within a *vocabulary*. By applying these principles as well to any kind of resource that could be described at a URL, this then forms a global distributed Semantic Web.
+While triple-based knowledge representations were not new [[Stanczyk 1987]], the main innovation of RDF was the use of global identifiers in the form of URIs[^2] as the primary identifier of the *subject* (what the statement is about), *predicate* (relation/attribute of the subject) and *object* (what is pointed to -- see [Figure 2](#fig:jsonld)). By using URIs not just for documents[^3], the Semantic Web builds a self-described system of types and properties, where the meaning of a relation can be resolved by following its hyperlink to the definition within a *vocabulary*. By applying these principles as well to any kind of resource that could be described at a URL, this then forms a global distributed Semantic Web.
 
 {{< figure src="jsonld.svg" link="jsonld.svg" id="fig:jsonld" 
   width="100%" title="Example of linked RDF resources"
-  caption="Each <em>resource</em> in an RDF graph has an identifier, here shown as absolute URIs, a type and a series of properties. A property value can either be a <em>literal</em> (e.g. <code>\"Josiah Carberry\"</code>) or another resource (e.g. <code>https://ror.org/03f0f6041</code>). A graph is formed by such cross-references across resources.  In the idealised Semantic Web, every URI would resolve to a description of its resource in RDF. In practice there can be misalignments of identifiers, vocabularies, resolution mechanisms, or simply lack of RDF adoptation. <p>Therefore any RDF graph can describe any Web resource identified by its URI, and these descriptions, using an <em>open world assumption</em> [<a href='https://www.cs.man.ac.uk/~drummond/presentations/OWA.pdf'>Drummond 2006</a>], can be merged with other graphs describing the same resource. For brevity and comparison from later chapters this figure uses the newer RDF format JSON-LD \cite{w3-json-ld}, which can be expanded with context <kbd><a href='http://schema.org/'>http://schema.org/</a></kbd> (not shown) to anchor types and  properties as absolute URIs and generate corresponding RDF triples (<a href='#triples'>Figure 3</a>)." >}}
+  caption="Each <em>resource</em> in an RDF graph has an identifier, here shown as absolute URIs, a type and a series of properties. A property value can either be a <em>literal</em> (e.g. <code>\"Josiah Carberry\"</code>) or another resource (e.g. <code>https://ror.org/03f0f6041</code>). A graph is formed by such cross-references across resources.  In the idealised Semantic Web, every URI would resolve to a description of its resource in RDF. In practice there can be misalignments of identifiers, vocabularies, resolution mechanisms, or simply lack of RDF adoptation. <p>Therefore any RDF graph can describe any Web resource identified by its URI, and these descriptions, using an <em>open world assumption</em> [<a href='https://www.cs.man.ac.uk/~drummond/presentations/OWA.pdf'>Drummond 2006</a>], can be merged with other graphs describing the same resource. For brevity and comparison from later chapters this figure uses the newer RDF format JSON-LD \cite{w3-json-ld}, which can be expanded with context <kbd><a href='http://schema.org/'>http://schema.org/</a></kbd> (not shown) to anchor types and  properties as absolute URIs and generate corresponding RDF triples (<a href='#fig:triples'>Figure 3</a>)." >}}
 
 
-<figure id="triples">
+<figure id="fig:triples">
 
 ```turtle
 <http://example.com/figure.png> a <http://schema.org/ImageObject> .
@@ -100,8 +100,8 @@ While triple-based knowledge representations were not new [[Stanczyk 1987]], the
 
 <figcaption>
 
-#### Example of RDF triples
-These triples correspond to figure 2 after expansion with a JSON-LD context. In this example the properties and types are all using the same vocabulary <http://schema.org/>, in the traditional Semantic Web it is common to mix vocabularies. This    uses the RDF syntax [N-Triples](http://www.w3.org/TR/2014/REC-n-triples-20140225/) where each line indicates _subject_, _predicate_ and _object_. Notable here is the syntactical difference between an URI reference that is part of the graph <https://ror.org/03f0f6041>  and a string literal `"https://www.uts.edu.au/"` which just happens to be a URI. 
+### Example of RDF triples
+These triples correspond to [figure 2](#fig:fdo) after expansion with a JSON-LD context. In this example the properties and types are all using the same vocabulary <http://schema.org/>, in the traditional Semantic Web it is common to mix vocabularies. This    uses the RDF syntax [N-Triples](http://www.w3.org/TR/2014/REC-n-triples-20140225/) where each line indicates _subject_, _predicate_ and _object_. Notable here is the syntactical difference between an URI reference that is part of the graph <https://ror.org/03f0f6041>  and a string literal `"https://www.uts.edu.au/"` which just happens to be a URI. 
 
 </figcaption>
 </figure>
@@ -121,7 +121,7 @@ The move towards *Open Science* data sharing practices did from the late 2000s e
 
 With these trends, an emerging problem was that adopters of the Semantic Web primarily utillised it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [[Kamdar 2017]]. Just like *link rot* affect regular Web pages and their citations from scholarly communication [[Klein 2014]], for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud’s gathering of more than thousand datasets, unfortunately do not actually link to (still) downloadable (*dereferenceable*) Linked Data [[Polleres 2020]]. Another challenge facing potential adopters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [[Carriero 2020]], but also technological choices on RDF serialisation (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [[Guha 2014]], OWL [[W3C 2012]], OBO [[Tirmizi 2011]], SKOS [[Isaac 2009]]), and deployment challenges [[Sauermann 2008]] (e.g. hash vs slash in namespaces, HTTP status codes and PID redirection strategies).
 
-#### Linked Data: Rebuilding the Web of Data {#sec:ld-web}
+### Linked Data: Rebuilding the Web of Data {#sec:ld-web}
 
 The **Linked Data** (LD) concept [[Bizer 2009]] was kickstarted as a set of best practices [[Berners-Lee 2006]] to bring the Web aspect of the Semantic Web back into focus. Crucial to Linked Data is the *reuse of existing URIs*, rather than making new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigable data resources, rather than elaborate graph representations.
 
@@ -133,9 +133,14 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 Linked Data provides technologies that have evolved over time to satisfy its primary purpose of data interoperability. The needs to embrace the Web and developer experience have been central lessons learned. In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
 
-----
 
 _This chapter is an extract from the preprint [Evaluating FAIR Digital Object and Linked Data as distributed object systems](../evaluating-fdo/), authored by Stian Soiland-Reyes, Carole Goble, Paul Groth._
+
+## References
+
+See chapter [references](../references/).
+
+----
 
 [^1]: For a brief introduction to DOIP 2.0, see [[CNRI 2023a]]
     
@@ -149,6 +154,7 @@ _This chapter is an extract from the preprint [Evaluating FAIR Digital Object an
     
 
 [^7]: Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.
+
 
 [Albertoni 2023]: https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/ "Data Catalog Vocabulary (DCAT)- Version 3"
 
