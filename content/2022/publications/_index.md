@@ -22,7 +22,7 @@ aliases:
 ## 2023
 
 Rudolf Wittner, Petr Holub, Cecilia Mascia, Francesca Frexia, Heimo Müller, Markus Plass, Clare Allocca, Fay Betsou, Tony Burdett, Ibon Cancio, Adriane Chapman, Martin Chapman, Mélanie Courtot, Vasa Curcin, Johann Eder, Mark Elliot, Katrina Exter, Carole Goble, Martin Golebiewski, Bron Kisler, Andreas Kremer, Simone Leo, Sheng Lin-Gibson, Anna Marsano, Marco Mattavelli, Josh Moore, Hiroki Nakae, Isabelle Perseil, Ayat Salman, James Sluka, Stian Soiland-Reyes, Caterina Strambio-De-Castillia, Michael Sussman, Jason R. Swedlow, Kurt Zatloukal, Jörg Geiger (2023):  
-**Towards a common standard for data and specimen provenance in life sciences**.  
+**Toward a common standard for data and specimen provenance in life sciences**.  
 _Learning Health Systems_  
 <https://doi.org/10.1002/lrh2.10365>
 
@@ -109,12 +109,6 @@ _Research Data Alliance_
 
 ## 2021
 
-Petr Holub, Rudolf Wittner, Cecilia Mascia, Francesca Frexia, Heimo Müller, Markus Plass, Clare Allocca, Fay Betsou, Tony Burdett, Ibon Cancio, Adriane Chapman, Martin Chapman, Melanie Courtot, Vasa Curcin, Johann Eder, Mark Elliot, Katrina Exter, Elliot Fairweather, Carole Goble, Martin Golebiewski, Bron Kisler, Andreas Kremer, Sheng Lin-Gibson, Anna Marsano, Marco Mattavelli, Josh Moore, Hiroki Nakae, Isabelle Perseil, Ayat Salman, James Sluka, Stian Soiland-Reyes, Caterina Strambio-De-Castillia, Michael Sussman, Jason R. Swedlow, Kurt Zatloukal, Jörg Geiger (2021):  
-[**Towards a Common Standard for Data and Specimen Provenance in Life Sciences**](https://doi.org/10.5281/zenodo.5093125).  
-_Zenodo_ (Working Paper)
-<https://doi.org/10.5281/zenodo.5093125>
-
-
 Anna-Lena Lamprecht, Magnus Palmblad, Jon Ison, Veit Schwämmle,
 Mohammad Sadnan Al Manir, Ilkay Altintas, Christopher J. O. Baker, Ammar Ben Hadj Amor, Salvador Capella-Gutierrez,
 Paulos Charonyktakis, Michael R. Crusoe,
@@ -192,8 +186,13 @@ _Scientific Data_ **6**:169
 
 Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
 [**A lightweight approach to research object data packaging**](https://www.research.manchester.ac.uk/portal/files/106897058/RO_Crate_BOSC2019.pdf).  
-_Bioinformatics Open Source Conference (BOSC)_ 2019, Basel, Switzerland.  
+_Bioinformatics Open Source Conference_ ([BOSC 2019](https://www.open-bio.org/events/bosc-2019/)), Basel, Switzerland.  
 <https://doi.org/10.5281/zenodo.3250687>
+
+Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
+[**RO-Crate: A lightweight approach to research object data packaging**](/2019/phd/ro-crate/).  
+RO-15 at _Workshop on Research Objects_ ([RO 2019](http://www.researchobject.org/ro2019/proceedings)), IEEE eScience 2019, 2019-09-24, San Diego, CA, USA.  
+<https://doi.org/10.5281/zenodo.3337883>
 
 
 ## 2018
