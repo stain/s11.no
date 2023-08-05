@@ -21,6 +21,11 @@ aliases:
 
 ## 2023
 
+Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
+[Evaluating FAIR Digital Object and Linked Data as distributed object systems](../../2023/phd/evaluating-fdo/).  
+_arXiv_ 2306.07436 [cs.DC]
+<https://doi.org/10.48550/arXiv.2306.07436> [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
+
 Rudolf Wittner, Petr Holub, Cecilia Mascia, Francesca Frexia, Heimo Müller, Markus Plass, Clare Allocca, Fay Betsou, Tony Burdett, Ibon Cancio, Adriane Chapman, Martin Chapman, Mélanie Courtot, Vasa Curcin, Johann Eder, Mark Elliot, Katrina Exter, Carole Goble, Martin Golebiewski, Bron Kisler, Andreas Kremer, Simone Leo, Sheng Lin-Gibson, Anna Marsano, Marco Mattavelli, Josh Moore, Hiroki Nakae, Isabelle Perseil, Ayat Salman, James Sluka, Stian Soiland-Reyes, Caterina Strambio-De-Castillia, Michael Sussman, Jason R. Swedlow, Kurt Zatloukal, Jörg Geiger (2023):  
 **Toward a common standard for data and specimen provenance in life sciences**.  
 _Learning Health Systems_  
@@ -380,10 +385,10 @@ _Journal of Biomedical Semantics_ **4**:37
 
 Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark (2013):  
 [**Web Annotation as a First Class Object**](/2013/web-annotation/).  
-_IEEE Internet Computing_ **17**(6) pp https://www.research.manchester.ac.uk/portal/files/45797718/datastream.pdf71-75.
+_IEEE Internet Computing_ **17**(6) pp 71-75.
 <https://doi.org/10.1109/MIC.2013.123>
 [[html]](http://s11.no/2013/web-annotation/)
-[[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/web-annotation-as-a-firstclass-object(16ac93c0-c2af-4e73-b5f8-7d0582556dd7).html)
+[[preprint]](https://research.manchester.ac.uk/en/publications/web-annotation-as-a-first-class-object)
 [arXiv:1310.6555](http://arxiv.org/abs/1310.6555)
 
 Hyde Zhang, Stian Soiland-Reyes, Carole Goble (2013):  
