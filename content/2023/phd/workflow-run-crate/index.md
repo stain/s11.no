@@ -1,6 +1,6 @@
 ---
-title: "Supplement 99: Recording provenance of workflow runs with RO-Crate"
-weight: 9999
+title: "Supplement 15: Recording provenance of workflow runs with RO-Crate"
+weight: 350
 lang: en-GB
 categories:
   - PhD
@@ -9,7 +9,7 @@ keywords:
   - provenance
   - RO-Crate
 summary: > 
-  Working Document
+  Working Manuscript, in preparation for PLOS One submission
 description: > 
     Recording the provenance of scientific computation results is fundamental to support traceability, reproducibility and quality assessment of data products. Several models have been explored to address this need, providing representations of workflow plans and their executions as well as means of packaging the resulting information for archiving and sharing. However, they lack interoperability, flexibility and support from workflow management systems. In this work we present Workflow Run RO-Crate, an extension of RO-Crate (Research Object Crate) to capture the provenance of the execution of computational workflows at different levels of granularity. We describe the model, as well as its implementations in workflow systems, and show its applicability to machine learning for digital pathology use cases. The model is developed by a diverse, open community that runs regular meetings, discussing requirements and practical aspects. The format is already in use in several workflow managers, including Galaxy, allowing interoperable comparisons between runs from heterogeneous systems.
 ---
