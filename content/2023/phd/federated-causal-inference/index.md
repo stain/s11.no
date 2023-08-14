@@ -50,7 +50,7 @@ _Marjan Meurisse<sup>1,2,†,\*</sup>, Francisco Estupiñán-Romero<sup>3,†</s
 </div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Formatting as Markdown, `code` style on filenames, numbered lists of steps instead of inline; figure caption formatting; references in s11 house style, added DOIs where missing; additional paragraph breaks; reformatted and ordered abbreviations.
+* **Modifications**: Formatting as Markdown, `code` style on filenames, numbered lists of steps instead of inline; figure caption formatting; references in s11 house style, added DOIs where missing, updated reference Hernan 2023; additional paragraph breaks; reformatted and ordered abbreviations.
 
 
 ## Abstract
@@ -348,17 +348,36 @@ BeYond-COVID project contributors: Vasso Kalaitzi (KNAW/DANS), Claudia Habl (GÖ
 
 ## References
 
-\[1\] Hernán MA, Robins JM. Causal Inference: What If. 1st edition. Boca Raton: Chapman & Hall/CRC; 2020. 
+\[1\] Miguel A. Hernan, James M. Robins (2020):  
+**Causal Inference: What If**.  
+1st edition. Boca Raton: Chapman & Hall/CRC  
+<https://identifiers.org/isbn/9781420076165>
+[[preprint](https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2023/07/hernanrobins_WhatIf_19jul23.pdf)]
 
-\[2\] Greenland S, Robins JM. Identifiability, exchangeability and confounding revisited. Epidemiol Perspect Innov. 2009;6:4. 
+\[2\] Sander Greenland, James M Robins (2009):  
+**Identifiability, exchangeability and confounding revisited**.  
+_Epidemiologic Perspectives & Innovations_ **6**(1)  
+<https://doi.org/10.1186/1742-5573-6-4>
 
-\[3\] Listl S, Jürges H, Watt RG. Causal inference from observational data. Community Dentistry and Oral Epidemiology. 2016;44:409--15. 
+\[3\] Stefan Listl, Hendrik Jürges, Richard G. Watt (2016):  
+**Causal inference from observational data**.  
+_Community Dentistry and Oral Epidemiology_ **44**(5)  
+<https://doi.org/10.1111/cdoe.12231>
 
-\[4\] Pearce N, Lawlor DA. Causal inference---so much more than statistics. International Journal of Epidemiology. 2016;45:1895--903. 
+\[4\] Neil Pearce, Debbie A Lawlor (2016):  
+**Causal inference—so much more than statistics**.  
+_International Journal of Epidemiology_ **45**(6)  
+<https://doi.org/10.1093/ije/dyw328>
 
-\[5\] Hernán MA, Hernández-Díaz S, Robins JM. A Structural Approach to Selection Bias. Epidemiology. 2004;15:615. 
+\[5\] Miguel A. Hernán, Sonia Hernández-Díaz, James M. Robins (2004):  
+**A Structural Approach to Selection Bias**.  
+_Epidemiology_ **15**(5)
+<https://doi.org/10.1097/01.ede.0000135174.63482.43>
 
-\[6\] Hernán MA, Wang W, Leaf DE. Target Trial Emulation: A Framework for Causal Inference From Observational Data. JAMA. 2022;328:2446--7. 
+\[6\] Miguel A. Hernán, Wei Wang, David E. Leaf (2022):  
+**Target Trial Emulation**: A Framework for Causal Inference From Observational Data.  
+_JAMA_ **328**(24)  
+<https://doi.org/10.1001/jama.2022.21383>
 
 \[7\] Hernán MA, Robins JM. Estimating causal effects from epidemiological data. Journal of Epidemiology & Community Health. 2006;60:578--86. 
 
