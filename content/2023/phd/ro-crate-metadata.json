@@ -259,7 +259,7 @@
       "@type": "Chapter",
       "name": "Appendix B: Contributions"
     },
-	  {
+    {
       "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/",
       "@type": "ScholarlyArticle",
       "name": "Supplement 1: Ten Simple Rules for making a software tool workflow-ready"
@@ -348,9 +348,403 @@
       "@id": "https://s11.no/2023/phd/linking-provenance/",
       "@type": "ScholarlyArticle",
       "name": "Supplement 18: Linking provenance and its metadata in multi-organizational environments of life sciences"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2116-3880",
+      "@type": "Person",
+      "name": "Pau Andrio",
+      "affiliation": [
+        "The Spanish National Bioinformatics Institute (INB), Barcelona Supercomputing Center (BSC), Barcelona, Spain"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "Person",
+      "name": "Genís Bayarri",
+      "affiliation": [
+        "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona",
+        "Institute of Science and Technology (BIST), Barcelona, Spain"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5432-2748",
+      "@type": "Person",
+      "name": "Paul Brack",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8131-2150",
+      "@type": "Person",
+      "name": "Eoghan Ó Carragáin",
+      "affiliation": [
+        "University College Cork, Ireland"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6565-5145",
+      "@type": "Person",
+      "name": "Frederik Coppens",
+      "affiliation": [
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
+        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1304-1939",
+      "@type": "Person",
+      "name": "Mercè Crosas",
+      "affiliation": [
+        "Barcelona Supercomputing Center, Barcelona, ES",
+        "Secretària de Govern Obert, Catalunya, Barcelona, ES (former)",
+        "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6190-122X",
+      "@type": "Person",
+      "name": "Ignacio Eguinoa",
+      "affiliation": [
+        "Showpad, Ghent, Belgium",
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium (former)",
+        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4806-5140",
+      "@type": "Person",
+      "name": "José Mª Fernández",
+      "affiliation": [
+        "Barcelona Supercomputing Center, Barcelona, Spain"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0454-7145",
+      "@type": "Person",
+      "name": "Daniel Garijo",
+      "affiliation": [
+        "Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "name": "Carole Goble",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0596-5376",
+      "@type": "Person",
+      "name": "Quentin Groom",
+      "affiliation": [
+        "Meise Botanic Garden, Meise, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth",
+      "affiliation": [
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3079-6586",
+      "@type": "Person",
+      "name": "Björn Grüning",
+      "affiliation": [
+        "Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0767-4310",
+      "@type": "Person",
+      "name": "Alex Hardisty",
+      "affiliation": [
+        "School of Computer Science and Informatics, Cardiff University, Cardiff, UK (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "Person",
+      "name": "Adam Hospital",
+      "affiliation": [
+        "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3986-0510",
+      "@type": "Person",
+      "name": "Leyla Jael Castro",
+      "affiliation": [
+        "ZB MED Information Centre for Life Sciences, Cologne, Germany"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8271-5429",
+      "@type": "Person",
+      "name": "Simone Leo",
+      "affiliation": [
+        "Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7341-1842",
+      "@type": "Person",
+      "name": "Laurence Livermore",
+      "affiliation": [
+        "The Natural History Museum, London, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2249-645X",
+      "@type": "Person",
+      "name": "Robin Long",
+      "affiliation": [
+        "Lancaster University, Lancaster, UK",
+        "Research IT, The University of Manchester, Manchester, UK (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1248-3594",
+      "@type": "Person",
+      "name": "Douglas Lowe",
+      "affiliation": [
+        "Research IT, The University of Manchester, Manchester, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0989-3389",
+      "@type": "Person",
+      "name": "Ania Niewielska",
+      "affiliation": [
+        "European Bioinformatics Institute (EMBL-EBI), Cambridge, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2130-0865",
+      "@type": "Person",
+      "name": "Stuart Owen",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9648-6484",
+      "@type": "Person",
+      "name": "Marc Portier",
+      "affiliation": [
+        "Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4929-1219",
+      "@type": "Person",
+      "name": "Laura Rodriguez-Navas",
+      "affiliation": [
+        "Universitat Oberta de Catalunya (UOC), Barcelona, Spain",
+        "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5383-6993",
+      "@type": "Person",
+      "name": "Marco La Rosa",
+      "affiliation": [
+        "PARADISEC, Melbourne, Australia"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5590-7174",
+      "@type": "Person",
+      "name": "Ben Scott",
+      "affiliation": [
+        "The Natural History Museum, London, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3545-944X",
+      "@type": "Person",
+      "name": "Peter Sefton",
+      "affiliation": [
+        "School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia",
+        "Faculty of Science, University Technology Sydney, Australia (former)"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK",
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1991-0533",
+      "@type": "Person",
+      "name": "Ana Trisovic",
+      "affiliation": [
+        "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3156-2105",
+      "@type": "Person",
+      "name": "Alan R Williams",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK (former)"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4565-9760",
+      "@type": "Person",
+      "name": "Oliver Woolland",
+      "affiliation": "Research IT, The University of Manchester, Manchester, UK"
+    },
+    {
+      "@id": "#haris-antonatos",
+      "@type": "Person",
+      "name": "Haris Antonatos",
+      "affiliation": "SciFY, Athens, Greece"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0048-3300",
+      "@type": "Person",
+      "name": "Finn Bacall",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0309-604X",
+      "@type": "Person",
+      "name": "Salvador Capella-Gutierrez",
+      "affiliation": "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6794-0756",
+      "@type": "Person",
+      "name": "John Chilton",
+      "affiliation": [
+        "Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA",
+        "Galaxy Project"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2222-9418",
+      "@type": "Person",
+      "name": "Peter Crowther",
+      "affiliation": [
+        "Melandra Limited, Stockport, UK"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2961-9670",
+      "@type": "Person",
+      "name": "Michael R. Crusoe",
+      "affiliation": [
+        "Forschungszentrum Jülich, Jülich, Germany",
+        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
+        "Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3973-1252",
+      "@type": "Person",
+      "name": "Mathias Dillen",
+      "affiliation": [
+        "Meise Botanic Garden, Meise, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0522-5674",
+      "@type": "Person",
+      "name": "Bert Droesbeke",
+      "affiliation": [
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
+        "VIB Center for Plant Systems Biology, Ghent, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4727-9435",
+      "@type": "Person",
+      "name": "Michel Dumontier",
+      "affiliation": [
+        "Institute of Data Science, Maastricht University, Maastricht, The Netherlands"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1501-1082",
+      "@type": "Person",
+      "name": "Vincent Emonet",
+      "affiliation": [
+        "Institute of Data Science, Maastricht University, Maastricht, The Netherlands"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4101-2502",
+      "@type": "Person",
+      "name": "Philip Ewels",
+      "affiliation": [
+        "Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1550-1716",
+      "@type": "Person",
+      "name": "Bogdan Gavrilović",
+      "affiliation": "Seven Bridges, Charlestown, MA, USA"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8030-9398",
+      "@type": "Person",
+      "name": "Alexandru Iosup",
+      "affiliation": "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1267-0234",
+      "@type": "Person",
+      "name": "Tobias Kuhn",
+      "affiliation": [
+        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
+        "Knowledge Pixels, Zürich, Switzerland"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7552-1009",
+      "@type": "Person",
+      "name": "Hervé Ménager",
+      "affiliation": [
+        "Hub de Bioinformatique et Biostatistique, Département Biologie Computationnelle, Institut Pasteur, Paris, France"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4663-5613",
+      "@type": "Person",
+      "name": "Luca Pireddu",
+      "affiliation": [
+        "Center for Advanced Studies, Research and Development in Sardinia (CRS4), Pula, Italy"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5862-6132",
+      "@type": "Person",
+      "name": "Beatriz Serrano-Solano",
+      "affiliation": "Bioinformatics Group, Albert-Ludwigs-University Freiburg, Freiburg, Germany"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5118-256X",
+      "@type": "Person",
+      "name": "Ruben Taelman",
+      "affiliation": [
+        "IDLab, Ghent University, Ghent, Belgium"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8316-4067",
+      "@type": "Person",
+      "name": "Nebojša Tijanić",
+      "affiliation": "Seven Bridges, Charlestown, MA, USA"
     }
-
-    
-    
   ]
 }
