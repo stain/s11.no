@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    },
+    {
+      "iso6523Code": "http://schema.org/iso6523Code"
+    },
+    {
+      "copyrightNotice": "http://schema.org/copyrightNotice",
+      "interpretedAsClaim": "http://schema.org/interpretedAsClaim",
+      "archivedAt": "http://schema.org/archivedAt",
+      "creditText": "http://schema.org/creditText"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "name": "Stian's PhD (working title)",
+      "publisher": {
+        "@id": "https://s11.no/"
+      },
+      "identifier": {
+        "@id": "https://10.5281/zenodo.8113625"
+      },
+      "hasPart": [
+        {
+          "@id": "evaluating-fdo/"
+        },
+        {
+          "@id": "background/"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "description": "RO-Crate of Stian's PhD thesis"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes"
+    },
+    {
+      "@id": "https://10.5281/zenodo.8113625",
+      "@type": "PropertyValue",
+      "name": "doi",
+      "value": "10.5281/zenodo.8113625"
+    },
+    {
+      "@id": "evaluating-fdo/references.md",
+      "@type": "File"
+    },
+    {
+      "@id": "evaluating-fdo/ro-crate-preview_files/ro-crate-dynamic.min.js",
+      "@type": "File"
+    },
+    {
+      "@id": "evaluating-fdo/ro-crate-preview_files/bootstrap.min.css",
+      "@type": "File"
+    },
+    {
+      "@id": "evaluating-fdo/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "fdo-and-linked-data/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "background/fdo.svg",
+      "@type": "File"
+    },
+    {
+      "@id": "background/jsonld.svg",
+      "@type": "File"
+    },
+    {
+      "@id": "ro-crate/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "workflows/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "references/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "workflow-run-crate/image1.png",
+      "@type": "File"
+    },
+    {
+      "@id": "workflow-run-crate/image3.png",
+      "@type": "File"
+    },
+    {
+      "@id": "workflow-run-crate/image5.png",
+      "@type": "File"
+    },
+    {
+      "@id": "workflow-run-crate/index.md",
+      "@type": "File"
+    },
+    {
+      "@id": "workflow-run-crate/draft-2023-08-03.md",
+      "@type": "File"
+    },
+    {
+      "@id": "federated-causal-inference/figure1.png",
+      "@type": "File"
+    },
+    {
+      "@id": "evaluating-fdo/",
+      "@type": "Dataset",
+      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "subjectOf": {
+        "@id": "evaluating-fdo/ro-crate-metadata.json"
+      },
+      "description": "Preprint submitted to PeerJ CS"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "name": "Carole Goble"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth"
+    },
+    {
+      "@id": "evaluating-fdo/ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "name": "RO-Crate metadata file for FDO-LD paper",
+      "encodingFormat": "application/ld+json"
+    },
+    {
+      "@id": "https://s11.no/",
+      "@type": [
+        "Organization",
+        "WebSite"
+      ],
+      "name": "s11"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution 4.0 International License",
+      "identifier": {
+        "@id": "https://spdx.org/licenses/CC-BY-4.0"
+      }
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-4.0",
+      "@type": "PropertyValue",
+      "name": "spdx",
+      "value": "CC-BY-4.0"
+    },
+    {
+      "@id": "background/",
+      "@type": "File",
+      "name": "Background",
+      "description": "In this chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions."
+    }
+  ]
+}
