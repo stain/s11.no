@@ -17,7 +17,10 @@
   "@graph": [
     {
       "@id": "https://s11.no/2023/phd/",
-      "@type": ["Dataset", "Thesis"],
+      "@type": [
+        "Dataset",
+        "Thesis"
+      ],
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
@@ -38,29 +41,69 @@
         {
           "@id": "https://s11.no/2023/phd/fdo-and-linked-data/"
         },
-	{
-	  "@id": "https://s11.no/2023/phd/ro-crate/"
-	},
-	{ "@id": "https://s11.no/2023/phd/workflows/"},
-	{ "@id": "https://s11.no/2022/phd/conclusions/"},
-	{ "@id": "https://s11.no/2022/phd/acknowledgements/"},
-        { "@id": "https://s11.no/2022/phd/contributions/"},
-	{ "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/"},
-	{ "@id": "https://s11.no/2022/phd/galaxy-ro-crate/"},
-	{ "@id": "https://s11.no/2021/phd/workflow-collaboratory/"},
-	{ "@id": "https://s11.no/2022/phd/methods-included/"},
-	{ "@id": "https://s11.no/2021/phd/nanopub/"},
-	{ "@id": "https://doi.org/10.12688/f1000research.54159.1"},
-	{ "@id": "https://doi.org/10.1007/978-3-030-80960-7_16"},
-	{ "@id": "https://doi.org/10.1002/lrh2.10365"},
-	{ "@id": "https://doi.org/10.1109/WORKS54523.2021.00016"},
-	{ "@id": "https://doi.org/10.1162/dint_a_00025"},
-	{ "@id": "https://doi.org/10.1162/dint_a_00033"},
-	{ "@id": "https://doi.org/10.1093/gigascience/giz095"},
-	{ "@id": "https://doi.org/10.1109/ieeestd.2020.9094416"},
-	{ "@id": "https://doi.org/10.37044/osf.io/c724r"},
-	{ "@id": "https://s11.no/2023/phd/workflow-run-crate/"},
-	{ "@id": "https://s11.no/2019/phd/ro-crate/"}
+        {
+          "@id": "https://s11.no/2023/phd/ro-crate/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/workflows/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/conclusions/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/acknowledgements/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/contributions/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/galaxy-ro-crate/"
+        },
+        {
+          "@id": "https://s11.no/2021/phd/workflow-collaboratory/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/methods-included/"
+        },
+        {
+          "@id": "https://s11.no/2021/phd/nanopub/"
+        },
+        {
+          "@id": "https://doi.org/10.12688/f1000research.54159.1"
+        },
+        {
+          "@id": "https://doi.org/10.1007/978-3-030-80960-7_16"
+        },
+        {
+          "@id": "https://doi.org/10.1002/lrh2.10365"
+        },
+        {
+          "@id": "https://doi.org/10.1109/WORKS54523.2021.00016"
+        },
+        {
+          "@id": "https://doi.org/10.1162/dint_a_00025"
+        },
+        {
+          "@id": "https://doi.org/10.1162/dint_a_00033"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gigascience/giz095"
+        },
+        {
+          "@id": "https://doi.org/10.1109/ieeestd.2020.9094416"
+        },
+        {
+          "@id": "https://doi.org/10.37044/osf.io/c724r"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/workflow-run-crate/"
+        },
+        {
+          "@id": "https://s11.no/2019/phd/ro-crate/"
+        }
       ],
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
@@ -161,8 +204,12 @@
       "@type": "Chapter",
       "name": "Chapter 3: FAIR Digital Objects and Linked Data",
       "hasPart": [
-  	{"@id": "https://s11.no/2023/phd/evaluating-fdo/"},
-	{"@id": "https://s11.no/2022/phd/updating-ld-for-fdo/"}
+        {
+          "@id": "https://s11.no/2023/phd/evaluating-fdo/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/"
+        }
       ]
     },
     {
@@ -170,9 +217,15 @@
       "@type": "Chapter",
       "name": "Chapter 4: RO-Crate",
       "hasPart": [
-        { "@id": "https://s11.no/2022/phd/ro-crate/" },
-        { "@id": "https://s11.no/2022/phd/fdo-with-ro-crate" },
-        { "@id": "https://s11.no/2022/phd/ro-crate/formalizing" }
+        {
+          "@id": "https://s11.no/2022/phd/ro-crate/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/fdo-with-ro-crate"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/ro-crate/formalizing"
+        }
       ]
     },
     {
@@ -180,9 +233,15 @@
       "@type": "Chapter",
       "name": "Chapter 5: Computational Workflows",
       "hasPart": [
-	 { "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/" },
-	 { "@id": "https://s11.no/2022/phd/specimen-data-refinery/" },
-	 { "@id": "https://s11.no/2022/phd/incrementally-building-fdos/" }
+        {
+          "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/specimen-data-refinery/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/incrementally-building-fdos/"
+        }
       ]
     },
     {
@@ -200,21 +259,53 @@
       "@type": "Chapter",
       "name": "Appendix B: Contributions"
     }
-	{ "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/"},
-	{ "@id": "https://s11.no/2022/phd/galaxy-ro-crate/"},
-	{ "@id": "https://s11.no/2021/phd/workflow-collaboratory/"},
-	{ "@id": "https://s11.no/2022/phd/methods-included/"},
-	{ "@id": "https://s11.no/2021/phd/nanopub/"},
-	{ "@id": "https://doi.org/10.12688/f1000research.54159.1"},
-	{ "@id": "https://doi.org/10.1007/978-3-030-80960-7_16"},
-	{ "@id": "https://doi.org/10.1002/lrh2.10365"},
-	{ "@id": "https://doi.org/10.1109/WORKS54523.2021.00016"},
-	{ "@id": "https://doi.org/10.1162/dint_a_00025"},
-	{ "@id": "https://doi.org/10.1162/dint_a_00033"},
-	{ "@id": "https://doi.org/10.1093/gigascience/giz095"},
-	{ "@id": "https://doi.org/10.1109/ieeestd.2020.9094416"},
-	{ "@id": "https://doi.org/10.37044/osf.io/c724r"},
-	{ "@id": "https://s11.no/2023/phd/workflow-run-crate/"},
-	{ "@id": "https://s11.no/2019/phd/ro-crate/"}
+	{
+      "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/galaxy-ro-crate/"
+    },
+    {
+      "@id": "https://s11.no/2021/phd/workflow-collaboratory/"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/methods-included/"
+    },
+    {
+      "@id": "https://s11.no/2021/phd/nanopub/"
+    },
+    {
+      "@id": "https://doi.org/10.12688/f1000research.54159.1"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-030-80960-7_16"
+    },
+    {
+      "@id": "https://doi.org/10.1002/lrh2.10365"
+    },
+    {
+      "@id": "https://doi.org/10.1109/WORKS54523.2021.00016"
+    },
+    {
+      "@id": "https://doi.org/10.1162/dint_a_00025"
+    },
+    {
+      "@id": "https://doi.org/10.1162/dint_a_00033"
+    },
+    {
+      "@id": "https://doi.org/10.1093/gigascience/giz095"
+    },
+    {
+      "@id": "https://doi.org/10.1109/ieeestd.2020.9094416"
+    },
+    {
+      "@id": "https://doi.org/10.37044/osf.io/c724r"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/workflow-run-crate/"
+    },
+    {
+      "@id": "https://s11.no/2019/phd/ro-crate/"
+    }
   ]
 }
