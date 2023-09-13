@@ -4,6 +4,8 @@ weight: 390
 categories:
   - PhD
 title_short: 'BioHackEU22 #10: RDM in Galaxy and DSW w/ RO-Crate'
+summary: >
+  BioHackrXiv preprint from ELIXIR BioHackathon 2022
 tags:
   - workflow
   - Galaxy
@@ -93,7 +95,8 @@ _Ignacio Eguinoa¹, Marek Suchánek², Vojtěch Knaisl², Jan Slifka², Paul De 
 </div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Formatting as Markdown; figure caption formatting; reference in s11 house style; inline citation hyperlinks. Section Ambitions/Progress has rewritten bullet points to sentences and removed some technical details. Added citations [[Arend 2022]], [[Chilton 2023]], [[Hooft 2019]]. Participation moved to Acknowledgement section.
+* **Modifications**: Formatting as Markdown; figure caption formatting; reference in s11 house style; inline citation hyperlinks. Section Ambitions/Progress has rewritten bullet points to sentences and removed some technical details. Participation moved to Acknowledgement section. Added citations [[Arend 2022]], [[Chilton 2023]], [[Hooft 2019]]. 
+
 
 ## Background
 
@@ -136,7 +139,7 @@ Part of the work in this project consisted of turning the `cwlprov_to_crate.py` 
 
 ### Provenance export of workflow runs from Galaxy
 
-The prototype workflow provenance export [feature](https://github.com/galaxyproject/galaxy/pull/15101) in Galaxy implements the [Workflow Run Crate Profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate) while including the individual steps in preparation for lifting the export to the more detailed [Provenance Run Crate Proile](https://www.researchobject.org/workflow-run-crate/profiles/provenance_run_crate). Additionally, the export feature includes Galaxy specific workflow attributes such as [dataset collections}(https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/collections/tutorial.html) and [workflow parameters](https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html). Finally, this work also included setting up the necessary unit -, API - and integration tests.
+The prototype workflow provenance export [feature](https://github.com/galaxyproject/galaxy/pull/15101) in Galaxy implements the [Workflow Run Crate Profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate) while including the individual steps in preparation for lifting the export to the more detailed [Provenance Run Crate Proile](https://www.researchobject.org/workflow-run-crate/profiles/provenance_run_crate). Additionally, the export feature includes Galaxy specific workflow attributes such as [dataset collections](https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/collections/tutorial.html) and [workflow parameters](https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html). Finally, this work also included setting up the necessary unit -, API - and integration tests.
 
 ### RO-Crate in DSW
 
@@ -240,9 +243,9 @@ _BioHackrXiv_
 <https://doi.org/10.37044/osf.io/c724r> [cito:agreesWith]
 
 [Chilton 2023]: https://gxy.io/GTN:T00160 "Rule Based Uploader"
-John Chilton, Helena Rasche (2023):  
+\[Chilton 2023\] John Chilton, Helena Rasche (2023):  
 [**Rule Based Uploader**](https://gxy.io/GTN:T00160)
-_Galaxy Training Materials_ 
+_Galaxy Training Materials_  
 <https://gxy.io/GTN:T00160> [cito:citesAsPotentialSolution]
 
 [De Geest 2022]: https://doi.org/10.3897/rio.8.e95164 "Enhancing RDM in Galaxy by integrating RO-Crate"

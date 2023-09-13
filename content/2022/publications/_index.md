@@ -40,7 +40,7 @@ _arXiv_ 2306.07436 [cs.DC]
 <https://doi.org/10.48550/arXiv.2306.07436> [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
 
 Ignacio Eguinoa, Marek Suchánek, Vojtěch Knaisl, Jan Slifka, Paul De Geest, David López, Bjorn Gruning, Simone Leo, Stian Soiland-Reyes (2023):  
-[**BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates**](https://doi.org/10.37044/osf.io/24jst).  
+[**BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates**](../2023/phd/enhancing-rdm-galaxy-dsw/).  
 _BioHackrXiv_  
 <https://doi.org/10.37044/osf.io/24jst>
 
