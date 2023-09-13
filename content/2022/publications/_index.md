@@ -22,7 +22,7 @@ aliases:
 ## 2023
 
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
-[[**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
+[**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
 (In preparation)
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
@@ -35,7 +35,7 @@ Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
 [**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
-(submitted to PeerJ CS)
+(Accepted with minor revisions at _PeerJ CS_)  
 _arXiv_ 2306.07436 [cs.DC]  
 <https://doi.org/10.48550/arXiv.2306.07436> [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
 
@@ -45,7 +45,7 @@ _BioHackrXiv_
 <https://doi.org/10.37044/osf.io/24jst>
 
 Rudolf Wittner, Petr Holub, Cecilia Mascia, Francesca Frexia, Heimo Müller, Markus Plass, Clare Allocca, Fay Betsou, Tony Burdett, Ibon Cancio, Adriane Chapman, Martin Chapman, Mélanie Courtot, Vasa Curcin, Johann Eder, Mark Elliot, Katrina Exter, Carole Goble, Martin Golebiewski, Bron Kisler, Andreas Kremer, Simone Leo, Sheng Lin-Gibson, Anna Marsano, Marco Mattavelli, Josh Moore, Hiroki Nakae, Isabelle Perseil, Ayat Salman, James Sluka, Stian Soiland-Reyes, Caterina Strambio-De-Castillia, Michael Sussman, Jason R. Swedlow, Kurt Zatloukal, Jörg Geiger (2023):  
-**Toward a common standard for data and specimen provenance in life sciences**.  
+[**Toward a common standard for data and specimen provenance in life sciences**](https://doi.org/10.1002/lrh2.10365).  
 _Learning Health Systems_  
 <https://doi.org/10.1002/lrh2.10365>
 
