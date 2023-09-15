@@ -58,7 +58,7 @@ community for [identifying species](http://www.ipni.org/) [[archived 2017-07-12]
 LSID overview
 -------------
 
-The [[LSID specification](http://www.omg.org/cgi-bin/doc?dtc/04-05-01)
+The [LSID specification](http://www.omg.org/cgi-bin/doc?dtc/04-05-01)
 specifies 4 aspects of LSIDs:
 
 -   *LSID Syntax* specifying a [URN scheme](https://en.wikipedia.org/wiki/Uniform_Resource_Name),
