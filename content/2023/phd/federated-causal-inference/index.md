@@ -240,9 +240,9 @@ Subsequently, an analytical pipeline was developed and tested with the support o
 
 A graphical overview of the analytical pipeline is presented in [Figure 4](#figure4). Each module of the analysis produces an interactive report, including documentation allowing to trace back to decisions made along the way and interpreting the results. 
 
-The DQA script (`1_DQA.qmd`) embedded in the analytical pipeline was roughly inspired by the data profiling produced by the ydata-profiling Python library [[49]][[50]], usually considered an industry standard for Exploratory Data Analysis in Python, and output contains descriptive dataset statistics and a basic profile of the dataset as a whole (among others containing a variable count, a row count, a basic missing data profile, and some alerts regarding the cardinality, missingness or anomaly of certain variables). The DQA also contains a univariate descriptive analysis of each variable in the dataset, providing summary statistics, information on the categories of the categorical variables, and basic information on the distribution of the continuous variables. Validation of the data, i.e., checking compliance of the data to validation rules captured in the CDM and exclusion of non-compliant data for further analysis, is captured within the script `2_validation.qmd`. 
+The DQA script (`1_DQA.qmd`) embedded in the analytical pipeline was roughly inspired by the data profiling produced by the ydata-profiling Python library [[YData 2023a]][[YData 2023b]], usually considered an industry standard for Exploratory Data Analysis in Python, and output contains descriptive dataset statistics and a basic profile of the dataset as a whole (among others containing a variable count, a row count, a basic missing data profile, and some alerts regarding the cardinality, missingness or anomaly of certain variables). The DQA also contains a univariate descriptive analysis of each variable in the dataset, providing summary statistics, information on the categories of the categorical variables, and basic information on the distribution of the continuous variables. Validation of the data, i.e., checking compliance of the data to validation rules captured in the CDM and exclusion of non-compliant data for further analysis, is captured within the script `2_validation.qmd`. 
 
-An algorithm capturing decisions on how to deal with missing values in the imported dataset was developed in script `3_imputation.qmd`, implementing the imputation of values, listwise deletion or exclusion of matching variables depending on the characteristics of the data. The script `4_matching.qmd` implements the daily matching of exposed to unexposed individuals on variables corresponding to nodes in the minimal sufficient adjustment set following the causal model, thereby attempting to close non-causal backdoor paths and limit bias. After describing the study population and providing crude estimates in script `5-descriptives.qmd`, a survival analysis is captured within script `6-survival-analysis.qmd`, visualizing survival over time by producing Kaplan-Meier curves and estimating the average treatment effect (ATE). A detailed documentation of the statistical methods, as well as a README file guiding users on the script deployment, accompanies the statistical scripts in the Github repository [\[48\]].
+An algorithm capturing decisions on how to deal with missing values in the imported dataset was developed in script `3_imputation.qmd`, implementing the imputation of values, listwise deletion or exclusion of matching variables depending on the characteristics of the data. The script `4_matching.qmd` implements the daily matching of exposed to unexposed individuals on variables corresponding to nodes in the minimal sufficient adjustment set following the causal model, thereby attempting to close non-causal backdoor paths and limit bias. After describing the study population and providing crude estimates in script `5-descriptives.qmd`, a survival analysis is captured within script `6-survival-analysis.qmd`, visualizing survival over time by producing Kaplan-Meier curves and estimating the average treatment effect (ATE). A detailed documentation of the statistical methods, as well as a README file guiding users on the script deployment, accompanies the statistical scripts in the Github repository [[Meurisse 2023b]].
 
 DuckDB, a lightweight database system, is used to increase the speed of running the workflow by enhancing performance when dealing with large amounts of data and complex analytical queries.
 
@@ -398,7 +398,7 @@ BeYond-COVID project contributors: Vasso Kalaitzi (KNAW/DANS), Claudia Habl (GÖ
 ## References
 
 [Abboud 2018]: https://doi.org/10.1093/eurpub/cky212.651 "The new Joint Action on Health Information: information for action (InfAct)! "
-[[Abboud 2018]]
+\[Abboud 2018\]
 L A Abboud, P Bogaert, A Fehr, D Urbanski, H Tolonen, I Noguer-Zambran, A Padron-Monedero, L Palmieri, H Van Oyen (2018):  
 **The new Joint Action on Health Information: information for action (InfAct)!**  
 _European Journal of Public Health_ **28**(suppl_4)  
@@ -417,7 +417,7 @@ _Indian Journal of Psychological Medicine_ **40**(5)
 <https://doi.org/10.4103/ijpsym.ijpsym_334_18>
 
 [Attema 2021]: http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b "Technological breakthrough"
-[[Attema 2021]] T. Attema T, D. Worm (2021):  
+\[Attema 2021\] T. Attema T, D. Worm (2021):  
 **Technologische doorbraak**: eindelijk een privacyvriendelijke manier om data te benutten.  
 **Technological breakthrough**: Finally, a privacy-friendly way to harness data.  
 _TNO_ whitepaper, 953235.  
@@ -437,7 +437,7 @@ _IJCSNS International Journal of Computer Science and Network_ **17**(3)
 <http://paper.ijcsns.org/07_book/201703/20170327.pdf>
 
 [Beyan 2020]: https://doi.org/10.1162/dint_a_00032 "Distributed Analytics on Sensitive Medical Data"
-[[Beyan 2020]]
+\[Beyan 2020\]
 Oya Beyan, Ananya Choudhury, Johan van Soest, Oliver Kohlbacher, Lukas Zimmermann, Holger Stenzhorn, Md. Rezaul Karim, Michel Dumontier, Stefan Decker, Luiz Olavo Bonino da Silva Santos, Andre Dekker (2020):  
 **Distributed Analytics on Sensitive Medical Data**: The Personal Health Train.  
 _Data Intelligence_ **2**(1--2)
@@ -450,7 +450,7 @@ _ACM SIGOPS Operating Systems Review_ **49**(1)
 <https://doi.org/10.1145/2723872.2723882>
 
 [Bogaert 2021]: https://doi.org/10.1093/eurpub/ckab164.572 "Towards a Population Health Information Research Infrastructure"
-[[Bogaert 2021]]
+\[Bogaert 2021\]
 P Bogaert, N Schutte (2021):  
 **Towards a Population Health Information Research Infrastructure**.  
 _European Journal of Public Health_ **31**(Supplement_3)  
@@ -462,7 +462,7 @@ _European Journal of Public Health_ **31**(Supplement_3)
 [[archived 2023-09-17](https://web.archive.org/web/20230917132941/https://by-covid.org/)]
 
 [Broberg 2019]: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048
-[[Broberg 2019]]
+\[Broberg 2019\]
 Pontus Broberg, Shapour Jahanshahi (2019):  
 **Using eye tracking to study variable naming conventions and their effect on code readability**.  
 Dissertation, Master in Computer Science.  
@@ -489,7 +489,7 @@ _Journal of Clinical Epidemiology_ **142**
 <https://doi.org/10.1016/j.jclinepi.2021.08.001>
 
 [DiLep 2019]: https://doi.org/10.1007/978-1-4842-5546-9_2 "Naming Things"
-[[DiLep 2019]]
+\[DiLep 2019\]
 Carleton DiLeo (2019):  
 **Naming Things**.  
 _Clean Ruby: A Guide to Crafting Better Code for Rubyists_  
@@ -698,7 +698,7 @@ _BY-COVID Project_, RO-Crate.
 <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
 
 [Moncada-Torres 2021]: https://identifiers.org/pmc/PMC8075508 "VANTAGE6"
-[[Moncada-Torres 2021]]
+\[Moncada-Torres 2021\]
 Arturo Moncada-Torres, Frank Martin, Melle Sieswerda, Johan Van Soest, Gijs Geleijnse (2021):  
 [**VANTAGE6**: an open source priVAcy preserviNg federaTed leArninG infrastructurE for Secure Insight eXchange](https://identifiers.org/pmc/PMC8075508).  
 _AMIA Annual Symposium Proceedings_ **2020**
@@ -790,13 +790,13 @@ _International Journal of Epidemiology_ **45**(6)
 <https://doi.org/10.1093/ije/dyw341>
 
 [YData 2023a]: https://github.com/ydataai/ydata-profiling
-[49]. YData (2023):  
+[YData 2023a]. YData (2023):  
 [**ydata-profiling**](https://github.com/ydataai/ydata-profiling). 
 _GitHub_
 <https://github.com/ydataai/ydata-profiling>
 
 [Ydata 2023b]: https://docs.profiling.ydata.ai/4.5/
-[50] YData (2023):  
+[YData 2023b] YData (2023):  
 [**Welcome - YData Profiling 4.5**](https://docs.profiling.ydata.ai/4.5/). 
 _YData_
 <https://docs.profiling.ydata.ai/4.5/>
@@ -815,7 +815,7 @@ _Scientific Data_ **3**(1):160018
 <https://doi.org/10.1038/sdata.2016.18>
 
 [Wolfson 2010]: https://doi.org/10.1093/ije/dyq111 "DataSHIELD"
-Michael Wolfson, Susan E Wallace, Nicholas Masca, Geoff Rowe, Nuala A Sheehan, Vincent Ferretti, Philippe LaFlamme, Martin D Tobin, John Macleod, Julian Little, Isabel Fortier, Bartha M Knoppers, Paul R Burton (2010):  
+\[Wolfson 2010\] Michael Wolfson, Susan E Wallace, Nicholas Masca, Geoff Rowe, Nuala A Sheehan, Vincent Ferretti, Philippe LaFlamme, Martin D Tobin, John Macleod, Julian Little, Isabel Fortier, Bartha M Knoppers, Paul R Burton (2010):  
 [**DataSHIELD: resolving a conflict in contemporary bioscience**—performing a pooled analysis of individual-level data without sharing the data](https://doi.org/10.1093/ije/dyq111).  
 _International Journal of Epidemiology_ **39**(5)  
 <https://doi.org/10.1093/ije/dyq111>
