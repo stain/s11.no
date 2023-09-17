@@ -593,9 +593,9 @@ _ResearchObject.org_ / _Zenodo_
 <https://doi.org/10.5281/zenodo.7867028>  
 <https://w3id.org/ro/crate/1.1>  
 
-[Wilkinson 2016] https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
+[Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
 \[41\]
-Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons~(2016): 
+<small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons </small> (2016): 
 **The FAIR Guiding Principles for scientific data management and stewardship**.  
 _Scientific Data_ **3**(1):160018  
 <https://doi.org/10.1038/sdata.2016.18>
@@ -652,14 +652,36 @@ _Journal of Clinical and Diagnostic Research_ **10**(1)
 _OpenAIRE National Workshop in Malta_, 2021-02-24.
 <https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf>
 
+[Margariti 2022]: https://doi.org/10.1016/j.giq.2022.101712 "A holistic model for assessing organizational interoperability in public administration"
+\[51\]  Vasiliki Margariti, Teta Stamati, Dimosthenis Anagnostopoulos, Mara Nikolaidou, Anastasia Papastilianou (2022):  
+**A holistic model for assessing organizational interoperability in public administration**.  
+_Government Information Quarterly_ **39**(3)  
+<https://doi.org/10.1016/j.giq.2022.101712>
 
-\[51\] Margariti V, Stamati T, Anagnostopoulos D, Nikolaidou M, Papastilianou A. A holistic model for assessing organizational interoperability in public administration. Government Information Quarterly. 2022;39:101712. 
+[Weichhart 2014]: https://doi.org/10.3182/20140824-6-za-1003.01590 "Learning for Sustainable Organisational Interoperability"
+\[52\] Georg Weichhart (2014):  
+**Learning for Sustainable Organisational Interoperability**.  
+_IFAC Proceedings Volumes_ **47**(3)  
+<https://doi.org/10.3182/20140824-6-za-1003.01590>
 
-\[52\] Weichhart G. Learning for Sustainable Organisational Interoperability. IFAC Proceedings Volumes. 2014;47:4280--5. 
+[de Mello 2022]: https://doi.org/10.1007/s12553-022-00639-w "Semantic interoperability in health records standards: a systematic literature review"
+\[53\] Blanda Helena de Mello, Sandro José Rigo, Cristiano André da Costa, Rodrigo da Rosa Righi, Bruna Donida, Marta Rosecler Bez, Luana Carina Schunke (2022):  
+**Semantic interoperability in health records standards**: a systematic literature review.  
+_Health and Technology_ **12**(2)  
+<https://doi.org/10.1007/s12553-022-00639-w>
 
-\[53\] de Mello BH, Rigo SJ, da Costa CA, da Rosa Righi R, Donida B, Bez MR, et al. Semantic interoperability in health records standards: a systematic literature review. Health Technol. 2022;12:255--72. 
+[Gillespie 2016]: https://www.oreilly.com/library/view/efficient-r-programming/9781491950777/ "Efficient R Programming"
+\[54\] Colin Gillespie, Robin Lovelace (2016):  
+**Efficient R Programming**. 
+First Edition.  
+O'Reilly Media, Inc.  
+<https://identifiers.org/isbn/9781491950784>
 
-\[54\] Gillespie C, Lovelace R. Efficient R Programming: A Practical Guide to Smarter Programming \[Internet\]. First Edition. O'Reilly Media, Inc.; 2016.  
-<https://www.oreilly.com/library/view/efficient-r-programming/9781491950777/>
+[Lutz 2013]: https://www.oreilly.com/library/view/learning-python-5th/9781449355722/
+\[55\] Mark Lutz (2013):  
+**Powerful Object-Oriented Programming**. 
+Fifth Edition.  
+O'Reilly Media, Inc.  
+<https://identifiers.org/isbn/9781449355739>
 
-\[55\] Lutz M. Learning Python: Powerful Object-Oriented Programming. Fifth Edition. O'Reilly Media, Inc.; 2013. 
+
