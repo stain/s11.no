@@ -612,24 +612,46 @@ _BMC Medical Research Methodology_ **16**(1)
 _Indian Journal of Psychological Medicine_ **40**(5)  
 <https://doi.org/10.4103/ijpsym.ijpsym_334_18>
 
+[Findley 2021]: https://doi.org/10.1146/annurev-polisci-041719-102556 "External Validity"
+\[44\] Michael G. Findley, Kyosuke Kikuta, Michael Denly (2021):  
+**External Validity**.  
+_Annual Review of Political Science_ **24**(1)  
+<https://doi.org/10.1146/annurev-polisci-041719-102556>
+
+[Grimes 2002]: <https://doi.org/10.1016/s0140-6736(02)07451-2> "Bias and causal associations in observational research"
+\[45\] David A Grimes, Kenneth F Schulz (2002):  
+**Bias and causal associations in observational research**.  
+_The Lancet_ **359**(9302)  
+<https://doi.org/10.1016/s0140-6736(02)07451-2>
+
+[Quarto]: https://quarto.org/
+\[46\] **Quarto**. 
+<https://quarto.org/> [[archived 2023-09-17](https://web.archive.org/web/20230917192554/http://web.archive.org/screenshot/https://quarto.org/)]
+
+[Dube 2014]: https://doi.org/10.1007/978-3-642-53956-5_6 "Approach and Method for Generating Realistic Synthetic Electronic Healthcare Records for Secondary Use "
+\[47\] Kudakwashe Dube, Thomas Gallagher (2014):  
+**Approach and Method for Generating Realistic Synthetic Electronic Healthcare Records for Secondary Use**.  
+_Foundations of Health Information Engineering and Systems_ (FHIES 2013), Third International Symposium, 2013-08-21/--23, Macau, China.  
+<https://doi.org/10.1007/978-3-642-53956-5_6>
 
 
-\[44\] Findley MG, Kikuta K, Denly M. External Validity. Annual Review of Political Science. 2021;24:365--93. 
+[Al Jundi 2016]: https://doi.org/10.7860/jcdr/2016/21426.8865 "Protocol Writing in Clinical Research"
+\[48\] Azzam Al Jundi, Salah Sakka
+[**Protocol Writing in Clinical Research**](https://www.jcdr.net/articles/PDF/8865/21426_CE(EK)_F(RK)(1)_PF1(NEAK)_PFA(AK)_PF2(EKAK).pdf).  
+_Journal of Clinical and Diagnostic Research_ **10**(1)  
+<https://doi.org/10.7860/jcdr/2016/21426.8865>
 
-\[45\] Grimes DA, Schulz KF. Bias and causal associations in observational research. The Lancet. 2002;359:248--52. 
+[OpenAIRE 2023]: https://argos.openaire.eu/ "OpenAIRE Argos"
+\[49\] OpenAIRE (2023):  
+**Argos**.  
+<https://argos.openaire.eu/> [[archived 2023-09-17](https://web.archive.org/web/20230917193201/https://argos.openaire.eu/splash/)]
 
-\[46\] Quarto \[Internet\]. \[cited 2023 Jun 14\].   
-<https://quarto.org/>
+[Papadopoulou 2021]: <https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf> "ARGOS: plan and follow your data"
+\[50\] Elli Papadopoulou (2021):  
+**ARGOS: plan and follow your data**.  
+_OpenAIRE National Workshop in Malta_, 2021-02-24.
+<https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf>
 
-\[47\] Dube K, Gallagher T. Approach and Method for Generating Realistic Synthetic Electronic Healthcare Records for Secondary Use. In: Gibbons J, MacCaull W, editors. Foundations of Health Information Engineering and Systems. Berlin, Heidelberg: Springer; 2014. p. 69--86. 
-
-\[48\] Al-Jundi A, Sakka S. Protocol Writing in Clinical Research. J Clin Diagn Res. 2016;10:ZE10--3. 
-
-\[49\] OpenAIRE. Argos \[Internet\]. \[cited 2023 May 9\].   
-<https://argos.openaire.eu/splash/>
-
-\[50\] Papadopoulou E. ARGOS: plan and follow your data \[Internet\]. 2021. 
-  <https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf> 
 
 \[51\] Margariti V, Stamati T, Anagnostopoulos D, Nikolaidou M, Papastilianou A. A holistic model for assessing organizational interoperability in public administration. Government Information Quarterly. 2022;39:101712. 
 
