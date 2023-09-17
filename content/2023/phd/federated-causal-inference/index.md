@@ -72,7 +72,7 @@ The presence of confounders (i.e., variables that influence both the exposure an
 
 These methods generally require the availability of detailed patient information. Alternatively, selection bias represents bias introduced by mechanisms for selecting individuals into the analysis. Selection bias can likewise lead to non-exchangeable exposure groups (i.e., compromised internal validity), as well as impaired generalizability of the study results (i.e., external validity) \[[Hernan 2020]\] [[Hernán 2004]]. 
 
-Lastly, we refer to information bias as a distortion of the measured association resulting from errors in the measurement or classification of variables, such as the exposure, outcome, or covariates in the analysis. Hernán et al. (2022) [[Hernán 2022]] suggested that specifying a hypothetical RCT that would allow the estimation of the causal effect of interest (a target trial) and emulating this target trial using the available observational data is beneficial for maintaining the elements of an RCT. For example, emulating randomization as specified in the target trial during the analysis may help to reduce the risk of confounding and increase the internal validity of the study \[[Hernan 2020]\] [[Hernán 2006]] [[8]].
+Lastly, we refer to information bias as a distortion of the measured association resulting from errors in the measurement or classification of variables, such as the exposure, outcome, or covariates in the analysis. Hernán et al. (2022) [[Hernán 2022]] suggested that specifying a hypothetical RCT that would allow the estimation of the causal effect of interest (a target trial) and emulating this target trial using the available observational data is beneficial for maintaining the elements of an RCT. For example, emulating randomization as specified in the target trial during the analysis may help to reduce the risk of confounding and increase the internal validity of the study \[[Hernan 2020]\] [[Hernán 2006]] [[Glass 2013]].
 
 
 A treatment or intervention can be applied to populations spanning different regions or countries, with the collected real-world observational data often stored decentralized in isolated environments. Integrating and analyzing these data from different locations and institutions, can support public health decision-making by providing more precise and generalizable estimates. A meta-analysis integrating evidence from different independent studies, for example, as maintained by the International Vaccine Access Center (IVAC) on the effectiveness of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccine primary series of the online VIEW-hub [[IVAC 2023]], can be conducted to obtain a pooled effect estimate. However, heterogeneity in the considered confounding factors, criteria for study participant selection, definitions of variables and adopted statistical methods might exist across studies, limiting comparability. 
@@ -331,7 +331,8 @@ The research objects generated during the current study (i.e., a study protocol,
 
 ### Competing interests
 
-Not applicable.
+The authors declare no competing interests.
+
 
 ### Funding
 
@@ -421,6 +422,19 @@ _Joint Action on Health Information_ (INFACT)
 _Archives of Public Health_ **79**:221  
 <https://doi.org/10.1186/s13690-021-00731-z>
 
+13. Wolfson M, Wallace SE, Masca N, Rowe G, Sheehan NA, Ferretti V, et al. DataSHIELD: resolving a conflict in contemporary bioscience---performing a pooled analysis of individual-level data without sharing the data. Int J Epidemiol. 2010;39:1372--82. 
+
+14.  Gaye A, Marcon Y, Isaeva J, LaFlamme P, Turner A, Jones EM, et al. DataSHIELD: taking the analysis to the data, not the data to the analysis. International Journal of Epidemiology. 2014;43:1929--44. 
+
+15. Attema T, Worm D. Technological breakthrough finally, a privacy-friendly way to harness data. 2021 \[cited 2023 Sep 5\]; Available from: http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b 
+
+16. Beyan O, Choudhury A, van Soest J, Kohlbacher O, Zimmermann L, Stenzhorn H, et al. Distributed Analytics on Sensitive Medical Data: The Personal Health Train. Data Intelligence. 2020;2:96--107. 
+
+17. Moncada-Torres A, Martin F, Sieswerda M, Van Soest J, Geleijnse G. VANTAGE6: an open source priVAcy preserviNg federaTed leArninG infrastructurE for Secure Insight eXchange. AMIA Annu Symp Proc. 2021;2020:870--7. 
+
+
+
+
 [BY-COVID]: https://by-covid.org/
 \[BY-COVID\] [**BY-COVID**](https://by-covid.org/).  
 <https://by-covid.org/> 
@@ -437,6 +451,10 @@ _Stevens' Handbook of Experimental Psychology and Cognitive Neuroscience_, John 
 [**Open Science Framework (OSF)**](https://jmla.pitt.edu/ojs/jmla/article/view/88/373).  
 _Journal of the Medical Library Association_ **105**(2):  
 <https://doi.org/10.5195/jmla.2017.88>
+
+21. Abboud LA, Bogaert P, Fehr A, Urbanski D, Tolonen H, Noguer-Zambran I, et al. The new Joint Action on Health Information: information for action (InfAct)! European Journal of Public Health. 2018;28:cky213.651
+
+22. Bogaert P, Schutte N. Towards a Population Health Information Research Infrastructure. European Journal of Public Health. 2021
 
 [Nishikawa-Pacher 2022]: https://doi.org/10.3390/publications10030021
 \[Nishikawa-Pacher 2022\] Andreas Nishikawa-Pacher (2022):  
@@ -497,6 +515,11 @@ _Journal of Clinical Epidemiology_ **142**
 [**Assessing the impact of unmeasured confounding for binary outcomes using confounding functions**](https://doi.org/10.1093/ije/dyx023).  
 _International Journal of Epidemiology_ **46**(4)  
 <https://doi.org/10.1093/ije/dyx023>
+
+33. Using eye tracking to study variable naming conventions and their effect on code readability \[Internet\]. \[cited 2023 Sep 8\]. Available from: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1337810&dswid=1132
+
+34. DiLeo C. Naming Things. In: DiLeo C, editor. Clean Ruby: A Guide to Crafting Better Code for Rubyists \[Internet\]. Berkeley, CA: Apress; 2019 \[cited 2023 Sep 8\]. p. 9--32. Available from: 
+<https://doi.org/10.1007/978-1-4842-5546-9_2>
 
 [Li 2014]: https://doi.org/10.1017/s2040174414000415 "A comparison of confounding adjustment methods with an application to early life determinants of childhood obesity"
 \[Li 2014\] L. Li, K. Kleinman, M. W. Gillman (2014):  
@@ -574,11 +597,17 @@ _Zenodo_
 _Zenodo_
 <https://doi.org/10.5281/zenodo.7572373>
 
+47. Faraglia D. Welcome to Faker's documentation! --- Faker 18.13.0 documentation \[Internet\]. \[cited 2023 Sep 12\]. Available from: https://faker.readthedocs.io/en/master/
+
 [Meurisse 2023b]: https://w3id.org/ro/doi/10.5281/zenodo.6913045
 \[Meurisse 2023b\] Marjan Meurisse, Francisco Estupiñán-Romero, Nina Van Goethem, Javier González-Galindo, Santiago Royo-Sierra, Enrique Bernal-Delgado (2023):  
 [**BY-COVID - WP5 - Baseline Use Case: SARS-CoV-2 vaccine effectiveness assessment**](https://w3id.org/ro/doi/10.5281/zenodo.6913045).  
 _BY-COVID Project_, RO-Crate.
 <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
+
+49. ydata-profiling \[Internet\]. YData; 2023 \[cited 2023 Sep 13\]. Available from: https://github.com/ydataai/ydata-profiling
+
+50. Welcome - YData Profiling \[Internet\]. \[cited 2023 Sep 13\]. Available from: https://docs.profiling.ydata.ai/4.5/
 
 [Martínez-Lizaga 2023]: https://doi.org/10.5281/zenodo.7625784 "BY-COVID - WP5 - Baseline Use Case: COVID-19 vaccine effectiveness assessment - Data Management Plan"
 \[Martínez-Lizaga 2023\] Natalia Martínez-Lizaga; Marjan Meurisse; Francisco Estupiñan-Romero; Nina Van Goethem; Enrique Bernal-Delgado (2023):  
