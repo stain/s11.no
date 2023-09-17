@@ -422,18 +422,40 @@ _Joint Action on Health Information_ (INFACT)
 _Archives of Public Health_ **79**:221  
 <https://doi.org/10.1186/s13690-021-00731-z>
 
-13. Wolfson M, Wallace SE, Masca N, Rowe G, Sheehan NA, Ferretti V, et al. DataSHIELD: resolving a conflict in contemporary bioscience---performing a pooled analysis of individual-level data without sharing the data. Int J Epidemiol. 2010;39:1372--82. 
+[Wolfson 2010]: https://doi.org/10.1093/ije/dyq111 "DataSHIELD"
+[[13]]
+Michael Wolfson, Susan E Wallace, Nicholas Masca, Geoff Rowe, Nuala A Sheehan, Vincent Ferretti, Philippe LaFlamme, Martin D Tobin, John Macleod, Julian Little, Isabel Fortier, Bartha M Knoppers, Paul R Burton (2010):  
+[**DataSHIELD: resolving a conflict in contemporary bioscience**—performing a pooled analysis of individual-level data without sharing the data](https://doi.org/10.1093/ije/dyq111).  
+_International Journal of Epidemiology_ **39**(5)  
+<https://doi.org/10.1093/ije/dyq111>
 
-14.  Gaye A, Marcon Y, Isaeva J, LaFlamme P, Turner A, Jones EM, et al. DataSHIELD: taking the analysis to the data, not the data to the analysis. International Journal of Epidemiology. 2014;43:1929--44. 
+[Gaye 2014]: https://doi.org/10.1093/ije/dyu188 "DataSHIELD: taking the analysis to the data"
+[[14]]
+<small>Amadou Gaye, Yannick Marcon, Julia Isaeva, Philippe LaFlamme, Andrew Turner, Elinor M Jones, Joel Minion, Andrew W Boyd, Christopher J Newby, Marja-Liisa Nuotio, Rebecca Wilson, Oliver Butters, Barnaby Murtagh, Ipek Demir, Dany Doiron, Lisette Giepmans, Susan E Wallace, Isabelle Budin-Ljøsne, Carsten Oliver Schmidt, Paolo Boffetta, Mathieu Boniol, Maria Bota, Kim W Carter, Nick deKlerk, Chris Dibben, Richard W Francis, Tero Hiekkalinna, Kristian Hveem, Kirsti Kvaløy, Sean Millar, Ivan J Perry, Annette Peters, Catherine M Phillips, Frank Popham, Gillian Raab, Eva Reischl, Nuala Sheehan, Melanie Waldenberger, Markus Perola, Edwin van den Heuvel, John Macleod, Bartha M Knoppers, Ronald P Stolk, Isabel Fortier, Jennifer R Harris, Bruce HR Woffenbuttel, Madeleine J Murtagh, Vincent Ferretti, Paul Burton</small> (2014):  
+**DataSHIELD: taking the analysis to the data, not the data to the analysis**.  
+_International Journal of Epidemiology_ **43**(6)  
+<https://doi.org/10.1093/ije/dyu188>
 
-15. Attema T, Worm D. Technological breakthrough finally, a privacy-friendly way to harness data. 2021 \[cited 2023 Sep 5\]; Available from: http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b 
+[Attema 2021]: http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b "Technological breakthrough"
+[[15]] T. Attema T, D. Worm (2021):  
+**Technologische doorbraak**: eindelijk een privacyvriendelijke manier om data te benutten.  
+**Technological breakthrough**: Finally, a privacy-friendly way to harness data.  
+_TNO_ whitepaper, 953235.  
+<http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b>
 
-16. Beyan O, Choudhury A, van Soest J, Kohlbacher O, Zimmermann L, Stenzhorn H, et al. Distributed Analytics on Sensitive Medical Data: The Personal Health Train. Data Intelligence. 2020;2:96--107. 
+[Beyan 2020]: https://doi.org/10.1162/dint_a_00032 "Distributed Analytics on Sensitive Medical Data"
+[[16]]
+Oya Beyan, Ananya Choudhury, Johan van Soest, Oliver Kohlbacher, Lukas Zimmermann, Holger Stenzhorn, Md. Rezaul Karim, Michel Dumontier, Stefan Decker, Luiz Olavo Bonino da Silva Santos, Andre Dekker (2020):  
+**Distributed Analytics on Sensitive Medical Data**: The Personal Health Train.  
+_Data Intelligence_ **2**(1--2)
+<https://doi.org/10.1162/dint_a_00032>
 
-17. Moncada-Torres A, Martin F, Sieswerda M, Van Soest J, Geleijnse G. VANTAGE6: an open source priVAcy preserviNg federaTed leArninG infrastructurE for Secure Insight eXchange. AMIA Annu Symp Proc. 2021;2020:870--7. 
-
-
-
+[Moncada-Torres 2021]: https://identifiers.org/pmc/PMC8075508 "VANTAGE6"
+[[17]]
+Arturo Moncada-Torres, Frank Martin, Melle Sieswerda, Johan Van Soest, Gijs Geleijnse (2021):  
+[**VANTAGE6**: an open source priVAcy preserviNg federaTed leArninG infrastructurE for Secure Insight eXchange](https://identifiers.org/pmc/PMC8075508).  
+_AMIA Annual Symposium Proceedings_ **2020**
+<https://identifiers.org/pmc/PMC8075508>
 
 [BY-COVID]: https://by-covid.org/
 \[BY-COVID\] [**BY-COVID**](https://by-covid.org/).  
@@ -452,9 +474,20 @@ _Stevens' Handbook of Experimental Psychology and Cognitive Neuroscience_, John 
 _Journal of the Medical Library Association_ **105**(2):  
 <https://doi.org/10.5195/jmla.2017.88>
 
-21. Abboud LA, Bogaert P, Fehr A, Urbanski D, Tolonen H, Noguer-Zambran I, et al. The new Joint Action on Health Information: information for action (InfAct)! European Journal of Public Health. 2018;28:cky213.651
+[Abboud 2018]: https://doi.org/10.1093/eurpub/cky212.651 "The new Joint Action on Health Information: information for action (InfAct)! "
+[[21]]
+L A Abboud, P Bogaert, A Fehr, D Urbanski, H Tolonen, I Noguer-Zambran, A Padron-Monedero, L Palmieri, H Van Oyen (2018):  
+**The new Joint Action on Health Information: information for action (InfAct)!**  
+_European Journal of Public Health_ **28**(suppl_4)  
+<https://doi.org/10.1093/eurpub/cky212.651>
 
-22. Bogaert P, Schutte N. Towards a Population Health Information Research Infrastructure. European Journal of Public Health. 2021
+[Bogaert 2021]: https://doi.org/10.1093/eurpub/ckab164.572 "Towards a Population Health Information Research Infrastructure"
+[[22]]
+P Bogaert, N Schutte (2021):  
+**Towards a Population Health Information Research Infrastructure**.  
+_European Journal of Public Health_ **31**(Supplement_3)  
+<https://doi.org/10.1093/eurpub/ckab164.572>
+
 
 [Nishikawa-Pacher 2022]: https://doi.org/10.3390/publications10030021
 \[Nishikawa-Pacher 2022\] Andreas Nishikawa-Pacher (2022):  
@@ -516,9 +549,17 @@ _Journal of Clinical Epidemiology_ **142**
 _International Journal of Epidemiology_ **46**(4)  
 <https://doi.org/10.1093/ije/dyx023>
 
-33. Using eye tracking to study variable naming conventions and their effect on code readability \[Internet\]. \[cited 2023 Sep 8\]. Available from: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1337810&dswid=1132
+[Broberg 2019]: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048
+Pontus Broberg, Shapour Jahanshahi (2019):  
+**Using eye tracking to study variable naming conventions and their effect on code readability**.  
+Dissertation, Master in Computer Science.  
+_KTH_, School of Electrical Engineering and Computer Science (EECS).  
+TRITA-EECS-EX 2019:323  
+<https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048>
 
-34. DiLeo C. Naming Things. In: DiLeo C, editor. Clean Ruby: A Guide to Crafting Better Code for Rubyists \[Internet\]. Berkeley, CA: Apress; 2019 \[cited 2023 Sep 8\]. p. 9--32. Available from: 
+[33]. Using eye tracking to study variable naming conventions and their effect on code readability \[Internet\]. \[cited 2023 Sep 8\]. Available from: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1337810&dswid=1132
+
+[34]. DiLeo C. Naming Things. In: DiLeo C, editor. Clean Ruby: A Guide to Crafting Better Code for Rubyists \[Internet\]. Berkeley, CA: Apress; 2019 \[cited 2023 Sep 8\]. p. 9--32. Available from: 
 <https://doi.org/10.1007/978-1-4842-5546-9_2>
 
 [Li 2014]: https://doi.org/10.1017/s2040174414000415 "A comparison of confounding adjustment methods with an application to early life determinants of childhood obesity"
@@ -597,7 +638,7 @@ _Zenodo_
 _Zenodo_
 <https://doi.org/10.5281/zenodo.7572373>
 
-47. Faraglia D. Welcome to Faker's documentation! --- Faker 18.13.0 documentation \[Internet\]. \[cited 2023 Sep 12\]. Available from: https://faker.readthedocs.io/en/master/
+[47]. Faraglia D. Welcome to Faker's documentation! --- Faker 18.13.0 documentation \[Internet\]. \[cited 2023 Sep 12\]. Available from: https://faker.readthedocs.io/en/master/
 
 [Meurisse 2023b]: https://w3id.org/ro/doi/10.5281/zenodo.6913045
 \[Meurisse 2023b\] Marjan Meurisse, Francisco Estupiñán-Romero, Nina Van Goethem, Javier González-Galindo, Santiago Royo-Sierra, Enrique Bernal-Delgado (2023):  
@@ -605,9 +646,9 @@ _Zenodo_
 _BY-COVID Project_, RO-Crate.
 <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
 
-49. ydata-profiling \[Internet\]. YData; 2023 \[cited 2023 Sep 13\]. Available from: https://github.com/ydataai/ydata-profiling
+[49]. ydata-profiling \[Internet\]. YData; 2023 \[cited 2023 Sep 13\]. Available from: https://github.com/ydataai/ydata-profiling
 
-50. Welcome - YData Profiling \[Internet\]. \[cited 2023 Sep 13\]. Available from: https://docs.profiling.ydata.ai/4.5/
+[50]. Welcome - YData Profiling \[Internet\]. \[cited 2023 Sep 13\]. Available from: https://docs.profiling.ydata.ai/4.5/
 
 [Martínez-Lizaga 2023]: https://doi.org/10.5281/zenodo.7625784 "BY-COVID - WP5 - Baseline Use Case: COVID-19 vaccine effectiveness assessment - Data Management Plan"
 \[Martínez-Lizaga 2023\] Natalia Martínez-Lizaga; Marjan Meurisse; Francisco Estupiñan-Romero; Nina Van Goethem; Enrique Bernal-Delgado (2023):  
