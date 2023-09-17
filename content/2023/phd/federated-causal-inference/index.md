@@ -550,6 +550,7 @@ _International Journal of Epidemiology_ **46**(4)
 <https://doi.org/10.1093/ije/dyx023>
 
 [Broberg 2019]: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048
+[33]
 Pontus Broberg, Shapour Jahanshahi (2019):  
 **Using eye tracking to study variable naming conventions and their effect on code readability**.  
 Dissertation, Master in Computer Science.  
@@ -557,9 +558,12 @@ _KTH_, School of Electrical Engineering and Computer Science (EECS).
 TRITA-EECS-EX 2019:323  
 <https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048>
 
-[33]. Using eye tracking to study variable naming conventions and their effect on code readability \[Internet\]. \[cited 2023 Sep 8\]. Available from: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1337810&dswid=1132
-
-[34]. DiLeo C. Naming Things. In: DiLeo C, editor. Clean Ruby: A Guide to Crafting Better Code for Rubyists \[Internet\]. Berkeley, CA: Apress; 2019 \[cited 2023 Sep 8\]. p. 9--32. Available from: 
+[DiLep 2019]: https://doi.org/10.1007/978-1-4842-5546-9_2 "Naming Things"
+[[34]]
+Carleton DiLeo (2019):  
+**Naming Things**.  
+_Clean Ruby: A Guide to Crafting Better Code for Rubyists_  
+ISBN 978-1-4842-5546-9  
 <https://doi.org/10.1007/978-1-4842-5546-9_2>
 
 [Li 2014]: https://doi.org/10.1017/s2040174414000415 "A comparison of confounding adjustment methods with an application to early life determinants of childhood obesity"
@@ -638,7 +642,13 @@ _Zenodo_
 _Zenodo_
 <https://doi.org/10.5281/zenodo.7572373>
 
-[47]. Faraglia D. Welcome to Faker's documentation! --- Faker 18.13.0 documentation \[Internet\]. \[cited 2023 Sep 12\]. Available from: https://faker.readthedocs.io/en/master/
+[Faraglia 2023]: https://faker.readthedocs.io/ "Faker"
+[47]
+Daniele Faraglia (2023):  
+[**Welcome to Faker’s documentation!**](https://faker.readthedocs.io/).
+Faker 18.13.0 documentation.  
+_Read the Docs_  
+<https://faker.readthedocs.io/>
 
 [Meurisse 2023b]: https://w3id.org/ro/doi/10.5281/zenodo.6913045
 \[Meurisse 2023b\] Marjan Meurisse, Francisco Estupiñán-Romero, Nina Van Goethem, Javier González-Galindo, Santiago Royo-Sierra, Enrique Bernal-Delgado (2023):  
@@ -646,9 +656,17 @@ _Zenodo_
 _BY-COVID Project_, RO-Crate.
 <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
 
-[49]. ydata-profiling \[Internet\]. YData; 2023 \[cited 2023 Sep 13\]. Available from: https://github.com/ydataai/ydata-profiling
+[YData 2023a]: https://github.com/ydataai/ydata-profiling
+[49]. YData (2023):  
+[**ydata-profiling**](https://github.com/ydataai/ydata-profiling). 
+_GitHub_
+<https://github.com/ydataai/ydata-profiling>
 
-[50]. Welcome - YData Profiling \[Internet\]. \[cited 2023 Sep 13\]. Available from: https://docs.profiling.ydata.ai/4.5/
+[Ydata 2023b]: https://docs.profiling.ydata.ai/4.5/
+[50] YData (2023):  
+[**Welcome - YData Profiling 4.5**](https://docs.profiling.ydata.ai/4.5/). 
+_YData_
+<https://docs.profiling.ydata.ai/4.5/>
 
 [Martínez-Lizaga 2023]: https://doi.org/10.5281/zenodo.7625784 "BY-COVID - WP5 - Baseline Use Case: COVID-19 vaccine effectiveness assessment - Data Management Plan"
 \[Martínez-Lizaga 2023\] Natalia Martínez-Lizaga; Marjan Meurisse; Francisco Estupiñan-Romero; Nina Van Goethem; Enrique Bernal-Delgado (2023):  
