@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="453.17169pt"
+   height="323.72449pt"
+   viewBox="0 0 111.90823 79.941961"
+   version="1.1"
+   id="svg17381"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="figure1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17383"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="pt"
+     inkscape:zoom="1.0998546"
+     inkscape:cx="-122.28889"
+     inkscape:cy="358.68378"
+     inkscape:window-width="2490"
+     inkscape:window-height="1536"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     scale-x="0.7" />
+  <defs
+     id="defs17378" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.294012,-45.70716)">
+    <g
+       id="g115795"
+       transform="translate(16.392052,-38.833865)">
+      <g
+         id="g115750">
+        <g
+           id="g115693">
+          <path
+             style="fill:#ffcaca;fill-opacity:0.3;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.276945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 24.040433,137.51623 H 135.67172 V 125.66938 H 24.040433 Z m 0,0"
+             id="path3692-9" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="79.84919"
+             y="130.10056"
+             id="text23956-3-8"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.84919"
+               y="130.10056"
+               id="tspan87022">Provenance Information Management Requirements</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.84919"
+               y="135.21584"
+               id="tspan99351">(Part 1)</tspan></text>
+        </g>
+        <g
+           id="g115705">
+          <path
+             style="fill:#ffcaca;fill-opacity:0.3;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.276945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 24.040433,150.95391 H 135.67172 V 139.10704 H 24.040433 Z m 0,0"
+             id="path3816-5" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="79.80957"
+             y="143.53822"
+             id="text23956-3-8-3"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.80957"
+               y="143.53822"
+               id="tspan99351-7">Common Provenance Model</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.80957"
+               y="148.6535"
+               id="tspan102706">(Part 2)</tspan></text>
+        </g>
+        <g
+           id="g115699">
+          <path
+             style="fill:#ffcaca;fill-opacity:0.3;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.276945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 24.040433,164.34452 H 135.67172 V 152.54471 H 24.040433 Z m 0,0"
+             id="path3894-1" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="79.79837"
+             y="156.92137"
+             id="text23956-3-8-3-9"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.79837"
+               y="156.92137"
+               id="tspan102706-9">Security Extensions</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.79837"
+               y="162.03665"
+               id="tspan107021">(Part 6)</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g115733">
+        <g
+           id="g115687">
+          <path
+             style="fill:#7f7fff;fill-opacity:0.3;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.277817;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 24.040869,124.07995 H 59.944694 V 84.679934 H 24.040869 Z m 0,0"
+             id="path3248-1" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="42.027233"
+             y="90.099495"
+             id="text23956"><tspan
+               sodipodi:role="line"
+               id="tspan23954"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="90.099495">Sample </tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="95.214775"
+               id="tspan43276">Acquisition,</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="100.33006"
+               id="tspan23958">Processing,</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="105.44534"
+               id="tspan23960">Transport, and</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="110.56062"
+               id="tspan23962">Storage</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="115.6759"
+               id="tspan23964">Provenance</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="42.027233"
+               y="120.79118"
+               id="tspan23966">(Part 3)</tspan></text>
+        </g>
+        <g
+           id="g115676">
+          <path
+             style="fill:#7f7fff;fill-opacity:0.3;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.277817;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 61.902795,124.07995 H 97.808444 V 84.679934 H 61.902795 Z m 0,0"
+             id="path3412-7" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="79.886627"
+             y="95.183769"
+             id="text23956-3"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.886627"
+               y="95.183769"
+               id="tspan23966-5">Data Generation</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.886627"
+               y="100.29905"
+               id="tspan82401">Provenance</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.886627"
+               y="105.41433"
+               id="tspan82403">(NGS, mass spec,</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.886627"
+               y="110.52961"
+               id="tspan82405">OME, ...)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="79.886627"
+               y="115.6449"
+               id="tspan82407">(Part 4)</tspan></text>
+        </g>
+        <g
+           id="g115667">
+          <path
+             style="fill:#7f7fff;fill-opacity:0.3;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.277817;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+             d="M 99.765653,124.07995 H 135.67128 V 84.679934 H 99.765653 Z m 0,0"
+             id="path3556-7" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.45;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             x="117.67282"
+             y="95.214775"
+             id="text23956-3-8-4"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="117.67282"
+               y="95.214775"
+               id="tspan82407-1-8">Data Storage and</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="117.67282"
+               y="100.33006"
+               id="tspan87016-4">Processing</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="117.67282"
+               y="105.44534"
+               id="tspan87018-6">Provenance</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="117.67282"
+               y="110.56062"
+               id="tspan87020-9">(CWL, ...)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+               x="117.67282"
+               y="115.6759"
+               id="tspan87022-2">(Part 5)</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
