@@ -50,10 +50,9 @@ _Learning Health Systems_
 <https://doi.org/10.1002/lrh2.10365>
 
 Romain David, Audrey S. Richard, Claire Connellan, Katharina B. Lauer, Maria Luisa Chiusano, Carole Goble, Martin Houde, Isabel Kemmer, Antje Keppler, Philippe Lieutaud, Christian Ohmann, Maria Panagiotopoulou, Sara Raza Khan, Arina Rybina, Stian Soiland-Reyes, Charlotte Wit, Rudolf Wittner, Rafael Andrade Buono, Sarah Arnaud Marsh, Pauline Audergon, Dylan Bonfils, Jose-Maria Carazo, Remi Charrel, Frederik Coppens, Wolfgang Fecke, Claudia Filippone, Eva Garcia Alvarez, Sheraz Gul, Henning Hermjakob, Katja Herzog, Petr Holub, Lukasz Kozera, Allyson L. Lister, José López-Coronado, Bénédicte Madon, Kurt Majcen, William Martin, Wolfgang Müller, Elli Papadopoulou, Christine M.A. Prat, Paolo Romano, Susanna-Assunta Sansone, Gary Saunders, Niklas Blomberg, Jonathan Ewbank (2023):  
-**Umbrella Data Management Plans to integrate FAIR data: lessons from the ISIDORe and BY-COVID consortia for pandemic preparedness**.  
-(submitted to Data Science Journal).  
-_Zenodo_  
-<https://doi.org/10.5281/zenodo.7520086>
+[**Umbrella Data Management Plans to Integrate FAIR Data: Lessons From the ISIDORe and BY-COVID Consortia for Pandemic Preparedness**](https://doi.org/10.5334/dsj-2023-035).  
+_Data Science Journal_ **22**:52  
+<https://doi.org/10.5334/dsj-2023-035>
 
 
 ## 2022
@@ -176,8 +175,8 @@ Jeremy Leipzig, Daniel Nüst, Charles Tapley Hoyt, Stian Soiland-Reyes, Karthik 
 [arXiv:2006.08589](https://arxiv.org/abs/2006.08589) 
 (later [published in _Patterns_](https://doi.org/10.1016/j.patter.2021.100322), withdrew authorship due to [The Cost of Knowledge](http://thecostofknowledge.com/) pledge)
 
-Rudolf Wittner, Petr Holub, Heimo Müller, Joerg Geiger, Carole Goble, Stian Soiland-Reyes, Luca Pireddu, Francesca Frexia, Cecilia Mascia, Elliot Fairweather, Jason R. Swedlow, Josh Moore, Caterina Strambio, David Grunwald, Hiroki Nakae (2020):  
-[**ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**](https://www.research.manchester.ac.uk/portal/files/195948339/ProvenanceWeek_2020_Poster_ISO_23494_Provenance_LNCS_format_1_.pdf).  
+Rudolf Wittner, Petr Holub, Heimo Müller, Joerg Geiger, Carole Goble, Stian Soiland-Reyes, Luca Pireddu, Francesca Frexia, Cecilia Mascia, Elliot Fairweather, Jason R. Swedlow, Josh Moore, Caterina Strambio, David Grunwald, Hiroki Nakae (2021):  
+[**ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data**](../../2021/phd/iso-23494-provenance/)
 In: Glavic B., Braganholo V., Koop D. (eds) 
 _Provenance and Annotation of Data and Processes_ (IPAW 2020/2021).  
 _Lecture Notes in Computer Science_ **12839**.  
