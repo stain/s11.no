@@ -26,7 +26,7 @@ description: >
 
 Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia Martínez-Lizaga, Santiago Royo-Sierra, Simon Saldner, Lorenz Dolanski-Aghamanoukjan, Alexander Degelsegger-Marquez, Stian Soiland-Reyes, Nina Van Goethem, Enrique Bernal-Delgado, On Behalf of BeYond-COVID project contributors (2023):  
 **Federated causal inference based on real-world observational data sources**: Application to a SARS-CoV-2 vaccine effectiveness assessment.  
-_Submitted_
+(Submitted to _BMC Medical Research Methodology_)
 
 
 # Federated causal inference based on real-world observational data sources: <br>Application to a SARS-CoV-2 vaccine effectiveness assessment
@@ -400,9 +400,10 @@ BeYond-COVID project contributors: Vasso Kalaitzi (KNAW/DANS), Claudia Habl (GÖ
 [Abboud 2018]: https://doi.org/10.1093/eurpub/cky212.651 "The new Joint Action on Health Information: information for action (InfAct)! "
 \[Abboud 2018\]
 L A Abboud, P Bogaert, A Fehr, D Urbanski, H Tolonen, I Noguer-Zambran, A Padron-Monedero, L Palmieri, H Van Oyen (2018):  
-**The new Joint Action on Health Information: information for action (InfAct)!**  
+[**The new Joint Action on Health Information: information for action (InfAct)!**](https://academic.oup.com/eurpub/article/28/suppl_4/cky213.651/5192078)  
 _European Journal of Public Health_ **28**(suppl_4)  
 <https://doi.org/10.1093/eurpub/cky212.651>
+<!-- had DOI redirect bug -->
 
 [Al Jundi 2016]: https://doi.org/10.7860/jcdr/2016/21426.8865 "Protocol Writing in Clinical Research"
 \[Al Jundi 2016\] Azzam Al Jundi, Salah Sakka (2016):  
@@ -412,14 +413,14 @@ _Journal of Clinical and Diagnostic Research_ **10**(1)
 
 [Andrade 2018]: https://doi.org/10.4103/ijpsym.ijpsym_334_18 "Internal, External, and Ecological Validity in Research Design, Conduct, and Evaluation"
 \[Andrade 2018\]  Chittaranjan Andrade (2018):  
-**Internal, External, and Ecological Validity in Research Design, Conduct, and Evaluation**.  
+[**Internal, External, and Ecological Validity in Research Design, Conduct, and Evaluation**](hhttps://journals.sagepub.com/doi/pdf/10.4103/IJPSYM.IJPSYM_334_18).  
 _Indian Journal of Psychological Medicine_ **40**(5)  
 <https://doi.org/10.4103/ijpsym.ijpsym_334_18>
 
 [Attema 2021]: http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b "Technological breakthrough"
 \[Attema 2021\] T. Attema T, D. Worm (2021):  
-**Technologische doorbraak**: eindelijk een privacyvriendelijke manier om data te benutten.  
-**Technological breakthrough**: Finally, a privacy-friendly way to harness data.  
+[**Technologische doorbraak**: eindelijk een privacyvriendelijke manier om data te benutten](https://publications.tno.nl/publication/34637924/c6SScX/TNO-2021-technologische.pdf).  
+[**Technological breakthrough**: Finally, a privacy-friendly way to harness data](https://publications.tno.nl/publication/34637925/StFCdC/TNO-2021-technological.pdf).  
 _TNO_ whitepaper, 953235.  
 <http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b>
 
@@ -439,7 +440,7 @@ _IJCSNS International Journal of Computer Science and Network_ **17**(3)
 [Beyan 2020]: https://doi.org/10.1162/dint_a_00032 "Distributed Analytics on Sensitive Medical Data"
 \[Beyan 2020\]
 Oya Beyan, Ananya Choudhury, Johan van Soest, Oliver Kohlbacher, Lukas Zimmermann, Holger Stenzhorn, Md. Rezaul Karim, Michel Dumontier, Stefan Decker, Luiz Olavo Bonino da Silva Santos, Andre Dekker (2020):  
-**Distributed Analytics on Sensitive Medical Data**: The Personal Health Train.  
+[**Distributed Analytics on Sensitive Medical Data**: The Personal Health Train](https://doi.org/10.1162/dint_a_00032).  
 _Data Intelligence_ **2**(1--2)
 <https://doi.org/10.1162/dint_a_00032>
 
@@ -452,7 +453,7 @@ _ACM SIGOPS Operating Systems Review_ **49**(1)
 [Bogaert 2021]: https://doi.org/10.1093/eurpub/ckab164.572 "Towards a Population Health Information Research Infrastructure"
 \[Bogaert 2021\]
 P Bogaert, N Schutte (2021):  
-**Towards a Population Health Information Research Infrastructure**.  
+[**Towards a Population Health Information Research Infrastructure**](https://academic.oup.com/eurpub/article-pdf/31/Supplement_3/ckab164.572/40781785/ckab164.572.pdf).  
 _European Journal of Public Health_ **31**(Supplement_3)  
 <https://doi.org/10.1093/eurpub/ckab164.572>
 
@@ -464,7 +465,7 @@ _European Journal of Public Health_ **31**(Supplement_3)
 [Broberg 2019]: https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-255048
 \[Broberg 2019\]
 Pontus Broberg, Shapour Jahanshahi (2019):  
-**Using eye tracking to study variable naming conventions and their effect on code readability**.  
+[**Using eye tracking to study variable naming conventions and their effect on code readability**](https://kth.diva-portal.org/smash/get/diva2:1337810/FULLTEXT01.pdf).  
 Dissertation, Master in Computer Science.  
 _KTH_, School of Electrical Engineering and Computer Science (EECS).  
 TRITA-EECS-EX 2019:323  
@@ -485,7 +486,7 @@ _Joint Action on Health Information_ (INFACT)
 [Digitale 2022]: https://doi.org/10.1016/j.jclinepi.2021.08.001 "Tutorial on directed acyclic graphs"
 \[Digitale 2022\] Jean C. Digitale, Jeffrey N. Martin, Medellena Maria Glymour (2022):  
 [**Tutorial on directed acyclic graphs**](https://doi.org/10.1016/j.jclinepi.2021.08.001).  
-_Journal of Clinical Epidemiology_ **142**
+_Journal of Clinical Epidemiology_ **142**  
 <https://doi.org/10.1016/j.jclinepi.2021.08.001>
 
 [DiLep 2019]: https://doi.org/10.1007/978-1-4842-5546-9_2 "Naming Things"
@@ -511,7 +512,7 @@ _Publications Office of the European Union_
 [Estupiñán-Romero 2023]: https://doi.org/10.5281/zenodo.7572373 "SARS-CoV-2 vaccine effectiveness assessment - Common Data Model Specification"
 \[Estupiñán-Romero 2023\] Francisco Estupiñán-Romero, Nina Van Goethem, Marjan Meurisse, Javier González-Galindo, Enrique Bernal-Delgado (2023):  
 [**BY-COVID - WP5 - Baseline Use Case: SARS-CoV-2 vaccine effectiveness assessment - Common Data Model Specification**](https://doi.org/10.5281/zenodo.7572373).  
-_Zenodo_
+_Zenodo_  
 <https://doi.org/10.5281/zenodo.7572373>
 
 [Faraglia 2023]: https://faker.readthedocs.io/ "Faker"
@@ -524,7 +525,7 @@ _Read the Docs_
 
 [Findley 2021]: https://doi.org/10.1146/annurev-polisci-041719-102556 "External Validity"
 \[Findley 2021\] Michael G. Findley, Kyosuke Kikuta, Michael Denly (2021):  
-**External Validity**.  
+[**External Validity**](https://doi.org/10.1146/annurev-polisci-041719-102556).  
 _Annual Review of Political Science_ **24**(1)  
 <https://doi.org/10.1146/annurev-polisci-041719-102556>
 
@@ -536,7 +537,7 @@ _Journal of the Medical Library Association_ **105**(2):
 
 [Gaye 2014]: https://doi.org/10.1093/ije/dyu188 "DataSHIELD: taking the analysis to the data"
 <small>Amadou Gaye, Yannick Marcon, Julia Isaeva, Philippe LaFlamme, Andrew Turner, Elinor M Jones, Joel Minion, Andrew W Boyd, Christopher J Newby, Marja-Liisa Nuotio, Rebecca Wilson, Oliver Butters, Barnaby Murtagh, Ipek Demir, Dany Doiron, Lisette Giepmans, Susan E Wallace, Isabelle Budin-Ljøsne, Carsten Oliver Schmidt, Paolo Boffetta, Mathieu Boniol, Maria Bota, Kim W Carter, Nick deKlerk, Chris Dibben, Richard W Francis, Tero Hiekkalinna, Kristian Hveem, Kirsti Kvaløy, Sean Millar, Ivan J Perry, Annette Peters, Catherine M Phillips, Frank Popham, Gillian Raab, Eva Reischl, Nuala Sheehan, Melanie Waldenberger, Markus Perola, Edwin van den Heuvel, John Macleod, Bartha M Knoppers, Ronald P Stolk, Isabel Fortier, Jennifer R Harris, Bruce HR Woffenbuttel, Madeleine J Murtagh, Vincent Ferretti, Paul Burton</small> (2014):  
-**DataSHIELD: taking the analysis to the data, not the data to the analysis**.  
+[**DataSHIELD: taking the analysis to the data, not the data to the analysis**](https://doi.org/10.1093/ije/dyu188).  
 _International Journal of Epidemiology_ **43**(6)  
 <https://doi.org/10.1093/ije/dyu188>
 
@@ -555,13 +556,13 @@ _Annual Review of Public Health_ **34**(1)
 
 [González-García 2021]: ttps://doi.org/10.1186/s13690-021-00731-z "Coping with Interoperability in the Development of A Federated Research Infrastructure"
 \[González-García 2021\] Juan González-García, Francisco Estupiñán-Romero, Javier González-Galindo, Carlos Telleria-Orriols, Luigi Palmieri, Andrea Faragalli, Ivan Pristās, Jakov Vuković, Jānis Misiņš, Irisa Zile, Enrique Bernal-Delgado, InfAct Consortium (2021):  
-**Coping with Interoperability in the Development of A Federated Research Infrastructure**: Achievements, Challenges and Recommendations from the JA Infact.  
+[**Coping with Interoperability in the Development of A Federated Research Infrastructure**: Achievements, Challenges and Recommendations from the JA Infact](https://doi.org/10.1186/s13690-021-00731-z).  
 _Archives of Public Health_ **79**:221  
 <https://doi.org/10.1186/s13690-021-00731-z>
 
 [Greenland 2009]: https://doi.org/10.1186/1742-5573-6-4 "Identifiability, exchangeability and confounding revisited"
 \[Greenland 2009\] Sander Greenland, James M Robins (2009):  
-**Identifiability, exchangeability and confounding revisited**.  
+[**Identifiability, exchangeability and confounding revisited**](https://doi.org/10.1186/1742-5573-6-4).  
 _Epidemiologic Perspectives & Innovations_ **6**(1)  
 <https://doi.org/10.1186/1742-5573-6-4>
 
@@ -571,13 +572,6 @@ _Epidemiologic Perspectives & Innovations_ **6**(1)
 _The Lancet_ **359**(9302)  
 <https://doi.org/10.1016/s0140-6736(02)07451-2>
 
-[IVAC 2023]: https://view-hub.org/covid-19/effectiveness-studies "VIEW-hub"
-\[IVAC 2023\]
-International Vaccine Access Center (IVAC) (2023):  
-**VIEW-hub**.  
-<https://view-hub.org/covid-19/effectiveness-studies>
-[[archived 2023-09-17](https://web.archive.org/web/20230917203458/https://view-hub.org/vaccine/covid/effectiveness-studies)]
-
 [Haukoos 2007]: https://doi.org/10.1111/j.1553-2712.2007.tb01855.x "Advanced Statistics: Missing Data in Clinical Research-Part 1"
 \[Haukoos 2007\] Jason S. Haukoos, Craig D. Newgard (2007):  
 **Advanced Statistics: Missing Data in Clinical Research-Part 1**: An Introduction and Conceptual Framework.  
@@ -586,8 +580,8 @@ _Academic Emergency Medicine_ **14**(7)
 
 [Hernán 2004]: https://doi.org/10.1097/01.ede.0000135174.63482.43 "A Structural Approach to Selection Bias"
 \[Hernán 2004\] Miguel A. Hernán, Sonia Hernández-Díaz, James M. Robins (2004):  
-**A Structural Approach to Selection Bias**.  
-_Epidemiology_ **15**(5)
+[**A Structural Approach to Selection Bias**](https://doi.org/10.1097/01.ede.0000135174.63482.43).  
+_Epidemiology_ **15**(5)  
 <https://doi.org/10.1097/01.ede.0000135174.63482.43>
 
 [Hernán 2006]: https://doi.org/10.1136/jech.2004.029496 "Estimating causal effects from epidemiological data"
@@ -598,7 +592,7 @@ _Journal of Epidemiology & Community Health_ **60**(7)
 
 [Hernán 2016]: https://doi.org/10.1093/aje/kwv254 "Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available"
 \[Hernán 2016\] Miguel A. Hernán, James M. Robins (2016):  
-**Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available**.  
+[**Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available**](https://doi.org/10.1093/aje/kwv254).  
 _American Journal of Epidemiology_ **183**(8)  
 <https://doi.org/10.1093/aje/kwv254>
 
@@ -615,9 +609,16 @@ _American Journal of Epidemiology_ **183**(8)
 _JAMA_ **328**(24)  
 <https://doi.org/10.1001/jama.2022.21383>
 
+[IVAC 2023]: https://view-hub.org/covid-19/effectiveness-studies "VIEW-hub"
+\[IVAC 2023\]
+International Vaccine Access Center (IVAC) (2023):  
+[**VIEW-hub**](https://view-hub.org/covid-19/effectiveness-studies).  
+<https://view-hub.org/covid-19/effectiveness-studies>
+[[archived 2023-09-17](https://web.archive.org/web/20230917203458/https://view-hub.org/vaccine/covid/effectiveness-studies)]
+
 [Kang 2013]: https://doi.org/10.4097/kjae.2013.64.5.402 "The prevention and handling of the missing data"
 \[Kang 2013\] Hyun Kang (2013):  
-**The prevention and handling of the missing data**.  
+[**The prevention and handling of the missing data**](https://doi.org/10.4097/kjae.2013.64.5.402).  
 _Korean Journal of Anesthesiology_ **64**(5)  
 <https://doi.org/10.4097/kjae.2013.64.5.402>
 
@@ -641,7 +642,7 @@ _Journal of Developmental Origins of Health and Disease_ **5**(6)
 
 [Lira 2019]: https://doi.org/10.5935/0004-2749.20190028 "PICOT"
 \[Lira 2019\] Authors: Rodrigo Pessoa Cavalcanti Lira, Eduardo Melani Rocha (2019):  
-**PICOT: Imprescriptible items in a clinical research question**.  
+[**PICOT: Imprescriptible items in a clinical research question**](https://doi.org/10.5935/0004-2749.20190028).  
 _Arquivos Brasileiros de Oftalmologia_ **82**(2)  
 <https://doi.org/10.5935/0004-2749.20190028>
 
@@ -656,7 +657,7 @@ _Community Dentistry and Oral Epidemiology_ **44**(5)
 Roderick Little, Donald Rubin (2019):  
 **Statistical Analysis with Missing Data**.
 Third Edition.  
-John Wiley & Sons.
+John Wiley & Sons.  
 <https://doi.org/10.1002/9781119482260>
 
 [Lutz 2013]: https://www.oreilly.com/library/view/learning-python-5th/9781449355722/
@@ -668,7 +669,7 @@ O'Reilly Media, Inc.
 
 [Margariti 2022]: https://doi.org/10.1016/j.giq.2022.101712 "A holistic model for assessing organizational interoperability in public administration"
 \[Margariti 2022\]  Vasiliki Margariti, Teta Stamati, Dimosthenis Anagnostopoulos, Mara Nikolaidou, Anastasia Papastilianou (2022):  
-**A holistic model for assessing organizational interoperability in public administration**.  
+[**A holistic model for assessing organizational interoperability in public administration**](https://doi.org/10.1016/j.giq.2022.101712).  
 _Government Information Quarterly_ **39**(3)  
 <https://doi.org/10.1016/j.giq.2022.101712>
 
@@ -680,7 +681,7 @@ _Zenodo_, Data management plan.
 
 [de Mello 2022]: https://doi.org/10.1007/s12553-022-00639-w "Semantic interoperability in health records standards: a systematic literature review"
 \[de Mello 2022\] Blanda Helena de Mello, Sandro José Rigo, Cristiano André da Costa, Rodrigo da Rosa Righi, Bruna Donida, Marta Rosecler Bez, Luana Carina Schunke (2022):  
-**Semantic interoperability in health records standards**: a systematic literature review.  
+[**Semantic interoperability in health records standards**: a systematic literature review](https://doi.org/10.1007/s12553-022-00639-w).  
 _Health and Technology_ **12**(2)  
 <https://doi.org/10.1007/s12553-022-00639-w>
 
@@ -701,7 +702,7 @@ _BY-COVID Project_, RO-Crate.
 \[Moncada-Torres 2021\]
 Arturo Moncada-Torres, Frank Martin, Melle Sieswerda, Johan Van Soest, Gijs Geleijnse (2021):  
 [**VANTAGE6**: an open source priVAcy preserviNg federaTed leArninG infrastructurE for Secure Insight eXchange](https://identifiers.org/pmc/PMC8075508).  
-_AMIA Annual Symposium Proceedings_ **2020**
+_AMIA Annual Symposium Proceedings_ **2020**  
 <https://identifiers.org/pmc/PMC8075508>
 
 [Nishikawa-Pacher 2022]: https://doi.org/10.3390/publications10030021
@@ -712,19 +713,19 @@ _Publications_ **10**(3)
 
 [OpenAIRE 2023]: https://argos.openaire.eu/ "OpenAIRE Argos"
 \[OpenAIRE 2023\] OpenAIRE (2023):  
-**Argos**.  
+[**Argos**](https://argos.openaire.eu/).  
 <https://argos.openaire.eu/>
 [[archived 2023-09-17](https://web.archive.org/web/20230917193201/https://argos.openaire.eu/splash/)]
 
 [Papadopoulou 2021]: <https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf> "ARGOS: plan and follow your data"
 \[Papadopoulou 2021\] Elli Papadopoulou (2021):  
-**ARGOS: plan and follow your data**.  
-_OpenAIRE National Workshop in Malta_, 2021-02-24.
+[**ARGOS: plan and follow your data**](https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf).  
+_OpenAIRE National Workshop in Malta_, 2021-02-24.  
 <https://www.um.edu.mt/library/oar/bitstream/123456789/70269/1/ARGOS_plan_and_follow_your_data_2021.pdf>
 
 [Pearce 2016]: https://doi.org/10.1093/ije/dyw328 "Caugsal inference—so much more than statistics"
 \[Pearce 2016\] Neil Pearce, Debbie A Lawlor (2016):  
-**Causal inference—so much more than statistics**.  
+[**Causal inference—so much more than statistics**](https://doi.org/10.1093/ije/dyw328).  
 _International Journal of Epidemiology_ **45**(6)  
 <https://doi.org/10.1093/ije/dyw328>
 
@@ -735,11 +736,11 @@ _GigaScience_ **5**(1)
 <https://doi.org/10.1186/s13742-016-0135-4>
 
 [Quarto]: https://quarto.org/
-\[Quarto\] **Quarto**. 
+\[Quarto\] [**Quarto**](https://quarto.org/).  
 <https://quarto.org/>
 [[archived 2023-09-17](https://web.archive.org/web/20230917192554/http://web.archive.org/screenshot/https://quarto.org/)]
 
-[Raasveldt 2019] https://doi.org/10.1145/3299869.3320212 "DuckDB"
+[Raasveldt 2019]: https://doi.org/10.1145/3299869.3320212 "DuckDB"
 \[Raasveldt 2019\] Mark Raasveldt, Hannes Mühleisen (2019):  
 **DuckDB**: an Embeddable Analytical Database.  
 _Proceedings of the 2019 International Conference on Management of Data_ (SIGMOD '19).  
@@ -767,7 +768,7 @@ _Stevens' Handbook of Experimental Psychology and Cognitive Neuroscience_, John 
 
 [Staplin 2017]: https://doi.org/10.2215/cjn.02430316 "Use of Causal Diagrams to Inform the Design and Interpretation of Observational Studies"
 \[Staplin 2017\] Natalie Staplin, William G. Herrington, Parminder K. Judge, Christina A. Reith, Richard Haynes, Martin J. Landray, Colin Baigent, Jonathan Emberson (2017):  
-**Use of Causal Diagrams to Inform the Design and Interpretation of Observational Studies:** An Example from the Study of Heart and Renal Protection (SHARP).  
+[**Use of Causal Diagrams to Inform the Design and Interpretation of Observational Studies:** An Example from the Study of Heart and Renal Protection (SHARP)](https://doi.org/10.2215/cjn.02430316).  
 _Clinical Journal of the American Society of Nephrology_ **12**(3)  
 <https://doi.org/10.2215/cjn.02430316>
 
@@ -779,20 +780,20 @@ _Journal of Epidemiology_ **30**(4)
 
 [Tennant 2021]: https://doi.org/10.1093/ije/dyaa213 "Use of directed acyclic graphs (DAGs) to identify confounders in applied health research"
 \[Tennant 2021\] Peter W G Tennant, Eleanor J Murray, Kellyn F Arnold, Laurie Berrie, Matthew P Fox, Sarah C Gadd, Wendy J Harrison, Claire Keeble, Lynsie R Ranker, Johannes Textor, Georgia D Tomova, Mark S Gilthorpe, George T H Ellison (2021):  
-**Use of directed acyclic graphs (DAGs) to identify confounders in applied health research**: review and recommendations.  
+[**Use of directed acyclic graphs (DAGs) to identify confounders in applied health research**: review and recommendations](https://doi.org/10.1093/ije/dyaa213).  
 _International Journal of Epidemiology_ **50**(2)  
 <https://doi.org/10.1093/ije/dyaa213>
 
 [Textor 2016]: https://doi.org/10.1093/ije/dyw341 "Robust causal inference using directed acyclic graphs"
 \[Textor 2016\] Johannes Textor, Benito van der Zander, Mark S. Gilthorpe, Maciej Liśkiewicz, George T.H. Ellison (2017):  
-**Robust causal inference using directed acyclic graphs: the R package ‘dagitty’**.  
+[**Robust causal inference using directed acyclic graphs: the R package ‘dagitty’**](https://doi.org/10.1093/ije/dyw341).  
 _International Journal of Epidemiology_ **45**(6)  
 <https://doi.org/10.1093/ije/dyw341>
 
 [YData 2023a]: https://github.com/ydataai/ydata-profiling
 [YData 2023a]. YData (2023):  
 [**ydata-profiling**](https://github.com/ydataai/ydata-profiling). 
-_GitHub_
+_GitHub_   
 <https://github.com/ydataai/ydata-profiling>
 
 [Ydata 2023b]: https://docs.profiling.ydata.ai/4.5/
@@ -810,7 +811,7 @@ _IFAC Proceedings Volumes_ **47**(3)
 [Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
 \[Wilkinson 2016\]
 <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons </small> (2016): 
-**The FAIR Guiding Principles for scientific data management and stewardship**.  
+[**The FAIR Guiding Principles for scientific data management and stewardship**](https://doi.org/10.1038/sdata.2016.18).  
 _Scientific Data_ **3**(1):160018  
 <https://doi.org/10.1038/sdata.2016.18>
 
