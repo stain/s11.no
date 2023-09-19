@@ -55,8 +55,8 @@ The s11 bibliography style can be considered as a combination these citation sty
 
 ## s11 Citation Style Language
 
-An experimental [CSL](https://citationstyles.org/) definition [s11-citation-style.csl](../s11-citation-style.csl) is available, but may require
-some final editing. [Contributions welcome!](https://github.com/stain/s11.no/blob/main/content/2021/house-rules/s11-citation-style.csl).
+An experimental [CSL](https://citationstyles.org/) definition [s11.csl](s11.csl) is available, but may require
+some final editing. [Contributions welcome!](https://github.com/stain/s11.no/blob/main/content/2021/house-rules/citation-style/s11.csl).
 
 Example usage with [pandoc](https://pandoc.org/):
 
