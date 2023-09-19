@@ -18,7 +18,7 @@ Event/Report, _Venue_ **volume**(issue)
 Rationale:
 1. It should be possible to write the reference without a bibliography manager
 2. All authors SHOULD be credited. We have enough bytes left on the Internet, and _et al._ have high enough h-index already.
-3. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname. Respect each culture.
+3. [Names around the world](https://www.w3.org/International/questions/qa-personal-names) vary in how they order given name and surname, if they even have that concept. Respect each culture and don't reshuffle name parts.
 5. Formatting and newlines help readability and to separate distinct pieces of information.
 6. The **title** is the most important information and should be highlighted, clearly different from author list or way of publishing.
 7. Publisher organization and location is not relevant, given a resolvable PID.
@@ -33,12 +33,15 @@ Traditional bibliography styles (of which there are [plenty](https://www.citethi
 2. Unnecessary shortening of author names and author list, which gives preference to surnames and lead authors.
 3. Double-comma lists of _Surname, F, Surname, S, et al._ are very hard to read. 
 4. Finishing author list with the word _and_ unncessarily emphasizes last author (articles should instead annotate [contributor roles](https://casrai.org/credit/)).
-5. Uncessary abbreviation of journal names (_Future Gener Comp Sy_, _New Engl J Med_) is cryptic and assumes journal is well known to all readers.
+5. Uneccessary abbreviation of journal names (_Future Gener Comp Sy_, _New Engl J Med_) is cryptic and assumes journal is well known to all readers.
+6. Uneccessary inclusion of page numbers which are then somehow mangled for continuations -- did you really flip through pages 1213--20?
 6. Lack of hyperlinks[^1] and persistent identifiers makes it hard to navigate to the publication or to generate consistent metrics. 
 7. Lack of formatting (e.g. difficult to differentiate authors, title or venue).
-8. Lack of details for online resources and standards
-9. The style assume there is shortage of letters, using acrnms mke it dffclt to read.
-10. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs and have poor support for non-printed outputs.
+8. Lack of findability details for online resources and standards. Readers should not need to Google the reference and hope for the best!
+9. Traditional style assume there is shortage of letters, using acrnms mke it dffclt to read. There are now sufficient spare pages on the Internet.
+10. Outdated bibliography managers (e.g. for LaTeX) deliberately mangle and remove information such as DOIs in order to emulate 1960s printing press practices.
+11. Bibliography manager outputs can't easily be edited when the journal's style is outdated or misleading. For instance, showing a temporary URL to a journal website from the `url` BibTeX field and ignoring the `doi` field.
+12. Bibliography managers have poor support for modern scholarly outputs, as they assume authors only cite outputs from a printing press. This makes it hard to cite software, websites, online proceedings.
 
 The s11 bibliography style can be considered as a combination these citation styles:
 * [ACM SIGCHI Proceedings](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Facm-sigchi-proceedings) (Full names, year, journal in italics) -- title is distinct but could be emphasized more. 
@@ -48,7 +51,17 @@ The s11 bibliography style can be considered as a combination these citation sty
 * [Cambridge University Press](https://editor.citationstyles.org/styleInfo/?styleId=http%3A%2F%2Fwww.zotero.org%2Fstyles%2Fcambridge-university-press-numeric) (journal in italics, journal volume is bold) -- but comma after authors might make title seem like author ("I. Mares, Firms and the welfare state"), Oxford Comma before `&` is odd
 
 
-[^1]: Although use of footnotes for URLs is easy to navigate (if hyperlinked!), used alone they also degrade Web resources as not being "proper" publications worthy of attribution and citation.
+[^1]: Although use of footnotes for URLs is easy to navigate (if hyperlinked!), used alone they also degrade Web resources as not being "proper" publications worthy of attribution and citation. 
+
+## s11 Citation Style Language
+
+An experimental [CSL](https://citationstyles.org/) definition [s11-citation-style.csl](../s11-citation-style.csl) is available, but may require
+some final editing. [Contributions welcome!](https://github.com/stain/s11.no/blob/main/content/2021/house-rules/s11-citation-style.csl).
+
+Example usage with [pandoc](https://pandoc.org/):
+
+    pandoc -i original.tex --bibliography references.bib --csl https://s11.no/2021/house-rules/s11-citation-style.csl -t gfm -o index.md
+
 
 ## Journal article {#journal}
 
@@ -71,22 +84,81 @@ Notes:
 8. Last line is literal URI, ideally DOI with prefix `https://doi.org/` and any `%2f` within the DOI expanded to `/`
 9. Any optional links, e.g. [[preprint](http://example.com/)] or [[poster]](http://example.org/) (see [below](#non-oa))
 
-**Tip**: If you are using Markdown, use two spaces at the end of line to force a `<br />` newline.
+**Tip**: If you are using Markdown, use two spaces or `\` at the end of line to force a `<br />` newline.
+
 
 ## Article/abstract in conference {#in-proceedings}
 
 Kyle Chard, Mike D’ Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):   
 **I’ll Take That to Go: Big Data Bags and Minimal Identifiers for Exchange of Large, Complex Datasets**.  
-_IEEE International Conference on Big Data 2016_ ([IEEE BigData 2016](http://cci.drexel.edu/bigdata/bigdata2016/)), 2016-12-05  
+_IEEE International Conference on Big Data 2016_ ([IEEE BigData 2016](http://cci.drexel.edu/bigdata/bigdata2016/)), Washington DC, USA, 2016-12-05  
 <https://doi.org/10.1109/BigData.2016.7840618>
 [[preprint]](https://www.research.manchester.ac.uk/portal/en/publications/ill-take-that-to-go-big-data-bags-and-minimal-identifiers-for-exchange-of-large-complex-datasets(8335e672-1d85-4649-a245-56fbdb1bd423).html)
 
+Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):\
+**Bioschemas: From Potato Salad to Protein Annotation**.\
+*Proceedings of the ISWC 2017 posters & demonstrations and industry
+tracks co-located with 16th international semantic web conference* ([ISWC 2017](https://web.archive.org/web/20180723152956/https://iswc2017.semanticweb.org/)), Vienna, Austria, .\
+*CEUR Workshop Proceedings* **1963**\
+<https://iswc2017.semanticweb.org/paper-579/>
+<https://ceur-ws.org/Vol-1963/paper579.pdf>
+
+
 Notes:
-1. Conferences are often not consistent in what are their _Full name_, but usually have a consistent (SHRTNAME21).
-2. Hyperlink to the conference agenda from the shortname (or full name). As some conferences reuse the same website multiple years, or forget to renew their domain names, archive using Internet Archive's [Wayback Machine](http://web.archive.org/save/) (tip: "Save outlinks" will on a good day archive the proceeding PDFs)
-3. Conferences sometimes don't publish proceedings, or publish them a long time after, which could cause (year) to flip over
-4. For some reason many conferences still do not publish Open Access. The biggest hint of paywalled conference content is _Springer Lecture Notes_... Make sure you add/ask for a [preprint].
-5. If the article is available as a PDF, but without a DOI, the URL may not survive the test of time. Archive specifically with [Wayback Machine](http://web.archive.org/save/).
+1. Conferences are often not consistent in what are their _Full name_, but usually have a consistent (SHRTNAME21). Do not italics the shortname as it's not part of the full name.
+2. If the conference has already published proceedings, then prefer the _book title_ rather than the conference website name. Do not include the editors of the proceedings (unless citing the whole of proceedings).
+3. Hyperlink to the conference/agenda from the shortname (or full name). As some conferences reuse the same website multiple years, or forget to renew their domain names, archive using Internet Archive's [Wayback Machine](http://web.archive.org/save/) (tip: "Save outlinks" will on a good day archive the proceeding PDFs)
+4. Conferences sometimes don't publish proceedings, or publish them a long time after, which could cause the published (year) to flip over. Optionally include the conference date in ISO-8601 format, it may differ from the published year. If a conference was delayed (e.g. in COVID-19 lockdown) then the shortname year may not match the conference dates.
+5. For some reason many conferences still do not publish Open Access. The biggest hint of paywalled conference content in my field is _IEEE_ or _Springer Lecture Notes_... Make sure you add/ask for a [preprint].
+6. If the article is available as a PDF, but without a DOI, the URL may not survive the test of time. Archive specifically with [Wayback Machine](http://web.archive.org/save/).
+7. Some citation software and websites may confusingly list the city of the proceeding publisher's head quarters (e.g. Springer, New York, NY) instead of where the conference actually took place. If in doubt, remove the location, it is seldom relevant for international conferences. Some conferences are also online/hybrid.
+
+## Books and chapters {#books}
+
+Lois Mai Chan (1995):  
+**Library of Congress Subject Headings: Principles and Application**, 3rd edition.   
+[ISBN 9781563081910](https://identifiers.org/isbn/9781563081910).
+
+Barend Mons (2018):\
+**Data Stewardship for Open Science**.\
+[ISBN 9781315351148](https://identifiers.org/isbn/9781315351148)
+
+William Stallings (1990):\
+**Handbook of computer-communications standards: The open systems (OSI)
+model and OSI-related standards**, 2nd ed.\
+Sams.\
+[ISBN 978-0-672-22697-7](https://identifiers.org/isbn/9780672226977)
+
+Tim Berners-Lee, Mark Fischetti (1999):\
+**Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor**.\
+[ISBN 978-0-06-251586-5](https://identifiers.org/isbn/9780062515865)
+
+Christian Bizer, Tom Heath, Tim Berners-Lee (2011):\
+**Linked data: The story so far**.\
+*Semantic Services, Interoperability and Web Applications: Emerging Concepts*, Amit Sheth (ed.)  
+[ISBN 9781609605933](https://identifiers.org/isbn/9781609605933)
+<https://doi.org/10.4018/978-1-60960-593-3.ch008>
+
+Luiz Olavo Bonino Da Silva Santos, Mark D. Wilkinson, Arnold Kuzniar,
+Rajaram Kaliyaperumal, Mark Thompson, Michel Dumontier, Kees Burger
+(2016):\
+**FAIR Data points supporting big data interoperability**.\
+*Enterprise interoperability in the digitized and networked factory of
+the future*, Martin Zelm, Guy Doumeingts, Joao Pedro Mendonça (eds.).\
+iSTE Press.\
+[ISBN 978-1-84704-044-2](http://www.iste.co.uk/book.php?id=1073)\
+[[preprint](https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability)]
+
+
+1. Check carefully if the book is actually a conference [proceeding]({#in-proceedings}). You may need to navigate to the cover/introduction chapter.
+2. It can be hard to find preprints of text books, but some authors publish green open access versions of their book chapters. 
+3. Include the ISBN number if known. Prefer the "electronic" issue. Use `https://identifiers.org/isbn/` as prefix, removing any `-` and prefix `978` on shorter ISBN-10. Report any unknown ISBN to the resolver and link the ISBN to the publisher's page (see iSTE example above).
+4. Cite as well the DOI of the book if available.
+4. Check you are citing the right (typically latest) edition -- editors/authors may change.
+5. You may include the publisher name, particularly if there is no ISBN. 
+6. Do not include the publisher's address/city - no-one will go visit them.
+7. Include publisher name for older books which may not have an online landing page.
+8. If citing a chapter, use **chapter title** and _book title_ similiar to as in [proceeding]({#in-proceedings}); include editors unless equal to authors. You don't need to include "In: " due to the use of italics.
 
 
 ## W3C Standards {#w3c}
@@ -127,6 +199,22 @@ Tips:
 2. For Internet-Drafts, cite the versioned identifier, e.g. draft-soilandreyes-arcp-03
 
 
+## IEEE standards
+
+Raja Mazumder, Vahan Simonyan (eds.) (2020):\
+**IEEE Standard for Bioinformatics Analyses Generated by High-Throughput
+Sequencing (HTS) to Facilitate Communication** (2020).\
+*IEEE Std* **2791-2020**.\
+ISBN 978-1-5044-6466-6.\
+<https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d>\
+<https://doi.org/10.1109/ieeestd.2020.9094416>
+
+
+1. To find the title, editors and/or working group, search in [standards.ieee.org](https://standards.ieee.org/)
+2. Use [IEEE Explore](https://ieeexplore.ieee.org/browse/standards/collection/ieee) to find the DOI for the standard -- this may appear later for new standards.
+3. It can be hard to find preprints of IEEE standards. 
+
+
 ## Websites and blogs {#websites}
 
 Cameron Neylon (2017):  
@@ -137,20 +225,27 @@ _Science In The Open_ (2017-07-16)
 
 Tips:
 1. You may have to do some research to find the full name of the author(s)
-2. Inlude full date in [ISO-8601 format](http://www.w3.org/TR/1998/NOTE-datetime-19980827). You may have to use `curl -I` or _View Source_ to find the publication date. 
+2. Include full date in [ISO-8601 format](http://www.w3.org/TR/1998/NOTE-datetime-19980827). You may have to use `curl -I` or _View Source_ to find the publication date. 
 3. Visit the front page to find the title of the blog/website. Fallback: Company name or domain name _cameronneylon.net_
 4. Make sure the URL does not include unnecessary ?tracker=1234 info.
-5. Archive using [WayBack Machine](http://web.archive.org/) and link to snapshotas  [accessed 2021-12-23](http://web.archive.org/web/20211216094140/https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/)
+5. Archive using [WayBack Machine](http://web.archive.org/) and link to snapshot, e.g.  [accessed 2021-12-23](http://web.archive.org/web/20211216094140/https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/)
 
 
 ## Personal Communication {#personal}
 
 Personal communication is now easier to cite, thanks to social media and forums. 
 
+Stian Soiland-Reyes (2022):  
+[**I deleted my Twitter account…**]().  
+_scholar.social_, Mastodon (2023-09-19)  
+<https://scholar.social/@soilandreyes/111093469588864194>
+[[archived 2023-09-19](https://web.archive.org/web/20230919215831/https://scholar.social/@soilandreyes/111093469588864194)]
+
 Stian Soiland-Reyes (2020):  
 [**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**](https://twitter.com/soilandreyes/status/1250721245622079488).  
 _Twitter_ (2020-04-16)  
 <https://twitter.com/soilandreyes/status/1250721245622079488>
+[[archived 2021-05-05](https://web.archive.org/web/20210504092435/https://twitter.com/soilandreyes/status/1250721245622079488)]
 
 Gurvesh Sanghera (2021):  
 [**Guide to run CUDA + WSL + Docker with latest versions (21382 Windows build + 470.14 Nvidia)**](https://forums.developer.nvidia.com/t/guide-to-run-cuda-wsl-docker-with-latest-versions-21382-windows-build-470-14-nvidia/178365).  
@@ -161,8 +256,10 @@ _NVidia Forums_ (2021-05-19)
 Tips:
 1. Social media commonly let you hover over ambigious times like "Yesterday" to reveal the exact timestamp
 2. Find "Share" permalinks to make sure you don't use URLs that only work for your account
-3. Archive using [WayBack Machine](http://web.archive.org/) if the communication is publicly accessible. 
+3. Archive using [WayBack Machine](http://web.archive.org/) or <https://archive.is/> if the communication is publicly accessible. 
 4. For replies within a thread, use "Inspect Element" to find `id="anchors"` to append as `#anchors` in URI
+5. Note that some social media may require authentication or otherwise prevent public visibility. 
+
 
 ## Software
 
@@ -173,8 +270,30 @@ Resolution order for how to cite software:
   Use the version-specific DOI if you used the software, or version-independent "Cite All Versions" DOI if you just reference the software.
 4. Cite their "Preferred citation" traditional [journal](#journal) article if website/repo indicates so. You may need to cite the (typically newer) release separately.
 5. Cite their main [website](#website). Make sure you find the page most specific to the software.
-6. Cite their open source repository 
-7. Sorry, if it's not publicly available or documented, I am not sure why you want to cite it!
+6. Cite their open source repository -- make a snapshot with [Software Heritage](https://archive.softwareheritage.org/) and cite the [SWHID](https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html) (which may be made specific for version/filename if desired). For GitHub/GitLab, include `owner/repositoryname` in the title, as some repository names can be overly general.
+7. You may find it useful to combine several of the above, note that many journals will mangle this up anyway.
+8. Sorry, if it's not publicly available or documented, I am not sure why you want to cite it!
+
+For case 5/6 it can be difficult to find the author names. In some cases there may be an organization that can be listed (including GitHub owner).
+
+Ghaith Arfaoui, Maroua Jaoua (2020):\
+**RO-Crate RDA maDMP Mapper**.\
+*Zenodo*\
+<https://github.com/GhaithArf/ro-crate-rda-madmp-mapper>\
+<https://doi.org/10.5281/zenodo.3922136>
+
+Finn Bacall, Stian Soiland-Reyes, Marina Soares e Silva (2019):\
+**eScienceLab: RO-Composer**.\
+<https://esciencelab.org.uk/projects/ro-composer/>\
+<https://github.com/ResearchObject/research-object-composer>
+
+Kostadin Belchev (2021):\
+**KockataEPich/CheckMyCrate: A command line application for validating a
+RO-Crate object against a JSON profile**.\
+*GitHub*.\
+<https://github.com/KockataEPich/CheckMyCrate>
+
+
 
 
 ## Open Access by default {#oa}
@@ -202,7 +321,7 @@ links to a `[preprint]` immediately after DOI:
 
 Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):  
 **Why Linked Data is Not Enough for Scientists**.  
-_Future Generation Computer Systems_ **29**(2)
+_Future Generation Computer Systems_ **29**(2)  
 <https://doi.org/10.1016/j.future.2011.08.004> [[preprint](http://users.ox.ac.uk/~oerc0033/preprints/research-objects.pdf)] 
 
 The preprint link should go to, in order of preference:
@@ -226,9 +345,9 @@ Tips:
 * PubMed has both PMID and PMCID identifiers, prefer [PMCID identifiers](https://registry.identifiers.org/registry/pmc) when available, e.g. <https://identifiers.org/pmc/PMC2771753>
 
 Notes:
-1. `[preprint]` may be replaced with hyperlinked preprint PIDs without [brackets], e.g. [arXiv:2006.08589](https://arxiv.org/abs/1310.6555) or [PMC2771753](https://identifiers.org/pmc/PMC2771753)
-2. Use the the commonly recognized term _preprint_ even if the link technically goes to a later _author-accepted version_ or _postprint_. 
-3. If the link goes to a author-hosted PDF that is clearly the publisher's version (technically not open access, but often allowed on author's own site), then the link is called `[pdf]`.
+1. `[preprint]` may be replaced with hyperlinked preprint PIDs without [brackets], e.g. [arXiv:2006.08589](https://doi.org/10.48550/arXiv.1310.6555) or [PMC2771753](https://identifiers.org/pmc/PMC2771753) -- if the preprint server has a DOI, use that as hyperlink, but do **not** include it as literal DOI unless the journal/proceedings did not itself assign DOIs.
+3. Use the commonly recognized term _preprint_ even if the link technically goes to a later _author-accepted version_ or _postprint_. 
+4. If the link goes to a author-hosted PDF that is clearly the publisher's version (technically not open access, but often allowed on author's own site), then the link is called `[pdf]`.
 
 
 ### Posting your own preprint {#post-preprint}
@@ -252,17 +371,20 @@ best is to post the preprint before such signature.
 Recommendations:
 
 * Post preprint to [Zenodo](https://zenodo.org/) at submission time, before any copyright assignment. This is useful to get DOI for citing before publishing.
-* Post preprint to institutional repository (e.g. <https://pure.manchester.ac.uk/>) at submission time. This is useful for REF acceptance, as a legal backup, and as a way to gather forward links to later versions.
+* Post preprint to institutional repository (e.g. <https://pure.manchester.ac.uk/>) at submission time. This is useful for REF acceptance, as a legal backup, and as a way to gather forward links to later versions. Link to public preprint in Zenodo.
+* Now you can cite this preprint in any of your other works that are in preparation. You may not know in advance their order of publication!
 * When accepted, update records in Zenodo and institutional repository. Check preprint policy of publisher if you are allowed to update preprint with the author-accepted version if changed following peer-review/editorial changes.
 * When accepted, list paper in personal/project/group bibliography. 
 * When published, update all the above. If Gold OA you also have permission to re-publish the publisher's version.
 * Add publisher's DOI and journal details to Zenodo and institutional repository metadata.
+* Update citations in other in-flight publications that previously cited the preprint (e.g. minor revisions). Do it **now** even if their review is not back!
 
 
 ### Requesting preprint {#request-preprint}
 
 If no preprint is available, then contact authors to request one. Make sure you
-don't request a PDF for yourself, but a web-hosted preprint you can link to.
+don't request a PDF for yourself, but a web-hosted preprint you can link to,
+solving the access problem for the world instead of just yourself.
 
 Example request:
 
@@ -279,9 +401,9 @@ Example request:
 > For reference, IEEE's preprint policies:
 > https://www.ieee.org/publications_standards/publications/rights/authorrightsresponsibilities.html
 
-Include link to the preprint policies of the particular publisher. If they
-respond just with a PDF attachment or question of repository, you can recommend
-arxiv.org, Zenodo or their institutional repository. 
+You may include link to the preprint policies of the particular publisher. If
+they respond just with a PDF attachment or question of repository, you can
+recommend arxiv.org, Zenodo or their institutional repository. 
 
 **Note: You are not allowed to post their preprint yourself, unless you are one
 of the co-authors or acting on their behalf in the same copyright holding
@@ -290,7 +412,7 @@ institution.**
 
 ### Article without preprint
 
-The first preference if the authors are unable to provide an Open Access preprint is **do not cite** the article!
+The first preference if the authors are unable to provide an Open Access preprint is **do not cite** the article! The radical rationale for this is: if the author didn't want anyone to read it, why should you cite it?
 
 However in some cases the article is fundamental and still needs to be cited. As a last resort, list it with a strong disclaimer about lack of Open Access:
 
@@ -298,3 +420,5 @@ Richard L. Grimsdale, Frank H. Sumner, C.J. Tunis, Tom Kilburn (1959):
 **A system for the automatic recognition of patterns**.  
 _Proceedings of the IEE - Part B: Radio and Electronic Engineering_ **106**(26)  
 <https://doi.org/10.1049/pi-b-1.1959.0392> (**No Open Access version available**)
+
+
