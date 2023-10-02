@@ -1293,7 +1293,10 @@ _ptsefton.com_. <http://ptsefton.com/2021/04/07/rdmpic/>
 <https://doi.org/10.5281/zenodo.4031327>
 
 [108] Stian Soiland-Reyes (2020):  
-**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis**, _Twitter_ ~<https://twitter.com/soilandreyes/status/1250721245622079488>~ [[archived 2021-05-04](https://web.archive.org/web/20210504092435/https://twitter.com/soilandreyes/status/1250721245622079488]]
+**I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis.**   
+_Twitter_  
+~~https://twitter.com/soilandreyes/status/1250721245622079488~~  
+[[archived 2021-05-04](https://web.archive.org/web/20210504092435/https://twitter.com/soilandreyes/status/1250721245622079488)]
 
 [109] Stian Soiland-Reyes (2021):  
 **Describing and packaging workflows using RO-Crate and BioCompute Objects** _Zenodo_, Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12.   
