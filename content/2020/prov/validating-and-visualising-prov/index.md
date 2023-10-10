@@ -47,6 +47,8 @@ document
 endDocument
 ```
 
+**Tip**: See the [PROV-N cheat sheet](../provn-cheat-sheet/) for an overview of all PROV-N relations and their arguments.
+
 The above PROV-N can be rendered as a diagram:
 
 ![](https://openprovenance.org/store/documents/3333.svg)
