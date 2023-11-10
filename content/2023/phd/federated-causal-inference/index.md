@@ -14,7 +14,7 @@ keywords:
   - pandemic preparedness
   - RO-Crate
 summary: > 
-  Preprint submitted to BMC Medical Research Methodology
+  Journal article in BMC Medical Research Methodology
 description: > 
   Introduction: Causal inference helps researchers and policy-makers to evaluate public health interventions. When comparing interventions or public health programs by leveraging observational sensitive individual-level data from populations crossing jurisdictional borders, a federated approach (as opposed to a pooling data approach) can be used. Approaching causal inference by re-using routinely collected observational data across different regions in a federated manner, is challenging and guidance is currently lacking. With the aim of filling this gap and allowing a rapid response in the case of a next pandemic, a methodological framework to develop studies attempting causal inference using federated cross-national sensitive observational data, is described and showcased within the European BeYond-COVID project.  
   Methods: A framework for approaching federated causal inference by re-using routinely collected observational data across different regions, based on principles of legal, organizational, semantic and technical interoperability, is proposed. The framework includes step-by-step guidance, from defining a research question, to establishing a causal model, identifying and specifying data requirements in a common data model, generating synthetic data, and developing an interoperable and reproducible analytical pipeline for distributed deployment. The conceptual and instrumental phase of the framework was demonstrated and an analytical pipeline implementing federated causal inference was prototyped using open-source software in preparation for the assessment of real-world effectiveness of SARS-CoV-2 primary vaccination in preventing infection in populations spanning different countries, integrating a data quality assessment, imputation of missing values, matching of exposed to unexposed individuals based on confounders identified in the causal model and a survival analysis within the matched population.  
@@ -26,7 +26,9 @@ description: >
 
 Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia Martínez-Lizaga, Santiago Royo-Sierra, Simon Saldner, Lorenz Dolanski-Aghamanoukjan, Alexander Degelsegger-Marquez, Stian Soiland-Reyes, Nina Van Goethem, Enrique Bernal-Delgado, On Behalf of BeYond-COVID project contributors (2023):  
 **Federated causal inference based on real-world observational data sources**: Application to a SARS-CoV-2 vaccine effectiveness assessment.  
-(Submitted to _BMC Medical Research Methodology_)
+_BMC Medical Research Methodology_ **23**:248
+<https://doi.org/10.1186/s12874-023-02068-3>
+
 
 
 # Federated causal inference based on real-world observational data sources: <br>Application to a SARS-CoV-2 vaccine effectiveness assessment

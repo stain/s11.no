@@ -31,7 +31,8 @@ Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Marku
 
 Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia Martínez-Lizaga, Santiago Royo-Sierra, Simon Saldner, Lorenz Dolanski-Aghamanoukjan, Alexander Degelsegger-Marquez, Stian Soiland-Reyes, Nina Van Goethem, Enrique Bernal-Delgado, On Behalf of BeYond-COVID project contributors (2023):  
 [**Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment**](../../2023/phd/federated-causal-inference/).  
-(Submitted)
+_BMC Medical Research Methodology_ **23**:248  
+<https://doi.org/10.1186/s12874-023-02068-3>
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
 [**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
