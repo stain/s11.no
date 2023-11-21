@@ -1,6 +1,8 @@
 ---
 title: Building knowledge graphs using FAIR Signposting on the Web
 date: 2023-11-20
+summary: > 
+  Follow HTTP Link headers to retrieve and combine Linked Data in a triple-store.
 ---
 
 _COMP66090 MSc project 2023/2024_
@@ -24,6 +26,8 @@ You will explore and describe current technologies for Linked Data and Signposti
 Following the building of the knowledge graph you can then execute explorative queries on the Linked Data, and decide on which resources to next follow signposting for, allowing for heuristic fallbacks for when no Signposting is available. It is crucial that the software includes sufficient logic for determining when to stop the crawl and how to select resources of interest. This crawling of FAIR resources on the Web can build a completed single dataset of the graph, which can be deposited in public repositories with associated provenance.
 
 Possible additional explorations includes nested objects such as Research Objects, inclusion of linked data embedded in HTML (e.g. schema.org), FAIR evaluation, building Signposting testing benchmarks and a more theoretical comparison with FAIR Digital Object (FDO) requirements.
+
+
 ## References
 
 * <https://jena.apache.org/documentation/fuseki2/>

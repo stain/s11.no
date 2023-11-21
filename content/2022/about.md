@@ -74,7 +74,7 @@ Stian is co-leading and contributing to [eScience Lab's participation](https://e
 
 Stian teaches [provenance](/2022/prov/) models as part of the course unit _Understanding Data and their Environment_ in the cross-faculty [MSc Data Science](https://www.manchester.ac.uk/study/masters/courses/list/11552/msc-data-science-computer-science-data-informatics/) programme at The University of Manchester.
 
-As of 2023 Stian is supervising 1 PhD student in Manchester in collaboration with Professor Carole Goble, and will also supervise [MSc projects](/2023/COMP66090) for 2023/2024. 
+As of 2023 Stian is supervising 1 PhD student in Manchester in collaboration with Professor Carole Goble, and will also supervise [MSc projects](/2023/comp66090/) for 2023/2024. 
 
 In 2023 the eScience Lab welcomed applications for a PhD studentship for [Sharing reproducible analyses in Big Healthcare Data Infrastructures](https://esciencelab.org.uk/hdr/phd/2023/07/18/hdr-uk-phd-studentship/), funded by [Health Data Research UK](https://www.hdruk.ac.uk/) to be supervised by Stian and Carole Goble.
 

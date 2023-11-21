@@ -1,6 +1,8 @@
 ---
 title: Interactive Web application for constructing provenance graphs
 date: 2023-11-20
+summary: > 
+  Develop a web-based GUI for making PROV.
 ---
 
 _COMP66090 MSc project 2023/2024_

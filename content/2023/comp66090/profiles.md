@@ -1,6 +1,8 @@
 ---
 title: Validating semantic artefact profiles for Research Object Crates
 date: 2023-11-20
+summary: > 
+  Develop a profile-based validator using Linked Data technologies (ShEx, SHACL)
 ---
 
 _COMP66090 MSc project 2023/2024_
