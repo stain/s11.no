@@ -3,7 +3,8 @@ title: About Stian Soiland-Reyes
 aliases:
   - /2020/about/
   - /2021/about/
-date: 2022-11-15
+  - /2022/about/
+date: 2023-11-21
 ---
 
 ## Overview
@@ -21,6 +22,7 @@ date: 2022-11-15
 * ~~[slideshare.net/soilandreyes](https://www.slideshare.net/soilandreyes)~~
 
 ## Biography
+
 Stian Soiland-Reyes is a Senior Lecturer and co-leader of the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab at The University of Manchester") in the [Department of Computer Science](https://www.cs.manchester.ac.uk/) at The University of Manchester. 
 
 In his research he is working on _reproducibility_, _provenance_ and _metadata_ to improve [FAIR](https://www.go-fair.org/fair-principles/ "FAIR principles") sharing of open research data and [computational workflows](https://doi.org/10.1162/dint_a_00033), within [ELIXIR Europe](https://elixir-europe.org/), European Open Science Cloud ([EOSC](https://ec.europa.eu/info/research-and-innovation/strategy/goals-research-and-innovation-policy/open-science/european-open-science-cloud-eosc_en)) projects and the workflow repository [WorkflowHub.eu](https://workflowhub.eu/), as well as building [FAIR](https://www.go-fair.org/fair-principles/) approaches for [computational workflows](https://workflows.community/groups/fair/) and [FAIR Digital Objects](https://fairdo.org/). Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/) standard and its [implementation in workflow systems](https://doi.org/10.1093/gigascience/giz095 "Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv"). 
@@ -38,7 +40,7 @@ He has more than two decades of experience as an IT professional, including 16 y
 Stian is co-leading and contributing to [eScience Lab's participation](https://esciencelab.org.uk/projects/) in several European-wide research projects:
 
 * **[EVERSE](https://esciencelab.org.uk/projects/everse/)** -- European Virtual Institute for Research Software Excellence. Starting March 2024. Includes support for RO-Crate in the Workflow Execution Service ([WfExS](https://github.com/inab/WfExS-backend)), continuing work started in EOSC-Life, BY-COVID and TRE-FX.
-* **HDR Federated Analytics** (HDR QQ2)
+* **HDR Federated Analytics** (HDR QQ2) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX.
 * **[EuroScienceGateway](https://esciencelab.org.uk/projects/eurosciencegateway/)** -- making a federated open access computational infrastructure through Galaxy as a gateway for data resources, tools and applications following the FAIR principles.  
   <small><http://eurosciencegateway.eu/> Horizon Europe [101057388](https://doi.org/10.3030/101057388) UKRI [10038963](https://gtr.ukri.org/projects?ref=10038963)</small>
 * **[FAIR-IMPACT](https://esciencelab.org.uk/projects/fair-impact/)** -- which is improving the FAIR publication and indexing of semantic artefacts and their catalogues, with associated Linked Data tooling including RO-Crate.  
@@ -53,8 +55,8 @@ Stian is co-leading and contributing to [eScience Lab's participation](https://e
 
 ### Previous projects
 
-* **[TRE-FX](https://esciencelab.org.uk/projects/tre-fx/)** -- Delivering a [federated network of TREs](https://doi.org/10.5281/zenodo.10055354) to enable safe analytics. Workflow execution in Trusted Research Environments using [5-Safe RO-Cratre](https://trefx.uk/5s-crate/). 
-  <small>UKRI / [DARE UK](https://dareuk.org.uk/): [MC_PC_23007](https://gtr.ukri.org/projects?ref=MC_PC_23007)
+* **[TRE-FX](https://esciencelab.org.uk/projects/tre-fx/)** -- Delivering a [federated network of TREs](https://doi.org/10.5281/zenodo.10055354) to enable safe analytics. Workflow execution in Trusted Research Environments using [5-Safe RO-Cratre](https://trefx.uk/5s-crate/).  
+  https://trefx.uk/ <small>UKRI / [DARE UK](https://dareuk.org.uk/): [MC_PC_23007](https://gtr.ukri.org/projects?ref=MC_PC_23007)</small>
 * **[EOSC-Life](https://esciencelab.org.uk/projects/eosclife/)** -- FAIR data processing for life sciences. Here Stian mainly contributed to the [Tools Collaboratory](https://www.eosc-life.eu/tools-workflows/) for [WorkflowHub](https://workflowhub.eu/), using [RO-Crate](https://www.researchobject.org/ro-crate/), [CWL](https://www.commonwl.org/), [Galaxy](https://galaxyproject.org/) and other [existing workflow systems](https://s.apache.org/existing-workflow-systems).  
   <small><https://www.eosc-life.eu/> Horizon 2020 #[824087](https://doi.org/10.3030/824087)</small>
 * **[Synthesys+](https://esciencelab.org.uk/projects/synthesys/)**  where Stian led Manchester's part of developing the [Specimen Data Refinery](/2022/phd/specimen-data-refinery/) using Galaxy workflows, RO-Crate for provenance and [FAIR Digital Objects](/2022/phd/incrementally-building-fdos/) using [Open Digital Specimens](https://github.com/DiSSCo/openDS).  
