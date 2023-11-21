@@ -9,6 +9,19 @@ categories:
 This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=poster).
 
 
+
+Leyla Jael Castro, Stian Soiland-Reyes, Dietrich Rebholz-Schuhmann (2023):  
+[**RO-Crates meets FAIR Digital Objects**](https://doi.org/10.5281/zenodo.8348924).  
+_1st Conference on Research Data Infrastructure_ (CoRDI 2023), 2023-09-12/--14, Karlsruhe, Germany.    
+<https://doi.org/10.5281/zenodo.8348924>  
+[[abstract](https://doi.org/10.52825/cordi.v1i.396)]
+
+Simone Leo, Laura Rodríguez-Navas, José M. Fernández, Paul De Geest, Luca Pireddu, Michael R. Crusoe, Daniel Garijo, Iacopo Colonnelli, Raül Sirvent, Stian Soiland-Reyes (2023):  
+[**Making workflow provenance FAIR across workflow systems with Workflow Run RO-Crate**](https://doi.org/10.5281/zenodo.8004793).  
+_Elixir All Hands 2023_, 2023-06-06, Dublin, Ireland.  
+_F1000Research_  **12**(ELIXIR):592 (poster)  
+<https://doi.org/10.7490/f1000research.1119445.1>
+
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
 [**Creating lightweight FAIR Digital Objects with RO-Crate**](/2022/phd/fdo-with-ro-crate/).  
 _1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/))_ (poster)  

@@ -29,6 +29,12 @@ Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Marku
 [**Linking provenance and its metadata in multi-organizational environments of life sciences**](../../2023/phd/linking-provenance/).  
 (Submitted)  
 
+Leyla Jael Castro, Stian Soiland-Reyes, Dietrich Rebholz-Schuhmann (2023):  
+[**RO-Crates Meets FAIR Digital Objects**](https://www.tib-op.org/ojs/index.php/CoRDI/article/view/396/577).  
+1st Conference on Research Data Infrastructure ([CoRDI 2023](https://www.nfdi.de/cordi-2023/)), 2023-09-12/--14, Karlsruhe, Germany.  
+_Proceedings of the Conference on Research Data Infrastructure_ **1**  
+<https://doi.org/10.52825/cordi.v1i.396>
+
 Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia Martínez-Lizaga, Santiago Royo-Sierra, Simon Saldner, Lorenz Dolanski-Aghamanoukjan, Alexander Degelsegger-Marquez, Stian Soiland-Reyes, Nina Van Goethem, Enrique Bernal-Delgado, On Behalf of BeYond-COVID project contributors (2023):  
 [**Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment**](../../2023/phd/federated-causal-inference/).  
 _BMC Medical Research Methodology_ **23**:248  
@@ -39,6 +45,7 @@ Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):
 (Accepted with minor revisions at _PeerJ CS_)  
 _arXiv_ 2306.07436 [cs.DC]  
 <https://doi.org/10.48550/arXiv.2306.07436> [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
+
 
 Ignacio Eguinoa, Marek Suchánek, Vojtěch Knaisl, Jan Slifka, Paul De Geest, David López, Bjorn Gruning, Simone Leo, Stian Soiland-Reyes (2023):  
 [**BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates**](../../2023/phd/enhancing-rdm-galaxy-dsw/).  
