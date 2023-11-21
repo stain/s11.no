@@ -310,9 +310,9 @@ _[IEEE International Conference on Big Data 2016](http://cci.drexel.edu/bigdata/
 
 Antonis Troumpoukis, Angelos Charalambidis, Giannis Mouchakis, Stasinos Konstantopoulos, Ronald Siebes, Victor de Boer, Stian Soiland-Reyes, Daniela Digles (2016):  
 [**Developing a Benchmark Suite for Semantic Web Data from Existing Workflows**](https://ceur-ws.org/Vol-1700/paper-04.pdf).  
-_[Proceedings](https://ceur-ws.org/Vol-1700/) of the Workshop on Benchmarking Linked Data (BLINK 2016), co-located with the 15th International Semantic Web Conference (ISWC)_
-In: _CEUR Workshop Proceedings_ **1700**:04
-<https://doi.org/10.5281/zenodo.159568>
+_[Proceedings](https://ceur-ws.org/Vol-1700/) of the Workshop on Benchmarking Linked Data (BLINK 2016), co-located with the 15th International Semantic Web Conference (ISWC)_  
+In: _CEUR Workshop Proceedings_ **1700**:04  
+<https://doi.org/10.5281/zenodo.159568>  
 <https://ceur-ws.org/Vol-1700/paper-04.pdf>
 
 Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
@@ -386,7 +386,7 @@ _BMC Bioinformatics_ **15**(1), p. 3
 
 Steffen Möller, Enis Afgan, Michael Banck, Raoul J P Bonnal, Timothy Booth, John Chilton, Peter J A Cock, Markus Gumbel, Nomi Harris, Richard Holland, Matúš Kalaš, László Kaján, David R. Powell, Pjotr Prins, Jacqueline Quinn, Olivier Sallou, Francesco Strozzi, Torsten Seemann, Clare Sloggett, Stian Soiland-Reyes, Sascha Steinbiss, Andreas Tille, Anthony J. Travis, Roman Valls Guimera, Toshiaki Katayama, Brad A. Chapman (2014):  
 [**Community-driven development for computational biology at Sprints, Hackathons and Codefests**](https://doi.org/10.1186/1471-2105-15-S14-S7).  
-_BMC Bioinformatics_ **15**(Suppl 14):S7 Supplement NETTAB 2013. 
+_BMC Bioinformatics_ **15**(Suppl 14):S7 Supplement NETTAB 2013.  
 <https://doi.org/10.1186/1471-2105-15-S14-S7>
 
 Kristina M. Hettne, Harish Dharuri, Jun Zhao, Katherine Wolstencroft, Khalid Belhajjame, Stian Soiland-Reyes, Eleni Mina, Mark Thompson, Don Cruickshank, Lourdes Verdes-Montenegro, Julián Garrido, David De Roure, Óscar Corcho, Graham Klyne, Reinout van Schouwen, Peter A. C. 't Hoen, Sean Bechhofer, Carole A. Goble, Marco Roos (2014):  
@@ -405,12 +405,12 @@ _53rd Audio Engineering Society International Conference on Semantic Audio_, Jan
 
 Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, Tim Clark (2013):  
 [**PAV ontology: provenance, authoring and versioning**](https://doi.org/10.1186/2041-1480-4-37).  
-_Journal of Biomedical Semantics_ **4**:37 
+_Journal of Biomedical Semantics_ **4**:37  
 <https://doi.org/10.1186/2041-1480-4-37>
 
 Paolo Ciccarese, Stian Soiland-Reyes, Tim Clark (2013):  
 [**Web Annotation as a First Class Object**](/2013/web-annotation/).  
-_IEEE Internet Computing_ **17**(6) pp 71-75.
+_IEEE Internet Computing_ **17**(6) pp 71-75.  
 <https://doi.org/10.1109/MIC.2013.123>
 [[html]](http://s11.no/2013/web-annotation/)
 [[preprint]](https://research.manchester.ac.uk/en/publications/web-annotation-as-a-first-class-object)
@@ -429,8 +429,8 @@ _Nucleic Acids Research_ **41**(W1), W557-W561.
 
 Khalid Belhajjame, Jun Zhao, Daniel Garijo, Aleix Garrido, Stian Soiland-Reyes, Pinar Alper, Oscar Corcho (2013):  
 **A workflow PROV-corpus based on Taverna and Wings**.  
-_Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp. 331–332.
-[https://doi.org/10.1145/2457317.2457376](https://doi.org/10.1145/2457317.2457376)
+_Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp. 331–332.  
+<https://doi.org/10.1145/2457317.2457376>
 [[pdf]](http://delicias.dia.fi.upm.es/members/dgarijo/papers/prov-bench-paper.pdf)
 [[related website]](https://github.com/provbench/Wf4Ever-PROV)
 
@@ -486,7 +486,7 @@ _BMC Bioinformatics_ **11**:542.
 Paolo Missier, Stian Soiland-Reyes, Stuart Owen, Wei Tan, Alexandra Nenadic, Ian Dunlop, Alan Williams, Tom Oinn, Carole Goble (2010):  
 **Taverna, Reloaded**.  
 _Scientific and Statistical Database Management: 22nd International Conference_ (SSDBM 2010), Heidelberg, Germany, June 30--July 2, 2010. 
-In _Lecture Notes in Computer Science_ **6187**.
+In _Lecture Notes in Computer Science_ **6187**.  
 <https://doi.org/10.1007/978-3-642-13818-8_33>
 [[preprint](https://www.research.manchester.ac.uk/portal/files/61957309/paper_125.pdf)]
 
@@ -502,7 +502,7 @@ _UK e‐Science All Hands (AHM) 2009 Conference_, Oxford, UK, 2009.
 
 Wei Tan, Kyle Chard, Dinanath Sulakhe, Ravi Madduri, Ian Foster, Stian Soiland‐Reyes, Carole Goble (2009):  
 [**Scientific workflows as services in caGrid: A Taverna and gRAVI approach**](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf).   
-In _2009 IEEE International Conference on Web Services_ (ICWS 2009)
+In _2009 IEEE International Conference on Web Services_ (ICWS 2009)  
 <https://doi.org/10.1109/ICWS.2009.19>
 [[preprint](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf)]
 

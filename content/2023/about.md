@@ -40,26 +40,27 @@ He has more than two decades of experience as an IT professional, including 16 y
 Stian is co-leading and contributing to [eScience Lab's participation](https://esciencelab.org.uk/projects/) in several European-wide research projects:
 
 * **[EVERSE](https://esciencelab.org.uk/projects/everse/)** -- European Virtual Institute for Research Software Excellence. Starting March 2024. Includes support for RO-Crate in the Workflow Execution Service ([WfExS](https://github.com/inab/WfExS-backend)), continuing work started in EOSC-Life, BY-COVID and TRE-FX.
-* **HDR Federated Analytics** (HDR QQ2) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX.
+* **HDR Federated Analytics** (HDR QQ2) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX.  
+  <small>[HDR UK](https://www.hdruk.ac.uk/), UKRI [HDR-CORE](https://gtr.ukri.org/projects?ref=HDR-CORE)</small>
 * **[EuroScienceGateway](https://esciencelab.org.uk/projects/eurosciencegateway/)** -- making a federated open access computational infrastructure through Galaxy as a gateway for data resources, tools and applications following the FAIR principles.  
-  <small><http://eurosciencegateway.eu/> Horizon Europe [101057388](https://doi.org/10.3030/101057388) UKRI [10038963](https://gtr.ukri.org/projects?ref=10038963)</small>
+  <small><http://eurosciencegateway.eu/> Horizon Europe [101057388](https://doi.org/10.3030/101057388), UKRI [10038963](https://gtr.ukri.org/projects?ref=10038963)</small>
 * **[FAIR-IMPACT](https://esciencelab.org.uk/projects/fair-impact/)** -- which is improving the FAIR publication and indexing of semantic artefacts and their catalogues, with associated Linked Data tooling including RO-Crate.  
-  <small><http://fair-impact.eu/> Horizon Europe [101057344](https://doi.org/10.3030/101057344) UKRI [10038992](https://gtr.ukri.org/projects?ref=10038992)</small>
+  <small><http://fair-impact.eu/> Horizon Europe [101057344](https://doi.org/10.3030/101057344), UKRI [10038992](https://gtr.ukri.org/projects?ref=10038992)</small>
 * **[BioDT](https://esciencelab.org.uk/projects/biodt/)** -- making Digital Twins for BioDiversity using FAIR Digital Object, [RO-Crate](https://www.researchobject.org/ro-crate/), [FAIR Workflows](https://workflows.community/groups/fair/) and [WorkflowHub](https://workflowhub.eu/).  
   <small><https://biodt.eu/> Horizon Europe [101057437](https://doi.org/10.3030/101057437), UKRI [10038930](https://gtr.ukri.org/projects?ref=10038930))</small>
 * **[BY-COVID](https://esciencelab.org.uk/projects/by-covid/)** -- making COVID-19 data open, standardized and linked using FAIR metadata and computational workflows. Stian is a task leader and focus on metadata standards, provenance and [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/).  
   <small><https://by-covid.eu/> Horizon Europe #[101046203](https://doi.org/10.3030/101046203)</small>
 * **[Biodiversity Genomics Europe (BGE)](https://esciencelab.org.uk/projects/biodiversitygenomics/)** -- where the eScience Lab will help develop FAIR Data infrastructures.  
-  <small><https://biodiversitygenomics.eu/> Horizon Europe, #[101059492](https://doi.org/10.3030/101059492)</small>
+  <small><https://biodiversitygenomics.eu/> Horizon Europe #[101059492](https://doi.org/10.3030/101059492), UKRI [10040409](https://gtr.ukri.org/projects?ref=10040409)</small>
 
 
 ### Previous projects
 
-* **[TRE-FX](https://esciencelab.org.uk/projects/tre-fx/)** -- Delivering a [federated network of TREs](https://doi.org/10.5281/zenodo.10055354) to enable safe analytics. Workflow execution in Trusted Research Environments using [5-Safe RO-Cratre](https://trefx.uk/5s-crate/).  
-  https://trefx.uk/ <small>UKRI / [DARE UK](https://dareuk.org.uk/): [MC_PC_23007](https://gtr.ukri.org/projects?ref=MC_PC_23007)</small>
-* **[EOSC-Life](https://esciencelab.org.uk/projects/eosclife/)** -- FAIR data processing for life sciences. Here Stian mainly contributed to the [Tools Collaboratory](https://www.eosc-life.eu/tools-workflows/) for [WorkflowHub](https://workflowhub.eu/), using [RO-Crate](https://www.researchobject.org/ro-crate/), [CWL](https://www.commonwl.org/), [Galaxy](https://galaxyproject.org/) and other [existing workflow systems](https://s.apache.org/existing-workflow-systems).  
+* [TRE-FX](https://esciencelab.org.uk/projects/tre-fx/) -- Delivering a [federated network of TREs](https://doi.org/10.5281/zenodo.10055354) to enable safe analytics. Workflow execution in Trusted Research Environments using [5-Safe RO-Cratre](https://trefx.uk/5s-crate/).  
+  https://trefx.uk/ <small>[DARE UK](https://dareuk.org.uk/), UKRI [MC_PC_23007](https://gtr.ukri.org/projects?ref=MC_PC_23007)</small>
+* [EOSC-Life](https://esciencelab.org.uk/projects/eosclife/) -- FAIR data processing for life sciences. Here Stian mainly contributed to the [Tools Collaboratory](https://www.eosc-life.eu/tools-workflows/) for [WorkflowHub](https://workflowhub.eu/), using [RO-Crate](https://www.researchobject.org/ro-crate/), [CWL](https://www.commonwl.org/), [Galaxy](https://galaxyproject.org/) and other [existing workflow systems](https://s.apache.org/existing-workflow-systems).  
   <small><https://www.eosc-life.eu/> Horizon 2020 #[824087](https://doi.org/10.3030/824087)</small>
-* **[Synthesys+](https://esciencelab.org.uk/projects/synthesys/)**  where Stian led Manchester's part of developing the [Specimen Data Refinery](/2022/phd/specimen-data-refinery/) using Galaxy workflows, RO-Crate for provenance and [FAIR Digital Objects](/2022/phd/incrementally-building-fdos/) using [Open Digital Specimens](https://github.com/DiSSCo/openDS).  
+* [Synthesys+](https://esciencelab.org.uk/projects/synthesys/)  where Stian led Manchester's part of developing the [Specimen Data Refinery](/2022/phd/specimen-data-refinery/) using Galaxy workflows, RO-Crate for provenance and [FAIR Digital Objects](/2022/phd/incrementally-building-fdos/) using [Open Digital Specimens](https://github.com/DiSSCo/openDS).  
   <small><https://www.synthesys.info/> Horizon 2020 #[823827](https://doi.org/10.3030/823827)</small>
 * [BioExcel](https://esciencelab.org.uk/projects/bioexcel/), a Centre of Excellence for Computational Biomolecular Research, where Stian was deputy work package leader with focus on workflows, scalability, reproducibility, metadata.  
   <small><http://bioexcel.eu/> Horizon 2020 #[823830](https://doi.org/10.3030/823830), #[675728](https://doi.org/10.3030/675728)</small>

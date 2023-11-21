@@ -132,8 +132,6 @@ Carole Goble, Stian Soiland-Reyes (2021):
 [_RDA IG Data Fabric: FAIR Digital Objects_](https://www.rd-alliance.org/group/data-fabric-ig/wiki/rda-ig-data-fabric-fair-digital-objects) 2021-02-25.
 [[Video recording](https://www.youtube.com/watch?v=pz-MLdI7GLA)] [[slides](https://www.slideshare.net/carolegoble/rocrate-a-framework-for-packaging-research-products-into-fair-research-objects)]
 
-XRDCGizk?t=1135) [[slides](http://bit.ly/opsci-workzones-2021-openbe)]
-
 Stian Soiland-Reyes, Carole Goble (2021):  
 [**RO-Crate: Describing and packaging FAIR Research Objects**](https://doi.org/10.5281/zenodo.4633655).  
 _[Scottish Covid-19 Response Consortium](https://www.gla.ac.uk/research/az/scrc/)_, 2021-03-18 
@@ -146,7 +144,7 @@ _[2021 Common Workflow Language Virtual Conference](https://github.com/common-wo
 
 Stian Soiland-Reyes (2020):
 [**Packaging workflows with RO-Crate**](https://docs.google.com/presentation/d/1lYAdqm7RESqA9zplTXd4JFJUmome66ui/edit#slide=id.p18)
-_FAIR Workflows_ workshop at [International FAIR Convergence Symposium](https://www.go-fair.org/events/international-fair-convergence-symposium/)_, 2020-11-30.
+_FAIR Workflows_ workshop at [International FAIR Convergence Symposium](https://www.go-fair.org/events/international-fair-convergence-symposium/), 2020-11-30.
 [Video recording](https://vimeo.com/499270810) 
 [Slides](https://drive.google.com/file/d/1lYAdqm7RESqA9zplTXd4JFJUmome66ui/view?usp=sharing)
 
@@ -167,7 +165,7 @@ RO-15 at _Workshop on Research Objects ([RO 2019](http://www.researchobject.org/
 <https://doi.org/10.5281/zenodo.3337883> [[slides](http://slides.com/soilandreyes/2019-09-24-ro-crate)]
 
 Eoghan Ó Carragáin, Carole Goble, Peter Sefton, Stian Soiland-Reyes (2019):  
-***RO-Crate, a lightweight approach to Research Object data packaging*** [version 1; not peer reviewed].  
+**RO-Crate, a lightweight approach to Research Object data packaging** [version 1; not peer reviewed].  
 Talk at _Bioinformatics Open Source Conference (BOSC2019)_. _F1000Research_ 2019, **8**(ISCB Comm J):1196 (slides)  
 <https://doi.org/10.7490/f1000research.1117129.1> [[slides](https://slides.com/soilandreyes/2019-07-24-bosc-ro-crate>)]
 
