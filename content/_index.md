@@ -3,7 +3,7 @@ title: "Stian Soiland-Reyes"
 ---
 
 
-> tl;dr: Open Source research software engineer with interests in Linked Data, RESTful web services, provenance, annotations, open science, reproducible research results.
+> tl;dr: Senior Lecturer with research interests of Linked Data, RESTful web services, provenance, annotations, open science, reproducible research results.
 
 * <a rel="me" href="https://www.research.manchester.ac.uk/portal/soiland-reyes.html">research.manchester.ac.uk/portal/soiland-reyes.html</a>
 * <a rel="me" href="https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html">uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html</a>
