@@ -17,7 +17,7 @@ keywords:
   - interoperability
   - middleware
 summary: > 
-  Preprint submitted to PeerJ CS
+  Journal aarticle accepted in PeerJ Computer Science
 description: > 
   FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. 
   We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.  
@@ -26,9 +26,9 @@ description: >
 <h2>Cite as</h2>
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
-**Evaluating FAIR Digital Object and Linked Data as distributed object systems**.  
-_arXiv_ 2306.07436 [cs.DC]  
-https://doi.org/10.48550/arXiv.2306.07436
+[**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
+_PeerJ Computer Science_ (accepted)  
+[arXiv 2306.07436](https://doi.org/10.48550/arXiv.2306.07436)
 
 * RO-Crate: <https://w3id.org/ro/doi/10.5281/zenodo.8075229>
 
