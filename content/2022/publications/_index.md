@@ -21,6 +21,12 @@ aliases:
 
 ## 2023
 
+Stian Soiland-Reyes, Carole Goble, Paul Groth (2023/2024):  
+[**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
+_PeerJ Computer Science_ (accepted)  
+[[preprint](https://doi.org/10.48550/arXiv.2306.07436)]
+[[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
+
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
 [**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
 (In preparation)
@@ -39,13 +45,6 @@ Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia
 [**Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment**](../../2023/phd/federated-causal-inference/).  
 _BMC Medical Research Methodology_ **23**:248  
 <https://doi.org/10.1186/s12874-023-02068-3>
-
-Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
-[**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
-(Accepted with minor revisions at _PeerJ CS_)  
-_arXiv_ 2306.07436 [cs.DC]  
-<https://doi.org/10.48550/arXiv.2306.07436> [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
-
 
 Ignacio Eguinoa, Marek Suchánek, Vojtěch Knaisl, Jan Slifka, Paul De Geest, David López, Bjorn Gruning, Simone Leo, Stian Soiland-Reyes (2023):  
 [**BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates**](../../2023/phd/enhancing-rdm-galaxy-dsw/).  
