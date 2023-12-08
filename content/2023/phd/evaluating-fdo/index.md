@@ -25,12 +25,11 @@ description: >
 
 <h2>Cite as</h2>
 
-Stian Soiland-Reyes, Carole Goble, Paul Groth (2023):  
-[**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
-_PeerJ Computer Science_ (accepted)  
-[arXiv 2306.07436](https://doi.org/10.48550/arXiv.2306.07436)
-
-* RO-Crate: <https://w3id.org/ro/doi/10.5281/zenodo.8075229>
+Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
+**Evaluating FAIR Digital Object and Linked Data as distributed object systems**.  
+_PeerJ Computer Science_ (accepted)
+_arXiv_ 2306.07436 [cs.DC]  
+https://doi.org/10.48550/arXiv.2306.07436
 
 # Evaluating FAIR Digital Object and Linked Data as distributed object systems
 
