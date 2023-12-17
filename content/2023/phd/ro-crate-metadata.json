@@ -29,7 +29,7 @@
         "@id": "https://s11.no/"
       },
       "identifier": {
-        "@id": "https://10.5281/zenodo.8113625"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
       },
       "hasPart": [
         {
