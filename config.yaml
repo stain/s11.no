@@ -51,11 +51,11 @@ params:
     IndexOptions Charset=UTF-8
     IndexOptions -FancyIndexing -HTMLTable +FoldersFirst +NameWidth=40 +TrackModified
     <FilesMatch "\.html$">
-      Header add Link "</2023/css/bundle.css>;rel=preload;as=style"
-      Header add Link "</2023/images/cc-by-4.0.svg>;rel=preload;as=image"
-      Header add Link "</2023/fonts/ibm-plex-serif-v15-latin_cyrillic-regular.woff2>;rel=preload;as=font"
-      Header add Link "</2023/fonts/caveat-v17-latin_cyrillic-regular.woff2>;rel=preload;as=font"
-      Header add Link "</2023/fonts/oswald-v49-latin-600.woff2>;rel=preload;as=font"
+      Header add Link "</2022/css/bundle.css>;rel=preload;as=style"
+      Header add Link "</2022/images/cc-by-4.0.svg>;rel=preload;as=image"
+      Header add Link "</2022/fonts/ibm-plex-serif-v15-latin_cyrillic-regular.woff2>;rel=preload;as=font"
+      Header add Link "</2022/fonts/caveat-v17-latin_cyrillic-regular.woff2>;rel=preload;as=font"
+      Header add Link "</2022/fonts/oswald-v49-latin-600.woff2>;rel=preload;as=font"
     </FilesMatch>
     <Files "ro-crate-metadata.json">
       Header add Link "<ro-crate-preview.html>;rel=alternate;type=\"text/html\""
