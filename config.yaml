@@ -21,7 +21,7 @@ menu:
     - name: "House rules"
       url: "/2021/house-rules/"
     - name: "PhD"
-      url: "/2022/phd/"
+      url: "/2023/phd/"
 
 params:
   authorName: "Stian Soiland-Reyes"
@@ -29,16 +29,18 @@ params:
   linkedinURL: "https://uk.linkedin.com/in/stain"
   githubURL: "https://github.com/stain/"
   orcidURL: "https://orcid.org/0000-0001-9842-9718"
-  YEAR: 2022   # Year used in permalinks
+  YEAR: 2023   # Year used in permalinks
   htaccess: |
     Redirect 301 /2022/prov/feed/ /2022/prov/index.xml
     Redirect 301 /2022/prov/about/ /2022/prov/
     RedirectMatch 303 ^/20(1.|20|21)/prov/$ /2022/prov/
     RedirectMatch 303 ^/2022/prov/20../../$ /2022/prov/
-    RedirectMatch 303 ^/2022/prov/category/(.*)$ /2022/tags/$1/
+    RedirectMatch 303 ^/2022/prov/category/(.*)$ /2023/tags/$1/
     RedirectMatch 301 ^/202[01]/archive/$ /2022/archive/
-    Redirect 301 /202[01]/categories/ /2022/categories/
-    Redirect 301 /202[01]/tags/ /2022/tags/
+    RedirectMatch 301 ^/20(19|20|21|22)/phd/$ /2023/phd/
+
+    Redirect 301 /202[012]/categories/ /2023/categories/
+    Redirect 301 /202[012]/tags/ /2023/tags/
     AddDefaultCharset UTF-8
     AddType text/plain .md5
     AddType text/plain .sha1
@@ -49,11 +51,11 @@ params:
     IndexOptions Charset=UTF-8
     IndexOptions -FancyIndexing -HTMLTable +FoldersFirst +NameWidth=40 +TrackModified
     <FilesMatch "\.html$">
-      Header add Link "</2022/css/bundle.css>;rel=preload;as=style"
-      Header add Link "</2022/images/cc-by-4.0.svg>;rel=preload;as=image"
-      Header add Link "</2022/fonts/ibm-plex-serif-v15-latin_cyrillic-regular.woff2>;rel=preload;as=font"
-      Header add Link "</2022/fonts/caveat-v17-latin_cyrillic-regular.woff2>;rel=preload;as=font"
-      Header add Link "</2022/fonts/oswald-v49-latin-600.woff2>;rel=preload;as=font"
+      Header add Link "</2023/css/bundle.css>;rel=preload;as=style"
+      Header add Link "</2023/images/cc-by-4.0.svg>;rel=preload;as=image"
+      Header add Link "</2023/fonts/ibm-plex-serif-v15-latin_cyrillic-regular.woff2>;rel=preload;as=font"
+      Header add Link "</2023/fonts/caveat-v17-latin_cyrillic-regular.woff2>;rel=preload;as=font"
+      Header add Link "</2023/fonts/oswald-v49-latin-600.woff2>;rel=preload;as=font"
     </FilesMatch>
     <Files "ro-crate-metadata.json">
       Header add Link "<ro-crate-preview.html>;rel=alternate;type=\"text/html\""
@@ -68,8 +70,8 @@ params:
 permalinks:
   /: /:year/:filename/
   posts: /:year/:filename/
-  tags: /2022/tags/:slug/
-  categories: /2022/categories/:slug/
+  tags: /2023/tags/:slug/
+  categories: /2023/categories/:slug/
 
 taxonomies:
   category: categories
