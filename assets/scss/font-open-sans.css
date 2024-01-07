@@ -3,6 +3,7 @@
 /* open-sans-regular - latin */
 @font-face {
     font-family: 'Open Sans';
+    font-display: swap;
     font-style: normal;
     font-weight: 400;
     src: local(''),
