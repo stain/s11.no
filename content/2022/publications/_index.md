@@ -19,9 +19,15 @@ aliases:
 </style>
 
 
-## 2023
+## 2024
 
-Stian Soiland-Reyes, Carole Goble, Paul Groth (2023/2024):  
+Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):  
+[**Report on "FAIR Signposting" and its uptake by the community**](https://doi.org/10.5281/zenodo.10490289).  
+_EOSC FAIR Metrics and Data Quality Task Force_  
+<https://doi.org/10.5281/zenodo.10490289>
+
+
+Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
 [**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
 _PeerJ Computer Science_ (accepted)  
 [[preprint](https://doi.org/10.48550/arXiv.2306.07436)]
@@ -29,11 +35,15 @@ _PeerJ Computer Science_ (accepted)
 
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
 [**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
-(In preparation)
+_arXiv_
+<https://doi.org/10.48550/arXiv.2312.07852>
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
 [**Linking provenance and its metadata in multi-organizational environments of life sciences**](../../2023/phd/linking-provenance/).  
 (Submitted)  
+
+
+## 2023
 
 Leyla Jael Castro, Stian Soiland-Reyes, Dietrich Rebholz-Schuhmann (2023):  
 [**RO-Crates Meets FAIR Digital Objects**](https://www.tib-op.org/ojs/index.php/CoRDI/article/view/396/577).  
