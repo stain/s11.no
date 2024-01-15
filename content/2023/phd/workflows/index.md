@@ -5,7 +5,7 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  In order to investigate RQ2, and considering important parts of the FAIR principles include Reuse and provenance, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
+  In order to investigate RQ2, and considering important parts of the FAIR principles include _Reuse_ and _provenance_, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
 ---
 
 In order to investigate [**RQ3**](../../../2022/phd/introduction/#rq3), and considering important parts of the FAIR principles are _Reuse_ and _provenance_, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
