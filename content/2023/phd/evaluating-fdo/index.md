@@ -27,7 +27,7 @@ description: >
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
 **Evaluating FAIR Digital Object and Linked Data as distributed object systems**.  
-_PeerJ Computer Science_ (accepted)
+_PeerJ Computer Science_ (accepted)  
 _arXiv_ 2306.07436 [cs.DC]  
 https://doi.org/10.48550/arXiv.2306.07436
 
