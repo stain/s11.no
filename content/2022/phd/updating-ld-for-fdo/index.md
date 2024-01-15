@@ -8,7 +8,11 @@ date-meta: '2022-07-10'
 summary: >
   Talk abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >
-  ..
+  Realization of FAIR Digital Objects has a great potential if combined with the mature technology stack of Linked Data and knowledge graphs.
+
+  Here I will briefly discuss how FDO principles can be achieved using existing standards that have powered the Web for the last 30 years. Using this mature approach can accelerate uptake of FDO by scholars and existing research infrastructures.
+
+  I will also reflect on how the Linked Data community can adapt to better welcome approaches like FDO.
 ---
 
 <h2>Cite as</h2>
@@ -35,6 +39,13 @@ _Stian Soiland-Reyes¹², Leyla Jael Castro³, Daniel Garijo⁴, Marc Portier⁵
 </div>
 
 ## Abstract
+
+Realization of FAIR Digital Objects has a great potential if combined with the mature technology stack of Linked Data and knowledge graphs.
+
+Here I will briefly discuss how FDO principles can be achieved using existing standards that have powered the Web for the last 30 years. Using this mature approach can accelerate uptake of FDO by scholars and existing research infrastructures.
+
+I will also reflect on how the Linked Data community can adapt to better welcome approaches like FDO.
+
 
 ### Background
 
