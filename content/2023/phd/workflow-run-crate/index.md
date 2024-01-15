@@ -432,28 +432,28 @@ In our analysis of runcrate, we compared the CWLProv RDF provenance graph with t
 
 ::: {#analysis_table}
 
-| Type | Subtype | Name                      | CWL | CWLProv | RO-Crate | WRROC | 
-| ---: | ------- | ------------------------- | :-: | :-----: | :------: | :---: | 
-|   T1 | SC1     | Workflow design           |  •  |   ·     |   ◦      |   …   |
-|      | SC2     | Entity annotations        |  ·  |   ·     |   ·      |   …   |
-|      | SC3     | Workflow execution ann.   |  ·  |   ·     |   ·      |   …   |
-|   T2 | D1      | Data identification       |  ◦  |   ·     |   ·      |   …   |
-|      | D2      |  File characteristics     |  ◦  |   ◦     |   •      |   ◦   |
-|      | D3      |  Data access              |  ◦  |   ·     |   ·      |   …   | 
-|      | D4      |  Parameter mapping        |  •  |   •     |   •      |   •   |
-|   T3 | SW1     | Software identification   |  ◦  |   ·     |   ◦      |   …   |
-|      | SW2     | Software documentation    |  ·  |   ·     |   ·      |   …   |
-|      | SW3     | Software access           |  ·  |   ·     |   ·      |   …   |
-|   T4 | WF1     | Workflow software         |  •  |   ◦     |   ◦      |   …   |
-|      | WF2     | Workflow parameters       |  •  |   ◦     |   •      |   •   |
-|      | WF3     | Workflow requirements     |  •  |   ·     |   ◦      |   ◦   |  
-|   T5 | ENV1    | Software environment      |  ·  |   ·     |   ·      |   ·   |  
-|      | ENV2    | Hardware environment      |  ·  |   ·     |   ·      |   ·   | 
-|      | ENV3    | Container image           |  ◦  |   ◦     |   ◦      |   •   |
-|   T6 | EX1     |  Execution timestamps     |  ·  |   •     |   •      |   •   |
-|      | EX2     |  Consumed resources       |  ·  |   ·     |   ·      |   ·   |  
-|      | EX3     |  Workflow engine          |  ·  |   ◦     |   ◦      |   ◦   | 
-|      | EX4     |  Human agent              |  ·  |   •     |   •      |   •   |
+| Type | Subtype | Name                    | CWL | CWLProv | RO-Crate | WRROC |
+| ---: | ------- | ----------------------- | :-: | :-----: | :------: | :---: |
+|   T1 | SC1     | Workflow design         |  •  |    ·    |    ◦     |   …   |
+|      | SC2     | Entity annotations      |  ·  |    ·    |    ·     |   …   |
+|      | SC3     | Workflow execution ann. |  ·  |    ·    |    ·     |   …   |
+|   T2 | D1      | Data identification     |  ◦  |    ·    |    ·     |   …   |
+|      | D2      | File characteristics    |  ◦  |    ◦    |    •     |   ◦   |
+|      | D3      | Data access             |  ◦  |    ·    |    ·     |   …   |
+|      | D4      | Parameter mapping       |  •  |    •    |    •     |   •   |
+|   T3 | SW1     | Software identification |  ◦  |    ·    |    ◦     |   …   |
+|      | SW2     | Software documentation  |  ·  |    ·    |    ·     |   …   |
+|      | SW3     | Software access         |  ·  |    ·    |    ·     |   …   |
+|   T4 | WF1     | Workflow software       |  •  |    ◦    |    ◦     |   …   |
+|      | WF2     | Workflow parameters     |  •  |    ◦    |    •     |   •   |
+|      | WF3     | Workflow requirements   |  •  |    ·    |    ◦     |   ◦   |
+|   T5 | ENV1    | Software environment    |  ·  |    ·    |    ·     |   ·   |
+|      | ENV2    | Hardware environment    |  ·  |    ·    |    ·     |   ·   |
+|      | ENV3    | Container image         |  ◦  |    ◦    |    ◦     |   •   |
+|   T6 | EX1     | Execution timestamps    |  ·  |    •    |    •     |   •   |
+|      | EX2     | Consumed resources      |  ·  |    ·    |    ·     |   ·   |
+|      | EX3     | Workflow engine         |  ·  |    ◦    |    ◦     |   ◦   |
+|      | EX4     | Human agent             |  ·  |    •    |    •     |   •   |
  
   : Summarised results of our qualitative analysis of runcrate
 :::
@@ -475,11 +475,9 @@ Our aim is to be compatible with both Schema.org and W3C PROV. Provenance Run Cr
 ::: {#rocrate_prov_mapping}
 
 
-| RO-Crate | Relationship | W3C PROV-O |
-| -------- | -------- | -------- | 
-| *Action* (superclass of *CreateAction*, *OrganizeAction*) | Has close match                                                                                   | *Activity*                   |
-|                                                           |                                                                                                   |                              |
-|                                                           | (schema.org Actions may also be potential actions in the future)                                  |                              |
+| RO-Crate                                                  | Relationship                                                                                      | W3C PROV-O                   |
+| -------------------------------------------------------: | :-------------------: | ---------------------------- |
+| *Action* <br><small>(superclass of *CreateAction*, *OrganizeAction*)</small> | Has close match <br><small>(schema.org Actions may also be potential actions in the future)</small>   | *Activity*                   |
 | *CreateAction*, *OrganizeAction*                          | Has broader match                                                                                 | *Activity*                   |
 | *Person*                                                  | Has exact match                                                                                   | *Person*                     |
 | *Organization*                                            | Has exact match                                                                                   | *OrganizeAction*             |
@@ -490,9 +488,7 @@ Our aim is to be compatible with both Schema.org and W3C PROV. Provenance Run Cr
 | *endTime* on *CreateAction*                               | Has close match                                                                                   | *endedAtTime*                |
 | *agent* on *CreateAction*                                 | Has related match                                                                                 | *wasStartedBy*, *wasEndedBy* |
 | *agent* and *instrument* on *CreateAction*                | Has broader match                                                                                 | *wasAssociatedWith*          |
-| *instrument* on *CreateAction*                            | Has related match                                                                                 | *hadPlan* on *Association*   |
-|                                                           |                                                                                                   |                              |
-|                                                           | (Complex mapping: an instrument implies a qualified association with the agent, linked to a plan) |                              |
+| *instrument* on *CreateAction*                            | Has related match <br><small>(Complex mapping: an instrument implies a qualified association with the agent, linked to a plan)</small> | *hadPlan* on *Association*   |
 | *object* on *CreateAction*                                | Has exact match                                                                                   | *used*                       |
 | *result* on CreateAction                                  | Has close match                                                                                   | inverse *wasGeneratedBy*     |
 
@@ -526,9 +522,8 @@ Finally, we are currently exploring the cloud execution of Workflow Run RO-Crate
 
 We are planning to undertake an in-depth analysis of the degree of interoperability between the TES and WES API standards -- roughly the equivalents of Process and Workflow Run Crates, respectively -- by placing their focus on the actual execution of tasks/processes and workflows in cloud environments and liaising with the GA4GH Cloud community to align schemas where necessary. We will then build an interconversion library that attempts to:
 
-(1) Construct WES workflow and TES task run requests from RO-Crates containing Provenance, Workflow or Process Run requests and therefore allow their easy (re)execution on any GA4GH Cloud API-powered infrastructure.
-
-(2) Bundle information from the WES and TES (as well as other GA4GH Cloud API resources, where available) to create or extend RO-Crates with standards-compliant Process, Workflow or even Provenance RO-Crates.
+1.  Construct WES workflow and TES task run requests from RO-Crates containing Provenance, Workflow or Process Run requests and therefore allow their easy (re)execution on any GA4GH Cloud API-powered infrastructure.
+2.  Bundle information from the WES and TES (as well as other GA4GH Cloud API resources, where available) to create or extend RO-Crates with standards-compliant Process, Workflow or even Provenance RO-Crates.
 
 
 [^1]: See section [\[[workflows]\]](#workflows){reference-type="ref" reference="workflows"}.
