@@ -176,24 +176,20 @@ Being the basis for all profiles in the WRROC collection, Process Run Crate spec
 Other important properties of the *CreateAction* entity are *object*, which links to the action's inputs, and *result*, which links to its outputs.
 The time the execution started and ended can be provided, respectively, via the *startTime* and *endTime* properties.
 The *Person* or *Organization* entity that performed the action is referred to via the *agent* property.
-Figure [1](#fig:process_crate_er){reference-type="ref" reference="fig:process_crate_er"} shows the entities used in Process Run Crate together with their relationships.
+[Figure 1](#fig:process_crate_er) shows the entities used in Process Run Crate together with their relationships.
 
-{{< figure src="wrroc-figure1.drawio.svg" link="wrroc-figure1.drawio.svg" id="process_crate_er" 
-  width="100%" title="UML class diagram for Process Run Crate"
-  caption="The central entity is the *CreateAction* which represents the execution of an application. It relates with the application itself via *instrument*, with the entity that executed it via *agent* and with its inputs and outputs via *object* and *result*, respectively. *File* is an RO-Crate alias for Schema.org's *MediaObject*. Some inputs (and, less commonly, outputs), however, are not stored as files or directories, but passed to the application (e.g., via a command line interface) as values of various types (e.g., a number or string). In this case, the profile recommends a representation via *PropertyValue*. For simplicity, we left out the rest of the RO-Crate structure (e.g. the root *Dataset*). In this UML class notation diamond <saml>◇</samp> arrows indicate aggregation and regular arrows indicate references, <samp>*</samp> indicates multiple instances,<samp>1</samp> means single instance." >}}
+{{< figure src="wrroc-figure1.drawio.svg" link="wrroc-figure1.drawio.svg" id="fig:process_crate_er" 
+  width="60%" title="UML class diagram for Process Run Crate"
+  caption="The central entity is the *CreateAction* which represents the execution of an application. It relates with the application itself via *instrument*, with the entity that executed it via *agent* and with its inputs and outputs via *object* and *result*, respectively. *File* is an RO-Crate alias for Schema.org's *MediaObject*. Some inputs (and, less commonly, outputs), however, are not stored as files or directories, but passed to the application (e.g., via a command line interface) as values of various types (e.g., a number or string). In this case, the profile recommends a representation via *PropertyValue*. For simplicity, we left out the rest of the RO-Crate structure (e.g. the root *Dataset*). <br>In this UML class notation, diamond <saml>◇</samp> arrows indicate aggregation and regular arrows indicate references, <samp>*</samp> indicates multiple instances,<samp>1</samp> means single instance." >}}
 
 As an example, suppose a user called John Doe runs the `head` UNIX command to extract the first ten lines of an input file named `lines.txt`, storing the result in another file called `selection.txt`.
 John then runs the `sort` command on `selection.txt`, storing the sorted output in a new file named `sorted_selection.txt`.
-Figure [2](#fig:head_sort){reference-type="ref" reference="fig:head_sort"} contains a diagram of the two actions and their relationships to the other entities involved.
+[Figure 2](#fig:head_sort) contains a diagram of the two actions and their relationships to the other entities involved.
 Note how the actions are connected by the fact that the output of "Run Head" is also the input of "Run Sort": they form an "implicit workflow", whose steps have been executed manually rather than by a software tool.
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
-  caption="" >}}
-
-![**Diagram of a simple workflow** where the `head` and `sort` programs were run manually by a user.
-The executions of the individual software programs are connected by the fact that the file output by `head` was used as input for `sort`, documenting the computational flow in an implicit way.
-Such executions can be represented with Process Run Crate.](figures/ch54/wrroc-figure-example.drawio.pdf){#fig:head_sort width="29em"}
+{{< figure src="wrroc-figure-example.drawio.svg" link="wrroc-figure-example.drawio.svg" id="fig:head_sort" 
+  width="75%" title="Diagram of a simple workflow"
+  caption="where the `head` and `sort` programs were run manually by a user. The executions of the individual software programs are connected by the fact that the file output by `head` was used as input for `sort`, documenting the computational flow in an implicit way. Such executions can be represented with Process Run Crate." >}}
 
 Process Run Crate extends the RO-Crate guidelines on representing software used to create files with additional requirements and conventions.
 This arrangement is typical of the RO-Crate approach, where the base specification provides general recommendations to allow for high flexibility, while profiles -- being more concerned with the representation of specific domains and machine actionability -- provide more detailed and structured definitions.
@@ -211,9 +207,9 @@ The execution of the individual workflow steps, instead, is not represented: tha
 
 The Workflow Run RO-Crate profile also contains recommendations on how to represent the workflow's input and output parameters, based on the aforementioned Bioschemas \[[Gray 2017]\] ComputationalWorkflow profile.
 All these elements are represented via the *FormalParameter* entity and are referenced from the main workflow via the *input* and *output* properties.
-While the entities referenced from *object* and *result* in the *CreateAction* represent data entities and argument values that were actually used in the workflow execution, the ones referenced from *input* and *output* correspond to formal parameters, which acquire a value when the workflow is run (see Figure [3](#fig:workflow_crate_er){reference-type="ref" reference="fig:workflow_crate_er"}).
+While the entities referenced from *object* and *result* in the *CreateAction* represent data entities and argument values that were actually used in the workflow execution, the ones referenced from *input* and *output* correspond to formal parameters, which acquire a value when the workflow is run (see [Figure 3](#fig:workflow_crate_er)).
 In the profile, the relationship between an actual value and the corresponding formal parameter is expressed through the *exampleOfWork* property -- the downloadable file is a realisation of the formal parameter definition.
-For instance, in the JSON-LD snippet of Listing [\[[formalparameter]\]](#formalparameter){reference-type="ref" reference="formalparameter"} a formal parameter (`#annotations`) is illustrated together with a corresponding `final-annotations.tsv` file:
+For instance, in this JSON-LD snippet, a formal parameter (`#annotations`) is illustrated together with a corresponding `final-annotations.tsv` file:
 
 ```json
     {
@@ -236,15 +232,11 @@ The derivation of Workflow Run Crate from Workflow RO-Crate makes RO-Crates that
 Thus, users of a WMS that implements this profile (or Provenance Run Crate, which inherits it) are able to register their workflows in WorkflowHub -- together with an execution trace -- by simply running them and uploading the resulting RO-Crates.
 Additionally, the inheritance mechanism allows to reuse the specifications already developed for Workflow RO-Crate, which form part of the guidelines on representing the prospective provenance.
 
-Figure [3](#fig:workflow_crate_er){reference-type="ref" reference="fig:workflow_crate_er"} shows the entities used in Workflow Run Crate together with their relationships.
+[Figure 3](#fig:workflow_crate_er) shows the entities used in Workflow Run Crate together with their relationships.
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
-  caption="" >}}
-
-![**UML class diagram for Workflow Run Crate.** The main differences with Process Run Crate are the representation of formal parameters and the fact that the application is expected to be an entity with types *File*, *SoftwareSourceCode* and *ComputationalWorkflow*.
-Effectively, the entity belongs to all three types, and its properties are the union of the properties of the individual types.
-The filled diamond $\blacklozenge$ indicates composition, empty diamond $\Diamond$ aggregation, and other arrows relations. ](figures/ch54/wrroc-figure2.drawio.pdf){#fig:workflow_crate_er width="26em"}
+{{< figure src="wrroc-figure2.drawio.svg" link="wrroc-figure2.drawio.svg" id="fig:workflow_crate_er" 
+  width="75%" title="UML class diagram for Workflow Run Crate"
+  caption="The main differences with Process Run Crate are the representation of formal parameters and the fact that the application is expected to be an entity with types *File*, *SoftwareSourceCode* and *ComputationalWorkflow*. Effectively, the entity belongs to all three types, and its properties are the union of the properties of the individual types. The filled diamond <saml>◆</samp> indicates composition, empty diamond <saml>◇</samp> aggregation, and other arrows relations." >}}
 
 ### Provenance Run Crate {#provenance-run-crate}
 
@@ -254,38 +246,31 @@ The workflow is required to refer to the tools it orchestrates through the *hasP
 
 To represent the logical steps defined by the workflow, this profile uses i.e., "A step in the instructions for how to achieve a result".
 Steps point to the corresponding tools via the *workExample* property and are referenced from the workflow via the *step* property; the execution of a step is represented by a *ControlAction* pointing to the *HowToStep* via *instrument* and to the *CreateAction* instance(s) that represent the corresponding tool execution(s) via *object*.
-Note that a step execution does not coincide with a tool execution: an example where this distinction is apparent is when a step maps to multiple executions of the same tool over a list of inputs (e.g.
-the "scattering" feature in CWL).
+Note that a step execution does not coincide with a tool execution: an example where this distinction is apparent is when a step maps to multiple executions of the same tool over a list of inputs (e.g. the "scattering" feature in CWL).
 
 An RO-Crate following this profile can also represent the execution of the WMS itself (e.g., cwltool) via *OrganizeAction*, pointing to a representation of the WMS via *instrument*, to the steps via *object* and to the workflow run via *result*.
 The *object* attribute of the *OrganizeAction* can additionally point to a configuration file containing a description of the settings that affected the behaviour of the WMS during the execution.
 
-Figure [4](#fig:provenance_crate_er){reference-type="ref" reference="fig:provenance_crate_er"} shows the various entities involved in the representation of a workflow run via Provenance Run Crate together with their relationships.
+[Figure 4](#fig:provenance_crate_er) shows the various entities involved in the representation of a workflow run via Provenance Run Crate together with their relationships.
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
-  caption="" >}}
-
-![**UML class diagram for Provenance Run Crate.** In addition to the workflow run, this profile represents the execution of individual steps and their related tools.](figures/ch54/wrroc-figure3.drawio.pdf){#fig:provenance_crate_er width="\\textwidth"}
+{{< figure src="wrroc-figure3.drawio.svg" link="wrroc-figure3.drawio.svg" id="fig:provenance_crate_er" 
+  width="100%" title="UML class diagram for Provenance Run Crate"
+  caption="In addition to the workflow run, this profile represents the execution of individual steps and their related tools." >}}
 
 This profile also includes specifications on how to describe connections between parameters.
 Parameter connections -- a fundamental feature of computational workflows -- describe (i) how tools take as input the intermediate outputs generated by other tools and (ii) how workflow-level parameters are mapped to tool-level parameters.
-For instance, consider again the workflow depicted in Figure [2](#fig:head_sort){reference-type="ref" reference="fig:head_sort"}, and suppose it is implemented in a workflow language such as CWL.
+For instance, consider again the workflow depicted in [Figure 2](#fig:head_sort), and suppose it is implemented in a workflow language such as CWL.
 The workflow-level input (a text file) is connected to the input of the "head" tool wrapper, and the output of the latter is connected to the input of the "sort" tool wrapper.
 
 A representation of parameter connections is particularly useful for traceability, since it allows to document the inputs and tools on which workflow outputs depend.
 Since the current RO-Crate context has no suitable terms for the description of such relationships, we added appropriate ones to the aforementioned "workflow-run" context extension (the <https://w3id.org/ro/terms/workflow-run#> namespace): a *ParameterConnection* type with *sourceParameter* and *targetParameter* attributes that respectively map to the source and target formal parameters, and a *connection* property to link from the relevant step or workflow to the *ParameterConnection* instances.
 
 This profile is the most detailed of the three, and offers the highest level of granularity.
-Fig. [5](#fig:profile_venn){reference-type="ref" reference="fig:profile_venn"} shows the relationship between the specifications of the profiles as a Venn diagram.
+[Figure 5](#fig:profile_venn) shows the relationship between the specifications of the profiles as a Venn diagram.
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
-  caption="" >}}
-
-[**Venn diagram of the specifications for the various RO-Crate profiles.** Workflow Run Crate inherits the specifications of both Process Run Crate and Workflow RO-Crate.
-Provenance Run Crate, in turn, inherits the specifications of Workflow Run Crate.](figures/ch54/wrroc-venn.drawio.pdf){#fig:profile_venn width="26em"}
-
+{{< figure src="wrroc-venn.drawio.svg" link="wrroc-venn.drawio.svg" id="fig:profile_venn" 
+  width="60%" title="Venn diagram of the specifications for the various RO-Crate profiles"
+  caption="Workflow Run Crate inherits the specifications of both Process Run Crate and Workflow RO-Crate. Provenance Run Crate, in turn, inherits the specifications of Workflow Run Crate." >}}
 
 
 ## Implementations {#implementations}
@@ -293,7 +278,7 @@ Provenance Run Crate, in turn, inherits the specifications of Workflow Run Crate
 Support for the Workflow Run RO-Crate profiles presented in this work has been implemented in a number of systems, showing support from the community and demonstrating their usability in practice.
 We describe seven of these implementations (one in a conversion tool and six in WMS) in the following sections.
 These tools have been developed in parallel by different teams, and independently from each other.
-RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a]\] (section [\[[tooling]\]](#tooling){reference-type="ref" reference="tooling"}), and the WRROC implementations have either re-used these or added their own approach to the standards.
+RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a]\] (section [\[[tooling]\]](#tooling)), and the WRROC implementations have either re-used these or added their own approach to the standards.
 
 
 ### Runcrate {#runcrate}
