@@ -111,8 +111,8 @@ The discussion of strictness vs flexibility in section [strictness-vs-flexibilit
 
 Section [profiles](ch5.html#profiles) detailed how semi-formalised profiles can be gradually formed to at first *duck-type* a class of RO-Crates that have similar properties. Later work has formalised this as [Profile Crate](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles) to capture the profile itself as a separate crate. This have now evolved to use the W3C Profiles Vocabulary \[[Atkinson 2019]\] to explicitly link to vocabularies, mappings and importantly constraints expressed as RDF Shapes \[[Soiland-Reyes 2023d]\]. This turns RO-Crate profiles into machine-actionable type definitions, from which existing RDF tooling can do for instance validation. Figure [profilecrate](fig.html#profilecrate) shows how the usage of *roles* within the profile crate indicates the purpose of the constituent parts. Roles are here particularly important as many of these Semantic Web resources are expressed in the same file format (e.g. `text/turtle`) and may be used for different purposes (e.g. SKOS is used to represent either a *mapping* or a *vocabulary* \[[Isaac 2009]\]).
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
+{{< figure src="profile-crate.svg" link="profile-crate.svg" id="figure1" 
+  width="100%" title="Example of Profile Crate for Workflow Run Crate"
   caption="" >}}
 
 ![**Example of Profile Crate for Workflow Run Crate**. An RO-Crate *WFRun Crate* declares conformance with a given RO-Crate profile. Resolving the profile URI retrieves the *Profile Crate*, which parts include an *RDF Shape*, an *SKOS mapping* and a *DefinedTermSet*. By using the indirection of *ResourceDescriptor* from the Profiles Vocabulary \[[Atkinson 2019]\], the roles of each of these artefacts are defined, e.g. *constraints*. The embedded *vocabulary* as a *DefinedTermSet* defines ad-hoc terms like *sourceParameter* used by the Workflow Run Crate  profile \[[Leo 2023b]\]. ](figures/ch09/profile-crate.pdf){#fig:profilecrate width="\\textwidth"}
@@ -237,8 +237,8 @@ Section [wrroc](ch54.html#wrroc) introduced the Workflow Run Crate (WRROC) profi
 
 In addition the *Process Run Crate* profile was shown to be suitable also for "manual workflows" where processes are executed by hand, as illustrated by figure [baseline-usecase](fig.html#baseline-usecase). In this example, the process run is only a small part of the crate, namely to generate the synthetic dataset, but of bigger importance in this crate is the causal model that explains to humans the relationships that led to the synthetic dataset. There is no overall computational workflow as the individual computational steps are performed with human interaction; however, this also means the RO-Crate metadata must be created by human interaction.
 
-{{< figure src="figure1.png" link="figure1.png" id="figure1" 
-  width="100%" title="Visual representation of the proposed methodological framework"
+{{< figure src="baseline-usecase.svg" link="baseline-usecase.svg" id="figure1" 
+  width="100%" title="Example of RO-Crate using the Process Run Crate profile"
   caption="" >}}
 
 ![**Example of RO-Crate using the Process Run Crate profile** to describe a BY-COVID use case for modelling vaccine effectiveness \[[Meurisse 2023]\]. The crate *hasPart* multiple data entities, and *mentions* several process runs according to the profile. The use case is further described with extra schema.org attributes like *temporalCoverage*. Screenshot of RO-Crate preview HTML, modified for print from <https://w3id.org/ro/doi/10.5281/zenodo.6913045> ](figures/ch09/baseline-usecase.pdf){#fig:baseline-usecase height="\\textheight"}
@@ -323,7 +323,6 @@ This forced generalization may also have helped to make the model general enough
 ## References
 
 See chapter [references](../../2023/references/).
-
 
 <!-- van der Aalst 2014 -->
 [van der Aalst 2014]: https://doi.org/10.1007/978-3-319-04948-9_2 "Data Scientist: The Engineer of the Future"
@@ -595,7 +594,6 @@ See chapter [references](../../2023/references/).
 [Ejarque 2023]: https://doi.org/10.5281/zenodo.7975340 "COMPSs"
 <!-- martinekuanWebAPIDesign -->
 [Ekuan 2023]: https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design "Web API design best practices"
-(accessed 24 January 2023)
 <!-- Ellerm 2023 -->
 [Ellerm 2023]: https://doi.org/10.1109/e-Science58273.2023.10254857 "LivePublication: The Science Workflow Creates and Updates the Publication"
 <!-- Ellis 2007 -->
@@ -1081,7 +1079,6 @@ See chapter [references](../../2023/references/).
 [Riccardi 2022]: https://doi.org/10.1002/jcc.26842 "Towards improved FAIRness of the ThermoML Archive"
 <!-- WebSocketsStandard -->
 [Rice 2022]: https://websockets.spec.whatwg.org/ "WebSockets Standard"
-(accessed 26 May 2022)
 <!-- ch5-105 -->
 [RO-Crate 1.0]: https://doi.org/10.5281/zenodo.3541888 "RO-Crate Metadata Specification 1.0"
 <!-- ch5-107 -->
@@ -1108,7 +1105,6 @@ See chapter [references](../../2023/references/).
 [Sandve 2013]: https://doi.org/10.1371/journal.pcbi.1003285 "Ten simple rules for reproducible computational research"
 <!-- sandvineGlobalInternetPhenomena -->
 [Sandvine 2022]: https://www.sandvine.com/global-internet-phenomena-report-2022 "Global Internet Phenomena Report"
-(accessed 26 May 2022)
 <!-- sauermannCoolURIsSemantic2011 -->
 [Sauermann 2008]: http://www.w3.org/TR/cooluris/ "Cool URIs for the semantic web"
 <!-- Scheidegger 2008 -->
@@ -1357,7 +1353,6 @@ See chapter [references](../../2023/references/).
 [Wittner 2023a]: https://doi.org/10.1002/lrh2.10365 "Toward a common standard for data and specimen provenance in life sciences"
 <!-- Wittner 2023b -->
 [Wittner 2023b]: https://s11.no/2023/phd/linking-provenance/ "Linking provenance and its metadata in multi-organizational environments of life sciences"
-(Supplement 17)
 <!-- Wittner 2023c -->
 [Wittner 2023c]: https://doi.org/10.5281/zenodo.8095888 "Packing provenance using CPM RO-Crate profile"
 <!-- wolstencroftRightFieldEmbeddingOntology2011b -->
@@ -1392,3 +1387,4 @@ See chapter [references](../../2023/references/).
 [Zoubek 2021]: https://github.com/e11938258/RO-Crates-and-Excel "RO Crates and Excel"
 <!-- ch5-127 -->
 [Žumer 2009]: https://doi.org/10.1515/9783598441844 "National Bibliographies in the Digital Age: Guidance and New Directions"
+
