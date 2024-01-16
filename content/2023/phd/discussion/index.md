@@ -243,9 +243,9 @@ It is an important part of the simplification of the Semantic Web in RO-Crate th
 
 RO-Crate profiles like WRROC live are doing a combination of *restrictions* (requiring the crate to have a particular entity) and *extensions* (suggesting additional terms to use). By following the RO-Crate philosophy the profiles also reuse existing schema.org types as much as possible, adding a filtered overlay of their many properties, just like RO-Crate itself, and only adding terms where no appropiate alternative exist.
 
-Listing [6.6](ch61.html#wrroc-in-owl) shows an attempt to declare the partial WRROC requirements from the top of this section in OWL. In doing so it was necessary to introduce additional types for the profile and the action, in addition to anonymous union classes and inverse properties. It is clear that expressing a full RO-Crate profile in this matter would require a deep understanding of OWL ontologies and would require its own set of unit tests, and would not be inline with the RO-Crate philosophy of *just enough Linked Data*.
+Listing [6.3](#wrroc-in-owl) shows an attempt to declare the partial WRROC requirements from the top of this section in OWL. In doing so it was necessary to introduce additional types for the profile and the action, in addition to anonymous union classes and inverse properties. It is clear that expressing a full RO-Crate profile in this matter would require a deep understanding of OWL ontologies and would require its own set of unit tests, and would not be inline with the RO-Crate philosophy of *just enough Linked Data*.
 
-<figure>
+<figure id="wrroc-in-owl">
 
 ```turtle
 <https://w3id.org/ro/wfrun/process/0.4> 
@@ -283,7 +283,8 @@ Listing [6.6](ch61.html#wrroc-in-owl) shows an attempt to declare the partial WR
 
 #### Defining a Process Run action as an OWL equivalence
 
-A versioned `:ProcessRunCrateProfile` is given a restriction in that the RO-Crate root which list the profile as `conformsTo` must _mention_ an action (one of _ActivateAction_,  _CreateAction_,  _UpdateAction_) which _instrument_ have at least one instance of _SoftwareApplication_ _SoftwareSourceCode_ or _ComptuationalWorkflow_. This OWL ontology uses equivalence classes as the WRROC types must be inferred and not declared in their JSON-LD \texttt{@id}.<br>OWL Turtle snippet modified from <https://github.com/ResearchObject/workflow-run-crate/pull/69>
+A versioned `:ProcessRunCrateProfile` is given a restriction in that the RO-Crate root which list the profile as `conformsTo` must _mention_ an action (one of _ActivateAction_,  _CreateAction_,  _UpdateAction_) which _instrument_ have at least one instance of _SoftwareApplication_ _SoftwareSourceCode_ or _ComptuationalWorkflow_. This OWL ontology uses equivalence classes as the WRROC types must be inferred and not declared in their JSON-LD `@id`.  
+OWL Turtle snippet modified from <https://github.com/ResearchObject/workflow-run-crate/pull/69>
 
 </figcaption>
 </figure>
