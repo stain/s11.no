@@ -5,7 +5,7 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  In order to investigate RQ2, and considering important parts of the FAIR principles include _Reuse_ and _provenance_, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
+  In order to investigate RQ3, and considering important parts of the FAIR principles include _Reuse_ and _provenance_, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
 ---
 
 In order to investigate [**RQ3**](../../../2022/phd/introduction/#rq3), and considering important parts of the FAIR principles are _Reuse_ and _provenance_, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with **Computational Workflows**. 
@@ -18,7 +18,7 @@ Section [5.4](../workflow-run-crate/) presents a profile of RO-Crate to capture 
 
 Supplementary materials that may assist readers of this chapter provide further details on FAIR Computational Workflows [[Goble 2020]], [WorkflowHub](../../../2021/phd/workflow-collaboratory/) [[Goble 2021]], [Common Workflow Language](../../../2022/phd/methods-included) [[Crusoe 2022]] and [making a software tool workflow ready](../../../2022/phd/10-simple-rules-for-workflow-tools) [[Brack 2022a]]. 
 
-On the aspects of workflow provenance, recommended reading in supplementary materials covers CWLProv [[Khan 2019]], [RO-Crate in Galaxy](../../../2022/phd/galaxy-ro-crate/) [[De Geest 2022]] and Common Provenance Model [[Wittner 2020],[Wittner 2023a]].
+On the aspects of workflow provenance, recommended reading in supplementary materials covers CWLProv [[Khan 2019]], [RO-Crate in Galaxy](../../../2022/phd/galaxy-ro-crate/) [[De Geest 2022]] and Common Provenance Model [[Wittner 2020], [Wittner 2023a]].
 
 
 * Section 5.1: [Making Canonical Workflow Building Blocks interoperable across workflow languages](../../../2022/phd/canonical-workflow-building-blocks/)

@@ -5,7 +5,7 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  Discussion and conclusions of this thesis.
+  Overall consideration of this thesis.
 ---
 
 * [Section 6.1: Discussion](../../../2023/phd/discussion/)

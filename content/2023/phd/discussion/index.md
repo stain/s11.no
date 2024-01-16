@@ -5,7 +5,7 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  Discussion of findings from this thesis, relating them to emerging related work and future directions. Conclusions for the research questions raised in introduciton.
+  Discussion of findings from this thesis, relating them to emerging related work and future directions.
 ---
 
 In this section I summarise and discuss the findings from the previous chapters, relating them to emerging related work and future directions.
