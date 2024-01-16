@@ -456,9 +456,6 @@ Table [1](#implementation_summary_table) shows an overview of the different impl
 
 <div id="implementation_summary_table">
 
-_**Table 1**: **Workflow Run Crate implementations**. Summary of each WRROC implementation, together with the profiles it implements, the latest software citation and an example crate of its application.
-Runcrate is a toolkit that converts CWLProv ROs to Provenance Run Crates, while the others are WMS._
-
 **Impl.**   | **Profile** | **Version URL/DOI**    | **Example**             |
 ------------| ----------- | ---------------------- | ----------------------- |
 runcrate    | Provenance  | \[[Leo 2023a]\]        |  \[[Leo 2023]\]         |
@@ -468,6 +465,8 @@ Streamflow  | Provenance  | \[[Colonnelli 2023b]\] |  \[[Colonnelli 2023a]\] |
 WfExS       | Workflow    | \[[Fernández 2023a]\]  |  \[[Fernández 2023b]\]  |
 Sapporo     | Workflow    | \[[Suetake 2023b]\]    |  \[[Ohta 2023]\]        |
 Autosubmit  | Workflow    | \[[Beltrán 2023]\]     |  \[[Kinoshita 2023]\]   |
+
+_**Table 1**: **Workflow Run Crate implementations**. Summary of each WRROC implementation, together with the profiles it implements, the latest software citation and an example crate of its application. Runcrate is a toolkit that converts CWLProv ROs to Provenance Run Crates, while the others are WMS._
 
 </div>
 
@@ -661,12 +660,13 @@ From this earlier analysis, we concluded that the CWLProv RDF representation of 
 For example, the CWLProv RDF only contained the name of each workflow step, without including the link to the underlying CommandLineTool or nested Workflow that was executed; information that could be extracted from the packed workflow.
 
 In our analysis of runcrate, we compared the CWLProv RDF provenance graph with the RO-Crate metadata file.
-The results of the analysis are summarised in Table [2](#analysis_table) [^3].
+The results of the analysis are summarised in [Table 2](#analysis_table).
 Overall, most of the information contained in CWLProv RDF is transferred to the RO-Crate metadata.
 In addition, the representation of some categories of metadata has improved, notably Workflow parameters (WF2), which were insufficiently described in CWLProv RDF but defined with type and format in RO-Crate.
 Moreover, the format of input files (D2), which was partially represented in CWLProv RDF, is fully represented in RO-Crate.
 
-::: {#analysis_table}
+
+<div id="analysis_table">
 
 | Type | Subtype | Name                    | CWL | CWLProv | RO-Crate | WRROC |
 | ---: | ------- | ----------------------- | :-: | :-----: | :------: | :---: |
@@ -690,20 +690,11 @@ Moreover, the format of input files (D2), which was partially represented in CWL
 |      | EX2     | Consumed resources      |  ·  |    ·    |    ·     |   ·   |
 |      | EX3     | Workflow engine         |  ·  |    ◦    |    ◦     |   ◦   |
 |      | EX4     | Human agent             |  ·  |    •    |    •     |   •   |
- 
-  : Summarised results of our qualitative analysis of runcrate
-:::
 
-We compared RO-Crates with the CWLProv ROs from which they were generated.
-The analysis was based on a provenance taxonomy reflecting relevant provenance metadata based on realistic use cases for ROs associated with a real-life bioinformatics workflow \[[de Wit 2022]\].
-CWL-specific documents are: `packed.cwl` (the workflow), `primary-job.json` (the inputs file), and `primary-output.json` (the outputs file).
-Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`.  
-For completeness we also show the theoretical capability of the Provenance Run Crate profile (WRROC column) assuming all its MUST/SHOULD requirements are complete.
-The categories in the first three columns are explained in \[[de Wit 2022]\].  
-**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation  … optional (e.g.
-schema.org attribute)
+_**Table 2**: **Summarised results of our qualitative analysis of runcrate**. We compared RO-Crates with the CWLProv ROs from which they were generated. The analysis was based on a provenance taxonomy reflecting relevant provenance metadata based on realistic use cases for ROs associated with a real-life bioinformatics workflow \[[de Wit 2022]\]. <br>CWL-specific documents are: `packed.cwl` (the workflow), `primary-job.json` (the inputs file), and `primary-output.json` (the outputs file). Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`. <br> For completeness we also show the theoretical capability of the Provenance Run Crate profile (WRROC column) assuming all its MUST/SHOULD requirements are complete. The categories in the first three columns are explained in \[[de Wit 2022]\]. <br>**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation  … optional (e.g.
+schema.org attribute)[^3]_
 
-[\[[analysis\_table]\]]{#analysis_table label="analysis_table"}
+</div>
 
 In conclusion, our analysis shows that runcrate preserves most provenance metadata previously shown to be relevant in realistic RO use case scenarios.
 The full results of the analysis can be found in \[[de Wit 2023]\].
@@ -717,11 +708,10 @@ Some areas like Consumed Resources (EX2) require additional terms to be defined,
 
 Our aim is to be compatible with both Schema.org and W3C PROV.
 Provenance Run Crate is the profile that most closely matches the level of detail provided by CWLProv, which extends W3C PROV.
-Table [3](#rocrate_prov_mapping) shows how the main entities and relationships represented by Provenance Run Crate map to PROV constructs, using the SKOS vocabulary to indicate the type of relationship between each pair of terms.
+[Table 3](#rocrate_prov_mapping) shows how the main entities and relationships represented by Provenance Run Crate map to PROV constructs, using the SKOS vocabulary to indicate the type of relationship between each pair of terms.
 A machine-readable version of the mapping can be found in the of this article \[[Leo 2023c]\].
 
-::: {#rocrate_prov_mapping}
-
+<div id="rocrate_prov_mapping">
 
 |                                                                     RO-Crate |                                                              Relationship                                                              | W3C PROV-O                   |
 | ---------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | ---------------------------- |
@@ -740,11 +730,10 @@ A machine-readable version of the mapping can be found in the of this article \[
 |                                                   *object* on *CreateAction* |                                                            Has exact match                                                             | *used*                       |
 |                                                     *result* on CreateAction |                                                            Has close match                                                             | inverse *wasGeneratedBy*     |
 
-:  **Mapping from Workflow Run RO-Crate to equivalent W3C PROV concepts** using SKOS \[[Isaac 2009]\].
-For instance, *CreateAction* has **broader** match PROV's *Activity*, meaning that *Activity* is more general.
-:::
+_**Table 3**: **Mapping from Workflow Run RO-Crate to equivalent W3C PROV concepts** using SKOS \[[Isaac 2009]\]. For instance, *CreateAction* has **broader** match PROV's *Activity*, meaning that *Activity* is more general._
 
-[\[[rocrate\_prov\_mapping]\]]{#rocrate_prov_mapping label="rocrate_prov_mapping"}
+</div>
+
 
 ### Five Safes Workflow Run Crate {#trusted-workflow-run-crate}
 
@@ -798,9 +787,9 @@ We will then build an interconversion library that attempts to:
 2.  Bundle information from the WES and TES (as well as other GA4GH Cloud API resources, where available) to create or extend RO-Crates with standards-compliant Process, Workflow or even Provenance RO-Crates.
 
 
-[^1]: See section [\[[workflows]\]](#workflows).
+[^1]: See [section 4.1.4.1](../../../2022/phd/ro-crate/#workflows).
 
-[^2]: See sections  [\[[inuse]\]](#inuse) and [\[[ch61:profiles]\]](#ch61:profiles).
+[^2]: See [section 4.1.4](../../../2022/phd/ro-crate/#inuse) and [section 6.1.2.4](../discussion/#profiles).
 
 [^3]: The three dots (...) in the WRROC column indicate that the concept is supported in an RO-Crate using existing schema.org vocabulary (e.g. <https://schema.org/softwareHelp>) but is not required or recommended by the WRROC profiles.
 
