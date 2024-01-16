@@ -2558,7 +2558,7 @@ EOSC FAIR Metrics and Data Quality Task Force\
 \[Wilkinson 2024\] Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):\
 **Report on \"FAIR Signposting\" and its uptake by the community**.\
 *EOSC FAIR Metrics and Data Quality Task Force*\
-<https://doi.org/10.5281/zenodo.10453348>
+<https://doi.org/10.5281/zenodo.10490289>
 
 \[Williams 2012\] Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer, Christine Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas Blomberg, Gerhard Ecker, Carole Goble, Barend Mons (2012):\
 **Open PHACTS: Semantic interoperability for drug discovery**.\

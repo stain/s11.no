@@ -654,7 +654,7 @@ See chapter [references](../../2023/references/).
 [Wilkinson 2022a]: https://doi.org/10.5281/zenodo.7463421 "FAIR Assessment Tools: Towards an “Apples to Apples” Comparisons"
 [Wilkinson 2022b]: https://doi.org/10.48550/arxiv.2209.09022 "F*** workflows: When parts of FAIR are missing"
 [Wilkinson 2023a]: https://doi.org/10.12688/openreseurope.15364.2 "Community-driven governance of FAIRness assessment"
-[Wilkinson 2024]: https://doi.org/10.5281/zenodo.10453348 "Report on FAIR Signposting and its uptake by the community"
+[Wilkinson 2024]: https://doi.org/10.5281/zenodo.10490289 "Report on FAIR Signposting and its uptake by the community"
 [Williams 2012]: https://doi.org/10.1016/j.drudis.2012.05.016 "Open PHACTS: Semantic interoperability for drug discovery"
 [Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
 [Wittenburg 2021]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
