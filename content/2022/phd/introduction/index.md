@@ -126,24 +126,23 @@ Origins {#intro:origins}
 
 [Section 3.2](../updating-ld-for-fdo/) is based on *Updating Linked Data practices for FAIR Digital Object principles* \[[Soiland-Reyes 2022d]\] (see appendices [A.4.2](../acknowledgements/#updating-ld) and [B.1.2](../contributions/#updating-ld)). I am the main author of this manuscript.
 
-Sections [4.1](../ro-crate/) and [4.3](../ro-crate/formalizing/) are based on the publication *Packaging research artefacts with RO-Crate* \[[Soiland-Reyes 2022a]\] (see appendices [A.4.3](../acknowledgements/#packagingrocrate) and [B.1.3](../contributions/#packagingrocrate)). I am the main author of this manuscript.
+[Section 4.1](../ro-crate/) and [section 4.3](../ro-crate/formalizing/) are based on the publication *Packaging research artefacts with RO-Crate* \[[Soiland-Reyes 2022a]\] (see appendices [A.4.3](../acknowledgements/#packagingrocrate), [B.1.3](../contributions/#packagingrocrate) and [B.1.5](../contributions/#formalizing)). I am the main author of this manuscript.
 
 [Section 4.2](../fdo-with-ro-crate/) is based on the publication _Creating lightweight FAIR digital objects with RO-Crate_ \[[Soiland-Reyes 2022c]\] (see appendices 
 [A.4.4](../acknowledgements/#lightweight) and [B.1.4](../contributions/#lightweight)). I am the main author of this manuscript.
 
 [Section 5.1](../canonical-workflow-building-blocks/) is based on the publication _Making Canonical Workflow Building Blocks interoperable across workflow languages_  \[[Soiland-Reyes 2022b]\] (see appendices  [A.4.5](../acknowledgements/#canonical) and [B.1.6](../contributions/#canonical)). I am the main author of this manuscript.
 
-[Section 5.2](../specimen-data-refinery/) is based on the publication _The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections_ \[[Hardisty 2022]\] (see appendices [A.4.7](../acknowledgements/#refinery) and [B.1.7](../contributions/#refinery)).
+[Section 5.2](../specimen-data-refinery/) is based on the publication _The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections_ \[[Hardisty 2022]\] (see appendices [A.4.6](../acknowledgements/#refinery) and [B.1.7](../contributions/#refinery)).
 I mainly contributed to sections 
 [5.2.2.2](../specimen-data-refinery/#workflow-management-systems-and-canonical-workflows-for-research), 
 [5.2.2.3](../specimen-data-refinery/#fair-packaging-of-researchworkflow-objects-with-ro-crate), 
 [5.2.4.1](../specimen-data-refinery/#fdo-types), 
 [5.2.7](../specimen-data-refinery/#discussion) in this manuscript.
 
-[Section 5.3](../incrementally-building-fdos/) is based on the publication \emph{Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows} \[[Woolland 2022]\] (see appendices [A.4.6](../acknowledgements/#incrementally-fdo) and [B.1.8](../contributions/#incrementally-fdo)). I am the main author of this manuscript.
+[Section 5.3](../incrementally-building-fdos/) is based on the publication _Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows_ \[[Woolland 2022]\] (see appendices [A.4.7](../acknowledgements/#incrementally-fdo) and [B.1.8](../contributions/#incrementally-fdo)). I am the main author of this manuscript.
 
-
-[Section 5.3](../../../2023/phd/workflow-run-crate/#wrroc) is based on the preprint *Recording provenance of workflow runs with RO-Crate* \[[Leo 2023b]\] (see appendices [A.4.8](../acknowledgements#wrroc) and [B.1.9](../contributions#wrroc)). I am the last author of this manuscript, and have mainly contributed to sections [introduction](../../../2023/phd/workflow-run-crate/#introduction), [discussion](../../../2023/phd/workflow-run-crate/#discussion), [trusted-workflow-run-crate](../../../2023/phd/workflow-run-crate/#trusted-workflow-run-crate), [bco-crate](../../../2023/phd/workflow-run-crate/#bco-crate).
+[Section 5.3](../../../2023/phd/workflow-run-crate/#wrroc) is based on the preprint *Recording provenance of workflow runs with RO-Crate* \[[Leo 2023b]\] (see appendices [A.4.8](../acknowledgements#wrroc) and [B.1.9](../contributions#wrroc)). I am the last author of this manuscript, and have mainly contributed to sections [5.4.1](../../../2023/phd/workflow-run-crate/#introduction), [5.4.5](../../../2023/phd/workflow-run-crate/#discussion), [5.4.5.3](../../../2023/phd/workflow-run-crate/#trusted-workflow-run-crate), [5.4.5.4](../../../2023/phd/workflow-run-crate/#bco-crate).
 
 
 ## References
