@@ -38,24 +38,24 @@ Fernández<sup>5</sup>, Iacopo Colonnelli<sup>13</sup>, Matej Gallo<sup>9</sup>,
 <div class="affiliations">
 
 <sup>1</sup> Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Loc.
-Piscina Manna, Edificio 1, 09050 Pula (CA), Italy\
-<sup>2</sup> Vrije Universiteit Amsterdam, The Netherlands\
-<sup>3</sup> DTL Projects, The Netherlands\
-<sup>4</sup> Forschungszentrum Jülich, Germany\
-<sup>5</sup> Barcelona Supercomputing Center (Spain)\
-<sup>6</sup> Biozentrum, University of Basel, Switzerland\
-<sup>7</sup> Swiss Institute of Bioinformatics, Lausanne, Switzerland\
-<sup>8</sup> VIB-UGent Center for Plant Systems Biology, Gent, Belgium\
-<sup>9</sup> Faculty of Informatics, Masaryk University, Botanická 68a, 602 00, Brno, Czech Republic\
-<sup>10</sup> Institute of Computer Science, Masaryk University, Šumavská 416/15, 602 00, Brno, Czech Republic\
-<sup>11</sup> BBMRI-ERIC, Neue Stiftingtalstrasse 2, 8010, Graz, Austria\
-<sup>12</sup> Ontology Engineering Group, Universidad Politécnica de Madrid\
+Piscina Manna, Edificio 1, 09050 Pula (CA), Italy  
+<sup>2</sup> Vrije Universiteit Amsterdam, The Netherlands  
+<sup>3</sup> DTL Projects, The Netherlands  
+<sup>4</sup> Forschungszentrum Jülich, Germany  
+<sup>5</sup> Barcelona Supercomputing Center (Spain)  
+<sup>6</sup> Biozentrum, University of Basel, Switzerland  
+<sup>7</sup> Swiss Institute of Bioinformatics, Lausanne, Switzerland  
+<sup>8</sup> VIB-UGent Center for Plant Systems Biology, Gent, Belgium  
+<sup>9</sup> Faculty of Informatics, Masaryk University, Botanická 68a, 602 00, Brno, Czech Republic  
+<sup>10</sup> Institute of Computer Science, Masaryk University, Šumavská 416/15, 602 00, Brno, Czech Republic  
+<sup>11</sup> BBMRI-ERIC, Neue Stiftingtalstrasse 2, 8010, Graz, Austria  
+<sup>12</sup> Ontology Engineering Group, Universidad Politécnica de Madrid  
 <sup>13</sup> Università degli Studi di Torino, Computer Science Dept.
-Corso Svizzera 185, 10149, Torino, Italy\
-<sup>14</sup> Database Center for Life Science, Joint Support-Center for Data Science Research, Research Organization of Information and Systems, Shizuoka, Japan\
-<sup>15</sup> Institute for Advanced Academic Research, Chiba University, Chiba, Japan"\
-<sup>16</sup> Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Tokyo, Japan\
-<sup>17</sup> Department of Computer Science, The University of Manchester, Manchester, United Kingdom \
+Corso Svizzera 185, 10149, Torino, Italy  
+<sup>14</sup> Database Center for Life Science, Joint Support-Center for Data Science Research, Research Organization of Information and Systems, Shizuoka, Japan  
+<sup>15</sup> Institute for Advanced Academic Research, Chiba University, Chiba, Japan"  
+<sup>16</sup> Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Tokyo, Japan  
+<sup>17</sup> Department of Computer Science, The University of Manchester, Manchester, United Kingdom   
 <sup>18</sup> Informatics Institute, Faculty of Science, University of Amsterdam, Amsterdam, The Netherlands
 
 </div>
@@ -699,9 +699,9 @@ Moreover, the format of input files (D2), which was partially represented in CWL
 We compared RO-Crates with the CWLProv ROs from which they were generated.
 The analysis was based on a provenance taxonomy reflecting relevant provenance metadata based on realistic use cases for ROs associated with a real-life bioinformatics workflow \[[de Wit 2022]\].
 CWL-specific documents are: `packed.cwl` (the workflow), `primary-job.json` (the inputs file), and `primary-output.json` (the outputs file).
-Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`.\
+Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`.  
 For completeness we also show the theoretical capability of the Provenance Run Crate profile (WRROC column) assuming all its MUST/SHOULD requirements are complete.
-The categories in the first three columns are explained in \[[de Wit 2022]\].\
+The categories in the first three columns are explained in \[[de Wit 2022]\].  
 **Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation  … optional (e.g.
 schema.org attribute)
 
@@ -810,1068 +810,590 @@ We will then build an interconversion library that attempts to:
 
 ## References
 
-See chapter [references](../references/).
+\[Alterovitz 2018\] Gil Alterovitz, Dennis A Dean II, Carole Goble, Michael R Crusoe, Stian Soiland-Reyes, Amanda Bell, Anais Hayes, Anita Suresh, Charles Hadley S King IV, Dan Taylor, KanakaDurga Addepalli, Elaine Johanson, Elaine E Thompson, Eric Donaldson, Hiroki Morizono, Hsinyi Tsang, Jeet K Vora, Jeremy Goecks, Jianchao Yao, Jonas S Almeida, Jonathon Keeney, KanakaDurga Addepalli, Konstantinos Krampis, Krista Smith, Lydia Guo, Mark Walderhaug, Marco Schito, Matthew Ezewudo, Nuria Guimera, Paul Walsh, Robel Kahsay, Srikanth Gottipati, Timothy C Rodwell, Toby Bloom, Yuching Lai, Vahan Simonyan, Raja Mazumder (2018):  
+**Enabling precision medicine via standard communication of HTS provenance, analysis, and results**.  
+*PLOS Biology* **16**(12):e3000099  
+<https://doi.org/10.1371/journal.pbio.3000099>
+
+\[Amstutz 2023\] Peter Amstutz, Michael R. Crusoe, Farah Zaib Khan, Stian Soiland-Reyes, Manvendra Singh, Kapil kumar, John Chilton, Thomas Hickman, boysha, Tomoya Tanjo, Rupert Nash, Kevin Hannon, ash, Michael Kotliar, Brad Chapman, Andrey Kartashov, Guillermo Carrasco, Dan Leehr, Nebojsa Tijanic, Joshua C. Randall, Miguel Boland, bogdang989, Chuck McCallum, Hervé Ménager, Pau Ruiz Safont, Bruno P. Kinoshita, Denis Yuen, Gijs Molenaar (2023):  
+**common-workflow-language/cwltool: 3.1.20230127121939**.  
+<https://doi.org/10.5281/zenodo.7575947>
+
+\[Atkinson 2017\] Malcolm Atkinson, Sandra Gesing, Johan Montagnat, Ian Taylor (2017):  
+**Scientific workflows: Past, present and future**.  
+*Future Generation Computer Systems* **75**  
+<https://doi.org/10.1016/j.future.2017.05.041>
+
+\[Bacall 2022\] Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):  
+**Workflow RO-Crate Profile 1.0**.  
+*WorkflowHub community*  
+<https://w3id.org/workflowhub/workflow-ro-crate/1.0>
+
+\[Bacall 2022b\] Finn Bacall, Martyn Whitwell (2022):  
+**GitHub -- ResearchObject/ro-crate-ruby: A Ruby gem for creating, manipulating and reading RO-Crates**.  
+<https://github.com/ResearchObject/ro-crate-ruby>
+
+\[Bahra 2011\] Avi Bahra (2011):  
+**Managing work flows with ecFlow**.  
+*ECMWF Newsletter* **129**  
+<https://doi.org/10.21957/nr843dob>
+
+\[Batista 2022\] Dominique Batista, Alejandra Gonzalez-Beltran, Susanna-Assunta Sansone, Philippe Rocca-Serra (2022):  
+**Machine actionable metadata models**.  
+*Scientific Data* **9**:592  
+<https://doi.org/10.1038/s41597-022-01707-6>
+
+\[Bechhofer 2013\] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):  
+**Why Linked Data is not enough for scientists**.  
+*Future Generation Computer Systems* **29**(2) pp. 599--611.  
+<https://doi.org/10.1016/j.future.2011.08.004>
+
+\[Belhajjame 2015\] Khalid Belhajjame, Jun Zhao, Daniel Garijo, Matthew Gamble, Kristina Hettne, Raul Palma, Eleni Mina, Oscar Corcho, José Manuel Gómez-Pérez, Sean Bechhofer, Graham Klyne, Carole Goble (2015):  
+**Using a suite of ontologies for preserving workflow-centric research objects**.  
+*Web Semantics: Science, Services and Agents on the World Wide Web* **32** pp. 16--42.  
+<https://doi.org/10.1016/j.websem.2015.01.003>
+
+\[Beltrán 2023\] Daniel Beltrán Mora, Miguel Castrillo, Manuel G. Marciani, Bruno P. Kinoshita, Luiggi Tenorio Ku, Aina Gaya-Àvila, Francesc Roura Adserias, Pierre-Antoine Bretonnière, Oriol Mula Valls, Pablo Goitia, Julian Rodrigo Berlin, Miguel Andrés-Martínez, Kim Serradell, Wilmer Uruchi Ticona, Domingo Manubens-Gil, Larissa Batista Leite, Isabel Andreu-Burillo, Javier Vegas-Regidor, Hui Du, Danila Volpi, Fabian Lienert, Joan Giralt, Joan Lopez, Muhammad Asif, Virginie Guemas, Xavier Abellan Ecija (2023):  
+**Autosubmit v4.0.100**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10199020>
+
+\[Bouyssié 2023\] David Bouyssié, Pınar Altıner, Salvador Capella-Gutierrez, José M. Fernández, Yanick Paco Hagemeijer, Peter Horvatovich, Martin Hubálek, Fredrik Levander, Pierluigi Mauri, Magnus Palmblad, Wolfgang Raffelsberger, Laura Rodríguez-Navas, Dario Di Silvestre, Balázs Tibor Kunkli, Julian Uszkoreit, Yves Vandenbrouck, Juan Antonio Vizcaíno, Dirk Winkelhardt, Veit Schwämmle (2023):  
+**WOMBAT-P: Benchmarking Label-Free Proteomics Data Analysis Workflows**.  
+*bioRxiv* 2023.10.02.560412  
+<https://doi.org/10.1101/2023.10.02.560412>
+
+\[Chard 2016\] Kyle Chard, Mike D' Arcy, Ben Heavner, Ian Foster, Carl Kesselman, Ravi Madduri, Alexis Rodriguez, Stian Soiland-Reyes, Carole Goble, Kristi Clark, Eric W. Deutsch, Ivo Dinov, Nathan Price, Arthur Toga (2016):  
+**I'll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets**.  
+*2016 IEEE International Conference on Big Data (Big Data)*, IEEE, pp. 319--328.  
+ISBN 978-1-4673-9005-7.  
+<https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf>  
+<https://doi.org/10.1109/BigData.2016.7840618>
+
+\[Chard 2019\] Kyle Chard, Niall Gaffney, Matthew B. Jones, Kacper Kowalik, Bertram Ludascher, Timothy McPhillips, Jarek Nabrzyski, Victoria Stodden, Ian Taylor, Thomas Thelen, Matthew J. Turk, Craig Willis (2019):  
+**Application of BagIt-serialized research object bundles for packaging and re-execution of computational analyses**.  
+*15th International Conference on eScience (eScience 2019)*, IEEE, pp. 514--521.  
+ISBN 978-1-7281-2451-3.  
+<https://zenodo.org/record/3381754>  
+<https://doi.org/10.1109/eScience.2019.00068>
+
+\[Colonnelli 2021\] Iacopo Colonnelli, Barbara Cantalupo, Ivan Merelli, Marco Aldinucci (2021):  
+**StreamFlow: cross-breeding Cloud with HPC**.  
+*IEEE Transactions on Emerging Topics in Computing* **9**(4)  
+<https://doi.org/10.1109/TETC.2020.3019202>
+
+\[Colonnelli 2023a\] Iacopo Colonnelli (2023):  
+**StreamFlow run of digital pathology tissue/tumor prediction workflow**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7911906>
+
+\[Colonnelli 2023b\] Iacopo Colonnelli, Barbara Cantalupo, Marco Aldinucci, Gaetano Saitta, Alberto Mulone (2023):  
+alpha-unito/streamflow version 0.2.0.dev10  
+*GitHub*  
+<https://github.com/alpha-unito/streamflow/releases/tag/0.2.0.dev10>  
+<https://identifiers.org/swh:1:rev:b2014add57189900fa5a0a0403b7ae3a384df73b>
+
+\[Costa 2013\] Flavio Costa, Vítor Silva, Daniel de Oliveira, Kary Ocaña, Eduardo Ogasawara, Jonas Dias, Marta Mattoso (2013):  
+**Capturing and querying workflow runtime provenance with PROV**: a practical approach.  
+*Proceedings of the Joint EDBT/ICDT 2013 Workshops (EDBT '13)*  
+<https://doi.org/10.1145/2457317.2457365>
+
+\[Crusoe 2022\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The CWL Community (2022):  
+**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.  
+*Communications of the ACM* **65**(6)  
+<https://doi.org/10.1145/3486897>
+
+\[Cuevas-Vicenttín 2016\] Víctor Cuevas-Vicenttín, Bertram Ludäscher, Paolo Missier, Khalid Belhajjame, Fernando Chirigati, Yaxing Wei, Saumen Dey, Parisa Kianmajd, David Koop, Shawn Bowers, Ilkay Altintas, Christopher Jones, Matthew B. Jones, Lauren Walker, Peter Slaughter, Ben Leinfelder, Yang Cao (2016):  
+**ProvONE: A PROV Extension Data Model for Scientific Workflow Provenance**.  
+<https://purl.dataone.org/provone-v1-dev>  
+(accessed [2023-11-06](https://web.archive.org/web/20231106005203/http://jenkins-1.dataone.org/jenkins/view/Documentation%20Projects/job/ProvONE-Documentation-trunk/ws/provenance/ProvONE/v1/provone.html))
+
+\[De Geest 2022\] Paul De Geest, Frederik Coppens, Stian Soiland-Reyes, Ignacio Eguinoa, Simone Leo (2022):  
+**Enhancing RDM in Galaxy by integrating RO-Crate**.  
+1st International Conference on FAIR Digital Objects ([FDO 2022](https://www.fdo2022.org/)) (poster)  
+*Research Ideas and Outcomes* **8**:e95164  
+<https://doi.org/10.3897/rio.8.e95164>
+
+\[De Geest 2023a\] Paul De Geest, Bert Droesbeke, Ignacio Eguinoa, Alban Gaignard, Sebastiaan Huber, Bruno Kinoshita, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, Raül Sirvent, Stian Soiland-Reyes (2023):  
+**GitHub -- ResearchObject/ro-crate-py: Python library for RO-Crate**, version 0.9.0.  
+<https://github.com/researchobject/ro-crate-py>  
+<https://doi.org/10.5281/zenodo.10017862>
+
+\[De Geest 2023b\] Paul De Geest (2023):  
+**Run of an example Galaxy collection workflow**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7785861>
+
+\[Del Rio 2022\] Mauro Del Rio, Luca Lianas, Oskar Aspegren, Giovanni Busonera, Francesco Versaci, Renata Zelic, Per H. Vincent, Simone Leo, Andreas Pettersson, Olof Akre, Luca Pireddu (2022):  
+**AI Support for Accelerating Histopathological Slide Examinations of Prostate Cancer in Clinical Studies**.  
+*Image Analysis and Processing*. ICIAP 2022 Workshops. ICIAP 2022.  
+*Lecture Notes in Computer Science* **13373**  
+<https://doi.org/10.1007/978-3-031-13321-3_48>
+
+\[Desai 2016\] Tanvi Desai, Felix Ritchie, Richard Welpton (2016):  
+**Five Safes: designing data access for research**.  
+*Economics Working Paper Series* **1601**  
+<https://econpapers.repec.org/RePEc:uwe:wpaper:20161601>
+
+\[Ejarque 2023\] Jorge Ejarque, Francesc Lordan, Rosa Maria Badia, Raul Sirvent, Daniele Lezzi, Fernando Vazquez, Cristian Tatu, Gabriel Puigdemunt, Nihad Mammadli, Javier Conejero (2023):  
+**COMPSs**. bsc-wdc/compss. Version 3.2  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7975340>
+
+\[Feng 2007\] Hanhua Feng, Vishal Misra, Dan Rubenstein (2007):  
+**PBS: a unified priority-based scheduler**.  
+*Proceedings of the 2007 ACM SIGMETRICS international conference on Measurement and modeling of computer systems* (SIGMETRICS '07)  
+<https://doi.org/10.1145/1254882.1254906>
+
+\[Fernández 2023a\] José María Fernández, Laura Rodríguez-Navas, Adrián Muñoz-Cívico, Paula Iborra, Daniel Lea (2023):  
+**inab/WfExS-backend**. Version 0.10.1  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10068956>
+
+\[Fernández 2023b\] José María Fernández González (2023):  
+**RO-Crate from staged WfExS working directory** 047b6dfc-3547-4e09-92f8-df7143038ff4 (overbridging templon).  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10091550>
+
+\[Ferreira da Silva 2021\] Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Badia, Bartosz Balis, Tainã Coleman, Frederik Coppens, Frank Di Natale, Bjoern Enders, Thomas Fahringer, Rosa Filgueira, Grigori Fursin, Daniel Garijo, Carole Goble, Dorran Howell, Shantenu Jha, Daniel S. Katz, Daniel Laney, Ulf Leser, Maciej Malawski, Kshitij Mehta, Loïc Pottier, Jonathan Ozik, J. Luc Peterson, Lavanya Ramakrishnan, Stian Soiland-Reyes, Douglas Thain, Matthew Wolf (2021):  
+**A Community Roadmap for Scientific Workflows Research and Development**.  
+*2021 IEEE Workshop on Workflows in Support of Large-Scale Science (WORKS)*  
+\[arXiv:2110.02168\](https://doi.org/10.48550/arXiv.2110.02168)  
+<https://doi.org/10.1109/WORKS54523.2021.00016>
+
+\[Ferreira da Silva\] Rafael Ferreira da Silva, Rosa M. Badia, Venkat Bala, Debbie Bard, Peer-Timo Bremer, Ian Buckley, Silvina Caino-Lores, Kyle Chard, Carole Goble, Shantenu Jha, Daniel S. Katz, Daniel Laney, Manish Parashar, Frederic Suter, Nick Tyler, Thomas Uram, Ilkay Altintas, Stefan Andersson, William Arndt, Juan Aznar, Jonathan Bader, Bartosz Balis, Chris Blanton, Kelly Rosa Braghetto, Aharon Brodutch, Paul Brunk, Henri Casanova, Alba Cervera Lierta, Justin Chigu, Taina Coleman, Nick Collier, Iacopo Colonnelli, Frederik Coppens, Michael Crusoe, Will Cunningham, Bruno de Paula Kinoshita, Paolo Di Tommaso, Charles Doutriaux, Matthew Downton, Wael Elwasif, Bjoern Enders, Chris Erdmann, Thomas Fahringer, Ludmilla Figueiredo, Rosa Filgueira, Martin Foltin, Anne Fouilloux, Luiz Gadelha, Andy Gallo, Artur Garcia Saez, Daniel Garijo, Roman Gerlach, Ryan Grant, Samuel Grayson, Patricia Grubel, Johan Gustafsson, Valerie Hayot-Sasson, Oscar Hernandez, Marcus Hilbrich, AnnMary Justine, Ian Laflotte, Fabian Lehmann, Andre Luckow, Jakob Luettgau, Ketan Maheshwari, Motohiko Matsuda, Doriana Medic, Pete Mendygral, Marek Michalewicz, Jorji Nonaka, Maciej Pawlik, Loic Pottier, Line Pouchard, Mathias Putz, Santosh Kumar Radha, Lavanya Ramakrishnan, Sashko Ristov, Paul Romano, Daniel Rosendo, Martin Ruefenacht, Katarzyna Rycerz, Nishant Saurabh, Volodymyr Savchenko, Martin Schulz, Christine Simpson, Raul Sirvent, Tyler Skluzacek, Stian Soiland-Reyes, Renan Souza, Sreenivas Rangan Sukumar, Ziheng Sun, Alan Sussman, Douglas Thain, Mikhail Titov, Benjamin Tovar, Aalap Tripathy, Matteo Turilli, Bartosz Tuznik, Hubertus van Dam, Aurelio Vivas , Logan Ward, Patrick Widener, Sean Wilkinson, Justyna Zawalska, Mahnoor Zulfiqar (2023):  
+**Workflows Community Summit 2022**: A Roadmap Revolution.  
+*arXiv*:2304.00019  
+<https://doi.org/10.48550/arXiv.2304.00019>
+
+\[Freire 2008\] Juliana Freire, David Koop, Emanuele Santos, Cl Silva (2008):  
+**Provenance for Computational Tasks: A Survey**.  
+*Computing in Science & Engineering* **10**(3)  
+<https://doi.org/10.1109/MCSE.2008.79>
+
+\[Galaxy 2022\] The Galaxy Community (E. Afgan, A. Nekrutenko, B. A. Grüning, D. Blankenberg, J. Goecks, M. C. Schatz, A. E. Ostrovsky, A. Mahmoud, A. J. Lonie, A. Syme, A. Fouilloux, A. Bretaudeau, A. Nekrutenko, A. Kumar, A. C. Eschenlauer, A. D. DeSanto, A. Guerler, B. Serrano-Solano, B. Batut, B. A. Grüning, B. W. Langhorst, B. Carr, B. A. Raubenolt, C. J. Hyde, C. J. Bromhead, C. B. Barnett, C. Royaux, C. Gallardo, D. Blankenberg, D. J. Fornika, D. Baker, D. Bouvier, D. Clements, D. A. de Lima Morais, D. L. Tabernero, D. Lariviere, E. Nasr, E. Afgan, F. Zambelli, F. Heyl, F. Psomopoulos, F. Coppens, G. R. Price, G. Cuccuru, G. L. Corguillé, G. Von Kuster, G. G. Akbulut, H. Rasche, H. Hans-Rudolf, I. Eguinoa, I. Makunin, I. J. Ranawaka, J. P. Taylor, J. Joshi, J. Hillman-Jackson, J. Goecks, J. M. Chilton, K. Kamali, K. Suderman, K. Poterlowicz, L. B. Yvan, L. Lopez-Delisle, L. Sargent, M. E. Bassetti, M. A. Tangaro, M. van den Beek, M. Čech, M. Bernt, M. Fahrner, M. Tekman, M. C. Föll, M. C. Schatz, M. R. Crusoe, M. Roncoroni, N. Kucher, N. Coraor, N. Stoler, N. Rhodes, N. Soranzo, N. Pinter, N. A. Goonasekera, P. A. Moreno, P. Videm, P. Melanie, P. Mandreoli, P. D. Jagtap, Q. Gu, R. J. M. Weber, R. Lazarus, R. H. P. Vorderman, S. Hiltemann, S. Golitsynskiy, S. Garg, S. A. Bray, S. L. Gladman, S. Leo, S. P. Mehta, T. J. Griffin, V. Jalili, V. Yves, V. Wen, V. K. Nagampalli, W. A. Bacon, W. de Koning, W. Maier, P. J. Briggs) (2022):  
+**The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2022 update**.  
+*Nucleic Acids Research* **50**  
+<https://doi.org/10.1093/nar/gkac247>
+
+\[Garijo 2011\] Daniel Garijo, Yolanda Gil (2011):  
+**A New Approach for Publishing Workflows**.  
+*Proceedings of the 6th Workshop on Workflows in Support of Large-Scale Science - WORKS '11*.  
+<https://doi.org/10.1145/2110497.2110504>
+
+\[Garijo 2012\] Daniel Garijo, Yolanda Gil (2012):  
+**Augmenting PROV with Plans in P-PLAN: Scientific Processes as Linked Data**.  
+*Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data*. (LISC 2021)  
+*CEUR Workshop Proceedings* **951**  
+<https://ceur-ws.org/Vol-951/paper6.pdf>
+
+\[Garijo 2014b\] Daniel Garijo, Yolanda Gil, Oscar Corcho (2014):  
+**Towards Workflow Ecosystems through Semantic and Standard Representations**.  
+*9th Workshop on Workflows in Support of Large-Scale Science (WORKS 2014)*  
+<https://doi.org/10.1109/works.2014.13>
+
+\[Gauthier 2019\] Jeff Gauthier, Antony T Vincent, Steve J Charette, Nicolas Derome (2019):  
+**A brief history of bioinformatics**.  
+*Briefings in Bioinformatics* **20**(6)  
+<https://doi.org/10.1093/bib/bby063>
+
+\[Gil 2011\] Yolanda Gil, Varun Ratnakar, Jihie Kim, Pedro Gonzalez-Calero, Paul Groth, Joshua Moody, Ewa Deelman (2011):  
+**Wings: Intelligent Workflow-Based Design of Computational Experiments**.  
+*IEEE Intelligent Systems* **26**(1)  
+<https://doi.org/10.1109/MIS.2010.9>
+
+\[Giles 2023\] Thomas Giles, Stian Soiland-Reyes, Jonathan Couldridge, Stuart Wheater, Blaise Thomson, Jillian Beggs, Suzy Gallier, Sam Cox, Daniel Lea, Justin Biddle, Rima Doal, Naaman Tammuz, Becca Wilson, Christian Cole, Elizabeth Sapey, Simon Thompson, Professor Emily Jefferson, Phillip Quinlan, Carole Goble (2023):  
+**TRE-FX: Delivering a federated network of trusted research environments to enable safe data analytics**.  
+*Zenodo* / *DARE UK*  
+<https://doi.org/10.5281/zenodo.10055354>
+
+\[Goble 2020\] Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  
+**FAIR Computational Workflows**.  
+*Data Intelligence* **2**(1--2) pp 108--121.  
+<https://doi.org/10.1162/dint_a_00033>
+
+\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
+**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.4605654>
+
+\[Gray 2017\] Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):  
+**Bioschemas: From Potato Salad to Protein Annotation**.  
+*Proceedings of the ISWC 2017 posters & demonstrations and industry tracks co-located with 16th international semantic web conference (ISWC 2017)*, Vienna, Austria.  
+*CEUR Workshop Proceedings* **1963**  
+<https://iswc2017.semanticweb.org/paper-579/>  
+<https://ceur-ws.org/Vol-1963/paper579.pdf>
+
+\[Guha 2015\] Ramanathan V Guha, Dan Brickley, Steve Macbeth (2015):  
+**Schema.org: Evolution of Structured Data on the Web: Big data makes common schemas even more necessary**.  
+*Queue* **13**(9) pp. 10--37.  
+<https://doi.org/10.1145/2857274.2857276>
+
+\[Herschel 2017\] Melanie Herschel, Ralf Diestelkämper, Houssem Ben Lahmar (2017):  
+**A survey on provenance: What for? What form? What from?**  
+*The VLDB Journal* **26**  
+<https://doi.org/10.1007/s00778-017-0486-1>
+
+\[Himanen 2019\] Lauri Himanen, Amber Geurts, Adam Stuart Foster, Patrick Rinke (2019):  
+**Data-Driven Materials Science: Status, Challenges, and Perspectives**.  
+*Advanced Science* **6**(21):1900808  
+<https://doi.org/10.1002/advs.201900808>
+
+\[Huntingford 2019\] Chris Huntingford, Elizabeth S Jeffers, Michael B Bonsall, Hannah M Christensen, Thomas Lees and Hui Yang (2019):  
+**Machine learning and artificial intelligence to aid climate change research and preparedness**.  
+*Environmental Research Letters* **14**(12):124007  
+<https://doi.org/10.1088/1748-9326/ab4e55>
+
+\[IEEE 2791-2020\] Raja Mazumder, Vahan Simonyan (eds.) (2020):  
+**IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication**.  
+*IEEE Std* **2791-2020**.  
+ISBN 978-1-5044-6466-6.  
+<https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d>  
+<https://doi.org/10.1109/ieeestd.2020.9094416>
+
+\[Isaac 2009\] Antoine Isaac, Ed Summers (2009):  
+**SKOS Simple Knowledge Organization System Primer**.  
+W3C Working Group Note 18 August 2009  
+<https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/>
+
+\[Khan 2019\] Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
+**Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**.  
+*GigaScience* **8**(11)  
+<https://doi.org/10.1093/gigascience/giz095>
+
+\[Kinoshita 2023\] Bruno de Paula Kinoshita (2023):  
+**RO-Crate created using Autosubmit version 4.0.100 workflow running kinow/auto-mhm-test-domains**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.8144612>
+
+\[Köster 2012\] Johannes Köster, Sven Rahmann (2012):  
+**Snakemake---a scalable bioinformatics workflow engine**.  
+*Bioinformatics* **28**(19) pp. 2520--2522.  
+<https://doi.org/10.1093/bioinformatics/bts480>
+
+\[Kumar 2013\] Rohini Kumar, Luis Samaniego, Sabine Attinger (2013):  
+**Implications of distributed hydrologic model parameterization on water fluxes at multiple scales and locations**.  
+*Water Resources Research* **49**(1)  
+<https://doi.org/10.1029/2012WR012195>
+
+\[Lebo 2013a\] Timothy Lebo, Satya Sahoo, Deborah McGuinness, Khalid Belhajjame, James Cheney, David Corsar, Daniel Garijo, Stian Soiland-Reyes, Stephan Zednik, Jun Zhao (2013):  
+**PROV-O: The PROV Ontology**.  
+*W3C Recommendation* 30 April 2013.  
+<https://www.w3.org/TR/2013/REC-prov-o-20130430/>
+
+\[Leo 2023a\] Simone Leo, Stian Soiland-Reyes, Michael R. Crusoe (2023):  
+**runcrate** 0.5.0  
+*Zenodo* / *GitHub*  
+<https://github.com/ResearchObject/runcrate>  
+<https://doi.org/10.5281/zenodo.10203433>
+
+\[Leo 2023b\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
+**Recording provenance of workflow runs with RO-Crate**.  
+*arXiv* 2312.07852 
+\[Leo 2023c\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
+**Recording provenance of workflow runs with RO-Crate** (RO-Crate and mapping).  
+RO-Crate  
+*Zenodo*  
+<https://w3id.org/ro/doi/10.5281/zenodo.10368989>  
+<https://doi/10.5281/zenodo.10368989>
+
+\[Leo 2023\] Simone Leo (2023):  
+**Run of digital pathology tissue/tumor prediction workflow**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7774351>
+
+\[Lordan 2014\] Francesc Lordan, Enric Tejedor, Jorge Ejarque, Roger Rafanell, Javier Álvarez, Fabrizio Marozzo, Daniele Lezzi, Raül Sirvent, Domenico Talia, Rosa M. Badia (2014):  
+**ServiceSs: An interoperable programming framework for the cloud**.  
+*Journal of Grid Computing*, **12**(1)  
+<https://doi.org/10.1007/s10723-013-9272-5>
+
+\[Manubens-Gil 2016\] Domingo Manubens-Gil, Javier Vegas-Regidor, Chloe Prodhomme, Oriol Mula-Valls, Francisco J. Doblas-Reyes (2016):  
+**Seamless management of ensemble climate prediction experiments on HPC platforms**.  
+*2016 International Conference on High Performance Computing & Simulation* (HPCS), Innsbruck, Austria  
+<https://doi.org/10.1109/HPCSim.2016.7568429>
+
+\[Meurisse 2023\] Marjan Meurisse, Francisco Estupiñán-Romero, Javier González-Galindo, Natalia Martínez-Lizaga, Santiago Royo-Sierra, Simon Saldner, Lorenz Dolanski-Aghamanoukjan, Alexander Degelsegger-Marquez, Stian Soiland-Reyes, Nina Van Goethem, Enrique Bernal-Delgado, On Behalf of BeYond-COVID project contributors (2023):  
+**Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment**.  
+*BMC Medical Research Methodology* **23**:248  
+<https://doi.org/10.1186/s12874-023-02068-3> 
+
+\[Missier 2013\] Paolo Missier, Saumen Dey, Khalid Belhajjame, Víctor Cuevas-Vicenttín, Bertram Ludäscher (2013):  
+**D-PROV: extending the PROV provenance model with workflow structure**.  
+*Proceedings of the 5th USENIX Workshop on the Theory and Practice of Provenance (TaPP '13)*  
+<https://doi.org/10.5555/2482949.2482961>
+
+\[Moreau 2013\] Luc Moreau, Paolo Missier, Khalid Belhajjame, Reza B'Far, James Cheney, Sam Coppens, Stephen Cresswell, Yolanda Gil, Paul Groth, Graham Klyne, Timothy Lebo, Jim McCusker, Simon Miles, James Myers, Satya Sahoo, Curt Tilmes (2013):  
+**PROV-DM: The PROV Data Model**.  
+*W3C Recommendation 30 April 2013*  
+<https://www.w3.org/TR/2013/REC-prov-dm-20130430/>.
+
+\[Ohta 2023\] Tazro Ohta, Hirotaka Suetake (2023):  
+**Example of Workflow Run RO-Crate Output in Sapporo**  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10134581>
+Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2019):  
+**Workflow Automation for Cycling Systems**.  
+*Computing in Science & Engineering* **21**(4)  
+<https://doi.org/10.1109/MCSE.2019.2906593>
+
+\[Pérez 2018\] Beatriz Pérez, Julio Rubio, Carlos Sáenz-Adán (2018):  
+**A systematic review of provenance systems**.  
+*Knowledge and Information Systems* **57**  
+<https://doi.org/10.1007/s10115-018-1164-3>
+
+\[Poiata 2016\] Natalia Poiata, Claudio Satriano, Jean-Pierre Vilotte, Pascal Bernard, Kazushige Obara (2016):  
+**Multiband array detection and location of seismic sources recorded by dense seismic networks**.  
+*Geophysical Journal International* **205**(3)  
+<https://doi.org/10.1093/gji/ggw071>
+
+\[Poiata 2023\] Natalia Poiata, Claudio Satriano, Javier Conejero (2023):  
+**BackTrackBB: Multi-band array detection and location of seismic sources (PyCOMPSs implementation)**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7788030>
+
+\[Rehm 2021\] <small>Heidi L. Rehm, Angela J.H. Page, Lindsay Smith, Jeremy B. Adams, Gil Alterovitz, Lawrence J. Babb, Maxmillian P. Barkley, Michael Baudis, Michael J.S. Beauvais, Tim Beck, Jacques S. Beckmann, Sergi Beltran, David Bernick, Alexander Bernier, James K. Bonfield, Tiffany F. Boughtwood, Guillaume Bourque, Sarion R. Bowers, Anthony J. Brookes, Michael Brudno, Matthew H. Brush, David Bujold, Tony Burdett, Orion J. Buske, Moran N. Cabili, Daniel L. Cameron, Robert J. Carroll, Esmeralda Casas-Silva, Debyani Chakravarty, Bimal P. Chaudhari, Shu Hui Chen, J. Michael Cherry, Justina Chung, Melissa Cline, Hayley L. Clissold, Robert M. Cook-Deegan, Mélanie Courtot, Fiona Cunningham, Miro Cupak, Robert M. Davies, Danielle Denisko, Megan J. Doerr, Lena I. Dolman, Edward S. Dove, L. Jonathan Dursi, Stephanie O.M. Dyke, James A. Eddy, Karen Eilbeck, Kyle P. Ellrott, Susan Fairley, Khalid A. Fakhro, Helen V. Firth, Michael S. Fitzsimons, Marc Fiume, Paul Flicek, Ian M. Fore, Mallory A. Freeberg, Robert R. Freimuth, Lauren A. Fromont, Jonathan Fuerth, Clara L. Gaff, Weiniu Gan, Elena M. Ghanaim, David Glazer, Robert C. Green, Malachi Griffith, Obi L. Griffith, Robert L. Grossman, Tudor Groza, Jaime M. Guidry Auvil, Roderic Guigó, Dipayan Gupta, Melissa A. Haendel, Ada Hamosh, David P. Hansen, Reece K. Hart, Dean Mitchell Hartley, David Haussler, Rachele M. Hendricks-Sturrup, Calvin W.L. Ho, Ashley E. Hobb, Michael M. Hoffman, Oliver M. Hofmann, Petr Holub, Jacob Shujui Hsu, Jean-Pierre Hubaux, Sarah E. Hunt, Ammar Husami, Julius O. Jacobsen, Saumya S. Jamuar, Elizabeth L. Janes, Francis Jeanson, Aina Jené, Amber L. Johns, Yann Joly, Steven J.M. Jones, Alexander Kanitz, Kazuto Kato, Thomas M. Keane, Kristina Kekesi-Lafrance, Jerome Kelleher, Giselle Kerry, Seik-Soon Khor, Bartha M. Knoppers, Melissa A. Konopko, Kenjiro Kosaki, Martin Kuba, Jonathan Lawson, Rasko Leinonen, Stephanie Li, Michael F. Lin, Mikael Linden, Xianglin Liu, Isuru Udara Liyanage, Javier Lopez, Anneke M. Lucassen, Michael Lukowski, Alice L. Mann, John Marshall, Michele Mattioni, Alejandro Metke-Jimenez, Anna Middleton, Richard J. Milne, Fruzsina Molnár-Gábor, Nicola Mulder, Monica C. Munoz-Torres, Rishi Nag, Hidewaki Nakagawa, Jamal Nasir, Arcadi Navarro, Tristan H. Nelson, Ania Niewielska, Amy Nisselle, Jeffrey Niu, Tommi H. Nyrönen, Brian D. O'Connor, Sabine Oesterle, Soichi Ogishima, Vivian Ota Wang, Laura A.D. Paglione, Emilio Palumbo, Helen E. Parkinson, Anthony A. Philippakis, Angel D. Pizarro, Andreas Prlic, Jordi Rambla, Augusto Rendon, Renee A. Rider, Peter N. Robinson, Kurt W. Rodarmer, Laura Lyman Rodriguez, Alan F. Rubin, Manuel Rueda, Gregory A. Rushton, Rosalyn S. Ryan, Gary I. Saunders, Helen Schuilenburg, Torsten Schwede, Serena Scollen, Alexander Senf, Nathan C. Sheffield, Neerjah Skantharajah, Albert V. Smith, Heidi J. Sofia, Dylan Spalding, Amanda B. Spurdle, Zornitza Stark, Lincoln D. Stein, Makoto Suematsu, Patrick Tan, Jonathan A. Tedds, Alastair A. Thomson, Adrian Thorogood, Timothy L. Tickle, Katsushi Tokunaga, Juha Törnroos, David Torrents, Sean Upchurch, Alfonso Valencia, Roman Valls Guimera, Jessica Vamathevan, Susheel Varma, Danya F. Vears, Coby Viner, Craig Voisin, Alex H. Wagner, Susan E. Wallace, Brian P. Walsh, Marc S. Williams, Eva C. Winkler, Barbara J. Wold, Grant M. Wood, J. Patrick Woolley, Chisato Yamasaki, Andrew D. Yates, Christina K. Yung, Lyndon J. Zass, Ksenia Zaytseva, Junjun Zhang, Peter Goodhand, Kathryn North, Ewan Birney</small> (2021):  
+**GA4GH: International policies and standards for data sharing across genomic research and healthcare**.  
+*Cell Genomics* **1**(2):100029  
+<https://doi.org/10.1016/j.xgen.2021.100029>
+
+\[Reis 2022\] David Reis, Bruno Piedade, Filipe F, Correia, João Pedro Dias, Ademar Aguiar (2022): **Developing Docker and Docker-Compose Specifications**: A Developers' Survey.  
+*IEEE Access* **10** pp. 2318--2329  
+<https://doi.org/10.1109/ACCESS.2021.3137671>
+
+\[Samaniego 2010\] Luis Samaniego, Rohini Kumar, Sabine Attinger (2010):  
+**Multiscale parameter regionalization of a grid-based hydrologic model at the mesoscale**.  
+<https://doi.org/10.1029/2008WR007327>
+
+\[Samuel 2022\] Sheeba Samuel, Birgitta König-Ries (2022):  
+**End-to-End provenance representation for the understandability and reproducibility of scientific experiments using a semantic approach**.  
+*Journal of Biomedical Semantics* **13**:1  
+<https://doi.org/10.1186/s13326-021-00253-1>
+
+\[Scheidegger 2008\] Carlos E. Scheidegger, Huy T. Vo, David Koop, Juliana Freire, Claudio T. Silva (2008):  
+**Querying and re-using workflows with VsTrails**. *Proceedings of the 2008 ACM SIGMOD international conference on Management of data (SIGMOD '08)*  
+<https://doi.org/10.1145/1376616.1376747>
+
+\[Sirvent 2022\] Raul Sirvent, Javier Conejero, Francesc Lordan, Jorge Ejarque, Laura Rodriguez-Navas, Jose M. Fernandez, Salvador Capella-Gutierrez, Rosa M. Badia (2022):  
+**Automatic, Efficient, and Scalable Provenance Registration for FAIR HPC Workflows**.  
+*2022 IEEE/ACM Workshop on Workflows in Support of Large-Scale Science (WORKS)*  
+<https://doi.org/10.1109/works56498.2022.00006>  
+<https://hdl.handle.net/2117/384589>
+
+\[Snowley 2023\] Kay Snowley, Lara Edwards, Ben Crosby, Helen Tatlow (2023):  
+**Integrating Our Community**. Year 1  
+*Health Data Research UK* (report)  
+<https://www.hdruk.ac.uk/wp-content/uploads/2023/10/Integrating-Our-Community_v1-Oct-2023-compressed.pdf> (accessed [2023-12-06]())
+
+\[Soiland-Reyes 2016\] Stian Soiland-Reyes, Pinar Alper, Carole Goble (2016):  
+**Tracking Workflow Execution With TavernaPROV**, *ProvenanceWeek 2016*, session "PROV: Three Years Later"  
+<https://s11.no/2016/provweek-tavernaprov/>  
+<https://doi.org/10.5281/zenodo.51314>
+
+\[Soiland-Reyes 2018\] Stian Soiland-Reyes, Farah Zaib Khan, Michael R Crusoe (2018):  
+**common-workflow-language/cwlprov: CWLProv 0.6.0**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.1471585>
+
+\[Soiland-Reyes 2021\] Stian Soiland-Reyes (2021):  
+**Describing and packaging workflows using RO-Crate and BioCompute Objects**.  
+Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.4633732>
+
+\[Soiland-Reyes 2022a\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-Crate**.  
+*Data Science* **5**(2)  
+<https://doi.org/10.3233/DS-210053> 
+
+\[Soiland-Reyes 2022c\] Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+**Creating lightweight FAIR digital objects with RO-Crate**.  
+*Research Ideas and Outcomes* **10**(8)  
+<https://doi.org/10.3897/rio.8.e93937> 
+
+\[Soiland-Reyes 2023e\] Stian Soiland-Reyes, Stuart Wheater (2023):  
+**Five Safes RO-Crate profile**, version 0.4.  
+*TRE-FX Candidate Recommendation*  
+<https://w3id.org/5s-crate/0.4>
+
+\[Soiland-Reyes 2023f\] Stian Soiland-Reyes, Stuart Wheater, Thomas Giles, Carole Goble, Philip Quinlan (2023):  
+**TRE-FX Technical Documentation - Five Safes RO-crate**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10376350>
+
+\[Sporny 2020\] Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, Pierre-Antoine Champin, Niklas Lindström (2020):  
+**JSON-LD 1.1: A JSON-based Serialization for Linked Data**.  
+*W3C Recommendation* 16 July 2020  
+<https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
+
+\[Suetake 2022\] Hirotaka Suetake, Tomoya Tanjo, Manabu Ishii, Bruno P. Kinoshita, Takeshi Fujino, Tsuyoshi Hachiya, Yuichi Kodama, Takatomo Fujisawa, Osamu Ogasawara, Atsushi Shimizu, Masanori Arita, Tsukasa Fukusato, Takeo Igarashi, Tazro Ohta (2022):  
+**Sapporo: A workflow execution service that encourages the reuse of workflows in various languages in bioinformatics** 
+\[version 1; peer review: 2 approved with reservations\].  
+*F1000Research* **11**:889  
+<https://doi.org/10.12688/f1000research.122924.1>¾¾
+
+\[Suetake 2023a\] Hirotaka Suetake, Tsukasa Fukusato, Takeo Igarashi, Tazro Ohta (2023):  
+**A workflow reproducibility scale for automatic validation of biological interpretation results**.  
+*GigaScience* **12**:iad031  
+<https://doi.org/10.1093/gigascience/giad031>
+
+\[Suetake 2023b\] Hirotaka Suetake, Tazro Inutano Ohta, Tomoya Tanjo, Manabu ISHII, Bruno P. Kinoshita, DrYak (2023):  
+**sapporo-wes/sapporo-service**: 1.5.1  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10134452>
+
+\[Vivian 2017\] John Vivian, Arjun Arkal Rao, Frank Austin Nothaft, Christopher Ketchum, Joel Armstrong, Adam Novak, Jacob Pfeil, Jake Narkizian, Alden D Deran, Audrey Musselman-Brown, Hannes Schmidt, Peter Amstutz, Brian Craft, Mary Goldman, Kate Rosenbloom, Melissa Cline, Brian O'Connor, Megan Hanna, Chet Birger, W James Kent, David A Patterson, Anthony D Joseph, Jingchun Zhu, Sasha Zaranek, Gad Getz, David Haussler & Benedict Paten (2017):  
+**Toil enables reproducible, open source, big biomedical data analyses**.  
+*Nature Biotechnology* **35**(4)  
+<https://doi.org/10.1038/nbt.3772>
+
+\[W3C 2012\] W3C OWL Working Group (2012):  
+**OWL 2 Web Ontology Language Document Overview** (Second Edition).  
+*W3C Recommendation* 11 December 2012  
+<https://www.w3.org/TR/2012/REC-owl2-overview-20121211>
+
+\[de Wit 2022\] Renske de Wit (2022):  
+**A Non-Intimidating Approach to Workflow Reproducibility in Bioinformatics**: Adding Metadata to Research Objects through the Design and Evaluation of Use-Focused Extensions to CWLProv.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.7113250>
+
+\[de Wit 2023\] Renske de Wit, Michael R Crusoe (2023):  
+**Analysis of runcrate**.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.10251812>
+
+\[Wittner 2022\] Rudolf Wittner, Cecilia Mascia, Matej Gallo, Francesca Frexia, Heimo Müller, Markus Plass, Jörg Geiger, Petr Holub (2022):  
+**Lightweight Distributed Provenance Model for Complex Real--world Environments**.  
+*Scientific Data* **9**:503  
+<https://doi.org/10.1038/s41597-022-01537-6>
+
+\[Wittner 2023b\] Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
+**Linking provenance and its metadata in multi-organizational environments of life sciences**.  
+*Submitted* (PeerJ Computer Science)  
+<https://s11.no/2023/phd/linking-provenance/> (Supplement 17)
+
+\[Wittner 2023c\] Rudolf Wittner, Matej Rudolf, Simone Leo, Stian Soiland-Reyes (2023):  
+**Packing provenance using CPM RO-Crate profile** (Version 1.1)  
+Data set.  
+*Zenodo*  
+<https://doi.org/10.5281/zenodo.8095888>
+
+\[WRROC 2023a\] Workflow Run RO-Crate working group (2023):  
+**Process Run Crate specification**. Version 0.4  
+*Zenodo*  
+<https://w3id.org/ro/wfrun/process/0.4>  
+<https://doi.org/10.5281/zenodo.10203944>
+
+\[WRROC 2023b\] Workflow Run RO-Crate working group (2023):  
+**Workflow Run Crate specification**. Version 0.4  
+*Zenodo*  
+<https://w3id.org/ro/wfrun/workflow/0.4>  
+<https://doi.org/10.5281/zenodo.10203971>
+
+\[WRROC 2023c\] Workflow Run RO-Crate working group (2023):  
+**Provenance Run Crate specification**. Version 0.4  
+*Zenodo*  
+<https://w3id.org/ro/wfrun/provenance/0.4>  
+<https://doi.org/10.5281/zenodo.10203978>
+
+\[Yoo 2003\] Andy B. Yoo, Morris A. Jette, Mark Grondona (2003):  
+**SLURM: Simple Linux Utility for Resource Management**.  
+*Job Scheduling Strategies for Parallel Processing* (JSSPP 2003)  
+*Lecture Notes in Computer Science* **2862**  
+<https://doi.org/10.1007/10968987_3>
 
 
-<!-- van der Aalst 2014 -->
-[van der Aalst 2014]: https://doi.org/10.1007/978-3-319-04948-9_2 "Data Scientist: The Engineer of the Future"
-<!-- ch8-5 -->
-[Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
-<!-- Afgan 2018 -->
-[Afgan 2018]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update"
-<!-- Afgan 2023 -->
-[Afgan 2023]: https://github.com/galaxyproject/galaxy/releases/tag/v23.1.1 "galaxyproject/galaxy"
-<!-- Agarwal 2021 -->
-[Agarwal 2021]: https://data.agu.org/DataCitationCoP/2nd-workshop-data-citation "Data Citation Community of Practice -- 8 June 2021 Workshop"
-<!-- DCAT2 2020 -->
-[Albertoni 2020]: https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/ "Data Catalog Vocabulary (DCAT) -- Version 2"
-<!-- w3-vocab-dcat-3 -->
-[Albertoni 2023]: https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/ "Data Catalog Vocabulary (DCAT)- Version 3"
-<!-- ch8-10 -->
-[Allan 2019]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
-<!-- allcockGlobusStripedGridFTP -->
-[Allcock 2005]: https://doi.org/10.1109/sc.2005.72 "The Globus Striped GridFTP Framework and Server"
-<!-- Almeida 2019 -->
-[Almeida 2019]: https://doi.org/10.1038/s41586-019-0965-1 "A new genomic blueprint of the human gut microbiota"
-<!-- Alterovitz 2018 -->
+
 [Alterovitz 2018]: https://doi.org/10.1371/journal.pbio.3000099 "Enabling precision medicine via standard communication of HTS provenance, analysis, and results"
-<!-- Alves 2021 -->
-[Alves 2021]: https://doi.org/10.37044/osf.io/k8znb "ELIXIR Software Management Plan for Life Sciences"
-<!-- Amorim 2016 -->
-[Amorim 2016]: https://doi.org/10.1007/s10209-016-0475-y "A comparison of research data management platforms: Architecture, flexible metadata and interoperability"
-<!-- ch8-43 -->
-[Amstutz 2021]: https://s.apache.org/existing-workflow-systems "Existing Workflow systems"
-<!-- Amstutz 2023 -->
 [Amstutz 2023]: https://doi.org/10.5281/zenodo.7575947 "common-workflow-language/cwltool: 3.1.20230127121939"
-<!-- fdo-PIDProfileAttributes -->
-[Anders 2022]: https://doi.org/10.5281/zenodo.7825630 "FDO PID profiles & attributes"
-<!-- fdo-RequirementSpec -->
-[Anders 2023]: https://doi.org/10.5281/zenodo.7782262 "FAIR Digital Objects Forum FDO requirement specifications"
-<!-- ch6-10 -->
-[Andrio 2019]: https://doi.org/10.1038/s41597-019-0177-4 "BioExcel Building Blocks, a software library for interoperable biomolecular simulation workflows"
-<!-- ResourceSyncFrameworkSpecification -->
-[ANSI/NISO Z39.99-2017]: https://doi.org/10.3789/ansi.niso.z39.99-2017 "ANSI/NISO Z39.99-2017, ResourceSync Framework Specification"
-<!-- Arend 2022 -->
-[Arend 2022]: https://doi.org/10.37044/osf.io/c724r "BioHackEU22 Project 22: Plant data exchange and standard interoperability"
-<!-- Arfaoui 2020 -->
-[Arfaoui 2020]: https://github.com/GhaithArf/ro-crate-rda-madmp-mapper "RO-Crate RDA maDMP Mapper"
-<!-- Arkisto 2022 -->
-[Arkisto 2022]: https://arkisto-platform.github.io/tools/portal/ "Tools: Data Portal & Discovery"
-<!-- Atkinson 2017 -->
 [Atkinson 2017]: https://doi.org/10.1016/j.future.2017.05.041 "Scientific workflows: Past, present and future"
-<!-- dx-prof -->
-[Atkinson 2019]: https://www.w3.org/TR/2019/NOTE-dx-prof-20191218/ "The Profiles Vocabulary"
-<!-- 10.2777/940154 -->
-[Ayris 2016]: https://doi.org/10.2777/940154 "Realising the European Open Science Cloud"
-<!-- Azeroual2022PuttingFP -->
-[Azeroual 2022]: https://hdl.handle.net/11366/2243 "Putting FAIR Principles in the Context of Research Information: FAIRness for CRIS and CRIS for FAIRness"
-<!-- Bacall 2019 -->
-[Bacall 2019]: https://esciencelab.org.uk/projects/ro-composer/ "eScienceLab: RO-Composer"
-<!-- Bacall 2022 -->
 [Bacall 2022]: https://w3id.org/workflowhub/workflow-ro-crate/1.0 "Workflow RO-Crate Profile 1.0"
-<!-- Bacall 2022b -->
 [Bacall 2022b]: https://github.com/ResearchObject/ro-crate-ruby "GitHub -- ResearchObject/ro-crate-ruby: A Ruby gem for creating, manipulating and reading RO-Crates"
-<!-- Bahra 2011 -->
 [Bahra 2011]: https://doi.org/10.21957/nr843dob "Managing work flows with ecFlow"
-<!-- bahimFAIRDataMaturity2020a -->
-[Bahui 2020]: https://doi.org/10.5334/dsj-2020-041 "The FAIR data maturity model: An approach to harmonise FAIR assessments"
-<!-- Baker 2013 -->
-[Baker 2013]: https://doi.org/10.1016/j.websem.2013.05.001 "Key choices in the design of Simple Knowledge Organization System (SKOS)"
-<!-- ShapeExpressionsShEx -->
-[Baker 2019]: http://shex.io/shex-primer/ "Shape Expressions (ShEx) 2.1 Primer"
-<!-- Baker 2020 -->
-[Baker 2020]: https://doi.org/10.1371/journal.ppat.1008643 "No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics"
-<!-- Barker 2019 -->
-[Barker 2019]: https://doi.org/10.5334/dsj-2019-044 "The Australian Research Data Commons"
-<!-- Barker 2022 -->
-[Barker 2022]: https://doi.org/10.1038/s41597-022-01710-x "Introducing the FAIR Principles for research software"
-<!-- Batista 2022 -->
-[Batista 2022]: https://doi.org/10.1038/s41597-022-01707-6 "Machine actionable metadata models"
-<!-- Baxter 2012 -->
-[Baxter 2012]: https://www.research.ed.ac.uk/en/publications/e8416ad7-750f-442f-9b17-d812b9bb414d "The Research Software Engineer"
-<!-- ch6-24 -->
-[Bayarri 2021a]: https://doi.org/10.48546/workflowhub.workflow.29.3 "Protein MD Setup tutorial using BioExcel Building Blocks (biobb) in CWL"
-<!-- ch6-25 -->
-[Bayarri 2021b]: https://doi.org/10.48546/workflowhub.workflow.120.2 "Protein MD Setup tutorial using BioExcel Building Blocks (biobb) in Jupyter Notebook"
-<!-- Bayarri 2022 -->
-[Bayarri 2022]: https://doi.org/10.48546/workflowhub.workflow.255.1 "CWL GMX Automatic Ligand Parameterization tutorial"
-<!-- Bechhofer 2013 -->
 [Bechhofer 2013]: https://doi.org/10.1016/j.future.2011.08.004 "Why Linked Data is not enough for scientists"
-<!-- ch6-14 -->
-[Beg 2021]: https://doi.org/10.1109/MCSE.2021.3052101 "Using Jupyter for Reproducible Scientific Workflows"
-<!-- Beier 2024 -->
-[Beier 2024]: https://doi.org/10.37044/osf.io/7y2jh "Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA"
-<!-- Belchev 2021 -->
-[Belchev 2021]: https://github.com/KockataEPich/CheckMyCrate "KockataEPich/CheckMyCrate: A command line application for validating a RO-Crate object against a JSON profile"
-<!-- Belhajjame 2015 -->
 [Belhajjame 2015]: https://doi.org/10.1016/j.websem.2015.01.003 "Using a suite of ontologies for preserving workflow-centric research objects"
-<!-- rfc7540 -->
-[Belshe 2022]: https://doi.org/10.17487/rfc7540 "Hypertext Transfer Protocol Version 2 (HTTP/2)"
-<!-- Beltrán 2023 -->
 [Beltrán 2023]: https://doi.org/10.5281/zenodo.10199020 "Autosubmit v4.0.100"
-<!-- Benureau 2017 -->
-[Benureau 2017]: https://doi.org/10.3389/fninf.2017.00069 "Re-run, repeat, reproduce, reuse, replicate: Transforming code into scientific contributions"
-<!-- Berman 2007 -->
-[Berman 2007]: https://doi.org/10.1093/nar/gkl971 "The worldwide Protein Data Bank (wwPDB): Ensuring a single, uniform archive of PDB data"
-<!-- berners-lee-cool-uris -->
-[Berners-Lee 1998]: https://www.w3.org/Provider/Style/URI "Cool URIs don't change"
-<!-- berners-leeWeavingWebOriginal1999 -->
-[Berners-Lee 1999]: https://identifiers.org/isbn/9780062515865 "Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor"
-<!-- SemanticWebXML2000 -->
-[Berners-Lee 2000]: https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html "Semantic Web on XML"
-<!-- rfc3986 -->
-[Berners-Lee 2005]: https://doi.org/10.17487/rfc3986 "Uniform Resource Identifier (URI): Generic Syntax"
-<!-- LinkedDataDesign -->
-[Berners-Lee 2006]: https://www.w3.org/DesignIssues/LinkedData.html "Linked Data"
-<!-- bernsteinNewLookSemantic2016a -->
-[Bernstein 2016]: https://doi.org/10.1145/2890489 "A new look at the semantic web"
-<!-- Bietrix 2021 -->
-[Bietrix 2021]: https://doi.org/10.5281/zenodo.4705078 "EOSC-Life methodology framework to enhance reproducibility within EOSC Life"
-<!-- ch6-27 -->
-[BioMoby 2008]: https://doi.org/10.1093/bib/bbn003 "Interoperability with Moby 1.0---It's better than sharing your toothbrush!"
-<!-- rfc9114 -->
-[Bishop 2022]: https://doi.org/10.17487/rfc9114 "HTTP/3"
-<!-- Bizer 2009 -->
-[Bizer 2009]: https://doi.org/10.4018/jswis.2009081901 "Linked Data - The Story So Far"
-<!-- Bizer 2011 -->
-[Bizer 2011]: https://doi.org/10.4018/978-1-60960-593-3.ch008 "Linked data: The story so far"
-<!-- fdo-FDO-Upload -->
-[Blanchi 2022]: https://doi.org/10.5281/zenodo.7825549 "FDO -- upload of FDO"
-<!-- fdo-ImplAttributesTypesProfiles -->
-[Blanchi 2023]: https://doi.org/10.5281/zenodo.7825572 "Implementation of attributes, types, profiles and registries"
-<!-- ch6-32 -->
-[Blankenberg 2014]: https://doi.org/10.1186/gb4161 "Dissemination of scientific software with Galaxy ToolShed"
-<!-- Blomquist 2009 -->
-[Blomquist 2009]: https://doi.org/10.1145/1597735.1597743 "Experiments on pattern-based ontology design"
-<!-- boninodasilvasantosFAIRDataPoints2016a -->
-[Bonino 2016]: https://www.researchgate.net/publication/309468587_FAIR_Data_Points_Supporting_Big_Data_Interoperability "FAIR Data points supporting big data interoperability"
-<!-- bonino2019 -->
-[Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR\%20Digital\%20Objects/FDOF/FAIR\%20Digital\%20Object\%20Framework-v1-02.docx "FAIR digital object framework v1.02"
-<!-- bonino2021 -->
-[Bonino 2020]: https://fairdigitalobjectframework.org/ "FAIR Digital Object Framework Documentation"
-<!-- Bouyssié 2023 -->
 [Bouyssié 2023]: https://doi.org/10.1101/2023.10.02.560412 "WOMBAT-P: Benchmarking Label-Free Proteomics Data Analysis Workflows"
-<!-- ch6-37 -->
-[Brack 2022a]: https://doi.org/10.1371/journal.pcbi.1009823 "Ten Simple Rules for making a software tool workflow-ready"
-<!-- Brack 2022 -->
-[Brack 2022b]: https://doi.org/10.48546/workflowhub.workflow.373.1 "De novo digitisation."
-<!-- Brand 2015 -->
-[Brand 2015]: https://doi.org/10.1087/20150211 "Beyond authorship: Attribution, contribution, collaboration, and credit"
-<!-- ch8-48 -->
-[Bray 2017]: https://doi.org/10.17487/rfc8259 "The JavaScript Object Notation (JSON) Data Interchange Format"
-<!-- Brenner 2020 -->
-[Brenner 2020]: https://github.com/BrennerG/Ro-Crate_2_ma-DMP "BrennerG/Ro-Crate\_2\_ma-DMP: v1.0.0"
-<!-- FOAFVocabularySpecification -->
-[Brickley 2014]: http://xmlns.com/foaf/spec/ "FOAF Vocabulary Specification"
-<!-- fdo-Glossary -->
-[Broeder 2022]: https://drive.google.com/file/d/1KJ9l0p96naKi_2HPJ_MPqPTwS_zlP92G "FDO glossary november 2022"
-<!-- Buck 2022 -->
-[Buck 2022]: https://doi.org/10.1002/essoar.10509966.1 "AGU data citation community of practice - Credit for creators of data within collections using the concept of a reliquary"
-<!-- w3-ldn -->
-[Capadisli 2017]: https://www.w3.org/TR/2017/REC-ldn-20170502/ "Linked Data Notifications"
-<!-- Cardoso 2020a -->
-[Cardoso 2020a]: https://doi.org/10.1007/978-3-030-45442-5_15 "Machine-actionable data management plans: A knowledge retrieval approach to automate the assessment of funders' requirements"
-<!-- Cardoso 2020b -->
-[Cardoso 2020b]: https://repository.publisso.de/resource/frl:6423289 "Towards Semantic Representation of Machine-Actionable Data Management Plans"
-<!-- ch8-38 -->
-[Carranza-Rojas 2017]: https://doi.org/10.1186/s12862-017-1014-z "Going deeper in the automated identification of Herbarium specimens"
-<!-- carrieroLandscapeOntologyReuse2020a -->
-[Carriero 2010]: https://doi.org/10.3233/ssw200033 "The landscape of ontology reuse approaches"
-<!-- n-triples -->
-[Carrothers 2014]: http://www.w3.org/TR/2014/REC-n-triples-20140225/ "RDF 1.1 N-Triples"
-<!-- Chard 2014 -->
-[Chard 2014]: https://doi.org/10.1109/MCC.2014.52 "Efficient and secure transfer, synchronization, and sharing of big data"
-<!-- Chard 2016 -->
 [Chard 2016]: https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf "I'll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets"
-<!-- Chard 2019 -->
 [Chard 2019]: https://zenodo.org/record/3381754 "Application of BagIt-serialized research object bundles for packaging and re-execution of computational analyses"
-<!-- ch5-76 -->
-[Chard 2020]: https://doi.org/10.3233/APC200107 "Toward enabling reproducibility for data-intensive research using the Whole Tale platform"
-<!-- ciccaresePAVOntologyProvenance2013e -->
-[Ciccarese 2013]: https://doi.org/10.1186/2041-1480-4-37 "PAV ontology: Provenance, authoring and versioning"
-<!-- Ciccarese 2017 -->
-[Ciccarese 2017]: https://www.w3.org/TR/2017/REC-annotation-model-20170223/ "Web Annotation Data Model"
-<!-- Claerbout 1992 -->
-[Claerbout 1992]: http://sep.stanford.edu/oldsep/matt/join/redoc/web/seg92.html "Electronic documents give reproducible research a new meaning"
-<!-- rfc3253 -->
-[Clemm 2002]: https://doi.org/10.17487/rfc3253 "Versioning Extensions to WebDAV"
-<!-- DOIPAPIHTTPa -->
-[CNRI 2023a]: https://www.cordra.org/documentation/api/doip-api-for-http-clients.html "DOIP API for HTTP Clients"
-<!-- DOIPExamplesCordraa -->
-[CNRI 2023b]: https://www.cordra.org/documentation/api/doip.html "DOIP and Examples"
-<!-- Cohen 2020 -->
-[Cohen 2020]: https://doi.org/10.1109/MS.2020.2973362 "The Four Pillars of Research Software Engineering"
-<!-- Cohen-Boulakia 2017 -->
-[Cohen-Boulakia 2017]: https://hal.archives-ouvertes.fr/hal-01516082 "Scientific workflows for computational reproducibility in the life sciences: Status, challenges and opportunities"
-<!-- Colonnelli 2021 -->
 [Colonnelli 2021]: https://doi.org/10.1109/TETC.2020.3019202 "StreamFlow: cross-breeding Cloud with HPC"
-<!-- Colonnelli 2023 -->
 [Colonnelli 2023a]: https://doi.org/10.5281/zenodo.7911906 "StreamFlow run of digital pathology tissue/tumor prediction workflow"
-<!-- Colonnelli 2023b -->
 [Colonnelli 2023b]: https://github.com/alpha-unito/streamflow/releases/tag/0.2.0.dev10 "alpha-unito/streamflow"
-<!-- ch8-52 -->
-[Corcho 2021]: https://doi.org/10.5281/zenodo.4913285 "D5.1 RO Model Adapted to EOSC"
-<!-- 10.48550/arXiv.2305.06746 -->
-[Corcho 2023]: https://doi.org/10.48550/arXiv.2305.06746 "A maturity model for catalogues of semantic artefacts"
-<!-- Cossu 2018 -->
-[Cossu 2018]: https://github.com/duraspace/pcdm/wiki "Portland Common Data Model"
-<!-- Costa 2013 -->
 [Costa 2013]: https://doi.org/10.1145/2457317.2457365 "Capturing and querying workflow runtime provenance with PROV"
-<!-- Crosas 2011 -->
-[Crosas 2011]: https://doi.org/10.1045/january2011-crosas "The DataVerse Network: An open-source application for sharing, discovering and preserving data"
-<!-- Crosas 2020 -->
-[Crosas 2020]: https://doi.org/10.7557/5.5422 "Harvard Data Commons"
-<!-- Crosswell 2012 -->
-[Crosswell 2012]: https://doi.org/10.1016/j.tibtech.2012.02.002 "ELIXIR: A distributed infrastructure for European biological data"
-<!-- CRS4 2022 -->
-[CRS4 2022]: https://about.lifemonitor.eu/ "LifeMonitor, a testing and monitoring service for scientific workflows"
-<!-- Crusoe 2022 -->
 [Crusoe 2022]: https://doi.org/10.1145/3486897 "Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
-<!-- Cruz 2009 -->
-[Cruz 2009]: https://doi.org/10.1109/SERVICES-I.2009.18 "Towards a Taxonomy of Provenance in Scientific Workflow Management Systems"
-<!-- Cuevas-Vicenttín 2016 -->
 [Cuevas-Vicenttín 2016]: https://purl.dataone.org/provone-v1-dev "ProvONE: A PROV Extension Data Model for Scientific Workflow Provenance"
-<!-- cwfr -->
-[CWFR 2021]: https://osf.io/3rekv/ "Canonical Workflow Frameworks for Research"
-<!-- da Veiga Leprevost 2017 -->
-[da Veiga Leprevost 2017]: https://doi.org/10.1093/bioinformatics/btx192 "BioContainers: An open-source and community-driven framework for software standardization"
-<!-- DCMIMetadataTerms -->
-[DCMI 2020]: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/ "DCMI Metadata Terms"
-<!-- De Geest 2022 -->
 [De Geest 2022]: https://doi.org/10.3897/rio.8.e95164 "Enhancing RDM in Galaxy by integrating RO-Crate"
-<!-- ro-crate-py -->
 [De Geest 2023a]: https://github.com/researchobject/ro-crate-py "GitHub -- ResearchObject/ro-crate-py: Python library for RO-Crate"
-<!-- De Geest 2023b -->
 [De Geest 2023b]: https://doi.org/10.5281/zenodo.7785861 "Run of an example Galaxy collection workflow"
-<!-- ch6-31 -->
-[De Giovanni 2016]: https://doi.org/10.1111/ecog.01552 "ENM Components: a new set of web service‐based workflow components for ecological niche modelling"
-<!-- ch8-57 -->
-[De Roure 2010]: https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/ "Anchors in shifting sand: the primacy of method in the web of data"
-<!-- De Smedt 2020 -->
-[De Smedt 2020]: https://doi.org/10.3390/publications8020021 "FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units"
-<!-- Del Rio 2022 -->
 [Del Rio 2022]: https://doi.org/10.1007/978-3-031-13321-3_48 "AI Support for Accelerating Histopathological Slide Examinations of Prostate Cancer in Clinical Studies"
-<!-- delgadoInteroperabilityFrameworkDistributed2016a -->
-[Delgado 2016]: https://doi.org/10.1007/978-3-319-31861-5_1 "An Interoperability Framework and Distributed Platform for Fast Data Applications"
-<!-- Desai 2016 -->
 [Desai 2016]: https://econpapers.repec.org/RePEc:uwe:wpaper:20161601 "Five Safes: designing data access for research"
-<!-- Devaraju_2021 -->
-[Devaraju 2021]: https://doi.org/10.5334/dsj-2021-004 "From conceptualization to implementation: FAIR assessment of research data objects"
-<!-- Dillen 2019 -->
-[Dillen 2019a]: https://doi.org/10.3897/biss.3.37080 "Zenodo, an archive and publishing repository: A tale of two herbarium specimen pilot projects"
-<!-- ch8-59 -->
-[Dillen 2019b]: https://doi.org/10.3897/BDJ.7.e31817 "A benchmark dataset of herbarium specimen imagfes with label data"
-<!-- Di Tommaso 2017 -->
-[Di Tommaso 2017]: https://doi.org/10.1038/nbt.3820 "Nextflow enables reproducible computational workflows"
-<!-- DOIHandbookResolution -->
-[DOI 2019]: https://doi.org/10.1000/182 "DOI Handbook - Resolution"
-<!-- DONA 2018 -->
-[DONA 2018]: https://hdl.handle.net/0.DOIP/DOIPV2.0 "Digital Object Interface Protocol specification, version 2.0"
-<!-- ch8-62 -->
-[DONA 2021]: https://www.dona.net/node/88 "Digital Object Architecture"
-<!-- Drummond 2006 -->
-[Drummond 2006]: https://www.cs.man.ac.uk/~drummond/presentations/OWA.pdf "The Open World Assumption"
-<!-- Duerst 2005 -->
-[Dürst 2005]: https://doi.org/10.17487/rfc3987 "Internationalized resource identifiers (IRIs)"
-<!-- rfc4918 -->
-[Dusseault 2007]: https://doi.org/10.17487/rfc4918 "HTTP Extensions for Web Distributed Authoring and Versioning"
-<!-- ch5-50 -->
-[Eguinoa 2020]: https://github.com/workflowhub-eu/galaxy2cwl "GitHub workflowhub-eu/galaxy2cwl"
-<!-- Eguinoa 2023 -->
-[Eguinoa 2023]: https://doi.org/10.37044/osf.io/24jst "BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates"
-<!-- Ejarque 2023 -->
 [Ejarque 2023]: https://doi.org/10.5281/zenodo.7975340 "COMPSs"
-<!-- martinekuanWebAPIDesign -->
-[Ekuan 2023]: https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design "Web API design best practices"
-<!-- Ellerm 2023 -->
-[Ellerm 2023]: https://doi.org/10.1109/e-Science58273.2023.10254857 "LivePublication: The Science Workflow Creates and Updates the Publication"
-<!-- Ellis 2007 -->
-[Ellis 2007]: https://doi.org/10.1109/ICSE.2007.85 "The Factory Pattern in API Design: A Usability Evaluation"
-<!-- EMBL-EBI 2019 -->
-[EMBL-EBI 2019]: http://ftp.ebi.ac.uk/pub/databases/metagenomics/umgs_analyses/ "FTP index of /pub/databases/metagenomics/umgs\_analyses/"
-<!-- EMBL-EBI 2020 -->
-[EMBL-EBI 2020]: https://github.com/Finn-Lab/MGS-gut "GitHub -- Finn-Lab/MGS-gut: Analysing Metagenomic Species (MGS)"
-<!-- h2020fair2016 -->
-[EU 2016]: https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf "Guidelines on FAIR Data Management in Horizon 2020"
-<!-- Ewels 2020 -->
-[Ewels 2020]: https://doi.org/10.1038/s41587-020-0439-x "The nf-core framework for community-curated bioinformatics pipelines"
-<!-- groupFAIRDataMaturity2020 -->
-[FAIR Maturity 2020]: https://doi.org/10.15497/rda00050 "FAIR data maturity model: Specification and guidelines"
-<!-- Falk 2010 -->
-[Falk 2010]: https://doi.org/10.1016/j.shpsc.2010.10.014 "What is a gene?—Revisited"
-<!-- Farnel 2014 -->
-[Farnel 2014]: https://dcpapers.dublincore.org/pubs/article/view/3714 "Metadata for research data: Current practices and trends"
-
-<!-- FAIRDigitalObject -->
-[FDO]: https://fairdo.org/ "FAIR Digital Object Forum"
-<!-- fdo-Specs -->
-[FDO Specs]: https://hdl.handle.net/20.500.14132/fdo-spec-docs "FDO Specification Documents - November 2022"
-<!-- Feng 2007 -->
 [Feng 2007]: https://doi.org/10.1145/1254882.1254906 "PBS: a unified priority-based scheduler"
-<!-- 10.5438/jwvf-8a66 -->
-[Fenner 2019]: https://doi.org/10.5438/jwvf-8a66 "Introducing the PID graph"
-<!-- fenselSemanticWebServices2011 -->
-[Fensel 2011]: https://doi.org/10.1007/978-3-642-19193-0 "Semantic Web Services"
-<!-- Fernández 2023a -->
 [Fernández 2023a]: https://doi.org/10.5281/zenodo.10068956 "inab/WfExS-backend"
-<!-- Fernández 2023b -->
 [Fernández 2023b]: https://doi.org/10.5281/zenodo.10091550 "RO-Crate from staged WfExS working directory"
-<!-- ch6-39 -->
 [Ferreira da Silva 2021]: https://doi.org/10.48550/arXiv.2110.02168 "A Community Roadmap for Scientific Workflows Research and Development"
-<!-- Ferreira 2022 -->
 [Ferreira da Silva]: https://doi.org/10.48550/arXiv.2304.00019 "Workflows Community Summit 2022"
-<!-- rfc2616 -->
-[Fielding 1999]: https://doi.org/10.17487/rfc2616 "Hypertext Transfer Protocol -- HTTP/1.1"
-<!-- fieldingArchitecturalStylesDesign2000a -->
-[Fielding 2000]: https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm "Architectural styles and the design of network-based software architectures"
-<!-- rfc7230 -->
-[Fielding 2014a]: https://doi.org/10.17487/rfc7230 "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing"
-<!-- rfc7231 -->
-[Fielding 2014b]: https://doi.org/10.17487/rfc7231 "Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content"
-<!-- fieldingReflectionsRESTArchitectural2017a -->
-[Fielding 2017]: https://doi.org/10.1145/3106237.3121282 "Reflections on the REST architectural style and \"principled design of the modern web architecture\" (impact paper award)"
-<!-- rfc9110 -->
-[Fielding 2022]: https://doi.org/10.17487/rfc9110 "HTTP Semantics"
-<!-- ch6-21 -->
-[Fillbrunn 2017]: https://doi.org/10.1016/j.jbiotec.2017.07.028 "KNIME for reproducible cross-domain analysis of life science data"
-<!-- Fouilloux 2023 -->
-[Fouilloux 2023]: https://doi.org/10.3897/rio.9.e108765 "FAIR Research Objects for realizing Open Science with RELIANCE EOSC project"
-<!-- Freire 2008 -->
 [Freire 2008]: https://doi.org/10.1109/MCSE.2008.79 "Provenance for Computational Tasks: A Survey"
-<!-- Galaxy 2022 -->
 [Galaxy 2022]: https://doi.org/10.1093/nar/gkac247 "The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2022 update"
-<!-- Gamma 1995 -->
-[Gamma 1995]: https://identifiers.org/isbn/9780201633610 "Design Patterns"
-<!-- ch6-40 -->
-[Garcia 2020]: https://doi.org/10.1371/journal.pcbi.1007808 "Ten simple rules to run a successful BioHackathon"
-<!-- ch5-48 -->
-[Garcia-Silva 2019]: https://doi.org/10.48550/arXiv.1809.10617 "Enabling FAIR research in Earth science through research objects"
-<!-- Garijo 2011 -->
 [Garijo 2011]: https://doi.org/10.1145/2110497.2110504 "A New Approach for Publishing Workflows"
-<!-- Garijo 2012 -->
 [Garijo 2012]: https://ceur-ws.org/Vol-951/paper6.pdf "Augmenting PROV with Plans in P-PLAN: Scientific Processes as Linked Data"
-<!-- ch6-30 -->
-[Garijo 2014a]: https://doi.org/10.1016/j.future.2013.09.018 "Common Motifs in Scientific Workflows: An Empirical Analysis"
-<!-- Garijo 2014 -->
 [Garijo 2014b]: https://doi.org/10.1109/works.2014.13 "Towards Workflow Ecosystems through Semantic and Standard Representations"
-<!-- Gauthier 2019 -->
 [Gauthier 2019]: https://doi.org/10.1093/bib/bby063 "A brief history of bioinformatics"
-<!-- ch8-7 -->
-[GBIF 2021]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
-<!-- Gewirtz 1996 -->
-[Gewirtz 1996]: https://heinonline.org/HOL/P?h=hein.journals/ylr105&i=1057 "On I Know It When I See It"
-<!-- Gil 2011 -->
 [Gil 2011]: https://doi.org/10.1109/MIS.2010.9 "Wings: Intelligent Workflow-Based Design of Computational Experiments"
-<!-- trefx -->
 [Giles 2023]: https://doi.org/10.5281/zenodo.10055354 "TRE-FX: Delivering a federated network of trusted research environments to enable safe data analytics"
-<!-- ch5-85 -->
-[GitHub 2021]: https://docs.github.com/en/repositories/working-with-files/managing-large-files "Managing large files -- GitHub Docs"
-<!-- gobleStateNationData2008c -->
-[Goble 2008]: https://doi.org/10.1016/j.jbi.2008.01.008 "State of the nation in data integration for bioinformatics"
-<!-- ch5-57 -->
-[Goble 2010]: https://doi.org/10.1093/nar/gkq429 "myExperiment: A repository and social network for the sharing of bioinformatics workflows"
-<!-- ch5-54 -->
-[Goble 2016]: http://repscience2016.research-infrastructures.eu/img/CaroleGoble-ReproScience2016v2.pdf "What Is Reproducibility? The R* Brouhaha"
-<!-- goble-ro2018 -->
-[Goble 2018]: https://doi.org/10.5281/zenodo.1313066 "Research Object Community Update"
-<!-- Goble 2020 -->
 [Goble 2020]: https://doi.org/10.1162/dint_a_00033 "FAIR Computational Workflows"
-<!-- Goble 2021 -->
 [Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-<!-- 10.5281/zenodo.7157647 -->
-[Goble 2022]: https://doi.org/10.5281/zenodo.7157647 "FAIR-IMPACT: T3.2.1 PIDs in data production workflows"
-<!-- FAIROs -->
-[González 2022]: https://dgarijo.com/papers/TPDL2022_gonzalez.pdf "FAIROs: Towards FAIR Assessment in Research Objects"
-<!-- Gray 2017 -->
 [Gray 2017]: https://iswc2017.semanticweb.org/paper-579/ "Bioschemas: From Potato Salad to Protein Annotation"
-<!-- rfc5023 -->
-[Gregorio 2007]: https://doi.org/10.17487/rfc5023 "The Atom Publishing Protocol"
-<!-- rfc6570 -->
-[Gregorio 2012]: https://doi.org/10.17487/rfc6570 "URI Template"
-<!-- ch8-35 -->
-[Groom 2020]: https://doi.org/10.1093/database/baaa072 "People are essential to linking biodiversity data"
-<!-- ch5-59 -->
-[Grossman 2016]: https://doi.org/10.1109/MCSE.2016.92 "A case for data commons: Toward data science as a service"
-<!-- grothAPIcentricLinkedData2014b -->
-[Groth 2014]: https://doi.org/10.1016/j.websem.2014.03.003 "API-centric Linked Data integration: The Open PHACTS Discovery Platform case study"
-<!-- Gruning 2018a -->
-[Grüning 2018a]: https://doi.org/10.1038/s41592-018-0046-7 "Bioconda: Sustainable and Comprehensive Software Distribution for the Life Sciences"
-<!-- Gruning 2018b -->
-[Grüning 2018b]: https://doi.org/10.1016/j.cels.2018.03.014 "Practical Computational Reproducibility in the Life Sciences"
-<!-- w3-rdf-schema -->
-[Guha 2014]: http://www.w3.org/TR/rdf-schema/ "RDF Schema 1.1"
-<!-- Guha 2015 -->
 [Guha 2015]: https://doi.org/10.1145/2857274.2857276 "Schema.org: Evolution of Structured Data on the Web: Big data makes common schemas even more necessary"
-<!-- Guha 2016 -->
-[Guha 2016]: https://doi.org/10.1145/2844544 "Schema.org: evolution of structured data on the web"
-<!-- Gurevich 1995 -->
-[Gurevich 1995]: https://identifiers.org/isbn/9780198538547 "Evolving Algebras 1993: Lipari Guide"
-<!-- HandleNetRegistry -->
-[Handle]: https://www.handle.net/download_hnr.html "Handle.Net Software"
-<!-- ch8-58 -->
-[Hardisty 2016]: https://doi.org/10.1186/s12898-016-0103-y "BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology"
-<!-- Hardisty 2019 -->
-[Hardisty 2019a]: https://doi.org/10.3897/biss.3.37033 "`openDS' -- A New Standard for Digital Specimens and Other Natural Science Digital Object Types"
-<!-- ch8-28 -->
-[Hardisty 2019b]: https://doi.org/10.5281/zenodo.3532937 "Provisional Data Management Plan for DiSSCo infrastructure"
-<!-- ch8-30 -->
-[Hardisty 2020]: https://doi.org/10.3897/rio.6.e54280 "Conceptual design blueprint for the DiSSCo digitization infrastructure - DELIVERABLE D8.1"
-<!-- Hardisty 2022 -->
-[Hardisty 2022]: https://doi.org/10.1162/dint_a_00134 "The Specimen Data Refinery"
-<!-- ch8-19 -->
-[Harrow 2021]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the life science research of the future"
-<!-- Harrow 2022 -->
-[Harrow 2022]: https://doi.org/10.1093/bioinformatics/btab481 "ELIXIR: providing a sustainable infrastructure for life science data at European scale"
-<!-- Hasnain 2018 -->
-[Hasnain 2018]: https://doi.org/10.1007/978-3-319-98192-5_60 "Assessing FAIR Data Principles Against the 5-Star Open Data Principles"
-<!-- OpenData -->
-[Hausenblas 2012]: http://5stardata.info/ "5-star Open Data"
-<!-- ch5-63 -->
-[Heath 2011]: https://doi.org/10.2200/S00334ED1V01Y201102WBE001 "Linked Data: Evolving the Web into a Global Data Space"
-<!-- ch8-14 -->
-[Heberling 2019]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis"
-<!-- ch8-8 -->
-[Heberling 2021]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
-<!-- fdo-Granularity -->
-[Hellström 2022]: https://doi.org/10.5281/zenodo.7825686 "FDO -- granularity, versioning, mutability"
-<!-- ch8-11 -->
-[Hereld 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE: An experiment in high-throughput digitization of pinned insects"
-<!-- Herschel 2017 -->
 [Herschel 2017]: https://doi.org/10.1007/s00778-017-0486-1 "A survey on provenance: What for? What form? What from?"
-<!-- Himanen 2019 -->
 [Himanen 2019]: https://doi.org/10.1002/advs.201900808 "Data-Driven Materials Science: Status, Challenges, and Perspectives"
-<!-- Hitzler 2016 -->
-[Hitzler 2016]: https://identifiers.org/isbn/9781614996767 "Ontology engineering with ontology design patterns"
-<!-- hollandIntroducingRole2014 -->
-[Holland 2014]: http://blog.schema.org/2014/06/introducing-role.html "Introducing 'Role'"
-<!-- horrocksSemanticWebISWC2002 -->
-[Horrocks 2022]: https://doi.org/10.1007/3-540-48005-6 "The Semantic Web --- ISWC 2002"
-<!-- ch6-12 -->
-[Hospital 2020]: https://doi.org/10.5281/zenodo.4540432 "BioExcel-2 Deliverable 2.3 -- First release of demonstration workflows"
-<!-- ch6-26 -->
-[Hospital 2021a]: https://doi.org/10.48546/workflowhub.workflow.200.1 "Protein MD Setup HPC tutorial using BioExcel Building Blocks (biobb) in PyCOMPSs"
-<!-- ch6-23 -->
-[Hospital 2021b]: https://doi.org/10.48546/workflowhub.workflow.201.1 "Protein MD Setup tutorial using BioExcel Building Blocks (biobb) in KNIME"
-<!-- huHowMatchableAre2011a -->
-[Hu 2011]: https://identifiers.org/isbn/9783642210334 "How matchable are four thousand ontologies on the semantic web"
-<!-- ch8-44 -->
-[Hui 2012]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
-<!-- Huntingford 2019 -->
 [Huntingford 2019]: https://doi.org/10.1088/1748-9326/ab4e55 "Machine learning and artificial intelligence to aid climate change research and preparedness"
-<!-- ch8-37 -->
-[Hussein 2021]: https://doi.org/10.48550/arXiv.2104.08732 "Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens: A Systematic Literature Review"
-<!-- ieee2791 -->
 [IEEE 2791-2020]: https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d "IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication"
-<!-- w3-skos-primer -->
 [Isaac 2009]: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/ "SKOS Simple Knowledge Organization System Primer"
-<!-- ch8-65 -->
-[Islam 2020]: https://doi.org/10.5334/dsj-2020-050 "Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections"
-<!-- islam_2023 -->
-[Islam 2023]: https://doi.org/10.3233/FC-230001 "FAIR digital objects, persistent identifiers and machine actionability"
-<!-- iso16684 -->
-[ISO 16684]: https://www.iso.org/standard/75163.html "ISO 16684-1:2019 --- graphic technology --- extensible metadata platform (XMP)"
-<!-- iso23009 -->
-[ISO 23009-1]: https://www.iso.org/standard/83314.html "ISO/IEC 23009-1:2022 --- information technology --- dynamic adaptive streaming over HTTP (DASH)"
-<!-- ch6-11 -->
-[Ison 2013]: https://doi.org/10.1093/bioinformatics/btt113 "EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats"
-<!-- ch6-35 -->
-[Ison 2021]: https://doi.org/10.1093/gigascience/giaa157 "biotoolsSchema: a formalized schema for bioinformatics software description"
-<!-- x1255FrameworkDiscovery -->
-[ITU-T X.1255]: https://www.itu.int/rec/T-REC-X.1255-201309-I "X.1255 : Framework for Discovery of Identity Management Information"
-<!-- fdo-Overview -->
-[Ivonne 2023]: https://doi.org/10.5281/zenodo.7824714 "FAIR digital object technical overview"
-<!-- rfc9000 -->
-[Iyengar 2021]: https://doi.org/10.17487/rfc9000 "QUIC: A UDP-Based Multiplexed and Secure Transport"
-<!-- Jacobsen 2020 -->
-[Jacobsen 2020]: https://doi.org/10.1162/dint_r_00024 "FAIR Principles: Interpretations and Implementation Considerations"
-<!-- 10.1007/978-3-030-30760-8_31 -->
-[Jaradeh 2019]: https://doi.org/10.1007/978-3-030-30760-8_31 "Open research knowledge graph: A system walkthrough"
-<!-- ch5-65 -->
-[Jensen 2017]: https://doi.org/10.1182/blood-2017-03-735654 "The NCI Genomic Data Commons as an engine for precision medicine"
-<!-- ch5-66 -->
-[Jones 2021]: https://doi.org/10.5281/zenodo.4477164 "Science-on-Schema.org v1.2.0"
-<!-- SWORDSpecification -->
-[Jones 2022]: https://swordapp.github.io/swordv3/swordv3.html "SWORD 3.0 Specification"
-<!-- joras2020 -->
-[Joras 2020]: https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions "How Facebook is bringing QUIC to billions"
-<!-- ch8-60 -->
-[JSONPath 2023]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath: Query Expressions for JSON"
-<!-- ch6-15 -->
-[Jupyter 2018]: https://doi.org/10.25080/majora-4af1f417-011 "Binder 2.0 - Reproducible, Interactive, Sharable Environments for Science at Scale"
-<!-- jutyIdentifiersOrgMIRIAM2011 -->
-[Juty 2011]: https://doi.org/10.1093/nar/gkr1097 "Identifiers.org and MIRIAM Registry: Community resources to provide persistent identification"
-<!-- Juty 2020 -->
-[Juty 2020]: https://doi.org/10.1162/dint_a_00025 "Unique, Persistent, Resolvable: Identifiers as the foundation of FAIR"
-<!-- kahnFrameworkDistributedDigital1995a -->
-[Kahn 1995]: http://www.cnri.reston.va.us/k-w.html "A framework for distributed digital object services"
-<!-- Kahn 2006 -->
-[Kahn 2006]: https://doi.org/10.1007/s00799-005-0128-x "A framework for distributed digital object services"
-<!-- ch8-45 -->
-[Kallinikos 2013]: https://www.jstor.org/stable/43825913 "The ambivalent ontology of digital artifacts"
-<!-- kamdarSystematicAnalysisTerm2017a -->
-[Kamdar 2017]: https://doi.org/10.3233/sw-160238 "A systematic analysis of term reuse and term overlap across biomedical ontologies"
-<!-- ch5-67 -->
-[Katsumi 2016]: https://doi.org/10.3233/978-1-61499-660-6-9 "What is ontology reuse?"
-<!-- ch6-3 -->
-[Katz 2021a]: https://doi.org/10.48550/arXiv.2101.10883 "A Fresh Look at FAIR for Research Software"
-<!-- Katz 2021b -->
-[Katz 2021b]: https://doi.org/10.1016/j.patter.2021.100222 "A Fresh Look at FAIR for Research Software"
-<!-- Draftkellyjsonhal08 -->
-[Kelly 2016]: https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/ "JSON Hypertext Application Language"
-<!-- Khan 2019 -->
 [Khan 2019]: https://doi.org/10.1093/gigascience/giz095 "Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv"
-<!-- rfc2817 -->
-[Khare 2000]: https://doi.org/10.17487/rfc2817 "Upgrading to TLS Within HTTP/1.1"
-<!-- ch8-15 -->
-[Kharouba 2019]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts: challenges and opportunities"
-<!-- ch5-69 -->
-[Kim 2008]: https://doi.org/10.1002/cpe.1228 "Provenance trails in the Wings/Pegasus system"
-<!-- Kinoshita 2023 -->
 [Kinoshita 2023]: https://doi.org/10.5281/zenodo.8144612 "RO-Crate created using Autosubmit version 4.0.100 workflow running kinow/auto-mhm-test-domains"
-<!-- kleinScholarlyContextNot2014a -->
-[Klein 2014]: https://doi.org/10.1371/journal.pone.0115253 "Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot"
-<!-- klimekSurveyToolsLinked2019a -->
-[Klímek 2019]: https://doi.org/10.3233/SW-180316 "Survey of tools for linked data consumption"
-<!-- Kluyver 2016 -->
-[Kluyver 2016]: https://doi.org/10.3233/978-1-61499-649-1-87 "Jupyter Notebooks – a publishing format for reproducible computational workflows"
-<!-- ch8-36 -->
-[Knyshov 2021]: https://doi.org/10.1093/isd/ixab004 "Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case: Identification of Plant Bugs (Hemiptera: Miridae) Using a Small Number of Training Images"
-<!-- ch5-72 -->
-[Koesten 2020]: https://doi.org/10.1016/j.patter.2020.100136 "Dataset reuse: Toward translating principles to practice"
-<!-- ch5-71 -->
-[Koesten 2021]: https://doi.org/10.1016/j.ijhcs.2020.102562 "Talking datasets -- understanding data sensemaking behaviours"
-<!-- w3-shacl -->
-[Kontokostas 2017]: https://www.w3.org/TR/shacl/ "Shapes Constraint Language (SHACL)"
-<!-- Koster 2012 -->
 [Köster 2012]: https://doi.org/10.1093/bioinformatics/bts480 "Snakemake—a scalable bioinformatics workflow engine"
-<!-- Kuhn 2021 -->
-[Kuhn 2021]: https://doi.org/10.7717/peerj-cs.387 "Semantic micro-contributions with decentralized nanopublication services"
-<!-- Kumar 2013 -->
 [Kumar 2013]: https://doi.org/10.1029/2012WR012195 "Implications of distributed hydrologic model parameterization on water fluxes at multiple scales and locations"
-<!-- ch5-74 -->
-[Kunze 2018]: https://doi.org/10.17487/rfc8493 "The BagIt File Packaging Format"
-<!-- ARKIdentifierScheme -->
-[Kunze 2022]: https://datatracker.ietf.org/doc/draft-kunze-ark/36/ "The ARK Identifier Scheme"
-<!-- eosc-interop-framework -->
-[Kurowski 2021]: https://doi.org/10.2777/620649 "EOSC Interoperability Framework"
-<!-- Käfer 2018a -->
-[Käfer 2018a]: http://events.linkeddata.org/ldow2018/papers/LDOW2018_paper_7.pdf "Rule-based Programming of User Agents for Linked Data"
-<!-- Käfer 2018b -->
-[Käfer 2018b]: https://doi.org/10.1007/978-3-030-00671-6_25 "Specifying, Monitoring, and Executing Workflows in Linked Data Environments"
-<!-- ch5-51 -->
-[La Rosa 2021a]: https://github.com/CoEDL/modpdsc/ "GitHub -- CoEDL/modpdsc"
-<!-- ch5-52 -->
-[La Rosa 2021b]: https://github.com/CoEDL/ocfl-tools "GitHub -- CoEDL/ocfl-tools: Tools to process and manipulate an OCFL tree"
-<!-- ch5-77 -->
-[La Rosa 2021c]: https://arkisto-platform.github.io/describo-online/ "Arkisto Platform: Describo Online"
-<!-- ch5-78 -->
-[La Rosa 2021d]: https://arkisto-platform.github.io/describo/ "Arkisto Platform: Describo"
-<!-- gayoValidatingRDFData2017a -->
-[Labra Gayo 2017]: https://doi.org/10.2200/s00786ed1v01y201707wbe016 "Validating RDF Data"
-<!-- ORESpecificationAbstract -->
-[Lagoze 2008]: http://www.openarchives.org/ore/1.0/datamodel#Proxies "ORE Specification - Abstract Data Model"
-<!-- ch5-79 -->
-[Lammey 2020]: https://doi.org/10.6087/kcse.192 "Solutions for identification problems: A look at the research organization registry"
-<!-- Lamprecht 2019 -->
-[Lamprecht 2019]: https://doi.org/10.3233/DS-190026 "Towards FAIR principles for research software"
-<!-- lamprechtPerspectivesAutomatedComposition2021b -->
-[Lamprecht 2021]: https://doi.org/10.12688/f1000research.54159.1 "Perspectives on automated composition of workflows in the life sciences"
-<!-- ch8-6 -->
-[Lannom 2020]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
-<!-- fdo-ConfigurationTypes -->
-[Lannom 2022a]: https://doi.org/10.5281/zenodo.7825703 "FDO configuration types"
-<!-- fdo-Roadmap -->
-[Lannom 2022b]: https://doi.org/10.5281/zenodo.7824673 "FAIR digital objects roadmap. Version 5 november 2022"
-<!-- fdo-TypingFDOs -->
-[Lannom 2022c]: https://doi.org/10.5281/zenodo.7825599 "Typing FAIR digital objects"
-<!-- HydraW3CCommunity -->
-[Lanthaler 2021]: http://www.hydra-cg.com/spec/latest/core/ "Hydra Core Vocabulary"
-<!-- w3-rdf-syntax99 -->
-[Lassila 1999]: https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/ "Resource Description Framework (RDF) Model and Syntax Specification"
-<!-- w3-prov-o -->
 [Lebo 2013a]: https://www.w3.org/TR/2013/REC-prov-o-20130430/ "PROV-O: The PROV Ontology"
-<!-- w3-prov-links -->
-[Lebo 2013b]: https://www.w3.org/TR/2013/NOTE-prov-links-20130430/ "Linking Across Provenance Bundles"
-<!-- Lee 2018 -->
-[Lee 2018]: https://doi.org/10.1371/journal.pcbi.1006561 "Ten simple rules for documenting scientific software"
-<!-- Leipzig 2021 -->
-[Leipzig 2021]: https://doi.org/10.1016/j.patter.2021.100322 "The role of metadata in reproducible computational research"
-<!-- runcrate -->
 [Leo 2023a]: https://github.com/ResearchObject/runcrate "runcrate"
-<!-- workflow-run-crate -->
 [Leo 2023b]: https://doi.org/10.48550/arXiv.2312.07852 "Recording provenance of workflow runs with RO-Crate"
-<!-- wrroc-crate -->
 [Leo 2023c]: https://w3id.org/ro/doi/10.5281/zenodo.10368989 "Recording provenance of workflow runs with RO-Crate"
-<!-- run-pathology -->
 [Leo 2023]: https://doi.org/10.5281/zenodo.7774351 "Run of digital pathology tissue/tumor prediction workflow"
-<!-- ch8-39 -->
-[Little 2020]: https://doi.org/10.1002/aps3.11365 "An algorithm competition for automatic species identification from herbarium specimens"
-<!-- w3-wsdl20-primer -->
-[Liu 2007]: https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/ "Web Services Description Language"
-<!-- Livermore 2022a -->
-[Livermore 2022a]: https://doi.org/10.48546/workflowhub.workflow.374.1 "DLA-Collections-test."
-<!-- Livermore 2022b -->
-[Livermore 2022b]: https://doi.org/10.48546/workflowhub.workflow.375.1 "HTR-Collections-test"
-<!-- ch8-56 -->
-[Lohonya 2020]: https://doi.org/10.3897/BDJ.8.e50503 "Georeferencing the Natural History Museum's Chinese type collection: of plateaus, pagodas and plants"
-<!-- looFirstInternationalConference2022 -->
-[Loo 2022]: https://doi.org/10.3897/rio.coll.190 "First International Conference on FAIR Digital Objects"
-<!-- Lordan 2014 -->
 [Lordan 2014]: https://doi.org/10.1007/s10723-013-9272-5 "ServiceSs: An interoperable programming framework for the cloud"
-<!-- ch6-22 -->
-[Lowe 2021a]: https://doi.org/10.48546/workflowhub.workflow.194.1 "Protein MD Setup tutorial using BioExcel Building Blocks (biobb) in Galaxy"
-<!-- ch5-83 -->
-[Lowe 2021b]: https://doi.org/10.48546/workflowhub.workflow.56.1 "Protein Ligand Complex MD Setup tutorial using BioExcel Building Blocks (biobb) (jupyter notebook)"
-<!-- Ludascher 2016 -->
-[Ludäscher 2016]: https://doi.org/10.1007/978-3-319-40226-0_7 "A Brief Tour Through Provenance in Scientific Workflows and Databases"
-<!-- ch8-17 -->
-[Lughadha 2019]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
-<!-- Luo 2022 -->
-[Luo 2022]: https://www.proquest.com/docview/2763290077 "Knowledge enhanced digital objects"
-<!-- Luo 2023 -->
-[Luo 2023]: https://doi.org/10.1109/CCGridW59191.2023.00064 "Knowledge Enhanced Digital Objects: a Data Lake Approach"
-<!-- ch5-84 -->
-[Lynch 2022]: https://www.npmjs.com/package/ro-crate-excel "npm: ro-crate-excel"
-<!-- Mai Chan 1995 -->
-[Mai Chan 1995]: https://identifiers.org/isbn/9781563081910 "Library of Congress Subject Headings: Principles and Application"
-<!-- Manubens-Gil 2016 -->
 [Manubens-Gil 2016]: https://doi.org/10.1109/HPCSim.2016.7568429 "Seamless management of ensemble climate prediction experiments on HPC platforms"
-<!-- Marinescu 2022 -->
-[Marinescu 2023]: https://identifiers.org/isbn/9780323852777 "Cloud Computing: Theory and Practice"
-<!-- Matentzoglu 2022 -->
-[Matentzoglu 2022]: https://doi.org/10.1093/database/baac087 "Ontology Development Kit: a toolkit for building, maintaining and standardizing biomedical ontologies"
-<!-- McMurry 2017 -->
-[McMurry 2017]: https://doi.org/10.1371/journal.pbio.2001414 "Identifiers for the 21st century: How to design, provision, and reuse identifiers to maximize utility and impact of life science data"
-<!-- ContentNegotiationHTTP -->
-[MDN 2023]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation "HTTP Content negotiation"
-<!-- de Mello 2022 -->
-[de Mello 2022]: https://doi.org/10.1007/s12553-022-00639-w "Semantic interoperability in health records standards: a systematic literature review"
-<!-- merono-penuelaConclusionFutureChallenges2021a -->
-[Meroño-Peñuela 2021a]: https://doi.org/10.1007/978-3-031-01917-3_7 "Conclusion and future challenges"
-<!-- merono-penuelaWebDataApis2021b -->
-[Meroño-Peñuela 2021b]: https://doi.org/10.1007/978-3-031-01917-3_3 "Web data APIs over SPARQL"
-<!-- Meurisse 2023 -->
 [Meurisse 2023]: https://s11.no/2023/phd/federated-causal-inference/ "Federated causal inference based on real-world observational data sources"
-<!-- ch5-121 -->
-[Miksa 2019a]: https://doi.org/10.15497/rda00039 "RDA DMP Common Standard for Machine-Actionable Data Management Plans"
-<!-- ch5-88 -->
-[Miksa 2019b]: https://doi.org/10.1371/journal.pcbi.1006750 "Ten principles for machine-actionable data management plans"
-<!-- Miksa 2020 -->
-[Miksa 2020]: https://doi.org/10.4126/frl01-006423291 "Research Object Crates and Machine-actionable Data Management Plans"
-<!-- Millard 2010 -->
-[Millard 2010]: https://ceur-ws.org/Vol-665/MillardEtAl_COLD2010.pdf "Consuming multiple linked data sources: Challenges and Experiences"
-<!-- OpenAPISpecificationV3 -->
-[Miller 2021]: https://spec.openapis.org/oas/v3.1.0.html "OpenAPI Specification"
-<!-- Missier 2010 -->
-[Missier 2010]: https://doi.org/10.1109/WORKS.2010.5671861 "Linking multiple workflow provenance traces for interoperable collaborative science"
-<!-- Missier 2013 -->
 [Missier 2013]: https://doi.org/10.5555/2482949.2482961 "D-PROV: extending the PROV provenance model with workflow structure"
-<!-- ch5-89 -->
-[Möller 2010]: https://doi.org/10.1186/1471-2105-11-S12-S5 "Community-driven computational biology with Debian Linux"
-<!-- ch6-4 -->
-[Möller 2017]: https://doi.org/10.1007/s41019-017-0050-4 "Robust cross-platform workflows: How technical and scientific communities collaborate to develop, test and share best practices for data analysis"
-<!-- Mons 2017 -->
-[Mons 2017]: https://doi.org/10.3233/ISU-170824 "Cloudy, increasingly FAIR; revisiting the FAIR Data guiding principles for the European Open Science Cloud"
-<!-- ch5-91 -->
-[Mons 2018]: https://identifiers.org/isbn/9781315351148 "Data Stewardship for Open Science"
-<!-- Moreau 2013 -->
 [Moreau 2013]: https://www.w3.org/TR/2013/REC-prov-dm-20130430/ "PROV-DM: The PROV Data Model"
-<!-- ch5-92 -->
-[myExperiment 2009]: https://web.archive.org/web/20091115080336/http%3a%2f%2frdf.myexperiment.org/ontologies "myExperiment Ontology Modules"
-<!-- ch5-53 -->
-[Nature 2019]: https://doi.org/10.1038/s41592-019-0350-x "Giving software its due"
-<!-- NCBOBioPortal -->
-[NCBO]: https://bioportal.bioontology.org/ontologies "NCBO BioPortal"
-<!-- ch8-3 -->
-[Nelson 2019a]: https://doi.org/10.1098/rstb.2017.0391 "The history and impact of digitization and digital data mobilization on biodiversity research"
-<!-- ch8-4 -->
-[Nelson 2019b]: https://doi.org/10.3897/biss.3.37896 "DiSSCo, iDigBio and the Future of Global Collaboration"
-<!-- neumannAnalysisPublicREST2021a -->
-[Neumann 2021]: https://doi.org/10.1109/TSC.2018.2847344 "An analysis of public REST web service apis"
-<!-- ch5-93 -->
-[Newman 2009]: http://ceur-ws.org/Vol-523/Newman.pdf "myExperiment: An ontology for e-Research"
-<!-- ch5-94 -->
-[Neylon 2017]: https://cameronneylon.net/blog/as-a-researcher-im-a-bit-bloody-fed-up-with-data-management/ "As a researcher \ldots I'm a bit bloody fed up with Data Management"
-<!-- ch8-33 -->
-[Nieva de la Hidalga 2021]: https://doi.org/10.1007/s00138-022-01276-z "Cross-validation of a semantic segmentation network for natural history collection specimens"
-<!-- ch6-17 -->
-[Niewielska 2020]: https://doi.org/10.5281/zenodo.4916060 "BioExcel-2 Deliverable 2.5 - Provision of a Workflow Environment at BioExcel portal"
-<!-- 10.1186/s13326-021-00240-6 -->
-[Norris 2021]: https://doi.org/10.1186/s13326-021-00240-6 "Why and how to engage expert stakeholders in ontology development: Insights from social and behavioural sciences"
-<!-- rfc8288 -->
-[Nottingham 2017]: https://doi.org/10.17487/rfc8288 "Web Linking"
-<!-- nurdiati2008 -->
-[Nurdiati 2008]: https://purl.utwente.nl/publications/64931 "25 years development of knowledge graph theory: the results and the challenge"
-<!-- OCarragain 2019 -->
-[Ó Carragáin 2019a]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging"
-<!-- 10.5281/zenodo.3337883 -->
-[Ó Carragáin 2019b]: https://s11.no/2019/phd/ro-crate/ "RO-Crate: A lightweight approach to research object data packaging"
-<!-- ch5-96 -->
-[OCFL 2020]: https://ocfl.io/1.0/spec/ "OCFL, Oxford Common File Layout Specification"
-<!-- InfoURIRegistry -->
-[OCLC 2010]: http://info-uri.info/ "Info URI Registry (Frozen)"
-<!-- Ohta 2023 -->
 [Ohta 2023]: https://doi.org/10.5281/zenodo.10134581 "Example of Workflow Run RO-Crate Output in Sapporo"
-<!-- Oliver 2019 -->
 [Oliver 2019]: https://doi.org/10.1109/MCSE.2019.2906593 "Workflow Automation for Cycling Systems"
-<!-- OpenGraphProtocol -->
-[Open Graph]: https://ogp.me/ "The Open Graph protocol"
-<!-- ch8-47 -->
-[openDS 2021]: https://github.com/DiSSCo/openDS "Draft specification for open Digital Specimens (openDS)"
-<!-- ModernStandardsParadigm -->
-[OpenStand 2017]: https://open-stand.org/about-us/principles/ "The Modern Standards Paradigm"
-<!-- LicensesStandardsOpen -->
-[OSI 022]: https://opensource.org/licenses "Licenses & Standards"
-<!-- ch8-18 -->
-[Owen 2020]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
-<!-- pageRESTLinkedData2011 -->
-[Page 2011]: https://doi.org/10.1145/1967428.1967435 "REST and Linked Data"
-<!-- rfc8216 -->
-[Pantos 2017]: https://doi.org/10.17487/rfc8216 "HTTP Live Streaming"
-<!-- w3-micropub -->
-[Parecki 2017]: https://www.w3.org/TR/2017/REC-micropub-20170523/ "Micropub"
-<!-- ya2ro -->
-[Pavel 2023]: https://doi.org/10.4126/frl01-006444984 "Ya2ro: A tool for creating Research Objects from minimum metadata"
-<!-- Pérez 2018 -->
 [Pérez 2018]: https://doi.org/10.1007/s10115-018-1164-3 "A systematic review of provenance systems"
-<!-- Pergl 2019 -->
-[Pergl 2019]: https://doi.org/10.5334/dsj-2019-059 "``Data Stewardship Wizard'': A Tool Bringing Together Researchers, Data Stewards, and Data Experts around Data Management Planning"
-<!-- ch5-97 -->
-[Piper 2020]: https://doi.org/10.1080/14490854.2020.1796500 "Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters"
-<!-- Poiata 2016 -->
 [Poiata 2016]: https://doi.org/10.1093/gji/ggw071 "Multiband array detection and location of seismic sources recorded by dense seismic networks"
-<!-- Poiata 2023 -->
 [Poiata 2023]: https://doi.org/10.5281/zenodo.7788030 "BackTrackBB: Multi-band array detection and location of seismic sources (PyCOMPSs implementation)"
-<!-- polleresMoreDecentralizedVision2020a -->
-[Polleres 2020]: https://doi.org/10.3233/SW-190380 "A more decentralized vision for linked data"
-<!-- Poveda 2010 -->
-[Poveda 2010]: https://doi.org/10.1007/978-3-642-14264-2_10 "Common Pitfalls in Ontology Development"
-<!-- ch8-12 -->
-[Price 2018]: https://doi.org/10.31219/osf.io/s2p73 "ALICE: Angled Label Image Capture and Extraction for high throughput insect specimen digitisation"
-<!-- Prlić 2012 -->
-[Prlić 2012]: https://doi.org/10.1371/journal.pcbi.1002802 "Ten Simple Rules for the Open Development of Scientific Software"
-<!-- ch8-40 -->
-[Pryer 2022]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)"
-<!-- RDF 1.1 2014 -->
-[RDF 1.1 2014]: https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/ "RDF 1.1 Concepts and Abstract Syntax"
-<!-- Rehm 2021 -->
 [Rehm 2021]: https://doi.org/10.1016/j.xgen.2021.100029 "GA4GH: International policies and standards for data sharing across genomic research and healthcare"
-<!-- DigitalObjectInterface -->
-[Reilly 2009]: https://www.dona.net/doipv1doc "Digital Object Interface Protocol Version 1.0"
-<!-- Reis 2022 -->
 [Reis 2022]: https://doi.org/10.1109/ACCESS.2021.3137671 "Developing Docker and Docker-Compose Specifications"
-<!-- rfc2818 -->
-[Rescorla 2000]: https://doi.org/10.17487/rfc2818 "HTTP Over TLS"
-<!-- ch5-100 -->
-[Rettberg 2015]: https://doi.org/10.5860/crln.76.6.9326 "OpenAIRE: Supporting a European open access mandate"
-<!-- 10.1002/jcc.26842 -->
-[Riccardi 2022]: https://doi.org/10.1002/jcc.26842 "Towards improved FAIRness of the ThermoML Archive"
-<!-- WebSocketsStandard -->
-[Rice 2022]: https://websockets.spec.whatwg.org/ "WebSockets Standard"
-<!-- ch5-105 -->
-[RO-Crate 1.0]: https://doi.org/10.5281/zenodo.3541888 "RO-Crate Metadata Specification 1.0"
-<!-- ch5-107 -->
-[RO-Crate 1.1]: https://w3id.org/ro/crate/1.1 "RO-Crate Metadata Specification 1.1"
-<!-- rocrate1.1 -->
-[RO-Crate 1.1.3]: https://w3id.org/ro/crate/1.1 "RO-Crate Metadata Specification 1.1.3"
-<!-- rocrate1.2 -->
-[RO-Crate 1.2]: https://www.researchobject.org/ro-crate/1.2-DRAFT/ "RO-Crate Metadata Specification 1.2.0"
-<!-- ch5-95 -->
-[ro-crate-html-js]: https://www.npmjs.com/package/ro-crate-html-js "ro-crate-html-js"
-<!-- 10.7490/f1000research.1114375.1 -->
-[Robinson 2017]: https://doi.org/10.7490/f1000research.1114375.1 "CWL Viewer: The Common Workflow Language viewer"
-<!-- cwlviewer -->
-[Robinson 2023]: https://github.com/common-workflow-language/cwlviewer "common-workflow-language/cwlviewer: v1.4.7"
-<!-- faircookbook -->
-[Rocca-Serra 2023]: https://doi.org/10.1038/s41597-023-02166-3 "The FAIR cookbook - the essential resource for and by FAIR doers"
-<!-- ch6-28 -->
-[Saltz 2006]: https://doi.org/10.1093/bioinformatics/btl272 "caGrid: design and implementation of the core architecture of the cancer biomedical informatics grid"
-<!-- Samaniego 2010 -->
 [Samaniego 2010]: https://doi.org/10.1029/2008WR007327 "Multiscale parameter regionalization of a grid-based hydrologic model at the mesoscale"
-<!-- Samuel 2022 -->
 [Samuel 2022]: https://doi.org/10.1186/s13326-021-00253-1 "End-to-End provenance representation for the understandability and reproducibility of scientific experiments using a semantic approach"
-<!-- ch5-101 -->
-[Sandve 2013]: https://doi.org/10.1371/journal.pcbi.1003285 "Ten simple rules for reproducible computational research"
-<!-- sandvineGlobalInternetPhenomena -->
-[Sandvine 2022]: https://www.sandvine.com/global-internet-phenomena-report-2022 "Global Internet Phenomena Report"
-<!-- sauermannCoolURIsSemantic2011 -->
-[Sauermann 2008]: http://www.w3.org/TR/cooluris/ "Cool URIs for the semantic web"
-<!-- Scheidegger 2008 -->
 [Scheidegger 2008]: https://doi.org/10.1145/1376616.1376747 "Querying and re-using workflows with VsTrails"
-<!-- schema.org -->
-[schema.org]: https://schema.org/ "Schema.org - Schema.org"
-<!-- SchemaOrgActions -->
-[schema actions]: https://schema.org/docs/actions.html "Schema.org Actions"
-<!-- w3-rdf11-primer -->
-[Schreiber 2014]: http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624 "RDF 1.1 Primer"
-<!-- ch5-102 -->
-[Schriml 2020]: https://doi.org/10.1038/s41597-020-0524-5 "COVID-19 pandemic reveals the peril of ignoring metadata standards"
-<!-- Schröder 2022 -->
-[Schröder 2022]: https://doi.org/10.1186/s13326-021-00257-x "Structure-based knowledge acquisition from electronic lab notebooks for research data provenance documentation"
-<!-- Schultes 2019 -->
-[Schultes 2019]: https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D "FAIR principles and digital objects: Accelerating convergence on a data infrastructure"
-<!-- FIP -->
-[Schultes 2020]: https://doi.org/10.1007/978-3-030-65847-2_13 "Reusable FAIR implementation profiles as accelerators of FAIR convergence"
-<!-- 10.3389/data.2022.883341 -->
-[Schultes 2022]: https://doi.org/10.3389/data.2022.883341 "FAIR Digital Twins for Data-Intensive Research"
-<!-- fdo-DOIPEndorsement -->
-[Schwardmann 2022a]: https://doi.org/10.5281/zenodo.7824796 "DOIP endorsement request"
-<!-- schwardmannTwoExamplesHow2022 -->
-[Schwardmann 2022b]: https://doi.org/10.3897/rio.8.e96014 "Two Examples on How FDO Types can Support Machine and Human Readability"
-<!-- surveyOntology -->
-[Scrocca 2021]: https://doi.org/10.4126/frl01-006429412 "The Survey Ontology: Packaging Survey Research as Research Objects"
-<!-- Sefton 2018 -->
-[Sefton 2018]: https://doi.org/10.5281/zenodo.1445817 "DataCrate: a method of packaging, distributing, displaying and archiving Research Objects"
-<!-- ch5-49 -->
-[Sefton 2021b]: https://github.com/UTS-eResearch/ro-crate-js "GitHub -- UTS-eResearch/ro-crate-js"
-<!-- Sefton 2021 -->
-[Sefton 2021a]: http://ptsefton.com/2021/04/07/rdmpic/ "FAIR Data Management; It's a lifestyle not a lifecycle"
-<!-- DataInformationView -->
-[Semmler 2022]: https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi "IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP historical"
-<!-- singhal2012 -->
-[Singhal 2012]: https://blog.google/products/search/introducing-knowledge-graph-things-not/ "Introducing the knowledge graph: Things, not strings"
-<!-- Sirvent 2022 -->
 [Sirvent 2022]: https://hdl.handle.net/2117/384589 "Automatic, Efficient, and Scalable Provenance Registration for FAIR HPC Workflows"
-<!-- smithOBOFoundryCoordinated2007a -->
-[Smith 2007]: https://doi.org/10.1038/nbt1346 "The OBO Foundry"
-<!-- Smith 2016 -->
-[Smith 2016]: https://doi.org/10.7717/peerj-cs.86 "Software citation principles"
-<!-- LREC2022 -->
-[Smith 2022]: https://aclanthology.org/2022.signlang-1.28 "Integrating Auslan Resources into the Language Data Commons of Australia"
-<!-- Snowley 2023 -->
 [Snowley 2023]: https://www.hdruk.ac.uk/wp-content/uploads/2023/10/Integrating-Our-Community_v1-Oct-2023-compressed.pdf "Integrating Our Community"
-<!-- ch5-111 -->
-[Soiland-Reyes 2014]: https://w3id.org/bundle/2014-11-05/ "Research Object Bundle 1.0"
-<!-- Soiland-Reyes 2016 -->
 [Soiland-Reyes 2016]: https://s11.no/2016/provweek-tavernaprov/ "Tracking Workflow Execution With TavernaPROV"
-<!-- Soiland-Reyes 2018 -->
 [Soiland-Reyes 2018]: https://doi.org/10.5281/zenodo.1471585 "common-workflow-language/cwlprov: CWLProv 0.6.0"
-<!-- ch5-108 -->
-[Soiland-Reyes 2020a]: https://twitter.com/soilandreyes/status/1250721245622079488 "I am looking for which bioinformatics journals encourage authors to submit their code/pipeline/workflow supporting data analysis"
-<!-- Soiland-Reyes 2021 -->
 [Soiland-Reyes 2021]: https://doi.org/10.5281/zenodo.4633732 "Describing and packaging workflows using RO-Crate and BioCompute Objects"
-<!-- Soiland-Reyes 2022 -->
 [Soiland-Reyes 2022a]: https://s11.no/2022/phd/ro-crate/ "Packaging research artefacts with RO-Crate"
-<!-- Soiland-Reyes 2022b -->
-[Soiland-Reyes 2022b]: https://s11.no/2022/phd/canonical-workflow-building-blocks/ "Making Canonical Workflow Building Blocks interoperable across workflow languages"
-<!-- 10.3897/rio.8.e93937 -->
 [Soiland-Reyes 2022c]: https://s11.no/2022/phd/fdo-with-ro-crate/ "Creating lightweight FAIR digital objects with RO-Crate"
-<!-- 10.3897/rio.8.e94501 -->
-[Soiland-Reyes 2022d]: https://s11.no/2022/phd/updating-ld-for-fdo/ "Updating Linked Data practices for FAIR Digital Object principles"
-<!-- 10.5281/zenodo.7256713 -->
-[Soiland-Reyes 2022e]: https://doi.org/10.5281/zenodo.7256713 "stain/signposting: Signposting v0.9.0"
-<!-- 10.5281/zenodo.7152762 -->
-[Soiland-Reyes 2022f]: https://doi.org/10.5281/zenodo.7152762 "EuroScienceGateway: WP2 introduction"
-<!-- 10.5281/zenodo.5833456 -->
-[Soiland-Reyes 2022g]: https://w3id.org/ro/doi/10.5281/zenodo.5146227 "Packaging research artefacts with RO-Crate"
-<!-- soilandreyes2023 -->
-[Soiland-Reyes 2023a]: https://w3id.org/ro/doi/10.5281/zenodo.8075229 "Comparison tables for evaluating FAIR Digital Object and Linked Data"
-<!-- soilandreyes2023b -->
-[Soiland-Reyes 2023b]: https://doi.org/10.5281/zenodo.7774582 "Enabling FAIR Signposting and RO-Crate for content/metadata discovery and consumption"
-<!-- soilandreyes2023c -->
-[Soiland-Reyes 2023c]: https://s11.no/2023/phd/evaluating-fdo/ "Evaluating FAIR Digital Object and Linked Data as distributed object systems"
-<!-- fdo-collections -->
-[Soiland-Reyes 2023d]: https://doi.org/10.5281/zenodo.7828632 "Building diverse FDO Collections using RO-Crate"
-<!-- 5s-crate -->
 [Soiland-Reyes 2023e]: https://w3id.org/5s-crate/0.4 "Five Safes RO-Crate profile"
-<!-- Soiland-Reyes 2023f -->
 [Soiland-Reyes 2023f]: https://doi.org/10.5281/zenodo.10376350 "TRE-FX Technical Documentation - Five Safes RO-crate"
-<!-- Soiland-Reyes 2024 -->
-[Soiland-Reyes 2024]: https://doi.org/10.37044/osf.io/gmk2h "Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas"
-<!-- ch8-66 -->
-[Speicher 2015]: http://www.w3.org/TR/2015/REC-ldp-20150226/ "Linked Data Platform 1.0"
-<!-- w3-ldp -->
-[Sporny 2014]: https://www.w3.org/TR/2014/REC-json-ld-20140116/ "JSON-LD 1.0: A JSON-based Serialization for Linked Data"
-<!-- w3-rdfa-primer -->
-[Sporny 2015]: https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/ "RDFa 1.1 Primer"
-<!-- w3-json-ld -->
 [Sporny 2020]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1: A JSON-based Serialization for Linked Data"
-<!-- Draftietfmediamansuffixes00MediaTypes -->
-[Sporny 2023]: https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/ "Media Types with Multiple Suffixes"
-<!-- stallingsHandbookComputercommunicationsStandards1990 -->
-[Stallings 1990]: https://identifiers.org/isbn/9780672226977 "Handbook of computer-communications standards: The open systems (OSI) model and OSI-related standards"
-<!-- stanczykProcessModellingInformation1987 -->
-[Stanczyk 1987]: https://doi.org/10.21954/ou.ro.0000f821 "Process modelling for information system description"
-<!-- stefiDevelopReuseTwo2015a -->
-[Stefi 2015a]: http://doi.org/10.1007/978-3-319-19593-3_18 "To develop or to reuse? Two perspectives on external reuse in software projects"
-<!-- stefiDevelopersMakeUnbiased2015 -->
-[Stefi 2015b]: https://doi.org/10.18151/7217489 "Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components"
-<!-- Stodden 2016 -->
-[Stodden 2016]: https://doi.org/10.1126/science.aah6168 "Enhancing reproducibility for computational methods"
-<!-- Suetake 2022a -->
 [Suetake 2022]: https://doi.org/10.12688/f1000research.122924.1 "Sapporo: A workflow execution service that encourages the reuse of workflows in various languages in bioinformatics"
-<!-- Suetake 2023 -->
 [Suetake 2023a]: https://doi.org/10.1093/gigascience/giad031 "A workflow reproducibility scale for automatic validation of biological interpretation results"
-<!-- Suetake 2023b -->
 [Suetake 2023b]: https://doi.org/10.5281/zenodo.10134452 "sapporo-wes/sapporo-service"
-<!-- rfc3650 -->
-[Sun 2003a]: https://doi.org/10.17487/rfc3650 "Handle System Overview"
-<!-- rfc3652 -->
-[Sun 2003b]: https://doi.org/10.17487/rfc3652 "Handle System Protocol (ver 2.1) Specification"
-<!-- ch8-9 -->
-[Sweeney 2018]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system"
-<!-- Taschuk 2017 -->
-[Taschuk 2017]: https://doi.org/10.1371/journal.pcbi.1005412 "Ten simple rules for making research software more robust"
-<!-- Taivalsaari 2021 -->
-[Taivalsaari 2021]: https://doi.org/10.1007/978-3-030-74296-6_28 "Full Stack Is Not What It Used to Be"
-<!-- ch8-13 -->
-[Tegelberg 2017]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
-<!-- ch6-20 -->
-[Tejedor 2017]: https://doi.org/10.1177/1094342015594678 "PyCOMPSs: Parallel computational workflows in Python"
-<!-- ch5-114 -->
-[Thieberger 2012]: https://hdl.handle.net/10125/4567 "Keeping records of language diversity in melanesia: The Pacific and regional archive for digital sources in endangered cultures (PARADISEC)"
-<!-- ch8-2 -->
-[Thiers 2016]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
-<!-- w3-xmlschema11 -->
-[Thompson 2012]: https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/ "W3C XML Schema Definition Language (XSD) 1.1 Part 1"
-<!-- Thompson 2020 -->
-[Thompson 2020]: https://doi.org/10.1162/dint_a_00031 "Making FAIR Easy with FAIR Tools: From Creolization to Convergence"
-<!-- thorntonUsingShapeExpressions2019a -->
-[Thornton 2019]: https://doi.org/10.1007/978-3-030-21348-0_39 "Using shape expressions (ShEx) to share RDF data models and to guide curation with rigorous validation"
-<!-- tirmiziMappingOBOOWL2011a -->
-[Tirmizi 2011]: https://doi.org/10.1186/2041-1480-2-s1-s3 "Mapping between the OBO and OWL ontology languages"
-<!-- Tran 2014 -->
-[Tran 2014]: https://doi.org/10.1007/978-3-319-05458-2_27 "Linked Data Mashups: A Review on Technologies, Applications and Challenges"
-<!-- Trautwein 2022 -->
-[Trautwein 2022]: https://doi.org/10.48550/arXiv.2208.05877 "Design and Evaluation of IPFS: A Storage Layer for the Decentralized Web"
-<!-- ch8-32 -->
-[Triki 2020]: https://doi.org/10.5220/0009170005230529 "Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3"
-<!-- ch5-116 -->
-[Troncy 2010]: https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511 "VAMP: A service for validating MPEG-7 descriptions w.r.t.
-to formal profile definitions"
-<!-- Tudorache 2020 -->
-[Tudorache 2020]: https://doi.org/10.3233/SW-190382 "Ontology engineering: Current state, challenges, and future directions"
-<!-- tupelo-schneckrobertBriefIntroductionCordra2022 -->
-[Tupelo-Scheck 2022]: https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf "Brief Introduction to Cordra & DOIP"
-<!-- turcoaneLinkedDataJSONLD2014a -->
-[Turcoane 2014]: https://doi.org/10.55630/dipp.2014.4.11 "Linked data, JSON-LD and the semantics of cultural and scientific heritage"
-<!-- ch8-41 -->
-[Unger 2016]: https://doi.org/10.1186/s12862-016-0827-5 "Computer vision applied to herbarium specimens of German trees"
-<!-- ch5-117 -->
-[Van de Sompel 2007]: http://icl.utk.edu/ctwatch/quarterly/articles/2007/08/interoperability-for-the-discovery-use-and-re-use-of-units-of-scholarly-communication/ "Interoperability for the discovery, use, and re-use of units of scholarly communication"
-<!-- rfc7089 -->
-[Van de Sompel 2013]: https://doi.org/10.17487/rfc7089 "HTTP Framework for Time-Based Access to Resource States --Memento"
-<!-- vandesompel2015 -->
-[Van de Sompel 2015]: https://doi.org/10.1045/november2015-vandesompel "Reminiscing About 15 Years of Interoperability Efforts"
-<!-- Van de Sompel 2022 -->
-[Van de Sompel 2022]: https://signposting.org/FAIR/ "FAIR Signposting Profile"
-<!-- Van de Sompel 2023 -->
-[Van de Sompel 2023]: https://doi.org/10.5281/zenodo.7977333 "FAIR Digital Objects and FAIR Signposting"
-<!-- DesigningLinkedData2018 -->
-[Verborgh 2018]: https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/ "Designing a Linked Data developer experience"
-<!-- verborghSemanticWebIdentity2020a -->
-[Verborgh 2020]: https://doi.org/10.3233/SW-190372 "The semantic web identity crisis: In search of the trivialities that never were"
-<!-- 10.5281/zenodo.7848102 -->
-[Verburg 2023]: https://doi.org/10.5281/zenodo.7848102 "FAIR-IMPACT project response to \"FAIR Assessment Tools: Towards an \"Apples to Apples\" Comparisons\""
-<!-- 10.5281/zenodo.4671709 -->
-[Vergoulis 2021]: https://doi.org/10.5281/zenodo.4671709 "Use of RO-Crates in SCHeMa"
-<!-- ch5-118 -->
-[Vergoulis 2022]: https://doi.org/10.48550/arXiv.2103.13138 "SCHeMa: Scheduling Scientific Containers on a Cluster of Heterogeneous Machines"
-<!-- de Visser 2023 -->
-[de Visser 2023]: https://doi.org/10.1371/journal.pcbi.1011369 "Ten quick tips for building FAIR workflows"
-<!-- Vivian 2017 -->
 [Vivian 2017]: https://doi.org/10.1038/nbt.3772 "Toil enables reproducible, open source, big biomedical data analyses"
-<!-- ch5-119 -->
-[Volk 2014]: https://doi.org/10.1007/s00267-014-0258-2 "Why is data sharing in collaborative natural resource efforts so hard and what can we do to improve it?"
-<!-- ch5-120 -->
-[W3C 2007]: https://www.w3.org/2001/tag/doc/httpRange-14/2007-08-31/HttpRange-14.html "Dereferencing HTTP URIs"
-<!-- w3-owl2-overview -->
 [W3C 2012]: https://www.w3.org/TR/2012/REC-owl2-overview-20121211 "OWL 2 Web Ontology Language Document Overview"
-<!-- w3-sparql11-overview -->
-[W3C 2013]: https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/ "SPARQL 1.1 Overview"
-<!-- DataW3C -->
-[W3C 2015]: https://www.w3.org/standards/semanticweb/data "Linked Data"
-<!-- UsageStatisticsJSONLD -->
-[W3Techs 2023]: https://w3techs.com/technologies/details/da-jsonld "Usage Statistics of JSON-LD for Websites"
-<!-- Walton 2020 -->
-[Walton 2020a]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
-<!-- ch8-34 -->
-[Walton 2020b]: https://doi.org/10.3897/rio.6.e56211 "A cost analysis of transcription systems"
-<!-- ch8-16 -->
-[Watanabe 2019]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections: New research tools move specimens, data to center stage"
-<!-- HTMLStandard -->
-[WHATWG 2023]: https://html.spec.whatwg.org/multipage/microdata.html "Microdata"
-<!-- weigelRDARecommendationPID2018 -->
-[Weigel 2018]: https://doi.org/10.15497/rda00031 "RDA Recommendation on PID Kernel Information"
-<!-- fdo-KernelAttributes -->
-[Weigel 2022]: https://doi.org/10.5281/zenodo.7825693 "FDO -- kernel attributes & metadata"
-<!-- fdo-DocProcessStd -->
-[Weiland 2022a]: https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_ "FAIR Digital Objects Forum Document Standards"
-<!-- fdo-MachineActionDef -->
-[Weiland 2022b]: https://doi.org/10.5281/zenodo.7825650 "FDO machine actionability"
-<!-- de Wit 2022 -->
 [de Wit 2022]: https://doi.org/10.5281/zenodo.7113250 "A Non-Intimidating Approach to Workflow Reproducibility in Bioinformatics"
-<!-- de Wit 2023 -->
 [de Wit 2023]: https://doi.org/10.5281/zenodo.10251812 "Analysis of runcrate"
-<!-- wieczorekDarwinCoreEvolving2012 -->
-[Wieczorek 2012]: https://doi.org/10.1371/journal.pone.0029715 "Darwin Core: An Evolving Community-Developed Biodiversity Data Standard"
-<!-- rfc6906 -->
-[Wilde 2013]: https://doi.org/10.17487/rfc6906 "The 'profile' Link Relation Type"
-<!-- RFC9264 -->
-[Wilde 2020]: https://doi.org/10.17487/rfc9264 "Linkset: Media Types and a Link Relation Type for Link Sets"
-<!-- Wilkinson 2016 -->
-[Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
-<!-- Wilkinson 2018 -->
-[Wilkinson 2018]: https://doi.org/10.1038/sdata.2018.118 "A design framework and exemplar metrics for FAIRness"
-<!-- 10.5281/zenodo.7463421 -->
-[Wilkinson 2022a]: https://doi.org/10.5281/zenodo.7463421 "FAIR Assessment Tools: Towards an “Apples to Apples” Comparisons"
-<!-- wilkinsonWorkflowsWhenParts2022b -->
-[Wilkinson 2022b]: https://doi.org/10.48550/arxiv.2209.09022 "F*** workflows: When parts of FAIR are missing"
-<!-- Wilkinson2023 -->
-[Wilkinson 2023a]: https://doi.org/10.12688/openreseurope.15364.2 "Community-driven governance of FAIRness assessment"
-<!-- Wilkinson2024 -->
-[Wilkinson 2024]: https://doi.org/10.5281/zenodo.10453348 "Report on FAIR Signposting and its uptake by the community"
-<!-- williamsOpenPHACTSSemantic2012c -->
-[Williams 2012]: https://doi.org/10.1016/j.drudis.2012.05.016 "Open PHACTS: Semantic interoperability for drug discovery"
-<!-- wittenburgDigitalObjectsDrivers2019a -->
-[Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
-<!-- ch8-27 -->
-[Wittenburg 2021]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
-<!-- wittenburgFAIRDigitalObject2022b -->
-[Wittenburg 2022]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
-<!-- Wittenburg 2023a -->
-[Wittenburg 2023a]: https://doi.org/10.52825/cordi.v1i.263 "FDOs to Enable Cross-Silo Work"
-<!-- Wittenburg 2023b -->
-[Wittenburg 2023b]: https://doi.org/10.52825/cordi.v1i.374 "FDO to Structure the Domain of Knowledge"
-<!-- Wittner 2020 -->
-[Wittner 2020]: https://s11.no/2021/phd/iso-23494-provenance/ "ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data"
-<!-- Wittner 2022 -->
 [Wittner 2022]: https://doi.org/10.1038/s41597-022-01537-6 "Lightweight Distributed Provenance Model for Complex Real--world Environments"
-<!-- Wittner 2023 -->
-[Wittner 2023a]: https://doi.org/10.1002/lrh2.10365 "Toward a common standard for data and specimen provenance in life sciences"
-<!-- Wittner 2023b -->
 [Wittner 2023b]: https://s11.no/2023/phd/linking-provenance/ "Linking provenance and its metadata in multi-organizational environments of life sciences"
-<!-- Wittner 2023c -->
 [Wittner 2023c]: https://doi.org/10.5281/zenodo.8095888 "Packing provenance using CPM RO-Crate profile"
-<!-- wolstencroftRightFieldEmbeddingOntology2011b -->
-[Wolstencroft 2011]: https://doi.org/10.1093/bioinformatics/btr312 "RightField: Embedding ontology annotation in spreadsheets"
-<!-- wolstencroftTavernaWorkflowSuite2013d -->
-[Wolstencroft 2013]: https://doi.org/10.1093/nar/gkt328 "The Taverna workflow suite"
-<!-- w3-rdf11-concepts -->
-[Wood 2014]: https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/ "RDF 1.1 Concepts and Abstract Syntax"
-<!-- Woolland 2022 -->
-[Woolland 2022]: https://doi.org/10.3897/rio.8.e94349 "Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows"
-<!-- ch5-124 -->
-[WorkflowHub 2023]: https://w3id.org/workflowhub/ "WorkflowHub project: Project pages for developing and running the WorkflowHub, a registry of scientific workflows"
-<!-- Draftbhuttonjsonschema -->
-[Wright 2022]: https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/ "JSON schema: A media type for describing JSON documents"
-<!-- WRROC 2023a -->
 [WRROC 2023a]: https://w3id.org/ro/wfrun/process/0.4 "Process Run Crate specification"
-<!-- WRROC 2023b -->
 [WRROC 2023b]: https://w3id.org/ro/wfrun/workflow/0.4 "Workflow Run Crate specification"
-<!-- WRROC 2023c -->
 [WRROC 2023c]: https://w3id.org/ro/wfrun/provenance/0.4 "Provenance Run Crate specification"
-<!-- Yoo 2003 -->
 [Yoo 2003]: https://doi.org/10.1007/10968987_3 "SLURM: Simple Linux Utility for Resource Management"
-<!-- Yuen 2021 -->
-[Yuen 2021]: https://doi.org/10.1093/nar/gkab346 "The Dockstore: enhancing a community platform for sharing reproducible and accessible computational protocols"
-<!-- zarrasComparisonFrameworkMiddleware2004a -->
-[Zarras 2004]: https://doi.org/10.5381/jot.2004.3.5.a2 "A Comparison Framework for Middleware Infrastructures"
-<!-- Zerouali 2023 -->
-[Zerouali 2023]: https://doi.org/10.1109/MSR59073.2023.00078 "Helm Charts for Kubernetes Applications: Evolution, Outdatedness and Security Risks"
-<!-- ch5-125 -->
-[Zhao 2012]: https://research.manchester.ac.uk/en/publications/cba81ca4-e92c-408e-8442-383d1f15fcdf "Why workflows break -- understanding and combating decay in taverna workflows"
-<!-- ch5-126 -->
-[Zoubek 2021]: https://github.com/e11938258/RO-Crates-and-Excel "RO Crates and Excel"
-<!-- ch5-127 -->
-[Žumer 2009]: https://doi.org/10.1515/9783598441844 "National Bibliographies in the Digital Age: Guidance and New Directions"
