@@ -1,7 +1,7 @@
 aside #TableOfContents {
   width: 35%;
   padding-left: .5rem;
-  margin-left: .5rem;
+  margin-left: 1rem;
   float: right;
   box-shadow: inset 5px 0 5px -5px #29627e;
   font-style: italic;
@@ -15,7 +15,7 @@ aside #TableOfContents ul li ul::before {
   content: "［"
 }
 aside #TableOfContents ul li ul {
-  display: inline;
+  display: inline-block;
 }
 aside #TableOfContents ul li ul::after {
   content: "］"
@@ -41,7 +41,7 @@ nav {
     display: inline;
     color: $color-blossom;
     font-size: .8em;
-    margin: 0 2.75% 0 0;
+    margin: 0 1em 0 0;
     text-transform: uppercase;
   }
 }
