@@ -35,10 +35,15 @@ _Stian Soiland-Reyes¹², Peter Sefton³, Leyla Jael Castro⁴, Frederik Coppens
 ⁴ ZB Med, Cologne, Germany  
 ⁵ VIB-UGent Center for Plant Systems Biology, Ghent, Belgium  
 ⁶ Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
-⁷ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy
+⁷ Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy  
 ⁸ Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
 
 </div>
+
+* **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
+* **Modifications**: Formatting as Markdown; figure caption formatting; references in s11 house style; citations merged and renumbered; 
+  acknowledgements and references moved to separate chapters. Figure 1 font re-rendered. Added figure 2 and citation Van de Sompel 2022. Fixed minor typos and grammatical errors
+
 
 ## Abstract
 
@@ -85,7 +90,13 @@ To illustrate how such challenges can be handled, we detail how the WorkflowHub 
 
 Further work on RO-Crate profiles include to formalise links to the API operations and repositories \[FDOF5,FDOF7], to include PIDs of profiles and types in the FAIR Signposting, and HTTP navigation to individual resources within the RO-Crate.
 
-RO-Crate has shown a broad adoption by communities across many scientific disciplines, providing a lightweight, and therefore easy to adopt, approach to generating FAIR Digital Objects. It is rapidly becoming an integral part of the interoperability fabric between the different components as demonstrated here for WorkflowHub, contributing to building the European Open Science Cloud.
+RO-Crate has shown a broad adoption by communities across many scientific disciplines, providing a lightweight, and therefore easy to adopt, approach to generating FAIR Digital Objects ([Figure 2](#fig:signposting-overview)).
+It is rapidly becoming an integral part of the interoperability fabric between the different components as demonstrated here for WorkflowHub, contributing to building the European Open Science Cloud.
+
+
+{{< figure src="signposting-overview.svg" link="signposting-overview.svg" id="fig:signposting-overview" 
+  width="100%" title="WorkflowHub FDOs using Signposting and RO-Crate"
+  caption="In this implementation of FDO (compare with [figure 1](#fig:signposting), WorkflowHub uses DOIs for persistent identifiers, which for human readers resolve to a landing page. Machine clients can extract the FAIR Signposting `Link` headers [[Van de Sompel 2022](https://signposting.org/FAIR/)] to form the FDO PID Record. Link relation `cite-as` provides the PID [[Bayarri 2022](https://doi.org/10.48546/workflowhub.workflow.255.1)] (in case the WorkflowHub page was discovered in other ways), and `describedby` links to the metadata FDO in JSON-LD format. Within the metadata file it indicates conformance to the Workflow RO-Crate profile (a Profile Crate FDO), while `item` links to the downloadable ZIP archive, which contains both the Galaxy workflow files and the RO-Crate metadata file. Alternative metadata in XML following the DataCite Metadata Schema is also linked to using `describedby`. Link relation `type` in the Signposting can provide the FDO type; this is not yet implemented by WorkflowHub -- it is currently unclear if this type should be a _Dataset_ (the download from this landing page is an RO-Crate) and/or _ComputationalWorkflow_ (the PID/page/crate identifies and describes a workflow))." >}}
 
 
 ## Presenting author
@@ -211,3 +222,7 @@ _Data Science_ (pre-press)
 **The FAIR Guiding Principles for scientific data management and stewardship**.   
 _Nature Scientific Data_ **3**:160018   
 <https://doi.org/10.1038/sdata.2016.18>
+
+\[Van de Sompel 2022\] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
+**FAIR Signposting Profile**. (version 20220727)\
+<https://signposting.org/FAIR/>
