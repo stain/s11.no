@@ -243,7 +243,7 @@ It is an important part of the simplification of the Semantic Web in RO-Crate th
 
 RO-Crate profiles like WRROC live are doing a combination of *restrictions* (requiring the crate to have a particular entity) and *extensions* (suggesting additional terms to use). By following the RO-Crate philosophy the profiles also reuse existing schema.org types as much as possible, adding a filtered overlay of their many properties, just like RO-Crate itself, and only adding terms where no appropiate alternative exist.
 
-Listing [6.3](#wrroc-in-owl) shows an attempt to declare the partial WRROC requirements from the top of this section in OWL. In doing so it was necessary to introduce additional types for the profile and the action, in addition to anonymous union classes and inverse properties. It is clear that expressing a full RO-Crate profile in this matter would require a deep understanding of OWL ontologies and would require its own set of unit tests, and would not be inline with the RO-Crate philosophy of *just enough Linked Data*.
+Listing [6er.3](#wrroc-in-owl) shows an attempt to declare the partial WRROC requirements from the top of this section in OWL. In doing so it was necessary to introduce additional types for the profile and the action, in addition to anonymous union classes and inverse properties. It is clear that expressing a full RO-Crate profile in this matter would require a deep understanding of OWL ontologies and would require its own set of unit tests, and would not be inline with the RO-Crate philosophy of *just enough Linked Data*.
 
 <figure id="wrroc-in-owl">
 
