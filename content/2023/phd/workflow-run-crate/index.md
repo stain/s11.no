@@ -95,7 +95,7 @@ Other data models like *wfprov* and *wfdesc*
 However, while these models address some workflow provenance representation issues, they have two main limitations: Firstly, the extensions of PROV are not directly interoperable because of differences in granularity or different assumptions in their workflow representations; secondly, their support from WMS is typically one system per model. An early approach to unify and integrate workflow provenance traces across WMS was WEST (Workflow Ecosystems through STandards) \[[Garijo 2014b]\], through the use of WINGS \[[Gil 2011]\] to build workflow templates and different converters.
 
 In all of these workflow provenance models, the emphasis is on the workflow execution structure as a directed graph, with only partial references for the data items.
-The REPRODUCE-ME ontology \[[Samuel 2022]\] extended PROV and P-Plan to explain the overall scientific process with the experimental context including real life objects (e.g. instruments, specimens) and human activities (e.g. lab protocols, screening), demonstrating provenance of individual Jupyter Notebook [cells](https://sheeba-samuel.github.io/REPRODUCE-ME/research/provbook.html) and highlighting the need for provenance also where there is no workflow management system.
+The REPRODUCE-ME ontology \[[Samuel 2022]\] extended PROV and P-Plan to explain the overall scientific process with the experimental context including real life objects (e.g. instruments, specimens) and human activities (e.g. lab protocols, screening), demonstrating [provenance of individual Jupyter Notebook cells](https://sheeba-samuel.github.io/REPRODUCE-ME/research/provbook.html) and highlighting the need for provenance also where there is no workflow management system.
 
 More recently, interoperability have been partially addressed by Common Worlflow Language Prov (CWLProv) \[[Khan 2019]\], which represents workflow enactments as ROs serialised according to the Big Data Bag (BDBag) approach \[[Chard 2016]\].
 The resulting format is a folder containing several data and metadata files \[[Soiland-Reyes 2018]\], expanding on the RO Bundle approach of Taverna \[[Soiland-Reyes 2016]\].
@@ -121,7 +121,7 @@ RO-Crate is general enough to be able to describe any dataset, but can also be m
 *profiles*.
 At the same time, the broad set of types and properties from Schema.org, complemented by a few additional terms from other vocabularies, make the RO-Crate model capable of expressing a wide range of contextual information that complements and enriches the core information specified by the profile.
 This may include, among others, the workflow authors and their affiliations, associated publications, licensing information, related software, etc.
-This is an approach used by WorkflowHub \[[Goble 2021]\], a workflow system agnostic workflow registry which specifies a Workflow RO-Crate profile \[[Bacall 2022]\] to gather the workflow definition with such metadata in an archived RO-Crate \[[1]\].
+This is an approach used by WorkflowHub \[[Goble 2021]\], a workflow system agnostic workflow registry which specifies a Workflow RO-Crate profile \[[Bacall 2022]\] to gather the workflow definition with such metadata in an archived RO-Crate[^1].
 
 In this work, we present **Workflow Run RO-Crate** (WRROC), an extension of RO-Crate for representing computational workflow execution provenance.
 Our main contributions are the following:
@@ -141,7 +141,7 @@ The rest of this section is organised as follows: we first describe the Workflow
 
 ## The Workflow Run RO-Crate profiles {#profiles}
 
-RO-Crate profiles are extensions of the base RO-Crate specification that describe how to represent the entities and relationships that appear in a specific domain or use case\[[2]\].
+RO-Crate profiles are extensions of the base RO-Crate specification that describe how to represent the entities and relationships that appear in a specific domain or use case[^2].
 An RO-Crate conforming to a profile is not just machine-readable, but also machine-actionable as a digital object whose type is represented by the profile itself \[[Soiland-Reyes 2022c]\].
 
 The Workflow Run RO-Crate profiles are the main outcome of the activities of the Workflow Run RO-Crate [Community](https://www.researchobject.org/workflow-run-crate), an open working group that includes workflow users and developers, WMS users and developers, and researchers and software engineers interested in workflow execution provenance and Findable, Accessible, Interoperable and Reusable (FAIR) approaches for data and software.
@@ -285,7 +285,7 @@ This profile is the most detailed of the three, and offers the highest level of 
 Support for the Workflow Run RO-Crate profiles presented in this work has been implemented in a number of systems, showing support from the community and demonstrating their usability in practice.
 We describe seven of these implementations (one in a conversion tool and six in WMS) in the following sections.
 These tools have been developed in parallel by different teams, and independently from each other.
-RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a]\] (section [\[[ch5:tooling]\]](../../../2022/phd/ro-crate/#tooling)), and the WRROC implementations have either re-used these or added their own approach to the standards.
+RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a], section [Tooling](../../../2022/phd/ro-crate/#tooling)\], and the WRROC implementations have either re-used these or added their own approach to the standards.
 
 ### Summary of implementations
 
@@ -293,15 +293,15 @@ RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a]\] (section [\[[
 
 <div id="implementation_summary_table">
 
-| **Impl.**                 | **Profile** | **Version URL/DOI**    | **Example**             |
-| ------------------------- | ----------- | ---------------------- | ----------------------- |
-| [runcrate](#runcrate)     | Provenance  | \[[Leo 2023a]\]        |  \[[Leo 2023]\]         |
-| [Galaxy](#galaxy)         | Workflow    | \[[Afgan 2023]\]       |  \[[De Geest 2023b]\]   |
-| [COMPSs](#compss)         | Workflow    | \[[Ejarque 2023]\]     |  \[[Poiata 2023]\]      |
-| [Streamflow](#streamflow) | Provenance  | \[[Colonnelli 2023b]\] |  \[[Colonnelli 2023a]\] |
-| [WfExS](#wfexs)           | Workflow    | \[[Fernández 2023a]\]  |  \[[Fernández 2023b]\]  |
-| [Sapporo](#sapporo)       | Workflow    | \[[Suetake 2023b]\]    |  \[[Ohta 2023]\]        |
-| [Autosubmit](#autosubmit) | Workflow    | \[[Beltrán 2023]\]     |  \[[Kinoshita 2023]\]   |
+| **Implementation**        | **Profile** | **Version URL/DOI**    | **Example**            |
+| ------------------------- | ----------- | ---------------------- | ---------------------- |
+| [runcrate](#runcrate)     | Provenance  | \[[Leo 2023a]\]        | \[[Leo 2023]\]         |
+| [Galaxy](#galaxy)         | Workflow    | \[[Afgan 2023]\]       | \[[De Geest 2023b]\]   |
+| [COMPSs](#compss)         | Workflow    | \[[Ejarque 2023]\]     | \[[Poiata 2023]\]      |
+| [Streamflow](#streamflow) | Provenance  | \[[Colonnelli 2023b]\] | \[[Colonnelli 2023a]\] |
+| [WfExS](#wfexs)           | Workflow    | \[[Fernández 2023a]\]  | \[[Fernández 2023b]\]  |
+| [Sapporo](#sapporo)       | Workflow    | \[[Suetake 2023b]\]    | \[[Ohta 2023]\]        |
+| [Autosubmit](#autosubmit) | Workflow    | \[[Beltrán 2023]\]     | \[[Kinoshita 2023]\]   |
 
 _**Table 1**: **Workflow Run Crate implementations**. Summary of each WRROC implementation, together with the profiles it implements, the latest software citation and an example crate of its application. Runcrate is a toolkit that converts CWLProv ROs to Provenance Run Crates, while the others are WMS._
 
@@ -317,7 +317,7 @@ Indeed, the CWLProv model provided a basis for the Provenance Run Crate profile,
 Runcrate converts both the retrospective provenance part of the CWLProv RO (the RDF graph of the workflow’s execution) and the prospective provenance part (the CWL files, including the workflow itself).
 Both parts are thus converted into a single, workflow language-agnostic metadata resource.
 
-Another functionality offered by the runcrate package is *runcrate report* which reports on the various executions described in an input RO-Crate, listing their starting and ending times, the values of the various parameters, etc. (example output in listing [\[lst:ml\_pipeline\_streamflow\_report\]](#lst:ml_pipeline_streamflow_report)).
+Another functionality offered by the runcrate package is *runcrate report* which reports on the various executions described in an input RO-Crate, listing their starting and ending times, the values of the various parameters, etc. (example output in [Figure 6](#lst:ml_pipeline_streamflow_report)).
 Runcrate report demonstrates how the provenance profiles presented in this work enable comparison of runs interoperably across different workflow languages or different implementations of the same language.
 This functionality has also been used as a lightweight validator for the various implementations.
 
@@ -514,65 +514,76 @@ Each action is linked to the corresponding workflow or tool via the
 *instrument* property, and reports its starting and ending time. For each action, input and output slots are referenced by the workflow, while the corresponding values are referenced by the action itself.
 The data entities and *PropertyValue* instances corresponding to the input and output values link to the corresponding parameter slots via the *exampleOfWork* property, providing information on the values taken by the parameters.
 
-Listing [\[lst:ml\_pipeline\_streamflow\_report\]](#lst:ml_pipeline_streamflow_report) shows the output of the
+[Figure 6](#lst:ml_pipeline_streamflow_report) shows the output of the
 `runcrate report` command for the StreamFlow RO-Crate.
 For each action (workflow or tool run), the tool reports the associated instrument (workflow or tool), the starting and ending time and the list of inputs and outputs, with arrows pointing from the formal parameter to the corresponding actual value taken during the execution of the action.
 
-    action: #30a65cba-1b75-47dc-ad47-1d33819cf156
-      instrument: predictions.cwl (['SoftwareSourceCode', 
-             'ComputationalWorkflow', 'HowTo', 'File'])
-      started: 2023-05-09T05:10:53.937305+00:00
-      ended: 2023-05-09T05:11:07.521396+00:00
-      inputs:
-        #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- predictions.cwl#slide
-        tissue_low <- predictions.cwl#tissue-low-label
-        9 <- predictions.cwl#tissue-low-level
-        tissue_low>0.9 <- predictions.cwl#tissue-high-filter
-        tissue_high <- predictions.cwl#tissue-high-label
-        4 <- predictions.cwl#tissue-high-level
-        tissue_low>0.99 <- predictions.cwl#tumor-filter
-        tumor <- predictions.cwl#tumor-label
-        1 <- predictions.cwl#tumor-level
-      outputs:
-        06133ec5f8973ec3cc5281e5df56421c3228c221 <- predictions.cwl#tissue
-        4fd6110ee3c544182027f82ffe84b5ae7db5fb81 <- predictions.cwl#tumor
-    action: #457c80d0-75e8-46d6-bada-b3fe82ea0ef1
-      step: predictions.cwl#extract-tissue-low
-      instrument: extract_tissue.cwl (['SoftwareApplication', 'File'])
-      started: 2023-05-09T05:10:55.236742+00:00
-      ended: 2023-05-09T05:10:55.910025+00:00
-      inputs:
-        tissue_low <- extract_tissue.cwl#label
-        9 <- extract_tissue.cwl#level
-        #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- extract_tissue.cwl#src
-      outputs:
-        6b15de40dd0ee3234062d0f261c77575a60de0f2 <- extract_tissue.cwl#tissue
-    action: #d09a8355-1a14-4ea4-b00b-122e010e5cc9
-      step: predictions.cwl#extract-tissue-high
-      instrument: extract_tissue.cwl (['SoftwareApplication', 'File'])
-      started: 2023-05-09T05:10:58.417760+00:00
-      ended: 2023-05-09T05:11:03.153912+00:00
-      inputs:
-        tissue_low>0.9 <- extract_tissue.cwl#filter
-        6b15de40dd0ee3234062d0f261c77575a60de0f2 <- extract_tissue.cwl#filter_slide
-        tissue_high <- extract_tissue.cwl#label
-        4 <- extract_tissue.cwl#level
-        #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- extract_tissue.cwl#src
-      outputs:
-        06133ec5f8973ec3cc5281e5df56421c3228c221 <- extract_tissue.cwl#tissue
-    action: #ae2163a8-1a2a-4d78-9c81-caad76a72e47
-      step: predictions.cwl#classify-tumor
-      instrument: classify_tumor.cwl (['SoftwareApplication', 'File'])
-      started: 2023-05-09T05:10:58.420654+00:00
-      ended: 2023-05-09T05:11:06.708344+00:00
-      inputs:
-        tissue_low>0.99 <- classify_tumor.cwl#filter
-        6b15de40dd0ee3234062d0f261c77575a60de0f2 <- classify_tumor.cwl#filter_slide
-        tumor <- classify_tumor.cwl#label
-        1 <- classify_tumor.cwl#level
-        #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- classify_tumor.cwl#src
-      outputs:
-        4fd6110ee3c544182027f82ffe84b5ae7db5fb81 <- classify_tumor.cwl#tumor
+<figure id="lst:ml_pipeline_streamflow_report>
+
+```console
+action: #30a65cba-1b75-47dc-ad47-1d33819cf156
+  instrument: predictions.cwl (['SoftwareSourceCode', 
+          'ComputationalWorkflow', 'HowTo', 'File'])
+  started: 2023-05-09T05:10:53.937305+00:00
+  ended: 2023-05-09T05:11:07.521396+00:00
+  inputs:
+    #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- predictions.cwl#slide
+    tissue_low <- predictions.cwl#tissue-low-label
+    9 <- predictions.cwl#tissue-low-level
+    tissue_low>0.9 <- predictions.cwl#tissue-high-filter
+    tissue_high <- predictions.cwl#tissue-high-label
+    4 <- predictions.cwl#tissue-high-level
+    tissue_low>0.99 <- predictions.cwl#tumor-filter
+    tumor <- predictions.cwl#tumor-label
+    1 <- predictions.cwl#tumor-level
+  outputs:
+    06133ec5f8973ec3cc5281e5df56421c3228c221 <- predictions.cwl#tissue
+    4fd6110ee3c544182027f82ffe84b5ae7db5fb81 <- predictions.cwl#tumor
+action: #457c80d0-75e8-46d6-bada-b3fe82ea0ef1
+  step: predictions.cwl#extract-tissue-low
+  instrument: extract_tissue.cwl (['SoftwareApplication', 'File'])
+  started: 2023-05-09T05:10:55.236742+00:00
+  ended: 2023-05-09T05:10:55.910025+00:00
+  inputs:
+    tissue_low <- extract_tissue.cwl#label
+    9 <- extract_tissue.cwl#level
+    #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- extract_tissue.cwl#src
+  outputs:
+    6b15de40dd0ee3234062d0f261c77575a60de0f2 <- extract_tissue.cwl#tissue
+action: #d09a8355-1a14-4ea4-b00b-122e010e5cc9
+  step: predictions.cwl#extract-tissue-high
+  instrument: extract_tissue.cwl (['SoftwareApplication', 'File'])
+  started: 2023-05-09T05:10:58.417760+00:00
+  ended: 2023-05-09T05:11:03.153912+00:00
+  inputs:
+    tissue_low>0.9 <- extract_tissue.cwl#filter
+    6b15de40dd0ee3234062d0f261c77575a60de0f2 <- extract_tissue.cwl#filter_slide
+    tissue_high <- extract_tissue.cwl#label
+    4 <- extract_tissue.cwl#level
+    #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- extract_tissue.cwl#src
+  outputs:
+    06133ec5f8973ec3cc5281e5df56421c3228c221 <- extract_tissue.cwl#tissue
+action: #ae2163a8-1a2a-4d78-9c81-caad76a72e47
+  step: predictions.cwl#classify-tumor
+  instrument: classify_tumor.cwl (['SoftwareApplication', 'File'])
+  started: 2023-05-09T05:10:58.420654+00:00
+  ended: 2023-05-09T05:11:06.708344+00:00
+  inputs:
+    tissue_low>0.99 <- classify_tumor.cwl#filter
+    6b15de40dd0ee3234062d0f261c77575a60de0f2 <- classify_tumor.cwl#filter_slide
+    tumor <- classify_tumor.cwl#label
+    1 <- classify_tumor.cwl#level
+    #af0253d688f3409a2c6d24bf6b35df7c4e271292 <- classify_tumor.cwl#src
+  outputs:
+    4fd6110ee3c544182027f82ffe84b5ae7db5fb81 <- classify_tumor.cwl#tumor
+```
+
+<figcaption>
+  <h4>runcrate report command line output</h4>
+  This informal listing of relevant RO-Crate entities describe each step execution. Note that inputs and outputs are of different types (not shown), e.g. `tissue\_low>0.9` is a string parameter, `6b15de…` is a filename, `#af0253…` is a collection.
+</figcaption>
+
+</figure>
 
 The *exampleOfWork* link between input / output values and parameter slots is used by `runcrate run` to reconstruct the CWL input parameters document needed to rerun the computation.
 The
@@ -637,7 +648,9 @@ As a result, combining the CPM and RO-Crate enables the lookup of research artef
 The RO-Crate profiles presented here provide a unified data model to describe the prospective and retrospective provenance of the execution of a computational workflow, together with contextual metadata about the workflow itself and its associated entities (inputs, outputs, code, etc.).
 The profiles are flexible, allowing to tailor the description to a broad variety of use cases, agnostic with respect to the WMS used and allow describing provenance traces at different levels of granularity.
 This facilitates developing implementations by multiple workflow systems (often with heterogeneous assumptions and requirements) – six of which have already been developed and are described in Section [1.3](#implementations) – allowing to perform comparisons between runs across heterogeneous systems.
-For instance, the [SPARQL](https://www.w3.org/TR/sparql11-overview/) query in listing [\[[sparql]\]](#sparql) returns all actions in a Workflow Run RO-Crate, together with their instruments and their starting and ending times:
+For instance, the [SPARQL](https://www.w3.org/TR/sparql11-overview/) query in [Figure 7](#sparql) returns all actions in a Workflow Run RO-Crate, together with their instruments and their starting and ending times:
+
+<figure id="sparql">
 
 ```sparql
 PREFIX schema: <http://schema.org/>
@@ -649,6 +662,12 @@ WHERE {
   OPTIONAL { ?action schema:endTime ?end }
 }
 ```
+
+<figcaption>
+  <h4>SPARQL query to find actions in a Workflow Run RO-Crate</h4>
+</figcaption>
+
+</figure>
 
 Additionally, having workflow runs and plans described according to the RO-Crate model allows capturing the context of the workflow itself (e.g. authors, related publications, other workflows, etc.) rather than the trace alone.
 Being based on RO-Crate, the profiles and their implementations are part of a growing [ecosystem](https://www.researchobject.org/ro-crate/in-use/) of tools and services maintained by the RO-Crate community.
@@ -677,8 +696,8 @@ and finally, in an unstructured, human-readable format.
 From this earlier analysis, we concluded that the CWLProv RDF representation of the workflow runs lacked many provenance metadata that was included in CWL-specific documents, such as the packed workflow and input parameter file.
 For example, the CWLProv RDF only contained the name of each workflow step, without including the link to the underlying CommandLineTool or nested Workflow that was executed; information that could be extracted from the packed workflow.
 
-In our analysis of runcrate, we compared the CWLProv RDF provenance graph with the RO-Crate metadata file. The results of the analysis are summarised in Table
-[2](#analysis_table) \[[3]\].
+In our analysis of runcrate, we compared the CWLProv RDF provenance graph with the RO-Crate metadata file. The results of the analysis are summarised in 
+[Table 2](#analysis_table).
 Overall, most of the information contained in CWLProv RDF is transferred to the RO-Crate metadata.
 In addition, the representation of some categories of metadata has improved, notably Workflow parameters (WF2), which were insufficiently described in CWLProv RDF but defined with type and format in RO-Crate.
 Moreover, the format of input files (D2), which was partially represented in CWLProv RDF, is fully represented in RO-Crate.
@@ -709,8 +728,8 @@ Moreover, the format of input files (D2), which was partially represented in CWL
 |      | EX3     | Workflow engine         |  ·  |    ◦    |    ◦     |   ◦   |
 |      | EX4     | Human agent             |  ·  |    •    |    •     |   •   |
 
-_**Table 2**: **Summarised results of our qualitative analysis of runcrate**. We compared RO-Crates with the CWLProv ROs from which they were generated. The analysis was based on a provenance taxonomy reflecting relevant provenance metadata based on realistic use cases for ROs associated with a real-life bioinformatics workflow \[[de Wit 2022]\]. <br>CWL-specific documents are: `packed.cwl` (the workflow), `primary-job.json` (the inputs file), and `primary-output.json` (the outputs file). Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`. <br> For completeness we also show the theoretical capability of the Provenance Run Crate profile (WRROC column) assuming all its MUST/SHOULD requirements are complete. The categories in the first three columns are explained in \[[de Wit 2022]\]. <br>**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation  … optional (e.g.
-schema.org attribute)[^3]_
+_**Table 2**: **Summarised results of our qualitative analysis of runcrate**. We compared RO-Crates with the CWLProv ROs from which they were generated. The analysis was based on a provenance taxonomy reflecting relevant provenance metadata based on realistic use cases for ROs associated with a real-life bioinformatics workflow \[[de Wit 2022]\]. <br>CWL-specific documents are: `packed.cwl` (the workflow), `primary-job.json` (the inputs file), and `primary-output.json` (the outputs file). Since `packed.cwl` is also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`. <br> For completeness we also show the theoretical capability of the Provenance Run Crate profile (WRROC column) assuming all its MUST/SHOULD requirements are complete. The categories in the first three columns are explained in \[[de Wit 2022]\]. <br>**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation  … optional[^3] (e.g.
+schema.org attribute)_
 
 </div>
 
@@ -727,26 +746,22 @@ Our aim is to be compatible with both Schema.org and W3C PROV. Provenance Run Cr
 
 <div id="rocrate_prov_mapping">
 
-(1) <br><small>(superclass of *CreateAction*, *OrganizeAction*)</small>
-(2) <br><small>(schema.org Actions may also be potential actions in the future)</small>
-(3)
-
-|                                                                     RO-Crate |                                                              Relationship                                                              | W3C PROV-O                   |
-| ---------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | ---------------------------- |
-| *Action* (1) |                  Has close match (2)                   | *Activity*                   |
-|                                             *CreateAction*, *OrganizeAction* |                                                           Has broader match                                                            | *Activity*                   |
-|                                                                     *Person* |                                                            Has exact match                                                             | *Person*                     |
-|                                                               *Organization* |                                                            Has exact match                                                             | *OrganizeAction*             |
-|                                                        *SoftwareApplication* |                                                           Has related match                                                            | *SoftwareAgent*              |
-|                      *ComputationalWorkflow*, *SoftwareApplication*, *HowTo* |                                                           Has broader match                                                            | *Plan*, *Entity*             |
-|                                           *File*, *Dataset*, *PropertyValue* |                                                           Has broader match                                                            | *Entity*                     |
-|                                                *startTime* on *CreateAction* |                                                            Has close match                                                             | *startedAtTime*              |
-|                                                  *endTime* on *CreateAction* |                                                            Has close match                                                             | *endedAtTime*                |
-|                                                    *agent* on *CreateAction* |                                                           Has related match                                                            | *wasStartedBy*, *wasEndedBy* |
-|                                   *agent* and *instrument* on *CreateAction* |                                                           Has broader match                                                            | *wasAssociatedWith*          |
-|                                               *instrument* on *CreateAction* | Has related match (3) | *hadPlan* on *Association*   |
-|                                                   *object* on *CreateAction* |                                                            Has exact match                                                             | *used*                       |
-|                                                     *result* on CreateAction |                                                            Has close match                                                             | inverse *wasGeneratedBy*     |
+|                                                RO-Crate |     Relationship      | W3C PROV-O                   |
+| ------------------------------------------------------: | :-------------------: | ---------------------------- |
+|                                            *Action* <br><small>(superclass of *CreateAction*, *OrganizeAction*)</small> |  Has close match <br><small>(schema.org Actions may also be potential actions in the future)</small>  | *Activity*                   |
+|                        *CreateAction*, *OrganizeAction* |   Has broader match   | *Activity*                   |
+|                                                *Person* |    Has exact match    | *Person*                     |
+|                                          *Organization* |    Has exact match    | *OrganizeAction*             |
+|                                   *SoftwareApplication* |   Has related match   | *SoftwareAgent*              |
+| *ComputationalWorkflow*, *SoftwareApplication*, *HowTo* |   Has broader match   | *Plan*, *Entity*             |
+|                      *File*, *Dataset*, *PropertyValue* |   Has broader match   | *Entity*                     |
+|                           *startTime* on *CreateAction* |    Has close match    | *startedAtTime*              |
+|                             *endTime* on *CreateAction* |    Has close match    | *endedAtTime*                |
+|                               *agent* on *CreateAction* |   Has related match   | *wasStartedBy*, *wasEndedBy* |
+|              *agent* and *instrument* on *CreateAction* |   Has broader match   | *wasAssociatedWith*          |
+|                          *instrument* on *CreateAction* | Has related match <br><small>(Complex mapping: an instrument implies a qualified association with the agent, linked to a plan)</small> | *hadPlan* on *Association*   |
+|                              *object* on *CreateAction* |    Has exact match    | *used*                       |
+|                                *result* on CreateAction |    Has close match    | inverse *wasGeneratedBy*     |
 
 _**Table 3**: **Mapping from Workflow Run RO-Crate to equivalent W3C PROV concepts** using SKOS \[[Isaac 2009]\]. For instance, *CreateAction* has **broader** match PROV's *Activity*, meaning that *Activity* is more general._
 
@@ -763,7 +778,7 @@ The initial implementation of this profile used WfExS as the workflow execution 
 
 ### Biocompute Object RO-Crate {#bco-crate}
 
-\[[IEEE 2791-2020]\], colloquially *Biocompute Objects* (BCO), is a standard for representing provenance of a genomic sequencing pipeline, intended for submission of the workflow to regulatory bodies, e.g. as part of a personalised medical treatment method \[[Alterovitz 2018]\].
+[IEEE 2791-2020], colloquially *Biocompute Objects* (BCO), is a standard for representing provenance of a genomic sequencing pipeline, intended for submission of the workflow to regulatory bodies, e.g. as part of a personalised medical treatment method \[[Alterovitz 2018]\].
 The BCO is represented as a single JSON file which includes description of the workflow and its steps and intended purpose, as well as references for tools used and data sources accessed.
 There is overlap in the goals of BCO and Workflow Run Crate profiles; however, their intentions and focus are different.
 BCO is primarily conveying a computational method for the purpose of manual regulatory review and further reuse, with any values provided as an exemplar run.
@@ -781,7 +796,7 @@ Workflow Run RO-Crate has already been adopted by six WMS, including Galaxy, Str
 
 Workflow Run RO-Crate is an ongoing project driven by an open community.
 A natural consequence of this is that the profiles are not static entities, but keep being updated to cater for new requirements and use cases.
-In-progress features are tracked in the GitHub repository [issues](https://github.com/ResearchObject/workflow-run-crate/issues) and are open to discussion for the community.
+In-progress features are tracked in the [GitHub repository issues](https://github.com/ResearchObject/workflow-run-crate/issues) and are open to discussion for the community.
 New features under discussion include a representation of the execution environment and recording workflow resource usage.
 The runcrate toolkit is planned to be expanded both to better support the current features and to include new ones that may arise.
 
@@ -798,17 +813,15 @@ We will then build an interconversion library that attempts to:
 2)  Bundle information from the WES and TES (as well as other GA4GH Cloud API resources, where available) to create or extend RO-Crates with standards-compliant Process, Workflow or even Provenance RO-Crates.
 
 
-[^1]: See [section 4.1.4.1](../../../2022/phd/ro-crate/#workflows).
-
+[^1]: See [section 4.1.4.1](../../../2022/phd/ro-crate/#workflows)
 [^2]: See [section 4.1.4](../../../2022/phd/ro-crate/#inuse) and [section 6.1.2.4](../discussion/#profiles).
-
 [^3]: The three dots (...) in the WRROC column indicate that the concept is supported in an RO-Crate using existing schema.org vocabulary (e.g. <https://schema.org/softwareHelp>) but is not required or recommended by the WRROC profiles.
 
 
 
 ## References
 
-\[Afgan 2023\] Enis Afgan, Istvan Albert, Renato Alves et al. (2023): 
+\[Afgan 2023\] Enis Afgan, Istvan Albert, Renato Alves et al. (2023):  
 **galaxyproject/galaxy** version 23.1.1  
 _GitHub_  
 <https://github.com/galaxyproject/galaxy/releases/tag/v23.1.1>  
