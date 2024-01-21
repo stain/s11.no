@@ -21,6 +21,7 @@ dev prod : base=https://${host}/
 dev prod : BASE = --baseURL ${base}
 
 dev local : hugoopts = --ignoreCache --cleanDestinationDir --buildDrafts --buildFuture
+prod: hugoopts = --noTimes
 
 local dev prod : hugo results
 
