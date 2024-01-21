@@ -1,0 +1,28 @@
+HeaderName HEADER.html
+ReadmeName README.html
+IndexOptions Charset=UTF-8 +SuppressHTMLPreamble
+IndexIgnore cc-zero.svg linkset.jsonld linkset.txt ..
+<Files linkset.json>
+  ForceType application/linkset+json
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/linkset.jsonld>;rel="http://www.w3.org/ns/json-ld#context";type="application/ld+json"
+</Files>
+<Files linkset.txt>
+  ForceType application/linkset
+</Files>
+
+AddType text/turtle;charset=UTF-8 ttl
+AddType application/ld+json jsonld
+AddType application/x-type-map var
+AddType application/vnd.oasis.opendocument.spreadsheet ods
+AddType application/vnd.taverna.t2flow+xml t2flow
+
+AddHandler type-map .var
+Options +MultiViews
+
+<Files index.html>
+  Header add Link <https://s11.no/css/bundle.css>;rel="stylesheet"
+</Files>
+
+# Fixing previous typos in PIDs..
+Redirect permanent "/2022/a2a-fair-metrics/04-http-described-iri" "https://s11.no/2022/a2a-fair-metrics/04-http-describedby-iri"
+Redirect permanent "/2022/a2a-fair-metrics/11-http-described-iri-wrong-type" "https://s11.no/2022/a2a-fair-metrics/11-http-describedby-iri-wrong-type"

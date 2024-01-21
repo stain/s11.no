@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>14-http-describedby-citeas-linkset-json-txt-conneg</title>
+
+</head>
+
+<body>
+	<h1>14-http-describedby-citeas-linkset-json-txt-conneg</h1>
+	<p>
+	  This landing page has four HTTP headers:
+	</p>
+	<ul>
+		<li><code>describedby</code> to <a href="index.ttl">index.ttl</a> (text/turtle, type attribute declared)</li>
+        <li><code>cite-as</code> to <a href="https://w3id.org/a2a-fair-metrics/14-http-describedby-citeas-linkset-json-txt-conneg/">w3id</a></li>
+		<li><code>linkset</code> to <a type="application/linkset+json" href="linkset"> linkset</a> with content negotation for <code>application/linkset+json</code> that links to <a href="test-apple-data.csv">test-apple-data.csv</a> and the above</li>
+		<li><code>linkset</code> to <a type="application/linkset" href="linkset">linkset</a> with content negotation for <code>application/linkset</code> alternative to the above</li>
+	</ul>
+	<p>
+		When requesting the linkset resource The Web Server should give a specific <code>Content-Location</code> header of which resource was resolved, in addition to 
+		<code>rel=alternate</code> link between JSON and TXT, as they have the same public URI as well as a <code>rel=canonical</code> for the untyped URI - however neither of these are considered part of the signposting.
+		
+	</p>
+	<p>Bonus: Content types <code>application/json</code> and <code>text/plain</code> also content-negotiate with lower priority.</p>
+</body>
+</html>
+
