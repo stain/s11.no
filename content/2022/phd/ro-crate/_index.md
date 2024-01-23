@@ -235,7 +235,9 @@ However, JSON-LD alone has too many degrees of freedom and hidden complexities f
 
 #### RO-Crate JSON-LD {#jsonld}
 
-RO-Crate [mandates](https://www.researchobject.org/ro-crate/1.1/appendix/jsonld.html) the use of flattened, compacted JSON-LD in the RO-Crate Metadata file `ro-crate-metadata.json`[^4] where a single `@graph` array contains all the data and contextual entities in a flat list. An example can be seen in the JSON-LD snippet in Listing 1 below, describing a simple RO-Crate containing data entities described using contextual entities:
+RO-Crate [mandates](https://www.researchobject.org/ro-crate/1.1/appendix/jsonld.html) the use of flattened, compacted JSON-LD in the RO-Crate Metadata file `ro-crate-metadata.json`[^4] where a single `@graph` array contains all the data and contextual entities in a flat list. An example can be seen in the JSON-LD snippet in [Listing 1](#lis1) below, describing a simple RO-Crate containing data entities described using contextual entities:
+
+<figure id="lis1">
 
 ```json
 { "@context": "https://w3id.org/ro/crate/1.1/context",
@@ -286,8 +288,12 @@ RO-Crate [mandates](https://www.researchobject.org/ro-crate/1.1/appendix/jsonld.
 }
 ```
 
+<figcaption>
+
 **Listing 1**: Simplified[^5] RO-Crate metadata file showing the flattened compacted JSON-LD `@graph` array containing the data entities and contextual entities, cross-referenced using `@id`. The `ro-crate-metadata.json` entity self-declares conformance with the RO-Crate specification using a versioned persistent identifier, further RO-Crate descriptions are on the root data entity `./` or any of the referenced data or contextual entities. This is exemplified by the data entity `ImageObject` referencing contextual entities for `contentLocation` and `author` that differs from that of the overall RO-Crate. In this crate, `about` of the CSV data entity reference the `ImageObject`, which then take the roles of both a data entity and contextual entity. While `Person` entities ideally are identified with ORCID PIDs as for Josiah, `#alice` is here in contrast an RO-Crate local identifier, highlighting the pragmatic “just enough” Linked Data approach.
-\normalsize
+
+</figcaption>
+</figure>
 
 In this flattened profile of JSON-LD, each `{entity}` are directly under `@graph` and represents the RDF triples with a common _subject_ (`@id`), mapped _properties_ like `hasPart`, and _objects_ — as either literal `"string"` values, referenced `{objects}` (which properties are listed in its own entity), or a JSON `[list]` of these.  If processed as JSON-LD, this forms an RDF graph by matching the `@id` IRIs and applying the `@context` mapping to Schema.org terms. 
 \normalsize
@@ -597,7 +603,7 @@ The adoption of simple Web technologies in the RO-Crate specification has helped
 
 ### Strictness vs flexibility
 
-There is always a tradeoff between flexibility and strictness [[116](https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511] when deciding on semantics of metadata models. Strict requirements make it easier for users and code to consume and populate a model, by reducing choices and having mandated “slots” to fill in. But such rigidity can also restrict richness and applicability of the model, as it in turn enforce the initial assumptions about what can be described.
+There is always a tradeoff between flexibility and strictness \[[116](https://www.persistent-identifier.nl/urn:nbn:nl:ui:18-14511)\] when deciding on semantics of metadata models. Strict requirements make it easier for users and code to consume and populate a model, by reducing choices and having mandated “slots” to fill in. But such rigidity can also restrict richness and applicability of the model, as it in turn enforce the initial assumptions about what can be described.
 
 RO-Crate attempts to strike a balance between these tensions, and provides a common metadata framework that encourages extensions. However, just like the RO-Crate specification can be thought of as a _core profile_ of Schema.org in JSON-LD, we cannot stress the importance of also establishing domain-specific RO-Crate profiles and conventions, as explored in sections [extensibility](#profiles) and [profiles in use](#inuse). Specialization comes hand-in-hand with the principle of _graceful degradation_; RO-Crate applications and users are free to choose the semantic detail level they participate at, as long as they follow the common syntactic requirements. 
 

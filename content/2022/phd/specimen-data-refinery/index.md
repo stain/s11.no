@@ -438,7 +438,7 @@ and applications based on Digital Object Architecture that is planned
 for the Distributed System of Scientific Collections (DiSSCo) [6, 25,
 30] European research infrastructure.
 
-Henceforth we refer to these as openDS FDOs.
+Henceforth we refer to these as **openDS FDOs**.
 
 #### 2.3.2 FAIR packaging of research/workflow objects with RO-Crate {#fair-packaging-of-researchworkflow-objects-with-ro-crate}
 
@@ -470,7 +470,7 @@ these RO-Crates are findable, accessible, interoperable, and reusable
 by machines to both create and obtain the information they need to
 function.
 
-Henceforth, we refer to RO-Crate FDOs.
+Henceforth, we refer to **RO-Crate FDOs**.
 
 ## 3. Problem Description
 
