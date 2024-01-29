@@ -9,7 +9,8 @@ date: 2023-11-21
 
 ## Overview
 
-> tl;dr: Senior Lecturer with research interests of Linked Data, RESTful web services, provenance, annotations, open science, reproducible research results.
+
+> tl;dr: Senior Lecturer in FAIR, Open and Reproducible Digital Research. Research interests include Linked Data, RESTful web services, metadata, provenance, annotations, open source and software development best practices.
 
 * <a rel="me" href="https://www.research.manchester.ac.uk/portal/soiland-reyes.html">research.manchester.ac.uk/portal/soiland-reyes.html</a>
 * <a rel="me" href="https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html">uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html</a>
@@ -23,7 +24,7 @@ date: 2023-11-21
 
 ## Biography
 
-Stian Soiland-Reyes is a Senior Lecturer and co-leader of the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab at The University of Manchester") in the [Department of Computer Science](https://www.cs.manchester.ac.uk/) at The University of Manchester. 
+Stian Soiland-Reyes is a Senior Lecturer in FAIR, Open and Reproducible Digital Research and co-leader of the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab at The University of Manchester") in the [Department of Computer Science](https://www.cs.manchester.ac.uk/) at The University of Manchester. 
 
 In his research he is working on _reproducibility_, _provenance_ and _metadata_ to improve [FAIR](https://www.go-fair.org/fair-principles/ "FAIR principles") sharing of open research data and [computational workflows](https://doi.org/10.1162/dint_a_00033), within [ELIXIR Europe](https://elixir-europe.org/), European Open Science Cloud ([EOSC](https://ec.europa.eu/info/research-and-innovation/strategy/goals-research-and-innovation-policy/open-science/european-open-science-cloud-eosc_en)) projects and the workflow repository [WorkflowHub.eu](https://workflowhub.eu/), as well as building [FAIR](https://www.go-fair.org/fair-principles/) approaches for [computational workflows](https://workflows.community/groups/fair/) and [FAIR Digital Objects](https://fairdo.org/). Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/) standard and its [implementation in workflow systems](https://doi.org/10.1093/gigascience/giz095 "Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv"). 
 
@@ -31,17 +32,17 @@ As one of the early founders to the [Research Object](https://www.researchobject
 
 Stian is on the leadership team of [Common Workflow Language](https://www.commonwl.org/), a standard for [interoperable computational workflows](/2022/phd/methods-included/), as well as on the technical steering committee for [BioCompute Object](https://www.biocomputeobject.org/), an approach for describing workflows for submission to regulatory authorities. Stian is the Technical and Community Advisor for the recently started [Workflows Community Initiative](https://workflows.community/). 
 
-Stian graduated in 2006 with an [MSc](https://doi.org/11250/251073) in Computer Science from the [Norwegian University of Science and Technology (NTNU)](https://www.ntnu.no/). 
+Stian graduated in 2006 with an [MSc](https://doi.org/11250/251073) in Computer Science from the [Norwegian University of Science and Technology (NTNU)](https://www.ntnu.no/) and in 2023 submitted his [PhD thesis](../phd/) at the Informatics Institute of the University of Amsterdam. 
 
-He has more than two decades of experience as an IT professional, including 16 years as a software developer working across academia and industry. He joined the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab") in 2005 (then called the [myGrid team](http://www.mygrid.org.uk/)), where he became the _Technical Lead Developer_ of the open-source scientific workflow management system [Taverna](http://taverna.incubator.apache.org/), which he helped transition to the [Apache Software Foundation](https://www.apache.org/ "ASF") incubator. As part of the EU FP7-funded [Wf4Ever project](/2020/archive/wf4ever/), Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/ "W3C PROV-Overview") specifications for capturing provenance and co-developed the [Research Object](http://www.researchobject.org/) model and ontologies.  More recently Stian has continued this passion for reproducibility, structured metadata and open scholarship with engagement in several projects related to FAIR, computational workflows, and RO-Crate. In 2023, Stian became a Research Fellow and later a Senior Lecturer at the Department of Computer Science.
+He has more than two decades of experience as an IT professional, including 16 years as a software developer working across academia and industry. He joined the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab") in 2005 (then called the [myGrid team](http://www.mygrid.org.uk/)), where he became the _Technical Lead Developer_ of the open-source scientific workflow management system [Taverna](http://taverna.incubator.apache.org/). As part of the EU FP7-funded [Wf4Ever project](/2020/archive/wf4ever/), Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/ "W3C PROV-Overview") specifications for capturing provenance and co-developed the [Research Object](http://www.researchobject.org/) model and ontologies.  More recently Stian has continued this passion for reproducibility, structured metadata and open scholarship with engagement in several projects related to FAIR, computational workflows, and RO-Crate. In 2023, Stian became a Research Fellow and later a Senior Lecturer at the Department of Computer Science.
 
 ## Research projects
 
 Stian is co-leading and contributing to [eScience Lab's participation](https://esciencelab.org.uk/projects/) in several European-wide research projects:
 
 * **[EVERSE](https://esciencelab.org.uk/projects/everse/)** -- European Virtual Institute for Research Software Excellence. Starting March 2024. Includes support for RO-Crate in the Workflow Execution Service ([WfExS](https://github.com/inab/WfExS-backend)), continuing work started in EOSC-Life, BY-COVID and TRE-FX.
-* **HDR Federated Analytics** (HDR QQ2) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX.  
-  <small>[HDR UK](https://www.hdruk.ac.uk/), UKRI [HDR-CORE](https://gtr.ukri.org/projects?ref=HDR-CORE)</small>
+* [**HDR Federated Analytics**](https://esciencelab.org.uk/projects/federated-analytics/) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX prototype.  
+  <small>[HDR UK](https://www.hdruk.ac.uk/), UKRI [HDR-CORE](https://gtr.ukri.org/projects?ref=HDR-CORE), HDR QQ2</small>
 * **[EuroScienceGateway](https://esciencelab.org.uk/projects/eurosciencegateway/)** -- making a federated open access computational infrastructure through Galaxy as a gateway for data resources, tools and applications following the FAIR principles.  
   <small><http://eurosciencegateway.eu/> Horizon Europe [101057388](https://doi.org/10.3030/101057388), UKRI [10038963](https://gtr.ukri.org/projects?ref=10038963)</small>
 * **[FAIR-IMPACT](https://esciencelab.org.uk/projects/fair-impact/)** -- which is improving the FAIR publication and indexing of semantic artefacts and their catalogues, with associated Linked Data tooling including RO-Crate.  
