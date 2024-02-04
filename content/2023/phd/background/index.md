@@ -8,7 +8,7 @@ summary: >
   In this chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.
 ---
 
-In the following chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions. This primarily motivates [RQ1]() addressed by [chapter 3](../fdo-and-linked-data/), but in addition both technologies are foundational for the implementations in [chapter 4](../ro-crate) and [chapter 5](../workflows/).
+In the following chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions. This primarily motivates [RQ1](../../../2022/phd/introduction/#rq1) addressed by [chapter 3](../fdo-and-linked-data/), but in addition both technologies are foundational for the implementations in [chapter 4](../ro-crate) and [chapter 5](../workflows/).
 
 ## FAIR Digital Object {#sec:fdo}
 
