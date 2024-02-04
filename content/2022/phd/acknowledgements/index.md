@@ -324,6 +324,15 @@ Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania 
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00135>
 
+#### License and modifications
+
+-   **License**: Creative Commons Attribution License
+    ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
+-   **Modifications**: Formatting as Markdown and LaTeX; figure caption
+    formatting; references in s11 house style; citations merged and renumbered;
+    acknowledgements and references moved to separate chapters.
+    Fixed minor typos and grammatical errors.
+
 #### Acknowledgements
 
 This work has been done as part of the BioExcel CoE (<https://www.bioexcel.eu/>), a project funded by the European Union contracts [H2020-INFRAEDI-02-2018 823830](https://cordis.europa.eu/project/id/823830), [H2020-EINFRA-2015-1 675728](https://cordis.europa.eu/project/id/675728). Additional work is funded through EOSC-Life (<https://www.eosc-life.eu/>) contract [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087), and ELIXIR-CONVERGE (<https://elixir-europe.org/>) contract [H2020-INFRADEV-2019-2 871075](https://cordis.europa.eu/project/id/871075).
@@ -342,6 +351,13 @@ Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin 
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00134>
 
+#### License and modifications
+
+-   **License**: Creative Commons Attribution License
+    ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
+-   **Modifications**: Formatting as Markdown and LaTeX; figures replaced with higher resolutions from source; figure caption formatting; references in s11 house style; added DOIs and URLs; cited preprints replaced with later publications citations merged and renumbered; funding and references moved to separate chapters. Fixed minor typos and grammatical errors.
+
+
 #### Acknowledgements
 
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement numbers [823827](https://doi.org/10.3030/823827) (SYNTHESYS Plus), [871043](https://doi.org/10.3030/871043) (DiSSCo Prepare), [823830](https://doi.org/10.3030/823830) (BioExcel-2), [824087](https://doi.org/10.3030/824087) (EOSC-Life).
@@ -359,6 +375,14 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore 
 1st International Conference on FAIR Digital Objects (FDO 2022) (poster)\
 *Research Ideas and Outcomes* **8**:e94349\
 <https://doi.org/10.3897/rio.8.e94349>
+
+
+### License and modifications {#license-and-modifications-6 .unnumbered}
+
+-   **License**: Creative Commons Attribution License
+    ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
+-   **Modifications**: Formatting as Markdown and LaTeX; references in s11 house style; added DOIs and URLs; funding and references moved to separate chapters; fixed minor typos and grammatical errors.
+
 
 #### Acknowledgements
 
