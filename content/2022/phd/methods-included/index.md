@@ -761,7 +761,7 @@ bioinformatics**.
 _Ministerie van Onderwijs, Cultuur en Wetenschap_, The Netherlands  
 <https://doi.org/10.4233/uuid:9e9fa82e-06c1-4d0d-9e20-5620259a6c65>.
 
-[35] ohn Vivian, Arjun Arkal Rao, Frank Austin
+[35] John Vivian, Arjun Arkal Rao, Frank Austin
 Nothaft, Christopher Ketchum, Joel Armstrong, Adam Novak, Jacob Pfeil,
 Jake Narkizian, Alden D. Deran, Audrey Musselman-Brown, Hannes Schmidt,
 Peter Amstutz, Brian Craft, Mary Goldman, Kate Rosenbloom, Melissa
