@@ -2,7 +2,7 @@
 title: 'BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas'
 title_short: 'BioHackEU23 #15: Enabling FAIR Digital Objects'
 categories:
-  - Publications
+  - Publication
 summary: >
   BioHackrXiv preprint from ELIXIR BioHackathon 2023
 description: >
@@ -89,7 +89,7 @@ _Stian Soiland-Reyes¹², Leyla Jael Castro³, Rohitha Ravinder³, Claus Weiland
 ¹ Department of Computer Science, The University of Manchester, Manchester, UK
 ² Informatics Institute, University of Amsterdam, Amsterdam, NL    
 ³ ZB MED Information Centre for life sciences, Cologne, DE  
-⁴ Senckenberg – Leibniz Institution for Biodiversity and Earth System Research, Frankfurt/M, DE
+⁴ Senckenberg – Leibniz Institution for Biodiversity and Earth System Research, Frankfurt/M, DE  
 ⁵ EMBL-EBI, Hinxton, UK  
 ⁶ DONA foundation, Geneva, CH  
 ⁷ DANS, The Hague, NL
@@ -97,11 +97,11 @@ _Stian Soiland-Reyes¹², Leyla Jael Castro³, Rohitha Ravinder³, Claus Weiland
 </div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Reformatting as Markdown; figure caption formatting; reference in s11 house style; inline citation hyperlinks. 
+* **Modifications**: Reformatting as Markdown; figure caption formatting; reference in s11 house style; inline citation hyperlinks; informational hyperlinks added. 
 
 ## Abstract
 
-As part of the BioHackathon Europe 2023, we here report from the progress of the hackathon project #15: "Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas". We added Signposting to three existing resources, and made a Chrome browser extension to show Signposting headers. We added RO-Crate to two existing resources, and explored making a hybrid FDO using both a Handle PID Record and Signposting/RO-Crate approach.
+As part of the [BioHackathon Europe 2023](https://elixir-europe.org/events/biohackathon-europe-2023), we here report from the progress of the hackathon project #15: _"Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas"_. We added Signposting to three existing resources, and made a Chrome browser extension to show Signposting headers. We added RO-Crate to two existing resources, and explored making a hybrid FDO using both a Handle PID Record and Signposting/RO-Crate approach.
 
 
 ## Introduction
@@ -295,96 +295,38 @@ We also acknowledge the many ELIXIR BioHackathon Europe 2023 participants we int
 
 ## References
 
-# References
-
-<div id="refs" class="xxxreferences xcsl-bib-body" role="xdoc-bibliography">
-
-<div id="ref-10.3233/ds-210053" class="xcsl-entry" role="xdoc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-1\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, & Carole Goble (2022): Packaging research artefacts with <span>RO</span>-crate. *Data Science*, **5** (2022) 97–138. \<https://doi.org/[10.3233/ds-210053](https://doi.org/10.3233/ds-210053)\>
-
-</div>
-
+[1] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-crate**.  
+*Data Science* **5**  
+<https://doi.org/10.3233/ds-210053>
 **\[cito:citesAsAuthority\]**
 
-</div>
 
-<div id="ref-Bioschemas" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-2\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Alasdair Gray, Carole Goble, Rafael Jimenez, & Bioschemas Community (2017): **Bioschemas: From potato salad to protein annotation**. In Nadeschda Nikitina, Dezhao Song, Achille Fokoue, & Peter Haase,eds., *Proceedings of the ISWC 2017 posters & demonstrations and industry tracks co-located with 16th international semantic web conference (ISWC 2017)* (Vienna, Austria, 2017). <https://ceur-ws.org/Vol-1963/paper579.pdf>
-
-</div>
-
+[2] Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):  
+**Bioschemas: From potato salad to protein annotation**.  
+*Proceedings of the ISWC 2017 posters & demonstrations and industry tracks co-located with 16th international semantic web conference (ISWC 2017)*  (Vienna, Austria, 2017).  
+<https://ceur-ws.org/Vol-1963/paper579.pdf>
 **\[cito:citesAsAuthority\]**
 
-</div>
 
-<div id="ref-vandesompelFAIRSignpostingProfile2022" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-3\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, & Mark Wilkinson (2022): <span>FAIR Signposting Profile</span>. (2022). <https://signposting.org/FAIR/> (accessed 5 January 2023)
-
-</div>
-
+[3]
+Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):  
+**FAIR Signposting Profile**  
+<https://signposting.org/FAIR/> 
 **\[cito:citesAsAuthority\]**
 
-</div>
 
-<div id="ref-vandesompel2015" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-4\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Herbert Van de Sompel & Michael L. Nelson (2015): Reminiscing about 15 years of interoperability efforts. *D-Lib Magazine*, **21** (2015). \<https://doi.org/[10.1045/november2015-vandesompel](https://doi.org/10.1045/november2015-vandesompel)\>
-
-</div>
-
+[4] Herbert Van de Sompel, Michael L. Nelson (2015):  
+**Reminiscing about 15 years of interoperability efforts**.  
+*D-Lib Magazine* **21** (2015).  
+<https://doi.org/10.1045/november2015-vandesompel>
 **\[cito:extends\]**
 
-</div>
-
-<div id="ref-fdo-Overview" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-5\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, & Carlo Zwölf (2023): *<span>FAIR</span> digital object technical overview. Version PEN 2.0* (<span>FAIR Digital Object Forum</span>, 2023). \<https://doi.org/[10.5281/zenodo.7824714](https://doi.org/10.5281/zenodo.7824714)\>
-
-</div>
-
+[5]
+Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):  
+**FAIR digital object technical overview**. Version PEN 2.0*  
+_FAIR Digital Object Forum_ 
+<https://doi.org/10.5281/zenodo.7824714>
 **\[cito:citesAsAuthority\]**
 
 </div>
