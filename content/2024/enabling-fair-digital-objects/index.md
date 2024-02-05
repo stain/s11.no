@@ -329,21 +329,11 @@ _FAIR Digital Object Forum_
 <https://doi.org/10.5281/zenodo.7824714>
 **\[cito:citesAsAuthority\]**
 
-</div>
-
-<div id="ref-soiland_FDO_2022" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-6\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, & Paul Groth (2022): **Creating lightweight <span>FAIR</span> <span>Digital</span> <span>Objects</span> with <span>RO</span>-<span>Crate</span>**. *Research <span>Ideas</span> and <span>Outcomes</span>* (Pensoft Publishers, 2022), p. e93937. \<https://doi.org/[10.3897/rio.8.e93937](https://doi.org/10.3897/rio.8.e93937)\>
-
-</div>
+[6]
+Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+**Creating lightweight FAIR Digital Objects with RO-Crate**.  
+*Research Ideas and Outcomes*  
+<https://doi.org/10.3897/rio.8.e93937>
 
 **\[cito:citesAsAuthority\]** **\[cito:citesAsPotentialSolution\]**
 
