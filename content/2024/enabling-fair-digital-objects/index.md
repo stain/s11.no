@@ -106,17 +106,17 @@ As part of the [BioHackathon Europe 2023](https://elixir-europe.org/events/bioha
 
 ## Introduction
 
-[RO-Crate](https://www.researchobject.org/ro-crate/) [@citesAsAuthority:10.3233/ds-210053] is a lightweight method to package research outputs along with their metadata. [Bioschemas](https://bioschemas.org/) [@citesAsAuthority:Bioschemas] provides metadata schemas to add structured metadata to webpages on Life Science. [Signposting](https://signposting.org/FAIR/) [@citesAsAuthority:vandesompelFAIRSignpostingProfile2022] [@extends:vandesompel2015]  provides a lightweight yet powerful approach to increase the FAIRness of scholarly objects. [FAIR Digital Object](https://fairdo.org/specifications/) (FDO) [@citesAsAuthority:fdo-Overview] is a set of conceptual specifications for building an interoperable ecosystem of machine-actionable resources, with a strong emphasis on persistent identifiers, types and metadata.
+[RO-Crate](https://www.researchobject.org/ro-crate/) [[1]] is a lightweight method to package research outputs along with their metadata. [Bioschemas](https://bioschemas.org/) [[2]] provides metadata schemas to add structured metadata to webpages on Life Science. [Signposting](https://signposting.org/FAIR/) [[3],[4]] provides a lightweight yet powerful approach to increase the FAIRness of scholarly objects. [FAIR Digital Object](https://fairdo.org/specifications/) (FDO) [[5]] is a set of conceptual specifications for building an interoperable ecosystem of machine-actionable resources, with a strong emphasis on persistent identifiers, types and metadata.
 
-The combination of RO-Crates, Bioschemas and Signposting make resources easy to navigate by machines, provide an unambiguous way for machines to access FAIR metadata and content in a single request, and reduce content-negotiation hassle that can give unpredictable results [@citesAsAuthority:soiland_FDO_2022].
+The combination of RO-Crates, Bioschemas and Signposting make resources easy to navigate by machines, provide an unambiguous way for machines to access FAIR metadata and content in a single request, and reduce content-negotiation hassle that can give unpredictable results [[6]].
 
-This tripartite combination is of benefit for repositories and publishers as they can non-disruptively add FAIR Signposting headers for machine navigation, support RO-Crate imports and align with Bioschemas specifications, making FAIR Digital Objects achievable with existing technologies over HTTP [@citesAsAuthority:10.3897/rio.8.e94501].
+This tripartite combination is of benefit for repositories and publishers as they can non-disruptively add FAIR Signposting headers for machine navigation, support RO-Crate imports and align with Bioschemas specifications, making FAIR Digital Objects achievable with existing technologies over HTTP [[7]].
 
 FAIR tooling implementers can also benefit, as they could create, improve or integrate Signposting clients combined with RO-Crate libraries implementing Bioschemas specifications. On its side, FAIR data implementers could support consumption of FAIR Signposting and create Knowledge Graphs from RO-Crates.
 
 While Bioschemas has been adopted by many repositories, the methods for its consumption have largely been focused on discoverability. Now we focus on integrations, such as building scholarly knowledge graphs from multiple Bioschemas sources.
 
-Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to navigate and consume RO-Crates making FAIR closer to the community. This project will continue the effort started as part of FDO2022 [@discusses:looFirstInternationalConference2022] and FAIR-IMPACT to enable FAIR Signposting and RO-Crate for content/metadata discovery and consumption.
+Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to navigate and consume RO-Crates making FAIR closer to the community. This project will continue the effort started as part of FDO2022 [[8]] and FAIR-IMPACT to enable FAIR Signposting and RO-Crate for content/metadata discovery and consumption.
 
 
 ## Initial plan
@@ -143,10 +143,21 @@ Given the participants joining this hackathon project, we focused on three topic
 
 [Signposting](https://signposting.org/) is explicitly designed to add machine-readable links to the metadata associated with a human-readable scholarly object.
 Taking the canonical example of a web landing page for a dataset, which humans parse as rendered HTML, Signposting adds invisible links to remote resources like an ORCID profile of the author, a DOI the resource can be cited as, and downloadable items of the dataset like images and data tables.
-These are implemented as HTTP headers (`Link: <https://orcid.org/0000…">; rel="author"`) or HTML header link tags (`<link href="https://doi.org/10.5281/zenodo…" rel="item" type="application/zip"/>`).
+These are implemented as HTTP headers:
+
+```html
+Link: <https://orcid.org/0000…">; rel="author"`
+```
+    
+or HTML header link tags:
+
+```html
+<link href="https://doi.org/10.5281/zenodo…" 
+      rel="item" type="application/zip"/>`
+```
 
 Typically, these implementations do not render anything that a user of the landing page will see (without using developer tools to inspect the source of the material they're viewing).
-This means that resource authors and developers need to use debugging tools to develop and test their implementations of Signposting: for example browser developer tools, or bespoke parsers for the Signposting headers [@citesAsPotentialSolution:Signposting_link_parser].
+This means that resource authors and developers need to use debugging tools to develop and test their implementations of Signposting: for example browser developer tools, or bespoke parsers for the Signposting headers [[9]].
 It also means that users discovering data resources with a view to then accessing them programatically, for example in a new pipeline or data ingestion process, will need to find the links to programmatic access options by browsing the web pages and documentation, rather than following the same shortcuts that robot agents can see.
 
 During BioHackathon Europe 2023 we developed a browser extension [signposting-chrome-extension](https://github.com/SandyRogers/signposting-chrome-extension), initially targetting Chromium-based browsers, to render Signposting links as a visible bar on landing pages.
@@ -180,7 +191,7 @@ If a data repository needed to index this dataset, for listing, searching and cr
 
 | id† | dataset_name†   | pipeline_uri†  | data_uri                 | crate_uri                                |
 | --- | --------------- | -------------- | ------------------------ | ---------------------------------------- |
-| 1   | My Dataset      | http://my.code | http://my.data/dataset/1 | http://my.data/dataset/1?format=ro_crate |
+| 1   | My Dataset      | `http://my.code` | `http://my.data/dataset/1` | `http://my.data/dataset/1?format=ro_crate` |
 
 where † = columns indexed by the database engine, to allow lookups with scanning the entire table.
 In most relational database engines, this kind of indexing is required for realtime lookups of "all the datasets created by a certain pipeline".
@@ -192,11 +203,10 @@ Therefore we developed a Prototype using [Django](https://code.djangoproject.com
 
 The table schema was:
 
-| id   | crate_schema                  | crate_name    |
-| ---- | ----------------------------- | ------------- |
-| int  | jsonb                         | varchar       |
-| ---- | ----------------------------- | ------------- |
-| 1    | `{"@graph": [{"@id": "./"...` | My Dataset    |
+| id    | crate_schema                  | crate_name    |
+| ----- | ----------------------------- | ------------- |
+| _int_ | _jsonb_                       | _varchar_     |
+| 1     | `{"@graph": [{"@id": "./"...` | My Dataset    |
 
 We used this schema to explore two approaches to querying this table of crates.
 Firstly, we used a feature of the fortchoming [Django 5.0 release](https://docs.djangoproject.com/en/dev/releases/5.0/#database-generated-model-field): `GeneratedField`s.
@@ -244,7 +254,7 @@ With this, we managed to add Signposting HTTP headers to an existing SPA-based d
 
 ### Hybrid FDO using Handles and Signposting
 
-As an experiment of a hybrid deployment of FDOs with a Signposting/RO-Crate overlay, we augmented the Wildlive as it is built on Cordra, which has FDO support using DOIP [@citesAsPotentialSolution:tupelo-schneckrobertBriefIntroductionCordra2022]. We experimented with minting persistent identifiers as Handles that also included the FDO kernel metadata [@citesAsPotentialSolution:fdo-KernelAttributes] in the PID record -- that is in the Handle key/value pairs. 
+As an experiment of a hybrid deployment of FDOs with a Signposting/RO-Crate overlay, we augmented the Wildlive as it is built on Cordra, which has FDO support using DOIP [[10]]. We experimented with minting persistent identifiers as Handles that also included the FDO kernel metadata [[11]] in the PID record -- that is in the Handle key/value pairs. 
 
 The handle <https://hdl.handle.net/21.T11998/wildlive.7df91e6d148a386cc674> was minted manually using the EOSC B2Handle test service. Senckenberg plans to deploy their own Handle server to mint persistent identifiers automatically for every digital object using their own Handle prefix and Cordra's Handle support.  From the FDO principle that metadata FDOs can be separate from the main FDO, a separate handle <https://hdl.handle.net/21.T11998/wildlive.crate.7df91e6d148a386cc674> was registered for the corresponding RO-Crate. 
 
@@ -261,7 +271,7 @@ In a completed hybrid FDO implementation, each of these nested objects would aga
 
 In this experiment we identified some issues with the Handle/FDO approach: 
 
-1. Unclear which Handle property to use to indicate fdo profile. `fdoProfile` was chosen, in correspondance with the DISSCo kernel attributes [@citesAsAuthority:dissco-kernel], and stored at handle index `1`. The profile is pointing to <https://w3id.org/ro/crate> which is registered in the [IANA profile registry](https://www.iana.org/assignments/profile-uris/) and corresponds to the `profile=` signposting parameter.  Ideally the key for this should itstead be a full PID or defined by the FDO specification, for comparison the [BioDT Kernel attributes](https://github.com/BioDT/biodt-fair/discussions/3) are defining the key `profile` but also in index `1`.
+1. Unclear which Handle property to use to indicate fdo profile. `fdoProfile` was chosen, in correspondance with the DISSCo kernel attributes [[12]], and stored at handle index `1`. The profile is pointing to <https://w3id.org/ro/crate> which is registered in the [IANA profile registry](https://www.iana.org/assignments/profile-uris/) and corresponds to the `profile=` signposting parameter.  Ideally the key for this should itstead be a full PID or defined by the FDO specification, for comparison the [BioDT Kernel attributes](https://github.com/BioDT/biodt-fair/discussions/3) are defining the key `profile` but also in index `1`.
 2. Requesting the B2Handle service from the [EOSC marketplace](https://marketplace.eosc-portal.eu/services/eosc.eudat.b2handle) ws very slow, taking several weeks before the hackathon, only to be given access to a buggy test prefix server with various SSL deployment problems and inability to update a handle after registration. The B2Handle helpdesk was however very helpful.
 3. Unclear if index in the Handle record matters -- both DiSSCO and BioDT use the indexes as a way to organize the keys, but these can of course then be in conflict.
 4. Unclear how much of the FDO metadata should be duplicated in the handle. We didn't experiment with mapping and registering the full DiSSCO or BioDT handle kernel information, but stayed at a Signposting-like level of persistent identifiers, metadata resources, and profiles of those.
@@ -276,7 +286,7 @@ Lessons learnt include:
 
 ### Implementing RO Crates and Sigposting in GitHub pages
 
-The [Semantic Technologies (SemTec) team](https://zbmed-semtec.github.io/) in [ZB MED](https://www.zbmed.de/en/) uses GitHub pages to share research projects and corresponding research artefacts/outcomes (e.g., datasets, software, metadata schemas/ontologies, posters, reports, preprints, scholarly publications). The pages embed Bioschemas and [schema.org](https://schema.org/) markup to facilitate findability and connectivity of the research outcomes. The goal behind implementing RO-Crates and Signposting is supporting a lightweight approach to FDOs [@citesAsPotentialSolution:soiland_FDO_2022] [@citesAsPotentialSolution:Castro_FDO_2023]. The FDO approach [@citesAsAuthority:Smedt_FDO_2020] corresponds to a series of recommendations to increase and extend FAIRness to cover typed operations, allowing implementation via different compliant configurations [@citesAsAuthority:fdo-ConfigurationTypes]. This work was initiated as part of a FAIR-Impact Support Action and advanced to an initial implementation during the BioHackathon. As a result, the SemTec team now supports RO-crates for research projects and theses with Signposting level 2.
+The [Semantic Technologies (SemTec) team](https://zbmed-semtec.github.io/) in [ZB MED](https://www.zbmed.de/en/) uses GitHub pages to share research projects and corresponding research artefacts/outcomes (e.g., datasets, software, metadata schemas/ontologies, posters, reports, preprints, scholarly publications). The pages embed Bioschemas and [schema.org](https://schema.org/) markup to facilitate findability and connectivity of the research outcomes. The goal behind implementing RO-Crates and Signposting is supporting a lightweight approach to FDOs [[6], [13]]. The FDO approach [[14]] corresponds to a series of recommendations to increase and extend FAIRness to cover typed operations, allowing implementation via different compliant configurations [[15]]. This work was initiated as part of a FAIR-Impact Support Action and advanced to an initial implementation during the BioHackathon. As a result, the SemTec team now supports RO-crates for research projects and theses with Signposting level 2.
 
 ![ZBMed web page with HTML Signposting to the RO-Crate metadata file along with the Bioschemas JSON-LD.](./figures/signposting-zbmed.png)
 
@@ -324,8 +334,8 @@ Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warn
 
 [5]
 Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):  
-**FAIR digital object technical overview**. Version PEN 2.0*  
-_FAIR Digital Object Forum_ 
+**FAIR digital object technical overview**. Version PEN 2.0  
+_FAIR Digital Object Forum_  
 <https://doi.org/10.5281/zenodo.7824714>
 **\[cito:citesAsAuthority\]**
 
@@ -333,172 +343,38 @@ _FAIR Digital Object Forum_
 Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
 **Creating lightweight FAIR Digital Objects with RO-Crate**.  
 *Research Ideas and Outcomes*  
-<https://doi.org/10.3897/rio.8.e93937>
-
+<https://doi.org/10.3897/rio.8.e93937>  
 **\[cito:citesAsAuthority\]** **\[cito:citesAsPotentialSolution\]**
 
-</div>
 
-<div id="ref-10.3897/rio.8.e94501" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-7\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, & Paul Groth (2022): Updating linked data practices for <span>FAIR</span> digital object principles. *Research Ideas and Outcomes*, **8** (2022). \<https://doi.org/[10.3897/rio.8.e94501](https://doi.org/10.3897/rio.8.e94501)\>
-
-</div>
-
+[7] Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, & Paul Groth (2022): Updating linked data practices for <span>FAIR</span> digital object principles. *Research Ideas and Outcomes*, **8** (2022). \<https://doi.org/[10.3897/rio.8.e94501](https://doi.org/10.3897/rio.8.e94501)\>
 **\[cito:citesAsAuthority\]**
 
-</div>
-
-<div id="ref-looFirstInternationalConference2022" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-8\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
+[8]
 Tina Loo, ed. (2022): *First <span>International Conference</span> on <span>FAIR Digital Objects</span>* (<span>Pensoft Publishers</span>, 2022). \<https://doi.org/[10.3897/rio.coll.190](https://doi.org/10.3897/rio.coll.190)\>
-
-</div>
-
 **\[cito:discusses\]**
 
-</div>
-
-<div id="ref-Signposting_link_parser" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-9\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
+[9]
 Stian Soiland-Reyes, Bruno P. Kinoshita, & Vincent Emonet (2023): *<span class="nocase">Signposting link parser library</span>, version 0.9.6* (2023). \<https://doi.org/[10.5281/zenodo.10471965](https://doi.org/10.5281/zenodo.10471965)\>
-
-</div>
-
 **\[cito:citesAsPotentialSolution\]**
 
-</div>
 
-<div id="ref-tupelo-schneckrobertBriefIntroductionCordra2022" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-10\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
+[10]
 Tupelo-Schneck, Robert & Larry Lannom (2022): Brief <span>Introduction</span> to <span>Cordra</span> & <span>DOIP</span>. (2022). <https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf> (accessed 25 January 2023)
-
-</div>
-
 **\[cito:citesAsPotentialSolution\]**
 
-</div>
-
-<div id="ref-fdo-KernelAttributes" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-11\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
+[11]
 Daan Broeder, Peter Wittenburg, Ivonne Anders, & Karsten Peters-von Gehlen (2022): *<span>FDO</span> – kernel attributes & metadata* (<span>FDO Forum</span>, 2022). \<https://doi.org/[10.5281/zenodo.7825693](https://doi.org/10.5281/zenodo.7825693)\>
-
-</div>
-
 **\[cito:citesAsPotentialSolution\]**
 
-</div>
-
-<div id="ref-dissco-kernel" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-12\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Sharif Islam, Wouter Addink, & Soulaine Theocharides (2023): *<span>RFC</span>: <span>DiSSCo</span> kernel and digital specimen FDO record attributes* (2023). <https://docs.google.com/document/d/1hj5M9Cko5LduDv1H8CUYdGocg_B3YUf6MafoZPHPaec> (accessed 8 January 2024)
-
-</div>
-
+[12] Sharif Islam, Wouter Addink, & Soulaine Theocharides (2023): *<span>RFC</span>: <span>DiSSCo</span> kernel and digital specimen FDO record attributes* (2023). <https://docs.google.com/document/d/1hj5M9Cko5LduDv1H8CUYdGocg_B3YUf6MafoZPHPaec> (accessed 8 January 2024)
 **\[cito:citesAsAuthority\]**
 
-</div>
-
-<div id="ref-Castro_FDO_2023" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-13\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Leyla Jael Castro, Stian Soiland-Reyes, & Dietrich Rebholz-Schuhmann (2023): **<span>RO</span>-<span>Crates</span> <span>Meets</span> <span>FAIR</span> <span>Digital</span> <span>Objects</span>**. *Proceedings of the <span>Conference</span> on <span>Research</span> <span>Data</span> <span>Infrastructure</span>* (2023). \<https://doi.org/[10.52825/cordi.v1i.396](https://doi.org/10.52825/cordi.v1i.396)\>
-
-</div>
-
+[13] Leyla Jael Castro, Stian Soiland-Reyes, & Dietrich Rebholz-Schuhmann (2023): **<span>RO</span>-<span>Crates</span> <span>Meets</span> <span>FAIR</span> <span>Digital</span> <span>Objects</span>**. *Proceedings of the <span>Conference</span> on <span>Research</span> <span>Data</span> <span>Infrastructure</span>* (2023). \<https://doi.org/[10.52825/cordi.v1i.396](https://doi.org/10.52825/cordi.v1i.396)\>
 **\[cito:citesAsPotentialSolution\]**
 
-</div>
-
-<div id="ref-Smedt_FDO_2020" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-14\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Koenraad De Smedt, Dimitris Koureas, & Peter Wittenburg (2020): <span>FAIR</span> <span>Digital</span> <span>Objects</span> for <span>Science</span>: <span>From</span> <span>Data</span> <span>Pieces</span> to <span>Actionable</span> <span>Knowledge</span> <span>Units</span>. *Publications*, **8** (2020) 21. \<https://doi.org/[10.3390/publications8020021](https://doi.org/10.3390/publications8020021)\>
-
-</div>
-
+[14] Koenraad De Smedt, Dimitris Koureas, & Peter Wittenburg (2020): <span>FAIR</span> <span>Digital</span> <span>Objects</span> for <span>Science</span>: <span>From</span> <span>Data</span> <span>Pieces</span> to <span>Actionable</span> <span>Knowledge</span> <span>Units</span>. *Publications*, **8** (2020) 21. \<https://doi.org/[10.3390/publications8020021](https://doi.org/10.3390/publications8020021)\>
 **\[cito:citesAsAuthority\]**
 
-</div>
-
-<div id="ref-fdo-ConfigurationTypes" class="xcsl-entry" role="doc-biblioentry">
-
-<div class="xcsl-left-margin">
-
-15\.
-
-</div>
-
-<div class="xcsl-right-inline">
-
-Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, & Peter Wittenburg (2022): *<span>FDO</span> configuration types* (<span>FAIR Digital Objects Forum</span>, 2022). \<https://doi.org/[10.5281/zenodo.7825703](https://doi.org/10.5281/zenodo.7825703)\>
-
-</div>
-
+[15] Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, & Peter Wittenburg (2022): *<span>FDO</span> configuration types* (<span>FAIR Digital Objects Forum</span>, 2022). \<https://doi.org/[10.5281/zenodo.7825703](https://doi.org/10.5281/zenodo.7825703)\>
 **\[cito:citesAsAuthority\]**
-
-</div>
-
-</div>
