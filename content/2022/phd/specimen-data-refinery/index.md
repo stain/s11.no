@@ -262,8 +262,7 @@ Combined with FAIR Signposting \[[Van de Sompel 2022]\] for resolving persistent
 
 Henceforth, we refer to **RO-Crate FDOs**.
 
-[^1]:
-Section [\[ch5:packaging-research-artefacts-with-ro-crate\]](#ch5:packaging-research-artefacts-with-ro-crate){reference-type="ref+page" reference="ch5:packaging-research-artefacts-with-ro-crate"}
+[^1]: See [Section 5.1](../ro-crate/)
 
 
 ## Problem Description
@@ -521,18 +520,287 @@ This work has received funding from the European Union's Horizon 2020 research a
 
 
 ## References
+[Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
+\[Addink 2019\] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
+**DiSSCo as a New Regional Model for Scientific Collections in Europe**.\
+*Biodiversity Information Science and Standards* **3**:e37502.\
+<https://doi.org/10.3897/biss.3.37502>
 
-[Walton 2020a]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
-\[Walton 2020a\] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher Kermorvant, Isabel Rey, Celia Santos, Ben Scott, Alan Williams, Zhengzhe Wu (2020):\
-**Landscape Analysis for the Specimen Data Refinery**.\
-*Research Ideas and Outcomes* **6**:e57602\
-<https://doi.org/10.3897/rio.6.e57602>
+[Afgan 2018]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative
+biomedical analyses"
+\[Afgan 2018\] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, Daniel Blankenberg (2018):\ 
+**The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**.\
+*Nucleic Acids Research* **46**(W1) W537--W544\
+<https://doi.org/10.1093/nar/gky379>
 
-[Thiers 2016]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
-\[Thiers 2016\] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
-**Digitization of the New York Botanical Garden herbarium**.\
-*Brittonia*, **68**(3)\
-<https://doi.org/10.1007/s12228-016-9423-7>
+[Allan 2019]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
+\[Allan 2019\] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
+Vincent Smith (2019):\
+**A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides**.\
+*Biodiversity Data Journal* **7**:e32342.\
+<https://doi.org/10.3897/BDJ.7.e32342>
+
+[Amstutz 2022]: https://s.apache.org/existing-workflow-systems "Existing Workflow systems"
+\[Amstutz 2022\] Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel Lampa, et al. (2022):\
+**Existing Workflow systems**.\
+*Common Workflow Language wiki*, GitHub.
+<https://s.apache.org/existing-workflow-systems> updated 2022-09-13,
+accessed 2023-01-23.
+
+[Atkinson 2017]: https://doi.org/10.1016/j.future.2017.05.041 "Scientific workflows: Past, present and future"
+\[Atkinson 2017\] Malcolm Atkinson, Sandra Gesing, Johan Montagnat, Ian Taylor (2017):\
+**Scientific workflows: Past, present and future**.\
+*Future Generation Computer Systems* **75**\
+<https://doi.org/10.1016/j.future.2017.05.041>
+
+[Bacall 2022]: https://w3id.org/workflowhub/workflow-ro-crate/1.0 "Workflow RO-Crate Profile 1.0"
+\[Bacall 2022\] Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):\
+**Workflow RO-Crate Profile 1.0**.\
+*WorkflowHub community*\
+<https://w3id.org/workflowhub/workflow-ro-crate/1.0>
+
+[Bechhofer 2013]: https://doi.org/10.1016/j.future.2011.08.004 "Why Linked Data is not enough for scientists"
+\[Bechhofer 2013\] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):\
+**Why Linked Data is not enough for scientists**.\
+*Future Generation Computer Systems* **29**(2) pp. 599--611.\
+<https://doi.org/10.1016/j.future.2011.08.004>
+
+[Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
+\[Bonino 2019\] Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
+Leggott, Carlo Zwölf (2019):\
+**FAIR digital object framework v1.02**.\
+FDOF technical implementation guideline.\
+*Group of European Data Experts in RDA (GEDE-RDA)*\
+<https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
+
+[Bray 2017]: https://www.rfc-editor.org/rfc/rfc8259.html "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+\[Bray 2017\] Tim Bray (2017): \
+**The JavaScript Object Notation (JSON) Data Interchange Format**.\
+STD 90, RFC 8259\
+*RFC Editor*, Internet Engineering Task Force.\
+<https://doi.org/10.17487/rfc8259>
+
+[Carranza-Rojas 2017]: https://doi.org/10.1186/s12862-017-1014-z "Going deeper in the automated identification of Herbarium specimens"
+\[Carranza-Rojas 2017\] Jose Carranza-Rojas, Herve Goeau, Pierre Bonnet, Erick Mata-Montero,
+Alexis Joly (2017):\
+**Going deeper in the automated identification of Herbarium specimens**.\
+*BMC Evolutionary Biology* **17**(1)\
+<https://doi.org/10.1186/s12862-017-1014-z>
+
+[Corcho 2021]: https://doi.org/10.5281/zenodo.4913285 "RO Model Adapted to EOSC"
+\[Corcho 2021\] Oscar Corcho, Esteban González, Daniel Garijo, Raul Palma (2021):\
+**D5.1 RO Model Adapted to EOSC**\
+RELIANCE deliverable, *Zenodo*\
+<https://doi.org/10.5281/zenodo.4913285>
+
+[Crusoe 2022]: ../methods-included/ "Methods Included"
+\[Crusoe 2022\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
+Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan
+Gavrilović, Carole Goble, The CWL Community (2022):\
+**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.\
+*Communications of the ACM* **65**(6)\
+<https://doi.org/10.1145/3486897>
+
+[De Roure 2010]: http://eprints.soton.ac.uk/id/eprint/270817 "Anchors in shifting sand: the primacy of method in the web of data"
+\[De Roure 2010\] David De Roure, Carole Goble (2010):\
+**Anchors in shifting sand: the primacy of method in the web of data**.\
+*Proceedings of the WebSci10: Extending the Frontiers of Society
+On-Line*, at Web Science Conference 2010 Raleigh, NC: US
+2010-04-26/--27\
+<https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/>\
+<http://eprints.soton.ac.uk/id/eprint/270817>
+
+[De Smedt 2020]: https://doi.org/10.3390/publications8020021 "FAIR Digital Objects for Science"
+\[De Smedt 2020\] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
+**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
+*Publications* **8**(2):21  
+<https://doi.org/10.3390/publications8020021>
+
+[Dillen 2019b]: https://doi.org/10.3897/BDJ.7.e31817 "A benchmark dataset of herbarium specimen imagfes with label data"
+\[Dillen 2019b\] Mathias Dillen, Quentin Groom, Simon Chagnoux, Anton Güntsch, Alex
+Hardisty, Elspeth Haston, Laurence Livermore, Veljo Runnel, Leif
+Schulman, Luc Willemse, Zhengzhe Wu, Sarah Phillips (2019):\
+**A benchmark dataset of herbarium specimen imagfes with label data**.\
+*Biodiversity Data Journal* **7**:e31817.\
+<https://doi.org/10.3897/BDJ.7.e31817>
+
+[DONA 2018]: https://hdl.handle.net/0.DOIP/DOIPV2.0 "Digital Object Interface Protocol specification"
+\[DONA 2018\] DONA Foundation (2018):\
+**Digital Object Interface Protocol specification, version 2.0**.\
+*DONA Foundation*\
+<https://hdl.handle.net/0.DOIP/DOIPV2.0>
+
+[DONA 2021]: https://www.dona.net/node/88 "Digital Object Architecture"
+\[DONA 2021\] DONA Foundation (2021):\
+**Digital Object Architecture**.\
+<https://www.dona.net/node/88> (accessed 2021-08-10)
+
+[Ferrier 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
+\[Ferrier 2019\] Mark Hereld, Nicola Ferrier (2019):\
+**LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
+*Biodiversity Information Science and Standards* **3**:e37228.\
+<https://doi.org/10.3897/biss.3.37228>
+
+[GBIF 2021]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
+\[GBIF 2021\] GBIF Secretariat. (2021):\
+**GBIF Science Review 2020**.\
+<https://doi.org/10.35035/bezp-jj23>
+
+[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
+Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
+Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
+Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
+Frederik Coppens (2021):\
+**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.\
+*Zenodo*\
+<https://doi.org/10.5281/zenodo.4605654>
+
+[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):\
+**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.\
+*Zenodo*\
+<https://doi.org/10.5281/zenodo.4605654>
+
+[Gössner 2023]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath"
+\[Gössner 2023\] JSONPath WG (2023):\
+**JSONPath: Query Expressions for JSON.**\
+Stefan Gössner, Glyn Normington, Carsten Bormann (eds).\
+Internet-Draft draft-ietf-jsonpath-base-10\
+<https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10>
+
+[Groom 2020]: https://doi.org/10.1093/database/baaa072 "People are essential to linking biodiversity data"
+\[Groom 2020\] Quentin Groom, Anton Güntsch, Pieter Huybrechts, Nicole Kearney, Siobhan Leachman, Nicky Nicolson, Roderic D M Page, David P Shorthouse, Anne E Thessen, Elspeth Haston (2020):\
+**People are essential to linking biodiversity data**.\
+*Database* **2020**\
+<https://doi.org/10.1093/database/baaa072>
+
+[Hardisty 2016]: https://doi.org/10.1186/s12898-016-0103-y "BioVeL"
+\[Hardisty 2016\] <small>Alex R. Hardisty, Finn Bacall, Niall Beard, Maria-Paula Balcázar-Vargas, Bachir Balech, Zoltán Barcza, Sarah J. Bourlat, Renato De Giovanni, Yde de Jong, Francesca De Leo, Laura Dobor, Giacinto Donvito, Donal Fellows, Antonio Fernandez Guerra, Nuno Ferreira, Yuliya Fetyukova, Bruno Fosso, Jonathan Giddy, Carole Goble, Anton Güntsch, Robert Haines, Vera Hernández Ernst, Hannes Hettling, Dóra Hidy, Ferenc Horváth, Dóra Ittzés, Péter Ittzés, Andrew Jones, Renzo Kottmann, Robert Kulawik, Sonja Leidenberger, Päivi Lyytikäinen-Saarenmaa, Cherian Mathew, Norman Morrison, Aleksandra Nenadic, Abraham Nieva de la Hidalga, Matthias Obst, Gerard Oostermeijer, Elisabeth Paymal, Graziano Pesole, Salvatore Pinto, Axel Poigné, Francisco Quevedo Fernandez, Monica Santamaria, Hannu Saarenmaa, Gergely Sipos, Karl-Heinz Sylla, Marko Tähtinen, Saverio Vicario, Rutger Aldo Vos, Alan R. Williams, Pelin Yilmaz</small> (2016):\
+**BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology**.\
+*BMC Ecology* **16**(1)\
+<https://doi.org/10.1186/s12898-016-0103-y>
+
+[Hardisty 2019b]: https://doi.org/10.5281/zenodo.3532937 "Provisional Data Management Plan for DiSSCo infrastructure"
+\[Hardisty 2019b\] Alex Hardisty (2019):\
+**Provisional Data Management Plan for DiSSCo infrastructure**.\
+*Zenodo*, DiSSCo Deliverable D6.6\
+<https://doi.org/10.5281/zenodo.3532937>
+
+[Hardisty 2020]: https://doi.org/10.3897/rio.6.e54280 "Conceptual design blueprint for the DiSSCo digitization infrastructure"
+\[Hardisty 2020\] Alex Hardisty, Hannu Saarenmaa, Ana Casino, Mathias Dillen, Karsten Gödderz, Quentin Groom, Helen Hardy, Dimitris Koureas, Abraham Nieva de la Hidalga, Deborah Paul, Veljo Runnel, Xavier Vermeersch, Myriam van Walsum, Luc Willemse (2020):\
+**Conceptual design blueprint for the DiSSCo digitization infrastructure - DELIVERABLE D8.1**.\
+*Research Ideas and Outcomes* **6**:e54280.\
+<https://doi.org/10.3897/rio.6.e54280>
+
+[Harrow 2021]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE"
+\[Harrow 2021\] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
+Blomberg (2021):\
+**ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the life science research of the future**.\
+*EMBO Journal* **40**(6):e107409\
+<https://doi.org/10.15252/embj.2020107409>
+
+[Heberling 2019]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change"
+\[Heberling 2019\] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
+**The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis**.\
+*BioScience* **69**(10)\
+<https://doi.org/10.1093/biosci/biz094>
+
+[Heberling 2021]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
+\[Heberling 2021\] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart, Dmitry Schigel (2021):\
+**Data integration enables global biodiversity synthesis**.\
+*Proceedings of the National Academy of Sciences* **118**(6)\
+<https://doi.org/10.1073/pnas.2018093118>
+
+[Hereld 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
+\[Hereld 2019\] Mark Hereld, Nicola Ferrier (2019):\
+**LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
+*Biodiversity Information Science and Standards* **3**:e37228.\
+<https://doi.org/10.3897/biss.3.37228>
+
+[Hui 2012]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
+\[Hui 2012\] Yuk Hui (2012):\
+**What is a Digital Object?**\
+*Metaphilosophy* **43**(4)\
+<https://doi.org/10.1111/j.1467-9973.2012.01761.x>
+
+[Hui 2012]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
+\[Hui 2012\] Yuk Hui (2012):\
+**What is a Digital Object?**\
+*Metaphilosophy* **43**(4)\
+<https://doi.org/10.1111/j.1467-9973.2012.01761.x>
+
+[Hussein 2021]: https://doi.org/10.48550/arXiv.2104.08732 "Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens"
+\[Hussein 2021\] Burhan Rashid Hussein, Owais Ahmed Malik, Wee-Hong Ong, Johan Willem Frederik Slik (2021):\
+**Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens: A Systematic Literature Review**.\
+*arXiv* 2104.08732v1\
+<https://doi.org/10.48550/arXiv.2104.08732>
+
+[Islam 2020]: https://doi.org/10.5334/dsj-2020-050 "Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections"
+\[Islam 2020\] Sharif Islam, Alex Hardisty, Wouter Addink, Claus Weiland, Falko Glöckler (2020):\
+**Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections**.\
+*Data Science Journal* **19**:50\
+<https://doi.org/10.5334/dsj-2020-050>
+
+[JSONPath 2023]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath"
+\[JSONPath 2023\] JSONPath WG (2023):\
+**JSONPath: Query Expressions for JSON**.\
+Stefan Gössner, Glyn Normington, Carsten Bormann (eds).\
+Internet-Draft draft-ietf-jsonpath-base-10\
+<https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10>
+
+[Kahn 2006]: https://doi.org/10.1007/s00799-005-0128-x "A framework for distributed digital object services"
+\[Kahn 2006\] Robert Kahn, Robert Wilensky (2006):\
+**A framework for distributed digital object services**.\
+*International Journal on Digital Libraries* **6**\
+<https://doi.org/10.1007/s00799-005-0128-x>
+
+[Kallinikos 2013]: https://www.jstor.org/stable/43825913 "The ambivalent ontology of digital artifacts"
+\[Kallinikos 2013\] Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
+**The ambivalent ontology of digital artifacts**.\
+*MIS Quarterly* **37**(2) pp. 357--370.\
+ISSN 0276-7783\
+<https://www.jstor.org/stable/43825913>\
+<https://misq.umn.edu/the-ambivalent-ontology-of-digital-artifacts.html>
+
+[Kharouba 2019]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts"
+\[Kharouba 2019\] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
+Kerr, Mark Vellend (2019):\
+**Using insect natural history collections to study global change impacts: challenges and opportunities**.\
+*Philosophical Transactions of the Royal Society B: Biological Sciences*
+**374**(1763):20170405\
+<https://doi.org/10.1098/rstb.2017.0405>
+
+[Knyshov 2021]: https://doi.org/10.1093/isd/ixab004 "Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case" 
+\[Knyshov 2021\] Alexander Knyshov, Samantha Hoang, Christiane Weirauch (2021):\
+**Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case**: Identification of Plant Bugs (Hemiptera: Miridae) Using a Small Number of Training Images.\
+*Insect Systematics and Diversity* **5**(2)\
+<https://doi.org/10.1093/isd/ixab004>
+
+[Lannom 2020]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
+\[Lannom 2020\] Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
+**FAIR Data and Services in Biodiversity Science and Geoscience**.\
+*Data Intelligence* **2**(1--2):122--130.\
+<https://doi.org/10.1162/dint_a_00034>
+
+[Little 2020]: https://doi.org/10.1002/aps3.11365 "An algorithm competition for automatic species identification from herbarium specimens"
+\[Little 2020\] Damon P. Little, Melissa Tulig, Kiat Chuan Tan, Yulong Liu, Serge Belongie, Christine Kaeser‐Chen, Fabián A. Michelangeli, Kiran Panesar, R.V. Guha, Barbara A. Ambrose (2020):\
+**An algorithm competition for automatic species identification from herbarium specimens**.\
+*Applications in Plant Sciences* **8**(6):e11365\
+<https://doi.org/10.1002/aps3.11365>
+
+[Lohonya 2020]: https://doi.org/10.3897/BDJ.8.e50503 "Georeferencing the Natural History Museum's Chinese type collection"
+\[Lohonya 2020\] Krisztina Lohonya, Laurence Livermore, Malcolm Penn (2020):
+**Georeferencing the Natural History Museum's Chinese type collection: of plateaus, pagodas and plants**.\
+*Biodiversity Data Journal* **8**:e50503.\
+<https://doi.org/10.3897/BDJ.8.e50503>
+
+[Lughadha 2019]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
+\[Lughadha 2019\] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
+Vasconcelos, Barnaby E. Walker, Cátia Canteiro, Eve J. Lucas (2019):\
+**Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups**.\
+*Conservation Biology* **33**(3)\
+<https://doi.org/10.1111/cobi.13289>
 
 [Nelson 2019a]: https://doi.org/10.1098/rstb.2017.0391 "The history and impact of digitization and digital data mobilization on biodiversity research"
 \[Nelson 2019a\] Gil Nelson, Shari Ellis (2019):\
@@ -547,47 +815,32 @@ This work has received funding from the European Union's Horizon 2020 research a
 *Biodiversity Information Science and Standards* **3**:e37896.\
 <https://doi.org/10.3897/biss.3.37896>
 
-[Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
-\[Addink 2019\] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
-**DiSSCo as a New Regional Model for Scientific Collections in Europe**.\
-*Biodiversity Information Science and Standards* **3**:e37502.\
-<https://doi.org/10.3897/biss.3.37502>
+[Nieva de la Hidalga 2021]: https://doi.org/10.1007/s00138-022-01276-z "Cross-validation of a semantic segmentation network for natural history collection specimens"
+\[Nieva de la Hidalga 2021\] Abraham Nieva de la Hidalga, Paul L. Rosin, Xianfang Sun, Laurence
+Livermore, James Durrant, James Turner, Mathias Dillen, Alicia Musson,
+Sarah Phillips, Quentin Groom, Alex Hardisty (2022):\
+**Cross-validation of a semantic segmentation network for natural history collection specimens**.\
+*Machine Vision and Applications* **33**(3)\
+<https://doi.org/10.1007/s00138-022-01276-z>
 
-[Lannom 2020]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
-\[Lannom 2020\] Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
-**FAIR Data and Services in Biodiversity Science and Geoscience**.\
-*Data Intelligence* **2**(1--2):122--130.\
-<https://doi.org/10.1162/dint_a_00034>
+[Ó Carragáin 2019a]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging*"
+\[Ó Carragáin 2019a\] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
+Stian Soiland-Reyes (2019):\
+**A lightweight approach to research object data packaging**.\
+*Bioinformatics Open Source Conference (BOSC2019)*,
+2019-07-24/2019-07-25, Basel, Switzerland.\
+<https://doi.org/10.5281/zenodo.3250687>
 
-[GBIF 2021]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
-\[GBIF 2021\] GBIF Secretariat. (2021):\
-**GBIF Science Review 2020**.\
-<https://doi.org/10.35035/bezp-jj23>
+[openDS 2021]: https://github.com/DiSSCo/openDS "Draft specification for open Digital Specimens (openDS)"
+\[openDS 2021\] openDS (2021):\
+**Draft specification for open Digital Specimens (openDS)**\
+<https://github.com/DiSSCo/openDS> (accessed 2021-08-10)
 
-[Heberling 2021]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
-\[Heberling 2021\] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart, Dmitry Schigel (2021):\
-**Data integration enables global biodiversity synthesis**.\
-*Proceedings of the National Academy of Sciences* **118**(6)\
-<https://doi.org/10.1073/pnas.2018093118>
-
-[Sweeney 2018]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens"
-\[Sweeney 2018\] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C. Davis (2018):\
-**Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system**.\
-*Taxon* **67**(1)\
-<https://doi.org/10.12705/671.10>
-
-[Allan 2019]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
-\[Allan 2019\] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
-Vincent Smith (2019):\
-**A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides**.\
-*Biodiversity Data Journal* **7**:e32342.\
-<https://doi.org/10.3897/BDJ.7.e32342>
-
-[Ferrier 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
-\[Ferrier 2019\] Mark Hereld, Nicola Ferrier (2019):\
-**LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
-*Biodiversity Information Science and Standards* **3**:e37228.\
-<https://doi.org/10.3897/biss.3.37228>
+[Owen 2020]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
+\[Owen 2020\] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
+**Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections**.\
+*Research Ideas and Outcomes* **6**:e58030.\
+<https://doi.org/10.3897/rio.6.e58030>
 
 [Price 2018]: https://doi.org/10.31219/osf.io/s2p73 "ALICE"
 \[Price 2018\] Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
@@ -597,75 +850,21 @@ Phaedra Kokkini, Laurence Livermore, Helen Hardy, Vincent Smith (2018):\
 _OSF_
 <https://doi.org/10.31219/osf.io/s2p73>
 
-[Tegelberg 2017]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
-\[Tegelberg 2017\] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
-Wu, Hannu Saarenmaa (2017):\
-**Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging**.\
-*2017 IEEE 13th International Conference on E-Science (e-Science)*\
-<https://doi.org/10.1109/eScience.2017.85>
+[Pryer 2020]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails"
+\[Pryer 2020\] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
+**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
+*Applications in Plant Sciences* **8**(6):e11372\
+<https://doi.org/10.1002/aps3.11372>
 
-[Heberling 2019]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change"
-\[Heberling 2019\] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
-**The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis**.\
-*BioScience* **69**(10)\
-<https://doi.org/10.1093/biosci/biz094>
+[Pryer 2022]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails"
+\[Pryer 2022\] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
+**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
+*Applications in Plant Sciences* **8**(6):e11372\
+<https://doi.org/10.1002/aps3.11372>
 
-[Kharouba 2019]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts"
-\[Kharouba 2019\] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
-Kerr, Mark Vellend (2019):\
-**Using insect natural history collections to study global change impacts: challenges and opportunities**.\
-*Philosophical Transactions of the Royal Society B: Biological Sciences*
-**374**(1763):20170405\
-<https://doi.org/10.1098/rstb.2017.0405>
-
-[Watanabe 2019]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections"
-\[Watanabe 2019\] Myrna E Watanabe (2019):\
-**The Evolution of Natural History Collections: New research tools move specimens, data to center stage**.\
-*BioScience* **69**(3)\
-<https://doi.org/10.1093/biosci/biy163>
-
-[Lughadha 2019]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
-\[Lughadha 2019\] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
-Vasconcelos, Barnaby E. Walker, Cátia Canteiro, Eve J. Lucas (2019):\
-**Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups**.\
-*Conservation Biology* **33**(3)\
-<https://doi.org/10.1111/cobi.13289>
-
-[Owen 2020]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
-\[Owen 2020\] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
-**Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections**.\
-*Research Ideas and Outcomes* **6**:e58030.\
-<https://doi.org/10.3897/rio.6.e58030>
-
-[Harrow 2021]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE"
-\[Harrow 2021\] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
-Blomberg (2021):\
-**ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the life science research of the future**.\
-*EMBO Journal* **40**(6):e107409\
-<https://doi.org/10.15252/embj.2020107409>
-
-[Afgan 2018]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative
-biomedical analyses"
-\[Afgan 2018\] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, Daniel Blankenberg (2018):\ 
-**The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**.\
-*Nucleic Acids Research* **46**(W1) W537--W544\
-<https://doi.org/10.1093/nar/gky379>
-
-[Crusoe 2022]: ../methods-included/ "Methods Included"
-\[Crusoe 2022\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
-Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan
-Gavrilović, Carole Goble, The CWL Community (2022):\
-**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.\
-*Communications of the ACM* **65**(6)\
-<https://doi.org/10.1145/3486897>
-
-[Ó Carragáin 2019a]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging*"
-\[Ó Carragáin 2019a\] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
-Stian Soiland-Reyes (2019):\
-**A lightweight approach to research object data packaging**.\
-*Bioinformatics Open Source Conference (BOSC2019)*,
-2019-07-24/2019-07-25, Basel, Switzerland.\
-<https://doi.org/10.5281/zenodo.3250687>
+[schema.org]: https://schema.org/ "schema.org"
+\[schema.org\] **Schema.org - Schema.org**\
+<https://schema.org/> (accessed 2021-08-10).
 
 [Soiland-Reyes 2022a]: https://doi.org/10.3233/DS-210053 "Packaging research artefacts with RO-Crate"
 \[Soiland-Reyes 2022a\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
@@ -676,15 +875,78 @@ RO-Crate Community, Paul Groth, Carole Goble (2022):\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/DS-210053>
 
-[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
-Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
-Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
-Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
-Frederik Coppens (2021):\
-**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.\
-*Zenodo*\
-<https://doi.org/10.5281/zenodo.4605654>
+[Speicher 2015]: http://www.w3.org/TR/2015/REC-ldp-20150226/ "Linked Data Platform 1.0"
+\[Speicher 2015\] Steve Speicher, John Arwe, Ashok Malhotra (eds) (2015):\
+**Linked Data Platform 1.0**.\
+*W3C Recommendation* 26 February 2015\
+<http://www.w3.org/TR/2015/REC-ldp-20150226/>
+
+[Sporny 2020]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1"
+\[Sporny 2020\] Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, Pierre-Antoine Champin, Niklas Lindström (2020):\
+**JSON-LD 1.1: A JSON-based Serialization for Linked Data**.\
+*W3C Recommendation* 16 July 2020\
+<https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
+
+[Sun 2003b]: https://www.rfc-editor.org/rfc/rfc3652.html "RFC 3652: Handle System Protocol (ver 2.1) Specification"
+\[Sun 2003b\] Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003):\
+**Handle System Protocol (ver 2.1) Specification**.\
+*RFC Editor*, RFC 3652\
+<https://doi.org/10.17487/rfc3652>
+
+[Sweeney 2018]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens"
+\[Sweeney 2018\] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C. Davis (2018):\
+**Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system**.\
+*Taxon* **67**(1)\
+<https://doi.org/10.12705/671.10>
+
+[Tegelberg 2017]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
+\[Tegelberg 2017\] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
+Wu, Hannu Saarenmaa (2017):\
+**Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging**.\
+*2017 IEEE 13th International Conference on E-Science (e-Science)*\
+<https://doi.org/10.1109/eScience.2017.85>
+
+[Thiers 2016]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
+\[Thiers 2016\] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
+**Digitization of the New York Botanical Garden herbarium**.\
+*Brittonia*, **68**(3)\
+<https://doi.org/10.1007/s12228-016-9423-7>
+
+[Triki 2020]: https://doi.org/10.5220/0009170005230529 "Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3"
+\[Triki 2020\] Abdelaziz Triki, Bassem Bouaziz, Walid Mahdi, Jitendra Gaikwad (2020):\
+**Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3**.\
+*Proceedings of the 15th International Joint Conference on Computer
+Vision, Imaging and Computer Graphics Theory and Applications* **4**\
+<https://doi.org/10.5220/0009170005230529>
+
+[Unger 2016]: https://doi.org/10.1186/s12862-016-0827-5 "Computer vision applied to herbarium specimens of German trees"
+\[Unger 2016\] Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
+**Computer vision applied to herbarium specimens of German trees**: testing the future utility of the millions of herbarium specimen images for automated identification.\
+*BMC Evolutionary Biology* **16**(1)\
+<https://doi.org/10.1186/s12862-016-0827-5>
+
+[Van de Sompel 2022]: https://signposting.org/FAIR/ "FAIR Signposting Profile"
+\[Van de Sompel 2022\] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
+**FAIR Signposting Profile**. (version 20220727).\
+<https://signposting.org/FAIR/>
+
+[Walton 2020a]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
+\[Walton 2020a\] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher Kermorvant, Isabel Rey, Celia Santos, Ben Scott, Alan Williams, Zhengzhe Wu (2020):\
+**Landscape Analysis for the Specimen Data Refinery**.\
+*Research Ideas and Outcomes* **6**:e57602\
+<https://doi.org/10.3897/rio.6.e57602>
+
+[Walton 2020b]: https://doi.org/10.3897/rio.6.e56211 "A cost analysis of transcription systems"
+\[Walton 2020b\] Stephanie Walton, Laurence Livermore, Mathias Dillen, Sofie De Smedt, Quentin Groom, Anne Koivunen, Sarah Phillips (2020):\
+**A cost analysis of transcription systems**.\
+*Research Ideas and Outcomes* **6**:e56211.\
+<https://doi.org/10.3897/rio.6.e56211>
+
+[Watanabe 2019]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections"
+\[Watanabe 2019\] Myrna E Watanabe (2019):\
+**The Evolution of Natural History Collections: New research tools move specimens, data to center stage**.\
+*BioScience* **69**(3)\
+<https://doi.org/10.1093/biosci/biy163>
 
 [Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
 \[Wilkinson 2016\] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):\
@@ -700,266 +962,3 @@ Spinuso (2022):\
 *Data Intelligence* **4**(2)\
 <https://doi.org/10.1162/dint_a_00132>
 
-[Hardisty 2019b]: https://doi.org/10.5281/zenodo.3532937 "Provisional Data Management Plan for DiSSCo infrastructure"
-\[Hardisty 2019b\] Alex Hardisty (2019):\
-**Provisional Data Management Plan for DiSSCo infrastructure**.\
-*Zenodo*, DiSSCo Deliverable D6.6\
-<https://doi.org/10.5281/zenodo.3532937>
-
-[De Smedt 2020]: https://doi.org/10.3390/publications8020021 "FAIR Digital Objects for Science"
-\[De Smedt 2020\] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
-**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
-*Publications* **8**(2):21  
-<https://doi.org/10.3390/publications8020021>
-
-[Hardisty 2020]: https://doi.org/10.3897/rio.6.e54280 "Conceptual design blueprint for the DiSSCo digitization infrastructure"
-\[Hardisty 2020\] Alex Hardisty, Hannu Saarenmaa, Ana Casino, Mathias Dillen, Karsten Gödderz, Quentin Groom, Helen Hardy, Dimitris Koureas, Abraham Nieva de la Hidalga, Deborah Paul, Veljo Runnel, Xavier Vermeersch, Myriam van Walsum, Luc Willemse (2020):\
-**Conceptual design blueprint for the DiSSCo digitization infrastructure - DELIVERABLE D8.1**.\
-*Research Ideas and Outcomes* **6**:e54280.\
-<https://doi.org/10.3897/rio.6.e54280>
-
-[Bonino 2019]: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx "FAIR digital object framework"
-\[Bonino 2019\] Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark
-Leggott, Carlo Zwölf (2019):\
-**FAIR digital object framework v1.02**.\
-FDOF technical implementation guideline.\
-*Group of European Data Experts in RDA (GEDE-RDA)*\
-<https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx>
-
-[Triki 2020]: https://doi.org/10.5220/0009170005230529 "Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3"
-\[Triki 2020\] Abdelaziz Triki, Bassem Bouaziz, Walid Mahdi, Jitendra Gaikwad (2020):\
-**Objects Detection from Digitized Herbarium Specimen based on Improved YOLO V3**.\
-*Proceedings of the 15th International Joint Conference on Computer
-Vision, Imaging and Computer Graphics Theory and Applications* **4**\
-<https://doi.org/10.5220/0009170005230529>
-
-[Nieva de la Hidalga 2021]: https://doi.org/10.1007/s00138-022-01276-z "Cross-validation of a semantic segmentation network for natural history collection specimens"
-\[Nieva de la Hidalga 2021\] Abraham Nieva de la Hidalga, Paul L. Rosin, Xianfang Sun, Laurence
-Livermore, James Durrant, James Turner, Mathias Dillen, Alicia Musson,
-Sarah Phillips, Quentin Groom, Alex Hardisty (2022):\
-**Cross-validation of a semantic segmentation network for natural history collection specimens**.\
-*Machine Vision and Applications* **33**(3)\
-<https://doi.org/10.1007/s00138-022-01276-z>
-
-[Walton 2020b]: https://doi.org/10.3897/rio.6.e56211 "A cost analysis of transcription systems"
-\[Walton 2020b\] Stephanie Walton, Laurence Livermore, Mathias Dillen, Sofie De Smedt, Quentin Groom, Anne Koivunen, Sarah Phillips (2020):\
-**A cost analysis of transcription systems**.\
-*Research Ideas and Outcomes* **6**:e56211.\
-<https://doi.org/10.3897/rio.6.e56211>
-
-[Groom 2020]: https://doi.org/10.1093/database/baaa072 "People are essential to linking biodiversity data"
-\[Groom 2020\] Quentin Groom, Anton Güntsch, Pieter Huybrechts, Nicole Kearney, Siobhan Leachman, Nicky Nicolson, Roderic D M Page, David P Shorthouse, Anne E Thessen, Elspeth Haston (2020):\
-**People are essential to linking biodiversity data**.\\
-*Database* **2020**\
-<https://doi.org/10.1093/database/baaa072>
-
-[Knyshov 2021]: https://doi.org/10.1093/isd/ixab004 "Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case" 
-\[Knyshov 2021\] Alexander Knyshov, Samantha Hoang, Christiane Weirauch (2021):\
-**Pretrained Convolutional Neural Networks Perform Well in a Challenging Test Case**: Identification of Plant Bugs (Hemiptera: Miridae) Using a Small Number of Training Images.\
-*Insect Systematics and Diversity* **5**(2)\
-<https://doi.org/10.1093/isd/ixab004>
-
-[Hussein 2021]: https://doi.org/10.48550/arXiv.2104.08732 "Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens"
-\[Hussein 2021\] Burhan Rashid Hussein, Owais Ahmed Malik, Wee-Hong Ong, Johan Willem Frederik Slik (2021):\
-**Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens: A Systematic Literature Review**.\
-*arXiv* 2104.08732v1\
-<https://doi.org/10.48550/arXiv.2104.08732>
-
-[Carranza-Rojas 2017]: https://doi.org/10.1186/s12862-017-1014-z "Going deeper in the automated identification of Herbarium specimens"
-\[Carranza-Rojas 2017\] Jose Carranza-Rojas, Herve Goeau, Pierre Bonnet, Erick Mata-Montero,
-Alexis Joly (2017):\
-**Going deeper in the automated identification of Herbarium specimens**.\
-*BMC Evolutionary Biology* **17**(1)\
-<https://doi.org/10.1186/s12862-017-1014-z>
-
-[Little 2020]: https://doi.org/10.1002/aps3.11365 "An algorithm competition for automatic species identification from herbarium specimens"
-\[Little 2020\] Damon P. Little, Melissa Tulig, Kiat Chuan Tan, Yulong Liu, Serge Belongie, Christine Kaeser‐Chen, Fabián A. Michelangeli, Kiran Panesar, R.V. Guha, Barbara A. Ambrose (2020):\
-**An algorithm competition for automatic species identification from herbarium specimens**.\
-*Applications in Plant Sciences* **8**(6):e11365\
-<https://doi.org/10.1002/aps3.11365>
-
-[Pryer 2020]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails"
-\[Pryer 2020\] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
-**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
-*Applications in Plant Sciences* **8**(6):e11372\
-<https://doi.org/10.1002/aps3.11372>
-
-[Unger 2016]: https://doi.org/10.1186/s12862-016-0827-5 "Computer vision applied to herbarium specimens of German trees"
-\[Unger 2016\] Jakob Unger, Dorit Merhof, Susanne Renner (2016):\
-**Computer vision applied to herbarium specimens of German trees**: testing the future utility of the millions of herbarium specimen images for automated identification.\
-. *BMC Evolutionary Biology* **16**(1)\
-<https://doi.org/10.1186/s12862-016-0827-5>
-
-[Atkinson 2017]: https://doi.org/10.1016/j.future.2017.05.041 "Scientific workflows: Past, present and future"
-\[Atkinson 2017\] Malcolm Atkinson, Sandra Gesing, Johan Montagnat, Ian Taylor (2017):\
-**Scientific workflows: Past, present and future**.\
-*Future Generation Computer Systems* **75**\
-<https://doi.org/10.1016/j.future.2017.05.041>
-
-[Amstutz 2022]: https://s.apache.org/existing-workflow-systems "Existing Workflow systems"
-\[Amstutz 2022\] Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel Lampa, et al. (2022):\
-**Existing Workflow systems**.\
-*Common Workflow Language wiki*, GitHub.
-<https://s.apache.org/existing-workflow-systems> updated 2022-09-13,
-accessed 2023-01-23.
-
-[Hui 2012]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
-\[Hui 2012\] Yuk Hui (2012):\
-**What is a Digital Object?**\
-*Metaphilosophy* **43**(4)\
-<https://doi.org/10.1111/j.1467-9973.2012.01761.x>
-
-[Kallinikos 2013]: https://www.jstor.org/stable/43825913 "The ambivalent ontology of digital artifacts"
-\[Kallinikos 2013\] Jannis Kallinikos, Aleksi Ville Aaltonen, Attila Marton (2013):\
-**The ambivalent ontology of digital artifacts**.\
-*MIS Quarterly* **37**(2) pp. 357--370.\
-ISSN 0276-7783\
-<https://www.jstor.org/stable/43825913>\
-<https://misq.umn.edu/the-ambivalent-ontology-of-digital-artifacts.html>
-
-[Kahn 2006]: https://doi.org/10.1007/s00799-005-0128-x "A framework for distributed digital object services"
-\[Kahn 2006\] Robert Kahn, Robert Wilensky (2006):\
-**A framework for distributed digital object services**.\
-*International Journal on Digital Libraries* **6**\
-<https://doi.org/10.1007/s00799-005-0128-x>
-
-[openDS 2021]: https://github.com/DiSSCo/openDS "Draft specification for open Digital Specimens (openDS)"
-\[openDS 2021\] openDS (2021):\
-**Draft specification for open Digital Specimens (openDS)**\
-<https://github.com/DiSSCo/openDS> (accessed 2021-08-10)
-
-[Bray 2017]: https://www.rfc-editor.org/rfc/rfc8259.html "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
-\[Bray 2017\] Tim Bray (2017): \
-**The JavaScript Object Notation (JSON) Data Interchange Format**.\
-STD 90, RFC 8259\
-*RFC Editor*, Internet Engineering Task Force.\
-<https://doi.org/10.17487/rfc8259>
-
-[Bechhofer 2013]: https://doi.org/10.1016/j.future.2011.08.004 "Why Linked Data is not enough for scientists"
-\[Bechhofer 2013\] Sean Bechhofer, Iain Buchan, David De Roure, Paolo Missier, John Ainsworth, Jiten Bhagat, Phillip Couch, Don Cruickshank, Mark Delderfield, Ian Dunlop, Matthew Gamble, Danius Michaelides, Stuart Owen, David Newman, Shoaib Sufi, Carole Goble (2013):\
-**Why Linked Data is not enough for scientists**.\
-*Future Generation Computer Systems* **29**(2) pp. 599--611.\
-<https://doi.org/10.1016/j.future.2011.08.004>
-
-[Sporny 2020]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1"
-\[Sporny 2020\] Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, Pierre-Antoine Champin, Niklas Lindström (2020):\
-**JSON-LD 1.1: A JSON-based Serialization for Linked Data**.\
-*W3C Recommendation* 16 July 2020\
-<https://www.w3.org/TR/2020/REC-json-ld11-20200716/>
-
-[schema.org]: https://schema.org/ "schema.org"
-\[schema.org\] **Schema.org - Schema.org**\
-<https://schema.org/> (accessed 2021-08-10).
-
-[Corcho 2021]: https://doi.org/10.5281/zenodo.4913285 "RO Model Adapted to EOSC"
-\[Corcho 2021\] Oscar Corcho, Esteban González, Daniel Garijo, Raul Palma (2021):\
-**D5.1 RO Model Adapted to EOSC**\
-RELIANCE deliverable, *Zenodo*\
-<https://doi.org/10.5281/zenodo.4913285>
-
-[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):\
-**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**.\
-*Zenodo*\
-<https://doi.org/10.5281/zenodo.4605654>
-
-[Bacall 2022]: https://w3id.org/workflowhub/workflow-ro-crate/1.0 "Workflow RO-Crate Profile 1.0"
-\[Bacall 2022\] Finn Bacall, Alan R. Williams, Stuart Owen, Stian Soiland-Reyes (2022):\
-**Workflow RO-Crate Profile 1.0**.\
-*WorkflowHub community*\
-<https://w3id.org/workflowhub/workflow-ro-crate/1.0>
-
-[Van de Sompel 2022]: https://signposting.org/FAIR/ "FAIR Signposting Profile"
-\[Van de Sompel 2022\] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):\
-**FAIR Signposting Profile**. (version 20220727).\
-<https://signposting.org/FAIR/>
-
-[Lohonya 2020]: https://doi.org/10.3897/BDJ.8.e50503 "Georeferencing the Natural History Museum's Chinese type collection"
-\[Lohonya 2020\] Krisztina Lohonya, Laurence Livermore, Malcolm Penn (2020):
-**Georeferencing the Natural History Museum's Chinese type collection: of plateaus, pagodas and plants**.\
-*Biodiversity Data Journal* **8**:e50503.\
-<https://doi.org/10.3897/BDJ.8.e50503>
-
-[De Roure 2010]: http://eprints.soton.ac.uk/id/eprint/270817 "Anchors in shifting sand: the primacy of method in the web of data"
-\[De Roure 2010\] David De Roure, Carole Goble (2010):\
-**Anchors in shifting sand: the primacy of method in the web of data**.\
-*Proceedings of the WebSci10: Extending the Frontiers of Society
-On-Line*, at Web Science Conference 2010 Raleigh, NC: US
-2010-04-26/--27\
-<https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/>\
-<http://eprints.soton.ac.uk/id/eprint/270817>
-
-[Hardisty 2016]: https://doi.org/10.1186/s12898-016-0103-y "BioVeL"
-\[Hardisty 2016\] <small>Alex R. Hardisty, Finn Bacall, Niall Beard, Maria-Paula Balcázar-Vargas, Bachir Balech, Zoltán Barcza, Sarah J. Bourlat, Renato De Giovanni, Yde de Jong, Francesca De Leo, Laura Dobor, Giacinto Donvito, Donal Fellows, Antonio Fernandez Guerra, Nuno Ferreira, Yuliya Fetyukova, Bruno Fosso, Jonathan Giddy, Carole Goble, Anton Güntsch, Robert Haines, Vera Hernández Ernst, Hannes Hettling, Dóra Hidy, Ferenc Horváth, Dóra Ittzés, Péter Ittzés, Andrew Jones, Renzo Kottmann, Robert Kulawik, Sonja Leidenberger, Päivi Lyytikäinen-Saarenmaa, Cherian Mathew, Norman Morrison, Aleksandra Nenadic, Abraham Nieva de la Hidalga, Matthias Obst, Gerard Oostermeijer, Elisabeth Paymal, Graziano Pesole, Salvatore Pinto, Axel Poigné, Francisco Quevedo Fernandez, Monica Santamaria, Hannu Saarenmaa, Gergely Sipos, Karl-Heinz Sylla, Marko Tähtinen, Saverio Vicario, Rutger Aldo Vos, Alan R. Williams, Pelin Yilmaz</small> (2016):\
-**BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology**.\
-*BMC Ecology* **16**(1)\
-<https://doi.org/10.1186/s12898-016-0103-y>
-
-[Dillen 2019b]: https://doi.org/10.3897/BDJ.7.e31817 "A benchmark dataset of herbarium specimen imagfes with label data"
-\[Dillen 2019b\] Mathias Dillen, Quentin Groom, Simon Chagnoux, Anton Güntsch, Alex
-Hardisty, Elspeth Haston, Laurence Livermore, Veljo Runnel, Leif
-Schulman, Luc Willemse, Zhengzhe Wu, Sarah Phillips (2019):\
-**A benchmark dataset of herbarium specimen imagfes with label data**.\
-*Biodiversity Data Journal* **7**:e31817.\
-<https://doi.org/10.3897/BDJ.7.e31817>
-
-[Gössner 2023]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath"
-\[Gössner 2023\] JSONPath WG (2023):\
-**JSONPath: Query Expressions for JSON.**\
-Stefan Gössner, Glyn Normington, Carsten Bormann (eds).\
-Internet-Draft draft-ietf-jsonpath-base-10\
-<https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10>
-
-[DONA 2021]: https://www.dona.net/node/88 "Digital Object Architecture"
-\[DONA 2021\] DONA Foundation (2021):\
-**Digital Object Architecture**.\
-<https://www.dona.net/node/88> (accessed 2021-08-10)
-
-[DONA 2018]: https://hdl.handle.net/0.DOIP/DOIPV2.0 "Digital Object Interface Protocol specification"
-\[DONA 2018\] DONA Foundation (2018):\
-**Digital Object Interface Protocol specification, version 2.0**.\
-*DONA Foundation*\
-<https://hdl.handle.net/0.DOIP/DOIPV2.0>
-
-[Sun 2003b]: https://www.rfc-editor.org/rfc/rfc3652.html "RFC 3652: Handle System Protocol (ver 2.1) Specification"
-\[Sun 2003b\] Sam Sun, Sean Reilly, Larry Lannom, Jason Petrone (2003):\
-**Handle System Protocol (ver 2.1) Specification**.\
-*RFC Editor*, RFC 3652\
-<https://doi.org/10.17487/rfc3652>
-
-[Islam 2020]: https://doi.org/10.5334/dsj-2020-050 "Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections"
-\[Islam 2020\] Sharif Islam, Alex Hardisty, Wouter Addink, Claus Weiland, Falko Glöckler (2020):\
-**Incorporating RDA Outputs in the Design of a European Research Infrastructure for natural history Collections**.\
-*Data Science Journal* **19**:50\
-<https://doi.org/10.5334/dsj-2020-050>
-
-[Speicher 2015]: http://www.w3.org/TR/2015/REC-ldp-20150226/ "Linked Data Platform 1.0"
-\[Speicher 2015\] Steve Speicher, John Arwe, Ashok Malhotra (eds) (2015):\
-**Linked Data Platform 1.0**.\
-*W3C Recommendation* 26 February 2015\
-<http://www.w3.org/TR/2015/REC-ldp-20150226/>
-
-[Hui 2012]: https://doi.org/10.1111/j.1467-9973.2012.01761.x "What is a Digital Object?"
-\[Hui 2012\] Yuk Hui (2012):\
-**What is a Digital Object?**\
-*Metaphilosophy* **43**(4)\
-<https://doi.org/10.1111/j.1467-9973.2012.01761.x>
-
-[JSONPath 2023]: https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10 "JSONPath"
-\[JSONPath 2023\] JSONPath WG (2023):\
-**JSONPath: Query Expressions for JSON**.\
-Stefan Gössner, Glyn Normington, Carsten Bormann (eds).\
-Internet-Draft draft-ietf-jsonpath-base-10\
-<https://datatracker.ietf.org/doc/id/draft-ietf-jsonpath-base-10>
-
-[Hereld 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
-\[Hereld 2019\] Mark Hereld, Nicola Ferrier (2019):\
-**LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
-*Biodiversity Information Science and Standards* **3**:e37228.\
-<https://doi.org/10.3897/biss.3.37228>
-
-[Pryer 2022]: https://doi.org/10.1002/aps3.11372 "Using computer vision on herbarium specimen images to discriminate among closely related horsetails"
-\[Pryer 2022\] Kathleen M. Pryer, Carlo Tomasi, Xiaohan Wang, Emily K. Meineke, Michael D. Windham (2020):\
-**Using computer vision on herbarium specimen images to discriminate among closely related horsetails (Equisetum)**.\
-*Applications in Plant Sciences* **8**(6):e11372\
-<https://doi.org/10.1002/aps3.11372>
