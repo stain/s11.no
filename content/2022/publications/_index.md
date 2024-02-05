@@ -47,7 +47,7 @@ Peter Sefton, Stian Soiland-Reyes (2024):
 <https://research.manchester.ac.uk/en/publications/five-ways-ro-crate-data-packages-are-important-for-repositories>
 
 Stian Soiland-Reyes, Leyla Jael Castro, Rohitha Ravinder, Claus Weiland, Jonas Grieb, Alexander Rogers, Christophe Blanchi, Herbert Van de Sompel (2024):  
-[BioHackEU23 report: **Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas**](https://doi.org/10.37044/osf.io/gmk2h).  
+[BioHackEU23 report: **Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas**](../..//2024/enabling-fair-digital-objects/).  
 *BioHackrXiv*  
 <https://doi.org/10.37044/osf.io/gmk2h>
 
