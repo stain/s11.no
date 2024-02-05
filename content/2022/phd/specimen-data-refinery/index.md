@@ -522,164 +522,153 @@ research and innovation programme under grant agreement numbers 823827
 
 ## References
 
-[1]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
-\[1\] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn
-Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher
-Kermorvant, Isabel Rey, Celia Santos, Ben Scott, Alan Williams, Zhengzhe
-Wu (2020):\
+[Walton 2020]: https://doi.org/10.3897/rio.6.e57602 "Landscape Analysis for the Specimen Data Refinery"
+\[Walton 2020\] Stephanie Walton, Laurence Livermore, Olaf Bánki, Robert Cubey, Robyn Drinkwater, Markus Englund, Carole Goble, Quentin Groom, Christopher Kermorvant, Isabel Rey, Celia Santos, Ben Scott, Alan Williams, Zhengzhe Wu (2020):\
 **Landscape Analysis for the Specimen Data Refinery**.\
 *Research Ideas and Outcomes* **6**:e57602\
 <https://doi.org/10.3897/rio.6.e57602>
 
-[2]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
-\[2\] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
+[Thiers 2016]: https://doi.org/10.1007/s12228-016-9423-7 "Digitization of the New York Botanical Garden herbarium"
+\[Thiers 2016\] Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson (2016):\
 **Digitization of the New York Botanical Garden herbarium**.\
 *Brittonia*, **68**(3)\
 <https://doi.org/10.1007/s12228-016-9423-7>
 
-[3]: https://doi.org/10.1098/rstb.2017.0391 "The history and impact of digitization and digital data mobilization on biodiversity research"
-\[3\] Gil Nelson, Shari Ellis (2019):\
+[Nelson 2019a]: https://doi.org/10.1098/rstb.2017.0391 "The history and impact of digitization and digital data mobilization on biodiversity research"
+\[Nelson 2019a\] Gil Nelson, Shari Ellis (2019):\
 **The history and impact of digitization and digital data mobilization on biodiversity research**.\
 *Philosophical Transactions of the Royal Society B: Biological Sciences*
 **374**(1763):20170391\
 <https://doi.org/10.1098/rstb.2017.0391>
 
-[4]: https://doi.org/10.3897/biss.3.37896 "DiSSCo, iDigBio and the Future of Global Collaboration"
-\[4\] Gil Nelson, Deborah L Paul (2019):\
+[Nelson 2019b]: https://doi.org/10.3897/biss.3.37896 "DiSSCo, iDigBio and the Future of Global Collaboration"
+\[Nelson 2019b\] Gil Nelson, Deborah L Paul (2019):\
 **DiSSCo, iDigBio and the Future of Global Collaboration**.\
 *Biodiversity Information Science and Standards* **3**:e37896.\
 <https://doi.org/10.3897/biss.3.37896>
 
-[5]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
-\[5\] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
+[Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
+\[Addink 2019\] Wouter Addink, Dimitrios Koureas, Ana Rubio (2019):\
 **DiSSCo as a New Regional Model for Scientific Collections in Europe**.\
 *Biodiversity Information Science and Standards* **3**:e37502.\
 <https://doi.org/10.3897/biss.3.37502>
 
-[6]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
-\[6\] Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
+[Lannom 2020]: https://doi.org/10.1162/dint_a_00034 "FAIR Data and Services in Biodiversity Science and Geoscience"
+\[Lannom 2020\] Larry Lannom, Dimitris Koureas, Alex R. Hardisty (2020):\
 **FAIR Data and Services in Biodiversity Science and Geoscience**.\
 *Data Intelligence* **2**(1--2):122--130.\
 <https://doi.org/10.1162/dint_a_00034>
 
-[7]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
-\[7\] GBIF Secretariat. (2021):\
+[GBIF 2021]: https://doi.org/10.35035/bezp-jj23 "GBIF Science Review 2020"
+\[GBIF 2021\] GBIF Secretariat. (2021):\
 **GBIF Science Review 2020**.\
 <https://doi.org/10.35035/bezp-jj23>
 
-[8]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
-\[8\] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart,
-Dmitry Schigel (2021):\
+[Heberling 2021]: https://doi.org/10.1073/pnas.2018093118 "Data integration enables global biodiversity synthesis"
+\[Heberling 2021\] J Mason Heberling, Joseph T Miller, Daniel Noesgaard, Scott B Weingart, Dmitry Schigel (2021):\
 **Data integration enables global biodiversity synthesis**.\
 *Proceedings of the National Academy of Sciences* **118**(6)\
 <https://doi.org/10.1073/pnas.2018093118>
 
-[9]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens"
-\[9\] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee
-Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C.
-Davis (2018):\
+[Sweeney 2018]: https://doi.org/10.12705/671.10 "Large-scale digitization of herbarium specimens"
+\[Sweeney 2018\] Patrick W. Sweeney, Binil Starly, Paul J. Morris, Yiming Xu, Aimee Jones, Sridhar Radhakrishnan, Christopher J. Grassa, Charles C. Davis (2018):\
 **Large-scale digitization of herbarium specimens: Development and usage of an automated, high-throughput conveyor system**.\
 *Taxon* **67**(1)\
 <https://doi.org/10.12705/671.10>
 
-[10]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
-\[10\] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
+[Allan 2019]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
+\[Allan 2019\] E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina,
 Vincent Smith (2019):\
 **A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides**.\
 *Biodiversity Data Journal* **7**:e32342.\
 <https://doi.org/10.3897/BDJ.7.e32342>
 
-[11]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
-\[11\] Mark Hereld, Nicola Ferrier (2019):\
+[Ferrier 2019]: https://doi.org/10.3897/biss.3.37228 "LightningBug ONE"
+\[Ferrier 2019\] Mark Hereld, Nicola Ferrier (2019):\
 **LightningBug ONE: An experiment in high-throughput digitization of pinned insects**.\
 *Biodiversity Information Science and Standards* **3**:e37228.\
 <https://doi.org/10.3897/biss.3.37228>
 
-[12]: https://doi.org/10.31219/osf.io/s2p73 "ALICE"
-\[12\] Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
+[Price 2018]: https://doi.org/10.31219/osf.io/s2p73 "ALICE"
+\[Price 2018\] Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir
 Blagoderov, Alice Jenny Butcher, James Durrant, Pieter Holtzhausen,
 Phaedra Kokkini, Laurence Livermore, Helen Hardy, Vincent Smith (2018):\
 **ALICE: Angled Label Image Capture and Extraction for high throughput insect specimen digitisation**.\
 _OSF_
 <https://doi.org/10.31219/osf.io/s2p73>
 
-[13]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
-\[13\] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
+[Tegelberg 2017]: https://doi.org/10.1109/eScience.2017.85 "Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging"
+\[Tegelberg 2017\] Riitta Tegelberg, Jere Kahanpaa, Janne Karppinen, Tero Mononen, Zhenzhe
 Wu, Hannu Saarenmaa (2017):\
 **Mass Digitization of Individual Pinned Insects Using Conveyor-Driven Imaging**.\
 *2017 IEEE 13th International Conference on E-Science (e-Science)*\
 <https://doi.org/10.1109/eScience.2017.85>
 
-[14]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change"
-\[14\] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
+[Heberling 2019]: https://doi.org/10.1093/biosci/biz094 "The Changing Uses of Herbarium Data in an Era of Global Change"
+\[Heberling 2019\] J Mason Heberling, L Alan Prather, Stephen J Tonsor (2019):\
 **The Changing Uses of Herbarium Data in an Era of Global Change: An Overview Using Automated Content Analysis**.\
 *BioScience* **69**(10)\
 <https://doi.org/10.1093/biosci/biz094>
 
-[15]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts"
-\[15\] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
+[Kharouba 2019]: https://doi.org/10.1098/rstb.2017.0405 "Using insect natural history collections to study global change impacts"
+\[Kharouba 2019\] Heather M. Kharouba, Jayme M. M. Lewthwaite, Rob Guralnick, Jeremy T.
 Kerr, Mark Vellend (2019):\
 **Using insect natural history collections to study global change impacts: challenges and opportunities**.\
 *Philosophical Transactions of the Royal Society B: Biological Sciences*
 **374**(1763):20170405\
 <https://doi.org/10.1098/rstb.2017.0405>
 
-[16]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections"
-\[16\] Myrna E Watanabe (2019):\
+[Watanabe 2019]: https://doi.org/10.1093/biosci/biy163 "The Evolution of Natural History Collections"
+\[Watanabe 2019\] Myrna E Watanabe (2019):\
 **The Evolution of Natural History Collections: New research tools move specimens, data to center stage**.\
 *BioScience* **69**(3)\
 <https://doi.org/10.1093/biosci/biy163>
 
-[17]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
-\[17\] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
+[Lughadha 2019]: https://doi.org/10.1111/cobi.13289 "Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups"
+\[Lughadha 2019\] Eimear M. Nic Lughadha, Vanessa Graziele Staggemeier, Thais N. C.
 Vasconcelos, Barnaby E. Walker, Cátia Canteiro, Eve J. Lucas (2019):\
 **Harnessing the potential of integrated systematics for conservation of taxonomically complex, megadiverse plant groups**.\
 *Conservation Biology* **33**(3)\
 <https://doi.org/10.1111/cobi.13289>
 
-[18]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
-\[18\] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
+[Owen 2020]: https://doi.org/10.3897/rio.6.e58030 "Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections"
+\[Owen 2020\] David Owen, Quentin Groom, Alex Hardisty, Thijs Leegwater, Laurence Livermore, Myriam van Walsum, Noortje Wijkamp, Irena Spasić (2020):\
 **Towards a scientific workflow featuring Natural Language Processing for the digitisation of natural history collections**.\
 *Research Ideas and Outcomes* **6**:e58030.\
 <https://doi.org/10.3897/rio.6.e58030>
 
-[19]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE"
-\[19\] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
+[Harrow 2021]: https://doi.org/10.15252/embj.2020107409 "ELIXIR-EXCELERATE"
+\[Harrow 2021\] Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas
 Blomberg (2021):\
 **ELIXIR-EXCELERATE: establishing Europe's data infrastructure for the life science research of the future**.\
 *EMBO Journal* **40**(6):e107409\
 <https://doi.org/10.15252/embj.2020107409>
 
-[20]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative
+[Afgan 2018]: https://doi.org/10.1093/nar/gky379 "The Galaxy platform for accessible, reproducible and collaborative
 biomedical analyses"
-\[20\] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave
-Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A
-Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann,
-Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James
-Taylor, Anton Nekrutenko, Daniel Blankenberg (2018):\
-**The Galaxy platform for accessible, reproducible and collaborative
-biomedical analyses: 2018 update**.\
+\[Afgan 2018\] Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn A Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Saskia Hiltemann, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, Daniel Blankenberg (2018):\ 
+**The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update**.\
 *Nucleic Acids Research* **46**(W1) W537--W544\
 <https://doi.org/10.1093/nar/gky379>
 
-[21]: ../methods-included/ "Methods Included"
-\[21\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
+[Crusoe 2022]: ../methods-included/ "Methods Included"
+\[Crusoe 2022\] Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John
 Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan
 Gavrilović, Carole Goble, The CWL Community (2022):\
 **Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.\
 *Communications of the ACM* **65**(6)\
 <https://doi.org/10.1145/3486897>
 
-[22]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging*"
-\[22\] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
+[Ó Carragáin 2019a]: https://doi.org/10.5281/zenodo.3250687 "A lightweight approach to research object data packaging*"
+\[Ó Carragáin 2019a\] Eoghan Ó Carragáin, Carole Goble, Peter Sefton,
 Stian Soiland-Reyes (2019):\
 **A lightweight approach to research object data packaging**.\
 *Bioinformatics Open Source Conference (BOSC2019)*,
 2019-07-24/2019-07-25, Basel, Switzerland.\
 <https://doi.org/10.5281/zenodo.3250687>
 
-[23]: https://doi.org/10.3233/DS-210053 "Packaging research artefacts with RO-Crate"
-\[23\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
+[Soiland-Reyes 2022a]: https://doi.org/10.3233/DS-210053 "Packaging research artefacts with RO-Crate"
+\[Soiland-Reyes 2022a\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro,
 Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco
 La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic,
 RO-Crate Community, Paul Groth, Carole Goble (2022):\
@@ -687,8 +676,8 @@ RO-Crate Community, Paul Groth, Carole Goble (2022):\
 *Data Science* **5**(2)\
 <https://doi.org/10.3233/DS-210053>
 
-[24]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-\[24\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
+[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+\[Goble 2021\] Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan
 Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu,
 Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez,
 Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels,
@@ -697,19 +686,8 @@ Frederik Coppens (2021):\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.4605654>
 
-[25]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
-\[25\] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
-Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony
-J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott
-Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran,
-Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap
-Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost
-Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer,
-Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik,
-Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater,
-George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik
-van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg,
-Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):\
+[Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR Guiding Principles for scientific data management and stewardship"
+\[Wilkinson 2016\] <small>Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons</small> (2016):\
 **The FAIR Guiding Principles for scientific data management and stewardship**.\
 *Scientific Data* **3**(1):160018\
 <https://doi.org/10.1038/sdata.2016.18>

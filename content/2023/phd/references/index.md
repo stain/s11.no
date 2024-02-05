@@ -2570,15 +2570,15 @@ EOSC FAIR Metrics and Data Quality Task Force\
 *B2Share*\
 <https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11>
 
-\[Wittenburg 2021\] Peter Wittenburg, Alex Hardisty, Yann Le Franc, Amirpasha Mozaffari, Limor Peer, Nikolay A. Skvortsov, Zhiming Zhao, Alessandro Spinuso (2022):\
-**Canonical Workflows to Make Data FAIR**.\
-*Data Intelligence* **4**(2)\
-<https://doi.org/10.1162/dint_a_00132>
-
-\[Wittenburg 2022\] Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder (2022):\
+\[Wittenburg 2022a\] Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, Christine Kirkpatrick, Laurence Lannom, Thomas Lauer, Giridhar Manepalli, Karsten Peters-von Gehlen, Andreas Pfeil, Robert Quick, Mark Sanden, Ulrich Schwardmann, Stian Soiland-Reyes, Rainer Stotzka, Zachary Trautt, Dieter Van Uytvanck, Claus Weiland, Philipp Wieder (2022):\
 **FAIR digital object demonstrators 2021**.\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.5872645>
+
+\[Wittenburg 2022b\] Peter Wittenburg, Alex Hardisty, Yann Le Franc, Amirpasha Mozaffari, Limor Peer, Nikolay A. Skvortsov, Zhiming Zhao, Alessandro Spinuso (2022):\
+**Canonical Workflows to Make Data FAIR**.\
+*Data Intelligence* **4**(2)\
+<https://doi.org/10.1162/dint_a_00132>
 
 \[Wittenburg 2023a\] Peter Wittenburg, Ulrich Schwardmann, Christophe Blanchi, Claus Weiland (2023):\
 **FDOs to Enable Cross-Silo Work**.\
