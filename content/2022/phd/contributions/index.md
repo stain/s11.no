@@ -557,7 +557,7 @@ Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 
 ## Community roles
 
-For [chapter 2](../../../2023/phd/fdo-and-linked-data/) and [section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/).
+For [chapter 2](../../../2023/phd/fdo-and-linked-data/) and [section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022b](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/).
 
 For [chapter 3](../../../2023/phd/ro-crate/) I co-chair the
 [RO-Crate community](https://www.researchobject.org/ro-crate/community) (see [appendix A](../acknowledgements/#ro-crate-community)) together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1).

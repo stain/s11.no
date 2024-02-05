@@ -174,7 +174,7 @@ This novel approach shows how it is possible to use RO-Crate as an machine-actio
 
 [Section 4.2](../../../2022/phd/fdo-with-ro-crate/) argues that many of the FDO requirements \[[Anders 2023]\] for metadata can be implemented as *RO-Crate FDOs* ([section 5.2.2.3](../../../2022/phd/specimen-data-refinery/#fair-packaging-of-researchworkflow-objects-with-ro-crate)), with FAIR Signposting \[[Van de Sompel 2015], [Van de Sompel 2022]\] assisting navigation from persistent identifiers, and the RO-Crate containing the metadata.
 
-This approach was first implemented in the repository WorkflowHub \[[Goble 2021], [Wittenburg 2022]\], and in the FDO Forum \[[Van de Sompel 2023]\] suggests RO-Crate with Signposting as a modern update to his OAI-ORE[^8] approach from 2008 \[[Lagoze 2008]\]. RO-Crate FDOs are being further developed within the Horizon Europe projects [EuroScienceGateway](https://eurosciencegateway.eu/) \[[Soiland-Reyes 2022f]\] and [FAIR-IMPACT](https://fair-impact.eu/) \[[Goble 2022]\].
+This approach was first implemented in the repository WorkflowHub \[[Goble 2021], [Wittenburg 2022b]\], and in the FDO Forum \[[Van de Sompel 2023]\] suggests RO-Crate with Signposting as a modern update to his OAI-ORE[^8] approach from 2008 \[[Lagoze 2008]\]. RO-Crate FDOs are being further developed within the Horizon Europe projects [EuroScienceGateway](https://eurosciencegateway.eu/) \[[Soiland-Reyes 2022f]\] and [FAIR-IMPACT](https://fair-impact.eu/) \[[Goble 2022]\].
 
 RO-Crate FDOs complements the findings of [section 6.1.1.3](#signposting), in that RO-Crate provides FDO with a generic metadata framework and a serialization that can work both for FDOs on the Web and with legacy Handle/DOIP approaches -- this metadata role for RO-Crate in the FDO ecosystem is also highlighted by \[[Wittenburg 2023b]\].
 
@@ -228,7 +228,7 @@ In developing the repository [WorkflowHub](https://workflowhub.eu/) \[[Goble 202
 
 One aspect that makes workflow management systems different from research software in general, is that they frequently encourage modularization, in that the composition of steps also can reflect the analytical process that is intended by the scientists. Mature workflow systems like Galaxy \[[Galaxy 2022]\] provide a large collection of re-usable components that wrap underlying command line tools and make them interoperable without manual adjustments. In CWL \[[Crusoe 2022]\], tool definitions include not just execution details, but also structured input/output definitions, allowing them to be reused and combined in multiple workflows.
 
-[Section 5.1](../../../2022/phd/canonical-workflow-building-blocks/) explored how such building blocks can themselves be considered FAIR digital objects. These assist workflow systems in propagating rich metadata about tools and their analytical purpose, but also allows building blocks to be reused across workflow systems. This in effect means that a *canonical workflow* *Wittenburg 2021* can be implemented in different workflow languages, each executing the same *canonical steps* in the same way. Given that FAIR Digital Objects emphasize machine-actionability, and we can consider workflows as FDOs, it is important to have the ability not just to reliably re-execute a workflow, but even re-use its constituent steps.
+[Section 5.1](../../../2022/phd/canonical-workflow-building-blocks/) explored how such building blocks can themselves be considered FAIR digital objects. These assist workflow systems in propagating rich metadata about tools and their analytical purpose, but also allows building blocks to be reused across workflow systems. This in effect means that a *canonical workflow* *Wittenburg 2022a* can be implemented in different workflow languages, each executing the same *canonical steps* in the same way. Given that FAIR Digital Objects emphasize machine-actionability, and we can consider workflows as FDOs, it is important to have the ability not just to reliably re-execute a workflow, but even re-use its constituent steps.
 
 
 ### Building FDOs incrementally challenges typing constraints {#buildingfdo}
@@ -887,8 +887,8 @@ See chapter [references](..//references/).
 [Wilkinson 2024]: https://doi.org/10.5281/zenodo.10490289 "Report on FAIR Signposting and its uptake by the community"
 [Williams 2012]: https://doi.org/10.1016/j.drudis.2012.05.016 "Open PHACTS: Semantic interoperability for drug discovery"
 [Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
-[Wittenburg 2021]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
-[Wittenburg 2022]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
+[Wittenburg 2022a]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
+[Wittenburg 2022b]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
 [Wittenburg 2023a]: https://doi.org/10.52825/cordi.v1i.263 "FDOs to Enable Cross-Silo Work"
 [Wittenburg 2023b]: https://doi.org/10.52825/cordi.v1i.374 "FDO to Structure the Domain of Knowledge"
 [Wittner 2020]: https://s11.no/2021/phd/iso-23494-provenance/ "ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data"

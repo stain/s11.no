@@ -79,7 +79,7 @@ While sharing of research software helps distribute the computational methods, t
 
 *Computational Workflows* (or Scientific Workflows) are used to structure and automate data analysis pipelines so they can be scalable, portable and explainable \[[Atkinson 2017]\], and as a side-effect of these features can significantly improve reproducibility \[[Cohen-Boulakia 2017]\]. There exists, however, a plethora of workflow systems and languages \[[Leipzig 2021], [Amstutz 2021]\], although recent efforts have created the Common Workflow Language \[[Crusoe 2022]\] as a standard representation with that is executable by multiple engines.
 
-Notably, workflow definitions themselves can be considered FAIR scholarly outputs \[[Goble 2020]\] and are published in repositories including Dockstore \[[Yuen 2021]\] and WorkflowHub \[[Goble 2021]\]. One could consider computational workflows as a kind of FAIR Research Software \[[de Visser 2023]\], but by their nature workflows also *encourage the FAIR principles* (e.g. preparing a computational tool for a workflow system \[[Brack 2022a]\] may include publishing it in a container registry). Workflow systems are also useful for creating and consuming FAIR Digital Objects \[[Wittenburg 2021]\], and in addition workflow systems commonly provide explicit provenance logs of their executions.
+Notably, workflow definitions themselves can be considered FAIR scholarly outputs \[[Goble 2020]\] and are published in repositories including Dockstore \[[Yuen 2021]\] and WorkflowHub \[[Goble 2021]\]. One could consider computational workflows as a kind of FAIR Research Software \[[de Visser 2023]\], but by their nature workflows also *encourage the FAIR principles* (e.g. preparing a computational tool for a workflow system \[[Brack 2022a]\] may include publishing it in a container registry). Workflow systems are also useful for creating and consuming FAIR Digital Objects \[[Wittenburg 2022a]\], and in addition workflow systems commonly provide explicit provenance logs of their executions.
 
 Approaches to describing workflow provenance in a machine-readable format were initially diverse \[[Cruz 2009]\], and later converged on the use of ontologies \[[Missier 2010]\], most notably using W3C PROV-O \[[Lebo 2013a]\] but with various specializations \[[Garijo 2011], [Garijo 2012], [Missier 2013], [Belhajjame 2015], [Cuevas-Vicenttín 2016]\].
 
@@ -657,8 +657,8 @@ See chapter [references](../../2023/references/).
 [Wilkinson 2024]: https://doi.org/10.5281/zenodo.10490289 "Report on FAIR Signposting and its uptake by the community"
 [Williams 2012]: https://doi.org/10.1016/j.drudis.2012.05.016 "Open PHACTS: Semantic interoperability for drug discovery"
 [Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
-[Wittenburg 2021]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
-[Wittenburg 2022]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
+[Wittenburg 2022a]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
+[Wittenburg 2022b]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
 [Wittenburg 2023a]: https://doi.org/10.52825/cordi.v1i.263 "FDOs to Enable Cross-Silo Work"
 [Wittenburg 2023b]: https://doi.org/10.52825/cordi.v1i.374 "FDO to Structure the Domain of Knowledge"
 [Wittner 2020]: https://s11.no/2021/phd/iso-23494-provenance/ "ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data"

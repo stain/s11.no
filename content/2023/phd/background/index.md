@@ -26,7 +26,7 @@ FDOs have been recognised by the European Open Science Cloud ([EOSC](https://eos
 
 ### FDO approaches {#sec:fdo-approaches}
 
-FDO is an evolving concept. A set of FDO Demonstrators [[Wittenburg 2022]] highlights how current adapters are approaching implementations of FDO from different angles:
+FDO is an evolving concept. A set of FDO Demonstrators [[Wittenburg 2022b]] highlights how current adapters are approaching implementations of FDO from different angles:
 
   - Building on the Digital Object concept, using the simplified [[DONA 2018]] specification, which detail how to exchange JSON objects through a text-based protocol[^1] (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation Cordra [[Tupelo-Schneck 2022]]. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [[Wright 2022]] and PIDs are assigned using the Handle system. Several type registries have been established.
 
@@ -60,7 +60,7 @@ The **FDO Requirement Specifications** [[Anders 2023]] is an update of [[Bonino 
 
 **Granularity, Versioning, Mutability** [[Hellström 2022]] considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
 
-**DOIP Endorsement Request** [[Schwardmann 2022a]] is an endorsement of the DOIP v2.0 [[DONA 2018]] specification as a potential FDO implementation, as it has been applied by several institutions [[Wittenburg 2022]]. The document proposes that DOIP shall be assessed for completeness against FDO – in this initial draft this is justified as *“we can state that DOIP is compliant with the FDO specification documents in process”* (the documents listed above).
+**DOIP Endorsement Request** [[Schwardmann 2022a]] is an endorsement of the DOIP v2.0 [[DONA 2018]] specification as a potential FDO implementation, as it has been applied by several institutions [[Wittenburg 2022b]]. The document proposes that DOIP shall be assessed for completeness against FDO – in this initial draft this is justified as *“we can state that DOIP is compliant with the FDO specification documents in process”* (the documents listed above).
 
 **Upload of FDO** [[Blanchi 2022a]] illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync [[ANSI 2017]] is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, without adding any particular requirements.
 
@@ -68,7 +68,7 @@ The **FDO Requirement Specifications** [[Anders 2023]] is an update of [[Bonino 
 
 **Implementation of Attributes, Types, Profiles and Registries** [[Blanchi 2022b]] details how to establish FDO registries for types and FDO profiles, with their association with PID systems. This document suggest policies and governance structures, together with guidelines for implementations, but without mandating any explicit technology choices. Differences in use of attributes are examplified using FDO PIDs for scientific instruments, and the proto-FDO approach of [DARIAH-DE](https://de.dariah.eu/) [[Schwardmann 2022b]].
 
-It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations [[Wittenburg 2022]] are thus not fully consolidated in choices such as protocols, type systems and serialisations – this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem.
+It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations [[Wittenburg 2022b]] are thus not fully consolidated in choices such as protocols, type systems and serialisations – this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem.
 
 ## From the Semantic Web to Linked Data {#sec:ld}
 
@@ -510,7 +510,7 @@ See chapter [references](../references/).
 
 [Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
 
-[Wittenburg 2022]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
+[Wittenburg 2022b]: https://doi.org/10.5281/zenodo.5872645 "FAIR digital object demonstrators 2021"
 
 [Wittenburg 2023]: https://osf.io/3rekv/ "Canonical workflow frameworks for research"
 
