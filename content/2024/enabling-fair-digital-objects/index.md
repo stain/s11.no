@@ -305,76 +305,104 @@ We also acknowledge the many ELIXIR BioHackathon Europe 2023 participants we int
 
 ## References
 
-[1] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
-**Packaging research artefacts with RO-crate**.  
+[1]: ../../2022/phd/ro-crate/ "Packaging research artefacts with RO-Crate"
+\[1\] Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó. Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-Crate**.  
 *Data Science* **5**  
 <https://doi.org/10.3233/ds-210053>
 **\[cito:citesAsAuthority\]**
 
-
-[2] Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):  
+[2]: https://ceur-ws.org/Vol-1963/paper579.pdf "Bioschemas"
+\[2\] Alasdair Gray, Carole Goble, Rafael Jimenez, Bioschemas Community (2017):  
 **Bioschemas: From potato salad to protein annotation**.  
 *Proceedings of the ISWC 2017 posters & demonstrations and industry tracks co-located with 16th international semantic web conference (ISWC 2017)*  (Vienna, Austria, 2017).  
 <https://ceur-ws.org/Vol-1963/paper579.pdf>
 **\[cito:citesAsAuthority\]**
 
-
-[3]
-Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):  
+[3]: https://signposting.org/FAIR/ "FAIR Signposting profile"
+\[3\] Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, Mark Wilkinson (2022):  
 **FAIR Signposting Profile**  
 <https://signposting.org/FAIR/> 
 **\[cito:citesAsAuthority\]**
 
-
-[4] Herbert Van de Sompel, Michael L. Nelson (2015):  
+[4]: https://doi.org/10.1045/november2015-vandesompel "Reminiscing about 15 years of interoperability efforts"
+\[4\] Herbert Van de Sompel, Michael L. Nelson (2015):  
 **Reminiscing about 15 years of interoperability efforts**.  
 *D-Lib Magazine* **21** (2015).  
 <https://doi.org/10.1045/november2015-vandesompel>
 **\[cito:extends\]**
 
-[5]
-Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):  
-**FAIR digital object technical overview**. Version PEN 2.0  
+[5]: https://doi.org/10.5281/zenodo.7824714 "FAIR Digital Object technical overview"
+\[5\] Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):  
+**FAIR Digital Object technical overview**. Version PEN 2.0  
 _FAIR Digital Object Forum_  
 <https://doi.org/10.5281/zenodo.7824714>
 **\[cito:citesAsAuthority\]**
 
-[6]
-Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+[6]: ../../2022/phd/fdo-with-ro-crate/ "Creating lightweight FAIR Digital Objects with RO-Crate"
+\[6\] Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
 **Creating lightweight FAIR Digital Objects with RO-Crate**.  
 *Research Ideas and Outcomes*  
 <https://doi.org/10.3897/rio.8.e93937>  
 **\[cito:citesAsAuthority\]** **\[cito:citesAsPotentialSolution\]**
 
-
-[7] Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, & Paul Groth (2022): Updating linked data practices for <span>FAIR</span> digital object principles. *Research Ideas and Outcomes*, **8** (2022). \<https://doi.org/[10.3897/rio.8.e94501](https://doi.org/10.3897/rio.8.e94501)\>
+[7]: ../../2022/phd/updating-ld-for-fdo/ "Updating Linked Data practices for FAIR Digital Object principles"
+\[7\] Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
+**Updating Linked Data practices for FAIR Digital Object principles**.  
+*Research Ideas and Outcomes* **8**  
+<https://doi.org/10.3897/rio.8.e94501>
 **\[cito:citesAsAuthority\]**
 
-[8]
-Tina Loo, ed. (2022): *First <span>International Conference</span> on <span>FAIR Digital Objects</span>* (<span>Pensoft Publishers</span>, 2022). \<https://doi.org/[10.3897/rio.coll.190](https://doi.org/10.3897/rio.coll.190)\>
+[8]: https://doi.org/10.3897/rio.coll.190 "FDO 2022"
+\[8\] Tina Loo, ed. (2022):  
+*First International Conference on FAIR Digital Objects*  
+<https://doi.org/10.3897/rio.coll.190>
 **\[cito:discusses\]**
 
-[9]
-Stian Soiland-Reyes, Bruno P. Kinoshita, & Vincent Emonet (2023): *<span class="nocase">Signposting link parser library</span>, version 0.9.6* (2023). \<https://doi.org/[10.5281/zenodo.10471965](https://doi.org/10.5281/zenodo.10471965)\>
+[9]: https://signposting.readthedocs.io/ "Signposting link parser library"
+\[9\] Stian Soiland-Reyes, Bruno P. Kinoshita, Vincent Emonet (2023):  
+**Signposting link parser library**, version 0.9.6.  
+<https://doi.org/10.5281/zenodo.10471965>
 **\[cito:citesAsPotentialSolution\]**
 
-
-[10]
-Tupelo-Schneck, Robert & Larry Lannom (2022): Brief <span>Introduction</span> to <span>Cordra</span> & <span>DOIP</span>. (2022). <https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf> (accessed 25 January 2023)
+[10]: https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf "Brief introduction to Cordra & DOIP"
+\[10\]
+Robert Tupelo-Schneck, Larry Lannom (2022):  
+**Brief introduction to Cordra & DOIP**.  
+<https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf> (accessed 25 January 2023)
 **\[cito:citesAsPotentialSolution\]**
 
-[11]
-Daan Broeder, Peter Wittenburg, Ivonne Anders, & Karsten Peters-von Gehlen (2022): *<span>FDO</span> – kernel attributes & metadata* (<span>FDO Forum</span>, 2022). \<https://doi.org/[10.5281/zenodo.7825693](https://doi.org/10.5281/zenodo.7825693)\>
+[11]: https://doi.org/10.5281/zenodo.7825693 "FDO – kernel attributes & metadata"
+\[11\] Daan Broeder, Peter Wittenburg, Ivonne Anders, Karsten Peters-von Gehlen (2022):  
+**FDO – kernel attributes & metadata**.  
+_FDO Forum_  
+<https://doi.org/10.5281/zenodo.7825693>
 **\[cito:citesAsPotentialSolution\]**
 
-[12] Sharif Islam, Wouter Addink, & Soulaine Theocharides (2023): *<span>RFC</span>: <span>DiSSCo</span> kernel and digital specimen FDO record attributes* (2023). <https://docs.google.com/document/d/1hj5M9Cko5LduDv1H8CUYdGocg_B3YUf6MafoZPHPaec> (accessed 8 January 2024)
+[12]: https://docs.google.com/document/d/1hj5M9Cko5LduDv1H8CUYdGocg_B3YUf6MafoZPHPaec "RFC: DiSSCo kernel and digital specimen FDO record attributes"
+\[12\] Sharif Islam, Wouter Addink, Soulaine Theocharides (2023):  
+**RFC: DiSSCo kernel and digital specimen FDO record attributes**.  
+_DiSSCo_  
+<https://docs.google.com/document/d/1hj5M9Cko5LduDv1H8CUYdGocg_B3YUf6MafoZPHPaec> (accessed 8 January 2024)
 **\[cito:citesAsAuthority\]**
 
-[13] Leyla Jael Castro, Stian Soiland-Reyes, & Dietrich Rebholz-Schuhmann (2023): **<span>RO</span>-<span>Crates</span> <span>Meets</span> <span>FAIR</span> <span>Digital</span> <span>Objects</span>**. *Proceedings of the <span>Conference</span> on <span>Research</span> <span>Data</span> <span>Infrastructure</span>* (2023). \<https://doi.org/[10.52825/cordi.v1i.396](https://doi.org/10.52825/cordi.v1i.396)\>
+[13]: https://www.tib-op.org/ojs/index.php/CoRDI/article/view/396/577 "RO-Crates meets FAIR Digital Objects"
+\[13\] Leyla Jael Castro, Stian Soiland-Reyes, Dietrich Rebholz-Schuhmann (2023):  
+**RO-Crates meets FAIR Digital Objects**.  
+*Proceedings of the Conference on Research Data Infrastructure*  
+<https://doi.org/10.52825/cordi.v1i.396>
 **\[cito:citesAsPotentialSolution\]**
 
-[14] Koenraad De Smedt, Dimitris Koureas, & Peter Wittenburg (2020): <span>FAIR</span> <span>Digital</span> <span>Objects</span> for <span>Science</span>: <span>From</span> <span>Data</span> <span>Pieces</span> to <span>Actionable</span> <span>Knowledge</span> <span>Units</span>. *Publications*, **8** (2020) 21. \<https://doi.org/[10.3390/publications8020021](https://doi.org/10.3390/publications8020021)\>
+[14]: https://doi.org/10.3390/publications8020021 "FAIR Digital Objects for Science"
+\[14\] Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
+**FAIR Digital Objects for Science**: From Data Pieces to Actionable Knowledge Units.  
+*Publications* **8** 21.  
+<https://doi.org/10.3390/publications8020021>
 **\[cito:citesAsAuthority\]**
 
-[15] Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, & Peter Wittenburg (2022): *<span>FDO</span> configuration types* (<span>FAIR Digital Objects Forum</span>, 2022). \<https://doi.org/[10.5281/zenodo.7825703](https://doi.org/10.5281/zenodo.7825703)\>
+[15]: https://doi.org/10.5281/zenodo.7825703 "FDO configuration types"
+\[15\] Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, Peter Wittenburg (2022):  
+*FDO configuration types*.  
+_FAIR Digital Objects Forum_  
+<https://doi.org/10.5281/zenodo.7825703>
 **\[cito:citesAsAuthority\]**
