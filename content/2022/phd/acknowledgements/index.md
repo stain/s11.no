@@ -54,8 +54,8 @@ RO-Crate is standing on the shoulders of giants, and I would like to thank the w
 This PhD is in many ways born out of
 [ELIXIR Europe](https://elixir-europe.org/), not just
 through its many fruitful co-author contributions
-(section [my-contributions](ch10.html#my-contributions)),
-but also as the "ELIXIR way" of working is emblematic for the approach taken by RO-Crate community: open collaborations where instutional and project boundaries are blurred out in favour of jointly building pragmatic solutions.
+(section [B.1](../contributions/#my-contributions)),
+but also as the "ELIXIR way" of working is emblematic for the approach taken by RO-Crate community: open collaborations where institutional and project boundaries are blurred out in favour of jointly building pragmatic solutions.
 
 I would like to thank the lovely people of ELIXIR Belgium (incl. Frederik, Ignacio, Paul, Rafael, Bert), ELIXIR Spain (incl. José Mª, Laura, Salva, Adam, Pau), ELIXIR HUB (incl. Justin, Jonathan, Marieke, Gavin, Niklas, Katharina), ELIXIR DE (incl. Björn, Anika, Sebastian, Nils, Michael), ELIXIR CH (Alex, Patricia), ELIXIR UK (incl. Susanna, Nicola, Xenia, Tim, Neil), ELIXIR NL (Núria, Egon, Chris, Marco, Rob, Helena) and many others I may have missed listing. I want to particularly thank everyone who organized and participated in the [ELIXIR Biohackathons](https://biohackathon-europe.org/) which always inspires me and has helped build our communities.
 
