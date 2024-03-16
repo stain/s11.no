@@ -8,39 +8,50 @@ description: >
      This report provides an updated overview of the recent progress achieved by the FAIR Metrics subgroup, encapsulating the advances from the latest two hackathon events.
      We outline the progress towards developing an integrated suite of FAIR assessment tests, which are now becoming standardized across various FAIR assessment instruments.
      Additionally, we present preliminary insights into the community's adoption of these practices and report on the ongoing effort to establish a FAIR testing governance body, along with strategies to ensure its enduring viability.
-xxauthors:
+authors:
+  - name: Mark D Wilkinson
+    orcid: 0000-0001-6960-357X
+  - name: Susanna-Assunta Sansone
+    orcid: 0000-0001-5306-5690
+  - name: Marjan Grootveld
+    orcid: 0000-0002-2789-322X
+  - name: Richard Dennis
+    orcid: 0000-0002-4472-7194
+  - name: David Hecker
+    orcid: 0000-0003-3836-2800
+  - name: Robert Huber
+    orcid: 0000-0003-3000-0020
   - name: Stian Soiland-Reyes
-    affiliation: [1,2]
     orcid: 0000-0001-9842-9718
-  - name: Leyla Jael Castro
-    orcid: 0000-0003-3986-0510
-    affiliation: 3
   - name: Herbert Van de Sompel
     orcid: 0000-0002-0715-6126
-    affiliation: 10
-affiliations:
-  - name: Department of Computer Science, The University of Manchester, Manchester, UK
-    index: 1
+  - name: Andreas Czerniak
+    orcid: 0000-0003-3883-4169
+  - name: Milo Thurston
+    orcid: 0000-0002-6468-9260
+  - name: Allyson L. Lister
+    orcid: 0000-0002-7702-4495
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
 ---
 
 <h2>Cite as</h2>
 
-Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L.
-Lister, Alban Gaignard (2024):  
+Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):  
 **Report on FAIR Signposting and its Uptake by the Community**.  
-_Zenodo_  
+_EOSC FAIR Metrics and Data Quality Task Force_  
 <https://doi.org/10.5281/zenodo.10490289>
 
 
 # Report on "FAIR Signposting" and its uptake by the community
 
-Mark D Wilkinson<sup>1,3</sup>, Susanna-Assunta Sansone<sup>2,4</sup>, Marjan Grootveld<sup>2,5</sup>, Richard Dennis<sup>2,6</sup>, David Hecker<sup>2,7</sup>, Robert Huber<sup>8</sup>, Stian Soiland-Reyes<sup>9</sup>, Herbert Van de Sompel<sup>5</sup>, Andreas Czerniak<sup>10</sup>, Milo Thurston<sup>4</sup>, Allyson L.
-Lister<sup>4</sup>, Alban Gaignard<sup>11</sup>
+_Mark D Wilkinson<sup>1,3</sup>, Susanna-Assunta Sansone<sup>2,4</sup>, Marjan Grootveld<sup>2,5</sup>, Richard Dennis<sup>2,6</sup>, David Hecker<sup>2,7</sup>, Robert Huber<sup>8</sup>, Stian Soiland-Reyes<sup>9</sup>, Herbert Van de Sompel<sup>5</sup>, Andreas Czerniak<sup>10</sup>, Milo Thurston<sup>4</sup>, Allyson L.
+Lister<sup>4</sup>, Alban Gaignard<sup>11</sup>_
 
 <div class="affiliations">
 
 <sup>1</sup> Co-Chair, EOSC Task Force on FAIR Metrics and Data Quality  
-<sup>2</sup> Member, EOSC Task Force on FAIR Metrics and Data Quality  [^TF]
+<sup>2</sup> Member, EOSC Task Force on FAIR Metrics and Data Quality    
 <sup>3 </sup>Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas (CBGP), Universidad Politécnica de Madrid (UPM)  
 Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA)  
 Consejo Superior de Investigaciones Científicas (CSIC), Madrid, ES, Spain  
@@ -54,9 +65,13 @@ Informatics Institute, University of Amsterdam, NL
 <sup>10</sup> Bielefeld University Library, Germany     
 <sup>11</sup>Nantes Université, CNRS, INSERM, L’Institut du Thorax, Nantes, France   
 
+_All TF members have had the opportunity to review and edit this document, invitations to be on the authorship list were open to all hackathon participants_
+
 </div>
 
-[^TF]: All TF members have had the opportunity to review and edit this document, invitations to be on the authorship list were open to all hackathon participants
+* **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
+* **Modifications**: Reformatting as Markdown; figure caption formatted; references in s11 house style; inline citation hyperlinks; cited URLs converted to hyperlinks; some paragraphs split for readability; citation [[Soiland-Reyes 2024]] updated. 
+
 
 ## Executive Summary
 
@@ -64,7 +79,7 @@ The FAIR Metrics subgroup of the EOSC Task Force on FAIR Metrics and Data Qualit
 Previous reports have highlighted the inconsistency in results when the same digital object is evaluated by different tools, attributing these disparities to varied interpretations of the Metrics, metadata publishing practices, and the fundamental objectives of FAIR principles.
 The authors of this report, representing the FAIR Metrics subgroup, have facilitated six workshops and hackathon-style gatherings, convening diverse FAIR assessment stakeholders—including tool developers, standards and repository experts, and interoperability specialists.
 
-The initial workshops, as outlined in an earlier report endorsed by EOSC, pinpointed a metadata publishing design pattern known as “FAIR Signposting.” This approach offers a transparent, compliant, and straightforward mechanism for guiding automated agents through metadata spaces to locate three essential FAIR elements: the globally unique identifier (GUID), the data records, and the corresponding metadata records.
+The initial workshops, as outlined in an earlier report endorsed by EOSC, pinpointed a metadata publishing design pattern known as **“FAIR Signposting.”** This approach offers a transparent, compliant, and straightforward mechanism for guiding automated agents through metadata spaces to locate three essential FAIR elements: the globally unique identifier (GUID), the data records, and the corresponding metadata records.
 Furthermore, these sessions led to the development of a paradigm for creating reference environments.
 These environments serve as benchmarks for evaluating the compliance of metadata harvesters with FAIR Signposting criteria and for standardizing the metadata harvesting process of FAIR assessment tools.
 
@@ -332,14 +347,17 @@ In addition, Signposting was a project theme at the BioHackathon Europe 2023 eve
 
 ### TF Outreach & Emergent Models for Governance
 
-Shortly after the publication of our earlier report to EOSC on FAIR Assessment governance<sup>2</sup>, the FAIR IMPACT project authored a response document [[Verburg 2023]], which was in part supportive but expressed some additional concerns and disagreements.
+Shortly after the publication of our earlier report to EOSC on FAIR Assessment governance [[Wilkinson 2022b]], the FAIR-IMPACT project authored a response document [[Verburg 2023]], which was in part supportive but expressed some additional concerns and disagreements.
 
-Given that the objective of the latest two hackathon events was to engender harmonization between the assessment tools, the participants also took time to “observe the process.” In particular, the mechanisms for reaching agreement on the appropriate metrics, their associated testing code, quality assurance around these, and how this could be replicated in the future as more specialized (e.g., domain-specific) FAIR metrics are designed.
+Given that the objective of the latest two hackathon events was to engender harmonization between the assessment tools, the participants also took time to “observe the process.” 
+
+In particular, the mechanisms for reaching agreement on the appropriate metrics, their associated testing code, quality assurance around these, and how this could be replicated in the future as more specialized (e.g., domain-specific) FAIR metrics are designed.
 The objective was to gather evidence for how FAIR assessment governance could be established and maintained.
 Of note, we observed that creating a benchmark environment was a critical aspect of designing and harmonizing test software, and we anticipate that this will become a primary activity of any governance process.
 
 We have planned meetings around a joint TF/FAIR-IMPACT workshop where FAIR assessment governance will be discussed, and the various stakeholders will present their preferred models.
 The event is expected to take place in late November.
+
 In addition, we will continue discussing the role of standards registries such as FAIRsharing, where claims of use of community metadata standards can be validated via API calls against the records describing these standards instead of being hard-coded into the FAIR assessment tools, for example, FAIRsharing already follows the advice of the EOSC TF on Persistent Identifiers and includes registrations of the properties and schema for these entities.
 
 

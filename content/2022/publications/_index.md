@@ -57,7 +57,7 @@ Sebastian Beier, Timo Mühlhaus, Cyril Pommier, Stuart Owen, Dominik Brilhaus, H
 <https://doi.org/10.37044/osf.io/7y2jh>
 
 Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):  
-[**Report on "FAIR Signposting" and its uptake by the community**](https://doi.org/10.5281/zenodo.10490289).  
+[**Report on "FAIR Signposting" and its uptake by the community**](../../2024/signposting-report/).  
 _EOSC FAIR Metrics and Data Quality Task Force_  
 <https://doi.org/10.5281/zenodo.10490289>
 
