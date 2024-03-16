@@ -2139,13 +2139,13 @@ Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12\
 
 \[Soiland-Reyes 2022c\] Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):\
 **Creating lightweight FAIR digital objects with RO-Crate**.\
-*Research Ideas and Outcomes* **10**(8)\
+*Research Ideas and Outcomes* **8**\
 <https://doi.org/10.3897/rio.8.e93937>\
 <https://s11.no/2022/phd/fdo-with-ro-crate/> (section [\[ch4:lightweight-fdo\]](#ch4:lightweight-fdo){reference-type="ref+page" reference="ch4:lightweight-fdo"})
 
 \[Soiland-Reyes 2022d\] Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):\
 **Updating Linked Data practices for FAIR Digital Object principles**.\
-*Research Ideas and Outcomes* **10**(8)\
+*Research Ideas and Outcomes* **8**\
 <https://doi.org/10.3897/rio.8.e94501>\
 <https://s11.no/2022/phd/updating-ld-for-fdo/> (section [\[ch2:updating-linked-data-practices-for-fair-digital-object-principles\]](#ch2:updating-linked-data-practices-for-fair-digital-object-principles){reference-type="ref+page" reference="ch2:updating-linked-data-practices-for-fair-digital-object-principles"})
 
