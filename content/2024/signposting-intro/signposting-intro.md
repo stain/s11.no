@@ -1,8 +1,6 @@
 ---
 marp: true
-theme: gaia
-class: 
-    - invert
+theme: default
 title: Introduction to Signposting
 style: > 
     section.first h4 {
@@ -14,11 +12,9 @@ style: >
     }
 ---
 
-<!-- theme: gaia -->
-
 # Introduction to Signposting
 
-<!-- class: first invert -->
+<!-- class: first -->
 
 ![bg right](00-signposting.png)
 
@@ -230,7 +226,6 @@ _Useful for JSONs with different schemas_
 
 --- 
 
-<!-- class: invert -->
 
 ## Next steps:
 
