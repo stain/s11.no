@@ -52,18 +52,18 @@ Lister<sup>4</sup>, Alban Gaignard<sup>11</sup>_
 
 <sup>1</sup> Co-Chair, EOSC Task Force on FAIR Metrics and Data Quality  
 <sup>2</sup> Member, EOSC Task Force on FAIR Metrics and Data Quality    
-<sup>3 </sup>Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas (CBGP), Universidad Politécnica de Madrid (UPM)  
+<sup>3</sup> Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas (CBGP), Universidad Politécnica de Madrid (UPM)  
 Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA)  
 Consejo Superior de Investigaciones Científicas (CSIC), Madrid, ES, Spain  
 <sup>4</sup> Oxford e-Research Centre, Department of Engineering Science, University of Oxford, UK  
 <sup>5</sup> Data Archiving and Networked Services (KNAW-DANS), The Netherlands  
 <sup>6</sup> Novo Nordisk Foundation Center for Stem Cell Medicine - reNEW, the University of Copenhagen, Copenhagen, Denmark  
-<sup>7</sup>German Aerospace Centre, Research Data Management, Germany   
+<sup>7</sup> German Aerospace Centre, Research Data Management, Germany   
 <sup>8</sup> MARUM - Cen­ter for Ma­ri­ne En­vi­ron­men­tal Sci­en­ces, Uni­ver­si­ty of Bre­men, Germany  
-<sup>9</sup>Department of Computer Science, The University of Manchester, UK  
+<sup>9</sup> Department of Computer Science, The University of Manchester, UK  
 Informatics Institute, University of Amsterdam, NL   
 <sup>10</sup> Bielefeld University Library, Germany     
-<sup>11</sup>Nantes Université, CNRS, INSERM, L’Institut du Thorax, Nantes, France   
+<sup>11</sup> Nantes Université, CNRS, INSERM, L’Institut du Thorax, Nantes, France   
 
 _All TF members have had the opportunity to review and edit this document, invitations to be on the authorship list were open to all hackathon participants_
 
@@ -121,107 +121,19 @@ Participants were invited using the mailing list from the prior events, with an 
 As expected, given that it was a more technically focused meeting, the overall attendance was lower than at previous events, where more open discussions were the focus.
 In attendance were:
 
-
-<table>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td><strong>Affiliations</strong>
-   </td>
-   <td><strong>FAIR assessment project or tool</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Mark Wilkinson
-   </td>
-   <td>EOSC TF Co-chair, Universidad Politécnica de Madrid
-   </td>
-   <td>FAIR Evaluator & FAIR Champion
-   </td>
-  </tr>
-  <tr>
-   <td>Susanna-Assunta Sansone
-   </td>
-   <td>EOSC TF Member, University of Oxford, ELIXIR Interoperability Platform
-   </td>
-   <td>FAIRsharing
-   </td>
-  </tr>
-  <tr>
-   <td>Stian Soiland-Reyes
-   </td>
-   <td>The University of Manchester, University of Amsterdam, RO-Crate chair, ELIXIR
-   </td>
-   <td>Signposting Reference Environment   
-Signposting Python library
-   </td>
-  </tr>
-  <tr>
-   <td>Milo Thurston
-   </td>
-   <td>University of Oxford
-   </td>
-   <td>FAIRsharing
-   </td>
-  </tr>
-  <tr>
-   <td>Herbert Van de Sompel
-   </td>
-   <td>DANS
-   </td>
-   <td>FAIR Signposting
-   </td>
-  </tr>
-  <tr>
-   <td>Andreas Czerniak
-   </td>
-   <td>Bielefeld University Library, Germany
-   </td>
-   <td>OpenAIRE FAIR validator
-   </td>
-  </tr>
-  <tr>
-   <td>Wilko Steinhoff
-   </td>
-   <td>DANS
-   </td>
-   <td>EOSC SYNERGY & FAIRCORE4EOSC
-   </td>
-  </tr>
-  <tr>
-   <td>Robert Huber
-   </td>
-   <td>EOSC TF Member, Universität Bremen
-   </td>
-   <td>F-UJI, FAIR-IMPACT
-   </td>
-  </tr>
-  <tr>
-   <td>Allyson Lister 
-   </td>
-   <td>University of Oxford
-   </td>
-   <td>FAIRsharing
-   </td>
-  </tr>
-  <tr>
-   <td>Alban Gaignard
-   </td>
-   <td>CNRS, Nantes University, ELIXIR-FR
-   </td>
-   <td>FAIR Checker
-   </td>
-  </tr>
-  <tr>
-   <td>Richard Dennis
-   </td>
-   <td>EOSC TF Member
-   </td>
-   <td>Observer
-   </td>
-  </tr>
-</table>
-
+| Name                    | Affiliations                                                                  | FAIR assessment project or tool                          |
+| ----------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Mark Wilkinson          | EOSC TF Co-chair, Universidad Politécnica de Madrid                           | FAIR Evaluator & FAIR Champion                               |
+| Susanna-Assunta Sansone | EOSC TF Member, University of Oxford, ELIXIR Interoperability Platform        | FAIRsharing                                                  |
+| Stian Soiland-Reyes     | The University of Manchester, University of Amsterdam, RO-Crate chair, ELIXIR | Signposting Reference Environment Signposting Python library |
+| Milo Thurston           | University of Oxford                                                          | FAIRsharing                                                  |
+| Herbert Van de Sompel   | DANS                                                                          | FAIR Signposting                                             |
+| Andreas Czerniak        | Bielefeld University Library, Germany                                         | OpenAIRE FAIR validator                                      |
+| Wilko Steinhoff         | DANS                                                                          | EOSC SYNERGY & FAIRCORE4EOSC                                 |
+| Robert Huber            | EOSC TF Member, Universität Bremen                                            | F-UJI, FAIR-IMPACT                                           |
+| Allyson Lister          | University of Oxford                                                          | FAIRsharing                                                  |
+| Alban Gaignard          | CNRS, Nantes University, ELIXIR-FR                                            | FAIR Checker                                                 |
+| Richard Dennis          | EOSC TF Member                                                                | Observer                                                     |
 
 Each event lasted from 9 AM to 5 PM, with an opening discussion to set the tasks for the day and a final hour of updates and conversation.
 Participants would occasionally return to the virtual meeting space to discuss issues that required coordination.
