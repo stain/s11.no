@@ -65,7 +65,7 @@ Hervé Ménager and the rest of the CWL leadership team and the many volunteers.
 I also need to thank members of the [BioCompute Object](https://biocomputeobject.org/) community, particularly Hadley, Jonathon, Raja, Dennis, Vahan, Janisha, Amanda, and Nicola.
 I thank the [Workflows Community Initiative](https://workflows.community/) in particular Sean R. Wilkinson, Rafael Ferreira da Silva, and Kyle Chard.
 
-From the [FAIR Digital Object Forum](https://fairdo.org/) I need to place particular thanks to Peter Wittenburg, Luiz Olavo Bonino da Silva Santos, Maggie Hellström, Ulrich Schwardmann and Rainer Stotzka. I also want to thank all the members of the the [Research Data Alliance](https://www.rd-alliance.org/)'s FAIR Digital Object Fabric interest group.
+From the [FAIR Digital Object Forum](https://fairdo.org/) I need to place particular thanks to Peter Wittenburg, Luiz Olavo Bonino da Silva Santos, Maggie Hellström, Ulrich Schwardmann and Rainer Stotzka. I also want to thank all the members of the [Research Data Alliance](https://www.rd-alliance.org/)'s FAIR Digital Object Fabric interest group.
 
 Mark Wilkinson, we first worked together on BioMoby services and Taverna workflows, which seems a long way from where we are today with FAIR! Looking back from this thesis, perhaps we could consider those to be early FAIR digital objects as well? I want to thank you for your enthusiasm, and for bringing me in to the Apples2Apples hackathons -- thank you also to Robert, Richard, Wilko, David, Alban, and Allyson.
 

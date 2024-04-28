@@ -10,21 +10,21 @@ aliases:
 
 The [PAV ontology](../2013/pav/) specializes the [W3C PROV-O](http://www.w3.org/TR/prov-o/) standard to give a lightweight approach to recording details about a resource, giving its Provenance, Authorship and Versioning. Our [paper on PAV](https://doi.org/10.1186/2041-1480-4-37) explores all of these aspects in details. In this blog post we discuss **Versioning** as modelled by PAV, including their hierarchical organization.
 
-*   [Version numbers](#versionnumbers)
-    *   [Semantic versioning](#semver)
-*   [Making versions retrievable](#retrievable)
-*   [Ordering previous versions](#ordering)
-    *   [Providing provenance for each version](#each-version)
-*   [Related work](#relatedwork)
-    *   [PROV-O revisions](#provo)
-    *   [Qualified revisions](#qualified)
-    *   [DC Terms](#dcterms)
-    *   [schema.org](#schemaorg)
-*   [Organize the versions](#organize)
-    *   [Earlier versions](#earlier)
-    *   [Has a version (snapshots)](#hasVersion)
-    *   [Current version](#current)
-    *   [Hierarchies all the way down](#hierarchies)
+- [Version numbers {#versionnumbers}](#version-numbers-versionnumbers)
+  - [Semantic versioning {#semver}](#semantic-versioning-semver)
+- [Making versions retrievable {#retrievable}](#making-versions-retrievable-retrievable)
+- [Ordering previous versions {#ordering}](#ordering-previous-versions-ordering)
+  - [Providing provenance for each version {#each-version}](#providing-provenance-for-each-version-each-version)
+- [Related work {#relatedwork}](#related-work-relatedwork)
+  - [PROV-O revisions {#provo}](#prov-o-revisions-provo)
+  - [Qualified revisions {#qualified}](#qualified-revisions-qualified)
+  - [DC Terms {#dcterms}](#dc-terms-dcterms)
+  - [schema.org {#schemaorg}](#schemaorg-schemaorg)
+- [Organize the versions {#organize}](#organize-the-versions-organize)
+  - [Earlier versions {#earlier}](#earlier-versions-earlier)
+  - [Has a version (snapshots) {#hasVersion}](#has-a-version-snapshots-hasversion)
+  - [Current version {#current}](#current-version-current)
+  - [Hierarchies all the way down {#hierarchies}](#hierarchies-all-the-way-down-hierarchies)
 
 Versioning is commonly used for software releases (e.g. Windows 8.1, Firefox 26, Python 3.3.2), but increasingly also for datasets and documents. For the purpose of _provenance_, a version number allows the declaration of the _current state_ of a resource, which can be cross-checked against release notes and used for references, for instance to indicate which particular version of a dataset was used in producing an analysis report.
 
@@ -116,7 +116,7 @@ One interesting aspect of PROV-O is the ability to qualify relations. `prov:wasR
 
 [![](pav-and-prov-qualified-revisions-qualifiedrevision.png)](pav-and-prov-qualified-revisions-qualifiedrevision.png)
 
-`prov:qualifiedRevision` can be used to detail `pav:previousVersion`, here explaining the changes of the the dataset using `rdfs:comment`. Note that this figure does not show the qualified link `prov:entity` from the _revision_ to _dataset-1.1.0.csv_.
+`prov:qualifiedRevision` can be used to detail `pav:previousVersion`, here explaining the changes of the dataset using `rdfs:comment`. Note that this figure does not show the qualified link `prov:entity` from the _revision_ to _dataset-1.1.0.csv_.
 
 Note that it will often be difficult to assign a retrievable URI for the revision itself, unless some kind of versioning system (like [Github](https://github.com/stain/pav/commit/5e5a1f3578de796ebd86ebbb54ecc94905f491f2) or ~~[Google Code](https://code.google.com/p/pav-ontology/source/detail?r=283))~~ provides a way to link to the change or revision itself.
 
