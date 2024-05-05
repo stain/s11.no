@@ -142,7 +142,6 @@
 [FAIR Maturity 2020]: https://doi.org/10.15497/rda00050 "FAIR data maturity model: Specification and guidelines"
 [Falk 2010]: https://doi.org/10.1016/j.shpsc.2010.10.014 "What is a gene?—Revisited"
 [Farnel 2014]: https://dcpapers.dublincore.org/pubs/article/view/3714 "Metadata for research data: Current practices and trends"
-
 [FDO]: https://fairdo.org/ "FAIR Digital Object Forum"
 [FDO Specs]: https://hdl.handle.net/20.500.14132/fdo-spec-docs "FDO Specification Documents - November 2022"
 [Feng 2007]: https://doi.org/10.1145/1254882.1254906 "PBS: a unified priority-based scheduler"
@@ -436,9 +435,7 @@
 [Sporny 2015]: https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/ "RDFa 1.1 Primer"
 [Sporny 2020]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1: A JSON-based Serialization for Linked Data"
 [Sporny 2023]: https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/ "Media Types with Multiple Suffixes"
- 
-[Stallings 1990]: https://identifiers.org/isbn/9780672226977 "Handbook of computer-communications standards: The open systems (OSI) model and OSI-related standards"
- 
+[Stallings 1990]: https://identifiers.org/isbn/9780672226977 "Handbook of computer-communications standards: The open systems (OSI) model and OSI-related standards" 
 [Stanczyk 1987]: https://doi.org/10.21954/ou.ro.0000f821 "Process modelling for information system description"
 [Stefi 2015a]: http://doi.org/10.1007/978-3-319-19593-3_18 "To develop or to reuse? Two perspectives on external reuse in software projects"
 [Stefi 2015b]: https://doi.org/10.18151/7217489 "Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components"
