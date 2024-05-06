@@ -1,0 +1,998 @@
+diff --git a/b-references.tex b/b-references.tex
+index 1c89522..95da47d 100644
+--- a/b-references.tex
++++ b/b-references.tex
+@@ -8,7 +8,6 @@
+ %\footnotesize		
+ \small
+ 
+-
+ \bibitem[van der Aalst 2014]{van der Aalst 2014}
+ Wil M. P. van der Aalst~(2014):\\
+ \textbf{Data Scientist: The Engineer of the Future}.\\
+@@ -48,11 +47,12 @@ Riccardo~Albertoni, David~Browning, Simon~Cox, Alejandra~Gonzalez Beltran, Andre
+ \emph{W3C Recommendation} (2020)  04 February 2020 \\
+ \url{https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/}
+ 
+-\bibitem[Albertoni 2023]{Albertoni 2023}
+-Riccardo Albertonim, David Browning, Simon Cox, Alejandra Gonzalez Beltran, Andrea Perego, Peter Winstanley~(2023): \\
++% Now updated for D24
++\bibitem[Albertoni 2024]{Albertoni 2023}
++Riccardo Albertonim, David Browning, Simon Cox, Alejandra Gonzalez Beltran, Andrea Perego, Peter Winstanley~(2024): \\
+ \textbf{Data Catalog Vocabulary (DCAT)- Version 3}.\\
+-\emph{W3C Working Draft} 07 March 2023\\
+-\url{https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/}
++\emph{W3C Candidate Recommendation} 18 January 2024\\
++\url{https://www.w3.org/TR/2024/CR-vocab-dcat-3-20240118/}
+ 
+ \bibitem[Allan 2019]{Allan 2019}
+ E Louise Allan, Laurence Livermore, Benjamin Price, Olha Shchedrina, Vincent Smith~(2019): \\
+@@ -210,6 +210,12 @@ Thomas Baker, Sean Bechhofer, Antoine Isaacc, Alistair Miles, Guus Schreiber, Ed
+ \emph{Journal of Web Semantics} \textbf{20} \\
+ \url{https://doi.org/10.1016/j.websem.2013.05.001}
+ 
++\bibitem[Baker 2016]{Baker 2016}
++Monya Baker (2016): \\
++\textbf{1,500 scientists lift the lid on reproducibility}.\\
++\emph{Nature} \textbf{533} \\
++\url{https://doi.org/10.1038/533452a}
++
+ \bibitem[Baker 2019]{Baker 2019}
+ Thomas Baker, Eric Prud'hommeaux~(2019): \\
+ \textbf{Shape {Expressions} ({ShEx}) 2.1 {Primer}}. \\
+@@ -242,7 +248,7 @@ Dominique Batista, Alejandra Gonzalez-Beltran, Susanna-Assunta Sansone, Philippe
+ \bibitem[Baxter 2012]{Baxter 2012}
+ Robert Baxter, Neil Chue Hong, Dirk Gorissen, James Hetherington, Ilian Todorov~(2012): \\
+ \textbf{The Research Software Engineer}.\\
+-\emph{Digital Research 2012}, 2012-09-10/--12, Oxford, UK\\
++\emph{Digital Research 2012}, 2012-09-10/-{}-12, Oxford, UK\\
+ \url{https://www.research.ed.ac.uk/en/publications/e8416ad7-750f-442f-9b17-d812b9bb414d}
+ 
+ \bibitem[Bayarri 2021a]{Bayarri 2021a}
+@@ -277,7 +283,7 @@ Marijan Beg, Juliette Taka, Thomas Kluyver, Alexander Konovalov, Min Ragan-Kelle
+ \url{https://doi.org/10.1109/MCSE.2021.3052101}
+ 
+ \bibitem[Beier 2024]{Beier 2024}
+-Sebastian Beier, Timo Mühlhaus, Cyril Pommier, Stuart Owen, Dominik Brilhaus, Heinrich Lukas Weil, Florian Wetzels, Gavin Chait, Daniel Arend, Manuel Feser, Gajendra Doniparthi, Jonathan Bauer, Sveinung Gundersen, Pável Vázquez (2024): \\
++Sebastian Beier, Timo Mühlhaus, Cyril Pommier, Stuart Owen, Dominik Brilhaus, Heinrich Lukas Weil, Florian Wetzels, Gavin Chait, Daniel Arend, Manuel Feser, Gajendra Doniparthi, Jonathan Bauer, Sveinung Gundersen, Pável Vázquez~(2024): \\
+ BioHackEU23 report: \textbf{Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA}. \\
+ \emph{BioHackrXiv} \\
+ \url{https://doi.org/10.37044/osf.io/7y2jh}
+@@ -302,7 +308,7 @@ Mike Belshe, Roberto Peon, Martin Thomson~(2015): \\
+ \url{https://doi.org/10.17487/rfc7540}
+ 
+ \bibitem[Beltrán 2023]{Beltrán 2023} 
+-Daniel Beltrán Mora, Miguel Castrillo, Manuel G. Marciani, Bruno P. Kinoshita, Luiggi Tenorio Ku, Aina Gaya-Àvila, Francesc Roura Adserias,  Pierre-Antoine Bretonnière, Oriol Mula Valls, Pablo Goitia, Julian Rodrigo Berlin,  Miguel Andrés-Martínez, Kim Serradell, Wilmer Uruchi Ticona,  Domingo Manubens-Gil, Larissa Batista Leite, Isabel Andreu-Burillo, Javier Vegas-Regidor, Hui Du, Danila Volpi, Fabian Lienert, Joan Giralt, Joan Lopez, Muhammad Asif, Virginie Guemas, Xavier Abellan Ecija (2023):\\
++Daniel Beltrán Mora, Miguel Castrillo, Manuel G. Marciani, Bruno P. Kinoshita, Luiggi Tenorio Ku, Aina Gaya-Àvila, Francesc Roura Adserias,  Pierre-Antoine Bretonnière, Oriol Mula Valls, Pablo Goitia, Julian Rodrigo Berlin,  Miguel Andrés-Martínez, Kim Serradell, Wilmer Uruchi Ticona,  Domingo Manubens-Gil, Larissa Batista Leite, Isabel Andreu-Burillo, Javier Vegas-Regidor, Hui Du, Danila Volpi, Fabian Lienert, Joan Giralt, Joan Lopez, Muhammad Asif, Virginie Guemas, Xavier Abellan Ecija~(2023):\\
+ \textbf{Autosubmit v4.0.100}.\\
+ \emph{Zenodo} \\
+ \url{https://doi.org/10.5281/zenodo.10199020}
+@@ -376,6 +382,15 @@ Mike Bishop~(2022): \\
+ \emph{RFC Editor}, RFC 9114 \\
+ \url{https://doi.org/10.17487/rfc9114}
+ 
++\bibitem[Bisol 2014]{Bisol 2014}
++Giovanni Destro Bisol, Paolo Anagnostou, Marco Capocasa, Silvia Bencivelli, 
++Andrea Cerroni, Jorge Contreras, Neela Enke, Bernardino Fantini, Pietro Greco, Catherine Heeney, Daniela Luzi, Paolo Manghi, Deborah Mascalzoni, Jennifer C. Molloy, Fabio Parenti, Jelte M Wicherts, Geoffrey Boulton (2014):\\
++\textbf{Perspectives on Open Science and Scientific Data Sharing}: An Interdisciplinary Workshop. \\
++\emph{Journal of Anthropological Sciences} \textbf{92} \\
++\url{https://www.isita-org.com/jass/Contents/2014vol92/Destro/25020017.pdf} \\
++\url{https://doi.org/10.4436/JASS.92006}
++
++
+ \bibitem[Bizer 2009]{Bizer 2009}
+ Christian Bizer, Tom Heath, Tim Berners-Lee~(2009): \\
+ \textbf{Linked Data - The Story So Far}.\\
+@@ -442,7 +457,6 @@ David Bouyssié, Pınar Altıner, Salvador Capella-Gutierrez, José M. Fernánde
+ \emph{bioRxiv} 2023.10.02.560412 \\
+ \url{https://doi.org/10.1101/2023.10.02.560412}
+ 
+-
+ \bibitem[Brack 2022a]{Brack 2022a}
+ Paul Brack, Peter Crowther, Stian Soiland-Reyes, Stuart Owen, Douglas Lowe, Alan R Williams, Quentin Groom, Mathias Dillen, Frederik Coppens, Björn Grüning, Ignacio Eguinoa, Phil Ewels, Carole Goble~(2022): \\
+ \textbf{Ten Simple Rules for making a software tool workflow-ready}.\\
+@@ -496,13 +510,18 @@ Justin Buck, Deb Agarwal, James Ayliffe, Chris Erdmann, Carole Goble, Ugis Sarka
+ \emph{ESS Open Archive}\\
+ \url{https://doi.org/10.1002/essoar.10509966.1}
+ 
+-
+ \bibitem[Capadisli 2017]{Capadisli 2017}
+ Sarven Capadisli, Amy Guy, eds.~(2017): \\
+ \textbf{Linked Data Notifications}.\\
+ \emph{W3C Recommendation} 2 May 2017 \\
+ \url{https://www.w3.org/TR/2017/REC-ldn-20170502/}
+ 
++\bibitem[Carballo-Garcia 2022]{Carballo-Garcia 2022}
++Ana Carballo-Garcia, Juan-José Boté-Vericad~(2022):\\
++\textbf{FAIR Data: History and Present Context}.\\
++\emph{Central European Journal of Educational Research} \textbf{4}(2)\\
++\url{https://doi.org/10.37441/cejer/2022/4/2/11379}
++
+ \bibitem[Cardoso 2020a]{Cardoso 2020a}
+ João Cardoso, Diogo Proença, José Borbinha~(2020): \\
+ \textbf{Machine-actionable data management plans: A knowledge retrieval approach to automate the assessment of funders' requirements}.\\
+@@ -535,7 +554,6 @@ Gavin Carothers, Andy Seaborne, David Beckett~(2014): \\
+ \emph{W3C Recommendation} 25 February 2014\\
+ \url{http://www.w3.org/TR/2014/REC-n-triples-20140225/}
+ 
+-
+ \bibitem[Chard 2014]{Chard 2014}
+ Kyle~Chard, Steven~Tuecke, Ian~Foster~(2014): \\
+ \textbf{Efficient and secure transfer, synchronization, and sharing of big data}.\\
+@@ -612,8 +630,8 @@ Corporation for National Research Initiatives.\\
+ Jeremy Cohen, Daniel S. Katz, Michelle Barker, Neil Chue Hong, Robert Haines, Caroline Jay~(2020):\\
+ \textbf{The Four Pillars of Research Software Engineering}.\\
+ \emph{IEEE Software} \textbf{38}(1)\\
++\href{https://doi.org/10.48550/arXiv.2002.01035}{\emph{arXiv}:2002.01035}\\
+ \url{https://doi.org/10.1109/MS.2020.2973362}
+-\href{https://doi.org/10.48550/arXiv.2002.01035}{arXiv:2002.01035}
+ 
+ \bibitem[Cohen-Boulakia 2017]{Cohen-Boulakia 2017}
+ Sarah Cohen-Boulakia, Khalid Belhajjame, Olivier Collin, Jérôme Chopard, Christine Froidevaux, Alban Gaignard, Konrad Hinsen, Pierre Larmande, Yvan Le Bras, Frédéric Lemoine, Fabien Mareuil, Hervé Ménager, Christophe Pradal, Christophe Blanchet~(2017): \\
+@@ -650,7 +668,7 @@ RELIANCE deliverable, \emph{Zenodo}\\
+ \bibitem[Corcho 2023]{Corcho 2023}
+ Oscar Corcho, Fajar J. Ekaputra, Ivan Heibi, Clement Jonquet, Andras Micsik, Silvio Peroni, Emanuele Storti~(2023): \\
+ \textbf{A maturity model for catalogues of semantic artefacts}. \\
+-\emph{arXiv} 2305.06746 [cs.DL] \\
++\emph{arXiv}:2305.06746 [cs.DL] \\
+ \url{https://doi.org/10.48550/arXiv.2305.06746}
+ 
+ \bibitem[Cossu 2018]{Cossu 2018}
+@@ -697,7 +715,7 @@ Michael~R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Ne
+ \url{https://s11.no/2022/phd/methods-included/} (Supplement 4)
+ 
+ \bibitem[Cruz 2009]{Cruz 2009}
+-Sérgio Manuel Serra da Cruz; Maria Luiza M. Campos; Marta Mattoso (2009):\\
++Sérgio Manuel Serra da Cruz; Maria Luiza M. Campos; Marta Mattoso~(2009):\\
+ \textbf{Towards a Taxonomy of Provenance in Scientific Workflow Management Systems}.\\
+ \emph{IEEE World Congress on Services (SERVICES)} 2009 \textbf{I}\\
+ \url{https://doi.org/10.1109/SERVICES-I.2009.18}
+@@ -721,6 +739,18 @@ Felipe da Veiga Leprevost, Björn A Grüning, Saulo Alves Aflitos, Hannes L Rös
+ \emph{Bioinformatics} \textbf{33}(16) 
+ \url{https://doi.org/10.1093/bioinformatics/btx192}
+ 
++\bibitem[Davidson 2019]{Davidson 2019}
++Joy Davidson, Claudia Engelhardt,  Vanessa Proudman, Lennart Stoy, Angus Whyte~(2019): \\
++\textbf{D3.1 FAIR Policy Landscape Analysis}.\\
++\emph{FAIRsFAIR} project deliverable \\
++\url{https://doi.org/10.5281/zenodo.5537032}
++
++\bibitem[Davidson 2022]{Davidson 2022}
++Joy Davidson, Angus Whyte, Laurence Horton, Marjan Grootveld~(2022): \\
++\textbf{D3.8 Final report on policy and practice recommendations and support}.\\
++\emph{FAIRsFAIR} project deliverable \\
++\url{https://doi.org/10.5281/zenodo.6699333}
++
+ \bibitem[DCMI 2020]{DCMI 2020}
+ DCMI Usage Board~(2020): \\
+ \textbf{DCMI Metadata Terms}. \\
+@@ -759,7 +789,7 @@ Renato De Giovanni, Alan R. Williams, Vera Hernández Ernst, Robert Kulawik, Fra
+ David De Roure, Carole Goble~(2010): \\
+ \textbf{Anchors in shifting sand: the primacy of method in the web of data}. \\
+ \emph{Proceedings of the WebSci10: Extending the Frontiers of Society On-Line},
+-at Web Science Conference 2010 Raleigh, NC: US 2010-04-26/--27\\
++at Web Science Conference 2010 Raleigh, NC: US 2010-04-26/-{}-27\\
+ \url{https://web.archive.org/web/20140828142306/http://journal.webscience.org/325/}\\
+ \url{http://eprints.soton.ac.uk/id/eprint/270817} 
+ 
+@@ -770,7 +800,7 @@ Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg~(2020): \\
+ \url{https://doi.org/10.3390/publications8020021}
+ 
+ %\bibitem[Deelman 2005]{Deelman 2005}
+-%Ewa Deelman, Gurmeet Singh, Mei-Hui Su, James Blythe, Yolanda Gil, Carl Kesselman, Gaurang Mehta, Karan Vahi, G. Bruce Berriman, John Good, Anastasia Laity, Joseph C. Jacob, Daniel S. Katz (2005)\\
++%Ewa Deelman, Gurmeet Singh, Mei-Hui Su, James Blythe, Yolanda Gil, Carl Kesselman, Gaurang Mehta, Karan Vahi, G. Bruce Berriman, John Good, Anastasia Laity, Joseph C. Jacob, Daniel S. Katz~(2005)\\
+ %\textbf{Pegasus: A framework for mapping complex scientific workflows onto distributed systems}.\\
+ %\emph{Scientific Programming} \textbf{13}(3) \\
+ %\url{https://doi.org/10.1155/2005/128026}
+@@ -850,6 +880,12 @@ Martin J. Dürst, Michel Suignard~(2005): \\
+ RFC 3987, \emph{Internet Requests for Comments}, RFC Editor\\
+ \url{https://doi.org/10.17487/rfc3987}
+ 
++\bibitem[Duarte 2023]{Duarte 2023}
++Javier Duarte, Haoyang Li, Avik Roy, Ruike Zhu, E A Huerta, Daniel Diaz, Philip Harris, Raghav Kansal, Daniel S Katz, Ishaan H Kavoori, Volodymyr V Kindratenko, Farouk Mokhtar, Mark S Neubauer, Sang Eon Park, Melissa Quinnan, Roger Rusack, Zhizhen Zhao~(2023): \\
++\textbf{FAIR AI models in high energy physics}.\\
++\emph{Machine Learning: Science and Technology} \textbf{4}:4 \\
++\url{https://doi.org/10.1088/2632-2153/ad12e3}
++
+ \bibitem[Dusseault 2007]{Dusseault 2007}
+ Lisa M. Dusseault~(2007): \\
+ \textbf{HTTP Extensions for Web Distributed Authoring and Versioning} (WebDAV). \\
+@@ -867,7 +903,9 @@ workflows and Galaxy workflows executions.\\
+ Ignacio Eguinoa, Marek Suchánek, Vojtěch Knaisl, Jan Slifka, Paul De Geest, David López, Björn Grüning, Simone Leo, Stian Soiland-Reyes~(2023): \\
+ \textbf{BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates}.\\
+ \emph{BioHackrXiv}\\
+-\url{https://doi.org/10.37044/osf.io/24jst}
++\url{https://doi.org/10.37044/osf.io/24jst}\\
++\url{https://s11.no/2023/phd/enhancing-rdm-galaxy-dsw/} (Supplement 18)
++
+ 
+ \bibitem[Ejarque 2023]{Ejarque 2023}
+ Jorge Ejarque, Francesc Lordan, Rosa Maria Badia, Raul Sirvent, Daniele Lezzi, Fernando Vazquez, Cristian Tatu,  Gabriel Puigdemunt, Nihad Mammadli, Javier Conejero~(2023): \\
+@@ -883,13 +921,14 @@ Martin Ekuan, Jason Bouska, Mick Alberts, Tim Sherer, Udi Dahan, Mike Kistler, N
+ (accessed 24 January 2023)
+ 
+ \bibitem[Ellerm 2023]{Ellerm 2023}
+-Augustus Ellerm, Mark Gahegan, Benjamin Adams (2023):\\
++Augustus Ellerm, Mark Gahegan, Benjamin Adams~(2023):\\
+ \textbf{LivePublication: The Science Workflow Creates and Updates the Publication}.\\
+-\emph{IEEE 19th International Conference on e-Science} (e-Science) \\
++\emph{IEEE 19th International Conference on e-Science} (e-Science 2023) \\
++\url{https://www.researchgate.net/publication/364107266_Enabling_LivePublication} \\
+ \url{https://doi.org/10.1109/e-Science58273.2023.10254857}
+ 
+ \bibitem[Ellis 2007]{Ellis 2007}
+-Brian Ellis, Jeffrey Stylos, Brad Myers (2007):\\
++Brian Ellis, Jeffrey Stylos, Brad Myers~(2007):\\
+ \textbf{The Factory Pattern in API Design: A Usability Evaluation}.\\
+ \emph{29th International Conference on Software Engineering} (ICSE'07)\\
+ \url{https://doi.org/10.1109/ICSE.2007.85}
+@@ -923,7 +962,7 @@ FAIR Data Maturity Model Working Group~(2020): \\
+ \url{https://doi.org/10.15497/rda00050}
+ 
+ \bibitem[Falk 2010]{Falk 2010}
+-Raphael Falk (2010):\\
++Raphael Falk~(2010):\\
+ \textbf{What is a gene?—Revisited} \\
+ \emph{Studies in History and Philosophy of Biological and Biomedical Sciences} \textbf{41}(4) \\ 
+ \url{https://doi.org/10.1016/j.shpsc.2010.10.014}
+@@ -986,7 +1025,8 @@ Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Bad
+ \bibitem[Ferreira da Silva]{Ferreira da Silva}
+ Rafael Ferreira da Silva, Rosa M. Badia, Venkat Bala, Debbie Bard, Peer-Timo Bremer, Ian Buckley, Silvina Caino-Lores, Kyle Chard, Carole Goble, Shantenu Jha, Daniel S. Katz, Daniel Laney, Manish Parashar, Frederic Suter, Nick Tyler, Thomas Uram, Ilkay Altintas, Stefan Andersson, William Arndt, Juan Aznar, Jonathan Bader, Bartosz Balis, Chris Blanton, Kelly Rosa Braghetto, Aharon Brodutch, Paul Brunk, Henri Casanova, Alba Cervera Lierta, Justin Chigu, Taina Coleman, Nick Collier, Iacopo Colonnelli, Frederik Coppens, Michael Crusoe, Will Cunningham, Bruno de Paula Kinoshita, Paolo Di Tommaso, Charles Doutriaux, Matthew Downton, Wael Elwasif, Bjoern Enders, Chris Erdmann, Thomas Fahringer, Ludmilla Figueiredo, Rosa Filgueira, Martin Foltin, Anne Fouilloux, Luiz Gadelha, Andy Gallo, Artur Garcia Saez, Daniel Garijo, Roman Gerlach, Ryan Grant, Samuel Grayson, Patricia Grubel, Johan Gustafsson, Valerie Hayot-Sasson, Oscar Hernandez, Marcus Hilbrich, AnnMary Justine, Ian Laflotte, Fabian Lehmann, Andre Luckow, Jakob Luettgau, Ketan Maheshwari, Motohiko Matsuda, Doriana Medic, Pete Mendygral, Marek Michalewicz, Jorji Nonaka, Maciej Pawlik, Loic Pottier, Line Pouchard, Mathias Putz, Santosh Kumar Radha, Lavanya Ramakrishnan, Sashko Ristov, Paul Romano, Daniel Rosendo, Martin Ruefenacht, Katarzyna Rycerz, Nishant Saurabh, Volodymyr Savchenko, Martin Schulz, Christine Simpson, Raul Sirvent, Tyler Skluzacek, Stian Soiland-Reyes, Renan Souza, Sreenivas Rangan Sukumar, Ziheng Sun, Alan Sussman, Douglas Thain, Mikhail Titov, Benjamin Tovar, Aalap Tripathy, Matteo Turilli, Bartosz Tuznik, Hubertus van Dam, Aurelio Vivas , Logan Ward, Patrick Widener, Sean Wilkinson, Justyna Zawalska, Mahnoor Zulfiqar~(2023): \\
+ \textbf{Workflows Community Summit 2022}: A Roadmap Revolution.\\
+-\emph{arXiv}:2304.00019\\
++Technical Report, ORNL/TM-2023/2885 \\
++\emph{arXiv}:2304.00019 [cs.DC] \\
+ \url{https://doi.org/10.48550/arXiv.2304.00019}
+ 
+ \bibitem[Fielding 1999]{Fielding 1999}
+@@ -995,7 +1035,6 @@ Roy T. Fielding, Jim Gettys, Jeffrey Mogul, Henrik Frystyk Nielsen, Larry M Masi
+ \emph{RFC Editor}, RFC 2616\\
+ \url{https://doi.org/10.17487/rfc2616}
+ 
+-
+ \bibitem[Fielding 2000]{Fielding 2000}
+ Roy Thomas Fielding~(2000): \\
+ \textbf{Architectural styles and the design of network-based software architectures}\\
+@@ -1004,7 +1043,6 @@ Doctoral Thesis,
+ \url{https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm}
+ (accessed 28 June 2022) 
+ 
+-
+ \bibitem[Fielding 2014a]{Fielding 2014a}
+ Roy T. Fielding, Julian Reschke~(2014): \\
+ \textbf{Hypertext {Transfer Protocol} ({HTTP}/1.1): {Message Syntax} and {Routing}}\\
+@@ -1055,12 +1093,18 @@ The Galaxy Community (E. Afgan, A. Nekrutenko, B. A. Grüning, D. Blankenberg, J
+ \url{https://doi.org/10.1093/nar/gkac247}
+ 
+ \bibitem[Gamma 1995]{Gamma 1995}
+-Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994):\\
++Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides~(1994):\\
+ \textbf{Design Patterns}: Elements of Reusable Object-Oriented Software. \\
+ Addison Wesley \\ 
+ \href{https://identifiers.org/isbn/9780201633610}{ISBN 978-0201633610}.
+ 
+-\bibitem[Garcia 2020]{Garcia 2020}
++\bibitem[Garcia 2020a]{Garcia 2020a}
++Leyla Garcia, Bérénice Batut, Melissa L. Burke, Mateusz Kuzak, Fotis Psomopoulos, Ricardo Arcila, Teresa K. Attwood, Niall Beard, Denise Carvalho-Silva, Alexandros C. Dimopoulos, Victoria Dominguez del Angel, Michel Dumontier, Kim T. Gurwitz, Roland Krause, Peter McQuilton, Loredana Le Pera, Sarah L. Morgan, Päivi Rauste, Allegra Via, Pascal Kahlem, Gabriella Rustici, Celia W. G. van Gelder, Patricia M. Palagi~(2020): \\
++\textbf{Ten simple rules for making training materials FAIR}.\\
++\emph{PLOS Computational Biology} \textbf{16}(5):e1007854 \\
++\url{https://doi.org/10.1371/journal.pcbi.1007854}
++
++\bibitem[Garcia 2020b]{Garcia 2020}
+ Leyla Garcia, Erick Antezana, Alexander Garcia, Evan Bolton, Rafael Jimenez, Pjotr Prins, Juan M. Banda, Toshiaki Katayama~(2020): \\
+ \textbf{Ten simple rules to run a successful BioHackathon}. \\
+ \emph{PLOS Computational Biology} \textbf{16}(5):e1007808.\\
+@@ -1109,7 +1153,7 @@ GBIF Secretariat.~(2021): \\
+ \url{https://doi.org/10.35035/bezp-jj23}
+ 
+ \bibitem[Gewirtz 1996]{Gewirtz 1996}
+-Paul Gewirtz (1996):\\
++Paul Gewirtz~(1996):\\
+ \textbf{On I Know It When I See It}.\\
+ \emph{Yale Law Journal} \textbf{105}(4)\\
+ \url{https://heinonline.org/HOL/P?h=hein.journals/ylr105&i=1057}
+@@ -1233,6 +1277,12 @@ Björn Grüning, John Chilton, Johannes Köster, Ryan Dale, Nicola Soranzo, Mari
+ \emph{Cell Systems} \textbf{6}(6)\\
+ \url{https://doi.org/10.1016/j.cels.2018.03.014}
+ 
++\bibitem[Gruenpeter 2021]{Gruenpeter 2021}
++Morane Gruenpeter, Daniel S. Katz, Anna-Lena Lamprecht, Tom Honeyman, Daniel Garijo, Alexander Struck, Anna Niehues, Paula Andrea Martinez, Leyla Jael Castro, Tovo Rabemanantsoa, Neil P. Chue Hong, Carlos Martinez-Ortiz, Laurents Sesink, Matthias Liffers, Anne Claire Fouilloux, Chris Erdmann, Silvio Peroni, Paula Martinez Lavanchy, Ilian Todorov, Manodeep Sinha (2021): \\
++\textbf{Defining Research Software: A Controversial Discussion}. \\
++\emph{FAIR for Research Software (FAIR4RS)} / \emph{Zenodo} \\
++\url{https://doi.org/10.5281/zenodo.5504016}
++
+ \bibitem[Guha 2014]{Guha 2014}
+ Ramanathan Guha, Dan Brickley~(2014): \\
+ \textbf{RDF Schema 1.1}.\\
+@@ -1252,11 +1302,11 @@ Ramanathan V Guha, Dan Brickley, Steve Macbeth~(2016): \\
+ \url{https://doi.org/10.1145/2844544}
+ 
+ \bibitem[Gurevich 1995]{Gurevich 1995}
+-Yuri Gurevich (1995):\\
++Yuri Gurevich~(1995):\\
+ \textbf{Evolving Algebras 1993: Lipari Guide}.\\
+ \emph{Specification and Validation Methods} \\
++\href{https://doi.org/10.48550/arXiv.1808.06255}{\emph{arXiv}:1808.06255} \\
+ \href{https://identifiers.org/isbn/9780198538547}{ISBN 978-0198538547} \\
+-\url{https://doi.org/10.48550/arXiv.1808.06255}
+ 
+ \bibitem[Handle]{Handle}
+ CNRI~(2022): \\
+@@ -1294,7 +1344,7 @@ Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin
+ \emph{Data Intelligence} \textbf{4}(2)\\
+ \url{https://doi.org/10.1162/dint_a_00134}\\
+ \url{https://s11.no/2022/phd/specimen-data-refinery/}
+-(section \vref{ch8:the-specimen-data-refinery})
++(Section \vref{ch8:the-specimen-data-refinery})
+ 
+ \bibitem[Harrow 2021]{Harrow 2021}
+ Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas Blomberg~(2021): \\
+@@ -1303,11 +1353,17 @@ Jennifer Harrow, John Hancock, ELIXIR-EXCELERATE Community, Niklas Blomberg~(202
+ \url{https://doi.org/10.15252/embj.2020107409}
+ 
+ \bibitem[Harrow 2022]{Harrow 2022}
+-Jennifer Harrow, Rachel Drysdale, Andrew Smith, Susanna Repo, Jerry Lanfaear, Niklas Blomberg (2022): \\
++Jennifer Harrow, Rachel Drysdale, Andrew Smith, Susanna Repo, Jerry Lanfaear, Niklas Blomberg~(2022): \\
+ \textbf{ELIXIR: providing a sustainable infrastructure for life science data at European scale}.\\
+ \emph{Bioinformatics} \textbf{37}(16)\\
+ \url{https://doi.org/10.1093/bioinformatics/btab481}
+ 
++\bibitem[Hashem 2015]{Hashem 2015}
++Ibrahim Abaker Targio Hashem, Ibrar Yaqoob, Nor Badrul Anuar, Salimah Mokhtar, Abdullah Gani, Samee Ullah Khan (2015):\\
++\textbf{The rise of “big data” on cloud computing: Review and open research issues} \\
++\emph{Information Systems} \textbf{47} \\
++\url{https://doi.org/10.1016/j.is.2014.07.006}
++
+ \bibitem[Hasnain 2018]{Hasnain 2018}
+ Ali Hasnain, Dietrich Rebholz-Schuhmann~(2019): \\
+ \textbf{Assessing FAIR Data Principles Against the 5-Star Open Data Principles}.\\
+@@ -1422,7 +1478,7 @@ Chris Huntingford, Elizabeth S Jeffers, Michael B Bonsall, Hannah M Christensen,
+ \bibitem[Hussein 2021]{Hussein 2021}
+ Burhan Rashid Hussein, Owais Ahmed Malik, Wee-Hong Ong, Johan Willem Frederik Slik~(2021): \\
+ \textbf{Application of Computer Vision and Machine Learning for Digitized Herbarium Specimens: A Systematic Literature Review}.\\
+-\emph{arXiv} 2104.08732v1\\
++\emph{arXiv}:2104.08732v1\\
+ \url{https://doi.org/10.48550/arXiv.2104.08732}
+ 
+ \bibitem[IEEE 2791-2020]{IEEE 2791-2020}
+@@ -1433,6 +1489,12 @@ ISBN 978-1-5044-6466-6.\\
+ \url{https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d}\\
+ \url{https://doi.org/10.1109/ieeestd.2020.9094416}
+ 
++\bibitem[Ioannidis 2005]{Ioannidis 2005}
++John P. A. Ioannidis (2005): \\
++\textbf{Why Most Published Research Findings Are False}. \\
++\emph{PLOS Medicine} \textbf{19}(8):e1004085 \\
++\url{https://doi.org/10.1371/journal.pmed.1004085}
++
+ \bibitem[Isaac 2009]{Isaac 2009}
+ Antoine Isaac, Ed Summers~(2009): \\
+ \textbf{SKOS Simple Knowledge Organization System Primer}. \\
+@@ -1459,13 +1521,11 @@ ISO standard\\
+ 
+ \bibitem[ISO 23009-1]{ISO 23009-1}
+ ISO/IEC~(2022): \\
+-\textbf{{ISO}/{IEC} 23009-1:2022 --- information technology ---
+-dynamic adaptive streaming over HTTP (DASH)} --- part 1: Media
++\textbf{{ISO}/{IEC} 23009-1:2022 --- information technology --- dynamic adaptive streaming over HTTP (DASH)} --- part 1: Media
+ presentation description and segment formats.\\
+ ISO standard\\
+ \url{https://www.iso.org/standard/83314.html}
+ 
+-
+ \bibitem[Ison 2013]{Ison 2013}
+ Jon Ison, Matúš Kalaš, Inge Jonassen, Dan Bolser, Mahmut Uludag, Hamish McWilliam, James Malone, Rodrigo Lopez, Steve Pettifer, Peter Rice~(2013): \\
+ \textbf{EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats}.\\
+@@ -1498,7 +1558,6 @@ Jana Iyengar, Martin Thomson~(2021): \\
+ \emph{RFC Editor}, RFC 9000\\
+ \url{https://doi.org/10.17487/rfc9000}
+ 
+-
+ \bibitem[Jacobsen 2020]{Jacobsen 2020}
+ Annika Jacobsen, Ricardo de Miranda Azevedo, Nick Juty, Dominique Batista, Simon Coles, Ronald Cornet, Mélanie Courtot, Mercè Crosas, Michel Dumontier, Chris T. Evelo, Carole Goble, Giancarlo Guizzardi, Karsten Kryger Hansen, Ali Hasnain, Kristina Hettne, Jaap Heringa, Rob W.W. Hooft, Melanie Imming, Keith G. Jeffery, Rajaram Kaliyaperumal, Martijn G. Kersloot, Christine R. Kirkpatrick, Tobias Kuhn, Ignasi Labastida, Barbara Magagna, Peter McQuilton, Natalie Meyers, Annalisa Montesanti, Mirjam van Reisen, Philippe Rocca-Serra, Robert Pergl, Susanna-Assunta Sansone, Luiz Olavo Bonino da Silva Santos, Juliane Schneider, George Strawn, Mark Thompson, Andra Waagmeester, Tobias Weigel, Mark D. Wilkinson, Egon L. Willighagen, Peter Wittenburg, Marco Roos, Barend Mons, Erik Schultes~(2020): \\
+ \textbf{FAIR Principles: Interpretations and Implementation Considerations}.\\
+@@ -1525,8 +1584,7 @@ Matthew B. Jones, Stephen Richard, Dave Vieglais, Adam Shepherd, Ruth Duerr, Dou
+ \bibitem[Jones 2022]{Jones 2022}
+ Richard Jones, Neil Jefferies~(2022): \\
+ \textbf{SWORD 3.0 Specification}. \\
+-\url{https://swordapp.github.io/swordv3/swordv3.html} (accessed 26 May
+-2022)
++\url{https://swordapp.github.io/swordv3/swordv3.html} (accessed 26 May 2022)
+ 
+ \bibitem[Joras 2020]{Joras 2020}
+ Matt Joras, Yang Chi~(2020): \\
+@@ -1564,7 +1622,6 @@ Robert Kahn, Robert Wilensky~(1995): \\
+ \textbf{A framework for distributed digital object services} (CNRI).\\
+ \url{http://www.cnri.reston.va.us/k-w.html} (accessed 9 May 2022)
+ 
+-
+ \bibitem[Kahn 2006]{Kahn 2006}
+ Robert Kahn, Robert Wilensky~(2006): \\
+ \textbf{A framework for distributed digital object services}.\\
+@@ -1597,7 +1654,7 @@ W.~Kuhn~(eds.),\\
+ \bibitem[Katz 2021a]{Katz 2021a}
+ Daniel S. Katz, Morane Gruenpeter, Tom Honeyman, Lorraine Hwang, Mark D. Wilkinson, Vanessa Sochat, Hartwig Anzt, Carole Goble, FAIR4RS Subgroup 1~(2021): \\
+ \textbf{A Fresh Look at FAIR for Research Software}.\\
+-\emph{arXiv}:2101.10883\\
++\emph{arXiv}:2101.10883 [cs.SE] \\
+ \url{https://doi.org/10.48550/arXiv.2101.10883}
+ 
+ \bibitem[Katz 2021b]{Katz 2021b}
+@@ -1644,6 +1701,13 @@ Bruno de Paula Kinoshita~(2023): \\
+ \emph{Zenodo}\\
+ \url{https://doi.org/10.5281/zenodo.8144612}
+ 
++\bibitem[Kitchin 2021]{Kitchin 2021}
++Rob Kitchin (2021):\\
++\textbf{The Data Revolution}:  A Critical Analysis of Big Data, Open Data and Data Infrastructures. 
++Second edition. \\ 
++SAGE Publications Ltd. \\
++\href{https://identifiers.org/isbn/9781529733761}{ISBN 978-1-5297-3376-1}
++
+ \bibitem[Klein 2014]{Klein 2014}
+ Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila Balakireva, Ke Zhou, Richard Tobin~(2014): \\
+ \textbf{Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot}.\\
+@@ -1652,7 +1716,7 @@ Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila
+ 
+ \bibitem[Klímek 2019]{Klímek 2019}
+ Jakub Klímek, Petr Škoda, Martin Nečaský~(2019): \\
+-\textbf{Survey of tools for linked data consumption}. \\
++\textbf{Survey of tools for Linked Data consumption}. \\
+ \emph{Semantic Web} \textbf{10}(4) \\
+ \url{https://doi.org/10.3233/SW-180316}
+ 
+@@ -1727,18 +1791,18 @@ Oscar Corcho, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek, Christine C
+ \url{https://doi.org/10.2777/620649}
+ 
+ \bibitem[Käfer 2018a]{Käfer 2018a}
+-Tobias Käfer, Andreas Harth (2018): \\
++Tobias Käfer, Andreas Harth~(2018): \\
+ \textbf{Rule-based Programming of User Agents for Linked Data}.\\
+ \emph{WWW2018 Workshop on Linked Data on the Web} (LDOW2018) \\
+ \url{http://events.linkeddata.org/ldow2018/papers/LDOW2018_paper_7.pdf}
+ 
+ \bibitem[Käfer 2018b]{Käfer 2018b}
+-Tobias Käfer, Andreas Harth (2018):\\
++Tobias Käfer, Andreas Harth~(2018):\\
+ \textbf{Specifying, Monitoring, and Executing Workflows in Linked Data Environments}.\\
+ \emph{The Semantic Web – ISWC 2018}\\
+ \emph{Lecture Notes in Computer Science} \textbf{11136}\\
++\href{https://doi.org/10.48550/arXiv.1804.05044}{\emph{arXiv}:1804.05044} \\
+ \url{https://doi.org/10.1007/978-3-030-00671-6_25}
+-\href{https://arxiv.org/abs/1804.05044}{arXiv:1804.05044}
+ 
+ \bibitem[La Rosa 2021a]{La Rosa 2021a}
+ Marco La Rosa~(2021): \\
+@@ -1841,6 +1905,12 @@ Timothy Lebo, Luc Moreau~(2013): \\
+ \emph{W3C Working Group Note} 30 April 2013 \\
+ \url{https://www.w3.org/TR/2013/NOTE-prov-links-20130430/}
+ 
++\bibitem[Leach 2005]{Leach 2005}
++Paul J. Leach, Rich Salz, Michael H. Mealling~(2005): \\
++\textbf{A Universally Unique IDentifier (UUID) URN Namespace}. \\
++\emph{RFC Editor}, RFC 4122 \\
++\url{https://doi.org/10.17487/rfc4122}
++
+ \bibitem[Lee 2018]{Lee 2018}
+ Benjamin D. Lee~(2018):\\
+ \textbf{Ten simple rules for documenting scientific software}.\\
+@@ -1866,7 +1936,7 @@ Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander
+ \emph{arXiv} 2312.07852 [cs.DL] \\
+ \url{https://doi.org/10.48550/arXiv.2312.07852}\\
+ \url{https://s11.no/2023/phd/workflow-run-crate/} 
+-(section \vref{ch54:wrroc})
++(Section \vref{ch54:wrroc})
+ 
+ \bibitem[Leo 2023c]{Leo 2023c}
+ Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes~(2023): \\
+@@ -1876,7 +1946,6 @@ RO-Crate\\
+ \url{https://w3id.org/ro/doi/10.5281/zenodo.10368989}\\
+ \url{https://doi/10.5281/zenodo.10368989}
+ 
+-
+ \bibitem[Leo 2023]{Leo 2023}
+ Simone Leo~(2023): \\
+ \textbf{Run of digital pathology tissue/tumor prediction workflow}.\\
+@@ -1914,7 +1983,6 @@ Krisztina Lohonya, Laurence Livermore, Malcolm Penn~(2020): \\
+ \emph{Biodiversity Data Journal} \textbf{8}:e50503.\\
+ \url{https://doi.org/10.3897/BDJ.8.e50503}
+ 
+-
+ \bibitem[Loo 2022]{Loo 2022}
+ Tina Loo, ed.~(2022): \\
+ \textbf{First International Conference on FAIR Digital Objects}.\\
+@@ -1982,7 +2050,7 @@ Lois Mai~Chan~(1995): \\
+ \href{https://identifiers.org/isbn/9781563081910}{ISBN 9781563081910}.
+ 
+ \bibitem[Manubens-Gil 2016]{Manubens-Gil 2016}
+-Domingo Manubens-Gil, Javier Vegas-Regidor, Chloe Prodhomme, Oriol Mula-Valls, Francisco J. Doblas-Reyes (2016): \\
++Domingo Manubens-Gil, Javier Vegas-Regidor, Chloe Prodhomme, Oriol Mula-Valls, Francisco J. Doblas-Reyes~(2016): \\
+ \textbf{Seamless management of ensemble climate prediction experiments on HPC platforms}.\\
+ \emph{2016 International Conference on High Performance Computing \& Simulation} (HPCS), Innsbruck, Austria \\
+ \url{https://doi.org/10.1109/HPCSim.2016.7568429}
+@@ -2078,7 +2146,7 @@ Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron Ratovsky, Uri
+ (accessed \href{https://web.archive.org/web/20231106014946/https://spec.openapis.org/oas/v3.1.0.html}{2023-11-06})
+ 
+ \bibitem[Missier 2010]{Missier 2010}
+-Paolo Missier, Bertram Ludascher, Shawn Bowers, Saumen Dey, Anandarup Sarkar, Biva Shrestha, Ilkay Altintas, Manish Kumar Anand, Carole Goble (2010):\\
++Paolo Missier, Bertram Ludascher, Shawn Bowers, Saumen Dey, Anandarup Sarkar, Biva Shrestha, Ilkay Altintas, Manish Kumar Anand, Carole Goble~(2010):\\
+ \textbf{Linking multiple workflow provenance traces for interoperable collaborative science}.\\
+ \emph{The 5th Workshop on Workflows in Support of Large-Scale Science} \\
+ \url{https://doi.org/10.1109/WORKS.2010.5671861}
+@@ -2112,6 +2180,12 @@ Barend Mons~(2018): \\
+ \textbf{Data Stewardship for Open Science}.\\
+ \href{https://identifiers.org/isbn/9781315351148}{ISBN 9781315351148}
+ 
++\bibitem[Mons 2020]{Mons 2020}
++Barend Mons, Erik Schultes, Fenghong Liu, Annika Jacobsen~(2020): \\
++\textbf{The FAIR Principles: First Generation Implementation Choices and Challenges}.\\
++\emph{Data Intelligence} \textbf{2}(1--2) \\
++\url{https://doi.org/10.1162/dint_e_00023}
++
+ \bibitem[Moreau 2013]{Moreau 2013}
+ Luc Moreau, Paolo Missier, Khalid Belhajjame, Reza B'Far, James Cheney, Sam Coppens, Stephen Cresswell, Yolanda Gil, Paul Groth, Graham Klyne, Timothy Lebo, Jim McCusker, Simon Miles, James Myers, Satya Sahoo, Curt Tilmes~(2013): \\
+ \textbf{PROV-DM: The PROV Data Model}. \\
+@@ -2233,13 +2307,13 @@ Tazro Ohta, Hirotaka Suetake~(2023): \\
+ \url{https://doi.org/10.5281/zenodo.10134581}
+ 
+ \bibitem[Oliver 2019]{Oliver 2019}
+-Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2019):\\
++Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost~(2019):\\
+ \textbf{Workflow Automation for Cycling Systems}.\\
+ \emph{Computing in Science \& Engineering} \textbf{21}(4) \\
+ \url{https://doi.org/10.1109/MCSE.2019.2906593}
+ 
+ %\bibitem[Oliver 2023]{Oliver 2023}
+-%Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2023):\\
++%Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost~(2023):\\
+ %\textbf{Cylc: A Workflow Engine for Cycling Systems}.\\
+ %\url{https://doi.org/10.1109/MCSE.2019.2906593}
+ 
+@@ -2326,7 +2400,6 @@ Natalia Poiata, Claudio Satriano, Javier Conejero~(2023): \\
+ \emph{Zenodo}\\
+ \url{https://doi.org/10.5281/zenodo.7788030}
+ 
+-
+ \bibitem[Polleres 2020]{Polleres 2020}
+ Axel Polleres, Maulik Rajendra Kamdar, Javier David Fernández, Tania Tudorache, Mark Alan Musen~(2020): \\
+ \textbf{A more decentralized vision for linked data}.\\ 
+@@ -2345,7 +2418,6 @@ Benjamin Wills Price, Steen Dupont, Elizabeth Louise Allan, Vladimir Blagoderov,
+ \textbf{ALICE: Angled Label Image Capture and Extraction for high throughput insect specimen digitisation}.\\
+ \url{https://doi.org/10.31219/osf.io/s2p73}
+ 
+-
+ \bibitem[Prlić 2012]{Prlić 2012}
+ Andreas Prlić, James B. Procter~(2012):\\
+ \textbf{Ten Simple Rules for the Open Development of Scientific Software}.\\
+@@ -2376,7 +2448,7 @@ Sean Reilly~(2009): \\
+ \url{https://www.dona.net/doipv1doc} (accessed 26 May 2022)
+ 
+ \bibitem[Reis 2022]{Reis 2022}
+-David Reis, Bruno Piedade, Filipe F, Correia, João Pedro Dias, Ademar Aguiar (2022): \\
++David Reis, Bruno Piedade, Filipe F, Correia, João Pedro Dias, Ademar Aguiar~(2022): \\
+ \textbf{Developing Docker and Docker-Compose Specifications}: A Developers’ Survey.\\
+ \emph{IEEE Access} \textbf{10} pp. 2318--2329 \\
+ \url{https://doi.org/10.1109/ACCESS.2021.3137671}
+@@ -2399,7 +2471,6 @@ Demian Riccardi, Zachary Trautt, Ala Bazyleva, Eugene Paulechka, Vladimir Diky,
+ \emph{Journal of Computational Chemistry} \textbf{43}(12)\\
+ \url{https://doi.org/10.1002/jcc.26842}
+ 
+-
+ \bibitem[Rice 2022]{Rice 2022}
+ Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano~(2022): \\
+ \textbf{WebSockets Standard}. \\
+@@ -2407,6 +2478,13 @@ Adam Rice, Ian Hickson, Anne van Kesteren, Yutaka Hirano~(2022): \\
+ \url{https://websockets.spec.whatwg.org/}
+ (accessed 26 May 2022)
+ 
++\bibitem[Riungu-Kalliosaari 2022]{Riungu-Kalliosaari 2022}
++Leah Riungu-Kalliosaari, Rob Hooft, Sylvia Kuijpers, Jessica Parland-von Essen, Hanna Koivula~(2022): \\
++\textbf{D2.10 3rd Report on FAIR requirements for persistence and interoperability}.\\
++\emph{FAIRsFAIR} project deliverable \\
++\url{https://doi.org/10.5281/zenodo.6685820}
++   
++
+ \bibitem[RO-Crate 1.0]{RO-Crate 1.0}
+ Peter Sefton, Eoghan Ó Carragáin, Stian Soiland-Reyes, Oscar Corcho, Daniel Garijo, Raul Palma, Frederik Coppens, Carole Goble, José María Fernández, Kyle Chard, Jose Manuel Gomez-Perez, Michael R Crusoe, Ignacio Eguinoa, Nick Juty, Kristi Holmes, Jason A. Clark, Salvador Capella-Gutierrez, Alasdair J. G. Gray, Stuart Owen, Alan R. Williams, Giacomo Tartari, Finn Bacall, Thomas Thelen~(2019): \\
+ \textbf{RO-Crate Metadata Specification 1.0}.\\
+@@ -2471,7 +2549,7 @@ Luis Samaniego, Rohini Kumar, Sabine Attinger~(2010): \\
+ \textbf{Multiscale parameter regionalization of a grid-based hydrologic model at the mesoscale}.\\
+ \url{https://doi.org/10.1029/2008WR007327}
+ 
+-\bibitem[Samuel 2022]{Samuel 2022} Sheeba Samuel, Birgitta König-Ries (2022): \\
++\bibitem[Samuel 2022]{Samuel 2022} Sheeba Samuel, Birgitta König-Ries~(2022): \\
+ \textbf{End-to-End provenance representation for the understandability and reproducibility of scientific experiments using a semantic approach}. \\
+ \emph{Journal of Biomedical Semantics} \textbf{13}:1 \\
+ \url{https://doi.org/10.1186/s13326-021-00253-1}
+@@ -2488,6 +2566,12 @@ Sandvine~(2022): \\
+ \url{https://www.sandvine.com/global-internet-phenomena-report-2022}
+ (accessed 26 May 2022)
+ 
++\bibitem[Sansone 2019]{Sansone 2019}
++Susanna-Assunta Sansone, Peter McQuilton, Philippe Rocca-Serra, Alejandra Gonzalez-Beltran, Massimiliano Izzo, Allyson L. Lister, Milo Thurston, the FAIRsharing Community~(2019):\\
++\textbf{FAIRsharing as a community approach to standards, repositories and policies}.\\
++\emph{Nature Biotechnology} \textbf{37} \\
++\url{https://doi.org/10.1038/s41587-019-0080}
++
+ \bibitem[Sauermann 2008]{Sauermann 2008}
+ Leo Sauermann, Richard Cyganiak, Danny Ayers, Max Völkel~(2008): \\
+ \textbf{Cool URIs for the semantic web}.\\
+@@ -2501,7 +2585,7 @@ Carlos E. Scheidegger, Huy T. Vo, David Koop, Juliana Freire, Claudio T. Silva~(
+ \url{https://doi.org/10.1145/1376616.1376747}
+ 
+ \bibitem[schema.org]{schema.org}
+-\textbf{Schema.org - Schema.org}\\
++\textbf{Schema.org}\\
+ \url{https://schema.org/} (accessed 2021-08-10).
+ 
+ \bibitem[schema actions]{schema actions}
+@@ -2509,6 +2593,12 @@ Carlos E. Scheidegger, Huy T. Vo, David Koop, Juliana Freire, Claudio T. Silva~(
+ \emph{schema.org}\\
+ \url{https://schema.org/docs/actions.html} (accessed 26 May 2022)
+ 
++\bibitem[Schouppe 2018]{Schouppe 2018}
++Michel Schouppe, Jean-Claude Burgelman~(2018): \\
++\textbf{Relevance of EOSC and FAIR in the Realm of Open Science and Phases of Implementing the EOSC}.\\
++\emph{Data Analytics and Management in Data Intensive Domains} (DAMDID/RCDL 2018)\\
++\url{https://ceur-ws.org/Vol-2277/paper01.pdf}
++
+ \bibitem[Schreiber 2014]{Schreiber 2014}
+ Guus Schreiber, Yves Raimond~(2014): \\
+ \textbf{RDF 1.1 Primer}. \\
+@@ -2532,16 +2622,17 @@ Erik Schultes, Peter Wittenburg~(2019): \\
+ \textbf{FAIR principles and digital objects: Accelerating convergence on a data infrastructure}.\\
+ \emph{Data analytics and management in data intensive domains: 20th international conference} (DAMDID/RCDL 2018)\\
+ \emph{Data analytics and management in data intensive domains}: 20th international conference,
+-{DAMDID}/{RCDL} 2018, Moscow, Russia, 2018-10-09/--12. \\
+-\url{https://doi.org/10.1007/978-3-030-23584-0_1}
++{DAMDID}/{RCDL} 2018, Moscow, Russia, 2018-10-09/-{}-12. \\
++\url{https://doi.org/10.1007/978-3-030-23584-0_1} \\
+ Preprint: \url{https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D}
+ 
+ \bibitem[Schultes 2020]{Schultes 2020}
+ Erik Schultes, Barbara Magagna, Kristina Maria Hettne, Robert Pergl, Marek Suchánek, Tobias Kuhn~(2020): \\
+ \textbf{Reusable {FAIR} implementation profiles as accelerators of {FAIR} convergence}.\\
+-\emph{International Conference on Conceptual Modeling}, ER 2020: Advances in Conceptual Modeling, 2022-11-03/--06, Vienna, Austria. \\
++\emph{International Conference on Conceptual Modeling}, ER 2020: Advances in Conceptual Modeling, 2022-11-03/-{}-06, Vienna, Austria. \\
+ \emph{Lecture notes in Computer Science} \textbf{12584} \\ 
+-\url{https://doi.org/10.1007/978-3-030-65847-2_13}
++\url{https://doi.org/10.1007/978-3-030-65847-2_13} \\
++Preprint: \url{https://doi.org/10.31219/osf.io/2p85g}
+ 
+ \bibitem[Schultes 2022]{Schultes 2022}
+ Erik Schultes, Marco Roos, Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Jildau Bouwman, Thomas Hankemeier, Arie Baak, Barend Mons~(2022): \\
+@@ -2559,7 +2650,7 @@ Ulrich Schwardmann, George Strawn, Robert Quick, Peter Wittenburg~(2022): \\
+ \bibitem[Schwardmann 2022b]{Schwardmann 2022b}
+ Ulrich Schwardmann, Tibor Kálmán~(2022): \\
+ \textbf{Two {Examples} on {How FDO Types} can {Support Machine} and {Human Readability}}.\\
+-\emph{Research Ideas and Outcomes} \textbf{8} \\
++\emph{Research Ideas and Outcomes} \textbf{8}:e96014 \\
+ \url{https://doi.org/10.3897/rio.8.e96014}
+ 
+ \bibitem[Scrocca 2021]{Scrocca 2021}
+@@ -2592,6 +2683,18 @@ Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk Barbi, Jan H
+ \url{https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi}\\
+ \url{https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87}
+ 
++\bibitem[Serwadda 2018]{Serwadda 2018}
++David Serwadda, Paul Ndebele, M. Kate Grabowski, Francis Bajunirwe, Rhoda K. Wanyenze (2018) \\
++\textbf{Open data sharing and the Global South—Who benefits?} \\
++\emph{Science} \textbf{359}(6376) \\
++\url{https://doi.org/10.1126/science.aap8395}
++
++\bibitem[Shanahan 2021]{Shanahan 2021}
++Hugh Shanahan, Nancy Hoebelheinrich, Angus Whyte~(2021):\\
++\textbf{Progress toward a comprehensive teaching approach to the FAIR data principles}.\\
++\emph{Patterns} \textbf{2}(10) \\
++\url{https://doi.org/10.1016/j.patter.2021.100324}
++
+ \bibitem[Singhal 2012]{Singhal 2012}
+ Amit Singhal~(2012): \\
+ \textbf{Introducing the knowledge graph: Things, not strings}.\\
+@@ -2605,6 +2708,11 @@ Raul Sirvent, Javier Conejero, Francesc Lordan, Jorge Ejarque, Laura Rodriguez-N
+ \url{https://doi.org/10.1109/works56498.2022.00006}\\
+ \url{https://hdl.handle.net/2117/384589}
+ 
++\bibitem[Śledź 2018]{Sledz 2018}
++Paweł Śledź, Amedeo Caflisch (2018):\\
++\textbf{Protein structure-based drug design: from docking to molecular dynamics}.\\
++\emph{Current Opinion in Structural Biology} \textbf{48} \\
++\url{https://doi.org/10.1016/j.sbi.2017.10.010}
+
+ \bibitem[Smith 2007]{Smith 2007}
+ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah, Patricia L. Whetzel, Suzanna Lewis~(2007): \\
+ \textbf{The {OBO Foundry}:
+@@ -2614,7 +2722,7 @@ integration}. \\
+ \url{https://doi.org/10.1038/nbt1346}
+ 
+ \bibitem[Smith 2016]{Smith 2016}
+-Arfon M. Smith, Daniel S. Kattz, Kyle E. Niemeyer, FORCE11 Software Citation Working Group (2016):\\
++Arfon M. Smith, Daniel S. Kattz, Kyle E. Niemeyer, FORCE11 Software Citation Working Group~(2016):\\
+ \textbf{Software citation principles}.\\
+ \emph{PeerJ Computer Science} \textbf{2}:e86\\
+ \url{https://doi.org/10.7717/peerj-cs.86}
+@@ -2673,7 +2781,7 @@ Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Co
+ \emph{Data Science} \textbf{5}(2)\\
+ \url{https://doi.org/10.3233/DS-210053}\\
+ \url{https://s11.no/2022/phd/ro-crate/}
+-(sections \vref{ch5:packaging-research-artefacts-with-ro-crate} and \vref{ch5:formaldefinition})
++(Sections \vref{ch5:packaging-research-artefacts-with-ro-crate} and \vref{ch5:formaldefinition})
+ 
+ \bibitem[Soiland-Reyes 2022b]{Soiland-Reyes 2022b}
+ Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth~(2022): \\
+@@ -2681,22 +2789,22 @@ Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania
+ \emph{Data Intelligence} \textbf{4}(2)\\
+ \url{https://doi.org/10.1162/dint_a_00135}\\
+ \url{https://s11.no/2022/phd/canonical-workflow-building-blocks/}
+-(section \vref{ch6:making-canonical-workflow-building-blocks-interoperable-across-workflow-languages})
++(Section \vref{ch6:making-canonical-workflow-building-blocks-interoperable-across-workflow-languages})
+ 
+ \bibitem[Soiland-Reyes 2022c]{Soiland-Reyes 2022c}
+ Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth~(2022): \\
+ \textbf{Creating lightweight FAIR digital objects with RO-Crate}.\\
+-\emph{Research Ideas and Outcomes} \textbf{10}(8) \\
++\emph{Research Ideas and Outcomes} \textbf{8}:e93937 \\
+ \url{https://doi.org/10.3897/rio.8.e93937} \\
+ \url{https://s11.no/2022/phd/fdo-with-ro-crate/}
+-(section \vref{ch4:lightweight-fdo})
++(Section \vref{ch4:lightweight-fdo})
+ 
+ \bibitem[Soiland-Reyes 2022d]{Soiland-Reyes 2022d}
+ Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth~(2022): \\
+ \textbf{Updating Linked Data practices for FAIR Digital Object principles}. \\
+-\emph{Research Ideas and Outcomes} \textbf{10}(8)\\
++\emph{Research Ideas and Outcomes} \textbf{8}:e94501 \\
+ \url{https://doi.org/10.3897/rio.8.e94501}\\
+-\url{https://s11.no/2022/phd/updating-ld-for-fdo/} (section \vref{ch2:updating-linked-data-practices-for-fair-digital-object-principles})
++\url{https://s11.no/2022/phd/updating-ld-for-fdo/} (Section \vref{ch2:updating-linked-data-practices-for-fair-digital-object-principles})
+ 
+ \bibitem[Soiland-Reyes 2022e]{Soiland-Reyes 2022e}
+ Stian Soiland-Reyes,Bruno P. Kinoshita~(2022): \\
+@@ -2711,21 +2819,20 @@ Stian Soiland-Reyes, Carole Goble~(2022): \\
+ \url{https://doi.org/10.5281/zenodo.7152762}
+ 
+ \bibitem[Soiland-Reyes 2022g]{Soiland-Reyes 2022g}
+-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022): \\
++Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble~(2022): \\
+ \textbf{Packaging research artefacts with RO-Crate}. \\
+ RO-Crate\\
+ \emph{Zenodo}\\
+ \url{https://w3id.org/ro/doi/10.5281/zenodo.5146227} \\
+ \url{https://doi.org/10.5281/zenodo.5833456}
+ 
+-
+ \bibitem[Soiland-Reyes 2023a]{Soiland-Reyes 2023a}
+ Stian Soiland-Reyes~(2023): \\
+ \textbf{Comparison tables for evaluating FAIR Digital Object and Linked Data}.\\
+ RO-Crate. \\
+ \emph{Zenodo}\\
+ \url{https://w3id.org/ro/doi/10.5281/zenodo.8075229}\\
+-\url{https://doi.org/10.5281/zenodo.8075229}\\
++\url{https://doi.org/10.5281/zenodo.8075229}
+ 
+ \bibitem[Soiland-Reyes 2023b]{Soiland-Reyes 2023b}
+ Stian Soiland-Reyes, Herbert Van de Sompel~(2023): \\
+@@ -2734,38 +2841,50 @@ Webinar: FAIR-IMPACT Open Call for Support, 2023-03-27 \\
+ \emph{Zenodo} \\
+ \url{https://doi.org/10.5281/zenodo.7774582}
+ 
+-\bibitem[Soiland-Reyes 2023c]{Soiland-Reyes 2023c}
+-Stian Soiland-Reyes, Carole Goble, Paul Groth~(2023): \\
+-\textbf{Evaluating FAIR Digital Object and Linked Data as distributed object systems}.\\
+-\emph{PeerJ Computer Science} (accepted)  
+-\emph{arXiv} 2306.07436 [cs.DC]  
+-\url{https://doi.org/10.48550/arXiv.2306.07436}\\
+-\url{https://s11.no/2023/phd/evaluating-fdo/}
+-(sections \vref{ch2:background} and \vref{ch3:evaluating-fdo-ld})
+-
+-\bibitem[Soiland-Reyes 2023d]{Soiland-Reyes 2023d}
++% NOTE: Soiland-Reyes 2023c  became Soiland-Reyes 2024b
++% so the remaining has mismatching letters in display
++% to shift up to c.
++\bibitem[Soiland-Reyes 2023c]{Soiland-Reyes 2023d}
+ Stian Soiland-Reyes, Carole Goble~(2023): \\
+ \textbf{Building diverse FDO Collections using RO-Crate}.\\
+ \emph{FAIR Digital Object Forum}, workshop "Defining FDO Collections”, 2023-04-14.\\
+ \url{https://doi.org/10.5281/zenodo.7828632}
+ 
+-\bibitem[Soiland-Reyes 2023e]{Soiland-Reyes 2023e}
++\bibitem[Soiland-Reyes 2023d]{Soiland-Reyes 2023e}
+ Stian Soiland-Reyes, Stuart Wheater~(2023): \\
+ \textbf{Five Safes RO-Crate profile}, version 0.4.\\
+ \emph{TRE-FX Candidate Recommendation} \\
+ \url{https://w3id.org/5s-crate/0.4}
+ 
+-\bibitem[Soiland-Reyes 2023f]{Soiland-Reyes 2023f}
+-Stian Soiland-Reyes, Stuart Wheater, Thomas Giles, Carole Goble, Philip Quinlan (2023):\\  \textbf{TRE-FX Technical Documentation - Five Safes RO-crate}.  \\
++\bibitem[Soiland-Reyes 2023e]{Soiland-Reyes 2023f}
++Stian Soiland-Reyes, Stuart Wheater, Thomas Giles, Carole Goble, Philip Quinlan~(2023):\\  \textbf{TRE-FX Technical Documentation - Five Safes RO-crate}.  \\
+ \emph{Zenodo} \\
+ \url{https://doi.org/10.5281/zenodo.10376350}
++%%
+ 
+-
+-\bibitem[Soiland-Reyes 2024]{Soiland-Reyes 2024}
+-Stian Soiland-Reyes, Leyla Jael Castro, Rohitha Ravinder, Claus Weiland, Jonas Grieb, Alexander Rogers, Christophe Blanchi, Herbert Van de Sompel (2024): \\
++\bibitem[Soiland-Reyes 2024a]{Soiland-Reyes 2024a}
++Stian Soiland-Reyes, Leyla Jael Castro, Rohitha Ravinder, Claus Weiland, Jonas Grieb, Alexander Rogers, Christophe Blanchi, Herbert Van de Sompel~(2024): \\
+ BioHackEU23 report: \textbf{Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas}. \\
+ \emph{BioHackrXiv} \\
+-\url{https://doi.org/10.37044/osf.io/gmk2h}
++\url{https://doi.org/10.37044/osf.io/gmk2h}\\
++\url{https://s11.no/2024/enabling-fair-digital-objects/} (Supplement 20)
++
++
++\bibitem[Soiland-Reyes 2024b]{Soiland-Reyes 2024b}
++Stian Soiland-Reyes, Carole Goble, Paul Groth~(2024): \\
++\textbf{Evaluating FAIR Digital Object and Linked Data as distributed object systems}.\\
++\emph{PeerJ Computer Science} \textbf{10}:e1781 (accepted) \\
++\href{https://doi.org/10.48550/arXiv.2306.07436}{\emph{arXiv} 2306.07436} \\
++\url{https://doi.org/10.7717/peerj-cs.1781} \\
++\url{https://s11.no/2023/phd/evaluating-fdo/} 
++(Sections \vref{ch2:background} and \vref{ch3:evaluating-fdo-ld})
++
++\bibitem[Soiland-Reyes 2024c]{Soiland-Reyes 2024c}
++Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):  \\
++\textbf{Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned}.  \\
++\emph{International FAIR Digital Objects Implementation Summit 2024}, Berlin, Germany, 2024-03-20/--21.  \\
++\emph{Open Conference Proceedings} \textbf{4} (submitted) \\
++\url{https://s11.no/2024/webby-fdos/} (Supplement 22)
+ 
+ \bibitem[Speicher 2015]{Speicher 2015}
+ Steve Speicher, John Arwe, Ashok Malhotra~(eds)~(2015): \\
+@@ -2812,14 +2931,14 @@ Stefan K. Stanczyk~(1987): \\
+ \bibitem[Stefi 2015a]{Stefi 2015a}
+ Anisa Stefi, Thomas Hess~(2015): \\
+ \textbf{To develop or to reuse? Two perspectives on external reuse in software projects}. \\
+-\emph{International Conference of Software Business} (ICSOB 2015), Braga, Portugal, 2015-06-10/--12.\\
++\emph{International Conference of Software Business} (ICSOB 2015), Braga, Portugal, 2015-06-10/-{}-12.\\
+ \emph{ICSOB 2015: Software business} \\
+ \url{http://doi.org/10.1007/978-3-319-19593-3_18}
+ 
+ \bibitem[Stefi 2015b]{Stefi 2015b}
+ Anisa Stefi~(2015): \\
+ \textbf{Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components}. \\
+-\emph{European Conference on Information Systems} (ECIS 2015), Münster, Germany, 2015-05-26/--29 \\
++\emph{European Conference on Information Systems} (ECIS 2015), Münster, Germany, 2015-05-26/-{}-29 \\
+ \url{https://doi.org/10.18151/7217489}
+ 
+ \bibitem[Stodden 2016]{Stodden 2016}
+@@ -2846,7 +2965,6 @@ Hirotaka Suetake, Tazro Inutano Ohta, Tomoya Tanjo, Manabu ISHII, Bruno P. Kinos
+ \emph{Zenodo}\\
+ \url{https://doi.org/10.5281/zenodo.10134452}
+ 
+-
+ \bibitem[Sun 2003a]{Sun 2003a}
+ Sam Sun, Larry Lannom, Brian P. Boesch~(2003): \\
+ \textbf{Handle System Overview}.\\
+@@ -2902,10 +3020,9 @@ N.~Thieberger, L.~Barwick~(2012): \\
+ \bibitem[Thiers 2016]{Thiers 2016}
+ Barbara M. Thiers, Melissa C. Tulig, Kimberly A. Watson~(2016): \\
+ \textbf{Digitization of the New York Botanical Garden herbarium}.\\
+-\emph{Brittonia}, \textbf{68}(3)\\
++\emph{Brittonia} \textbf{68}(3)\\
+ \url{https://doi.org/10.1007/s12228-016-9423-7}
+ 
+-
+ \bibitem[Thompson 2012]{Thompson 2012}
+ Henry Thompson, Sandy Gao, David Beech, Murray Maloney, Noah Mendelsohn, Michael Sperberg-McQueen~(2012): \\
+ \textbf{W3C XML Schema Definition Language} ({XSD}) 1.1 {Part} 1: {Structures}. \\
+@@ -2923,10 +3040,9 @@ Katherine Thornton, Harold Solbrig, Gregory S. Stupp, Jose Emilio Labra Gayo, Da
+ \textbf{Using shape expressions ({ShEx}) to share {RDF} data models and
+ to guide curation with rigorous validation}. \\
+ \emph{The Semantic Web: 16th international conference}, (ESWC 2019), Portorož, Slovenia,
+-2019-06-02/--06\\
++2019-06-02/-{}-06\\
+ \url{https://doi.org/10.1007/978-3-030-21348-0_39}
+ 
+-
+ \bibitem[Tirmizi 2011]{Tirmizi 2011}
+ Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan Sequeda, Nigam H. Shah, Daniel P. Miranker~(2011): \\
+ \textbf{Mapping between the {OBO} and {OWL} ontology languages}. \\
+@@ -2943,7 +3059,7 @@ Syed Tirmizi, Stuart Aitken, Dilvan A. Moreira, Chris Mungall, Juan Sequeda, Nig
+ Dennis Trautwein, Aravindh Raman, Gareth Tyson, Ignacio Castro, Will Scott, Moritz Schubotz, Bela Gipp, Yiannis Psaras~(2022): \\
+ \textbf{Design and Evaluation of IPFS: A Storage Layer for the Decentralized Web}.\\
+ \emph{Proceedings of the {ACM} {SIGCOMM} 2022 Conference}\\
+-\url{https://doi.org/10.48550/arXiv.2208.05877}\\
++\href{https://doi.org/10.48550/arXiv.2208.05877}{\emph{arXiv}:2208.05877}\\
+ \url{https://doi.org/10.1145/3544216.3544232}
+ 
+ \bibitem[Triki 2020]{Triki 2020}
+@@ -2980,8 +3096,7 @@ Ovidiu Turcoane~(2014): \\
+ 
+ \bibitem[Unger 2016]{Unger 2016}
+ Jakob Unger, Dorit Merhof, Susanne Renner~(2016): \\
+-\textbf{Computer vision applied to herbarium specimens of German trees}: testing the future utility of the
+-millions of herbarium specimen images for automated identification\\. 
++\textbf{Computer vision applied to herbarium specimens of German trees}: testing the future utility of the millions of herbarium specimen images for automated identification\\. 
+ \emph{BMC Evolutionary Biology} \textbf{16}(1)\\
+ \url{https://doi.org/10.1186/s12862-016-0827-5}
+ 
+@@ -3117,7 +3232,6 @@ WHATWG~(2023): \\
+ \url{https://html.spec.whatwg.org/multipage/microdata.html} (accessed 13
+ June 2023)
+ 
+-
+ \bibitem[Weigel 2018]{Weigel 2018}
+ Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa~(2018): \\
+ \textbf{{RDA Recommendation} on {PID Kernel Information}} \\
+@@ -3197,8 +3311,9 @@ EOSC FAIR Metrics and Data Quality Task Force\\
+ \bibitem[Wilkinson 2022b]{Wilkinson 2022b}
+ Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight, Jeremy Logan, Patrick Widener, Matthew Wolf~(2022): \\
+ \textbf{F*** workflows: When parts of {FAIR} are missing}. \\
+-\emph{arXiv} 2209.09022 [cs.DL] \\
+-\url{https://doi.org/10.48550/arxiv.2209.09022}
++\emph{IEEE 18th International Conference on e-Science} (e-Science 2022) \\
++\href{https://doi.org/10.48550/arXiv.2209.09022}{\emph{arXiv}:2209.09022} \\
++\url{https://doi.org/10.1109/eScience55777.2022.00090}
+ 
+ \bibitem[Wilkinson 2023a]{Wilkinson 2023a}
+ Mark D. Wilkinson, Susanna-Assunta Sansone, Eva Méndez, Romain David, Richard Dennis, David Hecker, Mari Kleemola, Carlo Lacagnina, Anastasija Nikiforova, Leyla Jael Castro~(2023): \\
+@@ -3207,14 +3322,16 @@ Mark D. Wilkinson, Susanna-Assunta Sansone, Eva Méndez, Romain David, Richard D
+ \url{https://doi.org/10.12688/openreseurope.15364.2}
+ 
+ \bibitem[Wilkinson 2024]{Wilkinson 2024}
+-Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):\\  \textbf{Report on "FAIR Signposting" and its uptake by the community}.\\
++Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard~(2024):\\  
++\textbf{Report on "FAIR Signposting" and its uptake by the community}.\\
+ \emph{EOSC FAIR Metrics and Data Quality Task Force} \\
+-\url{https://doi.org/10.5281/zenodo.10490289}
++\url{https://doi.org/10.5281/zenodo.10490289} \\
++\url{https://s11.no/2024/signposting-report/} (Supplement 21)
+ 
+ \bibitem[Williams 2012]{Williams 2012}
+ Antony J. Williams, Lee Harland, Paul Groth, Stephen Pettifer, Christine Chichester, Egon L. Willighagen, Chris T. Evelo, Niklas Blomberg, Gerhard Ecker, Carole Goble, Barend Mons~(2012): \\
+ \textbf{Open {PHACTS}: Semantic interoperability for drug discovery}.\\
+-\emph{Drug Discovery Today} \textbf{17}(21-22) (2012) \\
++\emph{Drug Discovery Today} \textbf{17}(21-22) \\
+ \url{https://doi.org/10.1016/j.drudis.2012.05.016}
+ 
+ \bibitem[Wittenburg 2019]{Wittenburg 2019}
+@@ -3279,7 +3396,7 @@ Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Marku
+ (Supplement 17)
+ 
+ \bibitem[Wittner 2023c]{Wittner 2023c}
+-Rudolf Wittner, Matej Rudolf, Simone Leo, Stian Soiland-Reyes (2023): \\
++Rudolf Wittner, Matej Rudolf, Simone Leo, Stian Soiland-Reyes~(2023): \\
+ \textbf{Packing provenance using CPM RO-Crate profile} (Version 1.1)\\
+ Data set.\\
+ \emph{Zenodo}\\
+@@ -3313,7 +3430,7 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore~
+ \emph{Research Ideas and Outcomes} \textbf{8}:e94349\\
+ \url{https://doi.org/10.3897/rio.8.e94349}\\
+ \url{https://s11.no/2022/phd/incrementally-building-fdos/}\\
+-(see section \vref{ch7:incrementally-building-fair-digital-objects-with-specimen-data-refinery-workflows})
++(see Section \vref{ch7:incrementally-building-fair-digital-objects-with-specimen-data-refinery-workflows})
+ 
+ \bibitem[WorkflowHub 2023]{WorkflowHub 2023}
+ WorkflowHub~(2023): \\
+@@ -3367,7 +3484,7 @@ Apostolos Zarras~(2004): \\
+ \url{https://doi.org/10.5381/jot.2004.3.5.a2}
+ 
+ \bibitem[Zerouali 2023]{Zerouali 2023}
+-Ahmed Zerouali, Ruben Opdebeeck, Coen De Roover (2023):\\
++Ahmed Zerouali, Ruben Opdebeeck, Coen De Roover~(2023):\\
+ \textbf{Helm Charts for Kubernetes Applications: Evolution, Outdatedness and Security Risks}.\\
+ \emph{IEEE/ACM 20th International Conference on Mining Software Repositories} (MSR), Melbourne, Australia \\
+ \url{https://doi.org/10.1109/MSR59073.2023.00078}
+@@ -3375,7 +3492,7 @@ Ahmed Zerouali, Ruben Opdebeeck, Coen De Roover (2023):\\
+ \bibitem[Zhao 2012]{Zhao 2012}
+ Jun Zhao, Jose Manuel Gomez-Perezy, Khalid Belhajjame, Graham Klyne, Esteban Garcia-Cuestay, Aleix Garridoy, Kristina Hettne, Marco Roos, David De Roure, Carole Goble~(2012): \\
+ \textbf{Why workflows break -- understanding and combating decay in taverna workflows}.\\
+-\emph{2012 IEEE 8th International Conference on e-Science}\\
++\emph{IEEE 8th International Conference on e-Science} (eScience 2012)\\
+ \url{https://research.manchester.ac.uk/en/publications/cba81ca4-e92c-408e-8442-383d1f15fcdf}\\
+ \url{https://doi.org/10.1109/eScience.2012.6404482}
+ 
+@@ -3392,6 +3509,11 @@ Maja Žumer (ed.)~(2009): \\
+ Guidelines for National Bibliographies\\
+ \url{https://doi.org/10.1515/9783598441844}
+ 
++\bibitem[Åkerström 2024]{Åkerström 2024}
++Wolmar Nyberg Åkerström, Kurt Baumann, Oscar Corcho, Romain David, Yann Le Franc, Bénédicte Madon, Barbara Magagna, András Micsik, Marco Molinaro, Milan Ojsteršek, Silvio Peroni, Andrea Scharnhorst, Lars Vogt, Heinrich Widmann~(2024):  
++\textbf{DRAFT: Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework}.\\
++\emph{Zenodo}, EOSC-A Semantic Interoperability Task Force \\
++\url{https://doi.org/10.5281/zenodo.10518860}
+ 
+ \end{thebibliography}
+ 
