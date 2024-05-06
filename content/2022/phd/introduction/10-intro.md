@@ -1,0 +1,23 @@
+Science is increasingly dependent on digital means, with computational methods used in almost all aspects of research, ranging from digitising plant specimens in herbariums [[Thiers 2016]], to molecular simulations of protein bindings for pharmacetical drug design [[Sledz 2018]].
+
+Academics, government agencies and industry are now commonly making data publicly available under open licenses, feeding a broadening democratisation of science [[Kitchin 2021]] across social-economic borders[^10], and expanding the potential for new multidiciplinary fields, commercialisation, citizen engagement and wider societal benefits [[Bisol 2014]].
+
+[^10] Although current open data practices do not benefit the Global South equally [[Serwadda 2018]].
+
+
+Cloud-based computational infrastructures for “big data” are readily available for use with a wide range of open source software, enabling large scale secondary data analysis and detailed visualisations of research outputs [[Hashem 2015]].
+
+However, in this accelerated ecosystem of Open Science, concerns have been raised about replicability of research findings [[Ioannidis 2005]], flagged as a “reproducibility crisis” [[Baker 2016]]. It is perhaps then ironic that the increased use of computers—with their inherently repeatable execution mechanisms—can negatively contribute to this crisis, as research publications do *not* commonly provide sufficient computational details such as code, data formats or software versions [[Stodden 2016]].
+
+The recent increased focus on *reusability* of digital data and computational methods has been given the attention of funders and research communities. This led to the development of the <abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles for making data and their metadata *Findable, Accessible, Interoperable and Reusable*, e.g. retrievable and understandable for programmatic use [[Wilkinson 2016]].
+
+One technological measure for achieving FAIR is using Linked Data (<abbr>LD</abbr>), a set of practices for publishing and relating data on the Web using controlled vocabularies [[Berners-Lee 2006]], serialised using formats of the Resource Description Framework (<abbr>RDF</abbr>) [[Schreiber 2014]] and organised using the Web Ontology Language (<abbr>OWL</abbr>) [[W3C 2012]], however the combined complexity of these underlying *Semantic Web* technologies can hamper adoption by developers [[Klímek 2019]] and researchers who want to make their data available.
+
+Computational workflows have been developed as ways to structure execution of software tools, for instance for scientific data analysis, so that, by using a Workflow Management system (<abbr>WfMS</abbr>), tool execution is reproducible, scalable and documented. For these purposes, workflow systems have become heavily adopted by some research fields such as life sciences, however the workflow definitions themselves are not yet commonly shared as part of scholarly outputs, and only gradually being recognised as a form of *FAIR Research Software* [[Katz 2021b]].
+
+Research Object (<abbr>RO</abbr>) is a concept proposed for sharing composites of research artefacts, together with their history and related resources such as software, workflows and external references [[Bechhofer 2013]]. The initial implementations of RO heavily used ontologies, and required a tight integration with the workflow management systems, but has great potential for FAIR publication of any scholarly outputs.
+
+The FAIR principles are widely referenced in Open Science literature, and nominally adapted by many research data repositories and funder policies—but how can they better be translated into practice by typical researcher software developers which may be using workflow systems, but not know any Linked Data technologies?
+
+This is the focus for this thesis, where I investigate *Linked Data approaches to implementing FAIR Research Objects and sharing reproducible Computational Workflows*.
+

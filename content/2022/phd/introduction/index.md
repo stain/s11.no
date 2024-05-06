@@ -9,13 +9,51 @@ summary: >
   Introduction and overview of PhD thesis and its research questions
 ---
 
+Science is increasingly dependent on digital means, with computational methods used in almost all aspects of research, ranging from digitising plant specimens in herbariums [[Thiers 2016]], to molecular simulations of protein bindings for pharmacetical drug design [[Śledź 2018]].
 
-# Research Outline and Questions
+Academics, government agencies and industry are now commonly making data publicly available under open licenses, feeding a broadening democratisation of science [[Kitchin 2021]] across social-economic borders[^10], and expanding the potential for new multidiciplinary fields, commercialisation, citizen engagement and wider societal benefits [[Bisol 2014]].
+
+[^10]: Although current open data practices do not benefit the Global South equally [[Serwadda 2018]].
+
+
+Cloud-based computational infrastructures for “big data” are readily available for use with a wide range of open source software, enabling large scale secondary data analysis and detailed visualisations of research outputs [[Hashem 2015]].
+
+However, in this accelerated ecosystem of Open Science, concerns have been raised about replicability of research findings [[Ioannidis 2005]], flagged as a “reproducibility crisis” [[Baker 2016]]. It is perhaps then ironic that the increased use of computers—with their inherently repeatable execution mechanisms—can negatively contribute to this crisis, as research publications do *not* commonly provide sufficient computational details such as code, data formats or software versions [[Stodden 2016]].
+
+The recent increased focus on *reusability* of digital data and computational methods has been given the attention of funders and research communities. This led to the development of the <abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles for making data and their metadata *Findable, Accessible, Interoperable and Reusable*, e.g. retrievable and understandable for programmatic use [[Wilkinson 2016]].
+
+One technological measure for achieving FAIR is using Linked Data (<abbr>LD</abbr>), a set of practices for publishing and relating data on the Web using controlled vocabularies [[Berners-Lee 2006]], serialised using formats of the Resource Description Framework (<abbr>RDF</abbr>) [[Schreiber 2014]] and organised using the Web Ontology Language (<abbr>OWL</abbr>) [[W3C 2012]], however the combined complexity of these underlying *Semantic Web* technologies can hamper adoption by developers [[Klímek 2019]] and researchers who want to make their data available.
+
+Computational workflows have been developed as ways to structure execution of software tools, for instance for scientific data analysis, so that, by using a Workflow Management system (<abbr>WfMS</abbr>), tool execution is reproducible, scalable and documented. For these purposes, workflow systems have become heavily adopted by some research fields such as life sciences, however the workflow definitions themselves are not yet commonly shared as part of scholarly outputs, and only gradually being recognised as a form of *FAIR Research Software* [[Katz 2021b]].
+
+Research Object (<abbr>RO</abbr>) is a concept proposed for sharing composites of research artefacts, together with their history and related resources such as software, workflows and external references [[Bechhofer 2013]]. The initial implementations of RO heavily used ontologies, and required a tight integration with the workflow management systems, but has great potential for FAIR publication of any scholarly outputs.
+
+The FAIR principles are widely referenced in Open Science literature, and nominally adapted by many research data repositories and funder policies—but how can they better be translated into practice by typical researcher software developers which may be using workflow systems, but not know any Linked Data technologies?
+
+This is the focus for this thesis, where I investigate *Linked Data approaches to implementing FAIR Research Objects and sharing reproducible Computational Workflows*.
+
+# Motivation – achieving FAIR research outputs
+
+
+
+## FAIR Principles
+
+## Existing approaches to implementing FAIR
+
+## FAIR Digital Objects (FDO)
+
+## Research Software and Computational Workflows
+
+## Gathering scholarly outputs in Research Objects
+
+
+-------------
+
+
+# Research Outline and Questions {#intro:outline}
 
 In this thesis I investigate Linked Data approaches to implementing FAIR Research Objects and sharing reproducible Computational Workflows.
 
-Research Outline and Questions {#intro:outline}
-==============================
 
 Following this topic, this section elaborates Research Questions (RQ) on these interlinked ideas:
 
@@ -155,7 +193,7 @@ See chapter [references](../../2023/references/).
 [Afgan 2023]: https://github.com/galaxyproject/galaxy/releases/tag/v23.1.1 "galaxyproject/galaxy"
 [Agarwal 2021]: https://data.agu.org/DataCitationCoP/2nd-workshop-data-citation "Data Citation Community of Practice -- 8 June 2021 Workshop"
 [Albertoni 2020]: https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/ "Data Catalog Vocabulary (DCAT) -- Version 2"
-[Albertoni 2023]: https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/ "Data Catalog Vocabulary (DCAT)- Version 3"
+[Albertoni 2023]: https://www.w3.org/TR/2024/CR-vocab-dcat-3-20240118/ "Data Catalog Vocabulary (DCAT)- Version 3"
 [Allan 2019]: https://doi.org/10.3897/BDJ.7.e32342 "A Novel Automated Mass Digitisation Workflow for Natural History Microscope Slides"
 [Allcock 2005]: https://doi.org/10.1109/sc.2005.72 "The Globus Striped GridFTP Framework and Server"
 [Almeida 2019]: https://doi.org/10.1038/s41586-019-0965-1 "A new genomic blueprint of the human gut microbiota"
@@ -181,6 +219,7 @@ See chapter [references](../../2023/references/).
 [Bahra 2011]: https://doi.org/10.21957/nr843dob "Managing work flows with ecFlow"
 [Bahui 2020]: https://doi.org/10.5334/dsj-2020-041 "The FAIR data maturity model: An approach to harmonise FAIR assessments"
 [Baker 2013]: https://doi.org/10.1016/j.websem.2013.05.001 "Key choices in the design of Simple Knowledge Organization System (SKOS)"
+[Baker 2016]: https://doi.org/10.1038/533452a "1,500 scientists lift the lid on reproducibility"
 [Baker 2019]: http://shex.io/shex-primer/ "Shape Expressions (ShEx) 2.1 Primer"
 [Baker 2020]: https://doi.org/10.1371/journal.ppat.1008643 "No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics"
 [Barker 2019]: https://doi.org/10.5334/dsj-2019-044 "The Australian Research Data Commons"
@@ -281,7 +320,7 @@ See chapter [references](../../2023/references/).
 [Dürst 2005]: https://doi.org/10.17487/rfc3987 "Internationalized resource identifiers (IRIs)"
 [Dusseault 2007]: https://doi.org/10.17487/rfc4918 "HTTP Extensions for Web Distributed Authoring and Versioning"
 [Eguinoa 2020]: https://github.com/workflowhub-eu/galaxy2cwl "GitHub workflowhub-eu/galaxy2cwl"
-[Eguinoa 2023]: https://doi.org/10.37044/osf.io/24jst "BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates"
+[Eguinoa 2023]: https://s11.no/2023/phd/enhancing-rdm-galaxy-dsw "BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates"
 [Ejarque 2023]: https://doi.org/10.5281/zenodo.7975340 "COMPSs"
 [Ekuan 2023]: https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design "Web API design best practices"
 [Ellerm 2023]: https://doi.org/10.1109/e-Science58273.2023.10254857 "LivePublication: The Science Workflow Creates and Updates the Publication"
@@ -293,7 +332,6 @@ See chapter [references](../../2023/references/).
 [FAIR Maturity 2020]: https://doi.org/10.15497/rda00050 "FAIR data maturity model: Specification and guidelines"
 [Falk 2010]: https://doi.org/10.1016/j.shpsc.2010.10.014 "What is a gene?—Revisited"
 [Farnel 2014]: https://dcpapers.dublincore.org/pubs/article/view/3714 "Metadata for research data: Current practices and trends"
-
 [FDO]: https://fairdo.org/ "FAIR Digital Object Forum"
 [FDO Specs]: https://hdl.handle.net/20.500.14132/fdo-spec-docs "FDO Specification Documents - November 2022"
 [Feng 2007]: https://doi.org/10.1145/1254882.1254906 "PBS: a unified priority-based scheduler"
@@ -548,7 +586,7 @@ See chapter [references](../../2023/references/).
 [Schriml 2020]: https://doi.org/10.1038/s41597-020-0524-5 "COVID-19 pandemic reveals the peril of ignoring metadata standards"
 [Schröder 2022]: https://doi.org/10.1186/s13326-021-00257-x "Structure-based knowledge acquisition from electronic lab notebooks for research data provenance documentation"
 [Schultes 2019]: https://doi.org/10.23728/B2SHARE.166A074BFF614A31B05E9DF5BFD9809D "FAIR principles and digital objects: Accelerating convergence on a data infrastructure"
-[Schultes 2020]: https://doi.org/10.1007/978-3-030-65847-2_13 "Reusable FAIR implementation profiles as accelerators of FAIR convergence"
+[Schultes 2020]: https://doi.org/10.31219/osf.io/2p85g "Reusable FAIR implementation profiles as accelerators of FAIR convergence"
 [Schultes 2022]: https://doi.org/10.3389/data.2022.883341 "FAIR Digital Twins for Data-Intensive Research"
 [Schwardmann 2022a]: https://doi.org/10.5281/zenodo.7824796 "DOIP endorsement request"
 [Schwardmann 2022b]: https://doi.org/10.3897/rio.8.e96014 "Two Examples on How FDO Types can Support Machine and Human Readability"
@@ -587,9 +625,7 @@ See chapter [references](../../2023/references/).
 [Sporny 2015]: https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/ "RDFa 1.1 Primer"
 [Sporny 2020]: https://www.w3.org/TR/2020/REC-json-ld11-20200716/ "JSON-LD 1.1: A JSON-based Serialization for Linked Data"
 [Sporny 2023]: https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/ "Media Types with Multiple Suffixes"
- 
-[Stallings 1990]: https://identifiers.org/isbn/9780672226977 "Handbook of computer-communications standards: The open systems (OSI) model and OSI-related standards"
- 
+[Stallings 1990]: https://identifiers.org/isbn/9780672226977 "Handbook of computer-communications standards: The open systems (OSI) model and OSI-related standards" 
 [Stanczyk 1987]: https://doi.org/10.21954/ou.ro.0000f821 "Process modelling for information system description"
 [Stefi 2015a]: http://doi.org/10.1007/978-3-319-19593-3_18 "To develop or to reuse? Two perspectives on external reuse in software projects"
 [Stefi 2015b]: https://doi.org/10.18151/7217489 "Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components"
@@ -654,7 +690,7 @@ See chapter [references](../../2023/references/).
 [Wilkinson 2022a]: https://doi.org/10.5281/zenodo.7463421 "FAIR Assessment Tools: Towards an “Apples to Apples” Comparisons"
 [Wilkinson 2022b]: https://doi.org/10.48550/arxiv.2209.09022 "F*** workflows: When parts of FAIR are missing"
 [Wilkinson 2023a]: https://doi.org/10.12688/openreseurope.15364.2 "Community-driven governance of FAIRness assessment"
-[Wilkinson 2024]: https://doi.org/10.5281/zenodo.10490289 "Report on FAIR Signposting and its uptake by the community"
+[Wilkinson 2024]: https://s11.no/2024/signposting-report/ "Report on FAIR Signposting and its uptake by the community"
 [Williams 2012]: https://doi.org/10.1016/j.drudis.2012.05.016 "Open PHACTS: Semantic interoperability for drug discovery"
 [Wittenburg 2019]: https://doi.org/10.23728/b2share.b605d85809ca45679b110719b6c6cb11 "Digital objects as drivers towards convergence in data infrastructures"
 [Wittenburg 2022a]: https://doi.org/10.1162/dint_a_00132 "Canonical Workflows to Make Data FAIR"
@@ -682,3 +718,23 @@ See chapter [references](../../2023/references/).
 [Zhao 2012]: https://research.manchester.ac.uk/en/publications/cba81ca4-e92c-408e-8442-383d1f15fcdf "Why workflows break -- understanding and combating decay in taverna workflows"
 [Zoubek 2021]: https://github.com/e11938258/RO-Crates-and-Excel "RO Crates and Excel"
 [Žumer 2009]: https://doi.org/10.1515/9783598441844 "National Bibliographies in the Digital Age: Guidance and New Directions"
+[Bisol 2014]: https://www.isita-org.com/jass/Contents/2014vol92/Destro/25020017.pdf "Perspectives on Open Science and Scientific Data Sharing"
+[Carballo-Garcia 2022]: https://doi.org/10.37441/cejer/2022/4/2/11379 "FAIR Data: History and Present Context"
+[Davidson 2019]: https://doi.org/10.5281/zenodo.5537032 "D3.1 FAIR Policy Landscape Analysis"
+[Davidson 2022]: https://doi.org/10.5281/zenodo.6699333 "D3.8 Final report on policy and practice recommendations and support"
+[Duarte 2023]: https://doi.org/10.1088/2632-2153/ad12e3 "FAIR AI models in high energy physics"
+[Garcia 2020a]:  https://doi.org/10.1371/journal.pcbi.1007854 "Ten simple rules for making training materials FAIR"
+[Gruenpeter 2021]: https://doi.org/10.5281/zenodo.5504016 "Defining Research Software: A Controversial Discussion"
+[Hashem 2015]: https://doi.org/10.1016/j.is.2014.07.006 "The rise of “big data” on cloud computing"
+[Ioannidis 2005]: https://doi.org/10.1371/journal.pmed.1004085 "Why Most Published Research Findings Are False"
+[Kitchin 2021]: https://identifiers.org/isbn/9781529733761 "The Data Revolution"
+[Leach 2005]: https://doi.org/10.17487/rfc4122 "A Universally Unique IDentifier (UUID) URN Namespace"
+[Mons 2020]: https://doi.org/10.1162/dint_e_00023 "The FAIR Principles: First Generation Implementation Choices and Challenges"
+[Riungu-Kalliosaari 2022]: https://doi.org/10.5281/zenodo.6685820 "D2.10 3rd Report on FAIR requirements for persistence and interoperability"
+[Sansone 2019]: https://doi.org/10.1038/s41587-019-0080 "FAIRsharing as a community approach to standards, repositories and policies"
+[Schouppe 2018]: https://ceur-ws.org/Vol-2277/paper01.pdf "Relevance of EOSC and FAIR in the Realm of Open Science and Phases of Implementing the EOSC"
+[Serwadda 2018]: https://doi.org/10.1126/science.aap8395 "Open data sharing and the Global South—Who benefits?"
+[Shanahan 2021]: https://doi.org/10.1016/j.patter.2021.100324 "Progress toward a comprehensive teaching approach to the FAIR data principles"
+[Śledź 2018]: https://doi.org/10.1016/j.sbi.2017.10.010 "Protein structure-based drug design"
+[Soiland-Reyes 2024c] https://s11.no/2024/webby-fdos/ "Practical webby FDOs with RO-Crate and FAIR Signposting"
+[Åkerström 2024]: https://doi.org/10.5281/zenodo.10843882 "Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework"
