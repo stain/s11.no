@@ -829,5 +829,5 @@ See chapter [references](../../2023/references/).
 [Serwadda 2018]: https://doi.org/10.1126/science.aap8395 "Open data sharing and the Global South—Who benefits?"
 [Shanahan 2021]: https://doi.org/10.1016/j.patter.2021.100324 "Progress toward a comprehensive teaching approach to the FAIR data principles"
 [Śledź 2018]: https://doi.org/10.1016/j.sbi.2017.10.010 "Protein structure-based drug design"
-[Soiland-Reyes 2024c] https://s11.no/2024/webby-fdos/ "Practical webby FDOs with RO-Crate and FAIR Signposting"
+[Soiland-Reyes 2024c]: https://s11.no/2024/webby-fdos/ "Practical webby FDOs with RO-Crate and FAIR Signposting"
 [Åkerström 2024]: https://doi.org/10.5281/zenodo.10843882 "Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework"
