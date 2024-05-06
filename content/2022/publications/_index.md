@@ -63,8 +63,9 @@ _EOSC FAIR Metrics and Data Quality Task Force_
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
 [**Evaluating FAIR Digital Object and Linked Data as distributed object systems**](../../2023/phd/evaluating-fdo/).  
-_PeerJ Computer Science_ (accepted)  
-[[preprint](https://doi.org/10.48550/arXiv.2306.07436)]
+_PeerJ Computer Science_ **10**:e1781  
+<https://doi.org/10.7717/peerj-cs.1781>  
+[[arXiv 2306.07436](https://doi.org/10.48550/arXiv.2306.07436)]
 [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
 
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
