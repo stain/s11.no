@@ -120,7 +120,7 @@ See _API_, _HTTP_, _JSON_.
 : Grouping of digital scholarly outputs with relationships, semantic descriptions and executable code \[[Bechhofer 2013]\]. See Section intro:rq2.
 
 **RO-Crate** (Research Object Crate)
-: Method to package Research Objects with metadata in an embedded JSON-LD file \[[Soiland-Reyes 2022a]\]. See Section ch5:packaging-research-artefacts-with-ro-crate. See _JSON-LD_, _RO_
+: Method to package Research Objects with metadata in an embedded JSON-LD file \[[Soiland-Reyes 2022a]\]. See Section ch5:packaging-research-artefacts-with-ro-crate. See _JSON-LD_, _RO_.
 
 **RS** (Research Software)
 :  _Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose_ \[[Gruenpeter 2021]\].
@@ -151,7 +151,7 @@ See _API_, _HTTP_, _JSON_.
 
 **URI** (Uniform Resource Identifier)
 : Globally unique identifier string (e.g. `http://example.com/` or `urn:isbn:0451450523`). The _scheme_ (`http`, `urn:isbn`) classifies the identifier. URIs are superset of URLs, as the scheme is not required to have an associated network protocol \[[Berners-Lee 2005]\]. Used as identifiers in RDF.
-See _RDF_, _URL_
+See _RDF_, _URL_.
 
 **URL** (Uniform Resource Locator)
 : Globally unique string (e.g. `http://example.com/doc`) to identify a resource path (`/doc`) that can be retrieved (located) using the defined protocol (`http`) from the given domain name (`example.com`). Used for hyperlinks in HTML and most Web applications. See _DNS_, _HTML_, _HTTP_.
@@ -163,10 +163,10 @@ See _RDF_, _URL_
 : Globally unique identifier (also called _GUID_), a hexadecimal string representing a 128-bit number, e.g. `b91d75c1-891d-4305-85f9-7db73d9164da` \[[Leach 2005]\]. Typically generated from a random number generator. UUIDs can be generated independently and represent anything, but are not directly resolvable.
 
 **YAML** (Yet Another Markup Language)
-: YAML is a file format with the same data model as JSON, but with a more readable syntax, e.g. using indentation instead of quoted strings.  <https://yaml.org/> See _JSON_
+: YAML is a file format with the same data model as JSON, but with a more readable syntax, e.g. using indentation instead of quoted strings.  <https://yaml.org/> See _JSON_.
 
 **WfMS** (Workflow Management System)
-: Software or platform which can execute computational workflow definitions, and may manage data and provenance related to such executions. See _workflows_
+: Software or platform which can execute computational workflow definitions, and may manage data and provenance related to such executions. See _workflows_.
 
 **workflow**
 : In this thesis, a _computational workflow_ is a machine-readable definition for executing a series of computational tools, typically executed using a workflow management system. 
