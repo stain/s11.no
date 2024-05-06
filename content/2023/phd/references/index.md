@@ -2841,6 +2841,6 @@ Data set.\
 
 \[Åkerström 2024\]
 Wolmar Nyberg Åkerström, Kurt Baumann, Oscar Corcho, Romain David, Yann Le Franc, Bénédicte Madon, Barbara Magagna, András Micsik, Marco Molinaro, Milan Ojsteršek, Silvio Peroni, Andrea Scharnhorst, Lars Vogt, Heinrich Widmann (2024):  
-**DRAFT: Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework**.\
+**Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework**.\
 _Zenodo_, EOSC-A Semantic Interoperability Task Force \
-<https://doi.org/10.5281/zenodo.10518860>
+<https://doi.org/10.5281/zenodo.10843882>
