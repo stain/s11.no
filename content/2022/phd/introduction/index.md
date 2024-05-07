@@ -255,14 +255,45 @@ Origins {#intro:origins}
 
 [Chapter 2](../../../2023/phd/background/) and section [3.1](../../../2023/phd/evaluating-fdo/) are based on the journal article *Evaluating FAIR Digital Object and Linked Data as distributed object systems* \[[Soiland-Reyes 2023c]\] (see appendices [A.4.1](../acknowledgements/#fdo) and [B.1.1](../contributions/#fdo)). I am the main author of this manuscript.
 
+Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
+**Evaluating FAIR Digital Object and Linked Data as distributed object systems**.  
+*PeerJ Computer Science* **10**:e1781  
+<https://doi.org/10.7717/peerj-cs.1781>
+{.references}
+
 [Section 3.2](../updating-ld-for-fdo/) is based on *Updating Linked Data practices for FAIR Digital Object principles* \[[Soiland-Reyes 2022d]\] (see appendices [A.4.2](../acknowledgements/#updating-ld) and [B.1.2](../contributions/#updating-ld)). I am the main author of this manuscript.
 
+Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Goble, Paul Groth (2022):  
+**Updating Linked Data practices for FAIR Digital Object principles**.  
+*Research Ideas and Outcomes* **8**:e94501  
+<https://doi.org/10.3897/rio.8.e94501>
+{.references}
+
 [Section 4.1](../ro-crate/) and [section 4.3](../ro-crate/formalizing/) are based on the publication *Packaging research artefacts with RO-Crate* \[[Soiland-Reyes 2022a]\] (see appendices [A.4.3](../acknowledgements/#packagingrocrate), [B.1.3](../contributions/#packagingrocrate) and [B.1.5](../contributions/#formalizing)). I am the main author of this manuscript.
+
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-Crate**.  
+*Data Science* **5**(2)  
+<https://doi.org/10.3233/DS-210053>  
+{.references}
+
 
 [Section 4.2](../fdo-with-ro-crate/) is based on the publication _Creating lightweight FAIR digital objects with RO-Crate_ \[[Soiland-Reyes 2022c]\] (see appendices 
 [A.4.4](../acknowledgements/#lightweight) and [B.1.4](../contributions/#lightweight)). I am the main author of this manuscript.
 
+Stian Soiland-Reyes, Peter Sefton, Leyla Jael Castro, Frederik Coppens, Daniel Garijo, Simone Leo, Marc Portier, Paul Groth (2022):  
+**Creating lightweight FAIR digital objects with RO-Crate**.  
+*Research Ideas and Outcomes* **8**:e93937  
+<https://doi.org/10.3897/rio.8.e93937>
+{.references}
+
 [Section 5.1](../canonical-workflow-building-blocks/) is based on the publication _Making Canonical Workflow Building Blocks interoperable across workflow languages_  \[[Soiland-Reyes 2022b]\] (see appendices  [A.4.5](../acknowledgements/#canonical) and [B.1.6](../contributions/#canonical)). I am the main author of this manuscript.
+
+Stian Soiland-Reyes, Genís Bayarri, Pau Andrio, Robin Long, Douglas Lowe, Ania Niewielska, Adam Hospital, Paul Groth (2022):  
+**Making Canonical Workflow Building Blocks interoperable across workflow languages**.  
+*Data Intelligence* **4**(2)  
+<https://doi.org/10.1162/dint_a_00135>
+{.references}
 
 [Section 5.2](../specimen-data-refinery/) is based on the publication _The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections_ \[[Hardisty 2022]\] (see appendices [A.4.6](../acknowledgements/#refinery) and [B.1.7](../contributions/#refinery)).
 I mainly contributed to sections 
@@ -271,9 +302,31 @@ I mainly contributed to sections
 [5.2.4.1](../specimen-data-refinery/#fdo-types), 
 [5.2.7](../specimen-data-refinery/#discussion) in this manuscript.
 
+Alex Hardisty, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, Stian Soiland-Reyes (2022):  
+**The Specimen Data Refinery**: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections.  
+*Data Intelligence* **4**(2)  
+<https://doi.org/10.1162/dint_a_00134>
+{.references}
+
+
 [Section 5.3](../incrementally-building-fdos/) is based on the publication _Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows_ \[[Woolland 2022]\] (see appendices [A.4.7](../acknowledgements/#incrementally-fdo) and [B.1.8](../contributions/#incrementally-fdo)). I am the main author of this manuscript.
 
+Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore (2022):  
+**Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows**.  
+*Research Ideas and Outcomes* **8**:e94349  
+<https://doi.org/10.3897/rio.8.e94349>
+{.references}
+
 [Section 5.3](../../../2023/phd/workflow-run-crate/#wrroc) is based on the preprint *Recording provenance of workflow runs with RO-Crate* \[[Leo 2023b]\] (see appendices [A.4.8](../acknowledgements#wrroc) and [B.1.9](../contributions#wrroc)). I am the last author of this manuscript, and have mainly contributed to sections [5.4.1](../../../2023/phd/workflow-run-crate/#introduction), [5.4.5](../../../2023/phd/workflow-run-crate/#discussion), [5.4.5.3](../../../2023/phd/workflow-run-crate/#trusted-workflow-run-crate), [5.4.5.4](../../../2023/phd/workflow-run-crate/#bco-crate).
+
+Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
+**Recording provenance of workflow runs with RO-Crate**.  
+*arXiv* 2312.07852 \[cs.DL\]  
+<https://doi.org/10.48550/arXiv.2312.07852>  
+{.references}
+
+This thesis also cites background material where I have contributed as co-author, provided as [supplements](https://s11.no/2023/phd/) on the Web, see [Appendix B.3](../contributions#supplementary-publications).
+
 
 
 ## References
