@@ -16,7 +16,7 @@ Beside [working at The University of Manchester](/2023/about/) I am a [PhD Candi
 
 My supervisor is [Paul Groth](http://pgroth.com/) and my thesis title is _FAIR Research Objects and Computational Workflows – A Linked Data Approach_.
 
-I started in July 2019 and submitted in May 2024. Doctoral thesis defence is projected to be autumn 2024. 
+I started in July 2019 and submitted in December 2023, with final version prepared in May 2024. Doctoral thesis defence is projected to be autumn 2024. 
 
 As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web, see also [PDF draft in Zenodo](https://doi.org/10.5281/zenodo.8113625).
 
