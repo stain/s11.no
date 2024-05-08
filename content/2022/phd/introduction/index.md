@@ -72,14 +72,14 @@ _**Table 1**: **FAIR Guiding Principles**. Adapted from [[Wilkinson 2016]], emph
 
 </div>
 
-Although these guidelines are quite specific, they do not prescribe any particular technology or repository [[Mons 2017]]. Further formalizations of the FAIR principles include RDA’s FAIR Data Maturity Model [[FAIR Maturity 2020],[Bahui 2020]]. FAIR has also been expanded beyond data, e.g. to cover software [[Katz 2021b]], computational workflows [[Goble 2020]], training materials [[Garcia 2020a]], machine learning models [[Duarte 2023]] and digital twins [[Schultes 2022]].
+Although these guidelines are quite specific, they do not prescribe any particular technology or repository [[Mons 2017]]. Further formalizations of the FAIR principles include RDA’s FAIR Data Maturity Model [[FAIR Maturity 2020], [Bahui 2020]]. FAIR has also been expanded beyond data, e.g. to cover software [[Katz 2021b]], computational workflows [[Goble 2020]], training materials [[Garcia 2020a]], machine learning models [[Duarte 2023]] and digital twins [[Schultes 2022]].
 
-The FAIR principles have become highly influential for open research stakeholders [[Jacobsen 2020]], particularly in large research infrastructure initatives such as by the European Open Science Cloud ([EOSC](https://eosc.eu/)) [[Schouppe 2018]], and increasing awareness and support for the principles by national Open Science policies and funders [[Davidson 2019],[Davidson 2022]].
-Implementation of the principles by platform developers and researchers have however raised many questions and practical challenges [[Mons 2020],[Riungu-Kalliosaari 2022]].
+The FAIR principles have become highly influential for open research stakeholders [[Jacobsen 2020]], particularly in large research infrastructure initatives such as by the European Open Science Cloud ([EOSC](https://eosc.eu/)) [[Schouppe 2018]], and increasing awareness and support for the principles by national Open Science policies and funders [[Davidson 2019], [Davidson 2022]].
+Implementation of the principles by platform developers and researchers have however raised many questions and practical challenges [[Mons 2020], [Riungu-Kalliosaari 2022]].
 
-For instance, in order to evaluate a given resource’s *FAIRness*, additional technical constraints need to be assumed, such as use of particular formal vocabularies. *FAIR metrics* [[Wilkinson 2018],[Devaraju 2021]] have recently become an area of active research, as different FAIR assessment tools may give a range of results for the same data resource, primarily based on which technical assumptions are made [[Wilkinson 2022a],[Verburg 2023]].
+For instance, in order to evaluate a given resource’s *FAIRness*, additional technical constraints need to be assumed, such as use of particular formal vocabularies. *FAIR metrics* [[Wilkinson 2018], [Devaraju 2021]] have recently become an area of active research, as different FAIR assessment tools may give a range of results for the same data resource, primarily based on which technical assumptions are made [[Wilkinson 2022a], [Verburg 2023]].
 
-Recently there have been increased emphasis on training and awareness on the FAIR principles [[Shanahan 2021],[Rocca-Serra 2023]], and registries of standards and vocabularies [[Sansone 2019]].
+Recently there have been increased emphasis on training and awareness on the FAIR principles [[Shanahan 2021], [Rocca-Serra 2023]], and registries of standards and vocabularies [[Sansone 2019]].
 However—with a general lack of skills in data management planning, inadequate (opaque) data formats and lack of time investment to provide rich metadata—data, even when shared through repositories, often becomes effectively "un-findable" or near impossible to reuse [[Carballo-Garcia 2022]].
 
 From this we can identify several challenges with regards to finding practical ways for developers of <abbr>RS</abbr> to generate and consume FAIR data.
@@ -106,8 +106,8 @@ A challenge for consumption of FAIR services in such a diverse landscape is thus
 FDO proponents envision a programmable mesh of strongly typed objects, which goes beyond the open data publication practices that the FAIR guidelines have popularised.
 For this, FDO aims to provide concrete constraints for systems, which lead to predictable machine actions.
 
-The FDO guidelines[^12] [[Anders 2023]] and the more detailed FDO specifications [[Ivonne 2023]] are largely conceptual in nature, with several demonstrated implementations [[Wittenburg 2022a],[Lannom 2022a]] which in theory can operate side-by-side.
-Many of these, however, rely novel or older network protocols [[Reilly 2009],[Sun 2003a]] which are not particularly familiar to software developers, and not commonly supported by software libraries or frameworks.
+The FDO guidelines[^12] [[Anders 2023]] and the more detailed FDO specifications [[Ivonne 2023]] are largely conceptual in nature, with several demonstrated implementations [[Wittenburg 2022a], [Lannom 2022a]] which in theory can operate side-by-side.
+Many of these, however, rely novel or older network protocols [[Reilly 2009], [Sun 2003a]] which are not particularly familiar to software developers, and not commonly supported by software libraries or frameworks.
 
 This divergence from the more Web-centric “FAIR majority view”, while sound from a technical perspective and promising with regards to predictable computational consumption, raises organisational challenges for wider adoption of FDOs, e.g. within EOSC and research infrastructures, and might be introducing a steeper learning curve than already exists for FAIR, particularly for developers of <abbr>RS</abbr> who are primarily interested in solving scientific challenges.
 
@@ -127,7 +127,7 @@ An example of a remaining challenge is how citations of Research Software can be
 
 Sharing of Research Software according to these principles helps communicate the computational methods, expanding tremendously the potential for consumption, analysis and production of scientific data across organisations and their application to a broadening scope of research problems.
 
-However, the *way* software is used for a particular analysis to reach a given scientific goal requires additional measures to make it *reproducible* [[Stodden 2016],[Sandve 2013]]. *Computational Workflows* (or scientific workflows) can structure and automate data analysis pipelines so they are scalable, portable and explainable [[Atkinson 2017]], and as a side-effect of these features can significantly improve reproducibility [[Cohen-Boulakia 2017]].
+However, the *way* software is used for a particular analysis to reach a given scientific goal requires additional measures to make it *reproducible* [[Stodden 2016], [Sandve 2013]]. *Computational Workflows* (or scientific workflows) can structure and automate data analysis pipelines so they are scalable, portable and explainable [[Atkinson 2017]], and as a side-effect of these features can significantly improve reproducibility [[Cohen-Boulakia 2017]].
 
 Several challenges emerge when considering sharing of workflows as FAIR digital objects. For instance, a workflow composes multiple tools that themselves need to be shared. Data used by a workflow have their own attribution and licenses. The execution of a workflow produces many intermediate data, but understanding that data creation from the workflow definition alone requires deep knowledge about the particular Workflow Management System (<abbr>WfMS</abbr>).
 
@@ -135,9 +135,9 @@ Several challenges emerge when considering sharing of workflows as FAIR digital 
 
 The identified need for communicating computational methods through Research Software and workflows highlights that science must go beyond sharing of just data and metadata in order to achieve the FAIR principles. For a third-party researcher to fully take advantage of software and data, and to avoid delving further into the reproducibility crisis, the full set of contextual digital resources should be grouped and communicated as a scholarly unit.
 
-Research Objects (<abbr>RO</abbr>) [[Bechhofer 2013]] have been proposed as a mechanism to capture a range of diverse scholarly outputs in a single archivable item with detailed metadata. The RO concept was first realised using Semantic Web ontologies [[myExperiment 2009],[Belhajjame 2015]]—these approaches primarily targetted long-term preservation of scientific workflows, utillised by RO as a mechanism to capture computational methods, augmented by the workflow inputs, outputs, workflow engine configuration and human-readable explanation of each step.
+Research Objects (<abbr>RO</abbr>) [[Bechhofer 2013]] have been proposed as a mechanism to capture a range of diverse scholarly outputs in a single archivable item with detailed metadata. The RO concept was first realised using Semantic Web ontologies [[myExperiment 2009], [Belhajjame 2015]]—these approaches primarily targetted long-term preservation of scientific workflows, utillised by RO as a mechanism to capture computational methods, augmented by the workflow inputs, outputs, workflow engine configuration and human-readable explanation of each step.
 
-The principles of Research Objects extend far beyond workflows—however, early RO implementations mainly focused on capturing software [[Goble 2018]]. To some extent, the lack of wider adoption of ontology-based ROs can also be explained by Research Software Engineers (e.g. molecular dynamics simulations) and platforms (e.g. repositories, data management systems) having a lack of familiarity with workflow systems or Semantic Web technology—or worse, they tried these technologies and then struggled [[Carriero 2010],[Tudorache 2020]].
+The principles of Research Objects extend far beyond workflows—however, early RO implementations mainly focused on capturing software [[Goble 2018]]. To some extent, the lack of wider adoption of ontology-based ROs can also be explained by Research Software Engineers (e.g. molecular dynamics simulations) and platforms (e.g. repositories, data management systems) having a lack of familiarity with workflow systems or Semantic Web technology—or worse, they tried these technologies and then struggled [[Carriero 2010], [Tudorache 2020]].
 
 From this, a challenge is to make Linked Data technology approachable for developers who are best placed at implementing the FAIR principles, in platforms that are effectively making Research Objects.
 
@@ -201,7 +201,7 @@ There exists a plethora of workflow systems and languages [[Leipzig 2021], [Amst
 Notably, workflow definitions themselves can be considered FAIR scholarly outputs [[Goble 2020]]—*FAIR Computational Workflows* which are published in repositories like Dockstore [[Yuen 2021]] and WorkflowHub [[Goble 2021]].
 One could consider computational workflows as a kind of FAIR Research Software [[de Visser 2023]], but by their nature workflows also *encourage the FAIR principles* (e.g. preparing a computational tool for a workflow system [[Brack 2022a]] may include publishing it in a container registry). Workflow systems are also useful for creating and consuming FAIR Digital Objects [[Wittenburg 2022b]], and in addition workflow systems commonly provide explicit provenance logs of their executions.
 
-Approaches to describing workflow provenance in a machine-readable format were initially diverse [[Cruz 2009]], and later converged on the use of ontologies [[Missier 2010]], most notably using W3C PROV-O [[Lebo 2013a]] but with various specializations [[Garijo 2011],[Garijo 2012],[Missier 2013],[Belhajjame 2015],[Cuevas-Vicenttín 2016]].
+Approaches to describing workflow provenance in a machine-readable format were initially diverse [[Cruz 2009]], and later converged on the use of ontologies [[Missier 2010]], most notably using W3C PROV-O [[Lebo 2013a]] but with various specializations [[Garijo 2011], [Garijo 2012], [Missier 2013], [Belhajjame 2015], [Cuevas-Vicenttín 2016]].
 
 The tendency for workflow provenance models to diverge may be down to differences in the execution semantics of different workflow systems—which if accurately reflected in provenance means further differences at this level. This in turn leads to incompatibility of provenance traces and lack of common tooling. In addition execution details may obscure the link from the computational procesesses and the final workflow data outputs that researchers ultimately care more about than the intricacies of the workflow engine.
 
@@ -240,7 +240,7 @@ These contributions have not evolved in isolation, but in co-development with mu
 
 ## Origins {#intro:origins}
 
-[Chapter 2](../../../2023/phd/background/) and section [3.1](../../../2023/phd/evaluating-fdo/) are based on the journal article [[Soiland-Reyes 2023c]] (see appendices [A.4.1](../acknowledgements/#fdo) and [B.1.1](../contributions/#fdo)). I am the main author of this manuscript.
+[Chapter 2](../../../2023/phd/background/) and [Section 3.1](../../../2023/phd/evaluating-fdo/) are based on the journal article [[Soiland-Reyes 2023c]] (see appendices [A.4.1](../acknowledgements/#fdo) and [B.1.1](../contributions/#fdo)). I am the main author of this manuscript.
 
 Stian Soiland-Reyes, Carole Goble, Paul Groth (2024):  
 **Evaluating FAIR Digital Object and Linked Data as distributed object systems**.  
@@ -256,7 +256,7 @@ Stian Soiland-Reyes, Leyla Jael Castro, Daniel Garijo, Marc Portier, Carole Gobl
 <https://doi.org/10.3897/rio.8.e94501>
 {.references}
 
-[Section 4.1](../ro-crate/) and [section 4.3](../ro-crate/formalizing/) are based on the publication [[Soiland-Reyes 2022a]] (see appendices [A.4.3](../acknowledgements/#packagingrocrate), [B.1.3](../contributions/#packagingrocrate) and [B.1.5](../contributions/#formalizing)). I am the main author of this manuscript.
+[Section 4.1](../ro-crate/) and [Section 4.3](../ro-crate/formalizing/) are based on the publication [[Soiland-Reyes 2022a]] (see appendices [A.4.3](../acknowledgements/#packagingrocrate), [B.1.3](../contributions/#packagingrocrate) and [B.1.5](../contributions/#formalizing)). I am the main author of this manuscript.
 
 Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
 **Packaging research artefacts with RO-Crate**.  
@@ -308,7 +308,7 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore�
 
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
 **Recording provenance of workflow runs with RO-Crate**.  
-*arXiv* 2312.07852 [[cs.DL]]  
+*arXiv* 2312.07852 \[cs.DL\] 
 <https://doi.org/10.48550/arXiv.2312.07852>  
 {.references}
 
