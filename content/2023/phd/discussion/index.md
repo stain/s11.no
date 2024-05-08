@@ -49,6 +49,8 @@ If such conventions need to be evolved and specified no matter the protocol basi
 [Section 3.2.3](../../../2022/phd/updating-ld-for-fdo/#discussion) found that the basis of Web-based FDOs can be built using only Signposting \[[Van de Sompel 2015], [Van de Sompel 2022]\], adding a couple of non-intrusive HTTP headers that are agnostic to metadata standards and serializations. An implementation of such Web-based FDOs was shown in [section 4.2](../../../2022/phd/fdo-with-ro-crate/).
 
 The Signposting approach has also been highlighted both by EOSC \[[Wilkinson 2022a], [Wilkinson 2024]\] and as a possible FDO configuration type \[[Lannom 2022a]\]. The FAIR-IMPACT project launched an [open call](https://fair-impact.eu/1st-open-call-support-closed) where 14 participating institutions participated to build support for Signposting \[[Soiland-Reyes 2023b]\] in their data repositories and platforms.
+The results showed that development of "Webby FDOs" using Signposting for FDO structure and RO-Crate for metadata was largely achievable across participants with often little former experience, for a modest effort equivalent to 5 working days [[Soiland-Reyes 2024c]] or during a 5 day hackathon [[Soiland-Reyes 2024a]].
+
 
 RO-Crate as a developer-friendly approach {#crate}
 -----------------------------------------
@@ -178,7 +180,8 @@ This approach was first implemented in the repository WorkflowHub \[[Goble 2021]
 
 RO-Crate FDOs complements the findings of [section 6.1.1.3](#signposting), in that RO-Crate provides FDO with a generic metadata framework and a serialization that can work both for FDOs on the Web and with legacy Handle/DOIP approaches -- this metadata role for RO-Crate in the FDO ecosystem is also highlighted by \[[Wittenburg 2023b]\].
 
-Some extra considerations is rightly needed on identifiers to reduce relative paths challenges with RO-Crate FDOs -- for this purpose, the next specification \[[RO-Crate 1.2]\] introduce a distinction between an [attached RO-Crate](https://www.researchobject.org/ro-crate/1.2-DRAFT/structure.html#attached-ro-crate) (*has some root directory containing other files referenced by relative paths, possibly archived in a ZIP or exposed on the Web*) and a [detached RO-Crate](https://www.researchobject.org/ro-crate/1.2-DRAFT/structure.html#detached-ro-crate) (*no defined root directory, all references are absolute*). This *detached* style is suitable for an FDO architecture, even for use within APIs which do not lend themselves to relative path references (such as DOIP-over-HTTP \[[CNRI 2023a]\]). RO-Crate 1.2 also define methods for [converting between attached/detached](https://www.researchobject.org/ro-crate/1.2-DRAFT/appendix/relative-uris.html) crates using standard JSON-LD tooling, showing another advantage of using Linked Data as basis for RO-Crate.
+Some extra considerations is rightly needed on identifiers to reduce relative paths challenges with RO-Crate FDOs -- for this purpose, the next specification \[[RO-Crate 1.2]\] introduce a distinction between an [attached RO-Crate](https://www.researchobject.org/ro-crate/1.2-DRAFT/structure.html#attached-ro-crate) (*has some root directory containing other files referenced by relative paths, possibly archived in a ZIP or exposed on the Web*) and a [detached RO-Crate](https://www.researchobject.org/ro-crate/1.2-DRAFT/structure.html#detached-ro-crate) (*no defined root directory, all references are absolute*). 
+Although both style of crates can contain absolute URI references, this *detached* style is more suitable for an FDO architecture, even for use within APIs which do not lend themselves to relative path references (such as DOIP-over-HTTP \[[CNRI 2023a]\]). RO-Crate 1.2 also define methods for [converting between attached/detached](https://www.researchobject.org/ro-crate/1.2-DRAFT/appendix/relative-uris.html) crates using standard JSON-LD tooling, showing another advantage of using Linked Data as basis for RO-Crate.
 
 
 ### How FAIR are RO-Crates? {#fair-crates}
@@ -228,7 +231,7 @@ In developing the repository [WorkflowHub](https://workflowhub.eu/) \[[Goble 202
 
 One aspect that makes workflow management systems different from research software in general, is that they frequently encourage modularization, in that the composition of steps also can reflect the analytical process that is intended by the scientists. Mature workflow systems like Galaxy \[[Galaxy 2022]\] provide a large collection of re-usable components that wrap underlying command line tools and make them interoperable without manual adjustments. In CWL \[[Crusoe 2022]\], tool definitions include not just execution details, but also structured input/output definitions, allowing them to be reused and combined in multiple workflows.
 
-[Section 5.1](../../../2022/phd/canonical-workflow-building-blocks/) explored how such building blocks can themselves be considered FAIR digital objects. These assist workflow systems in propagating rich metadata about tools and their analytical purpose, but also allows building blocks to be reused across workflow systems. This in effect means that a *canonical workflow* *Wittenburg 2022a* can be implemented in different workflow languages, each executing the same *canonical steps* in the same way. Given that FAIR Digital Objects emphasize machine-actionability, and we can consider workflows as FDOs, it is important to have the ability not just to reliably re-execute a workflow, but even re-use its constituent steps.
+[Section 5.1](../../../2022/phd/canonical-workflow-building-blocks/) explored how such building blocks can themselves be considered FAIR digital objects. These assist workflow systems in propagating rich metadata about tools and their analytical purpose, but also allows building blocks to be reused across workflow systems. This in effect means that a *canonical workflow* *Wittenburg 2022a* can be implemented in different workflow languages, each executing the same *canonical steps* in the same way. Given that FAIR Digital Objects emphasise machine-actionability, and we can consider workflows as FDOs, it is important to have the ability not just to reliably re-execute a workflow, but even re-use its constituent steps.
 
 
 ### Building FDOs incrementally challenges typing constraints {#buildingfdo}
@@ -357,14 +360,16 @@ This forced generalization may also have helped to make the model general enough
 
 <!-- footnotes -->
 
-[^1]: For instance, a de-centralised, resiliant architecture and long term preservation was the motivation for the design of the Interplanetary File System (IPFS) as a *Decentralized Web* \[[Trautwein 2022]\].
+[^1]: For instance, a de-centralised, resiliant architecture and long term preservation was the motivation for the design of the Interplanetary File System (IPFS) as a *Decentralised Web* \[[Trautwein 2022]\].
 
 [^2]: Expected type of object \[[Guha 2014]\], however note that schema.org uses <http://schema.org/rangeIncludes> instead of `rdfs:range`, to permit multiple alternatives without the need for a union class.
 
 [^3]: Although the <http://schema.org/Dataset> type used by RO-Crate's root entity is derived from DCAT, RO-Crate does not assume a corresponding data catalogue on the Web.
 
-[^4]: One of my earlier code contributions to ORCID already established content-negotiation to RDF -- but using the classical FOAF vocabulary \[[Brickley 2014]\]. Slightly inconsistent with Semantic Web principles, the registry is currently returning *Person* descriptions in different semantic models depending on the requested serialization.\
+[^4]: One of my earlier code contributions to ORCID already established content-negotiation to RDF -- but using the classical FOAF vocabulary \[[Brickley 2014]\]. Slightly inconsistent with Semantic Web principles[^9], the registry is currently returning *Person* descriptions in different semantic models depending on the requested serialization.\
     <https://github.com/ORCID/ORCID-Source/blob/main/CONTENT_NEGOTIATION.md>
+
+[^9]: Signposting [[Van de Sompel 2022]] would indicate alternative vocabularies using distinct `profile` URIs.
 
 [^5]: To conflate matters, the `keywords` property can be repeated, but also allows multiple keywords within a single comma-separated string.
 
