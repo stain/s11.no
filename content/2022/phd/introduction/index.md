@@ -32,11 +32,11 @@ The FAIR principles are widely referenced in Open Science literature, and nomina
 
 This is the focus for this thesis, where I investigate *Linked Data approaches to implementing FAIR Research Objects and sharing reproducible Computational Workflows*.
 
-# Motivation – achieving FAIR research outputs {#ch10:motivation}
+## Motivation – achieving FAIR research outputs {#ch10:motivation}
 
 This section gives the motivation for the thesis, together with a brief background to inform the research questions in [Section 1.2](#outline). Further details on existing work are provided in [Section 2](../../../2023/phd/background/).
 
-## FAIR Principles {#ch10:fair-principles}
+### FAIR Principles {#ch10:fair-principles}
 
 The <abbr>FAIR</abbr> Principles [[Wilkinson 2016]] were introduced to improve sharing and digital reuse of research outputs ("*data*") as part of emerging open research practices. The main goals of FAIR are to support **F**indability, **A**ccessability, **I**nteroperability and **R**eusability, through machine-readable metadata and standardised publication methods for data, as quoted in Table [[ch10:fair]](#ch10:fair).
 
@@ -84,7 +84,7 @@ However—with a general lack of skills in data management planning, inadequate 
 
 From this we can identify several challenges with regards to finding practical ways for developers of <abbr>RS</abbr> to generate and consume FAIR data.
 
-## Existing approaches to implementing FAIR {#intro:existing-fair}
+### Existing approaches to implementing FAIR {#intro:existing-fair}
 
 The vision on the Semantic Web [[Berners-Lee 1999]] were proposed as a way to make structured data on the Web. This evolved into a Linked Data (<abbr>LD</abbr>) stack that uses logic-based ontologies, Web deployment of individually described resources, and cross-references between these resources with <abbr>URI</abbr> identifiers. The *Semantic Web* can be considered as the ecosystem of such Linked Data resources, which can be queried, traversed and reasoned about.
 
@@ -100,7 +100,7 @@ A challenge for consumption of FAIR services in such a diverse landscape is thus
 [^11]: It is worth noting that not all of these databases and standards are based on Linked Data methods, and may be supporting FAIR principles in a looser sense.
 
 
-## FAIR Digital Objects (FDO)
+### FAIR Digital Objects (FDO)
 
 *FAIR Digital Object* (<abbr>FDO</abbr>) has been proposed as a machine-actionable ecosystem of scholarly outputs [[Schultes 2019]], and has now become a major initiative for realising the <abbr>FAIR</abbr> principles in a different way than the initial Semantic Web approach.
 FDO proponents envision a programmable mesh of strongly typed objects, which goes beyond the open data publication practices that the FAIR guidelines have popularised.
@@ -116,7 +116,7 @@ Clearly the existing adoptions of Linked Data as-is would not present a coherent
 [^12]: See [Section 2.1.1](../../../2023/phd/background/#ch3:fdo-requirements)
 
 
-## Research Software and Computational Workflows
+### Research Software and Computational Workflows
 
 A growing (if not majority) part of scientific analysis is now conducted using software and computational models.
 The concept of *Research Software Engineering* [[Cohen 2020]] has been established along with new professions *Research Software Engineer* [[Baxter 2012]] and *Data Scientist* [[van der Aalst 2014]]—researchers are not just using off-the-shelf software, but also combining multiple computational tools (e.g. in pipelines) and writing their own analytical source code (e.g. statistical R scripts) and simulations.
@@ -131,7 +131,7 @@ However, the *way* software is used for a particular analysis to reach a given s
 
 Several challenges emerge when considering sharing of workflows as FAIR digital objects. For instance, a workflow composes multiple tools that themselves need to be shared. Data used by a workflow have their own attribution and licenses. The execution of a workflow produces many intermediate data, but understanding that data creation from the workflow definition alone requires deep knowledge about the particular Workflow Management System (<abbr>WfMS</abbr>).
 
-## Gathering scholarly outputs in Research Objects
+### Gathering scholarly outputs in Research Objects
 
 The identified need for communicating computational methods through Research Software and workflows highlights that science must go beyond sharing of just data and metadata in order to achieve the FAIR principles. For a third-party researcher to fully take advantage of software and data, and to avoid delving further into the reproducibility crisis, the full set of contextual digital resources should be grouped and communicated as a scholarly unit.
 
@@ -147,7 +147,7 @@ From this, a challenge is to make Linked Data technology approachable for develo
 -------------
 
 
-# Research Outline and Questions {#intro:outline}
+## Research Outline and Questions {#intro:outline}
 
 Following the motivation in [Section 1.1](#ch10:motivation), this section elaborates Research Questions (RQ) on three interlinked ideas:
 
@@ -156,7 +156,7 @@ Following the motivation in [Section 1.1](#ch10:motivation), this section elabor
 3.  Unifying a FAIR Digital Object approach for computational workflows
 
 
-## Aims for FAIR Digital Objects on the Web (RQ1)  {#intro:rq1}
+### Aims for FAIR Digital Objects on the Web (RQ1)  {#intro:rq1}
 
 The Web is ubiquitous in modern software engineering [[Taivalsaari 2021]], used for everything from user interfaces, mobile applications and controlling devices to enterprise cross-platform integrations, backend data processing and microservices, frequently utilising cloud computing which itself is controlled using Web technologies [[Marinescu 2023]].
 
@@ -171,7 +171,7 @@ A relevant research question therefore is:
 I address RQ1 in [Chapter 2](../../../2023/phd/background/) and [Chapter 3](../../../2023/phd/fdo-and-linked-data/).
 
 
-## Aims for FAIR Research Objects (RQ2) {#intro:rq2}
+### Aims for FAIR Research Objects (RQ2) {#intro:rq2}
 
 Following the lessons learnt on early Research Object (<abbr>RO</abbr>) implementations and the emerging <abbr>FAIR</abbr> principles, a new engagement between the RO and digital libraries communities started in 2018, where it was agreed to formulate a lightweight approach to Research Objects [[Sefton 2018], [Ó Carragáin 2019b]] for the purpose of data packaging. From this initative, the updated aims of *FAIR Research Objects* can be summarised as:
 
@@ -194,7 +194,7 @@ Following from these aims, the second research question is:
 RQ2 is primarily addressed by [Chapter 4](../../../2023/phd/ro-crate/).
 
 
-## Aims for FAIR Computational Workflows (RQ3) {#intro:rq3}
+### Aims for FAIR Computational Workflows (RQ3) {#intro:rq3}
 
 There exists a plethora of workflow systems and languages [[Leipzig 2021], [Amstutz 2021]], with recent efforts creating the Common Workflow Language [[Crusoe 2022]] as a standard representation with [FAIR metadata capabilities](https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html) that is executable by multiple engines.
 
@@ -214,7 +214,7 @@ The third research question from these considerations is therefore:
 The multiple aspects of RQ3, as highlighted in this section, are adressed by [Chapter 5](../../../2023/phd/workflows/).
 
 
-# Main Contributions {#intro:contributions}
+## Main Contributions {#intro:contributions}
 
 The contributions from this PhD include:
 
@@ -225,7 +225,7 @@ The contributions from this PhD include:
 These contributions have not evolved in isolation, but in co-development with multiple international collaborations (see [Appendix A](../acknowledgements/#acknowledgements)).
 
 
-# Thesis Overview {#intro:overview}
+## Thesis Overview {#intro:overview}
 
 [Chapter 2](../../../2023/phd/background/) gives the background of the concepts *FAIR Digital Object* (FDO) and *Linked Data*, including a brief history of the *Semantic Web*, followed by a critical analysis of these technologies and their use.
 
@@ -238,7 +238,7 @@ These contributions have not evolved in isolation, but in co-development with mu
 [Chapter 6](../conclusions/) summarises and discusses the contributions from this thesis, reflects on later third-party developments and concludes by evaluating the research questions.
 
 
-# Origins {#intro:origins}
+## Origins {#intro:origins}
 
 [Chapter 2](../../../2023/phd/background/) and section [3.1](../../../2023/phd/evaluating-fdo/) are based on the journal article [[Soiland-Reyes 2023c]] (see appendices [A.4.1](../acknowledgements/#fdo) and [B.1.1](../contributions/#fdo)). I am the main author of this manuscript.
 
@@ -316,7 +316,7 @@ This thesis also cites background material where I have contributed as co-author
 
 
 
-## References
+### References
 
 See chapter [references](../../2023/references/).
 
