@@ -5,7 +5,7 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  TODO: Acknowledgements of PhD
+ Acknowledgements of PhD
 ---
 
 
