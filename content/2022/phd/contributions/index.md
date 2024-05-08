@@ -5,72 +5,22 @@ lang: en-GB
 categories:
   - PhD
 summary: > 
-  TODO: Contributions of PhD
+  Contributions for each chapter of this thesis, and listing 
+  all the other contributors and their affiliations.
 ---
 
-(This thesis chapter will show my contributions for each chapter and list all the other contributors)
-
-## My contributions
-
-<!--
-
-All Aspects
-Designing 
-technical advice
-Insight
-Supervision
-Technical support
-
-Abbreviations
-Statement of Contribution
-Summary
-Summary in Dutch
-Acknowledgments in Dutch
-Publications
-About the Author
-
-https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/doctorate-regulations-_uva_en_2020-28-08-2020.pdf
-
-The doctoral manuscript that is submitted to the supervisor for final approval must be identical in form
-and content to the doctoral thesis submitted to the Doctorate Committee for assessment and public
-defence during the doctoral thesis defence ceremony. It should include the following elements:
-a. a title page as supplied by the Office of the Beadle;
-b. a table of contents;
-c. an overview of the literature consulted;
-d. if the doctoral thesis consists of articles or contains articles by multiple authors: a page with a
-complete reference list for each article with a list of authors for each article and an explanation of the
-relative contribution of the co-authors;
-e. an explanation of how the research was funded, if applicable, as laid down in Article 29, paragraph 6;
-f. a separate summary bearing the title of the thesis in the language in which it is written;
-g. a separate summary bearing the title of the thesis, both in Dutch;
-h. a separate summary bearing the title of the thesis, both in English.
-An acknowledgements section is optional.
-
-...
-
-If the thesis manuscript includes articles that have been written by several authors, it is the duty of the
-supervisor to evaluate whether the doctoral candidate has made an independent contribution to the
-articles that is sufficient to warrant the conferral of the doctorate. If necessary, the supervisor will inform
-the Doctorate Committee of the manner in which the articles were written and what the contribution of
-the doctoral candidate was. 
-As defined in Article 15, paragraph 5, the candidate is required to include a
-list of references in the thesis manuscript
-
--->
-
 Here I detail my contributions for each chapter of this thesis, and list
-all the other contributors and their affiliations.
+all the other contributors and their affiliations. 
 
-## Thesis contributions
+## Thesis contributions  {#ch10:my-contributions}
 
 Below are the author contributions to published articles that form part
 of this thesis. Contributions are classified primarily according to the
-Contributor Roles Taxonomy ([CASRAI CrEDiT](https://casrai.org/credit/). See also
-appendix A](../acknowledgements/) for acknowledgements beyond
+Contributor Roles Taxonomy ([CASRAI CrEDiT](https://casrai.org/credit/). See also [Appendix A](../acknowledgements/) for acknowledgements beyond
 authorship covered below.
 
 For all chapters except 
-[section 5.2](../specimen-data-refinery/), I am the main author of the
+[Section 5.2](../specimen-data-refinery/) and [Section 5.4](../../../2023/phd/workflow-run-crate/), I am the main author of the
 corresponding manuscripts and have contributed to all aspects of the
 research. See details below:
 
@@ -82,16 +32,14 @@ research. See details below:
 [section 3.1](../../../2023/phd/evaluating-fdo) were co-authored by:
 
 Stian Soiland-Reyes
-:   Conceptualization, Data Curation, Formal Analysis, Funding
-    acquisition, Investigation, Methodology, Software, Writing --
-    original draft, Writing -- review and editing
+:    Conceived and designed the experiments, performed the experiments, analyzed the data, prepared ﬁgures and/or tables, authored or reviewed drafts of the article; contributed Conceptualization, Data Curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Software, Writing -- original draft, Writing -- review and editing; and approved the ﬁnal draft.
 
 Carole Goble
-:   Funding acquisition, Supervision, Writing -- review and editing
+:    conceived and designed the experiments, authored or reviewed drafts of the article; contributed Funding acquisition, Supervision, Writing -- review and editing; and approved the final draft.
 
 Paul Groth
-:   Conceptualization, Methodology, Supervision, Writing -- original
-    draft, Writing -- review and editing
+:    conceived and designed the experiments, authored or reviewed drafts of the
+article; contributed Conceptualization, Methodology, Supervision, Writing -- original draft, Writing -- review and editing; and approved the final draft.
 
 I am the main author of the corresponding manuscript and have
 contributed to all aspects of the research.
@@ -102,22 +50,22 @@ contributed to all aspects of the research.
 
 
 Stian Soiland-Reyes
-: Conceptualization, Formal Analysis, Funding acquisition, Investigation, Software, Writing – original draft, Writing – review and editing
+:  Conceptualization, Formal Analysis, Funding acquisition, Investigation, Software, Writing – original draft, Writing – review and editing
 
 Leyla Jael Castro
-: Writing – original draft
+:  Writing – original draft
 
 Daniel Garijo
-: Conceptualization, Funding acquisition, Writing – review and editing
+:  Conceptualization, Funding acquisition, Writing – review and editing
 
 Marc Portier
-: Investigation, Writing – original draft, Writing – review and editing
+:  Investigation, Writing – original draft, Writing – review and editing
 
 Carole Goble:
-: Funding acquisition, Supervision
+:  Funding acquisition, Supervision
 
 Paul Groth
-: Supervision
+:  Supervision
 
 
 This work was presented as talk by Stian Soiland-Reyes at First
@@ -132,61 +80,90 @@ Netherlands.
 [Section 4.1](../ro-crate/) was co-authored by:
 
 Stian Soiland-Reyes
-: Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review \& editing
+:  Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review & editing
 
 Peter Sefton
-: Conceptualization, Investigation, Methodology, Project administration, Resources, Software, Writing – review \& editing
+:  Conceptualization, Investigation, Methodology, Project administration, Resources, Software, Writing – review & editing
 
 Mercè Crosas
-: Writing – review \& editing
+:  Writing – review & editing
 
 Leyla Jael Castro
-: Methodology, Writing – review \& editing
+:  Methodology, Writing – review & editing
 
 Frederik Coppens
-: Writing – review \& editing
+:  Writing – review & editing
 
 José M. Fernández
-: Methodology, Software, Writing – review \& editing
+:  Methodology, Software, Writing – review & editing
 
 Daniel Garijo
-: Methodology, Writing – review \& editing
+:  Methodology, Writing – review & editing
 
 Björn Grüning
-: Writing – review \& editing
+:  Writing – review & editing
 
 Marco La Rosa
-: Software, Methodology, Writing – review \& editing
+:  Software, Methodology, Writing – review & editing
 
 Simone Leo
-: Software, Methodology, Writing – review \& editing
+:  Software, Methodology, Writing – review & editing
 
 Eoghan Ó Carragáin
-: Investigation, Methodology, Project administration, Writing – review \& editing
+:  Investigation, Methodology, Project administration, Writing – review & editing
 
 Marc Portier
-: Methodology, Writing – review \& editing
+:  Methodology, Writing – review & editing
 
 Ana Trisovic
-: Software, Writing – review \& editing
+:  Software, Writing – review & editing
 
 RO-Crate Community
-: Investigation, Software, Validation, Writing – review \& editing
+:  Investigation, Software, Validation, Writing – review & editing
 
 Paul Groth
-: Methodology, Supervision, Writing – original draft, Writing – review \& editing
+:  Methodology, Supervision, Writing – original draft, Writing – review & editing
 
 Carole Goble
-: Conceptualization, Funding acquisition, Methodology, Project administration, Supervision, Visualization, Writing – review \& editing
+:  Conceptualization, Funding acquisition, Methodology, Project administration, Supervision, Visualization, Writing – review & editing
 
 
-I am the main author of the corresponding manuscript and have
-contributed to all aspects of the research. Subsection
+I am the main author and editor of the corresponding manuscript and have
+contributed to all aspects of the research. Section
 [4.1.4.1](../ro-crate/#profile-for-testing-workflows) was primarily authored by
-Simone Leo. Subsection
+Simone Leo.
+SubSection [4.1.4.4](../ro-crate/#dmp) was primarily authored by Leyla Jael Castro.
+Section
 [4.1.4.5](../ro-crate/#institutionalrepos) with figure
 [4.4](../ro-crate/#fig:hdc) was authored by Mercè Crosas and Ana Trisovic
 and edited by me.
+
+
+The co-authors would also like to acknowledge contributions from:
+
+Finn Bacall
+:    Software, Methodology
+
+Herbert Van de Sompel
+:    Writing -- review & editing
+
+Ignacio Eguinoa
+:    Software, Methodology
+
+Nick Juty
+:    Writing -- review & editing
+
+Oscar Corcho
+:    Writing -- review & editing
+
+Stuart Owen
+:    Writing -- review & editing
+
+Laura Rodríguez-Navas
+:    Software, Visualization, Writing -- review & editing
+
+Alan R. Williams
+:    Writing -- review & editing
 
 
 ### Contributions for *Creating lightweight FAIR Digital Objects with RO-Crate* {#lightweight}
@@ -194,57 +171,32 @@ and edited by me.
 [Section 4.2](../fdo-with-ro-crate/) was co-authored by:
 
 Stian Soiland-Reyes
-: Conceptualization, Funding acquisition, Project administration, Software, Writing -- original draft, Writing -- review & editing
+:  Conceptualization, Funding acquisition, Project administration, Software, Writing -- original draft, Writing -- review & editing
 
 Peter Sefton
-: Funding acquisition, Project administration, Software
+:  Funding acquisition, Project administration, Software
 
 Leyla Jael Castro
-: Writing -- original draft, Writing -- review & editing
+:  Writing -- original draft, Writing -- review & editing
 
 Frederik Coppens
-: Funding acquisition, Supervision, Writing -- review & editing
+:  Funding acquisition, Supervision, Writing -- review & editing
 
 Daniel Garijo
-: Software, Writing -- review and editing
+:  Software, Writing -- review and editing
 
 Simone Leo
-: Conceptualization, Project administration, Software, Writing -- original draft
+:  Conceptualization, Project administration, Software, Writing -- original draft
 
 Marc Portier
-: Writing -- review & editing
+:  Writing -- review & editing
 
 Paul Groth
-: Supervision
+:  Supervision
 
 I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
 
-The co-authors would also like to acknowledge contributions from:
-
-Finn Bacall
-:   Software, Methodology
-
-Herbert Van de Sompel
-:   Writing -- review & editing
-
-Ignacio Eguinoa
-:   Software, Methodology
-
-Nick Juty
-:   Writing -- review & editing
-
-Oscar Corcho
-:   Writing -- review & editing
-
-Stuart Owen
-:   Writing -- review & editing
-
-Laura Rodríguez-Navas
-:   Software, Visualization, Writing -- review & editing
-
-Alan R. Williams
-:   Writing -- review & editing
 
 ### Contributions for *Formalizing RO-Crate in First Order Logic* {#formalizing}
 
@@ -258,28 +210,28 @@ I am the sole author of the corresponding appendix and have contributed to all a
 [Section 5.1](../canonical-workflow-building-blocks/) was co-authored by:
 
 Stian Soiland-Reyes
-: Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Supervision, Writing -- original draft, Writing -- review & editing 
+:  Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Supervision, Writing -- original draft, Writing -- review & editing 
 
 Genís Bayarri
-: Software, Software Documentation
+:  Software, Software Documentation
 
 Pau Andrio
-: Methodology, Software, Validation, Software Documentation
+:  Methodology, Software, Validation, Software Documentation
 
 Robin Long
-: Software, Software Documentation
+:  Software, Software Documentation
 
 Douglas Lowe
-: Software, Software Documentation
+:  Software, Software Documentation
 
 Ania Niewielska
-: Methodology, Resources, Software
+:  Methodology, Resources, Software
 
 Adam Hospital
-: Methodology, Project administration, Resuorces, Software, Validation, Visualization, Writing -- original draft, Writing -- review & editing
+:  Methodology, Project administration, Resuorces, Software, Validation, Visualization, Writing -- original draft, Writing -- review & editing
 
 Paul Groth
-: Methodology, Supervision, Writing -- review & editing
+:  Methodology, Supervision, Writing -- review & editing
 
 I am the main author of the corresponding manuscript and have contributed to all aspects of the research.
 
@@ -289,28 +241,28 @@ I am the main author of the corresponding manuscript and have contributed to all
 [Section 5.2](../specimen-data-refinery/) was co-authored by:
 
 Alex Hardisty
-: Conceptualization, Investigation, Supervision, Validation, Writing -- original draft, Writing -- review & editing, Approval.
+:  Conceptualization, Investigation, Supervision, Validation, Writing -- original draft, Writing -- review & editing, Approval.
 
 Paul Brack
-: Investigation, Writing -- original draft, Writing -- review & editing.
+:  Investigation, Writing -- original draft, Writing -- review & editing.
 
 Carole Goble
-: Conceptualization, Supervision, Writing -- review & editing
+:  Conceptualization, Supervision, Writing -- review & editing
 
 Laurence Livermore
-: Conceptualization, Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
+:  Conceptualization, Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
 
 Ben Scott
-: Investigation, Writing -- original draft, Writing -- review & editing.
+:  Investigation, Writing -- original draft, Writing -- review & editing.
 
 Quentin Groom
-: Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
+:  Funding acquisition, Investigation, Writing -- original draft, Writing -- review & editing.
 
 Stuart Owen
-: Investigation, Writing -- original draft, Writing -- review & editing.
+:  Investigation, Writing -- original draft, Writing -- review & editing.
 
 Stian Soiland-Reyes
-: Investigation, Writing -- original draft, Writing -- review & editing.
+:  Investigation, Writing -- original draft, Writing -- review & editing.
 
 
 My main contributions are to section [5.2.2.2](../specimen-data-refinery/#workflow-management-systems-and-canonical-workflows-for-research), [5.2.2.3](../specimen-data-refinery/#fair-packaging-of-researchworkflow-objects-with-ro-crate), [5.2.4.1](../specimen-data-refinery/#fdo-types), [5.2.7](../specimen-data-refinery/#discussion). In the corresponding research
@@ -322,19 +274,19 @@ I have contributed to designing, technical advice, insight and supervision.
 [Section 5.3](../incrementally-building-fdos/) was co-authored by:
 
 Oliver Woolland
-: Data curation, Resources, Software, Visualization, Writing – review & editing
+:  Data curation, Resources, Software, Visualization, Writing – review & editing
 
 Paul Brack
-: Conceptualization, Software
+:  Conceptualization, Software
 
 Stian Soiland-Reyes
-: Investigation, Methodology, Supervision, Writing – original draft, Writing – review & editing
+:  Investigation, Methodology, Supervision, Writing – original draft, Writing – review & editing
 
 Ben Scott
-: Data curation, Software, Validation
+:  Data curation, Software, Validation
 
 Laurence Livermore
-: Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Writing – review & editing
+:  Conceptualization, Data curation, Funding acquisition, Methodology, Project administration, Resources, Writing – review & editing
 
 
 I am the main author of the corresponding manuscript and have
@@ -347,168 +299,235 @@ Netherlands.
 - Poster: <https://doi.org/10.5281/zenodo.7233688>
 
 
+### Contributions for *Recording provenance of workflow runs with RO-Crate* {#wrroc}
+
+[Section 5.4](../../../2023/phd/workflow-run-crate/) was co-authored by:
+
+
+Simone Leo
+:   Conceptualization, Data Curation, Investigation, Methodology, Resources, Software, Supervision, Validation, Visualization, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Michael R. Crusoe
+:   Conceptualization, Investigation, Software, Supervision
+
+Laura Rodríguez-Navas
+:   Software, Writing -- Original Draft preparation
+
+Raül Sirvent
+:   Data Curation, Software, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Alexander Kanitz
+:   Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Paul De Geest
+:   Data Curation, Software, Writing -- Original Draft preparation
+
+Rudolf Wittner
+:   Data Curation, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Luca Pireddu
+:   Funding acquisition, Project Administration, Supervision, Writing -- Review & Editing
+
+Daniel Garijo
+:   Conceptualization, Formal Analysis, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+José M. Fernández
+:   Data Curation, Software, Writing -- Original Draft preparation
+
+Iacopo Colonnelli
+:   Data Curation, Software, Writing -- Original Draft preparation
+
+Matej Gallo
+:   Data Curation, Software
+
+Tazro Ohta
+:   Data Curation, Software, Writing -- Original Draft preparation
+
+Hirotaka Suetake
+:   Data Curation, Software, Writing -- Original Draft preparation
+
+Salvador Capella-Gutierrez
+:   Funding Acquisition, Resources, Supervision, Writing -- Original Draft preparation
+
+Renske de Wit
+:   Software, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Bruno de Paula Kinoshita
+:   Data Curation, Software, Writing -- Original Draft preparation, Writing -- Review & Editing
+
+Stian Soiland-Reyes
+:   Conceptualization, Formal Analysis, Funding Acquisition, Investigation, Methodology, Resources, Software, Supervision, Visualization, Writing -- Original Draft preparation, Writing -- Review & Editing    
+
+
+I am the last author of this manuscript, and have contributed to all aspects of the research. My main contributions are in [Section 5.4.1](../../../2023/phd/workflow-run-crate/#introduction), 
+[Section 5.4.5](../../../2023/phd/workflow-run-crate/#discussion), [Section 5.4.5.3](../../../2023/phd/workflow-run-crate/#5s-crate), [Section 5.4.5.4](../../../2023/phd/workflow-run-crate/#bco-crate).
+
+
 
 ## Supplementary publications
 
 I have also contributed as co-author to these articles during the PhD period, provided as supplements:
 
-[Supplement 1: Ten Simple Rules for making a software tool workflow-ready ](../10-simple-rules-for-workflow-tools/)
+[Supplement 1: Ten Simple Rules for making a software tool workflow-ready ](../10-simple-rules-for-workflow-tools/) [[Brack 2022a]]
 
-[Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate](../galaxy-ro-crate/)
+[Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate](../galaxy-ro-crate/) [[De Geest 2022]]
 
-[Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory Zenodo white paper](../../../2021/phd/workflow-collaboratory/)
+[Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory Zenodo white paper](../../../2021/phd/workflow-collaboratory/) [[Goble 2021]]
 
-[Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language](../methods-included/)
+[Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language](../methods-included/) [[Crusoe 2022]]
 
-[Supplement 5: Semantic micro-contributions with decentralized nanopublication services](../../../2021/phd/nanopub/)
+[Supplement 5: Semantic micro-contributions with decentralized nanopublication services](../../../2021/phd/nanopub/) [[Kuhn 2021]]
 
-[Supplement 6: Perspectives on automated composition of workflows in the life sciences](https://doi.org/10.12688/f1000research.54159.1)
+[Supplement 6: Perspectives on automated composition of workflows in the life sciences](https://doi.org/10.12688/f1000research.54159.1) [[Lamprecht 2021]]
 
-[Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data](https://www.research.manchester.ac.uk/portal/files/195948339/ProvenanceWeek_2020_Poster_ISO_23494_Provenance_LNCS_format_1_.pdf)
+[Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data](../../../2021/phd/iso-23494-provenance/) [[Wittner 2020]]
 
-[Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences](https://doi.org/10.5281/zenodo.5093125)
+[Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences](https://doi.org/10.5281/zenodo.5093125) [[Wittner 2023a]]
 
-[Supplement 9: A Community Roadmap for Scientific Workflows Research and Development](https://arxiv.org/pdf/2110.02168)
+[Supplement 9: A Community Roadmap for Scientific Workflows Research and Development](https://arxiv.org/pdf/2110.02168) [[Ferreira da Silva 2021]]
 
-[Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR](https://doi.org/10.1162/dint_a_00025) _(Main contribution pre-dates UvA affiliation)_
+[Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR](https://doi.org/10.1162/dint_a_00025) [[Juty 2020]] _(Main contribution pre-dates UvA affiliation)_
 
-[Supplement 11: FAIR Computational Workflows](https://doi.org/10.1162/dint_a_00033) _(Main contribution pre-dates UvA affiliation)_
+[Supplement 11: FAIR Computational Workflows](https://doi.org/10.1162/dint_a_00033) [[Goble 2020]] _(Main contribution pre-dates UvA affiliation)_
 
-[Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv](https://doi.org/10.1093/gigascience/giz095) _(Main contribution pre-dates UvA affiliation)_
+[Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv](https://doi.org/10.1093/gigascience/giz095) [[Khan 2019]]  _(Main contribution pre-dates UvA affiliation)_
 
-[Supplement 13: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html)
+[Supplement 13: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html) [[IEEE 2791-2020]]
 
-[Supplement 14: BioHackEU22 Project 22: Plant data exchange and standard interoperability](https://doi.org/10.37044/osf.io/c724r)
+[Supplement 14: BioHackEU22 Project 22: Plant data exchange and standard interoperability](https://doi.org/10.37044/osf.io/c724r) [[Arend 2022]]
 
-I have been involved in All Aspects of the research for supplement 1, 2, 3, 4, 11, 12.
+[Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging](../../../2019/phd/ro-crate/) [[Ó Carragáin 2019b]] (Main contribution pre-dates UvA affiliation) 
 
+[Supplement 16: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment](../../../2023/phd/federated-causal-inference/) [[Meurisse 2023]]
+
+[Supplement 17: Linking provenance and its metadata in multi-organizational environments of life sciences](../../../2023/phd/linking-provenance/) [[Wittner 2023b]]
+
+[Supplement 18: BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates](../../../2023/phd/enhancing-rdm-galaxy-dsw/) [[Eguinoa 2023]]
+
+[Supplement 19: BioHackEU23 report: Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA](https://doi.org/10.37044/osf.io/7y2jh) [[Beier 2024]]
+
+[Supplement 20: BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas](../../../2024/enabling-fair-digital-objects/) [[Soiland-Reyes 2024a]]
+
+[Supplement 21: Report on "FAIR Signposting" and its uptake by the community](../../../2024/signposting-report/) [[Wilkinson 2024]]
+
+[Supplement 22: Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned](../../../2024/webby-fdos/) [[Soiland-Reyes 2024c]]
+
+I have been involved in All Aspects of the research for supplements 1, 2,
+3, 4, 11, 12, 15, 18, 20, 22.
 
 
 ## Contributor affiliations
 
-<!-- TODO: Remove co-authors from supplements only -->
 
 
 Sanne Abeln <https://orcid.org/0000-0002-2779-7174>
-: Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
+:  Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
+<!-- TODO: Remove co-authors from supplements only -->
 
-Peter Amstutz <https://orcid.org/0000-0003-3566-7705>
-: Curii Corporation, Sommerville, MA, USA  
 
 Pau Andrio <https://orcid.org/0000-0003-2116-3880>
-: The Spanish National Bioinformatics Institute (INB), Barcelona Supercomputing Center (BSC), Barcelona, Spain  
-
-Haris Antonatos
-: SciFY, Athens, Greece
-
-Finn Bacall <https://orcid.org/0000-0002-0048-3300>
-: Department of Computer Science, The University of Manchester, Manchester, UK
+: The Spanish National Bioinformatics Institute (INB), Barcelona
+: Supercomputing Center (BSC), Barcelona, Spain
 
 Genís Bayarri <https://orcid.org/0000-0003-0513-0288>
-: Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain  
+: Institute for Research in Biomedicine (IRB Barcelona), The Barcelona
+: Institute of Science and Technology (BIST), Barcelona, Spain
 
 Paul Brack <https://orcid.org/0000-0002-5432-2748>
-: Department of Computer Science, The University of Manchester, Manchester, UK
-
-Salvador Capella-Gutierrez <https://orcid.org/0000-0002-0309-604X>
-: Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain
+: Department of Computer Science, The University of Manchester, Manchester, UK (former)
 
 Eoghan Ó Carragáin <https://orcid.org/0000-0001-8131-2150>
 : University College Cork, Ireland
 
-John Chilton <https://orcid.org/0000-0002-6794-0756>⁴⁵,
-: Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA
-: Galaxy Project  
+Iacopo Colonnelli <https://orcid.org/0000-0001-9290-2017>
+:  Computer Science Dept., Università degli Studi di Torino, Torino, Italy
 
 Frederik Coppens <https://orcid.org/0000-0001-6565-5145>
-: Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium
+: Department of Plant Biotechnology and Bioinformatics, Ghent University,Ghent, Belgium
 : VIB-UGent Center for Plant Systems Biology, Ghent, Belgium
 
 Mercè Crosas <https://orcid.org/0000-0003-1304-1939>
-: Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA
-: Secretària de Govern Obert, Catalunya, Barcelona, ES
-
-Peter Crowther <https://orcid.org/0000-0002-2222-9418>
-: Melandra Limited, Stockport, UK
+: Barcelona Supercomputing Center (BSC), Barcelona, Spain
+: The Committee on Data of the International Science Council (ISC) (CODATA)
+: Secretària de Govern Obert, Catalunya, Barcelona, Spain (former)
+: Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA (former)
 
 Michael R. Crusoe <https://orcid.org/0000-0002-2961-9670>
-: Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
-: Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA 
+: Department of Computer Science, Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
+: DTL Projects, The Netherlands
+: Forschungszentrum Jülich, Jülich, Germany
+: Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA
 
-Mathias Dillen <https://orcid.org/0000-0002-3973-1252>
-: Meise Botanic Garden, Meise, Belgium 
+Matej Gallo <https://orcid.org/0000-0002-1119-1792>
+: Faculty of Informatics, Masaryk University, Brno, Czech Republic
 
-Bert Droesbeke <https://orcid.org/0000-0003-0522-5674>
-: Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium
-: VIB Center for Plant Systems Biology, Ghent, Belgium
-
-Michel Dumontier <https://orcid.org/0000-0003-4727-9435>
-: Institute of Data Science, Maastricht University, Maastricht, The Netherlands
-
-Ignacio Eguinoa <https://orcid.org/0000-0002-6190-122X>
-: Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium
+Paul De Geest <https://orcid.org/0000-0002-8940-4946>
 : VIB-UGent Center for Plant Systems Biology, Ghent, Belgium
 
-Vincent Emonet <https://orcid.org/0000-0002-1501-1082>
-: Institute of Data Science, Maastricht University, Maastricht, The Netherlands
-
-Philip Ewels <https://orcid.org/0000-0003-4101-2502>
-: Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden
+Ignacio Eguinoa <https://orcid.org/0000-0002-6190-122X>
+: Showpad, Ghent, Belgium
+: Department of Plant Biotechnology and Bioinformatics, Ghent University,
+Ghent, Belgium (former)
+: VIB-UGent Center for Plant Systems Biology, Ghent, Belgium (former)
 
 José Mª Fernández <https://orcid.org/0000-0002-4806-5140>
 : Barcelona Supercomputing Center, Barcelona, Spain
 
 Daniel Garijo <https://orcid.org/0000-0003-0454-7145>
-: Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain  
-
-Bogdan Gavrilović <https://orcid.org/0000-0003-1550-1716>⁶
-: Seven Bridges, Charlestown, MA, USA  
+: Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid,
+Spain
 
 Carole Goble <https://orcid.org/0000-0003-1219-2137>
-: Department of Computer Science, The University of Manchester, Manchester, UK
+: Department of Computer Science, The University of Manchester,
+Manchester, UK
 
 Quentin Groom <https://orcid.org/0000-0002-0596-5376>
-: Meise Botanic Garden, Meise, Belgium 
+: Meise Botanic Garden, Meise, Belgium
 
 Paul Groth <https://orcid.org/0000-0003-0183-6910>
-: Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
+: Informatics Institute, University of Amsterdam, Amsterdam, The
+Netherlands
 
 Björn Grüning <https://orcid.org/0000-0002-3079-6586>
-: Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany 
+: Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany
 
 Alex Hardisty <https://orcid.org/0000-0002-0767-4310>
-: School of Computer Science and Informatics, Cardiff University, Cardiff, UK  
+: School of Computer Science and Informatics, Cardiff University, Cardiff, UK (former)
 
 Adam Hospital <https://orcid.org/0000-0002-8291-8071>
-: Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain  
-
-Alexandru Iosup <https://orcid.org/0000-0001-8030-9398>¹,
-: Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
+: Institute for Research in Biomedicine (IRB Barcelona), The Barcelona
+: Institute of Science and Technology (BIST), Barcelona, Spain
 
 Leyla Jael Castro <https://orcid.org/0000-0003-3986-0510>
 : ZB MED Information Centre for Life Sciences, Cologne, Germany
 
-Tobias Kuhn <https://orcid.org/0000-0002-1267-0234>
-: Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands
-
 Simone Leo <https://orcid.org/0000-0001-8271-5429>
-: Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy
+: Center for Advanced Studies, Research, and Development in Sardinia
+(CRS4), Pula (CA), Italy
+
+Alexander Kanitz <https://orcid.org/0000-0002-3468-0652>
+: Biozentrum, University of Basel, Basel, Switzerland
+: Swiss Institute of Bioinformatics, Lausanne, Switzerland
+
+Bruno de Paula Kinoshita <https://orcid.org/0000-0001-8250-4074>
+: Barcelona Supercomputing Center (BSC), Barcelona, Spain
 
 Laurence Livermore <https://orcid.org/0000-0002-7341-1842>
-: The Natural History Museum, London, UK  
+: The Natural History Museum, London, UK
 
 Robin Long <https://orcid.org/0000-0003-2249-645X>
 : Lancaster University, Lancaster, UK
-: Research IT, The University of Manchester, Manchester, UK
+: Research IT, The University of Manchester, Manchester, UK (former)
 
 Douglas Lowe <https://orcid.org/0000-0002-1248-3594>
-: Research IT, The University of Manchester, Manchester, UK  
-
-Hervé Ménager <https://orcid.org/0000-0002-7552-1009>
-: Hub de Bioinformatique et Biostatistique, Département Biologie Computationnelle, Institut Pasteur, Paris, France  
+: Research IT, The University of Manchester, Manchester, UK
 
 Ania Niewielska <https://orcid.org/0000-0003-0989-3389>
-: European Bioinformatics Institute (EMBL-EBI), Cambridge, UK  
+: European Bioinformatics Institute (EMBL-EBI), Cambridge, UK
+
+Tazro Ohta <https://orcid.org/0000-0003-3777-5945>
+: Database Center for Life Science, Joint Support-Center for Data Science Research, Research Organization of Information and Systems, Shizuoka, Japan
+: Institute for Advanced Academic Research, Chiba University, Chiba, Japan
 
 Stuart Owen <https://orcid.org/0000-0003-2130-0865>
 : Department of Computer Science, The University of Manchester, Manchester, UK
@@ -517,39 +536,45 @@ Luca Pireddu <https://orcid.org/0000-0002-4663-5613>
 : Center for Advanced Studies, Research and Development in Sardinia (CRS4), Pula, Italy
 
 Marc Portier <https://orcid.org/0000-0002-9648-6484>
-: Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium  
+: Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium
 
 Laura Rodriguez-Navas <https://orcid.org/0000-0003-4929-1219>
-: Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain
+: Universitat Oberta de Catalunya (UOC), Barcelona, Spain
+: Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain (former)
 
 Marco La Rosa <https://orcid.org/0000-0001-5383-6993>
 : PARADISEC, Melbourne, Australia
 
 Ben Scott <https://orcid.org/0000-0002-5590-7174>
-: The Natural History Museum, London, UK  
+: The Natural History Museum, London, UK
 
 Peter Sefton <https://orcid.org/0000-0002-3545-944X>
-: Faculty of Science, University Technology Sydney, Australia
-: The University of Queensland School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia
+: School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia
+: Faculty of Science, University Technology Sydney, Australia (former)
 
-Beatriz Serrano-Solano <https://orcid.org/0000-0002-5862-6132>
-: Bioinformatics Group, Albert-Ludwigs-University Freiburg, Freiburg, Germany
+Raül Sirvent <https://orcid.org/0000-0003-0606-2512>
+: Barcelona Supercomputing Center (BSC), Barcelona, Spain
 
 Stian Soiland-Reyes <https://orcid.org/0000-0001-9842-9718>
 : Department of Computer Science, The University of Manchester, Manchester, UK
-: Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands  
+: Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands
 
-Ruben Taelman <https://orcid.org/0000-0001-5118-256X>
-: IDLab, Ghent University, Ghent, Belgium
-
-Nebojša Tijanić <https://orcid.org/0000-0001-8316-4067>
-: Seven Bridges, Charlestown, MA, USA  
+Hirotaka Suetake <https://orcid.org/0000-0003-2765-0049>
+: Department of Creative Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Tokyo, Japan
 
 Ana Trisovic <https://orcid.org/0000-0003-1991-0533>
 : Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA
 
 Alan R Williams <https://orcid.org/0000-0003-3156-2105>
-: Department of Computer Science, The University of Manchester, Manchester, UK
+: Department of Computer Science, The University of Manchester, Manchester, UK (former)
+
+Renske de Wit <https://orcid.org/0000-0003-0902-0086>
+: Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
+
+Rudolf Wittner <https://orcid.org/0000-0002-0003-2024>
+: Faculty of Informatics, Masaryk University, Brno, Czech Republic
+: Institute of Computer Science, Masaryk University, Brno, Czech Republic
+: BBMRI-ERIC, Neue Stiftingtalstrasse 2, 8010, Graz, Austria
 
 Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 : Research IT, The University of Manchester, Manchester, UK
@@ -557,16 +582,18 @@ Oliver Woolland <https://orcid.org/0000-0002-4565-9760>
 
 ## Community roles
 
-For [chapter 2](../../../2023/phd/fdo-and-linked-data/) and [section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022b](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/).
+For [Chapter 2](../../../2023/phd/fdo-and-linked-data/) and [Section 5.1](../canonical-workflow-building-blocks/) I am a member of [FAIR Digital Object Forum](https://fairdo.org/) working groups FDO-CWFR, FDO-SEM, FDO-TSIG2 and have contributions to FDO specifications [Anders 2023](https://doi.org/10.5281/zenodo.7782262), [Ivonne 2023](https://doi.org/10.5281/zenodo.7824714), and to the FDO demonstrator paper [Wittenburg 2022b](https://doi.org/10.5281/zenodo.5872645). I am a member of the [FDO 2024 programme committee](https://fairdo.org/fdo2024-conference/) and the Research Data Alliance (RDA)'s [FAIR Digital Object Fabric](https://www.rd-alliance.org/group/FAIR-digital-object-fabric-ig.html) Interest Group.
 
-For [chapter 3](../../../2023/phd/ro-crate/) I co-chair the
-[RO-Crate community](https://www.researchobject.org/ro-crate/community) (see [appendix A](../acknowledgements/#ro-crate-community)) together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1).
+For [Chapter 3](../../../2023/phd/ro-crate/) I co-chair the
+[RO-Crate community](https://www.researchobject.org/ro-crate/community) (see [appendix A](../acknowledgements/#ro-crate-community)) together with Peter Sefton. We are the main editors and authors of the [RO-Crate specifications](https://w3id.org/ro/crate/1.1) [[RO-Crate 1.0],[RO-Crate 1.1],[RO-Crate 1.1.3],[RO-Crate 1.2]]
 
 For [section 5.1](../canonical-workflow-building-blocks/) I was deputy work package leader in BioExcel-2, with Adam Hospital as work package leader. 
 
-For section 5.1 and [Supplement 4](../methods-included/)) I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
+For [Section 5.4](../../../2023/phd/workflow-run-crate/)  I am a member of the [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/#community) community as well as the [Workflows Community Initiative](https://workflows.community/) working group [FAIR Computational Workflow](https://workflows.community/groups/fair/).
 
-For [Supplement 13](https://www.research.manchester.ac.uk/portal/en/publications/ieee-2791(936de52b-ac53-4f0e-9927-77fd7073e88d).html) I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
+For Supplement 4 [[Crusoe 2022]] and Supplement 12 [[Khan 2019]] I am a member of the Common Workflow Language [leadership team](https://www.commonwl.org/governance/).
+
+For Supplement 13 [[IEEE 2791-2020]] I am a member of the [BioCompute Object](https://www.biocomputeobject.org/) technical steering committee and was a member of the IEEE 2791-2020 cworking group.
 
 
 
@@ -575,44 +602,58 @@ For [Supplement 13](https://www.research.manchester.ac.uk/portal/en/publications
 During this PhD I have contributed to several software applications and
 libraries:
 
-- [signposting](https://pypi.org/project/signposting/)  -- link parser library for Python (main author)  
+- [signposting](https://pypi.org/project/signposting/) [[Soiland-Reyes 2022e]] -- link parser library for Python (main author)  
   <https://doi.org/10.5281/zenodo.7256713>
-- [Benchmarks for Apples-to-Apples FAIR Signposting](https://w3id.org/a2a-fair-metrics/) -- main author and maintainer
-- [ro-crate-py](https://pypi.org/project/rocrate/)  -- initial author, contributor; main author is Simone Leo  
+- [Benchmarks for Apples-to-Apples FAIR Signposting](https://w3id.org/a2a-fair-metrics/) -- main author and maintainer (see [[Wilkinson 2022a],[Wilkinson 2024]])
+- [ro-crate-py](https://pypi.org/project/rocrate/) [[De Geest 2023a]] -- initial author, contributor; main author is Simone Leo  
   <https://doi.org/10.5281/zenodo.8005944>
 - [ro-index-paper](https://github.com/stain/ro-index-paper) -- early prototype for survey of Research Object usage
-- [runcrate](https://github.com/ResearchObject/runcrate) contributor, main author is Simone Leo  
+- [runcrate](https://github.com/ResearchObject/runcrate) [[Leo 2023a]] contributor, main author is Simone Leo  
   <https://doi.org/10.5281/zenodo.7764062> 
 - [ro-crate-preview](https://github.com/marketplace/actions/ro-crate-preview), GitHub action Build HTML preview of RO-Crate. Contributed as supervisor, documentation, bug fixes. Main author is Gerard Capes.
-- [cwlviewer](https://view.commonwl.org/), [contributed feature](https://github.com/common-workflow-language/cwlviewer/pull/241), main author is Mark Robinson
+- [cwlviewer](https://view.commonwl.org/) [[Robinson 2023]], [contributed feature](https://github.com/common-workflow-language/cwlviewer/pull/241), main author is Mark Robinson [[Robinson 2017]]
 - [ro-crate-validator-py](https://github.com/ResearchObject/ro-crate-validator-py), supervisor, main author is Xuanqi "Logan" Li
 
 
 ## Standard contributions
 
-- RO-Crate Specification [1.1.3](https://w3id.org/ro/crate/1.1), contributing as co-chair of RO-Crate community and editor.  
-  <https://doi.org/10.5281/zenodo.7867028>
-- RO-Crate Specification [1.2 (draft)](https://www.researchobject.org/ro-crate/1.2-DRAFT/). I am the main editor of this release and have contributed several new sections including [RO-Crate profiles](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles).
-- [IEEE 2791-2020](https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d), contributing as member of P2791 Working Group. I was responsible for aspects of identifiers and internal review.
-  <https://doi.org/10.1109/IEEESTD.2020.9094416>
+- RO-Crate Specification [1.1.3](https://w3id.org/ro/crate/1.1) [[RO-Crate 1.1.3]], contributing as co-chair of RO-Crate community and editor.  
+- RO-Crate Specification [1.2 (draft)](https://www.researchobject.org/ro-crate/1.2-DRAFT/) [[RO-Crate 1.2]]. I am the main editor of this release and have contributed several new sections including [RO-Crate profiles](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles).
+-  FAIR digital object technical overview [[Ivonne 2023]], contributing clarifications.
+-  FDO requirement specifications [[Anders 2023]], contributing as member of the FDO TSIG group.
+- [[IEEE 2791-2020]], contributing as member of P2791 Working Group. I was responsible for aspects of identifiers and internal review.
 - [JSON Schema for IEEE 2791](https://w3id.org/ieee/ieee-2791-schema), contributing as member of P2791 Working Group and internal review.
-  <https://w3id.org/ieee/ieee-2791-schema>
-- [RFC9264 Linkset](https://www.rfc-editor.org/rfc/rfc9264.html): JSON-LD context and reviewed.
-  <https://doi.org/10.17487/rfc9264>
+- [RFC9264 Linkset](https://www.rfc-editor.org/rfc/rfc9264.html) [[Wilde 2020]]: JSON-LD context and reviewed.
+- ISO/TS 23494-1:2023 \& ISO/AWI 23494-2, contributed as consultant to ISO/TC 276 provenance group (see [[{Wittner 2020],[Wittner 2023a],[Wittner 2023b]])
+
+### RO-Crate profiles
+
+-  Workflow RO-Crate Profile 1.0 [[Bacall 2022]]\
+<https://w3id.org/workflowhub/workflow-ro-crate/1.0>
+-  Common Provenance Model RO-Crate profile 0.2\
+<https://w3id.org/cpm/ro-crate/0.2>
+-  Five Safes RO-Crate profile 0.4 [[Soiland-Reyes 2023e]]\
+<https://w3id.org/5s-crate/0.4>
+-  Process Run Crate specification 0.4 [[WRROC 2023a]]\
+<https://w3id.org/ro/wfrun/process/0.4>
+-  Workflow Run Crate specification 0.4 [[WRROC 2023b]]\
+<https://w3id.org/ro/wfrun/workflow/0.4>
+-  Provenance Run Crate specification 0.4 [[WRROC 2023c]]\
+<https://w3id.org/ro/wfrun/provenance/0.4>  
 
 
-## Training material contributions
+## Training material and training events
 
+- Leyla Jael Castro, Stian Soiland-Reyes, Jonas Grieb, Claus Weiland (2024): \   
+    **Practical web-based FDOs with RO-Crate and FAIR Signposting**.\
+    _International FAIR Digital Objects Implementation Summit 2024_, Berlin, Germany, 2024-03-20/--21.\
+    <https://doi.org/10.5281/zenodo.10892090>
+-    Stian Soiland-Reyes, Claus Weiland, Herbert Van de Sompel, Leyla Jael Castro (2024): \
+    **Improving FAIRability of your research outcomes with RO-Crates, SignPosting and Bioschemas**.\
+    _15th International SWAT4HCLS Conference_, Leiden, The Netherlands, 2024-26-26/--29    
 - **Packaging Data using RO-Crate**.  
   _Galaxy Smörgåsbord 2023_  
   <https://training.galaxyproject.org/topics/fair/tutorials/ro-crate-intro/tutorial.html>
-- **Introduction to Workflows with Common Workflow Language**.  
-  _The Carpentries Incubator_  
-  (main author: Douglas Lowe)  
-  <https://carpentries-incubator.github.io/cwl-novice-tutorial/>
-- **Creating workflows with Common Workflow Language**.  
-  (main author: Douglas Lowe)  
-  <http://docs.bioexcel.eu/cwl-best-practice-guide/>
 - **Common Workflow Language Engines**.  
   (main author: Robin Long)  
   <http://docs.bioexcel.eu/cwl-engine-guide/>
@@ -620,23 +661,27 @@ libraries:
 
 ## Dataset contributions
 
-- Packing provenance using CPM RO-Crate profile  
-  <https://doi.org/10.5281/zenodo.8095888>
-- Zenodo metadata JSON records as of 2019-09-16  
+- Zenodo metadata JSON records as of 2019-09-16\
   <https://doi.org/10.5281/zenodo.3531504>
-- Open PHACTS Linksets 2.1.1  
+- Open PHACTS Linksets 2.1.1\
   <https://doi.org/10.5281/zenodo.4704867>
-- Packaging research artefacts with RO-Crate  
-  <https://w3id.org/ro/doi/10.5281/zenodo.5146227>  
-  <https://doi.org/10.5281/zenodo.5146227>
-- Comparison tables for evaluating FAIR Digital Object and Linked Data  
-  <https://w3id.org/ro/doi/10.5281/zenodo.8075229>  
-  <https://doi.org/10.5281/zenodo.8075229>
-- BY-COVID WP5 T5.2 Baseline Use Case  
-  <https://by-covid.github.io/BY-COVID_WP5_T5.2_baseline-use-case/>    
+   RO-Crate of RO-Crate specification 1.1 [[RO-Crate 1.1.3]] \
+  <https://www.researchobject.org/ro-crate/1.1/ro-crate-preview.html>
+- RO-Crate of RO-Crate specification 1.2-DRAFT [[RO-Crate 1.2]] \
+  <https://www.researchobject.org/ro-crate/1.2-DRAFT/ro-crate-preview.html>      
+- Packaging research artefacts with RO-Crate [[Soiland-Reyes 2022g]] \
+  <https://w3id.org/ro/doi/10.5281/zenodo.5146227>
+- Comparison tables for evaluating FAIR Digital Object and Linked Data [[Soiland-Reyes 2023a]] \
+  <https://w3id.org/ro/doi/10.5281/zenodo.8075229>
+- BY-COVID WP5 T5.2 Baseline Use Case \
   <https://w3id.org/ro/doi/10.5281/zenodo.6913045>
-- [RO-Crate specification dataset 1.1.2](https://www.researchobject.org/ro-crate/1.1/ro-crate-preview.html)
-
+- Linking provenance and its metadata for an AI-based computation using CPM and RO-Crate \
+  <https://doi.org/10.5281/zenodo.10245846>
+- Packing provenance using CPM RO-Crate profile [[Wittner 2023c]] \
+  <https://doi.org/10.5281/zenodo.8095888>
+- Recording provenance of workflow runs with RO-Crate (RO-Crate and mapping) [[Leo 2023c]] \
+  <https://w3id.org/ro/doi/10.5281/zenodo.10368989>
+    
 
 ## Presentation contributions
 
