@@ -75,23 +75,28 @@ accountability, and quality assessment [[Herschel 2017]].
 The constantly growing size and complexity of scientific datasets and the analysis that is required to extract useful information from them has made science increasingly dependent on advanced automated processing techniques in order to get from experimental data to final results [[Himanen 2019], [Gauthier 2019], [Huntingford 2019]].
 Consequently, a large part of the provenance information for scientific outputs consists of descriptions of complex computer-aided data processing steps. This data processing is often expressed as workflows -- i.e., high-level applications that coordinate multiple tools and manage intermediate outputs in order to produce the final results.
 
-In order to homogenise the collection and interchange of provenance records, the W3C consortium proposed a standard for representing provenance in the Web (PROV [[Moreau 2013]]), along with the PROV ontology (PROV-O) [[Lebo 2013]], an OWL [[W3C 2012]] representation of PROV.
-PROV-O has been widely extended for workflows (e.g., D-PROV [[Missier 2013]], ProvONE [[Cuevas-Vicenttin 2016]], OPMW [[Garijo 2011]] (Open Provenance Model for Workflows), P-PLAN [[Garijo 2012]]), where provenance information is collected in two main forms: prospective and retrospective [[Freire 2008]]. *Prospective provenance* -- the execution plan -- is essentially the workflow itself: it includes a machine-readable specification with the processing steps to be performed and the data and software dependencies to carry out each computation.
+In order to homogenise the collection and interchange of provenance records, the W3C consortium proposed a standard for representing provenance in the Web (PROV [[Moreau 2013]]), along with the PROV ontology (PROV-O) [[Lebo 2013a]], an OWL [[W3C 2012]] representation of PROV.
+PROV-O has been widely extended for workflows (e.g., D-PROV [[Missier 2013]], ProvONE [[Cuevas-Vicenttín 2016]], OPMW [[Garijo 2011]] (Open Provenance Model for Workflows), P-PLAN [[Garijo 2012]]), where provenance information is collected in two main forms: prospective and retrospective [[Freire 2008]]. 
+
+*Prospective provenance* -- the execution plan -- is essentially the workflow itself: it includes a machine-readable specification with the processing steps to be performed and the data and software dependencies to carry out each computation.
+
 *Retrospective provenance* refers to what actually happened during an execution -- i.e. what were the values of the input parameters, which outputs were produced, which tools were executed, how much time did the execution take, whether the execution was successful or not, etc.
 Retrospective provenance may be represented at different levels of abstraction, depending on the information that is available and/or required: a workflow execution may be interpreted (i) as a single end-to-end activity, (ii) as a set of individual execution of workflow steps, or (iii) by going a step further and indicating how each step is divided into sub-processes when a workflow is deployed in a cluster.
 
-Various workflow management systems, such as WINGS [[Gil 2011]] (Workflow INstance Generation and Specialization) and VisTrails [[Scheidegger 2008], [Costa 2013]], have adopted PROV and its PROV-O representation to lift the burden of provenance collection from tool users and developers [[Atkinson 2017], [Perez 2018]].
+Various workflow management systems, such as WINGS [[Gil 2011]] (Workflow INstance Generation and Specialization) and VisTrails [[Scheidegger 2008], [Costa 2013]], have adopted PROV and its PROV-O representation to lift the burden of provenance collection from tool users and developers [[Atkinson 2017], [Pérez 2018]].
 
 
 D-PROV, PROV-ONE, OPMW, P-PLAN propose representations of workflow plans and their respective executions, taking into account the features of the workflow systems implementing them (e.g., hierarchical representations, sub-processes, etc.).
 Other data models, such as *wfprov* and *wfdesc* [[Belhajjame 2015]], go a step further by considering not only the link between plans and executions, but also how to package the various artefacts as a Research Object (RO) [[Bechhofer 2013]] to improve metadata interoperability and document the context of a digital experiment.
 
-However, while these models address some workflow provenance representation issues, they have two main limitations: first, the extensions of PROV are not directly interoperable because of differences in their granularities or different assumptions in their workflow representations; second, their support from Workflow Management Systems (WMS) is typically one system per model. An early approach to unify and integrate workflow provenance traces across WMSs was the Workflow Ecosystems through STandards (WEST) [[Garijo 2014]], which used WINGS to build workflow templates and different converters. In all of these workflow provenance models, the emphasis is on the workflow execution structure as a directed graph, with only partial references for the data items.
+However, while these models address some workflow provenance representation issues, they have two main limitations: first, the extensions of PROV are not directly interoperable because of differences in their granularities or different assumptions in their workflow representations; second, their support from Workflow Management Systems (WMS) is typically one system per model. An early approach to unify and integrate workflow provenance traces across WMSs was the Workflow Ecosystems through STandards (WEST) [[Garijo 2014b]], which used WINGS to build workflow templates and different converters. In all of these workflow provenance models, the emphasis is on the workflow execution structure as a directed graph, with only partial references for the data items.
 The REPRODUCE-ME ontology [[Samuel 2022]] extended PROV and P-PLAN to explain the overall scientific process with the experimental context including real life objects (e.g. instruments, specimens) and human activities (e.g. lab protocols, screening), demonstrating provenance of individual Jupyter Notebook cells [[Samuel 2018]] and highlighting the need for provenance also where there is no workflow management system.
 
 More recently, interoperability has been partially addressed by Common Workflow Language Prov (CWLProv) [[Khan 2019]], which represents workflow enactments as research objects serialised according to the Big Data Bag approach [[Chard 2016]].
 The resulting format is a folder containing several data and metadata files [[Soiland-Reyes 2018]], expanding on the Research Object Bundle approach of Taverna [[Soiland-Reyes 2016]].
-CWLProv also extends PROV with a representation of executed processes (activities), their inputs and outputs (entities) and their executors (agents), together with their Common Workflow Language (CWL) specification [[Crusoe 2022]] -- a standard workflow specification adopted by at least a dozen different [workflow systems](https://www.commonwl.org/implementations/). Although CWLProv includes prospective provenance as a *plan*
+CWLProv also extends PROV with a representation of executed processes (activities), their inputs and outputs (entities) and their executors (agents), together with their Common Workflow Language (CWL) specification [[Crusoe 2022]] -- a standard workflow specification adopted by at least a dozen different [workflow systems](https://www.commonwl.org/implementations/). 
+
+Although CWLProv includes prospective provenance as a *plan*
 within PROV (based on the *wfdesc* model), in practice its implementation does not include tool definitions or file formats.
 Thus, for CWLProv consumers to reconstruct the full prospective provenance for understanding the workflow, they would also need to inspect the separate workflow definition in the native language of the workflow management system.
 Additionally, the CWLProv RO may include several other metadata files and PROV serialisations conforming to different formats, complicating its generation and consumption.
@@ -100,6 +105,7 @@ As for granularity, CWLProv proposes multiple levels of provenance [[Khan 2019]]
 In practice, the CWL reference implementation *cwltool* [[Amstutz 2023]] and the corresponding CWLProv specification [[Soiland-Reyes 2018]] record provenance details of all task executions together with the intermediate data and any nested workflows (CWLProv level 2). This level of granularity requires substantial support from the workflow management system implementing the CWL specification, resulting appropriate for workflow languages where the execution plan, including its distribution among the various tasks, is well known in advance.
 However, it can be at odds with other systems where the execution is more dynamic, depending on the verification of specific runtime conditions, such as the size and distribution of the data (e.g., COMPSs [[Lordan 2014]]).
 This design makes the implementation of CWLProv challenging, which the authors suspect may be one of the main causes for the low adoption of CWLProv (at the time of writing the format is supported only by cwltool).
+
 Finally, being based on the PROV model, CWLProv is highly focused on the interaction between agents, processes and related entities, while support for contextual metadata (such as workflow authors, licence or creation date) in the Research Object Bundle is [limited](https://w3id.org/bundle/context) and stored in a separate manifest file, which includes the data identifier mapping to filenames.
 A project that uses serialised Research Objects similar to those used by CWLProv is Whole Tale [[Chard 2019]], a web platform with a focus on the narrative around scientific studies and their reproducibility, where the serialised ROs are used to export data and metadata from the platform. In contrast, our work is primarily focused on the ability to capture the provenance of computational workflow execution including its data and executable workflow definitions.
 
@@ -641,7 +647,7 @@ action: #ae2163a8-1a2a-4d78-9c81-caad76a72e47
 
 <figcaption>
   <h4>runcrate report command line output</h4>
-  This informal listing of relevant RO-Crate entities describe each step execution. Note that inputs and outputs are of different types (not shown), e.g. `tissue\_low>0.9` is a string parameter, `6b15de…` is a filename, `#af0253…` is a collection.
+  This informal listing of relevant RO-Crate entities describe each step execution. Note that inputs and outputs are of different types (not shown), e.g. `tissue_low>0.9` is a string parameter, `6b15de…` is a filename, `#af0253…` is a collection.
 </figcaption>
 
 </figure>
@@ -894,7 +900,7 @@ More detailed results of the analysis can be found in [[de Wit 2024]].
 |      ·        |      | EX3     | Workflow engine         |      ◦      |     ◦     |  
 |      ·        |      | EX4     | Human agent             |      •      |     •     |  
 
-_**Table 2**: **Summarised results of our qualitative analysis of runcrate**. We converted CWLProv (v0.6.0) ROs to WRROC with runcrate 0.5.0. The table compares the degree to which the data subtypes of the provenance data taxonomy
+**Table 2**: **Summarised results of our qualitative analysis of runcrate**. We converted CWLProv (v0.6.0) ROs to WRROC with runcrate 0.5.0. The table compares the degree to which the data subtypes of the provenance data taxonomy
 (identified by the triple (`Type`, `Subtype`, `Name`)) are preserved
 by the CWLProv RDF and the WRROC RDF models; the taxonomy is defined in previous work [[De Wit 2022]],
 where relevant provenance metadata are identified based on realistic
@@ -902,7 +908,7 @@ use cases for ROs associated with a real-life bioinformatics workflow.
 For completeness, the *CWL (non-RDF)* column also reports the non-RDF representation of provenance metadata
 in CWL-specific documents: `packed.cwl` (the workflow) and `primary-job.json` (the input parameter file).
 Since `packed.cwl` and `primary-job.json` are also included in RO-Crate, we only considered how the metadata was represented in `ro-crate-metadata.json`.\
-**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation_
+**Legend:** • fully represented  ◦ partially represented  · missing or unstructured representation
 
 </div>
 
@@ -1018,34 +1024,36 @@ Through the open Community we expect to encourage and support further adoption o
 ### Acknowledgements {#acknowledgements}
 
 The authors would like to thank all participants to the [Workflow Run RO-Crate working group](https://www.researchobject.org/workflow-run-crate/#community) meetings for the fruitful discussions and valuable feedback.
-
+- 
 The authors acknowledge funding from: 
-  Sardinian Regional Government through the XData Project (S.L., L.P.);
-  Spanish Government (contract PID2019-107255GB) (R.S.);
-  Spanish Government MCIN/AEI/10.13039/501100011033 (CEX2021-001148-S) (R.S.);
-  Generalitat de Catalunya (contract 2021-SGR-00412) (R.S.);
-  European High-Performance Computing Joint Undertaking (JU) (No [955558](https://doi.org/10.3030/955558)) (R.S.);
-  EU Horizon research and innovation programme under Grant agreement No [101058129](https://doi.org/10.3030/101058129) (DT-GEO) (R.S.);
-  ELIXIR Platform Task 2022-2023 funding for Task "Container Orchestration" (A.K.);
-  Research Foundation - Flanders (FWO) for ELIXIR Belgium (I000323N and I002819N) (P.D.G.);
-  Multiannual Agreement with Universidad Politécnica de Madrid in the line Support for R&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation) (D.G.);
-  Comunidad de Madrid through the call Research Grants for Young Investigators from Universidad Politécnica de Madrid (D.G.);
-  ICSC - Centro Nazionale di Ricerca in High-Performance Computing, Big Data and Quantum Computing, funded by European Union - NextGenerationEU (I.C.);
-  ACROSS project, HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n. [955648](https://doi.org/10.3030/955648) (I.C.);
-  EUPEX project, European Pilot for Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n.  [101033975](https://doi.org/10.3030/101033975) (I.C.);
-  Life Science Database Integration Project, NBDC of Japan Science and Technology Agency (T.O.);
-  JSPS KAKENHI (Grant Number [20J22439](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J22439/));
-  European Commission Horizon 2020 H2020-SC1-2018-Single-Stage-RTD [825575](https://doi.org/10.3030/825575) (European Joint Programme on Rare Diseases; SC1-BHC-04-2018 Rare Disease European Joint Programme Cofund) (L.R.N., J.M.F., S.C.G.), 
-  EU NextGenerationEU/PRTR H2020-JTI-EuroHPC-2019-1 [955558](https://doi.org/10.3030/955558) (eFlows4HPC) (R.S.), 
-  H2020-INFRAEDI-02-2018 [823830](https://doi.org/10.3030/823830) (BioExcel-2) (S.S.R.), 
-  H2020-INFRAEOSC-2018-2 [824087](https://doi.org/10.3030/824087) (EOSC-Life) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.);
-  Horizon Europe 
-  HORIZON-INFRA-2021-EMERGENCY-01 [101046203](https://doi.org/10.3030/101046203) (BY-COVID) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.), 
-  HORIZON-INFRA-2021-EOSC-01 [101057388](https://doi.org/10.3030/101057388) (EuroScienceGateway) (P.D.G., J.M.F., S.C.G., S.S.R.), 
-  HORIZON-INFRA-2021-EOSC-01-05 [101057344](https://doi.org/10.3030/101057344) (FAIR-IMPACT) (D.G., S.S.R.);
-  UK Research and Innovation (UKRI) under the UK government's Horizon Europe funding guarantee 
-  [10038963](https://gtr.ukri.org/projects?ref=10038963) (EuroScienceGateway), 
-  [10038992](https://gtr.ukri.org/projects?ref=10038992) (FAIR-IMPACT) (S.S.R.).
+
+  - Sardinian Regional Government through the XData Project (S.L., L.P.);
+  - Spanish Government (contract PID2019-107255GB) (R.S.);
+  - Spanish Government MCIN/AEI/10.13039/501100011033 (CEX2021-001148-S) (R.S.);
+  - Generalitat de Catalunya (contract 2021-SGR-00412) (R.S.);
+  - European High-Performance Computing Joint Undertaking (JU) (No [955558](https://doi.org/10.3030/955558)) (R.S.);
+  - EU Horizon research and innovation programme under Grant agreement No [101058129](https://doi.org/10.3030/101058129) (DT-GEO) (R.S.);
+  - ELIXIR Platform Task 2022-2023 funding for Task "Container Orchestration" (A.K.);
+  - Research Foundation - Flanders (FWO) for ELIXIR Belgium (I000323N and I002819N) (P.D.G.);
+  - Multiannual Agreement with Universidad Politécnica de Madrid in the line Support for R&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation) (D.G.);
+  - Comunidad de Madrid through the call Research Grants for Young Investigators from Universidad Politécnica de Madrid (D.G.);
+  - ICSC - Centro Nazionale di Ricerca in High-Performance Computing, Big Data and Quantum Computing, funded by European Union - NextGenerationEU (I.C.);
+  - ACROSS project, HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n. [955648](https://doi.org/10.3030/955648) (I.C.);
+  - EUPEX project, European Pilot for Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n.  [101033975](https://doi.org/10.3030/101033975) (I.C.);
+  - Life Science Database Integration Project, NBDC of Japan Science and Technology Agency (T.O.);
+  - JSPS KAKENHI (Grant Number [20J22439](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J22439/));
+  - European Commission Horizon 2020 
+    - H2020-SC1-2018-Single-Stage-RTD [825575](https://doi.org/10.3030/825575) (European Joint Programme on Rare Diseases; SC1-BHC-04-2018 Rare Disease European Joint Programme Cofund) (L.R.N., J.M.F., S.C.G.), 
+    - EU NextGenerationEU/PRTR H2020-JTI-EuroHPC-2019-1 [955558](https://doi.org/10.3030/955558) (eFlows4HPC) (R.S.), 
+    - H2020-INFRAEDI-02-2018 [823830](https://doi.org/10.3030/823830) (BioExcel-2) (S.S.R.), 
+    - H2020-INFRAEOSC-2018-2 [824087](https://doi.org/10.3030/824087) (EOSC-Life) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.);
+  - Horizon Europe 
+    - HORIZON-INFRA-2021-EMERGENCY-01 [101046203](https://doi.org/10.3030/101046203) (BY-COVID) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.), 
+    - HORIZON-INFRA-2021-EOSC-01 [101057388](https://doi.org/10.3030/101057388) (EuroScienceGateway) (P.D.G., J.M.F., S.C.G., S.S.R.), 
+    - HORIZON-INFRA-2021-EOSC-01-05 [101057344](https://doi.org/10.3030/101057344) (FAIR-IMPACT) (D.G., S.S.R.);
+  - UK Research and Innovation (UKRI) under the UK government's Horizon Europe funding guarantee 
+    - [10038963](https://gtr.ukri.org/projects?ref=10038963) (EuroScienceGateway), 
+    - [10038992](https://gtr.ukri.org/projects?ref=10038992) (FAIR-IMPACT) (S.S.R.).
 
 
 H.S. is founder and CEO of the Software company Sator Inc., Tokyo, which did not fund the present work.
@@ -1695,6 +1703,7 @@ Data set.
 [Rehm 2021]: https://doi.org/10.1016/j.xgen.2021.100029 "GA4GH: International policies and standards for data sharing across genomic research and healthcare"
 [Reis 2022]: https://doi.org/10.1109/ACCESS.2021.3137671 "Developing Docker and Docker-Compose Specifications"
 [Samaniego 2010]: https://doi.org/10.1029/2008WR007327 "Multiscale parameter regionalization of a grid-based hydrologic model at the mesoscale"
+[Samuel 2018]: http://ceur-ws.org/Vol-2180/paper-57.pdf "ProvBook: Provenance-based Semantic Enrichment of Interactive Notebooks for Reproducibility"
 [Samuel 2022]: https://doi.org/10.1186/s13326-021-00253-1 "End-to-End provenance representation for the understandability and reproducibility of scientific experiments using a semantic approach"
 [Scheidegger 2008]: https://doi.org/10.1145/1376616.1376747 "Querying and re-using workflows with VsTrails"
 [Sirvent 2022]: https://hdl.handle.net/2117/384589 "Automatic, Efficient, and Scalable Provenance Registration for FAIR HPC Workflows"
