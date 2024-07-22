@@ -9,17 +9,19 @@ aliases:
  - /2021/publications/
 ---
 
-<style>
-.title { 
-	font-weight: bold;
-}
-.subtitle { 
-	font-style: italic;
-}
-</style>
-
 
 ## 2024
+
+Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
+[**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
+_arXiv_:2312.07852  
+<https://doi.org/10.48550/arXiv.2312.07852>
+
+Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):  
+[**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
+_International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  
+_Open Conference Proceedings_ **4** (submitted)  
+<https://s11.no/2024/webby-fdos/>
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
 [**Linking provenance and its metadata in multi-organizational environments of life sciences**](../../2023/phd/linking-provenance/).  
@@ -67,11 +69,6 @@ _PeerJ Computer Science_ **10**:e1781
 <https://doi.org/10.7717/peerj-cs.1781>  
 [[arXiv 2306.07436](https://doi.org/10.48550/arXiv.2306.07436)]
 [[RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8075229)]
-
-Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
-[**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
-_arXiv_:2312.07852  
-<https://doi.org/10.48550/arXiv.2312.07852>
 
 
 ## 2023
