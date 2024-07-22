@@ -13,11 +13,41 @@ This page is work in progress. Most of Stian's slides are available from:
 - <https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=presentation>
 
 
+
+Stian Soiland-Reyes, Carole Goble (2024):  
+[**WorkflowHub cloud integration in ELIXIR**](https://doi.org/10.5281/zenodo.11654943).  
+_ELIXIR All Hands Meeting 2024_ ([AHM2024](https://elixir-events.eventscase.com/EN/ahm2024/Agenda)), Uppsala, Sweden, 2024-06-12  
+<https://doi.org/10.5281/zenodo.11654943>
+
+Tim Beck, Stian Soiland-Reyes (2024):  
+[**Potential of ELIXIR cloud methods in EOSC-ENTRUST and HDR UK**](https://doi.org/10.5281/zenodo.11654733).  
+_ELIXIR All Hands Meeting 2024_ ([AHM2024](https://elixir-events.eventscase.com/EN/ahm2024/Agenda)), Uppsala, Sweden, 2024-06-12  
+<https://doi.org/10.5281/zenodo.11654733>
+
+Stian Soiland-Reyes, Meznah Aloqalaa (2024):  
+[**BioCompute Object, Provenance Models and FAIR Computational Workflows**](https://doi.org/10.5281/zenodo.11164920).  
+_2024 BioCompute object conference_ ([BCO2024](https://smhs.gwu.edu/events/2024-biocompute-conference)), Washington DC. [[video](https://youtu.be/YmEgLdXl6XM)]  
+<https://doi.org/10.5281/zenodo.11164920>
+
+Leyla Jael Castro, Stian Soiland-Reyes, Jonas Grieb, Claus Weiland (2024):  
+[**Practical web-based FDOs with RO-Crate and FAIR Signposting**](https://doi.org/10.5281/zenodo.10892090).  
+_International FAIR Digital Objects Implementation Summit 2024_ ([FDOF2024](https://fairdo.org/fdof-summit-2024/)), Berlin  
+<https://doi.org/10.5281/zenodo.10892090>
+
+Stian Soiland-Reyes, Herbert Van de Sompel (2024):  
+[**Signposting and RO-Crate: experiences and lessons learned**](https://doi.org/10.5281/zenodo.10847062).  
+_International FAIR Digital Objects Implementation Summit 2024_ ([FDOF2024](https://fairdo.org/fdof-summit-2024/)), Berlin  
+<https://doi.org/10.5281/zenodo.10847062>
+
+Carole Goble, Stian Soiland-Reyes, Herbert van de Sompel, Mark Wilkinson (2024):  
+[**RO-Crate, FAIR Signposting and Bioschemas**](https://doi.org/10.5281/zenodo.10555381).  
+_Lorentz Symposium: The Road to FAIR and Equitable Science_, Leiden, The Netherlands.  
+<https://doi.org/10.5281/zenodo.10555381>
+
 Peter Sefton, Stian Soiland-Reyes (2023):  
 [**Packaging data with detailed metadata using RO-Crate in FAIR open repositories**](https://ptsefton.com/2023/06/13/ro-crate-or-2023/).  
 _Open Repositories 2023_ ([OR2023](https://or2023.openrepositories.org)), 2023-06-12/--15, Stellenbosch University, South Africa.  
 <https://doi.org/10.5281/zenodo.8091505>
-
 
 Stian Soiland-Reyes, Leyla Jael Garcia (2023):  
 [**Overview of FAIR data publishing with Bioschemas & RO-Crate**](https://doi.org/10.7490/f1000research.1119459.1).  
