@@ -9,7 +9,7 @@ keywords:
   - provenance
   - RO-Crate
 summary: > 
-  Preprint submitted to PLOS One
+  Preprint resubmitted to PLOS One following peer review
 description: > 
     Recording the provenance of scientific computation results is key to the support of traceability, reproducibility and quality assessment of data products. Several data models have been explored to address this need, providing representations of workflow plans and their executions as well as means of packaging the resulting information for archiving and sharing. However, existing approaches tend to lack interoperable adoption across workflow management systems.
     
@@ -24,7 +24,7 @@ _arXiV_:2312.07852
 <https://doi.org/10.48550/arXiv.2312.07852>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Formatting as Markdown and figure caption formatting; references in s11 house style; URLs as footnotes/hyperlinks; enumerations made explicit; listing captions; some paragraphs split for readability; details moved to footnote, acknowledgement and references moved to separate chapters; fixed minor typos and grammatical errors; table 2 moved earlier with added internal bookmark links.
+* **Modifications**: Formatting as Markdown and figure caption formatting; references in s11 house style; URLs as footnotes/hyperlinks; enumerations made explicit; listing captions; some paragraphs split for readability; details moved to footnote, acknowledgement and references moved to separate chapters; fixed minor typos and grammatical errors; table 2 moved earlier with added internal bookmark links; `prov:` added to prefix list.
 
 _Warning: The below article has not yet been fully prepared for the Web_.
 
@@ -168,8 +168,7 @@ In the rest of the text and images, the following prefixes are used to represent
     *bioschemas:*  →  <https://bioschemas.org/>
            *bsp:*  →  <https://bioschemas.org/properties/>
          *wfrun:*  →  <https://w3id.org/ro/terms/workflow-run#>
-          [`prov:`](http://www.w3.org/ns/prov#)  →  <http://www.w3.org/ns/prov#>
-
+          *prov*:  →  <http://www.w3.org/ns/prov#>
   --------------- --- -------------------------------------------
 
 
