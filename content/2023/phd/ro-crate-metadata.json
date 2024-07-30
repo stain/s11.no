@@ -30,7 +30,7 @@
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "datePublished": "2023-12-17",
+      "datePublished": "2024-07-30",
       "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam",
       "hasPart": [
         {
@@ -1003,7 +1003,36 @@
       "name": "Chapter 6: Discussion and conclusions",
       "author": { 
         "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "hasPart": [
+        {
+          "@id": "https://s11.no/2023/phd/discussion/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/conclusion/"
+        }
+      ] 
+    },
+    {
+      "@id": "https://s11.no/2023/phd/discussion/",
+      "@type": "Chapter",
+      "name": "Section 6.1: Discussion",
+      "author": { 
+        "@id": "https://orcid.org/0000-0001-9842-9718"
       }
+    },
+    {
+      "@id": "https://s11.no/2023/phd/conclusion/",
+      "@type": "Chapter",
+      "name": "Section 6.2: Conclusion",
+      "author": { 
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      }
+    },
+    { 
+      "@id": "https://s11.no/2023/phd/references/",
+      "@type": "Chapter",
+      "name": "References"
     },
     {
       "@id": "https://s11.no/2022/phd/contributions/",
@@ -1167,7 +1196,7 @@
       "@id": "https://s11.no/2023/phd/background/",
       "@type": "Chapter",
       "description": "In this chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.",
-      "isPartOf": {
+      "isBasedOn": {
         "@id": "https://s11.no/2023/phd/evaluating-fdo/"
       },
       "name": "Chapter 2: Background",

@@ -16,8 +16,15 @@ keywords:
   - frameworks
   - interoperability
   - middleware
+authors: 
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718
+  - name: Carole Goble
+    orcid: https://orcid.org/0000-0003-1219-2137
+  - name: Paul Groth
+    orcid: https://orcid.org/0000-0003-0183-6910
 summary: > 
-  Journal article accepted in PeerJ Computer Science
+  Journal article published in PeerJ Computer Science
 description: > 
   FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themselves. 
   We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.  
