@@ -9,9 +9,6 @@
   "@context": [
     "https://w3id.org/ro/crate/1.1/context",
     {
-      "@vocab": "http://schema.org/"
-    },
-    {
       "iso6523Code": "http://schema.org/iso6523Code"
     },
     {
@@ -23,8 +20,15 @@
   ],
   "@graph": [
     {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": "https://w3id.org/ro/crate/1.1",
+      "about": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
+      }
+    },
+    {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625",
-      "url": "https://s11.no/2023/phd/",
       "@type": [
         "Dataset",
         "Thesis"
@@ -32,18 +36,11 @@
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
-      "publisher": {
-        "@id": "https://s11.no/"
-      },
       "datePublished": "2023-12-17",
-      "identifier": {
-        "@id": "https://doi.org/10.5281/zenodo.8113625"
-      },
-      "cite-as": "https://doi.org/10.5281/zenodo.8113625",
+      "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam",
       "hasPart": [
         {
-          "@id": "https://s11.no/2023/phd/introduction/"
+          "@id": "https://s11.no/2022/phd/introduction/"
         },
         {
           "@id": "https://s11.no/2023/phd/background/"
@@ -68,55 +65,65 @@
         },
         {
           "@id": "#supplements"
-        },
-        {
-          "@id": "https://s11.no/2019/phd/ro-crate/"
         }
       ],
+      "identifier": {
+        "@id": "https://doi.org/10.5281/zenodo.8113625"
+      },
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam"
+      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "publisher": {
+        "@id": "https://s11.no/"
+      },
+      "url": "https://s11.no/2023/phd/",
+      "cite-as": "https://doi.org/10.5281/zenodo.8113625"
     },
     {
       "@id": "https://orcid.org/0000-0001-9842-9718",
       "@type": "Person",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK",
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
+      ],
       "name": "Stian Soiland-Reyes"
     },
     {
-      "@id": "https://s11.no/",
-      "@type": [
-        "Organization",
-        "WebSite"
-      ],
-      "name": "s11",
-      "url": "https://s11.no/"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.8113625",
-      "@type": "PropertyValue",
-      "name": "doi",
-      "propertyID": "https://registry.identifiers.org/registry/doi",
-      "value": "10.5281/zenodo.8113625"
-    },
-    {
-      "@id": "https://s11.no/2023/phd/introduction/",
+      "@id": "https://s11.no/2022/phd/introduction/",
       "@type": "Chapter",
-      "name": "Chapter 1: Introduction"
+      "name": "Chapter 1: Introduction",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "contributor": [
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        }
+      ]
     },
     {
       "@id": "https://s11.no/2023/phd/background/",
       "@type": "Chapter",
-      "name": "Chapter 2: Background",
       "description": "In this chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.",
       "isPartOf": {
         "@id": "https://s11.no/2023/phd/evaluating-fdo/"
+      },
+      "name": "Chapter 2: Background",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "contributor": {
+        "@id": "https://orcid.org/0000-0003-0183-6910"
       }
     },
     {
       "@id": "https://s11.no/2023/phd/fdo-and-linked-data/",
       "@type": "Chapter",
-      "name": "Chapter 3: FAIR Digital Objects and Linked Data",
+      "description": "To investigate RQ1 this chapter evaluates both Linked Data and FAIR Digital Object (FDO) as ways to realize the FAIR principles. Section 3.1 compares the two approaches as global distributed object systems, and discusses what lessons can be learnt across the communities, taking into consideration the history covered by section 2.       Section 3.2 proposes how the FDO principles can be achieved using Linked Data standards, which is explored further in the following chapters.",
       "hasPart": [
         {
           "@id": "https://s11.no/2023/phd/evaluating-fdo/"
@@ -124,12 +131,12 @@
         {
           "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/"
         }
-      ]
+      ],
+      "name": "Chapter 3: FAIR Digital Objects and Linked Data"
     },
     {
       "@id": "https://s11.no/2023/phd/ro-crate/",
       "@type": "Chapter",
-      "name": "Chapter 4: RO-Crate",
       "hasPart": [
         {
           "@id": "https://s11.no/2022/phd/ro-crate/"
@@ -140,12 +147,13 @@
         {
           "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"
         }
-      ]
+      ],
+      "name": "Chapter 4: RO-Crate",
+      "description": "This chapter introduces RO-Crate, a pragmatic method of packaging data alongside structured metadata that is inline with the FAIR principles. This has been implemented to investigate RQ2. Section 4.1 describes the RO-Crate purpose, community effort and tooling and demonstrates how RO-Crate has been applied. Section 4.2 shows how RO-Crate can be used to achieve the FDO principles covered in chapter 3. Section 4.3 contributes a formal definition of RO-Crate using first order logic."
     },
     {
       "@id": "https://s11.no/2023/phd/workflows/",
       "@type": "Chapter",
-      "name": "Chapter 5: Computational Workflows",
       "hasPart": [
         {
           "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/"
@@ -159,12 +167,17 @@
         {
           "@id": "https://s11.no/2023/phd/workflow-run-crate/"
         }
-      ]
+      ],
+      "name": "Chapter 5: Computational Workflows",
+      "description": "In order to investigate RQ3, and considering important parts of the FAIR principles are Reuse and provenance, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with Computational Workflows.      Section 5.1 proposes that tools in computational workflows, when wrapped as interoperable building blocks, can be considered as FAIR Digital Objects, with a use case from biomolecular simulation.            Sections 5.2 and 5.3 explore how FDOs and Research Objects can be constructed incrementally using computational workflows, with a use case from specimen digitization in natural history collections.      Section 5.4 presents a profile of RO-Crate to capture workflow execution provenance, with incremental granularity levels and six workflow engine implementations. Use cases include machine learning-aided tumour detection and compatibility with PROV approaches."
     },
     {
       "@id": "https://s11.no/2022/phd/conclusions/",
       "@type": "Chapter",
-      "name": "Chapter 6: Discussion and conclusions"
+      "name": "Chapter 6: Discussion and conclusions",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/acknowledgements/",
@@ -179,7 +192,6 @@
     {
       "@id": "#supplements",
       "@type": "Collection",
-      "name": "Supplemental material",
       "hasPart": [
         {
           "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/"
@@ -247,64 +259,211 @@
         {
           "@id": "https://s11.no/2024/webby-fdos/"
         }
-      ]
+      ],
+      "name": "Supplemental material"
     },
     {
-      "@id": "https://s11.no/2019/phd/ro-crate/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging"
+      "@id": "https://doi.org/10.5281/zenodo.8113625",
+      "@type": "PropertyValue",
+      "name": "doi",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "10.5281/zenodo.8113625"
     },
     {
       "@id": "https://creativecommons.org/licenses/by/4.0/",
       "@type": "CreativeWork",
-      "name": "Creative Commons Attribution 4.0 International License",
       "identifier": {
         "@id": "https://spdx.org/licenses/CC-BY-4.0"
-      }
-    },
-    {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "conformsTo": "https://w3id.org/ro/crate/1.1",
-      "about": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
-      }
-    },
-    {
-      "@id": "https://s11.no/2023/phd/evaluating-fdo/",
-      "@type": "Dataset",
-      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
-      "author": [
-        {
-          "@id": "https://orcid.org/0000-0001-9842-9718"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-1219-2137"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-0183-6910"
-        }
-      ],
-      "subjectOf": {
-        "@id": "https://s11.no/2023/phd/evaluating-fdo/ro-crate-metadata.json"
       },
-      "description": "Preprint submitted to PeerJ CS"
+      "name": "Creative Commons Attribution 4.0 International License"
     },
     {
-      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@id": "https://s11.no/",
+      "@type": [
+        "Organization",
+        "WebSite"
+      ],
+      "name": "s11",
+      "founder": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "url": "https://s11.no/"
+    },
+    {
+      "@id": "#haris-antonatos",
       "@type": "Person",
-      "name": "Carole Goble"
+      "affiliation": "SciFY, Athens, Greece",
+      "name": "Haris Antonatos"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0183-6910",
-      "@type": "Person",
-      "name": "Paul Groth"
+      "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/",
+      "@type": "ScholarlyArticle",
+      "creditText": "Paul Brack, et al. (2022): Ten Simple Rules for making a software tool workflow-ready. PLOS Computational Biology 18(3):e1009823",
+      "cite-as": {
+        "@id": "https://doi.org/10.1371/journal.pcbi.1009823"
+      },
+      "name": "Supplement 1: Ten Simple Rules for making a software tool workflow-ready"
     },
     {
-      "@id": "https://s11.no/2023/phd/evaluating-fdo/ro-crate-metadata.json",
+      "@id": "https://s11.no/2022/phd/galaxy-ro-crate/",
+      "@type": "ScholarlyArticle",
+      "creditText": "Paul De Geest, et al. (2022): Enhancing RDM in Galaxy by integrating RO-Crate. Research Ideas and Outcomes 8:e95164",
+      "cite-as": {
+        "@id": "https://doi.org/10.3897/rio.8.e95164"
+      },
+      "name": "Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate"
+    },
+    {
+      "@id": "https://s11.no/2021/phd/workflow-collaboratory/",
+      "@type": "ScholarlyArticle",
+      "creditText": "Carole Goble, et al. (2021): Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory. Zenodo (white paper)",
+      "cite-as": {
+        "@id": "https://doi.org/10.5281/zenodo.4605654"
+      },
+      "name": "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/methods-included/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language",
+      "creditText": "Michael R. Crusoe, et al. (2022): Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language. Communications of the ACM 65(6)",
+      "cite-as": {
+        "@id": "https://doi.org/10.1145/3486897"
+      }
+    },
+    {
+      "@id": "https://s11.no/2021/phd/nanopub/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 5: Semantic micro-contributions with decentralized nanopublication services",
+      "creditText": "Tobias Kuhn, et al. (2021): Semantic micro-contributions with decentralized nanopublication services. PeerJ Computer Science 7:e387",
+      "cite-as": {
+        "@id": "https://doi.org/10.7717/peerj-cs.387"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.12688/f1000research.54159.1",
+      "@type": "ScholarlyArticle",
+      "creditText": "Anna-Lena Lamprecht, et al. (2021):  Perspectives on automated composition of workflows in the life sciences. F1000Research 10:897",
+      "name": "Supplement 6: Perspectives on automated composition of workflows in the life sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-030-80960-7_16",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data",
+      "creditText": "Rudolf Wittner, et al. (2023): ISO 23494: Biotechnology – Provenance Information Model for Biological Specimen And Data. Lecture Notes in Computer Science 12839",
+      "url": "https://research.manchester.ac.uk/en/publications/2de95545-9fd6-4a51-91ee-dad30058afe5",
+      "sameAs": {
+        "@id": "https://doi.org/10.5281/zenodo.5074819"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/lrh2.10365",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences",
+      "creditText": "Rudolf Wittner, et al. (2023): Toward a common standard for data and specimen provenance in life sciences. Learning Health Systems 8(1):e10365"
+    },
+    {
+      "@id": "https://doi.org/10.1109/WORKS54523.2021.00016",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 9: A Community Roadmap for Scientific Workflows Research and Development",
+      "creditText": "Rafael Ferreira da Silva, et al. (2021): A Community Roadmap for Scientific Workflows Research and Development. 2021 IEEE Workshop on Workflows in Support of Large-Scale Science (WORKS).",
+      "url": "https://doi.org/10.48550/arXiv.2110.02168"
+    },
+    {
+      "@id": "https://doi.org/10.1162/dint_a_00025",
+      "@type": "ScholarlyArticle",
+      "creditText": "Nick Juty, et al. (2020): Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR. Data Intelligence 2(1-2)",
+      "name": "Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR"
+    },
+    {
+      "@id": "https://doi.org/10.1162/dint_a_00033",
+      "@type": "ScholarlyArticle",
+      "creditText": "Carole Goble, et al. (2020): FAIR Computational Workflows. Data Intelligence 2(1-2)",
+      "name": "Supplement 11: FAIR Computational Workflows"
+    },
+    {
+      "@id": "https://doi.org/10.1093/gigascience/giz095",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv",
+      "creditText": "Farah Zaib Khan, et al. (2019): Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv. GigaScience 8(11)"
+    },
+    {
+      "@id": "https://doi.org/10.1109/ieeestd.2020.9094416",
       "@type": "CreativeWork",
-      "name": "RO-Crate metadata file for FDO-LD paper",
-      "encodingFormat": "application/ld+json"
+      "name": "Supplement 13: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020",
+      "url": "https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d"
+    },
+    {
+      "@id": "https://doi.org/10.37044/osf.io/c724r",
+      "@type": "ScholarlyArticle",
+      "creditText": "Daniel Arend, et al. (2022): BioHackEU22 Project 22: Plant data exchange and standard interoperability. BioHackrXiv",
+      "name": "Supplement 14: BioHackEU22 Project 22: Plant data exchange and standard interoperability"
+    },
+    {
+      "@id": "https://s11.no/2019/phd/ro-crate/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging",
+      "cite-as": {
+        "@id": "https://doi.org/10.5281/zenodo.3337883"
+      },
+      "creditText": "Eoghan Ó Carragáin, et al. (2019): RO-Crate: A lightweight approach to research object data packaging. RO-15 at Workshop on Research Objects (RO 2019), IEEE eScience 2019, 2019-09-24, San Diego, CA, USA."
+    },
+    {
+      "@id": "https://s11.no/2023/phd/federated-causal-inference/",
+      "@type": "ScholarlyArticle",
+      "creditText": "Marjan Meurisse, et al. (2023): Federated causal inference based on real-world observational data sources: Application to a SARS-CoV-2 vaccine effectiveness assessment. BMC Medical Research Methodology 23:248",
+      "cite-as": {
+        "@id": "https://doi.org/10.1186/s12874-023-02068-3"
+      },
+      "isBasedOn": {
+        "@id": "https://doi.org/10.1186/s12874-023-02068-3"
+      },
+      "name": "Supplement 16: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/linking-provenance/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 17: Linking provenance and its metadata in multi-organizational environments of life sciences",
+      "creditText": "Rudolf Wittner, et al. (2023): Linking provenance and its metadata in multi-organizational environments of life sciences."
+    },
+    {
+      "@id": "https://s11.no/2023/phd/enhancing-rdm-galaxy-dsw/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 18: BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates",
+      "creditText": "Ignacio Eguinoa, et al. (2023): BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates. BioHackrXiv",
+      "cite-as": {
+        "@id": "https://doi.org/10.37044/osf.io/24jst"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.37044/osf.io/7y2jh",
+      "@type": "ScholarlyArticle",
+      "creditText": "Sebastian Beier, et al. (2024): BioHackEU23 report: Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA. BioHackrXiv",
+      "name": "Supplement 19: BioHackEU23 report: Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA"
+    },
+    {
+      "@id": "https://s11.no/2024/enabling-fair-digital-objects/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 20: BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas",
+      "cite-as": {
+        "@id": "https://doi.org/10.37044/osf.io/gmk2h"
+      },
+      "creditText": "Stian Soiland-Reyes, et al. (2024): BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas. BioHackrXiv"
+    },
+    {
+      "@id": "https://s11.no/2024/signposting-report/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 21: Report on \"FAIR Signposting\" and its uptake by the community",
+      "creditText": "Mark D Wilkinson, et al. (2024): Report on FAIR Signposting and its Uptake by the Community. EOSC FAIR Metrics and Data Quality Task Force",
+      "cite-as": {
+        "@id": "https://doi.org/10.5281/zenodo.10490289"
+      }
+    },
+    {
+      "@id": "https://s11.no/2024/webby-fdos/",
+      "@type": "ScholarlyArticle",
+      "name": "Supplement 22: Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned",
+      "creditText": "Stian Soiland-Reyes, et al. (2024): Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned. International FAIR Digital Objects Implementation Summit 2024, Berlin, Germany, 2024-03-20/--21. Open Conference Proceedings 4 (submitted)"
     },
     {
       "@id": "https://spdx.org/licenses/CC-BY-4.0",
@@ -313,18 +472,1031 @@
       "value": "CC-BY-4.0"
     },
     {
-      "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/",
+      "@id": "https://doi.org/10.3233/DS-210053",
       "@type": "ScholarlyArticle",
-      "name": "Updating Linked Data practices for FAIR Digital Object principles",
-      "author": [],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1304-1939"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4806-5140"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0454-7145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3079-6586"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5383-6993"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8131-2150"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1991-0533"
+        },
+        {
+          "@id": "https://www.researchobject.org/ro-crate/community"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        }
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.5146227"
+      },
+      "name": "Packaging research artefacts with RO-Crate"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1304-1939",
+      "@type": "Person",
+      "affiliation": [
+        "Barcelona Supercomputing Center, Barcelona, ES",
+        "Secretària de Govern Obert, Catalunya, Barcelona, ES (former)",
+        "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA (former)"
+      ],
+      "name": "Mercè Crosas"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4806-5140",
+      "@type": "Person",
+      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
+      "name": "José Mª Fernández"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0454-7145",
+      "@type": "Person",
+      "affiliation": "Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain",
+      "name": "Daniel Garijo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3079-6586",
+      "@type": "Person",
+      "affiliation": "Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany",
+      "name": "Björn Grüning"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5383-6993",
+      "@type": "Person",
+      "affiliation": "PARADISEC, Melbourne, Australia",
+      "name": "Marco La Rosa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8271-5429",
+      "@type": "Person",
+      "affiliation": "Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy",
+      "name": "Simone Leo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8131-2150",
+      "@type": "Person",
+      "affiliation": "University College Cork, Ireland",
+      "name": "Eoghan Ó Carragáin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9648-6484",
+      "@type": "Person",
+      "affiliation": "Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium",
+      "name": "Marc Portier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1991-0533",
+      "@type": "Person",
+      "affiliation": "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA",
+      "name": "Ana Trisovic"
+    },
+    {
+      "@id": "https://www.researchobject.org/ro-crate/community",
+      "@type": "Project",
+      "member": [
+        {
+          "@id": "https://orcid.org/0000-0001-8131-2150"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3545-944X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9260-0753"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0454-7145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4289-4922"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6565-5145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4806-5140"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7370-4805"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5491-6431"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2961-9670"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6190-122X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2036-8350"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8420-5254"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3588-6257"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0309-604X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5711-4872"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2130-0865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3156-2105"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1130-2154"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0048-3300"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1756-2128"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7552-1009"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4929-1219"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1541-5631"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0337-8610"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6960-357X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0223-1059"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6022-9825"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3468-0652"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1991-0533"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3910-0474"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3486-8193"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8172-8981"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1743-8300"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0522-5674"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2142-1731"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9986-7223"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4929-7875"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5383-6993"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6387-5988"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3883-4169"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5761-7533"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0792-8157"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8772-7904"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4196-3658"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2318-4477"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1248-3594"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1498-6205"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9888-7954"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9156-9478"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0003-2024"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4565-9760"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8940-4946"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2257-9127"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5526-7138"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0606-2512"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9228-2882"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0617-9219"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0679-4361"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8250-4074"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1361-7301"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3234-6762"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4216-302X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1880-0597"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6712-6335"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5934-8998"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9261-8390"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0035-6475"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9447-460X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7760-1240"
+        }
+      ],
+      "name": "RO-Crate Community",
+      "sdDatePublished": "2024-07-30T15:20:00Z",
+      "url": "https://www.researchobject.org/ro-crate/community"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "affiliation": "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
+      "name": "Paul Groth"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK",
+      "name": "Carole Goble"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.5146227",
+      "@type": "Dataset",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate"
+      },
+      "name": "Packaging research artefacts with RO-Crate (RO-Crate)"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5118-256X",
+      "@type": "Person",
+      "affiliation": "IDLab, Ghent University, Ghent, Belgium",
+      "name": "Ruben Taelman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6022-9825",
+      "@type": "Person",
+      "name": "Karl Sebby"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6387-5988",
+      "@type": "Person",
+      "name": "Cedric Decruw"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6565-5145",
+      "@type": "Person",
+      "affiliation": [
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
+        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium"
+      ],
+      "name": "Frederik Coppens"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6712-6335",
+      "@type": "Person",
+      "name": "Toshiyuki Nishiyama Hiraki"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6960-357X",
+      "@type": "Person",
+      "name": "Mark Wilkinson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7760-1240",
+      "@type": "Person",
+      "name": "James Love"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8030-9398",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
+      "name": "Alexandru Iosup"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8172-8981",
+      "@type": "Person",
+      "name": "Jasper Koehorst"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8250-4074",
+      "@type": "Person",
+      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
+      "name": "Bruno de Paula Kinoshita"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8316-4067",
+      "@type": "Person",
+      "affiliation": "Seven Bridges, Charlestown, MA, USA",
+      "name": "Nebojša Tijanić"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8420-5254",
+      "@type": "Person",
+      "name": "Kristi Holmes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8772-7904",
+      "@type": "Person",
+      "name": "Ronald Siebes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9156-9478",
+      "@type": "Person",
+      "name": "Muhammad Radifar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9228-2882",
+      "@type": "Person",
+      "name": "Abigail Miller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9261-8390",
+      "@type": "Person",
+      "name": "Michael Falk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9290-2017",
+      "@type": "Person",
+      "affiliation": "Computer Science Dept., Università degli Studi di Torino, Torino, Italy",
+      "name": "Iacopo Colonnelli"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9447-460X",
+      "@type": "Person",
+      "name": "Daniel Bauer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9888-7954",
+      "@type": "Person",
+      "name": "Sveinung Gundersen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0003-2024",
+      "@type": "Person",
+      "affiliation": [
+        "Faculty of Informatics, Masaryk Universit, Brno, Czech Republic",
+        "Institute of Computer Science, Masaryk University, Brno, Czech Republic",
+        "BBMRI-ERIC, Graz, Austria"
+      ],
+      "name": "Rudolf Wittner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0035-6475",
+      "@type": "Person",
+      "name": "Eli Chadwick"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0048-3300",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK",
+      "name": "Finn Bacall"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0309-604X",
+      "@type": "Person",
+      "affiliation": "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain",
+      "name": "Salvador Capella-Gutierrez"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0337-8610",
+      "@type": "Person",
+      "name": "brandon whitehead"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0596-5376",
+      "@type": "Person",
+      "affiliation": "Meise Botanic Garden, Meise, Belgium",
+      "name": "Quentin Groom"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0679-4361",
+      "@type": "Person",
+      "name": "Davide Fucci"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0767-4310",
+      "@type": "Person",
+      "affiliation": "School of Computer Science and Informatics, Cardiff University, Cardiff, UK (former)",
+      "name": "Alex Hardisty"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0792-8157",
+      "@type": "Person",
+      "name": "Sergio Serra"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1119-1792",
+      "@type": "Person",
+      "affiliation": "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
+      "name": "Matej Gallo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1248-3594",
+      "@type": "Person",
+      "affiliation": "Research IT, The University of Manchester, Manchester, UK",
+      "name": "Douglas Lowe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1267-0234",
+      "@type": "Person",
+      "affiliation": [
+        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
+        "Knowledge Pixels, Zürich, Switzerland"
+      ],
+      "name": "Tobias Kuhn"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1501-1082",
+      "@type": "Person",
+      "affiliation": "Institute of Data Science, Maastricht University, Maastricht, The Netherlands",
+      "name": "Vincent Emonet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1756-2128",
+      "@type": "Person",
+      "name": "Thomas Thelen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1880-0597",
+      "@type": "Person",
+      "name": "Vartika Bisht"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2036-8350",
+      "@type": "Person",
+      "name": "Nick Juty"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2142-1731",
+      "@type": "Person",
+      "name": "Chenxu Niu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2222-9418",
+      "@type": "Person",
+      "affiliation": "Melandra Limited, Stockport, UK",
+      "name": "Peter Crowther"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2257-9127",
+      "@type": "Person",
+      "name": "Douglas Fils"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2318-4477",
+      "@type": "Person",
+      "name": "Shady El Damaty"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2961-9670",
+      "@type": "Person",
+      "affiliation": [
+        "Forschungszentrum Jülich, Jülich, Germany",
+        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
+        "Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA"
+      ],
+      "name": "Michael R. Crusoe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3468-0652",
+      "@type": "Person",
+      "affiliation": [
+        "Biozentrum, University of Basel, Basel, Switzerland",
+        "Swiss Institute of Bioinformatics, Lausanne, Switzerland"
+      ],
+      "name": "Alexander Kanitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3545-944X",
+      "@type": "Person",
+      "affiliation": [
+        "School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia",
+        "Faculty of Science, University Technology Sydney, Australia (former)"
+      ],
+      "name": "Peter Sefton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3588-6257",
+      "@type": "Person",
+      "name": "Jason A. Clark"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3973-1252",
+      "@type": "Person",
+      "affiliation": "Meise Botanic Garden, Meise, Belgium",
+      "name": "Mathias Dillen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4565-9760",
+      "@type": "Person",
+      "affiliation": "Research IT, The University of Manchester, Manchester, UK",
+      "name": "Oliver Woolland"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4663-5613",
+      "@type": "Person",
+      "affiliation": "Center for Advanced Studies, Research and Development in Sardinia (CRS4), Pula, Italy",
+      "name": "Luca Pireddu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4929-7875",
+      "@type": "Person",
+      "name": "Tomasz Miksa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5432-2748",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK (former)",
+      "name": "Paul Brack"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5491-6431",
+      "@type": "Person",
+      "name": "Jose Manuel Gomez-Perez"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5526-7138",
+      "@type": "Person",
+      "name": "Florian Wetzels"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5590-7174",
+      "@type": "Person",
+      "affiliation": "The Natural History Museum, London, UK",
+      "name": "Ben Scott"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5711-4872",
+      "@type": "Person",
+      "name": "Alasdair J. G. Gray"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5761-7533",
+      "@type": "Person",
+      "name": "Jeremy Jay"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5862-6132",
+      "@type": "Person",
+      "affiliation": "Bioinformatics Group, Albert-Ludwigs-University Freiburg, Freiburg, Germany",
+      "name": "Beatriz Serrano-Solano"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5934-8998",
+      "@type": "Person",
+      "name": "Bram Ulrichts"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6190-122X",
+      "@type": "Person",
+      "affiliation": [
+        "Showpad, Ghent, Belgium",
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium (former)",
+        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium (former)"
+      ],
+      "name": "Ignacio Eguinoa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6794-0756",
+      "@type": "Person",
+      "affiliation": [
+        "Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA",
+        "Galaxy Project"
+      ],
+      "name": "John Chilton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7341-1842",
+      "@type": "Person",
+      "affiliation": "The Natural History Museum, London, UK",
+      "name": "Laurence Livermore"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7370-4805",
+      "@type": "Person",
+      "name": "Kyle Chard"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7552-1009",
+      "@type": "Person",
+      "affiliation": "Hub de Bioinformatique et Biostatistique, Département Biologie Computationnelle, Institut Pasteur, Paris, France",
+      "name": "Hervé Ménager"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "Person",
+      "affiliation": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain",
+      "name": "Adam Hospital"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8940-4946",
+      "@type": "Person",
+      "affiliation": "VIB-UGent Center for Plant Systems Biology, Gent, Belgium",
+      "name": "Paul De Geest"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9260-0753",
+      "@type": "Person",
+      "name": "Oscar Corcho"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9986-7223",
+      "@type": "Person",
+      "name": "Kosuke Tanabe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0223-1059",
+      "@type": "Person",
+      "name": "Erich Bremer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "Person",
+      "affiliation": [
+        "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona",
+        "Institute of Science and Technology (BIST), Barcelona, Spain"
+      ],
+      "name": "Genís Bayarri"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0522-5674",
+      "@type": "Person",
+      "affiliation": [
+        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
+        "VIB Center for Plant Systems Biology, Ghent, Belgium"
+      ],
+      "name": "Bert Droesbeke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0606-2512",
+      "@type": "Person",
+      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
+      "name": "Raül Sirvent"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0617-9219",
+      "@type": "Person",
+      "name": "Jake Emerson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0902-0086",
+      "@type": "Person",
+      "affiliation": "Vrije Universiteit Amsterdam, Amsterdam, The Netherlands",
+      "name": "Renske de Wit"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0989-3389",
+      "@type": "Person",
+      "affiliation": "European Bioinformatics Institute (EMBL-EBI), Cambridge, UK",
+      "name": "Ania Niewielska"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1130-2154",
+      "@type": "Person",
+      "name": "Giacomo Tartari"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1361-7301",
+      "@type": "Person",
+      "name": "Maciek Bąk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1498-6205",
+      "@type": "Person",
+      "name": "Xuanqi Li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1541-5631",
+      "@type": "Person",
+      "name": "Paul Walk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1550-1716",
+      "@type": "Person",
+      "affiliation": "Seven Bridges, Charlestown, MA, USA",
+      "name": "Bogdan Gavrilović"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1743-8300",
+      "@type": "Person",
+      "name": "Milan Ojsteršek"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2116-3880",
+      "@type": "Person",
+      "affiliation": "The Spanish National Bioinformatics Institute (INB), Barcelona Supercomputing Center (BSC), Barcelona, Spain",
+      "name": "Pau Andrio"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2130-0865",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK",
+      "name": "Stuart Owen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2249-645X",
+      "@type": "Person",
+      "affiliation": [
+        "Lancaster University, Lancaster, UK",
+        "Research IT, The University of Manchester, Manchester, UK (former)"
+      ],
+      "name": "Robin Long"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2765-0049",
+      "@type": "Person",
+      "affiliation": "Sator Inc., Tokyo, Japan",
+      "name": "Hirotaka Suetake"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3156-2105",
+      "@type": "Person",
+      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK (former)",
+      "name": "Alan R Williams"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3234-6762",
+      "@type": "Person",
+      "name": "Jens Hollunder"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3486-8193",
+      "@type": "Person",
+      "name": "Mark Graves"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3777-5945",
+      "@type": "Person",
+      "affiliation": [
+        "Database Center for Life Science, Joint Support-Center for Data Science Research, Research Organization of Information and Systems, Shizuoka, Japan",
+        "Institute for Advanced Academic Research, Chiba University, Chiba, Japan"
+      ],
+      "name": "Tazro Ohta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3883-4169",
+      "@type": "Person",
+      "name": "Andreas Czerniak"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3910-0474",
+      "@type": "Person",
+      "name": "Gavin Kennedy"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3986-0510",
+      "@type": "Person",
+      "affiliation": "ZB MED Information Centre for Life Sciences, Cologne, Germany",
+      "alternateName": "LJ Garcia Castro",
+      "name": "Leyla Jael Castro"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4101-2502",
+      "@type": "Person",
+      "affiliation": "Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden",
+      "name": "Philip Ewels"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4196-3658",
+      "@type": "Person",
+      "name": "Shaun de Witt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4216-302X",
+      "@type": "Person",
+      "name": "Martin Weise"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4289-4922",
+      "@type": "Person",
+      "name": "Raul Palma"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4727-9435",
+      "@type": "Person",
+      "affiliation": "Institute of Data Science, Maastricht University, Maastricht, The Netherlands",
+      "name": "Michel Dumontier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4929-1219",
+      "@type": "Person",
+      "affiliation": [
+        "Universitat Oberta de Catalunya (UOC), Barcelona, Spain",
+        "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain (former)"
+      ],
+      "name": "Laura Rodríguez-Navas"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0513-0288"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2116-3880"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2249-645X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1248-3594"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0989-3389"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8291-8071"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "name": "Making Canonical Workflow Building Blocks interoperable across workflow languages",
       "cite-as": {
-        "@id": ""
+        "@id": "https://doi.org/10.1162/dint_a_00135"
+      },
+      "creditText": "Stian Soiland-Reyes, et al.(2022): Making Canonical Workflow Building Blocks interoperable across workflow languages. Data Intelligence 4(2)"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/fdo-with-ro-crate/",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3545-944X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6565-5145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0454-7145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Creating lightweight FAIR Digital Objects with RO-Crate. Research Ideas and Outcomes 8:e93937",
+      "name": "Creating lightweight FAIR Digital Objects with RO-Crate",
+      "cite-as": {
+        "@id": "https://doi.org/10.3897/rio.8.e93937"
+      }
+    },
+    {
+      "@id": "https://s11.no/2022/phd/incrementally-building-fdos/",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4565-9760"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5590-7174"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7341-1842"
+        }
+      ],
+      "name": "Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows",
+      "creditText": "Oliver Woolland, et al. (2022): Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows. Research Ideas and Outcomes 8:e94349",
+      "cite-as": {
+        "@id": "https://doi.org/10.3897/rio.8.e94349"
       }
     },
     {
       "@id": "https://s11.no/2022/phd/ro-crate/",
       "@type": "ScholarlyArticle",
-      "name": "Packaging research artefacts with RO-Crate",
       "author": [
         {
           "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -369,56 +1541,114 @@
       "hasPart": {
         "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"
       },
+      "isBasedOn": {
+        "@id": "https://doi.org/10.3233/DS-210053"
+      },
+      "name": "Packaging research artefacts with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.3233/DS-210053"
-      }
-    },
-    {
-      "@id": "https://s11.no/2022/phd/fdo-with-ro-crate/",
-      "@type": "ScholarlyArticle",
-      "name": "FDO-with...",
-      "author": [],
-      "cite-as": {
-        "@id": ""
-      }
+      },
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Packaging research artefacts with RO-Crate. Data Science 5(2)"
     },
     {
       "@id": "https://s11.no/2022/phd/ro-crate/formalizing/",
       "@type": "Chapter",
-      "name": "Formalizing...",
-      "author": []
-    },
-    {
-      "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/",
-      "@type": "ScholarlyArticle",
-      "name": "Canonical...",
-      "author": [],
-      "cite-as": {
-        "@id": ""
-      }
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "name": "Formalizing RO-Crate in First Order Logic"
     },
     {
       "@id": "https://s11.no/2022/phd/specimen-data-refinery/",
       "@type": "ScholarlyArticle",
-      "name": "Specimen...",
-      "author": [],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0767-4310"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7341-1842"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5590-7174"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0596-5376"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2130-0865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        }
+      ],
+      "name": "The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections",
       "cite-as": {
-        "@id": ""
+        "@id": "https://doi.org/10.1162/dint_a_00134"
+      },
+      "creditText": "Alex Hardisty, et al. (2022): The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections. Data Intelligence 4(2)"
+    },
+    {
+      "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "cite-as": {
+        "@id": "https://doi.org/10.3897/rio.8.e94501"
+      },
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Updating Linked Data practices for FAIR Digital Object principles. Research Ideas and Outcomes 8:e94501",
+      "name": "Updating Linked Data practices for FAIR Digital Object principles"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/evaluating-fdo/",
+      "@type": "Dataset",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "creditText": "Stian Soiland-Reyes, et al. (2024): Evaluating FAIR Digital Object and Linked Data as distributed object systems. PeerJ Computer Science 10:e1781",
+      "cite-as": "https://doi.org/10.7717/peerj-cs.1781",
+      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
+      "subjectOf": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229"
       }
     },
     {
-      "@id": "https://s11.no/2022/phd/incrementally-building-fdos/",
-      "@type": "ScholarlyArticle",
-      "name": "Incrementally...",
-      "author": [],
-      "cite-as": {
-        "@id": ""
-      }
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229",
+      "@type": "Dataset",
+      "name": "Comparison tables for Evaluating FAIR Digital Object and Linked Data (RO-Crate)",
+      "conformsTo": "https://w3id.org/ro/crate"
     },
     {
       "@id": "https://s11.no/2023/phd/workflow-run-crate/",
       "@type": "ScholarlyArticle",
-      "name": "Recording provenance of workflow runs with RO-Crate",
       "author": [
         {
           "@id": "https://orcid.org/0000-0001-8271-5429"
@@ -475,515 +1705,20 @@
           "@id": "https://orcid.org/0000-0001-9842-9718"
         }
       ],
+      "isPartOf": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989"
+      },
+      "name": "Recording provenance of workflow runs with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.48550/arXiv.2312.07852"
       },
-      "isPartOf": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989"
-      }
-    },
-    {
-      "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 1: Ten Simple Rules for making a software tool workflow-ready"
-    },
-    {
-      "@id": "https://s11.no/2022/phd/galaxy-ro-crate/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate"
-    },
-    {
-      "@id": "https://s11.no/2021/phd/workflow-collaboratory/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-    },
-    {
-      "@id": "https://s11.no/2022/phd/methods-included/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
-    },
-    {
-      "@id": "https://s11.no/2021/phd/nanopub/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 5: Semantic micro-contributions with decentralized nanopublication services"
-    },
-    {
-      "@id": "https://doi.org/10.12688/f1000research.54159.1",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 6: Perspectives on automated composition of workflows in the life sciences"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-3-030-80960-7_16",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data"
-    },
-    {
-      "@id": "https://doi.org/10.1002/lrh2.10365",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences"
-    },
-    {
-      "@id": "https://doi.org/10.1109/WORKS54523.2021.00016",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 9: A Community Roadmap for Scientific Workflows Research and Development"
-    },
-    {
-      "@id": "https://doi.org/10.1162/dint_a_00025",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR"
-    },
-    {
-      "@id": "https://doi.org/10.1162/dint_a_00033",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 11: FAIR Computational Workflows"
-    },
-    {
-      "@id": "https://doi.org/10.1093/gigascience/giz095",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv"
-    },
-    {
-      "@id": "https://doi.org/10.1109/ieeestd.2020.9094416",
-      "@type": "CreativeWork",
-      "name": "Supplement 13: IEEE Standard for Bioinformatics Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication: IEEE Std 2791-2020",
-      "url": "https://research.manchester.ac.uk/en/publications/936de52b-ac53-4f0e-9927-77fd7073e88d"
-    },
-    {
-      "@id": "https://doi.org/10.37044/osf.io/c724r",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 14: BioHackEU22 Project 22: Plant data exchange and standard interoperability"
-    },
-    {
-      "@id": "https://s11.no/2023/phd/federated-causal-inference/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 16: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
-    },
-    {
-      "@id": "https://s11.no/2023/phd/linking-provenance/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 17: Linking provenance and its metadata in multi-organizational environments of life sciences"
-    },
-    {
-      "@id": "https://s11.no/2023/phd/enhancing-rdm-galaxy-dsw/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 18: BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates"
-    },
-    {
-      "@id": "https://doi.org/10.37044/osf.io/7y2jh",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 19: BioHackEU23 report: Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA"
-    },
-    {
-      "@id": "https://s11.no/2024/enabling-fair-digital-objects/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 20: BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas"
-    },
-    {
-      "@id": "https://s11.no/2024/signposting-report/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 21: Report on \"FAIR Signposting\" and its uptake by the community"
-    },
-    {
-      "@id": "https://s11.no/2024/webby-fdos/",
-      "@type": "ScholarlyArticle",
-      "name": "Supplement 22: Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1304-1939",
-      "@type": "Person",
-      "name": "Mercè Crosas",
-      "affiliation": [
-        "Barcelona Supercomputing Center, Barcelona, ES",
-        "Secretària de Govern Obert, Catalunya, Barcelona, ES (former)",
-        "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA (former)"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4806-5140",
-      "@type": "Person",
-      "name": "José Mª Fernández",
-      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0454-7145",
-      "@type": "Person",
-      "name": "Daniel Garijo",
-      "affiliation": "Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3079-6586",
-      "@type": "Person",
-      "name": "Björn Grüning",
-      "affiliation": "Bioinformatics Group, Department of Computer Science, Albert-Ludwigs-University Freiburg, Freiburg, Germany"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5383-6993",
-      "@type": "Person",
-      "name": "Marco La Rosa",
-      "affiliation": "PARADISEC, Melbourne, Australia"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8271-5429",
-      "@type": "Person",
-      "name": "Simone Leo",
-      "affiliation": "Center for Advanced Studies, Research, and Development in Sardinia (CRS4), Pula (CA), Italy"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8131-2150",
-      "@type": "Person",
-      "name": "Eoghan Ó Carragáin",
-      "affiliation": "University College Cork, Ireland"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9648-6484",
-      "@type": "Person",
-      "name": "Marc Portier",
-      "affiliation": "Vlaams Instituut voor de Zee (VLIZ), Oostende, Belgium"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1991-0533",
-      "@type": "Person",
-      "name": "Ana Trisovic",
-      "affiliation": "Institute for Quantitative Social Science, Harvard University, Cambridge, MA, USA"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2961-9670",
-      "@type": "Person",
-      "name": "Michael R. Crusoe",
-      "affiliation": [
-        "Forschungszentrum Jülich, Jülich, Germany",
-        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
-        "Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4929-1219",
-      "@type": "Person",
-      "name": "Laura Rodriguez-Navas",
-      "affiliation": [
-        "Universitat Oberta de Catalunya (UOC), Barcelona, Spain",
-        "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain (former)"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0606-2512",
-      "@type": "Person",
-      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
-      "name": "Raül Sirvent"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3468-0652",
-      "@type": "Person",
-      "affiliation": [
-        "Biozentrum, University of Basel, Basel, Switzerland",
-        "Swiss Institute of Bioinformatics, Lausanne, Switzerland"
-      ],
-      "name": "Alexander Kanitz"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8940-4946",
-      "@type": "Person",
-      "affiliation": "VIB-UGent Center for Plant Systems Biology, Gent, Belgium",
-      "name": "Paul De Geest"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0003-2024",
-      "@type": "Person",
-      "affiliation": [
-        "Faculty of Informatics, Masaryk Universit, Brno, Czech Republic",
-        "Institute of Computer Science, Masaryk University, Brno, Czech Republic",
-        "BBMRI-ERIC, Graz, Austria"
-      ],
-      "name": "Rudolf Wittner"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4663-5613",
-      "@type": "Person",
-      "name": "Luca Pireddu",
-      "affiliation": "Center for Advanced Studies, Research and Development in Sardinia (CRS4), Pula, Italy"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9290-2017",
-      "@type": "Person",
-      "affiliation": "Computer Science Dept., Università degli Studi di Torino, Torino, Italy",
-      "name": "Iacopo Colonnelli"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1119-1792",
-      "@type": "Person",
-      "affiliation": "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
-      "name": "Matej Gallo"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3777-5945",
-      "@type": "Person",
-      "affiliation": [
-        "Database Center for Life Science, Joint Support-Center for Data Science Research, Research Organization of Information and Systems, Shizuoka, Japan",
-        "Institute for Advanced Academic Research, Chiba University, Chiba, Japan"
-      ],
-      "name": "Tazro Ohta"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2765-0049",
-      "@type": "Person",
-      "affiliation": "Sator Inc., Tokyo, Japan",
-      "name": "Hirotaka Suetake"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0309-604X",
-      "@type": "Person",
-      "name": "Salvador Capella-Gutierrez",
-      "affiliation": "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0902-0086",
-      "@type": "Person",
-      "affiliation": "Vrije Universiteit Amsterdam, Amsterdam, The Netherlands",
-      "name": "Renske de Wit"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8250-4074",
-      "@type": "Person",
-      "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
-      "name": [
-        "Bruno P. Kinoshita",
-        "Bruno de Paula Kinoshita"
-      ]
+      "creditText": "Simone Leo, et al. (2024): Recording provenance of workflow runs with RO-Crate. arXiv:2312.07852 [cs.DL]"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989",
       "@type": "Dataset",
       "conformsTo": "https://w3id.org/ro/crate",
       "name": "Recording provenance of workflow runs with RO-Crate (RO-Crate and mapping)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2116-3880",
-      "@type": "Person",
-      "name": "Pau Andrio",
-      "affiliation": "The Spanish National Bioinformatics Institute (INB), Barcelona Supercomputing Center (BSC), Barcelona, Spain"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "Person",
-      "name": "Genís Bayarri",
-      "affiliation": [
-        "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona",
-        "Institute of Science and Technology (BIST), Barcelona, Spain"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5432-2748",
-      "@type": "Person",
-      "name": "Paul Brack",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK (former)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6565-5145",
-      "@type": "Person",
-      "name": "Frederik Coppens",
-      "affiliation": [
-        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
-        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6190-122X",
-      "@type": "Person",
-      "name": "Ignacio Eguinoa",
-      "affiliation": [
-        "Showpad, Ghent, Belgium",
-        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium (former)",
-        "VIB-UGent Center for Plant Systems Biology, Ghent, Belgium (former)"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0596-5376",
-      "@type": "Person",
-      "name": "Quentin Groom",
-      "affiliation": "Meise Botanic Garden, Meise, Belgium"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0767-4310",
-      "@type": "Person",
-      "name": "Alex Hardisty",
-      "affiliation": "School of Computer Science and Informatics, Cardiff University, Cardiff, UK (former)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "Person",
-      "name": "Adam Hospital",
-      "affiliation": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology (BIST), Barcelona, Spain"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3986-0510",
-      "@type": "Person",
-      "name": "Leyla Jael Castro",
-      "affiliation": "ZB MED Information Centre for Life Sciences, Cologne, Germany"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7341-1842",
-      "@type": "Person",
-      "name": "Laurence Livermore",
-      "affiliation": "The Natural History Museum, London, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2249-645X",
-      "@type": "Person",
-      "name": "Robin Long",
-      "affiliation": [
-        "Lancaster University, Lancaster, UK",
-        "Research IT, The University of Manchester, Manchester, UK (former)"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1248-3594",
-      "@type": "Person",
-      "name": "Douglas Lowe",
-      "affiliation": "Research IT, The University of Manchester, Manchester, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0989-3389",
-      "@type": "Person",
-      "name": "Ania Niewielska",
-      "affiliation": "European Bioinformatics Institute (EMBL-EBI), Cambridge, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2130-0865",
-      "@type": "Person",
-      "name": "Stuart Owen",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5590-7174",
-      "@type": "Person",
-      "name": "Ben Scott",
-      "affiliation": "The Natural History Museum, London, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3545-944X",
-      "@type": "Person",
-      "name": "Peter Sefton",
-      "affiliation": [
-        "School of Languages and Cultures, The University of Queensland, Brisbane, Queensland, Australia",
-        "Faculty of Science, University Technology Sydney, Australia (former)"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3156-2105",
-      "@type": "Person",
-      "name": "Alan R Williams",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK (former)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4565-9760",
-      "@type": "Person",
-      "name": "Oliver Woolland",
-      "affiliation": "Research IT, The University of Manchester, Manchester, UK"
-    },
-    {
-      "@id": "#haris-antonatos",
-      "@type": "Person",
-      "name": "Haris Antonatos",
-      "affiliation": "SciFY, Athens, Greece"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0048-3300",
-      "@type": "Person",
-      "name": "Finn Bacall",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6794-0756",
-      "@type": "Person",
-      "name": "John Chilton",
-      "affiliation": [
-        "Department of Biochemistry and Molecular Biology, Pennsylvania State University, PA, USA",
-        "Galaxy Project"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2222-9418",
-      "@type": "Person",
-      "name": "Peter Crowther",
-      "affiliation": "Melandra Limited, Stockport, UK"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3973-1252",
-      "@type": "Person",
-      "name": "Mathias Dillen",
-      "affiliation": "Meise Botanic Garden, Meise, Belgium"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0522-5674",
-      "@type": "Person",
-      "name": "Bert Droesbeke",
-      "affiliation": [
-        "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, Belgium",
-        "VIB Center for Plant Systems Biology, Ghent, Belgium"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4727-9435",
-      "@type": "Person",
-      "name": "Michel Dumontier",
-      "affiliation": "Institute of Data Science, Maastricht University, Maastricht, The Netherlands"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1501-1082",
-      "@type": "Person",
-      "name": "Vincent Emonet",
-      "affiliation": "Institute of Data Science, Maastricht University, Maastricht, The Netherlands"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4101-2502",
-      "@type": "Person",
-      "name": "Philip Ewels",
-      "affiliation": "Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1550-1716",
-      "@type": "Person",
-      "name": "Bogdan Gavrilović",
-      "affiliation": "Seven Bridges, Charlestown, MA, USA"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8030-9398",
-      "@type": "Person",
-      "name": "Alexandru Iosup",
-      "affiliation": "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1267-0234",
-      "@type": "Person",
-      "name": "Tobias Kuhn",
-      "affiliation": [
-        "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
-        "Knowledge Pixels, Zürich, Switzerland"
-      ]
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7552-1009",
-      "@type": "Person",
-      "name": "Hervé Ménager",
-      "affiliation": "Hub de Bioinformatique et Biostatistique, Département Biologie Computationnelle, Institut Pasteur, Paris, France"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5862-6132",
-      "@type": "Person",
-      "name": "Beatriz Serrano-Solano",
-      "affiliation": "Bioinformatics Group, Albert-Ludwigs-University Freiburg, Freiburg, Germany"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5118-256X",
-      "@type": "Person",
-      "name": "Ruben Taelman",
-      "affiliation": "IDLab, Ghent University, Ghent, Belgium"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8316-4067",
-      "@type": "Person",
-      "name": "Nebojša Tijanić",
-      "affiliation": "Seven Bridges, Charlestown, MA, USA"
     }
   ]
 }
@@ -1066,21 +1801,9 @@ table.table {
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://s11.no/2023/phd/">https://s11.no/2023/phd/</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//s11.no/">s11</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
-            <td style='text-align:left'>doi: 10.5281/zenodo.8113625</td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="https://www.w3.org/ns/iana/link-relations/relation#cite-as">[?]</a></th>
-            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.8113625">https://doi.org/10.5281/zenodo.8113625</a></td>
-            </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//s11.no/2023/phd/introduction/">Chapter 1: Introduction</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/introduction/">Chapter 1: Introduction</a></li>
                         
                         <li><a href="#https%3A//s11.no/2023/phd/background/">Chapter 2: Background</a></li>
                         
@@ -1097,12 +1820,22 @@ table.table {
                         <li><a href="#https%3A//s11.no/2022/phd/contributions/">Appendix B: Contributions</a></li>
                         
                         <li><a href="#%23supplements">Supplemental material</a></li>
-                        
-                        <li><a href="#https%3A//s11.no/2019/phd/ro-crate/">Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
+            <td style='text-align:left'>doi: 10.5281/zenodo.8113625</td>
             </tr><tr>
             <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//s11.no/">s11</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://s11.no/2023/phd/">https://s11.no/2023/phd/</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="https://www.w3.org/ns/iana/link-relations/relation#cite-as">[?]</a></th>
+            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.8113625">https://doi.org/10.5281/zenodo.8113625</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
             <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
@@ -1130,17 +1863,50 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Person</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><span>Department of Computer Science, The University of Manchester, Manchester, UK</span></li>
+                        
+                        <li><span>Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands</span></li>
+                        </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
                         
-                        <li><a href="#https%3A//s11.no/2023/phd/evaluating-fdo/">Evaluating FAIR Digital Object and Linked Data as distributed object systems</a></li>
+                        <li><a href="#https%3A//doi.org/10.3233/DS-210053">Packaging research artefacts with RO-Crate</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/canonical-workflow-building-blocks/">Making Canonical Workflow Building Blocks interoperable across workflow languages</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/conclusions/">Chapter 6: Discussion and conclusions</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/fdo-with-ro-crate/">Creating lightweight FAIR Digital Objects with RO-Crate</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/incrementally-building-fdos/">Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows</a></li>
                         
                         <li><a href="#https%3A//s11.no/2022/phd/ro-crate/">Packaging research artefacts with RO-Crate</a></li>
                         
+                        <li><a href="#https%3A//s11.no/2022/phd/ro-crate/formalizing/">Formalizing RO-Crate in First Order Logic</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/specimen-data-refinery/">The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/updating-ld-for-fdo/">Updating Linked Data practices for FAIR Digital Object principles</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2023/phd/background/">Chapter 2: Background</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2023/phd/evaluating-fdo/">Evaluating FAIR Digital Object and Linked Data as distributed object systems</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2022/phd/introduction/">Chapter 1: Introduction</a></li>
+                        
                         <li><a href="#https%3A//s11.no/2023/phd/workflow-run-crate/">Recording provenance of workflow runs with RO-Crate</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">founder<span>&nbsp;</span><a href="http://schema.org/founder">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//s11.no/">s11</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">member<span>&nbsp;</span><a href="http://schema.org/member">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//www.researchobject.org/ro-crate/community">RO-Crate Community</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1148,90 +1914,33 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="https://s11.no/">Go to: </a> s11</h3>
+            <h3><a href="https://s11.no/2022/phd/introduction/">Go to: </a> Chapter 1: Introduction</h3>
             
             
             
             
-        <div id="https://s11.no/">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><a href="https://s11.no/">https://s11.no/</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>s11</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><ul>
-                        <li><span>Organization</span></li>
-                        
-                        <li><span>WebSite</span></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://s11.no/">https://s11.no/</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
-            <h3><a href="https://doi.org/10.5281/zenodo.8113625">Go to: </a> doi</h3>
-            
-            
-            
-            
-        <div id="https://doi.org/10.5281/zenodo.8113625">
+        <div id="https://s11.no/2022/phd/introduction/">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.8113625">https://doi.org/10.5281/zenodo.8113625</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>doi</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>PropertyValue</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">propertyID<span>&nbsp;</span><a href="http://schema.org/propertyID">[?]</a></th>
-            <td style='text-align:left'><a href="https://registry.identifiers.org/registry/doi">https://registry.identifiers.org/registry/doi</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">value<span>&nbsp;</span><a href="http://schema.org/value">[?]</a></th>
-            <td style='text-align:left'><span>10.5281/zenodo.8113625</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
-            <h3><a href="https://s11.no/2023/phd/introduction/">Go to: </a> Chapter 1: Introduction</h3>
-            
-            
-            
-            
-        <div id="https://s11.no/2023/phd/introduction/">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><a href="https://s11.no/2023/phd/introduction/">https://s11.no/2023/phd/introduction/</a></td>
+            <td style='text-align:left'><a href="https://s11.no/2022/phd/introduction/">https://s11.no/2022/phd/introduction/</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Chapter 1: Introduction</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Chapter</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">contributor<span>&nbsp;</span><a href="http://schema.org/contributor">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//orcid.org/0000-0003-0183-6910">Paul Groth</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0003-1219-2137">Carole Goble</a></li>
+                        </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
@@ -1265,6 +1974,12 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">isPartOf<span>&nbsp;</span><a href="http://schema.org/isPartOf">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//s11.no/2023/phd/evaluating-fdo/">Evaluating FAIR Digital Object and Linked Data as distributed object systems</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">contributor<span>&nbsp;</span><a href="http://schema.org/contributor">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0003-0183-6910">Paul Groth</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
@@ -1292,6 +2007,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Chapter</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>To investigate RQ1 this chapter evaluates both Linked Data and FAIR Digital Object (FDO) as ways to realize the FAIR principles. Section 3.1 compares the two approaches as global distributed object systems, and discusses what lessons can be learnt across the communities, taking into consideration the history covered by section 2.       Section 3.2 proposes how the FDO principles can be achieved using Linked Data standards, which is explored further in the following chapters.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -1327,13 +2045,16 @@ table.table {
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Chapter</span></td>
             </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>This chapter introduces RO-Crate, a pragmatic method of packaging data alongside structured metadata that is inline with the FAIR principles. This has been implemented to investigate RQ2. Section 4.1 describes the RO-Crate purpose, community effort and tooling and demonstrates how RO-Crate has been applied. Section 4.2 shows how RO-Crate can be used to achieve the FDO principles covered in chapter 3. Section 4.3 contributes a formal definition of RO-Crate using first order logic.</span></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//s11.no/2022/phd/ro-crate/">Packaging research artefacts with RO-Crate</a></li>
                         
-                        <li><a href="#https%3A//s11.no/2022/phd/fdo-with-ro-crate/">FDO-with...</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/fdo-with-ro-crate/">Creating lightweight FAIR Digital Objects with RO-Crate</a></li>
                         
-                        <li><a href="#https%3A//s11.no/2022/phd/ro-crate/formalizing/">Formalizing...</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/ro-crate/formalizing/">Formalizing RO-Crate in First Order Logic</a></li>
                         </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
@@ -1363,13 +2084,16 @@ table.table {
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Chapter</span></td>
             </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>In order to investigate RQ3, and considering important parts of the FAIR principles are Reuse and provenance, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with Computational Workflows.      Section 5.1 proposes that tools in computational workflows, when wrapped as interoperable building blocks, can be considered as FAIR Digital Objects, with a use case from biomolecular simulation.            Sections 5.2 and 5.3 explore how FDOs and Research Objects can be constructed incrementally using computational workflows, with a use case from specimen digitization in natural history collections.      Section 5.4 presents a profile of RO-Crate to capture workflow execution provenance, with incremental granularity levels and six workflow engine implementations. Use cases include machine learning-aided tumour detection and compatibility with PROV approaches.</span></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//s11.no/2022/phd/canonical-workflow-building-blocks/">Canonical...</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/canonical-workflow-building-blocks/">Making Canonical Workflow Building Blocks interoperable across workflow languages</a></li>
                         
-                        <li><a href="#https%3A//s11.no/2022/phd/specimen-data-refinery/">Specimen...</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/specimen-data-refinery/">The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections</a></li>
                         
-                        <li><a href="#https%3A//s11.no/2022/phd/incrementally-building-fdos/">Incrementally...</a></li>
+                        <li><a href="#https%3A//s11.no/2022/phd/incrementally-building-fdos/">Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows</a></li>
                         
                         <li><a href="#https%3A//s11.no/2023/phd/workflow-run-crate/">Recording provenance of workflow runs with RO-Crate</a></li>
                         </ul></td>
@@ -1400,6 +2124,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Chapter</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
@@ -1538,30 +2265,32 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="https://s11.no/2019/phd/ro-crate/">Go to: </a> Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging</h3>
+            <h3><a href="https://doi.org/10.5281/zenodo.8113625">Go to: </a> doi</h3>
             
             
             
             
-        <div id="https://s11.no/2019/phd/ro-crate/">
+        <div id="https://doi.org/10.5281/zenodo.8113625">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><a href="https://s11.no/2019/phd/ro-crate/">https://s11.no/2019/phd/ro-crate/</a></td>
+            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.8113625">https://doi.org/10.5281/zenodo.8113625</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging</span></td>
+            <td style='text-align:left'><span>doi</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>ScholarlyArticle</span></td>
+            <td style='text-align:left'><span>PropertyValue</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">propertyID<span>&nbsp;</span><a href="http://schema.org/propertyID">[?]</a></th>
+            <td style='text-align:left'><a href="https://registry.identifiers.org/registry/doi">https://registry.identifiers.org/registry/doi</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">value<span>&nbsp;</span><a href="http://schema.org/value">[?]</a></th>
+            <td style='text-align:left'><span>10.5281/zenodo.8113625</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
-                        
-                        <li><a href="#%23supplements">Supplemental material</a></li>
-                        </ul></td>
+            <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1591,6 +2320,43 @@ table.table {
             <td style='text-align:left'>spdx: CC-BY-4.0</td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://s11.no/">Go to: </a> s11</h3>
+            
+            
+            
+            
+        <div id="https://s11.no/">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://s11.no/">https://s11.no/</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>s11</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>Organization</span></li>
+                        
+                        <li><span>WebSite</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">founder<span>&nbsp;</span><a href="http://schema.org/founder">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://s11.no/">https://s11.no/</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
             </tr></tbody>
             </table>
