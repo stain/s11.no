@@ -419,27 +419,694 @@
     {
       "@id": "https://s11.no/2022/phd/ro-crate/",
       "@type": "ScholarlyArticle",
-      "name": "RO-Crate...",
+      "name": "Packaging research artefacts with RO-Crate",
       "author": [
+        { "@id": "https://orcid.org/0000-0001-9842-9718"},
+        { "@id": "https://orcid.org/0000-0001-9842-9718"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0002-4806-5140"},
+        { "@id": "https://orcid.org/0000-0003-0454-7145"},
+        { "@id": "https://orcid.org/0000-0002-3079-6586"},
+        { "@id": "https://orcid.org/0000-0001-5383-6993"},
+        { "@id": "https://orcid.org/0000-0001-8271-5429"},
+        { "@id": "https://orcid.org/0000-0001-8131-2150"},
+        { "@id": "https://orcid.org/0000-0002-9648-6484"},
+        { "@id": "https://orcid.org/0000-0003-1991-0533"},
+        { "@id": "https://www.researchobject.org/ro-crate/community"},
+        { "@id": "https://orcid.org/0000-0003-0183-6910"},
+        { "@id": "https://orcid.org/0000-0003-1219-2137"}
       ],
       "hasPart": [
         { "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"}
       ],
-      "cite-as": { "@id": ""}
+      "isBasedOn": { "@id": "https://doi.org/10.3233/DS-210053"},
+      "cite-as": { "@id": "https://doi.org/10.3233/DS-210053"}
     },
+    { 
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.5146227",
+      "@type": "Dataset",
+      "name": "Packaging research artefacts with RO-Crate (RO-Crate)",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate" }
+    },
+    { 
+      "@id": "https://doi.org/10.3233/DS-210053",
+      "@type": "ScholarlyArticle",
+      "name": "Packaging research artefacts with RO-Crate",
+      "mainEntityOfPage": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.5146227"
+      },
+      "author": [
+        { "@id": "https://orcid.org/0000-0001-9842-9718"},
+        { "@id": "https://orcid.org/0000-0001-9842-9718"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0003-1304-1939"},
+        { "@id": "https://orcid.org/0000-0002-4806-5140"},
+        { "@id": "https://orcid.org/0000-0003-0454-7145"},
+        { "@id": "https://orcid.org/0000-0002-3079-6586"},
+        { "@id": "https://orcid.org/0000-0001-5383-6993"},
+        { "@id": "https://orcid.org/0000-0001-8271-5429"},
+        { "@id": "https://orcid.org/0000-0001-8131-2150"},
+        { "@id": "https://orcid.org/0000-0002-9648-6484"},
+        { "@id": "https://orcid.org/0000-0003-1991-0533"},
+        { "@id": "https://www.researchobject.org/ro-crate/community"},
+        { "@id": "https://orcid.org/0000-0003-0183-6910"},
+        { "@id": "https://orcid.org/0000-0003-1219-2137"}
+      ]
+    },
+    {
+      "@id": "https://www.researchobject.org/ro-crate/community",
+      "@type": "Project",
+      "member": [
+        {
+          "@id": "https://orcid.org/0000-0001-8131-2150"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3545-944X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9260-0753"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0454-7145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4289-4922"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6565-5145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4806-5140"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7370-4805"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5491-6431"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2961-9670"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6190-122X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2036-8350"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8420-5254"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3588-6257"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0309-604X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5711-4872"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2130-0865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3156-2105"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1130-2154"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0048-3300"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1756-2128"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7552-1009"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4929-1219"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1541-5631"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0337-8610"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6960-357X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0223-1059"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6022-9825"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3468-0652"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1991-0533"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3910-0474"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3486-8193"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8172-8981"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1743-8300"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0522-5674"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2142-1731"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9986-7223"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4929-7875"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5383-6993"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6387-5988"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3883-4169"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5761-7533"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0792-8157"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8772-7904"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4196-3658"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2318-4477"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1248-3594"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0792-8157"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1498-6205"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9888-7954"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9156-9478"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0003-2024"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4565-9760"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8940-4946"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2257-9127"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5526-7138"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0606-2512"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9228-2882"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0617-9219"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0679-4361"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8250-4074"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1361-7301"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3234-6762"
+        },
+        { "@id": "https://orcid.org/0000-0003-4216-302X"},
+        { "@id": "https://orcid.org/0000-0002-1880-0597"},
+        { "@id": "https://orcid.org/0000-0001-6712-6335"},
+        { "@id": "https://orcid.org/0000-0002-5934-8998"},
+        { "@id": "https://orcid.org/0000-0001-9261-8390"},
+        { "@id": "https://orcid.org/0000-0002-0035-6475"},
+        { "@id": "https://orcid.org/0000-0001-9447-460X"},
+        { "@id": "https://orcid.org/0000-0001-7760-1240"}
+      ],
+      "name": "RO-Crate Community",
+      "sdDatePublished": "2024-07-30T15:20:00Z",
+      "url": "https://www.researchobject.org/ro-crate/community"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5383-6993",
+      "@type": "Person",
+      "name": "Marco La Rosa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6022-9825",
+      "@type": "Person",
+      "name": "Karl Sebby"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6387-5988",
+      "@type": "Person",
+      "name": "Cedric Decruw"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6565-5145",
+      "@type": "Person",
+      "name": "Frederik Coppens"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6960-357X",
+      "@type": "Person",
+      "name": "Mark Wilkinson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8131-2150",
+      "@type": "Person",
+      "name": "Eoghan Ó Carragáin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8172-8981",
+      "@type": "Person",
+      "name": "Jasper Koehorst"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8250-4074",
+      "@type": "Person",
+      "name": "Bruno P. Kinoshita"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8271-5429",
+      "@type": "Person",
+      "name": "Simone Leo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8420-5254",
+      "@type": "Person",
+      "name": "Kristi Holmes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8772-7904",
+      "@type": "Person",
+      "name": "Ronald Siebes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9156-9478",
+      "@type": "Person",
+      "name": "Muhammad Radifar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9228-2882",
+      "@type": "Person",
+      "name": "Abigail Miller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9888-7954",
+      "@type": "Person",
+      "name": "Sveinung Gundersen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0003-2024",
+      "@type": "Person",
+      "name": "Rudolf Wittner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0048-3300",
+      "@type": "Person",
+      "name": "Finn Bacall"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0309-604X",
+      "@type": "Person",
+      "name": "Salvador Capella-Gutierrez"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0337-8610",
+      "@type": "Person",
+      "name": "brandon whitehead"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0679-4361",
+      "@type": "Person",
+      "name": "Davide Fucci"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0792-8157",
+      "@type": "Person",
+      "name": "Sergio Serra"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1248-3594",
+      "@type": "Person",
+      "name": "Douglas Lowe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1756-2128",
+      "@type": "Person",
+      "name": "Thomas Thelen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2036-8350",
+      "@type": "Person",
+      "name": "Nick Juty"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2142-1731",
+      "@type": "Person",
+      "name": "Chenxu Niu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2257-9127",
+      "@type": "Person",
+      "name": "Douglas Fils"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2318-4477",
+      "@type": "Person",
+      "name": "Shady El Damaty"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2961-9670",
+      "@type": "Person",
+      "name": "Michael R Crusoe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3079-6586",
+      "@type": "Person",
+      "name": "Björn Grüning"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3468-0652",
+      "@type": "Person",
+      "name": "Alexander Kanitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3545-944X",
+      "@type": "Person",
+      "name": "Peter Sefton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3588-6257",
+      "@type": "Person",
+      "name": "Jason A. Clark"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4565-9760",
+      "@type": "Person",
+      "name": "Oliver Woolland"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4806-5140",
+      "@type": "Person",
+      "name": "José María Fernández"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4929-7875",
+      "@type": "Person",
+      "name": "Tomasz Miksa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5432-2748",
+      "@type": "Person",
+      "name": "Paul Brack"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5491-6431",
+      "@type": "Person",
+      "name": "Jose Manuel Gomez-Perez"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5526-7138",
+      "@type": "Person",
+      "name": "Florian Wetzels"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5711-4872",
+      "@type": "Person",
+      "name": "Alasdair J. G. Gray"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5761-7533",
+      "@type": "Person",
+      "name": "Jeremy Jay"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6190-122X",
+      "@type": "Person",
+      "name": "Ignacio Eguinoa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7370-4805",
+      "@type": "Person",
+      "name": "Kyle Chard"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7552-1009",
+      "@type": "Person",
+      "name": "Hervé Ménager"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8940-4946",
+      "@type": "Person",
+      "name": "Paul De Geest"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9260-0753",
+      "@type": "Person",
+      "name": "Oscar Corcho"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9648-6484",
+      "@type": "Person",
+      "name": "Marc Portier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9986-7223",
+      "@type": "Person",
+      "name": "Kosuke Tanabe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0223-1059",
+      "@type": "Person",
+      "name": "Erich Bremer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0454-7145",
+      "@type": "Person",
+      "name": "Daniel Garijo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0522-5674",
+      "@type": "Person",
+      "name": "Bert Droesbeke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0606-2512",
+      "@type": "Person",
+      "name": "Raül Sirvent"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0617-9219",
+      "@type": "Person",
+      "name": "Jake Emerson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1130-2154",
+      "@type": "Person",
+      "name": "Giacomo Tartari"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "name": "Carole Goble"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1304-1939",
+      "@type": "Person",
+      "name": "Mercè Crosas"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1361-7301",
+      "@type": "Person",
+      "name": "Maciek Bąk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1498-6205",
+      "@type": "Person",
+      "name": "Xuanqi Li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1541-5631",
+      "@type": "Person",
+      "name": "Paul Walk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1743-8300",
+      "@type": "Person",
+      "name": "Milan Ojsteršek"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1991-0533",
+      "@type": "Person",
+      "name": "Ana Trisovic"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2130-0865",
+      "@type": "Person",
+      "name": "Stuart Owen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3156-2105",
+      "@type": "Person",
+      "name": "Alan R Williams"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3234-6762",
+      "@type": "Person",
+      "name": "Jens Hollunder"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3486-8193",
+      "@type": "Person",
+      "name": "Mark Graves"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3883-4169",
+      "@type": "Person",
+      "name": "Andreas Czerniak"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3910-0474",
+      "@type": "Person",
+      "name": "Gavin Kennedy"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3986-0510",
+      "@type": "Person",
+      "alternateName": "LJ Garcia Castro",
+      "name": "Leyla Jael Castro"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4196-3658",
+      "@type": "Person",
+      "name": "Shaun de Witt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4289-4922",
+      "@type": "Person",
+      "name": "Raul Palma"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4929-1219",
+      "@type": "Person",
+      "name": "Laura Rodríguez-Navas"
+    },
+    { 
+      "@id": "https://orcid.org/0000-0003-4216-302X",
+      "@type": "Person",
+      "name": "Martin Weise"
+    },
+    { "@id": "https://orcid.org/0000-0002-1880-0597",
+      "@type": "Person",
+      "name": "Vartika Bisht"
+    },
+    { "@id": "https://orcid.org/0000-0001-6712-6335",
+      "@type": "Person",
+      "name": "Toshiyuki Nishiyama Hiraki"
+    },
+    { "@id": "https://orcid.org/0000-0002-5934-8998",
+      "@type": "Person",
+      "name": "Bram Ulrichts"
+    },
+    { "@id": "https://orcid.org/0000-0001-9261-8390",
+      "@type": "Person",
+      "name": "Michael Falk"
+    },
+    { "@id": "https://orcid.org/0000-0002-0035-6475",
+      "@type": "Person",
+      "name": "Eli Chadwick"
+    },
+    { "@id": "https://orcid.org/0000-0001-9447-460X",
+      "@type": "Person",
+      "name": "Daniel Bauer"
+    },
+    { "@id": "https://orcid.org/0000-0001-7760-1240",
+      "@type": "Person",
+      "name": "James Love"
+    },    
     {
       "@id": "https://s11.no/2022/phd/fdo-with-ro-crate/",
       "@type": "ScholarlyArticle",
-      "name": "FDO-with...",
+      "name": "Creating lightweight FAIR Digital Objects with RO-Crate",
       "author": [
       ],
-      "cite-as": { "@id": ""}
+      "cite-as": { "@id": "https://doi.org/10.3897/rio.8.e93937"},
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Creating lightweight FAIR Digital Objects with RO-Crate. Research Ideas and Outcomes 8:e93937"
     },
     {
       "@id": "https://s11.no/2022/phd/ro-crate/formalizing/",
       "@type": "Chapter",
-      "name": "Formalizing...",
+      "name": "Formalizing RO-Crate in First Order Logic",
       "author": [
+        { "@id": "https://orcid.org/0000-0001-9842-9718" }
       ]
     },
 

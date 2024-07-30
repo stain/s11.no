@@ -17,23 +17,39 @@ keywords:
 - Research Object
 lang: en-GB
 date-meta: '2022-01-10'
-author-meta:
-- Stian Soiland-Reyes
-- Peter Sefton
-- Mercè Crosas
-- Leyla Jael Castro
-- Frederik Coppens
-- José M. Fernández
-- Daniel Garijo
-- Björn Grüning
-- Marco La Rosa
-- Simone Leo
-- Eoghan Ó Carragáin
-- Marc Portier
-- Ana Trisovic
-- RO-Crate Community
-- Paul Groth
-- Carole Goble
+authors:
+- name: Stian Soiland-Reyes
+  orcid: https://orcid.org/0000-0001-9842-9718
+- name: Peter Sefton
+  orcid: https://orcid.org/0000-0001-9842-9718
+- name: Mercè Crosas
+  orcid: https://orcid.org/0000-0003-1304-1939
+- name: Leyla Jael Castro
+  orcid: https://orcid.org/0000-0003-1304-1939
+- name: Frederik Coppens
+  orcid: https://orcid.org/0000-0003-1304-1939
+- name: José M. Fernández
+  orcid: https://orcid.org/0000-0002-4806-5140
+- name: Daniel Garijo
+  orcid: https://orcid.org/0000-0003-0454-7145
+- name: Björn Grüning
+  orcid: https://orcid.org/0000-0002-3079-6586
+- name: Marco La Rosa
+  orcid: https://orcid.org/0000-0001-5383-6993
+- name: Simone Leo
+  orcid: https://orcid.org/0000-0001-8271-5429
+- name: Eoghan Ó Carragáin
+  orcid: https://orcid.org/0000-0001-8131-2150
+- name: Marc Portier
+  orcid: https://orcid.org/0000-0002-9648-6484
+- name: Ana Trisovic
+  orcid: https://orcid.org/0000-0003-1991-0533
+- name: RO-Crate Community
+  orcid: https://www.researchobject.org/ro-crate/community
+- name: Paul Groth
+  orcid: https://orcid.org/0000-0003-0183-6910
+- name: Carole Goble
+  orcid: https://orcid.org/0000-0003-1219-2137
 summary: > 
   Journal article published in _Data Science_
 description: > 
