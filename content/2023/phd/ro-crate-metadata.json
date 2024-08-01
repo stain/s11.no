@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://w3id.org/ro/crate/1.1/context",
+    "https://w3id.org/ro/crate/1.2-DRAFT/context",
     {
       "iso6523Code": "http://schema.org/iso6523Code"
     },
@@ -12,68 +12,6 @@
     }
   ],
   "@graph": [
-
-    {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "conformsTo": "https://w3id.org/ro/crate/1.1",
-      "about": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625",
-      "@type": [
-        "Dataset",
-        "Thesis"
-      ],
-      "author": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "datePublished": "2024-07-30",
-      "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam",
-      "hasPart": [
-        {
-          "@id": "https://s11.no/2022/phd/introduction/"
-        },
-        {
-          "@id": "https://s11.no/2023/phd/background/"
-        },
-        {
-          "@id": "https://s11.no/2023/phd/fdo-and-linked-data/"
-        },
-        {
-          "@id": "https://s11.no/2023/phd/ro-crate/"
-        },
-        {
-          "@id": "https://s11.no/2023/phd/workflows/"
-        },
-        {
-          "@id": "https://s11.no/2022/phd/conclusions/"
-        },
-        {
-          "@id": "https://s11.no/2022/phd/acknowledgements/"
-        },
-        {
-          "@id": "https://s11.no/2022/phd/contributions/"
-        },
-        {
-          "@id": "#supplements"
-        }
-      ],
-      "identifier": {
-        "@id": "https://doi.org/10.5281/zenodo.8113625"
-      },
-      "license": {
-        "@id": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
-      "publisher": {
-        "@id": "https://s11.no/"
-      },
-      "url": "https://s11.no/2023/phd/",
-      "cite-as": "https://doi.org/10.5281/zenodo.8113625"
-    },    
     {
       "@id": "#haris-antonatos",
       "@type": "Person",
@@ -164,30 +102,30 @@
     {
       "@id": "https://doi.org/10.1002/lrh2.10365",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences",
-      "creditText": "Rudolf Wittner, et al. (2023): Toward a common standard for data and specimen provenance in life sciences. Learning Health Systems 8(1):e10365"
+      "creditText": "Rudolf Wittner, et al. (2023): Toward a common standard for data and specimen provenance in life sciences. Learning Health Systems 8(1):e10365",
+      "name": "Supplement 8: Towards a Common Standard for Data and Specimen Provenance in Life Sciences"
     },
     {
       "@id": "https://doi.org/10.1007/978-3-030-80960-7_16",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data",
       "creditText": "Rudolf Wittner, et al. (2023): ISO 23494: Biotechnology – Provenance Information Model for Biological Specimen And Data. Lecture Notes in Computer Science 12839",
-      "url": "https://research.manchester.ac.uk/en/publications/2de95545-9fd6-4a51-91ee-dad30058afe5",
+      "name": "Supplement 7: ISO 23494: Biotechnology - Provenance Information Model for Biological Specimen and Data",
       "sameAs": {
         "@id": "https://doi.org/10.5281/zenodo.5074819"
-      }
+      },
+      "url": "https://research.manchester.ac.uk/en/publications/2de95545-9fd6-4a51-91ee-dad30058afe5"
     },
     {
       "@id": "https://doi.org/10.1093/gigascience/giz095",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv",
-      "creditText": "Farah Zaib Khan, et al. (2019): Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv. GigaScience 8(11)"
+      "creditText": "Farah Zaib Khan, et al. (2019): Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv. GigaScience 8(11)",
+      "name": "Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv"
     },
     {
       "@id": "https://doi.org/10.1109/WORKS54523.2021.00016",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 9: A Community Roadmap for Scientific Workflows Research and Development",
       "creditText": "Rafael Ferreira da Silva, et al. (2021): A Community Roadmap for Scientific Workflows Research and Development. 2021 IEEE Workshop on Workflows in Support of Large-Scale Science (WORKS).",
+      "name": "Supplement 9: A Community Roadmap for Scientific Workflows Research and Development",
       "url": "https://doi.org/10.48550/arXiv.2110.02168"
     },
     {
@@ -349,8 +287,7 @@
       "@id": "https://orcid.org/0000-0001-8250-4074",
       "@type": "Person",
       "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
-      "name": 
-        "Bruno de Paula Kinoshita"      
+      "name": "Bruno de Paula Kinoshita"
     },
     {
       "@id": "https://orcid.org/0000-0001-8271-5429",
@@ -458,6 +395,13 @@
       "name": "Davide Fucci"
     },
     {
+      "@id": "https://orcid.org/0000-0002-0715-6126",
+      "@type": "Person",
+      "familyName": "Van de Sompel",
+      "givenName": "Herbert",
+      "name": "Herbert Van de Sompel"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-0767-4310",
       "@type": "Person",
       "affiliation": "School of Computer Science and Informatics, Cardiff University, Cardiff, UK (former)",
@@ -539,8 +483,7 @@
         "Department of Computer Science, VU Amsterdam, Amsterdam, The Netherlands",
         "Common Workflow Language project, Software Freedom Conservancy, Brooklyn, NY, USA"
       ],
-      "name": 
-        "Michael R. Crusoe"      
+      "name": "Michael R. Crusoe"
     },
     {
       "@id": "https://orcid.org/0000-0002-3079-6586",
@@ -593,8 +536,7 @@
       "@id": "https://orcid.org/0000-0002-4806-5140",
       "@type": "Person",
       "affiliation": "Barcelona Supercomputing Center, Barcelona, Spain",
-      "name": 
-        "José Mª Fernández"
+      "name": "José Mª Fernández"
     },
     {
       "@id": "https://orcid.org/0000-0002-4929-7875",
@@ -718,6 +660,11 @@
       "@id": "https://orcid.org/0000-0003-0223-1059",
       "@type": "Person",
       "name": "Erich Bremer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0351-6523",
+      "@type": "Person",
+      "name": "Claus Weiland"
     },
     {
       "@id": "https://orcid.org/0000-0003-0454-7145",
@@ -922,8 +869,7 @@
         "Universitat Oberta de Catalunya (UOC), Barcelona, Spain",
         "Life Sciences Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain (former)"
       ],
-      "name": 
-        "Laura Rodríguez-Navas"
+      "name": "Laura Rodríguez-Navas"
     },
     {
       "@id": "https://s11.no/",
@@ -931,26 +877,26 @@
         "Organization",
         "WebSite"
       ],
-      "name": "s11",
       "founder": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
+      "name": "s11",
       "url": "https://s11.no/"
     },
     {
       "@id": "https://s11.no/2019/phd/ro-crate/",
       "@type": "ScholarlyArticle",
+      "creditText": "Eoghan Ó Carragáin, et al. (2019): RO-Crate: A lightweight approach to research object data packaging. RO-15 at Workshop on Research Objects (RO 2019), IEEE eScience 2019, 2019-09-24, San Diego, CA, USA.",
       "name": "Supplement 15: RO-Crate, a lightweight approach to Research Object data packaging",
       "cite-as": {
         "@id": "https://doi.org/10.5281/zenodo.3337883"
-      },
-      "creditText": "Eoghan Ó Carragáin, et al. (2019): RO-Crate: A lightweight approach to research object data packaging. RO-15 at Workshop on Research Objects (RO 2019), IEEE eScience 2019, 2019-09-24, San Diego, CA, USA."
+      }
     },
     {
       "@id": "https://s11.no/2021/phd/nanopub/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 5: Semantic micro-contributions with decentralized nanopublication services",
       "creditText": "Tobias Kuhn, et al. (2021): Semantic micro-contributions with decentralized nanopublication services. PeerJ Computer Science 7:e387",
+      "name": "Supplement 5: Semantic micro-contributions with decentralized nanopublication services",
       "cite-as": {
         "@id": "https://doi.org/10.7717/peerj-cs.387"
       }
@@ -959,19 +905,19 @@
       "@id": "https://s11.no/2021/phd/workflow-collaboratory/",
       "@type": "ScholarlyArticle",
       "creditText": "Carole Goble, et al. (2021): Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory. Zenodo (white paper)",
-      "cite-as": { 
+      "name": "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory",
+      "cite-as": {
         "@id": "https://doi.org/10.5281/zenodo.4605654"
-      },
-      "name": "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/10-simple-rules-for-workflow-tools/",
       "@type": "ScholarlyArticle",
       "creditText": "Paul Brack, et al. (2022): Ten Simple Rules for making a software tool workflow-ready. PLOS Computational Biology 18(3):e1009823",
+      "name": "Supplement 1: Ten Simple Rules for making a software tool workflow-ready",
       "cite-as": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1009823"
-      },
-      "name": "Supplement 1: Ten Simple Rules for making a software tool workflow-ready"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/acknowledgements/",
@@ -982,26 +928,41 @@
       "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/",
       "@type": "ScholarlyArticle",
       "author": [
-        { "@id": "https://orcid.org/0000-0001-9842-9718"},
-        { "@id": "https://orcid.org/0000-0003-0513-0288"},
-        { "@id": "https://orcid.org/0000-0003-2116-3880"},
-        { "@id": "https://orcid.org/0000-0003-2249-645X"},
-        { "@id": "https://orcid.org/0000-0002-1248-3594"},
-        { "@id": "https://orcid.org/0000-0003-0989-3389"},
-        { "@id": "https://orcid.org/0000-0002-8291-8071"},
-        { "@id": "https://orcid.org/0000-0003-0183-6910"}
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0513-0288"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2116-3880"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2249-645X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1248-3594"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0989-3389"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8291-8071"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
       ],
+      "creditText": "Stian Soiland-Reyes, et al.(2022): Making Canonical Workflow Building Blocks interoperable across workflow languages. Data Intelligence 4(2)",
       "name": "Making Canonical Workflow Building Blocks interoperable across workflow languages",
       "cite-as": {
         "@id": "https://doi.org/10.1162/dint_a_00135"
-      },
-      "creditText": "Stian Soiland-Reyes, et al.(2022): Making Canonical Workflow Building Blocks interoperable across workflow languages. Data Intelligence 4(2)"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/conclusions/",
       "@type": "Chapter",
-      "name": "Chapter 6: Discussion and conclusions",
-      "author": { 
+      "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "hasPart": [
@@ -1011,28 +972,8 @@
         {
           "@id": "https://s11.no/2023/phd/conclusion/"
         }
-      ] 
-    },
-    {
-      "@id": "https://s11.no/2023/phd/discussion/",
-      "@type": "Chapter",
-      "name": "Section 6.1: Discussion",
-      "author": { 
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      }
-    },
-    {
-      "@id": "https://s11.no/2023/phd/conclusion/",
-      "@type": "Chapter",
-      "name": "Section 6.2: Conclusion",
-      "author": { 
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      }
-    },
-    { 
-      "@id": "https://s11.no/2023/phd/references/",
-      "@type": "Chapter",
-      "name": "References"
+      ],
+      "name": "Chapter 6: Discussion and conclusions"
     },
     {
       "@id": "https://s11.no/2022/phd/contributions/",
@@ -1043,14 +984,30 @@
       "@id": "https://s11.no/2022/phd/fdo-with-ro-crate/",
       "@type": "ScholarlyArticle",
       "author": [
-        { "@id": "https://orcid.org/0000-0001-9842-9718" },
-        { "@id": "https://orcid.org/0000-0002-3545-944X" },
-        { "@id": "https://orcid.org/0000-0003-3986-0510" },
-        { "@id": "https://orcid.org/0000-0001-6565-5145" },
-        { "@id": "https://orcid.org/0000-0003-0454-7145" },
-        { "@id": "https://orcid.org/0000-0001-8271-5429" },
-        { "@id": "https://orcid.org/0000-0002-9648-6484" },
-        { "@id": "https://orcid.org/0000-0003-0183-6910" }
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3545-944X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6565-5145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0454-7145"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
       ],
       "creditText": "Stian Soiland-Reyes, et al. (2022): Creating lightweight FAIR Digital Objects with RO-Crate. Research Ideas and Outcomes 8:e93937",
       "name": "Creating lightweight FAIR Digital Objects with RO-Crate",
@@ -1062,33 +1019,59 @@
       "@id": "https://s11.no/2022/phd/galaxy-ro-crate/",
       "@type": "ScholarlyArticle",
       "creditText": "Paul De Geest, et al. (2022): Enhancing RDM in Galaxy by integrating RO-Crate. Research Ideas and Outcomes 8:e95164",
+      "name": "Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e95164"
-      },
-      "name": "Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/incrementally-building-fdos/",
       "@type": "ScholarlyArticle",
       "author": [
-        { "@id": "https://orcid.org/0000-0002-4565-9760"},
-        { "@id": "https://orcid.org/0000-0002-5432-2748"},
-        { "@id": "https://orcid.org/0000-0001-9842-9718"},  
-        { "@id": "https://orcid.org/0000-0002-5590-7174"},
-        { "@id": "https://orcid.org/0000-0002-7341-1842"}
+        {
+          "@id": "https://orcid.org/0000-0002-4565-9760"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5590-7174"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7341-1842"
+        }
       ],
-      "name": "Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows",
       "creditText": "Oliver Woolland, et al. (2022): Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows. Research Ideas and Outcomes 8:e94349",
+      "name": "Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e94349"
       }
     },
     {
+      "@id": "https://s11.no/2022/phd/introduction/",
+      "@type": "Chapter",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "contributor": [
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        }
+      ],
+      "name": "Chapter 1: Introduction"
+    },
+    {
       "@id": "https://s11.no/2022/phd/methods-included/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language",
       "creditText": "Michael R. Crusoe, et al. (2022): Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language. Communications of the ACM 65(6)",
-      "cite-as": { 
+      "name": "Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language",
+      "cite-as": {
         "@id": "https://doi.org/10.1145/3486897"
       }
     },
@@ -1136,6 +1119,7 @@
           "@id": "https://orcid.org/0000-0003-1219-2137"
         }
       ],
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Packaging research artefacts with RO-Crate. Data Science 5(2)",
       "hasPart": {
         "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"
       },
@@ -1145,8 +1129,7 @@
       "name": "Packaging research artefacts with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.3233/DS-210053"
-      },
-      "creditText": "Stian Soiland-Reyes, et al. (2022): Packaging research artefacts with RO-Crate. Data Science 5(2)"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/ro-crate/formalizing/",
@@ -1160,56 +1143,99 @@
       "@id": "https://s11.no/2022/phd/specimen-data-refinery/",
       "@type": "ScholarlyArticle",
       "author": [
-        { "@id": "https://orcid.org/0000-0002-0767-4310"},
-        { "@id": "https://orcid.org/0000-0002-5432-2748"},
-        { "@id": "https://orcid.org/0000-0003-1219-2137"},
-        { "@id": "https://orcid.org/0000-0002-7341-1842"},
-        { "@id": "https://orcid.org/0000-0002-5590-7174"},
-        { "@id": "https://orcid.org/0000-0002-0596-5376"},
-        { "@id": "https://orcid.org/0000-0003-2130-0865"},
-        { "@id": "https://orcid.org/0000-0001-9842-9718"}
+        {
+          "@id": "https://orcid.org/0000-0002-0767-4310"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5432-2748"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7341-1842"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5590-7174"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0596-5376"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2130-0865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        }
       ],
+      "creditText": "Alex Hardisty, et al. (2022): The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections. Data Intelligence 4(2)",
       "name": "The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections",
       "cite-as": {
         "@id": "https://doi.org/10.1162/dint_a_00134"
-      },
-      "creditText": "Alex Hardisty, et al. (2022): The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections. Data Intelligence 4(2)"
+      }
     },
     {
       "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/",
       "@type": "ScholarlyArticle",
       "author": [
-          {"@id": "https://orcid.org/0000-0001-9842-9718" },
-          {"@id": "https://orcid.org/0000-0003-3986-0510" },
-          {"@id": "https://orcid.org/0000-0003-3986-0510" },
-          {"@id": "https://orcid.org/0000-0002-9648-6484" },
-          {"@id": "https://orcid.org/0000-0003-1219-2137" },
-          {"@id": "https://orcid.org/0000-0003-0183-6910" }
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9648-6484"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
       ],
+      "creditText": "Stian Soiland-Reyes, et al. (2022): Updating Linked Data practices for FAIR Digital Object principles. Research Ideas and Outcomes 8:e94501",
+      "name": "Updating Linked Data practices for FAIR Digital Object principles",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e94501"
-      },
-      "creditText": "Stian Soiland-Reyes, et al. (2022): Updating Linked Data practices for FAIR Digital Object principles. Research Ideas and Outcomes 8:e94501",
-      "name": "Updating Linked Data practices for FAIR Digital Object principles"
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/background/",
       "@type": "Chapter",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "contributor": {
+        "@id": "https://orcid.org/0000-0003-0183-6910"
+      },
       "description": "In this chapter, we discuss the related work with respect to FAIR Digital Objects and Linked Data. We do so by looking through the lens of development of these technologies over time, including future directions.",
       "isBasedOn": {
         "@id": "https://s11.no/2023/phd/evaluating-fdo/"
       },
-      "name": "Chapter 2: Background",
-      "author": { "@id": "https://orcid.org/0000-0001-9842-9718"},
-      "contributor": {
-         "@id": "https://orcid.org/0000-0003-0183-6910"
-      }  
+      "name": "Chapter 2: Background"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/conclusion/",
+      "@type": "Chapter",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "name": "Section 6.2: Conclusion"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/discussion/",
+      "@type": "Chapter",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "name": "Section 6.1: Discussion"
     },
     {
       "@id": "https://s11.no/2023/phd/enhancing-rdm-galaxy-dsw/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 18: BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates",
       "creditText": "Ignacio Eguinoa, et al. (2023): BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates. BioHackrXiv",
+      "name": "Supplement 18: BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates",
       "cite-as": {
         "@id": "https://doi.org/10.37044/osf.io/24jst"
       }
@@ -1229,17 +1255,11 @@
         }
       ],
       "creditText": "Stian Soiland-Reyes, et al. (2024): Evaluating FAIR Digital Object and Linked Data as distributed object systems. PeerJ Computer Science 10:e1781",
-      "cite-as": "https://doi.org/10.7717/peerj-cs.1781",
       "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
       "subjectOf": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229",
-      "@type": "Dataset",
-      "name": "Comparison tables for Evaluating FAIR Digital Object and Linked Data (RO-Crate)",
-      "conformsTo": "https://w3id.org/ro/crate"
+      },
+      "cite-as": "https://doi.org/10.7717/peerj-cs.1781"
     },
     {
       "@id": "https://s11.no/2023/phd/fdo-and-linked-data/",
@@ -1259,37 +1279,29 @@
       "@id": "https://s11.no/2023/phd/federated-causal-inference/",
       "@type": "ScholarlyArticle",
       "creditText": "Marjan Meurisse, et al. (2023): Federated causal inference based on real-world observational data sources: Application to a SARS-CoV-2 vaccine effectiveness assessment. BMC Medical Research Methodology 23:248",
-      "cite-as": {
-        "@id": "https://doi.org/10.1186/s12874-023-02068-3"
-      },
       "isBasedOn": {
         "@id": "https://doi.org/10.1186/s12874-023-02068-3"
       },
-      "name": "Supplement 16: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
-    },
-    {
-      "@id": "https://s11.no/2022/phd/introduction/",
-      "@type": "Chapter",
-      "name": "Chapter 1: Introduction",
-      "author": { "@id": "https://orcid.org/0000-0001-9842-9718"},
-      "contributor": [
-        {
-          "@id": "https://orcid.org/0000-0003-0183-6910"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-1219-2137"
-        }
-      ]
+      "name": "Supplement 16: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment",
+      "cite-as": {
+        "@id": "https://doi.org/10.1186/s12874-023-02068-3"
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/linking-provenance/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 17: Linking provenance and its metadata in multi-organizational environments of life sciences",
-      "creditText": "Rudolf Wittner, et al. (2023): Linking provenance and its metadata in multi-organizational environments of life sciences."
+      "creditText": "Rudolf Wittner, et al. (2023): Linking provenance and its metadata in multi-organizational environments of life sciences.",
+      "name": "Supplement 17: Linking provenance and its metadata in multi-organizational environments of life sciences"
+    },
+    {
+      "@id": "https://s11.no/2023/phd/references/",
+      "@type": "Chapter",
+      "name": "References"
     },
     {
       "@id": "https://s11.no/2023/phd/ro-crate/",
       "@type": "Chapter",
+      "description": "This chapter introduces RO-Crate, a pragmatic method of packaging data alongside structured metadata that is inline with the FAIR principles. This has been implemented to investigate RQ2. Section 4.1 describes the RO-Crate purpose, community effort and tooling and demonstrates how RO-Crate has been applied. Section 4.2 shows how RO-Crate can be used to achieve the FDO principles covered in chapter 3. Section 4.3 contributes a formal definition of RO-Crate using first order logic.",
       "hasPart": [
         {
           "@id": "https://s11.no/2022/phd/ro-crate/"
@@ -1301,8 +1313,7 @@
           "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"
         }
       ],
-      "name": "Chapter 4: RO-Crate",
-      "description": "This chapter introduces RO-Crate, a pragmatic method of packaging data alongside structured metadata that is inline with the FAIR principles. This has been implemented to investigate RQ2. Section 4.1 describes the RO-Crate purpose, community effort and tooling and demonstrates how RO-Crate has been applied. Section 4.2 shows how RO-Crate can be used to achieve the FDO principles covered in chapter 3. Section 4.3 contributes a formal definition of RO-Crate using first order logic."
+      "name": "Chapter 4: RO-Crate"
     },
     {
       "@id": "https://s11.no/2023/phd/workflow-run-crate/",
@@ -1363,18 +1374,19 @@
           "@id": "https://orcid.org/0000-0001-9842-9718"
         }
       ],
+      "creditText": "Simone Leo, et al. (2024): Recording provenance of workflow runs with RO-Crate. arXiv:2312.07852 [cs.DL]",
       "isPartOf": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989"
       },
       "name": "Recording provenance of workflow runs with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.48550/arXiv.2312.07852"
-      },
-      "creditText": "Simone Leo, et al. (2024): Recording provenance of workflow runs with RO-Crate. arXiv:2312.07852 [cs.DL]"
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/workflows/",
       "@type": "Chapter",
+      "description": "In order to investigate RQ3, and considering important parts of the FAIR principles are Reuse and provenance, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with Computational Workflows.      Section 5.1 proposes that tools in computational workflows, when wrapped as interoperable building blocks, can be considered as FAIR Digital Objects, with a use case from biomolecular simulation.            Sections 5.2 and 5.3 explore how FDOs and Research Objects can be constructed incrementally using computational workflows, with a use case from specimen digitization in natural history collections.      Section 5.4 presents a profile of RO-Crate to capture workflow execution provenance, with incremental granularity levels and six workflow engine implementations. Use cases include machine learning-aided tumour detection and compatibility with PROV approaches.",
       "hasPart": [
         {
           "@id": "https://s11.no/2022/phd/canonical-workflow-building-blocks/"
@@ -1389,23 +1401,22 @@
           "@id": "https://s11.no/2023/phd/workflow-run-crate/"
         }
       ],
-      "name": "Chapter 5: Computational Workflows",
-      "description": "In order to investigate RQ3, and considering important parts of the FAIR principles are Reuse and provenance, this chapter examines in closer details how FAIR Digital Objects and RO-Crate can be used with Computational Workflows.      Section 5.1 proposes that tools in computational workflows, when wrapped as interoperable building blocks, can be considered as FAIR Digital Objects, with a use case from biomolecular simulation.            Sections 5.2 and 5.3 explore how FDOs and Research Objects can be constructed incrementally using computational workflows, with a use case from specimen digitization in natural history collections.      Section 5.4 presents a profile of RO-Crate to capture workflow execution provenance, with incremental granularity levels and six workflow engine implementations. Use cases include machine learning-aided tumour detection and compatibility with PROV approaches."
+      "name": "Chapter 5: Computational Workflows"
     },
     {
       "@id": "https://s11.no/2024/enabling-fair-digital-objects/",
       "@type": "ScholarlyArticle",
+      "creditText": "Stian Soiland-Reyes, et al. (2024): BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas. BioHackrXiv",
       "name": "Supplement 20: BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas",
       "cite-as": {
         "@id": "https://doi.org/10.37044/osf.io/gmk2h"
-      },
-      "creditText": "Stian Soiland-Reyes, et al. (2024): BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas. BioHackrXiv"
+      }
     },
     {
       "@id": "https://s11.no/2024/signposting-report/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 21: Report on \"FAIR Signposting\" and its uptake by the community",
       "creditText": "Mark D Wilkinson, et al. (2024): Report on FAIR Signposting and its Uptake by the Community. EOSC FAIR Metrics and Data Quality Task Force",
+      "name": "Supplement 21: Report on \"FAIR Signposting\" and its uptake by the community",
       "cite-as": {
         "@id": "https://doi.org/10.5281/zenodo.10490289"
       }
@@ -1413,8 +1424,28 @@
     {
       "@id": "https://s11.no/2024/webby-fdos/",
       "@type": "ScholarlyArticle",
-      "name": "Supplement 22: Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned",
-      "creditText": "Stian Soiland-Reyes, et al. (2024): Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned. International FAIR Digital Objects Implementation Summit 2024, Berlin, Germany, 2024-03-20/--21. Open Conference Proceedings 4 (submitted)"
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3545-944X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8271-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3986-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0351-6523"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0715-6126"
+        }
+      ],
+      "creditText": "Stian Soiland-Reyes, et al. (2024): Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned. International FAIR Digital Objects Implementation Summit 2024, Berlin, Germany, 2024-03-20/--21. Open Conference Proceedings 4 (submitted)",
+      "name": "Supplement 22: Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned"
     },
     {
       "@id": "https://spdx.org/licenses/CC-BY-4.0",
@@ -1435,6 +1466,66 @@
         "@id": "https://w3id.org/ro/crate"
       },
       "name": "Packaging research artefacts with RO-Crate (RO-Crate)"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229",
+      "@type": "Dataset",
+      "conformsTo": "https://w3id.org/ro/crate",
+      "name": "Comparison tables for Evaluating FAIR Digital Object and Linked Data (RO-Crate)"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625",
+      "@type": [
+        "Dataset",
+        "Thesis"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "datePublished": "2024-07-30",
+      "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam",
+      "hasPart": [
+        {
+          "@id": "https://s11.no/2022/phd/introduction/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/background/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/fdo-and-linked-data/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/ro-crate/"
+        },
+        {
+          "@id": "https://s11.no/2023/phd/workflows/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/conclusions/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/acknowledgements/"
+        },
+        {
+          "@id": "https://s11.no/2022/phd/contributions/"
+        },
+        {
+          "@id": "#supplements"
+        }
+      ],
+      "identifier": {
+        "@id": "https://doi.org/10.5281/zenodo.8113625"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "publisher": {
+        "@id": "https://s11.no/"
+      },
+      "temporalCoverage": "2019-06/2024-05",
+      "url": "https://s11.no/2023/phd/",
+      "cite-as": "https://doi.org/10.5281/zenodo.8113625"
     },
     {
       "@id": "https://www.researchobject.org/ro-crate/community",
@@ -1675,6 +1766,14 @@
       "name": "RO-Crate Community",
       "sdDatePublished": "2024-07-30T15:20:00Z",
       "url": "https://www.researchobject.org/ro-crate/community"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": "https://w3id.org/ro/crate/1.2-DRAFT",
+      "about": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
+      }
     }
   ]
 }
