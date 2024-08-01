@@ -15,60 +15,42 @@ description: >
     
     In this work we present Workflow Run RO-Crate, an extension of RO-Crate (Research Object Crate) and Schema.org to capture the provenance of the execution of computational workflows at different levels of granularity and bundle together all their associated objects (inputs, outputs, code, etc.). The model is supported by a diverse, open community that runs regular meetings, discussing development, maintenance and adoption aspects. Workflow Run RO-Crate is already implemented by several workflow management systems, allowing interoperable comparisons between workflow runs from heterogeneous systems. We describe the model, its alignment to standards such as W3C PROV, and its implementation in six workflow systems.Finally, we illustrate the application of Workflow Run RO-Crate in two use cases of machine learning in the digital image analysis domain.
 authors: 
-
--  orcid: https://orcid.org/0000-0001-8271-5429
-   name: Simone Leo
-
--  orcid: https://orcid.org/0000-0002-2961-9670
-   name: Michael R Crusoe
-
--  orcid: https://orcid.org/0000-0003-4929-1219
-   name: Laura Rodríguez-Navas
-
--  orcid: https://orcid.org/0000-0003-0606-2512
-   name: Raül Sirvent
-
--  orcid: https://orcid.org/0000-0002-3468-0652
-   name: Alexander Kanitz
-
--  orcid: https://orcid.org/0000-0002-8940-4946
-   name: Paul De Geest
-
--  orcid: https://orcid.org/0000-0002-0003-2024
-   name: Rudolf Wittner
-
--  orcid: https://orcid.org/0000-0002-4663-5613
-   name: Luca Pireddu
-
--  orcid: https://orcid.org/0000-0003-0454-7145
-   name: Daniel Garijo
-
--  orcid: https://orcid.org/0000-0002-4806-5140
-   name: José M. Fernández
-
--  orcid: https://orcid.org/0000-0001-9290-2017
-   name: Iacopo Colonnelli
-
--  orcid: https://orcid.org/0000-0002-1119-1792
-   name: Matej Gallo
-
--  orcid: https://orcid.org/0000-0003-3777-5945
-   name: Tazro Ohta
-
--  orcid: https://orcid.org/0000-0003-2765-0049
-   name: Hirotaka Suetake
-
--  orcid: https://orcid.org/0000-0002-0309-604X
-   name: Salvador Capella-Gutierrez
-
--  orcid: https://orcid.org/0000-0003-0902-0086
-   name: Renske de Wit
-
--  orcid: https://orcid.org/0000-0001-8250-4074
-   name: Bruno de Paula Kinoshita
-
--  orcid: https://orcid.org/0000-0001-9842-9718
-   name: Stian Soiland-Reyes
+  - orcid: https://orcid.org/0000-0001-8271-5429
+    name: Simone Leo
+  - orcid: https://orcid.org/0000-0002-2961-9670
+    name: Michael R Crusoe
+  - orcid: https://orcid.org/0000-0003-4929-1219
+    name: Laura Rodríguez-Navas
+  - orcid: https://orcid.org/0000-0003-0606-2512
+    name: Raül Sirvent
+  - orcid: https://orcid.org/0000-0002-3468-0652
+    name: Alexander Kanitz
+  - orcid: https://orcid.org/0000-0002-8940-4946
+    name: Paul De Geest
+  - orcid: https://orcid.org/0000-0002-0003-2024
+    name: Rudolf Wittner
+  - orcid: https://orcid.org/0000-0002-4663-5613
+    name: Luca Pireddu
+  - orcid: https://orcid.org/0000-0003-0454-7145
+    name: Daniel Garijo
+  - orcid: https://orcid.org/0000-0002-4806-5140
+    name: José M. Fernández
+  - orcid: https://orcid.org/0000-0001-9290-2017
+    name: Iacopo Colonnelli
+  - orcid: https://orcid.org/0000-0002-1119-1792
+    name: Matej Gallo
+  - orcid: https://orcid.org/0000-0003-3777-5945
+    name: Tazro Ohta
+  - orcid: https://orcid.org/0000-0003-2765-0049
+    name: Hirotaka Suetake
+  - orcid: https://orcid.org/0000-0002-0309-604X
+    name: Salvador Capella-Gutierrez
+  - orcid: https://orcid.org/0000-0003-0902-0086
+    name: Renske de Wit
+  - orcid: https://orcid.org/0000-0001-8250-4074
+    name: Bruno de Paula Kinoshita
+  - orcid: https://orcid.org/0000-0001-9842-9718
+    name: Stian Soiland-Reyes
 ---
 
 <style>
@@ -134,6 +116,9 @@ The model is supported by a diverse, open community that runs regular meetings, 
 Workflow Run RO-Crate is already implemented by several workflow management systems, allowing interoperable comparisons between workflow runs from heterogeneous systems.
 We describe the model, its alignment to standards such as W3C PROV, and its implementation in six workflow systems.
 Finally, we illustrate the application of Workflow Run RO-Crate in two use cases of machine learning in the digital image analysis domain.
+
+An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.10368989) is archived at <https://doi.org/10.5281/zenodo.10368989>
+
 
 ## Introduction {#introduction}
 A crucial part of scientific research is recording the provenance of its outputs.

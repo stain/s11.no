@@ -7,6 +7,23 @@ categories:
 date-meta: '2022-07-10'
 summary: >
   Poster abstract presented at FAIR Digital Objects conference (FDO2022)
+authors: 
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718
+  - name: Peter Sefton
+    orcid: https://orcid.org/0000-0002-3545-944X
+  - name: Leyla Jael Castro
+    orcid: https://orcid.org/0000-0003-3986-0510
+  - name: Frederik Coppens
+    orcid: https://orcid.org/0000-0001-6565-5145
+  - name: Daniel Garijo
+    orcid: https://orcid.org/0000-0003-0454-7145
+  - name: Simone Leo
+    orcid: https://orcid.org/0000-0001-8271-5429
+  - name: Marc Portier
+    orcid: https://orcid.org/0000-0002-9648-6484
+  - name: Paul Groth
+    orcid: https://orcid.org/0000-0003-0183-6910
 description: >
   RO-Crate is a lightweight method to package research outputs along with their metadata, based on Linked Data principles and W3C standards. RO-Crate provides a flexible mechanism for researchers archiving and publishing rich data packages (or any other research outcome) by capturing their dependencies and context. However, additional measures should be taken to ensure that a crate is also following the FAIR principles, including consistent use of persistent identifiers, provenance, community standards, clear machine/human-readable licensing for metadata and data, and Web publication of RO-Crates.
 

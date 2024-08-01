@@ -5,6 +5,19 @@ lang: en-GB
 categories:
   - PhD
 date-meta: '2022-07-10'
+authors: 
+  - name: Stian Soiland-Reyes
+    orcid: https://orcid.org/0000-0001-9842-9718
+  - name: Leyla Jael Castro
+    orcid: https://orcid.org/0000-0003-3986-0510
+  - name: Daniel Garijo
+    orcid: https://orcid.org/0000-0003-3986-0510
+  - name: Marc Portier
+    orcid: https://orcid.org/0000-0002-9648-6484
+  - name: Carole Goble
+    orcid: https://orcid.org/0000-0003-1219-2137
+  - name: Paul Groth
+    orcid: https://orcid.org/0000-0003-0183-6910
 summary: >
   Talk abstract presented at FAIR Digital Objects conference (FDO2022)
 description: >

@@ -16,15 +16,23 @@ keywords:
 - interoperability
 lang: en-GB
 date-meta: '2022-01-10'
-author-meta:
-- Stian Soiland-Reyes
-- Genís Bayarri
-- Pau Andrio
-- Robin Long
-- Douglas Lowe
-- Ania Niewielska
-- Adam Hospital
-- Paul Groth
+authors:
+- name: Stian Soiland-Reyes
+  orcid: https://orcid.org/0000-0001-9842-9718
+- name: Genís Bayarri
+  orcid: https://orcid.org/0000-0003-0513-0288
+- name: Pau Andrio
+  orcid: https://orcid.org/0000-0003-2116-3880
+- name: Robin Long
+  orcid: https://orcid.org/0000-0003-2249-645X
+- name: Douglas Lowe
+  orcid: https://orcid.org/0000-0002-1248-3594
+- name: Ania Niewielska
+  orcid: https://orcid.org/0000-0003-0989-3389
+- name: Adam Hospital
+  orcid: https://orcid.org/0000-0002-8291-8071
+- name: Paul Groth
+  orcid: https://orcid.org/0000-0003-0183-6910"
 summary: > 
   Journal article published in _Data Intelligence_
 description: > 

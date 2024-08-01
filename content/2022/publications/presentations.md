@@ -12,8 +12,6 @@ This page is work in progress. Most of Stian's slides are available from:
 - <https://www.slideshare.net/soilandreyes/>
 - <https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=presentation>
 
-
-
 Stian Soiland-Reyes, Carole Goble (2024):  
 [**WorkflowHub cloud integration in ELIXIR**](https://doi.org/10.5281/zenodo.11654943).  
 _ELIXIR All Hands Meeting 2024_ ([AHM2024](https://elixir-events.eventscase.com/EN/ahm2024/Agenda)), Uppsala, Sweden, 2024-06-12  
@@ -33,6 +31,10 @@ Leyla Jael Castro, Stian Soiland-Reyes, Jonas Grieb, Claus Weiland (2024):
 [**Practical web-based FDOs with RO-Crate and FAIR Signposting**](https://doi.org/10.5281/zenodo.10892090).  
 _International FAIR Digital Objects Implementation Summit 2024_ ([FDOF2024](https://fairdo.org/fdof-summit-2024/)), Berlin  
 <https://doi.org/10.5281/zenodo.10892090>
+
+Stian Soiland-Reyes (2024):  
+[**Introduction to Signposting**](../../2024/signposting-intro/).  
+_International FAIR Digital Objects Implementation Summit 2024_ ([FDOF2024](https://fairdo.org/fdof-summit-2024/)), Berlin  
 
 Stian Soiland-Reyes, Herbert Van de Sompel (2024):  
 [**Signposting and RO-Crate: experiences and lessons learned**](https://doi.org/10.5281/zenodo.10847062).  
