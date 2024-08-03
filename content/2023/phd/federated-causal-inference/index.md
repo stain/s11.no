@@ -1,5 +1,5 @@
 ---
-title: "Supplement 17: Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
+title: "Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
 weight: 370
 lang: en-GB
 categories:

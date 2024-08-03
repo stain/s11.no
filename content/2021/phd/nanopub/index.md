@@ -1,15 +1,21 @@
 ---
-title: "Supplement 5: Semantic micro-contributions with decentralized nanopublication services"
+title: "Semantic micro-contributions with decentralized nanopublication services"
 weight: 250
 categories:
   - PhD
-author:
-- Tobias Kuhn
-- Ruben Taelman
-- Vincent Emonet
-- Haris Antonatos
-- Stian Soiland-Reyes
-- Michel Dumontier
+authors:
+- name: Tobias Kuhn
+  orcid:  
+- name: Ruben Taelman
+  orcid:  
+- name: Vincent Emonet
+  orcid:  
+- name: Haris Antonatos
+  orcid:  
+- name: Stian Soiland-Reyes
+  orcid:  
+- name: Michel Dumontier
+  orcid:  
 lang: en-GB
 summary: > 
   Journal article published in _PeerJ Computer Science_

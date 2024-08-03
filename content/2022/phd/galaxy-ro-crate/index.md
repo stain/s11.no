@@ -1,5 +1,5 @@
 ---
-title: "Supplement 2: Enhancing RDM in Galaxy by integrating RO-Crate"
+title: "Enhancing RDM in Galaxy by integrating RO-Crate"
 weight: 220
 lang: en-GB
 categories:

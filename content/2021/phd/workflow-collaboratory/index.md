@@ -1,5 +1,5 @@
 ---
-title: "Supplement 3: Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
+title: "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
 weight: 230
 lang: en-GB
 categories:

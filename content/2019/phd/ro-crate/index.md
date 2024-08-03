@@ -1,5 +1,5 @@
 ---
-title: "Supplement 16: RO-Crate, a lightweight approach to Research Object data packaging"
+title: "RO-Crate, a lightweight approach to Research Object data packaging"
 weight: 360
 lang: en-GB
 categories:

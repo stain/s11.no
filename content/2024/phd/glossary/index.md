@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
-weight: 0
-parent: "/2022/phd/"
+weight: 5
+parent: "/2023/phd/"
 lang: en-GB
 categories:
   - PhD

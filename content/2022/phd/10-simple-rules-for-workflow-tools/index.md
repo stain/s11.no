@@ -1,5 +1,5 @@
 ---
-title: "Supplement 1: Ten Simple Rules for making a software tool workflow-ready"
+title: "Ten Simple Rules for making a software tool workflow-ready"
 weight: 210
 lang: en-GB
 categories:

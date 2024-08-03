@@ -1,5 +1,5 @@
 ---
-title: "Supplement 18: Linking provenance and its metadata in multi-organizational environments of life sciences"
+title: "Linking provenance and its metadata in multi-organizational environments of life sciences"
 weight: 380
 lang: en-GB
 categories:

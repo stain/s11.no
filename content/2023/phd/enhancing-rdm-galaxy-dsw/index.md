@@ -1,5 +1,5 @@
 ---
-title: 'Supplement 19: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates'
+title: 'Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates'
 weight: 390
 categories:
   - PhD

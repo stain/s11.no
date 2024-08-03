@@ -1,5 +1,5 @@
 ---
-title: "Supplement 4: Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
+title: "Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
 weight: 240
 bib: references.bib
 categories:
@@ -12,18 +12,29 @@ keywords:
     - standards
 lang: en-GB
 date-meta: '2022-05-20'
-author-meta:
-    - Michael R. Crusoe
-    - Sanne Abeln
-    - Alexandru Iosup
-    - Peter Amstutz
-    - John Chilton
-    - Nebojša Tijanić
-    - Hervé Ménager
-    - Stian Soiland-Reyes
-    - Bogdan Gavrilović
-    - Carole Goble
-    - The CWL Community
+authors:
+    - name: Michael R. Crusoe
+      orcid: https://orcid.org/0000-0002-2961-9670
+    - name: Sanne Abeln
+      orcid: "#sanne"
+    - name: Alexandru Iosup
+      orcid: https://orcid.org/0000-0001-8030-9398
+    - name: Peter Amstutz
+      orcid: "#peter"
+    - name: John Chilton
+      orcid: https://orcid.org/0000-0002-6794-0756
+    - name: Nebojša Tijanić
+      orcid: https://orcid.org/0000-0001-8316-4067
+    - name: Hervé Ménager
+      orcid: https://orcid.org/0000-0002-7552-1009
+    - name: Stian Soiland-Reyes
+      orcid: https://orcid.org/0000-0001-9842-9718
+    - name: Bogdan Gavrilović
+      orcid: https://orcid.org/0000-0003-1550-1716
+    - name: Carole Goble
+      orcid: https://orcid.org/0000-0003-1219-2137
+    - name: The CWL Community
+      orcid: https://www.commonwl.org/community/
 summary: >
     Journal article published in _Communications of the ACM_
 description: > 
