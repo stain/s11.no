@@ -954,7 +954,7 @@
         }
       ],
       "creditText": "Stian Soiland-Reyes, et al.(2022): Making Canonical Workflow Building Blocks interoperable across workflow languages. Data Intelligence 4(2)",
-      "name": "Making Canonical Workflow Building Blocks interoperable across workflow languages",
+      "name": "Section 5.1: Making Canonical Workflow Building Blocks interoperable across workflow languages",
       "cite-as": {
         "@id": "https://doi.org/10.1162/dint_a_00135"
       }
@@ -1010,7 +1010,7 @@
         }
       ],
       "creditText": "Stian Soiland-Reyes, et al. (2022): Creating lightweight FAIR Digital Objects with RO-Crate. Research Ideas and Outcomes 8:e93937",
-      "name": "Creating lightweight FAIR Digital Objects with RO-Crate",
+      "name": "Section 4.2: Creating lightweight FAIR Digital Objects with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e93937"
       }
@@ -1045,7 +1045,7 @@
         }
       ],
       "creditText": "Oliver Woolland, et al. (2022): Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows. Research Ideas and Outcomes 8:e94349",
-      "name": "Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows",
+      "name": "Section 5.3: Incrementally building FAIR Digital Objects with Specimen Data Refinery workflows",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e94349"
       }
@@ -1064,7 +1064,34 @@
           "@id": "https://orcid.org/0000-0003-1219-2137"
         }
       ],
+      "hasPart": [
+        { "@id" : "https://s11.no/2022/phd/introduction/#rq1"},
+        { "@id" : "https://s11.no/2022/phd/introduction/#rq2"},
+        { "@id" : "https://s11.no/2022/phd/introduction/#rq3"}
+
+      ],
       "name": "Chapter 1: Introduction"
+    },
+    { 
+      "@id" : "https://s11.no/2022/phd/introduction/#rq1",
+      "@type": "Question",
+      "name": "RQ1",
+      "description": "Research Question 1, aims for FAIR Digital Objects on the Web",
+      "text": "Can the promising FDO concept be realised using existing Web technology, taking into account the lessons learnt from the early Semantic Web developments and more recent Linked Data practices?"
+    },
+    { 
+      "@id" : "https://s11.no/2022/phd/introduction/#rq2",
+      "@type": "Question",
+      "name": "RQ2",
+      "description": "Research Question 2, aims for FAIR Research Objects",
+      "text": "Can a more pragmatic use of Linked Data practices better implement Research Objects for a wider developer audience, by using familiar Web technologies and give lightweight recommendations?"
+    },
+    { 
+      "@id" : "https://s11.no/2022/phd/introduction/#rq3",
+      "@type": "Question",
+      "name": "RQ3",
+      "description": "Research Question 3, ims for FAIR Computational Workflows",
+      "text": "Can a FAIR Digital Object approach for computational workflows unify machine-readable descriptions of Research Software, data and provenance, which can be consistently implemented by developers of different workflow management systems?"
     },
     {
       "@id": "https://s11.no/2022/phd/methods-included/",
@@ -1126,7 +1153,7 @@
       "isBasedOn": {
         "@id": "https://doi.org/10.3233/DS-210053"
       },
-      "name": "Packaging research artefacts with RO-Crate",
+      "name": "Section 4.1: Packaging research artefacts with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.3233/DS-210053"
       }
@@ -1137,7 +1164,7 @@
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "name": "Formalizing RO-Crate in First Order Logic"
+      "name": "Section 4.3: Formalizing RO-Crate in First Order Logic"
     },
     {
       "@id": "https://s11.no/2022/phd/specimen-data-refinery/",
@@ -1169,7 +1196,7 @@
         }
       ],
       "creditText": "Alex Hardisty, et al. (2022): The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections. Data Intelligence 4(2)",
-      "name": "The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections",
+      "name": "Section 5.2: The Specimen Data Refinery: A canonical workflow framework and FAIR Digital Object approach to speeding up digital mobilisation of natural history collections",
       "cite-as": {
         "@id": "https://doi.org/10.1162/dint_a_00134"
       }
@@ -1195,7 +1222,7 @@
         }
       ],
       "creditText": "Stian Soiland-Reyes, et al. (2022): Updating Linked Data practices for FAIR Digital Object principles. Research Ideas and Outcomes 8:e94501",
-      "name": "Updating Linked Data practices for FAIR Digital Object principles",
+      "name": "Section 3.2: Updating Linked Data practices for FAIR Digital Object principles",
       "cite-as": {
         "@id": "https://doi.org/10.3897/rio.8.e94501"
       }
@@ -1213,7 +1240,10 @@
       "isBasedOn": {
         "@id": "https://s11.no/2023/phd/evaluating-fdo/"
       },
-      "name": "Chapter 2: Background"
+      "name": "Chapter 2: Background",
+      "about": {
+        "@id" : "https://s11.no/2022/phd/introduction/#rq1"
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/conclusion/",
@@ -1255,7 +1285,7 @@
         }
       ],
       "creditText": "Stian Soiland-Reyes, et al. (2024): Evaluating FAIR Digital Object and Linked Data as distributed object systems. PeerJ Computer Science 10:e1781",
-      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
+      "name": "Section 3.1: Evaluating FAIR Digital Object and Linked Data as distributed object systems",
       "subjectOf": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8075229"
       },
@@ -1273,7 +1303,10 @@
           "@id": "https://s11.no/2022/phd/updating-ld-for-fdo/"
         }
       ],
-      "name": "Chapter 3: FAIR Digital Objects and Linked Data"
+      "name": "Chapter 3: FAIR Digital Objects and Linked Data",
+      "about": {
+        "@id" : "https://s11.no/2022/phd/introduction/#rq1" 
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/federated-causal-inference/",
@@ -1313,7 +1346,10 @@
           "@id": "https://s11.no/2022/phd/ro-crate/formalizing/"
         }
       ],
-      "name": "Chapter 4: RO-Crate"
+      "name": "Chapter 4: RO-Crate",
+      "about": {
+        "@id": "https://s11.no/2022/phd/introduction/#rq2"
+      }
     },
     {
       "@id": "https://s11.no/2023/phd/workflow-run-crate/",
@@ -1378,7 +1414,7 @@
       "isPartOf": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989"
       },
-      "name": "Recording provenance of workflow runs with RO-Crate",
+      "name": "Section 5.4: Recording provenance of workflow runs with RO-Crate",
       "cite-as": {
         "@id": "https://doi.org/10.48550/arXiv.2312.07852"
       }
@@ -1401,7 +1437,10 @@
           "@id": "https://s11.no/2023/phd/workflow-run-crate/"
         }
       ],
-      "name": "Chapter 5: Computational Workflows"
+      "name": "Chapter 5: Computational Workflows",
+      "about": {
+        "@id" : "https://s11.no/2022/phd/introduction/#rq3"
+      }
     },
     {
       "@id": "https://s11.no/2024/enabling-fair-digital-objects/",
