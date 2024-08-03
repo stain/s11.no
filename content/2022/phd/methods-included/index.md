@@ -16,11 +16,11 @@ authors:
     - name: Michael R. Crusoe
       orcid: https://orcid.org/0000-0002-2961-9670
     - name: Sanne Abeln
-      orcid: "#sanne"
+      orcid: https://orcid.org/0000-0002-2779-7174
     - name: Alexandru Iosup
       orcid: https://orcid.org/0000-0001-8030-9398
     - name: Peter Amstutz
-      orcid: "#peter"
+      orcid: https://orcid.org/0000-0003-3566-7705
     - name: John Chilton
       orcid: https://orcid.org/0000-0002-6794-0756
     - name: Nebojša Tijanić
