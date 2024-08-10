@@ -1,0 +1,112 @@
+\documentclass[conference]{IEEEtran}
+
+% Packages
+\input{_packages}
+
+% Macros
+\input{_macros}
+
+\begin{document}
+
+% Title
+\title{A Community Roadmap for Scientific Workflows Research and Development}
+
+% Authors
+\author{
+  \IEEEauthorblockN{
+    Rafael Ferreira da Silva\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},
+    Henri Casanova\IEEEauthorrefmark{3},
+    Kyle Chard\IEEEauthorrefmark{4}\IEEEauthorrefmark{5},
+    Ilkay Altintas\IEEEauthorrefmark{6},
+    Rosa M Badia\IEEEauthorrefmark{7},
+    Bartosz Balis\IEEEauthorrefmark{8},\\
+    Tain\~a Coleman\IEEEauthorrefmark{2},
+    Frederik Coppens\IEEEauthorrefmark{9}\IEEEauthorrefmark{10},
+    Frank Di Natale\IEEEauthorrefmark{11},
+    Bjoern Enders\IEEEauthorrefmark{21},
+    Thomas Fahringer\IEEEauthorrefmark{12},
+    Rosa Filgueira\IEEEauthorrefmark{13},\\
+    Grigori Fursin\IEEEauthorrefmark{14},
+    Daniel Garijo\IEEEauthorrefmark{15},
+    Carole Goble\IEEEauthorrefmark{16},
+    Dorran Howell\IEEEauthorrefmark{17},
+    Shantenu Jha\IEEEauthorrefmark{18},
+    Daniel S. Katz\IEEEauthorrefmark{19},\\
+    Daniel Laney\IEEEauthorrefmark{11},
+    Ulf Leser\IEEEauthorrefmark{20},
+    Maciej Malawski\IEEEauthorrefmark{8},
+    Kshitij Mehta\IEEEauthorrefmark{1},
+    Lo\"{i}c Pottier\IEEEauthorrefmark{2},
+    Jonathan Ozik\IEEEauthorrefmark{4}\IEEEauthorrefmark{5},\\
+    J. Luc Peterson\IEEEauthorrefmark{11},
+    Lavanya Ramakrishnan\IEEEauthorrefmark{21},
+    Stian Soiland-Reyes\IEEEauthorrefmark{16}\IEEEauthorrefmark{22},
+    Douglas Thain\IEEEauthorrefmark{23}, 
+    Matthew Wolf\IEEEauthorrefmark{1}
+    \\
+    % {\color{red}[Please Add your Name and Affiliation] (they will be sorted alphabetically by last name)}
+  }
+  \IEEEauthorblockA{
+    \IEEEauthorrefmark{1}Oak Ridge National Laboratory, Oak Ridge, TN, USA \ \
+    \IEEEauthorrefmark{2}University of Southern California, Marina Del Rey, CA, USA \\
+    \IEEEauthorrefmark{3}University of Hawaii, Honolulu, HI, USA \ \ 
+    \IEEEauthorrefmark{4}Argonne National Laboratory, Lemont, IL, USA \\
+    \IEEEauthorrefmark{5}The University of Chicago, Chicago, IL, USA \ \
+    \IEEEauthorrefmark{6}University of California, San Diego, La Jolla, CA, USA \\
+    \IEEEauthorrefmark{7}Barcelona Supercomputing Center, Spain \ \
+    \IEEEauthorrefmark{8}AGH University of Science and Technology, Krakow, Poland \\
+    \IEEEauthorrefmark{9}Ghent University, Ghent, Belgium\ \
+    \IEEEauthorrefmark{10}VIB Center for Plant Systems Biology, Belgium \\
+    \IEEEauthorrefmark{11}Lawrence Livermore National Lab, Livermore, CA, USA \ \
+    \IEEEauthorrefmark{12}University of Innsbruck, Innsbruck, Austria \\
+    \IEEEauthorrefmark{13}Heriot-Watt University, Edinburgh, UK \ \
+    \IEEEauthorrefmark{14}OctoML, USA \ \
+    \IEEEauthorrefmark{15}Universidad Polit\'{e}cnica de Madrid, Spain \\
+    \IEEEauthorrefmark{16}The University of Manchester, Manchester, UK \ \
+    \IEEEauthorrefmark{17}Tweag, Z\"{u}rich, Switzerland \\
+    \IEEEauthorrefmark{18}Brookhaven National Laboratory, Upton, NY, USA \ \
+    \IEEEauthorrefmark{19}University of Illinois at Urbana-Champaign, USA \\
+    \IEEEauthorrefmark{20}Humboldt-Universität zu Berlin, Berlin, Germany \ \
+    \IEEEauthorrefmark{21}Lawrence Berkeley National Lab, Berkeley, CA, USA \\
+    \IEEEauthorrefmark{22}University of Amsterdam, Amsterdam, The Netherlands\ \
+    \IEEEauthorrefmark{23}University of Notre Dame, Indiana, USA \\
+  }
+}
+% \thanks{This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The publisher acknowledges the US government license to provide public access under the DOE Public Access Plan (http://energy.gov/downloads/doe-public-access-plan)}
+
+\maketitle
+
+% Abstract
+\input{abstract}
+
+% Keywords
+\input{keywords}
+
+% sections
+\input{sec_introduction}
+\input{sec_fair_workflows}
+\input{sec_ai_workflows}
+\input{sec_exascale}
+\input{sec_interoperability}
+\input{sec_training}
+\input{sec_community}
+\input{sec_roadmap}
+\input{sec_conclusion}
+
+\blfootnote{
+\noindent\textbf{Acknowledgments.}
+This work was funded by NSF awards \#2016610, \#2016682, and \#2016619, and by the Exascale Computing Project (17-SC-20-SC), a collaborative effort of the U.S. Department of Energy (DOE) Office of Science and the National Nuclear Security Administration (NNSA).
+This research used resources of the Oak Ridge Leadership Computing Facility at the Oak Ridge National Laboratory, which is supported by the Office of Science of the U.S. DOE under Contract \#DE-AC05-00OR22725.
+CG and SSR acknowledge funding from European Commission's contracts BioExcel-2 (H2020-INFRAEDI-2018-1 823830), EOSC-Life (H2020-INFRAEOSC-2018-2 824087), IBISBA 1.0 (H2020-INFRAIA-2017-1-two-stage 730976), PREP-IBISBA (H2020-INFRADEV-2019-2 871118), SyntheSys+ (H2020-INFRAIA-2018-1 823827). UL acknowledges funding from the German Research Council for CRC 1404 FONDA.
+FC is supported by the Research Foundation-Flanders (FWO, I002819N) and by the European Union's Horizon 2020 research and innovation programme under grant \#824087 (EOSC-Life).
+BSC authors acknowledge EuroHPC JU under contract 955558 (eFlows4HPCproject).
+We thank all participants of the Workflows Community Summits, held in January 2021 and April 2021.
+}
+
+% bibliography
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% \balance
+
+\end{document}

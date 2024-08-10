@@ -1,0 +1,77 @@
+\section{A Roadmap for Workflows Research and Development}
+\label{sec:roadmap}
+
+In the previous sections, we have described broad challenges for the workflows community and proposed a vision for community activities to address these challenges. Here, we explore technical approaches for realizing (part of) that vision. Based on the outcomes of the first summit~\cite{ferreiradasilva2021wcs}, we identified three technical thrusts for discussion in the second summit~\cite{wcs2021technical}. Some of these thrusts align with a single theme of the first summit and some are cross-cutting. In the following subsections, we summarize discussions at the second summit and propose roadmap milestones that emerged from these discussions. Additional details can be found in the report from the second summit~\cite{wcs2021technical}. A summary of the roadmap milestones is shown in Table~\ref{tab:roadmap}.
+
+
+%% Subsection
+\subsection{Defining Common Workflow Patterns and Benchmarks}
+
+The above sections highlight the need to establish repositories of common workflow patterns and benchmarks (Sections~\ref{sec:ai}, \ref{sec:exascale}, \ref{sec:interoperability}, and~\ref{sec:training}). One objective is to develop workflow patterns in which each pattern should be easy for users to leverage as a starting point for their own specific workflow applications---they should provide links to one or more implementations, where each implementation is for a particular workflow system and can be downloaded and easily modified by the user. However, the \emph{level of abstraction} of these patterns (i.e., the level of connection to real application use-cases) should still be defined. At one extreme, workflow patterns could be completely abstract with no connection to any real-world application. At the other extreme, workflow patterns could be completely use-case-driven and correspond to actual scientific applications, with realistic task computations and data sets. The end goal is thus to identify useful patterns that span the spectrum of possible levels of abstraction. 
+
+Another aspect is the level of detail with which a pattern specifies the platform on which it is to be executed and the logistics of the execution on that platform. The platform description could be left completely abstract, or it could be fully specified. Under-specifying execution platforms and logistics may render the pattern useless, but over-specifying them could render the pattern too niche.
+
+Benchmark specifications should make it easy for workflow system developers to develop them or to determine that their system cannot implement these specifications. Each benchmark should provide links to implementations and data sets, where each implementation is for a particular workflow system. These implementations would be provided, maintained, and evolved by workflow system developers. They should be able to be packaged so that they are executed out of the box on the classes of platforms they support. Moreover, the input data of these workflows should be configurable in size to enable both weak and strong scaling experiments. For all configurations, also the output of the workflow must be provided to allow functional testing.
+
+Given the above, the following milestones are proposed:
+
+\pp{M1.}
+Define small sets (between 5 and 10) of workflow patterns and workflow benchmark deliverables. These should be defined by eliciting feedback from users and workflow system developers, as well as based on existing sources that provide or define real-world or synthetic workflow patterns. 
+
+\pp{M2.}
+Work with a selected set of workflow systems to implement the above patterns and benchmarks.
+
+\pp{M3.}
+Investigate options for automatic generation of patterns and/or benchmarks using existing approaches~\cite{katz2016application, coleman2021wfcommons}.
+
+\pp{M4.}
+Identify or create a centralized repository to host and curate the above patterns and benchmarks~\cite{workflowhub, coleman2021wfcommons}.
+
+
+%% Subsection
+\subsection{Paths Toward Interoperability of Workflow Systems}
+
+Workflow systems differ in many ways, such as expressivity, execution models, and ecosystems. These differences are mainly due to individual implementations of language, control mechanisms (e.g., fault tolerance, loops), data management mechanisms, execution backends, reproducibility aspects for sharing workflows, and provenance and FAIR metadata capturing. The need for interoperability is paramount and can occur at multiple technical levels (e.g., task, tools, workflows, data, metadata, provenance, and packaging) as well as non-technical level including semantics, organizational, and legal issues (e.g., licenses compatibility, data sharing policies).
+
+The need for interoperability of workflow applications and systems is commonly modeled as a problem of porting applications across systems, which may require days up to weeks of development effort~\cite{schiefer2020portability,LFB+21}. Most of the previous approaches for tackling the interoperability problem attempted to develop complete vertical solutions rather than consider the perspective of making interoperable components. There is significant duplication between workflow systems and thus an opportunity to reuse and share components between systems. Developing interoperable components 
+will require defining standardized APIs, which is still an open challenge~\cite{turilli2019middleware, billings2017toward}. 
+
+There is a tendency to tie the workflow with its execution model and data structures (e.g., the intertwine between the abstract workflow and its execution). Understanding which component in the workflow system architecture accounts for which functionality, is then paramount. Thus, separation of concerns is key for interoperability at many levels, for example, separation of orchestration of the workflow graph from its execution.
+
+Given the above, the following milestones are proposed:
+
+\pp{M5.}
+Define concrete notions of interoperability for different stakeholders, in particular workflow designers, workflow system developers, and workflow execution organizations.
+
+\pp{M6.}
+Establish a ``requirements" document per a small set of \emph{abstraction layers} that will (i)~capture the commonalities between components of workflow systems; and (ii)~perform a separation of concerns to identify interoperability gaps.
+
+\pp{M7.}
+Develop real-world workflow \emph{benchmarks} featuring different configurations and complexities (see previous section). Such benchmarks would be key to evaluate the functionality of workflow systems and computing platforms systematically.
+
+\pp{M8.}
+Develop \emph{use cases} for interoperability based on real-life scenarios, such as porting workflows between platforms that provide different file systems and different resource managers.
+
+\pp{M9.}
+Develop \emph{common APIs} that represent a set of workflow system components, enabling interoperability to be achieved at the component level~\cite{cwl, arshad2015definition, Fursin_2021}, including APIs for defining inputs, storing intermediate results, and output data.
+
+\pp{M10.}
+Establish a workflow systems \emph{developer community}. An immediate activity would be to develop a centralized repository of workflow-related research papers, and a workflow system registry aimed at DevOps and/or users.
+
+
+%% Subsection
+\subsection{Improving Workflow Systems' Interface with Legacy and Emerging HPC Software and Hardware Stacks}
+
+Improving the interface between workflow systems and existing as well as emerging HPC and cloud infrastructure is particularly important as workflows are designed to be used for long periods of time and may be moved between computing providers. This challenge is  exacerbated with the specialization of hardware and software systems (e.g., with accelerators, virtualization, containers, and cloud or serverless infrastructures). Thus, it is important to address the challenges faced by workflow systems with respect to discovering and interacting with a diverse set of cyberinfrastructure resources and also the difficulties authenticating remote connections while adhering to facility policies.
+
+Workflow systems require a standard method for querying a site on how to use that site, for example, information about the batch system, file system configuration, data transfer methods, and machine capabilities. It is crucial then to first understand what information is needed by workflow systems, what information could be made available programmatically and what must be manually curated (similar ongoing efforts~\cite{sgci} may provide the foundations for this effort).
+
+A key capability provided by workflow systems is remote job execution, which is necessary in cases where workflows span facilities. However, authentication has always been challenging. Many workflow systems rely on fragile SSH connections and in the past the use of GSISSH for delegated authentication. Recently, sites have moved towards two factor authentication and even OAuth-based solutions. There are ongoing efforts to provide programmatic identity and access management in scientific domains~\cite{tuecke16globus, alt2020oauth, withers2018scitokens}. While the topic of remote authentication is much more broad than the workflows community, there are important considerations that should be included in this discussion related to programmatic access, community credentials, and long-term access. 
+
+Given the above, the following milestones are proposed:
+
+\pp{M11.}
+Document a machine-readable description of the essential properties of popular sites, for example, by defining a JSON schema and populating a GitHub repository with site descriptions.
+
+\pp{M12.}
+Document remote authentication requirements from the workflow perspective and organize an event involving workflow system developers, end users, authentication technology providers, and facility operators. 

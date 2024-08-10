@@ -1,0 +1,29 @@
+\section{FAIR Computational Workflows}
+\label{sec:fair}
+
+The FAIR principles~\cite{wilkinson2016fair} have laid a foundation for sharing and publishing digital assets and, in particular, data. The FAIR principles emphasize machine accessibility and that all digital assets should be Findable, Accessible, Interoperable, and Reusable. Workflows encode the methods by which the scientific process is conducted and via which data are created. It is thus important that workflows both support the creation of FAIR data and themselves adhere to the FAIR principles.
+
+
+%% Subsection
+\subsection{Brief State-of-the-art and Challenges}
+
+Workflows are hybrid processual digital assets that can be considered as data or software, or some combination of both. As such, there is a range of considerations to take into account with respect to the FAIR principles~\cite{goble2020}. Some perspectives are already well explored in data/software FAIRness, such as descriptive metadata, software metrics, and versioning; however, workflows create unique challenges such as representing a \textbf{\emph{complex lifecycle}} from specification to execution via a workflow system, through to the data created at the completion of the workflow execution.
+
+As a specialized kind of software, workflows have two properties that FAIRness fundamentally must address: \textbf{\emph{abstraction and composition}}. As far as possible a workflow specification, as a graph or some declarative expression, is abstracted from its execution undertaken by a dedicated software platform. Workflows are composed of modular building blocks and expected to be remixed. FAIR applies ``all the way down" at the specification and execution level, and for the whole workflow and each of its components. One of the most challenging aspects of making workflows FAIR is ensuring that they can be \textbf{\emph{reused}}. These challenges include being able to capture and then move workflow components, dependencies, and application environments in such a way as not to  affect the resulting execution of the workflow. Further work is required to understand use cases for reuse, before exploring methods for capturing necessary context and enabling reuse in the same or different environments. 
+
+Once use cases are defined, there are many \textbf{\emph{metrics and features}} that could be considered to determine whether a workflow is FAIR. These features may differ depending on the type of workflow and its application domain. Prior work in data and software FAIRness~\cite{wilkinson2016fair, katz2021taking} provides a starting point, however, these metrics need to be revised for workflows. In terms of labeling workflows as being FAIR, there has been widespread adoption of reproducibility badges for publications and of FAIR labels for data in repositories~\cite{acm-badges}. Similar approaches could be applied to computational workflows. 
+%
+Finally, developing methods for FAIR workflows requires \textbf{\emph{community engagement}} (i)~to define principles, policies, and best practices to share workflows; (ii)~to standardize metadata representation and collection processes; (iii)~to create developer-friendly guidelines and workflow-friendly tools; and (iv)~to develop shared infrastructure for enabling development, execution, and sharing of FAIR workflows.
+
+
+%% Subsection
+\subsection{A Vision for Potential Community Activities}
+
+Given current efforts for developing FAIR data and software, it is important to first understand what efforts could be adapted to workflow problems. An immediate activity is to participate in working groups focused on applying FAIR principles to data and software. For instance, FAIR4RS~\cite{fair4rs} coordinates community-led discussions around FAIR principles for research software. Workflows could then be initially tackled from the point of view of workflows as software, which could originate a novel \textbf{\emph{task force}}. Proposed working groups such as FAIR for Virtual Research Environments~\cite{fair4vre} represent adequate progress towards this goal. 
+
+A fundamental tenet of FAIR is the universal availability of machine processable metadata. The European EOSC-Life Workflow Collaboratory, for example, has developed a metadata framework for FAIR workflows based on schema.org~\cite{bioschemas-ComputationalWorkflow}, RO-Crate~\cite{rocrate}, and CWL~\cite{cwl}. This could be a community starting point for standardization of metadata about workflows.  
+
+An integral aspect of a FAIR computational workflows task force would be to collect a set of real-world use cases and workflows in several domains to examine from the perspective of the FAIR data principles. This exercise will likely highlight areas in which the FAIR data principles adequately represent challenges in workflows. Based on these experiences, a set of \textbf{\emph{simple rules}} could be defined for creating FAIR workflows, similar to those defined for software~\cite{monteil2020nine}. From these rules, 
+prominent workflow repositories (e.g., WorkflowHub.eu~\cite{workflowhub} and Dockstore~\cite{yuen2021dockstore}), communities, and workflow systems can define \textbf{\emph{recommendations}} to support the development and sharing of FAIR workflows. These efforts relate not only to the workflows themselves, but the workflow components, execution environments, and the different types of data.
+
+Ensuring \textbf{\emph{provenance}} can capture the necessary information is key for enabling FAIRness in workflows. Many provenance models~\cite{oliveira2018provenance} can be implemented or extended to capture the information needed for FAIR workflows. Further, FAIR principles are more likely to be followed if the process for capturing these metrics is automated and embedded in workflow systems. In this case, a workflow execution will become FAIR by default, or perhaps with minimal user curation.

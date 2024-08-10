@@ -1,0 +1,28 @@
+\section{Exascale Challenges and Beyond}
+\label{sec:exascale}
+
+Given the computational demands of many workflows, it is crucial that their execution be not only feasible but also effortless and efficient on large-scale HPC systems, and in particular upcoming exascale systems~\cite{ferreiradasilva-fgcs-2017}. Exascale systems are likely to contain millions of independent computing elements that can be concurrently scheduled across more than 10,000 nodes, millions of cores, and tens of thousands of accelerators.
+
+
+%% Subsection
+\subsection{Brief State-of-the-art and Challenges}
+
+HPC resource allocation policies and schedulers  typically do not consider workflow applications: they provide a ``job" abstraction rather than workflow-aware abstractions. Workflow users and systems are forced to make their workflows run on top of this \textbf{\emph{ill-fitted abstraction}}. As a result, it is difficult to control low-level behavior that is critical to workflows (e.g., precise mapping of tasks to specific compute resources on a compute node). Furthermore, there is a clear lack of support for elasticity (i.e., scaling up/down the number of nodes). Overall, it is currently difficult to run workflows efficiently and conveniently on HPC systems without extending (or even overhauling) resource management/scheduling approaches, which ideally would allow programmable, fine-grain application-level resource allocation and scheduling.
+
+Related to the above challenge, it is currently not possible to support both workflow and non-workflow users harmoniously and/or efficiently on the same system. Some features needed by workflows are often unavailable. For instance, batch schedulers can support elastic jobs (e.g., Slurm); however, experience shows that system admins may not be willing to enable this capability, as they deem long static allocations to be preferable. A \textbf{\emph{cultural change}} is perhaps needed as workflows are not often considered to be high-priority applications by high-end compute facilities.
+
+Hybrid architectures are increasingly key to achieving high performance and many workflows can or are specifically designed to exploit such architectures; however, on HPC systems, the necessary \textbf{\emph{resource descriptions and mechanisms}} are not necessarily available to workflow users/systems (even though some workflow systems have successfully interfaced to such mechanisms on particular systems)~\cite{ahn2020flux}. Although these resource descriptions and mechanisms are typically available as part of the ``job" abstraction, it is often not clear how a workflow system can discover and use them effectively.
+
+Finally, \textbf{\emph{fault-tolerance and fault-recovery}} have been extensively studied on exascale systems, with several working solutions available for traditional parallel jobs~\cite{heldens2020landscape}. In the context of  workflows, specific techniques have been the subject of several studies~\cite{prathiba2017survey}; however, workflow-specific solutions are typically not readily available or deployed. Moreover, workflows are built on smaller platforms, thus operating and testing at exascale would entail expressing new requirements/capabilities and dealing with new constraints (e.g., what is a ``local" exascale workflow?).
+
+
+%% Subsection
+\subsection{A Vision for Potential Community Activities}
+
+An immediate activity is to document, in the form of \textbf{\emph{workflow templates, recipes, or miniapps}}, example exascale workflows that can be hosted on a community website. 
+%for execution on high-end HPC systems to be hosted on a community web site. 
+Some efforts underway provide partial solutions~\cite{ewels2020nf}. For instance, collections of workflows exist but typically do not provide large-scale execution capabilities (e.g., community testbeds). Some compute facilities provide workflow system documentation to support their users~\cite{nersc-workflows}. These solutions should be cataloged as a starting point, and HPC facilities could promote yearly ``workflow days," in which they offer workflow users and developers training and early access to machines to test their workflows, thus gathering feedback from users and developers.
+
+To drive the design of workflow-aware abstractions, the community could specify \textbf{\emph{community benchmark workflows}} for exascale execution, exerting all relevant hardware as well as functionality capabilities. It will then become possible for different workflow systems to execute these benchmarks. Initial efforts could build on previous benchmark solutions~\cite{openebench, coleman2021wfcommons}. These benchmarks could be included in \textbf{\emph{acceptability tests for exascale machines}}. Note that there will be a need to select particular workflow systems to run these benchmarks, which will foster training and education of HPC personnel.
+
+Finally, including workflow requirements very early on in \textbf{\emph{machine procurement process}} for machines at computing facilities will significantly lower the barriers for enabling workflow execution and therefore porting workflow applications. This effort is therefore preconditioned on the availability of miniapps and/or benchmark specifications, as well as API/scheduler specifications, as outlined above.

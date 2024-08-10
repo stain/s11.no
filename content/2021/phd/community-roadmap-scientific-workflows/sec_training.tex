@@ -1,0 +1,26 @@
+\section{Training and Education for Workflow Users}
+\label{sec:training}
+
+There is a crucial need for more, better, and new training and education opportunities for workflow users. Many users ``re-invent the wheel" without reusing software infrastructures and workflow systems that would make their workflow execution more convenient, more efficient, easier to evolve, and more portable. This is partly due to the lack of comprehensive and intuitive training materials available to guide users through the process of designing a workflow (besides the typical ``toy" examples provided in tutorials).
+
+
+%% Subsection
+\subsection{Brief State-of-the-art and Challenges}
+
+Adopting and using workflow systems can require significant effort and time, due to a \textbf{\emph{steep learning curve}}. A contributing factor is that users may not be familiar with workflows terminology and concepts. As a result, some have noted that what would be needed in the current technology landscape is to ``ship a developer along with the workflow system''.
+
+One of the reasons for the above challenge is that there are \textbf{\emph{few ``recipes'' or ``cookbooks''}} for workflow systems. Furthermore, given that workflows and their execution platforms are complex and diverse, in addition to mere training material, there is a need for a training infrastructure that consists of workflows and accompanying data (small enough to be used for training purposes but large enough to be meaningful) as well as execution testbeds for running these workflows.
+
+Given the multitude of workflow systems~\cite{workflow-systems}, and the lack of standards (Section~\ref{sec:interoperability}), users cannot easily pick the appropriate system(s) for their needs. More importantly, there is an understandable fear of being locked into a tool that at some point in the near future will no longer be supported. Although documentation can be a problem, \textbf{\emph{guidance}} is the more crucial issue. Many users have the basic skills to create and execute workflows on some system, but as requirements gradually increase many users evolve their simple approaches in ad-hoc ways, thus developing/maintaining a working but \textbf{\emph{imperfect homegrown system}}. There is thus a high risk of hitting technological or labor-intensiveness roadblocks, which could be remedied by using a workflow system. But, when ``graduating" to such a system, there will likely be constraints that prevent users from reproducing the functionality of their homegrown system. The benefits of using the workflow system should thus largely outweigh the drawback of these constraints.
+
+Given all the above challenges, it is not easy to \textbf{\emph{reach out to users at the appropriate time}}. Reach out too early and users will not find the need to use a particular workflow system compelling. Reach out too late, and users are already locked into their homegrown system, even though in the long run this approach will severely harm their productivity.
+
+
+%% Subsection
+\subsection{A Vision for Potential Community Activities}
+
+Lowering the entry barrier is key for enabling the next-generation of researchers to benefit from workflow systems. An initial approach would be to provide a basic set of simple, yet conceptually rich, \textbf{\emph{sample workflow patterns}} (e.g., ``hello world" one-task workflows, chain workflows, fork-join workflows, simple dynamic workflows), all with a few ways of handling data and I/O, and all with several target execution platforms. Then workflow system teams can provide (interactive) documentation (or could be hosted on a community Web site) describing how to run these patterns with their system~\cite{nersc-workflows}. Further, mechanisms should be identified at the institutional level to commit workflow systems \textbf{\emph{training efforts in person}}: (i)~this should be based on existing facilities and universities efforts; (ii)~the scope of the training should be narrowed so it is manageable; and (iii)~the issue of ``who trains the trainers?" needs to be addressed. 
+
+In light of workforce training, workflow concepts should be taught at early stages of the researchers/users education path. Precisely, these concepts should be included in university curricula, including domain science curricula. Recent efforts have produced pedagogic modules that target workflow education~\cite{casanova2021eduwrench, eduwrench}. Pedagogic content could also be distributed as workflow modules to existing software carpentry efforts~\cite{swcarpentry}.
+
+There is an established community of workflow researchers, developers, and users that has extensive expertise knowledge regarding specific systems, tools, applications, etc. It is crucial that this knowledge be captured to bootstrap a \textbf{\emph{community workflow knowledge-base}} (following standards for documentation, interoperability, etc.) for training and education. The workflows community would also benefit from collaborations with social scientists and sociologists so as to help define an overall strategy for approaching some of the above challenges.
