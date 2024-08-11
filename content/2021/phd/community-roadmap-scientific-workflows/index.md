@@ -77,14 +77,16 @@ description: >
 
 <h2>Cite as</h2>
 
-Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Badia, Bartosz Balis, Tainã Coleman, Frederik Coppens, Frank Di Natale, Bjoern Enders, Thomas Fahringer, Rosa Filgueira, Grigori Fursin, Daniel Garijo, Carole Goble, Dorran Howell, Shantenu Jha, Daniel S. Katz, Daniel Laney, Ulf Leser, Maciej Malawski, Kshitij Mehta, Loïc Pottier, Jonathan Ozik, J. Luc Peterson, Lavanya Ramakrishnan, Stian Soiland-Reyes, Douglas Thain, Matthew Wolf (2021):  
+Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Ilkay Altintas, Rosa M Badia, Bartosz Balis, Tainã Coleman, Frederik Coppens, Frank Di Natale, Bjoern Enders, Thomas Fahringer, Rosa Filgueira, Grigori Fursin, Daniel Garijo, Carole Goble, Dorran Howell, Shantenu Jha, Daniel S. Katz, Daniel Laney, Ulf Leser, Maciej Malawski, Kshitij Mehta, Loïc Pottier, Jonathan Ozik, J. Luc Peterson, Lavanya Ramakrishnan, Stian Soiland-Reyes, Douglas Thain, Matthew Wolf(2021):  
+** **
 [**A Community Roadmap for Scientific Workflows Research and Development**](https://arxiv.org/pdf/2110.02168).  
 _2021 IEEE Workshop on Workflows in Support of Large-Scale Science ([WORKS](https://works-workshop.org/))_  
 <https://doi.org/10.1109/WORKS54523.2021.00016>  
 [arXiv:2110.02168](https://arxiv.org/abs/2110.02168) [cs.DC]
 
 
-* **Is based on**: <https://arxiv.org/pdf/2110.02168v2> (Author-submitted article)
+* **Is based on**:
+<https://arxiv.org/pdf/2110.02168v2> (Author-submitted article)
 * **License**: © 2021 IEEE.  Personal use of this material is permitted.  Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.
 * **Modifications**: Formatting as Markdown from preprint LaTeX; references in s11 house style; table 2 changed to definition list; additional paragraph breaks for readability.
 
@@ -131,49 +133,39 @@ To this end, participants identified six broad themes: FAIR computational workfl
 
 ## Introduction
 
-Scientific workflows are used almost universally across scientific domains for solving complex and large-scale computing and data analysis problems. The importance of workflows is highlighted by the fact that they have underpinned some of the most significant discoveries of the past decades \[1\]. Many of these workflows have significant computational, storage, and communication demands, and thus must execute on a range of large-scale platforms, from local clusters to public clouds and upcoming exascale HPC platforms \[2\]. Managing these executions is often a significant undertaking, requiring a sophisticated and versatile software infrastructure.
+Scientific workflows are used almost universally across scientific domains for solving complex and large-scale computing and data analysis problems. The importance of workflows is highlighted by the fact that they have underpinned some of the most significant discoveries of the past decades \[[Badia 2017]\]. Many of these workflows have significant computational, storage, and communication demands, and thus must execute on a range of large-scale platforms, from local clusters to public clouds and upcoming exascale HPC platforms \[[Ferreira da Silva 2017]\]. Managing these executions is often a significant undertaking, requiring a sophisticated and versatile software infrastructure.
 
-Historically, infrastructures for workflow execution consisted of complex, integrated systems, developed in-house by workflow practitioners with strong dependencies on a range of legacy technologies—even including sets of ad-hoc scripts. Due to the increasing need to support workflows, dedicated workflow systems were developed to provide abstractions for creating, executing, and adapting workflows conveniently and efficiently while ensuring portability. While these efforts are all worthwhile individually, there are now hundreds of independent workflow systems \[3\]. These workflow systems are created and used by thousands of researchers and developers, leading to a rapidly growing corpus of workflows research publications. The resulting workflow system technology landscape is fragmented, which may present significant barriers for future workflow users due to many seemingly comparable, yet usually mutually incompatible, systems that exist.
+Historically, infrastructures for workflow execution consisted of complex, integrated systems, developed in-house by workflow practitioners with strong dependencies on a range of legacy technologies—even including sets of ad-hoc scripts. Due to the increasing need to support workflows, dedicated workflow systems were developed to provide abstractions for creating, executing, and adapting workflows conveniently and efficiently while ensuring portability. While these efforts are all worthwhile individually, there are now hundreds of independent workflow systems \[[CWL 2021]\]. These workflow systems are created and used by thousands of researchers and developers, leading to a rapidly growing corpus of workflows research publications. The resulting workflow system technology landscape is fragmented, which may present significant barriers for future workflow users due to many seemingly comparable, yet usually mutually incompatible, systems that exist.
 
 <table>
-
 <thead>
-
 <tr>
     <th>Theme</th> 
     <th>Challenges</th>
     <th>Community Activities</th>
 </tr>
-
 </thead>
-
 <tbody>
-
 <tr>
 <th>FAIR Computational Workflows</th>
-
 <td><ul>
 <li>FAIR principles for computational workflows that consider the complex lifecycle from specification to execution and data products</li>
 <li>Metrics to measure the “FAIRness” of a workflow</li>
 <li>Principles, policies, and best practices</li>
 </ul></td>
-
 <td><ul>
 <li>Review prior and current efforts for FAIR data and software with respect to workflows, and outline principles for FAIR workflows</li>
 <li>Define recommendations for FAIR workflow developers and systems</li>
 <li>Automate FAIRness in workflows by recording necessary provenance data</li>
 </ul></td>
 </tr>
-
 <tr>
 <th>AI Workflows</th>
-
 <td><ul>
 <li>Support for heterogeneous compute resources and fine-grained data management features, versioning, and data provenance capabilities</li>
 <li>Capabilities for enabling workflow steering and dynamic workflows</li>
 <li> Integration of ML frameworks into the current HPC landscape </li>  
 </ul></td>
-
 <td><ul>
 <li>Develop comprehensive use cases for sample problems with representative workflow structures and data types</li>
 <li>Define a process for characterizing the challenges for enabling AI workflows</li>
@@ -182,12 +174,10 @@ Historically, infrastructures for workflow execution consisted of complex, integ
 </tr>
 <tr>
 <th>Exascale Challenges and Beyond</th>
-
 <td><ul>
 <li>Resource allocation policies and schedulers are not designed for workflow-aware abstractions, thus users tend to use an ill-fitted job abstraction</li>
 <li>Unfavorable design of resource descriptions and mechanisms for workflow users/systems, and lack of fault-tolerance and fault-recovery solutions</li>
 </ul></td>
-
 <td><ul>
 <li>Develop documentation in the form of workflow templates/recipes/miniapps for execution on high-end HPC systems</li>
 <li>Specify benchmark workflows for exascale execution</li>
@@ -196,19 +186,16 @@ Historically, infrastructures for workflow execution consisted of complex, integ
 </tr>
 <tr>
 <th>APIs, Reuse, Interoperability, and Standards</th>
-
 <td><ul>
 <li>Workflow systems differ by design, thus interoperability at some layers is likely to be more impactful than others</li>
 <li>Workflow standards are typically developed by a subset of the community</li>
 <li>Quantifying the value of common representations of workflows is not trivial</li>
 </ul></td>
-
 <td><ul>
 <li>Identify differences and commonalities between different systems</li>
 <li>Identify and characterize domain-specific efforts, identify workflow patterns, and develop case-studies of business process workflows and serverless workflow systems</li>
 </ul></td>
 </tr>
-
 <tr>
 <th>Training and Education</th>
 <td><ul>
@@ -216,38 +203,26 @@ Historically, infrastructures for workflow execution consisted of complex, integ
 <li>Homegrown workflow solutions and constraints can prevent users from reproducing their functionality on workflow systems developed by others</li>
 <li>Unawareness of the workflow technological and conceptual landscape  </li>
 </ul></td>
-
 <td><ul>
 <li>Identify basic sample workflow patterns, develop a community workflow knowledge-base, and look at current research on technology adoption</li>
 <li>Include workflow terminology and concepts in university curricula and software carpentry efforts</li>
 </ul></td>
 </tr>
-
-
-
-
 <tr>
 <th>Building a Workflows Community</th>
-
 <td><ul>
 <li>Diverse definitions of a “workflows community”</li>
 <li>Remedy the inability to link developers and users to bridge translational gaps</li>
 <li>Pathways for participation in a network of researchers, developers, and users</li>
 </ul></td>
-
 <td><ul>
 <li>Establish a common knowledge-base for workflow technology</li>
 <li>Establish a <emph>Workflow Guild</emph>: an organization focused on interaction and relationships, providing self-support between workflow developers and their systems</li>
 </ul></td>
 </tr>
-
 </tbody>
-
-<caption>
-
-**Table 1**: Summary of current workflows research and development challenges and proposed community activities
-
-</caption>
+<caption><strong>Table 1</strong>: 
+Summary of current workflows research and development challenges and proposed community activities</caption>
 </table>
 
 
@@ -256,21 +231,7 @@ In the current workflow research, there are conflicting theoretical bases and ab
 The WorkflowsRI \[5\] and ExaWorks \[6\] projects have partnered to bring the workflows community (researchers, developers, science and engineering users, and cyberinfrastructure experts) together to collaboratively elucidate the R\&D efforts necessary to remedy the above situation. They conducted a series of virtual events entitled “Workflows Community Summits,” in which the overarching goal was to (i) develop a view of the state of the art, (ii) identify key research challenges, (iii) articulate a vision for potential activities, and (iv) explore technical approaches for realizing (part of) this vision. The summits gathered over 70 participants, including lead researchers and developers from around the world, and spanning distinct workflow systems and user communities.
 The outcomes of the summits have been compiled and published in two technical reports \[7–8\]. In this paper, we summarize the discussions and findings by presenting a consolidated view of the state of the art, challenges, and potential efforts, which we synthesize into a community roadmap. Table 1 presents, in the form of top-level themes, a summary of those challenges and targeted community activities. Table [\[tab:roadmap\]](#tab:roadmap) summarizes a proposed community roadmap with technical approaches.
 
-The remainder of this paper is organized as follows. Sections [2](#sec:fair)-[7](#sec:community) provide a brief state of the art and challenges for each theme and proposed community activities. Section [8](#sec:roadmap) discusses technical approaches for a community roadmap. Section [9](#sec:conclusion) concludes with a summary of discussions.
-
-## Summary of technical roadmap milestones per research and development thrust
-
-Workflow patterns and benchmarks
-: Investigate automatic generation of patterns and configurable benchmarks (e.g., to enable weak and strong scaling experiments).
-: Establish or leverage a centralized repository to host and curate patterns and benchmarks.
-
-Interoperability of workflow
-: Develop real-world workflow benchmarks, use cases for interoperability, and common APIs that represent workflow library components.
-: Establish a workflow systems developer community.
-
-Interface with legacy and emerging HPC software and hardware stacks
-: Identify new workflow patterns (e.g., motivated by AI workflows), attain portability across heterogeneous hardware, and develop a registry of execution environment information.
-: Organize a community event involving workflow system developers, end users, authentication technology providers, and facility operators.
+The remainder of this paper is organized as follows. Sections [2](#sec:fair)--[7](#sec:community) provide a brief state of the art and challenges for each theme and proposed community activities. Section [8](#sec:roadmap) discusses technical approaches for a community roadmap. Section [9](#sec:conclusion) concludes with a summary of discussions.
 
 
 
@@ -385,7 +346,7 @@ In light of workforce training, workflow concepts should be taught at early stag
 
 There is an established community of workflow researchers, developers, and users that has extensive expertise knowledge regarding specific systems, tools, applications, etc. It is crucial that this knowledge be captured to bootstrap a ***community workflow knowledge-base*** (following standards for documentation, interoperability, etc.) for training and education. The workflows community would also benefit from collaborations with social scientists and sociologists so as to help define an overall strategy for approaching some of the above challenges.
 
-## Building a Workflows Community
+## Building a Workflows Community {#sec:community}
 
 Given the current large size and fragmentation of the workflow technology landscape, there is a clear need to establish a cohesive community of workflow developers and users. This community would be crucial for avoiding unnecessary duplication of effort and would allow for sharing, and thus growing, of knowledge. To this end, there are four main components that need to be addressed for building a community: (i) identity building, (ii) trust, (iii) participation, and (iv) rewards.
 
@@ -476,6 +437,22 @@ Document a machine-readable description of the essential properties of popular s
 ***M12.***
 Document remote authentication requirements from the workflow perspective and organize an event involving workflow system developers, end users, authentication technology providers, and facility operators.
 
+
+## Summary of technical roadmap milestones per research and development thrust
+
+Workflow patterns and benchmarks
+: Investigate automatic generation of patterns and configurable benchmarks (e.g., to enable weak and strong scaling experiments).
+: Establish or leverage a centralized repository to host and curate patterns and benchmarks.
+
+Interoperability of workflow
+: Develop real-world workflow benchmarks, use cases for interoperability, and common APIs that represent workflow library components.
+: Establish a workflow systems developer community.
+
+Interface with legacy and emerging HPC software and hardware stacks
+: Identify new workflow patterns (e.g., motivated by AI workflows), attain portability across heterogeneous hardware, and develop a registry of execution environment information.
+: Organize a community event involving workflow system developers, end users, authentication technology providers, and facility operators.
+
+
 ## Conclusion {#sec:conclusion}
 
 In this paper, we have documented and summarized the wealth of information acquired as a result of two virtual “Workflows Community Summits.” The goal of these summits was to identify the common and current challenges faced by the workflows community, and outline a vision for short- and long-term community activities to address these challenges. From this vision, we have defined a community roadmap consisting of 12 milestones, which proposes solutions and technical approaches for achieving that vision. This initial series of successful events reinforces the need for continued engagement among workflow researchers, developers, and users, as well as enlarging the scope of the community to also embrace key stakeholders (e.g., computing facility operators and funding agency representatives) for enabling the proposed vision and roadmap.
@@ -501,383 +478,502 @@ We thank all participants of the Workflows Community Summits, held in January 20
 
 <div id="refs" class="references">
 
-<div id="ref-badia2017workflows">
-
-1\. Rosa Maria Badia Sala & others (2017):  
+\[Badia 2017\]
+1\. Rosa Maria Badia Sala, Eduard Ayguade, Jesus Labarta(2017):  
+** **
 **Workflows for science**: A challenge when facing the convergence of HPC and big data.  
-*Supercomputing frontiers and innovations* **4**  
+*Supercomputing frontiers and innovations* **4**(1)  
+<https://doi.org/10.14529/jsfi170102>
 
-</div>
+\[Ferreira da Silva 2017]\
+2\. Rafael Ferreira da Silva, Rosa Filgueira, Ilia Pietri, Ming Jiang, Rizos Sakellariou, Ewa Deelman(2017):  
+** **
+**A characterization of workflow management systems for extreme-scale applications**.  
+*Future Generation Computer Systems* **75**  
+<https://doi.org/10.1016/j.future.2017.02.026>
+[[preprint](https://research.manchester.ac.uk/en/publications/d9825e4c-5117-431b-ac71-da95747c5762)]
 
-<div id="ref-ferreiradasilva-fgcs-2017">
+\[CWL 2021\]: Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel Lampa, et al.(2021):  
+** **
+**Existing Workflow systems**.  
+Common Workflow Language wiki, GitHub.  
+<https://s.apache.org/existing-workflow-systems> accessed 2021
 
-2\. Rafael Ferreira da Silva, Rosa Filgueira, Ilia Pietri, Ming Jiang, & others (2017): A characterization of workflow management systems for extreme-scale applications. *Future Generation Computer Systems*, **75** (2017). \<<https://doi.org/10.1016/j.future.2017.02.026>\>
 
-</div>
+[Badia 2017]: https://doi.org/10.14529/jsfi170102 "Workflows for science"
+[Ferreira da Silva 2017]: https://research.manchester.ac.uk/en/publications/d9825e4c-5117-431b-ac71-da95747c5762 "A characterization of workflow management systems for extreme-scale applications"
+[CWL 2021]: https://s.apache.org/existing-workflow-systems "Existing Workflow systems"
 
-<div id="ref-workflow-systems">
 
-3\. (2021): Existing workflow systems. (2021)
+3\.(2021):  
+**Existing workflow systems**. (2021)
 
 </div>
 
 <div id="ref-deelman2018future">
 
-4\. Ewa Deelman & others (2018): The future of scientific workflows. *International Journal of High Performance Computing Applications*, **32** (2018)
+4\. Ewa Deelman & others(2018):  
+**The future of scientific workflows**.   
+_International Journal of High Performance Computing Applications_ **32**
 
 </div>
 
 <div id="ref-workflowsri">
 
-5\. (2021): workflowsRI. (2021)
+5\.(2021):  
+**workflowsRI**. (2021)
 
 </div>
 
 <div id="ref-al2021exaworks">
 
-6\. Aymen Al-Saadi, Dong H. Ahn, Yadu Babuji, Kyle Chard, James Corbett, Mihael Hategan, Stephen Herbein, Shantenu Jha, Daniel Laney, Andre Merzky, & others (2021): ExaWorks: Workflows for Exascale. *arXiv preprint arXiv:2108.13521*, (2021)
+6\. Aymen Al-Saadi, Dong H. Ahn, Yadu Babuji, Kyle Chard, James Corbett, Mihael Hategan, Stephen Herbein, Shantenu Jha, Daniel Laney, Andre Merzky, & others(2021):  
+**ExaWorks**: Workflows for Exascale. *arXiv preprint arXiv:2108.13521*, (2021)
 
 </div>
 
 <div id="ref-ferreiradasilva2021wcs">
 
-7\. Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Dan Laney, Dong Ahn, Shantenu Jha, Carole Goble, Lavanya Ramakrishnan, & others (2021): Workflows Community Summit: Bringing the Scientific Workflows Community Together. (2021). \<<https://doi.org/10.5281/zenodo.4606958>\>
+7\. Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, Dan Laney, Dong Ahn, Shantenu Jha, Carole Goble, Lavanya Ramakrishnan, & others(2021):  
+**Workflows Community Summit**: Bringing the Scientific Workflows Community Together. (2021).
+<https://doi.org/10.5281/zenodo.4606958>
 
 </div>
 
 <div id="ref-wcs2021technical">
 
-8\. Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, & others (2021): Workflows Community Summit: Advancing the State-of-the-art of Scientific Workflows Management Systems Research and Development. (2021). \<<https://doi.org/10.5281/zenodo.4915801>\>
+8\. Rafael Ferreira da Silva, Henri Casanova, Kyle Chard, & others(2021):  
+**Workflows Community Summit**: Advancing the State-of-the-art of Scientific Workflows Management Systems Research and Development. (2021).
+<https://doi.org/10.5281/zenodo.4915801>
 
 </div>
 
 <div id="ref-wilkinson2016fair">
 
-9\. Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, & others (2016): The FAIR guiding principles for scientific data management and stewardship. *Scientific Data*, **3** (2016). \<<https://doi.org/10.1038/sdata.2016.18>\>
+9\. Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, & others(2016):  
+**The FAIR guiding principles for scientific data management and stewardship**.   
+_Scientific Data_ **3**
+<https://doi.org/10.1038/sdata.2016.18>
 
 </div>
 
 <div id="ref-goble2020">
 
-10\. Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, & Daniel Schober (2020): FAIR Computational Workflows. *Data Intelligence*, **2** (2020). \<<https://doi.org/10.1162/dint_a_00033>\>
+10\. Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, & Daniel Schober(2020):  
+**FAIR Computational Workflows**.   
+_Data Intelligence_ **2**
+<https://doi.org/10.1162/dint_a_00033>
 
 </div>
 
 <div id="ref-katz2021taking">
 
-11\. Daniel S. Katz, Morane Gruenpeter, & Tom Honeyman (2021): Taking a fresh look at FAIR for research software. *Patterns*, **2** (2021). \<<https://doi.org/10.1016/j.patter.2021.100222>\>
+11\. Daniel S. Katz, Morane Gruenpeter, & Tom Honeyman(2021):  
+**Taking a fresh look at FAIR for research software**.   
+_Patterns_ **2**
+<https://doi.org/10.1016/j.patter.2021.100222>
 
 </div>
 
 <div id="ref-acm-badges">
 
-12\. (2021): Software and Data Artifacts in the ACM Digital Library. (2021)
+12\.(2021):  
+**Software and Data Artifacts in the ACM Digital Library**. (2021)
 
 </div>
 
 <div id="ref-fair4rs">
 
-13\. (2021): FAIR for Research Software (FAIR4RS) WG. (2021)
+13\.(2021):  
+**FAIR for Research Software **(FAIR4RS) WG. (2021)
 
 </div>
 
 <div id="ref-fair4vre">
 
-14\. (2021): FAIR for Virtual Research Environments WG. (2021)
+14\.(2021):  
+**FAIR for Virtual Research Environments WG**. (2021)
 
 </div>
 
 <div id="ref-bioschemas-ComputationalWorkflow">
 
-15\. Alan Williams & others (2021): ComputationalWorkflow: Bioschemas specification for describing a computational workflow. (2021). <https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE>
+15\. Alan Williams & others(2021):  
+**ComputationalWorkflow**: Bioschemas specification for describing a computational workflow. (2021).
+<https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE>
 
 </div>
 
 <div id="ref-rocrate">
 
-16\. Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, & others (2021): Packaging research artefacts with ro-crate. *Data Science*, (2021)
+16\. Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, & others(2021):  
+**Packaging research artefacts with ro-crate**. *Data Science*, (2021)
 
 </div>
 
 <div id="ref-cwl">
 
-17\. Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, & others (2021): Methods included: Standardizing computational reuse and portability with the common workflow language. *Communications of the ACM*, (2021). \<<https://doi.org/10.1145/3486897>\>
+17\. Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, & others(2021):  
+**Methods included**: Standardizing computational reuse and portability with the common workflow language. *Communications of the ACM*, (2021).
+<https://doi.org/10.1145/3486897>
 
 </div>
 
 <div id="ref-monteil2020nine">
 
-18\. Alain Monteil & others (2020): Nine best practices for research software registries and repositories: A concise guide. *arXiv:2012.13117*, (2020)
+18\. Alain Monteil & others(2020):  
+**Nine best practices for research software registries and repositories**: A concise guide. *arXiv:2012.13117*, (2020)
 
 </div>
 
 <div id="ref-workflowhub">
 
-19\. (2021): WorkflowHub.eu. (2021)
+19\.(2021):  
+**WorkflowHub**.eu. (2021)
 
 </div>
 
 <div id="ref-yuen2021dockstore">
 
-20\. Denis Yuen & others (2021): The dockstore: Enhancing a community platform for sharing reproducible and accessible computational protocols. *Nucleic Acids Research*, (2021)
+20\. Denis Yuen & others(2021):  
+**The dockstore**: Enhancing a community platform for sharing reproducible and accessible computational protocols. *Nucleic Acids Research*, (2021)
 
 </div>
 
 <div id="ref-oliveira2018provenance">
 
-21\. Wellington Oliveira & others (2018): Provenance analytics for workflow-based computational experiments: A survey. *ACM Computing Surveys (CSUR)*, **51** (2018)
+21\. Wellington Oliveira & others(2018):  
+**Provenance analytics for workflow-based computational experiments**: A survey.   
+_ACM Computing Surveys (CSUR)_ **51**
 
 </div>
 
 <div id="ref-zhou2017machine">
 
-22\. Lina Zhou, Shimei Pan, Jianwu Wang, & Athanasios V. Vasilakos (2017): Machine learning on big data: Opportunities and challenges. *Neurocomputing*, **237** (2017)
+22\. Lina Zhou, Shimei Pan, Jianwu Wang, & Athanasios V. Vasilakos(2017):  
+**Machine learning on big data**: Opportunities and challenges.   
+_Neurocomputing_ **237**
 
 </div>
 
 <div id="ref-lbann">
 
-23\. Brian Van Essen, Hyojin Kim, Roger Pearce, Kofi Boakye, & Barry Chen (2015): **LBANN: Livermore big artificial neural network hpc toolkit**. In, *Workshop on machine learning in high-performance computing environments* (2015). \<<https://doi.org/10.1145/2834892.2834897>\>
+23\. Brian Van Essen, Hyojin Kim, Roger Pearce, Kofi Boakye, & Barry Chen(2015):  
+** **
+**LBANN: Livermore big artificial neural network hpc toolkit**  
+*Workshop on machine learning in high-performance computing environments* (2015).
+<https://doi.org/10.1145/2834892.2834897>
 
 </div>
 
 <div id="ref-ozik_population_2021">
 
-24\. Jonathan Ozik, Justin M. Wozniak, & others (2021): A population data-driven workflow for COVID-19 modeling and learning. *The International Journal of High Performance Computing Applications*, **35** (2021). \<<https://doi.org/10.1177/10943420211035164>\>
+24\. Jonathan Ozik, Justin M. Wozniak, & others(2021):  
+**A population data-driven workflow for COVID-19 modeling and learning**.   
+_The International Journal of High Performance Computing Applications_ **35**
+<https://doi.org/10.1177/10943420211035164>
 
 </div>
 
 <div id="ref-eflows">
 
-25\. Jorge Ejarque, Rosa Badia, & others (2021): Enabling dynamic and intelligent workflows for hpc, big data, and ai convergence. *Future Generation Computing Systems*, **under review** (2021)
+25\. Jorge Ejarque, Rosa Badia, & others(2021):  
+**Enabling dynamic and intelligent workflows for hpc**, big data, and ai convergence. *Future Generation Computing Systems*, **under review** (2021)
 
 </div>
 
 <div id="ref-merlin">
 
-26\. J. Luc Peterson, Ben Bay, Joe Koning, Peter Robinson, & others (2021): Enabling machine learning-ready HPC ensembles with merlin. (2021). <http://arxiv.org/abs/1912.02892>
+26\. J. Luc Peterson, Ben Bay, Joe Koning, Peter Robinson, & others(2021):  
+**Enabling machine learning-ready HPC ensembles with merlin**. (2021).
+<http://arxiv.org/abs/1912.02892>
 
 </div>
 
 <div id="ref-akiba2019optuna">
 
-27\. Takuya Akiba, Shotaro Sano, Toshihiko Yanase, & others (2019): **Optuna: A next-generation hyperparameter optimization framework**. In, *25th acm sigkdd international conference on knowledge discovery & data mining* (2019)
+27\. Takuya Akiba, Shotaro Sano, Toshihiko Yanase, & others(2019):  
+** **
+**Optuna: A next-generation hyperparameter optimization framework**  
+*25th acm sigkdd international conference on knowledge discovery & data mining* (2019)
 
 </div>
 
 <div id="ref-bergstra2013hyperopt">
 
-28\. James Bergstra & others (2013): **Hyperopt: A python library for optimizing the hyperparameters of machine learning algorithms**. In, *12th python in science conference* (2013)
+28\. James Bergstra & others(2013):  
+** **
+**Hyperopt: A python library for optimizing the hyperparameters of machine learning algorithms**  
+*12th python in science conference* (2013)
 
 </div>
 
 <div id="ref-wozniak2018">
 
-29\. Justin M. Wozniak, Rajeev Jain, Prasanna Balaprakash, Jonathan Ozik, & others (2018): CANDLE/Supervisor: A workflow framework for machine learning applied to cancer research. *BMC Bioinformatics*, **19** (2018). \<<https://doi.org/10.1186/s12859-018-2508-4>\>
+29\. Justin M. Wozniak, Rajeev Jain, Prasanna Balaprakash, Jonathan Ozik, & others(2018):  
+**CANDLE**/Supervisor: A workflow framework for machine learning applied to cancer research.   
+_BMC Bioinformatics_ **19**
+<https://doi.org/10.1186/s12859-018-2508-4>
 
 </div>
 
 <div id="ref-mlcommons">
 
-30\. (2021): ML Commons. (2021)
+30\.(2021):  
+**ML Commons**. (2021)
 
 </div>
 
 <div id="ref-fursin2020collective">
 
-31\. Grigori Fursin (2020): Collective knowledge: Organizing research projects as a database of reusable components and portable workflows with common apis. *arXiv:2011.01149*, (2020)
+31\. Grigori Fursin(2020):  
+**Collective knowledge**: Organizing research projects as a database of reusable components and portable workflows with common apis.  
+*arXiv:2011.01149*
 
 </div>
 
 <div id="ref-ahn2020flux">
 
-32\. Dong H. Ahn & others (2020): Flux: Overcoming scheduling challenges for exascale workflows. *Future Generation Computer Systems*, **110** (2020)
+32\. Dong H. Ahn & others(2020):  
+**Flux**: Overcoming scheduling challenges for exascale workflows.   
+_Future Generation Computer Systems_ **110**
 
 </div>
 
 <div id="ref-heldens2020landscape">
 
-33\. Stijn Heldens & others (2020): The landscape of exascale research: A data-driven literature analysis. *ACM Computing Surveys*, **53** (2020)
+33\. Stijn Heldens & others(2020):  
+**The landscape of exascale research**: A data-driven literature analysis.   
+_ACM Computing Surveys_ **53**
 
 </div>
 
 <div id="ref-prathiba2017survey">
 
-34\. Soma Prathiba & S. Sowvarnica (2017): **Survey of failures and fault tolerance in cloud**. In, *2nd international conference on computing and communications technologies (iccct)* (2017)
+34\. Soma Prathiba & S. Sowvarnica(2017):  
+**Survey of failures and fault tolerance in cloud**  
+*2nd international conference on computing and communications technologies (iccct)* (2017)
 
 </div>
 
 <div id="ref-ewels2020nf">
 
-35\. Philip A. Ewels & others (2020): The nf-core framework for community-curated bioinformatics pipelines. *Nature biotechnology*, **38** (2020)
+35\. Philip A. Ewels & others(2020):  
+**The nf-core framework for community-curated bioinformatics pipelines**.   
+_Nature biotechnology_ **38**
 
 </div>
 
 <div id="ref-nersc-workflows">
 
-36\. (2021): NERSC Workflow Management Tools. (2021)
+36\.(2021):  
+**NERSC Workflow Management Tools**. (2021)
 
 </div>
 
 <div id="ref-openebench">
 
-37\. (2021): OpenEBench. (2021)
+37\.(2021):  
+**OpenEBench**. (2021)
 
 </div>
 
 <div id="ref-coleman2021wfcommons">
 
-38\. Tainã Coleman, Henri Casanova, Loı̈c Pottier, Manav Kaushik, Ewa Deelman, & Rafael Ferreira da Silva (2021): WfCommons: A framework for enabling scientific workflow research and development. *Future Generation Computer Systems*, (2021)
+38\. Tainã Coleman, Henri Casanova, Loı̈c Pottier, Manav Kaushik, Ewa Deelman, & Rafael Ferreira da Silva(2021):  
+**WfCommons**: A framework for enabling scientific workflow research and development. *Future Generation Computer Systems*, (2021)
 
 </div>
 
 <div id="ref-SDCblog">
 
-39\. Daniel S. Katz (2021): Introducing the software development curve. (2021)
+39\. Daniel S. Katz(2021):  
+**Introducing the software development curve**. (2021)
 
 </div>
 
 <div id="ref-terstyanszky2014enabling">
 
-40\. Gabor Terstyanszky & others (2014): Enabling scientific workflow sharing through coarse-grained interoperability. *Future Generation Computer Systems*, **37** (2014)
+40\. Gabor Terstyanszky & others(2014):  
+**Enabling scientific workflow sharing through coarse-grained interoperability**.   
+_Future Generation Computer Systems_ **37**
 
 </div>
 
 <div id="ref-cwl-annotations">
 
-41\. (2021): Common Workflow Language: Metadata and Annotations. (2021)
+41\.(2021):  
+**Common Workflow Language**: Metadata and Annotations. (2021)
 
 </div>
 
 <div id="ref-JLESC-common-registry">
 
-42\. Daniel S. Katz, Rosa M. Badia, Chard Kyle, & Jorge Ejarque (2020): JLESC research project: A common workflow registry of compute endpoints and applications. (2020)
+42\. Daniel S. Katz, Rosa M. Badia, Chard Kyle, & Jorge Ejarque(2020):  
+**JLESC research project**: A common workflow registry of compute endpoints and applications. (2020)
 
 </div>
 
 <div id="ref-ga4gh">
 
-43\. (2021): GA4GH-DREAM Workflow Execution Challenge. (2021)
+43\.(2021):  
+**GA4GH-DREAM Workflow Execution Challenge**. (2021)
 
 </div>
 
 <div id="ref-chard2020funcx">
 
-44\. Ryan Chard, Yadu Babuji, Zhuozhao Li, & others (2020): **FuncX: A federated function serving fabric for science**. In, *29th international symposium on high-performance parallel and distributed computing* (2020)
+44\. Ryan Chard, Yadu Babuji, Zhuozhao Li, & others(2020):  
+** **
+**FuncX: A federated function serving fabric for science**  
+*29th international symposium on high-performance parallel and distributed computing* (2020)
 
 </div>
 
 <div id="ref-smirnov2020apollo">
 
-45\. Fedor Smirnov & others (2020): **Apollo: Modular and distributed runtime system for serverless function compositions on cloud, edge, and iot resources**. In, *1st workshop on high performance serverless computing* (2020)
+45\. Fedor Smirnov & others(2020):  
+** **
+**Apollo: Modular and distributed runtime system for serverless function compositions on cloud, edge, and iot resources**  
+*1st workshop on high performance serverless computing* (2020)
 
 </div>
 
 <div id="ref-malawski2020serverless">
 
-46\. Maciej Malawski, Adam Gajek, & others (2020): Serverless execution of scientific workflows: Experiments with hyperflow, aws lambda and google cloud functions. *Future Generation Computer Systems*, **110** (2020)
+46\. Maciej Malawski, Adam Gajek, & others(2020):  
+**Serverless execution of scientific workflows**: Experiments with hyperflow, aws lambda and google cloud functions.   
+_Future Generation Computer Systems_ **110**
 
 </div>
 
 <div id="ref-workflowpatterns">
 
-47\. (2021): Workflow Patterns. (2021)
+47\.(2021):  
+**Workflow Patterns**. (2021)
 
 </div>
 
 <div id="ref-garijo2014common">
 
-48\. Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil, & Carole Goble (2014): Common motifs in scientific workflows: An empirical analysis. *Future Generation Computer Systems*, **36** (2014). \<<https://doi.org/10.1016/j.future.2013.09.018>\>
+48\. Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil, & Carole Goble(2014):  
+**Common motifs in scientific workflows**: An empirical analysis.   
+_Future Generation Computer Systems_ **36**
+<https://doi.org/10.1016/j.future.2013.09.018>
 
 </div>
-
-<div id="ref-casanova2021eduwrench">
-
-49\. H. Casanova, R. Tanaka, W. Koch, & R. Ferreira da Silva (2021): Teaching Parallel and Distributed Computing Concepts in Simulation with WRENCH. *Journal of Parallel and Distributed Computing*, **156** (2021)
-
-</div>
-
+(2021):  
+**Introducing the software development curve**
 <div id="ref-eduwrench">
 
-50\. (2021): The EduWRENCH Pedagogic Modules. (2021)
+50\.(2021):  
+**The EduWRENCH Pedagogic Modules**. (2021)
 
 </div>
 
 <div id="ref-swcarpentry">
 
-51\. (2021): Software Carpentry. (2021)
+51\.(2021):  
+**Software Carpentry**. (2021)
 
 </div>
 
 <div id="ref-galaxy">
 
-52\. (2021): Galaxy Community Hub. (2021)
+52\.(2021):  
+**Galaxy Community Hub**. (2021)
 
 </div>
 
 <div id="ref-katz2016application">
 
-53\. Daniel S. Katz, Andre Merzky, & others (2016): Application skeletons: Construction and use in eScience. *Future Generation Computer Systems*, **59** (2016)
+53\. Daniel S. Katz, Andre Merzky, & others(2016):  
+**Application skeletons**: Construction and use in eScience.   
+_Future Generation Computer Systems_ **59**
 
 </div>
 
 <div id="ref-schiefer2020portability">
 
-54\. Christopher Schiefer & others (2020): Portability of scientific workflows in ngs data analysis: A case study. *arXiv preprint arXiv:2006.03104*, (2020)
+54\. Christopher Schiefer & others(2020):  
+**Portability of scientific workflows in ngs data analysis**: A case study. *arXiv preprint arXiv:2006.03104*, (2020)
 
 </div>
 
 <div id="ref-LFB+21">
 
-55\. Fabian Lehmann, David Frantz, & others (2021): **FORCE on nextflow: Scalable analysis of earth observation data on commodity clusters**. In, *Int. Workshop on complex data challenges in earth observation* (2021)
+55\. Fabian Lehmann, David Frantz, & others(2021):  
+** **
+**FORCE on nextflow: Scalable analysis of earth observation data on commodity clusters**  
+*Int. Workshop on complex data challenges in earth observation* (2021)
 
 </div>
 
 <div id="ref-turilli2019middleware">
 
-56\. Matteo Turilli & others (2019): Middleware building blocks for workflow systems. *Computing in Science & Engineering*, **21** (2019)
+56\. Matteo Turilli & others(2019):  
+**Middleware building blocks for workflow systems**.   
+_Computing in Science & Engineering_ **21**
 
 </div>
 
 <div id="ref-billings2017toward">
 
-57\. Jay Jay Billings & Shantenu Jha (2017): Toward common components for open workflow systems. *arXiv preprint arXiv:1710.06774*, (2017)
+57\. Jay Jay Billings & Shantenu Jha(2017):  
+**Toward common components for open workflow systems**. *arXiv preprint arXiv:1710.06774*, (2017)
 
 </div>
 
 <div id="ref-arshad2015definition">
 
-58\. Junaid Arshad, Gabor Terstyanszky, Tamas Kiss, & Noam Weingarten (2015): **A definition and analysis of the role of meta-workflows in workflow interoperability**. In, *7th international workshop on science gateways* (2015)
+58\. Junaid Arshad, Gabor Terstyanszky, Tamas Kiss, & Noam Weingarten(2015):  
+** **
+**A definition and analysis of the role of meta-workflows in workflow interoperability**  
+*7th international workshop on science gateways* (2015)
 
 </div>
 
 <div id="ref-Fursin_2021">
 
-59\. Grigori Fursin (2021): Collective knowledge: Organizing research projects as a database of reusable components and portable workflows with common interfaces. *Philosophical Transactions of the Royal Society A*, **379** (2021). \<<https://doi.org/10.1098/rsta.2020.0211>\>
+59\. Grigori Fursin(2021):  
+**Collective knowledge**: Organizing research projects as a database of reusable components and portable workflows with common interfaces.   
+_Philosophical Transactions of the Royal Society A_ **379**
+<https://doi.org/10.1098/rsta.2020.0211>
 
 </div>
 
 <div id="ref-sgci">
 
-60\. (2021): SGCI Resource Inventory. (2021)
+60\.(2021):  
+**SGCI Resource Inventory**. (2021)
 
 </div>
 
 <div id="ref-tuecke16globus">
 
-61\. Steven Tuecke, Rachana Ananthakrishnan, Kyle Chard, Mattias Lidman, Brendan McCollam, Stephen Rosen, & Ian Foster (2016): **Globus auth: A research identity and access management platform**. In, *12th ieee international conference on e-science (e-science)* (2016), pp. 203–212. \<<https://doi.org/10.1109/eScience.2016.7870901>\>
+61\. Steven Tuecke, Rachana Ananthakrishnan, Kyle Chard, Mattias Lidman, Brendan McCollam, Stephen Rosen, & Ian Foster(2016):  
+** **
+**Globus auth: A research identity and access management platform**  
+*12th ieee international conference on e-science (e-science)* (2016), pp. 203–212.
+<https://doi.org/10.1109/eScience.2016.7870901>
 
 </div>
 
 <div id="ref-alt2020oauth">
 
-62\. Jason Alt & others (2020): **OAuth ssh with globus auth**. In, *Practice and experience in advanced research computing* (2020)
+62\. Jason Alt & others(2020):  
+** **
+**OAuth ssh with globus auth**  
+*Practice and experience in advanced research computing* (2020)
 
 </div>
 
 <div id="ref-withers2018scitokens">
 
-63\. Alex Withers, Brian Bockelman, Derek Weitzel, & others (2018): **SciTokens: Capability-based secure access to remote scientific data**. In, *Practice and experience on advanced research computing* (2018)
+63\. Alex Withers, Brian Bockelman, Derek Weitzel, & others(2018):  
+** **
+**SciTokens: Capability-based secure access to remote scientific data**  
+*Practice and experience on advanced research computing* (2018)
 
 </div>
 
