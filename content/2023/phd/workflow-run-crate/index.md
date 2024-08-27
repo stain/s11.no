@@ -68,8 +68,10 @@ authors:
 
 Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
 **Recording provenance of workflow runs with RO-Crate**.  
+_PLOS One_ (accepted 10.1371/journal.pone.0309210)
 _arXiV_:2312.07852  
 <https://doi.org/10.48550/arXiv.2312.07852>
+
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
 * **Modifications**: Formatting as Markdown and figure caption formatting; references in s11 house style; URLs as footnotes/hyperlinks; enumerations made explicit; listing captions; some paragraphs split for readability; details moved to footnote, acknowledgement and references moved to separate chapters; fixed minor typos and grammatical errors; table 2 moved earlier with added internal bookmark links; `prov:` added to prefix list; header added in prefix table.
