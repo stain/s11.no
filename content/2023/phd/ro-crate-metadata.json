@@ -338,8 +338,26 @@
         "Department of Computer Science, The University of Manchester, Manchester, UK",
         "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
       ],
+      "worksFor": {
+        "@id": "https://ror.org/027m9bs27"
+      },
+      "memberOf": {
+        "@id": "https://ror.org/04dkp9463"
+      },
       "name": "Stian Soiland-Reyes"
     },
+    {
+      "@id": "https://ror.org/04dkp9463",
+      "@type": "CollegeOrUniversity",
+      "name": "University of Amsterdam",
+      "url": "https://www.uva.nl/"
+    },
+    {
+      "@id": "https://ror.org/027m9bs27",
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Manchester",
+      "url": "https://www.manchester.ac.uk/"
+    },    
     {
       "@id": "https://orcid.org/0000-0001-9888-7954",
       "@type": "Person",
@@ -1507,15 +1525,41 @@
       "name": "Comparison tables for Evaluating FAIR Digital Object and Linked Data (RO-Crate)"
     },
     {
+      "@id": "thesis.pdf",
+      "@type": [
+        "File", "Thesis"
+      ],
+      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "version": "2024-08-22",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "identifier": "https://doi.org/10.5281/zenodo.8113625",
+      "datePublished": "2024-09-15",
+      "inSupportOf": "graad van doctor",
+      "sourceOrganization": {
+        "@id": "https://ror.org/04dkp9463"
+      },
+      "sameAs": { "@id": "https://zenodo.org/records/13359051/files/phd-stian-2024-08-22.pdf" }
+    },
+    {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625",
       "@type": [
         "Dataset",
         "Thesis"
       ],
+      "encoding": {
+        "@id": "thesis.pdf"
+      },
+      "inSupportOf": "graad van doctor",
+      "sourceOrganization": {
+        "@id": "https://ror.org/04dkp9463"
+      },      
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "datePublished": "2024-07-30",
+      "dateModified": "2024-09-15",
       "description": "RO-Crate of PhD thesis submitted to the University of Amsterdam",
       "hasPart": [
         {
@@ -1544,7 +1588,10 @@
         },
         {
           "@id": "#supplements"
-        }
+        },
+        {
+          "@id": "thesis.pdf"
+        }        
       ],
       "identifier": {
         "@id": "https://doi.org/10.5281/zenodo.8113625"
