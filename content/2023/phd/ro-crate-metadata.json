@@ -1404,13 +1404,13 @@
           "@id": "https://orcid.org/0000-0001-9842-9718"
         }
       ],
-      "creditText": "Simone Leo, et al. (2024): Recording provenance of workflow runs with RO-Crate. arXiv:2312.07852 [cs.DL]",
+      "creditText": "Simone Leo, et al. (2024): Recording provenance of workflow runs with RO-Crate. PLoS ONE 19(9):e0309210",
       "isPartOf": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.10368989"
       },
       "name": "Section 5.4: Recording provenance of workflow runs with RO-Crate",
       "cite-as": {
-        "@id": "https://doi.org/10.48550/arXiv.2312.07852"
+        "@id": " https://doi.org/10.1371/journal.pone.0309210"
       }
     },
     {
