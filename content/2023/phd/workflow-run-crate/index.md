@@ -9,7 +9,7 @@ keywords:
   - provenance
   - RO-Crate
 summary: > 
-  Preprint resubmitted to PLOS One following peer review
+  Journal article published in PLOS One
 description: > 
     Recording the provenance of scientific computation results is key to the support of traceability, reproducibility and quality assessment of data products. Several data models have been explored to address this need, providing representations of workflow plans and their executions as well as means of packaging the resulting information for archiving and sharing. However, existing approaches tend to lack interoperable adoption across workflow management systems.
     
@@ -68,9 +68,8 @@ authors:
 
 Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
 **Recording provenance of workflow runs with RO-Crate**.  
-_PLOS One_ (accepted 10.1371/journal.pone.0309210)
-_arXiV_:2312.07852  
-<https://doi.org/10.48550/arXiv.2312.07852>
+_PLOS One_ **19**(9):e0309210  
+<https://doi.org/10.1371/journal.pone.0309210>
 
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
@@ -213,20 +212,25 @@ These observations led to the development of three profiles:
     to describe a workflow computation including the internal details of individual step executions.
 
 
-In the rest of this section we describe each of these profiles in detail. We use the term "class" to refer to a type as defined in RDF(s) and "entity" to refer to an instance of a class. We use italics to denote the properties and classes in each profile: these are defined in the RO-Crate  [JSON-LD context](https://www.researchobject.org/ro-crate/1.1/context.jsonld), which extends Schema.org with terms from the Bioschemas [[Gray 2017]]  [ComputationalWorkflow profile](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) and other vocabularies.
+In the rest of this section we describe each of these profiles in detail. We use the term "class" to refer to a type as defined in RDF(s) and "entity" to refer to an instance of a class. We use italics to denote the properties and classes in each profile: these are defined in the RO-Crate  [JSON-LD context](https://www.researchobject.org/ro-crate/1.1/context.jsonld), which extends Schema.org with terms from the Bioschemas [[Gray 2017]]  [ComputationalWorkflow profile](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) (an established Schema.org extension for describing scientific workflows).
 Note that terms coming from Bioschemas are not specific to the life sciences.
 We also developed a [dedicated term set](https://w3id.org/ro/terms/workflow-run#) to represent concepts that are not captured by terms in the RO-Crate context. New terms are defined in RDF(s) following Schema.org guidelines (i.e., using `domainIncludes` and `rangeIncludes` to define domains and ranges of properties).
 
-In the rest of the text and images, the following prefixes are used to represent the corresponding namespaces:
+In the rest of the text and images, the abbreviation prefixes in [Table 1](#prefixes) are used to represent the corresponding namespaces:
 
-| Prefix        |     | Namespace                                 |
-| ------------: | :-: | ----------------------------------------- |
-|          *s:* |  →  | <https://schema.org/>                     |
-| *bioschemas:* |  →  | <https://bioschemas.org/>                 |
-|        *bsp:* |  →  | <https://bioschemas.org/properties/>      |
-|      *wfrun:* |  →  | <https://w3id.org/ro/terms/workflow-run#> |
-|       *prov:* |  →  | <http://www.w3.org/ns/prov#>              |
+<div id="prefixes">
 
+| Abbrev. Prefix |     | Namespace                                 |
+| -------------: | :-: | ----------------------------------------- |
+|           *s:* |  →  | <http://schema.org/>                     |
+|  *bioschemas:* |  →  | <https://bioschemas.org/>                 |
+|         *bsp:* |  →  | <https://bioschemas.org/properties/>      |
+|       *wfrun:* |  →  | <https://w3id.org/ro/terms/workflow-run#> |
+|        *prov:* |  →  | <http://www.w3.org/ns/prov#>              |
+
+_**Table 1**: **Namespaces**: The various namespaces used in this work are referenced through the abbreviation prefixes shown in this table._
+
+</div>
 
 ### Process Run Crate {#process-run-crate}
 
@@ -234,7 +238,7 @@ The Process Run Crate profile [[WRROC 2024a]] contains specifications to describ
 
 The Process Run Crate is the basis for all profiles in the WRROC collection. It specifies how to describe the fundamental classes involved in a computational run:
 
-i. a software application represented by a [`s:SoftwareApplication`](https://schema.org/SoftwareApplication), [`s:SoftwareSourceCode`](http://schema.org/SoftwareSourceCode) or [](https://bioschemas.org/ComputationalWorkflow) class; and
+i. a software application represented by a [`s:SoftwareApplication`](http://schema.org/SoftwareApplication), [`s:SoftwareSourceCode`](http://schema.org/SoftwareSourceCode) or [](https://bioschemas.org/ComputationalWorkflow) class; and
 
 ii. its execution, represented by a [`s:CreateAction`](http://schema.org/CreateAction) class, and linking to the application via the [`s:instrument`](http://schema.org/instrument) property.
 
@@ -250,8 +254,7 @@ The [`s:Person`](http://schema.org/Person) or
 
 {{< figure src="wrroc-figure1.drawio.svg" link="wrroc-figure1.drawio.svg" id="fig:process_crate_er" 
   width="60%" title="UML class diagram for Process Run Crate"
-  caption="The central class is the [`s:CreateAction`](http://schema.org/CreateAction), which represents the execution of an application. It links to the application itself via [`s:instrument`](http://schema.org/instrument), to the entity that executed it via [`s:agent`](http://schema.org/agent), and to its inputs and outputs via [`s:object`](http://schema.org/object) and [`s:result`](http://schema.org/result), respectively. In this and following figures, classes and properties are shown with prefixes to indicate their origin. Some inputs (and, less commonly, outputs) are not stored as files or directories, but passed to the application (e.g., via a command line interface) as values of various types (e.g., a number or string). In this case, the profile recommends a representation via [`s:PropertyValue`](http://schema.org/PropertyValue). For simplicity, we left out the rest of the RO-Crate structure (e.g. the root [`s:Dataset`](http://schema.org/Dataset)), and attributes (e.g. [`s:startTime`](http://schema.org/startTime), [`s:endTime`](http://schema.org/endTime), [`s:description`](http://schema.org/description), [`s:actionStatus`](http://schema.org/actionStatus)). In this UML class notation, diamond <samp>◇</samp> arrows indicate aggregation and regular arrows indicate references, <samp>*</samp> indicates zero or more occurrences, <samp>1</samp> means single occurrence." >}}
-
+  caption="The central class is the [`s:CreateAction`](http://schema.org/CreateAction), which represents the execution of an application. It links to the application itself via [`s:instrument`](http://schema.org/instrument), to the entity that executed it via [`s:agent`](http://schema.org/agent), and to its inputs and outputs via [`s:object`](http://schema.org/object) and [`s:result`](http://schema.org/result), respectively. In this and following figures, classes and properties are shown with prefixes to indicate their origin. Some inputs (and, less commonly, outputs) are not stored as files or directories, but passed to the application (e.g., via a command line interface) as values of various types (e.g., a number or string). In this case, the profile recommends a representation via [`s:PropertyValue`](http://schema.org/PropertyValue). For simplicity, we left out the rest of the RO-Crate structure (e.g. the root [`s:Dataset`](http://schema.org/Dataset)), and attributes (e.g. [`s:startTime`](http://schema.org/startTime), [`s:endTime`](http://schema.org/endTime), [`s:description`](http://schema.org/description), [`s:actionStatus`](http://schema.org/actionStatus)). In this UML class notation, diamond <samp>◇</samp> arrows indicate aggregation and regular arrows indicate references, <samp>*</samp> indicates zero or more occurrences, <samp>1</samp> means single occurrence. The term prefix `s:` represents the namespace http://schema.org/." >}}
 
 
 As an example,
@@ -313,7 +316,7 @@ For instance, in the following JSON-LD snippet a formal parameter (`#annotations
 
 {{< figure src="wrroc-figure2.drawio.svg" link="wrroc-figure2.drawio.svg" id="fig:workflow_crate_er" 
   width="75%" title="UML class diagram for Workflow Run Crate"
-  caption="The main differences with Process Run Crate are the representation of formal parameters and the fact that the workflow is expected to be an entity with types [`s:MediaObject`](http://schema.org/MediaObject) (*File* in RO-Crate JSON-LD), [`s:SoftwareSourceCode`](http://schema.org/SoftwareSourceCode) and [`bioschemas:ComputationalWorkflow`](https://bioschemas.org/ComputationalWorkflow). Effectively, the workflow belongs to all three types, and its properties are the union of the properties of the individual types. In this profile, the execution history (retrospective provenance) is augmented by a (prospective) workflow definition, giving a high-level overview of the workflow and its input and output parameter definitions ([`bioschemas:FormalParameter`](https://bioschemas.org/FormalParameter)). The inner structure of the workflow is not represented in this profile. In the provenance part, individual files ([`s:MediaObject`](http://schema.org/MediaObject)) or arguments ([`s:PropertyValue`](http://schema.org/PropertyValue)) are then connected to the parameters they realise. Most workflow systems can consume and produce multiple files, and this mechanism helps to declare each file's role in the workflow execution. The filled diamond <samp>⬧</samp> indicates composition, empty diamond <samp>◇</samp> aggregation, and other arrows relations." >}}
+  caption="The main differences with Process Run Crate are the representation of formal parameters and the fact that the workflow is expected to be an entity with types [`s:MediaObject`](http://schema.org/MediaObject) (*File* in RO-Crate JSON-LD), [`s:SoftwareSourceCode`](http://schema.org/SoftwareSourceCode) and [`bioschemas:ComputationalWorkflow`](https://bioschemas.org/ComputationalWorkflow). Effectively, the workflow belongs to all three types, and its properties are the union of the properties of the individual types. In this profile, the execution history (retrospective provenance) is augmented by a (prospective) workflow definition, giving a high-level overview of the workflow and its input and output parameter definitions ([`bioschemas:FormalParameter`](https://bioschemas.org/FormalParameter)). The inner structure of the workflow is not represented in this profile. In the provenance part, individual files ([`s:MediaObject`](http://schema.org/MediaObject)) or arguments ([`s:PropertyValue`](http://schema.org/PropertyValue)) are then connected to the parameters they realise. Most workflow systems can consume and produce multiple files, and this mechanism helps to declare each file's role in the workflow execution. The filled diamond <samp>⬧</samp> indicates composition, empty diamond <samp>◇</samp> aggregation, and other arrows relations. The term prefixes are defined in [Table 1](#prefixes)." >}}
 
 
 ### Provenance Run Crate {#provenance-run-crate}
@@ -340,7 +343,7 @@ Fig [4](#fig:provenance_crate_er) illustrates the various classes involved in t
 
 {{< figure src="wrroc-figure3.drawio.svg" link="wrroc-figure3.drawio.svg" id="fig:provenance_crate_er" 
   width="100%" title="UML class diagram for Provenance Run Crate"
-  caption="In addition to the workflow run, this profile represents the execution of individual steps and their related tools. The prospective side (the execution plan) is shown by the workflow listing a series of [`s:HowToStep`](http://schema.org/HowToStep)s, each linking to the [`s:SoftwareApplication`](http://schema.org/SoftwareApplication) that is to be executed. The [`bsp:input`](https://bioschemas.org/properties/input) and [`bsp:output`](https://bioschemas.org/properties/output) parameters for each tool are described in a similar way to the overall workflow parameter in [Figure 3](#fig:workflow_crate_er). The retrospective provenance side of this profile includes each tool execution as an additional [`s:CreateAction`](http://schema.org/CreateAction) with similar mapping to the realised parameters as [`s:MediaObject`](http://schema.org/MediaObject) or [`s:PropertyValue`](http://schema.org/PropertyValue), allowing intermediate values to be included in the RO-Crate even if they are not workflow outputs. <br>The workflow execution is described the same as in the Workflow Run Crate profile with an overall [`s:CreateAction`](http://schema.org/CreateAction) (the workflow outputs will typically also appear as outputs from inner tool executions). An additional [`s:OrganizeAction`](http://schema.org/OrganizeAction) represents the workflow engine execution, which orchestrated the steps from the workflow plan through corresponding [`s:ControlAction`](http://schema.org/ControlAction)s that spawned the tool's execution ([`s:CreateAction`](http://schema.org/CreateAction)). It is possible that a single workflow step had multiple such executions (e.g. array iterations). Not shown in figure: [`s:actionStatus`](http://schema.org/actionStatus) and [`s:error`](http://schema.org/error) to indicate step/workflow execution status. The filled diamond <samp>⬧</samp> indicates composition, empty diamond <samp>◇</samp> aggregation, and other arrows relations." >}}
+  caption="In addition to the workflow run, this profile represents the execution of individual steps and their related tools. The prospective side (the execution plan) is shown by the workflow listing a series of [`s:HowToStep`](http://schema.org/HowToStep)s, each linking to the [`s:SoftwareApplication`](http://schema.org/SoftwareApplication) that is to be executed. The [`bsp:input`](https://bioschemas.org/properties/input) and [`bsp:output`](https://bioschemas.org/properties/output) parameters for each tool are described in a similar way to the overall workflow parameter in [Figure 3](#fig:workflow_crate_er). The retrospective provenance side of this profile includes each tool execution as an additional [`s:CreateAction`](http://schema.org/CreateAction) with similar mapping to the realised parameters as [`s:MediaObject`](http://schema.org/MediaObject) or [`s:PropertyValue`](http://schema.org/PropertyValue), allowing intermediate values to be included in the RO-Crate even if they are not workflow outputs. <br>The workflow execution is described the same as in the Workflow Run Crate profile with an overall [`s:CreateAction`](http://schema.org/CreateAction) (the workflow outputs will typically also appear as outputs from inner tool executions). An additional [`s:OrganizeAction`](http://schema.org/OrganizeAction) represents the workflow engine execution, which orchestrated the steps from the workflow plan through corresponding [`s:ControlAction`](http://schema.org/ControlAction)s that spawned the tool's execution ([`s:CreateAction`](http://schema.org/CreateAction)). It is possible that a single workflow step had multiple such executions (e.g. array iterations). Not shown in figure: [`s:actionStatus`](http://schema.org/actionStatus) and [`s:error`](http://schema.org/error) to indicate step/workflow execution status. The filled diamond <samp>⬧</samp> indicates composition, empty diamond <samp>◇</samp> aggregation, and other arrows relations. The term prefixes are defined in [Table 1](#prefixes)." >}}
 
 Additionally, this profile specifies how to describe connections between parameters,
 through *parameter connections* -- a fundamental feature of computational workflows.
@@ -378,7 +381,7 @@ And the corresponding machine-readable ones at:
 -   <https://doi.org/10.5281/zenodo.12159311>
 -   <https://doi.org/10.5281/zenodo.12160782>
 
-The RO-Crate metadata files for the machine readable profiles can be retrieved using the same URLs as the human-readable ones, but with JSON-LD content negotiation: this is done by setting `"Accept:application/ld+json"` in the HTTP header.
+The RO-Crate metadata files for the machine-readable profiles can be retrieved using the same URLs as the human-readable ones, but with an appropriate HTTP content negotiation header; at the time of writing JSON-LD, Turtle, RDF/XML and N-Triples serialisations are available.
 
 The new terms we defined to represent concepts that could not be expressed with existing Schema.org ones are at:
 
@@ -402,7 +405,7 @@ RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a], section [Tooli
 
 ### Summary of implementations
 
-[Table 1](#implementation_summary_table) shows an overview of the different implementations presented in this section.
+[Table 2](#implementation_summary_table) shows an overview of the different implementations presented in this section.
 
 <div id="implementation_summary_table">
 
@@ -416,7 +419,7 @@ RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a], section [Tooli
 | [Sapporo](#sapporo)       | Workflow    | \[[Suetake 2023b]\]    | \[[Ohta 2023]\]        |
 | [Autosubmit](#autosubmit) | Workflow    | \[[Beltrán 2023]\]     | \[[Kinoshita 2023]\]   |
 
-_**Table 1**: **Workflow Run Crate implementations**. Summary of each WRROC implementation, together with the profiles it implements, the software version that makes it available and an example RO-Crate. Runcrate is a toolkit that converts CWLProv ROs to Provenance Run Crates, while the others are workflow management systems._
+_**Table 2**: **Workflow Run Crate implementations**. Summary of each WRROC implementation, together with the profiles it implements, the software version that makes it available and an example RO-Crate. Runcrate is a toolkit that converts CWLProv ROs to Provenance Run Crates, while the others are workflow management systems._
 
 </div>
 

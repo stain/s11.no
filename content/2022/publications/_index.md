@@ -12,10 +12,15 @@ aliases:
 
 ## 2024
 
-Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
+Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
 [**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
-_arXiv_:2312.07852  
-<https://doi.org/10.48550/arXiv.2312.07852>
+_PLOS One_ **19**(9):e0309210  
+<https://doi.org/10.1371/journal.pone.0309210>
+
+Jonas Grieb, Claus Weiland, Alexander Wolodkin, Leyla Jael Castro, Stian Soiland-Reyes, Maya Beukes, Martin Jansen (2024):  
+**Using Webby FDOs to Integrate AI Taxon Identification and Citizen Science**.  
+_Biodiversity Information Science and Standards_ **8**:e134757  
+<https://doi.org/10.3897/biss.8.134757>
 
 Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):  
 [**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
