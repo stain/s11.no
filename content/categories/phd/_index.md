@@ -30,11 +30,11 @@ My supervisor is [Paul Groth](http://pgroth.com/) and my thesis title is _FAIR R
 
 I started in July 2019 and concluded in December 2023, with final manuscript submitted in May 2024. The formal doctoral thesis defence is scheduled for 15th January 2025. 
 
-As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web, see also [PDF draft in Zenodo](https://doi.org/10.5281/zenodo.8113625).
+As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web, see also [printable PDF in Zenodo](https://doi.org/10.5281/zenodo.8113625).
 
 * Cite as: <https://doi.org/10.5281/zenodo.8113625>
 * License: [Creative Commons Attributions 4.0 International](https://spdx.org/licenses/CC-BY-4.0/)  
-  (For full list of co-authors, see [Acknowledgements](../../2022/phd/acknowledgements/))_
+  _(For full list of co-authors, see [Acknowledgements](../../2022/phd/acknowledgements/))_
 * RO-Crate: <https://w3id.org/ro/doi/10.5281/zenodo.8113625>
 * Status: _Preparing printer's proof_ (see [flowchart](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/flowchart-from-manuscript-to-doctoral-thesis-en-doctorate-regulations-2020.pdf))
 * Available formats: [HTML](https://s11.no/2023/phd/), [PDF](https://zenodo.org/records/13359051/files/phd-stian-2024-08-22.pdf), [RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8113625), [LaTeX](https://github.com/stain/phd)
