@@ -400,9 +400,6 @@ These tools have been developed in parallel by different teams, and independentl
 RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a], section [Tooling](../../../2022/phd/ro-crate/#tooling)\], and the WRROC implementations have either re-used these or added their own approach to the standards.
 
 
-
-
-
 ### Summary of implementations
 
 [Table 2](#implementation_summary_table) shows an overview of the different implementations presented in this section.
@@ -411,7 +408,7 @@ RO-Crate has a strong ecosystem of tools \[[Soiland-Reyes 2022a], section [Tooli
 
 | **Implementation**        | **Profile** | **Version URL/DOI**    | **Example**            |
 | ------------------------- | ----------- | ---------------------- | ---------------------- |
-| [runcrate](#runcrate)     | Provenance  | \[[Leo 2023a]\]        | \[[Leo 2023]\]         |
+| [runcrate](#runcrate)     | Provenance  | \[[Leo 2023a]\]        | \[[Leo 2023c]\]         |
 | [Galaxy](#galaxy)         | Workflow    | \[[Afgan 2023]\]       | \[[De Geest 2023b]\]   |
 | [COMPSs](#compss)         | Workflow    | \[[Ejarque 2023]\]     | \[[Poiata 2023]\]      |
 | [Streamflow](#streamflow) | Provenance  | \[[Colonnelli 2023b]\] | \[[Colonnelli 2023a]\] |
@@ -426,7 +423,7 @@ _**Table 2**: **Workflow Run Crate implementations**. Summary of each WRROC impl
 
 ### Runcrate {#runcrate}
 
-[Runcrate](https://github.com/ResearchObject/runcrate) [[runcrate]] is a Workflow Run RO-Crate toolkit which also serves as a reference implementation of the proposed profiles.
+[Runcrate](https://github.com/ResearchObject/runcrate) [[Leo 2023a]] is a Workflow Run RO-Crate toolkit which also serves as a reference implementation of the proposed profiles.
 It consists of a Python package with a command line interface, providing a straightforward path to integration in Python software and other workflows.
 The runcrate toolkit includes functionality to convert CWLProv ROs to RO-Crates conforming to the Provenance Run Crate profile (`runcrate convert`), effectively providing an indirect implementation of the format for cwltool.
 
@@ -640,7 +637,7 @@ The workflow is integrated in the CRS4 Digital Pathology Platform [[digital-path
 To assess the interoperability of WRROC, we recorded the provenance of the execution of the same exemplary workflow on two different WMSs.
 In the first case, we executed the CWL workflow with cwltool and converted the resulting CWLProv RO to a Provenance Run Crate with the runcrate tool (Section [3.1](#runcrate)).
 In the second case, the workflow was executed with the StreamFlow WMS (Section [3.4](#streamflow)).
-The RO-Crates obtained in the two cases [[run-pathology Colonnelli 2023]]
+The RO-Crates obtained in the two cases [[Leo 2023c] [Colonnelli 2023a]]
 are very similar to each other, differing only in a few details. For instance, Streamflow includes its configuration file in the crate and has separate files for the workflow and the two tools, while
 cwltool with runcrate results in the workflow and the tools being stored in a single file (CWL's "packed" format).
 Apart from these minor differences, the description of the computation is essentially the same, so the RO-Crates are fully interoperable.
@@ -929,11 +926,11 @@ In the following subsections, we provide an evaluation of the metadata coverage 
 
 Since CWLProv was a starting point in the development of WRROC (Section [3.1](#runcrate)), as a baseline validation we chose to verify that the metadata contained in CWLProv ROs is preserved in the RO-Crates produced by their conversion through runcrate's *convert* command. 
 
-In previous work we had conducted a qualitative analysis of metadata coverage in CWLProv (version 0.6.0), based on concrete examples of ROs associated with a realistic bioinformatics workflow [[De Wit 2022]];
+In previous work we had conducted a qualitative analysis of metadata coverage in CWLProv (version 0.6.0), based on concrete examples of ROs associated with a realistic bioinformatics workflow [[de Wit 2022]];
 in this work we repeated this analysis for WRROC, and compared the WRROC RDF representation (in `ro-crate-metadata.json`) with the CWLProv RDF provenance graph.
 
 To summarise, the analysis focuses on the comparison of the degree of representation by the two models of six provenance data
-types defined in [[De Wit 2022]], which we recall here for clarity.
+types defined in [[de Wit 2022]], which we recall here for clarity.
 
 1.  **Scientific context**: the choices which were made in the design of the workflow and parameter values.
 2.  **Data**: input and output data.
@@ -947,7 +944,7 @@ of elements that should be represented in
 workflow provenance data to satisfy a range of use cases spanning from
 supporting workflow development to supporting a service based on the
 execution of the workflow, with several other use cases in between. For a full
-motivation and description of the criteria the reader may refer to the original work [[De Wit 2022]].
+motivation and description of the criteria the reader may refer to the original work [[de Wit 2022]].
 
 Our analysis shows that, overall, most of the information contained in the CWLProv RDF is transferred to the RO-Crate metadata.
 The results are summarised in Table [2](#analysis_table);
@@ -987,7 +984,7 @@ More detailed results of the analysis can be found in [[de Wit 2024]].
 
 **Table 2**: **Summarised results of our qualitative analysis of runcrate**. We converted CWLProv (v0.6.0) ROs to WRROC with runcrate 0.5.0. The table compares the degree to which the data subtypes of the provenance data taxonomy
 (identified by the triple (`Type`, `Subtype`, `Name`)) are preserved
-by the CWLProv RDF and the WRROC RDF models; the taxonomy is defined in previous work [[De Wit 2022]],
+by the CWLProv RDF and the WRROC RDF models; the taxonomy is defined in previous work [[de Wit 2022]],
 where relevant provenance metadata are identified based on realistic
 use cases for ROs associated with a real-life bioinformatics workflow.<br>
 For completeness, the *CWL (non-RDF)* column also reports the non-RDF representation of provenance metadata
@@ -1001,7 +998,7 @@ Since `packed.cwl` and `primary-job.json` are also included in RO-Crate, we only
 
 ### Workflow Run RO-Crate and the W3C PROV standard {#prov}
 
-One of our aims for the WRROC profiles is to make them compatible with both Schema.org and W3C PROV. Provenance Run Crate is the profile that most closely matches the level of detail provided by CWLProv, which extends W3C PROV. [Table 3](#rocrate_prov_mapping) shows how the main classes and relationships represented by Provenance Run Crate map to PROV constructs, using the SKOS vocabulary to indicate the type of relationship between each pair of terms. A machine-readable version of the mapping can be found in the [RO-Crate accompanying](https://w3id.org/ro/doi/10.5281/zenodo.10368989) this article [[wrroc-crate wrroc-crate-html]].
+One of our aims for the WRROC profiles is to make them compatible with both Schema.org and W3C PROV. Provenance Run Crate is the profile that most closely matches the level of detail provided by CWLProv, which extends W3C PROV. [Table 3](#rocrate_prov_mapping) shows how the main classes and relationships represented by Provenance Run Crate map to PROV constructs, using the SKOS vocabulary to indicate the type of relationship between each pair of terms. A machine-readable version of the mapping can be found in the [RO-Crate accompanying](https://w3id.org/ro/doi/10.5281/zenodo.10368989) this article [[Leo 2023b]].
 
 
 
@@ -1273,6 +1270,12 @@ _GitHub_
 *Zenodo*  
 <https://doi.org/10.5281/zenodo.10199020>
 
+\[Blankenberg 2014\]
+Daniel Blankenberg | Gregory Von Kuster | Emil Bouvier | Dannon Baker | Enis Afgan | Nicholas Stoler | the Galaxy Team | James Taylor | Anton Nekrutenko (2014):  
+**Dissemination of scientific software with Galaxy ToolShed**.  
+_Genome Biology_ **15**:403   
+<https://doi.org/10.1186/gb4161>
+
 \[Bouyssié 2023\] David Bouyssié, Pınar Altıner, Salvador Capella-Gutierrez, José M. Fernández, Yanick Paco Hagemeijer, Peter Horvatovich, Martin Hubálek, Fredrik Levander, Pierluigi Mauri, Magnus Palmblad, Wolfgang Raffelsberger, Laura Rodríguez-Navas, Dario Di Silvestre, Balázs Tibor Kunkli, Julian Uszkoreit, Yves Vandenbrouck, Juan Antonio Vizcaíno, Dirk Winkelhardt, Veit Schwämmle (2023):  
 **WOMBAT-P: Benchmarking Label-Free Proteomics Data Analysis Workflows**.  
 *bioRxiv* 2023.10.02.560412  
@@ -1503,16 +1506,13 @@ W3C Working Group Note 18 August 2009
 <https://doi.org/10.5281/zenodo.10203433>
 
 \[Leo 2023b\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
-**Recording provenance of workflow runs with RO-Crate**.  
-*arXiv* 2312.07852 
-\[Leo 2023c\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
 **Recording provenance of workflow runs with RO-Crate** (RO-Crate and mapping).  
 RO-Crate  
 *Zenodo*  
 <https://w3id.org/ro/doi/10.5281/zenodo.10368989>  
-<https://doi/10.5281/zenodo.10368989>
+<https://doi/10.5281/zenodo.10368990>
 
-\[Leo 2023\] Simone Leo (2023):  
+\[Leo 2023c\] Simone Leo (2023):  
 **Run of digital pathology tissue/tumor prediction workflow**.  
 *Zenodo*  
 <https://doi.org/10.5281/zenodo.7774351>
@@ -1678,10 +1678,10 @@ Webinar for U.S. Food and Drug Administration (FDA), 2021-05-12
 *Zenodo*  
 <https://doi.org/10.5281/zenodo.7113250>
 
-\[de Wit 2023\] Renske de Wit, Michael R Crusoe (2023):  
+\[de Wit 2024\] Renske de Wit, Michael R Crusoe (2024):  
 **Analysis of runcrate**.  
 *Zenodo*  
-<https://doi.org/10.5281/zenodo.10251812>
+<https://doi.org/10.5281/zenodo.12689424>
 
 \[Wittner 2022\] Rudolf Wittner, Cecilia Mascia, Matej Gallo, Francesca Frexia, Heimo Müller, Markus Plass, Jörg Geiger, Petr Holub (2022):  
 **Lightweight Distributed Provenance Model for Complex Real--world Environments**.  
@@ -1739,6 +1739,7 @@ Data set.
 [Bechhofer 2013]: https://doi.org/10.1016/j.future.2011.08.004 "Why Linked Data is not enough for scientists"
 [Belhajjame 2015]: https://doi.org/10.1016/j.websem.2015.01.003 "Using a suite of ontologies for preserving workflow-centric research objects"
 [Beltrán 2023]: https://doi.org/10.5281/zenodo.10199020 "Autosubmit v4.0.100"
+[Blankenberg 2014]: https://doi.org/10.1186/gb4161 "Dissemination of scientific software with Galaxy ToolShed"
 [Bouyssié 2023]: https://doi.org/10.1101/2023.10.02.560412 "WOMBAT-P: Benchmarking Label-Free Proteomics Data Analysis Workflows"
 [Chard 2016]: https://static.aminer.org/pdf/fa/bigdata2016/BigD418.pdf "I'll take that to go: Big data bags and minimal identifiers for exchange of large, complex datasets"
 [Chard 2019]: https://zenodo.org/record/3381754 "Application of BagIt-serialized research object bundles for packaging and re-execution of computational analyses"
@@ -1782,9 +1783,9 @@ Data set.
 [Kumar 2013]: https://doi.org/10.1029/2012WR012195 "Implications of distributed hydrologic model parameterization on water fluxes at multiple scales and locations"
 [Lebo 2013a]: https://www.w3.org/TR/2013/REC-prov-o-20130430/ "PROV-O: The PROV Ontology"
 [Leo 2023a]: https://github.com/ResearchObject/runcrate "runcrate"
-[Leo 2023b]: https://doi.org/10.48550/arXiv.2312.07852 "Recording provenance of workflow runs with RO-Crate"
-[Leo 2023c]: https://w3id.org/ro/doi/10.5281/zenodo.10368989 "Recording provenance of workflow runs with RO-Crate"
-[Leo 2023]: https://doi.org/10.5281/zenodo.7774351 "Run of digital pathology tissue/tumor prediction workflow"
+[Leo 2023b]: https://w3id.org/ro/doi/10.5281/zenodo.10368989 "Recording provenance of workflow runs with RO-Crate (RO-Crate and mapping)"
+[Leo 2023c]: https://doi.org/10.5281/zenodo.7774351 "Run of digital pathology tissue/tumor prediction workflow"
+[Leo 2024]: https://doi.org/10.48550/arXiv.2312.07852 "Recording provenance of workflow runs with RO-Crate"
 [Lordan 2014]: https://doi.org/10.1007/s10723-013-9272-5 "ServiceSs: An interoperable programming framework for the cloud"
 [Manubens-Gil 2016]: https://doi.org/10.1109/HPCSim.2016.7568429 "Seamless management of ensemble climate prediction experiments on HPC platforms"
 [Meurisse 2023]: https://s11.no/2023/phd/federated-causal-inference/ "Federated causal inference based on real-world observational data sources"
@@ -1817,7 +1818,7 @@ Data set.
 [Vivian 2017]: https://doi.org/10.1038/nbt.3772 "Toil enables reproducible, open source, big biomedical data analyses"
 [W3C 2012]: https://www.w3.org/TR/2012/REC-owl2-overview-20121211 "OWL 2 Web Ontology Language Document Overview"
 [de Wit 2022]: https://doi.org/10.5281/zenodo.7113250 "A Non-Intimidating Approach to Workflow Reproducibility in Bioinformatics"
-[de Wit 2023]: https://doi.org/10.5281/zenodo.10251812 "Analysis of runcrate"
+[de Wit 2024]: https://doi.org/10.5281/zenodo.12689424 "Analysis of runcrate"
 [Wittner 2022]: https://doi.org/10.1038/s41597-022-01537-6 "Lightweight Distributed Provenance Model for Complex Real--world Environments"
 [Wittner 2023b]: https://s11.no/2023/phd/linking-provenance/ "Linking provenance and its metadata in multi-organizational environments of life sciences"
 [Wittner 2023c]: https://doi.org/10.5281/zenodo.8095888 "Packing provenance using CPM RO-Crate profile"
@@ -1840,7 +1841,6 @@ _commonwl.org_ (2024-05-24)
 
 Research Object Bundle context \[cited 2024 May 24\]
 <https://w3id.org/bundle/context>
-
 
 
 Workflow Run RO-Crate \[cited 2024 May 24\].
@@ -1868,12 +1868,6 @@ ro-terms: Workflow run namespace \[cited 2024 Jul 03\].
 
 Schema.org HowToStep definition \[cited 2024 May 24\].
 <https://schema.org/HowToStep>
-
-
-Blankenberg D, Von Kuster G, Bouvier E, Baker D, Afgan E, Stoler N, et al.
-Dissemination of scientific software with Galaxy ToolShed.
-Genome Biology 2014;15:403.
-doi: [10.1186/gb4161](https://doi.org/10.1186/gb4161)
 
 
 Galaxy Workflow Format 2 Description \[cited 2024 May 24\].
@@ -1961,11 +1955,6 @@ SPARQL 1.1 Overview. W3C Recommendation 21 March 2013 \[cited 2024 May 27\].
 <https://www.w3.org/TR/sparql11-overview/>
 
 
-de Wit R, Crusoe MR.
-Analysis of runcrate.
-Zenodo, 2024.
-doi: [10.5281/zenodo.12689424](https://doi.org/10.5281/zenodo.12689424)
-
 Leo S, Crusoe MR, Rodríguez-Navas L, Sirvent R, Kanitz A, De Geest P, et al.
 Recording provenance of workflow runs with RO-Crate (RO-Crate and mapping).
 Zenodo, 2023.
@@ -1974,7 +1963,6 @@ doi: [10.5281/zenodo.10368990](https://doi.org/10.5281/zenodo.10368990)
 
 EOSC-ENTRUST: Creating a European network of TRUSTed research environments \[cited 2024 May 27\].
 <https://eosc-entrust.eu/>
-
 
 Stian Soiland-Reyes. Packaging BioCompute Objects using RO-Crate \[cited 2024 May 27\].
 <https://biocompute-objects.github.io/bco-ro-crate/>
