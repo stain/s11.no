@@ -281,6 +281,12 @@ time {
   }
 }
 
+q {
+  font-style: italic;
+  color: #555;
+  font-weight: lighter;
+}
+
 @media print { 
   nav { 
     display: none;
@@ -322,6 +328,10 @@ time {
       font-size: 10pt;
     }
   }
+}
+
+dl dt { 
+  font-weight: bolder;
 }
 
 @import "font-caveat";
