@@ -1887,23 +1887,33 @@ Schema.org HowToStep definition \[cited 2024 May 24\].
 Galaxy Workflow Format 2 Description \[cited 2024 May 24\].
 <https://galaxyproject.github.io/gxformat2/v19_09.html>
 
+[Gabriel 2004]: https://doi.org/10.1007/978-3-540-30218-6_19 "Open MPI"
 
-Gabriel E, Fagg GE, Bosilca G, Angskun T, Dongarra JJ, Squyres JM et al.
-Open MPI: Goals, Concept, and Design of a Next Generation MPI Implementation.
-Lecture Notes in Computer Science, 2004;3241:97--104.
-doi: [10.1007/978-3-540-30218-6\_19](https://doi.org/10.1007/978-3-540-30218-6_19).
+\[Gabriel 2004\]
+Gabriel E, Fagg GE, Bosilca G, Angskun T, Dongarra JJ, Squyres JM et al. (2004):  
+**Open MPI: Goals, Concept, and Design of a Next Generation MPI Implementation**.
+_Lecture Notes in Computer Science_ **3241**  
+<https://doi.org/10.1007/978-3-540-30218-6_19>
 
+[Dagum 1998]: https://doi.org/10.1109/99.660313 "OpenMP"
+
+\[Dagum 1998\]
 Dagum L, Menon R.
 OpenMP: an industry standard API for shared-memory programming.
 IEEE Computational Science and Engineering 1998;5(1):46-55.
-doi: [10.1109/99.660313](https://doi.org/10.1109/99.660313).
+<https://doi.org/10.1109/99.660313>
 
-Lam SK, Pitrou A, Seibert S.
-Numba: a LLVM-based Python JIT compiler.
-In Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC 2015.
-doi: [10.1145/2833157.2833162](https://doi.org/10.1145/2833157.2833162).
+[Lam 2015]: https://doi.org/10.1145/2833157.2833162 "Numba"
 
+\[Lam 2015\]
+Lam SK, Pitrou A, Seibert S. (2015):  
+**Numba**: a LLVM-based Python JIT compiler.  
+_Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC 2015_.  
+<https://doi.org/10.1145/2833157.2833162>
 
+[BSC 2024]: https://bsc.es/supportkc/docs/MareNostrum4/intro/ "MareNostrum 4 user's guide"
+
+\[BSC 2024\]
 MareNostrum 4 user's guide \[cited 2024 May 24\].
 <https://bsc.es/supportkc/docs/MareNostrum4/intro/>
 

@@ -9,6 +9,15 @@ categories:
 This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=poster).
 
 
+Eli Chadwick, Stian Soiland-Reyes (2024):  
+[**RO-Crate: package your research outputs with their metadata**](https://research.manchester.ac.uk/en/publications/ro-crate-package-your-research-outputs-with-their-metadata).  
+_Research Software Engineering Conference_ ([RSECon 2024](https://rsecon24.society-rse.org/)), Newcastle, UK, 2024-09-03/--05.  
+<https://research.manchester.ac.uk/en/publications/ro-crate-package-your-research-outputs-with-their-metadata>
+
+Sebastian Beier, Daniel Arend, Cyril Pommier, Kristina Gruden, Patrick König, Stian Soiland-Reyes, Philippe Rocca-Serra, Peter Selby, Leyla Jael Castro, Klaus F. X. Mayer, Uwe Scholtz, Björn Usadel (2024):  
+[**Facilitating Interoperability in Agricultural Research through ELIXIR-supported Metadata Standards**](https://doi.org/10.5281/zenodo.12527784).  
+[_FAIRagro Community Summit_](https://fairagro.net/en/1st-fairagro-community-summit/), Berlin, Germany, 2024-06-17/--18.  
+<https://doi.org/10.5281/zenodo.12527784>
 
 Leyla Jael Castro, Stian Soiland-Reyes, Dietrich Rebholz-Schuhmann (2023):  
 [**RO-Crates meets FAIR Digital Objects**](https://doi.org/10.5281/zenodo.8348924).  
