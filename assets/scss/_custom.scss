@@ -334,6 +334,14 @@ dl dt {
   font-weight: bolder;
 }
 
+em em {
+  font-style: initial;
+}
+
+strong strong { 
+  font-weight: bolder;
+}
+
 @import "font-caveat";
 @import "font-ibm-plex-mono";
 @import "font-ibm-plex-serif";
