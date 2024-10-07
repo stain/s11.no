@@ -66,7 +66,8 @@ authors:
 
 Sean Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
 **Applying the FAIR Principles to Computational Workflows**.  
-_arXiv_ (submitted)
+_arXiv_ 2410.03490 [cs.DL]  
+<https://doi.org/10.48550/arXiv.2410.03490>
 
 
 # Applying the FAIR Principles to Computational Workflows
