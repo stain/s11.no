@@ -4,11 +4,18 @@ aliases:
   - /2020/about/
   - /2021/about/
   - /2022/about/
-date: 2023-11-21
+date: 2024-10-08
 ---
 
-## Overview
 
+<a href="2023-stian-skjegg.jpeg"><img src="2023-stian-skjegg.jpeg" 
+	style="width: auto; height: auto; max-height: 50%; max-width: 15em; min-width: 5em;" 
+	width="628" height="640" 
+	alt="Photo of Stian with beard" 
+	title="Stian in Puebla, Mexico, 2023" /></a>
+
+
+## Overview
 
 > tl;dr: Senior Lecturer in FAIR, Open and Reproducible Digital Research. Research interests include Linked Data, FAIR digital objects, metadata, provenance, annotations, open source and software development best practices.
 
