@@ -37,7 +37,7 @@ I also want to thank the UCU union members in Manchester [(UMUCU)](https://manch
 
 ## Community acknowledgements
 
-I am grateful for all the wonderful discussions, technical contributrions and long-lasting friendships formed in the RO-Crate community (listed ) since its early inception [[Ó Carragáin 2019a]] at Workshop on Research Objects [(RO2018)](https://www.researchobject.org/ro2018/). Without you there would not have been any RO-Crate!
+I am grateful for all the wonderful discussions, technical contributrions and long-lasting friendships formed in the [RO-Crate community](#communitylist) since its early inception [[Ó Carragáin 2019a]] at Workshop on Research Objects [(RO2018)](https://www.researchobject.org/ro2018/). Without you there would not have been any RO-Crate!
 
 I would particularly like to thank Peter Sefton, without which co-chairing, enthusiasm and pragmatism I would easily had got lost the weeds. I am forever in debt to Eoghan Ó Carragáin who managed to get me and Peter to agree even on the trickiest issues, and led the community through its formative years.
 
@@ -377,7 +377,7 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore 
 <https://doi.org/10.3897/rio.8.e94349>
 
 
-### License and modifications {#license-and-modifications-6 .unnumbered}
+### License and modifications
 
 -   **License**: Creative Commons Attribution License
     ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
@@ -394,14 +394,10 @@ We acknowledge the [SYNTHESYS+](https://www.synthesys.info/) and [DiSSCO](https:
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement numbers [823827](https://doi.org/10.3030/823827) (SYNTHESYS Plus), [871043](https://doi.org/10.3030/871043) (DiSSCo Prepare), [823830](https://doi.org/10.3030/823830) (BioExcel-2), [824087](https://doi.org/10.3030/824087) (EOSC-Life).
 
 
-
-
 ## References
 
+See [full reference list](/2023/phd/references/).
 
-### References
-
-See chapter [references](../../2023/references/).
 
 [van der Aalst 2014]: https://doi.org/10.1007/978-3-319-04948-9_2 "Data Scientist: The Engineer of the Future"
 [Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
