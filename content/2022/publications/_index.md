@@ -248,7 +248,7 @@ _Lecture Notes in Computer Science_ **12839**.
 [[preprint & poster](https://doi.org/10.5281/zenodo.3901011)]
 
 Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  
-[**FAIR Computational Workflows**](https://doi.org/10.1162/dint_a_00033).  
+[**FAIR Computational Workflows**](../../2020/fair-computational-workflows/).  
 _Data Intelligence_  **2**(1):108–121  
 <https://doi.org/10.1162/dint_a_00033>
 

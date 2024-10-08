@@ -32,7 +32,7 @@ In addition to my [main contributions](../../../2022/phd/contributions/), I have
 
 [Supplement 10: Unique, Persistent, Resolvable: Identifiers as the Foundation of FAIR](https://doi.org/10.1162/dint_a_00025)  _(Main contribution pre-dates UvA affiliation)_
 
-[Supplement 11: FAIR Computational Workflows](https://doi.org/10.1162/dint_a_00033)  _(Main contribution pre-dates UvA affiliation)_
+[Supplement 11: FAIR Computational Workflows](../../../2020/fair-computational-workflows/)  _(Main contribution pre-dates UvA affiliation)_
 
 [Supplement 12: Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv](https://doi.org/10.1093/gigascience/giz095)   _(Main contribution pre-dates UvA affiliation)_
 
