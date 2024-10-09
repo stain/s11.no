@@ -30,7 +30,7 @@ My supervisors are [Paul Groth](http://pgroth.com/) and [Carole Goble](https://r
 
 I started in July 2019 and concluded in December 2023, with final manuscript submitted in May 2024. The formal doctoral thesis defence is scheduled for 15th January 2025. 
 
-As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web or in the thesis PDF, see full list of sources and editorial changes in [appendix Contributions](../../2022/phd/contributions/).
+As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web or in the thesis PDF (e.g. using the [s11 Citation house style](/2021/house-rules/citation-style/)), see full list of sources and editorial changes in [appendix Contributions](../../2022/phd/contributions/).
 
 * Cite as: <https://doi.org/10.5281/zenodo.8113625>
 * License: [Creative Commons Attributions 4.0 International](https://spdx.org/licenses/CC-BY-4.0/)  
