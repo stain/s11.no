@@ -1872,7 +1872,7 @@ OCLC\
 *Zenodo*\
 <https://doi.org/10.5281/zenodo.10134581>
 
-Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2019):\
+\[Oliver 2019\] Hilary Oliver, Matthew Shin, David Matthews, Oliver Sanders, Sadie Bartholomew, Andrew Clark, Ben Fitzpatrick, Ronald van Haren, Rolf Hut, Niels Drost (2019):\
 **Workflow Automation for Cycling Systems**.\
 *Computing in Science & Engineering* **21**(4)\
 <https://doi.org/10.1109/MCSE.2019.2906593>

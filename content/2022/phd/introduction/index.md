@@ -318,7 +318,7 @@ This thesis also cites background material where I have contributed as co-author
 
 ### References
 
-See chapter [references](../../2023/references/).
+See chapter [references](/2023/phd/references/).
 
 [van der Aalst 2014]: https://doi.org/10.1007/978-3-319-04948-9_2 "Data Scientist: The Engineer of the Future"
 [Addink 2019]: https://doi.org/10.3897/biss.3.37502 "DiSSCo as a New Regional Model for Scientific Collections in Europe"
