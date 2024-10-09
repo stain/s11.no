@@ -15,7 +15,7 @@ First Author, Second Author, All Authors (year):
 Event/Report, _Venue_ **volume**(issue)  
 <https://doi.org/10.1000/123456>
 
-For examples of the s11 bibliography style in use, see most of the [publications](/2022/publications/) and [PhD references](/2023/phd/references/).
+For examples of the s11 bibliography style in use, see most of the [publications](/2022/publications/) and [PhD references](/2023/phd/references/) ([as PDF](https://s11.no/2023/phd/thesis.pdf#section*.92)).
 
 Rationale:
 1. It should be possible to write the reference without a bibliography manager (e.g. in Google Docs).
