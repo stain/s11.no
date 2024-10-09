@@ -503,7 +503,7 @@ _W3C Recommendation_ 25 Feb 2014.
 <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>
 
 
-1. Avoid using `[14]` style numeric references are they are meaningless without scrolling to the reference list, which works poorly on computers
+1. Avoid using `[14]` style numeric references, as they are meaningless without scrolling to the reference list, which works poorly on screens.
 2. Include only the surname of only the first author (you did list all of the full names in the bibliography?).  
    You may need to investigate (e.g. in CrossRef metadata or on the author's ORCID record) which part of the name can be considered the surname. 
 3. Include the full surname, with prefixes/accents. You may need to check regional conventions, for instance [Ó Carragáin 2019a] [Van de Sompel 2007] [de Visser 2023] [Nieva de la Hidalga 2021]
@@ -522,4 +522,22 @@ _W3C Recommendation_ 25 Feb 2014.
 11. For numbered standards, use their short form e.g. [ISO 23009-1] (exception: RFCs are listed by their first author)
 12. Remember, this is a key, not a reference! The full details are listed under your _References_
 13. To change keys to a valid bibtex key, simply delete the space.
+14. For publishing on the Web, include the **title** of the citation in the hyperlink markup. In Markdown this can be achived using bookmarks, in HTML `<a href="" title="">` 
+
+Markdown example using bookmarks:
+
+```markdown
+...code, data formats or software versions [[Stodden 2016]].
+
+[Stodden 2016]: https://doi.org/10.1126/science.aah6168 "Enhancing reproducibility for computational methods"
+```
+
+Note that the bookmarks are expanded and not rendered as a list. In reference list you need to escape:
+
+```markdown
+\[Stodden 2016\] Victoria Stodden, Marcia McNutt, David H. Bailey, 
+Ewa Deelman, Yolanda Gil, Brooks Hanson, Michael A. Heroux, 
+John P.A. Ioannidis, Michela Taufer (2016):
+```
+
 
