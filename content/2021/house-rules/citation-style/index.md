@@ -465,9 +465,9 @@ _Proceedings of the IEE - Part B: Radio and Electronic Engineering_ **106**(26)
 
 ## Inline citations and bibliography
 
-For preparing a preprint or initial submission for a journal, consider the
-usability of the references for the reader or reviewer, rather than journal
-guidelines.
+For preparing a preprint or initial submission for a journal or conference,
+consider the usability of the references for the reader or reviewer, rather
+than poor publisher/Overleaf templates.
 
 If a manuscript is being prepared in a collaborative environment like Google
 Docs, or will be [published on the Web](/2022/publications/), or in another
