@@ -73,11 +73,6 @@ Stian Soiland-Reyes, Leyla Jael Castro, Rohitha Ravinder, Claus Weiland, Jonas G
 *BioHackrXiv*  
 <https://doi.org/10.37044/osf.io/gmk2h>
 
-Sebastian Beier, Timo Mühlhaus, Cyril Pommier, Stuart Owen, Dominik Brilhaus, Heinrich Lukas Weil, Florian Wetzels, Gavin Chait, Daniel Arend, Manuel Feser, Gajendra Doniparthi, Jonathan Bauer, Sveinung Gundersen, Pável Vázquez (2024):  
-[BioHackEU23 report: **Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA**](https://doi.org/10.37044/osf.io/7y2jh).  
-*BioHackrXiv*  
-<https://doi.org/10.37044/osf.io/7y2jh>
-
 Mark D Wilkinson, Susanna-Assunta Sansone, Marjan Grootveld, Richard Dennis, David Hecker, Robert Huber, Stian Soiland-Reyes, Herbert Van de Sompel, Andreas Czerniak, Milo Thurston, Allyson L. Lister, Alban Gaignard (2024):  
 [**Report on "FAIR Signposting" and its uptake by the community**](../../2024/signposting-report/).  
 _EOSC FAIR Metrics and Data Quality Task Force_  
