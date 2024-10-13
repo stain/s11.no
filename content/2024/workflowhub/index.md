@@ -51,9 +51,11 @@ authors:
 
 <h2>Cite as</h2>
 
-Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, WorkflowHub community, Carole Goble (2024):  
+Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, Carole Goble (2024):  
 **WorkflowHub: a registry for computational workflows**.  
-(in preparation)
+_arXiv_:2410.06941 [cs.DL]  
+<https://doi.org/10.48550/arXiv.2410.06941>
+
 
 # WorkflowHub: a registry for computational workflows
 
