@@ -35,7 +35,7 @@ _Biodiversity Information Science and Standards_ **8**:e134757
 Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):  
 [**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
 _International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  
-_Open Conference Proceedings_ **4** (submitted)  
+_Open Conference Proceedings_  (submitted)  
 <https://s11.no/2024/webby-fdos/>
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
@@ -62,6 +62,11 @@ Peter Sefton, Stian Soiland-Reyes (2024):
 [**Five ways RO-Crate data packages are important for repositories**](https://research.manchester.ac.uk/en/publications/five-ways-ro-crate-data-packages-are-important-for-repositories).  
 (submitted)  
 <https://research.manchester.ac.uk/en/publications/five-ways-ro-crate-data-packages-are-important-for-repositories>
+
+José M. Fernández, Paula Iborra, Sébastien Moretti, Arun Isaac, Paul De Geest, Stian Soiland-Reyes (2024):  
+**BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate**.  
+_BioHackrXiv_  
+<https://doi.org/10.37044/osf.io/7f94w>
 
 Stian Soiland-Reyes, Leyla Jael Castro, Rohitha Ravinder, Claus Weiland, Jonas Grieb, Alexander Rogers, Christophe Blanchi, Herbert Van de Sompel (2024):  
 [BioHackEU23 report: **Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas**](../..//2024/enabling-fair-digital-objects/).  

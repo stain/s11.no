@@ -34,7 +34,7 @@ authors:
 Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):
 **Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned.  
 International FAIR Digital Objects Implementation Summit 2024, Berlin, Germany, 2024-03-20/-\-21.  
-_Open Conference Proceedings_ **4** (submitted)  
+_Open Conference Proceedings_ (submitted)  
 <https://s11.no/2024/webby-fdos/>
 
 
@@ -278,7 +278,7 @@ We would like to acknowledge the [RO-Crate Community](https://www.researchobject
 3\. Rohitha Ravinder, Nelson David Quiñones, Dietrich Rebholz-Schuhmann (2024):  
 **A lightweight approach to FDOs via Bioschemas, RO-Crate and Signposting on GitHub Pages**.  
 *International FAIR Digital Objects Implementation Summit 2024*, Berlin, Germany, 2024-03-20/-\-21.   
-_Open Conference Proceedings_ **4** (in review)  
+_Open Conference Proceedings_  (in review)  
 
 </div>
 
