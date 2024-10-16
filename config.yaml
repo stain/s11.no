@@ -66,6 +66,9 @@ params:
       Header add Link "<ro-crate-metadata.json>;rel=alternate;type=\"application/ld+json\""
       Header add Link "<./>;rel=describes"
     </Files>
+    <Files "index.xml">
+      ForceType "application/rss+xml"
+    </Files>
 
 permalinks:
   /: /:year/:filename/
