@@ -1,0 +1,25 @@
+<Files index.html>
+	Header add Link "<ro-crate-metadata.json>;rel=describedby;type=\"application/ld+json\";profile=\"http://www.w3.org/ns/json-ld#flattened http://www.w3.org/ns/json-ld#compacted https://w3id.org/ro/crate\""
+	Header add Link "<ro-crate-preview.html>;rel=describedby;type=\"text/html\""
+	Header add Link "<https://doi.org/10.5281/zenodo.8113625>;rel=cite-as"
+
+	Header add Link "<https://schema.org/Thesis>;rel=type"
+	Header add Link "<https://schema.org/AboutPage>;rel=type"
+	Header add Link "<https://orcid.org/0000-0001-9842-9718>;rel=author"
+	Header add Link "<https://spdx.org/licenses/CC-BY-4.0>;rel=license"
+	Header add Link "<thesis.pdf>;rel=item"
+</Files>
+<Files thesis.pdf>
+	Header add Link "<https://doi.org/10.5281/zenodo.8113625>;rel=cite-as"
+	Header add Link "<https://schema.org/Thesis>;rel=type"
+	Header add Link "<https://schema.org/AboutPage>;rel=type"
+	Header add Link "<https://orcid.org/0000-0001-9842-9718>;rel=author"
+	Header add Link "<https://spdx.org/licenses/CC-BY-4.0>;rel=license"
+	Header add Link "<./>;rel=collection"
+</Files>
+<Files ro-crate-metadata.json>
+	Header add Link "<https://w3id.org/doi/10.5281/zenodo.8113625>;rel=cite-as"
+</Files>
+<Files ro-crate-preview.html>
+	Header add Link "<https://w3id.org/doi/10.5281/zenodo.8113625>;rel=cite-as"
+</Files>
