@@ -103,7 +103,7 @@ ProvToolbox can also generate visualization, but for this we need to install the
 
 Following the link for downloading [Stable Windows Install Packages](https://www2.graphviz.org/Packages/stable/windows/) we are unfortunately thrown into an undocumented directory browsing. We found that the [cmake/Release/x64 installer](https://www2.graphviz.org/Packages/stable/windows/10/cmake/Release/x64/) worked well on 64-bit Windows (for older 32-bit Windows, try [Win32](https://www2.graphviz.org/Packages/stable/windows/10/cmake/Release/Win32/)).
 
-You will need to allow the unsifned package to install
+You will need to allow the unsigned package to install
 
 ![](image-14.png)
 
@@ -111,7 +111,7 @@ When running the install wizard for GraphViz, make sure you enable to **add Grap
 
 ![](image-15.png)
 
-Close and restart the Command Prompt Window. This time `**dot -V**` (notice capital) should work:
+Close and restart the Command Prompt Window. This time `dot -V` (notice capital) should work:
 
 ![](image-16.png)
 
@@ -119,7 +119,7 @@ Unfortunately the installer of GraphViz does not initialize the plugins for grap
 
 ![](image-21.png)
 
-In this window, run `**dot -c**` to initialize the GraphViz plugins.
+In this window, run `dot -c` to initialize the GraphViz plugins.
 
 ![](image-22.png)
 
