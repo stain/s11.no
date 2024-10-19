@@ -1262,7 +1262,7 @@ ISO standard\
 The International Telecommunication Union (ITU).\
 <https://www.itu.int/rec/T-REC-X.1255-201309-I>
 
-\[Ivonne 2023\] Anders Ivonne, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom Larry, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):\
+\[Ivonne 2023\] Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom Larry, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf (2023):\
 **FAIR digital object technical overview**. Version PEN 2.0.\
 *FDO Specification Documents* Full FDO Overview PEN-2.0-v2\
 *FAIR Digital Objects Forum*\
@@ -1580,10 +1580,12 @@ _RFC Editor_, RFC 4122 \
 <https://github.com/ResearchObject/runcrate>\
 <https://doi.org/10.5281/zenodo.10203433>
 
-\[Leo 2023b\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):\
+\[Leo 2023b\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):\
 **Recording provenance of workflow runs with RO-Crate**.\
+_PLOS One- **19**(9):e0309210  
 *arXiv* 2312.07852 \[cs.DL\]\
 <https://doi.org/10.48550/arXiv.2312.07852>\
+<https://doi.org/10.1371/journal.pone.0309210>\
 <https://s11.no/2023/phd/workflow-run-crate/> (section [\[ch54:wrroc\]](#ch54:wrroc){reference-type="ref+page" reference="ch54:wrroc"})
 
 \[Leo 2023c\] Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):\
@@ -2625,15 +2627,21 @@ Draft Tag Finding.\
 <https://doi.org/10.5281/zenodo.7825693>
 
 \[Weiland 2022a\] C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch, Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg (2022):\
-**FAIR Digital Objects Forum Document Standards** WD-DocProcessStd-1.1-20220129 (internal draft)\
-*FAIR Digital Objects Forum*\
-<https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_> (accessed 30 November 2022)
+**FAIR Digital Objects Forum Document Standards**
+WD-DocProcessStd-1.1-20220129  
+*FAIR Digital Objects Forum*  
+<https://doi.org/10.5281/zenodo.10943371>
 
 \[Weiland 2022b\] Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, Peter Wittenburg (2022):\
 **FDO machine actionability**. Version 2.2\
 *FAIR Digital Objects Forum Document Standards* PR-MachineActionDef-2.2-20221119\
 *FAIR Digital Objects Forum*\
 <https://doi.org/10.5281/zenodo.7825650>
+
+\[Whetzel 2011\] Patricia L Whetzel, Natalya F Noy, Nigam H Shah, Paul R Alexander, Csongor Nyulas, Tania Tudorache, Mark A Musen (2011):  
+**BioPortal**: enhanced functionality via new Web services from the National Center for Biomedical Ontology to access and use ontologies in software applications.  
+_Nucleic Acids Research_ **39**(Web Server issue):W541-5  
+<https://doi.org/10.1093/nar/gkr469>
 
 \[de Wit 2022\] Renske de Wit (2022):\
 **A Non-Intimidating Approach to Workflow Reproducibility in Bioinformatics**: Adding Metadata to Research Objects through the Design and Evaluation of Use-Focused Extensions to CWLProv.\
@@ -2844,3 +2852,4 @@ Wolmar Nyberg Åkerström, Kurt Baumann, Oscar Corcho, Romain David, Yann Le Fra
 **Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework**.\
 _Zenodo_, EOSC-A Semantic Interoperability Task Force \
 <https://doi.org/10.5281/zenodo.10843882>
+

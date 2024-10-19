@@ -27,7 +27,7 @@ Thank you for all your patience, persistence and for your pragmatic directions t
 Thank you to Carole Goble, you have always been supporting me in so many ways since I started working for you in 2006, and you convinced me to start this PhD in the first place! No wonder you kept asking if I was finished yet! I appreciate our friendship and how you have mentored me to grow from a geeky developer to an acedemic. I hope we continue our exciting collaborations as "proper" colleagues!
 
 I am so happy to have worked at the [eScience Lab](https://esciencelab.org.uk/people/) at The University of Manchester for all these years and during this PhD. I particularly want to thank Shoaib Sufi for your wisdom and our deep conversations, not to mention your reliability whenever I have been stunned by bureaucracy or other struggles -- I've probably been the oddest person for you to line manage!
-Thank you to all my amazing colleagues at the eScience Lab -- specially Stuart, Finn, Alex, Nick, Munazah, Alan -- you are a pleasure to work with, not just for your skills and expertise, but also your friendship and support.
+Thank you to all my amazing colleagues at the eScience Lab -- specially Stuart, Finn, Aleks, Nick, Munazah, Alan, Doug, Oliver, Eli, Phil, Aleksander -- you are a pleasure to work with, not just for your skills and expertise, but also your friendship and support.
 
 I want to thank Meznah, you have been in the odd position of being co-supervised by me for your own PhD, and at the same time pushing me to finish mine! You bring such a joy with everything you do! Thanks to my fellow PhD and EngD students in Manchester: Fuqi, Ebitsam, Yo -- you inspire me! Thanks to Rudolf Wittner, your productive provenance visits to Manchester have hopefully helped your PhD as much as mine!
 
@@ -39,33 +39,33 @@ I also want to thank the UCU union members in Manchester [(UMUCU)](https://manch
 
 I am grateful for all the wonderful discussions, technical contributrions and long-lasting friendships formed in the [RO-Crate community](#communitylist) since its early inception [[Ó Carragáin 2019a]] at Workshop on Research Objects [(RO2018)](https://www.researchobject.org/ro2018/). Without you there would not have been any RO-Crate!
 
-I would particularly like to thank Peter Sefton, without which co-chairing, enthusiasm and pragmatism I would easily had got lost the weeds. I am forever in debt to Eoghan Ó Carragáin who managed to get me and Peter to agree even on the trickiest issues, and led the community through its formative years.
+I would particularly like to thank Peter Sefton, without whose co-chairing, enthusiasm and pragmatism I would easily had got lost in the weeds. I am forever in debt to Eoghan Ó Carragáin who managed to get me and Peter to agree even on the trickiest issues, and led the community through its formative years.
 
-I want to thank Simone Leo, which persistent work and leadership on [Workflow Run Crate](https://w3id.org/ro/wfrun/) and the RO-Crate Python library [[De Geest 2023a]] has shown that RO-Crate works in practice even for detailed provenance.
+I want to thank Simone Leo, whose persistent work and leadership on [Workflow Run Crate](https://w3id.org/ro/wfrun/) and the RO-Crate Python library [[De Geest 2023a]] has shown that RO-Crate works in practice even for detailed provenance.
 
-Thank you to Bruno Kinoshita who kindly (and on own initiative) helped proof this whole thesis, you have contributed to our common goals in so many ways, going back to when we first worked on Semantic Web, Apache Jena, and Common Workflow Language and later RO-Crate.
+Thank you to Bruno Kinoshita who kindly (and on his own initiative) helped proof this whole thesis, you have contributed to our common goals in so many ways, going back to when we first worked on Semantic Web, Apache Jena, and Common Workflow Language and later RO-Crate.
 
 I am very grateful to Daniel Garijo, with whom I have enjoyed many insightful discussions and idea developments for more than a decade (since the early days of Research Objects!), from the cellar of Dagstuhl to beaches of San Diego! I appreciate your enthusiasm and many invaluable and constructive contributions to manuscripts, specifications and code.
 
-I want to thank Leyla Jael Castro, for your continuous positivity and drive, and for pushing us to run RO-Crate training workshops together with Núria Queralt Rosinach and Claus Weiland. I always appreciate our discussions and writing together, and I am so glad that you are much better than me to remember submission deadlines!
+I want to thank Leyla Jael Castro, for your continuous positivity and drive, and for pushing us to run RO-Crate training workshops together with Núria Queralt Rosinach, Claus Weiland and Jonas Grieb. I always appreciate our discussions and writing together, and I am so glad that you are much better than me to remember submission deadlines!
 
 RO-Crate is standing on the shoulders of giants, and I would like to thank the whole Research Object community [[Goble 2018]] for persisting on the early RO ideas [[Newman 2009], [Bechhofer 2013]]. I have particular fond memories of whiteboard sessions with Sean Bechhofer, Khalid Belhajjame, Paolo Missier, David De Roure, and Kevin Page in the productive [Wf4Ever project](https://s11.no/2020/archive/wf4ever/) that laid the foundation for what is now RO-Crate.
 
 This PhD is in many ways born out of
 [ELIXIR Europe](https://elixir-europe.org/), not just
-through its many fruitful co-author contributions
+through the many fruitful co-authorships
 (section [B.1](../contributions/#my-contributions)),
 but also as the "ELIXIR way" of working is emblematic for the approach taken by RO-Crate community: open collaborations where institutional and project boundaries are blurred out in favour of jointly building pragmatic solutions.
 
 I would like to thank the lovely people of ELIXIR Belgium (incl. Frederik, Ignacio, Paul, Rafael, Bert), ELIXIR Spain (incl. José Mª, Laura, Salva, Adam, Pau), ELIXIR HUB (incl. Justin, Jonathan, Marieke, Gavin, Niklas, Katharina), ELIXIR DE (incl. Björn, Anika, Sebastian, Nils, Michael), ELIXIR CH (Alex, Patricia), ELIXIR UK (incl. Susanna, Nicola, Xenia, Tim, Neil), ELIXIR NL (Núria, Egon, Chris, Marco, Rob, Helena) and many others I may have missed listing. I want to particularly thank everyone who organized and participated in the [ELIXIR Biohackathons](https://biohackathon-europe.org/) which always inspires me and has helped build our communities.
 
-This thesis frequently mentions the Common Workflow Language[^1], and many of the ideas spur out of methods that were first tried by the [CWL community](https://www.commonwl.org/contributors/) (see for example [[Möller 2017],[Robinson 2017],[Khan 2019],[Crusoe 2022]]), which I am grateful for. I want to thank Michael Crusoe, not just for your tiredless work on bringing CWL together and willingness to put FAIR workflow theories into practice, but also for our enduring friendship and your support throughout most of the rabbit holes I've ventured into. I want to thank Peter Amstutz,
+This thesis frequently mentions the Common Workflow Language[^1], and many of the ideas spur out of methods that were first tried by the [CWL community](https://www.commonwl.org/contributors/) (see for example [[Möller 2017],[Robinson 2017],[Khan 2019],[Crusoe 2022]]), which I am grateful for. I want to thank Michael Crusoe, not just for your tiredless work on bringing CWL together and willingness to put FAIR workflow theories into practice, but also for our enduring friendship and your support throughout most of the rabbit holes I have ventured into. I want to thank Peter Amstutz,
 Hervé Ménager and the rest of the CWL leadership team and the many volunteers.
 
 I also need to thank members of the [BioCompute Object](https://biocomputeobject.org/) community, particularly Hadley, Jonathon, Raja, Dennis, Vahan, Janisha, Amanda, and Nicola.
 I thank the [Workflows Community Initiative](https://workflows.community/) in particular Sean R. Wilkinson, Rafael Ferreira da Silva, and Kyle Chard.
 
-From the [FAIR Digital Object Forum](https://fairdo.org/) I need to place particular thanks to Peter Wittenburg, Luiz Olavo Bonino da Silva Santos, Maggie Hellström, Ulrich Schwardmann and Rainer Stotzka. I also want to thank all the members of the [Research Data Alliance](https://www.rd-alliance.org/)'s FAIR Digital Object Fabric interest group.
+From the [FAIR Digital Object Forum](https://fairdo.org/) I need to place particular thanks to Peter Wittenburg, Luiz Olavo Bonino da Silva Santos, Maggie Hellström, Christophe Blanchi, Ulrich Schwardmann and Rainer Stotzka. I also want to thank all the members of the [Research Data Alliance](https://www.rd-alliance.org/)'s FAIR Digital Object Fabric interest group.
 
 Mark Wilkinson, we first worked together on BioMoby services and Taverna workflows, which seems a long way from where we are today with FAIR! Looking back from this thesis, perhaps we could consider those to be early FAIR digital objects as well? I want to thank you for your enthusiasm, and for bringing me in to the Apples2Apples hackathons -- thank you also to Robert, Richard, Wilko, David, Alban, and Allyson.
 
@@ -75,7 +75,7 @@ I am indebted to Herbert van de Sompel -- our conversations on the topic of aggr
 
 #### RO-Crate Community {#communitylist}
 
-As of 2024-01-08, the *RO-Crate* [Community members](https://www.researchobject.org/ro-crate/community.html) are:
+As of 2024-04-29, the *RO-Crate* [Community members](https://www.researchobject.org/ro-crate/community.html) are:
 
 | Member                     | ORCID                                   | Role       |
 | -------------------------- | --------------------------------------- | ---------- |
@@ -149,7 +149,14 @@ As of 2024-01-08, the *RO-Crate* [Community members](https://www.researchobject.
 | Jens Hollunder             | <https://orcid.org/0000-0003-3234-6762> |            |
 | Martin Weise               | <https://orcid.org/0000-0003-4216-302X> |            |
 | Vartika Bisht              | <https://orcid.org/0000-0002-1880-0597> |            |
-| Toshiyuki Nishiyama Hiraki | <https://orcid.org/0000-0001-6712-6335> |            | ----
+| Toshiyuki Nishiyama Hiraki | <https://orcid.org/0000-0001-6712-6335> |            |
+| Bram Ulrichts              | <https://orcid.org/0000-0002-5934-8998> |            |
+| Michael Falk               | <https://orcid.org/0000-0001-9261-8390> |            |
+| Eli Chadwick               | <https://orcid.org/0000-0002-0035-6475> |            |
+| Daniel Bauer               | <https://orcid.org/0000-0001-9447-460X> |            |
+| James Love                 | <https://orcid.org/0000-0001-7760-1240> |            |
+
+
 
 In remembrance
 --------------
@@ -163,6 +170,10 @@ My thoughts are with the victims of war, conflict, crime and abuse in Ukraine, P
 
 My funding
 ==========
+
+My work presented in this thesis has been undertaken during several research projects at The University of Manchester,  which funding is acknowledged below. I am grateful for all the discussions
+and collaborations in these projects.
+
 
 My work presented in this thesis has been undertaken during several research projects at The University of Manchester, which funding is acknowledged below:
 
@@ -392,6 +403,86 @@ We acknowledge the [SYNTHESYS+](https://www.synthesys.info/) and [DiSSCO](https:
 #### Funding
 
 This work has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement numbers [823827](https://doi.org/10.3030/823827) (SYNTHESYS Plus), [871043](https://doi.org/10.3030/871043) (DiSSCo Prepare), [823830](https://doi.org/10.3030/823830) (BioExcel-2), [824087](https://doi.org/10.3030/824087) (EOSC-Life).
+
+
+
+
+### Acknowledgements for *Recording provenance of workflow runs with RO-Crate* {#workflow-run-crate}
+
+[Section 5.4](../../../2023/phd/workflow-run-crate/) is adapted from an arXiv preprint, revised manuscript published in PLOS One.
+
+#### Published As
+
+Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
+***Recording provenance of workflow runs with RO-Crate**.  
+_PLOS One_ **19**(9):e0309210  
+_arXiv_ 2312.07852 [cs.DL]  
+<https://doi.org/10.48550/arXiv.2312.07852>
+<https://doi.org/10.1371/journal.pone.0309210>
+
+An [RO-Crate for this article](https://w3id.org/ro/doi/10.5281/zenodo.10368989) is archived in Zenodo [[Leo 2023c]].
+
+
+### License and modifications
+
+-   **License**: Creative Commons Attribution License
+    ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)).
+-   **Modifications**: Formatting as Markdown and figure caption formatting; references in s11 house style; URLs as footnotes/hyperlinks; enumerations made explicit; listing captions; some paragraphs split for readability; details moved to footnote, acknowledgement and references moved to separate chapters; fixed minor typos and grammatical errors; added glossary/acronym links; acronym WfMS instead of WMS.
+
+
+#### Acknowledgements
+
+The authors would like to thank all participants to the [Workflow Run RO-Crate working group](https://www.researchobject.org/workflow-run-crate/#community)  meetings for the positive detailed discussions and valuable feedback.
+
+
+#### Funding
+
+The authors acknowledge funding from:
+  Sardinian Regional Government through the XData Project (S.L., L.P.);
+  Spanish Government (contract PID2019-107255GB) (R.S.);
+  MCIN/AEI/10.13039/501100011033 (CEX2021-001148-S) (R.S.);
+  Generalitat de Catalunya (contract 2021-SGR-00412) (R.S.);
+  European High-Performance Computing Joint Undertaking (JU) (No 
+  [955558](https://doi.org/10.3030/955558)) (R.S.);
+  EU Horizon research and innovation programme under Grant agreement No 
+  [101058129](https://doi.org/10.3030/101058129) (DT-GEO) (R.S.);
+  ELIXIR Platform Task 2022-2023 funding for Task "Container Orchestration" (A.K.);
+  Research Foundation - Flanders (FWO) for ELIXIR Belgium (I000323N and I002819N) (P.D.G.);
+  Multiannual Agreement with Universidad Politécnica de Madrid in the line Support for R\&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation) (D.G.);
+  Comunidad de Madrid through the call Research Grants for Young Investigators from Universidad Politécnica de Madrid (D.G.);
+  ICSC - Centro Nazionale di Ricerca in High-Performance Computing, Big Data and Quantum Computing, funded by European Union - NextGenerationEU (I.C.);
+  ACROSS project, HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n. 
+  [955648](https://doi.org/10.3030/955648) (I.C.);
+  EUPEX project, European Pilot for Exascale, funded by the European High-Performance Computing Joint Undertaking (JU) under G.A. n. 
+  [101033975](https://doi.org/10.3030/101033975) (I.C.);
+  Life Science Database Integration Project, NBDC of Japan Science and
+  Technology Agency (T.O.);
+  JSPS KAKENHI (Grant Number [20J22439](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J22439/));
+  European Commission Horizon 2020
+  H2020-SC1-2018-Single-Stage-RTD
+[825575](https://doi.org/10.3030/825575) (European Joint Programme on Rare Diseases; SC1-BHC-04-2018 Rare Disease European Joint Programme Cofund) (L.R.N., J.M.F., S.C.G.),
+    European High-Performance Computing Joint Undertaking (JU) (No 955558),
+  EU NextGenerationEU/PRTR (project eFlows4HPC)
+  H2020-JTI-EuroHPC-2019-1 
+[955558](https://doi.org/10.3030/955558) (eFlows4HPC) (R.S.),
+  H2020-INFRAEDI-02-2018 
+[823830](https://doi.org/10.3030/823830)
+  (BioExcel-2) (S.S.R.),
+  H2020-INFRAEOSC-2018-2 
+[824087](https://doi.org/10.3030/824087)
+  (EOSC-Life) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.);
+  Horizon Europe
+  HORIZON-INFRA-2021-EMERGENCY-01
+[101046203](https://doi.org/10.3030/101046203) (BY-COVID) (S.L., L.R.N., P.D.G., R.W., L.P., J.M.F., S.C.G., S.S.R.),
+  HORIZON-INFRA-2021-EOSC-01
+[101057388](https://doi.org/10.3030/101057388) (EuroScienceGateway) (P.D.G., J.M.F., S.C.G., S.S.R.),
+  HORIZON-INFRA-2021-EOSC-01-05
+[101057344](https://doi.org/10.3030/101057344) (FAIR-IMPACT) (D.G., S.S.R.);
+  UK Research and Innovation (UKRI) under the UK government's Horizon
+  Europe funding guarantee
+[10038963](https://gtr.ukri.org/projects?ref=10038963) (EuroScienceGateway),
+[10038992](https://gtr.ukri.org/projects?ref=10038992) (FAIR-IMPACT) (S.S.R.).
+
 
 
 ## References
@@ -760,7 +851,7 @@ See [full reference list](/2023/phd/references/).
 [Parecki 2017]: https://www.w3.org/TR/2017/REC-micropub-20170523/ "Micropub"
 [Pavel 2023]: https://doi.org/10.4126/frl01-006444984 "Ya2ro: A tool for creating Research Objects from minimum metadata"
 [Pérez 2018]: https://doi.org/10.1007/s10115-018-1164-3 "A systematic review of provenance systems"
-[Pergl 2019]: https://doi.org/10.5334/dsj-2019-059 "``Data Stewardship Wizard'': A Tool Bringing Together Researchers, Data Stewards, and Data Experts around Data Management Planning"
+[Pergl 2019]: https://doi.org/10.5334/dsj-2019-059 "Data Stewardship Wizard: A Tool Bringing Together Researchers, Data Stewards, and Data Experts around Data Management Planning"
 [Piper 2020]: https://doi.org/10.1080/14490854.2020.1796500 "Digital crowdsourcing and public understandings of the past: Citizen historians meet criminal characters"
 [Poiata 2016]: https://doi.org/10.1093/gji/ggw071 "Multiband array detection and location of seismic sources recorded by dense seismic networks"
 [Poiata 2023]: https://doi.org/10.5281/zenodo.7788030 "BackTrackBB: Multi-band array detection and location of seismic sources (PyCOMPSs implementation)"

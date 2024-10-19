@@ -49,7 +49,7 @@ _Stian Soiland-Reyes¹², Carole Goble¹, Paul Groth²_
 </div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Formatting as Markdown; figure caption formatting; tables repositioned and re-styles; reference in s11 house style; inline citation hyperlinks to open access version where available; disclaimer added to acknowledgement.
+* **Modifications**: Formatting as Markdown; figure caption formatting; tables repositioned and re-styles; reference in s11 house style; inline citation hyperlinks to open access version where available; disclaimer added to acknowledgement; footnote on EOSC-IF update; DOI for Weiland 2022a.
 
 
 ## Abstract
@@ -438,7 +438,9 @@ _**Table 5**: Assessing RDA’s FAIR Data Maturity Model  [[RDA 2020],  [Bahim 2
 
 ### EOSC Interoperability Framework {#sec:eosc}
 
-The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure [[Ayris 2016]]. The EOSC Interoperability Framework [[Corcho 2021]] details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects.
+The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure [[Ayris 2016]]. The EOSC Interoperability Framework[^74] [[Corcho 2021]] details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects.
+
+[^74]: EOSC-IF has since been expanded on by an EOSC report [[Åkerström 2024](https://doi.org/10.5281/zenodo.10843882)], which references the preprint of this article.
 
 As covered in our [introduction](#sec:introduction), EOSC proposes FAIR Digital Objects as a way to improve interoperability, for instance invoked by scientific workflows, carried by metadata frameworks and semantic artefacts. Therefore we here find it important to summarize how FDO and Linked Data can help satisfy the EOSC requirements.
 
@@ -1135,7 +1137,7 @@ The International Telecommunication Union (ITU).\
 
 [Ivonne 2023]: https://doi.org/10.5281/zenodo.7824714 "FAIR digital object technical overview"
 \[Ivonne 2023\]
-Anders Ivonne, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
+Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif
 Islam, Thomas Jejkal, Larry Lannom Larry, Karsten Peters-von Gehlen,
 Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian
 Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter
@@ -1806,14 +1808,13 @@ WHATWG (2023):\
 <https://html.spec.whatwg.org/multipage/microdata.html> (accessed 13
 June 2023)
 
-[Weiland 2022a]: https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_ "FAIR Digital Objects Forum Document Standards"
+[Weiland 2022a]: https://doi.org/10.5281/zenodo.10943371 "FAIR Digital Objects Forum Document Standards"
 \[Weiland 2022a\]
 C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch, Z. Trautt, C. Weiland, U. Schwardmann, P. Wittenburg (2022):\
 **FAIR Digital Objects Forum Document Standards**
-WD-DocProcessStd-1.1-20220129 (internal draft)\
-*FAIR Digital Objects Forum*\
-<https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_>
-(accessed 30 November 2022)
+WD-DocProcessStd-1.1-20220129  
+*FAIR Digital Objects Forum*  
+<https://doi.org/10.5281/zenodo.10943371>
 
 [Weiland 2022b]: https://doi.org/10.5281/zenodo.7825650 "FDO machine actionability"
 \[Weiland 2022b]

@@ -20,7 +20,7 @@ Cloud-based computational infrastructures for “big data” are readily availab
 
 However, in this accelerated ecosystem of Open Science, concerns have been raised about replicability of research findings [[Ioannidis 2005]], flagged as a “reproducibility crisis” [[Baker 2016]]. It is perhaps then ironic that the increased use of computers—with their inherently repeatable execution mechanisms—can negatively contribute to this crisis, as research publications do *not* commonly provide sufficient computational details such as code, data formats or software versions [[Stodden 2016]].
 
-The recent increased focus on *reusability* of digital data and computational methods has been given the attention of funders and research communities. This led to the development of the <abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles for making data and their metadata *Findable, Accessible, Interoperable and Reusable*, e.g. retrievable and understandable for programmatic use [[Wilkinson 2016]].
+The increased focus on *reusability* of digital data and computational methods has been given the attention of funders and research communities. This led to the development of the <abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles for making data and their metadata *Findable, Accessible, Interoperable and Reusable*, i.e. retrievable and understandable for programmatic use [[Wilkinson 2016]].
 
 One technological measure for achieving FAIR is using Linked Data (<abbr>LD</abbr>), a set of practices for publishing and relating data on the Web using controlled vocabularies [[Berners-Lee 2006]], serialised using formats of the Resource Description Framework (<abbr>RDF</abbr>) [[Schreiber 2014]] and organised using the Web Ontology Language (<abbr>OWL</abbr>) [[W3C 2012]], however the combined complexity of these underlying *Semantic Web* technologies can hamper adoption by developers [[Klímek 2019]] and researchers who want to make their data available.
 
@@ -28,7 +28,7 @@ Computational workflows have been developed as ways to structure execution of so
 
 Research Object (<abbr>RO</abbr>) is a concept proposed for sharing composites of research artefacts, together with their history and related resources such as software, workflows and external references [[Bechhofer 2013]]. The initial implementations of RO heavily used ontologies, and required a tight integration with the workflow management systems, but has great potential for FAIR publication of any scholarly outputs.
 
-The FAIR principles are widely referenced in Open Science literature, and nominally adapted by many research data repositories and funder policies—but how can they better be translated into practice by typical researcher software developers which may be using workflow systems, but not know any Linked Data technologies?
+The FAIR principles are widely referenced in Open Science literature, and nominally adapted by many research data repositories and funder policies—but how can they better be translated into practice by typical researchers and software developers which may be using workflow systems, but not know any Linked Data technologies?
 
 This is the focus for this thesis, where I investigate *Linked Data approaches to implementing FAIR Research Objects and sharing reproducible Computational Workflows*.
 
@@ -80,9 +80,9 @@ Implementation of the principles by platform developers and researchers have how
 For instance, in order to evaluate a given resource’s *FAIRness*, additional technical constraints need to be assumed, such as use of particular formal vocabularies. *FAIR metrics* [[Wilkinson 2018], [Devaraju 2021]] have recently become an area of active research, as different FAIR assessment tools may give a range of results for the same data resource, primarily based on which technical assumptions are made [[Wilkinson 2022a], [Verburg 2023]].
 
 Recently there have been increased emphasis on training and awareness on the FAIR principles [[Shanahan 2021], [Rocca-Serra 2023]], and registries of standards and vocabularies [[Sansone 2019]].
-However—with a general lack of skills in data management planning, inadequate (opaque) data formats and lack of time investment to provide rich metadata—data, even when shared through repositories, often becomes effectively "un-findable" or near impossible to reuse [[Carballo-Garcia 2022]].
+However—with a general lack of skills in data management planning, inadequate (opaque) data formats, and lnot enough time investment to provide rich metadata—research data, even when shared through repositories, can become effectively "un-findable" or near impossible to reuse [[Carballo-Garcia 2022]].
 
-From this we can identify several challenges with regards to finding practical ways for developers of <abbr>RS</abbr> to generate and consume FAIR data.
+From this current situation we can identify several challenges with regards to finding practical ways for developers of <abbr>RS</abbr> to generate and consume FAIR data.
 
 ### Existing approaches to implementing FAIR {#intro:existing-fair}
 
@@ -90,10 +90,10 @@ The vision on the Semantic Web [[Berners-Lee 1999]] were proposed as a way to ma
 
 Linked Data was seen early on as a possible mean to implementing the FAIR principles, and a large focus of initiatives like [GO-FAIR](https://www.go-fair.org/) and [Research Data Alliance](https://www.rd-alliance.org/) and the wider FAIR community has been to find ways to *FAIRify* existing data sources, such as developing domain-specific vocabularies and mappings, along with training and tooling to support these processes. FAIR publishing of datasets is encouraged using Data Catalog Vocabulary (DCAT) [[Albertoni 2023]], e.g. by the European Commission’s Semantic Interoperability Community Europe [(SEMIC)](https://joinup.ec.europa.eu/collection/semic-support-centre) and the larger [Interoperable Europe](https://joinup.ec.europa.eu/interoperable-europe) initiative.
 
-There are now a large number of choices for Semantic Web technologies, serialisation formats, vocabularies, deployments and identifiers—motivating the proposal of *FAIR Implementation Profiles* [[Schultes 2020]] to document and guide these choices.
+There are now a large number of choices for Semantic Web technologies, serialisation formats, vocabularies, deployments and identifiers—motivating the proposal of *FAIR Implementation Profiles* [[Schultes 2020]] to document and guide technology decisions.
 
-The field of Life Sciences was an early adopter of Linked Data, establishing training portals like [FAIR Cookbook](https://faircookbook.elixir-europe.org) [[Rocca-Serra 2023]] and has over [170 training materials for FAIR](https://tess.elixir-europe.org/materials?q=FAIR) listed in ELIXIR Europe’s training portal TeSS (as of 2024-04-28).
-The ELIXIR service [FAIRsharing](https://fairsharing.org/) [[Sansone 2019]] has over 1700 standards, 2100 databases and 250 policies (as of 2024-04-28) for FAIR sharing of research data[^11].
+The field of Life Sciences was an early adopter of Linked Data, establishing training portals like [FAIR Cookbook](https://faircookbook.elixir-europe.org) [[Rocca-Serra 2023]], developing biomedical ontologies as indexed in [BioPortal](https://bioportal.bioontology.org/) [[Whetzel 2011]] (over 1300 as of 2024-05-18), and sharing practices at conferences like Semantic Web Applications for Health Care and Life Sciences ([SWAT4HCLS](https://www.swat4ls.org/)) active since 2008.
+The life science research infrastructure [ELIXIR Europe](https://elixir-europe.org/) has has over [170 training materials for FAIR](https://tess.elixir-europe.org/materials?q=FAIR) listed in its training portal TeSS (as of 2024-04-28), while the ELIXIR service [FAIRsharing](https://fairsharing.org/) [[Sansone 2019]] has over 1700 standards, 2100 databases and 250 policies (as of 2024-04-28) for FAIR sharing of research data[^11].
 
 A challenge for consumption of FAIR services in such a diverse landscape is thus how to support reliable *machine actionability*—making the data generally interpretable and typed sufficiently to allow invocation of pre-defined operations.
 
@@ -107,7 +107,7 @@ FDO proponents envision a programmable mesh of strongly typed objects, which goe
 For this, FDO aims to provide concrete constraints for systems, which lead to predictable machine actions.
 
 The FDO guidelines[^12] [[Anders 2023]] and the more detailed FDO specifications [[Ivonne 2023]] are largely conceptual in nature, with several demonstrated implementations [[Wittenburg 2022a], [Lannom 2022a]] which in theory can operate side-by-side.
-Many of these, however, rely novel or older network protocols [[Reilly 2009], [Sun 2003a]] which are not particularly familiar to software developers, and not commonly supported by software libraries or frameworks.
+Many of these, however, rely on novel or older network protocols [[Reilly 2009], [Sun 2003a]] which are not particularly familiar to software developers, and not commonly supported by software libraries or frameworks.
 
 This divergence from the more Web-centric “FAIR majority view”, while sound from a technical perspective and promising with regards to predictable computational consumption, raises organisational challenges for wider adoption of FDOs, e.g. within EOSC and research infrastructures, and might be introducing a steeper learning curve than already exists for FAIR, particularly for developers of <abbr>RS</abbr> who are primarily interested in solving scientific challenges.
 
@@ -137,7 +137,7 @@ The identified need for communicating computational methods through Research Sof
 
 Research Objects (<abbr>RO</abbr>) [[Bechhofer 2013]] have been proposed as a mechanism to capture a range of diverse scholarly outputs in a single archivable item with detailed metadata. The RO concept was first realised using Semantic Web ontologies [[myExperiment 2009], [Belhajjame 2015]]—these approaches primarily targetted long-term preservation of scientific workflows, utillised by RO as a mechanism to capture computational methods, augmented by the workflow inputs, outputs, workflow engine configuration and human-readable explanation of each step.
 
-The principles of Research Objects extend far beyond workflows—however, early RO implementations mainly focused on capturing software [[Goble 2018]]. To some extent, the lack of wider adoption of ontology-based ROs can also be explained by Research Software Engineers (e.g. molecular dynamics simulations) and platforms (e.g. repositories, data management systems) having a lack of familiarity with workflow systems or Semantic Web technology—or worse, they tried these technologies and then struggled [[Carriero 2010], [Tudorache 2020]].
+The principles of Research Objects extend far beyond workflows—however, early RO implementations mainly focused on capturing software [[Goble 2018]]. To some extent, the lack of wider adoption of ontology-based ROs can also be explained by Research Software Engineers (e.g. developers of molecular dynamics simulations) and platforms (e.g. repositories, data management systems) having a lack of familiarity with workflow systems or Semantic Web technology—or worse, they tried these technologies and then struggled [[Carriero 2010], [Tudorache 2020]].
 
 From this, a challenge is to make Linked Data technology approachable for developers who are best placed at implementing the FAIR principles, in platforms that are effectively making Research Objects.
 
@@ -149,7 +149,7 @@ From this, a challenge is to make Linked Data technology approachable for develo
 
 ## Research Outline and Questions {#intro:outline}
 
-Following the motivation in [Section 1.1](#ch10:motivation), this section elaborates Research Questions (RQ) on three interlinked ideas:
+Following the motivation in [Section 1.1](#ch10:motivation), this section elaborates my Research Questions (RQ) on three interlinked ideas:
 
 1.  Realization of the FAIR Digital Object concept using Web technologies.
 2.  Implementing FAIR Research Objects with an pragmatic use of Linked Data practices.
@@ -158,7 +158,7 @@ Following the motivation in [Section 1.1](#ch10:motivation), this section elabor
 
 ### Aims for FAIR Digital Objects on the Web (RQ1)  {#intro:rq1}
 
-The Web is ubiquitous in modern software engineering [[Taivalsaari 2021]], used for everything from user interfaces, mobile applications and controlling devices to enterprise cross-platform integrations, backend data processing and microservices, frequently utilising cloud computing which itself is controlled using Web technologies [[Marinescu 2023]].
+The Web is ubiquitous in modern software engineering [[Taivalsaari 2021]], used for everything from user interfaces, mobile applications and controlling devices, to enterprise cross-platform integrations, backend data processing and microservices, frequently utilising cloud computing which itself is controlled using Web technologies [[Marinescu 2023]].
 
 The principles of seem important to achieve machine-actionable scholarly outputs, but several of these goals have an overlap with the motivations for the Semantic Web and Linked Data—yet it is not clear if changing from the Web stack to a different set of network protocols are necessary to achieve the FDO benefits.
 
@@ -203,7 +203,7 @@ One could consider computational workflows as a kind of FAIR Research Software [
 
 Approaches to describing workflow provenance in a machine-readable format were initially diverse [[Cruz 2009]], and later converged on the use of ontologies [[Missier 2010]], most notably using W3C PROV-O [[Lebo 2013a]] but with various specializations [[Garijo 2011], [Garijo 2012], [Missier 2013], [Belhajjame 2015], [Cuevas-Vicenttín 2016]].
 
-The tendency for workflow provenance models to diverge may be down to differences in the execution semantics of different workflow systems—which if accurately reflected in provenance means further differences at this level. This in turn leads to incompatibility of provenance traces and lack of common tooling. In addition execution details may obscure the link from the computational procesesses and the final workflow data outputs that researchers ultimately care more about than the intricacies of the workflow engine.
+The tendency for workflow provenance models to diverge may be down to differences in the execution semantics of different workflow systems—which if accurately reflected in provenance means further differences at this level. This in turn leads to incompatibility of provenance traces and lack of common tooling. In addition execution details may obscure the link from the computational procesesses and the final workflow data outputs, which researchers ultimately care more about than the intricacies of the workflow engine.
 
 The third research question from these considerations is therefore:
 
@@ -222,7 +222,7 @@ The contributions from this PhD include:
   - A Research Object implementation based on familiar Web technologies, adapted and extended by numerous research projects and software developers.
   - A profile to capture provenance of computational workflow runs using this implementation, implemented by at least six workflow management systems.
 
-These contributions have not evolved in isolation, but in co-development with multiple international collaborations (see [Appendix A](../acknowledgements/#acknowledgements)).
+These contributions have not evolved in isolation, but in co-development with multiple international collaborations (see [Appendix A](../acknowledgements/#acknowledgements)) across scientific diciplines.
 
 
 ## Thesis Overview {#intro:overview}
@@ -308,7 +308,7 @@ Oliver Woolland, Paul Brack, Stian Soiland-Reyes, Ben Scott, Laurence Livermore�
 
 Simone Leo, Michael R. Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M. Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2023):  
 **Recording provenance of workflow runs with RO-Crate**.  
-*arXiv* 2312.07852 \[cs.DL\] 
+*arXiv* 2312.07852v1 \[cs.DL\] 
 <https://doi.org/10.48550/arXiv.2312.07852>  
 {.references}
 
@@ -870,4 +870,5 @@ See chapter [references](/2023/phd/references/).
 [Shanahan 2021]: https://doi.org/10.1016/j.patter.2021.100324 "Progress toward a comprehensive teaching approach to the FAIR data principles"
 [Śledź 2018]: https://doi.org/10.1016/j.sbi.2017.10.010 "Protein structure-based drug design"
 [Soiland-Reyes 2024c]: https://s11.no/2024/webby-fdos/ "Practical webby FDOs with RO-Crate and FAIR Signposting"
+[Whetzel 2011]: https://doi.org/10.1093/nar/gkr469 "BioPortal"
 [Åkerström 2024]: https://doi.org/10.5281/zenodo.10843882 "Developing and implementing the semantic interoperability recommendations of the EOSC Interoperability Framework"
