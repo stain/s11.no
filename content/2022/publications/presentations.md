@@ -8,9 +8,11 @@ categories:
 
 This page is work in progress. Most of Stian's slides are available from:
 
-- <https://slides.com/soilandreyes>
-- <https://www.slideshare.net/soilandreyes/>
-- <https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=presentation>
+- [Slides.com](https://slides.com/soilandreyes)
+- [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A"Stian Soiland-Reyes"&f=resource_type%3Apresentation) 
+- [Slideshare](https://www.slideshare.net/soilandreyes/presentations) (<2017, apologies for adverts)
+- [eScienceLab YouTube channel](https://www.youtube.com/@eScienceLab/playlists)
+
 
 Stian Soiland-Reyes, Carole Goble (2024):  
 [**WorkflowHub cloud integration in ELIXIR**](https://doi.org/10.5281/zenodo.11654943).  
