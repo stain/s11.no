@@ -76,7 +76,7 @@ _Ove Johan Ragnar Gustafsson<sup>1</sup>, Sean R. Wilkinson<sup>2</sup>, Finn Ba
 </div>
 
 * **License**: Creative Commons Attribution License ([CC BY 4.0](https://spdx.org/licenses/CC-BY-4.0)). 
-* **Modifications**: Reformatting as Markdown; references in s11 house style; inline citation hyperlinks; inline hyperlinks. 
+* **Modifications**: Reformatting as Markdown; references in s11 house style; inline citation hyperlinks; inline hyperlinks; additional paragraph/line breaks for readability. 
 
 
 
@@ -134,7 +134,7 @@ The registry is agnostic to domain, discipline and workflow type, supporting its
   width="100%" title="Workflow types"
   caption="registered with WorkflowHub" >}}
 
-WorkflowHub was launched in 2020, as part of the EOSC-Life Workflow Collaboratory [[Goble 2023]], to support the registration of workflows required for the response to the COVID pandemic. WorkflowHub now houses [66 COVID-related workflows](https://workflowhub.eu/search?utf8=%E2%9C%93&q=covid#workflows), including those that support the ongoing global analysis of intra-host variation as new samples become available [[Maier 2021]] [[Baker 2020]]. This outcome demonstrates a central ambition of WorkflowHub: to be of practical use in advancing the application of computational workflows in research science by _supporting the needs of the communities that it serves_.
+WorkflowHub was launched in 2020, as part of the EOSC-Life Workflow Collaboratory [[Goble 2023]], to support the registration of workflows required for the response to the COVID pandemic. WorkflowHub now houses [66 COVID-related workflows](https://workflowhub.eu/search?utf8=%E2%9C%93&q=covid#workflows), including those that support the ongoing global analysis of intra-host variation as new samples become available [[Maier 2021], [Baker 2020]]. This outcome demonstrates a central ambition of WorkflowHub: to be of practical use in advancing the application of computational workflows in research science by _supporting the needs of the communities that it serves_.
 
 WorkflowHub meets community requirements and supports the workflow life cycle in three key ways. Firstly, the registry provides structures that directly support collaboration, sharing knowledge and distributing credit. Secondly, woven into this structure are multiple integrations with other elements of the global research ecosystem that support the workflow life cycle: creation, development, discovery, reuse, and citation of workflows. Finally, WorkflowHub provides a registration wizard that guides users in leveraging these structures and integrations. 
 
@@ -229,7 +229,7 @@ Galaxy’s integration with WorkflowHub leverages the GA4GH TRS API, enabling se
 
 ### Design that supports the workflow life cycle
 
-To support the workflow life cycle [[Gil 2007]] [[Courbebaisse 2023]] [[Gil 2006]], WorkflowHub integrates with services that workflow creators use for development, execution, maintenance, testing, citation, and ultimately archiving. These integrations initially form part of the workflow registration wizard, which guides a workflow creator through the process of registering their workflow for the first time. However, they are also accessible during a workflow’s maintenance phase, when the workflow may be updated to modify, improve, or repair its function.
+To support the workflow life cycle [[Gil 2007], [Courbebaisse 2023], [Gil 2006]], WorkflowHub integrates with services that workflow creators use for development, execution, maintenance, testing, citation, and ultimately archiving. These integrations initially form part of the workflow registration wizard, which guides a workflow creator through the process of registering their workflow for the first time. However, they are also accessible during a workflow’s maintenance phase, when the workflow may be updated to modify, improve, or repair its function.
 
 #### Ease of access
 
@@ -302,7 +302,7 @@ This highlights that the rich feature set of WorkflowHub is not necessarily imme
 
 This will enable WorkflowHub to extend the process currently in place for Galaxy IWC to more community repositories: integrating with these repositories in a more standard way to automatically manage the update of workflow versions in WorkflowHub, such that they are in sync with Git releases. 
 
-As a result, and as highlighted earlier, a general onboarding and set up guide for projects and consortia has been developed [[Soiland-Reyes 2024b]], as have multiple consortia specific guides [[Soiland-Reyes 2024c]] [[Goble 2024b]]. Workflow resources have also been developed for the Galaxy Training Network (GTN [[Hiltemann 2023]]) [Smörgåsbord events](https://gallantries.github.io/video-library/modules/ro-crate) and specific GTN [tutorial sets](https://training.galaxyproject.org/training-material/topics/fair/).
+As a result, and as highlighted earlier, a general onboarding and set up guide for projects and consortia has been developed [[Soiland-Reyes 2024b]], as have multiple consortia specific guides [[Soiland-Reyes 2024c], [Goble 2024b]]. Workflow resources have also been developed for the Galaxy Training Network (GTN [[Hiltemann 2023]]) [Smörgåsbord events](https://gallantries.github.io/video-library/modules/ro-crate) and specific GTN [tutorial sets](https://training.galaxyproject.org/training-material/topics/fair/).
 
 Finally, the WorkflowHub team actively identifies opportunities to engage with peer infrastructures to grow the user base of the registry, investigate and create integrations that are of enduring value, and further improve the function of the registry. For example, WorkflowHub is actively fostering a conversation with publishers and journals focused on how to make workflows citable objects in the literature [[Goble 2024a]]. 
 
@@ -318,7 +318,7 @@ To effectively support the sharing of workflows, WorkflowHub supports collaborat
 
 WorkflowHub is an integral platform for consortia and projects. Here we provide details for three specific use cases, EOSC-Life, BGE, and Australian BioCommons.
 
-EOSC-Life was a key use case driver, as it supported the implementation of FAIR computational workflows in the EU by seeking to develop a cloud-based Workflow Collaboratory [[Goble 2021]] that ultimately resulted in the creation of WorkflowHub. The aim was to create a platform that would support community collaboration on the development, use, and reuse of FAIR computational workflows [[Goble 2020]], and to do so in a way that bridges research domains and infrastructures [[Goble 2023]] [[Goble 2021]]. WorkflowHub accommodates the diversity of EOSC-Life and ensures the visibility of workflows applied across its many established research infrastructures as they are created and registered [[Goble 2021]].
+EOSC-Life was a key use case driver, as it supported the implementation of FAIR computational workflows in the EU by seeking to develop a cloud-based Workflow Collaboratory [[Goble 2021]] that ultimately resulted in the creation of WorkflowHub. The aim was to create a platform that would support community collaboration on the development, use, and reuse of FAIR computational workflows [[Goble 2020]], and to do so in a way that bridges research domains and infrastructures [[Goble 2023], [Goble 2021]]. WorkflowHub accommodates the diversity of EOSC-Life and ensures the visibility of workflows applied across its many established research infrastructures as they are created and registered [[Goble 2021]].
 
 The BGE project is a coming together of two communities of researchers with a common goal of cataloguing biodiversity through genomic resources: the European Reference Genome Atlas [[Mazzoni 2023]] and the European node of the International Barcode of Life consortium (iBOL [Europe](https://iboleurope.org/)). Providing reference-quality genomes to the community (ERGA) and monitoring biodiversity through DNA barcoding (iBOL Europe) requires the management and processing of vast amounts of data, in an accessible and distributed fashion, relying on input from multiple individuals and institutes. The combination of BGE WorkflowHub [Spaces](https://workflowhub.eu/programmes/25), [Teams](https://workflowhub.eu/projects/163) and [Collections](https://workflowhub.eu/collections/10) allows individuals to contribute as needed to the projects across the consortium. As workflows have been collected and curated by the community, they in effect also come with a “seal of approval” for external users that wish to replicate the work of ERGA or iBOL Europe. All together, such a structure of publishing and maintaining workflows facilitates BGE in achieving their ambitious goals of cataloguing biodiversity in Europe and bringing together researchers from the biodiversity genomics community.
 
@@ -376,7 +376,7 @@ This level of support is now being explored for Snakemake workflows, and will in
 
 ### Workflow visibility and recognition
 
-WorkflowHub already has the capacity to import citation, author and contributor credit metadata from CITATION.cff files. In future, this could be extended to other popular standards, including codemeta.json [[Jones 2024]]. Through DataCite, WorkflowHub has the means to mint DOIs, and incorporate workflows with DOIs into [OpenAIRE](https://www.openaire.eu/). WorkflowHub has thus actively worked to increase the visibility of workflows in a standardised and streamlined fashion. This approach is already bearing fruit, with examples of WorkflowHub formatted citations appearing in the published literature [[Coin 2024]] [[Roach 2024]].
+WorkflowHub already has the capacity to import citation, author and contributor credit metadata from CITATION.cff files. In future, this could be extended to other popular standards, including codemeta.json [[Jones 2024]]. Through DataCite, WorkflowHub has the means to mint DOIs, and incorporate workflows with DOIs into [OpenAIRE](https://www.openaire.eu/). WorkflowHub has thus actively worked to increase the visibility of workflows in a standardised and streamlined fashion. This approach is already bearing fruit, with examples of WorkflowHub formatted citations appearing in the published literature [[Coin 2024], [Roach 2024]].
 
 In addition, there are now examples of journals making computational workflows the focus of published works. A critical outcome here is to ensure that WorkflowHub becomes a recommended registry for journals and publishers. This includes providing workflow creators and users with a set of best practice recommendations for how to properly document and ultimately cite workflows in published research.
 
