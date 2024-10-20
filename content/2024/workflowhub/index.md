@@ -447,63 +447,206 @@ The authors declare no competing interests.
 
 ## References
 
-1\.
-[da Silva 2023]
-<small>Rafael Ferreira da Silva, Rosa M. Badia, Venkat Bala, Debbie Bard, Peer-Timo Bremer, Ian Buckley, Silvina Caino-Lores, Kyle Chard, Carole Goble, Shantenu Jha, Daniel S. Katz, Daniel Laney, Manish Parashar, Frederic Suter, Nick Tyler, Thomas Uram, Ilkay Altintas, Stefan Andersson, William Arndt, Juan Aznar, Jonathan Bader, Bartosz Balis, Chris Blanton, Kelly Rosa Braghetto, Aharon Brodutch, Paul Brunk, Henri Casanova, Alba Cervera Lierta, Justin Chigu, Taina Coleman, Nick Collier, Iacopo Colonnelli, Frederik Coppens, Michael Crusoe, Will Cunningham, Bruno De Paula Kinoshita, Paolo Di Tommaso, Charles Doutriaux, Matthew Downton, Wael Elwasif, Bjoern Enders, Chris Erdmann, Thomas Fahringer, Ludmilla Figueiredo, Rosa Filgueira, Martin Foltin, Anne Fouilloux, Luiz Gadelha, Andy Gallo, Artur Garcia Saez, Daniel Garijo, Roman Gerlach, Ryan Grant, Samuel Grayson, Patricia Grubel, Johan Gustafsson, Valerie Hayot-Sasson, Oscar Hernandez, Marcus Hilbrich, AnnMary Justine, Ian Laflotte, Fabian Lehmann, Andre Luckow, Jakob Luettgau, Ketan Maheshwari, Motohiko Matsuda, Doriana Medic, Pete Mendygral, Marek Michalewicz, Jorji Nonaka, Maciej Pawlik, Loic Pottier, Line Pouchard, Mathias Putz, Santosh Kumar Radha, Lavanya Ramakrishnan, Sashko Ristov, Paul Romano, Daniel Rosendo, Martin Ruefenacht, Katarzyna Rycerz, Nishant Saurabh, Volodymyr Savchenko, Martin Schulz, Christine Simpson, Raul Sirvent, Tyler Skluzacek, Stian Soiland-Reyes, Renan Souza, Sreenivas Rangan Sukumar, Ziheng Sun, Alan Sussman, Douglas Thain, Mikhail Titov, Benjamin Tovar, Aalap Tripathy, Matteo Turilli, Bartosz Tuznik, Hubertus Van Dam, Aurelio Vivas, Logan Ward, Patrick Widener, Sean Wilkinson, Justyna Zawalska, Mahnoor Zulfiqar</small> (2023):  
-**Workflows Community Summit 2022: A Roadmap Revolution**  
-<https://doi.org/10.5281/zenodo.7750670>
 
-2\.
-[Amstutz 2024]
+\[Amstutz 2016\]
+Peter Amstutz, Michael R. Crusoe, Nebojša Tijanić, Brad Chapman, John Chilton, Michael Heuer, Andrey Kartashov, Dan Leehr, Hervé Ménager, Maya Nedeljkovich, Matt Scales, Stian Soiland-Reyes, Luka Stojanovic (2016):  
+**Common Workflow Language, v1.0**  
+<https://doi.org/10.6084/M9.FIGSHARE.3115156.V2>
+
+\[Amstutz 2024\]
 Peter Amstutz, Maxim Mikheev, Michael R. Crusoe, Nebojša Tijanić, Samuel Lampa (2024):  
 **Existing Workflow systems.**  
 Common Workflow Language wiki.  
 *GitHub*  
 <https://s.apache.org/existing-workflow-systems> (accessed 8 July 2024)
 
-3\. 
-[Maier 2021]
-Wolfgang Maier, Simon Bray, Marius Van Den Beek, Dave Bouvier, Nathan Coraor, Milad Miladi, Babita Singh, Jordi Rambla De Argila, Dannon Baker, Nathan Roach, Simon Gladman, Frederik Coppens, Darren P. Martin, Andrew Lonie, Björn Grüning, Sergei L. Kosakovsky Pond, Anton Nekrutenko (2021):  
-**Ready-to-use public infrastructure for global SARS-CoV-2 monitoring**.  
-*Nature Biotechnology* **39**(10)  
-<https://doi.org/10.1038/s41587-021-01069-1>
+\[Baker 2020\]
+Dannon Baker, Marius Van Den Beek, Daniel Blankenberg, Dave Bouvier, John Chilton, Nate Coraor, Frederik Coppens, Ignacio Eguinoa, Simon Gladman, Björn Grüning, Nicholas Keener, Delphine Larivière, Andrew Lonie, Sergei Kosakovsky Pond, Wolfgang Maier, Anton Nekrutenko, James Taylor, Steven Weaver (2020):  
+**No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics**.  
+*PLOS Pathogens* **16**(8)  
+<https://doi.org/10.1371/journal.ppat.1008643>
 
-4\. 
-[Freudling 2023]
-Wolfram Freudling, Stefano Zampieri, Lodovico Coccato, Stanislaw Podgorski, Martino Romaniello, Andrea Modigliani, John Pritchard (2023):  
-**Adaptive Data Reduction Workflows for Astronomy – The ESO Data Processing System (EDPS)**  
-<https://doi.org/10.48550/ARXIV.2311.03822>
+\[Barker 2022\]
+Michelle Barker, Neil P. Chue Hong, Daniel S. Katz, Anna-Lena Lamprecht, Carlos Martinez-Ortiz, Fotis Psomopoulos, Jennifer Harrow, Leyla Jael Castro, Morane Gruenpeter, Paula Andrea Martinez, Tom Honeyman (2022):  
+**Introducing the FAIR Principles for research software**.  
+*Scientific Data* **9**(1)  
+<https://doi.org/10.1038/s41597-022-01710-x>
 
-5\. 
-[McClure 2020]
-James E. McClure, Junqi Yin, Ryan T. Armstrong, Ketan C. Maheshwari, Sean Wilkinson, Lucas Vlcek, Ying Da Wang, Mark A. Berrill, Mark Rivers (2020):  
-**Toward Real-Time Analysis of Synchrotron Micro-Tomography Data**: Accelerating Experimental Workflows with AI and HPC.  
-*Driving Scientific and Engineering Discoveries Through the Convergence of HPC, Big Data and AI*  
-<https://doi.org/10.1007/978-3-030-63393-6_15>
+\[Boer 1991\]
+Guido Van Rossum & Jelke De Boer (1991):  
+**Interactively testing remote servers using the Python programming language**.  
+*CWI quarterly* **4**(4)  
+<https://ir.cwi.nl/pub/18204>
 
-6\. 
-[Gil 2007]
-Yolanda Gil, Ewa Deelman, Mark Ellisman, Thomas Fahringer, Geoffrey Fox, Dennis Gannon, Carole Goble, Miron Livny, Luc Moreau, Jim Myers (2007):  
-**Examining the Challenges of Scientific Workflows**.  
-*Computer* **40**(12)  
-<https://doi.org/10.1109/MC.2007.421>
+\[Bray 2023\]
+Simon Bray, John Chilton, Matthias Bernt, Nicola Soranzo, Marius van den Beek, Bérénice Batut, Helena Rasche, Martin Čech, Peter J. A. Cock, Björn Grüning, Anton Nekrutenko (2023):  
+**The Planemo toolkit for developing, deploying, and executing scientific data analyses in Galaxy and beyond**.  
+*Genome Research* **33**(2)  
+<https://doi.org/10.1101/gr.276963.122>
 
-7\. 
-[Cohen-Boulakia 2017]
+\[Capella-Gutierrez 2017\]
+Salvador Capella-Gutierrez, Diana De La Iglesia, Juergen Haas, Analia Lourenco, José María Fernández, Dmitry Repchevsky, Christophe Dessimoz, Torsten Schwede, Cedric Notredame, Josep Ll Gelpi, Alfonso Valencia (2017):  
+**Lessons Learned: Recommendations for Establishing Critical Periodic Scientific Benchmarking**  
+<https://doi.org/10.1101/181677>
+
+\[Christiansen 2024\]
+Rhys Francis & Jeffrey H. Christiansen (2024):  
+**Australian BioCommons Strategic Plan 2023 - 2028**  
+<https://doi.org/10.5281/zenodo.13626350>
+
+\[Cohen-Boulakia 2017\]
 Sarah Cohen-Boulakia, Khalid Belhajjame, Olivier Collin, Jérôme Chopard, Christine Froidevaux, Alban Gaignard, Konrad Hinsen, Pierre Larmande, Yvan Le Bras, Frédéric Lemoine, Fabien Mareuil, Hervé Ménager, Christophe Pradal, Christophe Blanchet (2017):  
 **Scientific workflows for computational reproducibility in the life sciences**: Status, challenges and opportunities.   
 *Future Generation Computer Systems* **75** 
 <https://doi.org/10.1016/j.future.2017.01.012>
 
-8\. 
-[Larivière 2024]
-Delphine Larivière, Linelle Abueg, Nadolina Brajuka, Cristóbal Gallardo-Alba, Bjorn Grüning, Byung June Ko, Alex Ostrovsky, Marc Palmada-Flores, Brandon D. Pickett, Keon Rabbani, Agostinho Antunes, Jennifer R. Balacco, Mark J. P. Chaisson, Haoyu Cheng, Joanna Collins, Melanie Couture, Alexandra Denisova, Olivier Fedrigo, Guido Roberto Gallo, Alice Maria Giani, Grenville MacDonald Gooder, Kathleen Horan, Nivesh Jain, Cassidy Johnson, Heebal Kim, Chul Lee, Tomas Marques-Bonet, Brian O’Toole, Arang Rhie, Simona Secomandi, Marcella Sozzoni, Tatiana Tilley, Marcela Uliano-Silva, Marius Van Den Beek, Robert W. Williams, Robert M. Waterhouse, Adam M. Phillippy, Erich D. Jarvis, Michael C. Schatz, Anton Nekrutenko, Giulio Formenti (2024):  
-**Scalable, accessible and reproducible reference genome assembly and evaluation in Galaxy**.  
-*Nature Biotechnology* **42**(3)  
-<https://doi.org/10.1038/s41587-023-02100-3>
+\[Coin 2024\]
+Michael B. Hall & Lachlan J. M. Coin (2024):  
+**Pangenome databases improve host removal and mycobacteria classification from clinical metagenomic data**.  
+*GigaScience* **13** 
+<https://doi.org/10.1093/gigascience/giae010>
 
-9\. 
-[ICGC/TCGA 2020]
+\[Community 2024\]
+The Galaxy Community, <small>Linelle Ann L. Abueg, Enis Afgan, Olivier Allart, Ahmed H. Awan, Wendi A. Bacon, Dannon Baker, Madeline Bassetti, Bérénice Batut, Matthias Bernt, Daniel Blankenberg, Aureliano Bombarely, Anthony Bretaudeau, Catherine J. Bromhead, Melissa L. Burke, Patrick K. Capon, Martin Čech, María Chavero-Díez, John M. Chilton, Tyler J. Collins, Frederik Coppens, Nate Coraor, Gianmauro Cuccuru, Fabio Cumbo, John Davis, Paul F. De Geest, Willem De Koning, Martin Demko, Assunta DeSanto, José Manuel Domínguez Begines, Maria A. Doyle, Bert Droesbeke, Anika Erxleben-Eggenhofer, Melanie C. Föll, Giulio Formenti, Anne Fouilloux, Rendani Gangazhe, Tanguy Genthon, Jeremy Goecks, Alejandra N. Gonzalez Beltran, Nuwan A. Goonasekera, Nadia Goué, Timothy J. Griffin, Björn A. Grüning, Aysam Guerler, Sveinung Gundersen, Ove Johan Ragnar Gustafsson, Christina Hall, Thomas W. Harrop, Helge Hecht, Alireza Heidari, Tillman Heisner, Florian Heyl, Saskia Hiltemann, Hans-Rudolf Hotz, Cameron J. Hyde, Pratik D. Jagtap, Julia Jakiela, James E. Johnson, Jayadev Joshi, Marie Jossé, Khaled Jum’ah, Matúš Kalaš, Katarzyna Kamieniecka, Tunc Kayikcioglu, Markus Konkol, Leonid Kostrykin, Natalie Kucher, Anup Kumar, Mira Kuntz, Delphine Lariviere, Ross Lazarus, Yvan Le Bras, Gildas Le Corguillé, Justin Lee, Simone Leo, Leandro Liborio, Romane Libouban, David López Tabernero, Lucille Lopez-Delisle, Laila S. Los, Alexandru Mahmoud, Igor Makunin, Pierre Marin, Subina Mehta, Winnie Mok, Pablo A. Moreno, François Morier-Genoud, Stephen Mosher, Teresa Müller, Engy Nasr, Anton Nekrutenko, Tiffanie M. Nelson, Asime J. Oba, Alexander Ostrovsky, Polina V. Polunina, Krzysztof Poterlowicz, Elliott J. Price, Gareth R. Price, Helena Rasche, Bryan Raubenolt, Coline Royaux, Luke Sargent, Michelle T. Savage, Volodymyr Savchenko, Denys Savchenko, Michael C. Schatz, Pauline Seguineau, Beatriz Serrano-Solano, Nicola Soranzo, Sanjay Kumar Srikakulam, Keith Suderman, Anna E. Syme, Marco Antonio Tangaro, Jonathan A. Tedds, Mehmet Tekman, Wai Cheng (Mike) Thang, Anil S. Thanki, Michael Uhl, Marius Van Den Beek, Deepti Varshney, Jenn Vessio, Pavankumar Videm, Greg Von Kuster, Gregory R. Watson, Natalie Whitaker-Allen, Uwe Winter, Martin Wolstencroft, Federico Zambelli, Paul Zierep, Rand Zoabi</small> (2024):  
+**The Galaxy platform for accessible, reproducible, and collaborative data analyses**: 2024 update.  
+*Nucleic Acids Research*  
+<https://doi.org/10.1093/nar/gkae410>
+
+\[Courbebaisse 2023\]
+Guy Courbebaisse, Bernd Flemisch, Kay Graf, Uwe Konrad, Jason Maassen, Raphael Ritz (2023):  
+**Research Software Lifecycle**  
+<https://doi.org/10.5281/zenodo.8324828>
+
+\[Crusoe 2022\]
+Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The Cwl Community (2022):  
+**Methods included: Standardizing computational reuse and portability with the Common Workflow Language**.  
+*Communications of the ACM* **65**(6)  
+<https://doi.org/10.1145/3486897>
+
+\[da Silva 2023\]
+<small>Rafael Ferreira da Silva, Rosa M. Badia, Venkat Bala, Debbie Bard, Peer-Timo Bremer, Ian Buckley, Silvina Caino-Lores, Kyle Chard, Carole Goble, Shantenu Jha, Daniel S. Katz, Daniel Laney, Manish Parashar, Frederic Suter, Nick Tyler, Thomas Uram, Ilkay Altintas, Stefan Andersson, William Arndt, Juan Aznar, Jonathan Bader, Bartosz Balis, Chris Blanton, Kelly Rosa Braghetto, Aharon Brodutch, Paul Brunk, Henri Casanova, Alba Cervera Lierta, Justin Chigu, Taina Coleman, Nick Collier, Iacopo Colonnelli, Frederik Coppens, Michael Crusoe, Will Cunningham, Bruno De Paula Kinoshita, Paolo Di Tommaso, Charles Doutriaux, Matthew Downton, Wael Elwasif, Bjoern Enders, Chris Erdmann, Thomas Fahringer, Ludmilla Figueiredo, Rosa Filgueira, Martin Foltin, Anne Fouilloux, Luiz Gadelha, Andy Gallo, Artur Garcia Saez, Daniel Garijo, Roman Gerlach, Ryan Grant, Samuel Grayson, Patricia Grubel, Johan Gustafsson, Valerie Hayot-Sasson, Oscar Hernandez, Marcus Hilbrich, AnnMary Justine, Ian Laflotte, Fabian Lehmann, Andre Luckow, Jakob Luettgau, Ketan Maheshwari, Motohiko Matsuda, Doriana Medic, Pete Mendygral, Marek Michalewicz, Jorji Nonaka, Maciej Pawlik, Loic Pottier, Line Pouchard, Mathias Putz, Santosh Kumar Radha, Lavanya Ramakrishnan, Sashko Ristov, Paul Romano, Daniel Rosendo, Martin Ruefenacht, Katarzyna Rycerz, Nishant Saurabh, Volodymyr Savchenko, Martin Schulz, Christine Simpson, Raul Sirvent, Tyler Skluzacek, Stian Soiland-Reyes, Renan Souza, Sreenivas Rangan Sukumar, Ziheng Sun, Alan Sussman, Douglas Thain, Mikhail Titov, Benjamin Tovar, Aalap Tripathy, Matteo Turilli, Bartosz Tuznik, Hubertus Van Dam, Aurelio Vivas, Logan Ward, Patrick Widener, Sean Wilkinson, Justyna Zawalska, Mahnoor Zulfiqar</small> (2023):  
+**Workflows Community Summit 2022: A Roadmap Revolution**  
+<https://doi.org/10.5281/zenodo.7750670>
+
+\[De Smedt 2020\]
+Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
+**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
+*Publications* **8**(2)  
+<https://doi.org/10.3390/publications8020021>
+
+\[Druskat 2021\]
+Stephan Druskat, Jurriaan H. Spaaks, Neil Chue Hong, Robert Haines, James Baker, Spencer Bliven, Egon Willighagen, David Pérez-Suárez, Alexander Konovalov (2021):  
+**Citation File Format**  
+<https://doi.org/10.5281/zenodo.5171937>
+
+\[ELIXIR 2024\]
+ELIXIR (2024):  
+**ELIXIR Annual Report 2023**  
+_F1000Research_ **13**(ELIXIR):779  
+<https://doi.org/10.7490/F1000RESEARCH.1119751.1>
+
+\[Ewels 2020\]
+Philip A. Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, Sven Nahnsen (2020):  
+**The nf-core framework for community-curated bioinformatics pipelines**.  
+*Nature Biotechnology* **38**(3)  
+<https://doi.org/10.1038/s41587-020-0439-x>
+
+\[Fernández 2022\]
+José M. Fernández, Laura Rodríguez-Navas, Salvador Capella-Gutiérrez (2022):  
+**Secured and annotated execution of workflows with WfExS-backend**  
+<https://doi.org/10.7490/F1000RESEARCH.1119198.1>
+
+\[Freudling 2023\]
+Wolfram Freudling, Stefano Zampieri, Lodovico Coccato, Stanislaw Podgorski, Martino Romaniello, Andrea Modigliani, John Pritchard (2023):  
+**Adaptive Data Reduction Workflows for Astronomy – The ESO Data Processing System (EDPS)**  
+<https://doi.org/10.48550/ARXIV.2311.03822>
+
+\[Garijo 2022\]
+Daniel Garijo, Hervé Ménager, Lorraine Hwang, Ana Trisovic, Michael Hucka, Thomas Morrell, Alice Allen, Task Force on Best Practices for Software Registries, SciCodes Consortium (2022):  
+**Nine best practices for research software registries and repositories**.  
+*PeerJ Computer Science* **8** 
+<https://doi.org/10.7717/peerj-cs.1023>
+
+\[Gil 2006\]
+Ewa Deelman & Yolanda Gil (2006):  
+**Managing Large-Scale Scientific Workflows in Distributed Environments**: Experiences and Challenges.  
+*2006 Second IEEE International Conference on e-Science and Grid Computing (e-Science’06)*    
+<https://doi.org/10.1109/E-SCIENCE.2006.261077>
+
+\[Gil 2007\]
+Yolanda Gil, Ewa Deelman, Mark Ellisman, Thomas Fahringer, Geoffrey Fox, Dennis Gannon, Carole Goble, Miron Livny, Luc Moreau, Jim Myers (2007):  
+**Examining the Challenges of Scientific Workflows**.  
+*Computer* **40**(12)  
+<https://doi.org/10.1109/MC.2007.421>
+
+\[Gil 2009\]
+Yolanda Gil (2009):  
+**From data to knowledge to discoveries: Artificial intelligence and scientific workflows**.  
+*Scientific Programming* **17**(3)  
+<https://doi.org/https://doi.org/10.3233/SPR-2009-0261>
+
+\[Goble 2020\]
+Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  
+**FAIR Computational Workflows**.  
+*Data Intelligence* **2**(1-2)  
+<https://doi.org/10.1162/dint_a_00033>
+
+\[Goble 2021\]
+Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
+**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**  
+<https://doi.org/10.5281/zenodo.4605654>
+
+\[Goble 2022\]
+Carole Goble, Finn Bacall, Stian Soiland-Reyes, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Hervé Ménager, Laura Rodríguez Navas, José María Fernández, Salvador Capella-Gutierrez, Michael R. Crusoe, Björn Grüning, Simone Leo, Luca Pireddu, Johan Gustafsson, Phil Ewels, WorkflowHub Community, Frederik Coppens (2022):  
+**WorkflowHub – a FAIR registry for workflows**  
+<https://doi.org/10.7490/F1000RESEARCH.1118984.1>
+
+\[Goble 2023\]
+Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Luca Pireddu, Simone Leo (2023):  
+**EOSC-Life Implementation of a mechanism for publishing and sharing workflows across instances of the environment**  
+<https://doi.org/10.5281/zenodo.7886545>
+
+\[Goble 2024a\]
+Carole Goble (2024):  
+**WorkflowHub Publishers and Journal Forum**  
+<https://galaxyproject.org/news/2024-08-03-workflow-publisher-forum/> (accessed 12 August 2024)
+
+\[Goble 2024b\]
+Carole Goble, Finn Bacall, Stian Soiland-Reyes (2024):  
+**The BY-COVID Guide to using WorkflowHub**  
+<https://doi.org/10.48546/WORKFLOWHUB.SOP.10.1> (accessed 11 June 2024)
+
+\[Gray 2017\]
+Alasdair J G Gray, Carole Goble, Rafael C. Jimenez (2017):  
+**Bioschemas: From potato salad to protein annotation**.  
+*ISWC 2017 posters & demonstrations and industry tracks*  urn:nbn:de:0074-1963-7, (RWTH Aachen University)  
+<https://iswc2017.semanticweb.org/paper-579/>
+
+\[Hambley 2024\]
+Alexander Hambley, Eli Chadwick, Oliver Woolland, Stian Soiland-Reyes, Volodymyr Savchenko (2024):  
+**WorkflowHub Knowledge Graph**  
+_Zenodo_
+<https://doi.org/10.5281/zenodo.13362051>
+
+\[Hatos 2021\]
+András Hatos, Federica Quaglia, Damiano Piovesan, Silvio C. E. Tosatto (2021):  
+**APICURON: A database to credit and acknowledge the work of biocurators**.  
+*Database* **2021** 
+<https://doi.org/10.1093/database/baab019>
+
+\[Hiltemann 2023\]
+Saskia Hiltemann, Helena Rasche, Simon Gladman, Hans-Rudolf Hotz, Delphine Larivière, Daniel Blankenberg, Pratik D. Jagtap, Thomas Wollmann, Anthony Bretaudeau, Nadia Goué, Timothy J. Griffin, Coline Royaux, Yvan Le Bras, Subina Mehta, Anna Syme, Frederik Coppens, Bert Droesbeke, Nicola Soranzo, Wendi Bacon, Fotis Psomopoulos, Cristóbal Gallardo-Alba, John Davis, Melanie Christine Föll, Matthias Fahrner, Maria A. Doyle, Beatriz Serrano-Solano, Anne Claire Fouilloux, Peter Van Heusden, Wolfgang Maier, Dave Clements, Florian Heyl, Galaxy Training Network, Björn Grüning, Bérénice Batut (2023):  
+**Galaxy Training**: A powerful framework for teaching\!  
+*PLOS Computational Biology* **19**(1)  
+<https://doi.org/10.1371/journal.pcbi.1010752>
+
+\[Huerta 2023\]
+E. A. Huerta, Ben Blaiszik, L. Catherine Brinson, Kristofer E. Bouchard, Daniel Diaz, Caterina Doglioni, Javier M. Duarte, Murali Emani, Ian Foster, Geoffrey Fox, Philip Harris, Lukas Heinrich, Shantenu Jha, Daniel S. Katz, Volodymyr Kindratenko, Christine R. Kirkpatrick, Kati Lassila-Perini, Ravi K. Madduri, Mark S. Neubauer, Fotis E. Psomopoulos, Avik Roy, Oliver Rübel, Zhizhen Zhao, Ruike Zhu (2023):  
+**FAIR for AI: An interdisciplinary and international community building perspective**.  
+*Scientific Data* **10**(1)  
+<https://doi.org/10.1038/s41597-023-02298-6>
+
+\[ICGC/TCGA 2020\]
 <small>
 The ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium,
 Lauri A. Aaltonen, Federico Abascal, Adam Abeshouse, Hiroyuki Aburatani, David J. Adams, Nishant Agrawal, Keun Soo Ahn, Sung-Min Ahn, Hiroshi Aikata, Rehan Akbani, Kadir C. Akdemir, Hikmat Al-Ahmadie, Sultan T. Al-Sedairy, Fatima Al-Shahrour, Malik Alawi, Monique Albert, Kenneth Aldape, Ludmil B. Alexandrov, Adrian Ally, Kathryn Alsop, Eva G. Alvarez, Fernanda Amary, Samirkumar B. Amin, Brice Aminou, Ole Ammerpohl, Matthew J. Anderson, Yeng Ang, Davide Antonello, Pavana Anur, Samuel Aparicio, Elizabeth L. Appelbaum, Yasuhito Arai, Axel Aretz, Koji Arihiro, Shun-ichi Ariizumi, Joshua Armenia, Laurent Arnould, Sylvia Asa, Yassen Assenov, Gurnit Atwal, Sietse Aukema, J. Todd Auman, Miriam R. R. Aure, Philip Awadalla, Marta Aymerich, 
@@ -530,416 +673,204 @@ Jorge Zamora, Marc Zapatka, Jean C. Zenklusen, Thorsten Zenz, Nikolajs Zeps, Che
 *Nature*  **578**(7793)  
 <https://doi.org/10.1038/s41586-020-1969-6>
 
-10\. 
-[Reiter 2021]
-Taylor Reiter, Phillip T. Brooks, Luiz Irber, Shannon E. K. Joslin, Charles M. Reid, Camille Scott, C. Titus Brown, N. Tessa Pierce-Ward (2021):  
-**Streamlining data-intensive biology with workflow systems**.  
-*GigaScience* **10**(1)  
-<https://doi.org/10.1093/gigascience/giaa140>
-
-11\. 
-[Wratten 2021]
-Laura Wratten, Andreas Wilm, Jonathan Göke (2021):  
-**Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers**.  
-*Nature Methods* **18**(10)  
-<https://doi.org/10.1038/s41592-021-01254-9>
-
-12\. 
-[Patel 2022]
-Ria Patel, Brandan Roachell, Silvina Caino-Lores, Ross Ketron, Jacob Leonard, Nigel Tan, Duncan Brown, Ewa Deelman, Michela Taufer (2022):  
-**Reproducibility of the First Image of a Black Hole in the Galaxy M87 from the Event Horizon Telescope (EHT) Collaboration**  
-<https://doi.org/10.48550/ARXIV.2205.10267>
-
-13\. 
-[Goble 2023]
-Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Luca Pireddu, Simone Leo (2023):  
-**EOSC-Life Implementation of a mechanism for publishing and sharing workflows across instances of the environment**  
-<https://doi.org/10.5281/zenodo.7886545>
-
-14\. 
-[Wilkinson 2016]
-Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino Da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. ’T Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene Van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan Van Der Lei, Erik Van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):  
-**The FAIR Guiding Principles for scientific data management and stewardship**.  
-*Scientific Data* **3**(1)  
-<https://doi.org/10.1038/sdata.2016.18>
-
-15\. 
-[Barker 2022]
-Michelle Barker, Neil P. Chue Hong, Daniel S. Katz, Anna-Lena Lamprecht, Carlos Martinez-Ortiz, Fotis Psomopoulos, Jennifer Harrow, Leyla Jael Castro, Morane Gruenpeter, Paula Andrea Martinez, Tom Honeyman (2022):  
-**Introducing the FAIR Principles for research software**.  
-*Scientific Data* **9**(1)  
-<https://doi.org/10.1038/s41597-022-01710-x>
-
-16\. 
-[Huerta 2023]
-E. A. Huerta, Ben Blaiszik, L. Catherine Brinson, Kristofer E. Bouchard, Daniel Diaz, Caterina Doglioni, Javier M. Duarte, Murali Emani, Ian Foster, Geoffrey Fox, Philip Harris, Lukas Heinrich, Shantenu Jha, Daniel S. Katz, Volodymyr Kindratenko, Christine R. Kirkpatrick, Kati Lassila-Perini, Ravi K. Madduri, Mark S. Neubauer, Fotis E. Psomopoulos, Avik Roy, Oliver Rübel, Zhizhen Zhao, Ruike Zhu (2023):  
-**FAIR for AI: An interdisciplinary and international community building perspective**.  
-*Scientific Data* **10**(1)  
-<https://doi.org/10.1038/s41597-023-02298-6>
-
-17\. 
-[Wilkinson 2024]
-Sean R. Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
-**Applying the FAIR Principles to Computational Workflows**  
-<https://doi.org/10.48550/arXiv.2410.03490>
-
-18\. 
-[Goble 2020]
-Carole Goble, Sarah Cohen-Boulakia, Stian Soiland-Reyes, Daniel Garijo, Yolanda Gil, Michael R. Crusoe, Kristian Peters, Daniel Schober (2020):  
-**FAIR Computational Workflows**.  
-*Data Intelligence* **2**(1-2)  
-<https://doi.org/10.1162/dint_a_00033>
-
-19\. 
-[Gil 2009]
-Yolanda Gil (2009):  
-**From data to knowledge to discoveries: Artificial intelligence and scientific workflows**.  
-*Scientific Programming* **17**(3)  
-<https://doi.org/https://doi.org/10.3233/SPR-2009-0261>
-
-20\. 
-[Ewels 2020]
-Philip A. Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, Sven Nahnsen (2020):  
-**The nf-core framework for community-curated bioinformatics pipelines**.  
-*Nature Biotechnology* **38**(3)  
-<https://doi.org/10.1038/s41587-020-0439-x>
-
-21\. 
-[Tommaso 2017]
-Paolo Di Tommaso, Maria Chatzou, Evan W. Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame (2017):  
-**Nextflow enables reproducible computational workflows**.  
-*Nature Biotechnology* **35**(4)  
-<https://doi.org/10.1038/nbt.3820>
-
-22\. 
-[Stevens 2022]
-Frankie Stevens (2022):  
-**Understanding how researchers find research software for research practice**.   
-_Zenodo_  
-<https://doi.org/10.5281/zenodo.7340034>
-
-23\. 
-[Community 2024]
-The Galaxy Community, <small>Linelle Ann L. Abueg, Enis Afgan, Olivier Allart, Ahmed H. Awan, Wendi A. Bacon, Dannon Baker, Madeline Bassetti, Bérénice Batut, Matthias Bernt, Daniel Blankenberg, Aureliano Bombarely, Anthony Bretaudeau, Catherine J. Bromhead, Melissa L. Burke, Patrick K. Capon, Martin Čech, María Chavero-Díez, John M. Chilton, Tyler J. Collins, Frederik Coppens, Nate Coraor, Gianmauro Cuccuru, Fabio Cumbo, John Davis, Paul F. De Geest, Willem De Koning, Martin Demko, Assunta DeSanto, José Manuel Domínguez Begines, Maria A. Doyle, Bert Droesbeke, Anika Erxleben-Eggenhofer, Melanie C. Föll, Giulio Formenti, Anne Fouilloux, Rendani Gangazhe, Tanguy Genthon, Jeremy Goecks, Alejandra N. Gonzalez Beltran, Nuwan A. Goonasekera, Nadia Goué, Timothy J. Griffin, Björn A. Grüning, Aysam Guerler, Sveinung Gundersen, Ove Johan Ragnar Gustafsson, Christina Hall, Thomas W. Harrop, Helge Hecht, Alireza Heidari, Tillman Heisner, Florian Heyl, Saskia Hiltemann, Hans-Rudolf Hotz, Cameron J. Hyde, Pratik D. Jagtap, Julia Jakiela, James E. Johnson, Jayadev Joshi, Marie Jossé, Khaled Jum’ah, Matúš Kalaš, Katarzyna Kamieniecka, Tunc Kayikcioglu, Markus Konkol, Leonid Kostrykin, Natalie Kucher, Anup Kumar, Mira Kuntz, Delphine Lariviere, Ross Lazarus, Yvan Le Bras, Gildas Le Corguillé, Justin Lee, Simone Leo, Leandro Liborio, Romane Libouban, David López Tabernero, Lucille Lopez-Delisle, Laila S. Los, Alexandru Mahmoud, Igor Makunin, Pierre Marin, Subina Mehta, Winnie Mok, Pablo A. Moreno, François Morier-Genoud, Stephen Mosher, Teresa Müller, Engy Nasr, Anton Nekrutenko, Tiffanie M. Nelson, Asime J. Oba, Alexander Ostrovsky, Polina V. Polunina, Krzysztof Poterlowicz, Elliott J. Price, Gareth R. Price, Helena Rasche, Bryan Raubenolt, Coline Royaux, Luke Sargent, Michelle T. Savage, Volodymyr Savchenko, Denys Savchenko, Michael C. Schatz, Pauline Seguineau, Beatriz Serrano-Solano, Nicola Soranzo, Sanjay Kumar Srikakulam, Keith Suderman, Anna E. Syme, Marco Antonio Tangaro, Jonathan A. Tedds, Mehmet Tekman, Wai Cheng (Mike) Thang, Anil S. Thanki, Michael Uhl, Marius Van Den Beek, Deepti Varshney, Jenn Vessio, Pavankumar Videm, Greg Von Kuster, Gregory R. Watson, Natalie Whitaker-Allen, Uwe Winter, Martin Wolstencroft, Federico Zambelli, Paul Zierep, Rand Zoabi</small> (2024):  
-**The Galaxy platform for accessible, reproducible, and collaborative data analyses**: 2024 update.  
-*Nucleic Acids Research*  
-<https://doi.org/10.1093/nar/gkae410>
-
-24\. 
-[Mölder 2021]
-Felix Mölder, Kim Philipp Jablonski, Brice Letcher, Michael B. Hall, Christopher H. Tomkins-Tinch, Vanessa Sochat, Jan Forster, Soohyun Lee, Sven O. Twardziok, Alexander Kanitz, Andreas Wilm, Manuel Holtgrewe, Sven Rahmann, Sven Nahnsen, Johannes Köster (2021):  
-**Sustainable data analysis with Snakemake**.  
-*F1000Research* **10** 
-<https://doi.org/10.12688/f1000research.29032.2>
-
-25\. 
-[Yuen 2021]
-Denis Yuen, Louise Cabansay, Andrew Duncan, Gary Luu, Gregory Hogue, Charles Overbeck, Natalie Perez, Walt Shands, David Steinberg, Chaz Reid, Nneka Olunwa, Richard Hansen, Elizabeth Sheets, Ash O’Farrell, Kim Cullion, Brian D. O’Connor, Benedict Paten, Lincoln Stein (2021):  
-**The Dockstore: Enhancing a community platform for sharing reproducible and accessible computational protocols**.  
-*Nucleic Acids Research* **49**(W1)  
-<https://doi.org/10.1093/nar/gkab346>
-
-26\. 
-[Goble 2021]
-Carole Goble, Stian Soiland-Reyes, Finn Bacall, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Simone Leo, Luca Pireddu, Laura Rodríguez-Navas, José Mª Fernández, Salvador Capella-Gutierrez, Hervé Ménager, Björn Grüning, Beatriz Serrano-Solano, Philip Ewels, Frederik Coppens (2021):  
-**Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory**  
-<https://doi.org/10.5281/zenodo.4605654>
-
-27\. 
-[Goble 2022]
-Carole Goble, Finn Bacall, Stian Soiland-Reyes, Stuart Owen, Alan Williams, Ignacio Eguinoa, Bert Droesbeke, Hervé Ménager, Laura Rodríguez Navas, José María Fernández, Salvador Capella-Gutierrez, Michael R. Crusoe, Björn Grüning, Simone Leo, Luca Pireddu, Johan Gustafsson, Phil Ewels, WorkflowHub Community, Frederik Coppens (2022):  
-**WorkflowHub – a FAIR registry for workflows**  
-<https://doi.org/10.7490/F1000RESEARCH.1118984.1>
-
-28\. 
-[Courbebaisse 2023]
-Guy Courbebaisse, Bernd Flemisch, Kay Graf, Uwe Konrad, Jason Maassen, Raphael Ritz (2023):  
-**Research Software Lifecycle**  
-<https://doi.org/10.5281/zenodo.8324828>
-
-29\. 
-[Baker 2020]
-Dannon Baker, Marius Van Den Beek, Daniel Blankenberg, Dave Bouvier, John Chilton, Nate Coraor, Frederik Coppens, Ignacio Eguinoa, Simon Gladman, Björn Grüning, Nicholas Keener, Delphine Larivière, Andrew Lonie, Sergei Kosakovsky Pond, Wolfgang Maier, Anton Nekrutenko, James Taylor, Steven Weaver (2020):  
-**No more business as usual: Agile and effective responses to emerging pathogen threats require open data and open analytics**.  
-*PLOS Pathogens* **16**(8)  
-<https://doi.org/10.1371/journal.ppat.1008643>
-
-30\. 
-[Soiland-Reyes 2024b]
-Stian Soiland-Reyes, Carole Goble, Finn Bacall, Johan Gustafsson, Rafael Andrade Buono (2024):  
-**A guide to using WorkflowHub**  
-<https://doi.org/10.48546/WORKFLOWHUB.SOP.13.4> (accessed 11 June 2024)
-
-31\. 
-[Soiland-Reyes 2024d]
-Stian Soiland-Reyes (2024):  
-**The BGE guide to using WorkflowHub**  
-<https://doi.org/10.48546/WORKFLOWHUB.SOP.15.1> (accessed 8 July 2024)
-
-32\. 
-[Soiland-Reyes 2024c]
-Stian Soiland-Reyes (2024):  
-**BioDT Guide to using WorkflowHub**  
-<https://doi.org/10.48546/WORKFLOWHUB.SOP.14.1> (accessed 8 July 2024)
-
-33\. 
-[Goble 2024b]
-Carole Goble, Finn Bacall, Stian Soiland-Reyes (2024):  
-**The BY-COVID Guide to using WorkflowHub**  
-<https://doi.org/10.48546/WORKFLOWHUB.SOP.10.1> (accessed 11 June 2024)
-
-34\. 
-[Gray 2017]
-Alasdair J G Gray, Carole Goble, Rafael C. Jimenez (2017):  
-**Bioschemas: From potato salad to protein annotation**.  
-*ISWC 2017 posters & demonstrations and industry tracks*  urn:nbn:de:0074-1963-7, (RWTH Aachen University)  
-<https://iswc2017.semanticweb.org/paper-579/>
-
-35\. 
-[Crusoe 2022]
-Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The Cwl Community (2022):  
-**Methods included: Standardizing computational reuse and portability with the Common Workflow Language**.  
-*Communications of the ACM* **65**(6)  
-<https://doi.org/10.1145/3486897>
-
-36\. 
-[Amstutz 2016]
-Peter Amstutz, Michael R. Crusoe, Nebojša Tijanić, Brad Chapman, John Chilton, Michael Heuer, Andrey Kartashov, Dan Leehr, Hervé Ménager, Maya Nedeljkovich, Matt Scales, Stian Soiland-Reyes, Luka Stojanovic (2016):  
-**Common Workflow Language, v1.0**  
-<https://doi.org/10.6084/M9.FIGSHARE.3115156.V2>
-
-37\. 
-[Ison 2013]
+\[Ison 2013\]
 Jon Ison, Matúš Kalaš, Inge Jonassen, Dan Bolser, Mahmut Uludag, Hamish McWilliam, James Malone, Rodrigo Lopez, Steve Pettifer, Peter Rice (2013):  
 **EDAM: An ontology of bioinformatics operations, types of data and identifiers, topics and formats**.  
 *Bioinformatics* **29**(10)  
 <https://doi.org/10.1093/bioinformatics/btt113>
 
-38\. 
-[Soiland-Reyes 2022]
-Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
-**Packaging research artefacts with RO-Crate**.  
-*Data Science* **5**(2)  
-<https://doi.org/10.3233/DS-210053>
-
-39\. 
-[Soiland-Reyes 2024a]
-Stian Soiland-Reyes, Eli Chadwick, Finn Bacall, José M. Fernández, Björn Grüning, Hakan Bayındır (2024):  
-**EuroScienceGateway D2.1: Reproducible FAIR Digital Objects for Workflows**  
-<https://doi.org/10.5281/zenodo.13225792>
-
-40\. 
-[De Smedt 2020]
-Koenraad De Smedt, Dimitris Koureas, Peter Wittenburg (2020):  
-**FAIR Digital Objects for Science: From Data Pieces to Actionable Knowledge Units**.  
-*Publications* **8**(2)  
-<https://doi.org/10.3390/publications8020021>
-
-41\. 
-[Köster 2023]
-Johannes Köster, Felix Mölder, David Laehnemann, Christopher Schröder, Till Hartmann, Jan Forster, User-Tq (2023):  
-**Snakemake-workflows/dna-seq-varlociraptor: V5.0.2**  
-<https://doi.org/10.5281/zenodo.8421328>
-
-42\. 
-[Syme 2024]
-Luke Silver & Anna Syme (2024):  
-**Find transcripts - TSI**  
-<https://doi.org/10.48546/WORKFLOWHUB.WORKFLOW.877.1>
-
-43\. 
-[Ison 2019]
+\[Ison 2019\]
 Jon Ison, Hans Ienasescu, Piotr Chmura, Emil Rydza, Hervé Ménager, Matúš Kalaš, Veit Schwämmle, Björn Grüning, Niall Beard, Rodrigo Lopez, Severine Duvaud, Heinz Stockinger, Bengt Persson, Radka Svobodová Vařeková, Tomáš Raček, Jiří Vondrášek, Hedi Peterson, Ahto Salumets, Inge Jonassen, Rob Hooft, Tommi Nyrönen, Alfonso Valencia, Salvador Capella, Josep Gelpí, Federico Zambelli, Babis Savakis, Brane Leskošek, Kristoffer Rapacki, Christophe Blanchet, Rafael Jimenez, Arlindo Oliveira, Gert Vriend, Olivier Collin, Jacques Van Helden, Peter Løngreen, Søren Brunak (2019):  
 **The bio.tools registry of software tools and data resources for the life sciences**.  
 *Genome Biology* **20**(1)  
 <https://doi.org/10.1186/s13059-019-1772-6>
 
-44\. 
-[Gil 2006]
-Ewa Deelman & Yolanda Gil (2006):  
-**Managing Large-Scale Scientific Workflows in Distributed Environments**: Experiences and Challenges.  
-*2006 Second IEEE International Conference on e-Science and Grid Computing (e-Science’06)*    
-<https://doi.org/10.1109/E-SCIENCE.2006.261077>
+\[Jones 2024\]
+Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross (2024):  
+**CodeMeta: An exchange schema for software metadata**  
+<https://w3id.org/codemeta/v3.0> (accessed 7 August 2024)
 
-45\. 
-[Lamothe 2023]
+\[Köster 2023\]
+Johannes Köster, Felix Mölder, David Laehnemann, Christopher Schröder, Till Hartmann, Jan Forster, User-Tq (2023):  
+**Snakemake-workflows/dna-seq-varlociraptor: V5.0.2**  
+<https://doi.org/10.5281/zenodo.8421328>
+
+\[Lamothe 2023\]
 Lucie Lamothe, Jennifer Rugaard Bregndahl Jensen, Hans Ienasescu, Ove Johan Ragnar Gustafsson, Alban Gaignard, Dmitry Repchevsky, Radka Svobodová, Tomáš Raček, Matej Antol, Magnus Palmblad, Matúš Kalaš, Hervé Menager (2023):  
 **An evaluation of EDAM coverage in the Tools Ecosystem and prototype integration of Galaxy and WorkflowHub systems**.    
 _BioHackrXiv_  
 <https://doi.org/10.37044/osf.io/79kje>
 
-46\. 
-[Rosnet 2024]
-Thomas Rosnet, Alban Gaignard, Marie-Dominique Devignes, Sahar Frikha (2024):  
-**FAIR-checker**  
-<https://github.com/IFB-ElixirFr/fair-checker>
+\[Larivière 2024\]
+Delphine Larivière, Linelle Abueg, Nadolina Brajuka, Cristóbal Gallardo-Alba, Bjorn Grüning, Byung June Ko, Alex Ostrovsky, Marc Palmada-Flores, Brandon D. Pickett, Keon Rabbani, Agostinho Antunes, Jennifer R. Balacco, Mark J. P. Chaisson, Haoyu Cheng, Joanna Collins, Melanie Couture, Alexandra Denisova, Olivier Fedrigo, Guido Roberto Gallo, Alice Maria Giani, Grenville MacDonald Gooder, Kathleen Horan, Nivesh Jain, Cassidy Johnson, Heebal Kim, Chul Lee, Tomas Marques-Bonet, Brian O’Toole, Arang Rhie, Simona Secomandi, Marcella Sozzoni, Tatiana Tilley, Marcela Uliano-Silva, Marius Van Den Beek, Robert W. Williams, Robert M. Waterhouse, Adam M. Phillippy, Erich D. Jarvis, Michael C. Schatz, Anton Nekrutenko, Giulio Formenti (2024):  
+**Scalable, accessible and reproducible reference genome assembly and evaluation in Galaxy**.  
+*Nature Biotechnology* **42**(3)  
+<https://doi.org/10.1038/s41587-023-02100-3>
 
-47\. 
-[Pico 2022]
-Eva Martı́n del Pico, Josep Lluis Gelpi, Salvador Capella-Gutiérrez (2022):  
-**FAIRsoft - a practical implementation of fair principles for research software**.  
-*bioRxiv*  
-<https://doi.org/10.1101/2022.05.04.490563>
+\[Maier 2021\]
+Wolfgang Maier, Simon Bray, Marius Van Den Beek, Dave Bouvier, Nathan Coraor, Milad Miladi, Babita Singh, Jordi Rambla De Argila, Dannon Baker, Nathan Roach, Simon Gladman, Frederik Coppens, Darren P. Martin, Andrew Lonie, Björn Grüning, Sergei L. Kosakovsky Pond, Anton Nekrutenko (2021):  
+**Ready-to-use public infrastructure for global SARS-CoV-2 monitoring**.  
+*Nature Biotechnology* **39**(10)  
+<https://doi.org/10.1038/s41587-021-01069-1>
 
-48\. 
-[Suetake 2022]
-Hirotaka Suetake, Tomoya Tanjo, Manabu Ishii, Bruno P. Kinoshita, Takeshi Fujino, Tsuyoshi Hachiya, Yuichi Kodama, Takatomo Fujisawa, Osamu Ogasawara, Atsushi Shimizu, Masanori Arita, Tsukasa Fukusato, Takeo Igarashi, Tazro Ohta (2022):  
-**Sapporo: A workflow execution service that encourages the reuse of workflows in various languages in bioinformatics**.  
-*F1000Research* **11** 
-<https://doi.org/10.12688/f1000research.122924.1>
-
-49\. 
-[Fernández 2022]
-José M. Fernández, Laura Rodríguez-Navas, Salvador Capella-Gutiérrez (2022):  
-**Secured and annotated execution of workflows with WfExS-backend**  
-<https://doi.org/10.7490/F1000RESEARCH.1119198.1>
-
-50\. 
-[Bray 2023]
-Simon Bray, John Chilton, Matthias Bernt, Nicola Soranzo, Marius van den Beek, Bérénice Batut, Helena Rasche, Martin Čech, Peter J. A. Cock, Björn Grüning, Anton Nekrutenko (2023):  
-**The Planemo toolkit for developing, deploying, and executing scientific data analyses in Galaxy and beyond**.  
-*Genome Research* **33**(2)  
-<https://doi.org/10.1101/gr.276963.122>
-
-51\. 
-[Druskat 2021]
-Stephan Druskat, Jurriaan H. Spaaks, Neil Chue Hong, Robert Haines, James Baker, Spencer Bliven, Egon Willighagen, David Pérez-Suárez, Alexander Konovalov (2021):  
-**Citation File Format**  
-<https://doi.org/10.5281/zenodo.5171937>
-
-52\. 
-[Hiltemann 2023]
-Saskia Hiltemann, Helena Rasche, Simon Gladman, Hans-Rudolf Hotz, Delphine Larivière, Daniel Blankenberg, Pratik D. Jagtap, Thomas Wollmann, Anthony Bretaudeau, Nadia Goué, Timothy J. Griffin, Coline Royaux, Yvan Le Bras, Subina Mehta, Anna Syme, Frederik Coppens, Bert Droesbeke, Nicola Soranzo, Wendi Bacon, Fotis Psomopoulos, Cristóbal Gallardo-Alba, John Davis, Melanie Christine Föll, Matthias Fahrner, Maria A. Doyle, Beatriz Serrano-Solano, Anne Claire Fouilloux, Peter Van Heusden, Wolfgang Maier, Dave Clements, Florian Heyl, Galaxy Training Network, Björn Grüning, Bérénice Batut (2023):  
-**Galaxy Training**: A powerful framework for teaching\!  
-*PLOS Computational Biology* **19**(1)  
-<https://doi.org/10.1371/journal.pcbi.1010752>
-
-53\. 
-[Goble 2024a]
-Carole Goble (2024):  
-**WorkflowHub Publishers and Journal Forum**  
-<https://galaxyproject.org/news/2024-08-03-workflow-publisher-forum/> (accessed 12 August 2024)
-
-54\. 
-[Garijo 2022]
-Daniel Garijo, Hervé Ménager, Lorraine Hwang, Ana Trisovic, Michael Hucka, Thomas Morrell, Alice Allen, Task Force on Best Practices for Software Registries, SciCodes Consortium (2022):  
-**Nine best practices for research software registries and repositories**.  
-*PeerJ Computer Science* **8** 
-<https://doi.org/10.7717/peerj-cs.1023>
-
-55\. 
-[Jones 2024]
-Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross (2024):  
-**CodeMeta: An exchange schema for software metadata**  
-<https://w3id.org/codemeta/v3.0> (accessed 7 August 2024)
-
-56\. 
-[Mazzoni 2023]
+\[Mazzoni 2023\]
 Camila J. Mazzoni, Claudio Ciofi, Robert M. Waterhouse (2023):  
 **Biodiversity: An atlas of European reference genomes**.  
 *Nature* **619**(7969)  
 <https://doi.org/10.1038/d41586-023-02229-w>
 
-57\. 
-[Christiansen 2024]
-Rhys Francis & Jeffrey H. Christiansen (2024):  
-**Australian BioCommons Strategic Plan 2023 - 2028**  
-<https://doi.org/10.5281/zenodo.13626350>
+\[McClure 2020\]
+James E. McClure, Junqi Yin, Ryan T. Armstrong, Ketan C. Maheshwari, Sean Wilkinson, Lucas Vlcek, Ying Da Wang, Mark A. Berrill, Mark Rivers (2020):  
+**Toward Real-Time Analysis of Synchrotron Micro-Tomography Data**: Accelerating Experimental Workflows with AI and HPC.  
+*Driving Scientific and Engineering Discoveries Through the Convergence of HPC, Big Data and AI*  
+<https://doi.org/10.1007/978-3-030-63393-6_15>
 
-58\. 
-[Tejedor 2017]
-Enric Tejedor, Yolanda Becerra, Guillem Alomar, Anna Queralt, Rosa M. Badia, Jordi Torres, Toni Cortes, Jesús Labarta (2017):  
-**PyCOMPSs: Parallel computational workflows in Python**.  
-*The International Journal of High Performance Computing Applications* **31**(1)  
-<https://doi.org/10.1177/1094342015594678>
+\[Mölder 2021\]
+Felix Mölder, Kim Philipp Jablonski, Brice Letcher, Michael B. Hall, Christopher H. Tomkins-Tinch, Vanessa Sochat, Jan Forster, Soohyun Lee, Sven O. Twardziok, Alexander Kanitz, Andreas Wilm, Manuel Holtgrewe, Sven Rahmann, Sven Nahnsen, Johannes Köster (2021):  
+**Sustainable data analysis with Snakemake**.  
+*F1000Research* **10** 
+<https://doi.org/10.12688/f1000research.29032.2>
 
-59\. 
-[Rosa-Trevín 2016]
-J. M. De La Rosa-Trevín, A. Quintana, L. Del Cano, A. Zaldívar, I. Foche, J. Gutiérrez, J. Gómez-Blanco, J. Burguet-Castell, J. Cuenca-Alba, V. Abrishami, J. Vargas, J. Otón, G. Sharov, J. L. Vilas, J. Navas, P. Conesa, M. Kazemi, R. Marabini, C. O. S. Sorzano, J. M. Carazo (2016):  
-**Scipion: A software framework toward integration, reproducibility and validation in 3D electron microscopy**.  
-*Journal of Structural Biology* **195**(1)  
-<https://doi.org/10.1016/j.jsb.2016.04.010>
+\[Owen 2024\]
+Stuart Owen, Finn Bacall, Lihua, maggy128, Vahid Kiani, Alan R. Williams, Xiaoming Hu, Kevin De Pelseneer, hleonov, Francisco Herrerías-Azcué, Alain Becam, Aitor Apaolaza, Tomasz Zielinski, Niall Beard, Robert Haines, Sonja Mathias, Vahid Kiani, Jeremy, Stian Soiland-Reyes, Quyen Nguyen, Christoph Beger, Eilidh Troup, Katrin Leinweber, Wolfgang Müller, Anthony Bretaudeau, Benjamin Mulelid, Arthur Rosendahl, Josh Kalderimis, susca (2024):  
+**Seek4science/seek: FAIRDOM-SEEK v1.15.0**  
+_Zenodo_
+<https://doi.org/10.5281/zenodo.11209855>
 
-60\. 
-[R 2024]
+\[Patel 2022\]
+Ria Patel, Brandan Roachell, Silvina Caino-Lores, Ross Ketron, Jacob Leonard, Nigel Tan, Duncan Brown, Ewa Deelman, Michela Taufer (2022):  
+**Reproducibility of the First Image of a Black Hole in the Galaxy M87 from the Event Horizon Telescope (EHT) Collaboration**  
+<https://doi.org/10.48550/ARXIV.2205.10267>
+
+\[Pico 2022\]
+Eva Martı́n del Pico, Josep Lluis Gelpi, Salvador Capella-Gutiérrez (2022):  
+**FAIRsoft - a practical implementation of fair principles for research software**.  
+*bioRxiv*  
+<https://doi.org/10.1101/2022.05.04.490563>
+
+\[R 2024\]
 R. Core Team (2024):  
 **R: A Language and Environment for Statistical Computing**.    
 <https://www.r-project.org/> (accessed 12 June 2024)
 
-61\. 
-[Boer 1991]
-Guido Van Rossum & Jelke De Boer (1991):  
-**Interactively testing remote servers using the Python programming language**.  
-*CWI quarterly* **4**(4)  
-<https://ir.cwi.nl/pub/18204>
+\[Reiter 2021\]
+Taylor Reiter, Phillip T. Brooks, Luiz Irber, Shannon E. K. Joslin, Charles M. Reid, Camille Scott, C. Titus Brown, N. Tessa Pierce-Ward (2021):  
+**Streamlining data-intensive biology with workflow systems**.  
+*GigaScience* **10**(1)  
+<https://doi.org/10.1093/gigascience/giaa140>
 
-62\. 
-[Samaha 2023]
-Johan Gustafsson & Georgina Samaha (2023):  
-**WORKSHOP: Make your bioinformatics workflows findable and citable**  
-<https://doi.org/10.5281/zenodo.7787488>
-
-63\. 
-[Hatos 2021]
-András Hatos, Federica Quaglia, Damiano Piovesan, Silvio C. E. Tosatto (2021):  
-**APICURON: A database to credit and acknowledge the work of biocurators**.  
-*Database* **2021** 
-<https://doi.org/10.1093/database/baab019>
-
-64\. 
-[Capella-Gutierrez 2017]
-Salvador Capella-Gutierrez, Diana De La Iglesia, Juergen Haas, Analia Lourenco, José María Fernández, Dmitry Repchevsky, Christophe Dessimoz, Torsten Schwede, Cedric Notredame, Josep Ll Gelpi, Alfonso Valencia (2017):  
-**Lessons Learned: Recommendations for Establishing Critical Periodic Scientific Benchmarking**  
-<https://doi.org/10.1101/181677>
-
-65\. 
-[Coin 2024]
-Michael B. Hall & Lachlan J. M. Coin (2024):  
-**Pangenome databases improve host removal and mycobacteria classification from clinical metagenomic data**.  
-*GigaScience* **13** 
-<https://doi.org/10.1093/gigascience/giae010>
-
-66\. 
-[Roach 2024]
+\[Roach 2024\]
 Michael J. Roach, Sarah J. Beecroft, Kathie A. Mihindukulasuriya, Leran Wang, Anne Paredes, Luis Alberto Chica Cárdenas, Kara Henry-Cocks, Lais Farias Oliveira Lima, Elizabeth A. Dinsdale, Robert A. Edwards, Scott A. Handley (2024):  
 **Hecatomb: An integrated software platform for viral metagenomics**.  
 *GigaScience* **13** 
 <https://doi.org/10.1093/gigascience/giae020>
 
-67\. 
-[Wilkinson 2022]
+\[Rosa-Trevín 2016\]
+J. M. De La Rosa-Trevín, A. Quintana, L. Del Cano, A. Zaldívar, I. Foche, J. Gutiérrez, J. Gómez-Blanco, J. Burguet-Castell, J. Cuenca-Alba, V. Abrishami, J. Vargas, J. Otón, G. Sharov, J. L. Vilas, J. Navas, P. Conesa, M. Kazemi, R. Marabini, C. O. S. Sorzano, J. M. Carazo (2016):  
+**Scipion: A software framework toward integration, reproducibility and validation in 3D electron microscopy**.  
+*Journal of Structural Biology* **195**(1)  
+<https://doi.org/10.1016/j.jsb.2016.04.010>
+
+\[Rosnet 2024\]
+Thomas Rosnet, Alban Gaignard, Marie-Dominique Devignes, Sahar Frikha (2024):  
+**FAIR-checker**  
+<https://github.com/IFB-ElixirFr/fair-checker>
+
+\[Samaha 2023\]
+Johan Gustafsson & Georgina Samaha (2023):  
+**WORKSHOP: Make your bioinformatics workflows findable and citable**  
+<https://doi.org/10.5281/zenodo.7787488>
+
+\[Soiland-Reyes 2022\]
+Stian Soiland-Reyes, Peter Sefton, Mercè Crosas, Leyla Jael Castro, Frederik Coppens, José M. Fernández, Daniel Garijo, Björn Grüning, Marco La Rosa, Simone Leo, Eoghan Ó Carragáin, Marc Portier, Ana Trisovic, RO-Crate Community, Paul Groth, Carole Goble (2022):  
+**Packaging research artefacts with RO-Crate**.  
+*Data Science* **5**(2)  
+<https://doi.org/10.3233/DS-210053>
+
+\[Soiland-Reyes 2024a\]
+Stian Soiland-Reyes, Eli Chadwick, Finn Bacall, José M. Fernández, Björn Grüning, Hakan Bayındır (2024):  
+**EuroScienceGateway D2.1: Reproducible FAIR Digital Objects for Workflows**  
+<https://doi.org/10.5281/zenodo.13225792>
+
+\[Soiland-Reyes 2024b\]
+Stian Soiland-Reyes, Carole Goble, Finn Bacall, Johan Gustafsson, Rafael Andrade Buono (2024):  
+**A guide to using WorkflowHub**  
+<https://doi.org/10.48546/WORKFLOWHUB.SOP.13.4> (accessed 11 June 2024)
+
+\[Soiland-Reyes 2024c\]
+Stian Soiland-Reyes (2024):  
+**BioDT Guide to using WorkflowHub**  
+<https://doi.org/10.48546/WORKFLOWHUB.SOP.14.1> (accessed 8 July 2024)
+
+\[Soiland-Reyes 2024d\]
+Stian Soiland-Reyes (2024):  
+**The BGE guide to using WorkflowHub**  
+<https://doi.org/10.48546/WORKFLOWHUB.SOP.15.1> (accessed 8 July 2024)
+
+\[Stevens 2022\]
+Frankie Stevens (2022):  
+**Understanding how researchers find research software for research practice**.   
+_Zenodo_  
+<https://doi.org/10.5281/zenodo.7340034>
+
+\[Suetake 2022\]
+Hirotaka Suetake, Tomoya Tanjo, Manabu Ishii, Bruno P. Kinoshita, Takeshi Fujino, Tsuyoshi Hachiya, Yuichi Kodama, Takatomo Fujisawa, Osamu Ogasawara, Atsushi Shimizu, Masanori Arita, Tsukasa Fukusato, Takeo Igarashi, Tazro Ohta (2022):  
+**Sapporo: A workflow execution service that encourages the reuse of workflows in various languages in bioinformatics**.  
+*F1000Research* **11** 
+<https://doi.org/10.12688/f1000research.122924.1>
+
+\[Syme 2024\]
+Luke Silver & Anna Syme (2024):  
+**Find transcripts - TSI**  
+<https://doi.org/10.48546/WORKFLOWHUB.WORKFLOW.877.1>
+
+\[Tejedor 2017\]
+Enric Tejedor, Yolanda Becerra, Guillem Alomar, Anna Queralt, Rosa M. Badia, Jordi Torres, Toni Cortes, Jesús Labarta (2017):  
+**PyCOMPSs: Parallel computational workflows in Python**.  
+*The International Journal of High Performance Computing Applications* **31**(1)  
+<https://doi.org/10.1177/1094342015594678>
+
+\[Tommaso 2017\]
+Paolo Di Tommaso, Maria Chatzou, Evan W. Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame (2017):  
+**Nextflow enables reproducible computational workflows**.  
+*Nature Biotechnology* **35**(4)  
+<https://doi.org/10.1038/nbt.3820>
+
+\[Wilkinson 2016\]
+Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino Da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C. ’T Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene Van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan Van Der Lei, Erik Van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016):  
+**The FAIR Guiding Principles for scientific data management and stewardship**.  
+*Scientific Data* **3**(1)  
+<https://doi.org/10.1038/sdata.2016.18>
+
+\[Wilkinson 2022\]
 Sean R. Wilkinson, Greg Eisenhauer, Anuj J. Kapadia, Kathryn Knight, Jeremy Logan, Patrick Widener, Matthew Wolf (2022):  
 **F\*\*\* workflows: When parts of FAIR are missing**.  
 *2022 IEEE 18th International Conference on e-Science (e-Science)*   
 <https://doi.org/10.1109/eScience55777.2022.00090>
 
-68\. 
-[ELIXIR 2024]
-ELIXIR (2024):  
-**ELIXIR Annual Report 2023**  
-_F1000Research_ **13**(ELIXIR):779  
-<https://doi.org/10.7490/F1000RESEARCH.1119751.1>
+\[Wilkinson 2024\]
+Sean R. Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
+**Applying the FAIR Principles to Computational Workflows**  
+<https://doi.org/10.48550/arXiv.2410.03490>
 
-69\. 
-[Wolstencroft 2017]
+\[Wolstencroft 2017\]
 Katherine Wolstencroft, Olga Krebs, Jacky L. Snoep, Natalie J. Stanford, Finn Bacall, Martin Golebiewski, Rostyk Kuzyakiv, Quyen Nguyen, Stuart Owen, Stian Soiland-Reyes, Jakub Straszewski, David D. van Niekerk, Alan R. Williams, Lars Malmström, Bernd Rinn, Wolfgang Müller, Carole Goble (2017):  
 **FAIRDOMHub: A repository and collaboration environment for sharing systems biology research**.    
 *Nucleic Acids Research* **45**(D1)  
 <https://doi.org/10.1093/nar/gkw1032>
 
-70\. 
-[Hambley 2024]
-Alexander Hambley, Eli Chadwick, Oliver Woolland, Stian Soiland-Reyes, Volodymyr Savchenko (2024):  
-**WorkflowHub Knowledge Graph**  
-_Zenodo_
-<https://doi.org/10.5281/zenodo.13362051>
+\[Wratten 2021\]
+Laura Wratten, Andreas Wilm, Jonathan Göke (2021):  
+**Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers**.  
+*Nature Methods* **18**(10)  
+<https://doi.org/10.1038/s41592-021-01254-9>
 
-71\. 
-[Owen 2024]
-Stuart Owen, Finn Bacall, Lihua, maggy128, Vahid Kiani, Alan R. Williams, Xiaoming Hu, Kevin De Pelseneer, hleonov, Francisco Herrerías-Azcué, Alain Becam, Aitor Apaolaza, Tomasz Zielinski, Niall Beard, Robert Haines, Sonja Mathias, Vahid Kiani, Jeremy, Stian Soiland-Reyes, Quyen Nguyen, Christoph Beger, Eilidh Troup, Katrin Leinweber, Wolfgang Müller, Anthony Bretaudeau, Benjamin Mulelid, Arthur Rosendahl, Josh Kalderimis, susca (2024):  
-**Seek4science/seek: FAIRDOM-SEEK v1.15.0**  
-_Zenodo_
-<https://doi.org/10.5281/zenodo.11209855>
+\[Yuen 2021\]
+Denis Yuen, Louise Cabansay, Andrew Duncan, Gary Luu, Gregory Hogue, Charles Overbeck, Natalie Perez, Walt Shands, David Steinberg, Chaz Reid, Nneka Olunwa, Richard Hansen, Elizabeth Sheets, Ash O’Farrell, Kim Cullion, Brian D. O’Connor, Benedict Paten, Lincoln Stein (2021):  
+**The Dockstore: Enhancing a community platform for sharing reproducible and accessible computational protocols**.  
+*Nucleic Acids Research* **49**(W1)  
+<https://doi.org/10.1093/nar/gkab346>
+
 
 
 [Amstutz 2016]: https://doi.org/10.6084/M9.FIGSHARE.3115156.V2 "Common Workflow Language, v1.0"
