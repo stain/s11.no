@@ -577,7 +577,7 @@ Jun Zhao, Jose Manuel Gomez-Perez, Khalid Belhajjame, Graham Klyne, Esteban Garc
 
 \[Zulfiqar 2024\]
 Mahnoor Zulfiqar, Michael R. Crusoe, Birgitta König-Ries, Christoph Steinbeck, Kristian Peters, Luiz Gadelha (2024):  
-**Implementation of fair practices in computational metabolomics workflows—a case study**.  
+**Implementation of FAIR practices in computational metabolomics workflows—a case study**.  
 *Metabolites* **14**  
 <https://doi.org/10.3390/metabo14020118>
 
@@ -590,13 +590,13 @@ Mahnoor Zulfiqar, Michael R. Crusoe, Birgitta König-Ries, Christoph Steinbeck, 
 [Brack 2022]: https://doi.org/10.1371/journal.pcbi.1009823 "Ten simple rules for making a software tool workflow-ready"
 [Cohen-Boulakia 2017]: https://doi.org/10.1016/j.future.2017.01.012 "Scientific workflows for computational reproducibility in the life science"
 [Crusoe 2018]: https://web.archive.org/web/20221224155747/https://twitter.com/biocrusoe/status/976827491460493312 "From a chat with @soilandreyes.."
-[Crusoe 2022]: https://doi.org/10.1145/3486897 "Methods included"
+[Crusoe 2022]: /2022/phd/methods-included "Methods included"
 [da Silva 2023]: https://doi.org/10.5281/zenodo.7750670 "Workflows community summit 2022"
 [de Visser 2023]: https://doi.org/10.1371/journal.pcbi.1011369 "Ten quick tips for building FAIR workflows"
 [Di Tommaso 2017]: https://doi.org/10.1038/nbt.3820 "Nextflow enables reproducible computational workflows"
 [Galaxy 2024]: https://doi.org/10.1093/nar/gkae410 "The Galaxy platform for accessible, reproducible, and collaborative data analyses: 2024 update"
-[Goble 2020]: https://doi.org/10.1162/dint_a_00033 "FAIR computational workflows"
-[Goble 2021]: https://doi.org/10.5281/zenodo.4605654 "Implementing FAIR digital objects in the EOSC-Life workflow collaboratory"
+[Goble 2020]: /2020/fair-computational-workflows/ "FAIR computational workflows"
+[Goble 2021]: /2021/phd/workflow-collaboratory "Implementing FAIR digital objects in the EOSC-Life workflow collaboratory"
 [Goode 2013]: https://doi.org/10.4103/2153-3539.119005 "OpenSlide: A vendor-neutral software foundation for digital pathology"
 [Hoyt 2024]: https://doi.org/10.1038/s41597-024-03406-w "The O3 guidelines"
 [Ison 2013]: https://doi.org/10.1093/bioinformatics/btt113 "EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats"
@@ -612,8 +612,8 @@ Mahnoor Zulfiqar, Michael R. Crusoe, Birgitta König-Ries, Christoph Steinbeck, 
 [Richardson 2022]: https://doi.org/10.1093/nar/gkac1080 "MGnify: the microbiome sequence data analysis resource in 2023"
 [Schintke 2024]: https://doi.org/10.1016/j.future.2024.03.037 "Validity constraints for data analysis workflows"
 [Sefton 2023]: https://doi.org/10.5281/zenodo.7867028 "RO-Crate metadata specification 1.1.3"
-[Soiland-Reyes 2022a]: https://doi.org/10.3233/ds-210053 "Packaging research artefacts with RO-Crate"
-[Soiland-Reyes 2022b]: https://doi.org/10.1162/dint_a_00135 "Making canonical workflow building blocks interoperable across workflow languages"
+[Soiland-Reyes 2022a]: /2022/phd/ro-crate/ "Packaging research artefacts with RO-Crate"
+[Soiland-Reyes 2022b]: /2022/phd/canonical-workflow-building-blocks/ "Making canonical workflow building blocks interoperable across workflow languages"
 [Turilli 2019]: https://doi.org/10.1109/mcse.2019.2920048 "Middleware building blocks for workflow systems"
 [Voss 2017]: https://doi.org/10.7490/f1000research.1114634.1 "Full-stack genomics pipelining with GATK4 + WDL + Cromwell"
 [Wilkinson 2016]: https://doi.org/10.1038/sdata.2016.18 "The FAIR guiding principles for scientific data management and stewardship"
@@ -621,4 +621,4 @@ Mahnoor Zulfiqar, Michael R. Crusoe, Birgitta König-Ries, Christoph Steinbeck, 
 [Wolf 2021]: https://doi.org/10.1109/Cluster48925.2021.00053 "Reusability first: Toward fair workflows"
 [Yuen 2021]: https://doi.org/10.1093/nar/gkab346 "The Dockstore: Enhancing a community platform for sharing reproducible and accessible computational protocols"
 [Zhao 2012]: https://doi.org/10.1109/escience.2012.6404482 "Why workflows break – understanding and combating decay in Taverna workflows"
-[Zulfiqar 2024]: https://doi.org/10.3390/metabo14020118 "Implementation of fair practices in computational metabolomics workflows—a case study"
+[Zulfiqar 2024]: https://doi.org/10.3390/metabo14020118 "Implementation of FAIR practices in computational metabolomics workflows—a case study"
