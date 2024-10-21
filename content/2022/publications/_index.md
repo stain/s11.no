@@ -482,8 +482,8 @@ _IEEE Internet Computing_ **17**(6) pp 71-75.
 
 Hyde Zhang, Stian Soiland-Reyes, Carole Goble (2013):  
 [**Taverna Mobile: Taverna workflows on Android**](http://journal.embnet.org/index.php/embnetjournal/article/view/727/999).  
-_EMBnet.journal_ **19**(B).
-At [NETTAB 2013](http://web.archive.org/web/20201111205412/www.nettab.org/2013/) Workshop_ on “Semantic, Social, and Mobile Applications for Bioinformatics and Biomedical Laboratories”, 16-18 October 2013, Lido of Venice, Italy.  
+_[NETTAB 2013](http://web.archive.org/web/20201111205412/www.nettab.org/2013/) Workshop_ on “Semantic, Social, and Mobile Applications for Bioinformatics and Biomedical Laboratories”, 16-18 October 2013, Lido of Venice, Italy.  
+_EMBnet.journal_ **19**(B)  
 <https://doi.org/10.14806/ej.19.B.727>
 
 Katherine Wolstencroft, Robert Haines, Donal Fellows, Alan Williams, David Withers, Stuart Owen, Stian Soiland-Reyes, Ian Dunlop, Aleksandra Nenadic, Paul Fisher, Jiten Bhagat, Khalid Belhajjame, Finn Bacall, Alex Hardisty, Abraham Nieva de la Hidalga, Maria P. Balcazar Vargas, Shoaib Sufi, Carole Goble (2013):  
@@ -493,7 +493,7 @@ _Nucleic Acids Research_ **41**(W1), W557-W561.
 
 Khalid Belhajjame, Jun Zhao, Daniel Garijo, Aleix Garrido, Stian Soiland-Reyes, Pinar Alper, Oscar Corcho (2013):  
 **A workflow PROV-corpus based on Taverna and Wings**.  
-_Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp. 331–332.  
+_Proceedings of the Joint EDBT/ICDT 2013 Workshops_  
 <https://doi.org/10.1145/2457317.2457376>
 [[pdf]](http://delicias.dia.fi.upm.es/members/dgarijo/papers/prov-bench-paper.pdf)
 [[related website]](https://github.com/provbench/Wf4Ever-PROV)
@@ -503,14 +503,14 @@ _Proceedings of the Joint EDBT/ICDT 2013 Workshops_, ACM, New York, NY, USA, pp.
 
 Jun Zhao, Graham Klyne, Piotr Hołubowicz, Raúl Palma, Stian Soiland-Reyes, Kristina Hettne, José Enrique Ruiz, Marco Roos, Kevin Page, José Manuel Gómez-Pérez, David De Roure, Carole Goble (2012):  
 [**RO-Manager: A Tool for Creating and Manipulating Research Objects to Support Reproducibility and Reuse in Sciences**](https://ceur-ws.org/Vol-951/paper9.pdf).  
-_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.
-In: _CEUR Workshop Proceedings_ **951**:9  
+_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.  
+_CEUR Workshop Proceedings_ **951**:9  
 <https://ceur-ws.org/Vol-951/paper9.pdf>
 
 Kevin Page, Raúl Palma, Piotr Hołubowicz, Graham Klyne, Stian Soiland-Reyes, Don Cruickshank, Rafael González Cabero, Esteban Garciá Cuesta, David De Roure, Jun Zhao, José Manuel Gómez-Pérez (2012):  
 [**From Workflows to Research Objects: An Architecture for Preserving the Semantics of Science**](https://ceur-ws.org/Vol-951/paper7.pdf).  
-_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.
-In: _CEUR Workshop Proceedings_ **951**:7  
+_Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data_, 2012-10-22.  
+_CEUR Workshop Proceedings_ **951**:7  
 <https://ceur-ws.org/Vol-951/paper7.pdf>
 
 Kristina Hettne, Stian Soiland-Reyes, Graham Klyne, Khalid Belhajjame, Matthew Gamble, Sean Bechhofer, Marco Roos, Oscar Corcho (2011):  
@@ -521,7 +521,7 @@ _ACM International Conference Proceeding Series_ (SWAT4LS '11).
 
 Khalid Belhajjame, Oscar Corcho, Daniel Garijo, Jun Zhao, Paolo Missier, David R. Newman, Raul Palma, Sean Bechhofer, Esteban Garcia Cuesta, Jose Manuel Gomez-Perez, Graham Klyne, Kevin Page, Marco Roos, José Enrique Ruiz, Stian Soiland-Reyes, Lourdes Verdes-Montenegro, David De Roure, Carole Goble (2012):  
 [**Workflow-centric research objects: First class citizens in scholarly discourse**](https://ceur-ws.org/Vol-903/paper-01.pdf).  
-_CEUR Workshop Proceedings_ **903**:1
+_CEUR Workshop Proceedings_ **903**:1  
 <https://ceur-ws.org/Vol-903/paper-01.pdf>
 
 ## 2011
