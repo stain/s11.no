@@ -269,7 +269,7 @@ _Data Intelligence_ **2**(1):30–39
 ## 2019
 
 Farah Zaib Khan, Stian Soiland-Reyes, Richard O. Sinnott, Andrew Lonie, Carole Goble, Michael R. Crusoe (2019):  
-[**Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**](https://doi.org/10.1093/gigascience/giz095).  
+[**Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLProv**](/2019/cwlprov/).  
 _GigaScience_ **8**(11):giz095  
 <https://doi.org/10.1093/gigascience/giz095>
 
