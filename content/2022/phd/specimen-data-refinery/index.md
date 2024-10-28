@@ -4,6 +4,7 @@ title: >
 weight: 52
 categories:
   - PhD
+  - Publications
 keywords:
   - Digital Specimen
   - Workflow

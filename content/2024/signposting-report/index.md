@@ -1,7 +1,7 @@
 ---
 title: 'Report on FAIR Signposting and its Uptake by the Community'
 categories:
-  - Publication
+  - Reports
 summary: >
   EOSC Task Force report
 description: >

@@ -1,9 +1,8 @@
 ---
 title: "Ten Simple Rules for making a software tool workflow-ready"
-weight: 210
 lang: en-GB
 categories:
-  - PhD
+  - Publications
 date-meta: '2022-01-10'
 summary: > 
   Journal article published in _PLOS Computational Biology_

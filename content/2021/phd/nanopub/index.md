@@ -1,21 +1,20 @@
 ---
 title: "Semantic micro-contributions with decentralized nanopublication services"
-weight: 250
 categories:
-  - PhD
+  - Publications
 authors:
 - name: Tobias Kuhn
-  orcid:  
+  orcid: https://orcid.org/0000-0002-6725-3470
 - name: Ruben Taelman
-  orcid:  
+  orcid:  https://orcid.org/0000-0001-5118-256X
 - name: Vincent Emonet
-  orcid:  
+  orcid:  Vincent Emonet
 - name: Haris Antonatos
-  orcid:  
+  orcid: https://www.linkedin.com/in/harisantonatos/
 - name: Stian Soiland-Reyes
-  orcid:  
+  orcid:  https://orcid.org/0000-0001-9842-9718
 - name: Michel Dumontier
-  orcid:  
+  orcid: https://orcid.org/0000-0003-4727-9435
 lang: en-GB
 summary: > 
   Journal article published in _PeerJ Computer Science_

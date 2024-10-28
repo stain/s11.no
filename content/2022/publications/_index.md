@@ -35,7 +35,7 @@ _PLOS One_ **19**(9):e0309210
 <https://doi.org/10.1371/journal.pone.0309210>
 
 Jonas Grieb, Claus Weiland, Alexander Wolodkin, Leyla Jael Castro, Stian Soiland-Reyes, Maya Beukes, Martin Jansen (2024):  
-**Using Webby FDOs to Integrate AI Taxon Identification and Citizen Science**.  
+[**Using Webby FDOs to Integrate AI Taxon Identification and Citizen Science**](https://doi.org/10.3897/biss.8.134757).  
 _Biodiversity Information Science and Standards_ **8**:e134757  
 <https://doi.org/10.3897/biss.8.134757>
 
@@ -71,7 +71,7 @@ Peter Sefton, Stian Soiland-Reyes (2024):
 <https://research.manchester.ac.uk/en/publications/five-ways-ro-crate-data-packages-are-important-for-repositories>
 
 José M. Fernández, Paula Iborra, Sébastien Moretti, Arun Isaac, Paul De Geest, Stian Soiland-Reyes (2024):  
-**BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate**.  
+[**BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate**](https://doi.org/10.37044/osf.io/7f94w).  
 _BioHackrXiv_  
 <https://doi.org/10.37044/osf.io/7f94w>
 

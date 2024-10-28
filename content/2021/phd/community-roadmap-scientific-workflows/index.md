@@ -1,8 +1,7 @@
 ---
 title: "Scientific workflows, community roadmap, data management, AI workflows, exascale computing, interoperability"
-weight: 290
 categories:
-  - PhD
+  - Publications
 keywords:
   - scientific workflows
   - community roadmap

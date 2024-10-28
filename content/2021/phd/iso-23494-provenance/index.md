@@ -1,8 +1,7 @@
 ---
 title: "ISO 23494: Biotechnology – Provenance Information Model for Biological Specimen and Data"
-weight: 270
 categories:
-  - PhD
+  - Conferences
 keywords:
   - provenance
   - biotechnology

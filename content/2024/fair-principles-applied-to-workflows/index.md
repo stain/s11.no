@@ -1,7 +1,7 @@
 ---
 title: Applying the FAIR Principles to Computational Workflows
 categories:
-  - Publication
+  - Preprints
 summary: >
   arXiv preprint submitted to Scientific Data
 description: >

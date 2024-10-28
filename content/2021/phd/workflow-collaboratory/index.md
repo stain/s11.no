@@ -1,14 +1,15 @@
 ---
 title: "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory"
-weight: 230
 lang: en-GB
-categories:
-  - PhD
 date-meta: '2021-03-01'
+categories:
+ - Preprints
 summary: >
   Zenodo white paper
 description: >
-  ..
+  EOSC-Life is developing a cloud-based workflow collaboratory to drive implementation of FAIR workflows across disciplines and RI boundaries, and foster tool- focused collaborations and reuse between communities via the sharing of data analysis workflows. The collaboratory aims to provide a framework for researchers and workflow specialists to use and reuse workflows
+  
+  EOSC-Life has developed WorkflowHub as an inclusive workflow registry, agnostic to any Workflow Management System (WfMS). WorkflowHub aims to incorporate their workflows in partnership with the WfMS, to embed the registration of workflows in the community processes, e.g. based on pre-existing workflow repositories. The registry adopts common practices, e.g.use of GitHub repositories, and supports integration with the ecosystem of tool packages, assisted by registries (bio.tools, biocontainers), and services for testing and benchmarking workflows (OpenEBench, LifeMonitor).
 ---
 
 <h2>Cite as</h2>

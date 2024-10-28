@@ -4,6 +4,7 @@ weight: 54
 lang: en-GB
 categories:
   - PhD
+  - Publications
 keywords:
   - workflow
   - provenance

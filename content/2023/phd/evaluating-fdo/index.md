@@ -6,6 +6,7 @@ aliases:
  - /2022/phd/evaluating-fdo/
 categories:
   - PhD
+  - Publications
 keywords:
   - FAIR
   - FDO

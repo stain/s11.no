@@ -1,7 +1,7 @@
 ---
 title: "WorkflowHub: a registry for computational workflows"
 categories:
-  - Publication
+  - Preprints
 summary: >
   arXiv preprint 
 description: >

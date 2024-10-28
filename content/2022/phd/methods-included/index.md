@@ -1,9 +1,7 @@
 ---
 title: "Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language"
-weight: 240
-bib: references.bib
 categories:
-    - PhD
+    - Publications
 keywords:
     - workflows
     - computational data analysis

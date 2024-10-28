@@ -1,9 +1,8 @@
 ---
 title: "Linking provenance and its metadata in multi-organizational environments of life sciences"
-weight: 380
 lang: en-GB
 categories:
-  - PhD
+  - Preprints
 summary: >
   Preprint submitted to PeerJ CS
 description: >
