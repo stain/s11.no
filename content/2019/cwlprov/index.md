@@ -128,14 +128,18 @@ A domain-specific solution is proposed by [42] by extending the RO model to equi
 
 A range of standards for provenance representation have been proposed. Many studies have emphasized the need for provenance focusing on aspects such as scalability, granularity, security, authenticity, modelling and annotation [18]. They identify the need to support standardized dialogues to make provenance interoperable. Many of these were used as inputs to initial attempts at creating a standard Provenance Model to tackle the often inconsistent and disjointed terminology related to provenance concepts. This ultimately resulted in the specification of the *Open Provenance Model* (OPM)[44] together with an open-source model for the governance of OPM [45]. Working towards similar goals of interoperability and standardization of provenance for web technologies, the World Wide Web Consortium (W3C) Provenance Incubator Group [46] and the authors of OPM together set the fourth provenance challenge at the International Provenance and Annotation Workshop, 2010 (IPAW’10) that later resulted in *PROV*, a family of documents serving as the conceptual model for provenance capture, its representation, sharing and exchange over the Web [47] regardless of the domain or platform. Since then, a number of studies have proposed extensions to this domain-neutral standard. The model is general enough to be adapted to any field and flexible enough to allow extensions for specialized cases.
 
-[48] presented a domain-specific PROV-based solution for retrospective provenance to support portability and reproducibility of a statistical software suite. They captured the essential elements from the log of a workflow enactment and represented them using an intermediate notation. This representation was later translated to PROV-N and used as the basis for the PROV Template System. A Linux specific system provenance approach was proposed in [49] where they demonstrated retrospective provenance capture at the system level. Another project *UniProv* is working to extract information from Unicore middleware and transform it into a PROV-O representation to facilitate the back-tracking of workflow enactments [50]. Other notable domain-specific efforts leveraging the established standards to record provenance and context information are *PROV-man* [51], PoeM [52] and micropublications [53]. Platforms such as VisTrails and Taverna have built in retrospective provenance support. *Taverna* [7] implements an extensive provenance capture system *TavernaProv*[54], utilising both PROV ontologies as well as ROs aggregating the resources used in an analysis. *VisTrails*[55] is an open source project supporting platform-dependent provenance capture, visualisation and querying for extraction of required information about a workflow enactment. [41] provide an overview of PROV terms and how they can be translated from the VisTrails schema and serialized to PROV-XML. *WINGS*[56] can report fine-grained workflow execution provenance as Linked Data using the OPMW ontology [57], which builds on both PROV-O and OPM.
+[48] presented a domain-specific PROV-based solution for retrospective provenance to support portability and reproducibility of a statistical software suite. They captured the essential elements from the log of a workflow enactment and represented them using an intermediate notation. This representation was later translated to PROV-N and used as the basis for the PROV Template System. A Linux specific system provenance approach was proposed in [49] where they demonstrated retrospective provenance capture at the system level. Another project *UniProv* is working to extract information from Unicore middleware and transform it into a PROV-O representation to facilitate the back-tracking of workflow enactments [50]. Other notable domain-specific efforts leveraging the established standards to record provenance and context information are *PROV-man* [51], PoeM [52] and micropublications [53]. Platforms such as VisTrails and Taverna have built in retrospective provenance support. *Taverna* [7] implements an extensive provenance capture system *TavernaProv* [54], utilising both PROV ontologies as well as ROs aggregating the resources used in an analysis. *VisTrails* [55] is an open source project supporting platform-dependent provenance capture, visualisation and querying for extraction of required information about a workflow enactment. [41] provide an overview of PROV terms and how they can be translated from the VisTrails schema and serialized to PROV-XML. *WINGS* [56] can report fine-grained workflow execution provenance as Linked Data using the OPMW ontology [57], which builds on both PROV-O and OPM.
 
 All these efforts are fairly recent and use a standardized approach to provenance capture and hence are relevant to our work on the capture of retrospective provenance. However, our aim is a domain-neutral and platform-independent solution that can be easily adapted for any domain and shared across different platforms and operating systems.
 
 As evident from the literature, there are efforts in progress to resolve the issues associated with effective and complete sharing of computational analysis including both the results and provenance information. These studies range from highly domain-specific solutions and platform-dependent objects to open source flexible interoperable standards. CWL has widespread adoption as a workflow definition standard, hence is an ideal candidate for portable workflow definitions. The next section investigates existing studies focused on workflow-centric science, and summarises best practice recommendations put forward in these studies. From this we define a hierarchical provenance and resource sharing framework.
 
-![image](images/recommendations2.svg)
+{{< figure src="images/recommendations2.svg" link="images/recommendations2.svg" id="fig:recommendationclasses" 
+  width="100%" title="Recommendations"
+  caption="Classified from [Table 1](#tab:recommendation:wide) into these categories" >}}
 
+
+<div id="tab:recommendation:wide">
 
 | #  | Recommendations | Justifications |
 | -- | --------------- | -------------- |
@@ -158,6 +162,8 @@ R16 | Data, code and all workflow steps should be shared in a format that others
 R17 | Promote easy execution of workflows without making significant changes to the underlying environment (Spjuth et al. [2015](#ref-Spjuth2015)). | In addition to helping reproducibility, this enables adapting the analysis methods to other infrastructures and improves workflow portability.
 R18 | Information about compute and storage resources should be stored and shared as part of the workflow (Kanwal et al. [2017](#ref-kanwal_2017)). | Such information can assist users in estimating the required resources needed for an analysis and thereby reduce the amount of failed executions.
 R19 | Example input and sample output data should be preserved and published along with the workflow-based analysis (Belhajjame et al. [2015](#ref-belhajjame_2015); Zhao et al. [2012](#ref-Zhao2012)). | This information enables more efficient test runs of an analysis to verify and understand the methods used.
+
+</div>
 
 <!--
 <span>p<span>1.4cm</span> L L</span>
@@ -185,17 +191,20 @@ R19 & Example input and sample output data should be preserved and published alo
 
 This list is not exhaustive, other studies have identified separate issues (e.g. lab work provenance and data security) that are beyond the scope of this work.
 
-## Levels of Provenance and Resource Sharing
+## Levels of Provenance and Resource Sharing {#levels}
 
-Various studies have empirically investigated the role of automated computational methods in the form of workflows and published best practice recommendations to support workflow design, preservation, understandability and re-use. We summarise a number of these recommendations and the their justifications in Table [[tab:recommendation:wide]](#tab:recommendation:wide), where each recommendation addresses specific requirement of workflow design and sharing. These recommendations can be clustered into broad themes as shown in Figure [[fig:recommendationclasses]](#fig:recommendationclasses). This classification can be in more than one way e.g. according to how these recommendations are supporting each FAIR dimension [67]. In this study, we have focused on categories with respect to workflow design, prospective provenance, data sharing, retrospective provenance, the computational environment required/used for an analysis and lastly better findability and understandability of all shared resources.
+Various studies have empirically investigated the role of automated computational methods in the form of workflows and published best practice recommendations to support workflow design, preservation, understandability and re-use. We summarise a number of these recommendations and the their justifications in Table [[tab:recommendation:wide]](#tab:recommendation:wide), where each recommendation addresses specific requirement of workflow design and sharing. These recommendations can be clustered into broad themes as shown in [Figure 1](#fig:recommendationclasses). This classification can be in more than one way e.g. according to how these recommendations are supporting each FAIR dimension [67]. In this study, we have focused on categories with respect to workflow design, prospective provenance, data sharing, retrospective provenance, the computational environment required/used for an analysis and lastly better findability and understandability of all shared resources.
 
-Sharing *“all artefacts”* from a computational experiment (following all recommendations and best practices) is a demanding task without any informed guidance. It requires consolidated understanding of the impact of the many different artefacts involved in that analysis. This places extra efforts on workflow designers, (re)-users, authors, reviewers and expectations on the community as a whole. Given the numerous WMS and differences in how each system deals with provenance documentation, representation and sharing of these artefacts, the granularity of provenance information preserved will vary for each workflow definition approach. Hence, devising one universal but technology-specific solution for provenance capture and the related resource sharing is impossible. Instead we propose a generic framework of provenance in Figure [[fig:levels]](#fig:levels) that all WMSs can benefit from and conform to with minimum technical overheads.
+Sharing *“all artefacts”* from a computational experiment (following all recommendations and best practices) is a demanding task without any informed guidance. It requires consolidated understanding of the impact of the many different artefacts involved in that analysis. This places extra efforts on workflow designers, (re)-users, authors, reviewers and expectations on the community as a whole. Given the numerous WMS and differences in how each system deals with provenance documentation, representation and sharing of these artefacts, the granularity of provenance information preserved will vary for each workflow definition approach. Hence, devising one universal but technology-specific solution for provenance capture and the related resource sharing is impossible. Instead we propose a generic framework of provenance in [Figure 2](#fig:levels) that all WMSs can benefit from and conform to with minimum technical overheads.
 
 The recommendations in Table [[tab:recommendation:wide]](#tab:recommendation:wide) aid in our understanding to define this framework by classifying the granularity of the provenance and related artefacts where the uppermost level exhibits comprehensive, reproducible, understandable and provenance-rich computational experiment sharing. The purpose of this framework is threefold. First, because of its generic nature it brings the uniformity in the provenance granularity across various WMS belonging to different workflow definition approaches. Second, it provides comprehensive and well-defined guidelines that can be used by the researchers to conduct principled analysis of the provenance of any published study. Third, due to its hierarchical nature, the framework can be leveraged by the workflow authors to progress incrementally towards the most transparent workflow-centric analysis. Overall, this framework will help achieve a uniform level of provenance and resource sharing with a given workflow-centric analysis guaranteed to fulfill the respective provenance applications.
 
 Our proposed provenance levels are ordered from low granularity to higher degrees of specificity. In brief, **Level 0** is unstructured information about the overall workflow enactment, **Level 1** adds structured retrospective provenance, access to primary data and executable workflows, **Level 2** enhances the white-box provenance for individual steps, and ***Level 3*** adds domain-specific annotations for improved understanding. These levels are described in the following sub-sections and mapped to the requirements in Table [[tab:recommendation:wide]](#tab:recommendation:wide) that these levels aim to satisfy.
 
-![image](images/ProvenanceLevels.svg)
+{{< figure src="images/ProvenanceLevels.svg" link="images/ProvenanceLevels.svg" id="fig:levels" 
+  width="100%" title="Levels of Provenance and resource sharing and their applications"
+  caption="" >}}
+
 
 ### Level 0
 
@@ -235,21 +244,24 @@ Requiring researchers to achieve the above defined levels individually is unreal
 
 Here we present *CWLProv*, a format for the methodical representation of workflow enactment, associated artefacts and capturing and using retrospective provenance information. Keeping in view the recommendations from Table [[tab:recommendation:wide]](#tab:recommendation:wide) for example *R15-open-source* and *R16-format*, we leverage **open-source**, **domain-independent**, **system-neutral**, **interoperable** and most importantly **community-driven** standards as the basis for the design and formatting of reproducible and interoperable workflow-based ROs. The profile description in this section correspond to *CWLProv* 0.6.0 [84]. (see <https://w3id.org/cwl/prov> for the latest profile).
 
-### Applied Standards and Vocabularies
+### Applied Standards and Vocabularies {#standards}
 
 We follow the recommendation *“Reuse vocabularies, preferably standardized ones”* [85] from best practices associated with data sharing, representation and publication on the web to achieve consensus and interoperability of workflow-based analyses. Specifically we integrate the *Common Workflow Language* (CWL) for workflow definition, *Research Objects* (ROs) for resource aggregation and the *PROV-Data Model* (PROV-DM) to support the retrospective provenance associated with workflow enactment. The key properties and principles of these standards are described below.
 
-#### Common Workflow Language (CWL)
+#### Common Workflow Language (CWL) {#cwl}
 
 Common Workflow Language [11] provides declarative constructs for workflow structure and command line tool interface definition. It makes minimal assumptions about base software dependencies, configuration settings, software versions, parameter settings or indeed the execution environment more generally [6]. The CWL object model supports comprehensive recording and capture of information for workflow design and execution. This can subsequently be published as structured information alongside any resultant analysis using that workflow.
 
 CWL is a community-driven standard effort that has been widely adopted by many workflow design and execution platforms, supporting interoperability across a set of diverse platforms. Current adopters include Toil, Arvados, Rabix [86], Cromwell [87], REANA, and Bcbio [88] with implementations for Galaxy, Apache Taverna, and AWE currently in progress.
 
-![image](images/twostep.png)
+{{< figure src="images/twostep.png" link="images/twostep.png" id="fig:bwa-mem" 
+  width="100%" title="Steps in CWL workflows"
+  caption="Left: A snapshot of part of a GATK workflow described using CWL. Two steps named as `bwa-mem` and `samtools-view` are shown where the former links to the tool description executing the underlying tool (BWA-mem for alignment) and provides the output used as input for samtools. <br>Right: Snapshot of `BWA-mem.cwl` and the associated Docker requirements for the exact tool version used in the workflow execution." >}}
 
-A workflow in CWL is composed of “steps” where each step refers either to a command line tool (also specified using CWL) or another workflow specification incorporating the concept of “sub-workflows”. Each “step” is associated with “inputs” that are comprised of any data artefact required for the execution of that step (Figure [[fig:bwa-mem]](#fig:bwa-mem)). As a result of the execution of each step, “outputs” are produced which can become (part of) “inputs” for the next steps making the execution data-flow oriented. CWL is not tied to a specific operating system or platform which makes it an ideal approach for interoperable workflow definitions.
 
-####  Research Object (RO)
+A workflow in CWL is composed of “steps” where each step refers either to a command line tool (also specified using CWL) or another workflow specification incorporating the concept of “sub-workflows”. Each “step” is associated with “inputs” that are comprised of any data artefact required for the execution of that step ([Figure 3](#fig:bwa-mem)). As a result of the execution of each step, “outputs” are produced which can become (part of) “inputs” for the next steps making the execution data-flow oriented. CWL is not tied to a specific operating system or platform which makes it an ideal approach for interoperable workflow definitions.
+
+####  Research Object (RO) {#cwl}
 
 A Research Object encapsulates all of the digital artefacts associated with a given computational analysis contributing towards preservation of the analysis [89], together with their metadata, provenance and identifiers.
 
@@ -261,18 +273,24 @@ While ROs can be serialized in several different ways, in this work we have reus
 
 #### PROV Data Model (PROV-DM)
 
-The World Wide Web Consortium (W3C) developed *PROV*, a suite of specifications for unified/interoperable representation and publication of provenance information on the Web. The underlying conceptual PROV Data Model (PROV-DM) [19] provides a domain-agnostic model designed to capture fundamental features of provenance with support for extensions to integrate domain-specific information (Figure [1](#fig:prov-dm)).
+The World Wide Web Consortium (W3C) developed *PROV*, a suite of specifications for unified/interoperable representation and publication of provenance information on the Web. The underlying conceptual PROV Data Model (PROV-DM) [19] provides a domain-agnostic model designed to capture fundamental features of provenance with support for extensions to integrate domain-specific information ([Figure 4](#fig:prov-dm)).
 
-![Core concepts of the PROV Data Model.  
-Adapted from W3C PROV Model Primer [92]. ](images/key-concepts.svg)
+{{< figure src="images/key-concepts.svg" link="images/key-concepts.svg" id="fig:prov-dm" 
+  width="100%" title="Core concepts of the PROV Data Model"
+  caption="Adapted from W3C PROV Model Primer [92]." >}}
+
 
 We utilize mainly two serialisations of PROV for this study, PROV-Notation (PROV-N) [93] and PROV-JSON [94]. PROV-N is designed to achieve serialisation of PROV-DM instances by formally representing the information using a simplified textual syntax to improve human readability. PROV-JSON is a lightweight interoperable representation of PROV assertions using JavaScript constructs and data types. The key design and implementation principles of these two serialisations of PROV are in compliance with the goals of this study, i.e. understandable and interoperable, hence are a natural choice to support the design of an adaptable provenance profile. For completeness we also explored serializing the provenance graph as PROV-XML [95] as well as PROV-O [96], which provides a mapping to Linked Data and ontologies, with potential for rich queries and further integration using a triple store. One challenge here is the wide variety of OWL and RDF formats, we opted for Turtle, N-Triples and JSON-LD, but concluded that requiring all of these PROV and RDF serializations would be an unnecessary burden for other implementations of *CWLProv*.
 
 #### CWLProv Research Object
 
-The provenance framework defined in previous section can be satisfied by using a structured approach to share the identified resources. In this section, we define the representation of data and metadata to be shared for a given workflow enactment, stored as multiple files in their native formats. The folder structure of the *CWLProv* Research Object complies with the *BagIt* [14] format such that its content and completeness can be verified with any BagIt tool or library (see box **What is BagIt?**). The files used and generated by the workflow are here considered the *data payload*; the remaining directories include *metadata* of how the workflow results were created. We systematized the aggregated resources into various collections for better understanding and accessibility for a CWL workflow execution (Figure [[fig:RO-format]](#fig:RO-format)).
+The provenance framework defined in previous section can be satisfied by using a structured approach to share the identified resources. In this section, we define the representation of data and metadata to be shared for a given workflow enactment, stored as multiple files in their native formats. The folder structure of the *CWLProv* Research Object complies with the *BagIt* [14] format such that its content and completeness can be verified with any BagIt tool or library (see box **What is BagIt?**). The files used and generated by the workflow are here considered the *data payload*; the remaining directories include *metadata* of how the workflow results were created. We systematized the aggregated resources into various collections for better understanding and accessibility for a CWL workflow execution ([Figure 5](#fig:RO-format)).
 
-![image](images/RO-structure-NEW.svg)
+{{< figure src="images/RO-structure-NEW.svg" link="images/RO-structure-NEW.svg" id="fig:RO-format" 
+  width="100%" title="Schematic representation of the aggregation and links between the components of a given workflow enactment"
+  caption="Layers of execution are separated for clarity. The workflow specification and command line tool specifications are described using CWL. Each individual command line tool specification can optionally interact with Docker to satisfy software dependencies. <br>**(A)** The RO layer shows the structure of the RO including its content and interactions with different components in the RO and **(B)** the CWL layer." >}}
+
+
 
 ##### data/
 
@@ -426,19 +444,22 @@ The core mapping is following the PROV data model as in Figure [1](#fig:prov-dm)
 
 PROV is a general standard not specific to workflows, and lacks features to relate a *plan* (i.e. a workflow description) with sub-plans and workflow-centric retrospective provenance elements e.g. specific workflow enactment and its related steps enactment. We have utilized *wfdesc* and *wfprov* to represent few elements of prospective and retrospective provenance respectively. In addition, the provenance profile documented details of all the uniquely identified *activities* e.g. workflow enactment and related command line tool invocations, their associated *entities* (e.g. input and output data artefacts, input configuration files, workflows and command line tool specifications). The profile also documents the relationship between activities such as which activity (workflow enactment) was responsible for starting and ending another activity (command line tool invocation).
 
-As described in Section ****, in order to achieve maximum *white-box* provenance, the inner workings of a nested workflow should also be included in the provenance trace. If a step represents a nested workflow, a separate provenance profile is included in the RO. Moreover, in the parent workflow trace, this relationship is recorded using *has\_provenance* as an attribute of the *Activity* step which refers to the profile of the nested workflow.
+As described in [Section Levels of Provenance and Resource Sharing](#levels), in order to achieve maximum *white-box* provenance, the inner workings of a nested workflow should also be included in the provenance trace. If a step represents a nested workflow, a separate provenance profile is included in the RO. Moreover, in the parent workflow trace, this relationship is recorded using *has\_provenance* as an attribute of the *Activity* step which refers to the profile of the nested workflow.
 
 ## Practical Realisation of CWLProv
 
-*CWLProv* [84] provides a format that can be adopted by any workflow executor or platform, provided that the underlying workflow definition approach is at least as declarative as CWL, i.e. it captures the necessary components described in Section ****. In the case of CWL, as long as the conceptual constructs are common amongst the available implementations and executors, a workflow enactment can be represented in *CWLProv* format. To demonstrate the practical realisation of the proposed model we consider a Python-based reference implementation of CWL *cwltool*.
+*CWLProv* [84] provides a format that can be adopted by any workflow executor or platform, provided that the underlying workflow definition approach is at least as declarative as CWL, i.e. it captures the necessary components described in [Section ](#standards). In the case of CWL, as long as the conceptual constructs are common amongst the available implementations and executors, a workflow enactment can be represented in *CWLProv* format. To demonstrate the practical realisation of the proposed model we consider a Python-based reference implementation of CWL *cwltool*.
 
 *cwltool* is a feature complete reference implementation of CWL. It provides extensive validation of CWL files as well as offering a comprehensive set of test cases to validate new modules introduced as extensions to the existing implementation. Thus it provides the ideal choice for implementing *CWLProv* for provenance support and resource aggregation. The existing classes and methods of the implementation were utilized to achieve various tasks such as packaging of the workflow and all associated tool specifications together. In addition, the existing python library *prov* [106] was used to create a provenance document instance and populate it with the required artefacts generated as the workflow enactment proceeds.
 
 It should be noted that we elected to implement *CWLProv* in the reference implementation *cwltool* instead of the more scalable and production-friendly CWL implementations like Toil [107], Arvados [108], Rabix [86], CWL-Airflow [109] or Cromwell [87]. An updated list of implementations is available at the CWL homepage.[2] Compared to *cwltool* these generally have extensive scheduler and cloud compute support, and extensions for large data transfer and storage, and should therefore be considered for any adopters of the Common Workflow Language. In this study we have however focused on *cwltool* as its code base was found to be easy to adapt for rich provenance capture without having to modify subsystems for distributed execution or data management, and as a reference implementation better informing us on how to model *CWLProv* for the general case rather than being tied into execution details of the more sophisticated CWL workflow engines.
 
-*CWLProv* support for *cwltool* is built as an optional module which when invoked as *“cwltool `--`provenance ro/ workflow.cwl job.json”*, will automatically generate an RO with the given folder name *ro/* without requiring any additional information from the user. Each input file is assigned a hash value and placed in the folder *ro/data*, making it content-addressable to avoid local dependencies (Figure [[fig:processflow]](#fig:processflow)).
+*CWLProv* support for *cwltool* is built as an optional module which when invoked as *“cwltool `--`provenance ro/ workflow.cwl job.json”*, will automatically generate an RO with the given folder name *ro/* without requiring any additional information from the user. Each input file is assigned a hash value and placed in the folder *ro/data*, making it content-addressable to avoid local dependencies ([Figure 6](#fig:processflow)).
 
-![image](images/ProvenanceProcessFlow.png)
+{{< figure src="images/ProvenanceProcessFlow.png" link="images/ProvenanceProcessFlow.png" id="fig:processflow" 
+  width="100%" title="High level process flow representation of retrospective provenance capture"
+  caption="" >}}
+
 
 In order to avoid including information about attribution without consent of the user, we introduce an additional flag *“ `--`enable-user-provenance”*. If a user provides the options *`--`orcid* and *`--`full-name*, this information will be included in the provenance profile related to user attribution. Enabling *“ `--`enable-user-provenance”* and not providing the full name or ORCID will store user account details from the local machine for attribution, i.e. the details of the *agent* that enacted the workflow.
 
@@ -485,31 +506,50 @@ It should be a goal of a scientific WMS to guide users towards achieving the req
 | R18-resource-use |                |        *       |        *       |                | CWL, GFD.204      |
 | R19-example      |        *       |        ∘       |                |                | RO, BP            |
 
-* **CWL**: Common Workflow Language and embedded annotations
-* **RO**: Research Object model and BagIt
-* **PROV**: W3C Provenance model
-* **CWLProv**: Additional attributes in PROV
-* **wfdesc**: Prospective provenance in PROV
-* **BP**: Best Practice need to be followed manually
-* • Implemented
-* ∘ Partially implemented
-* \* Implementation planned/ongoing
+CWL
+: Common Workflow Language and embedded annotations
+
+RO
+: Research Object model and BagIt
+
+PROV
+: W3C Provenance model
+
+CWLProv
+: Additional attributes in PROV
+
+wfdesc
+: Prospective provenance in PROV
+
+BP
+: Best Practice need to be followed manually
+
+•
+: Implemented
+
+∘
+: Partially implemented
+
+\*
+: Implementation planned/ongoing
 
 </div>
 
 ### CWLProv Evaluation with Bioinformatics Workflows
 
-*CWLProv* as a standard supports *syntactic*, *semantic* and *pragmatic* interoperability (defined in Section ****) of a given workflow and its associated results. We have defined a *“common data format”* for workflow sharing and publication such that any executor or WMS with CWL support can interpret this information and make use of it. This ensures the *syntactic* interoperability between the workflow executors on different computing platforms. Similarly the *“content”* of the shared aggregation artefact as a workflow-centric RO is unambiguously defined, thus ensuring uniform representation of the workflow and its associated results across different platforms and executors hence supporting *semantic* interoperability. With *Level 3* provenance satisfied providing domain-specific information along with level 0-2 provenance tracking, we posit that *CWLProv* would be able to accomplish *pragmatic* interoperability by providing unambiguous information about the *“context”*, *“application”* and *“use”* of the shared/published workflow-centric ROs. Hence, extension of the current implementation (described in section [5](#sec:demo)) in future to include domain-rich information in the provenance traces and the *CWLProv RO* will result in pragmatic interoperability.
+*CWLProv* as a standard supports *syntactic*, *semantic* and *pragmatic* interoperability (defined in Section ****) of a given workflow and its associated results. We have defined a *“common data format”* for workflow sharing and publication such that any executor or WMS with CWL support can interpret this information and make use of it. This ensures the *syntactic* interoperability between the workflow executors on different computing platforms. Similarly the *“content”* of the shared aggregation artefact as a workflow-centric RO is unambiguously defined, thus ensuring uniform representation of the workflow and its associated results across different platforms and executors hence supporting *semantic* interoperability. With *Level 3* provenance satisfied providing domain-specific information along with level 0-2 provenance tracking, we posit that *CWLProv* would be able to accomplish *pragmatic* interoperability by providing unambiguous information about the *“context”*, *“application”* and *“use”* of the shared/published workflow-centric ROs. Hence, extension of the current implementation (described in [section 5](#sec:demo)) in future to include domain-rich information in the provenance traces and the *CWLProv RO* will result in pragmatic interoperability.
 
 To demonstrate the interoperability and portability of the proposed solution, we evaluate *CWLProv* and its reference implementation using open source bioinformatics workflows available on GitHub from different research initiatives and from different developers. Conceptually, these workflows are selected for evaluation due to their excessive use in real-life data analyses and variety of the input data. Alignment workflow is included in the evaluation as it is one of the most time consuming yet mandatory steps in any variant calling workflow. Practically, choosing the workflows by these particular groups out of numerous existing implementations is justified in each section below.
 
 #### RNA-seq Analysis Workflow
 
-![image](images/rnaseq-cwlviewer-half.png)
+{{< figure src="images/rnaseq-cwlviewer-half.png" link="images/rnaseq-cwlviewer-half.png" id="fig:rna-seq" 
+  width="100%" title="Portion of a RNA-seq workflow"
+  caption="Generated by [CWL viewer](https://view.commonwl.org/)" >}}
 
 RNA sequencing (RNA-seq) data generated by Next Generation Sequencing (NGS) platforms is comprised of short sequence reads that can be aligned to a reference genome, where the alignment results form the basis of various analyses such as quantitating transcript expression; identifying novel splice junctions and isoforms and differential gene expression [115]. RNA-seq experiments can link phenotype to gene expression and are widely applied in multi-centric cancer studies [24]. Computational analysis of RNA-seq data is performed by different techniques depending on the research goals and the organism under study [116]. The workflow [117] included in this case study has been defined in CWL by one of the teams [118] participating in NIH Data Commons initiative [119], a large research infrastructure program aiming to make digital objects (such as data generated during biomedical research and software/tools required to utilize such data) shareable and accessible and hence aligned with the FAIR principles [67].
 
-This workflow (Figure [[fig:rna-seq]](#fig:rna-seq)), designed for the pilot phase of the NIH Data Commons initiative [120], adapts the approach and parameter settings of Trans-Omics for precision Medicine (TOPMed) [121]. The RNA-seq pipeline originated from the Broad Institute [122]. There are in total five steps in the workflow starting from:
+This workflow ([Figure 7](#fig:rna-seq)), designed for the pilot phase of the NIH Data Commons initiative [120], adapts the approach and parameter settings of Trans-Omics for precision Medicine (TOPMed) [121]. The RNA-seq pipeline originated from the Broad Institute [122]. There are in total five steps in the workflow starting from:
 1\) Read alignment using STAR [123] which produces aligned BAM files including the Genome BAM and Transcriptome BAM.
 2\) The Genome BAM file is processed using Picard MarkDuplicates [124] producing an updated BAM file containing information on duplicate reads (such reads can indicate biased interpretation).
 3\) SAMtools index [125] is then employed to generate an index for the BAM file, in preparation for the next step.
@@ -522,18 +562,24 @@ For testing and analysis, the workflow author provided example data created by d
 
 Alignment is an essential step in variant discovery workflows and considered an obligatory *pre-processing* stage according to Best Practices by the Broad Institute [72]. The purpose of this stage is to filter low-quality reads before variant calling or other interpretative steps [129]. The workflow for alignment is designed to operate on raw sequence data to produce analysis-ready BAM files as the final output. The typical steps followed include file format conversions, aligning the read files to the reference genome sequence, and sorting the resulting files.
 
-![image](images/new_alignment.png)
+{{< figure src="images/new_alignment.png" link="images/new_alignment.png" id="fig:align" 
+  width="100%" title="Alignment workflow representation generated by CWL Viewer"
+  caption="" >}}
 
-The CWL alignment workflow [130] included in this evaluation (Figure [[fig:align]](#fig:align)) is designed by Data Biosphere [131]. It adapts the alignment pipeline [132] originally developed at Abecasis Lab, The University of Michigan [133]. This workflow is also part of NIH Data Commons initiative (as ) and comprises of four stages.
+
+The CWL alignment workflow [130] included in this evaluation ([Figure 8](#fig:align)) is designed by Data Biosphere [131]. It adapts the alignment pipeline [132] originally developed at Abecasis Lab, The University of Michigan [133]. This workflow is also part of NIH Data Commons initiative (as ) and comprises of four stages.
 First step, “Pre-align” accepts a Compressed Alignment Map (CRAM) file (a compressed format for BAM files developed by European Bioinformatics Institute (EBI) [134]) and human genome reference sequence as input and using underlying software utilities of SAMtools such as view, sort and fixmate returns a list of fastq files which can be used as input for the next step. The next step “Align” also accepts the human reference genome as input along with the output files from “Pre-align” and uses BWA-mem [135] to generate aligned reads as BAM files. SAMBLASTER [136] is used to mark duplicate reads and SAMtools view to convert read files from SAM to BAM format. The BAM files generated after “Align” are sorted with “SAMtool sort”. Finally these sorted alignment files are merged to produce single sorted BAM file using SAMtools merge in “Post-align” step. The authors provide an example CRAM file, *Homo Sapien Assembly 38* reference genome along with its index files to be used as inputs for testing and analysis of the workflow.
 
 ### Somatic Variant Calling Workflow
 
 Variant discovery analysis for high-throughput sequencing data is a widely used bioinformatics technique, focused on finding genetic associations with diseases, identifying somatic mutations in cancer and characterizing heterogeneous cell populations [137]. The *pre-processing* explained for the Alignment workflow is part of any variant calling workflow as reads are classified and ordered as part of the variant discovery process. Numerous variant calling algorithms have been developed depending on the input data characteristics and the specific application area [129]. Somatic variant calling workflows are designed to identify somatic (non-inherited) variants in a sample - generally a cancer sample - by comparing the set of variants present in a sequenced tumour genome to a non-tumour genome from the same host [138]. The set of tumour variants is a super-set of the set of host variants, and somatic mutations can be identified through various algorithmic approaches to subtracting host familial variants. Each somatic variant calling workflow typically consists of three stages: pre-processing; variant evaluation and post-filtering.
 
-The somatic variant calling workflow (Figure [[fig:somatic]](#fig:somatic)) included in this case study is designed by Blue Collar Bioinformatics (bcbio) [139], a community-driven initiative to develop best-practice pipelines for variant calling, RNA-seq and small RNA analysis workflows. According to the documentation, the goal of this project is to facilitate the automated analysis of high throughput data by making the resources *quantifiable*, *analyzable*, *scalable*, *accessible* and *reproducible*. All the underlying tools are containerized facilitating software use in the workflow. The somatic variant calling workflow defined in CWL is available on GitHub [140] and equipped with a well defined test dataset.
+The somatic variant calling workflow ([Figure 9](#fig:somatic)) included in this case study is designed by Blue Collar Bioinformatics (bcbio) [139], a community-driven initiative to develop best-practice pipelines for variant calling, RNA-seq and small RNA analysis workflows. According to the documentation, the goal of this project is to facilitate the automated analysis of high throughput data by making the resources *quantifiable*, *analyzable*, *scalable*, *accessible* and *reproducible*. All the underlying tools are containerized facilitating software use in the workflow. The somatic variant calling workflow defined in CWL is available on GitHub [140] and equipped with a well defined test dataset.
 
-![image](images/2variantcalling.png)
+{{< figure src="images/2variantcalling.png" link="images/2variantcalling.png" id="fig:somatic" 
+  width="100%" title="Visual representation of the bcbio somatic variant calling workflow"
+  caption="Adapted from [bcbio-nextgen 1.1.0](https://bcbio-nextgen.readthedocs.io/en/latest/contents/cwl.html#current-status) and the subworkflow images are generated by CWL viewer." >}}
+
 
 ## Evaluation Activity
 
