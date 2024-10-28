@@ -2,7 +2,7 @@
 title: "Enhancing RDM in Galaxy by integrating RO-Crate"
 lang: en-GB
 categories:
-  - Conferences
+  - Conference
 date-meta: '2022-07-10'
 summary: >
   Poster abstract presented at FAIR Digital Objects conference (FDO2022)

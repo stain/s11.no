@@ -4,7 +4,7 @@ weight: 32
 lang: en-GB
 categories:
   - PhD
-  - Conferences
+  - Conference
 date-meta: '2022-07-10'
 authors: 
   - name: Stian Soiland-Reyes

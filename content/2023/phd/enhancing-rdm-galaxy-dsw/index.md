@@ -1,7 +1,7 @@
 ---
 title: 'Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates'
 categories:
-  - Preprints
+  - Preprint
 title_short: 'BioHackEU22 #10: RDM in Galaxy and DSW w/ RO-Crate'
 summary: >
   BioHackrXiv preprint from ELIXIR BioHackathon 2022

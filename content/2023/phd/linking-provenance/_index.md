@@ -2,7 +2,7 @@
 title: "Linking provenance and its metadata in multi-organizational environments of life sciences"
 lang: en-GB
 categories:
-  - Preprints
+  - Preprint
 summary: >
   Preprint submitted to PeerJ CS
 description: >

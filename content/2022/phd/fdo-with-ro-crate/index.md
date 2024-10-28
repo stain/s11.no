@@ -4,7 +4,7 @@ weight: 42
 lang: en-GB
 categories:
   - PhD
-  - Conferences
+  - Conference
 date-meta: '2022-07-10'
 summary: >
   Poster abstract presented at FAIR Digital Objects conference (FDO2022)

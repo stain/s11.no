@@ -3,7 +3,7 @@ title: "RO-Crate, a lightweight approach to Research Object data packaging"
 lang: en-GB
 date-meta: '2019-07-16'
 categories:
- - Conferences
+ - Conference
 summary: > 
   Conference abstract presented at _Workshop on Research Objects 2019 (RO2019)_
 description: > 

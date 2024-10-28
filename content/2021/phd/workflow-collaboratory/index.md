@@ -3,7 +3,7 @@ title: "Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaborator
 lang: en-GB
 date-meta: '2021-03-01'
 categories:
- - Preprints
+ - Preprint
 summary: >
   Zenodo white paper
 description: >

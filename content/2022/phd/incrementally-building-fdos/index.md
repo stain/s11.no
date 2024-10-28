@@ -4,7 +4,7 @@ weight: 53
 lang: en-GB
 categories:
   - PhD
-  - Conferences
+  - Conference
 date-meta: '2022-07-10'
 keywords: 
   - FAIR Digital Object

@@ -1,7 +1,7 @@
 ---
 title: 'Practical webby FDOs with RO-Crate and FAIR Signposting'
 categories:
-  - Conferences
+  - Conference
 keywords:
   - FDO
   - Web
