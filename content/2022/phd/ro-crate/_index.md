@@ -4,7 +4,7 @@ weight: 41
 bib: ro-crate
 categories:
   - PhD
-  - Publications
+  - Publication
 keywords:
 - research object
 - linked data

@@ -2,7 +2,7 @@
 title: "Federated causal inference based on real-world observational data sources: application to a SARS-CoV-2 vaccine effectiveness assessment"
 lang: en-GB
 categories:
-  - Publications
+  - Publication
 keywords:
   - Federated analysis
   - Causal inference

@@ -1,7 +1,7 @@
 ---
 title: "Semantic micro-contributions with decentralized nanopublication services"
 categories:
-  - Publications
+  - Publication
 authors:
 - name: Tobias Kuhn
   orcid: https://orcid.org/0000-0002-6725-3470

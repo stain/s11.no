@@ -4,7 +4,7 @@ weight: 51
 bib: cwbb
 categories:
   - PhD
-  - Publications
+  - Publication
 keywords:
 - cwfr
 - canonical workflow building blocks
