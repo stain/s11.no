@@ -5,10 +5,11 @@ summary: >
   Develop a web-based GUI for making PROV.
 ---
 
-_COMP66090 MSc project 2023/2024_
+_COMP66090 MSc project 2023/2024_  
 
 * [COMP66090 Handbook entry](https://studentnet.cs.manchester.ac.uk/pgt/2023/COMP66090/project/projectbookdetails.php?projectid=54247)
 * Skills needed: Logic, Programming
+* Type: Advanced Web applications, Data on the Web, Data science, management and analysis
 
 ## Background
 

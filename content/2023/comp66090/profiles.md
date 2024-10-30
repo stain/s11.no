@@ -9,6 +9,8 @@ _COMP66090 MSc project 2024/2025_
 
 * [COMP66090 Handbook entry](https://studentnet.cs.manchester.ac.uk/pgt/2023/COMP66090/project/projectbookdetails.php?projectid=56728)
 * Skills needed: Logic, Programming
+* Type: Data on the Web, Data science, management and analysis, Formal Systems and Reasoning
+
 
 ## Background
 
@@ -38,10 +40,11 @@ We encourage development of open source software, and will be assisting you in f
 
 ## References
 
-1. <https://w3id.org/ro/crate>
-2. <https://doi.org/10.3233/DS-210053>
-3. <https://www.researchobject.org/ro-crate/tutorials.html>
-4. <https://pypi.org/project/rocrate/>
-5. <https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles>
-6. <https://book.validatingrdf.com/>
-7. <https://www.w3.org/TR/dx-prof/>
+1. <https://pypi.org/project/rocrate/>
+2. <https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles>
+3. <https://book.validatingrdf.com/>
+4. <https://www.w3.org/TR/dx-prof/>
+5. <https://w3id.org/ro/crate>
+6. <https://github.com/crs4/rocrate-validator/>
+7. <https://doi.org/10.3233/DS-210053>
+8. <https://www.researchobject.org/ro-crate/tutorials.html>

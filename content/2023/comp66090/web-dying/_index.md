@@ -67,6 +67,7 @@ Alternatively you may take a more active development path and build a prototype 
 
 This project may be suitable for two students taking these different paths, or comparing different Web cohorts.
 
+I encourage development of open source software, and will be assisting you in following best practices for research software engineering.
 
 ## References
 
