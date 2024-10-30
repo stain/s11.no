@@ -5,10 +5,9 @@ summary: >
   Develop a profile-based validator using Linked Data technologies (ShEx, SHACL)
 ---
 
-_COMP66090 MSc project 2023/2024_
+_COMP66090 MSc project 2024/2025_
 
-* [COMP66090 Handbook entry](https://studentnet.cs.manchester.ac.uk/pgt/2023/COMP66090/project/projectbookdetails.php?projectid=54265)
-* This project has PhD potential
+* [COMP66090 Handbook entry](https://studentnet.cs.manchester.ac.uk/pgt/2023/COMP66090/project/projectbookdetails.php?projectid=56728)
 * Skills needed: Logic, Programming
 
 ## Background
@@ -28,15 +27,12 @@ As RO-Crate is based on Linked Data standards (RDF and JSON-LD), several mature 
 In this project you will refresh background on Linked Data technology in order to investigate the existing RO-Crate [Profile Crate formalization](https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles) (based on [W3C Profiles vocabulary](https://www.w3.org/TR/dx-prof/)). 
 You'll decide on (and justify) which existing technologies should be combined in order to provide a flexible profile-based validation of existing RO-Crates.
 
-You'll develop a validator tool/service/library that uses the chosen technologies and retrieves the required schemas based on the profile specified by the RO-Crate or as specified by the user. 
-Typical programming languages could be Python (e.g. to extend existing [RO-Crate validator](https://github.com/ResearchObject/ro-crate-validator-py) code), but you are free to choose any other language.
+You'll develop or extend an open source validator tool/service/library that uses the chosen technologies and retrieves the required schemas based on the profile specified by the RO-Crate or as specified by the user. 
+Typical programming languages could be Python (e.g. to extend existing [RO-Crate validator](https://github.com/crs4/rocrate-validator/) code), but you are free to choose any other language.
 
-You will help improve the Profile Crate formalization for any additional requirements uncovered, and can explore how to represent or visualize validation results for a given profile. 
-As development of validation schemas can require significant Linked Data or JSON Schema knowledge for Profile Crate authors, you may also explore the use of templates or simplified profile requirements to auto-generate initial versions of such schemas.
+Alternatively you can explore how to improve the Profile Crate formalization in JSON-LD to incorporate elements needed for validation, where you can develop at tool for generating equivalent shapes to be used with the existing validator. You may also explore the use of templates or simplified profile requirements to auto-generate initial versions of such schemas.
 
 In this project you will be working with the international [RO-Crate community](https://www.researchobject.org/ro-crate/community.html) which is led by The University of Manchester together with The University of Queensland, Australia. The community provide exciting use cases from a range of scientific domain beyond Computer Science.
-
-A possible extension of this project is to explore generalizing the Profile Crate mechanism for any semantic artefacts (ontologies, mappings) in collaboration with experts in the European Open Science Cloud project [FAIR-IMPACT](https://fair-impact.eu/).
 
 We encourage development of open source software, and will be assisting you in following best practices for research software engineering.
 
