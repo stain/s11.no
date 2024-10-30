@@ -25,11 +25,10 @@ The Web architecture is now ubiquious for distributed computer systems, with the
 
 However, the use of mobile applications and social media can mean that information disappears from the global information system, and by consequence of archivers inability to access these, disappears from human cultural history.
 
-For instance, consider CS2051, a module taught at Department of Computer Science in 2005\. The CS2051 teaching material, including alls lides have been archived by the [Wayback machine](https://web.archive.org/web/20070625233132/http://www.cs.man.ac.uk/~rizos/CS2051/), and even remain available at the [original URL](http://www.cs.man.ac.uk/~rizos/CS2051/). 
+For instance, consider CS2051, a module taught at Department of Computer Science in 2005\. The CS2051 teaching material, including all slides, have been archived by the [Wayback machine](https://web.archive.org/web/20070625233132/http://www.cs.man.ac.uk/~rizos/CS2051/), and even remain available at the [original URL](http://www.cs.man.ac.uk/~rizos/CS2051/). 
 
 
 ![CS2051 content listing, captured in 2027](cs2051.png)
-
 
 For comparison, the 2025 syllabus for the equivalent [COMP15212](https://www.slate.courses/units/edit/COMP15212) is shown as a single login page, and only enrolled students can access the content through deep navigation in the teaching platform Blackboard (which is due to be decommissioned in 2026). 
 
@@ -52,10 +51,31 @@ Screen capture of HTTP network activity when scrolling through a TikTok feed.
 </figcaption>
 </figure>
 
+Even traditional document-based Web sites and repositories are increasingly developed using similar Web technologies, which results in a large number of network requests (as shown above), using a skeleton HTML which do not reflect the human-readable content, but serves only as a launching point for a "single page app" ([SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) which loads the content dynamically. This means the information is at risk from not being indexed, archived or machine-readable (e.g. for text mining).
+
+
+```html
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="icon" href="/assets/favicon.ico">
+<title>FAIRsharing</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+<script defer="defer" src="/js/chunk-vendors.97c4cd60.js"></script>
+<script defer="defer" src="/js/app.8b24872e.js"></script>
+<link href="/css/chunk-vendors.84a9b648.css" rel="stylesheet">
+<link href="/css/app.79569373.css" rel="stylesheet"></head>
+<body><noscript><strong>We're sorry but this website doesn't work 
+    properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+<div id="app"></div></body></html>
+```
 
 ## Description
 
-In this project you will research the development of the Web and current Web architecture technologies. You will experiment with Web archivers and build a cohort of web sites to be examined in detail from the perspective of global information system and cultural preservation. You may develop a measurement of hypermedia linkability and proliferance of links in these sites, and suggest measures for supporting modern Web applications at the same time as preserving the document nature of the Web.
+In this project you will research the development of the Web and current Web architecture technologies. You will experiment with Web archivers and build a cohort of web sites to be examined in detail from the perspective of global information system and cultural preservation. 
+
+You may develop a measurement of hypermedia linkability and proliferance of links in these sites, and suggest measures for supporting modern Web applications at the same time as preserving the document nature of the Web.
 
 Choosing a social media platform, you can examine to which extent its modern API usage can be utilised to improve archiving aspects (e.g. recursively snapshotting a "current posts" API calls), and you can prototype an application that intercepts or captures the interaction and experience of using said platform.
 
