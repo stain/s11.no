@@ -1,8 +1,8 @@
 ---
-title: Validating semantic artefact profiles for Research Object Crates
+title: Training machine learning models and capturing their provenance
 date: 2024-10-30
 summary: > 
-  Develop a profile-based validator using Linked Data technologies (ShEx, SHACL)
+  Add FAIR Machine Learning metadata and provenance to a ML training framework.
 ---
 
 _COMP66090 MSc project 2024/2025_
