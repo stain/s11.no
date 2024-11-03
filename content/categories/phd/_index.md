@@ -39,6 +39,18 @@ As I did a _thesis by publication_, these pages gather the articles submitted/ac
 * Status: _Preparing printer's proof_ (see [flowchart](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/flowchart-from-manuscript-to-doctoral-thesis-en-doctorate-regulations-2020.pdf))
 * Available formats: [HTML](https://s11.no/2023/phd/), [PDF](https://s11.no/2023/phd/thesis.pdf), [RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8113625), [LaTeX](https://github.com/stain/phd)
 
+<a href="thesis.pdf">
+<picture>
+  <source type="image/svg+xml" srcset="cover.svg" media="(min-width: 800px)" />
+  <source type="image/webp" srcset="cover.webp" media="(max-width: 800px)" />
+  <source type="image/png" srcset="cover.png" media="(max-width: 800px)" />
+  <img src="cover.jpeg"
+    title="FAIR Research Objects and Computational Workflows (PDF)"
+    alt="Book cover: FAIR Research Objects and Computational Workflows" />
+</picture>
+</a>
+
+
 
 # FAIR Research Objects and Computational Workflows – A Linked Data Approach
 
