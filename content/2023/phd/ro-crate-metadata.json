@@ -1,9 +1,6 @@
 {
   "@context": [
-    "https://w3id.org/ro/crate/1.2-DRAFT/context",
-    {
-      "creditText": "http://schema.org/creditText"
-    }
+    "https://w3id.org/ro/crate/1.2-DRAFT/context"
   ],
   "@graph": [
     {
@@ -323,6 +320,18 @@
       "familyName": "Van de Sompel",
       "givenName": "Herbert",
       "name": "Herbert Van de Sompel"
+    },
+    {
+      "@id": "https://ror.org/027m9bs27",
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Manchester",
+      "url": "https://www.manchester.ac.uk/"
+    },
+    {
+      "@id": "https://ror.org/04dkp9463",
+      "@type": "CollegeOrUniversity",
+      "name": "University of Amsterdam",
+      "url": "https://www.uva.nl/"
     },
     {
       "@id": "https://creativecommons.org/licenses/by/4.0/",
@@ -698,18 +707,6 @@
         "@id": "https://w3id.org/ro/crate"
       },
       "name": "Packaging research artefacts with RO-Crate (RO-Crate)"
-    },
-    {
-      "@id": "https://ror.org/027m9bs27",
-      "@type": "CollegeOrUniversity",
-      "name": "The University of Manchester",
-      "url": "https://www.manchester.ac.uk/"
-    },
-    {
-      "@id": "https://ror.org/04dkp9463",
-      "@type": "CollegeOrUniversity",
-      "name": "University of Amsterdam",
-      "url": "https://www.uva.nl/"
     },
     {
       "@id": "https://orcid.org/0000-0002-9260-0753",
@@ -1842,26 +1839,23 @@
       "isAccessibleForFree": true
     },
     {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "conformsTo": "https://w3id.org/ro/crate/1.2-DRAFT",
-      "about": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
-      }
-    },
-    {
-      "@id": "https://publicdomainvectors.org/",
-      "@type": "ImageGallery",
-      "name": "Public Domain Vectors",
-      "license": {
-        "@id": "https://spdx.org/licenses/CC0-1.0"
-      }
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC0-1.0",
-      "@type": "CreativeWork",
-      "name": "Creative Commons Zero v1.0 Universal",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+      "@id": "https://s11.no/2023/phd/thesis.pdf",
+      "@type": [
+        "File",
+        "Thesis"
+      ],
+      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "version": "2024-08-22",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "identifier": "https://doi.org/10.5281/zenodo.8113625",
+      "datePublished": "2024-09-15",
+      "inSupportOf": "graad van doctor",
+      "sourceOrganization": {
+        "@id": "https://ror.org/04dkp9463"
+      },
+      "sameAs": "https://zenodo.org/records/14052581/files/phd-stian-2024-11-07.pdf"
     },
     {
       "@id": "https://s11.no/2023/phd/cover-clipart.svg",
@@ -1884,25 +1878,26 @@
       ]
     },
     {
-      "@id": "https://s11.no/2023/phd/thesis.pdf",
-      "@type": [
-        "File",
-        "Thesis"
-      ],
-      "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
-      "version": "2024-08-22",
-      "author": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "identifier": "https://doi.org/10.5281/zenodo.8113625",
-      "datePublished": "2024-09-15",
-      "inSupportOf": "graad van doctor",
-      "sourceOrganization": {
-        "@id": "https://ror.org/04dkp9463"
-      },
-      "sameAs": {
-        "@id": "https://zenodo.org/records/13359051/files/phd-stian-2024-08-22.pdf"
+      "@id": "https://publicdomainvectors.org/",
+      "@type": "ImageGallery",
+      "name": "Public Domain Vectors",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC0-1.0"
       }
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": "https://w3id.org/ro/crate/1.2-DRAFT",
+      "about": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.8113625"
+      }
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC0-1.0",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
     }
   ]
 }
