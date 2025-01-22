@@ -1,6 +1,6 @@
 ---
 title: "PhD"
-date: "2024-09-15"
+date: "2025-01-15"
 tags:
   - publication
 categories:
@@ -24,19 +24,22 @@ aliases:
  - /2023/categories/phd/
 ---
 
-Beside [working at The University of Manchester](/2023/about/), I am a [PhD Candidate](https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/).
+While I was [working at The University of Manchester](/2023/about/) as a Research Fellow, I was a [PhD candidate](https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/).
 
 My supervisors are [Paul Groth](http://pgroth.com/) and [Carole Goble](https://research.manchester.ac.uk/en/persons/carole.goble). My thesis title is _FAIR Research Objects and Computational Workflows – A Linked Data Approach_.
 
-I started in July 2019 and concluded in December 2023, with final manuscript submitted in May 2024. The formal doctoral thesis defence is scheduled for 15th January 2025. 
+I started in July 2019 and concluded in December 2023, with final manuscript submitted in May 2024. The formal [doctoral thesis defence](https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html) was on 15th January 2025, see [ceremony video](https://hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=32a16d66-8b01-437b-9e99-b24200b189c6).
 
-As I did a _thesis by publication_, these pages gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web or in the thesis PDF (e.g. using the [s11 Citation house style](/2021/house-rules/citation-style/)), see full list of sources and editorial changes in [appendix Contributions](../../2022/phd/contributions/).
+As I did a _thesis by publication_, these pages also gather the articles submitted/accepted/published that became part of my PhD thesis. Note that some of these articles have been slightly reformatted to fit publication on the Web or in the thesis PDF (e.g. using the [s11 Citation house style](/2021/house-rules/citation-style/)), see full list of sources and editorial changes in [appendix Contributions](../../2022/phd/contributions/).
 
-* Cite as: <https://doi.org/10.5281/zenodo.8113625>
+* Cite as: <https://doi.org/10.5281/zenodo.8113625> 
+* Alternative identifiers: 
+  - <https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d>
+  - ISBN 9789493391789
 * License: [Creative Commons Attributions 4.0 International](https://spdx.org/licenses/CC-BY-4.0/)  
   _(For full list of co-authors, see [contributors](/2022/phd/contributions/#contributor-affiliations) and [appendix Acknowledgements](../../2022/phd/acknowledgements/))_
 * RO-Crate: <https://w3id.org/ro/doi/10.5281/zenodo.8113625>
-* Status: _Preparing printer's proof_ (see [flowchart](https://www.uva.nl/binaries/content/assets/uva/en/research/phd/procedures/flowchart-from-manuscript-to-doctoral-thesis-en-doctorate-regulations-2020.pdf))
+* Status: _Awarded_ 2025-01-15
 * Available formats: [HTML](https://s11.no/2023/phd/), [PDF](https://s11.no/2023/phd/thesis.pdf), [RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8113625), [LaTeX](https://github.com/stain/phd)
 
 <a href="thesis.pdf">
