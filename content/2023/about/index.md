@@ -22,12 +22,14 @@ date: 2024-10-08
 * <a rel="me" href="https://www.research.manchester.ac.uk/portal/soiland-reyes.html">research.manchester.ac.uk/portal/soiland-reyes.html</a>
 * <a rel="me" href="https://www.uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html">uva.nl/en/profile/s/o/s.soilandreyes/s.soiland-reyes.html</a>
 * <a rel="me" href="https://scholar.social/@soilandreyes">scholar.social/@soilandreyes</a> (Mastodon)
+* <a rel="me" href="https://bsky.app/profile/soilandreyes.bsky.social">@soilandreyes.bsky.social</a> (Bluesky)
 * <a rel="me" href="https://orcid.org/0000-0001-9842-9718">orcid.org/0000-0001-9842-9718</a>
 * [slides.com/soilandreyes](https://slides.com/soilandreyes)
 * [github.com/stain](https://github.com/stain)
 * [linkedin.com/in/stain/](https://www.linkedin.com/in/stain/)
 * ~~[twitter.com/soilandreyes](https://twitter.com/soilandreyes)~~
 * ~~[slideshare.net/soilandreyes](https://www.slideshare.net/soilandreyes)~~
+
 
 ## Biography
 
@@ -41,7 +43,7 @@ He is a strong proponent of using open Web standards, including the use of [FAIR
 
 Stian is on the leadership team of [Common Workflow Language](https://www.commonwl.org/), a standard for [interoperable computational workflows](/2022/phd/methods-included/), and he was on the technical steering committee for [BioCompute Object](https://www.biocomputeobject.org/), an approach for describing workflows for submission to regulatory authorities. Stian is the Technical and Community Advisor for the [Workflows Community Initiative](https://workflows.community/) where he contributes to the task force [FAIR Computational Workflows](https://workflows.community/groups/fair/). 
 
-Stian graduated with a BSc (2003) and [MSc](https://doi.org/11250/251073) (2007) in Computer Science from the [Norwegian University of Science and Technology (NTNU)](https://www.ntnu.no/) and in 2024 will defend his [PhD thesis](../phd/) at the [Informatics Institute of University of Amsterdam](https://ivi.uva.nl/). 
+Stian graduated with a BSc (2003) and [MSc](https://doi.org/11250/251073) (2007) in Computer Science from the [Norwegian University of Science and Technology (NTNU)](https://www.ntnu.no/) and in 2025 defended his [PhD thesis](../phd/) at the [Informatics Institute of University of Amsterdam](https://ivi.uva.nl/). 
 
 He has more than two decades of experience as an IT professional, including 16 years as a software developer working across academia and industry. He joined the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab") in 2005 (then called the [myGrid team](http://www.mygrid.org.uk/)), where he became the _Technical Lead Developer_ of the open-source scientific workflow management system [Taverna](http://taverna.incubator.apache.org/). As part of the EU FP7-funded [Wf4Ever project](/2020/archive/wf4ever/), Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/ "W3C PROV-Overview") specifications for capturing provenance and co-developed the [Research Object](http://www.researchobject.org/) model and ontologies.  More recently Stian has continued this passion for reproducibility, structured metadata and open scholarship with engagement in several projects related to FAIR, computational workflows, and RO-Crate. 
 
