@@ -284,7 +284,13 @@
       "@type": "Person",
       "affiliation": [
         "Department of Computer Science, The University of Manchester, Manchester, UK",
-        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
+        {
+          "@id": "https://ror.org/027m9bs27"
+        },
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
+        {
+          "@id": "https://ror.org/04dkp9463"
+        }
       ],
       "worksFor": {
         "@id": "https://ror.org/027m9bs27"
@@ -698,13 +704,23 @@
     {
       "@id": "https://orcid.org/0000-0003-0183-6910",
       "@type": "Person",
-      "affiliation": "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
-      "name": "Paul Groth"
+      "name": "Paul Groth",
+      "affiliation": [
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
+        {
+          "@id": "https://ror.org/02k40bc56"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0003-1219-2137",
       "@type": "Person",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK",
+        {
+          "@id": "https://ror.org/027m9bs27"
+        }
+      ],
       "name": "Carole Goble"
     },
     {
@@ -1081,6 +1097,11 @@
       "@id": "https://orcid.org/0000-0001-7760-1240",
       "@type": "Person",
       "name": "James Love"
+    },
+    {
+      "@id": "https://ror.org/02k40bc56",
+      "@type": "CollegeOrUniversity",
+      "name": "Indiana University Bloomington"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.8113625",
@@ -1609,7 +1630,7 @@
     },
     {
       "@id": "https://s11.no/2023/phd/evaluating-fdo/",
-      "@type": "Dataset",
+      "@type": "Chapter",
       "author": [
         {
           "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -1790,7 +1811,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "datePublished": "2024-07-30",
-      "dateModified": "2024-11-15",
+      "dateModified": "2025-11-15",
       "description": "RO-Crate of PhD thesis at the University of Amsterdam",
       "hasPart": [
         {
@@ -1827,6 +1848,14 @@
           "@id": "https://s11.no/2023/phd/cover-clipart.svg"
         }
       ],
+      "mentions": [
+        {
+          "@id": "#review"
+        },
+        {
+          "@id": "https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html"
+        }
+      ],
       "identifier": {
         "@id": "https://doi.org/10.5281/zenodo.8113625"
       },
@@ -1852,17 +1881,39 @@
         "Thesis"
       ],
       "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
-      "version": "2024-08-22",
+      "version": "2025-01-05",
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "identifier": "https://doi.org/10.5281/zenodo.8113625",
+      "contributor": [
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        }
+      ],
+      "cite-as": {
+        "@id": "https://doi.org/10.5281/zenodo.8113625"
+      },
+      "identifier": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.8113625"
+        },
+        {
+          "@id": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d"
+        },
+        {
+          "@id": "https://identifiers.org/isbn/9789493391789"
+        }
+      ],
       "datePublished": "2024-09-15",
+      "dateModified": "2025-01-04",
       "inSupportOf": "graad van doctor",
       "sourceOrganization": {
         "@id": "https://ror.org/04dkp9463"
       },
-      "sameAs": "https://zenodo.org/records/14052581/files/phd-stian-2024-11-07.pdf"
+      "sameAs": "https://zenodo.org/records/14719595/files/phd-stian-2025-01-04.pdf"
     },
     {
       "@id": "https://s11.no/2023/phd/cover-clipart.svg",
@@ -1883,6 +1934,177 @@
         "https://s11.no/2023/phd/cover.jpeg",
         "https://s11.no/2023/phd/cover.png"
       ]
+    },
+    {
+      "@id": "#review",
+      "@type": "ReviewAction",
+      "name": "Review of PhD thesis",
+      "agent": {
+        "@id": "#doctoral-committee"
+      },
+      "object": {
+        "@id": "https://s11.no/2023/phd/thesis.pdf"
+      }
+    },
+    {
+      "@id": "https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html",
+      "@type": "PublicationEvent",
+      "publishedBy": {
+        "@id": "https://ror.org/04dkp9463"
+      },
+      "organizer": {
+        "@id": "https://ror.org/04dkp9463"
+      },
+      "startTime": "2025-01-15T16:00:00+0100",
+      "endTime": "2025-01-15T17:30:00+0100",
+      "location": {
+        "@id": "https://www.uva.nl/en/shared-content/locaties/en/binnenstad/agnietenkapel.html"
+      },
+      "name": "PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "description": "Stian Soiland-Reyes will defend the dissertation 'FAIR Research Objects and Computational Workflows – A Linked Data Approach'. Supervisors are Prof. P.T. Groth and Prof. C.A. Goble.",
+      "recordedIn": {
+        "@id": "https://hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=32a16d66-8b01-437b-9e99-b24200b189c6"
+      },
+      "workFeatured": {
+        "@id": "https://s11.no/2023/phd/thesis.pdf"
+      },
+      "about": [
+        {
+          "@id": "#laymanspeak"
+        },
+        {
+          "@id": "#defence"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.uva.nl/en/shared-content/locaties/en/binnenstad/agnietenkapel.html",
+      "@type": "Place",
+      "name": "Agnietenkapel, University of Amsterdam"
+    },
+    {
+      "@id": "https://hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=32a16d66-8b01-437b-9e99-b24200b189c6",
+      "@type": "VideoObject",
+      "name": "Recording: FAIR Research Objects and Computational Workflows – A Linked Data Approach - (Agnietenkapel -Live) -15-1-2025"
+    },
+    {
+      "@id": "#defence",
+      "@type": "AssessAction",
+      "name": "Defence of PhD thesis",
+      "agent": {
+        "@id": "#doctoral-committee"
+      },
+      "participant": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2961-9670"
+        },
+        {
+          "@id": "#lasse"
+        }
+      ],
+      "object": {
+        "@id": "https://s11.no/2023/phd/thesis.pdf"
+      }
+    },
+    {
+      "@id": "#doctoral-committee",
+      "@type": "Organization",
+      "name": "Doctoral Committee",
+      "member": [
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2947-9444"
+        },
+        {
+          "@id": "https://www.uva.nl/profiel/l/a/c.t.a.m.delaat/c.t.a.m.delaat.html"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2164-8132"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6717-9418"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7054-3770"
+        }
+      ],
+      "parentOrganization": {
+        "@id": "https://ror.org/04dkp9463"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2947-9444",
+      "@type": "Person",
+      "name": "prof. dr. R.V. van Nieuwpoort",
+      "affiliation": {
+        "@id": "https://ror.org/027bh9e22"
+      }
+    },
+    {
+      "@id": "https://www.uva.nl/profiel/l/a/c.t.a.m.delaat/c.t.a.m.delaat.html",
+      "@type": "Person",
+      "name": "prof. dr. ir. C.T.A.M. de Laat",
+      "affiliation": {
+        "@id": "https://ror.org/04dkp9463"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2164-8132",
+      "@type": "Person",
+      "name": "prof. dr. B.A. Plale",
+      "affiliation": {
+        "@id": "https://ror.org/02k40bc56"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6717-9418",
+      "@type": "Person",
+      "name": "dr. Z. Zhao",
+      "affiliation": {
+        "@id": "https://ror.org/04dkp9463"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7054-3770",
+      "@type": "Person",
+      "name": "dr. V.O. Degeler",
+      "affiliation": {
+        "@id": "https://ror.org/04dkp9463"
+      }
+    },
+    {
+      "@id": "https://ror.org/027bh9e22",
+      "@type": "CollegeOrUniversity",
+      "name": "Leiden University"
+    },
+    {
+      "@id": "#lasse",
+      "@type": "Person",
+      "name": "Lasse Søiland"
+    },
+    {
+      "@id": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d",
+      "@type": "PropertyValue",
+      "propertyID": "http://purl.org/spar/fabio/hasHandle",
+      "name": "Handle",
+      "value": "11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d",
+      "url": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d"
+    },
+    {
+      "@id": "https://identifiers.org/isbn/9789493391789",
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/isbn",
+      "value": "9789493391789",
+      "name": "ISBN",
+      "description": "ISBN 978-94-93391-78-9"
     },
     {
       "@id": "https://publicdomainvectors.org/",
@@ -1997,7 +2219,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//ror.org/04dkp9463">University of Amsterdam</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
-            <td style='text-align:left'><span>2024-11-15</span></td>
+            <td style='text-align:left'><span>2025-11-15</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -2022,6 +2244,13 @@ table.table {
                         <li><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
                         
                         <li><a href="#https%3A//s11.no/2023/phd/cover-clipart.svg">Cover of thesis (SVG)</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23review">Review of PhD thesis</a></li>
+                        
+                        <li><a href="#https%3A//www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
@@ -2082,7 +2311,11 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><span>Department of Computer Science, The University of Manchester, Manchester, UK</span></li>
                         
+                        <li><a href="#https%3A//ror.org/027m9bs27">The University of Manchester</a></li>
+                        
                         <li><span>Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands</span></li>
+                        
+                        <li><a href="#https%3A//ror.org/04dkp9463">University of Amsterdam</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">worksFor<span>&nbsp;</span><a href="http://schema.org/worksFor">[?]</a></th>
@@ -2134,6 +2367,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">founder<span>&nbsp;</span><a href="http://schema.org/founder">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//s11.no/">s11</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">participant<span>&nbsp;</span><a href="http://schema.org/participant">[?]</a></th>
+            <td style='text-align:left'><a href="#%23defence">Defence of PhD thesis</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -2170,10 +2406,29 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
-            <td style='text-align:left'><span>2024-08-22</span></td>
+            <td style='text-align:left'><span>2025-01-05</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">contributor<span>&nbsp;</span><a href="http://schema.org/contributor">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//orcid.org/0000-0003-0183-6910">Paul Groth</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0003-1219-2137">Carole Goble</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="http://www.iana.org/assignments/relation/cite-as">[?]</a></th>
+            <td style='text-align:left'>doi: 10.5281/zenodo.8113625</td>
             </tr><tr>
             <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
-            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.8113625">https://doi.org/10.5281/zenodo.8113625</a></td>
+            <td style='text-align:left'><ul>
+                        <li>doi: 10.5281/zenodo.8113625</li>
+                        
+                        <li>Handle: 11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d</li>
+                        
+                        <li>ISBN: 9789493391789</li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
+            <td style='text-align:left'><span>2025-01-04</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">inSupportOf<span>&nbsp;</span><a href="http://schema.org/inSupportOf">[?]</a></th>
             <td style='text-align:left'><span>graad van doctor</span></td>
@@ -2182,7 +2437,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//ror.org/04dkp9463">University of Amsterdam</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
-            <td style='text-align:left'><a href="https://zenodo.org/records/14052581/files/phd-stian-2024-11-07.pdf">https://zenodo.org/records/14052581/files/phd-stian-2024-11-07.pdf</a></td>
+            <td style='text-align:left'><a href="https://zenodo.org/records/14719595/files/phd-stian-2025-01-04.pdf">https://zenodo.org/records/14719595/files/phd-stian-2025-01-04.pdf</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">encoding<span>&nbsp;</span><a href="http://schema.org/encoding">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
@@ -2192,6 +2447,16 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workFeatured<span>&nbsp;</span><a href="http://schema.org/workFeatured">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">object<span>&nbsp;</span><a href="http://schema.org/object">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23review">Review of PhD thesis</a></li>
+                        
+                        <li><a href="#%23defence">Defence of PhD thesis</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -2220,6 +2485,17 @@ table.table {
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><a href="https://www.uva.nl/">https://www.uva.nl/</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></li>
+                        
+                        <li><a href="#https%3A//www.uva.nl/profiel/l/a/c.t.a.m.delaat/c.t.a.m.delaat.html">prof. dr. ir. C.T.A.M. de Laat</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0002-6717-9418">dr. Z. Zhao</a></li>
+                        
+                        <li><a href="#https%3A//orcid.org/0000-0001-7054-3770">dr. V.O. Degeler</a></li>
+                        </ul></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">memberOf<span>&nbsp;</span><a href="http://schema.org/memberOf">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
             </tr><tr>
@@ -2229,6 +2505,15 @@ table.table {
                         
                         <li><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">publishedBy<span>&nbsp;</span><a href="http://schema.org/publishedBy">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">organizer<span>&nbsp;</span><a href="http://schema.org/organizer">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">parentOrganization<span>&nbsp;</span><a href="http://schema.org/parentOrganization">[?]</a></th>
+            <td style='text-align:left'><a href="#%23doctoral-committee">Doctoral Committee</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -2663,6 +2948,97 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
+            <h3> Review of PhD thesis</h3>
+            
+            
+            
+            
+        <div id="#review">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>#review</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Review of PhD thesis</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>ReviewAction</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">agent<span>&nbsp;</span><a href="http://schema.org/agent">[?]</a></th>
+            <td style='text-align:left'><a href="#%23doctoral-committee">Doctoral Committee</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">object<span>&nbsp;</span><a href="http://schema.org/object">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">Go to: </a> PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</h3>
+            
+            
+            
+            
+        <div id="https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html">https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>PublicationEvent</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Stian Soiland-Reyes will defend the dissertation 'FAIR Research Objects and Computational Workflows – A Linked Data Approach'. Supervisors are Prof. P.T. Groth and Prof. C.A. Goble.</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">publishedBy<span>&nbsp;</span><a href="http://schema.org/publishedBy">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//ror.org/04dkp9463">University of Amsterdam</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">organizer<span>&nbsp;</span><a href="http://schema.org/organizer">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//ror.org/04dkp9463">University of Amsterdam</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">startTime<span>&nbsp;</span><a href="http://schema.org/startTime">[?]</a></th>
+            <td style='text-align:left'><span>2025-01-15T16:00:00+0100</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">endTime<span>&nbsp;</span><a href="http://schema.org/endTime">[?]</a></th>
+            <td style='text-align:left'><span>2025-01-15T17:30:00+0100</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">location<span>&nbsp;</span><a href="http://schema.org/location">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//www.uva.nl/en/shared-content/locaties/en/binnenstad/agnietenkapel.html">Agnietenkapel, University of Amsterdam</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">recordedIn<span>&nbsp;</span><a href="http://schema.org/recordedIn">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx%3Fid%3D32a16d66-8b01-437b-9e99-b24200b189c6">Recording: FAIR Research Objects and Computational Workflows – A Linked Data Approach - (Agnietenkapel -Live) -15-1-2025</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workFeatured<span>&nbsp;</span><a href="http://schema.org/workFeatured">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li>#laymanspeak</li>
+                        
+                        <li><a href="#%23defence">Defence of PhD thesis</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
             <h3><a href="https://doi.org/10.5281/zenodo.8113625">Go to: </a> doi</h3>
             
             
@@ -2688,7 +3064,14 @@ table.table {
             <td style='text-align:left'><span>10.5281/zenodo.8113625</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.8113625">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
+                        
+                        <li><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="http://www.iana.org/assignments/relation/cite-as">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//s11.no/2023/phd/thesis.pdf">FAIR Research Objects and Computational Workflows – A Linked Data Approach</a></td>
             </tr></tbody>
             </table>
         </div>

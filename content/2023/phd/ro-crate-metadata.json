@@ -277,7 +277,9 @@
       "@type": "Person",
       "affiliation": [
         "Department of Computer Science, The University of Manchester, Manchester, UK",
-        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands"
+        {"@id": "https://ror.org/027m9bs27"},
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
+        {"@id": "https://ror.org/04dkp9463"}
       ],
       "worksFor": {
         "@id": "https://ror.org/027m9bs27"
@@ -691,13 +693,19 @@
     {
       "@id": "https://orcid.org/0000-0003-0183-6910",
       "@type": "Person",
-      "affiliation": "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
-      "name": "Paul Groth"
+      "name": "Paul Groth",
+      "affiliation": [
+        "Informatics Institute, University of Amsterdam, Amsterdam, The Netherlands",
+        {"@id": "https://ror.org/02k40bc56"}
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0003-1219-2137",
       "@type": "Person",
-      "affiliation": "Department of Computer Science, The University of Manchester, Manchester, UK",
+      "affiliation": [
+        "Department of Computer Science, The University of Manchester, Manchester, UK",
+        {"@id": "https://ror.org/027m9bs27"}
+      ],
       "name": "Carole Goble"
     },
     {
@@ -1602,7 +1610,7 @@
     },
     {
       "@id": "https://s11.no/2023/phd/evaluating-fdo/",
-      "@type": "Dataset",
+      "@type": "Chapter",
       "author": [
         {
           "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -1783,7 +1791,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "datePublished": "2024-07-30",
-      "dateModified": "2024-11-15",
+      "dateModified": "2025-11-15",
       "description": "RO-Crate of PhD thesis at the University of Amsterdam",
       "hasPart": [
         {
@@ -1820,6 +1828,10 @@
           "@id": "https://s11.no/2023/phd/cover-clipart.svg"
         }
       ],
+      "mentions": [
+        {"@id": "#review"},
+        {"@id": "https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html"}
+      ],
       "identifier": {
         "@id": "https://doi.org/10.5281/zenodo.8113625"
       },
@@ -1839,24 +1851,179 @@
       "isAccessibleForFree": true
     },
     {
+      "@id": "https://www.uva.nl/en/content/events/2025/01/fair-research-objects-and-computational-workflows-a-linked-data-approach.html",
+      "@type": "PublicationEvent",
+      "publishedBy": {"@id": "https://ror.org/04dkp9463"},
+      "organizer": {"@id": "https://ror.org/04dkp9463"},
+      "startTime": "2025-01-15T16:00:00+0100",
+      "endTime": "2025-01-15T17:30:00+0100",
+      "location": {
+        "@id": "https://www.uva.nl/en/shared-content/locaties/en/binnenstad/agnietenkapel.html"
+      },
+      "name": "PhD defence: FAIR Research Objects and Computational Workflows – A Linked Data Approach",
+      "description": "Stian Soiland-Reyes will defend the dissertation 'FAIR Research Objects and Computational Workflows – A Linked Data Approach'. Supervisors are Prof. P.T. Groth and Prof. C.A. Goble.",
+      "recordedIn": {
+        "@id": "https://hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=32a16d66-8b01-437b-9e99-b24200b189c6"
+      },
+      "workFeatured": {"@id": "https://s11.no/2023/phd/thesis.pdf"},
+      "about": [
+        {"@id": "#laymanspeak"},
+        {"@id": "#defence"}
+      ]
+    },
+    {
+      "@id": "#doctoral-committee",
+      "@type": "Organization",
+      "name": "Doctoral Committee",
+      "member": [
+        {"@id": "https://orcid.org/0000-0003-0183-6910"},
+        {"@id": "https://orcid.org/0000-0003-1219-2137"},
+        {"@id": "https://orcid.org/0000-0002-2947-9444"},
+        {"@id": "https://www.uva.nl/profiel/l/a/c.t.a.m.delaat/c.t.a.m.delaat.html"},
+        {"@id": "https://orcid.org/0000-0003-2164-8132"},
+        {"@id": "https://orcid.org/0000-0002-6717-9418"},
+        {"@id": "https://orcid.org/0000-0001-7054-3770"}
+      ],
+      "parentOrganization": {"@id": "https://ror.org/04dkp9463"}
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2947-9444",
+      "@type": "Person",
+      "name": "prof. dr. R.V. van Nieuwpoort",
+      "affiliation": {"@id": "https://ror.org/027bh9e22"}
+    },
+    {
+      "@id": "https://ror.org/027bh9e22",
+      "@type": "CollegeOrUniversity",
+      "name": "Leiden University"
+    },
+    {
+      "@id": "https://ror.org/02k40bc56",
+      "@type": "CollegeOrUniversity",
+      "name": "Indiana University Bloomington"
+    },
+    {
+      "@id": "https://www.uva.nl/profiel/l/a/c.t.a.m.delaat/c.t.a.m.delaat.html",
+      "@type": "Person",
+      "name": "prof. dr. ir. C.T.A.M. de Laat",
+      "affiliation": {"@id": "https://ror.org/04dkp9463"}
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2164-8132",
+      "@type": "Person",
+      "name": "prof. dr. B.A. Plale",
+      "affiliation": {"@id": "https://ror.org/02k40bc56"}
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6717-9418",
+      "@type": "Person",
+      "name": "dr. Z. Zhao",
+      "affiliation": {"@id": "https://ror.org/04dkp9463"}
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7054-3770",
+      "@type": "Person",
+      "name": "dr. V.O. Degeler",
+      "affiliation": {"@id": "https://ror.org/04dkp9463"}
+    },
+    {
+      "@id": "#review",
+      "@type": "ReviewAction",
+      "name": "Review of PhD thesis",
+      "agent": {
+        "@id": "#doctoral-committee"
+      },
+      "object": {
+        "@id": "https://s11.no/2023/phd/thesis.pdf"
+      }
+    },    
+    {
+      "@id": "#defence",
+      "@type": "AssessAction",
+      "name": "Defence of PhD thesis",
+      "agent": {
+        "@id": "#doctoral-committee"
+      },
+      "participant": [
+        {"@id": "https://orcid.org/0000-0001-9842-9718"},
+        {"@id": "https://orcid.org/0000-0002-2961-9670"},
+        {"@id": "#lasse"}
+      ],
+      "object": {
+        "@id": "https://s11.no/2023/phd/thesis.pdf"
+      }
+    },
+    {
+      "@id": "#lasse",
+      "@type": "Person", 
+      "name": "Lasse Søiland"
+    },
+    { 
+      "@id": "https://www.uva.nl/en/shared-content/locaties/en/binnenstad/agnietenkapel.html",
+      "@type": "Place",
+      "name": "Agnietenkapel, University of Amsterdam"
+    },
+    {
+      "@id": "https://hva-uva.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=32a16d66-8b01-437b-9e99-b24200b189c6",
+      "@type": "VideoObject",
+      "name": "Recording: FAIR Research Objects and Computational Workflows – A Linked Data Approach - (Agnietenkapel -Live) -15-1-2025"
+    },
+    {
       "@id": "https://s11.no/2023/phd/thesis.pdf",
       "@type": [
         "File",
         "Thesis"
       ],
       "name": "FAIR Research Objects and Computational Workflows – A Linked Data Approach",
-      "version": "2024-08-22",
+      "version": "2025-01-05",
       "author": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "identifier": "https://doi.org/10.5281/zenodo.8113625",
+      "contributor": [
+        {"@id": "https://orcid.org/0000-0003-0183-6910"},
+        {"@id": "https://orcid.org/0000-0003-1219-2137"}
+      ],
+      "cite-as": {
+        "@id": "https://doi.org/10.5281/zenodo.8113625"
+      },
+      "identifier": [
+        {"@id": "https://doi.org/10.5281/zenodo.8113625"},
+        {"@id": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d"},
+        {"@id": "https://identifiers.org/isbn/9789493391789"}
+      ],
       "datePublished": "2024-09-15",
+      "dateModified": "2025-01-04",
       "inSupportOf": "graad van doctor",
       "sourceOrganization": {
         "@id": "https://ror.org/04dkp9463"
       },
-      "sameAs": "https://zenodo.org/records/14052581/files/phd-stian-2024-11-07.pdf"
+      "sameAs": "https://zenodo.org/records/14719595/files/phd-stian-2025-01-04.pdf"
     },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.8113625",
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "name": "DOI",
+      "value": "doi:10.5281/zenodo.8113625",
+      "url": "https://doi.org/10.5281/zenodo.8113625"    
+    },
+    {
+      "@id": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d",
+      "@type": "PropertyValue",      
+      "propertyID": "http://purl.org/spar/fabio/hasHandle",
+      "name": "Handle",
+      "value": "11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d",
+      "url": "https://hdl.handle.net/11245.1/d7fcc474-fcd1-4f2e-b5c0-1fd53a88f11d"
+
+    },
+    {
+      "@id": "https://identifiers.org/isbn/9789493391789",
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/isbn",
+      "value": "9789493391789",
+      "name": "ISBN",
+      "description": "ISBN 978-94-93391-78-9"
+    },    
     {
       "@id": "https://s11.no/2023/phd/cover-clipart.svg",
       "@type": "CoverArt",
