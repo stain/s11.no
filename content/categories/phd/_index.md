@@ -40,7 +40,7 @@ As I did a _thesis by publication_, these pages also gather the articles submitt
   _(For full list of co-authors, see [contributors](/2022/phd/contributions/#contributor-affiliations) and [appendix Acknowledgements](../../2022/phd/acknowledgements/))_
 * RO-Crate: <https://w3id.org/ro/doi/10.5281/zenodo.8113625>
 * Status: _Awarded_ 2025-01-15
-* Available formats: [HTML](https://s11.no/2023/phd/), [PDF](https://s11.no/2023/phd/thesis.pdf), [RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8113625), [LaTeX](https://github.com/stain/phd)
+* Available formats: [HTML](https://s11.no/2023/phd/#fair-research-objects-and-computational-workflows--a-linked-data-approach), [PDF](https://s11.no/2023/phd/thesis.pdf), [RO-Crate](https://w3id.org/ro/doi/10.5281/zenodo.8113625), [LaTeX](https://github.com/stain/phd)
 
 <a href="thesis.pdf">
 <picture>
