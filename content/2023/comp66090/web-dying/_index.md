@@ -71,14 +71,13 @@ Even traditional document-based Web sites and repositories are increasingly deve
 <div id="app"></div></body></html>
 ```
 
-Increasingly, in enterprise environment, security concerns about spoofing, viruses and social engineering means that even traditional communication methods like email may filter any URLs in the message, to rewrite them through a security proxy. When multiple such manglers combine, URLs ("Uniform Resource Locator") loose their intrinsic value, as they can no longer be Located, and no longer be given to another person to address them towards a particular Web resource.
+Increasingly, in enterprise environment, security concerns about spoofing, viruses and social engineering means that even traditional communication methods like email may filter any URLs in the message, to rewrite them through a security proxy. When multiple such manglers combine, URLs ("Uniform Resource Locator") loose their intrinsic value, as they can no longer be Located, and no longer be given to another person to address them towards a particular Web resource. For instance:
 
-<pre>
+```
 https://urlisolation.com/browser?clickId=B23D741D-999F-4828-AB2B-04A2F9CA147A&traceToken=1739813018%3Bmanchesteruni\_hosted%3Bhttps%3A%2Fel219.r.ag.d.sendibm3.com&url=https%3A%2F%2Fopenscienceretreat.zbw.eu%2F
-</pre>
+```
 
-Increasingly the combined devaluing of the URL as a purpose of linking to websites has led to changes in social practices, as the use of low resolution screenshots ironically becomes more reliable to forward media, e.g. to forward a post from one platform to another, but at the cost of reduced accessibility, traceability and retractability. 
-
+Increasingly the combined devaluing of the URL as a purpose of linking to websites has led to changes in social practices, as the use of low resolution screenshots ironically becomes more reliable to forward media, e.g. to forward a post from one platform to another, but at the cost of reduced accessibility, traceability and retractability.
 
 ## Description
 
