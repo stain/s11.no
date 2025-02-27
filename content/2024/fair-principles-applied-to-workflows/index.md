@@ -3,7 +3,7 @@ title: Applying the FAIR Principles to Computational Workflows
 categories:
   - Preprint
 summary: >
-  arXiv preprint submitted to Scientific Data
+  Journal article published in Scientific Data
 description: >
   Recent trends within computational and data sciences show an increasing recognition and adoption of computational workflows as tools for productivity and reproducibility that also democratize access to platforms and processing know-how.  As digital objects to be shared, discovered, and reused, computational workflows benefit from the FAIR principles, which stand for Findable, Accessible, Interoperable, and Reusable. The Workflows Community Initiative's FAIR Workflows Working Group (WCI-FW), a global and open community of researchers and developers working with computational workflows across disciplines and domains, has systematically addressed the application of both FAIR data and software principles to computational workflows. We present recommendations with commentary that reflects our discussions and justifies our choices and adaptations. These are offered to workflow users and authors, workflow management system developers, and providers of workflow services as guidelines for adoption and fodder for discussion. The FAIR recommendations for workflows that we propose in this paper will maximize their value as research assets and facilitate their adoption by the wider community.
 tags:
@@ -59,15 +59,16 @@ authors:
 ---
 
 
-**Note**: This preprint has not yet been fully adapted for the Web.
+**Note**: This preprint has not yet been fully adapted for the Web and updated following peer review.
 
 
 <h2>Cite as</h2>
 
 Sean Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
 **Applying the FAIR Principles to Computational Workflows**.  
-_arXiv_ 2410.03490 [cs.DL]  
-<https://doi.org/10.48550/arXiv.2410.03490>
+_Scientific Data_ **12**:328  
++https://doi.org/10.1038/s41597-025-04451-9
+ 
 
 
 # Applying the FAIR Principles to Computational Workflows
