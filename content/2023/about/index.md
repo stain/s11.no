@@ -47,6 +47,8 @@ Stian graduated with a BSc (2003) and [MSc](https://doi.org/11250/251073) (2007)
 
 He has more than two decades of experience as an IT professional, including 16 years as a software developer working across academia and industry. He joined the [eScience Lab](https://esciencelab.org.uk/ "eScience Lab") in 2005 (then called the [myGrid team](http://www.mygrid.org.uk/)), where he became the _Technical Lead Developer_ of the open-source scientific workflow management system [Taverna](http://taverna.incubator.apache.org/). As part of the EU FP7-funded [Wf4Ever project](/2020/archive/wf4ever/), Stian contributed to the [W3C PROV](https://www.w3.org/TR/prov-overview/ "W3C PROV-Overview") specifications for capturing provenance and co-developed the [Research Object](http://www.researchobject.org/) model and ontologies.  More recently Stian has continued this passion for reproducibility, structured metadata and open scholarship with engagement in several projects related to FAIR, computational workflows, and RO-Crate. 
 
+Stian was awared a [PhD](/phd/) from the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/) in January 2025.
+
 In 2023, Stian became a _Research Fellow_, and in November 2023 he was promoted to _Senior Lecturer_ at the Department of Computer Science, taking up teaching duties, supervision and co-leadership of the eScience Lab.
 
 
@@ -54,7 +56,8 @@ In 2023, Stian became a _Research Fellow_, and in November 2023 he was promoted 
 
 Stian is co-leading and contributing to [eScience Lab's participation](https://esciencelab.org.uk/projects/) in several European-wide research projects, including:
 
-* **CLIMATE-ADAPT4EOSC** -- Horizon Europe #101188248, call [HORIZON-INFRA-2024-EOSC-01-01](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-infra-2024-eosc-01-01) _FAIR and open data sharing in support of the mission adaptation to climate change_ (pending signed Grant Agreement)
+* [**TREvolution**](https://dareuk.org.uk/how-we-work/ongoing-activities/trevolution/), DARE UK, UK Research and Innovation (UKRI) [MC_PC_24038](http://gtr.ukri.org/projects?ref=MC_PC_24038), build and test new capabilities for sensitive data research in UK Trusted Research Environments (TREs).  
+* [**CLIMATE-ADAPT4EOSC**](https://climate-adapt4eosc.eu/) -- Horizon Europe [101188248](https://doi.org/10.3030/101188248), call [HORIZON-INFRA-2024-EOSC-01-01](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-infra-2024-eosc-01-01) _FAIR and open data sharing in support of the mission adaptation to climate change_ (pending signed Grant Agreement)
 * **[EOSC-ENTRUST](https://esciencelab.org.uk/projects/eosc-entrust/)**  - A European Network of TRUSTed research environments.
 * **[EVERSE](https://esciencelab.org.uk/projects/everse/)** -- European Virtual Institute for Research Software Excellence.  Includes support for RO-Crate in the Workflow Execution Service ([WfExS](https://github.com/inab/WfExS-backend)), continuing work started in EOSC-Life, BY-COVID and TRE-FX.
 * [**HDR Federated Analytics**](https://esciencelab.org.uk/projects/federated-analytics/) -- understand the challenges of computational reproducibility and FAIR data sharing within HDR UK federated data infrastructures, extends on TRE-FX prototype.  
@@ -63,17 +66,17 @@ Stian is co-leading and contributing to [eScience Lab's participation](https://e
   <small><http://eurosciencegateway.eu/> Horizon Europe [101057388](https://doi.org/10.3030/101057388), UKRI [10038963](https://gtr.ukri.org/projects?ref=10038963)</small>
 * **[FAIR-IMPACT](https://esciencelab.org.uk/projects/fair-impact/)** -- which is improving the FAIR publication and indexing of semantic artefacts and their catalogues, with associated Linked Data tooling including RO-Crate.  
   <small><http://fair-impact.eu/> Horizon Europe [101057344](https://doi.org/10.3030/101057344), UKRI [10038992](https://gtr.ukri.org/projects?ref=10038992)</small>
-* [**ELIXIR Scientific Programme 2024-28**](https://elixir-europe.org/sites/default/files/documents/elixir-programme-24-28-full.pdf) including _Tools platform_, _Compute platform_
-* **[BioDT](https://esciencelab.org.uk/projects/biodt/)** -- making Digital Twins for BioDiversity using FAIR Digital Object, [RO-Crate](https://www.researchobject.org/ro-crate/), [FAIR Workflows](https://workflows.community/groups/fair/) and [WorkflowHub](https://workflowhub.eu/).  
-  <small><https://biodt.eu/> Horizon Europe [101057437](https://doi.org/10.3030/101057437), UKRI [10038930](https://gtr.ukri.org/projects?ref=10038930))</small>
-* **[BY-COVID](https://esciencelab.org.uk/projects/by-covid/)** -- making COVID-19 data open, standardized and linked using FAIR metadata and computational workflows. Stian is a task leader and focus on metadata standards, provenance and [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/).  
-  <small><https://by-covid.eu/> Horizon Europe #[101046203](https://doi.org/10.3030/101046203)</small>
+* [**ELIXIR Scientific Programme 2024-28**](https://elixir-europe.org/sites/default/files/documents/elixir-programme-24-28-full.pdf) including _Tools platform_, _Compute platform_, _Fed-A-Crate_
 * **[Biodiversity Genomics Europe (BGE)](https://esciencelab.org.uk/projects/biodiversitygenomics/)** -- where the eScience Lab will help develop FAIR Data infrastructures.  
   <small><https://biodiversitygenomics.eu/> Horizon Europe #[101059492](https://doi.org/10.3030/101059492), UKRI [10040409](https://gtr.ukri.org/projects?ref=10040409)</small>
 
 
 ### Previous projects
 
+* **[BioDT](https://esciencelab.org.uk/projects/biodt/)** -- making Digital Twins for BioDiversity using FAIR Digital Object, [RO-Crate](https://www.researchobject.org/ro-crate/), [FAIR Workflows](https://workflows.community/groups/fair/) and [WorkflowHub](https://workflowhub.eu/).  
+  <small><https://biodt.eu/> Horizon Europe [101057437](https://doi.org/10.3030/101057437), UKRI [10038930](https://gtr.ukri.org/projects?ref=10038930))</small>
+* **[BY-COVID](https://esciencelab.org.uk/projects/by-covid/)** -- making COVID-19 data open, standardized and linked using FAIR metadata and computational workflows. Stian is a task leader and focus on metadata standards, provenance and [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/).  
+  <small><https://by-covid.eu/> Horizon Europe #[101046203](https://doi.org/10.3030/101046203)</small>
 * [TRE-FX](https://esciencelab.org.uk/projects/tre-fx/) -- Delivering a [federated network of TREs](https://doi.org/10.5281/zenodo.10055354) to enable safe analytics. Workflow execution in Trusted Research Environments using [5-Safe RO-Cratre](https://trefx.uk/5s-crate/).  
   https://trefx.uk/ <small>[DARE UK](https://dareuk.org.uk/), UKRI [MC_PC_23007](https://gtr.ukri.org/projects?ref=MC_PC_23007)</small>
 * [EOSC-Life](https://esciencelab.org.uk/projects/eosclife/) -- FAIR data processing for life sciences. Here Stian mainly contributed to the [Tools Collaboratory](https://www.eosc-life.eu/tools-workflows/) for [WorkflowHub](https://workflowhub.eu/), using [RO-Crate](https://www.researchobject.org/ro-crate/), [CWL](https://www.commonwl.org/), [Galaxy](https://galaxyproject.org/) and other [existing workflow systems](https://s.apache.org/existing-workflow-systems).  
@@ -97,21 +100,19 @@ Stian is co-leading and contributing to [eScience Lab's participation](https://e
 In the Department of Computer Science, Stian assists in the teaching for:
 
 - COMP1INTRO [Welcome week](https://studentnet.cs.manchester.ac.uk/ugt/year1/firstweeks/) _Boot-up labs_ with introduction to Linux, Git, GitLab
-- [COMP16412](https://portal.manchester.ac.uk/uPortal/p/course-unit-info.ctf1/max/render.uP?pP_action=viewCUDetails&pP_location=/CourseUnitPublishing/CourseUnitDataFiles/COMP/039761COMP164122023-08-011V14.xml) _Introduction to Programming 2_ (Java, JavaFX)
-- Tutorial group of ~6 students [COMP10120](https://portal.manchester.ac.uk/uPortal/p/course-unit-info.ctf1/max/render.uP?pP_action=viewCUDetails&pP_location=/CourseUnitPublishing/CourseUnitDataFiles/COMP/020952COMP101202023-08-011V14.xml) _First Year Team Project Group_ 
+- COMP16412_Introduction to Programming 2_ (Java, JavaFX) (unit lead 2025/2026)
+- COMP63301 Data Engineering Concepts (MSc)
 
-From 2025/2026, the Computer Science MSc pathways will include programmes for _AI_, _Cyber Security_, _Machine Learning_, _Software Engineering_, and a more flexible programme _Advanced Computer Science_. For these programmes, Stian collaborates in developing course units for _Data Engineering Concepts_ and _AdvanCed Topics in Knowledge Representation and Reasoning_.
+<!--
+- Tutorial group of ~6 students COMP10120 _First Year Team Project Group_  -->
+
 
 Stian teaches [provenance](/2022/prov/) models, FAIR data and reproducibility as part of the course unit _Understanding Data and their Environment_ in the cross-faculty [MSc Data Science](https://www.manchester.ac.uk/study/masters/courses/list/11552/msc-data-science-computer-science-data-informatics/) programme at The University of Manchester.
 
-As of 2024, Stian is supervising 2 PhD students in Manchester (in collaboration with Professor Carole Goble), two [MSc projects](/2023/comp66090/) for 2023/2024, and 6 BSc third-year projects for 2024/2025.  He is one of the cohort advisors for postgraduate students in Computer Science.
+As of 2025, Stian is supervising 3 PhD students in Manchester (in collaboration with Professor Carole Goble), three [MSc projects](/2023/comp66090/) for 2024/2025, and 6 BSc third-year projects for 2024/2025.  He is one of the cohort advisors for postgraduate students in Computer Science.
 
 He has previously co-supervised 1 PhD student and multiple BSc/MSc student projects. He has informally mentored PhD students internationally, as well as mentoring several student projects of [Google Summer of Code](https://summerofcode.withgoogle.com/).
 
-
-## PhD Candidate
-
-In July 2019, Stian started as a [PhD Candidate](/phd/) in the [INDElab](https://indelab.org/) at the [Informatics Institute](http://ivi.uva.nl/) of the [University of Amsterdam](http://uva.nl/). The PhD defence is scheduled for January 2025.
 
 
 ## Member of committees and professional bodies
