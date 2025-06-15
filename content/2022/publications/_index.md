@@ -11,14 +11,37 @@ aliases:
 
 ## 2025
 
-Sean Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
-[**Applying the FAIR Principles to Computational Workflows**](../../2024/fair-principles-applied-to-workflows).  
+
+Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, Carole Goble (2025):  
+[**WorkflowHub: a registry for computational workflows**](https://research.manchester.ac.uk/files/808300570/s41597-025-04786-3.pdf). <!-- (../../2024/workflowhub).   -->  
+_Scientific Data_ **12**:837  
+<https://doi.org/10.1038/s41597-025-04786-3>
+
+Sean Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2025):  
+[**Applying the FAIR Principles to Computational Workflows**](https://doi.org/10.1038/s41597-025-04451-9).<!-- ](../../2024/fair-principles-applied-to-workflows/).   -->  
 _Scientific Data_ **12**:328  
-+https://doi.org/10.1038/s41597-025-04451-9
+<https://doi.org/10.1038/s41597-025-04451-9>
+
+Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2025):  
+[**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
+_International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  Recording provenance of
+_Open Conference Proceedings_ **5**  
+<https://doi.org/10.52825/ocp.v5i.1273>
+
+
+Stian Soiland-Reyes, Stuart Wheater, Thomas Giles, Jonathan Couldridge, Phil Quinlan, Carole Goble (2025):  
+[**Five Safes RO-Crate: FAIR Digital Objects for Trusted Research Environments**](https://doi.org/10.52825/ocp.v5i.1419).  
+_International FAIR Digital Objects Implementation Summit 2024_, Berlin, Germany, 2024-03-20/--21.  
+_Open Conference Proceedings_ **5**  
+<https://doi.org/10.52825/ocp.v5i.1419>
 
 
 ## 2024
 
+Meznah Aloqalaa, Stian Soiland-Reyes, Carole Goble (2024):  
+[**Systematically Examining Reproducibility**: A Case Study for High Throughput Sequencing using the PRIMAD Model and BioCompute Object](https://arxiv.org/pdf/2412.07502).  
+_arXiv_:2412.07502 \[cs.CE\]  
+<https://doi.org/10.48550/arXiv.2412.07502>
 
 <small>Rafael Ferreira da Silva, Deborah Bard, Kyle Chard, Shaun DeWitt, Ian T. Foster, Tom Gibbs, Carole Goble, William Godoy, Johan Gustafsson, Utz−Uwe Haus, Stephen Hudson, Shantenu Jha, Laila Los, Drew Paine, Frederic Suter, Logan Ward, Sean Wilkinson, Marcos Amaris, Yadu Babuji, Jonathan and Bader, Rajat Bhattarai, Wes Brewer, Paul Brunk, Silvina Caino−Lores, Henri Casanova, Daniela Cassol, Jared Coleman, Taina Coleman, Iacopo Colonnelli, Anderson Andrei Da Silva, Daniel de Oliveira, Pascal Elahi, Nour Elfaramawy, Wael Elwasif, Brian Etz, Thomas Fahringer, Wesley Ferreira, Rosa Filgueira, Jacob Fosso Tande, Luiz Gadelha, Andy Gallo, Daniel Garijo, Yiannis Georgiou, Philipp Gritsch, Patricia Grubel, Amal Gueroudji, Quentin Guilloteau, Carlo Hamalainen, Rolando Hong Enriquez, Lauren Huet, Kevin Hunter Kesling, Paula Iborra, Shiva Jahangiri, Jan Janssen, Joe Jordan, Sehrish Kanwal, Liliane Kunstmann, Fabian Lehmann, Ulf Leser, Chen Li, Peini Liu, Jakob Luettgau, Richard Lupat, Jose M. Fernandez, Ketan Maheshwari, Tanu Malik, Jack Marquez, Motohiko Matsuda, Doriana Medic, Somayeh Mohammadi, Alberto Mulone, John−Luke Navarro, Kin Wai Ng, Klaus Noelp, Bruno P. Kinoshita, Ryan Prout, Michael R. Crusoe, Sashko Ristov, Stefan Robila, Daniel Rosendo, Billy Rowell, Jedrzej Rybicki, Hector Sanchez, Nishant Saurabh, Sumit Kumar Saurav, Tom Scogland, Dinindu Senanayake, Woong Shin, Raul Sirvent, Tyler Skluzacek, Barry Sly−Delgado, Stian Soiland−Reyes, Abel Souza, Renan Souza, Domenico Talia, Nathan Tallent, Lauritz Thamsen, Mikhail Titov, Ben Tovar, Karan Vahi, Eric Vardar−Irrgang, Edite Vartina, Yuandou Wang, Merridee Wouters, Qi Yu, Ziad Al Bkhetan, Mahnoor Zulfiqar</small> (2024):  
 [**Workflows Community Summit 2024**: Future Trends and Challenges in Scientific Workflows](https://doi.org/10.5281/zenodo.13844759).  
@@ -26,17 +49,7 @@ _Oak Ridge National Laboratory_ Technical Report ORNL/TM−2024/3573
 _Zenodo_  
 <https://doi.org/10.5281/zenodo.13844759>
 
-Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, Carole Goble (2024):  
-[**WorkflowHub: a registry for computational workflows**](../../2024/workflowhub).  
-_arXiv_:2410.06941 [cs.DL]  
-<https://doi.org/10.48550/arXiv.2410.06941>
-
-Sean Wilkinson, Meznah Aloqalaa, Khalid Belhajjame, Michael R. Crusoe, Bruno de Paula Kinoshita, Luiz Gadelha, Daniel Garijo, Ove Johan Ragnar Gustafsson, Nick Juty, Sehrish Kanwal, Farah Zaib Khan, Johannes Köster, Karsten Peters-von Gehlen, Line Pouchard, Randy K. Rannow, Stian Soiland-Reyes, Nicola Soranzo, Shoaib Sufi, Ziheng Sun, Baiba Vilne, Merridee A. Wouters, Denis Yuen, Carole Goble (2024):  
-[**Applying the FAIR Principles to Computational Workflows**](../../2024/fair-principles-applied-to-workflows/).  
-_arXiv_ 2410.03490 [cs.DL]  
-<https://doi.org/10.48550/arXiv.2410.03490>
-
-Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
+ Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
 [**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
 _PLOS One_ **19**(9):e0309210  
 <https://doi.org/10.1371/journal.pone.0309210>
@@ -46,11 +59,6 @@ Jonas Grieb, Claus Weiland, Alexander Wolodkin, Leyla Jael Castro, Stian Soiland
 _Biodiversity Information Science and Standards_ **8**:e134757  
 <https://doi.org/10.3897/biss.8.134757>
 
-Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):  
-[**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
-_International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  
-_Open Conference Proceedings_  (submitted)  
-<https://s11.no/2024/webby-fdos/>
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
 [**Linking provenance and its metadata in multi-organizational environments of life sciences**](../../2023/phd/linking-provenance/).  
@@ -61,12 +69,7 @@ Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland,
 [**RO-Crate community update 2024**](https://research.manchester.ac.uk/files/291196011/FDO2024_RO-Crate_update.pdf).  
 (submitted)  
 <https://research.manchester.ac.uk/en/publications/ro-crate-community-update-2024>
-
-Stian Soiland-Reyes, Stuart Wheater, Tom Giles, Carole Goble, Phil Quinlan (2024):  
-[**Five Safes RO-Crate: FAIR Digital Objects for Trusted Research Environments**](https://research.manchester.ac.uk/files/291224791/FDO2024-Goble-Lightningtalk-5scrate.pdf).  
-(submitted)  
-<https://research.manchester.ac.uk/en/publications/five-safes-ro-crate-fair-digital-objects-for-trusted-research-env>
-
+ 
 Herbert Van de Sompel, Stian Soiland-Reyes (2024):  
 [**FAIR Signposting: Exposing the Topology of Digital Objects on the Web**](https://research.manchester.ac.uk/en/publications/fair-signposting-exposing-the-topology-of-digital-objects-on-the-).  
 (submitted)  
@@ -600,6 +603,10 @@ MSc thesis, _NTNU_.
 [[thesis](https://soiland.no/archive-2007/master/thesis.pdf)]
 [[slides](https://soiland.no/archive-2007/master/presentation.pdf)]
 [[code](https://soiland.no/archive-2007/master/master-2006-06-26.tar.gz)]
+
+# PhD
+
+Some of these publications formed part of the [PhD thesis](/2023/phd/) "FAIR Research Objects and Computational Workflows – A Linked Data Approach".
 
 # Other publications
 
