@@ -54,7 +54,7 @@ affiliations:
     index: 6
   - name: Department of Computer Science, University of Freiburg, Freiburg, DE 
     index: 7
-date: 11 November 2022
+date: 2022-11-11
 cito-bibliography: paper.bib
 event: BH22EU
 biohackathon_name: "BioHackathon Europe 2022"

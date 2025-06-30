@@ -57,7 +57,7 @@ affiliations:
     index: 9
   - name: DANS, The Hague, NL
     index: 10
-date: 3 November 2023
+date: 2023-11-03
 cito-bibliography: paper.bib
 event: BH23EU
 biohackathon_name: "BioHackathon Europe 2023"

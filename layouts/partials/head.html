@@ -22,7 +22,7 @@
     <!-- Styles -->
     {{- $normalize_css := resources.Get "css/normalize.css" }}
    
-    {{- $inServerMode   := .Site.IsServer }}
+    {{- $inServerMode   := hugo.IsServer }}
     {{- $cssTarget      := "css/style.css" }}
     {{- $cssOptions     := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "nested") }}
     {{- $style          := resources.Get "scss/style-in-use.scss" | toCSS $cssOptions }}
