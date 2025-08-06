@@ -11,6 +11,11 @@ aliases:
 
 ## 2025
 
+Sean R. Wilkinson, Johan Gustafsson, Finn Bacall, Khalid Belhajjame, Salvador Capella, Jose Maria Fernandez Gonzalez, Jacob Fosso Tande, Luiz Gadelha, Daniel Garijo, Patricia Grubel, Bjorn Grüning, Farah Zaib Khan, Sehrish Kanwal, Simone Leo, Stuart Owen, Luca Pireddu, Line Pouchard, Laura Rodríguez-Navas, Beatriz Serrano-Solano, Stian Soiland-Reyes, Baiba Vilne, Alan Williams, Merridee Ann Wouters, Frederik Coppens, Carole Goble (2025):  
+[**An Ecosystem of Services for FAIR Computational Workflows**](https://doi.org/10.48550/arXiv.2505.15988).  
+Book chapter, draft
+_arXiv_ 2505.15988 [cs.DC]
+<https://doi.org/10.48550/arXiv.2505.15988>
 
 Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, Carole Goble (2025):  
 [**WorkflowHub: a registry for computational workflows**](https://research.manchester.ac.uk/files/808300570/s41597-025-04786-3.pdf). <!-- (../../2024/workflowhub).   -->  
@@ -27,7 +32,6 @@ Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland,
 _International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  Recording provenance of
 _Open Conference Proceedings_ **5**  
 <https://doi.org/10.52825/ocp.v5i.1273>
-
 
 Stian Soiland-Reyes, Stuart Wheater, Thomas Giles, Jonathan Couldridge, Phil Quinlan, Carole Goble (2025):  
 [**Five Safes RO-Crate: FAIR Digital Objects for Trusted Research Environments**](https://doi.org/10.52825/ocp.v5i.1419).  
@@ -49,7 +53,7 @@ _Oak Ridge National Laboratory_ Technical Report ORNL/TM−2024/3573
 _Zenodo_  
 <https://doi.org/10.5281/zenodo.13844759>
 
- Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
+Simone Leo, Michael R.  Crusoe, Laura Rodríguez-Navas, Raül Sirvent, Alexander Kanitz, Paul De Geest, Rudolf Wittner, Luca Pireddu, Daniel Garijo, José M.  Fernández, Iacopo Colonnelli, Matej Gallo, Tazro Ohta, Hirotaka Suetake, Salvador Capella-Gutierrez, Renske de Wit, Bruno de Paula Kinoshita, Stian Soiland-Reyes (2024):  
 [**Recording provenance of workflow runs with RO-Crate**](../../2023/phd/workflow-run-crate/).  
 _PLOS One_ **19**(9):e0309210  
 <https://doi.org/10.1371/journal.pone.0309210>
@@ -58,7 +62,6 @@ Jonas Grieb, Claus Weiland, Alexander Wolodkin, Leyla Jael Castro, Stian Soiland
 [**Using Webby FDOs to Integrate AI Taxon Identification and Citizen Science**](https://doi.org/10.3897/biss.8.134757).  
 _Biodiversity Information Science and Standards_ **8**:e134757  
 <https://doi.org/10.3897/biss.8.134757>
-
 
 Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Markus Plass, Stian Soiland-Reyes, Heimo Müller, Jörg Geiger, Petr Holub (2023):  
 [**Linking provenance and its metadata in multi-organizational environments of life sciences**](../../2023/phd/linking-provenance/).  
@@ -573,7 +576,6 @@ _UK e‐Science All Hands (AHM) 2009 Conference_, Oxford, UK, 2009.
 [[pdf](https://www.research.manchester.ac.uk/portal/files/28600665/POST-PEER-REVIEW-PUBLISHERS.PDF)]
 [[slides](https://www.slideshare.net/soilandreyes/bringing-cabig-services-together-using-taverna)]
 
-
 Wei Tan, Kyle Chard, Dinanath Sulakhe, Ravi Madduri, Ian Foster, Stian Soiland‐Reyes, Carole Goble (2009):  
 [**Scientific workflows as services in caGrid: A Taverna and gRAVI approach**](https://www.research.manchester.ac.uk/portal/files/58596272/icws2009_tan_cagrid_taverna_gravi_submitted_preprint.pdf).   
 In _2009 IEEE International Conference on Web Services_ (ICWS 2009)  
@@ -606,7 +608,7 @@ MSc thesis, _NTNU_.
 
 # PhD
 
-Some of these publications formed part of the [PhD thesis](/2023/phd/) "FAIR Research Objects and Computational Workflows – A Linked Data Approach".
+Some of the 2019–2025 publications formed part of the [PhD thesis](/2023/phd/) "FAIR Research Objects and Computational Workflows – A Linked Data Approach".
 
 # Other publications
 

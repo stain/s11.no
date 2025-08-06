@@ -6,7 +6,7 @@ categories:
   - Publication
 ---
 
-This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?page=1&size=20&q=%220000-0001-9842-9718%22&type=poster).
+This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A0000-0001-9842-9718&f=resource_type%3Aposter).
 
 
 Eli Chadwick, Stian Soiland-Reyes, José María Fernández, Björn Grüning, Carole Goble (2025):  

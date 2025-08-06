@@ -9,7 +9,7 @@ categories:
 This page is work in progress. Most of Stian's slides are available from:
 
 - [Slides.com](https://slides.com/soilandreyes)
-- [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A"Stian Soiland-Reyes"&f=resource_type%3Apresentation) 
+- [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A0000-0001-9842-9718&f=resource_type%3Apresentation)
 - [Slideshare](https://www.slideshare.net/soilandreyes/presentations) (<2017, apologies for adverts)
 - [eScienceLab YouTube channel](https://www.youtube.com/@eScienceLab/playlists)
 

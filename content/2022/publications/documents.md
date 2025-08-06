@@ -6,7 +6,7 @@ categories:
   - Publication
 ---
 
-**Note**: This list is **Work in progress** and incomplete, showing documents (reports, specifications and deliverables) (co)authored by Stian Soiland-Reyes.
+**Note**: This list is **Work in progress** and incomplete, showing documents (reports, specifications and deliverables) (co)authored by Stian Soiland-Reyes. See also [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A0000-0001-9842-9718&f=resource_type%3Apublication%2Binner%3Apublication-report&f=resource_type%3Apublication%2Binner%3Apublication-deliverable&f=resource_type%3Apublication%2Binner%3Apublication-milestone&f=resource_type%3Apublication%2Binner%3Apublication-standard&f=resource_type%3Apublication%2Binner%3Apublication-other&l=list&p=1&s=10&sort=bestmatch)
 
 Christian Cole, Philip Quinlan, Jim Smith, Stian Soiland-Reyes, Simon Li, Alexander Hambley, Tim Machin, Simon Thompson, Gordon Milligan, Antony Chuter, Rob Baster (2025):  
 [**The TREvolution Profile**](https://doi.org/10.5281/zenodo.15479820).  
