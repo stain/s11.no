@@ -11,6 +11,11 @@ aliases:
 
 ## 2025
 
+Rutger A. Vos, Kessy Abarenkov, Jireh Agda, Josh Agda, Ruud Altenburg, Sarah J. Bourlat, Tom Brown, Eli Chadwick, Pierre-Etienne Cholley, Fabian Deister, Dick Groenenberg, Sharif islam, Nick Juty, Vishnukumar Balavenkataraman Kadhirvelu, Maria Kamouyiaros, Douglas Lowe, Hana Merchant, Joana Pauperio, Benjamin Wills Price, Sujeevan Ratnasingham, Stian Soiland-Reyes, Giorgia Staffoni, Catherine Wei, Oliver White, Dimitris Koureas (2025):  
+[**Enhancing Digital Infrastructures and Data Handling Practices for Single Specimen Barcoding** - the 2024 BGE Barcoding Hackathon](https://doi.org/10.37044/osf.io/xb4ut_v1).  
+_BioHackrXiv_  
+https://doi.org/10.37044/osf.io/xb4ut_v1
+
 Sean R. Wilkinson, Johan Gustafsson, Finn Bacall, Khalid Belhajjame, Salvador Capella, Jose Maria Fernandez Gonzalez, Jacob Fosso Tande, Luiz Gadelha, Daniel Garijo, Patricia Grubel, Bjorn Grüning, Farah Zaib Khan, Sehrish Kanwal, Simone Leo, Stuart Owen, Luca Pireddu, Line Pouchard, Laura Rodríguez-Navas, Beatriz Serrano-Solano, Stian Soiland-Reyes, Baiba Vilne, Alan Williams, Merridee Ann Wouters, Frederik Coppens, Carole Goble (2025):  
 [**An Ecosystem of Services for FAIR Computational Workflows**](https://doi.org/10.48550/arXiv.2505.15988).  
 Book chapter, draft
@@ -18,7 +23,7 @@ _arXiv_ 2505.15988 [cs.DC]
 <https://doi.org/10.48550/arXiv.2505.15988>
 
 Ove Johan Ragnar Gustafsson, Sean R. Wilkinson, Finn Bacall, Stian Soiland-Reyes, Simone Leo, Luca Pireddu, Stuart Owen, Nick Juty, José Mª Fernández, Tom Brown, Hervé Ménager, Björn Grüning, Salvador Capella-Gutierrez, Frederik Coppens, Carole Goble (2025):  
-[**WorkflowHub: a registry for computational workflows**](https://research.manchester.ac.uk/files/808300570/s41597-025-04786-3.pdf). <!-- (../../2024/workflowhub).   -->  
+[**WorkflowHub: a registry for computational workflows**](https://doi.org/10.1038/s41597-025-04786-3). <!-- (../../2024/workflowhub).   -->  
 _Scientific Data_ **12**:837  
 <https://doi.org/10.1038/s41597-025-04786-3>
 
@@ -70,12 +75,12 @@ Rudolf Wittner, Matej Gallo, Simone Leo, Cecilia Mascia, Francesca Frexia, Marku
 
 Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, RO-Crate community (2024):  
 [**RO-Crate community update 2024**](https://research.manchester.ac.uk/files/291196011/FDO2024_RO-Crate_update.pdf).  
-(submitted)  
+(submitted; since merged into [Webby FDO](https://doi.org/10.52825/ocp.v5i.1273))  
 <https://research.manchester.ac.uk/en/publications/ro-crate-community-update-2024>
  
 Herbert Van de Sompel, Stian Soiland-Reyes (2024):  
 [**FAIR Signposting: Exposing the Topology of Digital Objects on the Web**](https://research.manchester.ac.uk/en/publications/fair-signposting-exposing-the-topology-of-digital-objects-on-the-).  
-(submitted)  
+(submitted; since merged into [Webby FDO](https://doi.org/10.52825/ocp.v5i.1273))  
 <https://research.manchester.ac.uk/en/publications/fair-signposting-exposing-the-topology-of-digital-objects-on-the->
 
 Peter Sefton, Stian Soiland-Reyes (2024):  

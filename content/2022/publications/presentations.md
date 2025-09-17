@@ -13,6 +13,10 @@ This page is work in progress. Most of Stian's slides are available from:
 - [Slideshare](https://www.slideshare.net/soilandreyes/presentations) (<2017, apologies for adverts)
 - [eScienceLab YouTube channel](https://www.youtube.com/@eScienceLab/playlists)
 
+Eli Chadwick, Warren Del-Pinto, Alexander Hambley, Stian Soiland-Reyes (2025):  
+[**Demystifying RO-Crate**: An introduction to RO-Crate for TREvolution and DARE Early Adopters](https://doi.org/10.5281/zenodo.15641886).  
+_DARE TREvolution webinar_  
+https://doi.org/10.5281/zenodo.15641886 [[video](https://youtu.be/7XSQKJOpZ20)]
 
 Stian Soiland-Reyes, Carole Goble (2024):  
 [**WorkflowHub cloud integration in ELIXIR**](https://doi.org/10.5281/zenodo.11654943).  

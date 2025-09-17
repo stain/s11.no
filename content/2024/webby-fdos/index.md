@@ -11,7 +11,7 @@ keywords:
   - linkset
   - community
 summary: >
-  Article submitted for proceedings of International FAIR Digital Objects Implementation Summit 2024
+  Article published in proceedings of International FAIR Digital Objects Implementation Summit 2024
 description: >
      Research Object Crate (RO-Crate) is a lightweight method to package research outputs along with their metadata.  Signposting provides a simple yet powerful approach to navigate scholarly objects on the Web. Combining these technologies form a "webby" implementation of the FAIR Digital Object principles  which is suitable for retrofitting to existing data infrastructures or even for ad-hoc research objects using regular Web hosting platforms. Here we give an update of recent community development and adoption of RO-Crate and Signposting. It is notable that programmatic access and more detailed profiles have received high attention, as well as several FDO implementations that use RO-Crate
 authors:
@@ -31,11 +31,10 @@ authors:
 
 <h2>Cite as</h2>
 
-Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2024):
+Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2025):
 **Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned.  
-International FAIR Digital Objects Implementation Summit 2024, Berlin, Germany, 2024-03-20/-\-21.  
-_Open Conference Proceedings_ (submitted)  
-<https://s11.no/2024/webby-fdos/>
+_Open Conference Proceedings_ **5**  
+<https://doi.org/10.52825/ocp.v5i.1273>
 
 
 # Practical webby FDOs with RO-Crate and FAIR Signposting: Experiences and lessons learned

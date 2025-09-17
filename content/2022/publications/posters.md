@@ -6,8 +6,19 @@ categories:
   - Publication
 ---
 
-This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A0000-0001-9842-9718&f=resource_type%3Aposter).
+_This page is **work in progress**.  See also [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A0000-0001-9842-9718&f=resource_type%3Aposter)._
 
+Eli Chadwick, Stian Soiland-Reyes, Phil Reed (2025):
+[**RO-Crate: Capturing FAIR research outputs in bioinformatics and beyond**](https://doi.org/10.5281/zenodo.15849770).  
+(poster, flash talk)
+_Bioinformatics Open Science Conference (BOSC 2025)_  
+_Intelligent Systems for Molecular Biology and European Conference on Computational Biology_ (ISMB/ECCB 2025), Liverpool, Manchester, 2025-07-20/–24.  
+<https://doi.org/10.5281/zenodo.15849770>
+
+Finn Bacall, Stian Soiland-Reyes, Stuart Owen, Nick Juty, Johan Gustafsson, Frederik Coppens, Carole Goble (2025):
+[**The WorkflowHub**: A FAIR Registry for computational workflows](https://doi.org/10.5281/zenodo.15861456).  
+_Intelligent Systems for Molecular Biology and European Conference on Computational Biology_ (ISMB/ECCB 2025), Liverpool, Manchester, 2025-07-20/–24.  
+<https://doi.org/10.5281/zenodo.15861456>
 
 Eli Chadwick, Stian Soiland-Reyes, José María Fernández, Björn Grüning, Carole Goble (2025):  
 [**RO-Crate – Capturing FAIR research outputs throughout the ELIXIR landscape**](https://doi.org/10.7490/f1000research.1120199.1).  
