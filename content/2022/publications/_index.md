@@ -34,7 +34,7 @@ _Scientific Data_ **12**:328
 
 Stian Soiland-Reyes, Peter Sefton, Simone Leo, Leyla Jael Castro, Claus Weiland, Herbert Van de Sompel (2025):  
 [**Practical webby FDOs with RO-Crate and FAIR Signposting**: Experiences and lessons learned](../../2024/webby-fdos/).  
-_International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  Recording provenance of
+_International FAIR Digital Objects Implementation Summit_ 2024 ([FDOF 2024](https://fairdo.org/fdof-summit-2024/)), Berlin, Germany, 2024-03-20/–21.  
 _Open Conference Proceedings_ **5**  
 <https://doi.org/10.52825/ocp.v5i.1273>
 
