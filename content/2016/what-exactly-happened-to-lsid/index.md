@@ -160,7 +160,7 @@ URI](https://www.w3.org/TR/cooluris/#r303uri))
 
 `urn:lsid` was never [registered with
 IANA](http://www.iana.org/assignments/urn-namespaces/)
-as an official  namespace and so remained an non-standard scheme.
+as a official namespace and so remained an non-standard scheme.
 
 Dependency on DNS records
 -------------------------
@@ -259,7 +259,7 @@ The landscape of RDF vocabularies and ontologies for describing
 biological information was quite rough in the 2000s, with many
 incompatible or confusing approaches, often require a full "*buy in*" to
 a particular model. Practically the only commonly used vocabularies at
-the time were [Dublin Corev Terms](http://dublincore.org/documents/dcmi-terms/)
+the time were [Dublin Core Terms](http://dublincore.org/documents/dcmi-terms/)
 and
 [FOAF](http://xmlns.com/foaf/spec/)
 -- but the LSID specification did not provide any minimal metadata
@@ -379,7 +379,7 @@ Data](http://rdf.greggkellogg.net/distiller?in_fmt=rdfxml&minimal=true&uri=http:
 then you can [programmatically
 access](https://www.uniprot.org/help/programmatic_access) [[archived 2017-08-06](https://web.archive.org/web/20170806092501/http://www.uniprot.org/help/programmatic_access)]
 the data, or retrieve just the [FASTA
-sequence](https://www.uniprot.org/uniprot/P12345.fasta) [[archived 2019-08-28](https://web.archive.org/web/20190828213820/https://www.uniprot.org/uniprot/P12345.fasta]). 
+sequence](https://www.uniprot.org/uniprot/P12345.fasta) [[archived 2019-08-28](https://web.archive.org/web/20190828213820/https://www.uniprot.org/uniprot/P12345.fasta)]. 
 Even as a uniprot.org assigned identifier, the URI works well with
 third-party APIs, e.g. with with [Open
 PHACTS](https://esciencelab.org.uk/projects/openphacts/) [[archived 2017-08-14](https://web.archive.org/web/20170814105641/http://www.openphacts.org/)]
